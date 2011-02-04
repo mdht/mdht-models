@@ -306,7 +306,7 @@
   <CDA:ConstraintValidation xmi:id="_e7GScCQLEeCxCon8a79rfA" base_Constraint="_eaijECQLEeCxCon8a79rfA"/>
   <CDA:PropertyValidation xmi:id="_P5h7QCQMEeCxCon8a79rfA" base_Property="_P5hUMCQMEeCxCon8a79rfA"/>
   <CDA:ValueSetConstraint xmi:id="_aoh0kCQMEeCxCon8a79rfA" base_Property="_P5hUMCQMEeCxCon8a79rfA">
-    <reference href="ihe-vocab.uml#_qhpCUCQMEeCxCon8a79rfA"/>
+    <reference href="../ihe-vocab.uml#_qhpCUCQMEeCxCon8a79rfA"/>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_Vp3swCQNEeCxCon8a79rfA" severity="INFO" base_Association="_UIJbUiQNEeCxCon8a79rfA"/>
   <CDA:CDATemplate xmi:id="_uxkJ8CQNEeCxCon8a79rfA" base_Class="_s7LQECQNEeCxCon8a79rfA" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
@@ -315,7 +315,7 @@
   <CDA:ConstraintValidation xmi:id="_cosqoCQOEeCxCon8a79rfA" base_Constraint="_bfwsoCQOEeCxCon8a79rfA"/>
   <CDA:PropertyValidation xmi:id="_5wSE0CQOEeCxCon8a79rfA" base_Property="_4GZV4CQOEeCxCon8a79rfA"/>
   <CDA:ValueSetConstraint xmi:id="_6PDrgCQOEeCxCon8a79rfA" base_Property="_4GZV4CQOEeCxCon8a79rfA">
-    <reference href="ihe-vocab.uml#_-YF9cSQOEeCxCon8a79rfA"/>
+    <reference href="../ihe-vocab.uml#_-YF9cSQOEeCxCon8a79rfA"/>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_AObiECQREeCxCon8a79rfA" severity="INFO" base_Association="_spibkiQPEeCxCon8a79rfA" typeCode="REFR"/>
   <CDA:CDATemplate xmi:id="_Um_WoCQREeCxCon8a79rfA" base_Class="_R7NF0CQREeCxCon8a79rfA" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
@@ -323,7 +323,7 @@
   <CDA:TextValue xmi:id="_nDaOoCQREeCxCon8a79rfA" base_Property="_mWvV4CQREeCxCon8a79rfA"/>
   <CDA:ConstraintValidation xmi:id="_r9Y1UCQREeCxCon8a79rfA" base_Constraint="_rUcmACQREeCxCon8a79rfA"/>
   <CDA:ValueSetConstraint xmi:id="_Hg50sCQSEeCxCon8a79rfA" base_Property="_F_MKUCQSEeCxCon8a79rfA">
-    <reference href="ihe-vocab.uml#_LSa-gSQSEeCxCon8a79rfA"/>
+    <reference href="../ihe-vocab.uml#_LSa-gSQSEeCxCon8a79rfA"/>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_eShuMCQZEeCxCon8a79rfA" severity="INFO" base_Association="_ctFaYSQZEeCxCon8a79rfA" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_uXV1oCQZEeCxCon8a79rfA" severity="INFO" base_Association="_j4WHMiQZEeCxCon8a79rfA" typeCode="SUBJ"/>
