@@ -1,12 +1,18 @@
-<project name="CDA Model Transformation"  basedir="." default="all">
+<!--
+ Copyright (c) 2009 IBM Corporation, David A Carlson, and others.
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+-->
+<project name="CDA Model Transformation" basedir="." default="all">
+	<property name="modelName" value="cdt" />
+	<property name="cdaPluginPath" location="${basedir}/../org.openhealthtools.mdht.uml.cda" />
 
-	<property name="cdaPluginPath" location="${basedir}/../org.openhealthtools.mdht.uml.cda"/>
-	<property name="modelName" value="hitsp"/>
-	
 	<macrodef name="convertEcorePaths">
-		<attribute name="filePath"/>
-		
+		<attribute name="filePath" />
 		<sequential>
+			<!-- must include a replace statement for each imported template model. -->
 			<replace file="@{filePath}" token=".model/model/ccd.uml" value="/model/ccd_Ecore.uml"/>
 			<replace file="@{filePath}" token=".model/model/sections/ccd-advanceDirectives.uml" value="/model/ccd_Ecore.uml"/>
 			<replace file="@{filePath}" token=".model/model/sections/ccd-alerts.uml" value="/model/ccd_Ecore.uml"/>
@@ -24,7 +30,6 @@
 			<replace file="@{filePath}" token=".model/model/sections/ccd-results.uml" value="/model/ccd_Ecore.uml"/>
 			<replace file="@{filePath}" token=".model/model/sections/ccd-socialHistory.uml" value="/model/ccd_Ecore.uml"/>
 			<replace file="@{filePath}" token=".model/model/sections/ccd-vitalSigns.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/cdt.uml" value="/model/cdt_Ecore.uml"/>
 			<replace file="@{filePath}" token=".model/model/ihe.uml" value="/model/ihe_Ecore.uml"/>
 			<replace file="@{filePath}" token=".model/model/sections/ihe-activeProblems.uml" value="/model/ihe_Ecore.uml"/>
 			<replace file="@{filePath}" token=".model/model/sections/ihe-admissionMedicationHistory.uml" value="/model/ihe_Ecore.uml"/>
@@ -60,6 +65,6 @@
 			<replace file="@{filePath}" token=".model/model/sections/ihe-vitalSigns.uml" value="/model/ihe_Ecore.uml"/>
 		</sequential>
 	</macrodef>
-	
-	<import file="${cdaPluginPath}/transform-common.xml"/>
+
+	<import file="${cdaPluginPath}/transform-common.xml" />
 </project>

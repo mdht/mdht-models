@@ -53,7 +53,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_wDMM0GEHEd6bFO5yxRh3Nw" name="MedicalDocument">
       <generalization xmi:id="_HGkB0GEIEd6bFO5yxRh3Nw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_vz5koGGsEd6bFO5yxRh3Nw"/>
@@ -361,7 +361,7 @@ patient's current complaints.</body>
         <body>A variety of legacy paper, film, electronic and scanner outputted formats are used to store and exchange clinical documents. These formats are not designed for healthcare documentation, and furthermore, do not have a uniform mechanism to store healthcare metadata associated with the documents, including patient identifiers, demographics, encounter, order or service information. The association of structured, healthcare metadata with this kind of document is important to maintain the integrity of the patient health record as managed by the source system. It is necessary to provide a mechanism that allows such source metadata to be stored with the document.</body>
       </ownedComment>
       <ownedRule xmi:id="_qOv4oPHREd-FxO0PukiqhA" name="typeIdFixed">
-        <constrainedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
+        <constrainedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_qOv4ofHREd-FxO0PukiqhA">
           <language>Analysis</language>
           <language>OCL</language>

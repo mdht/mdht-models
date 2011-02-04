@@ -10,7 +10,7 @@
     <importedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_wDMM0GEHEd6bFO5yxRh3Nw"/>
   </elementImport>
   <elementImport xmi:id="_Mr5hkPZtEd-e-dANbnDT2A">
-    <importedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
+    <importedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
   </elementImport>
   <elementImport xmi:id="_rvRlQPd5Ed-I-P0qO6j1fA">
     <importedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_DVyVoPdQEd-aZohBEt6atA"/>

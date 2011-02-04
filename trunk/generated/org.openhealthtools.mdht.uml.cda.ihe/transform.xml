@@ -24,7 +24,7 @@
 			<replace file="@{filePath}" token=".model/model/sections/ccd-results.uml" value="/model/ccd_Ecore.uml"/>
 			<replace file="@{filePath}" token=".model/model/sections/ccd-socialHistory.uml" value="/model/ccd_Ecore.uml"/>
 			<replace file="@{filePath}" token=".model/model/sections/ccd-vitalSigns.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token="/cdt.uml" value="/cdt_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/cdt.uml" value="/model/cdt_Ecore.uml"/>
 		</sequential>
 	</macrodef>
 	
