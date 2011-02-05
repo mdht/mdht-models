@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="/org.openhealthtools.mdht.uml.cda.consol/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.consol" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" redirection="" modelName="Consol" modelPluginClass="CONSOLPlugin"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>consol_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="CONSOL" basePackage="org.openhealthtools.mdht.uml.cda"
+      resource="XML" disposableProviderFactory="true" ecorePackage="consol.ecore#/"
+      operationsPackage="org.openhealthtools.mdht.uml.cda.consol.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//GeneralHeaderConstraints">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsPersonHasName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsPersonHasName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsPersonHasName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRolesShallHaveAddrAndTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRolesShallHaveAddrAndTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRolesShallHaveAddrAndTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsOrganizationsHaveContactInfo">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsOrganizationsHaveContactInfo/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsOrganizationsHaveContactInfo/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToDay">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToDay/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToDay/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToYear">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToYear/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToYear/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTelephoneMatchesRegex">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTelephoneMatchesRegex/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTelephoneMatchesRegex/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasTelephoneDialingDigits">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasTelephoneDialingDigits/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasTelephoneDialingDigits/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeIdExtension">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeIdExtension/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeIdExtension/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsOidLength">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsOidLength/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsOidLength/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndVersionNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndVersionNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndVersionNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndIdAreUnique">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndIdAreUnique/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsSetIdAndIdAreUnique/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCopyTimeNotPresent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCopyTimeNotPresent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCopyTimeNotPresent/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasRecordTargetPatientRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasRecordTargetPatientRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasRecordTargetPatientRole/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasPatientBirthTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasPatientBirthTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasPatientBirthTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAdministrativeGenderCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAdministrativeGenderCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAdministrativeGenderCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasProviderOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasProviderOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasProviderOrganization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAuthorTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAuthorTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAuthorTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererAssignedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererAssignedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasDataEntererTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformant">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformant/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformant/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorHasAssignedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorHasAssignedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsAuthenticatorHasAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToSecond">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToSecond/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToSecond/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToYearAndDay">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToYearAndDay/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTimePreciseToYearAndDay/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRealmCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRealmCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRealmCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTypeId/context"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
