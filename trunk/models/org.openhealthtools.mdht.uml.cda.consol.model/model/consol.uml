@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
-  <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="cdt">
+  <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="consol">
     <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
-    </packageImport>
-    <packageImport xmi:id="_kRcz0GhVEd-ilOLYnIx0jA">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd.uml#_qQyD8jxVEd6JwqSGecoePg"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_MwGRIGeLEd-ilOLYnIx0jA" name="GeneralHeaderConstraints">
       <ownedComment xmi:id="_QrycIHMnEd-9_cvcE5QEwg">
@@ -549,317 +546,34 @@ content, essentially acting as a version identifier.</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fscFkWkbEd-lxvPE33eETg" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fQZaNkxwEd6h-an5IXo-DA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_eOLMUAcSEeC15aCUY_wo_g" name="author" association="_eOLzYAcSEeC15aCUY_wo_g">
+      <ownedAttribute xmi:id="_eOLMUAcSEeC15aCUY_wo_g" name="author">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fguZUAcSEeC15aCUY_wo_g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fguZUQcSEeC15aCUY_wo_g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sS8HkAcSEeC15aCUY_wo_g" name="dataEnterer" association="_sS8HkgcSEeC15aCUY_wo_g">
+      <ownedAttribute xmi:id="_sS8HkAcSEeC15aCUY_wo_g" name="dataEnterer">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sS8HkQcSEeC15aCUY_wo_g"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_sOWB0AcaEeC15aCUY_wo_g" name="custodian" association="_sOWo4QcaEeC15aCUY_wo_g">
+      <ownedAttribute xmi:id="_sOWB0AcaEeC15aCUY_wo_g" name="custodian">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mMYIkEcEEd6besF9iFIJkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_utRiYAcaEeC15aCUY_wo_g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_utRiYQcaEeC15aCUY_wo_g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_8CtScAcaEeC15aCUY_wo_g" name="informationRecipient" association="_8Ct5gQcaEeC15aCUY_wo_g">
+      <ownedAttribute xmi:id="_8CtScAcaEeC15aCUY_wo_g" name="informationRecipient">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_I5t6QEcZEd6besF9iFIJkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9cTioAcaEeC15aCUY_wo_g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9cTioQcaEeC15aCUY_wo_g"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_VhrxwAccEeC15aCUY_wo_g" name="legalAuthenticator" association="_VhrxwgccEeC15aCUY_wo_g">
+      <ownedAttribute xmi:id="_VhrxwAccEeC15aCUY_wo_g" name="legalAuthenticator">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fcTWYEcZEd6besF9iFIJkQ"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VhrxwQccEeC15aCUY_wo_g"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_FYE0cAcdEeC15aCUY_wo_g" name="authenticator" association="_FYE0cgcdEeC15aCUY_wo_g">
+      <ownedAttribute xmi:id="_FYE0cAcdEeC15aCUY_wo_g" name="authenticator">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BkHyQEcEEd6besF9iFIJkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GWwqQAcdEeC15aCUY_wo_g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GWwqQQcdEeC15aCUY_wo_g"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_MVP2MmhREd-ilOLYnIx0jA" memberEnd="_MVP2M2hREd-ilOLYnIx0jA">
-      <ownedEnd xmi:id="_MVP2M2hREd-ilOLYnIx0jA" association="_MVP2MmhREd-ilOLYnIx0jA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_WIDXkmhSEd-ilOLYnIx0jA" memberEnd="_WID-oGhSEd-ilOLYnIx0jA">
-      <ownedEnd xmi:id="_WID-oGhSEd-ilOLYnIx0jA" association="_WIDXkmhSEd-ilOLYnIx0jA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ssNkMWhWEd-ilOLYnIx0jA" memberEnd="_ssNkMmhWEd-ilOLYnIx0jA">
-      <ownedEnd xmi:id="_ssNkMmhWEd-ilOLYnIx0jA" association="_ssNkMWhWEd-ilOLYnIx0jA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_IYM78GjMEd-tUpkWYQgJlQ" memberEnd="_IYM78WjMEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_IYM78WjMEd-tUpkWYQgJlQ" association="_IYM78GjMEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="__c9tAWjQEd-tUpkWYQgJlQ" memberEnd="__c9tAmjQEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="__c9tAmjQEd-tUpkWYQgJlQ" association="__c9tAWjQEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_jBKlUWjREd-tUpkWYQgJlQ" memberEnd="_jBKlUmjREd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_jBKlUmjREd-tUpkWYQgJlQ" association="_jBKlUWjREd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_5A_SoWjREd-tUpkWYQgJlQ" memberEnd="_5A_SomjREd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_5A_SomjREd-tUpkWYQgJlQ" association="_5A_SoWjREd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_K4h78mjSEd-tUpkWYQgJlQ" memberEnd="_K4h782jSEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_K4h782jSEd-tUpkWYQgJlQ" association="_K4h78mjSEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_YoS3kWjSEd-tUpkWYQgJlQ" memberEnd="_YoS3kmjSEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_YoS3kmjSEd-tUpkWYQgJlQ" association="_YoS3kWjSEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_jXQ7sWjSEd-tUpkWYQgJlQ" memberEnd="_jXRiwGjSEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_jXRiwGjSEd-tUpkWYQgJlQ" association="_jXQ7sWjSEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_AwyTEWjWEd-tUpkWYQgJlQ" memberEnd="_Awy6IGjWEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_Awy6IGjWEd-tUpkWYQgJlQ" association="_AwyTEWjWEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_PuGxgWjXEd-tUpkWYQgJlQ" memberEnd="_PuGxgmjXEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_PuGxgmjXEd-tUpkWYQgJlQ" association="_PuGxgWjXEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_3EX-gmjdEd-tUpkWYQgJlQ" memberEnd="_3EYlkGjdEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_3EYlkGjdEd-tUpkWYQgJlQ" association="_3EX-gmjdEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_gAWXUGjfEd-tUpkWYQgJlQ" memberEnd="_gAWXUWjfEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_gAWXUWjfEd-tUpkWYQgJlQ" association="_gAWXUGjfEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Nq_IkGjqEd-tUpkWYQgJlQ" memberEnd="_Nq_IkWjqEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_Nq_IkWjqEd-tUpkWYQgJlQ" association="_Nq_IkGjqEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_OqqDwGkUEd-tUpkWYQgJlQ" memberEnd="_OqqDwWkUEd-tUpkWYQgJlQ">
-      <ownedComment xmi:id="_YitG8GkUEd-tUpkWYQgJlQ">
-        <body>This section describes the history related to the chief complaint. It contains the&#xD;
-historical details leading up to and pertaining to the patient's current complaint or&#xD;
-reason for seeking medical care.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_OqqDwWkUEd-tUpkWYQgJlQ" association="_OqqDwGkUEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_k6lpoWkUEd-tUpkWYQgJlQ" memberEnd="_k6lpomkUEd-tUpkWYQgJlQ">
-      <ownedComment xmi:id="_tLoSwGkUEd-tUpkWYQgJlQ">
-        <body>This section describes the past medical history for the patient. It may contain&#xD;
-information about past procedures or other illnesses that might have a bearing on the&#xD;
-patient's current illness. Since past medical history can include past surgical history&#xD;
-and other procedures, the Procedure History section may be included under the Past&#xD;
-Medical History section or it may stand alone as its own section. By the same token,&#xD;
-problems can be recorded in a standalone Problems section or in a nested Problems&#xD;
-section. Wherever used, procedures and problems should conform to the CCD template&#xD;
-for CDA entries cited in the Problems section.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_k6lpomkUEd-tUpkWYQgJlQ" association="_k6lpoWkUEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_0NDuIWkUEd-tUpkWYQgJlQ" memberEnd="_0NDuImkUEd-tUpkWYQgJlQ">
-      <ownedComment xmi:id="_9qG3YGkUEd-tUpkWYQgJlQ">
-        <body>The Medications section defines a patient's current medications and pertinent&#xD;
-medication history. In this case, the LOINC displayName is not appropriate for the title&#xD;
-of this section. The title should include the word &quot;Medications.&quot; At a minimum, the&#xD;
-currently active medications should be listed with an entire medication history as an&#xD;
-option, particularly when the document is used for comprehensive data export. The&#xD;
-section may also include a patient's prescription history and enable the determination&#xD;
-of the source of a medication list, e.g., from a pharmacy system versus from the patient.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_0NDuImkUEd-tUpkWYQgJlQ" association="_0NDuIWkUEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_I5JismkVEd-tUpkWYQgJlQ" memberEnd="_I5KJwGkVEd-tUpkWYQgJlQ">
-      <ownedComment xmi:id="_NxXO0GkVEd-tUpkWYQgJlQ">
-        <body>This section is used to list and describe any medication allergies, adverse reactions,&#xD;
-idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and&#xD;
-metabolic variations or adverse reactions/allergies to other substances (such as latex,&#xD;
-iodine, tape adhesives) used to assure the safety of health care delivery. In general,&#xD;
-environmental allergies, even if severe, should not be included in the Alerts section&#xD;
-since they constitute a medical problem and should be listed in the problem list and&#xD;
-past medical history, even if directly related to the presenting problem.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_I5KJwGkVEd-tUpkWYQgJlQ" association="_I5JismkVEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_TQ2WUmkVEd-tUpkWYQgJlQ" memberEnd="_TQ2WU2kVEd-tUpkWYQgJlQ">
-      <ownedComment xmi:id="_az6fIGkVEd-tUpkWYQgJlQ">
-        <body>This section contains data defining the patient's occupational, personal (i.e., lifestyle),&#xD;
-social, and environmental history and health risk factors, as well as administrative data&#xD;
-such as marital status, race, ethnicity, and religious affiliation. Social history can have&#xD;
-a significant influence on a patient's physical, psychological, and emotional health and&#xD;
-wellbeing, so should be considered in the development of a complete health record.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_TQ2WU2kVEd-tUpkWYQgJlQ" association="_TQ2WUmkVEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_okJ74mkVEd-tUpkWYQgJlQ" memberEnd="_okJ742kVEd-tUpkWYQgJlQ">
-      <ownedComment xmi:id="_toG98GkVEd-tUpkWYQgJlQ">
-        <body>This section contains data defining the patient's genetic relatives in terms of relevant&#xD;
-health-risk factors that have a potential impact on the patient's health care profile.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_okJ742kVEd-tUpkWYQgJlQ" association="_okJ74mkVEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_-b2A4WkVEd-tUpkWYQgJlQ" memberEnd="_-b2A4mkVEd-tUpkWYQgJlQ">
-      <ownedComment xmi:id="_FftsQGkWEd-tUpkWYQgJlQ">
-        <body>The review of systems is a relevant collection of symptoms and function systematically&#xD;
-gathered by a clinician. It includes symptoms the patient is currently experiencing,&#xD;
-some of which were not elicited during the history of present illness, as well as a&#xD;
-potentially large number of pertinent negatives, e.g., symptoms that the patient was&#xD;
-specifically asked if they had experienced or were currently experiencing, but had&#xD;
-denied experiencing.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_-b2A4mkVEd-tUpkWYQgJlQ" association="_-b2A4WkVEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_XcVC0WkWEd-tUpkWYQgJlQ" memberEnd="_XcVC0mkWEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_XcVC0mkWEd-tUpkWYQgJlQ" association="_XcVC0WkWEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_jwaqomkWEd-tUpkWYQgJlQ" memberEnd="_jwbRsGkWEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_jwbRsGkWEd-tUpkWYQgJlQ" association="_jwaqomkWEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_rt_lMGkWEd-tUpkWYQgJlQ" memberEnd="_rt_lMWkWEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_rt_lMWkWEd-tUpkWYQgJlQ" association="_rt_lMGkWEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_KUdYMWkXEd-tUpkWYQgJlQ" memberEnd="_KUdYMmkXEd-tUpkWYQgJlQ">
-      <ownedComment xmi:id="_RoBscGkXEd-tUpkWYQgJlQ">
-        <body>This section contains the results of observations generated by laboratories, imaging&#xD;
-procedures, and other procedures. The scope includes hematology, chemistry, serology,&#xD;
-virology, toxicology, microbiology, plain x-ray, ultrasound, CT, MRI, angiography,&#xD;
-echocardiography, nuclear medicine, pathology, and procedure observations. The&#xD;
-section often includes notable results such as abnormal values or relevant trends, and&#xD;
-could contain all results for the period of time being documented.&#xD;
-In some situations, such as in the emergency department and pending surgery,&#xD;
-diagnostic findings are not available when a History and Physical is released. As&#xD;
-explained in Section 4.1 Section Descriptions above, a required section for which no&#xD;
-content is available must contain some indication that no content is available.&#xD;
-Laboratory results are typically generated by laboratories providing analytic services in&#xD;
-areas such as chemistry, hematology, serology, histology, cytology, anatomic pathology,&#xD;
-microbiology, and/or virology. These observations are based on analysis of specimens&#xD;
-obtained from the patient and submitted to the laboratory.&#xD;
-Imaging results are typically generated by a clinician reviewing the output of an imaging&#xD;
-procedure, such as where a cardiologist reports the left ventricular ejection fraction&#xD;
-based on the review of a cardiac echocardiogram.&#xD;
-Procedure results are typically generated by a clinician wanting to provide more&#xD;
-granular information about component observations made during the performance of a&#xD;
-procedure, such as where a gastroenterologist reports the size of a polyp observed&#xD;
-during a colonoscopy.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_KUdYMmkXEd-tUpkWYQgJlQ" association="_KUdYMWkXEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_eRThIWkXEd-tUpkWYQgJlQ" memberEnd="_eRThImkXEd-tUpkWYQgJlQ">
-      <ownedComment xmi:id="_hI6ncGkXEd-tUpkWYQgJlQ">
-        <body>This section lists and describes all relevant clinical problems at the time the History&#xD;
-and Physical is generated. At a minimum, all pertinent current and historical problems&#xD;
-should be listed.&#xD;
-This section is optional because the information contained in it may also appear in the&#xD;
-Past Medical History section or the History of Present Illness section. When a problem&#xD;
-list is inserted into either of these sections, it should use the CCD template.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_eRThImkXEd-tUpkWYQgJlQ" association="_eRThIWkXEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_tHui0WkXEd-tUpkWYQgJlQ" memberEnd="_tHui0mkXEd-tUpkWYQgJlQ">
-      <ownedEnd xmi:id="_tHui0mkXEd-tUpkWYQgJlQ" association="_tHui0WkXEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_5DDFUWkXEd-tUpkWYQgJlQ" memberEnd="_5DDFUmkXEd-tUpkWYQgJlQ">
-      <ownedComment xmi:id="_9folYGkXEd-tUpkWYQgJlQ">
-        <body>The Immunizations section provides a patient's pertinent immunization history. The&#xD;
-Immunizations section is optional, however it is recommended that it be present when&#xD;
-such information is available.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_5DDFUmkXEd-tUpkWYQgJlQ" association="_5DDFUWkXEd-tUpkWYQgJlQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_38WE0cvkEd-hi-1hHmWxvw" memberEnd="_38WE0svkEd-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_38WE0svkEd-hi-1hHmWxvw" association="_38WE0cvkEd-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_58Xb0MvkEd-hi-1hHmWxvw" memberEnd="_58Xb0cvkEd-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_58Xb0cvkEd-hi-1hHmWxvw" association="_58Xb0MvkEd-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_8CBgwcvkEd-hi-1hHmWxvw" memberEnd="_8CBgwsvkEd-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_8CBgwsvkEd-hi-1hHmWxvw" association="_8CBgwcvkEd-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_UI-SocvlEd-hi-1hHmWxvw" memberEnd="_UI-SosvlEd-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_UI-SosvlEd-hi-1hHmWxvw" association="_UI-SocvlEd-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_dWLrQMv0Ed-hi-1hHmWxvw" memberEnd="_dWLrQcv0Ed-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_dWLrQcv0Ed-hi-1hHmWxvw" association="_dWLrQMv0Ed-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_U-sxAcv2Ed-hi-1hHmWxvw" memberEnd="_U-sxAsv2Ed-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_U-sxAsv2Ed-hi-1hHmWxvw" association="_U-sxAcv2Ed-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_NxZnYMv3Ed-hi-1hHmWxvw" memberEnd="_NxZnYcv3Ed-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_NxZnYcv3Ed-hi-1hHmWxvw" association="_NxZnYMv3Ed-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_1w3KEcv3Ed-hi-1hHmWxvw" memberEnd="_1w3KEsv3Ed-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_1w3KEsv3Ed-hi-1hHmWxvw" association="_1w3KEcv3Ed-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_3be40cv3Ed-hi-1hHmWxvw" memberEnd="_3bgG8Mv3Ed-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_3bgG8Mv3Ed-hi-1hHmWxvw" association="_3be40cv3Ed-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_JJFjAsv4Ed-hi-1hHmWxvw" memberEnd="_JJGKEMv4Ed-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_JJGKEMv4Ed-hi-1hHmWxvw" association="_JJFjAsv4Ed-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_RQoR4sv4Ed-hi-1hHmWxvw" memberEnd="_RQoR48v4Ed-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_RQoR48v4Ed-hi-1hHmWxvw" association="_RQoR4sv4Ed-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_cwzwgsv4Ed-hi-1hHmWxvw" memberEnd="_cw0XkMv4Ed-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_cw0XkMv4Ed-hi-1hHmWxvw" association="_cwzwgsv4Ed-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_tbqu0cv5Ed-hi-1hHmWxvw" memberEnd="_tbrV4Mv5Ed-hi-1hHmWxvw">
-      <ownedEnd xmi:id="_tbrV4Mv5Ed-hi-1hHmWxvw" association="_tbqu0cv5Ed-hi-1hHmWxvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_eOLzYAcSEeC15aCUY_wo_g" memberEnd="_eOLMUAcSEeC15aCUY_wo_g _eOLzYQcSEeC15aCUY_wo_g">
-      <ownedComment xmi:id="_g_igsAcSEeC15aCUY_wo_g">
-        <body>The author element represents the creator of the clinical document. If the role of the&#xD;
-actor is the entry of information from his or her own knowledge or application of skills,&#xD;
-that actor is the author. If one actor provides information to another actor who filters,&#xD;
-reasons, or algorithmically creates new information, then that second actor is also an&#xD;
-author, having created information from his or her own knowledge or skills. However,&#xD;
-that determination is independent from the determination of the first actor's&#xD;
-authorship.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_eOLzYQcSEeC15aCUY_wo_g" type="_MwGRIGeLEd-ilOLYnIx0jA" association="_eOLzYAcSEeC15aCUY_wo_g"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_sS8HkgcSEeC15aCUY_wo_g" memberEnd="_sS8HkAcSEeC15aCUY_wo_g _sS8HkwcSEeC15aCUY_wo_g">
-      <ownedComment xmi:id="_0mPagAcSEeC15aCUY_wo_g">
-        <body>&lt;p>The dataEnterer element represents the person who transferred the information from&#xD;
-other sources into the clinical document, where the other sources wrote the content of&#xD;
-the note. The guiding rule of thumb is that an author provides the content found&#xD;
-within the header or body of the document, subject to their own interpretation. The&#xD;
-dataEnterer adds information to the electronic system. A person can participate as&#xD;
-both author and dataEnterer.&lt;/p>&#xD;
-&lt;p>If the role of the actor is to transfer information from one source to another (e.g.,&#xD;
-transcription or transfer from paper form to electronic system), that actor is considered&#xD;
-a dataEnterer.&lt;/p></body>
-      </ownedComment>
-      <ownedEnd xmi:id="_sS8HkwcSEeC15aCUY_wo_g" type="_MwGRIGeLEd-ilOLYnIx0jA" association="_sS8HkgcSEeC15aCUY_wo_g"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_sOWo4QcaEeC15aCUY_wo_g" memberEnd="_sOWB0AcaEeC15aCUY_wo_g _sOWo4gcaEeC15aCUY_wo_g">
-      <ownedComment xmi:id="_xNLTUAcaEeC15aCUY_wo_g">
-        <body>Based on the CDA R2 constraints (Section 4.2.2.3 of the CDA Normative Web Edition.&#xD;
-See Section 5 REFERENCES), the custodian element is required and is the custodian of&#xD;
-the clinical document.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_sOWo4gcaEeC15aCUY_wo_g" type="_MwGRIGeLEd-ilOLYnIx0jA" association="_sOWo4QcaEeC15aCUY_wo_g"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_8Ct5gQcaEeC15aCUY_wo_g" memberEnd="_8CtScAcaEeC15aCUY_wo_g _8Ct5ggcaEeC15aCUY_wo_g">
-      <ownedComment xmi:id="__ymroAcaEeC15aCUY_wo_g">
-        <body>informationRecipient, when used in the context of a referral or request for consultation,&#xD;
-this records the intended recipient of the information at the time the document is&#xD;
-created. The intended recipient may also be the health chart of the patient, in which&#xD;
-case the receivedOrganization is the scoping organization of that chart.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_8Ct5ggcaEeC15aCUY_wo_g" type="_MwGRIGeLEd-ilOLYnIx0jA" association="_8Ct5gQcaEeC15aCUY_wo_g"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_VhrxwgccEeC15aCUY_wo_g" memberEnd="_VhrxwAccEeC15aCUY_wo_g _VhsY0AccEeC15aCUY_wo_g">
-      <ownedComment xmi:id="_dqBK0AccEeC15aCUY_wo_g">
-        <body>&lt;p>The legalAuthenticator element identifies the legal authenticator of the document and&#xD;
-must be present if the document has been legally authenticated. Based on local&#xD;
-practice, clinical documents may be released before legal authentication. This implies&#xD;
-that a clinical document that does not contain this element has not been legally&#xD;
-authenticated.&lt;/p>&#xD;
-&lt;p>The act of legal authentication requires a certain privilege be granted to the legal&#xD;
-authenticator depending upon local policy. All clinical documents have the potential for&#xD;
-legal authentication, given the appropriate credentials.&lt;/p>&#xD;
-&lt;p>Local policies may choose to delegate the function of legal authentication to a device or&#xD;
-system that generates the clinical document. In these cases, the legal authenticator is&#xD;
-a person accepting responsibility for the document, not the generating device or system.&lt;/p></body>
-      </ownedComment>
-      <ownedEnd xmi:id="_VhsY0AccEeC15aCUY_wo_g" type="_MwGRIGeLEd-ilOLYnIx0jA" association="_VhrxwgccEeC15aCUY_wo_g"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_FYE0cgcdEeC15aCUY_wo_g" memberEnd="_FYE0cAcdEeC15aCUY_wo_g _FYFbgAcdEeC15aCUY_wo_g">
-      <ownedComment xmi:id="_JCyLoAcdEeC15aCUY_wo_g">
-        <body>&lt;p>The authenticator identifies the participant who attested to the accuracy of the&#xD;
-information in the document.&lt;/p>&#xD;
-&lt;p>Automated systems, such as a PHR, that allow a clinical document to be generated need to give&#xD;
-special consideration to authentication permissions because the information contained in the&#xD;
-document may come from sources or contain information that the author cannot validate.&lt;/p></body>
-      </ownedComment>
-      <ownedEnd xmi:id="_FYFbgAcdEeC15aCUY_wo_g" type="_MwGRIGeLEd-ilOLYnIx0jA" association="_FYE0cgcdEeC15aCUY_wo_g"/>
     </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -875,7 +589,7 @@ document may come from sources or contain information that the author cannot val
     </profileApplication>
   </uml:Package>
   <CDA:CDATemplate xmi:id="_1dDy4JmOEd6T5tg3G_f09Q" message="CDT My Document SHALL contain the template identifier 1.2.3.4" templateId="1.2.3.4" assigningAuthorityName="CDT"/>
-  <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="cdt" nsURI="http://www.openhealthtools.org/mdht/uml/cda/cdt" packageName="cdt" prefix="CDT" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
+  <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="consol" nsURI="http://www.openhealthtools.org/mdht/uml/cda/consol" packageName="consol" prefix="CONSOL" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
   <CDA:CDATemplate xmi:id="_Uc5uYKX0Ed6JRdOhEffuGA" message="CDT My Activity SHALL contain the template identifier 1.2.3.4.2" templateId="1.2.3.4.2" assigningAuthorityName="CDT"/>
   <Default:Documentation xmi:id="_Uc5uYaX0Ed6JRdOhEffuGA" base_Comment="_Ucv9YaX0Ed6JRdOhEffuGA"/>
   <CDA:PropertyValidation xmi:id="_Uc5uZKX0Ed6JRdOhEffuGA" message="CDT My Activity SHALL contain [1..1] @classCode = &quot;ACT&quot;"/>
@@ -932,20 +646,20 @@ document may come from sources or contain information that the author cannot val
   <CDA:CDATemplate xmi:id="_cUOQ0GhQEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.30">
     <ruleId>CONF-HP-5</ruleId>
   </CDA:CDATemplate>
-  <CDA:AssociationValidation xmi:id="_SyltEGhREd-ilOLYnIx0jA" base_Association="_MVP2MmhREd-ilOLYnIx0jA">
+  <CDA:AssociationValidation xmi:id="_SyltEGhREd-ilOLYnIx0jA">
     <ruleId>CONF-CO-27</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_0HQywGhREd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.2.10"/>
   <CDA:CodeSystemConstraint xmi:id="_2oRW8GhREd-ilOLYnIx0jA" code="29545-1" displayName="PHYSICAL FINDINGS">
     <ruleId>CONF-HP-85</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_nx6KMGhSEd-ilOLYnIx0jA" base_Association="_WIDXkmhSEd-ilOLYnIx0jA">
+  <CDA:AssociationValidation xmi:id="_nx6KMGhSEd-ilOLYnIx0jA">
     <ruleId>CONF-CO-28</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_t3PM4GhWEd-ilOLYnIx0jA" severity="INFO" base_Association="_ssNkMWhWEd-ilOLYnIx0jA">
+  <CDA:AssociationValidation xmi:id="_t3PM4GhWEd-ilOLYnIx0jA" severity="INFO">
     <ruleId>CONF-CO-32</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_VBrk8GjMEd-tUpkWYQgJlQ" severity="INFO" base_Association="_IYM78GjMEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_VBrk8GjMEd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-CO-33</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_MT_KIGjOEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.9"/>
@@ -954,41 +668,41 @@ document may come from sources or contain information that the author cannot val
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_F5OQsGjPEd-tUpkWYQgJlQ" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_qYV5IGjPEd-tUpkWYQgJlQ"/>
-  <CDA:AssociationValidation xmi:id="_AyANUGjREd-tUpkWYQgJlQ" severity="INFO" base_Association="__c9tAWjQEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_AyANUGjREd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-CO-34</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_pExGgGjREd-tUpkWYQgJlQ" severity="INFO" base_Association="_jBKlUWjREd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_pExGgGjREd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-CO-35</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_53PlMGjREd-tUpkWYQgJlQ" severity="INFO" base_Association="_5A_SoWjREd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_53PlMGjREd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-CO-36</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_LsAnUGjSEd-tUpkWYQgJlQ" severity="INFO" base_Association="_K4h78mjSEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_LsAnUGjSEd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-CO-37</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_ZW_JkGjSEd-tUpkWYQgJlQ" severity="INFO" base_Association="_YoS3kWjSEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_ZW_JkGjSEd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-CO-38</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_kLHagGjSEd-tUpkWYQgJlQ" severity="INFO" base_Association="_jXQ7sWjSEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_kLHagGjSEd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-CO-39</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_hwFbIGjVEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.4.10"/>
   <CDA:CodeSystemConstraint xmi:id="_mDUK4GjVEd-tUpkWYQgJlQ" code="10187-3" displayName="REVIEW OF SYSTEMS">
     <ruleId>CONF-CO-41</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_BxQ4oGjWEd-tUpkWYQgJlQ" severity="INFO" base_Association="_AwyTEWjWEd-tUpkWYQgJlQ"/>
-  <CDA:AssociationValidation xmi:id="_Q0ApoGjXEd-tUpkWYQgJlQ" severity="INFO" base_Association="_PuGxgWjXEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_BxQ4oGjWEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_Q0ApoGjXEd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-CO-42</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_auCbEGjdEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.5"/>
   <CDA:CodeSystemConstraint xmi:id="_cxNMsGjdEd-tUpkWYQgJlQ" code="10210-3" displayName="GENERAL STATUS, PHYSICAL FINDINGS">
     <ruleId>CONF-HP-89</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_4TSBoGjdEd-tUpkWYQgJlQ" severity="INFO" base_Association="_3EX-gmjdEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_4TSBoGjdEd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-CO-43</ruleId>
   </CDA:AssociationValidation>
   <CDA:TextValue xmi:id="_Vq6NgWjfEd-tUpkWYQgJlQ"/>
-  <CDA:AssociationValidation xmi:id="_hY0mIGjfEd-tUpkWYQgJlQ" severity="INFO" base_Association="_gAWXUGjfEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_hY0mIGjfEd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-CO-44</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_jdRloGjpEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.4"/>
@@ -999,7 +713,7 @@ document may come from sources or contain information that the author cannot val
   <CDA:ConstraintValidation xmi:id="_CMr5QGjqEd-tUpkWYQgJlQ" severity="WARNING">
     <ruleId>CONF-HP-87</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:AssociationValidation xmi:id="_O24T8GjqEd-tUpkWYQgJlQ" severity="WARNING" base_Association="_Nq_IkGjqEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_O24T8GjqEd-tUpkWYQgJlQ" severity="WARNING">
     <ruleId>CONF-HP-87</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_MY_DQGjsEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.7" contextDependent="true"/>
@@ -1049,46 +763,46 @@ document may come from sources or contain information that the author cannot val
   <CDA:ConstraintValidation xmi:id="_qHnuAGj6Ed-tUpkWYQgJlQ">
     <ruleId>CONF-HP-57</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:AssociationValidation xmi:id="_QXSksGkUEd-tUpkWYQgJlQ" base_Association="_OqqDwGkUEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_QXSksGkUEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-76</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_mqJiwGkUEd-tUpkWYQgJlQ" base_Association="_k6lpoWkUEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_mqJiwGkUEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-77</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_1xmqEGkUEd-tUpkWYQgJlQ" base_Association="_0NDuIWkUEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_1xmqEGkUEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-79</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_KDnxwGkVEd-tUpkWYQgJlQ" base_Association="_I5JismkVEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_KDnxwGkVEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-80</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_UuPhYGkVEd-tUpkWYQgJlQ" base_Association="_TQ2WUmkVEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_UuPhYGkVEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-81</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_p_hGoGkVEd-tUpkWYQgJlQ" base_Association="_okJ74mkVEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_p_hGoGkVEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-82</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_AmsH0GkWEd-tUpkWYQgJlQ" base_Association="_-b2A4WkVEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_AmsH0GkWEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-83</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_Ymfv4GkWEd-tUpkWYQgJlQ" base_Association="_XcVC0WkWEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_Ymfv4GkWEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-84</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_lVbgoGkWEd-tUpkWYQgJlQ" base_Association="_jwaqomkWEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_lVbgoGkWEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-86</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_sv-moGkWEd-tUpkWYQgJlQ" base_Association="_rt_lMGkWEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_sv-moGkWEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-88</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_L07FYGkXEd-tUpkWYQgJlQ" base_Association="_KUdYMWkXEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_L07FYGkXEd-tUpkWYQgJlQ">
     <ruleId>CONF-HP-90</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_fkx7MGkXEd-tUpkWYQgJlQ" severity="INFO" base_Association="_eRThIWkXEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_fkx7MGkXEd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-HP-93</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_uUaYYGkXEd-tUpkWYQgJlQ" severity="INFO" base_Association="_tHui0WkXEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_uUaYYGkXEd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-HP-94</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_5_OZsGkXEd-tUpkWYQgJlQ" severity="INFO" base_Association="_5DDFUWkXEd-tUpkWYQgJlQ">
+  <CDA:AssociationValidation xmi:id="_5_OZsGkXEd-tUpkWYQgJlQ" severity="INFO">
     <ruleId>CONF-HP-96</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_IQ190GkbEd-lxvPE33eETg" base_Property="_pwvRgGkaEd-lxvPE33eETg">
@@ -1175,7 +889,7 @@ document may come from sources or contain information that the author cannot val
   <CDA:ConstraintValidation xmi:id="_Y15xQMvkEd-hi-1hHmWxvw">
     <ruleId>CONF-PN-44</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:AssociationValidation xmi:id="_aEi5MMvlEd-hi-1hHmWxvw" severity="INFO" base_Association="_UI-SocvlEd-hi-1hHmWxvw">
+  <CDA:AssociationValidation xmi:id="_aEi5MMvlEd-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PRGN-21</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_wJAtkMvzEd-hi-1hHmWxvw" templateId="2.16.840.1.113883.10.20.18.2.16"/>
@@ -1185,10 +899,10 @@ document may come from sources or contain information that the author cannot val
   <CDA:ConstraintValidation xmi:id="_R6visMv0Ed-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PN-109</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:AssociationValidation xmi:id="_uDD4QMv0Ed-hi-1hHmWxvw" severity="INFO" base_Association="_dWLrQMv0Ed-hi-1hHmWxvw">
+  <CDA:AssociationValidation xmi:id="_uDD4QMv0Ed-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PRGN-22</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_V3IN0Mv2Ed-hi-1hHmWxvw" severity="INFO" base_Association="_U-sxAcv2Ed-hi-1hHmWxvw">
+  <CDA:AssociationValidation xmi:id="_V3IN0Mv2Ed-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PRGN-23</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_01u0AMv2Ed-hi-1hHmWxvw">
@@ -1201,22 +915,22 @@ document may come from sources or contain information that the author cannot val
     <ruleId>CONF-PRGN-25</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_LcN4sMv3Ed-hi-1hHmWxvw" templateId="2.16.840.1.113883.10.20.21.2.1"/>
-  <CDA:AssociationValidation xmi:id="_OjE78Mv3Ed-hi-1hHmWxvw" severity="INFO" base_Association="_NxZnYMv3Ed-hi-1hHmWxvw">
+  <CDA:AssociationValidation xmi:id="_OjE78Mv3Ed-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PRGN-24</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_9-kyYMv3Ed-hi-1hHmWxvw" severity="INFO" base_Association="_1w3KEcv3Ed-hi-1hHmWxvw">
+  <CDA:AssociationValidation xmi:id="_9-kyYMv3Ed-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PRGN-26</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_CPdYwMv4Ed-hi-1hHmWxvw" severity="INFO" base_Association="_3be40cv3Ed-hi-1hHmWxvw">
+  <CDA:AssociationValidation xmi:id="_CPdYwMv4Ed-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PRGN-27</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_KOkkYMv4Ed-hi-1hHmWxvw" severity="INFO" base_Association="_JJFjAsv4Ed-hi-1hHmWxvw">
+  <CDA:AssociationValidation xmi:id="_KOkkYMv4Ed-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PRGN-28</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_U_SU8Mv4Ed-hi-1hHmWxvw" severity="INFO" base_Association="_RQoR4sv4Ed-hi-1hHmWxvw">
+  <CDA:AssociationValidation xmi:id="_U_SU8Mv4Ed-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PRGN-29</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_rnf38Mv4Ed-hi-1hHmWxvw" severity="INFO" base_Association="_cwzwgsv4Ed-hi-1hHmWxvw">
+  <CDA:AssociationValidation xmi:id="_rnf38Mv4Ed-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PRGN-30</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_ZV6hgMv5Ed-hi-1hHmWxvw" templateId="2.16.840.1.113883.10.20.21.2.2"/>
@@ -1224,7 +938,7 @@ document may come from sources or contain information that the author cannot val
     <ruleId>CONF-PRGN-32</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_dNaXgMv5Ed-hi-1hHmWxvw" code="SUBJ-X" displayName="SUBJECTIVE DATA"/>
-  <CDA:AssociationValidation xmi:id="_wKJuUMv5Ed-hi-1hHmWxvw" severity="INFO" base_Association="_tbqu0cv5Ed-hi-1hHmWxvw">
+  <CDA:AssociationValidation xmi:id="_wKJuUMv5Ed-hi-1hHmWxvw" severity="INFO">
     <ruleId>CONF-PRGN-31</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_ZenGUMwAEd-hi-1hHmWxvw" severity="WARNING">
