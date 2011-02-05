@@ -608,7 +608,9 @@ content, essentially acting as a version identifier.</body>
   <CDA:CodeSystemConstraint xmi:id="_68K5kDOiEd-4N_xqnt9Yew" code="48764-5" displayName="Summary purpose" message="CDT My Section SHALL contain [1..1] code/@code = &quot;48764-5&quot; Summary purpose (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC 2.26)">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_PRnLoGeLEd-ilOLYnIx0jA" base_Class="_MwGRIGeLEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.3"/>
+  <CDA:CDATemplate xmi:id="_PRnLoGeLEd-ilOLYnIx0jA" base_Class="_MwGRIGeLEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.3">
+    <ruleId>CONF-CONSOL-0</ruleId>
+  </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_ZK2hoGeLEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.2"/>
   <CDA:CDATemplate xmi:id="_hM5sgGeLEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.4"/>
   <CDA:ConformsTo xmi:id="_XYy0QGgyEd-ilOLYnIx0jA"/>
