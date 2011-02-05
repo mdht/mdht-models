@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Default="http:///schemas/Default/1" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="consol">
+    <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MwGRIGeLEd-ilOLYnIx0jA" name="GeneralHeaderConstraints">
+      <ownedComment xmi:id="_QrycIHMnEd-9_cvcE5QEwg">
+        <body>&lt;p>This section describes constraints that apply to the H and P Note and to other types of CDA&#xD;
+documents defined for general exchange. The template defined here should be reused&#xD;
+wherever these general header constraints are applied.&lt;/p>&#xD;
+&lt;p>To support communication between the receiver of the document and the patient or any&#xD;
+other person or organization mentioned within it, the elements representing them will&#xD;
+be named.&lt;/p>&#xD;
+&lt;p>When name, address, or telecom information is unknown and where these elements are&#xD;
+required to be present, as with CDA conformance if the information is unknown, these&#xD;
+elements will be represented using an appropriate value for the nullFlavor attribute on&#xD;
+the element.&lt;/p>&#xD;
+&lt;p>Events occurring at a single point in time that are represented in the Clinical Document&#xD;
+header will in general be precise to the day. These point-in-time events are the time of&#xD;
+creation of the document; the starting time of a participation by an author, data&#xD;
+enterer, authenticator, or legal authenticator; or the starting and ending time of an&#xD;
+encounter.&lt;/p>&#xD;
+&lt;p>Within the specification, all telephone numbers are to be encoded using a grammar&#xD;
+which is a restriction on the TEL data type and RFC 2806. It simplifies interchange between applications as&#xD;
+it removes optional URL components found in RFC 2806 that applications typically do&#xD;
+not know how to process, such as ISDN sub-address, phone context, or other dialing&#xD;
+parameters.&lt;/p>&#xD;
+&lt;p>Organizations that wish to use OIDs should properly register their OID root and ensure&#xD;
+uniqueness of the OID roots used in identifiers. A large number of mechanisms exist&#xD;
+for obtaining OID roots for free or for a reasonable fee. HL7 maintains an OID registry&#xD;
+page from which organizations may request an OID root under the HL7 OID root. This&#xD;
+page can be accessed at: http://www.hl7.org/oid.&lt;/p>&#xD;
+&lt;p>Another useful resource lists the many ways to obtain a registered OID Root for free or&#xD;
+a small fee anywhere in the world and is located at:&lt;/p>&#xD;
+&lt;p>http://www.dclunie.com/medical-image-faq/html/part8.html#UIDRegistration.&lt;/p>&#xD;
+&lt;p>The manner in which the OID root is obtained is not constrained by this DSTU.&lt;/p></body>
+      </ownedComment>
+      <ownedRule xmi:id="_M7vtkPzSEd-9y7w_HH-hnA" name="GeneralHeaderConstraintsPersonHasName" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkEscPzSEd-9y7w_HH-hnA">
+          <language>OCL</language>
+          <body>-- implemented in Java using XPath selector</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_1NhIQPzSEd-9y7w_HH-hnA" name="GeneralHeaderConstraintsRolesShallHaveAddrAndTelecom" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7JhzsPzSEd-9y7w_HH-hnA">
+          <language>OCL</language>
+          <body>-- implemented in Java using XPath selector</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_l6XR0PzTEd-9y7w_HH-hnA" name="GeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_rI-EsPzTEd-9y7w_HH-hnA">
+          <language>OCL</language>
+          <body>-- implemented in Java using XPath selector</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_1AAdAP1cEd-9y7w_HH-hnA" name="GeneralHeaderConstraintsOrganizationsHaveContactInfo" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_dpU1AP1dEd-9y7w_HH-hnA">
+          <body>When name, address, or telecom information is unknown and where these elements are&#xD;
+required to be present, as with CDA conformance if the information is unknown, these&#xD;
+elements will be represented using an appropriate value for the nullFlavor attribute on&#xD;
+the element. Legal values according to this specification come from the HL7 NullFlavor&#xD;
+vocabulary.</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_-gR5YP1cEd-9y7w_HH-hnA">
+          <language>OCL</language>
+          <body>-- implemented in Java using XPath selector</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_K2Cq4AbOEeC15aCUY_wo_g" name="GeneralHeaderConstraintsTimePreciseToDay" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XA2a4AbOEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>-- implemented in Java using XPath selector</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_L1gj0AbOEeC15aCUY_wo_g" name="GeneralHeaderConstraintsTimePreciseToYear" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kI_84AbOEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>cda::OrganizationPartOf.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject)-> union(  cda::MaintainedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union( cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::ServiceEvent.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::EncounterParticipant.allInstances()->select( time.oclIsUndefined()).oclAsType( ecore::EObject))->union(self.participant->select( time.oclIsUndefined()).oclAsType( ecore::EObject))->union(cda::OrganizationPartOf.allInstances().effectiveTime->union(cda::MaintainedEntity.allInstances().effectiveTime)->union( cda::RelatedEntity.allInstances().effectiveTime)->union(cda::RelatedEntity.allInstances().effectiveTime)->union(cda::RelatedEntity.allInstances().effectiveTime)->union(cda::ServiceEvent.allInstances().effectiveTime)->union(cda::EncounterParticipant.allInstances().time)->union(self.participant.time)->select(current : datatypes::IVL_TS  |  ((not current.low.oclIsUndefined()) and (current.low.value.oclIsUndefined() or current.low.value.size() &lt; 4)) or ((not current.center.oclIsUndefined()) and (current.center.value.oclIsUndefined() or current.center.value.size() &lt; 4)) or ((not current.high.oclIsUndefined()) and (current.high.value.oclIsUndefined() or current.high.value.size() &lt; 4)) or (current.low.oclIsUndefined() and current.center.oclIsUndefined() and current.high.oclIsUndefined()) ).oclAsType( ecore::EObject))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_Js8_EAbSEeC15aCUY_wo_g" name="GeneralHeaderConstraintsTelephoneMatchesRegex" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_liOgAAbWEeC15aCUY_wo_g">
+          <body>The telecom element is used to provide a contact telephone number for the various&#xD;
+participants that require it. The value attribute ofthis elements is a URL that specifies&#xD;
+the telephone number, as indicated by the TEL data type.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_by57AAbWEeC15aCUY_wo_g">
+          <body>All telephone numbers are to be encoded using a restricted form of the tel: URL scheme. &#xD;
+A telephone number used for voice calls begins with the URL scheme tel:. If the&#xD;
+number is a global phone number, it starts with a plus (+) sign. The remaining number&#xD;
+is made up of the dialing digits and an optional extension and may also contain visual&#xD;
+separators.</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fwiLAAbSEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>-- implemented in Java using XPath selector</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_NXxD8AbSEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasTelephoneDialingDigits" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kCqHgAbSEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>-- implemented in Java using XPath selector</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_OP-eUAbSEeC15aCUY_wo_g" name="GeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_cPZ0UAbXEeC15aCUY_wo_g">
+          <body>There is no way to distinguish between an unknown phone number and an unknown&#xD;
+e-mail or other telecommunications address. Therefore, the following convention will be&#xD;
+used: Any telecom element that uses a flavor of null (has a nullFlavor attribute) is&#xD;
+assumed to be a telephone number, which is the only required telecommunications&#xD;
+address element within this DSTU.</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_16oOoAbSEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>-- implemented in Java using XPath selector</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_zKrYkHMvEd-9_cvcE5QEwg" name="GeneralHeaderConstraintsTypeIdExtension" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_3np6MHMvEd-9_cvcE5QEwg">
+          <language>OCL</language>
+          <body>self.typeId.extension = 'POCD_HD000040'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_cubjEHMxEd-9_cvcE5QEwg" name="GeneralHeaderConstraintsOidLength" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_Nb-78AbaEeC15aCUY_wo_g">
+          <body>OIDs are limited by this specification to no more than 64 characters in length for&#xD;
+compatibility with other standards and Implementation Guides.</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ezDGMHMxEd-9_cvcE5QEwg">
+          <language>OCL</language>
+          <body>self.id->select((not id.root.oclIsUndefined()) and id.root.size() > 64 )</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_CxwfQHPtEd-9_cvcE5QEwg" name="GeneralHeaderConstraintsSetIdAndVersionNumber" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_joQUYAbbEeC15aCUY_wo_g">
+          <body>The ClinicalDocument/setId element uses the instance identifier (II) data type. The root&#xD;
+attribute is a UUID or OID that uniquely identifies the scope of the identifier, and the&#xD;
+extension attribute is a value that is unique within the scope of the root for the set of&#xD;
+versions of the document. See Document Identification, Revisions, and Addenda in&#xD;
+Section 4.2.3.1 of the CDA Specification for some examples showing the use of the setId&#xD;
+element.</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_N45LwHPtEd-9_cvcE5QEwg">
+          <language>OCL</language>
+          <body>(self.setId.oclIsUndefined() and self.versionNumber.oclIsUndefined())&#xD;&#xA;   xor (not self.setId.oclIsUndefined() and not self.versionNumber.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_pLdlEHPtEd-9_cvcE5QEwg" name="GeneralHeaderConstraintsSetIdAndIdAreUnique" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_zR0xEHPtEd-9_cvcE5QEwg">
+          <language>OCL</language>
+          <body>(not self.setId.oclIsUndefined() and not self.id.oclIsUndefined())&#xD;&#xA;   implies (self.setId.root &lt;> self.id.root or self.setId.extension &lt;> self.id.extension)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_GI9PIHPuEd-9_cvcE5QEwg" name="GeneralHeaderConstraintsCopyTimeNotPresent" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_Va0lUAbbEeC15aCUY_wo_g">
+          <body>The ClinicalDocument/copyTime element has been deprecated in CDA R2.</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_JlnjQHPuEd-9_cvcE5QEwg">
+          <language>OCL</language>
+          <body>self.copyTime.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_VfAP0AbdEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasRecordTargetPatientRole" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yE5cwAbeEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>self.recordTarget->size() > 0 and self.recordTarget->exists(target : cda::RecordTarget | not target.patientRole.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_WfbyEAbdEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasPatientBirthTime" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IJul4AbfEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>self.recordTarget->forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()&#xD;&#xA;   implies (not target.patientRole.patient.birthTime.value.oclIsUndefined()&#xD;&#xA;      or not target.patientRole.patient.birthTime.nullFlavor.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_XSql0AbdEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasAdministrativeGenderCode" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_TtYOcAcPEeC15aCUY_wo_g">
+          <body>TODO: add OCL test for terminology</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_sIuN4AcNEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>self.recordTarget->forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()&#xD;&#xA;   implies (not target.patientRole.patient.administrativeGenderCode.code.oclIsUndefined()&#xD;&#xA;      or not target.patientRole.patient.administrativeGenderCode.nullFlavor.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_aL4OoAbdEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasProviderOrganization" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_nFQCEAcPEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>self.recordTarget->exists(target : cda::RecordTarget | not target.patientRole.providerOrganization.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_7gzq0AcQEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasAuthorTime" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_MeR4kAcREeC15aCUY_wo_g">
+          <body>The author/time element represents the start time of the author's&#xD;
+participation in the creation of the clinical document.</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_HNpscAcREeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>self.author->forAll(author : cda::Author | not author.time.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_8eieYAcQEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasAssignedAuthorId" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEafEAcREeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>self.author->forAll(author : cda::Author | author.assignedAuthor.id->size() > 0)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_9YzHMAcQEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YTl5sAcREeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>self.author->forAll(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() &#xD;&#xA;   or not author.assignedAuthor.assignedAuthoringDevice.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_A8mTMAcTEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasDataEntererAssignedPerson" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_JY9bgAcTEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>not self.dataEnterer.oclIsUndefined() implies not self.dataEnterer.assignedEntity.assignedPerson.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_CEbd8AcTEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasDataEntererTime" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UfWhIAcTEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>not self.dataEnterer.oclIsUndefined() implies not self.dataEnterer.time.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_Yv23kAcUEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasInformant" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fdXRYAcUEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>self.informant->size() > 0</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_Xy9KcAcUEeC15aCUY_wo_g" name="GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_0rifUAcUEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>self.informant->forAll(i : cda::Informant12 | not i.assignedEntity.assignedPerson.oclIsUndefined()&#xD;&#xA;   or not i.relatedEntity.relatedPerson.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_l7M94AccEeC15aCUY_wo_g" name="GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_soHh0AccEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>not self.legalAuthenticator.oclIsUndefined() implies not self.legalAuthenticator.assignedEntity.assignedPerson.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_nEC1QAccEeC15aCUY_wo_g" name="GeneralHeaderConstraintsAuthenticatorHasAssignedPerson" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RIcEIAcdEeC15aCUY_wo_g">
+          <language>OCL</language>
+          <body>self.authenticator->forAll(auth : cda::Authenticator | auth.assignedEntity->forAll(entity : cda::AssignedEntity |&#xD;&#xA;   not entity.assignedPerson.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_mEGlYAlEEeCb3JSiaNKEKA" name="GeneralHeaderConstraintsTimePreciseToSecond" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_JLX78Ax4EeCbT6kkmQhJPQ">
+          <body>Should portion of CON-HP-10 constraitn</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_mEGlYQlEEeCb3JSiaNKEKA">
+          <language>OCL</language>
+          <body>-- implemented in Java using XPath selector</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_0XI4AAx3EeCbT6kkmQhJPQ" name="GeneralHeaderConstraintsTimePreciseToYearAndDay" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_PSJF4Ax4EeCbT6kkmQhJPQ">
+          <body>Should portion of CON-HP-11 constraitn</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ETtpcAx4EeCbT6kkmQhJPQ">
+          <language>OCL</language>
+          <body>cda::OrganizationPartOf.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject)-> union(  cda::MaintainedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union( cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::ServiceEvent.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::EncounterParticipant.allInstances()->select( time.oclIsUndefined()).oclAsType( ecore::EObject))->union(self.participant->select( time.oclIsUndefined()).oclAsType( ecore::EObject))->union(cda::OrganizationPartOf.allInstances().effectiveTime->union(cda::MaintainedEntity.allInstances().effectiveTime)->union( cda::RelatedEntity.allInstances().effectiveTime)->union(cda::RelatedEntity.allInstances().effectiveTime)->union(cda::RelatedEntity.allInstances().effectiveTime)->union(cda::ServiceEvent.allInstances().effectiveTime)->union(cda::EncounterParticipant.allInstances().time)->union(self.participant.time)->select(current : datatypes::IVL_TS  |  ((not current.low.oclIsUndefined()) and (current.low.value.oclIsUndefined() or current.low.value.size() &lt; 8)) or ((not current.center.oclIsUndefined()) and (current.center.value.oclIsUndefined() or current.center.value.size() &lt; 8)) or ((not current.high.oclIsUndefined()) and (current.high.value.oclIsUndefined() or current.high.value.size() &lt; 8)) or (current.low.oclIsUndefined() and current.center.oclIsUndefined() and current.high.oclIsUndefined()) ).oclAsType( ecore::EObject))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_eDr74TFJEeC0S8qbN3Km1g" name="GeneralHeaderConstraintsTemplateId" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_eDsi8DFJEeC0S8qbN3Km1g">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.3')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_eEIAwDFJEeC0S8qbN3Km1g" name="GeneralHeaderConstraintsCode" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_eEIn0DFJEeC0S8qbN3Km1g">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_eEnwADFJEeC0S8qbN3Km1g" name="GeneralHeaderConstraintsEffectiveTime" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_eEoXEDFJEeC0S8qbN3Km1g">
+          <language>OCL</language>
+          <body>not self.effectiveTime.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_eEplMDFJEeC0S8qbN3Km1g" name="GeneralHeaderConstraintsId" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_eEplMTFJEeC0S8qbN3Km1g">
+          <language>OCL</language>
+          <body>not self.id.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_eEqzUDFJEeC0S8qbN3Km1g" name="GeneralHeaderConstraintsLanguageCode" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_eEqzUTFJEeC0S8qbN3Km1g">
+          <language>OCL</language>
+          <body>not self.languageCode.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_eEsogDFJEeC0S8qbN3Km1g" name="GeneralHeaderConstraintsRealmCode" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_eEtPkDFJEeC0S8qbN3Km1g">
+          <language>OCL</language>
+          <body>self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and &#xA;let value : datatypes::CS = element.oclAsType(datatypes::CS) in &#xA;value.code = 'US')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_eEudsDFJEeC0S8qbN3Km1g" name="GeneralHeaderConstraintsTitle" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_eEudsTFJEeC0S8qbN3Km1g">
+          <language>OCL</language>
+          <body>not self.title.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_eEwS4DFJEeC0S8qbN3Km1g" name="GeneralHeaderConstraintsTypeId" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_eEwS4TFJEeC0S8qbN3Km1g">
+          <language>OCL</language>
+          <body>not self.typeId.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_MwujQGeLEd-ilOLYnIx0jA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
+      <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
+      <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_eDpfoDFJEeC0S8qbN3Km1g">
+      <eAnnotations xmi:id="_eDpfoTFJEeC0S8qbN3Km1g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CDATemplate xmi:id="_1dDy4JmOEd6T5tg3G_f09Q" message="CDT My Document SHALL contain the template identifier 1.2.3.4" templateId="1.2.3.4" assigningAuthorityName="CDT"/>
+  <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="consol" nsURI="http://www.openhealthtools.org/mdht/uml/cda/consol" packageName="consol" prefix="CONSOL" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
+  <CDA:CDATemplate xmi:id="_Uc5uYKX0Ed6JRdOhEffuGA" message="CDT My Activity SHALL contain the template identifier 1.2.3.4.2" templateId="1.2.3.4.2" assigningAuthorityName="CDT"/>
+  <Default:Documentation xmi:id="_Uc5uYaX0Ed6JRdOhEffuGA" base_Comment="_Ucv9YaX0Ed6JRdOhEffuGA"/>
+  <CDA:PropertyValidation xmi:id="_Uc5uZKX0Ed6JRdOhEffuGA" message="CDT My Activity SHALL contain [1..1] @classCode = &quot;ACT&quot;"/>
+  <CDA:PropertyValidation xmi:id="_Uc5uZaX0Ed6JRdOhEffuGA" message="CDT My Activity SHALL contain [1..1] @moodCode = &quot;EVN&quot;"/>
+  <CDA:CDATemplate xmi:id="_Uc5uaaX0Ed6JRdOhEffuGA" message="CDT My Section SHALL contain the template identifier 1.2.3.4.1" templateId="1.2.3.4.1" assigningAuthorityName="CDT"/>
+  <Default:Documentation xmi:id="_Uc5uaqX0Ed6JRdOhEffuGA" base_Comment="_Ucv9bqX0Ed6JRdOhEffuGA"/>
+  <CDA:AssociationValidation xmi:id="_vvhgIKX2Ed6JRdOhEffuGA" message="CDT My Document SHALL contain [1..1] component such that it, SHALL contain [1..1] My Section (templateId: 1.2.3.4.1)"/>
+  <CDA:Entry xmi:id="_auV_cK0UEd6_kOk8Ilc2Dw" message="CDT My Section SHOULD contain [1..*] entry such that it, SHALL contain [1..1] @typeCode=&quot;COMP&quot; COMP (component), SHALL contain [1..1] My Activity (templateId: 1.2.3.4.2)" severity="WARNING"/>
+  <CDA:TextValue xmi:id="_xJaggK0jEd6_kOk8Ilc2Dw" message="CDT My Section SHALL contain [1..1] title"/>
+  <CDA:CodeSystemConstraint xmi:id="_68FaADOiEd-4N_xqnt9Yew" code="23745001" displayName="Documentation procedure" message="CDT My Activity SHALL contain [1..1] code/@code = &quot;23745001&quot; Documentation procedure (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT STATIC 20080731)">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_68JEYDOiEd-4N_xqnt9Yew" code="completed" message="CDT My Activity SHALL contain [1..1] statusCode/@code = &quot;completed&quot;  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus STATIC V3NE08)">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_68K5kDOiEd-4N_xqnt9Yew" code="48764-5" displayName="Summary purpose" message="CDT My Section SHALL contain [1..1] code/@code = &quot;48764-5&quot; Summary purpose (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC 2.26)">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_PRnLoGeLEd-ilOLYnIx0jA" base_Class="_MwGRIGeLEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.3">
+    <ruleId>CONF-CONSOL-0</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_ZK2hoGeLEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.2"/>
+  <CDA:CDATemplate xmi:id="_hM5sgGeLEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.4"/>
+  <CDA:ConformsTo xmi:id="_XYy0QGgyEd-ilOLYnIx0jA"/>
+  <CDA:ConstraintValidation xmi:id="_4qKHQGgyEd-ilOLYnIx0jA"/>
+  <CDA:ConstraintValidation xmi:id="_Q8tFIGgzEd-ilOLYnIx0jA"/>
+  <CDA:ConstraintValidation xmi:id="_3TVo0GgzEd-ilOLYnIx0jA" severity="INFO"/>
+  <CDA:ValueSetConstraint xmi:id="_AaZT8Gg0Ed-ilOLYnIx0jA"/>
+  <CDA:CDATemplate xmi:id="_Cuh_IGhHEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.4.8" contextDependent="true"/>
+  <CDA:CDATemplate xmi:id="_JhHtQGhHEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.4.8" contextDependent="true"/>
+  <CDA:CodeSystemConstraint xmi:id="_X0nBAGhHEd-ilOLYnIx0jA" code="42349-1" displayName="REASON FOR REFERRAL"/>
+  <CDA:CodeSystemConstraint xmi:id="_bgHCYGhHEd-ilOLYnIx0jA" code="29299-5" displayName="REASON FOR VISIT"/>
+  <CDA:ConstraintValidation xmi:id="_zJfugGhHEd-ilOLYnIx0jA"/>
+  <CDA:AssociationValidation xmi:id="_0J04MGhJEd-ilOLYnIx0jA" message="CDT Consultation Note MAY contain [0..1] component such that it, SHALL contain [1..1] Reason For Referral (templateId: 2.16.840.1.113883.10.20.4.8)"/>
+  <CDA:AssociationValidation xmi:id="_0J2GUGhJEd-ilOLYnIx0jA" message="CDT Consultation Note MAY contain [0..1] component such that it, SHALL contain [1..1] Reason For Visit (templateId: 2.16.840.1.113883.10.20.4.8)"/>
+  <CDA:CDATemplate xmi:id="_OTEDMGhQEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.10"/>
+  <CDA:CDATemplate xmi:id="_VymW4GhQEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.20"/>
+  <CDA:CDATemplate xmi:id="_cUOQ0GhQEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.30"/>
+  <CDA:AssociationValidation xmi:id="_SyltEGhREd-ilOLYnIx0jA"/>
+  <CDA:CDATemplate xmi:id="_0HQywGhREd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.2.10"/>
+  <CDA:CodeSystemConstraint xmi:id="_2oRW8GhREd-ilOLYnIx0jA" code="29545-1" displayName="PHYSICAL FINDINGS"/>
+  <CDA:AssociationValidation xmi:id="_nx6KMGhSEd-ilOLYnIx0jA"/>
+  <CDA:AssociationValidation xmi:id="_t3PM4GhWEd-ilOLYnIx0jA" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_VBrk8GjMEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:CDATemplate xmi:id="_MT_KIGjOEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.9"/>
+  <CDA:CodeSystemConstraint xmi:id="_cVI5kGjOEd-tUpkWYQgJlQ" code="11348-0" displayName="HISTORY OF PAST ILLNESS"/>
+  <CDA:ConstraintValidation xmi:id="_F5OQsGjPEd-tUpkWYQgJlQ" severity="WARNING"/>
+  <CDA:PropertyValidation xmi:id="_qYV5IGjPEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_AyANUGjREd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_pExGgGjREd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_53PlMGjREd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_LsAnUGjSEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_ZW_JkGjSEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_kLHagGjSEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:CDATemplate xmi:id="_hwFbIGjVEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.4.10"/>
+  <CDA:CodeSystemConstraint xmi:id="_mDUK4GjVEd-tUpkWYQgJlQ" code="10187-3" displayName="REVIEW OF SYSTEMS"/>
+  <CDA:AssociationValidation xmi:id="_BxQ4oGjWEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_Q0ApoGjXEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:CDATemplate xmi:id="_auCbEGjdEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.5"/>
+  <CDA:CodeSystemConstraint xmi:id="_cxNMsGjdEd-tUpkWYQgJlQ" code="10210-3" displayName="GENERAL STATUS, PHYSICAL FINDINGS"/>
+  <CDA:AssociationValidation xmi:id="_4TSBoGjdEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:TextValue xmi:id="_Vq6NgWjfEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_hY0mIGjfEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:CDATemplate xmi:id="_jdRloGjpEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.4"/>
+  <CDA:CodeSystemConstraint xmi:id="_j8c08GjpEd-tUpkWYQgJlQ" code="8716-3" displayName="VITAL SIGNS"/>
+  <CDA:PropertyValidation xmi:id="_58fksGjpEd-tUpkWYQgJlQ"/>
+  <CDA:ConstraintValidation xmi:id="_CMr5QGjqEd-tUpkWYQgJlQ" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_O24T8GjqEd-tUpkWYQgJlQ" severity="WARNING"/>
+  <CDA:CDATemplate xmi:id="_MY_DQGjsEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.7" contextDependent="true"/>
+  <CDA:CodeSystemConstraint xmi:id="_MuHlwGjsEd-tUpkWYQgJlQ" code="51848-0" displayName="Assessment"/>
+  <CDA:CDATemplate xmi:id="_drcCgGjsEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.7" contextDependent="true"/>
+  <CDA:CDATemplate xmi:id="_k8mjAGjsEd-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.7" contextDependent="true"/>
+  <CDA:CodeSystemConstraint xmi:id="_qsbzoGjsEd-tUpkWYQgJlQ" code="18776-5" displayName="Plan"/>
+  <CDA:CodeSystemConstraint xmi:id="_10ftMGjsEd-tUpkWYQgJlQ" code="51847-2" displayName="Assessment + Plan"/>
+  <CDA:ConstraintValidation xmi:id="_dLfFMGjuEd-tUpkWYQgJlQ" message="CDT History And Physical SHALL satisfy: When Assessment Section is included, then Plan Section must also be included and there SHALL NOT be a combined Assessment + Plan section."/>
+  <CDA:ConstraintValidation xmi:id="_w20x8GjvEd-tUpkWYQgJlQ"/>
+  <CDA:ConstraintValidation xmi:id="_xVaycGjvEd-tUpkWYQgJlQ" message="CDT History And Physical SHALL satisfy: When Plan Section is included, then Assessment Section must also be included and there SHALL NOT be a combined Assessment + Plan section."/>
+  <CDA:CDATemplate xmi:id="_l8hY0Gj1Ed-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.8" assigningAuthorityName="CONF-HP-73" contextDependent="true"/>
+  <CDA:CDATemplate xmi:id="_qRZHUGj1Ed-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.8" contextDependent="true"/>
+  <CDA:CDATemplate xmi:id="_wOKnwGj1Ed-tUpkWYQgJlQ" templateId="2.16.840.1.113883.10.20.2.8" assigningAuthorityName="CONF-HP-73" contextDependent="true"/>
+  <CDA:CodeSystemConstraint xmi:id="_4mtnEGj1Ed-tUpkWYQgJlQ" code="10154-3" displayName="Chief complaint"/>
+  <CDA:CodeSystemConstraint xmi:id="_AtuxgGj2Ed-tUpkWYQgJlQ" code="29299-5" displayName="Reason for visit"/>
+  <CDA:CodeSystemConstraint xmi:id="_Hk4PgGj2Ed-tUpkWYQgJlQ" code="46239-0" displayName="Reason for visit + Chief complaint"/>
+  <CDA:ValueSetConstraint xmi:id="_11xzsGj5Ed-tUpkWYQgJlQ"/>
+  <CDA:ConstraintValidation xmi:id="_NuptUGj6Ed-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_pmdhsGj6Ed-tUpkWYQgJlQ"/>
+  <CDA:ConstraintValidation xmi:id="_qHnuAGj6Ed-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_QXSksGkUEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_mqJiwGkUEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_1xmqEGkUEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_KDnxwGkVEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_UuPhYGkVEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_p_hGoGkVEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_AmsH0GkWEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_Ymfv4GkWEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_lVbgoGkWEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_sv-moGkWEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_L07FYGkXEd-tUpkWYQgJlQ"/>
+  <CDA:AssociationValidation xmi:id="_fkx7MGkXEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_uUaYYGkXEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_5_OZsGkXEd-tUpkWYQgJlQ" severity="INFO"/>
+  <CDA:CDATemplate xmi:id="_4ACwUGoAEd-d2MaU_RNQsA" templateId="2.16.840.1.113883.10.20.4.9"/>
+  <CDA:CodeSystemConstraint xmi:id="_FvTVoGoBEd-d2MaU_RNQsA" code="11348-0" displayName="HISTORY OF PAST ILLNESS"/>
+  <CDA:PropertyValidation xmi:id="_SxHmIGoBEd-d2MaU_RNQsA"/>
+  <CDA:ConstraintValidation xmi:id="_ZaWrAHBDEd-yJfEpFEwdpw"/>
+  <CDA:ConstraintValidation xmi:id="_0xODkHBFEd-yJfEpFEwdpw"/>
+  <CDA:ConstraintValidation xmi:id="_0UyKkHKHEd-yJfEpFEwdpw"/>
+  <CDA:ConstraintValidation xmi:id="_DIybEHMwEd-9_cvcE5QEwg" base_Constraint="_zKrYkHMvEd-9_cvcE5QEwg">
+    <ruleId>CONF-CONSOL-10</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_fGbVMHMxEd-9_cvcE5QEwg" base_Constraint="_cubjEHMxEd-9_cvcE5QEwg">
+    <ruleId>CONF-CONSOL-14</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Rs_IcHPtEd-9_cvcE5QEwg" base_Constraint="_CxwfQHPtEd-9_cvcE5QEwg">
+    <ruleId>CONF-CONSOL-18</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_r4RwoHPtEd-9_cvcE5QEwg" base_Constraint="_pLdlEHPtEd-9_cvcE5QEwg">
+    <ruleId>CONF-CONSOL-19</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_J725AHPuEd-9_cvcE5QEwg" base_Constraint="_GI9PIHPuEd-9_cvcE5QEwg">
+    <ruleId>CONF-CONSOL-20</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_T2_d0JvtEd-IotBrVd7ICA" code="10164-2" displayName="HISTORY OF PRESENT ILLNESS"/>
+  <CDA:CDATemplate xmi:id="_bLtBkJvtEd-IotBrVd7ICA" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.4" assigningAuthorityName="IHE PCC"/>
+  <CDA:CDATemplate xmi:id="_8dbusJvyEd-IotBrVd7ICA" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.18" assigningAuthorityName="IHE PCC"/>
+  <CDA:CodeSystemConstraint xmi:id="_BDSfgJvzEd-IotBrVd7ICA" code="10187-3" displayName="REVIEW OF SYSTEMS"/>
+  <CDA:CDATemplate xmi:id="_lKQJsMviEd-hi-1hHmWxvw" templateId="2.16.840.1.113883.10.20.21.1"/>
+  <CDA:ValueSetConstraint xmi:id="_tT7mkMviEd-hi-1hHmWxvw"/>
+  <CDA:ConstraintValidation xmi:id="_W8zhoMvkEd-hi-1hHmWxvw"/>
+  <CDA:ConstraintValidation xmi:id="_Y15xQMvkEd-hi-1hHmWxvw"/>
+  <CDA:AssociationValidation xmi:id="_aEi5MMvlEd-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:CDATemplate xmi:id="_wJAtkMvzEd-hi-1hHmWxvw" templateId="2.16.840.1.113883.10.20.18.2.16"/>
+  <CDA:CodeSystemConstraint xmi:id="_3P4CkMvzEd-hi-1hHmWxvw" code="10154-3" displayName="CHIEF COMPLAINT"/>
+  <CDA:ConstraintValidation xmi:id="_R6visMv0Ed-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_uDD4QMv0Ed-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_V3IN0Mv2Ed-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:PropertyValidation xmi:id="_01u0AMv2Ed-hi-1hHmWxvw"/>
+  <CDA:TextValue xmi:id="_1dTKUMv2Ed-hi-1hHmWxvw"/>
+  <CDA:CodeSystemConstraint xmi:id="_9Ldv4Mv2Ed-hi-1hHmWxvw" code="OBJEC-X" displayName="OBJECTIVE DATA"/>
+  <CDA:CDATemplate xmi:id="_LcN4sMv3Ed-hi-1hHmWxvw" templateId="2.16.840.1.113883.10.20.21.2.1"/>
+  <CDA:AssociationValidation xmi:id="_OjE78Mv3Ed-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_9-kyYMv3Ed-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_CPdYwMv4Ed-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_KOkkYMv4Ed-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_U_SU8Mv4Ed-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_rnf38Mv4Ed-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:CDATemplate xmi:id="_ZV6hgMv5Ed-hi-1hHmWxvw" templateId="2.16.840.1.113883.10.20.21.2.2"/>
+  <CDA:PropertyValidation xmi:id="_c4AIMMv5Ed-hi-1hHmWxvw"/>
+  <CDA:CodeSystemConstraint xmi:id="_dNaXgMv5Ed-hi-1hHmWxvw" code="SUBJ-X" displayName="SUBJECTIVE DATA"/>
+  <CDA:AssociationValidation xmi:id="_wKJuUMv5Ed-hi-1hHmWxvw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_ZenGUMwAEd-hi-1hHmWxvw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_Zfj1oMwNEd-RYrNQjqkPtg"/>
+  <CDA:ConstraintValidation xmi:id="_6YVpgMwNEd-RYrNQjqkPtg" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_BLMjUMyQEd-RYrNQjqkPtg"/>
+  <CDA:ConstraintValidation xmi:id="_Zcj1cMyQEd-RYrNQjqkPtg"/>
+  <CDA:ConstraintValidation xmi:id="_eE22QMyQEd-RYrNQjqkPtg"/>
+  <CDA:ConstraintValidation xmi:id="_t64TwMyQEd-RYrNQjqkPtg"/>
+  <CDA:ConstraintValidation xmi:id="_86BzoMyQEd-RYrNQjqkPtg" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_nXKHEMybEd-RYrNQjqkPtg" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_6DFasMybEd-RYrNQjqkPtg" severity="WARNING"/>
+  <CDA:PropertyValidation xmi:id="__P3BkMybEd-RYrNQjqkPtg"/>
+  <CDA:TextValue xmi:id="_BuBtIMycEd-RYrNQjqkPtg"/>
+  <CDA:CDATemplate xmi:id="_qZMC8MzCEd-RYrNQjqkPtg" templateId="2.16.840.1.113883.10.20.18.2.13"/>
+  <CDA:ClassValidation xmi:id="_zGETgMzCEd-RYrNQjqkPtg"/>
+  <CDA:CDATemplate xmi:id="_1BXikMzCEd-RYrNQjqkPtg" templateId="2.16.840.1.113883.10.20.18.2.14"/>
+  <CDA:PropertyValidation xmi:id="_87xNUMzCEd-RYrNQjqkPtg"/>
+  <CDA:CodeSystemConstraint xmi:id="_88xS4MzCEd-RYrNQjqkPtg" code="51848-0" displayName="ASSESSMENT"/>
+  <CDA:PropertyValidation xmi:id="_L32LEMzDEd-RYrNQjqkPtg"/>
+  <CDA:CodeSystemConstraint xmi:id="_L4r4kMzDEd-RYrNQjqkPtg" code="51847-2" displayName="ASSESSMENT AND PLAN"/>
+  <CDA:ConstraintValidation xmi:id="_T-YC0PzSEd-9y7w_HH-hnA" base_Constraint="_M7vtkPzSEd-9y7w_HH-hnA">
+    <ruleId>CONF-CONSOL-1</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_7qfywPzSEd-9y7w_HH-hnA" base_Constraint="_1NhIQPzSEd-9y7w_HH-hnA">
+    <ruleId>CONF-CONSOL-2</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_rjdBQPzTEd-9y7w_HH-hnA" severity="WARNING" base_Constraint="_l6XR0PzTEd-9y7w_HH-hnA">
+    <ruleId>CONF-CONSOL-3</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_BtmxAP1dEd-9y7w_HH-hnA" base_Constraint="_1AAdAP1cEd-9y7w_HH-hnA">
+    <ruleId>CONF-CONSOL-4</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_X53tkAbOEeC15aCUY_wo_g" base_Constraint="_L1gj0AbOEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-6</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_ciBkcAbOEeC15aCUY_wo_g" base_Constraint="_K2Cq4AbOEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-5</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Y8ENkAbSEeC15aCUY_wo_g" base_Constraint="_Js8_EAbSEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-7</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_atcroAbSEeC15aCUY_wo_g" base_Constraint="_NXxD8AbSEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-8</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_cJ0jAAbSEeC15aCUY_wo_g" base_Constraint="_OP-eUAbSEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-9</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_iaa9YAbdEeC15aCUY_wo_g" base_Constraint="_VfAP0AbdEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-21</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_jt27MAbdEeC15aCUY_wo_g" base_Constraint="_WfbyEAbdEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-22</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_laNvUAbdEeC15aCUY_wo_g" base_Constraint="_XSql0AbdEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-23</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_qXmPUAbdEeC15aCUY_wo_g" severity="INFO" base_Constraint="_aL4OoAbdEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-26</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_BdiH8AcREeC15aCUY_wo_g" base_Constraint="_7gzq0AcQEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-27</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_CswUIAcREeC15aCUY_wo_g" base_Constraint="_8eieYAcQEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-28</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Dzy0sAcREeC15aCUY_wo_g" base_Constraint="_9YzHMAcQEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-29</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_DZsAsAcTEeC15aCUY_wo_g" base_Constraint="_A8mTMAcTEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-30</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_EbATwAcTEeC15aCUY_wo_g" severity="INFO" base_Constraint="_CEbd8AcTEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-31</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_aO9S0AcUEeC15aCUY_wo_g" base_Constraint="_Xy9KcAcUEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-33</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_cQ25IAcUEeC15aCUY_wo_g" severity="INFO" base_Constraint="_Yv23kAcUEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-32</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_qrMiIAccEeC15aCUY_wo_g" base_Constraint="_l7M94AccEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-41</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_MACm8AcdEeC15aCUY_wo_g" base_Constraint="_nEC1QAccEeC15aCUY_wo_g">
+    <ruleId>CONF-CONSOL-42</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_uAnwAAlEEeCb3JSiaNKEKA" severity="WARNING" base_Constraint="_mEGlYAlEEeCb3JSiaNKEKA">
+    <ruleId>CONF-CONSOL-43</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_i5ANMAx3EeCbT6kkmQhJPQ" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="__QdK8Ax3EeCbT6kkmQhJPQ" severity="WARNING" base_Constraint="_0XI4AAx3EeCbT6kkmQhJPQ">
+    <ruleId>CONF-CONSOL-44</ruleId>
+  </CDA:ConstraintValidation>
+  <Ecore:EPackage xmi:id="_eDr74DFJEeC0S8qbN3Km1g" base_Package="_qQyD8jxVEd6JwqSGecoePg" packageName="consol" nsPrefix="consol" nsURI="http://www.openhealthtools.org/mdht/uml/cda/consol" basePackage="org.openhealthtools.mdht.uml.cda" prefix="CONSOL"/>
+  <Ecore:EClass xmi:id="_eDtKADFJEeC0S8qbN3Km1g" base_Class="_MwGRIGeLEd-ilOLYnIx0jA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.3' constraints.validation.error='GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsPersonHasName GeneralHeaderConstraintsRolesShallHaveAddrAndTelecom GeneralHeaderConstraintsOrganizationsHaveContactInfo GeneralHeaderConstraintsTimePreciseToDay GeneralHeaderConstraintsTimePreciseToYear GeneralHeaderConstraintsTelephoneMatchesRegex GeneralHeaderConstraintsHasTelephoneDialingDigits GeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor GeneralHeaderConstraintsTypeIdExtension GeneralHeaderConstraintsOidLength GeneralHeaderConstraintsSetIdAndVersionNumber GeneralHeaderConstraintsSetIdAndIdAreUnique GeneralHeaderConstraintsCopyTimeNotPresent GeneralHeaderConstraintsHasRecordTargetPatientRole GeneralHeaderConstraintsHasPatientBirthTime GeneralHeaderConstraintsHasAdministrativeGenderCode GeneralHeaderConstraintsHasAuthorTime GeneralHeaderConstraintsHasAssignedAuthorId GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice GeneralHeaderConstraintsHasDataEntererAssignedPerson GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson GeneralHeaderConstraintsAuthenticatorHasAssignedPerson GeneralHeaderConstraintsCode GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsId GeneralHeaderConstraintsLanguageCode GeneralHeaderConstraintsRealmCode GeneralHeaderConstraintsTitle GeneralHeaderConstraintsTypeId' constraints.validation.warning='GeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom GeneralHeaderConstraintsTimePreciseToSecond GeneralHeaderConstraintsTimePreciseToYearAndDay' realmCode.code='US' constraints.validation.info='GeneralHeaderConstraintsHasProviderOrganization GeneralHeaderConstraintsHasDataEntererTime GeneralHeaderConstraintsHasInformant'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>
