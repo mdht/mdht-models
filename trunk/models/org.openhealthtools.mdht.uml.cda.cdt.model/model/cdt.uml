@@ -462,7 +462,7 @@ will be set to PROV.</body>
       </ownedRule>
       <ownedRule xmi:id="_0XI4AAx3EeCbT6kkmQhJPQ" name="timePreciseToYearAndDay" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
         <ownedComment xmi:id="_PSJF4Ax4EeCbT6kkmQhJPQ">
-          <body>Should portion of CON-HP-11 constraitn</body>
+          <body>Should portion of CON-HP-11 constraint</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_ETtpcAx4EeCbT6kkmQhJPQ">
           <language>Analysis</language>
