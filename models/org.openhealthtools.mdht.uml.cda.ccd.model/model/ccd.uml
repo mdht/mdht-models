@@ -425,11 +425,7 @@
     <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_VL2w0IiBEd66cKocspyVOg"/>
     <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_lgLT4IiBEd66cKocspyVOg"/>
     <packagedElement xmi:type="uml:Class" href="sections/ccd-encounters.uml#_2QJRIIiBEd66cKocspyVOg"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_8Xj7UIiBEd66cKocspyVOg" name="Product">
-      <generalization xmi:id="_zWedQIjtEd66cKocspyVOg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p6Zs8EcZEd6besF9iFIJkQ"/>
-      </generalization>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_8Xj7UIiBEd66cKocspyVOg"/>
     <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_zfn5kIjqEd66cKocspyVOg"/>
     <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_CIfVgIjtEd66cKocspyVOg"/>
     <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_C_zYAIjtEd66cKocspyVOg"/>
@@ -566,18 +562,7 @@
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_JpjIEMMVEd6-XpBv2uxYrQ" name="ProductInstance">
-      <generalization xmi:id="_L831kMMVEd6-XpBv2uxYrQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
-      </generalization>
-      <ownedAttribute xmi:id="_ilPwoMMVEd6-XpBv2uxYrQ" name="classCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE2iEDcEd6xYZuu1VKCVw"/>
-        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_peECkMMVEd6-XpBv2uxYrQ" name="MANU">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE2iEDcEd6xYZuu1VKCVw"/>
-          <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE2v0DcEd6xYZuu1VKCVw"/>
-        </defaultValue>
-      </ownedAttribute>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_JpjIEMMVEd6-XpBv2uxYrQ"/>
     <packagedElement xmi:type="uml:Association" href="sections/ccd-alerts.uml#_5QGGgBTbEd-6K-YJpbwRmQ"/>
     <packagedElement xmi:type="uml:Association" href="sections/ccd-problem.uml#_n55kwBWhEd-6K-YJpbwRmQ"/>
     <packagedElement xmi:type="uml:Association" href="sections/ccd-problem.uml#_0k-JMBWhEd-6K-YJpbwRmQ"/>
@@ -730,7 +715,6 @@
   <CDA:CDATemplate xmi:id="_J6uSkHrSEd68l9lQ-TLEBQ" base_Class="_ILkpIHrSEd68l9lQ-TLEBQ" templateId="2.16.840.1.113883.10.20.1.55" assigningAuthorityName="CCD"/>
   <CDA:CDATemplate xmi:id="_g5EdoHrSEd68l9lQ-TLEBQ" base_Class="_e8n_EHrSEd68l9lQ-TLEBQ" templateId="2.16.840.1.113883.10.20.1.39" assigningAuthorityName="CCD"/>
   <CDA:CDATemplate xmi:id="_Xv1y0HrTEd68l9lQ-TLEBQ" base_Class="_V3Jy4HrTEd68l9lQ-TLEBQ" templateId="2.16.840.1.113883.10.20.1.57" assigningAuthorityName="CCD"/>
-  <CDA:CDATemplate xmi:id="_P0aVkIiCEd66cKocspyVOg" base_Class="_8Xj7UIiBEd66cKocspyVOg" templateId="2.16.840.1.113883.10.20.1.53" assigningAuthorityName="CCD"/>
   <CDA:CodegenSupport xmi:id="_HzmFgJm0Ed6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="ccd" nsURI="http://www.openhealthtools.org/mdht/uml/cda/ccd" packageName="ccd" prefix="CCD" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
   <CDA:AssociationValidation xmi:id="_B7-NYKPREd6t_4WfM070fA" severity="WARNING" base_Association="_3FDjoKPPEd6t_4WfM070fA">
     <ruleId>CONF-140</ruleId>
@@ -784,8 +768,6 @@
   <CDA:AssociationValidation xmi:id="_bVC2QMMREd6-XpBv2uxYrQ" message="CCD Functional Status Section SHOULD contain [1..*] entry such that it, SHALL contain [1..1] Problem Act (templateId: 2.16.840.1.113883.10.20.1.27)" severity="WARNING"/>
   <CDA:AssociationValidation xmi:id="_iMfPMMMREd6-XpBv2uxYrQ" message="CCD Functional Status Section SHOULD contain [1..*] entry such that it, SHALL contain [1..1] Result Organizer (templateId: 2.16.840.1.113883.10.20.1.32)" severity="WARNING"/>
   <CDA:CDATemplate xmi:id="_7L0akMMREd6-XpBv2uxYrQ" base_Class="_04s2sMMREd6-XpBv2uxYrQ" templateId="2.16.840.1.113883.10.20.1.44" assigningAuthorityName="CCD"/>
-  <CDA:CDATemplate xmi:id="_O-gakMMVEd6-XpBv2uxYrQ" base_Class="_JpjIEMMVEd6-XpBv2uxYrQ" templateId="2.16.840.1.113883.10.20.1.52" assigningAuthorityName="CCD"/>
-  <CDA:PropertyValidation xmi:id="_ilPwosMVEd6-XpBv2uxYrQ" base_Property="_ilPwoMMVEd6-XpBv2uxYrQ"/>
   <CDA:PropertyValidation xmi:id="_9SGNYP_UEd6Y8ICOr4M99Q" base_Property="_HKnJkIt0Ed639sxyAgfSmw">
     <ruleId>CONF-170</ruleId>
   </CDA:PropertyValidation>
