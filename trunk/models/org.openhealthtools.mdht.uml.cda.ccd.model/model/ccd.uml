@@ -664,6 +664,7 @@
     <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_1nsVAOeYEd-aaJELhEID-A"/>
     <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_3D070eeYEd-aaJELhEID-A"/>
     <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_1481YOeeEd-aaJELhEID-A"/>
+    <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_pEpVMSp1EeCuGIaOlnUvyw"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_WE95UO3TEd-dJvThfIiQuA" name="SupportParticipant">
       <generalization xmi:id="_WE-gYO3TEd-dJvThfIiQuA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
