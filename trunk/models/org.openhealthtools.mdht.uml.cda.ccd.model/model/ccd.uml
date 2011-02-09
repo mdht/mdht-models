@@ -303,16 +303,25 @@
     <packagedElement xmi:type="uml:Class" href="sections/ccd-alerts.uml#_PgsSAHrREd68l9lQ-TLEBQ"/>
     <packagedElement xmi:type="uml:Class" href="sections/ccd-alerts.uml#_qV72IHrREd68l9lQ-TLEBQ"/>
     <packagedElement xmi:type="uml:Class" xmi:id="__XC4cHrREd68l9lQ-TLEBQ" name="ReactionObservation">
-      <ownedRule xmi:id="__CX4MBXNEd-6K-YJpbwRmQ" name="reactionInterventionTypeCode" constrainedElement="__XC4cHrREd68l9lQ-TLEBQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IrUIYBXOEd-6K-YJpbwRmQ">
+      <ownedComment xmi:id="_CozvwDPpEeC5WtVOSkkuzw">
+        <body>A reaction represents an adverse event due to an administered or exposed substance. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions. Significant reactions are to be listed in the Alerts section. Reactions in the Medications section can be used to track reactions associated with individual substance administrations or to track routine follow up to an administration (e.g. &quot;no adverse reaction 30 minutes post administration&quot;).</body>
+      </ownedComment>
+      <ownedRule xmi:id="_VMu98DPpEeC5WtVOSkkuzw" name="hasReactionIntervention" constrainedElement="__XC4cHrREd68l9lQ-TLEBQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aeLCYDPpEeC5WtVOSkkuzw">
           <language>Analysis</language>
-          <body>The value for entryRelationship / @typeCode in a relationship between a reaction observation and reaction intervention SHALL be &quot;RSON&quot; &quot;Has reason&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
+          <body>A reaction observation MAY contain one or more reation interventions.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_OgP7cBXOEd-6K-YJpbwRmQ" name="reactionInterventionType" constrainedElement="__XC4cHrREd68l9lQ-TLEBQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLkWoBXOEd-6K-YJpbwRmQ">
           <language>Analysis</language>
           <body>A reaction observation MAY contain one or more reation interventions. A reaction intervention SHALL be represented as a procedure activity (templateId 2.16.840.1.113883.10.20.1.29), a medication activity (templateId 2.16.840.1.113883.10.20.1.24), or some other clinical statement.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="__CX4MBXNEd-6K-YJpbwRmQ" name="reactionInterventionTypeCode" constrainedElement="__XC4cHrREd68l9lQ-TLEBQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IrUIYBXOEd-6K-YJpbwRmQ">
+          <language>Analysis</language>
+          <body>The value for entryRelationship / @typeCode in a relationship between a reaction observation and reaction intervention SHALL be &quot;RSON&quot; &quot;Has reason&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_PipkYHrSEd68l9lQ-TLEBQ">
@@ -777,7 +786,9 @@
   <CDA:PropertyValidation xmi:id="_9SICkP_UEd6Y8ICOr4M99Q" base_Property="_qWtq8It0Ed639sxyAgfSmw">
     <ruleId>CONF-181</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_9SZIUP_UEd6Y8ICOr4M99Q" base_Property="_tGU2kIHWEd6Ncrr6L3Ublw"/>
+  <CDA:PropertyValidation xmi:id="_9SZIUP_UEd6Y8ICOr4M99Q" base_Property="_tGU2kIHWEd6Ncrr6L3Ublw">
+    <ruleId>CONF-295</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_9SaWcP_UEd6Y8ICOr4M99Q" base_Property="_auAGIItzEd639sxyAgfSmw">
     <ruleId>CONF-510</ruleId>
   </CDA:PropertyValidation>
@@ -812,13 +823,24 @@
   <CDA:ConstraintValidation xmi:id="_PpNAABWsEd-6K-YJpbwRmQ" base_Constraint="_-c6TIBWrEd-6K-YJpbwRmQ">
     <ruleId>CONF-183</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:AssociationValidation xmi:id="_iSV40BXBEd-6K-YJpbwRmQ" severity="INFO" base_Association="_g6vMsBXBEd-6K-YJpbwRmQ"/>
-  <CDA:ConstraintValidation xmi:id="_LZgM8BXOEd-6K-YJpbwRmQ" base_Constraint="__CX4MBXNEd-6K-YJpbwRmQ"/>
-  <CDA:ConstraintValidation xmi:id="_SfTK8BXOEd-6K-YJpbwRmQ" base_Constraint="_OgP7cBXOEd-6K-YJpbwRmQ"/>
-  <CDA:PropertyValidation xmi:id="_6avJQBXOEd-6K-YJpbwRmQ" base_Property="_3K_PwBXOEd-6K-YJpbwRmQ"/>
-  <CDA:PropertyValidation xmi:id="_7GIPoBXOEd-6K-YJpbwRmQ" base_Property="_3K_20BXOEd-6K-YJpbwRmQ"/>
-  <CDA:PropertyValidation xmi:id="_KJqgQBXPEd-6K-YJpbwRmQ" base_Property="_HpTcUBXPEd-6K-YJpbwRmQ"/>
-  <CDA:PropertyValidation xmi:id="_MICRcBXPEd-6K-YJpbwRmQ" base_Property="_HpUDYBXPEd-6K-YJpbwRmQ"/>
+  <CDA:ConstraintValidation xmi:id="_LZgM8BXOEd-6K-YJpbwRmQ" base_Constraint="__CX4MBXNEd-6K-YJpbwRmQ">
+    <ruleId>CONF-296</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_SfTK8BXOEd-6K-YJpbwRmQ" base_Constraint="_OgP7cBXOEd-6K-YJpbwRmQ">
+    <ruleId>CONF-297</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_6avJQBXOEd-6K-YJpbwRmQ" base_Property="_3K_PwBXOEd-6K-YJpbwRmQ">
+    <ruleId>CONF-283</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_7GIPoBXOEd-6K-YJpbwRmQ" base_Property="_3K_20BXOEd-6K-YJpbwRmQ">
+    <ruleId>CONF-284</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_KJqgQBXPEd-6K-YJpbwRmQ" base_Property="_HpTcUBXPEd-6K-YJpbwRmQ">
+    <ruleId>CONF-289</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_MICRcBXPEd-6K-YJpbwRmQ" base_Property="_HpUDYBXPEd-6K-YJpbwRmQ">
+    <ruleId>CONF-290</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_YVLfUBZ1Ed-i6Lz80y5G5g" base_Class="_S7rEABZ1Ed-i6Lz80y5G5g" templateId="2.16.840.1.113883.10.20.1.38" assigningAuthorityName="CCD"/>
   <CDA:PropertyValidation xmi:id="_pqYQkBZ1Ed-i6Lz80y5G5g" base_Property="_U9GJMBZ1Ed-i6Lz80y5G5g"/>
   <CDA:PropertyValidation xmi:id="_qSKCQBZ1Ed-i6Lz80y5G5g" base_Property="_U9H-YBZ1Ed-i6Lz80y5G5g"/>
@@ -891,12 +913,18 @@
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_52ZaUCfbEd-4R4ealYN1gQ" code="completed" base_Property="_Hcg8oIHWEd6Ncrr6L3Ublw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-285</ruleId>
+    <ruleId>CONF-286</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_52bPgCfbEd-4R4ealYN1gQ" code="SEV" displayName="Severity observation" base_Property="_tGVdoIHWEd6Ncrr6L3Ublw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-293</ruleId>
+    <ruleId>CONF-294</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_52dEsCfbEd-4R4ealYN1gQ" code="completed" base_Property="_X4FXMIHWEd6Ncrr6L3Ublw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-291</ruleId>
+    <ruleId>CONF-292</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_52fg8CfbEd-4R4ealYN1gQ" identifier="2.16.840.1.113883.1.11.20.3" name="AlertStatusCode" version="20061017" base_Property="_1iCUEIHVEd6Ncrr6L3Ublw"/>
   <CDA:CodeSystemConstraint xmi:id="_52h9MCfbEd-4R4ealYN1gQ" code="33999-4" displayName="Status" base_Property="_XvctMHvDEd6jfbAJq2V82w">
@@ -969,4 +997,17 @@
     <ruleId>CONF-509</ruleId>
   </CDA:ConstraintValidation>
   <CDA:AssociationValidation xmi:id="_z_39kKPeEd6t_4WfM070fA" severity="WARNING" base_Association="_meUdEKPeEd6t_4WfM070fA"/>
+  <CDA:ConformsTo xmi:id="_vJAvMDPoEeC5WtVOSkkuzw" base_Generalization="_QQ4jYHrSEd68l9lQ-TLEBQ">
+    <ruleId>CONF-287</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_EuPLMDPpEeC5WtVOSkkuzw" base_Generalization="_PipkYHrSEd68l9lQ-TLEBQ">
+    <ruleId>CONF-282</ruleId>
+  </CDA:ConformsTo>
+  <CDA:EntryRelationship xmi:id="_PsDjoDPpEeC5WtVOSkkuzw" severity="INFO" base_Association="_g6vMsBXBEd-6K-YJpbwRmQ" typeCode="SUBJ">
+    <ruleId>CONF-348</ruleId>
+    <ruleId>CONF-288</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_bGtpEDPpEeC5WtVOSkkuzw" severity="INFO" base_Constraint="_VMu98DPpEeC5WtVOSkkuzw">
+    <ruleId>CONF-280</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

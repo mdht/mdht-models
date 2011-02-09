@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPlugin;
 import org.openhealthtools.mdht.uml.cda.ccd.PatientAwareness;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.hl7.rim.operations.ParticipationOperations;
+import org.openhealthtools.mdht.uml.cda.operations.Participant2Operations;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,16 +37,7 @@ import org.openhealthtools.mdht.uml.hl7.rim.operations.ParticipationOperations;
  *
  * @generated
  */
-public class PatientAwarenessOperations extends ParticipationOperations {
-	/**
-	 * The cached environment for evaluating OCL expressions.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	protected static final OCL EOCL_ENV = OCL.newInstance();
-
+public class PatientAwarenessOperations extends Participant2Operations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

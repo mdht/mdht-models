@@ -8,9 +8,12 @@ package org.openhealthtools.mdht.uml.cda.ccd.impl;
 
 import java.util.Map;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationSeriesNumberObservation;
@@ -26,11 +29,25 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  * An implementation of the model object '<em><b>Medication Activity</b></em>'.
  * <!-- end-user-doc -->
  * <p>
+ * The following features are implemented:
+ * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.impl.MedicationActivityImpl#getReactionObservation <em>Reaction Observation</em>}</li>
+ * </ul>
  * </p>
  *
  * @generated
  */
 public class MedicationActivityImpl extends SubstanceAdministrationImpl implements MedicationActivity {
+	/**
+	 * The cached value of the '{@link #getReactionObservation() <em>Reaction Observation</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getReactionObservation()
+	 * @generated
+	 * @ordered
+	 */
+	protected ReactionObservation reactionObservation;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -208,15 +225,6 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivityReactionObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityReactionObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public MedicationSeriesNumberObservation getMedicationSeriesNumberObservation() {
 		return MedicationActivityOperations.getMedicationSeriesNumberObservation(this);
 	}
@@ -244,8 +252,96 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case CCDPackage.MEDICATION_ACTIVITY__REACTION_OBSERVATION:
+				if (resolve) return getReactionObservation();
+				return basicGetReactionObservation();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case CCDPackage.MEDICATION_ACTIVITY__REACTION_OBSERVATION:
+				setReactionObservation((ReactionObservation)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case CCDPackage.MEDICATION_ACTIVITY__REACTION_OBSERVATION:
+				setReactionObservation((ReactionObservation)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case CCDPackage.MEDICATION_ACTIVITY__REACTION_OBSERVATION:
+				return reactionObservation != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ReactionObservation getReactionObservation() {
-		return MedicationActivityOperations.getReactionObservation(this);
+		if (reactionObservation != null && reactionObservation.eIsProxy()) {
+			InternalEObject oldReactionObservation = (InternalEObject)reactionObservation;
+			reactionObservation = (ReactionObservation)eResolveProxy(oldReactionObservation);
+			if (reactionObservation != oldReactionObservation) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CCDPackage.MEDICATION_ACTIVITY__REACTION_OBSERVATION, oldReactionObservation, reactionObservation));
+			}
+		}
+		return reactionObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReactionObservation basicGetReactionObservation() {
+		return reactionObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setReactionObservation(ReactionObservation newReactionObservation) {
+		ReactionObservation oldReactionObservation = reactionObservation;
+		reactionObservation = newReactionObservation;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CCDPackage.MEDICATION_ACTIVITY__REACTION_OBSERVATION, oldReactionObservation, reactionObservation));
 	}
 
 	/**

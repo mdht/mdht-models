@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPlugin;
 import org.openhealthtools.mdht.uml.cda.ccd.PayerEntity;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.hl7.rim.operations.RoleOperations;
+import org.openhealthtools.mdht.uml.cda.operations.AssignedEntityOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,16 +34,7 @@ import org.openhealthtools.mdht.uml.hl7.rim.operations.RoleOperations;
  *
  * @generated
  */
-public class PayerEntityOperations extends RoleOperations {
-	/**
-	 * The cached environment for evaluating OCL expressions.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	protected static final OCL EOCL_ENV = OCL.newInstance();
-
+public class PayerEntityOperations extends AssignedEntityOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

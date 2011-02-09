@@ -183,7 +183,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 */
 	protected static final String VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10160-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+"value.code = '10160-0')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationsSectionCode(MedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Code</em>}' invariant operation.
@@ -201,7 +201,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 * <!-- begin-model-doc -->
 	 * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10160-0' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * value.code = '10160-0')
 	 * @param medicationsSection The receiving '<em><b>Medications Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -380,7 +380,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	public static  EList<MedicationActivity> getMedicationActivities(MedicationsSection medicationsSection) {
 		if (GET_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.MEDICATIONS_SECTION, CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(52));
+			helper.setOperationContext(CCDPackage.Literals.MEDICATIONS_SECTION, CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(54));
 			try {
 				GET_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITIES__EOCL_EXP);
 			}
@@ -426,7 +426,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	public static  EList<SupplyActivity> getSupplyActivities(MedicationsSection medicationsSection) {
 		if (GET_SUPPLY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.MEDICATIONS_SECTION, CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(53));
+			helper.setOperationContext(CCDPackage.Literals.MEDICATIONS_SECTION, CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(55));
 			try {
 				GET_SUPPLY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_SUPPLY_ACTIVITIES__EOCL_EXP);
 			}
