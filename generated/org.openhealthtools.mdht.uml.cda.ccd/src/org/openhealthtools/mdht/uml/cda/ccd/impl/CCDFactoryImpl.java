@@ -139,12 +139,12 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 		switch (eClass.getClassifierID()) {
 			case CCDPackage.MEDICATIONS_SECTION: return createMedicationsSection();
 			case CCDPackage.MEDICATION_ACTIVITY: return createMedicationActivity();
+			case CCDPackage.REACTION_OBSERVATION: return createReactionObservation();
+			case CCDPackage.SEVERITY_OBSERVATION: return createSeverityObservation();
 			case CCDPackage.MEDICATION_SERIES_NUMBER_OBSERVATION: return createMedicationSeriesNumberObservation();
 			case CCDPackage.MEDICATION_STATUS_OBSERVATION: return createMedicationStatusObservation();
 			case CCDPackage.STATUS_OBSERVATION: return createStatusObservation();
 			case CCDPackage.PATIENT_INSTRUCTION: return createPatientInstruction();
-			case CCDPackage.REACTION_OBSERVATION: return createReactionObservation();
-			case CCDPackage.SEVERITY_OBSERVATION: return createSeverityObservation();
 			case CCDPackage.SUPPLY_ACTIVITY: return createSupplyActivity();
 			case CCDPackage.FULFILLMENT_INSTRUCTION: return createFulfillmentInstruction();
 			case CCDPackage.CONTINUITY_OF_CARE_DOCUMENT: return createContinuityOfCareDocument();
