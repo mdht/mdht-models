@@ -39,15 +39,6 @@ import org.openhealthtools.mdht.uml.cda.operations.DataEntererOperations;
  */
 public class ScanDataEntererOperations extends DataEntererOperations {
 	/**
-	 * The cached environment for evaluating OCL expressions.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	protected static final OCL EOCL_ENV = OCL.newInstance();
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

@@ -316,14 +316,6 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID = 28;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Vital Signs Section Vital Signs' of 'Vital Signs Section'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_VITAL_SIGNS = 50;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Vital Signs Section Template Id' of 'Vital Signs Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -340,12 +332,12 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int VITAL_SIGN__VITAL_SIGN_TEMPLATE_ID = 60;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Vital Sign'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Code' of 'Vital Sign'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGN__RESULT_OBSERVATION_CODE = 61;
+	public static final int VITAL_SIGN__RESULT_ORGANIZER_CODE = 61;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Payers Section Template Id' of 'Payers Section'.
@@ -620,6 +612,14 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 49;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Vital Signs Section Vital Sign Entry' of 'Vital Signs Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY = 50;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Family History Section Template Id' of 'Family History Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -885,8 +885,8 @@ public class HITSPValidator extends EObjectValidator {
 		super();
 		ccdValidator = CCDValidator.INSTANCE;
 		iheValidator = IHEValidator.INSTANCE;
-		cdtValidator = CDTValidator.INSTANCE;
 		cdaValidator = CDAValidator.INSTANCE;
+		cdtValidator = CDTValidator.INSTANCE;
 	}
 
 	/**
@@ -1078,6 +1078,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medication, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medication, diagnostics, context);
@@ -1085,6 +1086,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medication, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medication, diagnostics, context);
@@ -1094,6 +1096,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medication, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medication, diagnostics, context);
@@ -1239,6 +1242,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(patientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(patientSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(patientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventRequired(patientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventClassCode(patientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventEffectiveTime(patientSummary, diagnostics, context);
@@ -1464,6 +1469,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(vitalSignsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(vitalSignsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(vitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(vitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(vitalSignsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTemplateId(vitalSignsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionCode(vitalSignsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTitle(vitalSignsSection, diagnostics, context);
@@ -1472,19 +1479,19 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsSection_validateIHEVitalSignsSectionTemplateId(vitalSignsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateCodedVitalSignsSection_validateCodedVitalSignsSectionTemplateId(vitalSignsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateCodedVitalSignsSection_validateCodedVitalSignsSectionVitalSignsOrganizer(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateVitalSignsSection_validateHITSPVitalSignsSectionVitalSigns(vitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSignsSection_validateHITSPVitalSignsSectionVitalSignEntry(vitalSignsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateVitalSignsSection_validateHITSPVitalSignsSectionTemplateId(vitalSignsSection, diagnostics, context);
 		return result;
 	}
 
 	/**
-	 * Validates the validateHITSPVitalSignsSectionVitalSigns constraint of '<em>Vital Signs Section</em>'.
+	 * Validates the validateHITSPVitalSignsSectionVitalSignEntry constraint of '<em>Vital Signs Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsSection_validateHITSPVitalSignsSectionVitalSigns(VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vitalSignsSection.validateHITSPVitalSignsSectionVitalSigns(diagnostics, context);
+	public boolean validateVitalSignsSection_validateHITSPVitalSignsSectionVitalSignEntry(VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return vitalSignsSection.validateHITSPVitalSignsSectionVitalSignEntry(diagnostics, context);
 	}
 
 	/**
@@ -1511,26 +1518,21 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(vitalSign, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(vitalSign, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationReferenceRangeRequired(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInformationSource(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationTemplateId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= validateVitalSign_validateResultObservationCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationValue(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSimpleObservation_validateSimpleObservationTemplateId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSimpleObservation_validateSimpleObservationId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSimpleObservation_validateSimpleObservationStatusCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationTemplateId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationInterpretationCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationMethodCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationTargetSiteCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationValue(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerComponentElement(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerInformationSource(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsOrganizer_validateResultOrganizerTemplateId(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerMoodCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerId(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSign_validateResultOrganizerCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateResultOrganizerStatusCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsOrganizer_validateVitalSignsOrganizerInformationSource(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerRequireResultsOrganizerTemplateID(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerTemplateId(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerClassCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerEffectiveTime(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerId(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerVitalSignObservation(vitalSign, diagnostics, context);
 		if (result || diagnostics != null) result &= validateVitalSign_validateVitalSignTemplateId(vitalSign, diagnostics, context);
 		return result;
 	}
@@ -1546,12 +1548,12 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultObservationCode constraint of '<em>Vital Sign</em>'.
+	 * Validates the validateResultOrganizerCode constraint of '<em>Vital Sign</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSign_validateResultObservationCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSign_validateResultOrganizerCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		// TODO override the constraint, if desired
 		// -> uncomment the scaffolding
 		// -> specify the condition that violates the constraint
@@ -1565,13 +1567,13 @@ public class HITSPValidator extends EObjectValidator {
 						 DIAGNOSTIC_SOURCE,
 						 0,
 						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateResultObservationCode", getObjectLabel(vitalSign, context) },
+						 new Object[] { "validateResultOrganizerCode", getObjectLabel(vitalSign, context) },
 						 new Object[] { vitalSign },
 						 context));
 			}
 			return false;
 		}
-		return iheValidator.validateVitalSignObservation_validateResultObservationCode(vitalSign, diagnostics, context);
+		return iheValidator.validateVitalSignsOrganizer_validateResultOrganizerCode(vitalSign, diagnostics, context);
 	}
 
 	/**
@@ -1588,6 +1590,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(payersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(payersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(payersSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(payersSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(payersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validatePayersSection_validatePayersSectionTemplateId(payersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validatePayersSection_validatePayersSectionCode(payersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validatePayersSection_validatePayersSectionTitle(payersSection, diagnostics, context);
@@ -1623,6 +1627,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(allergiesReactionsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(allergiesReactionsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(allergiesReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(allergiesReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(allergiesReactionsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateAlertsSection_validateAlertsSectionTemplateId(allergiesReactionsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateAlertsSection_validateAlertsSectionCode(allergiesReactionsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateAlertsSection_validateAlertsSectionTitle(allergiesReactionsSection, diagnostics, context);
@@ -1657,6 +1663,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(problemListSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(problemListSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(problemListSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(problemListSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(problemListSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemSection_validateProblemSectionTemplateId(problemListSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemSection_validateProblemSectionCode(problemListSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemSection_validateProblemSectionTitle(problemListSection, diagnostics, context);
@@ -1703,6 +1711,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(historyOfPastIllnessSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(historyOfPastIllnessSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(historyOfPastIllnessSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(historyOfPastIllnessSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(historyOfPastIllnessSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateHistoryOfPastIllnessSection_validateHistoryOfPastIllnessSectionTemplateId(historyOfPastIllnessSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateHistoryOfPastIllnessSection_validateHistoryOfPastIllnessSectionCode(historyOfPastIllnessSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHistoryOfPastIllnessSection_validateHITSPHistoryOfPastIllnessSectionTemplateId(historyOfPastIllnessSection, diagnostics, context);
@@ -1733,6 +1743,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(chiefComplaintSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(chiefComplaintSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(chiefComplaintSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(chiefComplaintSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(chiefComplaintSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateChiefComplaintSection_validateChiefComplaintSectionTemplateId(chiefComplaintSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateChiefComplaintSection_validateChiefComplaintSectionCode(chiefComplaintSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateChiefComplaintSection_validateHITSPChiefComplaintSectionTemplateId(chiefComplaintSection, diagnostics, context);
@@ -1763,6 +1775,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(reasonForReferralSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(reasonForReferralSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(reasonForReferralSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(reasonForReferralSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(reasonForReferralSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateReasonForReferralSection_validateReasonForReferralSectionTemplateId(reasonForReferralSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateReasonForReferralSection_validateReasonForReferralSectionCode(reasonForReferralSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateReasonForReferralSection_validateHITSPReasonForReferralSectionTemplateId(reasonForReferralSection, diagnostics, context);
@@ -1793,6 +1807,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(historyOfPresentIllness, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(historyOfPresentIllness, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(historyOfPresentIllness, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(historyOfPresentIllness, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(historyOfPresentIllness, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateHistoryOfPresentIllness_validateHistoryOfPresentIllnessTemplateId(historyOfPresentIllness, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateHistoryOfPresentIllness_validateHistoryOfPresentIllnessCode(historyOfPresentIllness, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHistoryOfPresentIllness_validateHITSPHistoryOfPresentIllnessTemplateId(historyOfPresentIllness, diagnostics, context);
@@ -1823,6 +1839,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(surgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(surgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(surgeriesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(surgeriesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(surgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProceduresSection_validateProceduresSectionTemplateId(surgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProceduresSection_validateProceduresSectionCode(surgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProceduresSection_validateProceduresSectionTitle(surgeriesSection, diagnostics, context);
@@ -1867,6 +1885,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionClinicalStatements(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionTemplateId(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionCode(functionalStatusSection, diagnostics, context);
@@ -1899,6 +1919,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(hospitalAdmissionDiagnosisSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(hospitalAdmissionDiagnosisSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(hospitalAdmissionDiagnosisSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(hospitalAdmissionDiagnosisSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(hospitalAdmissionDiagnosisSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateHospitalAdmissionDiagnosisSection_validateHospitalAdmissionDiagnosisSectionTemplateId(hospitalAdmissionDiagnosisSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateHospitalAdmissionDiagnosisSection_validateHospitalAdmissionDiagnosisSectionCode(hospitalAdmissionDiagnosisSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHospitalAdmissionDiagnosisSection_validateHITSPHospitalAdmissionDiagnosisSectionTemplateId(hospitalAdmissionDiagnosisSection, diagnostics, context);
@@ -1929,6 +1951,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(dischargeDiagnosisSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(dischargeDiagnosisSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dischargeDiagnosisSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(dischargeDiagnosisSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(dischargeDiagnosisSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateDischargeDiagnosisSection_validateDischargeDiagnosisSectionTemplateId(dischargeDiagnosisSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateDischargeDiagnosisSection_validateDischargeDiagnosisSectionCode(dischargeDiagnosisSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateDischargeDiagnosisSection_validateHITSPDischargeDiagnosisSectionTemplateId(dischargeDiagnosisSection, diagnostics, context);
@@ -1959,6 +1983,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(medicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(medicationsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(medicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionHasMedicationOrSupplyActivity(medicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTemplateId(medicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionCode(medicationsSection, diagnostics, context);
@@ -2005,6 +2031,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(admissionMedicationHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(admissionMedicationHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(admissionMedicationHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(admissionMedicationHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(admissionMedicationHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateAdmissionMedicationHistorySection_validateAdmissionMedicationHistorySectionTemplateId(admissionMedicationHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateAdmissionMedicationHistorySection_validateAdmissionMedicationHistorySectionCode(admissionMedicationHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateAdmissionMedicationHistorySection_validateHITSPAdmissionMedicationHistorySectionTemplateId(admissionMedicationHistorySection, diagnostics, context);
@@ -2035,6 +2063,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(hospitalDischargeMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(hospitalDischargeMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(hospitalDischargeMedicationsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(hospitalDischargeMedicationsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(hospitalDischargeMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionTemplateId(hospitalDischargeMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionCode(hospitalDischargeMedicationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHospitalDischargeMedicationsSection_validateHITSPHospitalDischargeMedicationsSectionTemplateId(hospitalDischargeMedicationsSection, diagnostics, context);
@@ -2065,6 +2095,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(medicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionTemplateId(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionCode(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedicationsAdministeredSection_validateHITSPMedicationsAdministeredSectionTemplateId(medicationsAdministeredSection, diagnostics, context);
@@ -2095,6 +2127,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(advanceDirectivesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(advanceDirectivesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(advanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(advanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(advanceDirectivesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTemplateId(advanceDirectivesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionCode(advanceDirectivesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTitle(advanceDirectivesSection, diagnostics, context);
@@ -2129,6 +2163,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(immunizationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(immunizationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(immunizationsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(immunizationsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(immunizationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionClinicalStatements(immunizationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTemplateId(immunizationsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionCode(immunizationsSection, diagnostics, context);
@@ -2175,6 +2211,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(physicalExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(physicalExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(physicalExamSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(physicalExamSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(physicalExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validatePhysicalExamNarrativeSection_validatePhysicalExamNarrativeSectionTemplateId(physicalExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validatePhysicalExamNarrativeSection_validatePhysicalExamNarrativeSectionCode(physicalExamSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validatePhysicalExamSection_validatePhysicalExamSectionTemplateId(physicalExamSection, diagnostics, context);
@@ -2206,6 +2244,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(reviewOfSystemsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(reviewOfSystemsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(reviewOfSystemsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(reviewOfSystemsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(reviewOfSystemsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateReviewOfSystemsSection_validateReviewOfSystemsSectionTemplateId(reviewOfSystemsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateReviewOfSystemsSection_validateReviewOfSystemsSectionCode(reviewOfSystemsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateReviewOfSystemsSection_validateHITSPReviewOfSystemsSectionTemplateId(reviewOfSystemsSection, diagnostics, context);
@@ -2236,6 +2276,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(hospitalCourseSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(hospitalCourseSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(hospitalCourseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(hospitalCourseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(hospitalCourseSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateHospitalCourseSection_validateHospitalCourseSectionTemplateId(hospitalCourseSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateHospitalCourseSection_validateHospitalCourseSectionCode(hospitalCourseSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateHospitalCourseSection_validateHITSPHospitalCourseSectionTemplateId(hospitalCourseSection, diagnostics, context);
@@ -2266,6 +2308,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(diagnosticResultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(diagnosticResultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(diagnosticResultsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(diagnosticResultsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(diagnosticResultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionTemplateId(diagnosticResultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionCode(diagnosticResultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionExternalReference(diagnosticResultsSection, diagnostics, context);
@@ -2320,6 +2364,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(assessmentAndPlanSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(assessmentAndPlanSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(assessmentAndPlanSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(assessmentAndPlanSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(assessmentAndPlanSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateAssessmentAndPlanSection_validateAssessmentAndPlanSectionTemplateId(assessmentAndPlanSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateAssessmentAndPlanSection_validateAssessmentAndPlanSectionCode(assessmentAndPlanSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateAssessmentAndPlanSection_validateHITSPAssessmentAndPlanSectionTemplateId(assessmentAndPlanSection, diagnostics, context);
@@ -2350,6 +2396,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(planOfCareSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(planOfCareSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(planOfCareSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(planOfCareSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(planOfCareSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionTemplateId(planOfCareSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionCode(planOfCareSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionTitle(planOfCareSection, diagnostics, context);
@@ -2389,6 +2437,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(familyHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(familyHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(familyHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(familyHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(familyHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionTemplateId(familyHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionCode(familyHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionTitle(familyHistorySection, diagnostics, context);
@@ -2421,6 +2471,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(socialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(socialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTemplateId(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionCode(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(socialHistorySection, diagnostics, context);
@@ -2453,6 +2505,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(encountersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(encountersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(encountersSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(encountersSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(encountersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateEncountersSection_validateEncountersSectionTemplateId(encountersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateEncountersSection_validateEncountersSectionCode(encountersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateEncountersSection_validateEncountersSectionTitle(encountersSection, diagnostics, context);
@@ -2497,6 +2551,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(medicalEquipmentSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicalEquipmentSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicalEquipmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(medicalEquipmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(medicalEquipmentSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionTemplateId(medicalEquipmentSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionCode(medicalEquipmentSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionTitle(medicalEquipmentSection, diagnostics, context);
@@ -2731,6 +2787,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(immunization, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(immunization, diagnostics, context);
@@ -2738,6 +2795,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(immunization, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(immunization, diagnostics, context);
@@ -2747,6 +2805,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(immunization, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateImmunization_validateImmunizationTemplateId(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= validateImmunization_validateHITSPImmunizationTemplateId(immunization, diagnostics, context);
 		return result;
@@ -2811,6 +2870,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationNormalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medicationNormalDose, diagnostics, context);
@@ -2818,6 +2878,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medicationNormalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medicationNormalDose, diagnostics, context);
@@ -2827,6 +2888,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationNormalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationNormalDose, diagnostics, context);
@@ -2854,6 +2916,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationSplitDose, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medicationSplitDose, diagnostics, context);
@@ -2861,6 +2924,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medicationSplitDose, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medicationSplitDose, diagnostics, context);
@@ -2870,6 +2934,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationSplitDose, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationSplitDose, diagnostics, context);
@@ -2897,6 +2962,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medicationTaperedDose, diagnostics, context);
@@ -2904,6 +2970,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medicationTaperedDose, diagnostics, context);
@@ -2913,6 +2980,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationTaperedDose, diagnostics, context);
@@ -2969,6 +3037,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationConditionalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medicationConditionalDose, diagnostics, context);
@@ -2976,6 +3045,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medicationConditionalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medicationConditionalDose, diagnostics, context);
@@ -2985,6 +3055,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationConditionalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationConditionalDose, diagnostics, context);
@@ -3012,6 +3083,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationCombinationMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medicationCombinationMedication, diagnostics, context);
@@ -3019,6 +3091,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medicationCombinationMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medicationCombinationMedication, diagnostics, context);
@@ -3028,6 +3101,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationCombinationMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationCombinationMedication, diagnostics, context);
@@ -3147,6 +3221,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(supportGuardian, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(supportGuardian, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateGuardian_validateGuardianChoice(supportGuardian, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateGuardian_validateClassCode(supportGuardian, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianTemplateId(supportGuardian, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianAddr(supportGuardian, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianClassCode(supportGuardian, diagnostics, context);
@@ -3180,6 +3255,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(supportParticipant, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(supportParticipant, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(supportParticipant, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateParticipant1_validateContextControlCode(supportParticipant, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validatePatientContactParticipant_validatePatientContactParticipantTemplateId(supportParticipant, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validatePatientContactParticipant_validatePatientContactParticipantTime(supportParticipant, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validatePatientContactParticipant_validatePatientContactParticipantTypeCode(supportParticipant, diagnostics, context);
@@ -3211,6 +3287,8 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(unstructuredDocument, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(unstructuredDocument, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(unstructuredDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(unstructuredDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(unstructuredDocument, diagnostics, context);
 		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(unstructuredDocument, diagnostics, context);
 		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(unstructuredDocument, diagnostics, context);
 		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(unstructuredDocument, diagnostics, context);
@@ -3344,6 +3422,11 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationInformation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationInformation, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateManufacturedProduct_validateManufacturedDrugOrOtherMaterial(medicationInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateManufacturedProduct_validateClassCode(medicationInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProduct_validateProductHasMaterial(medicationInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProduct_validateProductHasMaterialCode(medicationInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProduct_validateProductHasMaterialCodeOriginalText(medicationInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProduct_validateProductHasMaterialName(medicationInformation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProduct_validateProductTemplateId(medicationInformation, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateProductEntry_validateProductEntryTemplateId(medicationInformation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedicationInformation_validateMedicationInformationTemplateId(medicationInformation, diagnostics, context);

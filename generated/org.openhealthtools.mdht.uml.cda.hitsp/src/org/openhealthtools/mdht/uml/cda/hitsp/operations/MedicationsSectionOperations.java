@@ -197,7 +197,7 @@ public class MedicationsSectionOperations extends org.openhealthtools.mdht.uml.c
 	public static  EList<Medication> getHITSPMedications(MedicationsSection medicationsSection) {
 		if (GET_HITSP_MEDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.MEDICATIONS_SECTION, HITSPPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(59));
+			helper.setOperationContext(HITSPPackage.Literals.MEDICATIONS_SECTION, HITSPPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(61));
 			try {
 				GET_HITSP_MEDICATIONS__EOCL_QRY = helper.createQuery(GET_HITSP_MEDICATIONS__EOCL_EXP);
 			}

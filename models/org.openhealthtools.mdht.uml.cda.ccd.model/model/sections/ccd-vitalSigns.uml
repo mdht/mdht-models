@@ -10,14 +10,14 @@
 &lt;/p>&#xD;
 &lt;p>&#xD;
     Vital signs are represented like other results (as defined in &lt;b>&lt;i>Results&#xD;
-    Section&lt;/i>&lt;/b>), but are aggregated into their own section in order to follow clinical&#xD;
+    Section&lt;/i>&lt;/b>) with additional vocabulary constraints, but are aggregated into their own section in order to follow clinical&#xD;
     conventions.&#xD;
 &lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_zaNJsBtIEd-vGNAsDUJvgw" name="titleValue" constrainedElement="_GKpeMKPaEd6t_4WfM070fA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_1jpicBtIEd-vGNAsDUJvgw">
         <language>Analysis</language>
-        <body>Contains a case-insensitive language-insensitive string containing 'vital signs'.</body>
+        <body>title Contains a case-insensitive language-insensitive string containing 'vital signs'.</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_aEDRkKPaEd6t_4WfM070fA">
@@ -42,6 +42,9 @@
   </uml:Class>
   <uml:Class xmi:id="_wN4O0K3zEd6_ioDelDcPPg" name="VitalSignsOrganizer">
     <ownedRule xmi:id="_MpjHABtJEd-vGNAsDUJvgw" name="informationSource" constrainedElement="_wN4O0K3zEd6_ioDelDcPPg">
+      <ownedComment xmi:id="_Bpzg8DPVEeCrbMDN9vkyXg">
+        <body>A vital signs organizer SHALL contain one or more sources of information, as defined in section &lt;b>&lt;i>Source&lt;/i>&lt;/b>.</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pus6EBtJEd-vGNAsDUJvgw">
         <language>Analysis</language>
         <language>OCL</language>
@@ -60,13 +63,28 @@
     </ownedEnd>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_fE-NwKPaEd6t_4WfM070fA" base_Class="_GKpeMKPaEd6t_4WfM070fA" templateId="2.16.840.1.113883.10.20.1.16" assigningAuthorityName="CCD"/>
-  <CDA:TextValue xmi:id="_dcoLwK3yEd6_ioDelDcPPg" base_Property="_K6UHIK3yEd6_ioDelDcPPg"/>
+  <CDA:TextValue xmi:id="_dcoLwK3yEd6_ioDelDcPPg" base_Property="_K6UHIK3yEd6_ioDelDcPPg">
+    <ruleId>CONF-384</ruleId>
+  </CDA:TextValue>
   <CDA:CDATemplate xmi:id="_3x-SYK3zEd6_ioDelDcPPg" base_Class="_wN4O0K3zEd6_ioDelDcPPg" templateId="2.16.840.1.113883.10.20.1.35" assigningAuthorityName="CCD"/>
-  <CDA:AssociationValidation xmi:id="_DyVs8K30Ed6_ioDelDcPPg" severity="WARNING" base_Association="__3xU0K3zEd6_ioDelDcPPg"/>
-  <CDA:PropertyValidation xmi:id="_jcpg0BtIEd-vGNAsDUJvgw" base_Property="_iR-dcBtIEd-vGNAsDUJvgw"/>
-  <CDA:ConstraintValidation xmi:id="_0zWG4BtIEd-vGNAsDUJvgw" severity="WARNING" base_Constraint="_zaNJsBtIEd-vGNAsDUJvgw"/>
-  <CDA:ConstraintValidation xmi:id="_OPvBsBtJEd-vGNAsDUJvgw" base_Constraint="_MpjHABtJEd-vGNAsDUJvgw"/>
+  <CDA:AssociationValidation xmi:id="_DyVs8K30Ed6_ioDelDcPPg" severity="WARNING" base_Association="__3xU0K3zEd6_ioDelDcPPg">
+    <ruleId>CONF-381</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_jcpg0BtIEd-vGNAsDUJvgw" base_Property="_iR-dcBtIEd-vGNAsDUJvgw">
+    <ruleId>CONF-381</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_0zWG4BtIEd-vGNAsDUJvgw" severity="WARNING" base_Constraint="_zaNJsBtIEd-vGNAsDUJvgw">
+    <ruleId>CONF-385</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_OPvBsBtJEd-vGNAsDUJvgw" base_Constraint="_MpjHABtJEd-vGNAsDUJvgw">
+    <ruleId>CONF-387</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_52xNwCfbEd-4R4ealYN1gQ" code="8716-3" displayName="Vital signs" base_Property="_K6ZmsK3yEd6_ioDelDcPPg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-382</ruleId>
+    <ruleId>CONF-383</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:ConformsTo xmi:id="_HqLvADPVEeCrbMDN9vkyXg" base_Generalization="_1CKdMK3zEd6_ioDelDcPPg">
+    <ruleId>CONF-386</ruleId>
+  </CDA:ConformsTo>
 </xmi:XMI>

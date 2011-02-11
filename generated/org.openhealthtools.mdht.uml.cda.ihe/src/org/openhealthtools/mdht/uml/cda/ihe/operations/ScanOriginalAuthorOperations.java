@@ -38,15 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.AuthorOperations;
  */
 public class ScanOriginalAuthorOperations extends AuthorOperations {
 	/**
-	 * The cached environment for evaluating OCL expressions.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	protected static final OCL EOCL_ENV = OCL.newInstance();
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

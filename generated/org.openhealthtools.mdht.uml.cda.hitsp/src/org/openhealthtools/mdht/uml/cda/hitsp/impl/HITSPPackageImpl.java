@@ -1190,7 +1190,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		diagnosticResultsSectionEClass.getESuperTypes().add(theIHEPackage.getCodedResultsSection());
 		resultEClass.getESuperTypes().add(theCCDPackage.getResultObservation());
 		resultEClass.getESuperTypes().add(theIHEPackage.getSimpleObservation());
-		vitalSignEClass.getESuperTypes().add(theIHEPackage.getVitalSignObservation());
+		vitalSignEClass.getESuperTypes().add(theIHEPackage.getVitalSignsOrganizer());
 		historyOfPastIllnessSectionEClass.getESuperTypes().add(theIHEPackage.getHistoryOfPastIllnessSection());
 		chiefComplaintSectionEClass.getESuperTypes().add(theIHEPackage.getChiefComplaintSection());
 		reasonForReferralSectionEClass.getESuperTypes().add(theIHEPackage.getReasonForReferralSection());
@@ -1743,7 +1743,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 
 		initEClass(vitalSignsSectionEClass, VitalSignsSection.class, "VitalSignsSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(vitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateHITSPVitalSignsSectionVitalSigns", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(vitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateHITSPVitalSignsSectionVitalSignEntry", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2334,7 +2334,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		   source, 
 		   new String[] {
 			 "templateId.root", "2.16.840.1.113883.3.88.11.83.119",
-			 "constraints.validation.error", "HITSPVitalSignsSectionTemplateId HITSPVitalSignsSectionVitalSigns"
+			 "constraints.validation.error", "HITSPVitalSignsSectionTemplateId HITSPVitalSignsSectionVitalSignEntry"
 		   });											
 		addAnnotation
 		  (diagnosticResultsSectionEClass, 
@@ -2356,7 +2356,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		   new String[] {
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "templateId.root", "2.16.840.1.113883.3.88.11.83.14",
-			 "constraints.validation.error", "VitalSignTemplateId ResultObservationCode",
+			 "constraints.validation.error", "VitalSignTemplateId ResultOrganizerCode",
 			 "code.codeSystemName", "LOINC"
 		   });								
 		addAnnotation

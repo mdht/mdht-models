@@ -197,7 +197,7 @@ public class ImmunizationsSectionOperations extends org.openhealthtools.mdht.uml
 	public static  EList<Immunization> getImmunizations(ImmunizationsSection immunizationsSection) {
 		if (GET_IMMUNIZATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.IMMUNIZATIONS_SECTION, IHEPackage.Literals.IMMUNIZATIONS_SECTION.getEAllOperations().get(54));
+			helper.setOperationContext(IHEPackage.Literals.IMMUNIZATIONS_SECTION, IHEPackage.Literals.IMMUNIZATIONS_SECTION.getEAllOperations().get(56));
 			try {
 				GET_IMMUNIZATIONS__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS__EOCL_EXP);
 			}

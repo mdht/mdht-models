@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedVitalSignsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getVitalSignsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.119' constraints.validation.error='HITSPVitalSignsSectionTemplateId HITSPVitalSignsSectionVitalSigns'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.119' constraints.validation.error='HITSPVitalSignsSectionTemplateId HITSPVitalSignsSectionVitalSignEntry'"
  * @generated
  */
 public interface VitalSignsSection extends CodedVitalSignsSection {
@@ -39,7 +39,7 @@ public interface VitalSignsSection extends CodedVitalSignsSection {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ihe::VitalSignsOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(hitsp::VitalSign)))'"
 	 * @generated
 	 */
-	boolean validateHITSPVitalSignsSectionVitalSigns(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHITSPVitalSignsSectionVitalSignEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
