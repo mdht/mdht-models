@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Patient Summary"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.3.88.11.32.1]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.3.88.11.32.1]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Patient Summary</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Patient Summary</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.32.1</tt>]</p>
+
+
+<div class="section">
+<p class="p">This Component describes the document content that summarizes a consumer's medical status for the purpose of health information exchange. While an EHR or PHR system can contain much more information, this Component only deals with the summary information to be exchanged between such systems as established as requirements described in AHIC Use Cases.</p>
+
+</div>
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/MedicalDocument.html" title="[ClinicalDocument: templateId 1.3.6.1.4.1.19376.1.5.3.1.1.1]">IHE Medical Document</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.1.1</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/ContinuityOfCareDocument.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.1]">CCD Continuity Of Care Document</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1</tt>)</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="AdvanceDirectivesSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.116]">HITSP Advance Directives Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.116</tt>) (C32-[CT1-1])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="AllergiesReactionsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.102]">HITSP Allergies Reactions Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.102</tt>) (C32-[CT1-2])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..*] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="Comment.html" title="[Act: templateId 2.16.840.1.113883.3.88.11.83.11]">HITSP Comment</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.11</tt>) (C32-[CT1-3])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="ProblemListSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.103]">HITSP Problem List Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.103</tt>) (C32-[CT1-4])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="EncountersSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.127]">HITSP Encounters Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.127</tt>) (C32-[CT1-5])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="ImmunizationsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.117]">HITSP Immunizations Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.117</tt>) (C32-[CT1-7])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="PayersSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.101]">HITSP Payers Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.101</tt>) (C32-[CT1-9])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="MedicationsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.112]">HITSP Medications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.112</tt>) (C32-[CT1-11])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="PlanOfCareSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.124]">HITSP Plan Of Care Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.124</tt>) (C32-[CT1-13])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="generated/../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/PregnancyHistorySection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4]">IHE Pregnancy History Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4</tt>) (C32-[CT1-14])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="SurgeriesSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.108]">HITSP Surgeries Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.108</tt>) (C32-[CT1-15])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain [1..*] <tt class="ph tt">supportHeaders</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="Support.html">HITSP Support</a> (C32-[CT1-16])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="VitalSignsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.119]">HITSP Vital Signs Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.119</tt>) (C32-[CT1-17])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
+<li class="li">contains <a class="xref" href="DiagnosticResultsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.122]">HITSP Diagnostic Results Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.122</tt>) (C32-[CT1-18])</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: Contains 0..* HealthcareProvider in cda:documentationOf/cda:serviceEvent/cda:performer (C32-[CT1-6])</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains 0..* InformationSource in ancestor-or-self::./cda:author[1] (C32-[CT1-8])</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains 0..* LanguageSpoken in cda:recordTarget/cda:patientRole/cda:patient/cda:languageCommunication (C32-[CT1-10])</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains 1..1 Person Information in cda:recordTarget/cda:patientRole (C32-[CT1-12])</li>
+
+</ol>
+
+
+<p class="p"/>
+
+<div class="fig fignone"><span class="figcap">Figure 1. Patient Summary example</span>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;realmCode code="US"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1" assigningAuthorityName="CCD Continuity Of Care Document"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.3" assigningAuthorityName="CDT General Header Constraints"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1" assigningAuthorityName="IHE Medical Document"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.32.1" assigningAuthorityName="HITSP Patient Summary"/&gt;
+  &lt;id root="078474a6-2064-4960-8020-560ed2c57c2f"/&gt;
+  &lt;code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of episode note"/&gt;
+  &lt;title/&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode/&gt;
+  &lt;languageCode/&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.1" assigningAuthorityName="CCD Advance Directives Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.34" assigningAuthorityName="IHE Advance Directives Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.35" assigningAuthorityName="IHE Coded Advance Directives Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.116" assigningAuthorityName="HITSP Advance Directives Section"/&gt;
+          &lt;code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/&gt;
+          &lt;title&gt;Advance directives&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.2" assigningAuthorityName="CCD Alerts Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13" assigningAuthorityName="IHE Allergies Reactions Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.102" assigningAuthorityName="HITSP Allergies Reactions Section"/&gt;
+          &lt;code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/&gt;
+          &lt;title&gt;Allergies, adverse reactions, alerts&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.11" assigningAuthorityName="CCD Problem Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6" assigningAuthorityName="IHE Active Problems Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.103" assigningAuthorityName="HITSP Problem List Section"/&gt;
+          &lt;code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/&gt;
+          &lt;title&gt;Problem list&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.3" assigningAuthorityName="CCD Encounters Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.3" assigningAuthorityName="IHE Encounter History Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.127" assigningAuthorityName="HITSP Encounters Section"/&gt;
+          &lt;code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/&gt;
+          &lt;title&gt;History of encounters&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.6" assigningAuthorityName="CCD Immunizations Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23" assigningAuthorityName="IHE Immunizations Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.117" assigningAuthorityName="HITSP Immunizations Section"/&gt;
+          &lt;code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/&gt;
+          &lt;title&gt;History of immunizations&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.9" assigningAuthorityName="CCD Payers Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7" assigningAuthorityName="IHE Payers Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.101" assigningAuthorityName="HITSP Payers Section"/&gt;
+          &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/&gt;
+          &lt;title&gt;Payment sources&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.8" assigningAuthorityName="CCD Medications Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.19" assigningAuthorityName="IHE Medications Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.112" assigningAuthorityName="HITSP Medications Section"/&gt;
+          &lt;code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/&gt;
+          &lt;title&gt;History of medication use&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.10" assigningAuthorityName="CCD Plan Of Care Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.31" assigningAuthorityName="IHE Care Plan Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.124" assigningAuthorityName="HITSP Plan Of Care Section"/&gt;
+          &lt;code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/&gt;
+          &lt;title&gt;Treatment plan&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4" assigningAuthorityName="IHE Pregnancy History Section"/&gt;
+          &lt;code code="10162-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PREGNANCIES"/&gt;
+          &lt;title&gt;HISTORY OF PREGNANCIES&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.12" assigningAuthorityName="CCD Procedures Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11" assigningAuthorityName="IHE Surgeries Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12" assigningAuthorityName="IHE Coded Surgeries Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.108" assigningAuthorityName="HITSP Surgeries Section"/&gt;
+          &lt;code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/&gt;
+          &lt;title&gt;History of procedures&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.16" assigningAuthorityName="CCD Vital Signs Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.25" assigningAuthorityName="IHE Vital Signs Section"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2" assigningAuthorityName="IHE Coded Vital Signs Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.119" assigningAuthorityName="HITSP Vital Signs Section"/&gt;
+          &lt;code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/&gt;
+          &lt;title&gt;Vital signs&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.28" assigningAuthorityName="IHE Coded Results Section"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.122" assigningAuthorityName="HITSP Diagnostic Results Section"/&gt;
+          &lt;code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="STUDIES SUMMARY"/&gt;
+          &lt;title&gt;STUDIES SUMMARY&lt;/title&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+</div>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/DocumentTemplates.html">DOCUMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>
