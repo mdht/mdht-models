@@ -742,7 +742,9 @@
   <CDA:AssociationValidation xmi:id="_R_MHcKPTEd6t_4WfM070fA" severity="WARNING" base_Association="_QlgXsKPTEd6t_4WfM070fA"/>
   <CDA:AssociationValidation xmi:id="_F29U4KPUEd6t_4WfM070fA" severity="WARNING" base_Association="_FT-joKPUEd6t_4WfM070fA"/>
   <CDA:AssociationValidation xmi:id="_g-C28KPUEd6t_4WfM070fA" severity="WARNING" base_Association="_e_CMkKPUEd6t_4WfM070fA"/>
-  <CDA:AssociationValidation xmi:id="_maaKQKPaEd6t_4WfM070fA" severity="WARNING" base_Association="_kxx_kKPaEd6t_4WfM070fA"/>
+  <CDA:AssociationValidation xmi:id="_maaKQKPaEd6t_4WfM070fA" severity="WARNING" base_Association="_kxx_kKPaEd6t_4WfM070fA">
+    <ruleId>CONF-381</ruleId>
+  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_QXIOYKPcEd6t_4WfM070fA" severity="WARNING" base_Association="_MnFrQKPcEd6t_4WfM070fA"/>
   <CDA:AssociationValidation xmi:id="_ckz2wKPdEd6t_4WfM070fA" severity="WARNING" base_Association="_Z1lQYKPdEd6t_4WfM070fA"/>
   <CDA:AssociationValidation xmi:id="_sHIfsKPeEd6t_4WfM070fA" severity="WARNING" base_Association="_nDb8UKPeEd6t_4WfM070fA"/>

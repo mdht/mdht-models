@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * </p>
  * <p>
  *     Vital signs are represented like other results (as defined in <b><i>Results
- *     Section</i></b>), but are aggregated into their own section in order to follow clinical
+ *     Section</i></b>) with additional vocabulary constraints, but are aggregated into their own section in order to follow clinical
  *     conventions.
  * </p>
  * <!-- end-model-doc -->

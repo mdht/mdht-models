@@ -957,15 +957,6 @@ public interface IHEPackage extends EPackage {
 	int IMMUNIZATION__INFORMANT = CCDPackage.MEDICATION_ACTIVITY__INFORMANT;
 
 	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMUNIZATION__REFERENCE = CCDPackage.MEDICATION_ACTIVITY__REFERENCE;
-
-	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -982,6 +973,15 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int IMMUNIZATION__ENTRY_RELATIONSHIP = CCDPackage.MEDICATION_ACTIVITY__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMUNIZATION__REFERENCE = CCDPackage.MEDICATION_ACTIVITY__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -3731,15 +3731,6 @@ public interface IHEPackage extends EPackage {
 	int MEDICATION__INFORMANT = CCDPackage.MEDICATION_ACTIVITY__INFORMANT;
 
 	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION__REFERENCE = CCDPackage.MEDICATION_ACTIVITY__REFERENCE;
-
-	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3756,6 +3747,15 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION__ENTRY_RELATIONSHIP = CCDPackage.MEDICATION_ACTIVITY__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION__REFERENCE = CCDPackage.MEDICATION_ACTIVITY__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -4847,15 +4847,6 @@ public interface IHEPackage extends EPackage {
 	int NORMAL_DOSE__INFORMANT = MEDICATION__INFORMANT;
 
 	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NORMAL_DOSE__REFERENCE = MEDICATION__REFERENCE;
-
-	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4872,6 +4863,15 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int NORMAL_DOSE__ENTRY_RELATIONSHIP = MEDICATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NORMAL_DOSE__REFERENCE = MEDICATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -5126,15 +5126,6 @@ public interface IHEPackage extends EPackage {
 	int TAPERED_DOSE__INFORMANT = MEDICATION__INFORMANT;
 
 	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TAPERED_DOSE__REFERENCE = MEDICATION__REFERENCE;
-
-	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5151,6 +5142,15 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int TAPERED_DOSE__ENTRY_RELATIONSHIP = MEDICATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TAPERED_DOSE__REFERENCE = MEDICATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -5405,15 +5405,6 @@ public interface IHEPackage extends EPackage {
 	int SPLIT_DOSE__INFORMANT = MEDICATION__INFORMANT;
 
 	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SPLIT_DOSE__REFERENCE = MEDICATION__REFERENCE;
-
-	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5430,6 +5421,15 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int SPLIT_DOSE__ENTRY_RELATIONSHIP = MEDICATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPLIT_DOSE__REFERENCE = MEDICATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -5684,15 +5684,6 @@ public interface IHEPackage extends EPackage {
 	int CONDITIONAL_DOSE__INFORMANT = MEDICATION__INFORMANT;
 
 	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_DOSE__REFERENCE = MEDICATION__REFERENCE;
-
-	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5709,6 +5700,15 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONDITIONAL_DOSE__ENTRY_RELATIONSHIP = MEDICATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_DOSE__REFERENCE = MEDICATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -5963,15 +5963,6 @@ public interface IHEPackage extends EPackage {
 	int COMBINATION_MEDICATION__INFORMANT = MEDICATION__INFORMANT;
 
 	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMBINATION_MEDICATION__REFERENCE = MEDICATION__REFERENCE;
-
-	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5988,6 +5979,15 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int COMBINATION_MEDICATION__ENTRY_RELATIONSHIP = MEDICATION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMBINATION_MEDICATION__REFERENCE = MEDICATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.

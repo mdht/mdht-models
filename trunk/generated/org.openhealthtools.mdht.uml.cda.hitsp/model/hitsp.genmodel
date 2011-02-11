@@ -279,9 +279,9 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//VitalSignsSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//VitalSignsSection/HITSPVitalSignsSectionVitalSigns">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//VitalSignsSection/HITSPVitalSignsSectionVitalSigns/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//VitalSignsSection/HITSPVitalSignsSectionVitalSigns/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//VitalSignsSection/HITSPVitalSignsSectionVitalSignEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//VitalSignsSection/HITSPVitalSignsSectionVitalSignEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//VitalSignsSection/HITSPVitalSignsSectionVitalSignEntry/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//VitalSignsSection/HITSPVitalSignsSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//VitalSignsSection/HITSPVitalSignsSectionTemplateId/diagnostics"/>

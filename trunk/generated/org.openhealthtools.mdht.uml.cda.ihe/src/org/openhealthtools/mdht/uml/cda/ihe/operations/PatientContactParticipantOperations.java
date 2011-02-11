@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPlugin;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContactParticipant;
 import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
-import org.openhealthtools.mdht.uml.hl7.rim.operations.ParticipationOperations;
+import org.openhealthtools.mdht.uml.cda.operations.Participant1Operations;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,16 +36,7 @@ import org.openhealthtools.mdht.uml.hl7.rim.operations.ParticipationOperations;
  *
  * @generated
  */
-public class PatientContactParticipantOperations extends ParticipationOperations {
-	/**
-	 * The cached environment for evaluating OCL expressions.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	protected static final OCL EOCL_ENV = OCL.newInstance();
-
+public class PatientContactParticipantOperations extends Participant1Operations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

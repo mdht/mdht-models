@@ -50,8 +50,8 @@ public class VitalSignsSectionImpl extends CodedVitalSignsSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPVitalSignsSectionVitalSigns(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateHITSPVitalSignsSectionVitalSigns(this, diagnostics, context);
+	public boolean validateHITSPVitalSignsSectionVitalSignEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionOperations.validateHITSPVitalSignsSectionVitalSignEntry(this, diagnostics, context);
 	}
 
 	/**
