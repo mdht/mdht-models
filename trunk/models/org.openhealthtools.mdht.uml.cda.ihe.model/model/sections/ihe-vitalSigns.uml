@@ -107,7 +107,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     </ownedAttribute>
     <ownedAttribute xmi:id="_4nZaUDSaEeC4N-P6mHDwgg" name="id" visibility="private">
       <ownedComment xmi:id="_9rIZ8DSaEeC4N-P6mHDwgg">
-        <body>The organizer shall have an &lt;id> element.</body>
+        <body>The organizer shall have an &amp;lt;id> element.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6mwC8DSaEeC4N-P6mHDwgg" value="1"/>
