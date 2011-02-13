@@ -9,7 +9,7 @@
 &lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_HTsIIMfwEd6VjLXh4DcWSg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-dischargeDiagnosis.uml#_3ov5QMfvEd6VjLXh4DcWSg"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-dischargeDiagnosis.uml#_3ov5QMfvEd6VjLXh4DcWSg"/>
     </generalization>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_JyDoAMfwEd6VjLXh4DcWSg" base_Class="_CEsTsMfwEd6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.111" assigningAuthorityName="HITSP C83"/>

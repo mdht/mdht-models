@@ -14,7 +14,7 @@
 &lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_hsBnwHrWEd68l9lQ-TLEBQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-allergiesReactions.uml#_pOtQsHrDEd68l9lQ-TLEBQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-allergiesReactions.uml#_pOtQsHrDEd68l9lQ-TLEBQ"/>
     </generalization>
   </uml:Class>
   <uml:Class xmi:id="_VGnj8MfZEd6VjLXh4DcWSg" name="AllergiesReactionsSection">
@@ -26,7 +26,7 @@
 &lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_Xue-EMfZEd6VjLXh4DcWSg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-allergiesReactions.uml#_O7-UAHrUEd68l9lQ-TLEBQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-allergiesReactions.uml#_O7-UAHrUEd68l9lQ-TLEBQ"/>
     </generalization>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_t9ej4HcIEd6ZeOKq_2_a9g" base_Class="_vB4EUGEIEd6bFO5yxRh3Nw" templateId="2.16.840.1.113883.3.88.11.83.6" assigningAuthorityName="HITSP C83"/>

@@ -5,7 +5,7 @@
       <body>The Diagnostic Results Section contains information about the results from diagnostic procedures the patient received.</body>
     </ownedComment>
     <generalization xmi:id="_RNzp0MieEd6mWrHPmrIIfQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-codedResults.uml#_-OeSAMidEd6mWrHPmrIIfQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-codedResults.uml#_-OeSAMidEd6mWrHPmrIIfQ"/>
     </generalization>
     <ownedAttribute xmi:id="_CHfD8BdkEeCf9aMNaCAtDQ" name="diagnosticProcedure" association="_CHfrARdkEeCf9aMNaCAtDQ">
       <type xmi:type="uml:Class" href="../hitsp.uml#_KYNNMKDlEd-dVeaMP0XXQw"/>

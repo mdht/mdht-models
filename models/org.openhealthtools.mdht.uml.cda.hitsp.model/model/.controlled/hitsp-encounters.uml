@@ -8,12 +8,12 @@
 &lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_KMB24MijEd6mWrHPmrIIfQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-encounterHistory.uml#_tY30kMiiEd6mWrHPmrIIfQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-encounterHistory.uml#_tY30kMiiEd6mWrHPmrIIfQ"/>
     </generalization>
     <ownedAttribute xmi:id="_DK1kkLSOEd-U7amR23RAJw" name="encounterEntry" type="_x6SxkKsQEd-yFfcbpgNFIA" association="_DK4n4LSOEd-U7amR23RAJw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DK1kkbSOEd-U7amR23RAJw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DK1kkrSOEd-U7amR23RAJw" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-encounterHistory.uml#_6bP7cKsPEd-yFfcbpgNFIA"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-encounterHistory.uml#_6bP7cKsPEd-yFfcbpgNFIA"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_x6SxkKsQEd-yFfcbpgNFIA" name="Encounter">
@@ -21,11 +21,11 @@
       <body>The encounter entry contains data describing the interactions between the patient and clinicians. Interaction includes both in-person and non-in-person encounters such as telephone and e-mail communication.</body>
     </ownedComment>
     <generalization xmi:id="_x6TYoKsQEd-yFfcbpgNFIA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-encounterHistory.uml#_j6rjcKsNEd-yFfcbpgNFIA"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-encounterHistory.uml#_j6rjcKsNEd-yFfcbpgNFIA"/>
     </generalization>
     <ownedAttribute xmi:id="_ku9jQKsREd-yFfcbpgNFIA" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-encounters.uml#_D4--kIj0Ed66cKocspyVOg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-encounters.uml#_D4--kIj0Ed66cKocspyVOg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_PqZu4KsSEd-yFfcbpgNFIA" name="priorityCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>

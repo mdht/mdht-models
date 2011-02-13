@@ -26,7 +26,7 @@
       </specification>
     </ownedRule>
     <generalization xmi:id="_H4qVgDxbEd6JwqSGecoePg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-activeProblems.uml#_wSnPAGaQEd6Hk_bPOfEjYA"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_wSnPAGaQEd6Hk_bPOfEjYA"/>
     </generalization>
     <ownedAttribute xmi:id="_-HhPcBvhEd-yI6xBTkJSNw" name="conditionEntry" visibility="private" type="_c6bN4BvgEd-yI6xBTkJSNw" association="_-HcW8BvhEd-yI6xBTkJSNw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Hlg4BvhEd-yI6xBTkJSNw" value="*"/>
@@ -41,7 +41,7 @@
       <body>The Problem List Section contains data on the problems currently being monitored for the patient.</body>
     </ownedComment>
     <generalization xmi:id="_epE8MMfaEd6VjLXh4DcWSg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-activeProblems.uml#_vz5koGGsEd6bFO5yxRh3Nw"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_vz5koGGsEd6bFO5yxRh3Nw"/>
     </generalization>
     <ownedAttribute xmi:id="_4EDnQBvYEd-yI6xBTkJSNw" name="condition" visibility="private" type="_GgvgUDxbEd6JwqSGecoePg" association="_4D4oIBvYEd-yI6xBTkJSNw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4EWiMBvYEd-yI6xBTkJSNw" value="*"/>
@@ -83,15 +83,15 @@
       </specification>
     </ownedRule>
     <generalization xmi:id="_fv2i4BvgEd-yI6xBTkJSNw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-activeProblems.uml#_3ZiEwGdIEd6Hk_bPOfEjYA"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_3ZiEwGdIEd6Hk_bPOfEjYA"/>
     </generalization>
     <ownedAttribute xmi:id="_hjpbwBvgEd-yI6xBTkJSNw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_f1n6wIhTEd6UrJD25cKDew"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_f1n6wIhTEd6UrJD25cKDew"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hjsfEBvgEd-yI6xBTkJSNw" name="value" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-activeProblems.uml#_slNZAIwHEd6B6JSUB00H7g"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_slNZAIwHEd6B6JSUB00H7g"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_-HcW8BvhEd-yI6xBTkJSNw" memberEnd="_-HhPcBvhEd-yI6xBTkJSNw _-HpLQBvhEd-yI6xBTkJSNw">

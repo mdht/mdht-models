@@ -6,7 +6,7 @@
 life, hobbies, and risky habits.</body>
     </ownedComment>
     <generalization xmi:id="_Nt9-gMihEd6mWrHPmrIIfQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-socialHistory.uml#_UOVM0HDAEd6eItyqb1FoWg"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-socialHistory.uml#_UOVM0HDAEd6eItyqb1FoWg"/>
     </generalization>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_OvnowMihEd6mWrHPmrIIfQ" base_Class="_Kv5q4MihEd6mWrHPmrIIfQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.16" assigningAuthorityName="IHE PCC"/>

@@ -9,7 +9,7 @@ from this content module.</body>
       <ownedComment xmi:id="_EggUce7NEd-iKq5sSX9U2w">
         <body>The name of the substance or product. This should be sufficient for a provider to identify the kind of medication. It may be a trade name or a generic name. This information is required in all medication entries. If the name of the medication is unknown, the type, purpose or other description may be supplied. The name should not include packaging, strength or dosing information. Note: Due to restrictions of the CDA schema, there is no way to explicitly link the name to the narrative text.</body>
       </ownedComment>
-      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/sections/hitsp-medications.uml#_IjIO0DxbEd6JwqSGecoePg"/>
+      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-medications.uml#_IjIO0DxbEd6JwqSGecoePg"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_EggUcu7NEd-iKq5sSX9U2w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -18,7 +18,7 @@ from this content module.</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_zZRrcHq8Ed68l9lQ-TLEBQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-medications.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
     </generalization>
     <ownedAttribute xmi:id="_qvyvcO7MEd-iKq5sSX9U2w" name="approachSiteCode" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_qvyvce7MEd-iKq5sSX9U2w">
@@ -55,7 +55,7 @@ from this content module.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vMQTsu7MEd-iKq5sSX9U2w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vMQTs-7MEd-iKq5sSX9U2w" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9hNwoErsEd6FXKclYGEDCw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-medications.uml#_w93tY-ecEd-aaJELhEID-A"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_w93tY-ecEd-aaJELhEID-A"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_8YbB4HomEd6WAZ28-5wkSg" name="MedicationsSection">
@@ -64,7 +64,7 @@ from this content module.</body>
 prescription list. It shall include entries for medications as described in the Entry Content Module.</body>
     </ownedComment>
     <generalization xmi:id="_KxUI4Hq9Ed68l9lQ-TLEBQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
     </generalization>
     <ownedAttribute xmi:id="_M0Ho4Ow6Ed-HcKrkbxroPA" name="medication" type="_sFGZUHGfEd6bf47ZOcft4w" association="_M0IP8Ow6Ed-HcKrkbxroPA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pfnl0Ow6Ed-HcKrkbxroPA" value="*"/>

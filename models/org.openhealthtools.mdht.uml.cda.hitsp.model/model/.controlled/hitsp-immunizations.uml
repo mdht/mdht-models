@@ -8,7 +8,7 @@
 &lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_iBayMMf0Ed6VjLXh4DcWSg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-immunizations.uml#_ZEjk4Mf0Ed6VjLXh4DcWSg"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_ZEjk4Mf0Ed6VjLXh4DcWSg"/>
     </generalization>
     <ownedAttribute xmi:id="_y3IF0DuJEd-B8KE6Jx0UNQ" name="immunization" association="_y3IF0TuJEd-B8KE6Jx0UNQ">
       <type xmi:type="uml:Class" href="../hitsp.uml#_qkWXUDuJEd-B8KE6Jx0UNQ"/>

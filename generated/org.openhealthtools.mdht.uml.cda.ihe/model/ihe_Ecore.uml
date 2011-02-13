@@ -299,7 +299,7 @@ from this content module.</body>
         <ownedComment xmi:id="_EggUce7NEd-iKq5sSX9U2w">
           <body>The name of the substance or product. This should be sufficient for a provider to identify the kind of medication. It may be a trade name or a generic name. This information is required in all medication entries. If the name of the medication is unknown, the type, purpose or other description may be supplied. The name should not include packaging, strength or dosing information. Note: Due to restrictions of the CDA schema, there is no way to explicitly link the name to the narrative text.</body>
         </ownedComment>
-        <constrainedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/sections/hitsp-medications.uml#_IjIO0DxbEd6JwqSGecoePg"/>
+        <constrainedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-medications.uml#_IjIO0DxbEd6JwqSGecoePg"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_EggUcu7NEd-iKq5sSX9U2w">
           <language>OCL</language>
           <body>not self.consumable.manufacturedProduct.manufacturedLabeledDrug.name.oclIsUndefined()&#xD;&#xA;   or not self.consumable.manufacturedProduct.manufacturedMaterial.name.oclIsUndefined()</body>
