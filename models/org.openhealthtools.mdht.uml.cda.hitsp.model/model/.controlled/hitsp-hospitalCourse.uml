@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_J1pl8MidEd6mWrHPmrIIfQ" name="HospitalCourseSection">
+    <ownedComment xmi:id="_qTMPUMidEd6mWrHPmrIIfQ" annotatedElement="_J1pl8MidEd6mWrHPmrIIfQ">
+      <body>&lt;p>&#xD;
+    The Hospital Course Section contains information about of the sequence of events from admission to&#xD;
+    discharge in a hospital facility. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_LTgrEMidEd6mWrHPmrIIfQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-hospitalCourse.uml#_DO0b4MidEd6mWrHPmrIIfQ"/>
+    </generalization>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_imN8kMidEd6mWrHPmrIIfQ" base_Class="_J1pl8MidEd6mWrHPmrIIfQ" templateId="2.16.840.1.113883.3.88.11.83.121" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConformsTo xmi:id="_rGU8oFF6Ed-Lud-5SYZhMw" base_Generalization="_LTgrEMidEd6mWrHPmrIIfQ" requiresParentId="true"/>
+</xmi:XMI>
