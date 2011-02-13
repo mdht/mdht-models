@@ -43,11 +43,11 @@
         <body>My Observations are used to represent problems about .... [explain the purpose of this template]</body>
       </ownedComment>
       <generalization xmi:id="_Pl-JwKX2Ed6JRdOhEffuGA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_IjIO0DxbEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_IjIO0DxbEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_tF5CgAoHEeCEl6wJQrTI9w" name="classCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_p2T-gItyEd639sxyAgfSmw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_p2T-gItyEd639sxyAgfSmw"/>
         <defaultValue xmi:type="uml:InstanceValue" xmi:id="_tF5CgQoHEeCEl6wJQrTI9w" name="OBS">
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
           <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
@@ -55,7 +55,7 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_tF5CggoHEeCEl6wJQrTI9w" name="code" visibility="private">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_f1n6wIhTEd6UrJD25cKDew"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_f1n6wIhTEd6UrJD25cKDew"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_tF7ewAoHEeCEl6wJQrTI9w" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_xhk78AoNEeCEl6wJQrTI9w">
@@ -64,7 +64,7 @@
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ul9HEAoHEeCEl6wJQrTI9w" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ul9uIAoHEeCEl6wJQrTI9w" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_t3kdcIhREd6UrJD25cKDew"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_t3kdcIhREd6UrJD25cKDew"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_cupwwBqOEeCo9-utz0Chzw" name="id" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_x7-qIBqOEeCo9-utz0Chzw">

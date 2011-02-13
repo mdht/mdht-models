@@ -10,8 +10,8 @@
     <packageImport xmi:id="_ETmFQHrCEd68l9lQ-TLEBQ">
       <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-immunizations.uml#_ZEjk4Mf0Ed6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-medicationsAdministered.uml#_quPDQMfyEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-immunizations.uml#_ZEjk4Mf0Ed6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medicationsAdministered.uml#_quPDQMfyEd6VjLXh4DcWSg"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_GgvgUDxbEd6JwqSGecoePg" name="ConcernEntry">
       <ownedRule xmi:id="_jfpCcCNMEeCxCon8a79rfA" name="effectiveTimeLowHigh" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_vbZp0CNMEeCxCon8a79rfA">
@@ -34,7 +34,7 @@
         </specification>
       </ownedRule>
       <generalization xmi:id="_H4qVgDxbEd6JwqSGecoePg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_GgvgUDxbEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_GgvgUDxbEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_IC2EwIwGEd6B6JSUB00H7g" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_h5vboCNMEeCxCon8a79rfA">
@@ -56,24 +56,24 @@
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_vz5koGGsEd6bFO5yxRh3Nw"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_wSnPAGaQEd6Hk_bPOfEjYA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_3ZiEwGdIEd6Hk_bPOfEjYA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-medications.uml#_sFGZUHGfEd6bf47ZOcft4w"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-medications.uml#_8YbB4HomEd6WAZ28-5wkSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-allergiesReactions.uml#_pOtQsHrDEd68l9lQ-TLEBQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-allergiesReactions.uml#_gkbLsHrEEd68l9lQ-TLEBQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-allergiesReactions.uml#_O7-UAHrUEd68l9lQ-TLEBQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-medications.uml#__HPx4HySEd6FS-4xbA1fBQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-medications.uml#_OCqBQHyTEd6FS-4xbA1fBQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-medications.uml#_OY9BYHyTEd6FS-4xbA1fBQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-medications.uml#_OeXF0HyTEd6FS-4xbA1fBQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-medications.uml#_QDIEMHyTEd6FS-4xbA1fBQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-activeProblems.uml#_w1oMsIwEEd6B6JSUB00H7g"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-activeProblems.uml#_XVchkIwFEd6B6JSUB00H7g"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-vitalSigns.uml#_iFB1EK4EEd6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-codedVitalSigns.uml#_5k1R8K4FEd6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-vitalSigns.uml#_LriUcK4NEd6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_vz5koGGsEd6bFO5yxRh3Nw"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_wSnPAGaQEd6Hk_bPOfEjYA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_3ZiEwGdIEd6Hk_bPOfEjYA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_sFGZUHGfEd6bf47ZOcft4w"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_8YbB4HomEd6WAZ28-5wkSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-allergiesReactions.uml#_pOtQsHrDEd68l9lQ-TLEBQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-allergiesReactions.uml#_gkbLsHrEEd68l9lQ-TLEBQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-allergiesReactions.uml#_O7-UAHrUEd68l9lQ-TLEBQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#__HPx4HySEd6FS-4xbA1fBQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_OCqBQHyTEd6FS-4xbA1fBQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_OY9BYHyTEd6FS-4xbA1fBQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_OeXF0HyTEd6FS-4xbA1fBQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_QDIEMHyTEd6FS-4xbA1fBQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-activeProblems.uml#_w1oMsIwEEd6B6JSUB00H7g"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-activeProblems.uml#_XVchkIwFEd6B6JSUB00H7g"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-vitalSigns.uml#_iFB1EK4EEd6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-codedVitalSigns.uml#_5k1R8K4FEd6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-vitalSigns.uml#_LriUcK4NEd6_ioDelDcPPg"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_dLvb0K4NEd6_ioDelDcPPg" name="SimpleObservation" isAbstract="true">
       <ownedComment xmi:id="_x8oQ0K4NEd6_ioDelDcPPg" annotatedElement="_dLvb0K4NEd6_ioDelDcPPg">
         <body>The simple observation entry is meant to be an abstract representation of many of the observations used in this&#xD;
@@ -93,14 +93,14 @@ ASTM/HL7 Continuity of Care Document).</body>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-vitalSigns.uml#_hVMdIK4QEd6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-vitalSigns.uml#_WBrPkK4SEd6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-vitalSigns.uml#_IFnScK4UEd6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-codedVitalSigns.uml#_wHB88K4UEd6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-payers.uml#_ynU6sMfXEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-historyOfPastIllness.uml#_QD0tkMfbEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-chiefComplaint.uml#_iVB-oMfcEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-reasonForReferral.uml#_XicJUMfdEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-vitalSigns.uml#_hVMdIK4QEd6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-vitalSigns.uml#_WBrPkK4SEd6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-vitalSigns.uml#_IFnScK4UEd6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-codedVitalSigns.uml#_wHB88K4UEd6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-payers.uml#_ynU6sMfXEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-historyOfPastIllness.uml#_QD0tkMfbEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-chiefComplaint.uml#_iVB-oMfcEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-reasonForReferral.uml#_XicJUMfdEd6VjLXh4DcWSg"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_jWj60MfhEd6VjLXh4DcWSg" name="HistoryOfPresentIllness">
       <ownedComment xmi:id="_wSbUUMfhEd6VjLXh4DcWSg" annotatedElement="_jWj60MfhEd6VjLXh4DcWSg">
         <body>The history of present illness section shall contain a narrative description of the sequence of events preceding the&#xD;
@@ -113,50 +113,50 @@ patient's current complaints.</body>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-surgeries.uml#_jgutAMftEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-codedSurgeries.uml#_9fsJYMftEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-hospitalAdmissionDiagnosis.uml#_MvxLwMfvEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-dischargeDiagnosis.uml#_3ov5QMfvEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-admissionMedicationHistory.uml#_3Se44MfwEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-hospitalDischargeMedications.uml#_JAhygMfyEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-codedAdvanceDirectives.uml#_bSHeEMfzEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-advanceDirectives.uml#_fc6DgMfzEd6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-physicalExamNarrative.uml#_IAGv8Mf1Ed6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-physicalExam.uml#_LGf5IMf1Ed6VjLXh4DcWSg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-reviewOfSystems.uml#_6fSusMiWEd6mWrHPmrIIfQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-hospitalCourse.uml#_DO0b4MidEd6mWrHPmrIIfQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-codedResults.uml#_-OeSAMidEd6mWrHPmrIIfQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-assessmentAndPlan.uml#_SNPREMifEd6mWrHPmrIIfQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-carePlan.uml#_BEcusMigEd6mWrHPmrIIfQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-familyMedicalHistory.uml#_kKnAIMigEd6mWrHPmrIIfQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-socialHistory.uml#_Kv5q4MihEd6mWrHPmrIIfQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-encounterHistory.uml#_tY30kMiiEd6mWrHPmrIIfQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-medicalDevices.uml#_tqabEMijEd6mWrHPmrIIfQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-surgeries.uml#_jgutAMftEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-codedSurgeries.uml#_9fsJYMftEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-hospitalAdmissionDiagnosis.uml#_MvxLwMfvEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-dischargeDiagnosis.uml#_3ov5QMfvEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-admissionMedicationHistory.uml#_3Se44MfwEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-hospitalDischargeMedications.uml#_JAhygMfyEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-codedAdvanceDirectives.uml#_bSHeEMfzEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-advanceDirectives.uml#_fc6DgMfzEd6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-physicalExamNarrative.uml#_IAGv8Mf1Ed6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-physicalExam.uml#_LGf5IMf1Ed6VjLXh4DcWSg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-reviewOfSystems.uml#_6fSusMiWEd6mWrHPmrIIfQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-hospitalCourse.uml#_DO0b4MidEd6mWrHPmrIIfQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-codedResults.uml#_-OeSAMidEd6mWrHPmrIIfQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-assessmentAndPlan.uml#_SNPREMifEd6mWrHPmrIIfQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-carePlan.uml#_BEcusMigEd6mWrHPmrIIfQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-familyMedicalHistory.uml#_kKnAIMigEd6mWrHPmrIIfQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-socialHistory.uml#_Kv5q4MihEd6mWrHPmrIIfQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-encounterHistory.uml#_tY30kMiiEd6mWrHPmrIIfQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medicalDevices.uml#_tqabEMijEd6mWrHPmrIIfQ"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_-uU7kDOtEd-5f4Yngl7nkw" name="LanguageCommunication">
       <generalization xmi:id="_-uU7kTOtEd-5f4Yngl7nkw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cHD44EcZEd6besF9iFIJkQ"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_fp-n0DOvEd-5f4Yngl7nkw"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_yq8-YDOvEd-5f4Yngl7nkw"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-activeProblems.uml#_EmpH4DOwEd-5f4Yngl7nkw"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-payers.uml#_PMrjADXgEd-gpLhSMS7jpQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-payers.uml#_aw0UkTXgEd-gpLhSMS7jpQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_fp-n0DOvEd-5f4Yngl7nkw"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_yq8-YDOvEd-5f4Yngl7nkw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-activeProblems.uml#_EmpH4DOwEd-5f4Yngl7nkw"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-payers.uml#_PMrjADXgEd-gpLhSMS7jpQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-payers.uml#_aw0UkTXgEd-gpLhSMS7jpQ"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_4hu_kDuGEd-B8KE6Jx0UNQ" name="HealthcareProvidersPharmacies">
       <generalization xmi:id="_4hu_kTuGEd-B8KE6Jx0UNQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-immunizations.uml#_4X18YTuJEd-B8KE6Jx0UNQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-immunizations.uml#_4X18YTuJEd-B8KE6Jx0UNQ"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_Q-mPsDuKEd-B8KE6Jx0UNQ" name="ObservationRequestEntry">
       <generalization xmi:id="_Q-mPsTuKEd-B8KE6Jx0UNQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-planOfCare.uml#_7I79cDHlEd-saqiXO4OYhQ"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-planOfCare.uml#_7I79cDHlEd-saqiXO4OYhQ"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_jZMQ0DuMEd-B8KE6Jx0UNQ" name="ProductEntry">
       <generalization xmi:id="_jZMQ0TuMEd-B8KE6Jx0UNQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-medications.uml#_8Xj7UIiBEd66cKocspyVOg"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_8Xj7UIiBEd66cKocspyVOg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_uP4tkDuMEd-B8KE6Jx0UNQ" name="ProcedureEntry"/>
@@ -182,7 +182,7 @@ patient's current complaints.</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_6yfdETuNEd-B8KE6Jx0UNQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-procedures.uml#_6mhnYDH6Ed-saqiXO4OYhQ"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-procedures.uml#_6mhnYDH6Ed-saqiXO4OYhQ"/>
       </generalization>
       <generalization xmi:id="_bVK9wDuREd-3heHR3GH1ew" general="_uP4tkDuMEd-B8KE6Jx0UNQ"/>
       <ownedAttribute xmi:id="_SRm6cBdqEeCf9aMNaCAtDQ" name="approachSiteCode" visibility="private" aggregation="composite">
@@ -242,13 +242,13 @@ patient's current complaints.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_9xEuEDuNEd-B8KE6Jx0UNQ" name="ProcedureEntryPlanOfCareActivityProcedure">
       <generalization xmi:id="_9xEuETuNEd-B8KE6Jx0UNQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-planOfCare.uml#_1z0WEDHpEd-saqiXO4OYhQ"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-planOfCare.uml#_1z0WEDHpEd-saqiXO4OYhQ"/>
       </generalization>
       <generalization xmi:id="_cRXgQDuREd-3heHR3GH1ew" general="_uP4tkDuMEd-B8KE6Jx0UNQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_R_uVkEvdEd-GNbUQBie2ig" name="Comment">
       <ownedRule xmi:id="_928MoCQYEeCxCon8a79rfA" name="hasTextReference">
-        <constrainedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_MIoHYCQKEeCxCon8a79rfA"/>
+        <constrainedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_MIoHYCQKEeCxCon8a79rfA"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_928MoSQYEeCxCon8a79rfA">
           <language>Analysis</language>
           <language>OCL</language>
@@ -278,25 +278,25 @@ patient's current complaints.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_8M5ZwFIvEd-4TsxSz4jnfg" name="PayerEntry">
       <generalization xmi:id="_8M5ZwVIvEd-4TsxSz4jnfg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-payers.uml#_6M-toMJqEd6-XpBv2uxYrQ"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-payers.uml#_6M-toMJqEd6-XpBv2uxYrQ"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_5_3IwJvhEd-L4qx175J3dg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_-P-6IJvhEd-L4qx175J3dg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-encounterHistory.uml#_j6rjcKsNEd-yFfcbpgNFIA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-encounterHistory.uml#_pVIZ8KsNEd-yFfcbpgNFIA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-encounterHistory.uml#_z__aIKsNEd-yFfcbpgNFIA"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-encounterHistory.uml#_6bQigKsPEd-yFfcbpgNFIA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-intakeOutput.uml#_5GSkEMwTEd-iJaPtkyVyKg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-medications.uml#_M0IP8Ow6Ed-HcKrkbxroPA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_5_3IwJvhEd-L4qx175J3dg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_-P-6IJvhEd-L4qx175J3dg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-encounterHistory.uml#_j6rjcKsNEd-yFfcbpgNFIA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-encounterHistory.uml#_pVIZ8KsNEd-yFfcbpgNFIA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-encounterHistory.uml#_z__aIKsNEd-yFfcbpgNFIA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-encounterHistory.uml#_6bQigKsPEd-yFfcbpgNFIA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-intakeOutput.uml#_5GSkEMwTEd-iJaPtkyVyKg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-medications.uml#_M0IP8Ow6Ed-HcKrkbxroPA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_e2pkwOw7Ed-HcKrkbxroPA" name="SupplyEntry">
       <generalization xmi:id="_e2pkwew7Ed-HcKrkbxroPA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-medications.uml#_dAAnAHfVEd6ZeOKq_2_a9g"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_dAAnAHfVEd6ZeOKq_2_a9g"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-pregnancyHistory.uml#_oidBAO0SEd-dJvThfIiQuA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-pregnancyHistory.uml#_0UCcoO2qEd-dJvThfIiQuA"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-pregnancyHistory.uml#_JhJ6oO2rEd-dJvThfIiQuA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-pregnancyHistory.uml#_oidBAO0SEd-dJvThfIiQuA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-pregnancyHistory.uml#_0UCcoO2qEd-dJvThfIiQuA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-pregnancyHistory.uml#_JhJ6oO2rEd-dJvThfIiQuA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_w9-SYO3vEd-dJvThfIiQuA" name="PatientContact" isAbstract="true">
       <generalization xmi:id="_w9-5cO3vEd-dJvThfIiQuA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_eyg4QO3TEd-dJvThfIiQuA"/>
@@ -759,20 +759,20 @@ patient's current complaints.</body>
       </ownedComment>
       <ownedEnd xmi:id="_eE09QvtEEd-xzOM2yZqLUw" type="_g76sEPG1Ed-FxO0PukiqhA" association="_eE09QftEEd-xzOM2yZqLUw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-codedResults.uml#_B5XcYBj5EeCf9aMNaCAtDQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-codedResults.uml#_hBLMcBj6EeCf9aMNaCAtDQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-codedResults.uml#_0kDWMhj6EeCf9aMNaCAtDQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-codedResults.uml#_2raEQRj6EeCf9aMNaCAtDQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_MIoHYCQKEeCxCon8a79rfA"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-activeProblems.uml#_UIJbUiQNEeCxCon8a79rfA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_s7LQECQNEeCxCon8a79rfA"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-activeProblems.uml#_spibkiQPEeCxCon8a79rfA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ihe-activeProblems.uml#_R7NF0CQREeCxCon8a79rfA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-codedResults.uml#_B5XcYBj5EeCf9aMNaCAtDQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-codedResults.uml#_hBLMcBj6EeCf9aMNaCAtDQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-codedResults.uml#_0kDWMhj6EeCf9aMNaCAtDQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-codedResults.uml#_2raEQRj6EeCf9aMNaCAtDQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_MIoHYCQKEeCxCon8a79rfA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-activeProblems.uml#_UIJbUiQNEeCxCon8a79rfA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_s7LQECQNEeCxCon8a79rfA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-activeProblems.uml#_spibkiQPEeCxCon8a79rfA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_R7NF0CQREeCxCon8a79rfA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_JY-FYCQZEeCxCon8a79rfA" memberEnd="_JY9eUCQZEeCxCon8a79rfA _JY-FYSQZEeCxCon8a79rfA">
       <ownedEnd xmi:id="_JY-FYSQZEeCxCon8a79rfA" type="_R_uVkEvdEd-GNbUQBie2ig" association="_JY-FYCQZEeCxCon8a79rfA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-activeProblems.uml#_ctFaYSQZEeCxCon8a79rfA"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ihe-activeProblems.uml#_j4WHMiQZEeCxCon8a79rfA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-activeProblems.uml#_ctFaYSQZEeCxCon8a79rfA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ihe-activeProblems.uml#_j4WHMiQZEeCxCon8a79rfA"/>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -794,7 +794,7 @@ patient's current complaints.</body>
   <CDA:PropertyValidation xmi:id="_2r0ccK4QEd6_ioDelDcPPg" base_Property="_SDxzcK4OEd6_ioDelDcPPg"/>
   <CDA:CDATemplate xmi:id="_okqXYMfhEd6VjLXh4DcWSg" base_Class="_jWj60MfhEd6VjLXh4DcWSg" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.4" assigningAuthorityName="IHE PCC"/>
   <CDA:CDATemplate xmi:id="_FcNUAMfuEd6VjLXh4DcWSg" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.12" assigningAuthorityName="IHE PCC">
-    <base_Class href="sections/ihe-codedSurgeries.uml#_9fsJYMftEd6VjLXh4DcWSg"/>
+    <base_Class href=".controlled/ihe-codedSurgeries.uml#_9fsJYMftEd6VjLXh4DcWSg"/>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_Nz2KwCfdEd-4R4ealYN1gQ" code="completed" base_Property="_bO-XsK4OEd6_ioDelDcPPg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -827,7 +827,7 @@ patient's current complaints.</body>
   <CDA:PropertyValidation xmi:id="_gd-mgEvrEd-GNbUQBie2ig"/>
   <CDA:ConformsTo xmi:id="_6wcFEFF6Ed-Lud-5SYZhMw" base_Generalization="_H4qVgDxbEd6JwqSGecoePg" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_6woSUFF6Ed-Lud-5SYZhMw" requiresParentId="true">
-    <base_Generalization href="sections/ihe-codedSurgeries.uml#_CZnswMfuEd6VjLXh4DcWSg"/>
+    <base_Generalization href=".controlled/ihe-codedSurgeries.uml#_CZnswMfuEd6VjLXh4DcWSg"/>
   </CDA:ConformsTo>
   <CDA:ConformsTo xmi:id="_6wvnEVF6Ed-Lud-5SYZhMw" base_Generalization="_Q-mPsTuKEd-B8KE6Jx0UNQ" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_6wwOIFF6Ed-Lud-5SYZhMw" base_Generalization="_jZMQ0TuMEd-B8KE6Jx0UNQ" requiresParentId="true"/>

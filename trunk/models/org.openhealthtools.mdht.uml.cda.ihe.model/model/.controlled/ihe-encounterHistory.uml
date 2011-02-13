@@ -7,7 +7,7 @@
 &lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_vuzKIMiiEd6mWrHPmrIIfQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-encounters.uml#_rJDcIHDAEd6eItyqb1FoWg"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-encounters.uml#_rJDcIHDAEd6eItyqb1FoWg"/>
     </generalization>
     <ownedAttribute xmi:id="_6bP7cKsPEd-yFfcbpgNFIA" name="encounterEntry" type="_z__aIKsNEd-yFfcbpgNFIA" association="_6bQigKsPEd-yFfcbpgNFIA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7_QE0KsPEd-yFfcbpgNFIA" value="*"/>
@@ -16,20 +16,20 @@
   </uml:Class>
   <uml:Class xmi:id="_j6rjcKsNEd-yFfcbpgNFIA" name="EncounterActivity">
     <generalization xmi:id="_5BDgQKsNEd-yFfcbpgNFIA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-encounters.uml#_mO8KEHJWEd6cacuAk5qrhg"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-encounters.uml#_mO8KEHJWEd6cacuAk5qrhg"/>
     </generalization>
     <generalization xmi:id="_j6sKgKsNEd-yFfcbpgNFIA" general="_z__aIKsNEd-yFfcbpgNFIA"/>
   </uml:Class>
   <uml:Class xmi:id="_pVIZ8KsNEd-yFfcbpgNFIA" name="EncounterPlanOfCare">
     <ownedRule xmi:id="_zt8HMKsVEd-yFfcbpgNFIA" name="moodCodeValue">
-      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-planOfCare.uml#_F3vCcDHmEd-saqiXO4OYhQ"/>
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-planOfCare.uml#_F3vCcDHmEd-saqiXO4OYhQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_zt8HMasVEd-yFfcbpgNFIA">
         <language>OCL</language>
         <body>self.moodCode = vocab::x_DocumentEncounterMood::ARQ&#xD;&#xA;  or self.moodCode = vocab::x_DocumentEncounterMood::PRMS</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_882AYKsNEd-yFfcbpgNFIA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-planOfCare.uml#_EGZnsDHmEd-saqiXO4OYhQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-planOfCare.uml#_EGZnsDHmEd-saqiXO4OYhQ"/>
     </generalization>
     <generalization xmi:id="_pVIZ8asNEd-yFfcbpgNFIA" general="_z__aIKsNEd-yFfcbpgNFIA"/>
   </uml:Class>

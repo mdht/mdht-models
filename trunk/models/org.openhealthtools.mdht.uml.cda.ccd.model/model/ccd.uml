@@ -13,7 +13,7 @@
     <packageImport xmi:id="_OqkpUCfbEd-4R4ealYN1gQ">
       <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_Ze7UsGESEd69D7zx7EkLMA" name="ContinuityOfCareDocument">
       <ownedRule xmi:id="_aDaFUBguEd-PS-Y_2ABBMQ" name="serviceEventRequired" constrainedElement="_Ze7UsGESEd69D7zx7EkLMA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_iFbbABguEd-PS-Y_2ABBMQ">
@@ -113,77 +113,77 @@
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_3FF_4KPPEd6t_4WfM070fA" name="problemSection" visibility="private" association="_3FDjoKPPEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-problem.uml#_vjPMEGaGEd6Hk_bPOfEjYA"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-problem.uml#_vjPMEGaGEd6Hk_bPOfEjYA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J60M8CTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J60M8STDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_42pAkKPQEd6t_4WfM070fA" name="familyHistorySection" visibility="private" association="_42l9QKPQEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-familyHistory.uml#_5ET7oGwWEd6q29qQGU-SBA"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_5ET7oGwWEd6q29qQGU-SBA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NoexgCTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NoexgSTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_VO858KPREd6t_4WfM070fA" name="socialHistorySection" visibility="private" association="_VO7EwKPREd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-socialHistory.uml#_UOVM0HDAEd6eItyqb1FoWg"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-socialHistory.uml#_UOVM0HDAEd6eItyqb1FoWg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ODggoCTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ODggoSTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_9WnWYKPREd6t_4WfM070fA" name="alertsSection" visibility="private" association="_9WlhMKPREd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-alerts.uml#_PgsSAHrREd68l9lQ-TLEBQ"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-alerts.uml#_PgsSAHrREd68l9lQ-TLEBQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OiBBkCTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OiBBkSTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_NhY74KPSEd6t_4WfM070fA" name="medicationsSection" visibility="private" association="_NhXGsKPSEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pdi1sCTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pdi1sSTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3RKloKPSEd6t_4WfM070fA" name="resultsSection" visibility="private" association="_3RJXgKPSEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wfdioBg6EeCf9aMNaCAtDQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wfeJsBg6EeCf9aMNaCAtDQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_EF_jAKPTEd6t_4WfM070fA" name="proceduresSection" visibility="private" association="_EF-U4KPTEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-procedures.uml#_p_LEwIjvEd66cKocspyVOg"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_p_LEwIjvEd66cKocspyVOg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QCze4CTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QC0F8CTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_QliM4KPTEd6t_4WfM070fA" name="encountersSection" visibility="private" association="_QlgXsKPTEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-encounters.uml#_rJDcIHDAEd6eItyqb1FoWg"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-encounters.uml#_rJDcIHDAEd6eItyqb1FoWg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qq8c8CTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qq8c8STDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FT_xwKPUEd6t_4WfM070fA" name="planOfCareSection" visibility="private" association="_FT-joKPUEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-planOfCare.uml#_o9nLAKPTEd6t_4WfM070fA"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-planOfCare.uml#_o9nLAKPTEd6t_4WfM070fA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RNJLECTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RNJLESTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_e_EBwKPUEd6t_4WfM070fA" name="immunizationsSection" visibility="private" association="_e_CMkKPUEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-immunizations.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-immunizations.uml#_CinbMHDPEd6eItyqb1FoWg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RuHxMCTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RuIYQCTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kxz0wKPaEd6t_4WfM070fA" name="vitalSignsSection" visibility="private" association="_kxx_kKPaEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-vitalSigns.uml#_GKpeMKPaEd6t_4WfM070fA"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-vitalSigns.uml#_GKpeMKPaEd6t_4WfM070fA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SnebECTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SnebESTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MnHgcKPcEd6t_4WfM070fA" name="medicalEquipmentSection" visibility="private" association="_MnFrQKPcEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-medicalEquipment.uml#_5hfTYKPbEd6t_4WfM070fA"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-medicalEquipment.uml#_5hfTYKPbEd6t_4WfM070fA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tf87MCTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tf9iQCTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Z1nFkKPdEd6t_4WfM070fA" name="functionalStatusSection" visibility="private" association="_Z1lQYKPdEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-functionalStatus.uml#_GoctIKPdEd6t_4WfM070fA"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-functionalStatus.uml#_GoctIKPdEd6t_4WfM070fA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T8oQICTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T8oQISTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_meVrMKPeEd6t_4WfM070fA" name="advanceDirectivesSection" visibility="private" association="_meUdEKPeEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-advanceDirectives.uml#_NvRwcKPeEd6t_4WfM070fA"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-advanceDirectives.uml#_NvRwcKPeEd6t_4WfM070fA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U6QWACTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U6QWASTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nDdxgKPeEd6t_4WfM070fA" name="payersSection" visibility="private" association="_nDb8UKPeEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-payers.uml#_T79VIKPeEd6t_4WfM070fA"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-payers.uml#_T79VIKPeEd6t_4WfM070fA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VVKwYCTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VVKwYSTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
@@ -196,16 +196,16 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AfkIQqRqEd6t_4WfM070fA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1AUg8KRtEd6t_4WfM070fA" name="purposeSection" visibility="private" association="_1ASrwKRtEd6t_4WfM070fA">
-        <type xmi:type="uml:Class" href="sections/ccd-purpose.uml#_f0mKEKRtEd6t_4WfM070fA"/>
+        <type xmi:type="uml:Class" href=".controlled/ccd-purpose.uml#_f0mKEKRtEd6t_4WfM070fA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YHWkICTDEeCvyarv2dSCoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YHWkISTDEeCvyarv2dSCoQ" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-problem.uml#_GgvgUDxbEd6JwqSGecoePg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-problem.uml#_IjIO0DxbEd6JwqSGecoePg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-problem.uml#_vjPMEGaGEd6Hk_bPOfEjYA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-problem.uml#_TrwngGaJEd6Hk_bPOfEjYA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-problem.uml#_T6kfkGaJEd6Hk_bPOfEjYA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-problem.uml#_GgvgUDxbEd6JwqSGecoePg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-problem.uml#_IjIO0DxbEd6JwqSGecoePg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-problem.uml#_vjPMEGaGEd6Hk_bPOfEjYA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-problem.uml#_TrwngGaJEd6Hk_bPOfEjYA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-problem.uml#_T6kfkGaJEd6Hk_bPOfEjYA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_AwcXkGaKEd6Hk_bPOfEjYA" name="EpisodeObservation">
       <ownedComment xmi:id="_7kkpsBXPEd-6K-YJpbwRmQ">
         <body>Episode observations are used to distinguish among multiple occurrences of a problem or social history item. An episode observation is used to indicate that a problem act represents a new episode, distinct from other episodes of a similar concern.</body>
@@ -288,20 +288,20 @@
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_-j890ErdEd6FXKclYGEDCw"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-familyHistory.uml#_5ET7oGwWEd6q29qQGU-SBA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-familyHistory.uml#_7tlrAGwWEd6q29qQGU-SBA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-familyHistory.uml#_9QFYgGwWEd6q29qQGU-SBA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-results.uml#_Ht_RsHDAEd6eItyqb1FoWg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-results.uml#_MQHZEHDAEd6eItyqb1FoWg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-socialHistory.uml#_UOVM0HDAEd6eItyqb1FoWg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-socialHistory.uml#_Wa2uwHDAEd6eItyqb1FoWg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-encounters.uml#_rJDcIHDAEd6eItyqb1FoWg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-immunizations.uml#_CinbMHDPEd6eItyqb1FoWg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-encounters.uml#_mO8KEHJWEd6cacuAk5qrhg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_dAAnAHfVEd6ZeOKq_2_a9g"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-alerts.uml#_PgsSAHrREd68l9lQ-TLEBQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-alerts.uml#_qV72IHrREd68l9lQ-TLEBQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_5ET7oGwWEd6q29qQGU-SBA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_7tlrAGwWEd6q29qQGU-SBA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_9QFYgGwWEd6q29qQGU-SBA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-results.uml#_Ht_RsHDAEd6eItyqb1FoWg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-results.uml#_MQHZEHDAEd6eItyqb1FoWg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-socialHistory.uml#_UOVM0HDAEd6eItyqb1FoWg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-socialHistory.uml#_Wa2uwHDAEd6eItyqb1FoWg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-encounters.uml#_rJDcIHDAEd6eItyqb1FoWg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-immunizations.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-encounters.uml#_mO8KEHJWEd6cacuAk5qrhg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_dAAnAHfVEd6ZeOKq_2_a9g"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-alerts.uml#_PgsSAHrREd68l9lQ-TLEBQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-alerts.uml#_qV72IHrREd68l9lQ-TLEBQ"/>
     <packagedElement xmi:type="uml:Class" xmi:id="__XC4cHrREd68l9lQ-TLEBQ" name="ReactionObservation">
       <ownedComment xmi:id="_CozvwDPpEeC5WtVOSkkuzw">
         <body>A reaction represents an adverse event due to an administered or exposed substance. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions. Significant reactions are to be listed in the Alerts section. Reactions in the Medications section can be used to track reactions associated with individual substance administrations or to track routine follow up to an administration (e.g. &quot;no adverse reaction 30 minutes post administration&quot;).</body>
@@ -429,17 +429,17 @@
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-familyHistory.uml#_joG2YIHbEd6Ncrr6L3Ublw"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_VL2w0IiBEd66cKocspyVOg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_lgLT4IiBEd66cKocspyVOg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-encounters.uml#_2QJRIIiBEd66cKocspyVOg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_8Xj7UIiBEd66cKocspyVOg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_zfn5kIjqEd66cKocspyVOg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_CIfVgIjtEd66cKocspyVOg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_C_zYAIjtEd66cKocspyVOg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-procedures.uml#_p_LEwIjvEd66cKocspyVOg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-problem.uml#_tr5r0It5Ed639sxyAgfSmw"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_joG2YIHbEd6Ncrr6L3Ublw"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_VL2w0IiBEd66cKocspyVOg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_lgLT4IiBEd66cKocspyVOg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-encounters.uml#_2QJRIIiBEd66cKocspyVOg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_8Xj7UIiBEd66cKocspyVOg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-medications.uml#_zfn5kIjqEd66cKocspyVOg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-medications.uml#_CIfVgIjtEd66cKocspyVOg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-medications.uml#_C_zYAIjtEd66cKocspyVOg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_p_LEwIjvEd66cKocspyVOg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-problem.uml#_tr5r0It5Ed639sxyAgfSmw"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_3FDjoKPPEd6t_4WfM070fA" memberEnd="_3FF_4KPPEd6t_4WfM070fA _3FJDMKPPEd6t_4WfM070fA">
       <ownedEnd xmi:id="_3FJDMKPPEd6t_4WfM070fA" name="" visibility="private" type="_Ze7UsGESEd69D7zx7EkLMA" association="_3FDjoKPPEd6t_4WfM070fA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3FJqQaPPEd6t_4WfM070fA" value="*"/>
@@ -488,7 +488,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QlkCEKPTEd6t_4WfM070fA"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-planOfCare.uml#_o9nLAKPTEd6t_4WfM070fA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-planOfCare.uml#_o9nLAKPTEd6t_4WfM070fA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_FT-joKPUEd6t_4WfM070fA" memberEnd="_FT_xwKPUEd6t_4WfM070fA _FUBm8KPUEd6t_4WfM070fA">
       <ownedEnd xmi:id="_FUBm8KPUEd6t_4WfM070fA" name="" visibility="private" type="_Ze7UsGESEd69D7zx7EkLMA" association="_FT-joKPUEd6t_4WfM070fA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FUCOAaPUEd6t_4WfM070fA" value="*"/>
@@ -501,29 +501,29 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e_HFEKPUEd6t_4WfM070fA"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-vitalSigns.uml#_GKpeMKPaEd6t_4WfM070fA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-vitalSigns.uml#_GKpeMKPaEd6t_4WfM070fA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_kxx_kKPaEd6t_4WfM070fA" memberEnd="_kxz0wKPaEd6t_4WfM070fA _kx2RAKPaEd6t_4WfM070fA">
       <ownedEnd xmi:id="_kx2RAKPaEd6t_4WfM070fA" name="" visibility="private" type="_Ze7UsGESEd69D7zx7EkLMA" association="_kxx_kKPaEd6t_4WfM070fA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kx24EaPaEd6t_4WfM070fA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kx24EKPaEd6t_4WfM070fA"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-medicalEquipment.uml#_5hfTYKPbEd6t_4WfM070fA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medicalEquipment.uml#_5hfTYKPbEd6t_4WfM070fA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_MnFrQKPcEd6t_4WfM070fA" memberEnd="_MnHgcKPcEd6t_4WfM070fA _MnJ8sKPcEd6t_4WfM070fA">
       <ownedEnd xmi:id="_MnJ8sKPcEd6t_4WfM070fA" name="" visibility="private" type="_Ze7UsGESEd69D7zx7EkLMA" association="_MnFrQKPcEd6t_4WfM070fA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MnLK0KPcEd6t_4WfM070fA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MnKjwKPcEd6t_4WfM070fA"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-functionalStatus.uml#_GoctIKPdEd6t_4WfM070fA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-functionalStatus.uml#_GoctIKPdEd6t_4WfM070fA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_Z1lQYKPdEd6t_4WfM070fA" memberEnd="_Z1nFkKPdEd6t_4WfM070fA _Z1o6wKPdEd6t_4WfM070fA">
       <ownedEnd xmi:id="_Z1o6wKPdEd6t_4WfM070fA" name="" visibility="private" type="_Ze7UsGESEd69D7zx7EkLMA" association="_Z1lQYKPdEd6t_4WfM070fA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z1qI4aPdEd6t_4WfM070fA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z1qI4KPdEd6t_4WfM070fA"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-advanceDirectives.uml#_NvRwcKPeEd6t_4WfM070fA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-payers.uml#_T79VIKPeEd6t_4WfM070fA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-advanceDirectives.uml#_NvRwcKPeEd6t_4WfM070fA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-payers.uml#_T79VIKPeEd6t_4WfM070fA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_meUdEKPeEd6t_4WfM070fA" memberEnd="_meVrMKPeEd6t_4WfM070fA _meYHcKPeEd6t_4WfM070fA">
       <ownedEnd xmi:id="_meYHcKPeEd6t_4WfM070fA" name="" visibility="private" type="_Ze7UsGESEd69D7zx7EkLMA" association="_meUdEKPeEd6t_4WfM070fA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_meYugaPeEd6t_4WfM070fA" value="*"/>
@@ -536,48 +536,48 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nDiC8KPeEd6t_4WfM070fA"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-purpose.uml#_f0mKEKRtEd6t_4WfM070fA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-purpose.uml#_f0mKEKRtEd6t_4WfM070fA"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_1ASrwKRtEd6t_4WfM070fA" memberEnd="_1AUg8KRtEd6t_4WfM070fA _1AW9MKRtEd6t_4WfM070fA">
       <ownedEnd xmi:id="_1AW9MKRtEd6t_4WfM070fA" name="" visibility="private" type="_Ze7UsGESEd69D7zx7EkLMA" association="_1ASrwKRtEd6t_4WfM070fA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1AXkQKRtEd6t_4WfM070fA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1AW9MaRtEd6t_4WfM070fA"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-purpose.uml#_rrtFgKRuEd6t_4WfM070fA"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-purpose.uml#_Iui3sKRxEd6t_4WfM070fA"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-vitalSigns.uml#_wN4O0K3zEd6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-vitalSigns.uml#__3xU0K3zEd6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-results.uml#_Ubf3kK30Ed6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-results.uml#_hl5m4K31Ed6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-results.uml#_EGc0YK33Ed6_ioDelDcPPg"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-advanceDirectives.uml#_mEuuUMJcEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-advanceDirectives.uml#_YpRfsMJlEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-advanceDirectives.uml#_Wj-KoMJmEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-advanceDirectives.uml#_KIDxoMJoEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-advanceDirectives.uml#_aBcFIMJoEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-payers.uml#_4A1mMMJqEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-payers.uml#_6M-toMJqEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-payers.uml#_8LwHcMJqEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-planOfCare.uml#_azWbgMJuEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-procedures.uml#_T9G4QMJ1Ed6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_F9_RAMKAEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_IuPLEMKAEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_JSLJIMKBEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_Q0aykMKBEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-purpose.uml#_rrtFgKRuEd6t_4WfM070fA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-purpose.uml#_Iui3sKRxEd6t_4WfM070fA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-vitalSigns.uml#_wN4O0K3zEd6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-vitalSigns.uml#__3xU0K3zEd6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-results.uml#_Ubf3kK30Ed6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-results.uml#_hl5m4K31Ed6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-results.uml#_EGc0YK33Ed6_ioDelDcPPg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-advanceDirectives.uml#_mEuuUMJcEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-advanceDirectives.uml#_YpRfsMJlEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-advanceDirectives.uml#_Wj-KoMJmEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-advanceDirectives.uml#_KIDxoMJoEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-advanceDirectives.uml#_aBcFIMJoEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-payers.uml#_4A1mMMJqEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-payers.uml#_6M-toMJqEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-payers.uml#_8LwHcMJqEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-planOfCare.uml#_azWbgMJuEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-procedures.uml#_T9G4QMJ1Ed6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_F9_RAMKAEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_IuPLEMKAEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-medications.uml#_JSLJIMKBEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-medications.uml#_Q0aykMKBEd6-XpBv2uxYrQ"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_04s2sMMREd6-XpBv2uxYrQ" name="FunctionalStatusObservation">
       <generalization xmi:id="_4OEQAMMREd6-XpBv2uxYrQ" general="_V3Jy4HrTEd68l9lQ-TLEBQ"/>
       <ownedAttribute xmi:id="_G1LDUMMSEd6-XpBv2uxYrQ" name="value" visibility="private">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-medications.uml#_JpjIEMMVEd6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-alerts.uml#_5QGGgBTbEd-6K-YJpbwRmQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-problem.uml#_n55kwBWhEd-6K-YJpbwRmQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-problem.uml#_0k-JMBWhEd-6K-YJpbwRmQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-problem.uml#_qqzUMBWjEd-6K-YJpbwRmQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-alerts.uml#_aCZVgRW5Ed-6K-YJpbwRmQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-alerts.uml#_SKqqoBXBEd-6K-YJpbwRmQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_JpjIEMMVEd6-XpBv2uxYrQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-alerts.uml#_5QGGgBTbEd-6K-YJpbwRmQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-problem.uml#_n55kwBWhEd-6K-YJpbwRmQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-problem.uml#_0k-JMBWhEd-6K-YJpbwRmQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-problem.uml#_qqzUMBWjEd-6K-YJpbwRmQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-alerts.uml#_aCZVgRW5Ed-6K-YJpbwRmQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-alerts.uml#_SKqqoBXBEd-6K-YJpbwRmQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_g6vMsBXBEd-6K-YJpbwRmQ" memberEnd="_g6uloBXBEd-6K-YJpbwRmQ _g6vzwBXBEd-6K-YJpbwRmQ">
       <ownedEnd xmi:id="_g6vzwBXBEd-6K-YJpbwRmQ" type="__XC4cHrREd68l9lQ-TLEBQ" association="_g6vMsBXBEd-6K-YJpbwRmQ"/>
     </packagedElement>
@@ -615,31 +615,31 @@
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-problem.uml#_7kTDABZ2Ed-i6Lz80y5G5g"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-planOfCare.uml#_7I79cDHlEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-planOfCare.uml#_EGZnsDHmEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-planOfCare.uml#_1z0WEDHpEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-planOfCare.uml#_9Yav8DHpEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-planOfCare.uml#_A9YrgDHqEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-planOfCare.uml#_fizVoDHqEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-planOfCare.uml#_gMsnMDHqEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-planOfCare.uml#_gpJSoDHqEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-planOfCare.uml#_hHCvkDHqEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-planOfCare.uml#_hipGcDHqEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-planOfCare.uml#_iUZTgDHqEd-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-procedures.uml#_to5TUDH6Ed-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-procedures.uml#_3lHE0DH6Ed-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-procedures.uml#_6mhnYDH6Ed-saqiXO4OYhQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-payers.uml#_OD2tYTOpEd-5f4Yngl7nkw"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-payers.uml#_h-FxwTOqEd-5f4Yngl7nkw"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-payers.uml#_FsDEoXoYEd-pnJdGZX6q4Q"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-planOfCare.uml#_gXwH4DhREd-XUbK0vNqSPQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-planOfCare.uml#_RAdi4ThTEd-XUbK0vNqSPQ"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-payers.uml#_GkCSAHoXEd-pnJdGZX6q4Q"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-payers.uml#_JT_4MHoXEd-pnJdGZX6q4Q"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-payers.uml#_Na0uMHoYEd-pnJdGZX6q4Q"/>
-    <packagedElement xmi:type="uml:Class" href="sections/ccd-payers.uml#_E4rTsHooEd-OuuwcsTsBUQ"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-payers.uml#_OgHIAXooEd-OuuwcsTsBUQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-problem.uml#_7kTDABZ2Ed-i6Lz80y5G5g"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-planOfCare.uml#_7I79cDHlEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-planOfCare.uml#_EGZnsDHmEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-planOfCare.uml#_1z0WEDHpEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-planOfCare.uml#_9Yav8DHpEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-planOfCare.uml#_A9YrgDHqEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-planOfCare.uml#_fizVoDHqEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-planOfCare.uml#_gMsnMDHqEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-planOfCare.uml#_gpJSoDHqEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-planOfCare.uml#_hHCvkDHqEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-planOfCare.uml#_hipGcDHqEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-planOfCare.uml#_iUZTgDHqEd-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_to5TUDH6Ed-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_3lHE0DH6Ed-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_6mhnYDH6Ed-saqiXO4OYhQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-payers.uml#_OD2tYTOpEd-5f4Yngl7nkw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-payers.uml#_h-FxwTOqEd-5f4Yngl7nkw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-payers.uml#_FsDEoXoYEd-pnJdGZX6q4Q"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-planOfCare.uml#_gXwH4DhREd-XUbK0vNqSPQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-planOfCare.uml#_RAdi4ThTEd-XUbK0vNqSPQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-payers.uml#_GkCSAHoXEd-pnJdGZX6q4Q"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-payers.uml#_JT_4MHoXEd-pnJdGZX6q4Q"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-payers.uml#_Na0uMHoYEd-pnJdGZX6q4Q"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-payers.uml#_E4rTsHooEd-OuuwcsTsBUQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-payers.uml#_OgHIAXooEd-OuuwcsTsBUQ"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_4ElDYHpZEd-OuuwcsTsBUQ" name="CoveragePlanDescription">
       <generalization xmi:id="_7r024HpZEd-OuuwcsTsBUQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
@@ -661,10 +661,10 @@
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_GQiy0HpaEd-OuuwcsTsBUQ" value="DEF"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_1nsVAOeYEd-aaJELhEID-A"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_3D070eeYEd-aaJELhEID-A"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_1481YOeeEd-aaJELhEID-A"/>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-medications.uml#_pEpVMSp1EeCuGIaOlnUvyw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-medications.uml#_1nsVAOeYEd-aaJELhEID-A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-medications.uml#_3D070eeYEd-aaJELhEID-A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-medications.uml#_1481YOeeEd-aaJELhEID-A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-medications.uml#_pEpVMSp1EeCuGIaOlnUvyw"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_WE95UO3TEd-dJvThfIiQuA" name="SupportParticipant">
       <generalization xmi:id="_WE-gYO3TEd-dJvThfIiQuA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
@@ -702,7 +702,7 @@
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" href="sections/ccd-problem.uml#_OXcaMiTMEeCvyarv2dSCoQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-problem.uml#_OXcaMiTMEeCvyarv2dSCoQ"/>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -749,33 +749,33 @@
   <CDA:AssociationValidation xmi:id="_ckz2wKPdEd6t_4WfM070fA" severity="WARNING" base_Association="_Z1lQYKPdEd6t_4WfM070fA"/>
   <CDA:AssociationValidation xmi:id="_sHIfsKPeEd6t_4WfM070fA" severity="WARNING" base_Association="_nDb8UKPeEd6t_4WfM070fA"/>
   <CDA:CDATemplate xmi:id="_wA3kYKRtEd6t_4WfM070fA" templateId="2.16.840.1.113883.10.20.1.13" assigningAuthorityName="CCD">
-    <base_Class href="sections/ccd-purpose.uml#_f0mKEKRtEd6t_4WfM070fA"/>
+    <base_Class href=".controlled/ccd-purpose.uml#_f0mKEKRtEd6t_4WfM070fA"/>
   </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_2TmtwKRtEd6t_4WfM070fA" severity="INFO" base_Association="_1ASrwKRtEd6t_4WfM070fA">
     <ruleId>CONF-15</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_zC1EEKRuEd6t_4WfM070fA" templateId="2.16.840.1.113883.10.20.1.30" assigningAuthorityName="CCD">
     <ruleId>CONF-20</ruleId>
-    <base_Class href="sections/ccd-purpose.uml#_rrtFgKRuEd6t_4WfM070fA"/>
+    <base_Class href=".controlled/ccd-purpose.uml#_rrtFgKRuEd6t_4WfM070fA"/>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_72ljQKRvEd6t_4WfM070fA">
     <ruleId>CONF-21</ruleId>
-    <base_Property href="sections/ccd-purpose.uml#_lCjKwqRvEd6t_4WfM070fA"/>
+    <base_Property href=".controlled/ccd-purpose.uml#_lCjKwqRvEd6t_4WfM070fA"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="__o9BoKRvEd6t_4WfM070fA">
     <ruleId>CONF-22</ruleId>
-    <base_Property href="sections/ccd-purpose.uml#_lCjKwKRvEd6t_4WfM070fA"/>
+    <base_Property href=".controlled/ccd-purpose.uml#_lCjKwKRvEd6t_4WfM070fA"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_qmHZoKRyEd6t_4WfM070fA" severity="WARNING">
-    <base_Association href="sections/ccd-purpose.uml#_Iui3sKRxEd6t_4WfM070fA"/>
+    <base_Association href=".controlled/ccd-purpose.uml#_Iui3sKRxEd6t_4WfM070fA"/>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_RKMcEKR2Ed6t_4WfM070fA">
     <ruleId>CONF-26</ruleId>
-    <base_Constraint href="sections/ccd-purpose.uml#_a-lZMKR0Ed6t_4WfM070fA"/>
+    <base_Constraint href=".controlled/ccd-purpose.uml#_a-lZMKR0Ed6t_4WfM070fA"/>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2qHaMKR2Ed6t_4WfM070fA">
     <ruleId>CONF-27</ruleId>
-    <base_Constraint href="sections/ccd-purpose.uml#_zYt64KR2Ed6t_4WfM070fA"/>
+    <base_Constraint href=".controlled/ccd-purpose.uml#_zYt64KR2Ed6t_4WfM070fA"/>
   </CDA:ConstraintValidation>
   <CDA:AssociationValidation xmi:id="_bVC2QMMREd6-XpBv2uxYrQ" message="CCD Functional Status Section SHOULD contain [1..*] entry such that it, SHALL contain [1..1] Problem Act (templateId: 2.16.840.1.113883.10.20.1.27)" severity="WARNING"/>
   <CDA:AssociationValidation xmi:id="_iMfPMMMREd6-XpBv2uxYrQ" message="CCD Functional Status Section SHOULD contain [1..*] entry such that it, SHALL contain [1..1] Result Organizer (templateId: 2.16.840.1.113883.10.20.1.32)" severity="WARNING"/>
@@ -803,7 +803,7 @@
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_9So_8P_UEd6Y8ICOr4M99Q">
     <ruleId>CONF-18</ruleId>
-    <base_Property href="sections/ccd-purpose.uml#_Kfle4KRuEd6t_4WfM070fA"/>
+    <base_Property href=".controlled/ccd-purpose.uml#_Kfle4KRuEd6t_4WfM070fA"/>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_uBjDABWiEd-6K-YJpbwRmQ" base_Constraint="_nPDbgBWiEd-6K-YJpbwRmQ">
     <ruleId>CONF-517</ruleId>
@@ -882,11 +882,11 @@
     <ruleId>CONF-14</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_Tq9NIBg8Ed-PS-Y_2ABBMQ">
-    <base_Property href="sections/ccd-purpose.uml#_SD8MABg8Ed-PS-Y_2ABBMQ"/>
+    <base_Property href=".controlled/ccd-purpose.uml#_SD8MABg8Ed-PS-Y_2ABBMQ"/>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_hvPnQBg8Ed-PS-Y_2ABBMQ" severity="WARNING">
     <ruleId>CONF-19</ruleId>
-    <base_Constraint href="sections/ccd-purpose.uml#_gTPjUBg8Ed-PS-Y_2ABBMQ"/>
+    <base_Constraint href=".controlled/ccd-purpose.uml#_gTPjUBg8Ed-PS-Y_2ABBMQ"/>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_M5z_UBtDEd-vGNAsDUJvgw" severity="WARNING"/>
   <CDA:AssociationValidation xmi:id="_KP7HwBtKEd-vGNAsDUJvgw" message="CCD Immunizations Section SHOULD contain [1..*] entry such that it, SHALL contain [1..1] Medication Activity (templateId: 2.16.840.1.113883.10.20.1.24)" severity="WARNING"/>
@@ -942,18 +942,18 @@
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_528M4CfbEd-4R4ealYN1gQ" code="48764-5" displayName="Summary purpose">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <base_Property href="sections/ccd-purpose.uml#_Kfle4aRuEd6t_4WfM070fA"/>
+    <base_Property href=".controlled/ccd-purpose.uml#_Kfle4aRuEd6t_4WfM070fA"/>
     <ruleId>CONF-16</ruleId>
     <ruleId>CONF-17</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_52-pICfbEd-4R4ealYN1gQ" code="23745001" displayName="Documentation procedure">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <base_Property href="sections/ccd-purpose.uml#_pQULsaRvEd6t_4WfM070fA"/>
+    <base_Property href=".controlled/ccd-purpose.uml#_pQULsaRvEd6t_4WfM070fA"/>
     <ruleId>CONF-25</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_53BFYCfbEd-4R4ealYN1gQ" code="completed">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <base_Property href="sections/ccd-purpose.uml#_pQULsKRvEd6t_4WfM070fA"/>
+    <base_Property href=".controlled/ccd-purpose.uml#_pQULsKRvEd6t_4WfM070fA"/>
     <ruleId>CONF-23</ruleId>
     <ruleId>CONF-24</ruleId>
   </CDA:CodeSystemConstraint>

@@ -8,7 +8,7 @@
 &lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_LTgrEMidEd6mWrHPmrIIfQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-hospitalCourse.uml#_DO0b4MidEd6mWrHPmrIIfQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-hospitalCourse.uml#_DO0b4MidEd6mWrHPmrIIfQ"/>
     </generalization>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_imN8kMidEd6mWrHPmrIIfQ" base_Class="_J1pl8MidEd6mWrHPmrIIfQ" templateId="2.16.840.1.113883.3.88.11.83.121" assigningAuthorityName="HITSP C83"/>

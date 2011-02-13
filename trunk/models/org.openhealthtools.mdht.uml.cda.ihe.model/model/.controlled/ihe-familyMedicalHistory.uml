@@ -6,7 +6,7 @@
 known, the diseases they suffered from, their ages at death, and other relevant genetic information.</body>
     </ownedComment>
     <generalization xmi:id="_nplocMigEd6mWrHPmrIIfQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-familyHistory.uml#_5ET7oGwWEd6q29qQGU-SBA"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-familyHistory.uml#_5ET7oGwWEd6q29qQGU-SBA"/>
     </generalization>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ooeSkMigEd6mWrHPmrIIfQ" base_Class="_kKnAIMigEd6mWrHPmrIIfQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.14" assigningAuthorityName="IHE PCC"/>

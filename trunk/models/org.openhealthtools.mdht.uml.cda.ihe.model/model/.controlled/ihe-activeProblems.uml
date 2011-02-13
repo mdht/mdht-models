@@ -8,7 +8,7 @@
       <body>The active problem section shall contain a narrative description of the conditions currently being monitored for the patient. It shall include entries for patient conditions as described in the Entry Content Module.</body>
     </ownedComment>
     <generalization xmi:id="_ESh9QGGzEd6bFO5yxRh3Nw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_vjPMEGaGEd6Hk_bPOfEjYA"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_vjPMEGaGEd6Hk_bPOfEjYA"/>
     </generalization>
     <ownedAttribute xmi:id="_w1ykwIwEEd6B6JSUB00H7g" name="problemConcernEntry" visibility="private" type="_wSnPAGaQEd6Hk_bPOfEjYA" association="_w1oMsIwEEd6B6JSUB00H7g">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w2PQsYwEEd6B6JSUB00H7g" value="*"/>
@@ -55,14 +55,14 @@
       </specification>
     </ownedRule>
     <generalization xmi:id="_3ZiExWdIEd6Hk_bPOfEjYA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_IjIO0DxbEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_IjIO0DxbEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_F3u2gCNZEeCxCon8a79rfA" name="code" visibility="private">
       <ownedComment xmi:id="_jcR5gCNZEeCxCon8a79rfA">
         <body>The &amp;lt;code> describes the process of establishing a problem. The code element should be used, as the process of determining the value is important to clinicians (e.g., a diagnosis is a more advanced statement than a symptom). When a physical exam observation is being recorded the code used should be &quot;Finding.&quot; When a review of systems observation is being recorded the code used should be &quot;Symptom.&quot; The recommended vocabulary for describing problems is specified as a value set. Subclasses of this content module may specify other vocabularies.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_f1n6wIhTEd6UrJD25cKDew"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_f1n6wIhTEd6UrJD25cKDew"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_F3xSwCNZEeCxCon8a79rfA" name="effectiveTime" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_8Uvn4CNZEeCxCon8a79rfA">
@@ -71,7 +71,7 @@
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OL18CgSEeCXiupwzMk--A" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OUY0CgSEeCXiupwzMk--A" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_t3kdcIhREd6UrJD25cKDew"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_t3kdcIhREd6UrJD25cKDew"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_UJEgECNXEeCxCon8a79rfA" name="id" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_eWMbYCNXEeCxCon8a79rfA">
@@ -218,7 +218,7 @@
       </specification>
     </ownedRule>
     <generalization xmi:id="_s7L3ICQNEeCxCon8a79rfA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_TrwngGaJEd6Hk_bPOfEjYA"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_TrwngGaJEd6Hk_bPOfEjYA"/>
     </generalization>
     <ownedAttribute xmi:id="_SMoUYCQOEeCxCon8a79rfA" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
@@ -228,7 +228,7 @@
     </ownedAttribute>
     <ownedAttribute xmi:id="_4GZV4CQOEeCxCon8a79rfA" name="value" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_ehj3AHu_Ed6jfbAJq2V82w"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_ehj3AHu_Ed6jfbAJq2V82w"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_spibkiQPEeCxCon8a79rfA" memberEnd="_spibkCQPEeCxCon8a79rfA _spibkyQPEeCxCon8a79rfA">
@@ -247,7 +247,7 @@
       </specification>
     </ownedRule>
     <generalization xmi:id="_R7Ns4CQREeCxCon8a79rfA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_T6kfkGaJEd6Hk_bPOfEjYA"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_T6kfkGaJEd6Hk_bPOfEjYA"/>
     </generalization>
     <ownedAttribute xmi:id="_mWvV4CQREeCxCon8a79rfA" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
@@ -257,7 +257,7 @@
     </ownedAttribute>
     <ownedAttribute xmi:id="_F_MKUCQSEeCxCon8a79rfA" name="value" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-problem.uml#_BiaqUHvDEd6jfbAJq2V82w"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_BiaqUHvDEd6jfbAJq2V82w"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_ctFaYSQZEeCxCon8a79rfA" memberEnd="_ctEzUCQZEeCxCon8a79rfA _ctFaYiQZEeCxCon8a79rfA">

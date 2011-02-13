@@ -12,7 +12,7 @@
 &lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_U9euoMigEd6mWrHPmrIIfQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-carePlan.uml#_BEcusMigEd6mWrHPmrIIfQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-carePlan.uml#_BEcusMigEd6mWrHPmrIIfQ"/>
     </generalization>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_XUbX4MigEd6mWrHPmrIIfQ" base_Class="_SydBgMigEd6mWrHPmrIIfQ" templateId="2.16.840.1.113883.3.88.11.83.124" assigningAuthorityName="HITSP C83"/>

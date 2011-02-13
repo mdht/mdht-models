@@ -6,7 +6,7 @@
 guarantor, or some combination.</body>
     </ownedComment>
     <generalization xmi:id="_1MYRYMfXEd6VjLXh4DcWSg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-payers.uml#_T79VIKPeEd6t_4WfM070fA"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-payers.uml#_T79VIKPeEd6t_4WfM070fA"/>
     </generalization>
     <ownedAttribute xmi:id="_aw0UkDXgEd-gpLhSMS7jpQ" name="coverageEntry" type="_PMrjADXgEd-gpLhSMS7jpQ" association="_aw0UkTXgEd-gpLhSMS7jpQ">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6D1EgDXgEd-gpLhSMS7jpQ" value="*"/>
@@ -15,7 +15,7 @@ guarantor, or some combination.</body>
   </uml:Class>
   <uml:Class xmi:id="_PMrjADXgEd-gpLhSMS7jpQ" name="CoverageEntry">
     <generalization xmi:id="_PMrjATXgEd-gpLhSMS7jpQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-payers.uml#_4A1mMMJqEd6-XpBv2uxYrQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-payers.uml#_4A1mMMJqEd6-XpBv2uxYrQ"/>
     </generalization>
   </uml:Class>
   <uml:Association xmi:id="_aw0UkTXgEd-gpLhSMS7jpQ" memberEnd="_aw0UkDXgEd-gpLhSMS7jpQ _aw0UkjXgEd-gpLhSMS7jpQ">

@@ -14,22 +14,22 @@
 		<sequential>
 			<!-- must include a replace statement for each imported template model. -->
 			<replace file="@{filePath}" token=".model/model/ccd.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-advanceDirectives.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-alerts.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-encounters.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-familyHistory.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-functionalStatus.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-immunizations.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-medicalEquipment.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-medications.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-payers.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-planOfCare.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-problem.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-procedures.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-purpose.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-results.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-socialHistory.uml" value="/model/ccd_Ecore.uml"/>
-			<replace file="@{filePath}" token=".model/model/sections/ccd-vitalSigns.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-advanceDirectives.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-alerts.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-encounters.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-familyHistory.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-functionalStatus.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-immunizations.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-medicalEquipment.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-medications.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-payers.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-planOfCare.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-problem.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-procedures.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-purpose.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-results.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-socialHistory.uml" value="/model/ccd_Ecore.uml"/>
+			<replace file="@{filePath}" token=".model/model/.controlled/ccd-vitalSigns.uml" value="/model/ccd_Ecore.uml"/>
 		</sequential>
 	</macrodef>
 

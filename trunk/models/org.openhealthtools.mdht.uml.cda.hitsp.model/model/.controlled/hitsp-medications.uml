@@ -38,7 +38,7 @@
       </specification>
     </ownedRule>
     <generalization xmi:id="_w0bkkHrGEd68l9lQ-TLEBQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-medications.uml#_sFGZUHGfEd6bf47ZOcft4w"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_sFGZUHGfEd6bf47ZOcft4w"/>
     </generalization>
     <ownedAttribute xmi:id="_s3OC4OxDEd-HcKrkbxroPA" name="effectiveTime" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_UMeNIOxTEd-JOaR14t7EwQ">
@@ -60,7 +60,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s3OC4exDEd-HcKrkbxroPA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s3OC4uxDEd-HcKrkbxroPA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_u37zEErsEd6FXKclYGEDCw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-medications.uml#_w93GUOecEd-aaJELhEID-A"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_w93GUOecEd-aaJELhEID-A"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_uHDtme7JEd-iKq5sSX9U2w" name="routeCode" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_CnP0IO7KEd-iKq5sSX9U2w">
@@ -70,7 +70,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uHDtmu7JEd-iKq5sSX9U2w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uHDtm-7JEd-iKq5sSX9U2w" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9hNwoErsEd6FXKclYGEDCw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/sections/ccd-medications.uml#_w93tY-ecEd-aaJELhEID-A"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_w93tY-ecEd-aaJELhEID-A"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_WI3zsMfwEd6VjLXh4DcWSg" name="MedicationsSection">
@@ -78,7 +78,7 @@
       <body>The Medications Section contains information about the relevant medications for the patient. At a minimum, the currently active medications should be listed.</body>
     </ownedComment>
     <generalization xmi:id="_Y4PkAMfwEd6VjLXh4DcWSg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-medications.uml#_8YbB4HomEd6WAZ28-5wkSg"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_8YbB4HomEd6WAZ28-5wkSg"/>
     </generalization>
     <ownedAttribute xmi:id="_VboJ4Ow9Ed-HcKrkbxroPA" name="medication" type="_IjIO0DxbEd6JwqSGecoePg" association="_Vbow8ew9Ed-HcKrkbxroPA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W2xSMOw9Ed-HcKrkbxroPA" value="*"/>
@@ -88,31 +88,31 @@
   <uml:Class xmi:id="_K3zLIFI0Ed-4TsxSz4jnfg" name="MedicationNormalDose">
     <generalization xmi:id="_K3zLIVI0Ed-4TsxSz4jnfg" general="_IjIO0DxbEd6JwqSGecoePg"/>
     <generalization xmi:id="_sf-boFI0Ed-4TsxSz4jnfg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-medications.uml#__HPx4HySEd6FS-4xbA1fBQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#__HPx4HySEd6FS-4xbA1fBQ"/>
     </generalization>
   </uml:Class>
   <uml:Class xmi:id="_OUVjcFI0Ed-4TsxSz4jnfg" name="MedicationSplitDose">
     <generalization xmi:id="_OUVjcVI0Ed-4TsxSz4jnfg" general="_IjIO0DxbEd6JwqSGecoePg"/>
     <generalization xmi:id="_wT6AQFI0Ed-4TsxSz4jnfg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-medications.uml#_OY9BYHyTEd6FS-4xbA1fBQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_OY9BYHyTEd6FS-4xbA1fBQ"/>
     </generalization>
   </uml:Class>
   <uml:Class xmi:id="_RuVlIFI0Ed-4TsxSz4jnfg" name="MedicationTaperedDose">
     <generalization xmi:id="_RuVlIVI0Ed-4TsxSz4jnfg" general="_IjIO0DxbEd6JwqSGecoePg"/>
     <generalization xmi:id="_zsa0MFI0Ed-4TsxSz4jnfg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-medications.uml#_OCqBQHyTEd6FS-4xbA1fBQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_OCqBQHyTEd6FS-4xbA1fBQ"/>
     </generalization>
   </uml:Class>
   <uml:Class xmi:id="_WXndYFI0Ed-4TsxSz4jnfg" name="MedicationConditionalDose">
     <generalization xmi:id="_WXndYVI0Ed-4TsxSz4jnfg" general="_IjIO0DxbEd6JwqSGecoePg"/>
     <generalization xmi:id="_jYvKUFI0Ed-4TsxSz4jnfg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-medications.uml#_OeXF0HyTEd6FS-4xbA1fBQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_OeXF0HyTEd6FS-4xbA1fBQ"/>
     </generalization>
   </uml:Class>
   <uml:Class xmi:id="_cNo1kFI0Ed-4TsxSz4jnfg" name="MedicationCombinationMedication">
     <generalization xmi:id="_cNo1kVI0Ed-4TsxSz4jnfg" general="_IjIO0DxbEd6JwqSGecoePg"/>
     <generalization xmi:id="_dsjqoFI0Ed-4TsxSz4jnfg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/sections/ihe-medications.uml#_QDIEMHyTEd6FS-4xbA1fBQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_QDIEMHyTEd6FS-4xbA1fBQ"/>
     </generalization>
   </uml:Class>
   <uml:Association xmi:id="_Vbow8ew9Ed-HcKrkbxroPA" memberEnd="_VboJ4Ow9Ed-HcKrkbxroPA _Vbow8uw9Ed-HcKrkbxroPA">
