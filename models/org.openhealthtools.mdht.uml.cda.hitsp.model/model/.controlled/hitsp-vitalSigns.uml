@@ -38,7 +38,7 @@ The differentiation between Vital Signs and Results varies by clinical context. 
       </specification>
     </ownedRule>
     <generalization xmi:id="_JFpYoDSfEeC4N-P6mHDwgg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-vitalSigns.uml#_hVMdIK4QEd6_ioDelDcPPg"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-vitalSigns.uml#_LriUcK4NEd6_ioDelDcPPg"/>
     </generalization>
     <ownedAttribute xmi:id="_K4Lk0K7REd6_ioDelDcPPg" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>

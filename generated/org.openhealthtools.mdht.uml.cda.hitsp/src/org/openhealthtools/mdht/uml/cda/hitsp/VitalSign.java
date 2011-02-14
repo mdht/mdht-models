@@ -9,7 +9,7 @@ package org.openhealthtools.mdht.uml.cda.hitsp;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer;
+import org.openhealthtools.mdht.uml.cda.ihe.VitalSignObservation;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,10 +18,10 @@ import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getVitalSign()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.3.88.11.83.14' constraints.validation.error='VitalSignTemplateId ResultOrganizerCode' code.codeSystemName='LOINC'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.3.88.11.83.14' constraints.validation.error='VitalSignTemplateId ResultObservationCode' code.codeSystemName='LOINC'"
  * @generated
  */
-public interface VitalSign extends VitalSignsOrganizer {
+public interface VitalSign extends VitalSignObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

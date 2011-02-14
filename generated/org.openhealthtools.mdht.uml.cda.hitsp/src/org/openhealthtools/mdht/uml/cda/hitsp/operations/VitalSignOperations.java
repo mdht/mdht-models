@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPlugin;
 import org.openhealthtools.mdht.uml.cda.hitsp.VitalSign;
 import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
-import org.openhealthtools.mdht.uml.cda.ihe.operations.VitalSignsOrganizerOperations;
+import org.openhealthtools.mdht.uml.cda.ihe.operations.VitalSignObservationOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,13 +29,13 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.VitalSignsOrganizerOperat
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.VitalSign#validateVitalSignTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.VitalSign#validateResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.VitalSign#validateResultObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class VitalSignOperations extends VitalSignsOrganizerOperations {
+public class VitalSignOperations extends VitalSignObservationOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -103,26 +103,26 @@ public class VitalSignOperations extends VitalSignsOrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResultOrganizerCode(VitalSign, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateResultObservationCode(VitalSign, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerCode(VitalSign, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateResultObservationCode(VitalSign, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+	protected static final String VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
 "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '8310-5' or value.code = '8462-4' or value.code = '8480-6' or value.code = '8287-5' or value.code = '8867-4' or value.code = '8302-2' or value.code = '8306-3' or value.code = '2710-2' or value.code = '9279-1' or value.code = '3141-9'))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResultOrganizerCode(VitalSign, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateResultObservationCode(VitalSign, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultOrganizerCode(VitalSign, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateResultObservationCode(VitalSign, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -137,25 +137,25 @@ public class VitalSignOperations extends VitalSignsOrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateResultOrganizerCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	public static  boolean validateResultObservationCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.VITAL_SIGN__RESULT_ORGANIZER_CODE,
-						 HITSPPlugin.INSTANCE.getString("ResultOrganizerCode"),
+						 HITSPValidator.VITAL_SIGN__RESULT_OBSERVATION_CODE,
+						 HITSPPlugin.INSTANCE.getString("ResultObservationCode"),
 						 new Object [] { vitalSign }));
 			}
 			return false;

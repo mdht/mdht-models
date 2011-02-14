@@ -332,12 +332,12 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int VITAL_SIGN__VITAL_SIGN_TEMPLATE_ID = 60;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Code' of 'Vital Sign'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Vital Sign'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGN__RESULT_ORGANIZER_CODE = 61;
+	public static final int VITAL_SIGN__RESULT_OBSERVATION_CODE = 61;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Payers Section Template Id' of 'Payers Section'.
@@ -1518,21 +1518,26 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(vitalSign, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(vitalSign, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerComponentElement(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerInformationSource(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsOrganizer_validateResultOrganizerTemplateId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerMoodCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= validateVitalSign_validateResultOrganizerCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateResultOrganizerStatusCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsOrganizer_validateVitalSignsOrganizerInformationSource(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerRequireResultsOrganizerTemplateID(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerTemplateId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerClassCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerEffectiveTime(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerVitalSignObservation(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationReferenceRangeRequired(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInformationSource(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationTemplateId(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationId(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSign_validateResultObservationCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationValue(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateSimpleObservation_validateSimpleObservationTemplateId(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateSimpleObservation_validateSimpleObservationId(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateSimpleObservation_validateSimpleObservationStatusCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationTemplateId(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationInterpretationCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationMethodCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationTargetSiteCode(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationValue(vitalSign, diagnostics, context);
 		if (result || diagnostics != null) result &= validateVitalSign_validateVitalSignTemplateId(vitalSign, diagnostics, context);
 		return result;
 	}
@@ -1548,12 +1553,12 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultOrganizerCode constraint of '<em>Vital Sign</em>'.
+	 * Validates the validateResultObservationCode constraint of '<em>Vital Sign</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSign_validateResultOrganizerCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSign_validateResultObservationCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		// TODO override the constraint, if desired
 		// -> uncomment the scaffolding
 		// -> specify the condition that violates the constraint
@@ -1567,13 +1572,13 @@ public class HITSPValidator extends EObjectValidator {
 						 DIAGNOSTIC_SOURCE,
 						 0,
 						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateResultOrganizerCode", getObjectLabel(vitalSign, context) },
+						 new Object[] { "validateResultObservationCode", getObjectLabel(vitalSign, context) },
 						 new Object[] { vitalSign },
 						 context));
 			}
 			return false;
 		}
-		return iheValidator.validateVitalSignsOrganizer_validateResultOrganizerCode(vitalSign, diagnostics, context);
+		return iheValidator.validateVitalSignObservation_validateResultObservationCode(vitalSign, diagnostics, context);
 	}
 
 	/**
