@@ -1190,7 +1190,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		diagnosticResultsSectionEClass.getESuperTypes().add(theIHEPackage.getCodedResultsSection());
 		resultEClass.getESuperTypes().add(theCCDPackage.getResultObservation());
 		resultEClass.getESuperTypes().add(theIHEPackage.getSimpleObservation());
-		vitalSignEClass.getESuperTypes().add(theIHEPackage.getVitalSignsOrganizer());
+		vitalSignEClass.getESuperTypes().add(theIHEPackage.getVitalSignObservation());
 		historyOfPastIllnessSectionEClass.getESuperTypes().add(theIHEPackage.getHistoryOfPastIllnessSection());
 		chiefComplaintSectionEClass.getESuperTypes().add(theIHEPackage.getChiefComplaintSection());
 		reasonForReferralSectionEClass.getESuperTypes().add(theIHEPackage.getReasonForReferralSection());
@@ -2356,7 +2356,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		   new String[] {
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "templateId.root", "2.16.840.1.113883.3.88.11.83.14",
-			 "constraints.validation.error", "VitalSignTemplateId ResultOrganizerCode",
+			 "constraints.validation.error", "VitalSignTemplateId ResultObservationCode",
 			 "code.codeSystemName", "LOINC"
 		   });								
 		addAnnotation

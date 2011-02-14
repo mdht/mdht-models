@@ -16,7 +16,6 @@ import org.openhealthtools.mdht.uml.cda.Guardian;
 import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Participant1;
 import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
@@ -35,8 +34,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer;
-import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
@@ -124,6 +121,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
 import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
+import org.openhealthtools.mdht.uml.cda.ihe.VitalSignObservation;
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.openhealthtools.mdht.uml.hl7.rim.Participation;
@@ -442,10 +440,10 @@ public class HITSPSwitch<T> {
 			case HITSPPackage.VITAL_SIGN: {
 				VitalSign vitalSign = (VitalSign)theEObject;
 				T result = caseVitalSign(vitalSign);
-				if (result == null) result = caseIHE_VitalSignsOrganizer(vitalSign);
-				if (result == null) result = caseVitalSignsOrganizer(vitalSign);
-				if (result == null) result = caseResultOrganizer(vitalSign);
-				if (result == null) result = caseOrganizer(vitalSign);
+				if (result == null) result = caseVitalSignObservation(vitalSign);
+				if (result == null) result = caseResultObservation(vitalSign);
+				if (result == null) result = caseSimpleObservation(vitalSign);
+				if (result == null) result = caseObservation(vitalSign);
 				if (result == null) result = caseClinicalStatement(vitalSign);
 				if (result == null) result = caseAct(vitalSign);
 				if (result == null) result = caseInfrastructureRoot(vitalSign);
@@ -2399,62 +2397,17 @@ public class HITSPSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Organizer</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Vital Sign Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Organizer</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Vital Sign Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOrganizer(Organizer object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseResultOrganizer(ResultOrganizer object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Vital Signs Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Vital Signs Organizer</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseVitalSignsOrganizer(VitalSignsOrganizer object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Vital Signs Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Vital Signs Organizer</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseIHE_VitalSignsOrganizer(org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer object) {
+	public T caseVitalSignObservation(VitalSignObservation object) {
 		return null;
 	}
 

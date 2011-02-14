@@ -16,7 +16,6 @@ import org.openhealthtools.mdht.uml.cda.Guardian;
 import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Participant1;
 import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
@@ -35,8 +34,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer;
-import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
@@ -124,6 +121,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
 import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
+import org.openhealthtools.mdht.uml.cda.ihe.VitalSignObservation;
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.openhealthtools.mdht.uml.hl7.rim.Participation;
@@ -618,20 +616,8 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 				return createSimpleObservationAdapter();
 			}
 			@Override
-			public Adapter caseOrganizer(Organizer object) {
-				return createOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseResultOrganizer(ResultOrganizer object) {
-				return createResultOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseVitalSignsOrganizer(VitalSignsOrganizer object) {
-				return createVitalSignsOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseIHE_VitalSignsOrganizer(org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer object) {
-				return createIHE_VitalSignsOrganizerAdapter();
+			public Adapter caseVitalSignObservation(VitalSignObservation object) {
+				return createVitalSignObservationAdapter();
 			}
 			@Override
 			public Adapter caseIHE_HistoryOfPastIllnessSection(org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPastIllnessSection object) {
@@ -2334,58 +2320,16 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Organizer <em>Organizer</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.VitalSignObservation <em>Vital Sign Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Organizer
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.VitalSignObservation
 	 * @generated
 	 */
-	public Adapter createOrganizerAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer <em>Result Organizer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer
-	 * @generated
-	 */
-	public Adapter createResultOrganizerAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.VitalSignsOrganizer <em>Vital Signs Organizer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.VitalSignsOrganizer
-	 * @generated
-	 */
-	public Adapter createVitalSignsOrganizerAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer <em>Vital Signs Organizer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer
-	 * @generated
-	 */
-	public Adapter createIHE_VitalSignsOrganizerAdapter() {
+	public Adapter createVitalSignObservationAdapter() {
 		return null;
 	}
 

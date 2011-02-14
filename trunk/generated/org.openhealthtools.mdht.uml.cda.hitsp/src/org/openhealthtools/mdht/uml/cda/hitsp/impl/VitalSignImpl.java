@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.VitalSign;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.VitalSignOperations;
-import org.openhealthtools.mdht.uml.cda.ihe.impl.VitalSignsOrganizerImpl;
+import org.openhealthtools.mdht.uml.cda.ihe.impl.VitalSignObservationImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class VitalSignImpl extends VitalSignsOrganizerImpl implements VitalSign {
+public class VitalSignImpl extends VitalSignObservationImpl implements VitalSign {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +60,8 @@ public class VitalSignImpl extends VitalSignsOrganizerImpl implements VitalSign 
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignOperations.validateResultOrganizerCode(this, diagnostics, context);
+	public boolean validateResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignOperations.validateResultObservationCode(this, diagnostics, context);
 	}
 
 	/**

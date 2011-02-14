@@ -4687,7 +4687,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__REALM_CODE = IHEPackage.VITAL_SIGNS_ORGANIZER__REALM_CODE;
+	int VITAL_SIGN__REALM_CODE = IHEPackage.VITAL_SIGN_OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -4696,7 +4696,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__TYPE_ID = IHEPackage.VITAL_SIGNS_ORGANIZER__TYPE_ID;
+	int VITAL_SIGN__TYPE_ID = IHEPackage.VITAL_SIGN_OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -4705,7 +4705,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__TEMPLATE_ID = IHEPackage.VITAL_SIGNS_ORGANIZER__TEMPLATE_ID;
+	int VITAL_SIGN__TEMPLATE_ID = IHEPackage.VITAL_SIGN_OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -4714,7 +4714,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__ID = IHEPackage.VITAL_SIGNS_ORGANIZER__ID;
+	int VITAL_SIGN__ID = IHEPackage.VITAL_SIGN_OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -4723,7 +4723,25 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__CODE = IHEPackage.VITAL_SIGNS_ORGANIZER__CODE;
+	int VITAL_SIGN__CODE = IHEPackage.VITAL_SIGN_OBSERVATION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__DERIVATION_EXPR = IHEPackage.VITAL_SIGN_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__TEXT = IHEPackage.VITAL_SIGN_OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -4732,7 +4750,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__STATUS_CODE = IHEPackage.VITAL_SIGNS_ORGANIZER__STATUS_CODE;
+	int VITAL_SIGN__STATUS_CODE = IHEPackage.VITAL_SIGN_OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -4741,7 +4759,70 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__EFFECTIVE_TIME = IHEPackage.VITAL_SIGNS_ORGANIZER__EFFECTIVE_TIME;
+	int VITAL_SIGN__EFFECTIVE_TIME = IHEPackage.VITAL_SIGN_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__PRIORITY_CODE = IHEPackage.VITAL_SIGN_OBSERVATION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__REPEAT_NUMBER = IHEPackage.VITAL_SIGN_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__LANGUAGE_CODE = IHEPackage.VITAL_SIGN_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__VALUE = IHEPackage.VITAL_SIGN_OBSERVATION__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__INTERPRETATION_CODE = IHEPackage.VITAL_SIGN_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__METHOD_CODE = IHEPackage.VITAL_SIGN_OBSERVATION__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__TARGET_SITE_CODE = IHEPackage.VITAL_SIGN_OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -4750,7 +4831,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__SUBJECT = IHEPackage.VITAL_SIGNS_ORGANIZER__SUBJECT;
+	int VITAL_SIGN__SUBJECT = IHEPackage.VITAL_SIGN_OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -4759,7 +4840,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__SPECIMEN = IHEPackage.VITAL_SIGNS_ORGANIZER__SPECIMEN;
+	int VITAL_SIGN__SPECIMEN = IHEPackage.VITAL_SIGN_OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -4768,7 +4849,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__PERFORMER = IHEPackage.VITAL_SIGNS_ORGANIZER__PERFORMER;
+	int VITAL_SIGN__PERFORMER = IHEPackage.VITAL_SIGN_OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -4777,7 +4858,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__AUTHOR = IHEPackage.VITAL_SIGNS_ORGANIZER__AUTHOR;
+	int VITAL_SIGN__AUTHOR = IHEPackage.VITAL_SIGN_OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -4786,7 +4867,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__INFORMANT = IHEPackage.VITAL_SIGNS_ORGANIZER__INFORMANT;
+	int VITAL_SIGN__INFORMANT = IHEPackage.VITAL_SIGN_OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -4795,7 +4876,16 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__PARTICIPANT = IHEPackage.VITAL_SIGNS_ORGANIZER__PARTICIPANT;
+	int VITAL_SIGN__PARTICIPANT = IHEPackage.VITAL_SIGN_OBSERVATION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__ENTRY_RELATIONSHIP = IHEPackage.VITAL_SIGN_OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -4804,7 +4894,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__REFERENCE = IHEPackage.VITAL_SIGNS_ORGANIZER__REFERENCE;
+	int VITAL_SIGN__REFERENCE = IHEPackage.VITAL_SIGN_OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -4813,16 +4903,16 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__PRECONDITION = IHEPackage.VITAL_SIGNS_ORGANIZER__PRECONDITION;
+	int VITAL_SIGN__PRECONDITION = IHEPackage.VITAL_SIGN_OBSERVATION__PRECONDITION;
 
 	/**
-	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__COMPONENT = IHEPackage.VITAL_SIGNS_ORGANIZER__COMPONENT;
+	int VITAL_SIGN__REFERENCE_RANGE = IHEPackage.VITAL_SIGN_OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -4831,7 +4921,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__NULL_FLAVOR = IHEPackage.VITAL_SIGNS_ORGANIZER__NULL_FLAVOR;
+	int VITAL_SIGN__NULL_FLAVOR = IHEPackage.VITAL_SIGN_OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -4840,7 +4930,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__CLASS_CODE = IHEPackage.VITAL_SIGNS_ORGANIZER__CLASS_CODE;
+	int VITAL_SIGN__CLASS_CODE = IHEPackage.VITAL_SIGN_OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -4849,7 +4939,16 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN__MOOD_CODE = IHEPackage.VITAL_SIGNS_ORGANIZER__MOOD_CODE;
+	int VITAL_SIGN__MOOD_CODE = IHEPackage.VITAL_SIGN_OBSERVATION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__NEGATION_IND = IHEPackage.VITAL_SIGN_OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Vital Sign</em>' class.
@@ -4858,7 +4957,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VITAL_SIGN_FEATURE_COUNT = IHEPackage.VITAL_SIGNS_ORGANIZER_FEATURE_COUNT + 0;
+	int VITAL_SIGN_FEATURE_COUNT = IHEPackage.VITAL_SIGN_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
