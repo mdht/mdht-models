@@ -552,12 +552,12 @@
     <ruleId>CONF-347</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_51Z70CfbEd-4R4ealYN1gQ" code="10160-0" displayName="History of medication use" base_Property="_QxLJcIHXEd6Ncrr6L3Ublw">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-300</ruleId>
     <ruleId>CONF-301</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_52oD0CfbEd-4R4ealYN1gQ" code="30973-2" displayName="Dose number" base_Property="_ANYJIIjsEd66cKocspyVOg">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-344</ruleId>
     <ruleId>CONF-345</ruleId>
   </CDA:CodeSystemConstraint>
@@ -651,10 +651,9 @@
   <CDA:PropertyValidation xmi:id="_kxZz0Cp0EeCuGIaOlnUvyw" base_Property="_Ql3P8IjrEd66cKocspyVOg">
     <ruleId>CONF-342</ruleId>
   </CDA:PropertyValidation>
-  <CDA:EntryRelationship xmi:id="_2q36UCp1EeCuGIaOlnUvyw" severity="INFO">
+  <CDA:EntryRelationship xmi:id="_2q36UCp1EeCuGIaOlnUvyw" severity="INFO" base_Association="_pEpVMSp1EeCuGIaOlnUvyw">
     <ruleId>CONF-348</ruleId>
     <ruleId>CONF-349</ruleId>
-    <base_Association href="#_pEpVMSp1EeCuGIaOlnUvyw"/>
   </CDA:EntryRelationship>
   <CDA:ConformsTo xmi:id="_tv8fUCp4EeCuGIaOlnUvyw" base_Generalization="_dKuUIIjqEd66cKocspyVOg">
     <ruleId>CONF-352</ruleId>
