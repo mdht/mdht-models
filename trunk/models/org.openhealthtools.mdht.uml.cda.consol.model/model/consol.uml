@@ -479,6 +479,18 @@ will be set to PROV.</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LByJgWkdEd-lxvPE33eETg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LByJgmkdEd-lxvPE33eETg" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jS4QEAIEd6wZe6nFLrjsw"/>
+        <qualifier xmi:id="_a_HOwD7KEeCMOJsPSJhzlQ" name="id" visibility="private" aggregation="composite">
+          <ownedComment xmi:id="_a_HOwT7KEeCMOJsPSJhzlQ">
+            <body>The ClinicalDocument/id element is an instance identifier data type (see HL7 Version 3&#xD;
+Abstract Data in Section 5 REFERENCES). The root attribute is a UUID or OID. The&#xD;
+root uniquely identifies the scope of the extension. The root and extension attributes&#xD;
+uniquely identify the document.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a_HOwj7KEeCMOJsPSJhzlQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a_HOwz7KEeCMOJsPSJhzlQ" value="1"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p0WCQEAIEd6wZe6nFLrjsw"/>
+        </qualifier>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pwbIcGkaEd-lxvPE33eETg" name="confidentialityCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_bOiQwP1hEd-9y7w_HH-hnA">
@@ -541,10 +553,11 @@ debugging may be &quot;HISTORY AND PHYSICAL.&quot; The title can be localized, a
           <body>The clinical document type ID identifies the constraints imposed by CDA R2 on the&#xD;
 content, essentially acting as a version identifier.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sKX1MEb9Ed6besF9iFIJkQ"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fscFkGkbEd-lxvPE33eETg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fscFkWkbEd-lxvPE33eETg" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fQZaNkxwEd6h-an5IXo-DA"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_pacFUD7JEeCMOJsPSJhzlQ" value="root=&quot;2.16.840.1.113883.1.3&quot; extension=&quot;POCD_HD000040&quot;"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_eOLMUAcSEeC15aCUY_wo_g" name="author">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
@@ -697,7 +710,7 @@ content, essentially acting as a version identifier.</body>
   <CDA:PropertyValidation xmi:id="_IwlN0GkbEd-lxvPE33eETg" base_Property="_pwv4kGkaEd-lxvPE33eETg">
     <ruleId>CONF-CONSOL-47</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_KS2R0GkbEd-lxvPE33eETg" base_Property="_pwxGsGkaEd-lxvPE33eETg">
+  <CDA:PropertyValidation xmi:id="_KS2R0GkbEd-lxvPE33eETg" message="" base_Property="_pwxGsGkaEd-lxvPE33eETg">
     <ruleId>CONF-CONSOL-51</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_37ylgGkbEd-lxvPE33eETg" code="US" base_Property="_pwwfo2kaEd-lxvPE33eETg">
