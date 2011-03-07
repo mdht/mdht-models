@@ -26,6 +26,11 @@
     <ownedAttribute xmi:id="_KztvsIHbEd6Ncrr6L3Ublw" name="statusCode" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_pz8CcEjlEeCOWNbpDoETQw" name="ageObservation">
+      <type xmi:type="uml:Class" href="../ccd.uml#_S7rEABZ1Ed-i6Lz80y5G5g"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pz8CcUjlEeCOWNbpDoETQw"/>
+      <association href="../ccd.uml#_pz8pgEjlEeCOWNbpDoETQw"/>
+    </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_9QFYgGwWEd6q29qQGU-SBA" name="FamilyHistoryOrganizer">
     <generalization xmi:id="_lBDMMGwXEd6q29qQGU-SBA">

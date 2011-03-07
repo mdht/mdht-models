@@ -285,6 +285,15 @@
       <ownedComment xmi:id="_Hk3OUEvfEd-GNbUQBie2ig">
         <body>This module contains a comment to be supplied for any other entry Content Modules.</body>
       </ownedComment>
+      <ownedRule xmi:id="_pH_0kEkIEeCOWNbpDoETQw" name="appropriateUse" constrainedElement="_B973gEveEd-GNbUQBie2ig">
+        <ownedComment xmi:id="_5_6z8EkIEeCOWNbpDoETQw">
+          <body>Comments are free text data that cannot otherwise be recorded using data elements already defined by this specification. They are not to be used to record information that can be recorded elsewhere. For example, a free text description of the severity of an allergic reaction would not be recorded in a comment. Instead, it would be recorded using the data element defined in Allergy/Drug Sensitivity.</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_rj8SkEkIEeCOWNbpDoETQw">
+          <language>Analysis</language>
+          <body>Data elements defined elsewhere in the specification SHALL NOT be recorded using the Comments Module.</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_B973gUveEd-GNbUQBie2ig">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_R_uVkEvdEd-GNbUQBie2ig"/>
       </generalization>
@@ -298,6 +307,9 @@
       <ownedEnd xmi:id="_RWRTcUveEd-GNbUQBie2ig" type="_wDMM0GEHEd6bFO5yxRh3Nw" association="_RWRTcEveEd-GNbUQBie2ig"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_fboroEveEd-GNbUQBie2ig" memberEnd="_fboEkEveEd-GNbUQBie2ig _fboroUveEd-GNbUQBie2ig">
+      <ownedComment xmi:id="_JMXwAEkJEeCOWNbpDoETQw">
+        <body>The author of a comment is recorded as specified for authors in the Information Source module.</body>
+      </ownedComment>
       <ownedEnd xmi:id="_fboroUveEd-GNbUQBie2ig" type="_B973gEveEd-GNbUQBie2ig" association="_fboroEveEd-GNbUQBie2ig"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_RnrXEkvfEd-GNbUQBie2ig" memberEnd="_RnrXEEvfEd-GNbUQBie2ig _RnrXE0vfEd-GNbUQBie2ig">
@@ -481,7 +493,9 @@
   <CDA:AssociationValidation xmi:id="_iXEpYEvbEd-GNbUQBie2ig" severity="INFO" base_Association="_gv9hoEvbEd-GNbUQBie2ig">
     <ruleId>C32-[CT1-2]</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_MUro4EveEd-GNbUQBie2ig" base_Class="_B973gEveEd-GNbUQBie2ig" templateId="2.16.840.1.113883.3.88.11.83.11"/>
+  <CDA:CDATemplate xmi:id="_MUro4EveEd-GNbUQBie2ig" base_Class="_B973gEveEd-GNbUQBie2ig" templateId="2.16.840.1.113883.3.88.11.83.11">
+    <ruleId>C83-[DE-10-CDA-2]</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_Sxvy8EveEd-GNbUQBie2ig" severity="INFO" base_Association="_RWRTcEveEd-GNbUQBie2ig">
     <ruleId>C32-[CT1-3]</ruleId>
   </CDA:AssociationValidation>
@@ -530,7 +544,9 @@
   <CDA:ConformsTo xmi:id="_rGacMFF6Ed-Lud-5SYZhMw" base_Generalization="_ZNaLkTuHEd-B8KE6Jx0UNQ" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_rGbDQFF6Ed-Lud-5SYZhMw" base_Generalization="_pOUDYDuHEd-B8KE6Jx0UNQ" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_rGbqUFF6Ed-Lud-5SYZhMw" base_Generalization="_qkWXUTuJEd-B8KE6Jx0UNQ" requiresParentId="true"/>
-  <CDA:ConformsTo xmi:id="_rGbqUVF6Ed-Lud-5SYZhMw" base_Generalization="_B973gUveEd-GNbUQBie2ig" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_rGbqUVF6Ed-Lud-5SYZhMw" base_Generalization="_B973gUveEd-GNbUQBie2ig" requiresParentId="true">
+    <ruleId>C83-[DE-10-CDA-3]</ruleId>
+  </CDA:ConformsTo>
   <CDA:AssociationValidation xmi:id="_Yq0MoKDkEd-dVeaMP0XXQw" severity="INFO" base_Association="_XRbX0KDkEd-dVeaMP0XXQw">
     <ruleId>C32-[CT1-15]</ruleId>
   </CDA:AssociationValidation>
@@ -611,5 +627,8 @@
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_PtYh8Cl4EeCXiupwzMk--A">
     <ruleId>C83-[DE-7.04-1]</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_szRzgEkIEeCOWNbpDoETQw" base_Constraint="_pH_0kEkIEeCOWNbpDoETQw">
+    <ruleId>C83-[DE-10-CDA-1]</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>
