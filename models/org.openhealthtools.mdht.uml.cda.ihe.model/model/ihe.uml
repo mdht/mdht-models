@@ -247,13 +247,44 @@ patient's current complaints.</body>
       <generalization xmi:id="_cRXgQDuREd-3heHR3GH1ew" general="_uP4tkDuMEd-B8KE6Jx0UNQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_R_uVkEvdEd-GNbUQBie2ig" name="Comment">
+      <ownedComment xmi:id="_NH9TQEjyEeCOWNbpDoETQw">
+        <body>&lt;p>This entry allows for a comment to be supplied with each entry. For CDA this structure is usually included in the target act using the &amp;lt;entryRelationship> element defined in the CDA Schema, but can also be used in the &amp;lt;component> element when the comment appears within an &amp;lt;organizer>.&lt;/p>&#xD;
+&#xD;
+&lt;p>Any condition or allergy may be the subject of a comment.&lt;/p></body>
+      </ownedComment>
+      <ownedRule xmi:id="_oZsg8EkEEeCOWNbpDoETQw" name="useInversionInd" constrainedElement="_R_uVkEvdEd-GNbUQBie2ig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vvPLIEkEEeCOWNbpDoETQw">
+          <language>Analysis</language>
+          <body>A related statement is made about another section or entry. In CDA the former shall be recorded inside an &lt;entryRelationship> element occurring at the end of the entry. The containing entry is the subject (typeCode='SUBJ') of this comment, which is the inverse of the normal containment structure, thus inversionInd='true'.</body>
+        </specification>
+      </ownedRule>
       <ownedRule xmi:id="_928MoCQYEeCxCon8a79rfA" name="hasTextReference">
         <constrainedElement xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_MIoHYCQKEeCxCon8a79rfA"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_928MoSQYEeCxCon8a79rfA">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>The 'text' elements shall contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</body>
+          <body>The 'text' element contains a 'reference' element pointing to the narrative text section of the CDA, rather than duplicate text to avoid ambiguity.</body>
           <body>not self.text.reference.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_eIUF0EkGEeCOWNbpDoETQw" name="effectiveTimeWhenAuthorPresent" constrainedElement="_R_uVkEvdEd-GNbUQBie2ig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oBBQUEkGEeCOWNbpDoETQw">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The time of the comment creation is recorded in the 'time' element when the 'author' element is present.</body>
+          <body>not self.author->isEmpty() implies not self.effectiveTime.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_bTMdYEkHEeCOWNbpDoETQw" name="hasAuthorId" constrainedElement="_R_uVkEvdEd-GNbUQBie2ig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hf6eUEkHEeCOWNbpDoETQw">
+          <language>Analysis</language>
+          <body>The identifier of the author, and their address and telephone number must be present inside the 'id', 'addr' and 'telecom' elements when the 'author' element is present.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_p0gxwEkHEeCOWNbpDoETQw" name="hasAuthorOrganization" constrainedElement="_R_uVkEvdEd-GNbUQBie2ig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vFsXgEkHEeCOWNbpDoETQw">
+          <language>Analysis</language>
+          <body>The author's and/or the organization's name must be present when the 'author' element is present.</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_R_vjsEvdEd-GNbUQBie2ig">
@@ -819,6 +850,7 @@ patient's current complaints.</body>
   <CDA:CDATemplate xmi:id="_hGs7wEvdEd-GNbUQBie2ig" base_Class="_R_uVkEvdEd-GNbUQBie2ig" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
   <CDA:CodeSystemConstraint xmi:id="_nGpE8EvdEd-GNbUQBie2ig" code="completed" base_Property="_fwsLEkvdEd-GNbUQBie2ig">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-6.3.4.6.8</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_z1WMMEvdEd-GNbUQBie2ig" code="48767-8" displayName="Annotation Comment">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -913,6 +945,20 @@ patient's current complaints.</body>
   <CDA:ConstraintValidation xmi:id="_kP6BwCNMEeCxCon8a79rfA" base_Constraint="_jfpCcCNMEeCxCon8a79rfA"/>
   <CDA:ConstraintValidation xmi:id="__YJdkCNQEeCxCon8a79rfA" base_Constraint="_-tR7oCNQEeCxCon8a79rfA"/>
   <CDA:ConstraintValidation xmi:id="_l2QiQCNREeCxCon8a79rfA" severity="INFO" base_Constraint="_f7J1wCNREeCxCon8a79rfA"/>
-  <CDA:ConstraintValidation xmi:id="_-qABQCQYEeCxCon8a79rfA" base_Constraint="_928MoCQYEeCxCon8a79rfA"/>
+  <CDA:ConstraintValidation xmi:id="_-qABQCQYEeCxCon8a79rfA" base_Constraint="_928MoCQYEeCxCon8a79rfA">
+    <ruleId>CONF-6.3.4.6.7</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:AssociationValidation xmi:id="_KvJ1MCQZEeCxCon8a79rfA" severity="INFO" base_Association="_JY-FYCQZEeCxCon8a79rfA"/>
+  <CDA:ConstraintValidation xmi:id="_yDvH4EkFEeCOWNbpDoETQw" base_Constraint="_oZsg8EkEEeCOWNbpDoETQw">
+    <ruleId>CONF-6.3.4.6.3</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_sIAT0EkGEeCOWNbpDoETQw" base_Constraint="_eIUF0EkGEeCOWNbpDoETQw">
+    <ruleId>CONF-6.3.4.6.10</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_laQM8EkHEeCOWNbpDoETQw" base_Constraint="_bTMdYEkHEeCOWNbpDoETQw">
+    <ruleId>CONF-6.3.4.6.11</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_xl31QEkHEeCOWNbpDoETQw" base_Constraint="_p0gxwEkHEeCOWNbpDoETQw">
+    <ruleId>CONF-6.3.4.6.12</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
