@@ -13,18 +13,16 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to CDA Data Enterer</li>
-<li><b>SHALL</b> contain [1..1] <tt>time</tt><ul><li>Denotes the time at which the original content was scanned.</li></ul></li>
-<li><b>SHALL</b> satisfy: The time shall be equal to that of ClinicalDocument/effectiveTime. At a minimum, the time shall be precise to the day and shall include the time zone offset from GMT.<ul><li><codeblock>[OCL]: self.time.value = self.getClinicalDocument().effectiveTime.value</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: The assignedEntity/id element has both the root and the extension attributes. The root shall be the oid of the scanning facility and the extension shall be an appropriately assigned, facility unique id of the operator.<ul><li><codeblock>[OCL]: self.assignedEntity.id-&gt;forAll(ident : datatypes::II | not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>time</tt><ul><li>Denotes the time at which the original content was scanned.</li></ul></li>
+<li><b>SHALL</b> satisfy: The time shall be equal to that of ClinicalDocument/effectiveTime. At a minimum, the time shall be precise to the day and shall include the time zone offset from GMT.</li>
+<li><b>SHALL</b> satisfy: The assignedEntity/id element has both the root and the extension attributes. The root shall be the oid of the scanning facility and the extension shall be an appropriately assigned, facility unique id of the operator.</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to CDA Data Enterer</li>
-<li>[CDA] Contains [1..1] <tt>assignedEntity</tt>, where its type is CDA Assigned Entity</li>
-<li>[IHE] <b>SHALL</b> contain [1..1] <tt>time</tt><ul><li>Denotes the time at which the original content was scanned.</li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: typeCode<ul><li><codeblock>[OCL]: not self.typeCode.oclIsUndefined() implies self.typeCode=vocab::ParticipationType::ENT</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: contextControlCode<ul><li><codeblock>[OCL]: not self.contextControlCode.oclIsUndefined() implies self.contextControlCode=vocab::ContextControl::OP</codeblock></li></ul></li>
-<li>[IHE] <b>SHALL</b> satisfy: The time shall be equal to that of ClinicalDocument/effectiveTime. At a minimum, the time shall be precise to the day and shall include the time zone offset from GMT.<ul><li><codeblock>[OCL]: self.time.value = self.getClinicalDocument().effectiveTime.value</codeblock></li></ul></li>
-<li>[IHE] <b>SHALL</b> satisfy: The assignedEntity/id element has both the root and the extension attributes. The root shall be the oid of the scanning facility and the extension shall be an appropriately assigned, facility unique id of the operator.<ul><li><codeblock>[OCL]: self.assignedEntity.id-&gt;forAll(ident : datatypes::II | not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>time</tt><ul><li>Denotes the time at which the original content was scanned.</li></ul></li>
+<li>Contains exactly one [1..1] <tt>assignedEntity</tt>, where its type is CDA Assigned Entity</li>
+<li><b>SHALL</b> satisfy: The time shall be equal to that of ClinicalDocument/effectiveTime. At a minimum, the time shall be precise to the day and shall include the time zone offset from GMT.</li>
+<li><b>SHALL</b> satisfy: The assignedEntity/id element has both the root and the extension attributes. The root shall be the oid of the scanning facility and the extension shall be an appropriately assigned, facility unique id of the operator.</li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

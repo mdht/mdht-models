@@ -8,6 +8,7 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_LanguageSpoken.dita#classId/description">
 </section>
+<!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_LanguageSpoken.dita#classId/conformance">
 <li></li>
@@ -15,13 +16,11 @@
 <ol audience="developer" conref="generated/_LanguageSpoken.dita#classId/aggregate">
 <li></li>
 </ol>
-<p></p>
-<fig>
-<title>Language Spoken example</title>
+<p> </p>
+<p><b>Language Spoken example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
 <codeblock conref="generated/_LanguageSpoken.dita#classId/example">
 </codeblock>
-</fig>
 </body>
 </topic>

@@ -8,6 +8,7 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_StatusObservation.dita#classId/description">
 </section>
+<!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_StatusObservation.dita#classId/conformance">
 <li></li>
@@ -15,12 +16,11 @@
 <ol audience="developer" conref="generated/_StatusObservation.dita#classId/aggregate">
 <li></li>
 </ol>
-<fig>
-<title>Status Observation example</title>
+<p> </p>
+<p><b>Status Observation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
 <codeblock conref="generated/_StatusObservation.dita#classId/example">
 </codeblock>
-</fig>
 </body>
 </topic>

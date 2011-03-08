@@ -13,22 +13,16 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to CDA Author</li>
-<li>Contains [1..1] <tt>time</tt><ul><li>Represents the day and time of the authoring of the original content. This value is not restricted beyond statements made in the HL7 CDA R2 documentation.</li></ul></li>
-<li><b>SHOULD</b> satisfy: The assignedAuthor/id element if known shall include both the root and the extension attributes. Refer to PCC TF-2: 4.1.1 for more details.<ul><li><codeblock>[OCL]: self.assignedAuthor.id-&gt;forAll(ident : datatypes::II |
-   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())</codeblock></li></ul></li>
-<li><b>SHOULD</b> satisfy: The assignedAuthor/representedOrganization/id element if known shall include both the root and the extension attributes. Refer to PCC TF-2: 4.1.1 for more details.<ul><li><codeblock>[OCL]: self.assignedAuthor.representedOrganization.id-&gt;forAll(ident : datatypes::II |
-   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())</codeblock></li></ul></li>
+<li>Contains exactly one [1..1] <tt>time</tt><ul><li>Represents the day and time of the authoring of the original content. This value is not restricted beyond statements made in the HL7 CDA R2 documentation.</li></ul></li>
+<li><b>SHOULD</b> satisfy: The assignedAuthor/id element if known shall include both the root and the extension attributes. Refer to PCC TF-2: 4.1.1 for more details.</li>
+<li><b>SHOULD</b> satisfy: The assignedAuthor/representedOrganization/id element if known shall include both the root and the extension attributes. Refer to PCC TF-2: 4.1.1 for more details.</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to CDA Author</li>
-<li>[IHE] Contains [1..1] <tt>time</tt><ul><li>Represents the day and time of the authoring of the original content. This value is not restricted beyond statements made in the HL7 CDA R2 documentation.</li></ul></li>
-<li>[CDA] Contains [1..1] <tt>assignedAuthor</tt>, where its type is CDA Assigned Author</li>
-<li>[CDA] <b>SHALL</b> satisfy: typeCode<ul><li><codeblock>[OCL]: not self.typeCode.oclIsUndefined() implies self.typeCode=vocab::ParticipationType::AUT</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: contextControlCode<ul><li><codeblock>[OCL]: not self.contextControlCode.oclIsUndefined() implies self.contextControlCode=vocab::ContextControl::OP</codeblock></li></ul></li>
-<li>[IHE] <b>SHOULD</b> satisfy: The assignedAuthor/id element if known shall include both the root and the extension attributes. Refer to PCC TF-2: 4.1.1 for more details.<ul><li><codeblock>[OCL]: self.assignedAuthor.id-&gt;forAll(ident : datatypes::II |
-   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())</codeblock></li></ul></li>
-<li>[IHE] <b>SHOULD</b> satisfy: The assignedAuthor/representedOrganization/id element if known shall include both the root and the extension attributes. Refer to PCC TF-2: 4.1.1 for more details.<ul><li><codeblock>[OCL]: self.assignedAuthor.representedOrganization.id-&gt;forAll(ident : datatypes::II |
-   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())</codeblock></li></ul></li>
+<li>Contains exactly one [1..1] <tt>time</tt><ul><li>Represents the day and time of the authoring of the original content. This value is not restricted beyond statements made in the HL7 CDA R2 documentation.</li></ul></li>
+<li>Contains exactly one [1..1] <tt>assignedAuthor</tt>, where its type is CDA Assigned Author</li>
+<li><b>SHOULD</b> satisfy: The assignedAuthor/id element if known shall include both the root and the extension attributes. Refer to PCC TF-2: 4.1.1 for more details.</li>
+<li><b>SHOULD</b> satisfy: The assignedAuthor/representedOrganization/id element if known shall include both the root and the extension attributes. Refer to PCC TF-2: 4.1.1 for more details.</li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

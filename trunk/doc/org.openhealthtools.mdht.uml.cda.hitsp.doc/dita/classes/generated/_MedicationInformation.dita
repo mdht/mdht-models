@@ -17,16 +17,14 @@
 <li><b>SHALL</b> conform to CDA Manufactured Product</li>
 <li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/Product.dita">CCD Product</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.53</tt>)</li>
 <li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/ProductEntry.dita">IHE Product Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7.2</tt>)</li>
-<li>[CDA] <b>SHALL</b> satisfy: manufacturedDrugOrOtherMaterial<ul><li><codeblock>[OCL]: self.manufacturedLabeledDrug.oclIsUndefined() xor self.manufacturedMaterial.oclIsUndefined()</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: classCode<ul><li><codeblock>[OCL]: not self.classCode.oclIsUndefined() implies self.classCode=vocab::RoleClassManufacturedProduct::MANU</codeblock></li></ul></li>
-<li>[CCD] <b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial. (CONF-357)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.oclIsUndefined()</codeblock></li></ul></li>
-<li>[CCD] <b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial / code. (CONF-358)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.oclIsUndefined()</codeblock></li></ul></li>
-<li>[CCD] <b>SHOULD</b> satisfy: The value for "manufacturedMaterial / code" in a product template SHOULD be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017. (CONF-359)</li>
-<li>[CCD] <b>MAY</b> satisfy: The value for "manufacturedMaterial / code" in a product template MAY contain a precoordinated product strength, product form, or product concentration (e.g. "metoprolol 25mg tablet", "amoxicillin 400mg/5mL suspension"). (CONF-360)</li>
-<li>[CCD] <b>SHALL</b> satisfy: If manufacturedMaterial / code contains a precoordinated unit dose (e.g. "metoprolol 25mg tablet"), then SubstanceAdministration / doseQuantity SHALL be a unitless number that indicates the number of products given per administration. (CONF-361)</li>
-<li>[CCD] <b>SHALL</b> satisfy: If manufacturedMaterial / code does not contain a precoordinated unit dose (e.g. "metoprolol product"), then SubstanceAdministration / doseQuantity SHALL be a physical quantity that indicates the amount of product given per administration. (CONF-362)</li>
-<li>[CCD] <b>SHALL</b> satisfy: A manufacturedMaterial in a product template contains exactly one code / originalText, which represents the generic name of the product. (CONF-363)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.originalText.oclIsUndefined()</codeblock></li></ul></li>
-<li>[CCD] <b>MAY</b> satisfy: A manufacturedMaterial in a product template contains exactly one name, which represents the brand name of the product. (CONF-364)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.name.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial. (CONF-357)</li>
+<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial / code. (CONF-358)</li>
+<li><b>SHOULD</b> satisfy: The value for "manufacturedMaterial / code" in a product template SHOULD be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017. (CONF-359)</li>
+<li><b>MAY</b> satisfy: The value for "manufacturedMaterial / code" in a product template MAY contain a precoordinated product strength, product form, or product concentration (e.g. "metoprolol 25mg tablet", "amoxicillin 400mg/5mL suspension"). (CONF-360)</li>
+<li><b>SHALL</b> satisfy: If manufacturedMaterial / code contains a precoordinated unit dose (e.g. "metoprolol 25mg tablet"), then SubstanceAdministration / doseQuantity SHALL be a unitless number that indicates the number of products given per administration. (CONF-361)</li>
+<li><b>SHALL</b> satisfy: If manufacturedMaterial / code does not contain a precoordinated unit dose (e.g. "metoprolol product"), then SubstanceAdministration / doseQuantity SHALL be a physical quantity that indicates the amount of product given per administration. (CONF-362)</li>
+<li><b>SHALL</b> satisfy: A manufacturedMaterial in a product template contains exactly one code / originalText, which represents the generic name of the product. (CONF-363)</li>
+<li><b>MAY</b> satisfy: A manufacturedMaterial in a product template contains exactly one name, which represents the brand name of the product. (CONF-364)</li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

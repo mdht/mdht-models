@@ -13,25 +13,23 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain [1..1] <tt>code</tt><tt>/@code</tt> = "48765-2" <i>Allergies, adverse reactions, alerts</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC)</li>
-<li><b>SHALL</b> contain [1..1] <tt>title</tt></li>
-<li><b>SHALL</b> contain [1..1] <tt>text</tt></li>
-<li><b>SHOULD</b> contain [1..*] <tt>entry</tt>, such that it<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "48765-2" <i>Allergies, adverse reactions, alerts</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt></li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../ProblemAct.dita">CCD Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
 <li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions".</li>
 <li><b>SHALL</b> satisfy: The absence of known allergies, adverse reactions or alerts SHALL be explicitly asserted.</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to CDA Section</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>code</tt><tt>/@code</tt> = "48765-2" <i>Allergies, adverse reactions, alerts</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC)</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>title</tt></li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>text</tt></li>
-<li>[CCD] <b>SHOULD</b> contain [1..*] <tt>entry</tt>, such that it<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "48765-2" <i>Allergies, adverse reactions, alerts</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt></li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../ProblemAct.dita">CCD Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
-<li>[CDA] <b>SHALL</b> satisfy: classCode<ul><li><codeblock>[OCL]: not self.classCode.oclIsUndefined() implies self.classCode=vocab::ActClass::DOCSECT</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: moodCode<ul><li><codeblock>[OCL]: not self.moodCode.oclIsUndefined() implies self.moodCode=vocab::ActMood::EVN</codeblock></li></ul></li>
-<li>[CCD] <b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions".</li>
-<li>[CCD] <b>SHALL</b> satisfy: The absence of known allergies, adverse reactions or alerts SHALL be explicitly asserted.</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions".</li>
+<li><b>SHALL</b> satisfy: The absence of known allergies, adverse reactions or alerts SHALL be explicitly asserted.</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
@@ -45,7 +43,7 @@
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.27" assigningAuthorityName="CCD Problem Act"/>
-              <id root="65b4fcb0-a016-4031-a76c-dbf9f445d489"/>
+              <id root="34551170-d789-4a3a-8cd5-a5aca1906e71"/>
               <code nullFlavor="NA"/>
               <effectiveTime>
                 <low value="1972"/>

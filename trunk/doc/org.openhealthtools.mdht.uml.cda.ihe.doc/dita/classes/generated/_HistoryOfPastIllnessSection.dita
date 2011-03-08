@@ -14,13 +14,11 @@ past. It shall include entries for problems as described in the Entry Content Mo
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain [1..1] <tt>code</tt><tt>/@code</tt> = "11348-0" <i>HISTORY OF PAST ILLNESS</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "11348-0" <i>HISTORY OF PAST ILLNESS</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to CDA Section</li>
-<li>[IHE] <b>SHALL</b> contain [1..1] <tt>code</tt><tt>/@code</tt> = "11348-0" <i>HISTORY OF PAST ILLNESS</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC)</li>
-<li>[CDA] <b>SHALL</b> satisfy: classCode<ul><li><codeblock>[OCL]: not self.classCode.oclIsUndefined() implies self.classCode=vocab::ActClass::DOCSECT</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: moodCode<ul><li><codeblock>[OCL]: not self.moodCode.oclIsUndefined() implies self.moodCode=vocab::ActMood::EVN</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "11348-0" <i>HISTORY OF PAST ILLNESS</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">

@@ -8,8 +8,7 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_ProblemSection.dita#classId/description">
 </section>
-
-<image href="../images/ProblemSection.png" width="550pt"/>
+<!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_ProblemSection.dita#classId/conformance">
 <li></li>
@@ -17,12 +16,11 @@
 <ol audience="developer" conref="generated/_ProblemSection.dita#classId/aggregate">
 <li></li>
 </ol>
-<fig>
-<title>Problem Section example</title>
+<p> </p>
+<p><b>Problem Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
 <codeblock conref="generated/_ProblemSection.dita#classId/example">
 </codeblock>
-</fig>
 </body>
 </topic>

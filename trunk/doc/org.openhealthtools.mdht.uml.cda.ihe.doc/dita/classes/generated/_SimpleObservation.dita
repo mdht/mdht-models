@@ -16,17 +16,17 @@ ASTM/HL7 Continuity of Care Document).</p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to CDA Observation</li>
-<li><b>SHALL</b> contain [1..*] <tt>id</tt></li>
-<li><b>SHALL</b> contain [1..1] <tt>statusCode</tt><tt>/@code</tt> = "completed"  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus STATIC V3NE08)</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>statusCode</tt><tt>/@code</tt> = "completed"  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus)</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to CDA Clinical Statement</li>
 <li><b>SHALL</b> conform to CDA Observation</li>
-<li>[CDA] Contains [1..1] <tt>@classCode</tt>, where its data type is ActClassObservation</li>
-<li>[CDA] Contains [1..1] <tt>@moodCode</tt>, where its data type is x_ActMoodDocumentObservation</li>
-<li>[CDA] Contains [1..1] <tt>code</tt>, where its data type is CD</li>
-<li>[IHE] <b>SHALL</b> contain [1..*] <tt>id</tt></li>
-<li>[IHE] <b>SHALL</b> contain [1..1] <tt>statusCode</tt><tt>/@code</tt> = "completed"  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus STATIC V3NE08)</li>
+<li>Contains exactly one [1..1] <tt>@classCode</tt>, where its data type is ActClassObservation</li>
+<li>Contains exactly one [1..1] <tt>@moodCode</tt>, where its data type is x_ActMoodDocumentObservation</li>
+<li>Contains exactly one [1..1] <tt>code</tt>, where its data type is CD</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>statusCode</tt><tt>/@code</tt> = "completed"  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus)</li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

@@ -8,6 +8,7 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_Condition.dita#classId/description">
 </section>
+<!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_Condition.dita#classId/conformance">
 <li></li>
@@ -15,13 +16,11 @@
 <ol audience="developer" conref="generated/_Condition.dita#classId/aggregate">
 <li></li>
 </ol>
-<p></p>
-<fig>
-<title>Condition example</title>
+<p> </p>
+<p><b>Condition example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
 <codeblock conref="generated/_Condition.dita#classId/example">
 </codeblock>
-</fig>
 </body>
 </topic>

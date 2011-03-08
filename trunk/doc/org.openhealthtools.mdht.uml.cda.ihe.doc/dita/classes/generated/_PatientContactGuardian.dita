@@ -13,22 +13,20 @@
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/SupportGuardian.dita">CCD Support Guardian</xref></li>
 <li><b>SHALL</b> conform to <xref href="../PatientContact.dita">IHE Patient Contact</xref></li>
-<li><b>SHALL</b> contain [1..1] <tt>@classCode</tt> = "GUAR"</li>
-<li><b>SHOULD</b> contain [0..*] <tt>addr</tt></li>
-<li><b>SHALL</b> contain [0..1] <tt>code</tt> (CodeSystem: 2.16.840.1.113883.5.111 RoleCode STATIC)</li>
-<li><b>SHOULD</b> contain [0..*] <tt>telecom</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>@classCode</tt> = "GUAR"</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt>addr</tt></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt>code</tt> (CodeSystem: 2.16.840.1.113883.5.111 RoleCode)</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt>telecom</tt></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../PatientContact.dita">IHE Patient Contact</xref></li>
 <li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/Support.dita">CCD Support</xref></li>
 <li><b>SHALL</b> conform to CDA Guardian</li>
 <li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/SupportGuardian.dita">CCD Support Guardian</xref></li>
-<li>[IHE] <b>SHALL</b> contain [1..1] <tt>@classCode</tt> = "GUAR"</li>
-<li>[IHE] <b>SHOULD</b> contain [0..*] <tt>addr</tt></li>
-<li>[IHE] <b>SHALL</b> contain [0..1] <tt>code</tt> (CodeSystem: 2.16.840.1.113883.5.111 RoleCode STATIC)</li>
-<li>[IHE] <b>SHOULD</b> contain [0..*] <tt>telecom</tt></li>
-<li>[CDA] <b>SHALL</b> satisfy: guardianChoice<ul><li><codeblock>[OCL]: self.guardianPerson.oclIsUndefined() xor self.guardianOrganization.oclIsUndefined()</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: classCode<ul><li><codeblock>[OCL]: not self.classCode.oclIsUndefined() implies self.classCode=vocab::RoleClass::GUARD</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>@classCode</tt> = "GUAR"</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt>addr</tt></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt>code</tt> (CodeSystem: 2.16.840.1.113883.5.111 RoleCode)</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt>telecom</tt></li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

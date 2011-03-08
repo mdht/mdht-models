@@ -15,8 +15,7 @@
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to CDA Section</li>
-<li>[CDA] <b>SHALL</b> satisfy: classCode<ul><li><codeblock>[OCL]: not self.classCode.oclIsUndefined() implies self.classCode=vocab::ActClass::DOCSECT</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: moodCode<ul><li><codeblock>[OCL]: not self.moodCode.oclIsUndefined() implies self.moodCode=vocab::ActMood::EVN</codeblock></li></ul></li>
+<li></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">

@@ -17,8 +17,7 @@
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../Support.dita">CCD Support</xref></li>
 <li><b>SHALL</b> conform to CDA Guardian</li>
-<li>[CDA] <b>SHALL</b> satisfy: guardianChoice<ul><li><codeblock>[OCL]: self.guardianPerson.oclIsUndefined() xor self.guardianOrganization.oclIsUndefined()</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: classCode<ul><li><codeblock>[OCL]: not self.classCode.oclIsUndefined() implies self.classCode=vocab::RoleClass::GUARD</codeblock></li></ul></li>
+<li></li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

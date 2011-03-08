@@ -8,6 +8,7 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_PurposeSection.dita#classId/description">
 </section>
+<!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_PurposeSection.dita#classId/conformance">
 <li></li>
@@ -15,12 +16,11 @@
 <ol audience="developer" conref="generated/_PurposeSection.dita#classId/aggregate">
 <li></li>
 </ol>
-<fig>
-<title>Purpose Section example</title>
+<p> </p>
+<p><b>Purpose Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
 <codeblock conref="generated/_PurposeSection.dita#classId/example">
 </codeblock>
-</fig>
 </body>
 </topic>

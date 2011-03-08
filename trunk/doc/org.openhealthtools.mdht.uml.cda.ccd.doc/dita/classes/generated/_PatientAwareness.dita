@@ -12,21 +12,16 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to CDA Participant2 (CONF-178)</li>
-<li><b>SHALL</b> contain [1..1] <tt>@typeCode</tt> = "SBJ" (CONF-181)</li>
-<li><b>SHALL</b> contain [1..1] <tt>awarenessCode</tt> (CONF-182)</li>
-<li><b>SHALL</b> satisfy: Patient awareness SHALL contain exactly one participant / participantRole / id, which SHALL have exactly one value, which SHALL also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)<ul><li><codeblock>[OCL]: self.participantRole.id-&gt;one(id : datatypes::II |
-  not id.root.oclIsUndefined())
--- TODO compare with ClinicalDocument/recordTarget/patientRole/id</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>@typeCode</tt> = "SBJ" (CONF-181)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>awarenessCode</tt> (CONF-182)</li>
+<li><b>SHALL</b> satisfy: Patient awareness SHALL contain exactly one participant / participantRole / id, which SHALL have exactly one value, which SHALL also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to CDA Participant2</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>@typeCode</tt> = "SBJ" (CONF-181)</li>
-<li>[CDA] Contains [1..1] <tt>participantRole</tt>, where its type is CDA Participant Role</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>awarenessCode</tt> (CONF-182)</li>
-<li>[CDA] <b>SHALL</b> satisfy: contextControlCode<ul><li><codeblock>[OCL]: not self.contextControlCode.oclIsUndefined() implies self.contextControlCode=vocab::ContextControl::OP</codeblock></li></ul></li>
-<li>[CCD] <b>SHALL</b> satisfy: Patient awareness SHALL contain exactly one participant / participantRole / id, which SHALL have exactly one value, which SHALL also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)<ul><li><codeblock>[OCL]: self.participantRole.id-&gt;one(id : datatypes::II |
-  not id.root.oclIsUndefined())
--- TODO compare with ClinicalDocument/recordTarget/patientRole/id</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>@typeCode</tt> = "SBJ" (CONF-181)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>awarenessCode</tt> (CONF-182)</li>
+<li>Contains exactly one [1..1] <tt>participantRole</tt>, where its type is CDA Participant Role</li>
+<li><b>SHALL</b> satisfy: Patient awareness SHALL contain exactly one participant / participantRole / id, which SHALL have exactly one value, which SHALL also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)</li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>
