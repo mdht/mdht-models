@@ -13,22 +13,19 @@
 <ol id="conformance">
 <li><b>SHALL</b> conform to CDA Substance Administration</li>
 <li><b>SHALL</b> conform to <xref href="../PlanOfCareActivity.dita">CCD Plan Of Care Activity</xref></li>
-<li><b>SHALL</b> contain [1..1] <tt>@moodCode</tt></li>
-<li><b>SHALL</b> contain [1..*] <tt>id</tt></li>
-<li><b>SHALL</b> satisfy: moodCodeValue<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::INT or self.moodCode = vocab::x_DocumentSubstanceMood::RQO
-  or self.moodCode = vocab::x_DocumentSubstanceMood::PRMS or self.moodCode = vocab::x_DocumentSubstanceMood::PRP</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>@moodCode</tt></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
+<li><b>SHALL</b> satisfy: moodCodeValue</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../PlanOfCareActivity.dita">CCD Plan Of Care Activity</xref></li>
 <li><b>SHALL</b> conform to CDA Clinical Statement</li>
 <li><b>SHALL</b> conform to CDA Substance Administration</li>
-<li>[CDA] Contains [1..1] <tt>@classCode</tt> = "SBADM", where its data type is ActClass</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>@moodCode</tt></li>
-<li>[CDA] Contains [1..1] <tt>consumable</tt>, where its type is CDA Consumable</li>
-<li>[CCD] <b>SHALL</b> contain [1..*] <tt>id</tt></li>
-<li>[CDA] <b>SHALL</b> satisfy: classCode<ul><li><codeblock>[OCL]: not self.classCode.oclIsUndefined() implies self.classCode=vocab::ActClass::SBADM</codeblock></li></ul></li>
-<li>[CCD] <b>SHALL</b> satisfy: moodCodeValue<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::INT or self.moodCode = vocab::x_DocumentSubstanceMood::RQO
-  or self.moodCode = vocab::x_DocumentSubstanceMood::PRMS or self.moodCode = vocab::x_DocumentSubstanceMood::PRP</codeblock></li></ul></li>
+<li>Contains exactly one [1..1] <tt>@classCode</tt> = "SBADM", where its data type is ActClass</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>@moodCode</tt></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
+<li>Contains exactly one [1..1] <tt>consumable</tt>, where its type is CDA Consumable</li>
+<li><b>SHALL</b> satisfy: moodCodeValue</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
@@ -39,7 +36,7 @@
           <entry>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="69c2c9cf-a5ac-4cc4-8408-016198072672"/>
+              <id root="b2c72f08-bedf-4dbe-996b-be6df7441dbf"/>
             </substanceAdministration>
           </entry>
         </section>

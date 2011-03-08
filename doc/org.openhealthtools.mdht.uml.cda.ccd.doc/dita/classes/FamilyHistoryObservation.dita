@@ -8,6 +8,7 @@
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_FamilyHistoryObservation.dita#classId/description">
 </section>
+<!-- TODO: insert UML class diagram here -->
 
 <ol audience="standards" conref="generated/_FamilyHistoryObservation.dita#classId/conformance">
 <li></li>
@@ -15,12 +16,11 @@
 <ol audience="developer" conref="generated/_FamilyHistoryObservation.dita#classId/aggregate">
 <li></li>
 </ol>
-<fig>
-<title>Family History Observation example</title>
+<p> </p>
+<p><b>Family History Observation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
 <codeblock conref="generated/_FamilyHistoryObservation.dita#classId/example">
 </codeblock>
-</fig>
 </body>
 </topic>

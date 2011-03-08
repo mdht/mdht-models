@@ -22,12 +22,10 @@
 <li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/AdvanceDirectivesSection.dita">CCD Advance Directives Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.1</tt>)</li>
 <li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/AdvanceDirectivesSection.dita">IHE Advance Directives Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.34</tt>)</li>
 <li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/CodedAdvanceDirectivesSection.dita">IHE Coded Advance Directives Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.35</tt>)</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>code</tt><tt>/@code</tt> = "42348-3" <i>Advance directives</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC)</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>title</tt></li>
-<li>[CCD] <b>SHALL</b> contain [1..*] <tt>entry</tt>, such that it<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "42348-3" <i>Advance directives</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/AdvanceDirectiveObservation.dita">CCD Advance Directive Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.17</tt>)</li></ol></li>
-<li>[CDA] <b>SHALL</b> satisfy: classCode<ul><li><codeblock>[OCL]: not self.classCode.oclIsUndefined() implies self.classCode=vocab::ActClass::DOCSECT</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: moodCode<ul><li><codeblock>[OCL]: not self.moodCode.oclIsUndefined() implies self.moodCode=vocab::ActMood::EVN</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
@@ -44,7 +42,7 @@
           <entry>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.17" assigningAuthorityName="CCD Advance Directive Observation"/>
-              <id root="24ee0e19-b101-4b62-87e8-12955bd41510"/>
+              <id root="c2355bd3-0445-4e26-b1e5-5f51d13f29bf"/>
               <code/>
               <statusCode code="completed"/>
               <effectiveTime>

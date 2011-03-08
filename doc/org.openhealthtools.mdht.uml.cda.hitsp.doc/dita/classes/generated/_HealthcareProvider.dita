@@ -16,8 +16,8 @@
 <ol id="aggregate">
 <li><b>SHALL</b> conform to CDA Performer1</li>
 <li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/HealthcareProvidersPharmacies.dita">IHE Healthcare Providers Pharmacies</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.2.3</tt>)</li>
-<li>[CDA] Contains [1..1] <tt>@typeCode</tt>, where its data type is x_ServiceEventPerformer</li>
-<li>[CDA] Contains [1..1] <tt>assignedEntity</tt>, where its type is CDA Assigned Entity</li>
+<li>Contains exactly one [1..1] <tt>@typeCode</tt>, where its data type is x_ServiceEventPerformer</li>
+<li>Contains exactly one [1..1] <tt>assignedEntity</tt>, where its type is CDA Assigned Entity</li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

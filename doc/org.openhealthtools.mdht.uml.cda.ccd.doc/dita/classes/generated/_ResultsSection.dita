@@ -34,23 +34,21 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain [1..1] <tt>code</tt><tt>/@code</tt> = "30954-2" <i>Relevant diagnostic tests and/or laboratory data</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC) (CONF-389)</li>
-<li><b>SHALL</b> contain [1..1] <tt>title</tt> (CONF-391)</li>
-<li><b>SHOULD</b> contain [1..*] <tt>entry</tt>, such that it<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "30954-2" <i>Relevant diagnostic tests and/or laboratory data</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF-389)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt> (CONF-391)</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../ResultOrganizer.dita">CCD Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.32</tt>) (CONF-388)</li></ol></li>
-<li><b>SHALL</b> contain [1..1] <tt>text</tt> (CONF-388)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt> (CONF-388)</li>
 <li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'results'. (CONF-392)</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to CDA Section</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>code</tt><tt>/@code</tt> = "30954-2" <i>Relevant diagnostic tests and/or laboratory data</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC) (CONF-389)</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>title</tt> (CONF-391)</li>
-<li>[CCD] <b>SHOULD</b> contain [1..*] <tt>entry</tt>, such that it<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "30954-2" <i>Relevant diagnostic tests and/or laboratory data</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF-389)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt> (CONF-391)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt> (CONF-388)</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../ResultOrganizer.dita">CCD Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.32</tt>) (CONF-388)</li></ol></li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>text</tt> (CONF-388)</li>
-<li>[CDA] <b>SHALL</b> satisfy: classCode<ul><li><codeblock>[OCL]: not self.classCode.oclIsUndefined() implies self.classCode=vocab::ActClass::DOCSECT</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: moodCode<ul><li><codeblock>[OCL]: not self.moodCode.oclIsUndefined() implies self.moodCode=vocab::ActMood::EVN</codeblock></li></ul></li>
-<li>[CCD] <b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'results'. (CONF-392)</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'results'. (CONF-392)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
@@ -64,7 +62,7 @@
           <entry>
             <organizer moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.32" assigningAuthorityName="CCD Result Organizer"/>
-              <id root="6833a9d3-4493-46a3-8933-62ed1339dbf3"/>
+              <id root="d3fe9453-4dc5-4ba4-a933-1e0864705695"/>
               <code/>
               <statusCode/>
             </organizer>

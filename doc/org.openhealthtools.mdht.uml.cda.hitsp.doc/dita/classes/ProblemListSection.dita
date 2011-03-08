@@ -6,10 +6,10 @@
 <prolog conref="generated/_ProblemListSection.dita#classId/prolog"></prolog>
 <body>
 <!-- TODO: insert non-model class description markup here -->
-<p>This CCD diagram will be updated to show all consolidated constraints from IHE and HITSP.</p>
-<image href="../images/ProblemSection.png" width="550pt"/>
 <section conref="generated/_ProblemListSection.dita#classId/description">
 </section>
+<!-- TODO: insert UML class diagram here -->
+<image href="../images/ProblemSection.png" width="500pt"/>
 
 <ol audience="standards" conref="generated/_ProblemListSection.dita#classId/conformance">
 <li></li>
@@ -17,13 +17,11 @@
 <ol audience="developer" conref="generated/_ProblemListSection.dita#classId/aggregate">
 <li></li>
 </ol>
-<p></p>
-<fig>
-<title>Problem List Section example</title>
+<p> </p>
+<p><b>Problem List Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
 <codeblock conref="generated/_ProblemListSection.dita#classId/example">
 </codeblock>
-</fig>
 </body>
 </topic>

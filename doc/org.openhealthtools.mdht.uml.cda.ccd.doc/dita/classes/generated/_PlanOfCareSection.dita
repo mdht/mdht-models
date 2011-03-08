@@ -24,45 +24,41 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain [1..1] <tt>code</tt><tt>/@code</tt> = "18776-5" <i>Treatment plan</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC)</li>
-<li><b>SHALL</b> contain [1..1] <tt>title</tt></li>
-<li><b>SHALL</b> contain [1..1] <tt>text</tt></li>
-<li><b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "18776-5" <i>Treatment plan</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivityAct.dita">CCD Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li><b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivityEncounter.dita">CCD Plan Of Care Activity Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li><b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivityObservation.dita">CCD Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li><b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivityProcedure.dita">CCD Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li><b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivitySubstanceAdministration.dita">CCD Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li><b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivitySupply.dita">CCD Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li><b>SHALL</b> contain [1..1] <tt>planOfCareActivity</tt>, such that it<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>planOfCareActivity</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivity.dita">CCD Plan Of Care Activity</xref></li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to CDA Section</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>code</tt><tt>/@code</tt> = "18776-5" <i>Treatment plan</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC)</li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>title</tt></li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>text</tt></li>
-<li>[CCD] <b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "18776-5" <i>Treatment plan</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivityAct.dita">CCD Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li>[CCD] <b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivityEncounter.dita">CCD Plan Of Care Activity Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li>[CCD] <b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivityObservation.dita">CCD Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li>[CCD] <b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivityProcedure.dita">CCD Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li>[CCD] <b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivitySubstanceAdministration.dita">CCD Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li>[CCD] <b>MAY</b> contain [0..1] <tt>entry</tt>, such that it<ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt>entry</tt>, such that it<ol>
 <li>contains <xref href="../PlanOfCareActivitySupply.dita">CCD Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
-<li>[CCD] <b>SHALL</b> contain [1..1] <tt>planOfCareActivity</tt>, such that it<ol>
-<li>contains <xref href="../PlanOfCareActivity.dita">CCD Plan Of Care Activity</xref></li></ol></li>
-<li>[CDA] <b>SHALL</b> satisfy: classCode<ul><li><codeblock>[OCL]: not self.classCode.oclIsUndefined() implies self.classCode=vocab::ActClass::DOCSECT</codeblock></li></ul></li>
-<li>[CDA] <b>SHALL</b> satisfy: moodCode<ul><li><codeblock>[OCL]: not self.moodCode.oclIsUndefined() implies self.moodCode=vocab::ActMood::EVN</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
@@ -76,37 +72,37 @@
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="b30a637d-d9c7-409d-8d23-e80d6c26889c"/>
+              <id root="a8745fda-e8a2-4b0a-b83b-40454dc8db2b"/>
             </act>
           </entry>
           <entry>
             <encounter>
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="00c40f80-2ccc-415e-9bab-8abd50565da1"/>
+              <id root="f1b18f91-c5a9-4635-8567-8f5becca33e1"/>
             </encounter>
           </entry>
           <entry>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="7394b2fa-d35a-421f-9f1e-30885857d1c5"/>
+              <id root="06bf6d5a-52ce-4d47-ac9c-986f168b4b94"/>
             </observation>
           </entry>
           <entry>
             <procedure>
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="9cbdf2ee-f48c-498a-8881-3e767cb62e0e"/>
+              <id root="d9f86c76-fefb-4e70-8c48-3c4aa34c1d81"/>
             </procedure>
           </entry>
           <entry>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="f20113f1-5941-496d-bbbf-a0ab35c61faf"/>
+              <id root="5a81ddd7-dbf3-4c63-bfea-39961660b332"/>
             </substanceAdministration>
           </entry>
           <entry>
             <supply classCode="SPLY">
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="245b28f8-f7c9-486a-890e-d81ce0ab54cc"/>
+              <id root="16227c06-dfa7-4e16-a6c5-4c3ad2181cd3"/>
             </supply>
           </entry>
         </section>
