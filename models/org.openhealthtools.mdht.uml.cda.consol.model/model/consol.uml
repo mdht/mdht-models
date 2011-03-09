@@ -453,15 +453,15 @@ will be set to PROV.</body>
           <body>self.authenticator->forAll(auth : cda::Authenticator | auth.assignedEntity->forAll(entity : cda::AssignedEntity |&#xD;&#xA;   not entity.assignedPerson.oclIsUndefined()))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_mEGlYAlEEeCb3JSiaNKEKA" name="timePreciseToSecond" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+      <ownedRule xmi:id="_mEGlYAlEEeCb3JSiaNKEKA" name="timePreciseToMinute" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
         <ownedComment xmi:id="_JLX78Ax4EeCbT6kkmQhJPQ">
-          <body>Should portion of CON-HP-10 constraitn</body>
+          <body>If time is more precise than to day, it SHALL contain the offset from UTC (time zone information)</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_mEGlYQlEEeCb3JSiaNKEKA">
           <language>Analysis</language>
           <language>XPath</language>
           <language>OCL</language>
-          <body>Times or time intervals found in the ClinicalDocument/effectiveTime,&#xD;&#xA;author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and&#xD;&#xA;encompassingEncounter/effectiveTime elements SHALL be precise to the day, SHALL&#xD;&#xA;include a time zone if more precise than to the day, and SHOULD be precise to the&#xD;&#xA;second.</body>
+          <body>Times or time intervals found in the ClinicalDocument/effectiveTime,&#xD;&#xA;author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and&#xD;&#xA;encompassingEncounter/effectiveTime elements SHALL be precise to the day, SHALL&#xD;&#xA;include a time zone if more precise than to the day, and SHOULD be precise to the&#xD;&#xA;minute.</body>
           <body>/cda:ClinicalDocument/cda:effectiveTime | //cda:author/cda:time | //cda:dataEnterer/cda:time | //cda:encompassingEncounter/cda:effectiveTime</body>
           <body>-- implemented in Java using XPath selector</body>
         </specification>
