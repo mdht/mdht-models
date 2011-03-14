@@ -260,7 +260,7 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 	public static  EList<PregnancyObservation> getPregnancyObservations(PregnancyHistorySection pregnancyHistorySection) {
 		if (GET_PREGNANCY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.PREGNANCY_HISTORY_SECTION, IHEPackage.Literals.PREGNANCY_HISTORY_SECTION.getEAllOperations().get(52));
+			helper.setOperationContext(IHEPackage.Literals.PREGNANCY_HISTORY_SECTION, IHEPackage.Literals.PREGNANCY_HISTORY_SECTION.getEAllOperations().get(58));
 			try {
 				GET_PREGNANCY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_EXP);
 			}

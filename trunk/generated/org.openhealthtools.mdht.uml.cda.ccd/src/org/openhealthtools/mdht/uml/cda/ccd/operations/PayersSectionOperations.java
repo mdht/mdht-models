@@ -376,7 +376,7 @@ public class PayersSectionOperations extends SectionOperations {
 	public static  EList<CoverageActivity> getCoverageActivities(PayersSection payersSection) {
 		if (GET_COVERAGE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PAYERS_SECTION, CCDPackage.Literals.PAYERS_SECTION.getEAllOperations().get(54));
+			helper.setOperationContext(CCDPackage.Literals.PAYERS_SECTION, CCDPackage.Literals.PAYERS_SECTION.getEAllOperations().get(60));
 			try {
 				GET_COVERAGE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_COVERAGE_ACTIVITIES__EOCL_EXP);
 			}

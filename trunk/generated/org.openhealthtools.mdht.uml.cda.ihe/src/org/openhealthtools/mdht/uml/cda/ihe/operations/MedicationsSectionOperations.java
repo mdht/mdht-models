@@ -203,7 +203,7 @@ public class MedicationsSectionOperations extends org.openhealthtools.mdht.uml.c
 	public static  EList<Medication> getMedications(MedicationsSection medicationsSection) {
 		if (GET_MEDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.MEDICATIONS_SECTION, IHEPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(IHEPackage.Literals.MEDICATIONS_SECTION, IHEPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(64));
 			try {
 				GET_MEDICATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATIONS__EOCL_EXP);
 			}

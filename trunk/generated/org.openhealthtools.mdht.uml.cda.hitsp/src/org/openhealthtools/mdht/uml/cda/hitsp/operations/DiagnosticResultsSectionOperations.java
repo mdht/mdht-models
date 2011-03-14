@@ -258,7 +258,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	public static  EList<Procedure> getDiagnosticProcedures(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_DIAGNOSTIC_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION, HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION, HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(64));
 			try {
 				GET_DIAGNOSTIC_PROCEDURES__EOCL_QRY = helper.createQuery(GET_DIAGNOSTIC_PROCEDURES__EOCL_EXP);
 			}
@@ -304,7 +304,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	public static  EList<Result> getResults(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_RESULTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION, HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(59));
+			helper.setOperationContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION, HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(65));
 			try {
 				GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
 			}

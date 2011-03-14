@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPlugin;
 import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.operations.ObservationOperations;
+import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +42,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ObservationOperations;
  *
  * @generated
  */
-public class ReactionObservationOperations extends ObservationOperations {
+public class ReactionObservationOperations extends ClinicalStatementOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -373,7 +373,7 @@ public class ReactionObservationOperations extends ObservationOperations {
 	public static  SeverityObservation getSeverityObservation(ReactionObservation reactionObservation) {
 		if (GET_SEVERITY_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.REACTION_OBSERVATION, CCDPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(48));
+			helper.setOperationContext(CCDPackage.Literals.REACTION_OBSERVATION, CCDPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(54));
 			try {
 				GET_SEVERITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SEVERITY_OBSERVATION__EOCL_EXP);
 			}

@@ -198,7 +198,7 @@ public class EncounterHistorySectionOperations extends EncountersSectionOperatio
 	public static  EList<EncounterEntry> getEncounterEntries(EncounterHistorySection encounterHistorySection) {
 		if (GET_ENCOUNTER_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.ENCOUNTER_HISTORY_SECTION, IHEPackage.Literals.ENCOUNTER_HISTORY_SECTION.getEAllOperations().get(54));
+			helper.setOperationContext(IHEPackage.Literals.ENCOUNTER_HISTORY_SECTION, IHEPackage.Literals.ENCOUNTER_HISTORY_SECTION.getEAllOperations().get(60));
 			try {
 				GET_ENCOUNTER_ENTRIES__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_ENTRIES__EOCL_EXP);
 			}
