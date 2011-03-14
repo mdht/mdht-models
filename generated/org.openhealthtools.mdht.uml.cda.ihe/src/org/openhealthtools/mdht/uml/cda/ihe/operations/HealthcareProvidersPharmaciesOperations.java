@@ -36,15 +36,6 @@ import org.openhealthtools.mdht.uml.hl7.rim.operations.ParticipationOperations;
  */
 public class HealthcareProvidersPharmaciesOperations extends ParticipationOperations {
 	/**
-	 * The cached environment for evaluating OCL expressions.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	protected static final OCL EOCL_ENV = OCL.newInstance();
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

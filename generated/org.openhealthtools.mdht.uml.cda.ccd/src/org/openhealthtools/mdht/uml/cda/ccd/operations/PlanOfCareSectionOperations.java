@@ -687,7 +687,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	public static  PlanOfCareActivityAct getPlanOfCareActivityAct(PlanOfCareSection planOfCareSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(60));
+			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(66));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_EXP);
 			}
@@ -731,7 +731,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	public static  PlanOfCareActivityEncounter getPlanOfCareActivityEncounter(PlanOfCareSection planOfCareSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(61));
+			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(67));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_EXP);
 			}
@@ -775,7 +775,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	public static  PlanOfCareActivityObservation getPlanOfCareActivityObservation(PlanOfCareSection planOfCareSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(68));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_EXP);
 			}
@@ -819,7 +819,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	public static  PlanOfCareActivityProcedure getPlanOfCareActivityProcedure(PlanOfCareSection planOfCareSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(69));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_EXP);
 			}
@@ -863,7 +863,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	public static  PlanOfCareActivitySubstanceAdministration getPlanOfCareActivitySubstanceAdministration(PlanOfCareSection planOfCareSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(70));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_EXP);
 			}
@@ -907,7 +907,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	public static  PlanOfCareActivitySupply getPlanOfCareActivitySupply(PlanOfCareSection planOfCareSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(65));
+			helper.setOperationContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION, CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(71));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_EXP);
 			}

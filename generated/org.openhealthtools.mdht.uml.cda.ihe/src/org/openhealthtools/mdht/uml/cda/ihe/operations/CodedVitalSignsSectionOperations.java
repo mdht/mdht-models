@@ -197,7 +197,7 @@ public class CodedVitalSignsSectionOperations extends VitalSignsSectionOperation
 	public static  EList<VitalSignsOrganizer> getIHEVitalSignsOrganizers(CodedVitalSignsSection codedVitalSignsSection) {
 		if (GET_IHE_VITAL_SIGNS_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION, IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION, IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION.getEAllOperations().get(64));
 			try {
 				GET_IHE_VITAL_SIGNS_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_IHE_VITAL_SIGNS_ORGANIZERS__EOCL_EXP);
 			}

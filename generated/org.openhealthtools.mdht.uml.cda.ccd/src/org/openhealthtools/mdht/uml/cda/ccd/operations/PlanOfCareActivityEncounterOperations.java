@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPlugin;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityEncounter;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.operations.EncounterOperations;
+import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +37,7 @@ import org.openhealthtools.mdht.uml.cda.operations.EncounterOperations;
  *
  * @generated
  */
-public class PlanOfCareActivityEncounterOperations extends EncounterOperations {
+public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

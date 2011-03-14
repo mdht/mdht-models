@@ -431,7 +431,7 @@ public class VitalSignsOrganizerOperations extends org.openhealthtools.mdht.uml.
 	public static  EList<VitalSignObservation> getVitalSignObservations(VitalSignsOrganizer vitalSignsOrganizer) {
 		if (GET_VITAL_SIGN_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER, IHEPackage.Literals.VITAL_SIGNS_ORGANIZER.getEAllOperations().get(59));
+			helper.setOperationContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER, IHEPackage.Literals.VITAL_SIGNS_ORGANIZER.getEAllOperations().get(66));
 			try {
 				GET_VITAL_SIGN_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGN_OBSERVATIONS__EOCL_EXP);
 			}

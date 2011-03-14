@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPlugin;
 import org.openhealthtools.mdht.uml.cda.ccd.CoverageActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.PolicyActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.operations.ActOperations;
+import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -49,7 +49,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ActOperations;
  *
  * @generated
  */
-public class CoverageActivityOperations extends ActOperations {
+public class CoverageActivityOperations extends ClinicalStatementOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -624,7 +624,7 @@ public class CoverageActivityOperations extends ActOperations {
 	public static  EList<PolicyActivity> getPolicyActivities(CoverageActivity coverageActivity) {
 		if (GET_POLICY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.COVERAGE_ACTIVITY, CCDPackage.Literals.COVERAGE_ACTIVITY.getEAllOperations().get(52));
+			helper.setOperationContext(CCDPackage.Literals.COVERAGE_ACTIVITY, CCDPackage.Literals.COVERAGE_ACTIVITY.getEAllOperations().get(58));
 			try {
 				GET_POLICY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_POLICY_ACTIVITIES__EOCL_EXP);
 			}

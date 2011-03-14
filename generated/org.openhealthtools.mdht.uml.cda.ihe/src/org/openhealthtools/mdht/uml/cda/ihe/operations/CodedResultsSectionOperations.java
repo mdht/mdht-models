@@ -320,7 +320,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	public static  EList<ExternalReference> getExternalReferences(CodedResultsSection codedResultsSection) {
 		if (GET_EXTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.CODED_RESULTS_SECTION, IHEPackage.Literals.CODED_RESULTS_SECTION.getEAllOperations().get(53));
+			helper.setOperationContext(IHEPackage.Literals.CODED_RESULTS_SECTION, IHEPackage.Literals.CODED_RESULTS_SECTION.getEAllOperations().get(59));
 			try {
 				GET_EXTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_EXTERNAL_REFERENCES__EOCL_EXP);
 			}
@@ -366,7 +366,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	public static  EList<SimpleObservation> getSimpleObservations(CodedResultsSection codedResultsSection) {
 		if (GET_SIMPLE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.CODED_RESULTS_SECTION, IHEPackage.Literals.CODED_RESULTS_SECTION.getEAllOperations().get(54));
+			helper.setOperationContext(IHEPackage.Literals.CODED_RESULTS_SECTION, IHEPackage.Literals.CODED_RESULTS_SECTION.getEAllOperations().get(60));
 			try {
 				GET_SIMPLE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SIMPLE_OBSERVATIONS__EOCL_EXP);
 			}

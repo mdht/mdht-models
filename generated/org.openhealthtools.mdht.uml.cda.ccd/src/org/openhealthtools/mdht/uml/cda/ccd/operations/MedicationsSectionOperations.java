@@ -380,7 +380,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	public static  EList<MedicationActivity> getMedicationActivities(MedicationsSection medicationsSection) {
 		if (GET_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.MEDICATIONS_SECTION, CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(54));
+			helper.setOperationContext(CCDPackage.Literals.MEDICATIONS_SECTION, CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(60));
 			try {
 				GET_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITIES__EOCL_EXP);
 			}
@@ -426,7 +426,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	public static  EList<SupplyActivity> getSupplyActivities(MedicationsSection medicationsSection) {
 		if (GET_SUPPLY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.MEDICATIONS_SECTION, CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(55));
+			helper.setOperationContext(CCDPackage.Literals.MEDICATIONS_SECTION, CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(61));
 			try {
 				GET_SUPPLY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_SUPPLY_ACTIVITIES__EOCL_EXP);
 			}

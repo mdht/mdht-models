@@ -376,7 +376,7 @@ public class ProblemSectionOperations extends SectionOperations {
 	public static  EList<ProblemAct> getProblemActs(ProblemSection problemSection) {
 		if (GET_PROBLEM_ACTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PROBLEM_SECTION, CCDPackage.Literals.PROBLEM_SECTION.getEAllOperations().get(54));
+			helper.setOperationContext(CCDPackage.Literals.PROBLEM_SECTION, CCDPackage.Literals.PROBLEM_SECTION.getEAllOperations().get(60));
 			try {
 				GET_PROBLEM_ACTS__EOCL_QRY = helper.createQuery(GET_PROBLEM_ACTS__EOCL_EXP);
 			}

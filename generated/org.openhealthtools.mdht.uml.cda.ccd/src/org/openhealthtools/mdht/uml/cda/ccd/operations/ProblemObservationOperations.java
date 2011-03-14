@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProblemHealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.operations.ObservationOperations;
+import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,7 +50,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ObservationOperations;
  *
  * @generated
  */
-public class ProblemObservationOperations extends ObservationOperations {
+public class ProblemObservationOperations extends ClinicalStatementOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -621,7 +621,7 @@ public class ProblemObservationOperations extends ObservationOperations {
 	public static  ProblemStatusObservation getProblemStatus(ProblemObservation problemObservation) {
 		if (GET_PROBLEM_STATUS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PROBLEM_OBSERVATION, CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(52));
+			helper.setOperationContext(CCDPackage.Literals.PROBLEM_OBSERVATION, CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_STATUS__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS__EOCL_EXP);
 			}
@@ -665,7 +665,7 @@ public class ProblemObservationOperations extends ObservationOperations {
 	public static  ProblemHealthStatusObservation getProblemHealthStatus(ProblemObservation problemObservation) {
 		if (GET_PROBLEM_HEALTH_STATUS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PROBLEM_OBSERVATION, CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(53));
+			helper.setOperationContext(CCDPackage.Literals.PROBLEM_OBSERVATION, CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(59));
 			try {
 				GET_PROBLEM_HEALTH_STATUS__EOCL_QRY = helper.createQuery(GET_PROBLEM_HEALTH_STATUS__EOCL_EXP);
 			}
@@ -709,7 +709,7 @@ public class ProblemObservationOperations extends ObservationOperations {
 	public static  AgeObservation getAgeObservation(ProblemObservation problemObservation) {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PROBLEM_OBSERVATION, CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(54));
+			helper.setOperationContext(CCDPackage.Literals.PROBLEM_OBSERVATION, CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(60));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
 			}
