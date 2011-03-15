@@ -2,13 +2,13 @@
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Default="http:///schemas/Default/1" xmlns:HDF="http:///schemas/HDF/_D_mP4FwxEd63D_E2UJKpvQ/12" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/HDF/_D_mP4FwxEd63D_E2UJKpvQ/12 pathmap://HL7_PROFILES/HDF.profile.uml#_D_tkoFwxEd63D_E2UJKpvQ">
   <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="consol">
     <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+      <importedPackage href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_MwGRIGeLEd-ilOLYnIx0jA" name="GeneralHeaderConstraints">
       <ownedComment xmi:id="_QrycIHMnEd-9_cvcE5QEwg">
-        <body>&lt;p>&lt;b>&lt;i>IMPORTANT&lt;/i>  NOTE:&lt;/b>  There will almost certainly need to be a new OID 
+        <body>&lt;h1>&lt;i>IMPORTANT&lt;/i>  NOTE:&lt;/h1>&lt;b>  There will  be a new OID 
 which identifies this template, and that &lt;tt>ClinicalDocument.templateId&lt;/tt> may have 
-additional constraints upon it.&lt;/p>
+additional constraints upon it.&lt;/b>&lt;/p>
 &lt;p>This section describes constraints that apply to the H and P Note and to other types of CDA&#xD;
 documents defined for general exchange. The template defined here should be reused&#xD;
 wherever these general header constraints are applied.&lt;/p>&#xD;
@@ -45,6 +45,30 @@ the new template may or may not conform) 2.16.840.1.113883.10.20.3,
 1.3.6.1.4.1.19376.1.5.3.1.1.1,  and (presumably) 2.16.840.1.113883.10.20.1.&lt;/p></body>
       </ownedComment>
       <ownedRule xmi:id="_M7vtkPzSEd-9y7w_HH-hnA" name="personHasName" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_LINhsE3XEeCnELWc158N4w">
+          <body>&lt;p>&lt;b>&lt;tt>Person.name&lt;/tt>  SHALL&lt;/b>  follow the convention of having each name part (e.g. given name, family name)  
+represented as a discrete &lt;b>&lt;tt>ENXP&lt;/tt>&lt;/b>.  These &lt;b>SHALL&lt;/b> be in the same order which the name normally would be written.  
+The name SHALL convey at least one &lt;tt>&lt;b>EntityName.use&lt;/b> (SET&amp;lt;CS&amp;gt;)&lt;/tt> drawn from &lt;tt>EntityNamePartQualifier&lt;/tt>
+Concept Domain / Value Set (2.16.840.1.113883.1.11.15888)  based on &lt;tt>&lt;i>EntityNamePartQualifier&lt;/i>&lt;/tt> HL7 code system 
+(2.16.840.1.113883.5.43).  
+ In cases where the name has not been the full and legal name for the individual, (for example the patient changed their name 
+when married, a &quot;John Doe&quot; name for a patient was retired after determining their actual identity) the 
+&lt;tt>&lt;b>EntityName.validTime&lt;/b>( IVL&amp;lt;TS&amp;gt;)&lt;/b>&lt;/tt> &lt;b>SHOULD&lt;/b> be used.  
+This is particularly useful in matching records after such name changes, and in cases such as emergency care  and referalls using 
+a health record summary such as the Continuity of Care Document (CCD).&lt;/p>
+&lt;p>The other use case often encountered regards healthcare professionals, particularly physicians.   Because of the importance of 
+correctly indentifying an individual and linking them to their credendials (history of specialty and other certificiations),  women (and less 
+often, men) may change their names meaning the legal name now reflects taking on the family name of a spouse.  Often a physician will 
+keep their previous name for professional matters.&lt;/p>
+&lt;p>The various parts of the name are captured and represented as &lt;tt>&lt;b>EntityNamePart (ENXP)&lt;/b>&lt;/tt> .  The various parts of 
+the name are represented with the name of the part, and &lt;b>MAY&lt;/b> include the part type as an attribute, although it is redundant. 
+Individual name parts &lt;b>MAY&lt;/b>  use &lt;tt>&lt;b>EntityNamePart.qualifier&lt;/b> SET&amp;lt;CS&amp;gt;&lt;/tt> drawn from Concept Domain / 
+Value Set &lt;tt>EntityNamePartQualifier (2.16.840.1.113883.1.11.15888)&lt;/tt> based upon the HL7 Code System 
+&lt;tt>&lt;i>EntityNamePartQualifier&lt;/i> (2.16.840.1.113883.5.43)&lt;/tt> to clairify complex circumstance, such as  use of a spouses name.
+In particular noting that a name part was given at the time of adoption (code &lt;tt>&lt;b>&lt;i>AD&lt;/i>&lt;/b>&lt;/tt>), birth (code &lt;tt>&lt;b>&lt;i>BR&lt;/i>&lt;/b>&lt;/tt>),  
+and marrried name from a spouse (code &lt;tt>&lt;b>&lt;i>SP&lt;/i>&lt;/b>&lt;/tt>) can be particularly relevant.&lt;/p>
+&lt;p>Finally, the name of the person &lt;b>MAY&lt;/b> have the name as it should appear with proper spacing as the &lt;tt>&lt;b>PersonName.formatted&lt;/b> ST&lt;/tt>&lt;/p></body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkEscPzSEd-9y7w_HH-hnA">
           <language>Analysis</language>
           <language>OCL</language>
@@ -76,11 +100,10 @@ the new template may or may not conform) 2.16.840.1.113883.10.20.3,
       </ownedRule>
       <ownedRule xmi:id="_1AAdAP1cEd-9y7w_HH-hnA" name="organizationsHaveContactInfo" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
         <ownedComment xmi:id="_dpU1AP1dEd-9y7w_HH-hnA">
-          <body>When name, address, or telecom information is unknown and where these elements are&#xD;
-required to be present, as with CDA conformance if the information is unknown, these&#xD;
-elements will be represented using an appropriate value for the nullFlavor attribute on&#xD;
-the element. Legal values according to this specification come from the HL7 NullFlavor&#xD;
-vocabulary.</body>
+          <body>When name, address, or telecom information is unknown nullFlavor = &quot;UNK&quot;
+or a specialization / subtype of unknown,  (ASKU, NAV, NASK)
+drawn from the HL7 valueset 2.16.840.1.113883.1.11.10609 
+which uses HL7 code system NullFlavor  2.16.840.1.113883.5.1008.</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_-gR5YP1cEd-9y7w_HH-hnA">
           <language>Analysis</language>
@@ -467,27 +490,24 @@ will be set to PROV.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_0XI4AAx3EeCbT6kkmQhJPQ" name="timePreciseToYearAndDay" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
-        <ownedComment xmi:id="_PSJF4Ax4EeCbT6kkmQhJPQ">
-          <body>Should portion of CON-HP-11 constraint.  This needs to be changed to reflect the decision SHALL be precise to the day, and SHOULD be precise to the minute, if precise to more than the day, the time zone SHALL be present.  (if precise to more than the day, there is no way to KNOW what the time is with certainty, although if the geographic location of the sending facilitity is known, it should be discoverable to within an hour's precision, by looking up the time zone the location of the sender is.  This is unlikely to be ).</body>
-        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_ETtpcAx4EeCbT6kkmQhJPQ">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>Times or time intervals found in the asOrganizationPartOf/effectiveTime,&#xD;&#xA;asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,&#xD;&#xA;serviceEvent/effectiveTime, ClinicalDocument/participant/time,&#xD;&#xA;serviceEvent/performer/time and encounterParticipant/time SHALL be precise at&#xD;&#xA;least to the year, SHOULD be precise to the day, and MAY omit time zone.</body>
+          <body>Times or time intervals found in the asOrganizationPartOf/effectiveTime,&#xD;&#xA;asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,&#xD;&#xA;serviceEvent/effectiveTime, ClinicalDocument/participant/time,&#xD;&#xA;serviceEvent/performer/time and encounterParticipant/time SHALL be precise at&#xD;&#xA;least to the year, SHOULD be precise to the day, and MAY omit time zone if only precise to day, month, or year.</body>
           <body>cda::OrganizationPartOf.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject)-> union(  cda::MaintainedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union( cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::ServiceEvent.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::EncounterParticipant.allInstances()->select( time.oclIsUndefined()).oclAsType( ecore::EObject))->union(self.participant->select( time.oclIsUndefined()).oclAsType( ecore::EObject))->union(cda::OrganizationPartOf.allInstances().effectiveTime->union(cda::MaintainedEntity.allInstances().effectiveTime)->union( cda::RelatedEntity.allInstances().effectiveTime)->union(cda::RelatedEntity.allInstances().effectiveTime)->union(cda::RelatedEntity.allInstances().effectiveTime)->union(cda::ServiceEvent.allInstances().effectiveTime)->union(cda::EncounterParticipant.allInstances().time)->union(self.participant.time)->select(current : datatypes::IVL_TS  |  ((not current.low.oclIsUndefined()) and (current.low.value.oclIsUndefined() or current.low.value.size() &lt; 8)) or ((not current.center.oclIsUndefined()) and (current.center.value.oclIsUndefined() or current.center.value.size() &lt; 8)) or ((not current.high.oclIsUndefined()) and (current.high.value.oclIsUndefined() or current.high.value.size() &lt; 8)) or (current.low.oclIsUndefined() and current.center.oclIsUndefined() and current.high.oclIsUndefined()) ).oclAsType( ecore::EObject))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_MwujQGeLEd-ilOLYnIx0jA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_LByJgGkdEd-lxvPE33eETg" name="code" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_XrZ9sP1gEd-9y7w_HH-hnA">
           <body>As a constraint on the HL7 v3 CDA r2 Implementation Guide for Continuity of Care Document (CCD), the ClinicalDocument.code is fixed to 34133-9 &quot;Summarization of episode note&quot; from LOINC (2.16.840.1.113883.6.1) STATIC</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LByJgWkdEd-lxvPE33eETg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LByJgmkdEd-lxvPE33eETg" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jS4QEAIEd6wZe6nFLrjsw"/>
+        <redefinedProperty href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jS4QEAIEd6wZe6nFLrjsw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_q4dBQEW1EeCAebEJ2xtyVg" value="34133-9 “Summarization of episode note” from LOINC (2.16.840.1.113883.6.1)"/>
         <qualifier xmi:id="_a_HOwD7KEeCMOJsPSJhzlQ" name="id" visibility="private" aggregation="composite">
           <ownedComment xmi:id="_a_HOwT7KEeCMOJsPSJhzlQ">
@@ -496,10 +516,10 @@ Abstract Data in Section 5 REFERENCES). The root attribute is a UUID or OID. The
 root uniquely identifies the scope of the extension. The root and extension attributes&#xD;
 uniquely identify the document.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a_HOwj7KEeCMOJsPSJhzlQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a_HOwz7KEeCMOJsPSJhzlQ" value="1"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p0WCQEAIEd6wZe6nFLrjsw"/>
+          <redefinedProperty href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_p0WCQEAIEd6wZe6nFLrjsw"/>
         </qualifier>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pwbIcGkaEd-lxvPE33eETg" name="confidentialityCode" visibility="private" aggregation="composite">
@@ -508,8 +528,8 @@ uniquely identify the document.</body>
 on documents with respect to the vocabulary used for confidentialityCode, nor&#xD;
 treatment or implementation of confidentiality.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ccMDcEAKEd6wZe6nFLrjsw"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_ccMDcEAKEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pwvRgGkaEd-lxvPE33eETg" name="effectiveTime" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_IBLrEP1hEd-9y7w_HH-hnA">
@@ -519,8 +539,8 @@ precise to the second. When authored in other ways, for example, by filling out 
 paper form that is then transferred into an EHR system, the precision of&#xD;
 effectiveTime may be less than to the second.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JqFEwEAJEd6wZe6nFLrjsw"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+        <redefinedProperty href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_JqFEwEAJEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pwv4kGkaEd-lxvPE33eETg" name="id" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_JjmVIAbaEeC15aCUY_wo_g">
@@ -530,26 +550,26 @@ root uniquely identifies the scope of the extension. The root and extension attr
 uniquely identify the document.&lt;/p>
 ***</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pwv4kWkaEd-lxvPE33eETg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pwv4kmkaEd-lxvPE33eETg" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p0WCQEAIEd6wZe6nFLrjsw"/>
+        <redefinedProperty href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_p0WCQEAIEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pwwfoGkaEd-lxvPE33eETg" name="languageCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_jWsTgEd3EeC_9qGklbFB-A">
           <body>Each IG has a different method to constrain how the language code is to be expressed, including something which resembles regular expressions.  All reference use of ISO 639-1 and ISO 3166.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e_NMIGkbEd-lxvPE33eETg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e_NzMGkbEd-lxvPE33eETg" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3qLBoEokEd6c3qsAxlFHaQ"/>
+        <redefinedProperty href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_3qLBoEokEd6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_E9j9YEXAEeCAebEJ2xtyVg" value="en-US"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pwwfo2kaEd-lxvPE33eETg" name="realmCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6w61AGkaEd-lxvPE33eETg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6w7cEGkaEd-lxvPE33eETg" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fQPpMExwEd6h-an5IXo-DA"/>
+        <redefinedProperty href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_fQPpMExwEd6h-an5IXo-DA"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_KUF9MEXAEeCAebEJ2xtyVg" value="US"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_TUol8GkcEd-lxvPE33eETg" name="title" visibility="private" aggregation="composite">
@@ -559,10 +579,10 @@ Note that the title does not need to be the same as the display name provided wi
 document type code. For example, the display name provided by LOINC&amp;#174; as an aid in&#xD;
 debugging may be &quot;HISTORY AND PHYSICAL.&quot; The title can be localized, as appropriate.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U7TBwGkcEd-lxvPE33eETg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U7To0GkcEd-lxvPE33eETg" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Bn1soEAJEd6wZe6nFLrjsw"/>
+        <redefinedProperty href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_Bn1soEAJEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pwxGsGkaEd-lxvPE33eETg" name="typeId" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_0Vs0AAbZEeC15aCUY_wo_g">
@@ -570,37 +590,37 @@ debugging may be &quot;HISTORY AND PHYSICAL.&quot; The title can be localized, a
 content, essentially acting as a version identifier.&lt;/p>
 &lt;p>This value is fixed to &lt;tt>root=&quot;2.16.840.1.113883.1.3&quot; extension=&quot;POCD_HD000040&quot;&lt;/tt>&lt;/p></body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fscFkGkbEd-lxvPE33eETg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fscFkWkbEd-lxvPE33eETg" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fQZaNkxwEd6h-an5IXo-DA"/>
+        <redefinedProperty href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_fQZaNkxwEd6h-an5IXo-DA"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_XSOnkEXAEeCAebEJ2xtyVg" value="root=&quot;2.16.840.1.113883.1.3&quot; extension=&quot;POCD_HD000040&quot;"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_eOLMUAcSEeC15aCUY_wo_g" name="author">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fguZUAcSEeC15aCUY_wo_g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fguZUQcSEeC15aCUY_wo_g" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sS8HkAcSEeC15aCUY_wo_g" name="dataEnterer">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sS8HkQcSEeC15aCUY_wo_g"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sOWB0AcaEeC15aCUY_wo_g" name="custodian">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mMYIkEcEEd6besF9iFIJkQ"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_mMYIkEcEEd6besF9iFIJkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_utRiYAcaEeC15aCUY_wo_g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_utRiYQcaEeC15aCUY_wo_g" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8CtScAcaEeC15aCUY_wo_g" name="informationRecipient">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_I5t6QEcZEd6besF9iFIJkQ"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_I5t6QEcZEd6besF9iFIJkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9cTioAcaEeC15aCUY_wo_g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9cTioQcaEeC15aCUY_wo_g"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_VhrxwAccEeC15aCUY_wo_g" name="legalAuthenticator">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fcTWYEcZEd6besF9iFIJkQ"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_fcTWYEcZEd6besF9iFIJkQ"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VhrxwQccEeC15aCUY_wo_g"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FYE0cAcdEeC15aCUY_wo_g" name="authenticator">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BkHyQEcEEd6besF9iFIJkQ"/>
+        <type xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.cda/model/cda.uml#_BkHyQEcEEd6besF9iFIJkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GWwqQAcdEeC15aCUY_wo_g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GWwqQQcdEeC15aCUY_wo_g"/>
       </ownedAttribute>
@@ -636,13 +656,13 @@ content, essentially acting as a version identifier.&lt;/p>
   <CDA:Entry xmi:id="_auV_cK0UEd6_kOk8Ilc2Dw" message="CDT My Section SHOULD contain [1..*] entry such that it, SHALL contain [1..1] @typeCode=&quot;COMP&quot; COMP (component), SHALL contain [1..1] My Activity (templateId: 1.2.3.4.2)" severity="WARNING"/>
   <CDA:TextValue xmi:id="_xJaggK0jEd6_kOk8Ilc2Dw" message="CDT My Section SHALL contain [1..1] title"/>
   <CDA:CodeSystemConstraint xmi:id="_68FaADOiEd-4N_xqnt9Yew" code="23745001" displayName="Documentation procedure" message="CDT My Activity SHALL contain [1..1] code/@code = &quot;23745001&quot; Documentation procedure (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT STATIC 20080731)">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="platform:/resource/org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_68JEYDOiEd-4N_xqnt9Yew" code="completed" message="CDT My Activity SHALL contain [1..1] statusCode/@code = &quot;completed&quot;  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus STATIC V3NE08)">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="platform:/resource/org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_68K5kDOiEd-4N_xqnt9Yew" code="48764-5" displayName="Summary purpose" message="CDT My Section SHALL contain [1..1] code/@code = &quot;48764-5&quot; Summary purpose (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC 2.26)">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="platform:/resource/org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_PRnLoGeLEd-ilOLYnIx0jA" message="" base_Class="_MwGRIGeLEd-ilOLYnIx0jA" templateId="2.16.840.1.113883.10.20.3">
     <ruleId>CONF-CONSOL-0</ruleId>
@@ -939,4 +959,6 @@ content, essentially acting as a version identifier.&lt;/p>
   <HDF:HDFAttribute xmi:id="_NypvwEW1EeCAebEJ2xtyVg" base_Property="_LByJgGkdEd-lxvPE33eETg">
     <businessNames xmi:id="_NyqW0EW1EeCAebEJ2xtyVg" name="" language="en"/>
   </HDF:HDFAttribute>
+  <CDA:ConstraintValidation xmi:id="_p6BdUE28EeCnELWc158N4w"/>
+  <CDA:PropertyValidation xmi:id="_QhH18E5tEeCnELWc158N4w" base_Property="_pwbIcGkaEd-lxvPE33eETg"/>
 </xmi:XMI>
