@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="ihe">
     <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
@@ -17,20 +17,20 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_vbZp0CNMEeCxCon8a79rfA">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>The effectiveTime 'low' element shall be present. The 'high' element shall be present for concerns in the completed or aborted state, and shall not be present otherwise.</body>
+          <body>The effectiveTime 'low' element SHALL be present. The 'high' element SHALL be present for concerns in the completed or aborted state, and SHALL NOT be present otherwise.</body>
           <body>not self.effectiveTime.low.oclIsUndefined()&#xD;&#xA;   and ((self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined())&#xD;&#xA;   and ((self.statusCode.code &lt;> 'completed' and self.statusCode.code &lt;> 'aborted') implies self.effectiveTime.high.oclIsUndefined())</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_-tR7oCNQEeCxCon8a79rfA" name="hasRelatedObservations" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_D4dAACNREeCxCon8a79rfA">
           <language>Analysis</language>
-          <body>Each concern is about one or more related problems or allergies. This entry shall contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances. This is how a series of related observations can be grouped as a single concern. This SHALL be represented using entryRelationship with typeCode = 'SUBJ'.</body>
+          <body>Each concern is about one or more related problems or allergies. This entry SHALL contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances. This is how a series of related observations can be grouped as a single concern. This SHALL be represented using entryRelationship with typeCode = 'SUBJ'.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_f7J1wCNREeCxCon8a79rfA" name="hasRelatedReferences" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_iqETECNREeCxCon8a79rfA">
           <language>Analysis</language>
-          <body>Each concern may have 0 or more related references. These may be used to represent related statements such related visits. This may be any valid CDA clinical statement, and SHOULD be an IHE entry template. This SHALL be represented using entryRelationship with typeCode = 'REFR'.</body>
+          <body>Each concern MAY have 0 or more related references. These MAY be used to represent related statements such related visits. This MAY be any valid CDA clinical statement, and SHOULD be an IHE entry template. This SHALL be represented using entryRelationship with typeCode = 'REFR'.</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_H4qVgDxbEd6JwqSGecoePg">
@@ -812,7 +812,7 @@ patient's current complaints.</body>
     </profileApplication>
     <profileApplication xmi:id="__XON4IwEEd6B6JSUB00H7g">
       <eAnnotations xmi:id="__XPcAIwEEd6B6JSUB00H7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/5#/"/>
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>

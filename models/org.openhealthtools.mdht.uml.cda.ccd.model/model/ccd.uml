@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="ccd">
     <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
@@ -595,32 +595,32 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_oC8Q0EjjEeCOWNbpDoETQw">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>subject/relatedSubject/subject contains exactly one birthTime</body>
+          <body>subject/relatedSubject/subject SHOULD contain exactly one birthTime</body>
           <body>not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_LG47wEjkEeCOWNbpDoETQw" name="relatedSubjectDeceasedInd" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_LG47wUjkEeCOWNbpDoETQw">
           <language>Analysis</language>
-          <body>subject/relatedSubject/subject contains exactly one sdtc:deceasedInd</body>
+          <body>subject/relatedSubject/subject MAY contain exactly one sdtc:deceasedInd</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_bHf4oEjkEeCOWNbpDoETQw" name="relatedSubjectDeceasedTime" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_bHf4oUjkEeCOWNbpDoETQw">
           <language>Analysis</language>
-          <body>subject/relatedSubject/subject contains exactly one sdtc:deceasedTime</body>
+          <body>subject/relatedSubject/subject MAY contain exactly one sdtc:deceasedTime</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_rRzkEEjkEeCOWNbpDoETQw" name="ageOfRelativeAtObservationTime" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_4wn5oEjkEeCOWNbpDoETQw">
           <language>Analysis</language>
-          <body>The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with effectiveTime</body>
+          <body>The age of a relative at the time of observation SHOULD be inferred by comparing subject/relatedSubject/subject/birthTime with effectiveTime</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_BgP8MEjlEeCOWNbpDoETQw" name="ageOfRelativeAtDeath" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_RgEO4EjlEeCOWNbpDoETQw">
           <language>Analysis</language>
-          <body>The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.</body>
+          <body>The age of a relative at the time of death MAY be inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_S72qMBZ1Ed-i6Lz80y5G5g">
@@ -762,7 +762,7 @@
     </profileApplication>
     <profileApplication xmi:id="_Ah-uIIhSEd6UrJD25cKDew">
       <eAnnotations xmi:id="_AiAjUIhSEd6UrJD25cKDew" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/5#/"/>
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
