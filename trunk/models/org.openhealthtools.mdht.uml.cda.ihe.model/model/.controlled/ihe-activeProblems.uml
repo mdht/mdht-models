@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/5" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
   <uml:Class xmi:id="_vz5koGGsEd6bFO5yxRh3Nw" name="ActiveProblemsSection">
     <eAnnotations xmi:id="_mlSHonrUEd68l9lQ-TLEBQ" source="uml2.alias">
       <details xmi:id="_mlSHo3rUEd68l9lQ-TLEBQ" key="Active Problems Section"/>
@@ -50,7 +50,7 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Arh-sCQaEeCxCon8a79rfA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>If entryRelationship / Comment is present, then entryRelationship inversionInd = 'true'.</body>
+        <body>If entryRelationship / Comment is present, then entryRelationship SHALL include inversionInd = 'true'.</body>
         <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd='true')</body>
       </specification>
     </ownedRule>
@@ -181,7 +181,7 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_0bt7QCQLEeCxCon8a79rfA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>The 'text' elements shall contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</body>
+        <body>The 'text' elements SHALL contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</body>
         <body>not self.text.reference.oclIsUndefined()</body>
       </specification>
     </ownedRule>
@@ -213,7 +213,7 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_bfwsoSQOEeCxCon8a79rfA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>The 'text' elements shall contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</body>
+        <body>The 'text' elements SHALL contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</body>
         <body>not self.text.reference.oclIsUndefined()</body>
       </specification>
     </ownedRule>
@@ -242,7 +242,7 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_rUcmASQREeCxCon8a79rfA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>The 'text' elements shall contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</body>
+        <body>The 'text' elements SHALL contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</body>
         <body>not self.text.reference.oclIsUndefined()</body>
       </specification>
     </ownedRule>
