@@ -595,32 +595,32 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_oC8Q0EjjEeCOWNbpDoETQw">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>subject/relatedSubject/subject SHOULD contain exactly one birthTime</body>
+          <body>subject/relatedSubject/subject contains exactly one birthTime</body>
           <body>not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_LG47wEjkEeCOWNbpDoETQw" name="relatedSubjectDeceasedInd" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_LG47wUjkEeCOWNbpDoETQw">
           <language>Analysis</language>
-          <body>subject/relatedSubject/subject MAY contain exactly one sdtc:deceasedInd</body>
+          <body>subject/relatedSubject/subject contains exactly one sdtc:deceasedInd</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_bHf4oEjkEeCOWNbpDoETQw" name="relatedSubjectDeceasedTime" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_bHf4oUjkEeCOWNbpDoETQw">
           <language>Analysis</language>
-          <body>subject/relatedSubject/subject MAY contain exactly one sdtc:deceasedTime</body>
+          <body>subject/relatedSubject/subject contains exactly one sdtc:deceasedTime</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_rRzkEEjkEeCOWNbpDoETQw" name="ageOfRelativeAtObservationTime" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_4wn5oEjkEeCOWNbpDoETQw">
           <language>Analysis</language>
-          <body>The age of a relative at the time of observation SHOULD be inferred by comparing subject/relatedSubject/subject/birthTime with effectiveTime</body>
+          <body>The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with effectiveTime</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_BgP8MEjlEeCOWNbpDoETQw" name="ageOfRelativeAtDeath" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_RgEO4EjlEeCOWNbpDoETQw">
           <language>Analysis</language>
-          <body>The age of a relative at the time of death MAY be inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.</body>
+          <body>The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_S72qMBZ1Ed-i6Lz80y5G5g">
@@ -753,6 +753,20 @@
       </ownedEnd>
       <memberEnd href=".controlled/ccd-familyHistory.uml#_pz8CcEjlEeCOWNbpDoETQw"/>
       <memberEnd href="#_pz93oEjlEeCOWNbpDoETQw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DZ798j6uEeCAHY6aowfd8Q">
+      <ownedEnd xmi:id="_DZ798z6uEeCAHY6aowfd8Q" association="_DZ798j6uEeCAHY6aowfd8Q">
+        <type xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-medications.uml#_DZ798D6uEeCAHY6aowfd8Q"/>
+      <memberEnd href="#_DZ798z6uEeCAHY6aowfd8Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LXCXYj6uEeCAHY6aowfd8Q">
+      <ownedEnd xmi:id="_LXCXYz6uEeCAHY6aowfd8Q" association="_LXCXYj6uEeCAHY6aowfd8Q">
+        <type xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_dAAnAHfVEd6ZeOKq_2_a9g"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-medications.uml#_LXCXYD6uEeCAHY6aowfd8Q"/>
+      <memberEnd href="#_LXCXYz6uEeCAHY6aowfd8Q"/>
     </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1107,4 +1121,10 @@
   <CDA:EntryRelationship xmi:id="_q8dJsEjlEeCOWNbpDoETQw" severity="INFO" base_Association="_pz8pgEjlEeCOWNbpDoETQw" typeCode="SUBJ">
     <ruleId>CONF-224</ruleId>
   </CDA:EntryRelationship>
+  <CDA:AssociationValidation xmi:id="_Ezfx4D6uEeCAHY6aowfd8Q" severity="INFO" base_Association="_DZ798j6uEeCAHY6aowfd8Q">
+    <ruleId>CONF-368</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_MsJJID6uEeCAHY6aowfd8Q" severity="INFO" base_Association="_LXCXYj6uEeCAHY6aowfd8Q">
+    <ruleId>CONF-369</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
