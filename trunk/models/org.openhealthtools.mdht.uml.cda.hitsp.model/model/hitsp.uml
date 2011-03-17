@@ -445,13 +445,37 @@
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_wDMM0GEHEd6bFO5yxRh3Nw"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_ex_ugPyzEd-RgJ5u3I0u5A" name="MedicationInformation">
-      <generalization xmi:id="_eyAVkPyzEd-RgJ5u3I0u5A">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_jZMQ0DuMEd-B8KE6Jx0UNQ"/>
-      </generalization>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_ex_ugPyzEd-RgJ5u3I0u5A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/hitsp-diagnosticResults.uml#_CHfrARdkEeCf9aMNaCAtDQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/hitsp-diagnosticResults.uml#_FNxfcBdkEeCf9aMNaCAtDQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_NC6JAE51EeC-IOl-lQ-2xA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mQhA8k51EeC-IOl-lQ-2xA">
+      <ownedEnd xmi:id="_mQhA8051EeC-IOl-lQ-2xA" association="_mQhA8k51EeC-IOl-lQ-2xA">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_IjIO0DxbEd6JwqSGecoePg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-medications.uml#_mQhA8E51EeC-IOl-lQ-2xA"/>
+      <memberEnd href="#_mQhA8051EeC-IOl-lQ-2xA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_vMJZwE8mEeCYjrG3z1gQrQ"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ryt4QU8_EeCYjrG3z1gQrQ">
+      <ownedEnd xmi:id="_Ryt4Qk8_EeCYjrG3z1gQrQ" association="_Ryt4QU8_EeCYjrG3z1gQrQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_IjIO0DxbEd6JwqSGecoePg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-medications.uml#_RytRME8_EeCYjrG3z1gQrQ"/>
+      <memberEnd href="#_Ryt4Qk8_EeCYjrG3z1gQrQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8T_OY09VEeCYjrG3z1gQrQ">
+      <ownedComment xmi:id="_BrYJ0E9WEeCYjrG3z1gQrQ">
+        <body>Any noted intended or unintended effects of the&#xD;
+product. For example: full body rash, nausea, rash&#xD;
+resolved</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_8T_1cE9VEeCYjrG3z1gQrQ" association="_8T_OY09VEeCYjrG3z1gQrQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-medications.uml#_IjIO0DxbEd6JwqSGecoePg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-medications.uml#_8T_OYE9VEeCYjrG3z1gQrQ"/>
+      <memberEnd href="#_8T_1cE9VEeCYjrG3z1gQrQ"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -607,12 +631,6 @@
   <CDA:ConstraintValidation xmi:id="_Q1DGwPyYEd-RgJ5u3I0u5A" severity="WARNING" base_Constraint="_MztYQPyYEd-RgJ5u3I0u5A">
     <ruleId>C83-[DE-2.01-CDA-5]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CDATemplate xmi:id="_nbi-QPyzEd-RgJ5u3I0u5A" base_Class="_ex_ugPyzEd-RgJ5u3I0u5A" templateId="2.16.840.1.113883.3.88.11.83.8.2">
-    <ruleId>C83-[DE-8-CDA-5]</ruleId>
-  </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_tbnqUPyzEd-RgJ5u3I0u5A" base_Generalization="_eyAVkPyzEd-RgJ5u3I0u5A" requiresParentId="true">
-    <ruleId>C83-[DE-8-CDA-4]</ruleId>
-  </CDA:ConformsTo>
   <CDA:ConstraintValidation xmi:id="_5yVLUBdtEeCf9aMNaCAtDQ" severity="WARNING" base_Constraint="_zTQPEBdtEeCf9aMNaCAtDQ"/>
   <CDA:ConstraintValidation xmi:id="_6S2ecBdtEeCf9aMNaCAtDQ" base_Constraint="_05OHUBdtEeCf9aMNaCAtDQ"/>
   <CDA:ConstraintValidation xmi:id="_Qey1ABeWEeCf9aMNaCAtDQ" severity="WARNING" base_Constraint="_K7iAwBeWEeCf9aMNaCAtDQ">

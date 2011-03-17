@@ -154,11 +154,7 @@ patient's current complaints.</body>
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-planOfCare.uml#_7I79cDHlEd-saqiXO4OYhQ"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_jZMQ0DuMEd-B8KE6Jx0UNQ" name="ProductEntry">
-      <generalization xmi:id="_jZMQ0TuMEd-B8KE6Jx0UNQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_8Xj7UIiBEd66cKocspyVOg"/>
-      </generalization>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_jZMQ0DuMEd-B8KE6Jx0UNQ"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_uP4tkDuMEd-B8KE6Jx0UNQ" name="ProcedureEntry"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_6yfdEDuNEd-B8KE6Jx0UNQ" name="ProcedureEntryProcedureActivityProcedure">
       <ownedRule xmi:id="_MWzTcBdrEeCf9aMNaCAtDQ" name="hasTextReference" constrainedElement="_6yfdEDuNEd-B8KE6Jx0UNQ">
@@ -320,11 +316,7 @@ patient's current complaints.</body>
     <packagedElement xmi:type="uml:Association" href=".controlled/ihe-encounterHistory.uml#_6bQigKsPEd-yFfcbpgNFIA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-intakeOutput.uml#_5GSkEMwTEd-iJaPtkyVyKg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/ihe-medications.uml#_M0IP8Ow6Ed-HcKrkbxroPA"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_e2pkwOw7Ed-HcKrkbxroPA" name="SupplyEntry">
-      <generalization xmi:id="_e2pkwew7Ed-HcKrkbxroPA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_dAAnAHfVEd6ZeOKq_2_a9g"/>
-      </generalization>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_e2pkwOw7Ed-HcKrkbxroPA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-pregnancyHistory.uml#_oidBAO0SEd-dJvThfIiQuA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-pregnancyHistory.uml#_0UCcoO2qEd-dJvThfIiQuA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/ihe-pregnancyHistory.uml#_JhJ6oO2rEd-dJvThfIiQuA"/>
@@ -804,6 +796,49 @@ patient's current complaints.</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" href=".controlled/ihe-activeProblems.uml#_ctFaYSQZEeCxCon8a79rfA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/ihe-activeProblems.uml#_j4WHMiQZEeCxCon8a79rfA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_nzLQYEqtEeCJlNjgFmcEiA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_0TsKoEqtEeCJlNjgFmcEiA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l0FEAEs9EeCAK_Z5vqvtzg">
+      <ownedComment xmi:id="_uKsJoEs9EeCAK_Z5vqvtzg">
+        <body>Entry may indicate one or more reasons for the use of the&#xD;
+medication. The extension and root of each observation present must match the identifier of a concern entry&#xD;
+contained elsewhere within the CDA document.&#xD;
+A consumer of the Medical Summary is encouraged, but not required to maintain these links on&#xD;
+import.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_l0FEAUs9EeCAK_Z5vqvtzg" association="_l0FEAEs9EeCAK_Z5vqvtzg">
+        <type xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_sFGZUHGfEd6bf47ZOcft4w"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ihe-medications.uml#_l0Ec8Es9EeCAK_Z5vqvtzg"/>
+      <memberEnd href="#_l0FEAUs9EeCAK_Z5vqvtzg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_PAlooEs-EeCAK_Z5vqvtzg">
+      <ownedComment xmi:id="_aGgNIEs-EeCAK_Z5vqvtzg">
+        <body>At most one instruction may be provided for each &amp;lt;substanceAdministration> entry. The instructions&#xD;
+shall contain any special case dosing instructions (e.g., split, tapered, or conditional dosing), and&#xD;
+may contain other information (take with food, et cetera).</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_PAlooUs-EeCAK_Z5vqvtzg" association="_PAlooEs-EeCAK_Z5vqvtzg">
+        <type xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_sFGZUHGfEd6bf47ZOcft4w"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ihe-medications.uml#_PAlBkEs-EeCAK_Z5vqvtzg"/>
+      <memberEnd href="#_PAlooUs-EeCAK_Z5vqvtzg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_MD_HEEteEeCAK_Z5vqvtzg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_49B-IUt6EeCAK_Z5vqvtzg">
+      <ownedEnd xmi:id="_49B-Ikt6EeCAK_Z5vqvtzg" association="_49B-IUt6EeCAK_Z5vqvtzg">
+        <type xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_sFGZUHGfEd6bf47ZOcft4w"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ihe-medications.uml#_49BXEEt6EeCAK_Z5vqvtzg"/>
+      <memberEnd href="#_49B-Ikt6EeCAK_Z5vqvtzg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FjPv4E8tEeCYjrG3z1gQrQ">
+      <ownedEnd xmi:id="_FjPv4U8tEeCYjrG3z1gQrQ" association="_FjPv4E8tEeCYjrG3z1gQrQ">
+        <type xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_e2pkwOw7Ed-HcKrkbxroPA"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ihe-medications.uml#_FjNToE8tEeCYjrG3z1gQrQ"/>
+      <memberEnd href="#_FjPv4U8tEeCYjrG3z1gQrQ"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -844,7 +879,6 @@ patient's current complaints.</body>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_71B8UDuGEd-B8KE6Jx0UNQ" base_Class="_4hu_kDuGEd-B8KE6Jx0UNQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.2.3" assigningAuthorityName="IHE PCC"/>
   <CDA:CDATemplate xmi:id="_UqB_oDuKEd-B8KE6Jx0UNQ" base_Class="_Q-mPsDuKEd-B8KE6Jx0UNQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.20.3.1" assigningAuthorityName="IHE PCC"/>
-  <CDA:CDATemplate xmi:id="_lhFxcDuMEd-B8KE6Jx0UNQ" base_Class="_jZMQ0DuMEd-B8KE6Jx0UNQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.7.2" assigningAuthorityName="IHE PCC"/>
   <CDA:CDATemplate xmi:id="_ATWdkDuOEd-B8KE6Jx0UNQ" base_Class="_9xEuEDuNEd-B8KE6Jx0UNQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.19" assigningAuthorityName="IHE PCC" contextDependent="true"/>
   <CDA:CDATemplate xmi:id="_BfzCkDuOEd-B8KE6Jx0UNQ" base_Class="_6yfdEDuNEd-B8KE6Jx0UNQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.19" assigningAuthorityName="IHE PCC" contextDependent="true"/>
   <CDA:CDATemplate xmi:id="_hGs7wEvdEd-GNbUQBie2ig" base_Class="_R_uVkEvdEd-GNbUQBie2ig" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
@@ -862,14 +896,12 @@ patient's current complaints.</body>
     <base_Generalization href=".controlled/ihe-codedSurgeries.uml#_CZnswMfuEd6VjLXh4DcWSg"/>
   </CDA:ConformsTo>
   <CDA:ConformsTo xmi:id="_6wvnEVF6Ed-Lud-5SYZhMw" base_Generalization="_Q-mPsTuKEd-B8KE6Jx0UNQ" requiresParentId="true"/>
-  <CDA:ConformsTo xmi:id="_6wwOIFF6Ed-Lud-5SYZhMw" base_Generalization="_jZMQ0TuMEd-B8KE6Jx0UNQ" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_6ww1MFF6Ed-Lud-5SYZhMw" base_Generalization="_6yfdETuNEd-B8KE6Jx0UNQ" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_6wxcQFF6Ed-Lud-5SYZhMw" base_Generalization="_9xEuETuNEd-B8KE6Jx0UNQ" requiresParentId="true"/>
   <CDA:CDATemplate xmi:id="_AvxIAFIwEd-4TsxSz4jnfg" base_Class="_8M5ZwFIvEd-4TsxSz4jnfg" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.18" assigningAuthorityName="IHE PCC"/>
   <CDA:ConformsTo xmi:id="_EUumoJvpEd-nMfCxM8hlxg" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_FXd2AJvpEd-nMfCxM8hlxg" base_Generalization="_HGkB0GEIEd6bFO5yxRh3Nw" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_O4u6cJv1Ed-IotBrVd7ICA"/>
-  <CDA:CDATemplate xmi:id="_hDTpkOw7Ed-HcKrkbxroPA" base_Class="_e2pkwOw7Ed-HcKrkbxroPA" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
   <CDA:CDATemplate xmi:id="_Pcg4cO3wEd-dJvThfIiQuA" base_Class="_NaTwIO3wEd-dJvThfIiQuA" templateId="1.3.6.1.4.1.19376.1.5.3.1.2.4" contextDependent="true"/>
   <CDA:CDATemplate xmi:id="_cw_mQO3wEd-dJvThfIiQuA" base_Class="_ZY0wkO3wEd-dJvThfIiQuA" templateId="1.3.6.1.4.1.19376.1.5.3.1.2.4" contextDependent="true"/>
   <CDA:PropertyValidation xmi:id="_XomL0O5uEd-70KBGpEgX1Q" base_Property="_Skgm4O5uEd-70KBGpEgX1Q"/>
