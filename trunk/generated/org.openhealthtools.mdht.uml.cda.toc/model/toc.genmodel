@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="/org.openhealthtools.mdht.uml.cda.toc/src"
+    editDirectory="/org.openhealthtools.mdht.uml.cda.toc.edit/src" editorDirectory="/org.openhealthtools.mdht.uml.cda.toc.editor/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.toc" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" forceOverwrite="true" modelName="TOC" modelPluginClass="TOCPlugin"
+    editPluginClass="org.openhealthtools.mdht.uml.cda.toc.provider.TOCEditPlugin"
+    editorPluginClass="org.openhealthtools.mdht.uml.cda.toc.presentation.TOCEditorPlugin"
+    testSuiteClass="org.openhealthtools.mdht.uml.cda.toc.tests.TOCAllTests" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="../../org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda ../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+  </genAnnotations>
+  <foreignModel>toc_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="TOC" basePackage="org.openhealthtools.mdht.uml.cda"
+      disposableProviderFactory="true" ecorePackage="toc.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.toc.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//Condition">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionEntryRelationshipRequired">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionEntryRelationshipRequired/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionEntryRelationshipRequired/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionSubjectOfTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionSubjectOfTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionSubjectOfTarget/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionContainsProblemObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionContainsProblemObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionContainsProblemObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionContainsAlertObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionContainsAlertObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionContainsAlertObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionContainsPatientAwareness">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionContainsPatientAwareness/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionContainsPatientAwareness/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionEffectiveTimeLowHigh">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionEffectiveTimeLowHigh/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionEffectiveTimeLowHigh/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionHasTreatingProvider">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionHasTreatingProvider/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionHasTreatingProvider/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionHasProviderId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionHasProviderId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionHasProviderId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionHasProviderTreatmentTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionHasProviderTreatmentTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionHasProviderTreatmentTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionCodeNullFlavor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionCodeNullFlavor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionCodeNullFlavor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/ConditionEpisodeObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionEpisodeObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Condition/ConditionEpisodeObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/getEpisodeObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Condition/getConditionEntries"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//EpisodeObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//EpisodeObservation/EpisodeObservationOneEntryRelationshipSUBJ">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationOneEntryRelationshipSUBJ/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationOneEntryRelationshipSUBJ/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//EpisodeObservation/EpisodeObservationExistsEntryRelationshipSAS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationExistsEntryRelationshipSAS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationExistsEntryRelationshipSAS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//EpisodeObservation/EpisodeObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//EpisodeObservation/EpisodeObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//EpisodeObservation/EpisodeObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//EpisodeObservation/EpisodeObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//EpisodeObservation/EpisodeObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//EpisodeObservation/EpisodeObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//EpisodeObservation/EpisodeObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//ConditionEntry">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryInformationSource">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryInformationSource/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryInformationSource/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryContainsPatientAwareness">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryContainsPatientAwareness/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryContainsPatientAwareness/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryHasTextReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryHasTextReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryHasTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryCommentInversionInd">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryCommentInversionInd/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryCommentInversionInd/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryHasOnsetDate">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryHasOnsetDate/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryHasOnsetDate/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryHasResolutionDate">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryHasResolutionDate/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryHasResolutionDate/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryHasUnknownResolutionDate">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryHasUnknownResolutionDate/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryHasUnknownResolutionDate/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryAgeObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryAgeObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryAgeObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntrySeverity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntrySeverity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntrySeverity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryProblemStatusObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryProblemStatusObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryProblemStatusObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryHealthStatusObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryHealthStatusObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryHealthStatusObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/ConditionEntryComment">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryComment/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConditionEntry/ConditionEntryComment/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/getAgeObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/getSeverity"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/getProblemStatusObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/getHealthStatusObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConditionEntry/getComments"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//AgeObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//AgeObservation/AgeObservationRelatedSubjectBirthTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationRelatedSubjectBirthTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationRelatedSubjectBirthTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//AgeObservation/AgeObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//AgeObservation/AgeObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//AgeObservation/AgeObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//AgeObservation/AgeObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//AgeObservation/AgeObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//AgeObservation/AgeObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//AgeObservation/AgeObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//Severity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Severity/SeverityHasTextReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityHasTextReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityHasTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Severity/SeverityTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Severity/SeverityClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Severity/SeverityMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Severity/SeverityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Severity/SeverityText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Severity/SeverityStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Severity/SeverityValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Severity/SeverityValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//ProblemStatusObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationNoAdditionalParticipants">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationNoAdditionalParticipants/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationNoAdditionalParticipants/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationHasTextReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationHasTextReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationHasTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemStatusObservation/ProblemStatusObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//HealthStatusObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//HealthStatusObservation/HealthStatusObservationNoAdditionalParticipants">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationNoAdditionalParticipants/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationNoAdditionalParticipants/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//HealthStatusObservation/HealthStatusObservationHasTextReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationHasTextReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationHasTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//HealthStatusObservation/HealthStatusObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//HealthStatusObservation/HealthStatusObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//HealthStatusObservation/HealthStatusObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//HealthStatusObservation/HealthStatusObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//HealthStatusObservation/HealthStatusObservationText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//HealthStatusObservation/HealthStatusObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//HealthStatusObservation/HealthStatusObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//HealthStatusObservation/HealthStatusObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//Comment">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Comment/CommentHasTextReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentHasTextReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentHasTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Comment/CommentEffectiveTimeWhenAuthorPresent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentEffectiveTimeWhenAuthorPresent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentEffectiveTimeWhenAuthorPresent/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Comment/CommentTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Comment/CommentClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Comment/CommentMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Comment/CommentCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Comment/CommentText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//Comment/CommentStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//Comment/CommentStatusCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//ProblemListSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemListSection/ProblemListSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemListSection/ProblemListSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemListSection/ProblemListSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemListSection/ProblemListSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemListSection/ProblemListSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemListSection/ProblemListSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemListSection/ProblemListSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemListSection/ProblemListSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemListSection/ProblemListSectionTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemListSection/ProblemListSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemListSection/ProblemListSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ProblemListSection/ProblemListSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ProblemListSection/getConditions"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
