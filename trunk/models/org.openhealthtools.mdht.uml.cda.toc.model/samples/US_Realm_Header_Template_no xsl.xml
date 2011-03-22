@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>-->
+<!--
+	Title: US_Realm_Header_Template
+	Original Filename: US_Realm_Header_Template.xml
+	Version: 1.0
+	Revision History: 
+	01/31/2011 bam created
+-->
+<!-- (Adopted from CONF-HP-2) SHALL [1..1] Namespace Requirement  -->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://xreg2.nist.gov:8080/hitspValidation/schema/cdar2c32/infrastructure/cda/C32_CDA.xsd" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3">
+  <!--
+********************************************************
+  CDA Header
+********************************************************
+	-->
+  <!--SHALL [1..1] US-realm (Adopted from CONF HP-15) -->
+  <realmCode code="US" />
+  <!--SHALL [1..1]  root="2.16.840.1.113883.1.3" and extension="POCD_HD000040" (Adopted from CONF HP-16) -->
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <!--<**>  [1..1] NEW CONF SHALL Needed for US Realm Header Template to indicate conformance -->
+  <templateId root="2.16.840.1.113883.10.20.3.99999" />
+  <!-- SHALL [1..1] id element and synatically correct UUID or OID  (Adopted from CONF HP-17-20)-->
+  <!--<**> DIR prohibits UUID*** -->
+  <!-- Include best practice guidance of using OID for organization and extension for local document id -->
+  <id extension="999021" root="2.16.840.1.113883.19" />
+  <!--SHALL [1..1]  code element specifying type of document (Adopted from CONF HP-21) -->
+  <!--Document type will be specific per document type. The example below is for Progress Note-->
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="11506-3" displayName="Subsequent evaluation note" />
+  <!--SHALL [1..1] either the local name or the name provided by LOINC (Per consensus of standards,)  -->
+  <title>Progress Note</title>
+  <!--<**>WG agreed to SHALL [1..1] be precise to the day and SHOULD be precise to the Minute. If precise to minute, SHOULD include timezone offset  -->
+  <!-- CCD SHALL timezone offset, IHE may timezone offset -->
+  <effectiveTime value="20050329171504+0500" />
+  <!-- <**> SHALL [1..1]  selected from value set ClinicalDocument.confidentialityCode (CWE) - NEW CONF per base CDA-->
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+  <!--SHALL [1..1]  languageCode be present in appropriate format (Adopted from CONF HP-24-27) -->
+  <languageCode code="en-US" />
+  <!-- SHALL [1..1] presence/absence of both setId and versionNumber (Adopted from CONF HP-28-29)-->
+  <setId extension="111199021" root="2.16.840.1.113883.19" />
+  <versionNumber value="1" />
+  <!-- [1..*] for recordTarget  WG Agreed to a cardinality to SHALL-->
+  <!-- <**>CCD was SHALL [1..*] -->
+  <recordTarget>
+    <!--NEW CONF per base CDA - patientRole SHALL be present of [1..*]-->
+    <patientRole>
+      <!-- WG Agreed to SHALL [1..*] for patientRole.id -->
+      <!--  <**>C32 was SHALL [1..1]-->
+      <id extension="12345" root="2.16.840.1.113883.19.5" />
+      <!-- WG Agreed to pertinent CONFs in HITSP C83-[DE-1.03-CDA]; see 1/25 mtg minutes-->
+      <!-- <**> Procedure Note, H&P, DIR and CCD didn't previously specify all address parts -->
+      <!-- SHALL [ 1..*] addr -->
+      <!-- SHOULD have use attribute and SHALL use value set 2.16.840.1.113883.1.11.10637 PostalAddressUse-->
+      <!-- ADDR can't have mixed content -->
+      <addr use="HP">
+        <!-- SHALL [1..3] streetAddressLine -->
+        <streetAddressLine>17 Daws Rd.</streetAddressLine>
+        <!-- SHALL [1..1] ...-->
+        <city>Blue Bell</city>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+        <state>MA</state>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.2 Postal Code-->
+        <postalCode>02368</postalCode>
+        <!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country -->
+        <country>USA</country>
+      </addr>
+      <!-- WG Agreed to pertinent CONFs in HITSP C83-[DE-1.04-CDA]. SHALL [1..1] a new value set for use types is needed (HP, HV, WP, MC) ; see 1/25 mtg minutes -->
+      <telecom value="tel:(781)555-1212" use="HP" />
+      <!-- SHALL [1..*] -->
+      <patient>
+        <!-- <**>- name can't have mixed content -->
+        <!-- <**> Procedure Note, H&P, DIR and CCD didn't previously specify all name parts -->
+        <!-- MAY use @use and SHALL use value set 2.16.840.1.113883.1.11.15913 EntityNameUse-->
+        <name use="L">
+          <!-- MAY [ 0..*] prefix-->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <prefix qualifier="AC" />
+          <!-- SHALL [1..*] given -->
+          <!-- include usage notes that second given is middle name -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <given>Adam</given>
+          <!-- SHALL [1..1] family -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <family>Everyman</family>
+          <!-- MAY [ 0..*] suffix-->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <suffix />
+        </name>
+        <!--Adopted from HITSP SHALL [1..1] administrativeGenderCode be present and SHALL be from HL7 AdministrativeGender vocabulary  -->
+        <!-- <**> IHE, PN, DIR, H&P were SHOULD from HL7 administrativeGender-->
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+        <!-- SHALL [1..1] birthTime, SHALL be precise to year, SHOULD be precise to day Adopted from (CONF HP-32) -->
+        <birthTime value="19541125" />
+        <!-- SHOULD [0..1] and SHALL useC80 2.2.1.2.3.2 Marital Status-->
+        <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode" />
+        <!-- SHOULD [0..1] but SHALL be from HITSP/C80 Section 2.2.1.2.8 (uses HL7 value set = 2.16.840.1.113883.1.11.19185,  code system 2.16.840.1.113883.5.1076 ReligiousAffiliation -->
+        <religiousAffiliationCode code="1013" displayName="Christian" codeSystemName="HL7 Religious Affiliation " codeSystem="2.16.840.1.113883.5.1076" />
+        <!-- MAY [0..*] and SHALL useC80 2.16.840.1.113883.1.11.14914 Race value set (Adopted from HITSP)-->
+        <raceCode />
+        <!-- additional raceCodes are placed in an extension -->
+        <!-- Clarify the use of the race and ethnicity designation in the header as a particular use case distinct from the encoding of race/ethnicity in the body  -->
+        <!-- <sdwg:raceCode/> -->
+        <!-- MAY [0..1] SHALL be from HITSP/C80 Section 2.2.1.2.2 Ethnicity -->
+        <ethnicGroupCode />
+        <!-- additional ethnicGroupCodes are placed in an extension -->
+        <!-- <sdwg:ethnicGroupCode/> -->
+        <!-- SHOULD [0..1] if patient is minor Adopted (CONF-HP-34)  -->
+        <guardian>
+          <!-- SHOULD [0..1] and SHALL useC80 2.2.1.2.4 Personal Relationships-->
+          <code code="GRFTH" displayName="Grandfather" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" />
+          <!-- WG Agreed to pertinent CONFs in HITSP C83-[DE-1.03-CDA]; see 1/25 mtg minutes for entity addresses-->
+          <!-- <**> Procedure Note, H&P, DIR and CCD didn't previously specify all address parts -->
+          <!-- SHOULD [ 0..*] addr -->
+          <!-- SHOULD have use attribute and SHALL use value set 2.16.840.1.113883.1.11.10637 PostalAddressUse-->
+          <!--  ADDR can't have mixed content -->
+          <addr use="HP">
+            <!-- SHALL [1..3] streetAddressLine -->
+            <streetAddressLine>17 Daws Rd.</streetAddressLine>
+            <!-- SHALL [1..1] ...-->
+            <city>Blue Bell</city>
+            <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+            <state>MA</state>
+            <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.2 Postal Code-->
+            <postalCode>02368</postalCode>
+            <!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country -->
+            <country>USA</country>
+          </addr>
+          <!--  SHOULD [0..1] Adopted (CONF-HP-8)-->
+          <!-- WG Agreed to pertinent CONFs in HITSP C83-[DE-1.04-CDA]. SHOULD [0..1] a new value set for use types is needed (HP, HV, WP, MC) ; see 1/25 mtg minutes -->
+          <telecom value="tel:(781)555-1212" use="HP" />
+          <!-- SHALL [1..1]  per base CDA-->
+          <guardianPerson>
+            <!-- SHALL [1..1] Adopted per (CONF-HP-6) -->
+            <name>
+              <!-- MAY [ 0..*] prefix-->
+              <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+              <prefix qualifier="AC" />
+              <!-- SHALL [1..*] given -->
+              <!-- include usage notes that second given is middle name -->
+              <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+              <given>Ralph</given>
+              <!-- SHALL [1..1] family -->
+              <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+              <family>Relative</family>
+              <!-- MAY [ 0..*] suffix-->
+              <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+              <suffix />
+            </name>
+          </guardianPerson>
+        </guardian>
+        <!--MAY [0..1] per HITSP-->
+        <birthplace>
+          <!-- SHALL [1..1] -->
+          <place>
+            <!-- ADDR can't have mixed content -->
+            <addr>
+              <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+              <state>MA</state>
+              <!-- MAY [0..1] HITSP/C80 Section 2.2.1.1.2 Postal Code -->
+              <postalCode>02368</postalCode>
+              <!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country-->
+              <country>USA</country>
+            </addr>
+          </place>
+        </birthplace>
+        <!-- per 2/1 work group SHOULD [0..*] -->
+        <languageCommunication>
+          <!-- SHALL [1.1] use HITSP/C80 Section 2.2.1.2.9 Language  -->
+          <!-- include narrative guidance from C83-[DE-2.01-CDA-4] and C154-[DE-2.01-2] -->
+          <languageCode code="fr-CN" />
+          <!-- MAY [0..1] but SHALL 2.2.1.2.10 Language Ability Mode (Per HITSP)-->
+          <modeCode code="RWR" displayName="Recieve Written" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode" />
+          <preferenceInd value="true" />
+        </languageCommunication>
+      </patient>
+      <!--  MAY [0..1] Adopted from (CONF-HP-36)-->
+      <providerOrganization>
+        <!-- SHALL [1..1] -->
+        <id root="2.16.840.1.113883.19.5" />
+        <!-- SHALL [1..*] Adopted from (CONF-HP-9)-->
+        <name>Good Health Clinic</name>
+        <!-- SHALL [1..*] Adopted from (CONF-HP-9)-->
+        <telecom value="tel:(781)555-1212" />
+        <!-- WG Agreed to pertinent CONFs in HITSP C83-[DE-1.03-CDA]; see 1/25 mtg minutes for entity addresses-->
+        <!-- <**> Procedure Note, H&P, DIR and CCD didn't previously specify all address parts -->
+        <!-- SHALL [1..*] Adopted from (CONF-HP-9) -->
+        <!-- ADDR can't have mixed content -->
+        <addr>
+          <!-- SHALL [1..3] streetAddressLine -->
+          <streetAddressLine>21 North Ave</streetAddressLine>
+          <!-- SHALL [1..1] ...-->
+          <city>Burlington</city>
+          <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+          <state>MA</state>
+          <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.2 Postal Code-->
+          <postalCode>02368</postalCode>
+          <!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country -->
+          <country>USA</country>
+        </addr>
+      </providerOrganization>
+    </patientRole>
+  </recordTarget>
+  <!-- SHALL [1..1]  per base CDA -->
+  <author>
+    <!-- SHALL [1..] be precise to the day and SHOULD be precise to the Minute Adopted from (CONF HP-37)-->
+    <time value="20050329224411+0500" />
+    <!-- SHALL [1..1]  per base CDA -->
+    <assignedAuthor>
+      <!--SHALL [1..1] Adopted from (CONF HP-38) -->
+      <id extension="KP00017" root="2.16.840.1.113883.19.5" />
+      <!-- WG Agreed to pertinent CONFs in HITSP C83-[DE-1.03-CDA]; see 1/25 mtg minutes-->
+      <!-- **Procedure Note, H&P, DIR and CCD didn't previously specify all address parts -->
+      <!-- SHALL [ 1..*] addr -->
+      <!-- ADDR can't have mixed content -->
+      <addr>
+        <!-- SHALL [1..3] streetAddressLine -->
+        <streetAddressLine>21 North Ave.</streetAddressLine>
+        <!-- SHALL [1..1] ...-->
+        <city>Burlington</city>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+        <state>MA</state>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.2 Postal Code-->
+        <postalCode>02368</postalCode>
+        <!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country -->
+        <country>USA</country>
+      </addr>
+      <!-- SHALL [1..*] Adopted from (CONF-HP-7) -->
+      <telecom value="tel:(555)555-1003" />
+      <!--SHALL assignedPerson or assignedAuthoringDevice (CONF HP-39) -->
+      <assignedPerson>
+        <name>
+          <!-- MAY [ 0..*] prefix -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <prefix qualifier="AC" />
+          <!-- SHALL [1..*] given -->
+          <!-- include usage notes that second given is middle name -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <given>Henry</given>
+          <!-- SHALL [1..1] family -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <family>Seven</family>
+          <!-- MAY [ 0..*] suffix-->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <suffix />
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <!-- MAY [0..1] -->
+  <dataEnterer>
+    <!-- SHALL [1..1] (CONF-HP-40)  -->
+    <assignedEntity>
+      <!-- SHALL [1..1] -->
+      <id root="2.16.840.1.113883.19.5" extension="43252" />
+      <!-- SHOULD [ 1..*] addr -->
+      <!-- ADDR can't have mixed content -->
+      <addr>
+        <!-- SHALL [1..3] streetAddressLine -->
+        <streetAddressLine>21 North Ave.</streetAddressLine>
+        <!-- SHALL [1..1] ...-->
+        <city>Burlington</city>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+        <state>MA</state>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.2 Postal Code-->
+        <postalCode>02368</postalCode>
+        <!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country -->
+        <country>USA</country>
+      </addr>
+      <!-- SHOULD [ 1..*] -->
+      <telecom value="tel:(555)555-1003" />
+      <!-- SHALL [1..1] (CONF-HP-40) -->
+      <assignedPerson>
+        <!-- SHALL [1..1] all name constraints from HITSP -->
+        <name>
+          <!--  MAY [ 0..*] prefix -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <prefix qualifier="AC" />
+          <!-- SHALL [1..*] given -->
+          <!-- include usage notes that second given is middle name -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <given>Henry</given>
+          <!-- SHALL [1..1] family -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <family>Seven</family>
+          <!-- MAY [ 0..*] suffix -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <suffix />
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </dataEnterer>
+  <!-- ####start of optional informant block#### -->
+  <!--Informant (CONF-HP42-49) -->
+  <!-- (Adopted from CONF-HP-42) informant MAY [0..1] -->
+  <!--Narrative constraint (Adopted from CONF-HP-43) When informant is present, an assignedEntity/assignedPerson or relatedEntity/relatedPerson element SHALL be present. -->
+  <!-- Healthcare provider SHALL be represented as follows. -->
+  <informant>
+    <assignedEntity>
+      <!--CDA R2 SHALL [1..] -->
+      <id extension="KP00017" root="2.16.840.1.113883.19.5" />
+      <!-- SHALL [1..*] (Adopted from CONF-HP-7) -->
+      <!-- ADDR can't have mixed content -->
+      <addr>
+        <!-- SHALL [1..3] streetAddressLine -->
+        <streetAddressLine>21 North Ave.</streetAddressLine>
+        <!-- SHALL [1..1] ...-->
+        <city>Burlington</city>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+        <state>MA</state>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.2 Postal Code-->
+        <postalCode>02368</postalCode>
+        <!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country -->
+        <country>USA</country>
+      </addr>
+      <!-- SHALL [1..*] (Adopted from CONF-HP-7) -->
+      <telecom value="tel:(555)555-1003" />
+      <!--SHALL [1..1] (CONF HP-51) -->
+      <assignedPerson>
+        <name>
+          <given>Henry</given>
+          <family>Seven</family>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </informant>
+  <!-- If informant is for relatedPerson, it SHALL be represented as follows. -->
+  <informant>
+    <!--(CONF-HP-45) @classCode SHALL be  CON, PRS, CAREGIVER, AGNT or PROV from the RoleClass vocabulary need to create value set-->
+    <relatedEntity classCode="PROV">
+      <!--(CONF-HP-46) if @classCode=PRS; values in relatedEntity/code SHALL come from the HL7 PersonalRelationshipRoleType vocabulary or from SNOMED, any subtype of “Person in the family” (303071001)-->
+      <code code="208D00000X" codeSystem="2.16.840.1.113883.11.19465" />
+      <!-- SHALL [1..1] -->
+      <relatedPerson>
+        <name>
+          <!-- SHALL [1..*] given -->
+          <!-- include usage notes that second given is middle name -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <given>Adam</given>
+          <!-- SHALL [1..1] family -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <family>Everyman</family>
+          <!-- suffix MAY [ 0..*] -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <suffix />
+        </name>
+      </relatedPerson>
+    </relatedEntity>
+  </informant>
+  <!-- ####end of informant block#### -->
+  <!--CDA R2 SHALL [1..] -->
+  <custodian>
+    <!--CDA R2 SHALL [1..] -->
+    <assignedCustodian>
+      <!--CDA R2 SHALL [1..] -->
+      <representedCustodianOrganization>
+        <!--CDA R2 SHALL [1..] -->
+        <id root="2.16.840.1.113883.19.5" />
+        <!-- SHALL [1..1] name (Adopted from CONF-HP-9)  -->
+        <name>Good Health Clinic</name>
+        <!-- SHALL [1..1] telecom  (Adopted from CONF-HP-9) -->
+        <telecom value="tel:(555)555-1212" use="WP" />
+        <!-- SHALL [1..1] addr (Adopted from CONF-HP-9)  -->
+        <!-- ADDR can't have mixed content -->
+        <addr use="HP">
+          <!-- SHALL [1..3] streetAddressLine -->
+          <streetAddressLine>17 Daws Rd.</streetAddressLine>
+          <!-- SHALL [1..1] ...-->
+          <city>Blue Bell</city>
+          <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+          <state>MA</state>
+          <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.2 Postal Code-->
+          <postalCode>02368</postalCode>
+          <!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country -->
+          <country>USA</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <!-- MAY [0..*] (Adopted from CONF-HP-50) -->
+  <informationRecipient>
+    <!--CDA R2 SHALL [1..] -->
+    <intendedRecipient>
+      <!-- MAY [0..1] (Adopted from CONF-HP-50) -->
+      <informationRecipient>
+        <!-- SHALL [1..1] (Adopted from CONF-HP-6) -->
+        <name>
+          <!-- MAY [ 0..*] prefix-->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <prefix qualifier="AC" />
+          <!-- SHALL [1..*] given -->
+          <!-- include usage notes that second given is middle name -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <given>Henry</given>
+          <!-- SHALL [1..1] family -->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <family>Seven</family>
+          <!-- MAY [ 0..*] suffix-->
+          <!-- MAY use @qualifier and SHALL use value set 2.16.840.1.113883.1.11.15888 EntityNamePartQualifier-->
+          <suffix />
+        </name>
+      </informationRecipient>
+      <!-- MAY [0..1] (Adopted from CONF-HP-50) -->
+      <receivedOrganization>
+        <name>Good Health Clinic</name>
+      </receivedOrganization>
+    </intendedRecipient>
+  </informationRecipient>
+  <!-- SHOULD [0..*] (Adopted from CONF-HP-51) -->
+  <legalAuthenticator>
+    <!--CDA R2 SHALL [1..1]. Per WG pattern, SHALL be precise to the day and SHOULD be precise to the Minute. If precise to minute, SHOULD include timezone offset  -->
+    <time value="20050329224411+0500" />
+    <!--CDA R2 SHALL [1..1] from value set authenticator.signatureCode-->
+    <signatureCode code="S" />
+    <!--SHALL [1..1] (CONF HP-51) -->
+    <assignedEntity>
+      <!--CDA R2 SHALL [1..] -->
+      <id extension="KP00017" root="2.16.840.1.113883.19.5" />
+      <!-- SHALL [1..*] (Adopted from CONF-HP-7)  -->
+      <!-- ADDR can't have mixed content -->
+      <addr>
+        <!-- SHALL [1..3] streetAddressLine -->
+        <streetAddressLine>21 North Ave.</streetAddressLine>
+        <!-- SHALL [1..1] ...-->
+        <city>Burlington</city>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+        <state>MA</state>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.2 Postal Code-->
+        <postalCode>02368</postalCode>
+        <!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country -->
+        <country>USA</country>
+      </addr>
+      <!-- SHALL [1..*] (Adopted from CONF-HP-7) -->
+      <telecom value="tel:(555)555-1003" />
+      <!-- SHALL [1..1] (CONF HP-51)-->
+      <assignedPerson>
+        <name>
+          <given>Henry</given>
+          <family>Seven</family>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <!-- MAY [0..*] (Adopted from CONF-HP-52) -->
+  <authenticator>
+    <!--CDA R2 SHALL [1..1]. Per WG pattern, SHALL be precise to the day and SHOULD be precise to the Minute. If precise to minute, SHOULD include timezone offset  -->
+    <time value="20050329224411+0500" />
+    <!--CDA R2 SHALL [1..1] from value set authenticator.signatureCode-->
+    <signatureCode code="S" />
+    <!--SHALL [1..1] (CONF HP-51) -->
+    <assignedEntity>
+      <!--CDA R2 SHALL [1..] -->
+      <id extension="KP00017" root="2.16.840.1.113883.19.5" />
+      <!-- SHALL [1..*] (Adopted from CONF-HP-7) -->
+      <!-- ADDR can't have mixed content -->
+      <addr>
+        <!-- SHALL [1..3] streetAddressLine -->
+        <streetAddressLine>21 North Ave.</streetAddressLine>
+        <!-- SHALL [1..1] ...-->
+        <city>Burlington</city>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+        <state>MA</state>
+        <!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.2 Postal Code-->
+        <postalCode>02368</postalCode>
+        <!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country -->
+        <country>USA</country>
+      </addr>
+      <!-- SHALL [1..*] (Adopted from CONF-HP-7) -->
+      <telecom value="tel:(555)555-1003" />
+      <!-- SHALL [1..1] (CONF HP-51)-->
+      <assignedPerson>
+        <name>
+          <given>Henry</given>
+          <family>Seven</family>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </authenticator>
+  <!-- Other participants or ActRelationships are possible but are dependent on a specific document types -->
+  <!-- ********************************************************
+CDA Body
+******************************************************** -->
+  <component>
+    <structuredBody>
+      <!--************************************* 
+Sample Section - 
+************************************* -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.18.2.14" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51847-2" displayName="ASSESSMENT AND PLAN" />
+          <title>ASSESSMENT AND PLAN</title>
+          <text>
+            <list listType="ordered">
+              <item> Sigmoid diverticulosis, moderate. High fiber diet</item>
+              <item> Internal hemorrhoids. Treat conservatively with Canasa
+								suppositories </item>
+              <item> Colon polyp, 6mm, ascending colon, removed by snare. Patient to
+								call for results </item>
+            </list>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

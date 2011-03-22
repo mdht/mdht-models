@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="toc">
+    <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8zZJ4GD8Ed6bFO5yxRh3Nw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_jUiZ4FTJEeC4W6XVVkYeDg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_Zkp_kDITEd-saqiXO4OYhQ">
+      <importedPackage href="toc-vocab.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" href=".controlled/toc-problem.uml#_VeS1EFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/toc-problem.uml#_Vf4wgFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/toc-problem.uml#_VgJPMFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/toc-problem.uml#_VgKdUFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/toc-shared.uml#_VghCoFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/toc-problem.uml#_VgtP4FTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/toc-shared.uml#_VgueAFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/toc-problem.uml#_Vg-VoFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/toc-problem.uml#_Vg_jwlTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/toc-problem.uml#_VhUT4FTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/toc-problem.uml#_VhViAFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/toc-problem.uml#_Vhn14FTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/toc-shared.uml#_VhpEAFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/toc-shared.uml#_Vh0qMlTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/toc-shared.uml#_Vh1RQFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/toc-problem.uml#_Vh5isFTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/toc-problem.uml#_Vh90IVTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/toc-problem.uml#_ViFI4lTEEeC0DuxL20wbJg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/toc-problem.uml#_ViNEsFTEEeC0DuxL20wbJg"/>
+    <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
+      <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="toc" nsURI="http://www.openhealthtools.org/mdht/uml/cda/toc" packageName="toc" prefix="TOC" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
+</xmi:XMI>
