@@ -28,6 +28,14 @@
     	</antcall>
 	</target>
 
+	<target name="ProblemsSection-developer-rtf">
+    	<antcall target="rtf-Section">
+    		<param name="dita.input.valfile" value="${ditaFilePath}/ditaval_developer.xml" />
+    		<param name="rtf.filename" value="${fileName}_ProblemsSection.rtf" />
+    		<param name="section.name" value="ProblemsSection" />
+    	</antcall>
+	</target>
+
 	<target name="standards-pdf">
     	<antcall target="pdf">
     		<param name="dita.input.valfile" value="${ditaFilePath}/ditaval_standards.xml" />
@@ -118,6 +126,27 @@
 		<move file="${pdf.output}/org.openhealthtools.mdht.uml.cda.hitsp.doc/dita/${modelName}-book-${section.name}.pdf" 
 			tofile="${basedir}/${pdf.filename}" />
 		<delete dir="${pdf.output}"/>
+		
+		<delete dir="temp"/>
+	</target>
+
+	<target name="rtf-Section" depends="integrate">
+		<property name="rtf.output" value="${basedir}/wordrtf" />
+
+		<delete file="${basedir}/${rtf.filename}" />
+		
+		<ant antfile="${dita.dir}/build.xml" target="init">
+			<property name="transtype" value="wordrtf" />
+			<property name="args.input" value="${ditaFilePath}/${modelName}-book-${section.name}.ditamap" />
+			<property name="args.hdr" value="${ditaFilePath}/header.xml" />
+			<property name="output.dir" value="${rtf.output}" />
+			<property name="dita.temp.dir" location="temp" />
+			<property name="clean.temp" value="true" />
+		</ant>
+
+		<move file="${rtf.output}/org.openhealthtools.mdht.uml.cda.hitsp.doc/dita/${modelName}-book-${section.name}.rtf" 
+			tofile="${basedir}/${rtf.filename}" />
+		<!-- <delete dir="${rtf.output}"/> -->
 		
 		<delete dir="temp"/>
 	</target>
