@@ -38,7 +38,7 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ViAQYVTEEeC0DuxL20wbJg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>In Problem Section, a Problem Act SHOULD contain one or more Problem Observations.</body>
+        <body>In Problem Section, a Problem Act SHALL contain one or more Problem Observations.</body>
         <body>self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()&#xD;&#xA;   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))</body>
       </specification>
     </ownedRule>
@@ -47,7 +47,7 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ViA3cVTEEeC0DuxL20wbJg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>In Alert Section, a ProblemAct SHOULD contain one or more Alert Observations.</body>
+        <body>In Alert Section, a ProblemAct SHALL contain one or more Alert Observations.</body>
         <body>self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()&#xD;&#xA;   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))</body>
       </specification>
     </ownedRule>
@@ -92,6 +92,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_VeS1E1TEEeC0DuxL20wbJg" name="hasProviderId" constrainedElement="_VeS1EFTEEeC0DuxL20wbJg">
+      <ownedComment xmi:id="_jF9NgFTYEeCxKs3JeVuz3w">
+        <body>Using a link between provider in the problems entry and the provider in the header eliminates duplicate information.</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VeS1FFTEEeC0DuxL20wbJg">
         <language>Analysis</language>
         <language>OCL</language>
@@ -173,7 +176,7 @@
   <uml:Association xmi:id="_Vh90IVTEEeC0DuxL20wbJg" memberEnd="_VeS1GFTEEeC0DuxL20wbJg _Vh90IlTEEeC0DuxL20wbJg">
     <ownedEnd xmi:id="_Vh90IlTEEeC0DuxL20wbJg" type="_VeS1EFTEEeC0DuxL20wbJg" association="_Vh90IVTEEeC0DuxL20wbJg"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_VeWfcFTEEeC0DuxL20wbJg" base_Class="_VeS1EFTEEeC0DuxL20wbJg" templateId="2.16.840.1.113883.3.88.11.83.7">
+  <CDA:CDATemplate xmi:id="_VeWfcFTEEeC0DuxL20wbJg" base_Class="_VeS1EFTEEeC0DuxL20wbJg" templateId="2.16.840.1.113883.10.20.21.4.3">
     <ruleId>C83-[DE-7-CDA-1]</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_Vh-bMlTEEeC0DuxL20wbJg" base_Constraint="_Vh-bMFTEEeC0DuxL20wbJg">
@@ -185,12 +188,8 @@
   <CDA:ConstraintValidation xmi:id="_Vh_pUlTEEeC0DuxL20wbJg" severity="WARNING" base_Constraint="_Vh_pUFTEEeC0DuxL20wbJg">
     <ruleId>CONF-153</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_ViAQYlTEEeC0DuxL20wbJg" severity="WARNING" base_Constraint="_ViAQYFTEEeC0DuxL20wbJg">
-    <ruleId>CONF-140</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_ViA3clTEEeC0DuxL20wbJg" severity="WARNING" base_Constraint="_ViA3cFTEEeC0DuxL20wbJg">
-    <ruleId>CONF-256</ruleId>
-  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_ViAQYlTEEeC0DuxL20wbJg" base_Constraint="_ViAQYFTEEeC0DuxL20wbJg"/>
+  <CDA:ConstraintValidation xmi:id="_ViA3clTEEeC0DuxL20wbJg" base_Constraint="_ViA3cFTEEeC0DuxL20wbJg"/>
   <CDA:ConstraintValidation xmi:id="_ViBeglTEEeC0DuxL20wbJg" severity="INFO" base_Constraint="_ViBegFTEEeC0DuxL20wbJg">
     <ruleId>CONF-179</ruleId>
   </CDA:ConstraintValidation>
@@ -390,7 +389,7 @@
   <uml:Association xmi:id="_Vh5isFTEEeC0DuxL20wbJg" memberEnd="_Vhoc8VTEEeC0DuxL20wbJg _Vh5isVTEEeC0DuxL20wbJg">
     <ownedEnd xmi:id="_Vh5isVTEEeC0DuxL20wbJg" type="_VgKdUFTEEeC0DuxL20wbJg" association="_Vh5isFTEEeC0DuxL20wbJg"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_Vh90IFTEEeC0DuxL20wbJg" base_Class="_VgKdUFTEEeC0DuxL20wbJg" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+  <CDA:CDATemplate xmi:id="_Vh90IFTEEeC0DuxL20wbJg" base_Class="_VgKdUFTEEeC0DuxL20wbJg" templateId="2.16.840.1.113883.10.20.21.4.4"/>
   <CDA:ConstraintValidation xmi:id="_Vh6JwlTEEeC0DuxL20wbJg" base_Constraint="_Vh6JwFTEEeC0DuxL20wbJg">
     <ruleId>CONF-161</ruleId>
   </CDA:ConstraintValidation>
@@ -604,7 +603,7 @@
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_BiaqUHvDEd6jfbAJq2V82w"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_VhViCVTEEeC0DuxL20wbJg" base_Class="_VhViAFTEEeC0DuxL20wbJg" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+  <CDA:CDATemplate xmi:id="_VhViCVTEEeC0DuxL20wbJg" base_Class="_VhViAFTEEeC0DuxL20wbJg" templateId="2.16.840.1.113883.10.20.21.4.5"/>
   <CDA:ConstraintValidation xmi:id="_VhkyklTEEeC0DuxL20wbJg" base_Constraint="_VhkykFTEEeC0DuxL20wbJg">
     <ruleId>CONF-509</ruleId>
   </CDA:ConstraintValidation>
@@ -685,11 +684,11 @@
   <uml:Association xmi:id="_ViNEsFTEEeC0DuxL20wbJg" memberEnd="_ViFI5VTEEeC0DuxL20wbJg _ViNEsVTEEeC0DuxL20wbJg">
     <ownedEnd xmi:id="_ViNEsVTEEeC0DuxL20wbJg" type="_ViFI4lTEEeC0DuxL20wbJg" association="_ViNEsFTEEeC0DuxL20wbJg"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_ViFv8lTEEeC0DuxL20wbJg" base_Class="_ViFI4lTEEeC0DuxL20wbJg" templateId="2.16.840.1.113883.3.88.11.83.103" assigningAuthorityName="HITSP C83"/>
+  <CDA:CDATemplate xmi:id="_ViFv8lTEEeC0DuxL20wbJg" base_Class="_ViFI4lTEEeC0DuxL20wbJg" templateId="2.16.840.1.113883.10.20.21.2.5.1"/>
   <CDA:ConstraintValidation xmi:id="_ViNEtFTEEeC0DuxL20wbJg" severity="WARNING" base_Constraint="_ViNEslTEEeC0DuxL20wbJg">
     <ruleId>CONF-144</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CodeSystemConstraint xmi:id="_ViJaUVTEEeC0DuxL20wbJg" code="11450-4" displayName="Problem list" base_Property="_ViJaUFTEEeC0DuxL20wbJg">
+  <CDA:CodeSystemConstraint xmi:id="_ViJaUVTEEeC0DuxL20wbJg" code="11450-4" displayName="Problems" base_Property="_ViJaUFTEEeC0DuxL20wbJg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-141</ruleId>
     <ruleId>CONF-142</ruleId>
@@ -785,7 +784,7 @@
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_ehj3AHu_Ed6jfbAJq2V82w"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_VhAK0FTEEeC0DuxL20wbJg" base_Class="_Vg_jwlTEEeC0DuxL20wbJg" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+  <CDA:CDATemplate xmi:id="_VhAK0FTEEeC0DuxL20wbJg" base_Class="_Vg_jwlTEEeC0DuxL20wbJg" templateId="2.16.840.1.113883.10.20.21.4.6"/>
   <CDA:ConstraintValidation xmi:id="_VhQpglTEEeC0DuxL20wbJg" base_Constraint="_VhQpgFTEEeC0DuxL20wbJg">
     <ruleId>CONF-509</ruleId>
   </CDA:ConstraintValidation>
