@@ -68,7 +68,7 @@ Content Modules.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__k230lfdEeCIIf8CuAH-Kw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__lXOIVfdEeCIIf8CuAH-Kw" name="externalReference" association="__lbfkFfdEeCIIf8CuAH-Kw">
-      <type xmi:type="uml:Class" href="../consol.uml#__lX1MFfdEeCIIf8CuAH-Kw"/>
+      <type xmi:type="uml:Class" href="consol-shared.uml#__lX1MFfdEeCIIf8CuAH-Kw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__lXOIlfdEeCIIf8CuAH-Kw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__lXOI1fdEeCIIf8CuAH-Kw" value="1"/>
     </ownedAttribute>

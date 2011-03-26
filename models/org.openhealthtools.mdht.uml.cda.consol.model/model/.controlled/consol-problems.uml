@@ -173,11 +173,6 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VD4aqVfdEeCb0LEisK_hTQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VD4aqlfdEeCb0LEisK_hTQ" value="1"/>
     </ownedAttribute>
-    <ownedOperation xmi:id="_VD4aq1fdEeCb0LEisK_hTQ" name="createConditionEntry">
-      <ownedParameter xmi:id="_VD4arFfdEeCb0LEisK_hTQ" name="return" direction="return">
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-problemList.uml#_c6bN4BvgEd-yI6xBTkJSNw"/>
-      </ownedParameter>
-    </ownedOperation>
   </uml:Class>
   <uml:Association xmi:id="_VETRYFfdEeCb0LEisK_hTQ" memberEnd="_VEHEIFfdEeCb0LEisK_hTQ _VETRYVfdEeCb0LEisK_hTQ">
     <ownedEnd xmi:id="_VETRYVfdEeCb0LEisK_hTQ" type="_VD4aoFfdEeCb0LEisK_hTQ" association="_VETRYFfdEeCb0LEisK_hTQ"/>
