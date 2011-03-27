@@ -14,31 +14,40 @@
 <p>The Problem List Section contains data on the problems currently being monitored for the patient.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11450-4" </tt><i>Problem list</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-141, CONF-142)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-143)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-140)</li>
-<li>Contains at least one [1..*] <tt><b>entry</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain <xref href="../Condition.dita">Condition</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.7</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain a case-insensitive language-insensitive string containing 'problems'. (CONF-144)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11450-4" </tt><i>Problem list</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-141, CONF-142)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-143)
+<ol>
+<li><b>SHOULD</b> contain a case-insensitive language-insensitive string containing 'problems'. (CONF-144)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-140)
+</li>
+<li>Contains at least one [1..*] <tt><b>entry</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <xref href="../Condition.dita">Condition</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.7</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11450-4" </tt><i>Problem list</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-141, CONF-142)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-143)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-140)</li>
-<li>Contains at least one [1..*] <tt><b>entry</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain <xref href="../Condition.dita">Condition</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.7</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11450-4" </tt><i>Problem list</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-141, CONF-142)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-143)
+<ol>
+<li><b>SHOULD</b> contain a case-insensitive language-insensitive string containing 'problems'. (CONF-144)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-140)
+</li>
+<li>Contains at least one [1..*] <tt><b>entry</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <xref href="../Condition.dita">Condition</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.7</tt>)</li></ol></li>
 <li><b>SHOULD</b> contain a case-insensitive language-insensitive string containing 'problems'. (CONF-144)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.3.88.11.83.103"/>
-  <id root="2b8b9750-b48e-4f6e-ba39-62765282f5a6"/>
+  <id root="acd41087-2b5a-45c5-aa94-3d635c5f641a"/>
   <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
   <title>Problem list</title>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.3.88.11.83.7"/>
-      <id root="d628b0d9-ee56-49d9-9600-b456491b12ec"/>
+      <id root="76ec2811-b8f1-4739-8da0-ebfafe17b4d9"/>
       <code nullFlavor="NA"/>
       <effectiveTime>
         <low value="2011"/>
@@ -47,7 +56,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.41"/>
-          <id root="5f9a7da3-564e-4be2-a129-f9cf783d125f"/>
+          <id root="61454665-8fd7-43b3-bc5a-0b3619e0e5e8"/>
           <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -59,7 +68,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-          <id root="066433d8-1400-4211-99f7-13ae9f8705d5"/>
+          <id root="5d4716bb-2d28-482f-8a20-22383c023e1f"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -69,7 +78,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.38"/>
-              <id root="a8bb2719-973a-44c6-8c48-bcfda8a237d5"/>
+              <id root="c41b891e-e4fe-4a61-abe4-7adcfc41d37e"/>
               <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -81,7 +90,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
-              <id root="258a0d0d-8d73-4b51-bb31-afea7f4e8d82"/>
+              <id root="28a99db8-58c3-4548-9ef9-f70002bdfd1f"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -94,7 +103,7 @@
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.57"/>
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
-              <id root="9591be24-cab8-4817-af60-aa62bd84e57d"/>
+              <id root="af371f5d-824a-4951-ba47-37e9a0ddb968"/>
               <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -107,7 +116,7 @@
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.57"/>
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
-              <id root="5f40ffcd-1998-40a8-867c-14c8f332e9e6"/>
+              <id root="9e0b9872-a3d0-4390-9121-202f979bbc5b"/>
               <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -119,7 +128,7 @@
           <entryRelationship>
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.3.88.11.83.11"/>
-              <id root="fab7e9d6-47a6-402b-a82e-51c7eb83c1a1"/>
+              <id root="7914fd7f-4b5c-45af-bc38-807e8b65a85c"/>
               <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
               <statusCode code="completed"/>
               <effectiveTime>

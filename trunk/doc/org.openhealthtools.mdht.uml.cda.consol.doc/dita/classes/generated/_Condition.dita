@@ -13,16 +13,24 @@
 <p>This entry is a specialization of the Concern Entry, wherein the subject of the concern is focused on a problem.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-146)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-147)</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-148)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt>/@nullFlavor</tt> = "NA" <i>NA (not applicable)</i> (CONF-149)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> ConcernEntryStatus</tt><b> STATIC</b></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt><ul><li>The effectiveTime element records the starting and ending times during which the concern was active.</li></ul></li>
-<li><b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain <xref href="../EpisodeObservation.dita">Episode Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.41</tt>) (CONF-168)</li></ol></li>
-<li>Contains at least one [1..*] <tt><b>entryRelationship</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain <xref href="../ConditionEntry.dita">Condition Entry</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-146)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-147)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-148)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt>/@nullFlavor</tt> = "NA" <i>NA (not applicable)</i> (CONF-149)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> ConcernEntryStatus</tt><b> STATIC</b>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The effectiveTime element records the starting and ending times during which the concern was active.</li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <xref href="../EpisodeObservation.dita">Episode Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.41</tt>) (CONF-168)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>entryRelationship</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <xref href="../ConditionEntry.dita">Condition Entry</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li></ol></li>
 <li><b>SHALL</b> contain one or more entryRelationship (CONF-151)</li>
 <li>A problem act <b>MAY</b> reference a problem observation, alert observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for "Act / entryRelationship / @typeCode" to be "SUBJ" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-152)</li>
 <li>The target of a problem act with Act / entryRelationship / @typeCode="SUBJ" <b>SHOULD</b> be a problem observation (in the Problem section) or alert observation (in the Alert section), but <b>MAY</b> be some other clinical statement. (CONF-153)</li>
@@ -37,16 +45,24 @@
 <li>The time over which this provider treated the condition <b>MAY</b> be recorded in the &lt;time&gt; element beneath the &lt;performer&gt; element (C83-[DE-7.05-CDA-1])</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-146)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-147)</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-148)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt>/@nullFlavor</tt> = "NA" <i>NA (not applicable)</i> (CONF-149)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> ConcernEntryStatus</tt><b> STATIC</b></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt><ul><li>The effectiveTime element records the starting and ending times during which the concern was active.</li></ul></li>
-<li><b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain <xref href="../EpisodeObservation.dita">Episode Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.41</tt>) (CONF-168)</li></ol></li>
-<li>Contains at least one [1..*] <tt><b>entryRelationship</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain <xref href="../ConditionEntry.dita">Condition Entry</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-146)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-147)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-148)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt>/@nullFlavor</tt> = "NA" <i>NA (not applicable)</i> (CONF-149)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> ConcernEntryStatus</tt><b> STATIC</b>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The effectiveTime element records the starting and ending times during which the concern was active.</li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <xref href="../EpisodeObservation.dita">Episode Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.41</tt>) (CONF-168)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>entryRelationship</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <xref href="../ConditionEntry.dita">Condition Entry</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li></ol></li>
 <li><b>SHALL</b> contain one or more entryRelationship (CONF-151)</li>
 <li>A problem act <b>MAY</b> reference a problem observation, alert observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for "Act / entryRelationship / @typeCode" to be "SUBJ" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-152)</li>
 <li>The target of a problem act with Act / entryRelationship / @typeCode="SUBJ" <b>SHOULD</b> be a problem observation (in the Problem section) or alert observation (in the Alert section), but <b>MAY</b> be some other clinical statement. (CONF-153)</li>
@@ -63,7 +79,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.3.88.11.83.7"/>
-  <id root="9d0dd18a-476a-46f4-ba76-a7b6baf56423"/>
+  <id root="bdb34895-bf66-4fc0-858d-b5e4ccb9f266"/>
   <code nullFlavor="NA"/>
   <statusCode/>
   <effectiveTime>
@@ -73,7 +89,7 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.41"/>
-      <id root="731be3ec-d7c7-435f-bb02-913de3bc21e4"/>
+      <id root="c615c0d3-5a0e-43da-a82c-8a085f558fcf"/>
       <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -85,7 +101,7 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-      <id root="d4ac63d4-918d-485f-b510-6a67c91a2fc4"/>
+      <id root="5ebf0790-d145-4d9e-b856-4ab922553f17"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -95,7 +111,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.38"/>
-          <id root="e721b5f1-a903-435c-883c-9375d99145d1"/>
+          <id root="d5b55c47-c0c1-428f-86e3-91537a26c0c8"/>
           <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -107,7 +123,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
-          <id root="04bd7481-532a-47fb-963c-ecd0ab44a0b5"/>
+          <id root="a9e01006-ea79-413d-ba26-378449f7ff70"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -120,7 +136,7 @@
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
-          <id root="19cb7dac-43fb-43b8-8c4b-6a979b3882d1"/>
+          <id root="4ed342c1-906c-401f-a482-b63e150cca6c"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -133,7 +149,7 @@
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
-          <id root="a630b1ba-7411-4761-9182-baccd4483d46"/>
+          <id root="4ae67d93-fb60-472e-8f24-8acdfe9a1b50"/>
           <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -145,7 +161,7 @@
       <entryRelationship>
         <act classCode="ACT" moodCode="EVN">
           <templateId root="2.16.840.1.113883.3.88.11.83.11"/>
-          <id root="4369acc4-a132-4f31-8d88-b772b96d5cef"/>
+          <id root="afdc9fdf-9d66-47b8-b73b-9e78ce2dd99d"/>
           <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
           <statusCode code="completed"/>
           <effectiveTime>

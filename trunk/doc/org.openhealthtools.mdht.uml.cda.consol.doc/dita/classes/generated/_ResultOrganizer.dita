@@ -22,16 +22,23 @@
 </p>
 </section>
 <ol id="conformance">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-394)</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-395)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-397)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-396)</li>
-<li>Contains at least one [1..*] <tt><b>component</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.15</tt>)</li></ol></li>
-<li>Contains at least one [1..*] <tt><b>specimen</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain CDA Specimen</li></ol></li>
-<li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-394)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-395)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-397)
+<ol>
+<li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-396)
+</li>
+<li>Contains at least one [1..*] <tt><b>component</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.15</tt>)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>specimen</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] CDA Specimen</li></ol></li>
 <li>The specimen element <b>SHALL NOT</b> conflict with the specimen inherent in code (CONF-400)</li>
 <li>specimen / specimenRole / id <b>SHOULD</b> be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen. (CONF-401)</li>
 <li><b>SHALL</b> satisfy: Contains one or more component (CONF-402)</li>
@@ -40,15 +47,23 @@
 <li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-406)</li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-394)</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-395)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-397)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-396)</li>
-<li>Contains at least one [1..*] <tt><b>component</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.15</tt>)</li></ol></li>
-<li>Contains at least one [1..*] <tt><b>specimen</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain CDA Specimen</li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-394)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-395)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-397)
+<ol>
+<li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-396)
+</li>
+<li>Contains at least one [1..*] <tt><b>component</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.15</tt>)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>specimen</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] CDA Specimen</li></ol></li>
 <li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
 <li>The specimen element <b>SHALL NOT</b> conflict with the specimen inherent in code (CONF-400)</li>
 <li>specimen / specimenRole / id <b>SHOULD</b> be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen. (CONF-401)</li>
@@ -60,7 +75,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.32"/>
-  <id root="24d7f85c-6e62-48dc-ac45-e4ba63ec8501"/>
+  <id root="5ea461e1-0c13-478c-9edb-c39029cfbd38"/>
   <code/>
   <statusCode/>
   <effectiveTime>
@@ -70,7 +85,7 @@
   <component>
     <observation moodCode="EVN">
       <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
-      <id root="7e0d5ae2-c4c0-4cf9-97de-810c0c754734"/>
+      <id root="40effc18-c983-429b-9283-aabf5d9950f0"/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>

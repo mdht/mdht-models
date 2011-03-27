@@ -21,25 +21,40 @@ The differentiation between Vital Signs and Results varies by clinical context. 
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref href="../Result.dita">Result</xref> template (templateId: <tt>2.16.840.1.113883.3.88.11.83.15</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.62 Vital Sign Result</tt><b> STATIC</b> 1 (C154-[DE-14.03-1])</li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt> (6.3.4.22.5)<ul><li>The interpretation code may be present to provide an interpretation of the vital signs measure (e.g., High, Normal, Low, et cetera).</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (6.3.4.22.6)<ul><li>The method code element may be present to indicate the method used to obtain the measure. Note that method used is distinct from, but possibly related to the target site.</li></ul></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (6.3.4.22.7)<ul><li>The target site of the measure may be identified in the targetSiteCode element (e.g., Left arm [blood pressure], oral [temperature], et cetera).</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is PQ (6.3.4.22.4)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.62 Vital Sign Result</tt><b> STATIC</b> 1 (C154-[DE-14.03-1])
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt> (6.3.4.22.5)
+<ul><li>The interpretation code may be present to provide an interpretation of the vital signs measure (e.g., High, Normal, Low, et cetera).</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (6.3.4.22.6)
+<ul><li>The method code element may be present to indicate the method used to obtain the measure. Note that method used is distinct from, but possibly related to the target site.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (6.3.4.22.7)
+<ul><li>The target site of the measure may be identified in the targetSiteCode element (e.g., Left arm [blood pressure], oral [temperature], et cetera).</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is PQ (6.3.4.22.4)
+</li>
 <li><b>SHALL</b> satisfy: Data Element Definitions for Results [Placeholder]<ul><li>Vital Signs are a subset of Results Section, but are reported in this section to follow clinical conventions.</li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../Result.dita">Result</xref> template (templateId: <tt>2.16.840.1.113883.3.88.11.83.15</tt>)</li>
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-408)</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-409)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.62 Vital Sign Result</tt><b> STATIC</b> 1 (C154-[DE-14.03-1])</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-410)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is PQ (6.3.4.22.4)</li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt> (6.3.4.22.5)<ul><li>The interpretation code may be present to provide an interpretation of the vital signs measure (e.g., High, Normal, Low, et cetera).</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (6.3.4.22.6)<ul><li>The method code element may be present to indicate the method used to obtain the measure. Note that method used is distinct from, but possibly related to the target site.</li></ul></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (6.3.4.22.7)<ul><li>The target site of the measure may be identified in the targetSiteCode element (e.g., Left arm [blood pressure], oral [temperature], et cetera).</li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-408)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-409)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.62 Vital Sign Result</tt><b> STATIC</b> 1 (C154-[DE-14.03-1])
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-410)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is PQ (6.3.4.22.4)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt> (6.3.4.22.5)
+<ul><li>The interpretation code may be present to provide an interpretation of the vital signs measure (e.g., High, Normal, Low, et cetera).</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (6.3.4.22.6)
+<ul><li>The method code element may be present to indicate the method used to obtain the measure. Note that method used is distinct from, but possibly related to the target site.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (6.3.4.22.7)
+<ul><li>The target site of the measure may be identified in the targetSiteCode element (e.g., Left arm [blood pressure], oral [temperature], et cetera).</li></ul></li>
 <li>The value for 'code' <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)</li>
 <li>The methodCode <b>SHALL NOT</b> conflict with the method inherent in code (CONF-415)</li>
 <li>Where value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF-417)</li>
@@ -55,7 +70,7 @@ The differentiation between Vital Signs and Results varies by clinical context. 
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
-  <id root="f96c8603-06eb-4b00-9a26-a5284596be53"/>
+  <id root="5978828a-e461-40ea-843b-6d23676b4340"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <statusCode/>
   <effectiveTime>

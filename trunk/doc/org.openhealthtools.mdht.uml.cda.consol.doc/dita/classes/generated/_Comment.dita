@@ -16,15 +16,22 @@
 <p>This module contains a comment to be supplied for any other entry Content Modules.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-504)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-505)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48767-8" </tt><i>Annotation comment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-506, CONF-507)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-6.3.4.6.8)</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain CDA Author</li></ol></li>
-<li>Contains exactly one [1..1] <tt><b>author</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain CDA Author</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-504)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-505)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48767-8" </tt><i>Annotation comment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-506, CONF-507)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-6.3.4.6.8)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] CDA Author</li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>author</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] CDA Author</li></ol></li>
 <li><b>SHALL</b> satisfy: A related statement is made about another section or entry. In CDA the former shall be recorded inside an &lt;entryRelationship&gt; element occurring at the end of the entry. The containing entry is the subject (typeCode='SUBJ') of this comment, which is the inverse of the normal containment structure, thus inversionInd='true'. (CONF-6.3.4.6.3)</li>
 <li><b>SHALL</b> satisfy: The 'text' element contains a 'reference' element pointing to the narrative text section of the CDA, rather than duplicate text to avoid ambiguity. (CONF-6.3.4.6.7)</li>
 <li><b>SHALL</b> satisfy: The time of the comment creation is recorded in the 'time' element when the 'author' element is present. (CONF-6.3.4.6.10)</li>
@@ -33,15 +40,22 @@
 <li>Data elements defined elsewhere in the specification <b>SHALL NOT</b> be recorded using the Comments Module. (C83-[DE-10-CDA-1])<ul><li>Comments are free text data that cannot otherwise be recorded using data elements already defined by this specification. They are not to be used to record information that can be recorded elsewhere. For example, a free text description of the severity of an allergic reaction would not be recorded in a comment. Instead, it would be recorded using the data element defined in Allergy/Drug Sensitivity.</li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-504)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-505)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48767-8" </tt><i>Annotation comment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-506, CONF-507)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-6.3.4.6.8)</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain CDA Author</li></ol></li>
-<li>Contains exactly one [1..1] <tt><b>author</b></tt>, such that it<ol>
-<li><b>SHALL</b> contain CDA Author</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-504)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-505)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48767-8" </tt><i>Annotation comment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-506, CONF-507)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-6.3.4.6.8)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] CDA Author</li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>author</b></tt>, such that it
+<ol>
+<li><b>SHALL</b> contain exactly one [1..1] CDA Author</li></ol></li>
 <li><b>SHALL</b> satisfy: A related statement is made about another section or entry. In CDA the former shall be recorded inside an &lt;entryRelationship&gt; element occurring at the end of the entry. The containing entry is the subject (typeCode='SUBJ') of this comment, which is the inverse of the normal containment structure, thus inversionInd='true'. (CONF-6.3.4.6.3)</li>
 <li><b>SHALL</b> satisfy: The 'text' element contains a 'reference' element pointing to the narrative text section of the CDA, rather than duplicate text to avoid ambiguity. (CONF-6.3.4.6.7)</li>
 <li><b>SHALL</b> satisfy: The time of the comment creation is recorded in the 'time' element when the 'author' element is present. (CONF-6.3.4.6.10)</li>
@@ -52,7 +66,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.3.88.11.83.11"/>
-  <id root="2f0fb6c6-7981-4e69-aeac-fcca5c64be5a"/>
+  <id root="310c9787-6df9-45e2-98a3-f2c3365ebb2c"/>
   <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
   <text/>
   <statusCode code="completed"/>
