@@ -242,9 +242,6 @@
 &#xD;
 &lt;p>The basic pattern for reporting a problem uses the CDA &amp;lt;observation> element, setting the classCode='OBS' to represent that this is an observation of a problem, and the moodCode='EVN', to represent that this is an observation that has in fact taken place. The negationInd attribute, if true, specifies that the problem indicated was observed to not have occurred (which is subtly but importantly different from having not been observed). The value of negationInd should not normally be set to true. Instead, to record that there is &quot;no prior history of chicken pox&quot;, one would use a coded value indicated exactly that. However, it is not always possible to record problems in this manner, especially if using a controlled vocabulary that does not supply pre-coordinated negations , or which do not allow the negation to be recorded with post-coordinated coded terminology.&lt;/p></body>
     </ownedComment>
-    <ownedComment xmi:id="_VEUfgVfdEeCb0LEisK_hTQ">
-      <body>Condition Entry is not defined as a separate template in HITSP C83, but only as additional constraints on the IHE Problem Entry when embedded in a Condition template. In this model, Condition Entry is defined as a separate class (without a template ID) that restricts the IHE Problem Entry. When these templates are consolidated in the new implementation guide, these Condition Entry constraints will be merged with Problem Entry.</body>
-    </ownedComment>
     <ownedRule xmi:id="_VFu0wFfdEeCb0LEisK_hTQ" name="informationSource">
       <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_IjIO0DxbEd6JwqSGecoePg"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VFu0wVfdEeCb0LEisK_hTQ">
