@@ -14,7 +14,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.openhealthtools.mdht.uml.hl7.datatypes;visibility:=reexport,
  org.openhealthtools.mdht.uml.hl7.vocab;visibility:=reexport
 Bundle-ActivationPolicy: lazy
-Bundle-Activator: org.openhealthtools.mdht.uml.cda.consol.CONSOLPlugin$Implementation
+Bundle-Activator: org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin$Implementation
 Export-Package: org.openhealthtools.mdht.uml.cda.consol,
  org.openhealthtools.mdht.uml.cda.consol.operations,
  org.openhealthtools.mdht.uml.cda.consol.util

@@ -34,10 +34,10 @@ import org.openhealthtools.mdht.uml.cda.PatientRole;
 import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.RelatedEntity;
 import org.openhealthtools.mdht.uml.cda.RelatedSubject;
-import org.openhealthtools.mdht.uml.cda.consol.CONSOLPackage;
-import org.openhealthtools.mdht.uml.cda.consol.CONSOLPlugin;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.consol.util.CONSOLValidator;
+import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalDocumentOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
@@ -84,13 +84,13 @@ import org.openhealthtools.mdht.uml.hl7.rim.Role;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsTimePreciseToSecond(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Time Precise To Second</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsTimePreciseToYearAndDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Time Precise To Year And Day</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsLanguageCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Language Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRealmCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Realm Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsTypeId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Type Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsLanguageCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Language Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -161,9 +161,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 						diagnostics.add
 							(new BasicDiagnostic
 								(Diagnostic.ERROR,
-								 CONSOLValidator.DIAGNOSTIC_SOURCE,
-								 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_PERSON_HAS_NAME,
-								CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsPersonHasName"),
+								 ConsolValidator.DIAGNOSTIC_SOURCE,
+								 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_PERSON_HAS_NAME,
+								ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsPersonHasName"),
 								 new Object [] { node }));
 					}
 				}
@@ -231,9 +231,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 						diagnostics.add
 							(new BasicDiagnostic
 								(Diagnostic.ERROR,
-								 CONSOLValidator.DIAGNOSTIC_SOURCE,
-								 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_ROLES_SHALL_HAVE_ADDR_AND_TELECOM,
-								CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsRolesShallHaveAddrAndTelecom"),
+								 ConsolValidator.DIAGNOSTIC_SOURCE,
+								 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_ROLES_SHALL_HAVE_ADDR_AND_TELECOM,
+								ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRolesShallHaveAddrAndTelecom"),
 								 new Object [] { node }));
 					}
 				}
@@ -302,9 +302,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 						diagnostics
 								.add(new BasicDiagnostic(
 										Diagnostic.WARNING,
-										CONSOLValidator.DIAGNOSTIC_SOURCE,
-										CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_ROLES_SHOULD_HAVE_ADDR_AND_TELECOM,
-										CONSOLPlugin.INSTANCE
+										ConsolValidator.DIAGNOSTIC_SOURCE,
+										ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_ROLES_SHOULD_HAVE_ADDR_AND_TELECOM,
+										ConsolPlugin.INSTANCE
 												.getString("GeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom"),
 										new Object[] { node }));
 					}
@@ -371,9 +371,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 						diagnostics
 								.add(new BasicDiagnostic(
 										Diagnostic.ERROR,
-										CONSOLValidator.DIAGNOSTIC_SOURCE,
-										CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_ORGANIZATIONS_HAVE_CONTACT_INFO,
-										CONSOLPlugin.INSTANCE
+										ConsolValidator.DIAGNOSTIC_SOURCE,
+										ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_ORGANIZATIONS_HAVE_CONTACT_INFO,
+										ConsolPlugin.INSTANCE
 												.getString("GeneralHeaderConstraintsOrganizationsHaveContactInfo"),
 										new Object[] { node }));
 					}
@@ -460,9 +460,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 						diagnostics
 								.add(new BasicDiagnostic(
 										Diagnostic.ERROR,
-										CONSOLValidator.DIAGNOSTIC_SOURCE,
-										CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_DAY,
-										CONSOLPlugin.INSTANCE
+										ConsolValidator.DIAGNOSTIC_SOURCE,
+										ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_DAY,
+										ConsolPlugin.INSTANCE
 												.getString("GeneralHeaderConstraintsTimePreciseToDay"),
 										new Object[] { node }));
 					}
@@ -521,7 +521,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsTimePreciseToYear(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_OID_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 	            OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 	            VALIDATE_GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
@@ -541,9 +541,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 						diagnostics
 								.add(new BasicDiagnostic(
 										Diagnostic.ERROR,
-										CONSOLValidator.DIAGNOSTIC_SOURCE,
-										CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR,
-										CONSOLPlugin.INSTANCE
+										ConsolValidator.DIAGNOSTIC_SOURCE,
+										ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR,
+										ConsolPlugin.INSTANCE
 												.getString("GeneralHeaderConstraintsTimePreciseToYear"),
 										new Object[] { eObject }));
 					}
@@ -607,9 +607,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 							diagnostics.add
 								(new BasicDiagnostic
 									(Diagnostic.ERROR,
-									 CONSOLValidator.DIAGNOSTIC_SOURCE,
-									 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TELEPHONE_MATCHES_REGEX,
-									CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsTelephoneMatchesRegex"),
+									 ConsolValidator.DIAGNOSTIC_SOURCE,
+									 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TELEPHONE_MATCHES_REGEX,
+									ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTelephoneMatchesRegex"),
 									 new Object [] { tel }));
 						}
 					}
@@ -682,9 +682,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 							diagnostics.add
 								(new BasicDiagnostic
 									(Diagnostic.ERROR,
-									 CONSOLValidator.DIAGNOSTIC_SOURCE,
-									 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_TELEPHONE_DIALING_DIGITS,
-									CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasTelephoneDialingDigits"),
+									 ConsolValidator.DIAGNOSTIC_SOURCE,
+									 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_TELEPHONE_DIALING_DIGITS,
+									ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasTelephoneDialingDigits"),
 									 new Object [] { tel }));
 						}
 					}
@@ -752,9 +752,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 						diagnostics.add
 							(new BasicDiagnostic
 								(Diagnostic.ERROR,
-								 CONSOLValidator.DIAGNOSTIC_SOURCE,
-								 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_UNKNOWN_TELEPHONE_USES_NULL_FLAVOR,
-								CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor"),
+								 ConsolValidator.DIAGNOSTIC_SOURCE,
+								 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_UNKNOWN_TELEPHONE_USES_NULL_FLAVOR,
+								ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor"),
 								 new Object [] { tel }));
 					}
 				}
@@ -803,7 +803,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsTypeIdExtension(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -816,9 +816,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TYPE_ID_EXTENSION,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsTypeIdExtension"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TYPE_ID_EXTENSION,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTypeIdExtension"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -873,7 +873,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 		
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_OID_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 	            OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_OID_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 	            VALIDATE_GENERAL_HEADER_CONSTRAINTS_OID_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
@@ -892,9 +892,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 						diagnostics
 								.add(new BasicDiagnostic(
 										Diagnostic.ERROR,
-										CONSOLValidator.DIAGNOSTIC_SOURCE,
-										CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_OID_LENGTH,
-										CONSOLPlugin.INSTANCE
+										ConsolValidator.DIAGNOSTIC_SOURCE,
+										ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_OID_LENGTH,
+										ConsolPlugin.INSTANCE
 												.getString("GeneralHeaderConstraintsOidLength"),
 										new Object[] { eObject }));
 					}
@@ -942,7 +942,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsSetIdAndVersionNumber(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_SET_ID_AND_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_SET_ID_AND_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_SET_ID_AND_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -955,9 +955,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_SET_ID_AND_VERSION_NUMBER,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsSetIdAndVersionNumber"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_SET_ID_AND_VERSION_NUMBER,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsSetIdAndVersionNumber"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1001,7 +1001,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsSetIdAndIdAreUnique(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_SET_ID_AND_ID_ARE_UNIQUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_SET_ID_AND_ID_ARE_UNIQUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_SET_ID_AND_ID_ARE_UNIQUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1014,9 +1014,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_SET_ID_AND_ID_ARE_UNIQUE,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsSetIdAndIdAreUnique"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_SET_ID_AND_ID_ARE_UNIQUE,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsSetIdAndIdAreUnique"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1058,7 +1058,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsCopyTimeNotPresent(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_COPY_TIME_NOT_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_COPY_TIME_NOT_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_COPY_TIME_NOT_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1071,9 +1071,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_COPY_TIME_NOT_PRESENT,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsCopyTimeNotPresent"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_COPY_TIME_NOT_PRESENT,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCopyTimeNotPresent"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1115,7 +1115,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasRecordTargetPatientRole(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1128,9 +1128,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_RECORD_TARGET_PATIENT_ROLE,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasRecordTargetPatientRole"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_RECORD_TARGET_PATIENT_ROLE,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasRecordTargetPatientRole"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1176,7 +1176,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasPatientBirthTime(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1189,9 +1189,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_PATIENT_BIRTH_TIME,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasPatientBirthTime"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_PATIENT_BIRTH_TIME,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasPatientBirthTime"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1237,7 +1237,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasAdministrativeGenderCode(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1250,9 +1250,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_ADMINISTRATIVE_GENDER_CODE,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasAdministrativeGenderCode"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_ADMINISTRATIVE_GENDER_CODE,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasAdministrativeGenderCode"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1294,7 +1294,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasProviderOrganization(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_PROVIDER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_PROVIDER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_PROVIDER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1307,9 +1307,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_PROVIDER_ORGANIZATION,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasProviderOrganization"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_PROVIDER_ORGANIZATION,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasProviderOrganization"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1351,7 +1351,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasAuthorTime(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_AUTHOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_AUTHOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_AUTHOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1364,9 +1364,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_AUTHOR_TIME,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasAuthorTime"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_AUTHOR_TIME,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasAuthorTime"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1408,7 +1408,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasAssignedAuthorId(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1421,9 +1421,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_ASSIGNED_AUTHOR_ID,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasAssignedAuthorId"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_ASSIGNED_AUTHOR_ID,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasAssignedAuthorId"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1467,7 +1467,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_ASSIGNED_AUTHOR_PERSON_OR_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_ASSIGNED_AUTHOR_PERSON_OR_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_ASSIGNED_AUTHOR_PERSON_OR_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1480,9 +1480,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_ASSIGNED_AUTHOR_PERSON_OR_DEVICE,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_ASSIGNED_AUTHOR_PERSON_OR_DEVICE,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1524,7 +1524,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_DATA_ENTERER_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_DATA_ENTERER_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_DATA_ENTERER_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1537,9 +1537,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_DATA_ENTERER_ASSIGNED_PERSON,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasDataEntererAssignedPerson"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_DATA_ENTERER_ASSIGNED_PERSON,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasDataEntererAssignedPerson"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1581,7 +1581,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasDataEntererTime(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_DATA_ENTERER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_DATA_ENTERER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_DATA_ENTERER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1594,9 +1594,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_DATA_ENTERER_TIME,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasDataEntererTime"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_DATA_ENTERER_TIME,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasDataEntererTime"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1638,7 +1638,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasInformant(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1651,9 +1651,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_INFORMANT,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasInformant"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_INFORMANT,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasInformant"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1697,7 +1697,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_INFORMANT_ASSIGNED_PERSON_OR_RELATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_INFORMANT_ASSIGNED_PERSON_OR_RELATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_HAS_INFORMANT_ASSIGNED_PERSON_OR_RELATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1710,9 +1710,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_INFORMANT_ASSIGNED_PERSON_OR_RELATED_PERSON,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_HAS_INFORMANT_ASSIGNED_PERSON_OR_RELATED_PERSON,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1754,7 +1754,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_HAS_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_HAS_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_HAS_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1767,9 +1767,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_HAS_ASSIGNED_PERSON,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_HAS_ASSIGNED_PERSON,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1813,7 +1813,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_HAS_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_HAS_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_HAS_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -1826,9 +1826,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_HAS_ASSIGNED_PERSON,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticatorHasAssignedPerson"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_HAS_ASSIGNED_PERSON,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticatorHasAssignedPerson"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -1880,9 +1880,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 						diagnostics
 								.add(new BasicDiagnostic(
 										Diagnostic.WARNING,
-										CONSOLValidator.DIAGNOSTIC_SOURCE,
-										CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_SECOND,
-										CONSOLPlugin.INSTANCE
+										ConsolValidator.DIAGNOSTIC_SOURCE,
+										ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_SECOND,
+										ConsolPlugin.INSTANCE
 												.getString("GeneralHeaderConstraintsTimePreciseToSecond"),
 										new Object[] { node }));
 					}
@@ -1937,7 +1937,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsTimePreciseToYearAndDay(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR_AND_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 	            OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR_AND_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 	            VALIDATE_GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR_AND_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
@@ -1957,9 +1957,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 						diagnostics
 								.add(new BasicDiagnostic(
 										Diagnostic.WARNING,
-										CONSOLValidator.DIAGNOSTIC_SOURCE,
-										CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR_AND_DAY,
-										CONSOLPlugin.INSTANCE
+										ConsolValidator.DIAGNOSTIC_SOURCE,
+										ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR_AND_DAY,
+										ConsolPlugin.INSTANCE
 												.getString("GeneralHeaderConstraintsTimePreciseToYearAndDay"),
 										new Object[] { eObject }));
 					}
@@ -1986,9 +1986,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 //				diagnostics.add
 //					(new BasicDiagnostic
 //						(Diagnostic.WARNING,
-//						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-//						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR_AND_DAY,
-//						CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsTimePreciseToYearAndDay"),
+//						 ConsolValidator.DIAGNOSTIC_SOURCE,
+//						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TIME_PRECISE_TO_YEAR_AND_DAY,
+//						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTimePreciseToYearAndDay"),
 //						 new Object [] { generalHeaderConstraints }));
 //			}
 //			return false;
@@ -2030,7 +2030,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsTemplateId(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -2043,9 +2043,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -2054,30 +2054,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.code.oclIsUndefined()
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2087,7 +2067,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsCode(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -2100,9 +2080,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_CODE,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_CODE,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -2111,30 +2091,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsEffectiveTime(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Effective Time</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsEffectiveTime(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsEffectiveTime(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Effective Time</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsEffectiveTime(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.effectiveTime.oclIsUndefined()
+	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2144,7 +2104,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsEffectiveTime(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -2157,9 +2117,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsEffectiveTime"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsEffectiveTime"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -2168,30 +2128,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.id.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.id.oclIsUndefined()
+	 * (self.id.oclIsUndefined() or self.id.isNullFlavorUndefined()) implies (not self.id.oclIsUndefined())
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2201,7 +2141,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsId(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -2214,9 +2154,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_ID,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsId"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_ID,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsId"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -2225,30 +2165,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Language Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.languageCode.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Language Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.languageCode.oclIsUndefined()
+	 * (self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined())
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2258,7 +2178,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsLanguageCode(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -2271,9 +2191,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsLanguageCode"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLanguageCode"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -2289,9 +2209,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and "+
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and "+
 "let value : datatypes::CS = element.oclAsType(datatypes::CS) in "+
-"value.code = 'US')";
+"value.code = 'US'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRealmCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Realm Code</em>}' invariant operation.
@@ -2307,9 +2227,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and 
+	 * (self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and 
 	 * let value : datatypes::CS = element.oclAsType(datatypes::CS) in 
-	 * value.code = 'US')
+	 * value.code = 'US'))
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2319,7 +2239,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsRealmCode(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -2332,9 +2252,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_REALM_CODE,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsRealmCode"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_REALM_CODE,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRealmCode"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -2343,30 +2263,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsTitle(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Title</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsTitle(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.title.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsTitle(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsTitle(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.title.oclIsUndefined()
+	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2376,7 +2276,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsTitle(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -2389,9 +2289,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TITLE,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsTitle"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TITLE,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTitle"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;
@@ -2407,7 +2307,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.typeId.oclIsUndefined()";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.typeId.oclIsUndefined() or self.typeId.isNullFlavorUndefined()) implies (not self.typeId.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsTypeId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Type Id</em>}' invariant operation.
@@ -2420,10 +2320,110 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id.oclIsUndefined() or self.id.isNullFlavorUndefined()) implies (not self.id.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsTitle(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Title</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsTitle(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsTitle(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Title</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsTitle(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsEffectiveTime(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsEffectiveTime(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsEffectiveTime(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsEffectiveTime(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Language Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Language Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.typeId.oclIsUndefined()
+	 * (self.typeId.oclIsUndefined() or self.typeId.isNullFlavorUndefined()) implies (not self.typeId.oclIsUndefined())
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2433,7 +2433,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static  boolean validateGeneralHeaderConstraintsTypeId(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
+			helper.setContext(ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
@@ -2446,9 +2446,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
-						 CONSOLValidator.DIAGNOSTIC_SOURCE,
-						 CONSOLValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TYPE_ID,
-						 CONSOLPlugin.INSTANCE.getString("GeneralHeaderConstraintsTypeId"),
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TYPE_ID,
+						 ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsTypeId"),
 						 new Object [] { generalHeaderConstraints }));
 			}
 			return false;

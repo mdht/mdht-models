@@ -2,7 +2,7 @@ package org.openhealthtools.mdht.uml.cda.consol.tests;
 
 import org.eclipse.emf.common.util.Diagnostic;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.consol.CONSOLFactory;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.util.BasicValidationHandler;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -14,7 +14,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		
-		GeneralHeaderConstraints generalHeaderConstraints = CONSOLFactory.eINSTANCE.createGeneralHeaderConstraints().init();
+		GeneralHeaderConstraints generalHeaderConstraints = ConsolFactory.eINSTANCE.createGeneralHeaderConstraints().init();
 
 		try {
 			
