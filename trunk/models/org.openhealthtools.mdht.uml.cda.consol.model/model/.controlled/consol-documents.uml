@@ -42,27 +42,27 @@ the new template may or may not conform) 2.16.840.1.113883.10.20.3, &#xD;
     </ownedComment>
     <ownedRule xmi:id="_ehur8lgbEeCUJu9CrL294w" name="personHasName" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
       <ownedComment xmi:id="_ehur81gbEeCUJu9CrL294w">
-        <body>&lt;p>&lt;b>&lt;tt>Person.name&lt;/tt>  SHALL&lt;/b>  follow the convention of having each name part (e.g. given name, family name)  
-represented as a discrete &lt;b>&lt;tt>ENXP&lt;/tt>&lt;/b>.  These &lt;b>SHALL&lt;/b> be in the same order which the name normally would be written.  
-The name SHALL convey at least one &lt;tt>&lt;b>EntityName.use&lt;/b> (SET&amp;lt;CS&amp;gt;)&lt;/tt> drawn from &lt;tt>EntityNamePartQualifier&lt;/tt>
-Concept Domain / Value Set (2.16.840.1.113883.1.11.15888)  based on &lt;tt>&lt;i>EntityNamePartQualifier&lt;/i>&lt;/tt> HL7 code system 
-(2.16.840.1.113883.5.43).  
- In cases where the name has not been the full and legal name for the individual, (for example the patient changed their name 
-when married, a &quot;John Doe&quot; name for a patient was retired after determining their actual identity) the 
-&lt;tt>&lt;b>EntityName.validTime&lt;/b>( IVL&amp;lt;TS&amp;gt;)&lt;/b>&lt;/tt> &lt;b>SHOULD&lt;/b> be used.  
-This is particularly useful in matching records after such name changes, and in cases such as emergency care  and referalls using 
-a health record summary such as the Continuity of Care Document (CCD).&lt;/p>
-&lt;p>The other use case often encountered regards healthcare professionals, particularly physicians.   Because of the importance of 
-correctly indentifying an individual and linking them to their credendials (history of specialty and other certificiations),  women (and less 
-often, men) may change their names meaning the legal name now reflects taking on the family name of a spouse.  Often a physician will 
-keep their previous name for professional matters.&lt;/p>
-&lt;p>The various parts of the name are captured and represented as &lt;tt>&lt;b>EntityNamePart (ENXP)&lt;/b>&lt;/tt> .  The various parts of 
-the name are represented with the name of the part, and &lt;b>MAY&lt;/b> include the part type as an attribute, although it is redundant. 
-Individual name parts &lt;b>MAY&lt;/b>  use &lt;tt>&lt;b>EntityNamePart.qualifier&lt;/b> SET&amp;lt;CS&amp;gt;&lt;/tt> drawn from Concept Domain / 
-Value Set &lt;tt>EntityNamePartQualifier (2.16.840.1.113883.1.11.15888)&lt;/tt> based upon the HL7 Code System 
-&lt;tt>&lt;i>EntityNamePartQualifier&lt;/i> (2.16.840.1.113883.5.43)&lt;/tt> to clairify complex circumstance, such as  use of a spouses name.
-In particular noting that a name part was given at the time of adoption (code &lt;tt>&lt;b>&lt;i>AD&lt;/i>&lt;/b>&lt;/tt>), birth (code &lt;tt>&lt;b>&lt;i>BR&lt;/i>&lt;/b>&lt;/tt>),  
-and marrried name from a spouse (code &lt;tt>&lt;b>&lt;i>SP&lt;/i>&lt;/b>&lt;/tt>) can be particularly relevant.&lt;/p>
+        <body>&lt;p>&lt;b>&lt;tt>Person.name&lt;/tt>  SHALL&lt;/b>  follow the convention of having each name part (e.g. given name, family name)  &#xD;
+represented as a discrete &lt;b>&lt;tt>ENXP&lt;/tt>&lt;/b>.  These &lt;b>SHALL&lt;/b> be in the same order which the name normally would be written.  &#xD;
+The name SHALL convey at least one &lt;tt>&lt;b>EntityName.use&lt;/b> (SET&amp;lt;CS&amp;gt;)&lt;/tt> drawn from &lt;tt>EntityNamePartQualifier&lt;/tt>&#xD;
+Concept Domain / Value Set (2.16.840.1.113883.1.11.15888)  based on &lt;tt>&lt;i>EntityNamePartQualifier&lt;/i>&lt;/tt> HL7 code system &#xD;
+(2.16.840.1.113883.5.43).  &#xD;
+ In cases where the name has not been the full and legal name for the individual, (for example the patient changed their name &#xD;
+when married, a &quot;John Doe&quot; name for a patient was retired after determining their actual identity) the &#xD;
+&lt;tt>&lt;b>EntityName.validTime&lt;/b>( IVL&amp;lt;TS&amp;gt;)&lt;/tt> &lt;b>SHOULD&lt;/b> be used.  &#xD;
+This is particularly useful in matching records after such name changes, and in cases such as emergency care  and referalls using &#xD;
+a health record summary such as the Continuity of Care Document (CCD).&lt;/p>&#xD;
+&lt;p>The other use case often encountered regards healthcare professionals, particularly physicians.   Because of the importance of &#xD;
+correctly indentifying an individual and linking them to their credendials (history of specialty and other certificiations),  women (and less &#xD;
+often, men) may change their names meaning the legal name now reflects taking on the family name of a spouse.  Often a physician will &#xD;
+keep their previous name for professional matters.&lt;/p>&#xD;
+&lt;p>The various parts of the name are captured and represented as &lt;tt>&lt;b>EntityNamePart (ENXP)&lt;/b>&lt;/tt> .  The various parts of &#xD;
+the name are represented with the name of the part, and &lt;b>MAY&lt;/b> include the part type as an attribute, although it is redundant. &#xD;
+Individual name parts &lt;b>MAY&lt;/b>  use &lt;tt>&lt;b>EntityNamePart.qualifier&lt;/b> SET&amp;lt;CS&amp;gt;&lt;/tt> drawn from Concept Domain / &#xD;
+Value Set &lt;tt>EntityNamePartQualifier (2.16.840.1.113883.1.11.15888)&lt;/tt> based upon the HL7 Code System &#xD;
+&lt;tt>&lt;i>EntityNamePartQualifier&lt;/i> (2.16.840.1.113883.5.43)&lt;/tt> to clairify complex circumstance, such as  use of a spouses name.&#xD;
+In particular noting that a name part was given at the time of adoption (code &lt;tt>&lt;b>&lt;i>AD&lt;/i>&lt;/b>&lt;/tt>), birth (code &lt;tt>&lt;b>&lt;i>BR&lt;/i>&lt;/b>&lt;/tt>),  &#xD;
+and marrried name from a spouse (code &lt;tt>&lt;b>&lt;i>SP&lt;/i>&lt;/b>&lt;/tt>) can be particularly relevant.&lt;/p>&#xD;
 &lt;p>Finally, the name of the person &lt;b>MAY&lt;/b> have the name as it should appear with proper spacing as the &lt;tt>&lt;b>PersonName.formatted&lt;/b> ST&lt;/tt>&lt;/p></body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehur9FgbEeCUJu9CrL294w">
@@ -130,17 +130,16 @@ which uses HL7 code system NullFlavor  2.16.840.1.113883.5.1008.</body>
     </ownedRule>
     <ownedRule xmi:id="_ehusAFgbEeCUJu9CrL294w" name="telephoneMatchesRegex" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
       <ownedComment xmi:id="_ehusAVgbEeCUJu9CrL294w">
-        <body>The telecom element is used to provide a contact telephone number for the various&#xD;
+        <body>&lt;p>The telecom element is used to provide a contact telephone number for the various&#xD;
 participants that require it. The value attribute ofthis elements is a URL that specifies&#xD;
-the telephone number, as indicated by the TEL data type.</body>
-      </ownedComment>
-      <ownedComment xmi:id="_ehusAlgbEeCUJu9CrL294w">
-        <body>All telephone numbers are to be encoded using a restricted form of the tel: URL scheme. &#xD;
+the telephone number, as indicated by the TEL data type.&lt;/p>&#xD;
+&lt;p>All telephone numbers are to be encoded using a restricted form of the tel: URL scheme. &#xD;
 A telephone number used for voice calls begins with the URL scheme tel:. If the&#xD;
 number is a global phone number, it starts with a plus (+) sign. The remaining number&#xD;
 is made up of the dialing digits and an optional extension and may also contain visual&#xD;
 separators.
-&lt;/p>&lt;p>&lt;b>Need to update REGEX to allow for extensions&lt;/b>&lt;/p></body>
+&lt;/p>&#xD;
+&lt;p>&lt;b>Need to update REGEX to allow for extensions&lt;/b>&lt;/p></body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusA1gbEeCUJu9CrL294w">
         <language>Analysis</language>

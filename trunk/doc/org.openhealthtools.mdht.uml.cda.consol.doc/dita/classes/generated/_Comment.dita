@@ -52,7 +52,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.3.88.11.83.11"/>
-  <id root="fc3d7415-18b8-4b9c-b6a8-a12e1ceff2cd"/>
+  <id root="2f0fb6c6-7981-4e69-aeac-fcca5c64be5a"/>
   <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
   <text/>
   <statusCode code="completed"/>

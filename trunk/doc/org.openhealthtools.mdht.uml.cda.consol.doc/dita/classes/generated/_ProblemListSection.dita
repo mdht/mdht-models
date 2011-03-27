@@ -32,13 +32,13 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.3.88.11.83.103"/>
-  <id root="e7d1ad2b-daf2-4284-b167-d7d8fa6d280f"/>
+  <id root="2b8b9750-b48e-4f6e-ba39-62765282f5a6"/>
   <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
   <title>Problem list</title>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.3.88.11.83.7"/>
-      <id root="6fd90641-9bfa-4b92-a2ef-184b41084e5e"/>
+      <id root="d628b0d9-ee56-49d9-9600-b456491b12ec"/>
       <code nullFlavor="NA"/>
       <effectiveTime>
         <low value="2011"/>
@@ -47,7 +47,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.41"/>
-          <id root="6d474139-0f28-40d7-9661-7317b707767e"/>
+          <id root="5f9a7da3-564e-4be2-a129-f9cf783d125f"/>
           <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -59,7 +59,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-          <id root="60685fa0-e47c-49d3-84ee-f9ccf472fbad"/>
+          <id root="066433d8-1400-4211-99f7-13ae9f8705d5"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -69,7 +69,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.38"/>
-              <id root="dd3fa555-b011-420e-a3dd-75bdeecdcc83"/>
+              <id root="a8bb2719-973a-44c6-8c48-bcfda8a237d5"/>
               <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -81,7 +81,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
-              <id root="4fb440a4-ff11-4fac-a2ab-a37e09e96248"/>
+              <id root="258a0d0d-8d73-4b51-bb31-afea7f4e8d82"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -94,7 +94,7 @@
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.57"/>
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
-              <id root="13e7bb7a-14a2-48ec-8967-8a676d70bd87"/>
+              <id root="9591be24-cab8-4817-af60-aa62bd84e57d"/>
               <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -107,7 +107,7 @@
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.57"/>
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
-              <id root="81129ab5-489a-4646-b2f9-34d40d5e210b"/>
+              <id root="5f40ffcd-1998-40a8-867c-14c8f332e9e6"/>
               <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -119,7 +119,7 @@
           <entryRelationship>
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.3.88.11.83.11"/>
-              <id root="cd4afe2f-3968-49c1-ba5d-9c9991d6ede7"/>
+              <id root="fab7e9d6-47a6-402b-a82e-51c7eb83c1a1"/>
               <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
               <statusCode code="completed"/>
               <effectiveTime>

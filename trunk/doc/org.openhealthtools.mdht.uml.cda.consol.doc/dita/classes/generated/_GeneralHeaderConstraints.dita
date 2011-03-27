@@ -123,7 +123,7 @@ Concept Domain / Value Set (2.16.840.1.113883.1.11.15888)  based on <tt><i>Entit
 (2.16.840.1.113883.5.43).  
  In cases where the name has not been the full and legal name for the individual, (for example the patient changed their name 
 when married, a "John Doe" name for a patient was retired after determining their actual identity) the 
-<tt><b>EntityName.validTime</b>( IVL&lt;TS&gt;)</b></tt> <b>SHOULD</b> be used.  
+<tt><b>EntityName.validTime</b>( IVL&lt;TS&gt;)</tt> <b>SHOULD</b> be used.  
 This is particularly useful in matching records after such name changes, and in cases such as emergency care  and referalls using 
 a health record summary such as the Continuity of Care Document (CCD).</p>
 <p>The other use case often encountered regards healthcare professionals, particularly physicians.   Because of the importance of 
@@ -154,14 +154,16 @@ asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,
 serviceEvent/effectiveTime, ClinicalDocument/participant/time,
 serviceEvent/performer/time and encounterParticipant/time <b>SHALL</b> be precise at
 least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time zone. (CONF-CONSOL-6)</li>
-<li><b>SHALL</b> satisfy: Telephone numbers match the regular expression pattern !FIXME! (CONF-CONSOL-7)<ul><li>The telecom element is used to provide a contact telephone number for the various
+<li><b>SHALL</b> satisfy: Telephone numbers match the regular expression pattern !FIXME! (CONF-CONSOL-7)<ul><li><p>The telecom element is used to provide a contact telephone number for the various
 participants that require it. The value attribute ofthis elements is a URL that specifies
-the telephone number, as indicated by the TEL data type.</li><li>All telephone numbers are to be encoded using a restricted form of the tel: URL scheme. 
+the telephone number, as indicated by the TEL data type.</p>
+<p>All telephone numbers are to be encoded using a restricted form of the tel: URL scheme. 
 A telephone number used for voice calls begins with the URL scheme tel:. If the
 number is a global phone number, it starts with a plus (+) sign. The remaining number
 is made up of the dialing digits and an optional extension and may also contain visual
 separators.
-</p><p><b>Need to update REGEX to allow for extensions</b></p></li></ul></li>
+</p>
+<p><b>Need to update REGEX to allow for extensions</b></p></li></ul></li>
 <li><b>SHALL</b> satisfy: At least one dialing digit is present in the phone number after visual separators are removed. (CONF-CONSOL-8)</li>
 <li><b>SHALL</b> satisfy: If the telephone number is unknown it is represented using nullFlavor of UNK (CONF-CONSOL-9)<ul><li>There is no way to distinguish between an unknown phone number and an unknown
 e-mail or other telecommunications address. Therefore, the following convention will be
@@ -344,7 +346,7 @@ Concept Domain / Value Set (2.16.840.1.113883.1.11.15888)  based on <tt><i>Entit
 (2.16.840.1.113883.5.43).  
  In cases where the name has not been the full and legal name for the individual, (for example the patient changed their name 
 when married, a "John Doe" name for a patient was retired after determining their actual identity) the 
-<tt><b>EntityName.validTime</b>( IVL&lt;TS&gt;)</b></tt> <b>SHOULD</b> be used.  
+<tt><b>EntityName.validTime</b>( IVL&lt;TS&gt;)</tt> <b>SHOULD</b> be used.  
 This is particularly useful in matching records after such name changes, and in cases such as emergency care  and referalls using 
 a health record summary such as the Continuity of Care Document (CCD).</p>
 <p>The other use case often encountered regards healthcare professionals, particularly physicians.   Because of the importance of 
@@ -375,14 +377,16 @@ asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,
 serviceEvent/effectiveTime, ClinicalDocument/participant/time,
 serviceEvent/performer/time and encounterParticipant/time <b>SHALL</b> be precise at
 least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time zone. (CONF-CONSOL-6)</li>
-<li><b>SHALL</b> satisfy: Telephone numbers match the regular expression pattern !FIXME! (CONF-CONSOL-7)<ul><li>The telecom element is used to provide a contact telephone number for the various
+<li><b>SHALL</b> satisfy: Telephone numbers match the regular expression pattern !FIXME! (CONF-CONSOL-7)<ul><li><p>The telecom element is used to provide a contact telephone number for the various
 participants that require it. The value attribute ofthis elements is a URL that specifies
-the telephone number, as indicated by the TEL data type.</li><li>All telephone numbers are to be encoded using a restricted form of the tel: URL scheme. 
+the telephone number, as indicated by the TEL data type.</p>
+<p>All telephone numbers are to be encoded using a restricted form of the tel: URL scheme. 
 A telephone number used for voice calls begins with the URL scheme tel:. If the
 number is a global phone number, it starts with a plus (+) sign. The remaining number
 is made up of the dialing digits and an optional extension and may also contain visual
 separators.
-</p><p><b>Need to update REGEX to allow for extensions</b></p></li></ul></li>
+</p>
+<p><b>Need to update REGEX to allow for extensions</b></p></li></ul></li>
 <li><b>SHALL</b> satisfy: At least one dialing digit is present in the phone number after visual separators are removed. (CONF-CONSOL-8)</li>
 <li><b>SHALL</b> satisfy: If the telephone number is unknown it is represented using nullFlavor of UNK (CONF-CONSOL-9)<ul><li>There is no way to distinguish between an unknown phone number and an unknown
 e-mail or other telecommunications address. Therefore, the following convention will be
@@ -486,7 +490,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <realmCode code="US"/>
   <templateId root="2.16.840.1.113883.10.20.3"/>
-  <id root="9ea648e5-fcc9-4547-af8c-1600ea5d63fb"/>
+  <id root="2667f561-9742-4179-bbba-fb65d9dcb05e"/>
   <code/>
   <title/>
   <effectiveTime/>
