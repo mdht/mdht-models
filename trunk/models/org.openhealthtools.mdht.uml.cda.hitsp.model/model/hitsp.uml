@@ -339,15 +339,10 @@
       <ownedComment xmi:id="_mGksABdlEeCf9aMNaCAtDQ">
         <body>Defines a coded entry describing a procedure performed on a patient.</body>
       </ownedComment>
-      <ownedRule xmi:id="_zTQPEBdtEeCf9aMNaCAtDQ" name="hasCodeCode" constrainedElement="_KYNNMKDlEd-dVeaMP0XXQw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_sbysYBeLEeCf9aMNaCAtDQ">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>The code/@code attribute is present.</body>
-          <body>not self.code.code.oclIsUndefined()</body>
-        </specification>
-      </ownedRule>
       <ownedRule xmi:id="_05OHUBdtEeCf9aMNaCAtDQ" name="hasCodeOriginalText" constrainedElement="_KYNNMKDlEd-dVeaMP0XXQw">
+        <ownedComment xmi:id="_SJjUgFWNEeCrQoPO8cZUSQ">
+          <body>Free text describing the Procedure</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_0RHC0BeLEeCf9aMNaCAtDQ">
           <language>Analysis</language>
           <language>OCL</language>
@@ -356,6 +351,10 @@
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_o4kiIKr_Ed-yFfcbpgNFIA" name="performerAssignedEntity" constrainedElement="_KYNNMKDlEd-dVeaMP0XXQw">
+        <ownedComment xmi:id="_V98zMFWNEeCrQoPO8cZUSQ">
+          <body>Name and other information for the person or&#xD;
+organization performed or hosted the Procedure</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_3YYaoKr_Ed-yFfcbpgNFIA">
           <language>Analysis</language>
           <language>OCL</language>
@@ -367,13 +366,26 @@
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_6yfdEDuNEd-B8KE6Jx0UNQ"/>
       </generalization>
       <ownedAttribute xmi:id="_LYNmwKDnEd-dVeaMP0XXQw" name="targetSiteCode" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_c5JqwFWNEeCrQoPO8cZUSQ">
+          <body>The anatomical site where a procedure is performed</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQRh4KDnEd-dVeaMP0XXQw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQSI8KDnEd-dVeaMP0XXQw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Ia2NoEriEd6FXKclYGEDCw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_WeiNMFWMEeCrQoPO8cZUSQ" name="code" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_bDWmwFWNEeCrQoPO8cZUSQ">
+          <body>This is a coded value describing the type of the&#xD;
+Procedure</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WeiNMVWMEeCrQoPO8cZUSQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WeiNMlWMEeCrQoPO8cZUSQ" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_okNzQErhEd6FXKclYGEDCw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-procedures.uml#_nu2ekFQEEeCl3PxyJ8BBuQ"/>
+      </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" href=".controlled/hitsp-surgeries.uml#_AMET4KDmEd-dVeaMP0XXQw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/hitsp-encounters.uml#_x6SxkKsQEd-yFfcbpgNFIA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/hitsp-encounters.uml#_DK4n4LSOEd-U7amR23RAJw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/hitsp-medications.uml#_Vbow8ew9Ed-HcKrkbxroPA"/>
@@ -475,6 +487,13 @@ resolved</body>
       </ownedEnd>
       <memberEnd href=".controlled/hitsp-medications.uml#_8T_OYE9VEeCYjrG3z1gQrQ"/>
       <memberEnd href="#_8T_1cE9VEeCYjrG3z1gQrQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cuKPoVV1EeCw2ulF0_tZWA">
+      <ownedEnd xmi:id="_cuK2sFV1EeCw2ulF0_tZWA" association="_cuKPoVV1EeCw2ulF0_tZWA">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-surgeries.uml#_OCM5cMfuEd6VjLXh4DcWSg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-surgeries.uml#_cuJokFV1EeCw2ulF0_tZWA"/>
+      <memberEnd href="#_cuK2sFV1EeCw2ulF0_tZWA"/>
     </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -631,7 +650,7 @@ resolved</body>
   <CDA:ConstraintValidation xmi:id="_Q1DGwPyYEd-RgJ5u3I0u5A" severity="WARNING" base_Constraint="_MztYQPyYEd-RgJ5u3I0u5A">
     <ruleId>C83-[DE-2.01-CDA-5]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_5yVLUBdtEeCf9aMNaCAtDQ" severity="WARNING" base_Constraint="_zTQPEBdtEeCf9aMNaCAtDQ"/>
+  <CDA:ConstraintValidation xmi:id="_5yVLUBdtEeCf9aMNaCAtDQ" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_6S2ecBdtEeCf9aMNaCAtDQ" base_Constraint="_05OHUBdtEeCf9aMNaCAtDQ"/>
   <CDA:ConstraintValidation xmi:id="_Qey1ABeWEeCf9aMNaCAtDQ" severity="WARNING" base_Constraint="_K7iAwBeWEeCf9aMNaCAtDQ">
     <ruleId>C154-[DE-15.03-1]</ruleId>
@@ -649,4 +668,10 @@ resolved</body>
   <CDA:ConstraintValidation xmi:id="_szRzgEkIEeCOWNbpDoETQw" base_Constraint="_pH_0kEkIEeCOWNbpDoETQw">
     <ruleId>C83-[DE-10-CDA-1]</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:AssociationValidation xmi:id="_dfp-AFV1EeCw2ulF0_tZWA" base_Association="_cuKPoVV1EeCw2ulF0_tZWA">
+    <ruleId>C83-[CT-108-2]</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_WeiNM1WMEeCrQoPO8cZUSQ" severity="WARNING" base_Property="_WeiNMFWMEeCrQoPO8cZUSQ">
+    <ruleId>CONF-433</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

@@ -566,7 +566,6 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-payers.uml#_8LwHcMJqEd6-XpBv2uxYrQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-planOfCare.uml#_azWbgMJuEd6-XpBv2uxYrQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-procedures.uml#_T9G4QMJ1Ed6-XpBv2uxYrQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_F9_RAMKAEd6-XpBv2uxYrQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_IuPLEMKAEd6-XpBv2uxYrQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/ccd-medications.uml#_JSLJIMKBEd6-XpBv2uxYrQ"/>
@@ -767,6 +766,34 @@
       </ownedEnd>
       <memberEnd href=".controlled/ccd-medications.uml#_LXCXYD6uEeCAHY6aowfd8Q"/>
       <memberEnd href="#_LXCXYz6uEeCAHY6aowfd8Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sx1SQlZfEeCvPvJeMYeitg">
+      <ownedEnd xmi:id="_sx1SQ1ZfEeCvPvJeMYeitg" association="_sx1SQlZfEeCvPvJeMYeitg">
+        <type xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-procedures.uml#_sx1SQFZfEeCvPvJeMYeitg"/>
+      <memberEnd href="#_sx1SQ1ZfEeCvPvJeMYeitg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_V6ZLAlZgEeCvPvJeMYeitg">
+      <ownedEnd xmi:id="_V6ZLA1ZgEeCvPvJeMYeitg" association="_V6ZLAlZgEeCvPvJeMYeitg">
+        <type xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-procedures.uml#_V6ZLAFZgEeCvPvJeMYeitg"/>
+      <memberEnd href="#_V6ZLA1ZgEeCvPvJeMYeitg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_W2Wc8lZgEeCvPvJeMYeitg">
+      <ownedEnd xmi:id="_W2Wc81ZgEeCvPvJeMYeitg" association="_W2Wc8lZgEeCvPvJeMYeitg">
+        <type xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-procedures.uml#_W2Wc8FZgEeCvPvJeMYeitg"/>
+      <memberEnd href="#_W2Wc81ZgEeCvPvJeMYeitg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Yse4IlZgEeCvPvJeMYeitg">
+      <ownedEnd xmi:id="_Yse4I1ZgEeCvPvJeMYeitg" association="_Yse4IlZgEeCvPvJeMYeitg">
+        <type xmi:type="uml:Class" href=".controlled/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-procedures.uml#_Yse4IFZgEeCvPvJeMYeitg"/>
+      <memberEnd href="#_Yse4I1ZgEeCvPvJeMYeitg"/>
     </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1127,4 +1154,54 @@
   <CDA:AssociationValidation xmi:id="_MsJJID6uEeCAHY6aowfd8Q" severity="INFO" base_Association="_LXCXYj6uEeCAHY6aowfd8Q">
     <ruleId>CONF-369</ruleId>
   </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_LWnS4FSiEeClXYwIPeDNAQ" severity="INFO">
+    <ruleId>CONF-437</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_kaZHIFSnEeClXYwIPeDNAQ" severity="INFO" typeCode="SUBJ">
+    <ruleId>CONF-445</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_sPKrAFSnEeClXYwIPeDNAQ" severity="INFO" typeCode="SUBJ">
+    <ruleId>CONF-441</ruleId>
+    <ruleId>CONF-333</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_MvMnsFSoEeClXYwIPeDNAQ" severity="INFO" typeCode="COMP">
+    <ruleId>CONF-446</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:AssociationValidation xmi:id="_t4MYIFTEEeCnnNnsbG2N3Q" severity="INFO">
+    <ruleId>CONF-437</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_q9uVoFTFEeCnnNnsbG2N3Q" severity="INFO" typeCode="SUBJ">
+    <ruleId>CONF-441</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_7GmdsFTFEeCnnNnsbG2N3Q" severity="INFO" typeCode="SUBJ">
+    <ruleId>CONF-445</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_F9S6cFTGEeCnnNnsbG2N3Q" severity="INFO" typeCode="COMP">
+    <ruleId>CONF-446</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:AssociationValidation xmi:id="_tiOrAFTLEeCnnNnsbG2N3Q" severity="INFO">
+    <ruleId>CONF-437</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_zA8WcFTLEeCnnNnsbG2N3Q" severity="INFO" typeCode="SUBJ">
+    <ruleId>CONF-441</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_0vCP8FTLEeCnnNnsbG2N3Q" severity="INFO" typeCode="SUBJ">
+    <ruleId>CONF-445</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_1tW5YFTLEeCnnNnsbG2N3Q" severity="INFO" typeCode="COMP">
+    <ruleId>CONF-446</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:AssociationValidation xmi:id="_MFErsFZgEeCvPvJeMYeitg" severity="INFO" base_Association="_sx1SQlZfEeCvPvJeMYeitg">
+    <ruleId>CONF-437</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_gd-egFZgEeCvPvJeMYeitg" message="" severity="INFO" base_Association="_V6ZLAlZgEeCvPvJeMYeitg" typeCode="SUBJ">
+    <ruleId>CONF-441</ruleId>
+    <ruleId>CONF-333</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_mWhmQFZgEeCvPvJeMYeitg" severity="INFO" base_Association="_W2Wc8lZgEeCvPvJeMYeitg" typeCode="SUBJ">
+    <ruleId>CONF-445</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_plKsgFZgEeCvPvJeMYeitg" message="" severity="INFO" base_Association="_Yse4IlZgEeCvPvJeMYeitg" typeCode="COMP">
+    <ruleId>CONF-446</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>

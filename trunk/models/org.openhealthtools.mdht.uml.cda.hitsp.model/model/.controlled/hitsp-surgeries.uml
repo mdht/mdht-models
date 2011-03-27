@@ -4,16 +4,19 @@
     <generalization xmi:id="_UcKsMMfuEd6VjLXh4DcWSg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-codedSurgeries.uml#_9fsJYMftEd6VjLXh4DcWSg"/>
     </generalization>
-    <ownedAttribute xmi:id="_AMDs0KDmEd-dVeaMP0XXQw" name="surgicalProcedure" association="_AMET4KDmEd-dVeaMP0XXQw">
+    <ownedAttribute xmi:id="_cuJokFV1EeCw2ulF0_tZWA" name="procedure">
       <type xmi:type="uml:Class" href="../hitsp.uml#_KYNNMKDlEd-dVeaMP0XXQw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ne4cEKrjEd-yFfcbpgNFIA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nfFQYKrjEd-yFfcbpgNFIA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kxxgwFV1EeCw2ulF0_tZWA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kxyH0FV1EeCw2ulF0_tZWA" value="1"/>
+      <association href="../hitsp.uml#_cuKPoVV1EeCw2ulF0_tZWA"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_AMET4KDmEd-dVeaMP0XXQw" memberEnd="_AMDs0KDmEd-dVeaMP0XXQw _AMET4aDmEd-dVeaMP0XXQw">
-    <ownedEnd xmi:id="_AMET4aDmEd-dVeaMP0XXQw" type="_OCM5cMfuEd6VjLXh4DcWSg" association="_AMET4KDmEd-dVeaMP0XXQw"/>
-  </uml:Association>
+  <uml:Association xmi:id="_AMET4KDmEd-dVeaMP0XXQw"/>
   <CDA:CDATemplate xmi:id="_VedPoMfuEd6VjLXh4DcWSg" base_Class="_OCM5cMfuEd6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.108" assigningAuthorityName="HITSP C83"/>
-  <CDA:ConformsTo xmi:id="_rGPdEFF6Ed-Lud-5SYZhMw" base_Generalization="_UcKsMMfuEd6VjLXh4DcWSg" requiresParentId="true"/>
-  <CDA:AssociationValidation xmi:id="_BsF8MKDmEd-dVeaMP0XXQw" base_Association="_AMET4KDmEd-dVeaMP0XXQw"/>
+  <CDA:ConformsTo xmi:id="_rGPdEFF6Ed-Lud-5SYZhMw" base_Generalization="_UcKsMMfuEd6VjLXh4DcWSg" requiresParentId="true">
+    <ruleId>C83-[CT-108-1]</ruleId>
+  </CDA:ConformsTo>
+  <CDA:AssociationValidation xmi:id="_BsF8MKDmEd-dVeaMP0XXQw" base_Association="_AMET4KDmEd-dVeaMP0XXQw">
+    <ruleId>C83-[CT-108-2]</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
