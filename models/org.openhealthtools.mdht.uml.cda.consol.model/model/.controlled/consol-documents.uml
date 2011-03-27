@@ -5,12 +5,10 @@
       <references xmi:type="uml:Class" href="../consol-header.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
     </eAnnotations>
     <ownedComment xmi:id="_ehur8VgbEeCUJu9CrL294w">
-      <body>&lt;p>This section describes constraints that apply to CDA&#xD;&#xD;
-documents defined for general exchange in the US realm. The template defined here should be reused&#xD;&#xD;
-wherever these general header constraints are applied.&lt;/p>&#xD;&#xD;
-&lt;p>To support communication between the receiver of the document and the patient or any&#xD;&#xD;
-other person or organization mentioned within it, the elements representing them will&#xD;&#xD;
-be named.&lt;/p>&#xD;&#xD;
+      <body>&lt;p>This template describes constraints that apply to CDA documents defined for general exchange in the US realm. The template defined here should be reused&#xD;&#xD;
+wherever these general header constraints are applied. To support communication between the receiver of the &#xD;
+document and the patient or any&#xD;&#xD;
+other person or organization mentioned within it, the elements representing them will be named.&lt;/p>&#xD;&#xD;
 &lt;p>When name, address, or telecom information is unknown and where these elements are&#xD;&#xD;
 required to be present, as with CDA conformance if the information is unknown, these&#xD;&#xD;
 elements will be represented using an appropriate value for the nullFlavor attribute on&#xD;&#xD;
@@ -138,14 +136,13 @@ A telephone number used for voice calls begins with the URL scheme tel:. If the&
 number is a global phone number, it starts with a plus (+) sign. The remaining number&#xD;
 is made up of the dialing digits and an optional extension and may also contain visual&#xD;
 separators.
-&lt;/p>&#xD;
-&lt;p>&lt;b>Need to update REGEX to allow for extensions&lt;/b>&lt;/p></body>
+&lt;/p></body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusA1gbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
         <language>XPath</language>
-        <body>Telephone numbers match the regular expression pattern !FIXME!</body>
+        <body>Telephone numbers match the regular expression pattern &quot;tel:\\+?[-0-9().]+(;ext=[0-9]+|)&quot;</body>
         <body>-- implemented in Java using XPath selector</body>
         <body>//*[self::cda:telecom]</body>
       </specification>
@@ -177,7 +174,8 @@ address element within this DSTU.</body>
         <body>//*[self::cda:telecom]</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusCVgbEeCUJu9CrL294w" name="typeIdExtension" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusCVgbEeCUJu9CrL294w" name="typeIdExtension">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fQZaNkxwEd6h-an5IXo-DA"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusClgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -185,7 +183,8 @@ address element within this DSTU.</body>
         <body>self.typeId.extension = 'POCD_HD000040'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusC1gbEeCUJu9CrL294w" name="idRootFormat" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusC1gbEeCUJu9CrL294w" name="idRootFormat">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_p0WCQEAIEd6wZe6nFLrjsw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusDFgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>The id/@root attribute is a syntactically correct UUID or OID.</body>
@@ -226,25 +225,28 @@ compatibility with other standards and Implementation Guides.</body>
         <body>self.id->select((not id.root.oclIsUndefined()) and id.root.size() > 64 )</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusFVgbEeCUJu9CrL294w" name="languageCodeForm" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusFVgbEeCUJu9CrL294w" name="languageCodeForm">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3qLBoEokEd6c3qsAxlFHaQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusFlgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>languageCode has the form nn, or nn-CC.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusF1gbEeCUJu9CrL294w" name="languageCodeLanguage" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusF1gbEeCUJu9CrL294w" name="languageCodeLanguage">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3qLBoEokEd6c3qsAxlFHaQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusGFgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>The nn portion of languageCode is a legal ISO-639-1 language code in lowercase.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusGVgbEeCUJu9CrL294w" name="languageCodeCountry" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusGVgbEeCUJu9CrL294w" name="languageCodeCountry">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3qLBoEokEd6c3qsAxlFHaQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusGlgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>The CC portion languageCode, if present, SHALL be an ISO-3166 country code in uppercase.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusG1gbEeCUJu9CrL294w" name="setIdAndVersionNumber" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusG1gbEeCUJu9CrL294w" name="setIdAndVersionNumber">
       <ownedComment xmi:id="_ehusHFgbEeCUJu9CrL294w">
         <body>The ClinicalDocument/setId element uses the instance identifier (II) data type. The root&#xD;
 attribute is a UUID or OID that uniquely identifies the scope of the identifier, and the&#xD;
@@ -253,6 +255,7 @@ versions of the document. See Document Identification, Revisions, and Addenda in
 Section 4.2.3.1 of the CDA Specification for some examples showing the use of the setId&#xD;
 element.</body>
       </ownedComment>
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_7JF_kEokEd6c3qsAxlFHaQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusHVgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -260,7 +263,8 @@ element.</body>
         <body>(self.setId.oclIsUndefined() and self.versionNumber.oclIsUndefined())&#xD;&#xA;   xor (not self.setId.oclIsUndefined() and not self.versionNumber.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusHlgbEeCUJu9CrL294w" name="setIdAndIdAreUnique" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusHlgbEeCUJu9CrL294w" name="setIdAndIdAreUnique">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_7JF_kEokEd6c3qsAxlFHaQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusH1gbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -279,7 +283,8 @@ element.</body>
         <body>self.copyTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusI1gbEeCUJu9CrL294w" name="hasRecordTargetPatientRole" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusI1gbEeCUJu9CrL294w" name="hasRecordTargetPatientRole">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_EC35wUALEd6wZe6nFLrjsw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusJFgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -287,7 +292,8 @@ element.</body>
         <body>self.recordTarget->size() > 0 and self.recordTarget->exists(target : cda::RecordTarget | not target.patientRole.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusJVgbEeCUJu9CrL294w" name="hasPatientBirthTime" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusJVgbEeCUJu9CrL294w" name="hasPatientBirthTime">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_EC35wUALEd6wZe6nFLrjsw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusJlgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -295,10 +301,8 @@ element.</body>
         <body>self.recordTarget->forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()&#xD;&#xA;   implies (not target.patientRole.patient.birthTime.value.oclIsUndefined()&#xD;&#xA;      or not target.patientRole.patient.birthTime.nullFlavor.oclIsUndefined()))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusJ1gbEeCUJu9CrL294w" name="hasAdministrativeGenderCode" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
-      <ownedComment xmi:id="_ehusKFgbEeCUJu9CrL294w">
-        <body>TODO: add OCL test for terminology</body>
-      </ownedComment>
+    <ownedRule xmi:id="_ehusJ1gbEeCUJu9CrL294w" name="hasAdministrativeGenderCode">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_EC35wUALEd6wZe6nFLrjsw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusKVgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -312,13 +316,15 @@ element.</body>
         <body>The maritalStatusCode, religiousAffiliationCode, raceCode and&#xD;&#xA;ethnicGroupCode MAY be present. If maritalStatusCode, religiousAffiliationCode,&#xD;&#xA;raceCode and ethnicGroupCode elements are present, they SHOULD be encoded using&#xD;&#xA;the appropriate HL7 vocabularies.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusLFgbEeCUJu9CrL294w" name="hasGuardianForMinors" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusLFgbEeCUJu9CrL294w" name="hasGuardianForMinors">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_EC35wUALEd6wZe6nFLrjsw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusLVgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>The guardian element is present when the patient is a minor child.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusLlgbEeCUJu9CrL294w" name="hasProviderOrganization" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusLlgbEeCUJu9CrL294w" name="hasProviderOrganization">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_EC35wUALEd6wZe6nFLrjsw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusL1gbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -326,11 +332,12 @@ element.</body>
         <body>self.recordTarget->exists(target : cda::RecordTarget | not target.patientRole.providerOrganization.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusMFgbEeCUJu9CrL294w" name="hasAuthorTime" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusMFgbEeCUJu9CrL294w" name="hasAuthorTime">
       <ownedComment xmi:id="_ehusMVgbEeCUJu9CrL294w">
         <body>The author/time element represents the start time of the author's&#xD;
 participation in the creation of the clinical document.</body>
       </ownedComment>
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hhbysUcgEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusMlgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -338,7 +345,8 @@ participation in the creation of the clinical document.</body>
         <body>self.author->forAll(author : cda::Author | not author.time.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusM1gbEeCUJu9CrL294w" name="hasAssignedAuthorId" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusM1gbEeCUJu9CrL294w" name="hasAssignedAuthorId">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hhbysUcgEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusNFgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -346,7 +354,8 @@ participation in the creation of the clinical document.</body>
         <body>self.author->forAll(author : cda::Author | author.assignedAuthor.id->size() > 0)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusNVgbEeCUJu9CrL294w" name="hasAssignedAuthorPersonOrDevice" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusNVgbEeCUJu9CrL294w" name="hasAssignedAuthorPersonOrDevice">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hhbysUcgEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusNlgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -354,7 +363,8 @@ participation in the creation of the clinical document.</body>
         <body>self.author->forAll(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() &#xD;&#xA;   or not author.assignedAuthor.assignedAuthoringDevice.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusN1gbEeCUJu9CrL294w" name="hasDataEntererAssignedPerson" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusN1gbEeCUJu9CrL294w" name="hasDataEntererAssignedPerson">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XtQ4AEciEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusOFgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -362,7 +372,8 @@ participation in the creation of the clinical document.</body>
         <body>not self.dataEnterer.oclIsUndefined() implies not self.dataEnterer.assignedEntity.assignedPerson.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusOVgbEeCUJu9CrL294w" name="hasDataEntererTime" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusOVgbEeCUJu9CrL294w" name="hasDataEntererTime">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XtQ4AEciEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusOlgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -370,7 +381,8 @@ participation in the creation of the clinical document.</body>
         <body>not self.dataEnterer.oclIsUndefined() implies not self.dataEnterer.time.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusO1gbEeCUJu9CrL294w" name="hasInformant" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusO1gbEeCUJu9CrL294w" name="hasInformant">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xsp1YEcmEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusPFgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -378,7 +390,8 @@ participation in the creation of the clinical document.</body>
         <body>self.informant->size() > 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusPVgbEeCUJu9CrL294w" name="hasInformantAssignedPersonOrRelatedPerson" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusPVgbEeCUJu9CrL294w" name="hasInformantAssignedPersonOrRelatedPerson">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xsp1YEcmEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusPlgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -386,22 +399,20 @@ participation in the creation of the clinical document.</body>
         <body>self.informant->forAll(i : cda::Informant12 | not i.assignedEntity.assignedPerson.oclIsUndefined()&#xD;&#xA;   or not i.relatedEntity.relatedPerson.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusP1gbEeCUJu9CrL294w" name="informantHealthcareProvider" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusP1gbEeCUJu9CrL294w" name="informantHealthcareProvider">
       <ownedComment xmi:id="_ehusQFgbEeCUJu9CrL294w">
         <body>Assigned health care providers may be a source of information when a document is&#xD;
 created. (e.g., a nurse's aide who provides information about a recent significant health&#xD;
 care event that occurred within an acute care facility.) In these cases, the&#xD;
 assignedEntity element is used.</body>
       </ownedComment>
-      <ownedComment xmi:id="_ehusQVgbEeCUJu9CrL294w">
-        <body>TODO: how to determin if informant is a healthcare provider?  condition for implementing OCL</body>
-      </ownedComment>
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xsp1YEcmEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusQlgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>When the informant is a healthcare provider with an assigned role, the&#xD;&#xA;informant SHALL be represented using the assignedEntity element</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusQ1gbEeCUJu9CrL294w" name="informantRelatedEntityClassCode" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusQ1gbEeCUJu9CrL294w" name="informantRelatedEntityClassCode">
       <ownedComment xmi:id="_ehusRFgbEeCUJu9CrL294w">
         <body>&lt;p>When the informant is a personal relation, that informant is represented in the&#xD;
 relatedEntity element. The code element of the relatedEntity describes the relationship&#xD;
@@ -409,28 +420,31 @@ between the informant and the patient.&lt;/p>&#xD;
 &lt;p>The relationship between the informant and the patient needs to be described to help&#xD;
 the receiver of the clinical document understand the information in the document.&lt;/p></body>
       </ownedComment>
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xsp1YEcmEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusRVgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>Allowable values for informant/relatedEntity/@classCode SHALL be CON,&#xD;&#xA;PRS, CAREGIVER, AGNT or PROV from the RoleClass vocabulary.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusRlgbEeCUJu9CrL294w" name="informantRelatedEntityClassCodePRS" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusRlgbEeCUJu9CrL294w" name="informantRelatedEntityClassCodePRS">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xsp1YEcmEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusR1gbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>When relatedEntity/@classCode is PRS, values in relatedEntity/code&#xD;&#xA;SHALL come from the HL7 PersonalRelationshipRoleType vocabulary or from&#xD;&#xA;SNOMED, any subtype of “Person in the family” (303071001).</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusSFgbEeCUJu9CrL294w" name="informantIsContact" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusSFgbEeCUJu9CrL294w" name="informantIsContact">
       <ownedComment xmi:id="_ehusSVgbEeCUJu9CrL294w">
         <body>Individuals with no prior personal relationship to the patient (e.g., a witness to a&#xD;
 significant health care event) may provide information about the patient.</body>
       </ownedComment>
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xsp1YEcmEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusSlgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>When an informant is an unrelated person not otherwise specified, the&#xD;&#xA;value relatedEntity/@classCode SHALL be set to CON to indicate that this person is a&#xD;&#xA;contact.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusS1gbEeCUJu9CrL294w" name="healthcareProviderRelatedEntityClassCode" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusS1gbEeCUJu9CrL294w" name="healthcareProviderRelatedEntityClassCode">
       <ownedComment xmi:id="_ehusTFgbEeCUJu9CrL294w">
         <body>A health care provider who does not have an assigned role at the institution may&#xD;
 provide information. To record an informant that does not have an assigned role that&#xD;
@@ -438,24 +452,28 @@ can be represented within the context of the document, the information will be&#
 represented using the relatedEntity element and the value of relatedEntity/@classCode&#xD;
 will be set to PROV.</body>
       </ownedComment>
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xsp1YEcmEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusTVgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>When the informant is a healthcare provider without an assigned role,&#xD;&#xA;the informant SHALL be represented using the relatedEntity element and the value of&#xD;&#xA;relatedEntity/@classCode SHALL be set to PROV.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusTlgbEeCUJu9CrL294w" name="healthcareProviderRelatedEntityCode" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusTlgbEeCUJu9CrL294w" name="healthcareProviderRelatedEntityCode">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xsp1YEcmEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusT1gbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>When the informant is a healthcare provider, the value of relatedEntity/code SHOULD be present and indicate the type of healthcare provider.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusUFgbEeCUJu9CrL294w" name="hasInformationRecipientIntendedRecipient" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusUFgbEeCUJu9CrL294w" name="hasInformationRecipientIntendedRecipient">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_uxuZgUcfEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusUVgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <body>The ClinicalDocument/informationRecipient element MAY be present.&#xD;&#xA;When informationRecipient is used, at least one&#xD;&#xA;informationRecipient/intendedRecipient/informationRecipient or&#xD;&#xA;informationRecipient/intendedRecipient/receivedOrganization SHALL be present.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusUlgbEeCUJu9CrL294w" name="legalAuthenticatorHasAssignedPerson" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusUlgbEeCUJu9CrL294w" name="legalAuthenticatorHasAssignedPerson">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__0lIcEcdEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusU1gbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -463,7 +481,8 @@ will be set to PROV.</body>
         <body>not self.legalAuthenticator.oclIsUndefined() implies not self.legalAuthenticator.assignedEntity.assignedPerson.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ehusVFgbEeCUJu9CrL294w" name="authenticatorHasAssignedPerson" constrainedElement="_ehur8FgbEeCUJu9CrL294w">
+    <ownedRule xmi:id="_ehusVFgbEeCUJu9CrL294w" name="authenticatorHasAssignedPerson">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bofJsUcdEd6besF9iFIJkQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ehusVVgbEeCUJu9CrL294w">
         <language>Analysis</language>
         <language>OCL</language>
@@ -500,6 +519,12 @@ will be set to PROV.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ehusc1gbEeCUJu9CrL294w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ehusdFgbEeCUJu9CrL294w" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fQPpMExwEd6h-an5IXo-DA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_te3ZYFi6EeCk1IcORH7ylg" name="setId" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_te4AcFi6EeCk1IcORH7ylg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_te4AcVi6EeCk1IcORH7ylg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_7JF_kEokEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ehuselgbEeCUJu9CrL294w" name="typeId" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_ehuse1gbEeCUJu9CrL294w">
@@ -596,19 +621,19 @@ treatment or implementation of confidentiality.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eib2k1gbEeCUJu9CrL294w" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eib2lFgbEeCUJu9CrL294w" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_L4KTUFgcEeCIk4xKC_n0QA" name="dataEnterer" association="_L4NWoVgcEeCIk4xKC_n0QA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L4NWoFgcEeCIk4xKC_n0QA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ir2MQFi0EeC3nbGPCc6gQw" name="informant">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_GUBDUEcZEd6besF9iFIJkQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ir5PkFi0EeC3nbGPCc6gQw"/>
+      <association href="../consol.uml#_Ir52oFi0EeC3nbGPCc6gQw"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_eicdolgbEeCUJu9CrL294w" name="custodian" visibility="private" aggregation="composite" association="_eidEsFgbEeCUJu9CrL294w">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mMYIkEcEEd6besF9iFIJkQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eicdo1gbEeCUJu9CrL294w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eicdpFgbEeCUJu9CrL294w" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_eidEslgbEeCUJu9CrL294w" name="component" visibility="private" aggregation="composite" association="_eidrwFgbEeCUJu9CrL294w">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UOJoUDxXEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eidEs1gbEeCUJu9CrL294w" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eidEtFgbEeCUJu9CrL294w" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_L4KTUFgcEeCIk4xKC_n0QA" name="dataEnterer" association="_L4NWoVgcEeCIk4xKC_n0QA">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L4NWoFgcEeCIk4xKC_n0QA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Q84xcFgcEeCIk4xKC_n0QA" name="informationRecipient" association="_Q84xclgcEeCIk4xKC_n0QA">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_I5t6QEcZEd6besF9iFIJkQ"/>
@@ -621,6 +646,11 @@ treatment or implementation of confidentiality.</body>
     <ownedAttribute xmi:id="_aZB7wFgcEeCIk4xKC_n0QA" name="authenticator" association="_aZCi0FgcEeCIk4xKC_n0QA">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BkHyQEcEEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aZB7wVgcEeCIk4xKC_n0QA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_eidEslgbEeCUJu9CrL294w" name="component" visibility="private" aggregation="composite" association="_eidrwFgbEeCUJu9CrL294w">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UOJoUDxXEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eidEs1gbEeCUJu9CrL294w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eidEtFgbEeCUJu9CrL294w" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_eib2kFgbEeCUJu9CrL294w" memberEnd="_eibPgFgbEeCUJu9CrL294w _eib2kVgbEeCUJu9CrL294w">

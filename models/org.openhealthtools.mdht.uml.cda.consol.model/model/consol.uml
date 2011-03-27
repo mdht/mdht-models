@@ -67,6 +67,13 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_Q84xclgcEeCIk4xKC_n0QA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_Y17xUlgcEeCIk4xKC_n0QA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_aZCi0FgcEeCIk4xKC_n0QA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ir52oFi0EeC3nbGPCc6gQw">
+      <ownedEnd xmi:id="_Ir6dsFi0EeC3nbGPCc6gQw" association="_Ir52oFi0EeC3nbGPCc6gQw">
+        <type xmi:type="uml:Class" href=".controlled/consol-documents.uml#_ehur8FgbEeCUJu9CrL294w"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-documents.uml#_Ir2MQFi0EeC3nbGPCc6gQw"/>
+      <memberEnd href="#_Ir6dsFi0EeC3nbGPCc6gQw"/>
+    </packagedElement>
     <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
       <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
