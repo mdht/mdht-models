@@ -58,7 +58,7 @@ ASTM/HL7 Continuity of Care Document).</p>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
-  <id root="55bb9877-cf08-49e2-9717-9e64385776c3"/>
+  <id root="766d1c5d-9130-4176-84d5-80eb1a93caff"/>
   <code/>
   <statusCode/>
   <effectiveTime>

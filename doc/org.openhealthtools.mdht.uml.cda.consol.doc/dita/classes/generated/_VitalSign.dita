@@ -55,7 +55,7 @@ The differentiation between Vital Signs and Results varies by clinical context. 
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
-  <id root="2ae892ef-9afc-45d3-99e8-bc8379a072aa"/>
+  <id root="f96c8603-06eb-4b00-9a26-a5284596be53"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <statusCode/>
   <effectiveTime>

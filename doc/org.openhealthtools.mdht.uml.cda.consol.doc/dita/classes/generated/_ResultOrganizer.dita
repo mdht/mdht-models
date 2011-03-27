@@ -60,7 +60,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.32"/>
-  <id root="31b07c74-619f-4fe9-87c9-e94b220b9a0a"/>
+  <id root="24d7f85c-6e62-48dc-ac45-e4ba63ec8501"/>
   <code/>
   <statusCode/>
   <effectiveTime>
@@ -70,7 +70,7 @@
   <component>
     <observation moodCode="EVN">
       <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
-      <id root="b20e4d9f-bfb8-4b5b-a0f8-f05f789af3e7"/>
+      <id root="7e0d5ae2-c4c0-4cf9-97de-810c0c754734"/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>

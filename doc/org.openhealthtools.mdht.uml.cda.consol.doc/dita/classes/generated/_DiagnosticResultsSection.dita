@@ -59,13 +59,13 @@ Content Modules.</p>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.3.88.11.83.122"/>
-  <id root="fb01dfca-45b1-49bc-a3eb-05ac070ae7a3"/>
+  <id root="f180c8c9-25ed-47e8-94c6-6d4c326916cf"/>
   <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="STUDIES SUMMARY"/>
   <title>STUDIES SUMMARY</title>
   <entry>
     <organizer moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.32"/>
-      <id root="db220c31-8eda-4be5-add6-62196a918dcb"/>
+      <id root="3159e43a-8433-4388-8f22-dd75afa8ba63"/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>
@@ -73,7 +73,7 @@ Content Modules.</p>
       <component>
         <observation moodCode="EVN">
           <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
-          <id root="a4c4e5cf-f035-42cc-9deb-09a0af00627f"/>
+          <id root="6ca15982-da7f-4a8e-a6e5-7a4ccf96c093"/>
           <effectiveTime>
             <low value="2011"/>
             <high value="2011"/>
@@ -85,7 +85,7 @@ Content Modules.</p>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4"/>
-      <id root="ee89916e-8d07-4a16-a60e-eff642edea41"/>
+      <id root="c628f2f6-9771-44fd-abde-eac385c1bc15"/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>
@@ -95,7 +95,7 @@ Content Modules.</p>
   <entry>
     <observation moodCode="EVN">
       <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
-      <id root="23cc3842-bde4-4174-8a3b-a8954861ffd7"/>
+      <id root="d95bb5ef-ba50-4674-9ecd-ebf5fea66369"/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>

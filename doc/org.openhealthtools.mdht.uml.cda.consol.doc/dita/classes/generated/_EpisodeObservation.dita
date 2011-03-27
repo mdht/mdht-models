@@ -46,7 +46,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.41"/>
-  <id root="2265b183-90ce-46cf-ba91-c2bceccaff6d"/>
+  <id root="ac025325-b4d7-42ea-8a75-dcb4be2f859b"/>
   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
   <statusCode code="completed"/>
   <effectiveTime>
