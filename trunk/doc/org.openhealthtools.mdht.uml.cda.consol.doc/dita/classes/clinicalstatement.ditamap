@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Clinical Statement Templates">
+<topicref href="AgeObservation.dita" type="topic" />
+<topicref href="Comment.dita" type="topic" />
+<topicref href="Condition.dita" type="topic" />
+<topicref href="ConditionEntry.dita" type="topic" />
+<topicref href="EpisodeObservation.dita" type="topic" />
+<topicref href="ExternalReference.dita" type="topic" />
+<topicref href="HealthStatusObservation.dita" type="topic" />
+<topicref href="ProblemStatusObservation.dita" type="topic" />
+<topicref href="Result.dita" type="topic" />
+<topicref href="ResultOrganizer.dita" type="topic" />
+<topicref href="Severity.dita" type="topic" />
+<topicref href="StatusObservation.dita" type="topic" />
+<topicref href="VitalSign.dita" type="topic" />
+<topicref href="VitalSignsOrganizer.dita" type="topic" />
+</map>

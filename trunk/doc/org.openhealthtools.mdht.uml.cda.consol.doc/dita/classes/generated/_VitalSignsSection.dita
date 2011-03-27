@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Vital Signs Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.3.88.11.83.119</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.3.88.11.83.119"/>
+</prolog>
+<body>
+<section id="description">
+<p>
+    This section contains current and historically relevant vital signs, such as blood pressure, heart rate,
+    respiratory rate, height, weight, body mass index, head circumference, crown-to-rump length, and pulse oximetry. The
+    section may contain all vital signs for the period of time being summarized, but at a minimum should include notable
+    vital signs such as the most recent, maximum and/or minimum, or both, baseline, or relevant trends.
+</p>
+<p>
+    Vital signs are represented like other results (as defined in <b><i>Results
+    Section</i></b>) with additional vocabulary constraints, but are aggregated into their own section in order to follow clinical
+    conventions.
+</p>
+<p>
+    The vital signs section shall contain a narrative description of the measurement results of a patient's vital signs.
+</p>
+<p>The vital signs section contains coded measurement results of a patient's vital signs.</p>
+<p>
+    The Vital Signs Section contains information documenting the patient vital signs. 
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-382, CONF-383)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-384)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-381)</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that it<ol>
+<li><b>SHALL</b> contain <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.1</tt>) (6.3.3.4.5)</li></ol></li>
+<li><b>SHOULD</b> satisfy: title Contains a case-insensitive language-insensitive string containing 'vital signs'. (CONF-385)</li>
+<li><b>SHALL</b> satisfy: Contains entries conforming to the Vital Sign module. (C83-[CT-119-2])</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-382, CONF-383)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-384)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-381)</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that it<ol>
+<li><b>SHALL</b> contain <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.1</tt>) (6.3.3.4.5)</li></ol></li>
+<li><b>SHOULD</b> satisfy: title Contains a case-insensitive language-insensitive string containing 'vital signs'. (CONF-385)</li>
+<li><b>SHALL</b> satisfy: Contains entries conforming to the Vital Sign module. (C83-[CT-119-2])</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.3.88.11.83.119"/>
+  <id root="c051e143-ff79-42de-8044-f18a86a8e5cd"/>
+  <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+  <title>Vital signs</title>
+  <entry>
+    <organizer classCode="CLUSTER" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.32"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+      <id root="ad961b7c-c3d9-4e39-abc2-b931889505c1"/>
+      <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
+          <id root="293495f9-97b5-454e-b08c-024d16803748"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+          <id root="08c9a9ec-4648-49ca-90e9-25bc0795dfc6"/>
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
+</body>
+</topic>
