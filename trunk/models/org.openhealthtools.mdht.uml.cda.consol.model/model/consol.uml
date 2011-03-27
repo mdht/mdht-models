@@ -54,6 +54,11 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-vitalsigns.uml#_aI8mRFf5EeCxTb-Xw_gdpQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-vitalsigns.uml#_aI9NUVf5EeCxTb-Xw_gdpQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-vitalsigns.uml#_aI-bdFf5EeCxTb-Xw_gdpQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_t3zK8FgDEeCwUujnxrDtRA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_t4aO81gDEeCwUujnxrDtRA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_t4a2AFgDEeCwUujnxrDtRA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_t4a2BVgDEeCwUujnxrDtRA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_t4bdEFgDEeCwUujnxrDtRA"/>
     <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
       <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
