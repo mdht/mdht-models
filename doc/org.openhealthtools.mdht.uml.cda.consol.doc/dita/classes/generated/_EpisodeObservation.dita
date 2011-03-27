@@ -12,11 +12,16 @@
 <p>Episode observations are used to distinguish among multiple occurrences of a problem or social history item. An episode observation is used to indicate that a problem act represents a new episode, distinct from other episodes of a similar concern.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-170)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-171)</li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF-174)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-172, CONF-173)</li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>value</b></tt><tt><b>/@code</b>="404684003" </tt><i>Clinical finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>), where its data type is CD (CONF-175)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-170)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-171)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF-174)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-172, CONF-173)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>value</b></tt><tt><b>/@code</b>="404684003" </tt><i>Clinical finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>), where its data type is CD (CONF-175)
+</li>
 <li>Value in an episode observation <b>SHOULD</b> be the following SNOMED CT expression:
 &lt;codeblock&gt;&lt;value xsi:type="CD" code="404684003" codeSystem="2.16.840.1.113883.6.96" displayName="Clinical finding"&gt;
   &lt;qualifier&gt;
@@ -28,11 +33,16 @@
 <li>Source of one or more entryRelationship whose typeCode is 'SAS'. The target of the entryRelationship <b>SHALL</b> be a problem act or social history observation. This is used to represent the temporal sequence of episodes. (CONF-177)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-170)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-171)</li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF-174)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-172, CONF-173)</li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>value</b></tt><tt><b>/@code</b>="404684003" </tt><i>Clinical finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>), where its data type is CD (CONF-175)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-170)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-171)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF-174)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-172, CONF-173)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>value</b></tt><tt><b>/@code</b>="404684003" </tt><i>Clinical finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>), where its data type is CD (CONF-175)
+</li>
 <li>Value in an episode observation <b>SHOULD</b> be the following SNOMED CT expression:
 &lt;codeblock&gt;&lt;value xsi:type="CD" code="404684003" codeSystem="2.16.840.1.113883.6.96" displayName="Clinical finding"&gt;
   &lt;qualifier&gt;
@@ -46,7 +56,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.41"/>
-  <id root="ac025325-b4d7-42ea-8a75-dcb4be2f859b"/>
+  <id root="1ee0ba20-3259-450b-91f1-823534034010"/>
   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
   <statusCode code="completed"/>
   <effectiveTime>
