@@ -55,6 +55,42 @@
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_2QJRIIiBEd66cKocspyVOg" name="EncounterLocation">
+    <ownedRule xmi:id="_Nnza8FS5EeCnnNnsbG2N3Q" name="hasParticipantRole" constrainedElement="_IdRekIjzEd66cKocspyVOg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tnu9EFS5EeCnnNnsbG2N3Q">
+        <language>Analysis</language>
+        <body>contains exactly one participant / participantRole</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_w0p4UFS7EeCnnNnsbG2N3Q" name="hasParticipantRoleLocation" constrainedElement="_Nnza8FS5EeCnnNnsbG2N3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_0VSGcFS7EeCnnNnsbG2N3Q">
+        <language>Analysis</language>
+        <body>The value for â€œparticipant / participantRole / @classCodeâ€? in a location participation SHALL be â€œSDLOCâ€? â€œService delivery locationâ€? 2.16.840.1.113883.5.110 RoleClass STATIC.</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_9iVr4FS7EeCnnNnsbG2N3Q" name="hasParticipantRoleCode" constrainedElement="_w0p4UFS7EeCnnNnsbG2N3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ARR-YFS8EeCnnNnsbG2N3Q">
+        <language>Analysis</language>
+        <body>Participant / participantRole in a location participation MAY contain exactly one participant / participantRole / code.</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_4hhn8FS8EeCnnNnsbG2N3Q" name="hasParticipantRoleCodeVocab" constrainedElement="_9iVr4FS7EeCnnNnsbG2N3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_7i01wFS8EeCnnNnsbG2N3Q">
+        <language>Analysis</language>
+        <body>The value for â€œparticipant / participantRole / codeâ€? in a location participation SHOULD be selected from ValueSet 2.16.840.1.113883.1.11.17660 ServiceDeliveryLocationRoleType 2.16.840.1.113883.5.111 RoleCode DYNAMIC.</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="__JhPoFS8EeCnnNnsbG2N3Q" name="hasPlayingEntity" constrainedElement="_4hhn8FS8EeCnnNnsbG2N3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_FaqdkFS9EeCnnNnsbG2N3Q">
+        <language>Analysis</language>
+        <body>Participant / participantRole in a location participation MAY contain exactly one participant / participantRole / playingEntity</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_FqxWIFS9EeCnnNnsbG2N3Q" name="hasPlayingEntityPlace" constrainedElement="__JhPoFS8EeCnnNnsbG2N3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_J6zn8FS9EeCnnNnsbG2N3Q">
+        <language>Analysis</language>
+        <body>The value for â€œparticipant / participantRole / playingEntity / @classCodeâ€? in a location participation SHALL be â€œPLCâ€? â€œPlaceâ€? 2.16.840.1.113883.5.41 EntityClass STATIC.</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_lD-rMIjxEd66cKocspyVOg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
     </generalization>
@@ -76,7 +112,30 @@
   <CDA:CodeSystemConstraint xmi:id="_52KJwCfbEd-4R4ealYN1gQ" code="46240-8" displayName="History of encounters" base_Property="_qAT3wIjwEd66cKocspyVOg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_P40uMJvkEd-L4qx175J3dg" base_Property="_IdRekIjzEd66cKocspyVOg"/>
+  <CDA:PropertyValidation xmi:id="_P40uMJvkEd-L4qx175J3dg" base_Property="_IdRekIjzEd66cKocspyVOg">
+    <ruleId>CONF-473</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_b3zosJvkEd-L4qx175J3dg" base_Property="_lpnc8ojzEd66cKocspyVOg"/>
   <CDA:PropertyValidation xmi:id="_cdJKYJvkEd-L4qx175J3dg" base_Property="_lpnc8IjzEd66cKocspyVOg"/>
+  <CDA:ConstraintValidation xmi:id="_RXNr8FS5EeCnnNnsbG2N3Q" base_Constraint="_Nnza8FS5EeCnnNnsbG2N3Q">
+    <ruleId>CONF-474</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_5mNNgFS7EeCnnNnsbG2N3Q" base_Constraint="_w0p4UFS7EeCnnNnsbG2N3Q">
+    <ruleId>CONF-475</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_AfJbQFS8EeCnnNnsbG2N3Q" severity="INFO" base_Constraint="_9iVr4FS7EeCnnNnsbG2N3Q">
+    <ruleId>CONF-476</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_7xN3EFS8EeCnnNnsbG2N3Q" severity="WARNING" base_Constraint="_4hhn8FS8EeCnnNnsbG2N3Q">
+    <ruleId>CONF-477</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_CWndwFS9EeCnnNnsbG2N3Q" severity="INFO" base_Constraint="__JhPoFS8EeCnnNnsbG2N3Q">
+    <ruleId>CONF-478</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_MAErUFS9EeCnnNnsbG2N3Q" base_Constraint="_FqxWIFS9EeCnnNnsbG2N3Q">
+    <ruleId>CONF-479</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConformsTo xmi:id="_VlvlEFS9EeCnnNnsbG2N3Q" base_Generalization="_lD-rMIjxEd66cKocspyVOg">
+    <ruleId>CONF-472</ruleId>
+  </CDA:ConformsTo>
 </xmi:XMI>
