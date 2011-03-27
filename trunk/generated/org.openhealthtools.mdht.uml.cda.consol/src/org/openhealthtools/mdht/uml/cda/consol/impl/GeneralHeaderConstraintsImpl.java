@@ -9,16 +9,11 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
-import org.openhealthtools.mdht.uml.cda.consol.CONSOLPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations;
-
 import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -47,7 +42,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return CONSOLPackage.Literals.GENERAL_HEADER_CONSTRAINTS;
+		return ConsolPackage.Literals.GENERAL_HEADER_CONSTRAINTS;
 	}
 
 	/**
