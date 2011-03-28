@@ -260,7 +260,8 @@
     <ownedComment xmi:id="_VE1c4VfdEeCb0LEisK_hTQ">
       <body>This specification models a severity observation as a separate observation from the condition. While this model is different from work presently underway by various organizations (i.e., SNOMED, HL7, TermInfo), it is not wholly incompatible with that work. In that work, qualifiers may be used to identify severity in the coded condition observation, and a separate severity observation is no longer necessary. The use of qualifiers is not precluded by this specification. However, to support semantic interoperability between EMR systems using different vocabularies, this specification does require that severity information also be provided in a separate observation. This ensures that all EMR systems have equal access to the information, regardless of the vocabularies they support.</body>
     </ownedComment>
-    <ownedRule xmi:id="_VE1c4lfdEeCb0LEisK_hTQ" name="hasTextReference" constrainedElement="_VE1c4FfdEeCb0LEisK_hTQ">
+    <ownedRule xmi:id="_VE1c4lfdEeCb0LEisK_hTQ" name="hasTextReference">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VE1c41fdEeCb0LEisK_hTQ">
         <language>Analysis</language>
         <language>OCL</language>

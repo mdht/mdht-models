@@ -279,7 +279,7 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_VFwC4FfdEeCb0LEisK_hTQ" name="hasTextReference">
-      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_MIoHYCQKEeCxCon8a79rfA"/>
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VFwC4VfdEeCb0LEisK_hTQ">
         <language>Analysis</language>
         <language>OCL</language>
@@ -298,7 +298,8 @@
         <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd='true')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VEUfglfdEeCb0LEisK_hTQ" name="hasOnsetDate" constrainedElement="_VEUfgFfdEeCb0LEisK_hTQ">
+    <ownedRule xmi:id="_VEUfglfdEeCb0LEisK_hTQ" name="hasOnsetDate">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VEUfg1fdEeCb0LEisK_hTQ">
         <language>Analysis</language>
         <language>OCL</language>
@@ -306,7 +307,8 @@
         <body>not self.effectiveTime.low.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VEUfhFfdEeCb0LEisK_hTQ" name="hasResolutionDate" constrainedElement="_VEUfgFfdEeCb0LEisK_hTQ">
+    <ownedRule xmi:id="_VEUfhFfdEeCb0LEisK_hTQ" name="hasResolutionDate">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VEUfhVfdEeCb0LEisK_hTQ">
         <language>Analysis</language>
         <language>OCL</language>
@@ -314,7 +316,8 @@
         <body>not self.effectiveTime.high.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VEUfhlfdEeCb0LEisK_hTQ" name="hasUnknownResolutionDate" constrainedElement="_VEUfgFfdEeCb0LEisK_hTQ">
+    <ownedRule xmi:id="_VEUfhlfdEeCb0LEisK_hTQ" name="hasUnknownResolutionDate">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VEUfh1fdEeCb0LEisK_hTQ">
         <language>Analysis</language>
         <language>OCL</language>
