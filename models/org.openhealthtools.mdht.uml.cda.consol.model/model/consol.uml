@@ -112,6 +112,10 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_ypzzMFmJEeCeYrW7M64v2A"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_yp2PcFmJEeCeYrW7M64v2A"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_yp4EoFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_OACVwFmQEeCDpOdk1XwpBg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_OARmUFmQEeCDpOdk1XwpBg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_DWUvoFmREeCDpOdk1XwpBg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_DWbdUFmREeCDpOdk1XwpBg"/>
     <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
       <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -139,5 +143,8 @@
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_rwkZsFf4EeCxTb-Xw_gdpQ">
     <ruleId>6.3.4.22.4</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_OAPxJFmQEeCDpOdk1XwpBg" message="The statusCode shall be set to &quot;completed&quot; for all immunizations">
+    <ruleId>6.3.4.17.7</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>
