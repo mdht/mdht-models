@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_DWUvoFmREeCDpOdk1XwpBg" name="ImmunizationsSection" clientDependency="_DWcrcVmREeCDpOdk1XwpBg _DWcrclmREeCDpOdk1XwpBg _DWcrc1mREeCDpOdk1XwpBg _DWcrdFmREeCDpOdk1XwpBg">
+    <eAnnotations xmi:id="_DWWk0FmREeCDpOdk1XwpBg" source="sourceClass">
+      <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-immunizations.uml#_gHDXQMf0Ed6VjLXh4DcWSg"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_DWcEYFmREeCDpOdk1XwpBg">
+      <body>&lt;p>The Immunizations section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.&lt;/p>&#xD;
+&lt;p>This section is optional, however it is strongly recommended that it be present in cases of pediatric care and in other cases when such information is available.&lt;/p></body>
+    </ownedComment>
+    <ownedComment xmi:id="_DWcEYVmREeCDpOdk1XwpBg">
+      <annotatedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_ZEjk4Mf0Ed6VjLXh4DcWSg"/>
+      <body>The immunizations section shall contain a narrative description of the immunizations administered to the patient in the&#xD;
+past. It shall include entries for medication administration as described in the Entry Content Modules.</body>
+    </ownedComment>
+    <ownedComment xmi:id="_DWUvoVmREeCDpOdk1XwpBg" annotatedElement="_DWUvoFmREeCDpOdk1XwpBg">
+      <body>&lt;p>&#xD;
+    The Immunizations Section contains information describing the immunizations administered to the&#xD;
+    patient. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_DWbdUlmREeCDpOdk1XwpBg" name="titleValue">
+      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-immunizations.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_DWbdU1mREeCDpOdk1XwpBg">
+        <language>Analysis</language>
+        <body>Contains a case-insensitive language-insensitive string containing 'immunization'.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_DWcrcFmREeCDpOdk1XwpBg">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <substitution xmi:id="_DWcrcVmREeCDpOdk1XwpBg" client="_DWUvoFmREeCDpOdk1XwpBg">
+      <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
+      <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
+    </substitution>
+    <substitution xmi:id="_DWcrclmREeCDpOdk1XwpBg" client="_DWUvoFmREeCDpOdk1XwpBg">
+      <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-immunizations.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+      <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-immunizations.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+    </substitution>
+    <substitution xmi:id="_DWcrc1mREeCDpOdk1XwpBg" client="_DWUvoFmREeCDpOdk1XwpBg">
+      <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_ZEjk4Mf0Ed6VjLXh4DcWSg"/>
+      <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_ZEjk4Mf0Ed6VjLXh4DcWSg"/>
+    </substitution>
+    <substitution xmi:id="_DWcrdFmREeCDpOdk1XwpBg" client="_DWUvoFmREeCDpOdk1XwpBg">
+      <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-immunizations.uml#_gHDXQMf0Ed6VjLXh4DcWSg"/>
+      <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-immunizations.uml#_gHDXQMf0Ed6VjLXh4DcWSg"/>
+    </substitution>
+    <ownedAttribute xmi:id="_DWXy8FmREeCDpOdk1XwpBg" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_DWZoIFmREeCDpOdk1XwpBg" name="title" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_DWaPMFmREeCDpOdk1XwpBg" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DWaPMVmREeCDpOdk1XwpBg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DWaPMlmREeCDpOdk1XwpBg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_DWUvo1mREeCDpOdk1XwpBg" name="immunization" type="_OACVwFmQEeCDpOdk1XwpBg" association="_DWbdUFmREeCDpOdk1XwpBg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DWUvpFmREeCDpOdk1XwpBg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DWUvpVmREeCDpOdk1XwpBg" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_DWbdUFmREeCDpOdk1XwpBg" memberEnd="_DWUvo1mREeCDpOdk1XwpBg _DWbdUVmREeCDpOdk1XwpBg">
+    <ownedEnd xmi:id="_DWbdUVmREeCDpOdk1XwpBg" type="_DWUvoFmREeCDpOdk1XwpBg" association="_DWbdUFmREeCDpOdk1XwpBg"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_DWVWsFmREeCDpOdk1XwpBg" base_Class="_DWUvoFmREeCDpOdk1XwpBg" templateId="2.16.840.1.113883.3.88.11.83.117" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConstraintValidation xmi:id="_DWbdVFmREeCDpOdk1XwpBg" severity="WARNING" base_Constraint="_DWbdUlmREeCDpOdk1XwpBg">
+    <ruleId>CONF-380</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_DWXy8VmREeCDpOdk1XwpBg" code="11369-6" displayName="History of immunizations" base_Property="_DWXy8FmREeCDpOdk1XwpBg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-377</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_DWZoIVmREeCDpOdk1XwpBg" base_Property="_DWZoIFmREeCDpOdk1XwpBg">
+    <ruleId>CONF-379</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_DWaPM1mREeCDpOdk1XwpBg" base_Property="_DWaPMFmREeCDpOdk1XwpBg">
+    <ruleId>CONF-376</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_OACVwFmQEeCDpOdk1XwpBg" name="Immunization" clientDependency="_OAWe0FmQEeCDpOdk1XwpBg _OAWe0VmQEeCDpOdk1XwpBg _OAWe0lmQEeCDpOdk1XwpBg">
+    <eAnnotations xmi:id="_OAK4oFmQEeCDpOdk1XwpBg" source="sourceClass">
+      <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-immunizations.uml#_qkWXUDuJEd-B8KE6Jx0UNQ"/>
+    </eAnnotations>
+    <ownedRule xmi:id="_OARmUlmQEeCDpOdk1XwpBg" name="moodCode">
+      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_OARmU1mQEeCDpOdk1XwpBg">
+        <language>Analysis</language>
+        <body>Value for moodCode is &quot;EVN&quot; 2.16.840.1.113883.5.1001 ActMood STATIC</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_OASNYVmQEeCDpOdk1XwpBg" name="textReference">
+      <ownedComment xmi:id="_OASNYlmQEeCDpOdk1XwpBg">
+        <body>In a CDA document, the URI given in the value attribute of the 'reference' element points to an element in the narrative content that contains the complete text describing the immunization activity. In an HL7 message, the content of the text element shall contain the complete text describing the immunization activity.</body>
+      </ownedComment>
+      <constrainedElement xmi:type="uml:Constraint" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_hztp4FTVEeCUesz7J0dFlQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_OASNY1mQEeCDpOdk1XwpBg">
+        <language>Analysis</language>
+        <body>In a CDA document, the URI given in the value attribute of the &lt;reference> element points to an element in the narrative content that contains the complete text describing the immunization activity.</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_OAUCkFmQEeCDpOdk1XwpBg" name="effectiveTime">
+      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_OAUCkVmQEeCDpOdk1XwpBg">
+        <language>Analysis</language>
+        <body>The effectiveTime element shall be present and should contain a time value that indicates the date of the substance administration. If the date is unkown, this shall be recorded using the nullFlavor attribute, with the reason that the information is unknown being specified. Otherwise, the date shall be recorded, and should have precision of at least the day.</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_OAUpoFmQEeCDpOdk1XwpBg" name="substanceAdministrationCode">
+      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_OAUpoVmQEeCDpOdk1XwpBg">
+        <language>Analysis</language>
+        <body>CPT-4 codes may be used for immunization procedures</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_OAUpolmQEeCDpOdk1XwpBg" name="comments">
+      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_OAUpo1mQEeCDpOdk1XwpBg">
+        <language>Analysis</language>
+        <body>If negationInd is set to TRUE atleast one comment shall exist that provides an explanation for why the immunization did not take place. Other comments may also be present</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_OACVwVmQEeCDpOdk1XwpBg" name="refusalReason" constrainedElement="_OACVwFmQEeCDpOdk1XwpBg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_OACVwlmQEeCDpOdk1XwpBg">
+        <language>Analysis</language>
+        <body>The reason for refusal SHALL be coded as specified in HITSP/C80 Section 2.2.3.5.3 No Immunization Reason</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_OAVQsFmQEeCDpOdk1XwpBg">
+      <general xmi:type="uml:Class" href="consol-medications.uml#_xCepAFmJEeCeYrW7M64v2A"/>
+    </generalization>
+    <substitution xmi:id="_OAWe0FmQEeCDpOdk1XwpBg" client="_OACVwFmQEeCDpOdk1XwpBg">
+      <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+      <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+    </substitution>
+    <substitution xmi:id="_OAWe0VmQEeCDpOdk1XwpBg" client="_OACVwFmQEeCDpOdk1XwpBg">
+      <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
+      <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
+    </substitution>
+    <substitution xmi:id="_OAWe0lmQEeCDpOdk1XwpBg" client="_OACVwFmQEeCDpOdk1XwpBg">
+      <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-immunizations.uml#_qkWXUDuJEd-B8KE6Jx0UNQ"/>
+      <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-immunizations.uml#_qkWXUDuJEd-B8KE6Jx0UNQ"/>
+    </substitution>
+    <ownedAttribute xmi:id="_OAMt0FmQEeCDpOdk1XwpBg" name="moodCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_OAMt0VmQEeCDpOdk1XwpBg" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OACVxFmQEeCDpOdk1XwpBg" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OACVxVmQEeCDpOdk1XwpBg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OACVxlmQEeCDpOdk1XwpBg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OAQYMFmQEeCDpOdk1XwpBg" name="approachSiteCode" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_OAQYMVmQEeCDpOdk1XwpBg">
+        <body>The site where the medication is administered, usually used with IV or topical drugs. The &amp;lt;approachSiteCode> element describes the site of medication administrion. It may be coded&#xD;
+to a controlled vocabulary that lists such sites (e.g., SNOMED-CT). In CDA documents, this&#xD;
+4805 element contains a URI in the value attribute of the &amp;lt;reference> that points to the text in the&#xD;
+narrative identifying the site. In a message, the &amp;lt;originalText> element shall contain the text&#xD;
+identifying the site.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OAQYMlmQEeCDpOdk1XwpBg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OAQYM1mQEeCDpOdk1XwpBg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ATlKkErtEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OAQ_QFmQEeCDpOdk1XwpBg" name="doseQuantity" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_OAQ_QVmQEeCDpOdk1XwpBg">
+        <body>The amount of the medication given. This should be in some known and measurable unit, such as grams, milligrams, et cetera. It may be measured in &quot;administration&quot; units (such as tablets or each), for medications where the strength is relevant. In this case, only the unit count is specified , no units are specified. It may be a range.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OAQ_QlmQEeCDpOdk1XwpBg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OAQ_Q1mQEeCDpOdk1XwpBg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_D1VaEErtEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OAQ_RFmQEeCDpOdk1XwpBg" name="rateQuantity" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_OAQ_RVmQEeCDpOdk1XwpBg">
+        <body>The rate is a measurement of how fast the dose is given to the patient over time (e.g., .5 liter / 1 hr), and is often used with IV drugs.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OAQ_RlmQEeCDpOdk1XwpBg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OAQ_R1mQEeCDpOdk1XwpBg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_GsU1UErtEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OACVx1mQEeCDpOdk1XwpBg" name="entryRelationship" association="_OARmUFmQEeCDpOdk1XwpBg">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OACVyFmQEeCDpOdk1XwpBg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_OARmUFmQEeCDpOdk1XwpBg" memberEnd="_OACVx1mQEeCDpOdk1XwpBg _OARmUVmQEeCDpOdk1XwpBg">
+    <ownedEnd xmi:id="_OARmUVmQEeCDpOdk1XwpBg" type="_OACVwFmQEeCDpOdk1XwpBg" association="_OARmUFmQEeCDpOdk1XwpBg"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_OAGAIFmQEeCDpOdk1XwpBg" base_Class="_OACVwFmQEeCDpOdk1XwpBg" templateId="2.16.840.1.113883.3.88.11.83.13" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConstraintValidation xmi:id="_OASNYFmQEeCDpOdk1XwpBg" base_Constraint="_OARmUlmQEeCDpOdk1XwpBg">
+    <ruleId>6.3.4.17.2</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_OAUCklmQEeCDpOdk1XwpBg" base_Constraint="_OAUCkFmQEeCDpOdk1XwpBg">
+    <ruleId>6.3.4.17.8</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_OAKRkFmQEeCDpOdk1XwpBg" base_Constraint="_OACVwVmQEeCDpOdk1XwpBg"/>
+  <CDA:PropertyValidation xmi:id="_OANU4FmQEeCDpOdk1XwpBg" base_Property="_OAMt0FmQEeCDpOdk1XwpBg">
+    <ruleId>6.3.4.17.2</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_OAIcYFmQEeCDpOdk1XwpBg" base_Property="_OACVxFmQEeCDpOdk1XwpBg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
+  </CDA:CodeSystemConstraint>
+</xmi:XMI>
