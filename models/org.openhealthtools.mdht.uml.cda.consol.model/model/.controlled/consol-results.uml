@@ -80,11 +80,14 @@ Content Modules.</body>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="__kz0gFfdEeCIIf8CuAH-Kw" code="30954-2" displayName="STUDIES SUMMARY" base_Property="__kzNcFfdEeCIIf8CuAH-Kw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-CONSOL-559</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="__lXOIFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Association="__lWnElfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-388</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="__lbfklfdEeCIIf8CuAH-Kw" severity="WARNING" base_Association="__lbfkFfdEeCIIf8CuAH-Kw"/>
+  <CDA:AssociationValidation xmi:id="__lbfklfdEeCIIf8CuAH-Kw" severity="WARNING" base_Association="__lbfkFfdEeCIIf8CuAH-Kw">
+    <ruleId>CONF-CONSOL-550</ruleId>
+  </CDA:AssociationValidation>
   <uml:Class xmi:id="__lDsIFfdEeCIIf8CuAH-Kw" name="Result" clientDependency="__lUK0FfdEeCIIf8CuAH-Kw __lUK0VfdEeCIIf8CuAH-Kw __lUK0lfdEeCIIf8CuAH-Kw">
     <eAnnotations xmi:id="__lIkoFfdEeCIIf8CuAH-Kw" source="sourceClass">
       <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/hitsp.uml#_oTzNMDIWEd-SYNRf-pkwtw"/>
@@ -272,12 +275,18 @@ ASTM/HL7 Continuity of Care Document).</body>
   <CDA:PropertyValidation xmi:id="__lLA4FfdEeCIIf8CuAH-Kw" base_Property="__lKZ0VfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-409</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="__lE6QFfdEeCIIf8CuAH-Kw" base_Property="__lDsKlfdEeCIIf8CuAH-Kw"/>
+  <CDA:PropertyValidation xmi:id="__lE6QFfdEeCIIf8CuAH-Kw" base_Property="__lDsKlfdEeCIIf8CuAH-Kw">
+    <ruleId>CONF-CONSOL-551</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="__lLn8VfdEeCIIf8CuAH-Kw" base_Property="__lLn8FfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-410</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="__lFhUFfdEeCIIf8CuAH-Kw" base_Property="__lDsK1fdEeCIIf8CuAH-Kw"/>
-  <CDA:PropertyValidation xmi:id="__lGIYFfdEeCIIf8CuAH-Kw" base_Property="__lDsLlfdEeCIIf8CuAH-Kw"/>
+  <CDA:PropertyValidation xmi:id="__lFhUFfdEeCIIf8CuAH-Kw" base_Property="__lDsK1fdEeCIIf8CuAH-Kw">
+    <ruleId>CONF-CONSOL-552</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="__lGIYFfdEeCIIf8CuAH-Kw" base_Property="__lDsLlfdEeCIIf8CuAH-Kw">
+    <ruleId>CONF-CONSOL-553</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="__lM2FFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Property="__lM2EFfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-418</ruleId>
   </CDA:PropertyValidation>

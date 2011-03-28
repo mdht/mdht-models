@@ -219,9 +219,15 @@
   <CDA:ConstraintValidation xmi:id="_VF2wkFfdEeCb0LEisK_hTQ" severity="INFO" base_Constraint="_VF2JgFfdEeCb0LEisK_hTQ">
     <ruleId>CONF-179</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_VF3XolfdEeCb0LEisK_hTQ" base_Constraint="_VF3XoFfdEeCb0LEisK_hTQ"/>
-  <CDA:ConstraintValidation xmi:id="_VF3-slfdEeCb0LEisK_hTQ" base_Constraint="_VF3-sFfdEeCb0LEisK_hTQ"/>
-  <CDA:ConstraintValidation xmi:id="_VF5M0FfdEeCb0LEisK_hTQ" severity="INFO" base_Constraint="_VF4lwFfdEeCb0LEisK_hTQ"/>
+  <CDA:ConstraintValidation xmi:id="_VF3XolfdEeCb0LEisK_hTQ" base_Constraint="_VF3XoFfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-520</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_VF3-slfdEeCb0LEisK_hTQ" base_Constraint="_VF3-sFfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-523</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_VF5M0FfdEeCb0LEisK_hTQ" severity="INFO" base_Constraint="_VF4lwFfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-524</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_VD5owFfdEeCb0LEisK_hTQ" base_Constraint="_VD4aoVfdEeCb0LEisK_hTQ">
     <ruleId>C83-[DE-7.05-CDA-3]</ruleId>
   </CDA:ConstraintValidation>
@@ -243,11 +249,15 @@
   <CDA:NullFlavor xmi:id="_VD_IUVfdEeCb0LEisK_hTQ" base_Property="_VD_IUFfdEeCb0LEisK_hTQ" nullFlavor="NA">
     <ruleId>CONF-149</ruleId>
   </CDA:NullFlavor>
-  <CDA:PropertyValidation xmi:id="_VEAWc1fdEeCb0LEisK_hTQ" base_Property="_VEAWcFfdEeCb0LEisK_hTQ"/>
+  <CDA:PropertyValidation xmi:id="_VEAWc1fdEeCb0LEisK_hTQ" base_Property="_VEAWcFfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-525</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_VEA9gFfdEeCb0LEisK_hTQ" base_Property="_VEAWcFfdEeCb0LEisK_hTQ">
     <reference href="../consol-vocab.uml#_VECytlfdEeCb0LEisK_hTQ"/>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_VEGdFFfdEeCb0LEisK_hTQ" base_Property="_VEGdEFfdEeCb0LEisK_hTQ"/>
+  <CDA:PropertyValidation xmi:id="_VEGdFFfdEeCb0LEisK_hTQ" base_Property="_VEGdEFfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-526</ruleId>
+  </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_VETRYlfdEeCb0LEisK_hTQ" severity="INFO" base_Association="_VETRYFfdEeCb0LEisK_hTQ">
     <ruleId>CONF-168</ruleId>
   </CDA:AssociationValidation>
@@ -342,10 +352,6 @@
     </substitution>
     <ownedAttribute xmi:id="_VEamIFfdEeCb0LEisK_hTQ" name="classCode" visibility="private">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_VEamIVfdEeCb0LEisK_hTQ" name="OBS">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
-      </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_VEamIlfdEeCb0LEisK_hTQ" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
@@ -432,8 +438,12 @@
   <CDA:ConstraintValidation xmi:id="_VFvb0lfdEeCb0LEisK_hTQ" severity="INFO" base_Constraint="_VFvb0FfdEeCb0LEisK_hTQ">
     <ruleId>CONF-180</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_VFwC4lfdEeCb0LEisK_hTQ" base_Constraint="_VFwC4FfdEeCb0LEisK_hTQ"/>
-  <CDA:ConstraintValidation xmi:id="_VFwp8lfdEeCb0LEisK_hTQ" base_Constraint="_VFwp8FfdEeCb0LEisK_hTQ"/>
+  <CDA:ConstraintValidation xmi:id="_VFwC4lfdEeCb0LEisK_hTQ" base_Constraint="_VFwC4FfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-527</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_VFwp8lfdEeCb0LEisK_hTQ" base_Constraint="_VFwp8FfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-528</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_VEYJ4FfdEeCb0LEisK_hTQ" severity="WARNING" base_Constraint="_VEUfglfdEeCb0LEisK_hTQ">
     <ruleId>C83-[DE-7.01-1]</ruleId>
   </CDA:ConstraintValidation>
@@ -446,29 +456,46 @@
   <CDA:PropertyValidation xmi:id="_VEamJFfdEeCb0LEisK_hTQ" base_Property="_VEamIlfdEeCb0LEisK_hTQ">
     <ruleId>CONF-155</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_VEbNNFfdEeCb0LEisK_hTQ" base_Property="_VEbNMFfdEeCb0LEisK_hTQ"/>
-  <CDA:PropertyValidation xmi:id="_VEUfi1fdEeCb0LEisK_hTQ" severity="WARNING" base_Property="_VEUfiVfdEeCb0LEisK_hTQ"/>
+  <CDA:PropertyValidation xmi:id="_VEbNNFfdEeCb0LEisK_hTQ" base_Property="_VEbNMFfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-529</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_VEUfi1fdEeCb0LEisK_hTQ" severity="WARNING" base_Property="_VEUfiVfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-530</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_VEVGkFfdEeCb0LEisK_hTQ" base_Property="_VEUfiVfdEeCb0LEisK_hTQ">
     <reference href="../consol-vocab.uml#_VEcbWFfdEeCb0LEisK_hTQ"/>
     <ruleId>C154-[DE-7.02-1]</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_VEih8lfdEeCb0LEisK_hTQ" base_Property="_VEih8FfdEeCb0LEisK_hTQ"/>
+  <CDA:PropertyValidation xmi:id="_VEih8lfdEeCb0LEisK_hTQ" base_Property="_VEih8FfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-531</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_VEjJAVfdEeCb0LEisK_hTQ" code="completed" base_Property="_VEjJAFfdEeCb0LEisK_hTQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-156</ruleId>
     <ruleId>CONF-157</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_VEk-NFfdEeCb0LEisK_hTQ" severity="WARNING" base_Property="_VEk-MFfdEeCb0LEisK_hTQ"/>
+  <CDA:PropertyValidation xmi:id="_VEk-NFfdEeCb0LEisK_hTQ" severity="WARNING" base_Property="_VEk-MFfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-532</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_VEW7wFfdEeCb0LEisK_hTQ" base_Property="_VEUfilfdEeCb0LEisK_hTQ">
     <reference href="../consol-vocab.uml#_VEmMUFfdEeCb0LEisK_hTQ"/>
+    <ruleId>CONF-CONSOL-533</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_VE0OwlfdEeCb0LEisK_hTQ" severity="INFO" base_Association="_VE0OwFfdEeCb0LEisK_hTQ" typeCode="SUBJ">
     <ruleId>CONF-160</ruleId>
   </CDA:EntryRelationship>
-  <CDA:AssociationValidation xmi:id="_VFEtclfdEeCb0LEisK_hTQ" severity="INFO" base_Association="_VFEtcFfdEeCb0LEisK_hTQ"/>
-  <CDA:EntryRelationship xmi:id="_VFQ6slfdEeCb0LEisK_hTQ" severity="INFO" base_Association="_VFQ6sFfdEeCb0LEisK_hTQ" typeCode="REFR"/>
-  <CDA:EntryRelationship xmi:id="_VFdvBFfdEeCb0LEisK_hTQ" severity="INFO" base_Association="_VFdvAlfdEeCb0LEisK_hTQ" typeCode="REFR"/>
-  <CDA:EntryRelationship xmi:id="_VFuNsFfdEeCb0LEisK_hTQ" severity="INFO" base_Association="_VFtmpFfdEeCb0LEisK_hTQ" typeCode="SUBJ"/>
+  <CDA:AssociationValidation xmi:id="_VFEtclfdEeCb0LEisK_hTQ" severity="INFO" base_Association="_VFEtcFfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-534</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_VFQ6slfdEeCb0LEisK_hTQ" severity="INFO" base_Association="_VFQ6sFfdEeCb0LEisK_hTQ" typeCode="REFR">
+    <ruleId>CONF-CONSOL-535</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_VFdvBFfdEeCb0LEisK_hTQ" severity="INFO" base_Association="_VFdvAlfdEeCb0LEisK_hTQ" typeCode="REFR">
+    <ruleId>CONF-CONSOL-536</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_VFuNsFfdEeCb0LEisK_hTQ" severity="INFO" base_Association="_VFtmpFfdEeCb0LEisK_hTQ" typeCode="SUBJ">
+    <ruleId>CONF-CONSOL-537</ruleId>
+  </CDA:EntryRelationship>
   <uml:Class xmi:id="_VEHrMFfdEeCb0LEisK_hTQ" name="EpisodeObservation" clientDependency="_VESqUVfdEeCb0LEisK_hTQ">
     <eAnnotations xmi:id="_VEQ1IFfdEeCb0LEisK_hTQ" source="sourceClass">
       <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_AwcXkGaKEd6Hk_bPOfEjYA"/>
@@ -607,15 +634,20 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_VFSI2VfdEeCb0LEisK_hTQ" base_Class="_VFSI0FfdEeCb0LEisK_hTQ" templateId="2.16.840.1.113883.10.20.21.4.5"/>
-  <CDA:ConstraintValidation xmi:id="_VFVMIFfdEeCb0LEisK_hTQ" base_Constraint="_VFSI0lfdEeCb0LEisK_hTQ"/>
+  <CDA:ConstraintValidation xmi:id="_VFVMIFfdEeCb0LEisK_hTQ" base_Constraint="_VFSI0lfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-544</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_VFVzMVfdEeCb0LEisK_hTQ" code="11323-3" displayName="Health status" base_Property="_VFVzMFfdEeCb0LEisK_hTQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-166</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_VFT-AFfdEeCb0LEisK_hTQ" base_Property="_VFSI2FfdEeCb0LEisK_hTQ">
     <reference href="../consol-vocab.uml#_VFYPcFfdEeCb0LEisK_hTQ"/>
+    <ruleId>CONF-CONSOL-545</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:TextValue xmi:id="_VFSv4FfdEeCb0LEisK_hTQ" base_Property="_VFSI1VfdEeCb0LEisK_hTQ"/>
+  <CDA:TextValue xmi:id="_VFSv4FfdEeCb0LEisK_hTQ" base_Property="_VFSI1VfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-546</ruleId>
+  </CDA:TextValue>
   <uml:Class xmi:id="_VF7CAFfdEeCb0LEisK_hTQ" name="ProblemListSection" clientDependency="_VGBIo1fdEeCb0LEisK_hTQ _VGBvsFfdEeCb0LEisK_hTQ _VGBvsVfdEeCb0LEisK_hTQ">
     <eAnnotations xmi:id="_VF7pEFfdEeCb0LEisK_hTQ" source="sourceClass">
       <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-problemList.uml#_cPtREMfaEd6VjLXh4DcWSg"/>
@@ -715,13 +747,21 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_VFF7mVfdEeCb0LEisK_hTQ" base_Class="_VFF7kFfdEeCb0LEisK_hTQ" templateId="2.16.840.1.113883.10.20.21.4.6"/>
-  <CDA:ConstraintValidation xmi:id="_VFJl8FfdEeCb0LEisK_hTQ" base_Constraint="_VFF7klfdEeCb0LEisK_hTQ"/>
-  <CDA:PropertyValidation xmi:id="_VFHwwFfdEeCb0LEisK_hTQ" base_Property="_VFF7mFfdEeCb0LEisK_hTQ"/>
+  <CDA:ConstraintValidation xmi:id="_VFJl8FfdEeCb0LEisK_hTQ" base_Constraint="_VFF7klfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-541</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_VFHwwFfdEeCb0LEisK_hTQ" base_Property="_VFF7mFfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-542</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_VFHwwVfdEeCb0LEisK_hTQ" base_Property="_VFF7mFfdEeCb0LEisK_hTQ">
     <reference href="../consol-vocab.uml#_VFK0GVfdEeCb0LEisK_hTQ"/>
   </CDA:ValueSetConstraint>
-  <CDA:TextValue xmi:id="_VFGioFfdEeCb0LEisK_hTQ" base_Property="_VFF7lVfdEeCb0LEisK_hTQ"/>
-  <CDA:AssociationValidation xmi:id="_cLN0YFjHEeCbyoEB16CABA" base_Association="_VGAhkFfdEeCb0LEisK_hTQ"/>
+  <CDA:TextValue xmi:id="_VFGioFfdEeCb0LEisK_hTQ" base_Property="_VFF7lVfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-543</ruleId>
+  </CDA:TextValue>
+  <CDA:AssociationValidation xmi:id="_cLN0YFjHEeCbyoEB16CABA" base_Association="_VGAhkFfdEeCb0LEisK_hTQ">
+    <ruleId>CONF-CONSOL-549</ruleId>
+  </CDA:AssociationValidation>
   <uml:Class xmi:id="_F8SUEFjHEeCbyoEB16CABA" name="ProblemListNarrativeSection">
     <generalization xmi:id="_F8UJQFjHEeCbyoEB16CABA">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -740,6 +780,10 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_SZKEcFjHEeCbyoEB16CABA" base_Class="_F8SUEFjHEeCbyoEB16CABA" templateId="2.16.840.1.113883.10.20.21.2.5"/>
-  <CDA:ConstraintValidation xmi:id="_kdOtcFlBEeCjtJnI04I27A" base_Constraint="_dFDmAFlBEeCjtJnI04I27A"/>
-  <CDA:ConstraintValidation xmi:id="_k9mPkFlBEeCjtJnI04I27A" base_Constraint="_dS6b0FlBEeCjtJnI04I27A"/>
+  <CDA:ConstraintValidation xmi:id="_kdOtcFlBEeCjtJnI04I27A" base_Constraint="_dFDmAFlBEeCjtJnI04I27A">
+    <ruleId>CONF-CONSOL-521</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_k9mPkFlBEeCjtJnI04I27A" base_Constraint="_dS6b0FlBEeCjtJnI04I27A">
+    <ruleId>CONF-CONSOL-522</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
