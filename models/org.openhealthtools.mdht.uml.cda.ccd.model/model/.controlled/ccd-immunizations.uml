@@ -11,17 +11,8 @@
         <body>Contains a case-insensitive language-insensitive string containing 'immunization'.</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_CAcRsHi8Ed-6wJLq2P_7OA" name="clinicalStatements">
-      <constrainedElement xmi:type="uml:Class" href="ccd-functionalStatus.uml#_GoctIKPdEd6t_4WfM070fA"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CAcRsXi8Ed-6wJLq2P_7OA">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>Contains one or more Medication Activity and/or Supply Activity</body>
-        <body>self.getEntryTargets(ccd::MedicationActivity)->size() > 0&#xD;&#xA;  or self.getEntryTargets(ccd::SupplyActivity)->size() > 0</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="_H448UHDPEd6eItyqb1FoWg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    <generalization xmi:id="_fXtO8FUsEeCUesz7J0dFlQ">
+      <general xmi:type="uml:Class" href="ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
     </generalization>
     <ownedAttribute xmi:id="_ZeXjEcikEd6mWrHPmrIIfQ" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
@@ -37,13 +28,20 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_dqEZAHo4Ed6UPbrR4QTFoQ" base_Class="_CinbMHDPEd6eItyqb1FoWg" templateId="2.16.840.1.113883.10.20.1.6" assigningAuthorityName="CCD"/>
-  <CDA:PropertyValidation xmi:id="_9SQlcP_UEd6Y8ICOr4M99Q" base_Property="_ZeXjEMikEd6mWrHPmrIIfQ"/>
-  <CDA:PropertyValidation xmi:id="_oByqgBtJEd-vGNAsDUJvgw" base_Property="_mxb14BtJEd-vGNAsDUJvgw"/>
-  <CDA:ConstraintValidation xmi:id="_7Hr9UBtJEd-vGNAsDUJvgw" severity="WARNING" base_Constraint="_54_VkBtJEd-vGNAsDUJvgw"/>
+  <CDA:PropertyValidation xmi:id="_9SQlcP_UEd6Y8ICOr4M99Q" base_Property="_ZeXjEMikEd6mWrHPmrIIfQ">
+    <ruleId>CONF-379</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_oByqgBtJEd-vGNAsDUJvgw" base_Property="_mxb14BtJEd-vGNAsDUJvgw">
+    <ruleId>CONF-376</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_7Hr9UBtJEd-vGNAsDUJvgw" severity="WARNING" base_Constraint="_54_VkBtJEd-vGNAsDUJvgw">
+    <ruleId>CONF-380</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_52L-8CfbEd-4R4ealYN1gQ" code="11369-6" displayName="History of immunizations" base_Property="_ZeXjEcikEd6mWrHPmrIIfQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-377</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ConstraintValidation xmi:id="_DW_N4Hi8Ed-6wJLq2P_7OA" severity="WARNING" base_Constraint="_CAcRsHi8Ed-6wJLq2P_7OA">
+  <CDA:ConstraintValidation xmi:id="_DW_N4Hi8Ed-6wJLq2P_7OA" severity="WARNING">
     <ruleId>CONF-376</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>
