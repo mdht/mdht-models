@@ -644,7 +644,7 @@ attribute should be set to &quot;NA&quot;.</body>
   <uml:Association xmi:id="_xDpGoFmJEeCeYrW7M64v2A" memberEnd="_xDgjyVmJEeCeYrW7M64v2A _xDptsFmJEeCeYrW7M64v2A">
     <ownedEnd xmi:id="_xDptsFmJEeCeYrW7M64v2A" type="_xDgjwFmJEeCeYrW7M64v2A" association="_xDpGoFmJEeCeYrW7M64v2A"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_xDgj0VmJEeCeYrW7M64v2A" base_Class="_xDgjwFmJEeCeYrW7M64v2A" templateId="2.16.840.1.113883.10.20.1.54" assigningAuthorityName="CCD"/>
+  <CDA:CDATemplate xmi:id="_xDgj0VmJEeCeYrW7M64v2A" base_Class="_xDgjwFmJEeCeYrW7M64v2A" templateId="2.16.840.1.113883.10.20.21.4.9"/>
   <CDA:ConstraintValidation xmi:id="_xDkOIFmJEeCeYrW7M64v2A" severity="INFO" base_Constraint="_xDgjwlmJEeCeYrW7M64v2A">
     <ruleId>CONF-280</ruleId>
   </CDA:ConstraintValidation>

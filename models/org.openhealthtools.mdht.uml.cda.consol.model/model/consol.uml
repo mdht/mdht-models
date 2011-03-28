@@ -116,6 +116,9 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_OARmUFmQEeCDpOdk1XwpBg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_DWUvoFmREeCDpOdk1XwpBg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_DWbdUFmREeCDpOdk1XwpBg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-vitalsigns.uml#_PxR_AFmSEeCxj9gXXiOSmQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_ztXWYFmTEeCxj9gXXiOSmQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_w63kIFmUEeCBjLscJJRYEg"/>
     <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
       <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>

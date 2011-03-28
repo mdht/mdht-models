@@ -24,33 +24,7 @@
     The vital signs section shall contain a narrative description of the measurement results of a patient's vital signs.&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedComment xmi:id="_aJAQolf5EeCxTb-Xw_gdpQ">
-      <annotatedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-codedVitalSigns.uml#_5k1R8K4FEd6_ioDelDcPPg"/>
-      <body>The vital signs section contains coded measurement results of a patient's vital signs.</body>
-    </ownedComment>
-    <ownedComment xmi:id="_aIcP8Vf5EeCxTb-Xw_gdpQ" annotatedElement="_aIcP8Ff5EeCxTb-Xw_gdpQ">
-      <body>&lt;p>&#xD;
-    The Vital Signs Section contains information documenting the patient vital signs. &#xD;
-&lt;/p></body>
-    </ownedComment>
-    <ownedRule xmi:id="_aI_pkFf5EeCxTb-Xw_gdpQ" name="titleValue">
-      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-vitalSigns.uml#_GKpeMKPaEd6t_4WfM070fA"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_aI_pkVf5EeCxTb-Xw_gdpQ">
-        <language>Analysis</language>
-        <body>title Contains a case-insensitive language-insensitive string containing 'vital signs'.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_aIcP8lf5EeCxTb-Xw_gdpQ" name="vitalSignEntry" constrainedElement="_aIcP8Ff5EeCxTb-Xw_gdpQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_aIcP81f5EeCxTb-Xw_gdpQ">
-        <language>OCL</language>
-        <language>Analysis</language>
-        <body>self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ihe::VitalSignsOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(hitsp::VitalSign)))</body>
-        <body>Contains entries conforming to the Vital Sign module.</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="_aJAQo1f5EeCxTb-Xw_gdpQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
-    </generalization>
+    <generalization xmi:id="_aJAQo1f5EeCxTb-Xw_gdpQ" general="_PxR_AFmSEeCxj9gXXiOSmQ"/>
     <substitution xmi:id="_aJAQpFf5EeCxTb-Xw_gdpQ" client="_aIcP8Ff5EeCxTb-Xw_gdpQ">
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-vitalSigns.uml#_GKpeMKPaEd6t_4WfM070fA"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-vitalSigns.uml#_GKpeMKPaEd6t_4WfM070fA"/>
@@ -67,18 +41,6 @@
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-vitalSigns.uml#_L9yGgK7HEd6_ioDelDcPPg"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-vitalSigns.uml#_L9yGgK7HEd6_ioDelDcPPg"/>
     </substitution>
-    <ownedAttribute xmi:id="_aIesMFf5EeCxTb-Xw_gdpQ" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_aIhIcFf5EeCxTb-Xw_gdpQ" name="title" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_aIiWkFf5EeCxTb-Xw_gdpQ" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aIiWkVf5EeCxTb-Xw_gdpQ" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aIiWklf5EeCxTb-Xw_gdpQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_aIi9oFf5EeCxTb-Xw_gdpQ" name="vitalSignsOrganizer" visibility="private" type="_aIjksFf5EeCxTb-Xw_gdpQ" association="_aI-bdFf5EeCxTb-Xw_gdpQ">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aIi9oVf5EeCxTb-Xw_gdpQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aIi9olf5EeCxTb-Xw_gdpQ" value="1"/>
@@ -87,11 +49,11 @@
   <uml:Association xmi:id="_aI-bdFf5EeCxTb-Xw_gdpQ" memberEnd="_aIi9oFf5EeCxTb-Xw_gdpQ _aI_CgFf5EeCxTb-Xw_gdpQ">
     <ownedEnd xmi:id="_aI_CgFf5EeCxTb-Xw_gdpQ" type="_aIcP8Ff5EeCxTb-Xw_gdpQ" association="_aI-bdFf5EeCxTb-Xw_gdpQ"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_aIcP9Vf5EeCxTb-Xw_gdpQ" base_Class="_aIcP8Ff5EeCxTb-Xw_gdpQ" templateId="2.16.840.1.113883.3.88.11.83.119"/>
+  <CDA:CDATemplate xmi:id="_aIcP9Vf5EeCxTb-Xw_gdpQ" base_Class="_aIcP8Ff5EeCxTb-Xw_gdpQ" templateId="2.16.840.1.113883.10.20.21.2.4.1"/>
   <CDA:ConstraintValidation xmi:id="_aI_pklf5EeCxTb-Xw_gdpQ" severity="WARNING" base_Constraint="_aI_pkFf5EeCxTb-Xw_gdpQ">
     <ruleId>CONF-385</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_aIdeEFf5EeCxTb-Xw_gdpQ" base_Constraint="_aIcP8lf5EeCxTb-Xw_gdpQ">
+  <CDA:ConstraintValidation xmi:id="_aIdeEFf5EeCxTb-Xw_gdpQ">
     <ruleId>C83-[CT-119-2]</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_aIfTQFf5EeCxTb-Xw_gdpQ" code="8716-3" displayName="Vital signs" base_Property="_aIesMFf5EeCxTb-Xw_gdpQ">
@@ -333,4 +295,30 @@ The differentiation between Vital Signs and Results varies by clinical context. 
   <CDA:PropertyValidation xmi:id="_aI7YIVf5EeCxTb-Xw_gdpQ" base_Property="_aI7YIFf5EeCxTb-Xw_gdpQ">
     <ruleId>6.3.4.22.4</ruleId>
   </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_cXSAwFmTEeCxj9gXXiOSmQ" base_Association="_aI8mRFf5EeCxTb-Xw_gdpQ"/>
+  <uml:Class xmi:id="_PxR_AFmSEeCxj9gXXiOSmQ" name="VitalSignsNarrativeSection">
+    <ownedRule xmi:id="_aI_pkFf5EeCxTb-Xw_gdpQ" name="titleValue">
+      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-vitalSigns.uml#_GKpeMKPaEd6t_4WfM070fA"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_aI_pkVf5EeCxTb-Xw_gdpQ">
+        <language>Analysis</language>
+        <body>title Contains a case-insensitive language-insensitive string containing 'vital signs'.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_PxT0MFmSEeCxj9gXXiOSmQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_aIesMFf5EeCxTb-Xw_gdpQ" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aIhIcFf5EeCxTb-Xw_gdpQ" name="title" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aIiWkFf5EeCxTb-Xw_gdpQ" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aIiWkVf5EeCxTb-Xw_gdpQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aIiWklf5EeCxTb-Xw_gdpQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_T4OmQFmSEeCxj9gXXiOSmQ" base_Class="_PxR_AFmSEeCxj9gXXiOSmQ" templateId="2.16.840.1.113883.10.20.21.2.4"/>
 </xmi:XMI>
