@@ -269,11 +269,7 @@
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_4hu_kDuGEd-B8KE6Jx0UNQ"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_qkWXUDuJEd-B8KE6Jx0UNQ" name="Immunization">
-      <generalization xmi:id="_qkWXUTuJEd-B8KE6Jx0UNQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
-      </generalization>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href=".controlled/hitsp-immunizations.uml#_qkWXUDuJEd-B8KE6Jx0UNQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/hitsp-immunizations.uml#_y3IF0TuJEd-B8KE6Jx0UNQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_r6JXkEvaEd-GNbUQBie2ig" memberEnd="_r6G7UEvaEd-GNbUQBie2ig _r6J-oEvaEd-GNbUQBie2ig">
       <ownedEnd xmi:id="_r6J-oEvaEd-GNbUQBie2ig" type="_wDMM0GEHEd6bFO5yxRh3Nw" association="_r6JXkEvaEd-GNbUQBie2ig"/>
@@ -529,7 +525,6 @@ resolved</body>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_hNtqADuHEd-B8KE6Jx0UNQ" base_Class="_ZNaLkDuHEd-B8KE6Jx0UNQ" templateId="2.16.840.1.113883.3.88.11.83.5" assigningAuthorityName="HITSP C83"/>
   <CDA:CDATemplate xmi:id="_t1Wf8DuHEd-B8KE6Jx0UNQ" base_Class="_pOKSYDuHEd-B8KE6Jx0UNQ" templateId="2.16.840.1.113883.3.88.11.83.4" assigningAuthorityName="HITSP C83"/>
-  <CDA:CDATemplate xmi:id="_s4UlEDuJEd-B8KE6Jx0UNQ" base_Class="_qkWXUDuJEd-B8KE6Jx0UNQ" templateId="2.16.840.1.113883.3.88.11.83.13" assigningAuthorityName="HITSP C83"/>
   <CDA:AssociationValidation xmi:id="_uX7ooEvaEd-GNbUQBie2ig" severity="INFO" base_Association="_r6JXkEvaEd-GNbUQBie2ig">
     <ruleId>C32-[CT1-1]</ruleId>
   </CDA:AssociationValidation>
@@ -586,7 +581,6 @@ resolved</body>
   </CDA:ConformsTo>
   <CDA:ConformsTo xmi:id="_rGacMFF6Ed-Lud-5SYZhMw" base_Generalization="_ZNaLkTuHEd-B8KE6Jx0UNQ" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_rGbDQFF6Ed-Lud-5SYZhMw" base_Generalization="_pOUDYDuHEd-B8KE6Jx0UNQ" requiresParentId="true"/>
-  <CDA:ConformsTo xmi:id="_rGbqUFF6Ed-Lud-5SYZhMw" base_Generalization="_qkWXUTuJEd-B8KE6Jx0UNQ" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_rGbqUVF6Ed-Lud-5SYZhMw" base_Generalization="_B973gUveEd-GNbUQBie2ig" requiresParentId="true">
     <ruleId>C83-[DE-10-CDA-3]</ruleId>
   </CDA:ConformsTo>

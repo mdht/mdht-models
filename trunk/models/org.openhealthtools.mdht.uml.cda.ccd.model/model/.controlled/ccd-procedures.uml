@@ -11,7 +11,7 @@
     <ownedRule xmi:id="_4lS0EFQAEeCl3PxyJ8BBuQ" name="titleValue" constrainedElement="_1XPjsFQAEeCl3PxyJ8BBuQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_92avcFQAEeCl3PxyJ8BBuQ">
         <language>Analysis</language>
-        <body>title is valued with a case-insensitive language-insensitive text string containing â€œproceduresâ€?.</body>
+        <body>title is valued with a case-insensitive language-insensitive text string containing &quot;procedures&quot;.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0FmDsFQCEeCl3PxyJ8BBuQ" name="hasProcedureActivity" constrainedElement="_4lS0EFQAEeCl3PxyJ8BBuQ">
@@ -40,7 +40,7 @@
     <ownedRule xmi:id="_uSpS0FZhEeCvPvJeMYeitg" name="codeVocab">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_uSpS0VZhEeCvPvJeMYeitg">
         <language>Analysis</language>
-        <body>The value for â€œact/codeâ€? in a procedure activity SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4).</body>
+        <body>The value for act/code in a procedure activity SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4).</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_xxqXYFZhEeCvPvJeMYeitg" name="hasPerformer">
@@ -52,13 +52,13 @@
     <ownedRule xmi:id="_ypAPEFZhEeCvPvJeMYeitg" name="hasReason">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ypAPEVZhEeCvPvJeMYeitg">
         <language>Analysis</language>
-        <body>A procedure activity contains one or more entryRelationship / @typeCode=â€?RSONâ€?, the target of which represents the indication or reason for the procedure.</body>
+        <body>A procedure activity contains one or more entryRelationship / @typeCode=&quot;RSON&quot;, the target of which represents the indication or reason for the procedure.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_z8UREFZhEeCvPvJeMYeitg" name="hasReasonTarget">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_z8UREVZhEeCvPvJeMYeitg">
         <language>Analysis</language>
-        <body>entryRelationship / @typeCode=â€?RSONâ€? in a procedure activity SHALL have a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement.</body>
+        <body>entryRelationship / @typeCode=&quot;RSON&quot; in a procedure activity SHALL have a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_05BJ4FZhEeCvPvJeMYeitg" name="hasConsent">
@@ -76,7 +76,7 @@
     <ownedRule xmi:id="_2y3ncFZhEeCvPvJeMYeitg" name="hasProductInstance">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2y3ncVZhEeCvPvJeMYeitg">
         <language>Analysis</language>
-        <body>have one or more Act / participant [@typeCode=â€?DEVâ€?], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52)</body>
+        <body>have one or more Act / participant [@typeCode=&quot;DEV&quot;], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_4qxkQFZhEeCvPvJeMYeitg" name="hasSameProductInstance">

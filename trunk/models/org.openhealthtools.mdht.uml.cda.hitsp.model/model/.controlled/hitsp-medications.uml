@@ -606,7 +606,7 @@ number')</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_s2NdUE9LEeCYjrG3z1gQrQ">
         <language>Analysis</language>
-        <body>The order number, i.e., the identifier from the perspective of the ordering provider, SHOULD be recorded in the &lt;id> element within the &lt;supply> element with moodcode = 'INT'</body>
+        <body>The order number, i.e., the identifier from the perspective of the ordering provider, SHOULD be recorded in the id element within the supply element with moodcode = 'INT'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_wxphsE9XEeCYjrG3z1gQrQ" name="orderExpiration" constrainedElement="_ntSbsE9LEeCYjrG3z1gQrQ">
@@ -630,7 +630,7 @@ measure</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_x1mvgE9LEeCYjrG3z1gQrQ">
         <language>Analysis</language>
-        <body>The quantity ordered SHALL be recorded in the value attribute of &lt;quantity> element inside a &lt;supply> element used to record order information</body>
+        <body>The quantity ordered SHALL be recorded in the value attribute of quantity element inside a supply element used to record order information</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_gZ5JkE8qEeCYjrG3z1gQrQ" name="quantityUnit">
@@ -658,7 +658,7 @@ identifier assigned by the pharmacy</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_HTNS0E9HEeCYjrG3z1gQrQ">
         <language>Analysis</language>
-        <body>The prescription number SHALL be recorded in the extension attribute of the &lt;id> element within a &lt;supply> element having a moodCode attribute of EVN</body>
+        <body>The prescription number SHALL be recorded in the extension attribute of the &lt;id> element within a supply element having a moodCode attribute of EVN</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="__k3HEE9GEeCYjrG3z1gQrQ" name="assigningAuthority" constrainedElement="_w2-9YE9GEeCYjrG3z1gQrQ">
@@ -667,7 +667,7 @@ identifier assigned by the pharmacy</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_TKxWsE9HEeCYjrG3z1gQrQ">
         <language>Analysis</language>
-        <body>The root attribute of the &lt;id> element SHOULD be the OID of the assigning authority for the identifier.</body>
+        <body>The root attribute of the id element SHOULD be the OID of the assigning authority for the identifier.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_UqHCgE9HEeCYjrG3z1gQrQ" name="assigningAuthorityGUID" constrainedElement="__k3HEE9GEeCYjrG3z1gQrQ">
@@ -683,13 +683,13 @@ dispense</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_gSA3wE9dEeCYjrG3z1gQrQ">
         <language>Analysis</language>
-        <body>The dispense date is recorded in &lt;effectiveTime> element within a &lt;supply> element with a moodCode attribute set to EVN</body>
+        <body>The dispense date is recorded in effectiveTime element within a supply element with a moodCode attribute set to EVN</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_7apEME9YEeCYjrG3z1gQrQ" name="dispensingPharmacyLocation" constrainedElement="_j9XicE9NEeCYjrG3z1gQrQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_CF-60E9ZEeCYjrG3z1gQrQ">
         <language>Analysis</language>
-        <body>The dispensing pharmacy's location is present in the addr element in performer/assignEntity element inside a &lt;supply> element with a moodCode attribute set to EVN</body>
+        <body>The dispensing pharmacy's location is present in the addr element in performer/assignEntity element inside a supply element with a moodCode attribute set to EVN</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_j9XicE9NEeCYjrG3z1gQrQ" name="dispensingPharmacyLocationState" constrainedElement="_uz6LAE9JEeCYjrG3z1gQrQ">
@@ -719,7 +719,7 @@ measure</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ENv2YE9KEeCYjrG3z1gQrQ">
         <language>Analysis</language>
-        <body>The quantity dispensed SHALL be recorded in the value attribute of &lt;quantity> element inside a &lt;supply> element with a moodCode attribute set to EVN</body>
+        <body>The quantity dispensed SHALL be recorded in the value attribute of quantity element inside a supply element with a moodCode attribute set to EVN</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_xwwKEE9eEeCYjrG3z1gQrQ" name="hasFillNumber" constrainedElement="_uz6LAE9JEeCYjrG3z1gQrQ">
@@ -729,7 +729,7 @@ history entry. The fill number identifies the supply (dispense) event as a disti
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_zshTME9eEeCYjrG3z1gQrQ">
         <language>Analysis</language>
-        <body>The fill number SHOULD be recorded in the sequenceNumber attribute of a &lt;entryRelationship> element with a typeCode attribute set to COMP</body>
+        <body>The fill number SHOULD be recorded in the sequenceNumber attribute of a entryRelationship element with a typeCode attribute set to COMP</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_vMkQgE8mEeCYjrG3z1gQrQ">
@@ -754,7 +754,7 @@ Please note that the number of fills requested is what is recorded in the docume
     </ownedAttribute>
     <ownedAttribute xmi:id="_Rqdy0E9NEeCYjrG3z1gQrQ" name="statusCode" visibility="private">
       <ownedComment xmi:id="_pIVYME9dEeCYjrG3z1gQrQ">
-        <body>When &lt;supply> element has a moodCode attribute set to EVN</body>
+        <body>When supply element has a moodCode attribute set to EVN</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_z-cTAIHYEd6Ncrr6L3Ublw"/>
