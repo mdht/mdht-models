@@ -881,7 +881,9 @@ document may come from sources or contain information that the author cannot val
   <CDA:PropertyValidation xmi:id="_eh2AsFgbEeCUJu9CrL294w" base_Property="_ehusZ1gbEeCUJu9CrL294w">
     <ruleId>CONF-CONSOL-46</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_eh1ZoFgbEeCUJu9CrL294w" base_Property="_ehusZVgbEeCUJu9CrL294w"/>
+  <CDA:PropertyValidation xmi:id="_eh1ZoFgbEeCUJu9CrL294w" base_Property="_ehusZVgbEeCUJu9CrL294w">
+    <ruleId>CONF-CONSOL-558</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_eh2nwFgbEeCUJu9CrL294w" base_Property="_ehusbVgbEeCUJu9CrL294w">
     <ruleId>CONF-CONSOL-48</ruleId>
   </CDA:PropertyValidation>

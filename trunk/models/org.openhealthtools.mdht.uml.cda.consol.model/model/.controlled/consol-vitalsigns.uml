@@ -230,7 +230,9 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:PropertyValidation xmi:id="_aIpEQFf5EeCxTb-Xw_gdpQ" base_Property="_aIjkxVf5EeCxTb-Xw_gdpQ">
     <ruleId>6.3.4.21.4</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_aIodMFf5EeCxTb-Xw_gdpQ" base_Property="_aIjkv1f5EeCxTb-Xw_gdpQ"/>
+  <CDA:PropertyValidation xmi:id="_aIodMFf5EeCxTb-Xw_gdpQ" base_Property="_aIjkv1f5EeCxTb-Xw_gdpQ">
+    <ruleId>CONF-CONSOL-556</ruleId>
+  </CDA:PropertyValidation>
   <uml:Class xmi:id="_aIt8wFf5EeCxTb-Xw_gdpQ" name="VitalSign" clientDependency="_aI8mQFf5EeCxTb-Xw_gdpQ _aI8mQVf5EeCxTb-Xw_gdpQ _aI8mQlf5EeCxTb-Xw_gdpQ _aI8mQ1f5EeCxTb-Xw_gdpQ">
     <eAnnotations xmi:id="_aIxnIFf5EeCxTb-Xw_gdpQ" source="sourceClass">
       <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-vitalSigns.uml#_dobt4K7IEd6_ioDelDcPPg"/>
@@ -310,7 +312,9 @@ The differentiation between Vital Signs and Results varies by clinical context. 
   <CDA:CDATemplate xmi:id="_aIt8x1f5EeCxTb-Xw_gdpQ" base_Class="_aIt8wFf5EeCxTb-Xw_gdpQ" templateId="2.16.840.1.113883.3.88.11.83.14">
     <ruleId>C83-[DE-14-CDA-1]</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConstraintValidation xmi:id="_aIxAEFf5EeCxTb-Xw_gdpQ" base_Constraint="_aIt8wlf5EeCxTb-Xw_gdpQ"/>
+  <CDA:ConstraintValidation xmi:id="_aIxAEFf5EeCxTb-Xw_gdpQ" base_Constraint="_aIt8wlf5EeCxTb-Xw_gdpQ">
+    <ruleId>CONF-CONSOL-557</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_aIvK4Ff5EeCxTb-Xw_gdpQ" base_Property="_aIt8xlf5EeCxTb-Xw_gdpQ">
     <ruleId>C154-[DE-14.03-1]</ruleId>
   </CDA:PropertyValidation>
