@@ -38,9 +38,7 @@ Content Modules.</body>
     <ownedComment xmi:id="__kqqkVfdEeCIIf8CuAH-Kw" annotatedElement="__kqqkFfdEeCIIf8CuAH-Kw">
       <body>The Diagnostic Results Section contains information about the results from diagnostic procedures the patient received.</body>
     </ownedComment>
-    <generalization xmi:id="__ldUwFfdEeCIIf8CuAH-Kw">
-      <general xmi:type="uml:Class" href="../consol.uml#_C-D9gFjJEeCjtJnI04I27A"/>
-    </generalization>
+    <generalization xmi:id="__ldUwFfdEeCIIf8CuAH-Kw" general="_C-D9gFjJEeCjtJnI04I27A"/>
     <substitution xmi:id="__ldUwVfdEeCIIf8CuAH-Kw" client="__kqqkFfdEeCIIf8CuAH-Kw">
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
@@ -77,13 +75,11 @@ Content Modules.</body>
     <ownedEnd xmi:id="__lcGoVfdEeCIIf8CuAH-Kw" type="__kqqkFfdEeCIIf8CuAH-Kw" association="__lcGoFfdEeCIIf8CuAH-Kw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="__ktt4FfdEeCIIf8CuAH-Kw" base_Class="__kqqkFfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.21.2.3.1"/>
-  <CDA:ConstraintValidation xmi:id="__lcGpFfdEeCIIf8CuAH-Kw" severity="WARNING">
+  <CDA:ConstraintValidation xmi:id="__lcGpFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Constraint="__lcGolfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-392</ruleId>
-    <base_Constraint href="../consol.uml#__lcGolfdEeCIIf8CuAH-Kw"/>
   </CDA:ConstraintValidation>
-  <CDA:CodeSystemConstraint xmi:id="__kz0gFfdEeCIIf8CuAH-Kw" code="30954-2" displayName="STUDIES SUMMARY">
+  <CDA:CodeSystemConstraint xmi:id="__kz0gFfdEeCIIf8CuAH-Kw" code="30954-2" displayName="STUDIES SUMMARY" base_Property="__kzNcFfdEeCIIf8CuAH-Kw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <base_Property href="../consol.uml#__kzNcFfdEeCIIf8CuAH-Kw"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="__lXOIFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Association="__lWnElfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-388</ruleId>
@@ -429,4 +425,20 @@ ASTM/HL7 Continuity of Care Document).</body>
   <CDA:PropertyValidation xmi:id="__k7JQFfdEeCIIf8CuAH-Kw" base_Property="__k4GDVfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-396</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_C-D9gFjJEeCjtJnI04I27A" name="DiagnosticResultsNarrativeSection">
+    <ownedRule xmi:id="__lcGolfdEeCIIf8CuAH-Kw" name="titleValue">
+      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_GMTtEIjpEd66cKocspyVOg"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="__lcGo1fdEeCIIf8CuAH-Kw">
+        <language>Analysis</language>
+        <body>Contains a case-insensitive language-insensitive string containing 'results'.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_C-EkkFjJEeCjtJnI04I27A">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="__kzNcFfdEeCIIf8CuAH-Kw" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_Gxl5gFjJEeCjtJnI04I27A" base_Class="_C-D9gFjJEeCjtJnI04I27A" templateId="2.16.840.1.113883.10.20.21.2.3"/>
 </xmi:XMI>
