@@ -78,6 +78,40 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-shared.uml#_fRbGcli-EeCtrPxOuNl61A"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_F8SUEFjHEeCbyoEB16CABA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-results.uml#_C-D9gFjJEeCjtJnI04I27A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_xCepAFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xDNBwFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_xDOP4FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xDXZ0FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_xDYn8FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xDdgcFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xDeukFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-shared.uml#_xDgjwFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-shared.uml#_xDpGoFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xDq70FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_xDsJ8FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xDv0UFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-shared.uml#_xDxpgFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xD168FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_xD3JEFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xD_r8VmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_xEA6EFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xEIO0FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_xEJc8FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xEhQYFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xEiegFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_xEjsoFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xEsPgFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xE7gEFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xE8HIFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_ypd08FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_ypmX0FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_ypnl8FmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_ypsecFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_ypu6sFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_ypwv4VmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_ypzzMFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_yp2PcFmJEeCeYrW7M64v2A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_yp4EoFmJEeCeYrW7M64v2A"/>
     <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
       <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>

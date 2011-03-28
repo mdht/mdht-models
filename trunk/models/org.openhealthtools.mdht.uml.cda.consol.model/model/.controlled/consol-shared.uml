@@ -536,4 +536,133 @@
   <CDA:PropertyValidation xmi:id="_fRYqMFi-EeCtrPxOuNl61A" base_Property="_fRSjkVi-EeCtrPxOuNl61A">
     <ruleId>CONF-182</ruleId>
   </CDA:PropertyValidation>
+  <uml:Class xmi:id="_xDxpgFmJEeCeYrW7M64v2A" name="InternalReference" clientDependency="_xD1T4VmJEeCeYrW7M64v2A">
+    <eAnnotations xmi:id="_xDzesVmJEeCeYrW7M64v2A" source="sourceClass">
+      <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_0TsKoEqtEeCJlNjgFmcEiA"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_xDxpgVmJEeCeYrW7M64v2A">
+      <body>&lt;p>CDA and HL7 Version 3 Entries may reference (point to) information contained in other entries&#xD;
+within the same document or message&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The act being referred to can be any CDA Clinical Statement element type (act, procedure,&#xD;
+observation, substanceAdministration, supply, et cetera). For compatibility with the Clinical&#xD;
+Statement model the internal reference shall always use the &amp;lt;act> class, regardless of the XML&#xD;
+element type of the act it refers to.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_xD1T4FmJEeCeYrW7M64v2A">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <substitution xmi:id="_xD1T4VmJEeCeYrW7M64v2A" client="_xDxpgFmJEeCeYrW7M64v2A">
+      <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_0TsKoEqtEeCJlNjgFmcEiA"/>
+      <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_0TsKoEqtEeCJlNjgFmcEiA"/>
+    </substitution>
+    <ownedAttribute xmi:id="_xD0s0FmJEeCeYrW7M64v2A" name="classCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xD0s0VmJEeCeYrW7M64v2A" name="moodCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xDxphVmJEeCeYrW7M64v2A" name="id" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_xDxphlmJEeCeYrW7M64v2A">
+        <body>This element shall be present. The root and extension attributes shall identify an element defined&#xD;
+elsewhere in the same document.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xDxph1mJEeCeYrW7M64v2A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xDxpiFmJEeCeYrW7M64v2A"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xDxpg1mJEeCeYrW7M64v2A" name="code" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_xDxphFmJEeCeYrW7M64v2A">
+        <body>This element shall be present. It shall be valued when the internal reference is to element that has&#xD;
+a &amp;lt;code> element, and shall have the same attributes as the &amp;lt;code> element in the act it&#xD;
+references. If the element it references does not have a &amp;lt;code> element, then the nullFlavor&#xD;
+attribute should be set to &quot;NA&quot;.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_xDyQkFmJEeCeYrW7M64v2A" base_Class="_xDxpgFmJEeCeYrW7M64v2A" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
+  <CDA:PropertyValidation xmi:id="_xDzesFmJEeCeYrW7M64v2A" base_Property="_xDxphVmJEeCeYrW7M64v2A"/>
+  <CDA:PropertyValidation xmi:id="_xDy3oFmJEeCeYrW7M64v2A" base_Property="_xDxpg1mJEeCeYrW7M64v2A"/>
+  <uml:Class xmi:id="_xDgjwFmJEeCeYrW7M64v2A" name="ReactionObservation" clientDependency="_xDqUwVmJEeCeYrW7M64v2A">
+    <eAnnotations xmi:id="_xDmDUFmJEeCeYrW7M64v2A" source="sourceClass">
+      <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#__XC4cHrREd68l9lQ-TLEBQ"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_xDgjwVmJEeCeYrW7M64v2A">
+      <body>A reaction represents an adverse event due to an administered or exposed substance. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions. Significant reactions are to be listed in the Alerts section. Reactions in the Medications section can be used to track reactions associated with individual substance administrations or to track routine follow up to an administration (e.g. &quot;no adverse reaction 30 minutes post administration&quot;).</body>
+    </ownedComment>
+    <ownedRule xmi:id="_xDgjwlmJEeCeYrW7M64v2A" name="hasReactionIntervention" constrainedElement="_xDgjwFmJEeCeYrW7M64v2A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xDgjw1mJEeCeYrW7M64v2A">
+        <language>Analysis</language>
+        <body>A reaction observation MAY contain one or more reation interventions.</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_xDgjxFmJEeCeYrW7M64v2A" name="reactionInterventionType" constrainedElement="_xDgjwFmJEeCeYrW7M64v2A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xDgjxVmJEeCeYrW7M64v2A">
+        <language>Analysis</language>
+        <body>A reaction observation MAY contain one or more reation interventions. A reaction intervention SHALL be represented as a procedure activity (templateId 2.16.840.1.113883.10.20.1.29), a medication activity (templateId 2.16.840.1.113883.10.20.1.24), or some other clinical statement.</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_xDgjxlmJEeCeYrW7M64v2A" name="reactionInterventionTypeCode" constrainedElement="_xDgjwFmJEeCeYrW7M64v2A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xDgjx1mJEeCeYrW7M64v2A">
+        <language>Analysis</language>
+        <body>The value for entryRelationship / @typeCode in a relationship between a reaction observation and reaction intervention SHALL be &quot;RSON&quot; &quot;Has reason&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_xDqUwFmJEeCeYrW7M64v2A">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <substitution xmi:id="_xDqUwVmJEeCeYrW7M64v2A" client="_xDgjwFmJEeCeYrW7M64v2A">
+      <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#__XC4cHrREd68l9lQ-TLEBQ"/>
+      <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#__XC4cHrREd68l9lQ-TLEBQ"/>
+    </substitution>
+    <ownedAttribute xmi:id="_xDgjzFmJEeCeYrW7M64v2A" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xDgjzVmJEeCeYrW7M64v2A" value="OBS"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xDgjzlmJEeCeYrW7M64v2A" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xDgjz1mJEeCeYrW7M64v2A" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xDofkFmJEeCeYrW7M64v2A" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xDgj0FmJEeCeYrW7M64v2A" name="statusCode" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xDgjyVmJEeCeYrW7M64v2A" name="severityObservation" type="_VE1c4FfdEeCb0LEisK_hTQ" association="_xDpGoFmJEeCeYrW7M64v2A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xDgjylmJEeCeYrW7M64v2A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xDgjy1mJEeCeYrW7M64v2A"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_xDpGoFmJEeCeYrW7M64v2A" memberEnd="_xDgjyVmJEeCeYrW7M64v2A _xDptsFmJEeCeYrW7M64v2A">
+    <ownedEnd xmi:id="_xDptsFmJEeCeYrW7M64v2A" type="_xDgjwFmJEeCeYrW7M64v2A" association="_xDpGoFmJEeCeYrW7M64v2A"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_xDgj0VmJEeCeYrW7M64v2A" base_Class="_xDgjwFmJEeCeYrW7M64v2A" templateId="2.16.840.1.113883.10.20.1.54" assigningAuthorityName="CCD"/>
+  <CDA:ConstraintValidation xmi:id="_xDkOIFmJEeCeYrW7M64v2A" severity="INFO" base_Constraint="_xDgjwlmJEeCeYrW7M64v2A">
+    <ruleId>CONF-280</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_xDk1MFmJEeCeYrW7M64v2A" base_Constraint="_xDgjxFmJEeCeYrW7M64v2A">
+    <ruleId>CONF-297</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_xDlcQFmJEeCeYrW7M64v2A" base_Constraint="_xDgjxlmJEeCeYrW7M64v2A">
+    <ruleId>CONF-296</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_xDhx4FmJEeCeYrW7M64v2A" base_Property="_xDgjzFmJEeCeYrW7M64v2A">
+    <ruleId>CONF-283</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xDhx4VmJEeCeYrW7M64v2A" base_Property="_xDgjzlmJEeCeYrW7M64v2A">
+    <ruleId>CONF-284</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_xDiY8FmJEeCeYrW7M64v2A" code="completed" base_Property="_xDgj0FmJEeCeYrW7M64v2A">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-285</ruleId>
+    <ruleId>CONF-286</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>

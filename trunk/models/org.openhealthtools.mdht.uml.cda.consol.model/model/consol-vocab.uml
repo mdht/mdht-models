@@ -82,6 +82,35 @@
       <ownedLiteral xmi:id="_aIyOOVf5EeCxTb-Xw_gdpQ" name="9279-1"/>
       <ownedLiteral xmi:id="_aIyOOlf5EeCxTb-Xw_gdpQ" name="3141-9"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xDD30FmJEeCeYrW7M64v2A" name="Medication Route FDA">
+      <eAnnotations xmi:id="_xDFtAFmJEeCeYrW7M64v2A" source="sourceClass">
+        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWOkIKDqEd-dVeaMP0XXQw"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xDG7IFmJEeCeYrW7M64v2A" name="Body Site">
+      <eAnnotations xmi:id="_xDIwUFmJEeCeYrW7M64v2A" source="sourceClass">
+        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_c215cKDqEd-dVeaMP0XXQw"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xDJ-cFmJEeCeYrW7M64v2A" name="Medication Product Form">
+      <eAnnotations xmi:id="_xDMasFmJEeCeYrW7M64v2A" source="sourceClass">
+        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWEMEKDqEd-dVeaMP0XXQw"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xED9YFmJEeCeYrW7M64v2A" name="Medication Type">
+      <eAnnotations xmi:id="_xEHAsVmJEeCeYrW7M64v2A" source="sourceClass">
+        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dWV44KDqEd-dVeaMP0XXQw"/>
+      </eAnnotations>
+      <ownedLiteral xmi:id="_xED9YVmJEeCeYrW7M64v2A" name="329505003"/>
+      <ownedLiteral xmi:id="_xED9YlmJEeCeYrW7M64v2A" name="73639000"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xEbJwFmJEeCeYrW7M64v2A" name="Medication Fill Status">
+      <eAnnotations xmi:id="_xEe0IFmJEeCeYrW7M64v2A" source="sourceClass">
+        <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dV8QQKDqEd-dVeaMP0XXQw"/>
+      </eAnnotations>
+      <ownedLiteral xmi:id="_xEbJwVmJEeCeYrW7M64v2A" name="aborted"/>
+      <ownedLiteral xmi:id="_xEbJwlmJEeCeYrW7M64v2A" name="completed"/>
+    </packagedElement>
     <profileApplication xmi:id="_H1PoACF_Ed-M3adQxwHq4g">
       <eAnnotations xmi:id="_H1Q2ICF_Ed-M3adQxwHq4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1415,4 +1444,23 @@
   <term:ValueSetCode xmi:id="_aI3twFf5EeCxTb-Xw_gdpQ" conceptName="Oxygen saturation:SFr:Pt:BldC:Qn:Oximetry" usageNote="LOINC" base_EnumerationLiteral="_aIyOOFf5EeCxTb-Xw_gdpQ"/>
   <term:ValueSetCode xmi:id="_aI4U0Ff5EeCxTb-Xw_gdpQ" conceptName="Breaths:NRat:Pt:Respiratory system:Qn:" usageNote="LOINC" base_EnumerationLiteral="_aIyOOVf5EeCxTb-Xw_gdpQ"/>
   <term:ValueSetCode xmi:id="_aI4U0Vf5EeCxTb-Xw_gdpQ" conceptName="Body weight:Mass:Pt:^Patient:Qn:Measured" usageNote="LOINC" base_EnumerationLiteral="_aIyOOlf5EeCxTb-Xw_gdpQ"/>
+  <term:ValueSetVersion xmi:id="_xDD30VmJEeCeYrW7M64v2A" identifier="2.16.840.1.113883.3.88.12.3221.8.7" version="1" fullName="Medication Route FDA Value Set" definition="Route of Administration value set is based upon FDA Drug Registration and Listing Database (FDA Orange Book) which are used in FDA structured product and labelling (SPL)." revisionDate="07/07/2009" base_Enumeration="_xDD30FmJEeCeYrW7M64v2A">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_xDG7IVmJEeCeYrW7M64v2A" identifier="2.16.840.1.113883.3.88.12.3221.8.9" version="2" fullName="Body Site Value Set" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." revisionDate="07/07/2009" base_Enumeration="_xDG7IFmJEeCeYrW7M64v2A">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_xDKlgFmJEeCeYrW7M64v2A" identifier="2.16.840.1.113883.3.88.12.3221.8.11" version="1" fullName="Medication Product Form Value Set" definition="This is the physical form of the product as presented to the individual. For example: tablet, capsule, liquid or ointment. NCI concept code for pharmaceutical dosage form: C42636" revisionDate="07/23/2009" base_Enumeration="_xDJ-cFmJEeCeYrW7M64v2A">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_xED9Y1mJEeCeYrW7M64v2A" identifier="2.16.840.1.113883.3.88.12.3221.8.19" version="1" fullName="Medication Type Value Set" definition="This is a classification based on how the medication is marketed (e.g., prescription, over the counter drug)" revisionDate="07/23/2009" base_Enumeration="_xED9YFmJEeCeYrW7M64v2A">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_xEGZoFmJEeCeYrW7M64v2A" conceptName="Over the counter products" usageNote="SNOMED-CT" base_EnumerationLiteral="_xED9YVmJEeCeYrW7M64v2A"/>
+  <term:ValueSetCode xmi:id="_xEHAsFmJEeCeYrW7M64v2A" conceptName="Prescription Drug" usageNote="SNOMED-CT" base_EnumerationLiteral="_xED9YlmJEeCeYrW7M64v2A"/>
+  <term:ValueSetVersion xmi:id="_xEbJw1mJEeCeYrW7M64v2A" identifier="2.16.840.1.113883.3.88.12.80.64" version="1" fullName="Medication Fill Status Value Set" definition="The HL7 ActStatus has been limited by HITSP. This identifies whether the medication has been fulfilled, such as completed and aborted" revisionDate="07/23/2009" base_Enumeration="_xEbJwFmJEeCeYrW7M64v2A">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_xEdmAFmJEeCeYrW7M64v2A" conceptName="Aborted" usageNote="ActStatus" base_EnumerationLiteral="_xEbJwVmJEeCeYrW7M64v2A"/>
+  <term:ValueSetCode xmi:id="_xEeNEFmJEeCeYrW7M64v2A" conceptName="Completed" usageNote="ActStatus" base_EnumerationLiteral="_xEbJwlmJEeCeYrW7M64v2A"/>
 </xmi:XMI>
