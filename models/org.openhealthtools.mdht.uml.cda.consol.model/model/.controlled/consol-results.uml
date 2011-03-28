@@ -38,15 +38,8 @@ Content Modules.</body>
     <ownedComment xmi:id="__kqqkVfdEeCIIf8CuAH-Kw" annotatedElement="__kqqkFfdEeCIIf8CuAH-Kw">
       <body>The Diagnostic Results Section contains information about the results from diagnostic procedures the patient received.</body>
     </ownedComment>
-    <ownedRule xmi:id="__lcGolfdEeCIIf8CuAH-Kw" name="titleValue">
-      <constrainedElement xmi:type="uml:Property" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_GMTtEIjpEd66cKocspyVOg"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="__lcGo1fdEeCIIf8CuAH-Kw">
-        <language>Analysis</language>
-        <body>Contains a case-insensitive language-insensitive string containing 'results'.</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="__ldUwFfdEeCIIf8CuAH-Kw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="../consol.uml#_C-D9gFjJEeCjtJnI04I27A"/>
     </generalization>
     <substitution xmi:id="__ldUwVfdEeCIIf8CuAH-Kw" client="__kqqkFfdEeCIIf8CuAH-Kw">
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
@@ -60,9 +53,6 @@ Content Modules.</body>
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-diagnosticResults.uml#_P3GVkMieEd6mWrHPmrIIfQ"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-diagnosticResults.uml#_P3GVkMieEd6mWrHPmrIIfQ"/>
     </substitution>
-    <ownedAttribute xmi:id="__kzNcFfdEeCIIf8CuAH-Kw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="__k230FfdEeCIIf8CuAH-Kw" name="resultOrganizer" visibility="private" type="__k4F8FfdEeCIIf8CuAH-Kw" association="__lWnElfdEeCIIf8CuAH-Kw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__k230VfdEeCIIf8CuAH-Kw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__k230lfdEeCIIf8CuAH-Kw" value="1"/>
@@ -86,12 +76,14 @@ Content Modules.</body>
   <uml:Association xmi:id="__lcGoFfdEeCIIf8CuAH-Kw" memberEnd="__kqqlFfdEeCIIf8CuAH-Kw __lcGoVfdEeCIIf8CuAH-Kw">
     <ownedEnd xmi:id="__lcGoVfdEeCIIf8CuAH-Kw" type="__kqqkFfdEeCIIf8CuAH-Kw" association="__lcGoFfdEeCIIf8CuAH-Kw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="__ktt4FfdEeCIIf8CuAH-Kw" base_Class="__kqqkFfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.3.88.11.83.122" assigningAuthorityName="HITSP C83"/>
-  <CDA:ConstraintValidation xmi:id="__lcGpFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Constraint="__lcGolfdEeCIIf8CuAH-Kw">
+  <CDA:CDATemplate xmi:id="__ktt4FfdEeCIIf8CuAH-Kw" base_Class="__kqqkFfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.21.2.3.1"/>
+  <CDA:ConstraintValidation xmi:id="__lcGpFfdEeCIIf8CuAH-Kw" severity="WARNING">
     <ruleId>CONF-392</ruleId>
+    <base_Constraint href="../consol.uml#__lcGolfdEeCIIf8CuAH-Kw"/>
   </CDA:ConstraintValidation>
-  <CDA:CodeSystemConstraint xmi:id="__kz0gFfdEeCIIf8CuAH-Kw" code="30954-2" displayName="STUDIES SUMMARY" base_Property="__kzNcFfdEeCIIf8CuAH-Kw">
+  <CDA:CodeSystemConstraint xmi:id="__kz0gFfdEeCIIf8CuAH-Kw" code="30954-2" displayName="STUDIES SUMMARY">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <base_Property href="../consol.uml#__kzNcFfdEeCIIf8CuAH-Kw"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="__lXOIFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Association="__lWnElfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-388</ruleId>
@@ -248,7 +240,7 @@ ASTM/HL7 Continuity of Care Document).</body>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1jr3cEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="__lETMFfdEeCIIf8CuAH-Kw" base_Class="__lDsIFfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.3.88.11.83.15">
+  <CDA:CDATemplate xmi:id="__lETMFfdEeCIIf8CuAH-Kw" base_Class="__lDsIFfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.21.4.2">
     <ruleId>C83-[DE-15-CDA-1]</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="__lOrQFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Constraint="__lOEMVfdEeCIIf8CuAH-Kw">
@@ -403,7 +395,7 @@ ASTM/HL7 Continuity of Care Document).</body>
   <uml:Association xmi:id="__lUx4lfdEeCIIf8CuAH-Kw" memberEnd="__k4GBFfdEeCIIf8CuAH-Kw __lVY8FfdEeCIIf8CuAH-Kw">
     <ownedEnd xmi:id="__lVY8FfdEeCIIf8CuAH-Kw" type="__k4F8FfdEeCIIf8CuAH-Kw" association="__lUx4lfdEeCIIf8CuAH-Kw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="__k4tAFfdEeCIIf8CuAH-Kw" base_Class="__k4F8FfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.1.32" assigningAuthorityName="CCD"/>
+  <CDA:CDATemplate xmi:id="__k4tAFfdEeCIIf8CuAH-Kw" base_Class="__k4F8FfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.21.4.1"/>
   <CDA:ConstraintValidation xmi:id="__k7wUFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Constraint="__k4F8lfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-398</ruleId>
   </CDA:ConstraintValidation>

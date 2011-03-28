@@ -1356,7 +1356,7 @@
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_fXJB4FfXEeCr-tFOa4a5hw" conceptName="Aborted" usageNote="ActStatus"/>
   <term:ValueSetCode xmi:id="_fXJo8FfXEeCr-tFOa4a5hw" conceptName="Completed" usageNote="ActStatus"/>
-  <term:ValueSetVersion xmi:id="_VECytlfdEeCb0LEisK_hTQ" base_Enumeration="_VECysFfdEeCb0LEisK_hTQ"/>
+  <term:ValueSetVersion xmi:id="_VECytlfdEeCb0LEisK_hTQ" identifier="TEMP-OID-PROBLEM-STATUS-CODE" base_Enumeration="_VECysFfdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VEEA0FfdEeCb0LEisK_hTQ" usageNote="A concern that is still being tracked." base_EnumerationLiteral="_VECyslfdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VEEn4FfdEeCb0LEisK_hTQ" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_VECys1fdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VEFO8FfdEeCb0LEisK_hTQ" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_VECytFfdEeCb0LEisK_hTQ"/>
