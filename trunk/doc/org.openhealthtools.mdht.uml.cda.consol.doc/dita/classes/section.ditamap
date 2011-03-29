@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Section Templates">
+<topicref href="DiagnosticResultsNarrativeSection.dita" type="topic" />
 <topicref href="DiagnosticResultsSection.dita" type="topic" />
+<topicref href="ImmunizationsNarrativeSection.dita" type="topic" />
+<topicref href="ImmunizationsSection.dita" type="topic" />
+<topicref href="MedicationsNarrativeSection.dita" type="topic" />
+<topicref href="MedicationsSection.dita" type="topic" />
+<topicref href="ProblemListNarrativeSection.dita" type="topic" />
 <topicref href="ProblemListSection.dita" type="topic" />
+<topicref href="VitalSignsNarrativeSection.dita" type="topic" />
 <topicref href="VitalSignsSection.dita" type="topic" />
 </map>

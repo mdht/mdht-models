@@ -55,16 +55,16 @@ Section 4.2.3.1 of the CDA Specification for some examples showing the use of th
 element.</li></ul></li>
 <li>The @extension and/or @root of setId and id <b>SHALL</b> be different when both are present. (CONF-CONSOL-19)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt>, where its data type is II (CONF-CONSOL-51)
-<ol>
-<li><b>SHALL</b> satisfy: The extension attribute of the typeId element is POCD_HD000040. (CONF-CONSOL-10)</li></ol><ul><li><p>The clinical document type ID identifies the constraints imposed by CDA R2 on the
+<ul><li><p>The clinical document type ID identifies the constraints imposed by CDA R2 on the
 content, essentially acting as a version identifier.</p>
-<p>This value is fixed to <tt>root="2.16.840.1.113883.1.3" extension="POCD_HD000040"</tt></p></li></ul></li>
+<p>This value is fixed to <tt>root="2.16.840.1.113883.1.3" extension="POCD_HD000040"</tt></p></li></ul><ol>
+<li><b>SHALL</b> satisfy: The extension attribute of the typeId element is POCD_HD000040. (CONF-CONSOL-10)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF-CONSOL-47)
-<ol>
-<li><b>SHALL</b> satisfy: The id/@root attribute is a syntactically correct UUID or OID. (CONF-CONSOL-11)</li></ol><ul><li><p>The ClinicalDocument/id element is an instance identifier data type (see HL7 Version 3
+<ul><li><p>The ClinicalDocument/id element is an instance identifier data type (see HL7 Version 3
 Abstract Data in Section 5 REFERENCES). The root attribute is a UUID or OID. The
 root uniquely identifies the scope of the extension. The root and extension attributes
-uniquely identify the document.</p></li></ul></li>
+uniquely identify the document.</p></li></ul><ol>
+<li><b>SHALL</b> satisfy: The id/@root attribute is a syntactically correct UUID or OID. (CONF-CONSOL-11)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-CONSOL-45)
 <ul><li>Specifies the type of the clinical document.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-CONSOL-50)
@@ -78,18 +78,17 @@ authored by direct input to a computer system should record an effectiveTime tha
 precise to the second. When authored in other ways, for example, by filling out a
 paper form that is then transferred into an EHR system, the precision of
 effectiveTime may be less than to the second.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt> (CONF-CONSOL-558)
 <ul><li>Specifies the confidentiality assigned to the document. This specification provides no further guidance beyond CDA R2
 on documents with respect to the vocabulary used for confidentialityCode, nor
 treatment or implementation of confidentiality.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt> (CONF-CONSOL-48)
-<ol>
+<ul><li>Each IG has a different method to constrain how the language code is to be expressed, including something which resembles regular expressions.  All reference use of ISO 639-1 and ISO 3166.</li></ul><ol>
 <li><b>SHALL</b> satisfy: languageCode has the form nn, or nn-CC. (CONF-CONSOL-15)</li>
 <li><b>SHALL</b> satisfy: The nn portion of languageCode is a legal ISO-639-1 language code in lowercase. (CONF-CONSOL-16)</li>
-<li>The CC portion languageCode, if present, <b>SHALL</b> be an ISO-3166 country code in uppercase. (CONF-CONSOL-17)</li></ol><ul><li>Each IG has a different method to constrain how the language code is to be expressed, including something which resembles regular expressions.  All reference use of ISO 639-1 and ISO 3166.</li></ul></li>
-<li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, such that it
+<li>The CC portion languageCode, if present, <b>SHALL</b> be an ISO-3166 country code in uppercase. (CONF-CONSOL-17)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Record Target</li>
 <li><b>SHALL</b> satisfy: At least one recordTarget/patientRole element is present. (CONF-CONSOL-21)</li>
 <li>A patient/birthTime element <b>SHALL</b> be present. The patient/birthTime
 element <b>SHALL</b> be precise at least to the year, and <b>SHOULD</b> be precise at least to the
@@ -101,25 +100,21 @@ administrativeGenderCode <b>SHOULD</b> be drawn from the HL7 AdministrativeGende
 vocabulary. (CONF-CONSOL-23)</li>
 <li><b>SHOULD</b> satisfy: The guardian element is present when the patient is a minor child. (CONF-CONSOL-25)</li>
 <li><b>MAY</b> satisfy: The providerOrganization element is present. (CONF-CONSOL-26)</li></ol></li>
-<li>Contains at least one [1..*] <tt><b>author</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Author</li>
-<li><b>SHALL</b> satisfy: The author/time element is present. (CONF-CONSOL-27)<ul><li>The author/time element represents the start time of the author's
-participation in the creation of the clinical document.</li></ul></li>
-<li><b>SHALL</b> satisfy: The assignedAuthor/id element is present. (CONF-CONSOL-28)</li>
-<li><b>SHALL</b> satisfy: An assignedAuthor element contains at least one assignedPerson
-or assignedAuthoringDevice elements. (CONF-CONSOL-29)</li></ol><ul><li>The author element represents the creator of the clinical document. If the role of the
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, such that
+<ul><li>The author element represents the creator of the clinical document. If the role of the
 actor is the entry of information from his or her own knowledge or application of skills,
 that actor is the author. If one actor provides information to another actor who filters,
 reasons, or algorithmically creates new information, then that second actor is also an
 author, having created information from his or her own knowledge or skills. However,
 that determination is independent from the determination of the first actor's
-authorship.</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>dataEnterer</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Data Enterer</li>
-<li><b>SHALL</b> satisfy: When dataEnterer is present, an assignedEntity/assignedPerson element is present. (CONF-CONSOL-30)</li>
-<li>The dataEnterer/time element <b>MAY</b> be present. If present, it represents the starting time of entry of the data. (CONF-CONSOL-31)</li></ol><ul><li><p>The dataEnterer element represents the person who transferred the information from
+authorship.</li></ul><ol>
+<li><b>SHALL</b> satisfy: The author/time element is present. (CONF-CONSOL-27)<ul><li>The author/time element represents the start time of the author's
+participation in the creation of the clinical document.</li></ul></li>
+<li><b>SHALL</b> satisfy: The assignedAuthor/id element is present. (CONF-CONSOL-28)</li>
+<li><b>SHALL</b> satisfy: An assignedAuthor element contains at least one assignedPerson
+or assignedAuthoringDevice elements. (CONF-CONSOL-29)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>dataEnterer</b></tt>, such that
+<ul><li><p>The dataEnterer element represents the person who transferred the information from
 other sources into the clinical document, where the other sources wrote the content of
 the note. The guiding rule of thumb is that an author provides the content found
 within the header or body of the document, subject to their own interpretation. The
@@ -127,10 +122,11 @@ dataEnterer adds information to the electronic system. A person can participate 
 both author and dataEnterer.</p>
 <p>If the role of the actor is to transfer information from one source to another (e.g.,
 transcription or transfer from paper form to electronic system), that actor is considered
-a dataEnterer.</p></li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>informant</b></tt>, such that it
+a dataEnterer.</p></li></ul><ol>
+<li><b>SHALL</b> satisfy: When dataEnterer is present, an assignedEntity/assignedPerson element is present. (CONF-CONSOL-30)</li>
+<li>The dataEnterer/time element <b>MAY</b> be present. If present, it represents the starting time of entry of the data. (CONF-CONSOL-31)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>informant</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Informant12</li>
 <li><b>MAY</b> satisfy: The informant element is present. (CONF-CONSOL-32)</li>
 <li>When informant is present, an assignedEntity/assignedPerson or
 relatedEntity/relatedPerson element <b>SHALL</b> be present. (CONF-CONSOL-33)</li>
@@ -160,25 +156,21 @@ can be represented within the context of the document, the information will be
 represented using the relatedEntity element and the value of relatedEntity/@classCode
 will be set to PROV.</li></ul></li>
 <li>When the informant is a healthcare provider, the value of relatedEntity/code <b>SHOULD</b> be present and indicate the type of healthcare provider. (CONF-CONSOL-39)</li></ol></li>
-<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Custodian</li></ol><ul><li>Based on the CDA R2 constraints (Section 4.2.2.3 of the CDA Normative Web Edition.
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, such that
+<ul><li>Based on the CDA R2 constraints (Section 4.2.2.3 of the CDA Normative Web Edition.
 See Section 5 REFERENCES), the custodian element is required and is the custodian of
 the clinical document.</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>informationRecipient</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Information Recipient</li>
+<li>Contains zero or one [0..1] <tt><b>informationRecipient</b></tt>, such that
+<ul><li>informationRecipient, when used in the context of a referral or request for consultation,
+this records the intended recipient of the information at the time the document is
+created. The intended recipient may also be the health chart of the patient, in which
+case the receivedOrganization is the scoping organization of that chart.</li></ul><ol>
 <li>The ClinicalDocument/informationRecipient element <b>MAY</b> be present.
 When informationRecipient is used, at least one
 informationRecipient/intendedRecipient/informationRecipient or
-informationRecipient/intendedRecipient/receivedOrganization <b>SHALL</b> be present. (CONF-CONSOL-40)</li></ol><ul><li>informationRecipient, when used in the context of a referral or request for consultation,
-this records the intended recipient of the information at the time the document is
-created. The intended recipient may also be the health chart of the patient, in which
-case the receivedOrganization is the scoping organization of that chart.</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>legalAuthenticator</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Legal Authenticator</li>
-<li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in legalAuthenticator. (CONF-CONSOL-41)</li></ol><ul><li><p>The legalAuthenticator element identifies the legal authenticator of the document and
+informationRecipient/intendedRecipient/receivedOrganization <b>SHALL</b> be present. (CONF-CONSOL-40)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>legalAuthenticator</b></tt>, such that
+<ul><li><p>The legalAuthenticator element identifies the legal authenticator of the document and
 must be present if the document has been legally authenticated. Based on local
 practice, clinical documents may be released before legal authentication. This implies
 that a clinical document that does not contain this element has not been legally
@@ -188,18 +180,17 @@ authenticator depending upon local policy. All clinical documents have the poten
 legal authentication, given the appropriate credentials.</p>
 <p>Local policies may choose to delegate the function of legal authentication to a device or
 system that generates the clinical document. In these cases, the legal authenticator is
-a person accepting responsibility for the document, not the generating device or system.</p></li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>authenticator</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Authenticator</li>
-<li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in an authenticator element. (CONF-CONSOL-42)</li></ol><ul><li><p>The authenticator identifies the participant who attested to the accuracy of the
+a person accepting responsibility for the document, not the generating device or system.</p></li></ul><ol>
+<li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in legalAuthenticator. (CONF-CONSOL-41)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>authenticator</b></tt>, such that
+<ul><li><p>The authenticator identifies the participant who attested to the accuracy of the
 information in the document.</p>
 <p>Automated systems, such as a PHR, that allow a clinical document to be generated need to give
 special consideration to authentication permissions because the information contained in the
-document may come from sources or contain information that the author cannot validate.</p></li></ul></li>
-<li>Contains exactly one [1..1] <tt><b>component</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Component2</li></ol></li>
+document may come from sources or contain information that the author cannot validate.</p></li></ul><ol>
+<li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in an authenticator element. (CONF-CONSOL-42)</li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, such that
+</li>
 <li><b>SHALL</b> satisfy: All patient, guardianPerson, assignedPerson, maintainingPerson, relatedPerson, intendedRecipient/informationRecipient, associatedPerson, and relatedSubject/subject elements have a name. (CONF-CONSOL-1)<ul><li><p><b><tt>Person.name</tt>  SHALL</b>  follow the convention of having each name part (e.g. given name, family name)  
 represented as a discrete <b><tt>ENXP</tt></b>.  These <b>SHALL</b> be in the same order which the name normally would be written.  
 The name SHALL convey at least one <tt><b>EntityName.use</b> (SET&lt;CS&gt;)</tt> drawn from <tt>EntityNamePartQualifier</tt>
@@ -308,7 +299,7 @@ authored by direct input to a computer system should record an effectiveTime tha
 precise to the second. When authored in other ways, for example, by filling out a
 paper form that is then transferred into an EHR system, the precision of
 effectiveTime may be less than to the second.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt> (CONF-CONSOL-558)
 <ul><li>Specifies the confidentiality assigned to the document. This specification provides no further guidance beyond CDA R2
 on documents with respect to the vocabulary used for confidentialityCode, nor
 treatment or implementation of confidentiality.</li></ul></li>
@@ -328,7 +319,6 @@ element.</li></ul></li>
 <li>The @extension and/or @root of setId and id <b>SHALL</b> be different when both are present. (CONF-CONSOL-19)</li></ol></li>
 <li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, where its type is <xref href="../RecordTarget.dita">Record Target</xref>
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] <xref href="../RecordTarget.dita">Record Target</xref></li>
 <li><b>SHALL</b> satisfy: At least one recordTarget/patientRole element is present. (CONF-CONSOL-21)</li>
 <li>A patient/birthTime element <b>SHALL</b> be present. The patient/birthTime
 element <b>SHALL</b> be precise at least to the year, and <b>SHOULD</b> be precise at least to the
@@ -342,21 +332,17 @@ vocabulary. (CONF-CONSOL-23)</li>
 <li><b>MAY</b> satisfy: The providerOrganization element is present. (CONF-CONSOL-26)</li></ol></li>
 <li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is <xref href="../Author.dita">Author</xref>
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] <xref href="../Author.dita">Author</xref></li>
 <li><b>SHALL</b> satisfy: The author/time element is present. (CONF-CONSOL-27)<ul><li>The author/time element represents the start time of the author's
 participation in the creation of the clinical document.</li></ul></li>
 <li><b>SHALL</b> satisfy: The assignedAuthor/id element is present. (CONF-CONSOL-28)</li>
 <li><b>SHALL</b> satisfy: An assignedAuthor element contains at least one assignedPerson
 or assignedAuthoringDevice elements. (CONF-CONSOL-29)</li></ol></li>
 <li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is <xref href="../Custodian.dita">Custodian</xref>
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] <xref href="../Custodian.dita">Custodian</xref></li></ol></li>
+</li>
 <li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+</li>
+<li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
-<li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Record Target</li>
 <li><b>SHALL</b> satisfy: At least one recordTarget/patientRole element is present. (CONF-CONSOL-21)</li>
 <li>A patient/birthTime element <b>SHALL</b> be present. The patient/birthTime
 element <b>SHALL</b> be precise at least to the year, and <b>SHOULD</b> be precise at least to the
@@ -368,9 +354,8 @@ administrativeGenderCode <b>SHOULD</b> be drawn from the HL7 AdministrativeGende
 vocabulary. (CONF-CONSOL-23)</li>
 <li><b>SHOULD</b> satisfy: The guardian element is present when the patient is a minor child. (CONF-CONSOL-25)</li>
 <li><b>MAY</b> satisfy: The providerOrganization element is present. (CONF-CONSOL-26)</li></ol></li>
-<li>Contains at least one [1..*] <tt><b>author</b></tt>, such that it
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Author</li>
 <li><b>SHALL</b> satisfy: The author/time element is present. (CONF-CONSOL-27)<ul><li>The author/time element represents the start time of the author's
 participation in the creation of the clinical document.</li></ul></li>
 <li><b>SHALL</b> satisfy: The assignedAuthor/id element is present. (CONF-CONSOL-28)</li>
@@ -382,9 +367,8 @@ reasons, or algorithmically creates new information, then that second actor is a
 author, having created information from his or her own knowledge or skills. However,
 that determination is independent from the determination of the first actor's
 authorship.</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>dataEnterer</b></tt>, such that it
+<li>Contains zero or one [0..1] <tt><b>dataEnterer</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Data Enterer</li>
 <li><b>SHALL</b> satisfy: When dataEnterer is present, an assignedEntity/assignedPerson element is present. (CONF-CONSOL-30)</li>
 <li>The dataEnterer/time element <b>MAY</b> be present. If present, it represents the starting time of entry of the data. (CONF-CONSOL-31)</li></ol><ul><li><p>The dataEnterer element represents the person who transferred the information from
 other sources into the clinical document, where the other sources wrote the content of
@@ -395,9 +379,8 @@ both author and dataEnterer.</p>
 <p>If the role of the actor is to transfer information from one source to another (e.g.,
 transcription or transfer from paper form to electronic system), that actor is considered
 a dataEnterer.</p></li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>informant</b></tt>, such that it
+<li>Contains zero or one [0..1] <tt><b>informant</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Informant12</li>
 <li><b>MAY</b> satisfy: The informant element is present. (CONF-CONSOL-32)</li>
 <li>When informant is present, an assignedEntity/assignedPerson or
 relatedEntity/relatedPerson element <b>SHALL</b> be present. (CONF-CONSOL-33)</li>
@@ -427,14 +410,12 @@ can be represented within the context of the document, the information will be
 represented using the relatedEntity element and the value of relatedEntity/@classCode
 will be set to PROV.</li></ul></li>
 <li>When the informant is a healthcare provider, the value of relatedEntity/code <b>SHOULD</b> be present and indicate the type of healthcare provider. (CONF-CONSOL-39)</li></ol></li>
-<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Custodian</li></ol><ul><li>Based on the CDA R2 constraints (Section 4.2.2.3 of the CDA Normative Web Edition.
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, such that
+<ul><li>Based on the CDA R2 constraints (Section 4.2.2.3 of the CDA Normative Web Edition.
 See Section 5 REFERENCES), the custodian element is required and is the custodian of
 the clinical document.</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>informationRecipient</b></tt>, such that it
+<li>Contains zero or one [0..1] <tt><b>informationRecipient</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Information Recipient</li>
 <li>The ClinicalDocument/informationRecipient element <b>MAY</b> be present.
 When informationRecipient is used, at least one
 informationRecipient/intendedRecipient/informationRecipient or
@@ -442,9 +423,8 @@ informationRecipient/intendedRecipient/receivedOrganization <b>SHALL</b> be pres
 this records the intended recipient of the information at the time the document is
 created. The intended recipient may also be the health chart of the patient, in which
 case the receivedOrganization is the scoping organization of that chart.</li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>legalAuthenticator</b></tt>, such that it
+<li>Contains zero or one [0..1] <tt><b>legalAuthenticator</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Legal Authenticator</li>
 <li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in legalAuthenticator. (CONF-CONSOL-41)</li></ol><ul><li><p>The legalAuthenticator element identifies the legal authenticator of the document and
 must be present if the document has been legally authenticated. Based on local
 practice, clinical documents may be released before legal authentication. This implies
@@ -456,17 +436,15 @@ legal authentication, given the appropriate credentials.</p>
 <p>Local policies may choose to delegate the function of legal authentication to a device or
 system that generates the clinical document. In these cases, the legal authenticator is
 a person accepting responsibility for the document, not the generating device or system.</p></li></ul></li>
-<li>Contains zero or one [0..1] <tt><b>authenticator</b></tt>, such that it
+<li>Contains zero or one [0..1] <tt><b>authenticator</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Authenticator</li>
 <li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in an authenticator element. (CONF-CONSOL-42)</li></ol><ul><li><p>The authenticator identifies the participant who attested to the accuracy of the
 information in the document.</p>
 <p>Automated systems, such as a PHR, that allow a clinical document to be generated need to give
 special consideration to authentication permissions because the information contained in the
 document may come from sources or contain information that the author cannot validate.</p></li></ul></li>
-<li>Contains exactly one [1..1] <tt><b>component</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Component2</li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, such that
+</li>
 <li><b>SHALL</b> satisfy: All patient, guardianPerson, assignedPerson, maintainingPerson, relatedPerson, intendedRecipient/informationRecipient, associatedPerson, and relatedSubject/subject elements have a name. (CONF-CONSOL-1)<ul><li><p><b><tt>Person.name</tt>  SHALL</b>  follow the convention of having each name part (e.g. given name, family name)  
 represented as a discrete <b><tt>ENXP</tt></b>.  These <b>SHALL</b> be in the same order which the name normally would be written.  
 The name SHALL convey at least one <tt><b>EntityName.use</b> (SET&lt;CS&gt;)</tt> drawn from <tt>EntityNamePartQualifier</tt>
@@ -613,16 +591,6 @@ serviceEvent/effectiveTime, ClinicalDocument/participant/time,
 serviceEvent/performer/time and encounterParticipant/time <b>SHALL</b> be precise at
 least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time zone if only precise to day, month, or year. (CONF-CONSOL-44)</li>
 </ol>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <realmCode code="US"/>
-  <templateId root="2.16.840.1.113883.10.20.3"/>
-  <id root="63ab2767-6dea-4736-b0b3-67d6618fba65"/>
-  <code/>
-  <title/>
-  <effectiveTime/>
-  <confidentialityCode/>
-  <languageCode/>
-</ClinicalDocument>]]></codeblock>
+<codeblock id="example"><![CDATA[]]></codeblock>
 </body>
 </topic>

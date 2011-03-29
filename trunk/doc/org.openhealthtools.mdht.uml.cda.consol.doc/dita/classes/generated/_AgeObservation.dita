@@ -45,16 +45,6 @@
 <li><b>SHOULD</b> satisfy: The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with effectiveTime (CONF-222)</li>
 <li><b>MAY</b> satisfy: The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime. (CONF-223)</li>
 </ol>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.1.38"/>
-  <id root="afa731b9-1489-4400-a879-d5d1dfef3c47"/>
-  <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
-  <statusCode code="completed"/>
-  <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
-  </effectiveTime>
-</observation>]]></codeblock>
+<codeblock id="example"><![CDATA[]]></codeblock>
 </body>
 </topic>

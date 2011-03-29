@@ -3,7 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Concern Entry Status</title>
 <prolog id="prolog">
-<resourceid id="not specified"/>
+<resourceid id="TEMP-OID-PROBLEM-STATUS-CODE"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -12,7 +12,7 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>ConcernEntryStatus - (OID not specified)</entry></row>
+<row><entry>Value Set</entry><entry>ConcernEntryStatus - TEMP-OID-PROBLEM-STATUS-CODE</entry></row>
 <row><entry>Description</entry><entry>A concern in the "active" state represents one for which some ongoing clinical activity is expected, and that no activity is expected in other states. Specific uses of the suspended and aborted states are left to the implementation.
 </entry></row>
 </tbody></tgroup></table>

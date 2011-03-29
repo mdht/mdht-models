@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Health Status Observation - conformance rules</title>
-<shortdesc id="shortdesc">[Observation: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.1.2</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.21.4.5</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Observation</category></metadata>
-<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+<resourceid id="2.16.840.1.113883.10.20.21.4.5"/>
 </prolog>
 <body>
 <section id="description">
@@ -15,11 +15,11 @@
 <li><b>SHALL</b> conform to <xref href="../StatusObservation.dita">Status Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.57</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11323-3" </tt><i>Health status</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-166)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> HealthStatusValue</tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> HealthStatusValue</tt><b> STATIC</b> (CONF-CONSOL-545)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-CONSOL-546)
 </li>
-<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</li>
+<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-544)</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../StatusObservation.dita">Status Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.57</tt>)</li>
@@ -29,30 +29,18 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11323-3" </tt><i>Health status</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-166)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-CONSOL-546)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-514, CONF-515)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> HealthStatusValue</tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> HealthStatusValue</tt><b> STATIC</b> (CONF-CONSOL-545)
 </li>
 <li>Target of an entryRelationship whose value for "entryRelationship / @typeCode" <b>SHALL</b> be "REFR" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-509)</li>
 <li><b>SHALL NOT</b> contain any additional Observation attributes. (CONF-517)</li>
 <li><b>SHALL NOT</b> contain any Observation participants. (CONF-518)</li>
 <li><b>SHALL NOT</b> be the source of any Observation relationships. (CONF-519)</li>
-<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.</li>
+<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-544)</li>
 </ol>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.1.57"/>
-  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
-  <id root="e3b66240-9961-4ee3-aa42-0d4a6a4802c8"/>
-  <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
-  <text/>
-  <statusCode code="completed"/>
-  <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
-  </effectiveTime>
-</observation>]]></codeblock>
+<codeblock id="example"><![CDATA[]]></codeblock>
 </body>
 </topic>
