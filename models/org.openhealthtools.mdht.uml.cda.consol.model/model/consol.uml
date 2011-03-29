@@ -102,7 +102,6 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_xEjsoFmJEeCeYrW7M64v2A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xEsPgFmJEeCeYrW7M64v2A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xE7gEFmJEeCeYrW7M64v2A"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_xE8HIFmJEeCeYrW7M64v2A"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_ypd08FmJEeCeYrW7M64v2A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_ypmX0FmJEeCeYrW7M64v2A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_ypnl8FmJEeCeYrW7M64v2A"/>
@@ -119,6 +118,20 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-vitalsigns.uml#_PxR_AFmSEeCxj9gXXiOSmQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_ztXWYFmTEeCxj9gXXiOSmQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_w63kIFmUEeCBjLscJJRYEg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_onorMFmrEeCpme9GHkYrRA">
+      <ownedEnd xmi:id="_onpSQFmrEeCpme9GHkYrRA" association="_onorMFmrEeCpme9GHkYrRA">
+        <type xmi:type="uml:Class" href=".controlled/consol-problems.uml#_VD4aoFfdEeCb0LEisK_hTQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-problems.uml#_onkZwFmrEeCpme9GHkYrRA"/>
+      <memberEnd href="#_onpSQFmrEeCpme9GHkYrRA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CUG-gFmuEeCpme9GHkYrRA">
+      <ownedEnd xmi:id="_CUG-gVmuEeCpme9GHkYrRA" association="_CUG-gFmuEeCpme9GHkYrRA">
+        <type xmi:type="uml:Class" href=".controlled/consol-problems.uml#_VD4aoFfdEeCb0LEisK_hTQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/consol-problems.uml#_CUGXcFmuEeCpme9GHkYrRA"/>
+      <memberEnd href="#_CUG-gVmuEeCpme9GHkYrRA"/>
+    </packagedElement>
     <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
       <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
