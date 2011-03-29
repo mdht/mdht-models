@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Result Organizer - conformance rules</title>
-<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.10.20.1.32</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.10.20.21.4.1</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Organizer</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.1.32"/>
+<resourceid id="2.16.840.1.113883.10.20.21.4.1"/>
 </prolog>
 <body>
 <section id="description">
@@ -33,12 +33,11 @@
 <li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-396)
 </li>
-<li>Contains at least one [1..*] <tt><b>component</b></tt>, such that it
+<li>Contains at least one [1..*] <tt><b>component</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.15</tt>)</li></ol></li>
-<li>Contains at least one [1..*] <tt><b>specimen</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Specimen</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.4.2</tt>)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>specimen</b></tt>, such that
+</li>
 <li>The specimen element <b>SHALL NOT</b> conflict with the specimen inherent in code (CONF-400)</li>
 <li>specimen / specimenRole / id <b>SHOULD</b> be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen. (CONF-401)</li>
 <li><b>SHALL</b> satisfy: Contains one or more component (CONF-402)</li>
@@ -58,12 +57,11 @@
 <li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-396)
 </li>
-<li>Contains at least one [1..*] <tt><b>component</b></tt>, such that it
+<li>Contains at least one [1..*] <tt><b>component</b></tt>, such that
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.15</tt>)</li></ol></li>
-<li>Contains at least one [1..*] <tt><b>specimen</b></tt>, such that it
-<ol>
-<li><b>SHALL</b> contain exactly one [1..1] CDA Specimen</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.4.2</tt>)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>specimen</b></tt>, such that
+</li>
 <li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
 <li>The specimen element <b>SHALL NOT</b> conflict with the specimen inherent in code (CONF-400)</li>
 <li>specimen / specimenRole / id <b>SHOULD</b> be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen. (CONF-401)</li>
@@ -72,26 +70,6 @@
 <li>A result organizer component / procedure <b>MAY</b> be a reference to a procedure described in the Procedure section. (CONF-404)</li>
 <li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-406)</li>
 </ol>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.1.32"/>
-  <id root="5ea461e1-0c13-478c-9edb-c39029cfbd38"/>
-  <code/>
-  <statusCode/>
-  <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
-  </effectiveTime>
-  <component>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
-      <id root="40effc18-c983-429b-9283-aabf5d9950f0"/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </observation>
-  </component>
-</organizer>]]></codeblock>
+<codeblock id="example"><![CDATA[]]></codeblock>
 </body>
 </topic>
