@@ -246,10 +246,10 @@ described in the Entry Content Modules.</body>
     <eAnnotations xmi:id="_MybZMFr7EeCUOqqxU3d1wQ" source="sourceClass">
       <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-procedures.uml#_to5TUDH6Ed-saqiXO4OYhQ"/>
     </eAnnotations>
-    <generalization xmi:id="_MycAQlr7EeCUOqqxU3d1wQ" general="__4WIYFr6EeCUOqqxU3d1wQ"/>
     <generalization xmi:id="_owlGIFr7EeCUOqqxU3d1wQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
+    <generalization xmi:id="_MycAQlr7EeCUOqqxU3d1wQ" general="__4WIYFr6EeCUOqqxU3d1wQ"/>
     <substitution xmi:id="_MycAQ1r7EeCUOqqxU3d1wQ" client="_MyZkAFr7EeCUOqqxU3d1wQ">
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
@@ -287,10 +287,10 @@ described in the Entry Content Modules.</body>
         <body>contains one or more Observation / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Observation / code or if there is a need to further specialize the site in Observation / code. Observation / targetSiteCode SHALL NOT conflict with the site inherent in Observation / code</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_NmGR0Vr7EeCUOqqxU3d1wQ" general="__4WIYFr6EeCUOqqxU3d1wQ"/>
     <generalization xmi:id="_rpLD4Fr7EeCUOqqxU3d1wQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
+    <generalization xmi:id="_NmGR0Vr7EeCUOqqxU3d1wQ" general="__4WIYFr6EeCUOqqxU3d1wQ"/>
     <substitution xmi:id="_NmGR0lr7EeCUOqqxU3d1wQ" client="_NmCncFr7EeCUOqqxU3d1wQ">
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-procedures.uml#_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
@@ -409,10 +409,10 @@ organization performed or hosted the Procedure</body>
         <body>self.performer->forAll(perf : cda::Performer2 | not perf.oclIsUndefined() and perf.assignedEntity->size() > 0)</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_D_WaAFr7EeCUOqqxU3d1wQ" general="__4WIYFr6EeCUOqqxU3d1wQ"/>
     <generalization xmi:id="_lDnFIFr7EeCUOqqxU3d1wQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_-jiisEbuEd6besF9iFIJkQ"/>
     </generalization>
+    <generalization xmi:id="_D_WaAFr7EeCUOqqxU3d1wQ" general="__4WIYFr6EeCUOqqxU3d1wQ"/>
     <substitution xmi:id="_D_WaAVr7EeCUOqqxU3d1wQ" client="_D-zncFr7EeCUOqqxU3d1wQ">
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_uP4tkDuMEd-B8KE6Jx0UNQ"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_uP4tkDuMEd-B8KE6Jx0UNQ"/>
