@@ -13,6 +13,20 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-immunizations.uml#_ZEjk4Mf0Ed6VjLXh4DcWSg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medicationsAdministered.uml#_quPDQMfyEd6VjLXh4DcWSg"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_GgvgUDxbEd6JwqSGecoePg" name="ConcernEntry">
+      <ownedComment xmi:id="_MDuIEFflEeCQ8PeHNHg5Pw">
+        <body>&lt;p>&#xD;
+This event (moodCode='EVN') represents an act (act classCode='ACT') of being concerned&#xD;
+about a problem, allergy or other issue. The &amp;lt;effectiveTime> element describes the period of&#xD;
+concern. The subject of concern is one or more observations about related problems (see&#xD;
+1.3.6.1.4.1.19376.1.5.3.1.4.5.2) or allergies and intolerances (see&#xD;
+1.3.6.1.4.1.19376.1.5.3.1.4.5.3). Additional references can be provided having additional information related to the concern. The concern entry allows related acts to be grouped. This&#xD;
+allows representing the history of a problem as a series of observation over time, for example.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+All concerns reflect the act of recording (&amp;lt;act classCode='ACT'>) the event (moodCode='EVN')&#xD;
+of being concerned about a problem, allergy or other issue about the patient condition.&#xD;
+&lt;/p></body>
+      </ownedComment>
       <ownedRule xmi:id="_jfpCcCNMEeCxCon8a79rfA" name="effectiveTimeLowHigh" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_vbZp0CNMEeCxCon8a79rfA">
           <language>Analysis</language>
@@ -22,15 +36,33 @@
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_-tR7oCNQEeCxCon8a79rfA" name="hasRelatedObservations" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
+        <ownedComment xmi:id="_ARMfwFfmEeCQ8PeHNHg5Pw">
+          <body>Each concern is about one or more related problems or allergies. This is how a series of related observations can be grouped as a single concern.</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_D4dAACNREeCxCon8a79rfA">
           <language>Analysis</language>
-          <body>Each concern is about one or more related problems or allergies. This entry SHALL contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances. This is how a series of related observations can be grouped as a single concern. This SHALL be represented using entryRelationship with typeCode = 'SUBJ'.</body>
+          <body>This entry SHALL contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_VB8x4FfmEeCQ8PeHNHg5Pw" name="relatedObservationsTypeCode" constrainedElement="_-tR7oCNQEeCxCon8a79rfA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XgGPUFfmEeCQ8PeHNHg5Pw">
+          <language>Analysis</language>
+          <body>This SHALL be represented using entryRelationship with typeCode = 'SUBJ'</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_f7J1wCNREeCxCon8a79rfA" name="hasRelatedReferences" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
+        <ownedComment xmi:id="_pqCQMFfmEeCQ8PeHNHg5Pw">
+          <body>These may be used to represent related statements such related visits.</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_iqETECNREeCxCon8a79rfA">
           <language>Analysis</language>
-          <body>Each concern MAY have 0 or more related references. These MAY be used to represent related statements such related visits. This MAY be any valid CDA clinical statement, and SHOULD be an IHE entry template. This SHALL be represented using entryRelationship with typeCode = 'REFR'.</body>
+          <body>Each concern MAY have 0 or more related references. This MAY be any valid CDA clinical statement, and SHOULD be an IHE entry template.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_qz-60FfmEeCQ8PeHNHg5Pw" name="hasRelatedReferencesTypeCode" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_q0Ir0VfmEeCQ8PeHNHg5Pw">
+          <language>Analysis</language>
+          <body>Related References SHALL be represented using entryRelationship with typeCode = 'REFR'.</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_H4qVgDxbEd6JwqSGecoePg">
@@ -45,6 +77,21 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IC2EwowGEd6B6JSUB00H7g" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_cSAfcCM-EeCxCon8a79rfA" name="statusCode" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_m7Z8MFflEeCQ8PeHNHg5Pw">
+          <body>&lt;p>&#xD;
+The statusCode associated with any concern must be one of the following values:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+&lt;b>active&lt;/b>: A concern that is still being tracked.&#xD;
+&lt;b>suspended&lt;/b>: A concern that is active, but which may be set aside. For example, this value might be used to suspend concern&#xD;
+about a patient problem after some period of remission, but before assumption that the concern has been resolved.&#xD;
+&lt;b>aborted&lt;/b>: A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved.&#xD;
+This value might be used to mark a concern as being aborted after a patient leaves care against medical advice.&#xD;
+&lt;b>completed&lt;/b>:&#xD;
+The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for&#xD;
+historical purposes.&#xD;
+&lt;/p></body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d7SKYCM-EeCxCon8a79rfA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d7SKYSM-EeCxCon8a79rfA" value="1"/>

@@ -138,10 +138,6 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sWfCACTmEeCvyarv2dSCoQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sWfCASTmEeCvyarv2dSCoQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_OXcaMCTMEeCvyarv2dSCoQ" name="problemObservation" type="_IjIO0DxbEd6JwqSGecoePg" association="_OXcaMiTMEeCvyarv2dSCoQ">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RM6ygCTMEeCvyarv2dSCoQ" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RM6ygSTMEeCvyarv2dSCoQ"/>
-    </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_IjIO0DxbEd6JwqSGecoePg" name="ProblemObservation">
     <ownedRule xmi:id="_LgbBQBTyEd-6K-YJpbwRmQ" name="informationSource" constrainedElement="_IjIO0DxbEd6JwqSGecoePg">
@@ -226,9 +222,7 @@
   <uml:Association xmi:id="_7kTDABZ2Ed-i6Lz80y5G5g" memberEnd="_7kSb8BZ2Ed-i6Lz80y5G5g _7kTqEBZ2Ed-i6Lz80y5G5g">
     <ownedEnd xmi:id="_7kTqEBZ2Ed-i6Lz80y5G5g" type="_IjIO0DxbEd6JwqSGecoePg" association="_7kTDABZ2Ed-i6Lz80y5G5g"/>
   </uml:Association>
-  <uml:Association xmi:id="_OXcaMiTMEeCvyarv2dSCoQ" memberEnd="_OXcaMCTMEeCvyarv2dSCoQ _OXdBQCTMEeCvyarv2dSCoQ">
-    <ownedEnd xmi:id="_OXdBQCTMEeCvyarv2dSCoQ" type="_GgvgUDxbEd6JwqSGecoePg" association="_OXcaMiTMEeCvyarv2dSCoQ"/>
-  </uml:Association>
+  <uml:Association xmi:id="_OXcaMiTMEeCvyarv2dSCoQ"/>
   <CDA:CDATemplate xmi:id="_ECBV4Ho6Ed6UPbrR4QTFoQ" base_Class="_GgvgUDxbEd6JwqSGecoePg" templateId="2.16.840.1.113883.10.20.1.27" assigningAuthorityName="CCD"/>
   <CDA:CDATemplate xmi:id="_JHA5wHo6Ed6UPbrR4QTFoQ" base_Class="_T6kfkGaJEd6Hk_bPOfEjYA" templateId="2.16.840.1.113883.10.20.1.51" assigningAuthorityName="CCD"/>
   <CDA:CDATemplate xmi:id="_N2xNcHo6Ed6UPbrR4QTFoQ" base_Class="_IjIO0DxbEd6JwqSGecoePg" templateId="2.16.840.1.113883.10.20.1.28" assigningAuthorityName="CCD"/>
