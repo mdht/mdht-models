@@ -318,16 +318,16 @@
           <body>A reaction observation MAY contain one or more reation interventions.</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_OgP7cBXOEd-6K-YJpbwRmQ" name="reactionInterventionType" constrainedElement="__XC4cHrREd68l9lQ-TLEBQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLkWoBXOEd-6K-YJpbwRmQ">
-          <language>Analysis</language>
-          <body>A reaction observation MAY contain one or more reation interventions. A reaction intervention SHALL be represented as a procedure activity (templateId 2.16.840.1.113883.10.20.1.29), a medication activity (templateId 2.16.840.1.113883.10.20.1.24), or some other clinical statement.</body>
-        </specification>
-      </ownedRule>
       <ownedRule xmi:id="__CX4MBXNEd-6K-YJpbwRmQ" name="reactionInterventionTypeCode" constrainedElement="__XC4cHrREd68l9lQ-TLEBQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_IrUIYBXOEd-6K-YJpbwRmQ">
           <language>Analysis</language>
           <body>The value for entryRelationship / @typeCode in a relationship between a reaction observation and reaction intervention SHALL be &quot;RSON&quot; &quot;Has reason&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_OgP7cBXOEd-6K-YJpbwRmQ" name="reactionInterventionType" constrainedElement="__XC4cHrREd68l9lQ-TLEBQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLkWoBXOEd-6K-YJpbwRmQ">
+          <language>Analysis</language>
+          <body>A reaction intervention SHALL be represented as a procedure activity (templateId 2.16.840.1.113883.10.20.1.29), a medication activity (templateId 2.16.840.1.113883.10.20.1.24), or some other clinical statement.</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_PipkYHrSEd68l9lQ-TLEBQ">
@@ -745,7 +745,6 @@
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" href=".controlled/ccd-problem.uml#_OXcaMiTMEeCvyarv2dSCoQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_pz8pgEjlEeCOWNbpDoETQw">
       <ownedEnd xmi:id="_pz93oEjlEeCOWNbpDoETQw" association="_pz8pgEjlEeCOWNbpDoETQw">
         <type xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_7tlrAGwWEd6q29qQGU-SBA"/>
@@ -921,7 +920,7 @@
   <CDA:ConstraintValidation xmi:id="_LZgM8BXOEd-6K-YJpbwRmQ" base_Constraint="__CX4MBXNEd-6K-YJpbwRmQ">
     <ruleId>CONF-296</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_SfTK8BXOEd-6K-YJpbwRmQ" base_Constraint="_OgP7cBXOEd-6K-YJpbwRmQ">
+  <CDA:ConstraintValidation xmi:id="_SfTK8BXOEd-6K-YJpbwRmQ" severity="INFO" base_Constraint="_OgP7cBXOEd-6K-YJpbwRmQ">
     <ruleId>CONF-297</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_6avJQBXOEd-6K-YJpbwRmQ" base_Property="_3K_PwBXOEd-6K-YJpbwRmQ">
@@ -1027,7 +1026,9 @@
     <ruleId>CONF-291</ruleId>
     <ruleId>CONF-292</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_52fg8CfbEd-4R4ealYN1gQ" identifier="2.16.840.1.113883.1.11.20.3" name="AlertStatusCode" version="20061017" base_Property="_1iCUEIHVEd6Ncrr6L3Ublw"/>
+  <CDA:ValueSetConstraint xmi:id="_52fg8CfbEd-4R4ealYN1gQ" identifier="2.16.840.1.113883.1.11.20.3" name="AlertStatusCode" version="20061017" base_Property="_1iCUEIHVEd6Ncrr6L3Ublw">
+    <ruleId>CONF-272</ruleId>
+  </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_52h9MCfbEd-4R4ealYN1gQ" code="33999-4" displayName="Status" base_Property="_XvctMHvDEd6jfbAJq2V82w">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-512</ruleId>
