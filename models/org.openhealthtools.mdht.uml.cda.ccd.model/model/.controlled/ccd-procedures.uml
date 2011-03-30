@@ -137,10 +137,10 @@
   </uml:Class>
   <uml:Association xmi:id="_T9G4QMJ1Ed6-XpBv2uxYrQ"/>
   <uml:Class xmi:id="_to5TUDH6Ed-saqiXO4OYhQ" name="ProcedureActivityAct">
-    <generalization xmi:id="_Sv6pQDH7Ed-saqiXO4OYhQ" general="_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
     <generalization xmi:id="_to7vkDH6Ed-saqiXO4OYhQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
+    <generalization xmi:id="_Sv6pQDH7Ed-saqiXO4OYhQ" general="_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
   </uml:Class>
   <uml:Class xmi:id="_3lHE0DH6Ed-saqiXO4OYhQ" name="ProcedureActivityObservation">
     <ownedRule xmi:id="_Eu9xAFTEEeCnnNnsbG2N3Q" name="mayHaveMethodCode">
@@ -155,10 +155,10 @@
         <body>contains one or more Observation / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Observation / code or if there is a need to further specialize the site in Observation / code. Observation / targetSiteCode SHALL NOT conflict with the site inherent in Observation / code</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_TNWzMDH7Ed-saqiXO4OYhQ" general="_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
     <generalization xmi:id="_3lHr4DH6Ed-saqiXO4OYhQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
+    <generalization xmi:id="_TNWzMDH7Ed-saqiXO4OYhQ" general="_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
   </uml:Class>
   <uml:Class xmi:id="_6mhnYDH6Ed-saqiXO4OYhQ" name="ProcedureActivityProcedure">
     <ownedRule xmi:id="_UFXWcFTIEeCnnNnsbG2N3Q" name="mayHaveMethodCode">
@@ -185,10 +185,10 @@
         <body>specimen / specimenRole / id SHOULD be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen.</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_Tmd2wDH7Ed-saqiXO4OYhQ" general="_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
     <generalization xmi:id="_6miOcDH6Ed-saqiXO4OYhQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_-jiisEbuEd6besF9iFIJkQ"/>
     </generalization>
+    <generalization xmi:id="_Tmd2wDH7Ed-saqiXO4OYhQ" general="_HDKxYMJ1Ed6-XpBv2uxYrQ"/>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_p_Lr0IjvEd66cKocspyVOg" base_Class="_p_LEwIjvEd66cKocspyVOg" templateId="2.16.840.1.113883.10.20.1.12" assigningAuthorityName="CCD"/>
   <CDA:AssociationValidation xmi:id="_W_edEMJ1Ed6-XpBv2uxYrQ" severity="WARNING" base_Association="_T9G4QMJ1Ed6-XpBv2uxYrQ"/>
