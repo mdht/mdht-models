@@ -53,7 +53,7 @@ described in the Entry Content Modules.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D-xLMlr7EeCUOqqxU3d1wQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D-xLM1r7EeCUOqqxU3d1wQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_D-qdglr7EeCUOqqxU3d1wQ" name="procedure" type="_D-zncFr7EeCUOqqxU3d1wQ" association="_D_XoIFr7EeCUOqqxU3d1wQ">
+    <ownedAttribute xmi:id="_D-qdglr7EeCUOqqxU3d1wQ" name="procedureActivity" type="_D-zncFr7EeCUOqqxU3d1wQ" association="_D_XoIFr7EeCUOqqxU3d1wQ">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D-qdg1r7EeCUOqqxU3d1wQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D-qdhFr7EeCUOqqxU3d1wQ" value="1"/>
     </ownedAttribute>
@@ -490,7 +490,7 @@ Procedure</body>
       <type xmi:type="uml:Class" href="consol-shared.uml#_xDxpgFmJEeCeYrW7M64v2A"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D-9_gVr7EeCUOqqxU3d1wQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_D-_NoVr7EeCUOqqxU3d1wQ" name="internalReference2" association="_D-_0sVr7EeCUOqqxU3d1wQ">
+    <ownedAttribute xmi:id="_D-_NoVr7EeCUOqqxU3d1wQ" name="internalReferenceReason" association="_D-_0sVr7EeCUOqqxU3d1wQ">
       <type xmi:type="uml:Class" href="consol-shared.uml#_xDxpgFmJEeCeYrW7M64v2A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D-_Nolr7EeCUOqqxU3d1wQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D-_0sFr7EeCUOqqxU3d1wQ" value="1"/>
