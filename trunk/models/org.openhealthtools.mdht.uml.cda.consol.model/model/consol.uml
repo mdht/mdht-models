@@ -178,7 +178,7 @@
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
   </uml:Package>
-  <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="consol" nsURI="http://www.openhealthtools.org/mdht/uml/cda/consol" packageName="consol" prefix="CONSOL" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
+  <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="consol" nsURI="http://www.openhealthtools.org/mdht/uml/cda/consol" packageName="consol" prefix="Consol" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
   <CDA:CDATemplate xmi:id="_a1xFcFf4EeCxTb-Xw_gdpQ" templateId="2.16.840.1.113883.3.88.11.83.14" assigningAuthorityName="HITSP">
     <ruleId>C83-[DE-14-CDA-1]</ruleId>
   </CDA:CDATemplate>
