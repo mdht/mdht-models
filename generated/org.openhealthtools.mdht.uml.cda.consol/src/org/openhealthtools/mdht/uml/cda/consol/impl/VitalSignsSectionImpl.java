@@ -15,7 +15,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -27,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class VitalSignsSectionImpl extends SectionImpl implements VitalSignsSection {
+public class VitalSignsSectionImpl extends VitalSignsNarrativeSectionImpl implements VitalSignsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,51 +51,6 @@ public class VitalSignsSectionImpl extends SectionImpl implements VitalSignsSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsSectionVitalSignEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionVitalSignEntry(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateVitalSignsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateVitalSignsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateVitalSignsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionTitle(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateVitalSignsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSectionOperations.validateVitalSignsSectionVitalSignsOrganizer(this, diagnostics, context);
 	}
@@ -108,6 +62,16 @@ public class VitalSignsSectionImpl extends SectionImpl implements VitalSignsSect
 	 */
 	public EList<VitalSignsOrganizer> getVitalSignsOrganizers() {
 		return VitalSignsSectionOperations.getVitalSignsOrganizers(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateVitalSignsNarrativeSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionOperations.validateVitalSignsNarrativeSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

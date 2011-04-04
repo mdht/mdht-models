@@ -19,23 +19,10 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCondition()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.7' constraints.validation.error='ConditionTemplateId ConditionEntryRelationshipRequired ConditionEffectiveTimeLowHigh ConditionHasTreatingProvider ConditionHasProviderId ConditionClassCode ConditionMoodCode ConditionId ConditionCodeNullFlavor ConditionEffectiveTime' code.nullFlavor='NA' classCode='ACT' constraints.validation.warning='ConditionSubjectOfTarget ConditionContainsProblemObservation ConditionContainsAlertObservation' moodCode='EVN' constraints.validation.info='ConditionContainsPatientAwareness ConditionHasProviderTreatmentTime ConditionEpisodeObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.21.4.3' constraints.validation.error='ConditionTemplateId ConditionEffectiveTimeLow ConditionEffectiveTimeHigh ConditionEffectiveTimeHighProhibited ConditionHasTreatingProvider ConditionHasProviderId ConditionClassCode ConditionMoodCode ConditionId ConditionCodeNullFlavor ConditionEffectiveTime' code.nullFlavor='NA' classCode='ACT' constraints.validation.warning='ConditionSubjectOfTarget ConditionContainsProblemObservation ConditionContainsAlertObservation' moodCode='EVN' constraints.validation.info='ConditionContainsPatientAwareness ConditionHasProviderTreatmentTime ConditionEpisodeObservation'"
  * @generated
  */
 public interface Condition extends Act {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.entryRelationship->isEmpty()
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship->isEmpty()'"
-	 * @generated
-	 */
-	boolean validateConditionEntryRelationshipRequired(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -96,15 +83,39 @@ public interface Condition extends Act {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * not self.effectiveTime.low.oclIsUndefined()
-	 *    and ((self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined())
-	 *    and ((self.statusCode.code <> 'completed' and self.statusCode.code <> 'aborted') implies self.effectiveTime.high.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.low.oclIsUndefined()\r\n   and ((self.statusCode.code = \'completed\' or self.statusCode.code = \'aborted\') implies not self.effectiveTime.high.oclIsUndefined())\r\n   and ((self.statusCode.code <> \'completed\' and self.statusCode.code <> \'aborted\') implies self.effectiveTime.high.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.low.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateConditionEffectiveTimeLowHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateConditionEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.code = \'completed\' or self.statusCode.code = \'aborted\') implies not self.effectiveTime.high.oclIsUndefined()'"
+	 * @generated
+	 */
+	boolean validateConditionEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.code = 'active' or self.statusCode.code = 'suspended') implies self.effectiveTime.high.oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.code = \'active\' or self.statusCode.code = \'suspended\') implies self.effectiveTime.high.oclIsUndefined()'"
+	 * @generated
+	 */
+	boolean validateConditionEffectiveTimeHighProhibited(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,11 +160,11 @@ public interface Condition extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.7')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.4.3')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.7\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.21.4.3\')'"
 	 * @generated
 	 */
 	boolean validateConditionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

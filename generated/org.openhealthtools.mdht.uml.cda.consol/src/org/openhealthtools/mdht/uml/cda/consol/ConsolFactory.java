@@ -116,6 +116,15 @@ public interface ConsolFactory extends EFactory {
 	ProblemListSection createProblemListSection();
 
 	/**
+	 * Returns a new object of class '<em>Problem List Narrative Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem List Narrative Section</em>'.
+	 * @generated
+	 */
+	ProblemListNarrativeSection createProblemListNarrativeSection();
+
+	/**
 	 * Returns a new object of class '<em>Diagnostic Results Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -123,6 +132,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	DiagnosticResultsSection createDiagnosticResultsSection();
+
+	/**
+	 * Returns a new object of class '<em>Diagnostic Results Narrative Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Diagnostic Results Narrative Section</em>'.
+	 * @generated
+	 */
+	DiagnosticResultsNarrativeSection createDiagnosticResultsNarrativeSection();
 
 	/**
 	 * Returns a new object of class '<em>Result Organizer</em>'.
@@ -161,6 +179,15 @@ public interface ConsolFactory extends EFactory {
 	VitalSignsSection createVitalSignsSection();
 
 	/**
+	 * Returns a new object of class '<em>Vital Signs Narrative Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vital Signs Narrative Section</em>'.
+	 * @generated
+	 */
+	VitalSignsNarrativeSection createVitalSignsNarrativeSection();
+
+	/**
 	 * Returns a new object of class '<em>Vital Signs Organizer</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -186,6 +213,267 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	GeneralHeaderConstraints createGeneralHeaderConstraints();
+
+	/**
+	 * Returns a new object of class '<em>Patient Awareness</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Awareness</em>'.
+	 * @generated
+	 */
+	PatientAwareness createPatientAwareness();
+
+	/**
+	 * Returns a new object of class '<em>Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication</em>'.
+	 * @generated
+	 */
+	Medication createMedication();
+
+	/**
+	 * Returns a new object of class '<em>Medication Series Number Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Series Number Observation</em>'.
+	 * @generated
+	 */
+	MedicationSeriesNumberObservation createMedicationSeriesNumberObservation();
+
+	/**
+	 * Returns a new object of class '<em>Medication Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Status Observation</em>'.
+	 * @generated
+	 */
+	MedicationStatusObservation createMedicationStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Reaction Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reaction Observation</em>'.
+	 * @generated
+	 */
+	ReactionObservation createReactionObservation();
+
+	/**
+	 * Returns a new object of class '<em>Product Instance</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Product Instance</em>'.
+	 * @generated
+	 */
+	ProductInstance createProductInstance();
+
+	/**
+	 * Returns a new object of class '<em>Internal Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Internal Reference</em>'.
+	 * @generated
+	 */
+	InternalReference createInternalReference();
+
+	/**
+	 * Returns a new object of class '<em>Patient Medical Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Medical Instructions</em>'.
+	 * @generated
+	 */
+	PatientMedicalInstructions createPatientMedicalInstructions();
+
+	/**
+	 * Returns a new object of class '<em>Medication Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Type</em>'.
+	 * @generated
+	 */
+	MedicationType createMedicationType();
+
+	/**
+	 * Returns a new object of class '<em>Medication Order Information</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Order Information</em>'.
+	 * @generated
+	 */
+	MedicationOrderInformation createMedicationOrderInformation();
+
+	/**
+	 * Returns a new object of class '<em>Medication Fullfillment Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Fullfillment Instructions</em>'.
+	 * @generated
+	 */
+	MedicationFullfillmentInstructions createMedicationFullfillmentInstructions();
+
+	/**
+	 * Returns a new object of class '<em>Medications Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medications Section</em>'.
+	 * @generated
+	 */
+	MedicationsSection createMedicationsSection();
+
+	/**
+	 * Returns a new object of class '<em>Medications Narrative Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medications Narrative Section</em>'.
+	 * @generated
+	 */
+	MedicationsNarrativeSection createMedicationsNarrativeSection();
+
+	/**
+	 * Returns a new object of class '<em>Medication Normal Dose</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Normal Dose</em>'.
+	 * @generated
+	 */
+	MedicationNormalDose createMedicationNormalDose();
+
+	/**
+	 * Returns a new object of class '<em>Medication Split Dose</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Split Dose</em>'.
+	 * @generated
+	 */
+	MedicationSplitDose createMedicationSplitDose();
+
+	/**
+	 * Returns a new object of class '<em>Medication Tapered Dose</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Tapered Dose</em>'.
+	 * @generated
+	 */
+	MedicationTaperedDose createMedicationTaperedDose();
+
+	/**
+	 * Returns a new object of class '<em>Medication Conditional Dose</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Conditional Dose</em>'.
+	 * @generated
+	 */
+	MedicationConditionalDose createMedicationConditionalDose();
+
+	/**
+	 * Returns a new object of class '<em>Medication Combination Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Combination Medication</em>'.
+	 * @generated
+	 */
+	MedicationCombinationMedication createMedicationCombinationMedication();
+
+	/**
+	 * Returns a new object of class '<em>Medication Information</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Information</em>'.
+	 * @generated
+	 */
+	MedicationInformation createMedicationInformation();
+
+	/**
+	 * Returns a new object of class '<em>Immunization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunization</em>'.
+	 * @generated
+	 */
+	Immunization createImmunization();
+
+	/**
+	 * Returns a new object of class '<em>Immunizations Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunizations Section</em>'.
+	 * @generated
+	 */
+	ImmunizationsSection createImmunizationsSection();
+
+	/**
+	 * Returns a new object of class '<em>Immunizations Narrative Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immunizations Narrative Section</em>'.
+	 * @generated
+	 */
+	ImmunizationsNarrativeSection createImmunizationsNarrativeSection();
+
+	/**
+	 * Returns a new object of class '<em>Encounter Location</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounter Location</em>'.
+	 * @generated
+	 */
+	EncounterLocation createEncounterLocation();
+
+	/**
+	 * Returns a new object of class '<em>Surgeries Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Surgeries Section</em>'.
+	 * @generated
+	 */
+	SurgeriesSection createSurgeriesSection();
+
+	/**
+	 * Returns a new object of class '<em>Surgeries Narrative Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Surgeries Narrative Section</em>'.
+	 * @generated
+	 */
+	SurgeriesNarrativeSection createSurgeriesNarrativeSection();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Activity Procedure</em>'.
+	 * @generated
+	 */
+	ProcedureActivityProcedure createProcedureActivityProcedure();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Activity Act</em>'.
+	 * @generated
+	 */
+	ProcedureActivityAct createProcedureActivityAct();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Activity Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Activity Observation</em>'.
+	 * @generated
+	 */
+	ProcedureActivityObservation createProcedureActivityObservation();
+
+	/**
+	 * Returns a new object of class '<em>Registry Delegate</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Registry Delegate</em>'.
+	 * @generated
+	 */
+	ConsolRegistryDelegate createConsolRegistryDelegate();
 
 	/**
 	 * Returns the package supported by this factory.

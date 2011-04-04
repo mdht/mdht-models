@@ -17,7 +17,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Result;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DiagnosticResultsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -29,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class DiagnosticResultsSectionImpl extends SectionImpl implements DiagnosticResultsSection {
+public class DiagnosticResultsSectionImpl extends DiagnosticResultsNarrativeSectionImpl implements DiagnosticResultsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47,24 +46,6 @@ public class DiagnosticResultsSectionImpl extends SectionImpl implements Diagnos
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDiagnosticResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDiagnosticResultsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -110,6 +91,16 @@ public class DiagnosticResultsSectionImpl extends SectionImpl implements Diagnos
 	 */
 	public EList<Result> getResults() {
 		return DiagnosticResultsSectionOperations.getResults(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateDiagnosticResultsNarrativeSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsNarrativeSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

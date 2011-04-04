@@ -96,6 +96,15 @@ public class VitalSignsOrganizerImpl extends ResultOrganizerImpl implements Vita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateVitalSignsOrganizerVitalSign(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSign(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<VitalSign> getVitalSignObservations() {
 		return VitalSignsOrganizerOperations.getVitalSignObservations(this);
 	}

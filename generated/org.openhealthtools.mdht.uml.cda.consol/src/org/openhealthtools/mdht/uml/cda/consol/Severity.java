@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSeverity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SeverityObservation' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='Severity observation' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.1' constraints.validation.error='SeverityTemplateId SeverityHasTextReference SeverityClassCode SeverityMoodCode SeverityCode SeverityText SeverityStatusCode SeverityValue' code.codeSystemName='HL7ActCode' classCode='OBS' code.code='SEV' moodCode='EVN' value.codeSystem='2.16.840.1.113883.5.1063'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SeverityObservation' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='Severity observation' templateId.root='2.16.840.1.113883.10.20.21.4.8' constraints.validation.error='SeverityTemplateId SeverityHasTextReference SeverityClassCode SeverityMoodCode SeverityCode SeverityText SeverityStatusCode SeverityValue' code.codeSystemName='HL7ActCode' classCode='OBS' code.code='SEV' moodCode='EVN' value.codeSystem='2.16.840.1.113883.5.1063'"
  * @generated
  */
 public interface Severity extends Observation {
@@ -39,11 +39,11 @@ public interface Severity extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.1')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.4.8')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.21.4.8\')'"
 	 * @generated
 	 */
 	boolean validateSeverityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
