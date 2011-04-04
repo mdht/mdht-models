@@ -15,7 +15,6 @@ import org.openhealthtools.mdht.uml.cda.consol.Condition;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemListSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemListSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -27,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ProblemListSectionImpl extends SectionImpl implements ProblemListSection {
+public class ProblemListSectionImpl extends ProblemListNarrativeSectionImpl implements ProblemListSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,35 +51,8 @@ public class ProblemListSectionImpl extends SectionImpl implements ProblemListSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemListSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemListSectionOperations.validateProblemListSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemListSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemListSectionOperations.validateProblemListSectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemListSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemListSectionOperations.validateProblemListSectionTitle(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemListSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemListSectionOperations.validateProblemListSectionText(this, diagnostics, context);
+	public boolean validateProblemListSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemListSectionOperations.validateProblemListSectionCondition(this, diagnostics, context);
 	}
 
 	/**
@@ -90,6 +62,16 @@ public class ProblemListSectionImpl extends SectionImpl implements ProblemListSe
 	 */
 	public EList<Condition> getConditions() {
 		return ProblemListSectionOperations.getConditions(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemListNarrativeSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemListSectionOperations.validateProblemListNarrativeSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

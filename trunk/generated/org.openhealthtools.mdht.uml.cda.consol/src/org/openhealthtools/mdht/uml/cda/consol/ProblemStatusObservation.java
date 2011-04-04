@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemStatusObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.1.1' constraints.validation.error='ProblemStatusObservationTemplateId ProblemStatusObservationHasTextReference StatusObservationValue ProblemStatusObservationText' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.21.4.6' constraints.validation.error='ProblemStatusObservationTemplateId ProblemStatusObservationHasTextReference StatusObservationValue ProblemStatusObservationText' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface ProblemStatusObservation extends StatusObservation {

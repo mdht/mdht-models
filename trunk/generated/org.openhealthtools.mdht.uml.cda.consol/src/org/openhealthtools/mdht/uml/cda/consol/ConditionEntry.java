@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getConditionEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5' constraints.validation.error='ConditionEntryTemplateId ConditionEntryInformationSource ConditionEntryHasTextReference ConditionEntryCommentInversionInd ConditionEntryMoodCode ConditionEntryId ConditionEntryText ConditionEntryStatusCode ConditionEntryValue' code.codeSystemName='SNOMEDCT' classCode='OBS' constraints.validation.warning='ConditionEntryHasOnsetDate ConditionEntryHasResolutionDate ConditionEntryHasUnknownResolutionDate ConditionEntryCode ConditionEntryEffectiveTime' constraints.validation.info='ConditionEntryContainsPatientAwareness ConditionEntryAgeObservation ConditionEntrySeverity ConditionEntryProblemStatusObservation ConditionEntryHealthStatusObservation ConditionEntryComment' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.21.4.4' constraints.validation.error='ConditionEntryTemplateId ConditionEntryInformationSource ConditionEntryHasTextReference ConditionEntryCommentInversionInd ConditionEntryMoodCode ConditionEntryId ConditionEntryText ConditionEntryStatusCode ConditionEntryValue' code.codeSystemName='SNOMEDCT' constraints.validation.warning='ConditionEntryHasOnsetDate ConditionEntryHasResolutionDate ConditionEntryHasUnknownResolutionDate ConditionEntryCode ConditionEntryEffectiveTime' constraints.validation.info='ConditionEntryContainsPatientAwareness ConditionEntryAgeObservation ConditionEntrySeverity ConditionEntryProblemStatusObservation ConditionEntryHealthStatusObservation ConditionEntryComment' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface ConditionEntry extends Observation {
@@ -124,11 +124,11 @@ public interface ConditionEntry extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.5')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.4.4')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.5\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.21.4.4\')'"
 	 * @generated
 	 */
 	boolean validateConditionEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

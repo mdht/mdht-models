@@ -53,15 +53,6 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryRelationshipRequired(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionOperations.validateConditionEntryRelationshipRequired(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateConditionSubjectOfTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionOperations.validateConditionSubjectOfTarget(this, diagnostics, context);
 	}
@@ -98,8 +89,26 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEffectiveTimeLowHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionOperations.validateConditionEffectiveTimeLowHigh(this, diagnostics, context);
+	public boolean validateConditionEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionOperations.validateConditionEffectiveTimeLow(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionOperations.validateConditionEffectiveTimeHigh(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEffectiveTimeHighProhibited(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionOperations.validateConditionEffectiveTimeHighProhibited(this, diagnostics, context);
 	}
 
 	/**
