@@ -37,16 +37,19 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/SeverityObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.55]">CCD Severity Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.55</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SeverityObservation.html">CCD Severity Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.55</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">text</tt></li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">value</tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet SeverityObservation STATIC, where its data type is CD<ul class="ul"><li class="li">Value code representing high, moderate and low severity depending upon whether the severity is life threatening, presents noticeable adverse consequences, or is unlikely substantially effect the situation of the subject.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> SeverityObservation</tt><strong class="ph b"> STATIC</strong>, where its data type is CD
+<ul class="ul"><li class="li">Value code representing high, moderate and low severity depending upon whether the severity is life threatening, presents noticeable adverse consequences, or is unlikely substantially effect the situation of the subject.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The 'text' elements shall contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.text.reference.oclIsUndefined()</pre>
+<li class="li">The 'text' elements <strong class="ph b">SHALL</strong> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.text.reference.oclIsUndefined()</pre>
 </li>
 </ul>
 </li>
@@ -54,35 +57,26 @@
 </ol>
 
 
-<p class="p"/>
+<p class="p"> </p>
 
-<div class="fig fignone"><span class="figcap">Figure 1. Severity example</span>
+<p class="p"><strong class="ph b">Severity example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.55" assigningAuthorityName="CCD Severity Observation"/&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1" assigningAuthorityName="IHE Severity"/&gt;
-              &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
-              &lt;text/&gt;
-              &lt;statusCode code="completed"/&gt;
-              &lt;value xsi:type="CD"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/&gt;
+  &lt;id root="b65947f8-467f-463c-b0b7-f91e5714ee32"/&gt;
+  &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+  &lt;text/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;value xsi:type="CD"/&gt;
+&lt;/observation&gt;</pre>
 
 </div>
 

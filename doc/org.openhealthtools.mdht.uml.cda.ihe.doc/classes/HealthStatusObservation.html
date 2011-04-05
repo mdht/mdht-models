@@ -37,14 +37,17 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/ProblemHealthStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.51]">CCD Problem Health Status Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.51</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemHealthStatusObservation.html">CCD Problem Health Status Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.51</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">text</tt></li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">value</tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet HealthStatusValue STATIC</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> HealthStatusValue</tt><strong class="ph b"> STATIC</strong>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The 'text' elements shall contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.text.reference.oclIsUndefined()</pre>
+<li class="li">The 'text' elements <strong class="ph b">SHALL</strong> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.text.reference.oclIsUndefined()</pre>
 </li>
 </ul>
 </li>
@@ -52,36 +55,27 @@
 </ol>
 
 
-<p class="p"/>
+<p class="p"> </p>
 
-<div class="fig fignone"><span class="figcap">Figure 1. Health Status Observation example</span>
+<p class="p"><strong class="ph b">Health Status Observation example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.57" assigningAuthorityName="CCD Status Observation"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.51" assigningAuthorityName="CCD Problem Health Status Observation"/&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2" assigningAuthorityName="IHE Health Status Observation"/&gt;
-              &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
-              &lt;text/&gt;
-              &lt;statusCode code="completed"/&gt;
-              &lt;value xsi:type="CE"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/&gt;
+  &lt;id root="74388c23-0953-46b4-990c-e5d27b149f4a"/&gt;
+  &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+  &lt;text/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;value xsi:type="CE"/&gt;
+&lt;/observation&gt;</pre>
 
 </div>
 

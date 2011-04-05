@@ -11,20 +11,26 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Encounter</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>@classCode</tt> = "ENC"</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt>code</tt> (CodeSystem: 2.16.840.1.113883.5.4 ActEncounterCode)<ul><li>Developers should take care to check that rational combinations of encounter.code and encounter.moodCode are used , but this profile does not restrict any combination.</li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 ActEncounterCode</tt>)
+<ul><li>Developers should take care to check that rational combinations of encounter.code and encounter.moodCode are used , but this profile does not restrict any combination.</li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Clinical Statement</li>
-<li><b>SHALL</b> conform to CDA Encounter</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>@classCode</tt> = "ENC"</li>
-<li>Contains exactly one [1..1] <tt>@moodCode</tt>, where its data type is x_DocumentEncounterMood</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt>code</tt> (CodeSystem: 2.16.840.1.113883.5.4 ActEncounterCode)<ul><li>Developers should take care to check that rational combinations of encounter.code and encounter.moodCode are used , but this profile does not restrict any combination.</li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_DocumentEncounterMood
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 ActEncounterCode</tt>)
+<ul><li>Developers should take care to check that rational combinations of encounter.code and encounter.moodCode are used , but this profile does not restrict any combination.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

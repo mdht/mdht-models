@@ -39,34 +39,27 @@ conditions as described in the Entry Content Module.</p>
 </div>
 
 
-<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Section</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">code</tt><tt class="ph tt">/@code</tt> = "11535-2" <em class="ph i">HOSPITAL DISCHARGE DX</em> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC)</li>
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="11535-2" </tt><em class="ph i">HOSPITAL DISCHARGE DX</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
 
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Discharge Diagnosis Section example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Discharge Diagnosis Section example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.7" assigningAuthorityName="IHE Discharge Diagnosis Section"/&gt;
-          &lt;code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOSPITAL DISCHARGE DX"/&gt;
-          &lt;title&gt;HOSPITAL DISCHARGE DX&lt;/title&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.7"/&gt;
+  &lt;id root="ed5d6118-78d0-43f8-8a49-f52ae9b4c160"/&gt;
+  &lt;code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOSPITAL DISCHARGE DX"/&gt;
+  &lt;title&gt;HOSPITAL DISCHARGE DX&lt;/title&gt;
+&lt;/section&gt;</pre>
 
 </div>
 
