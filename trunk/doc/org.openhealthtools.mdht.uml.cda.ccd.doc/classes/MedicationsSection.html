@@ -45,22 +45,29 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Section</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10160-0" </tt><em class="ph i">History of medication use</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-300, CONF-301)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">code</tt><tt class="ph tt">/@code</tt> = "10160-0" <em class="ph i">History of medication use</em> (CodeSystem:  STATIC) (CONF-300, CONF-301)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">title</tt> (CONF-302)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [0..1] <tt class="ph tt">text</tt></li>
-
-<li class="li">Contains [0..*] <tt class="ph tt">entry</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="MedicationActivity.html" title="[SubstanceAdministration: templateId 2.16.840.1.113883.10.20.1.24]">CCD Medication Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.24</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-302)
+<ol class="ol" type="a">
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
 </ol>
 </li>
 
-<li class="li">Contains [0..*] <tt class="ph tt">entry</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="SupplyActivity.html" title="[Supply: templateId 2.16.840.1.113883.10.20.1.34]">CCD Supply Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.34</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF-298)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-298), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationActivity.html" title="[SubstanceAdministration: templateId 2.16.840.1.113883.10.20.1.24]">Medication Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.24</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-298), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SupplyActivity.html" title="[Supply: templateId 2.16.840.1.113883.10.20.1.34]">Supply Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.34</tt>)</li>
 </ol>
 </li>
 
@@ -72,31 +79,128 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: The absence of known medications is explicitly asserted. (CONF-299)</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
-
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Medications Section example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Medications Section example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.8" assigningAuthorityName="CCD Medications Section"/&gt;
-          &lt;code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/&gt;
-          &lt;title&gt;History of medication use&lt;/title&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.8"/&gt;
+  &lt;id root="224bca65-eff9-4eb8-882c-433360f68ed2"/&gt;
+  &lt;code code="10160-0" codeSystemName="" displayName="History of medication use"/&gt;
+  &lt;title&gt;History of medication use&lt;/title&gt;
+  &lt;entry&gt;
+    &lt;substanceAdministration&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
+      &lt;id root="5edd43a9-0e70-4b32-9bce-7950c5cfcbee"/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime value="20110404"/&gt;
+      &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
+      &lt;doseQuantity/&gt;
+      &lt;rateQuantity/&gt;
+      &lt;maxDoseQuantity/&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
+          &lt;id root="34cb2f7d-7f08-4c0d-b70d-cedbbdc009e1"/&gt;
+          &lt;code code="30973-2" codeSystemName="" displayName="Dose number"/&gt;
+          &lt;statusCode/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="INT"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+          &lt;id root="3686bbde-d39a-4d48-8524-30bead4c9b80"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CE"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act moodCode="INT"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
+          &lt;id root="0408e6de-3223-44c7-8fb1-2579d888a184"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
+          &lt;id root="d72a4fa7-42b4-45db-a37c-4718e0c87eaf"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+              &lt;id root="8bb67465-cb24-44d4-8bbe-fb925a7456c4"/&gt;
+              &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/substanceAdministration&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;supply&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.34"/&gt;
+      &lt;id root="ceb23bf5-82b9-4854-b4c9-fb5674dba375"/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime value="20110404"/&gt;
+      &lt;repeatNumber/&gt;
+      &lt;quantity/&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+          &lt;id root="e5388870-75da-4168-bb0f-47e603336e33"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CE"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act moodCode="INT"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
+          &lt;id root="a7cacbc8-690b-4338-90d3-4252923140d2"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/supply&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

@@ -35,14 +35,15 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Participant2 (CONF-178)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="SBJ" </tt> (CONF-181)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">@typeCode</tt> = "SBJ" (CONF-181)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">awarenessCode</strong></tt> (CONF-182)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">awarenessCode</tt> (CONF-182)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Patient awareness SHALL contain exactly one participant / participantRole / id, which SHALL have exactly one value, which SHALL also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.id-&gt;one(id : datatypes::II |
+<li class="li">Patient awareness <strong class="ph b">SHALL</strong> contain exactly one participant / participantRole / id, which <strong class="ph b">SHALL</strong> have exactly one value, which <strong class="ph b">SHALL</strong> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.id-&gt;one(id : datatypes::II |
   not id.root.oclIsUndefined())
 -- TODO compare with ClinicalDocument/recordTarget/patientRole/id</pre>
 </li>
@@ -52,13 +53,21 @@
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Patient Awareness example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Patient Awareness example</strong></p>
 
 
 
-<pre class="pre codeblock"/>
-
-</div>
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;participant2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" typeCode="SBJ"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.48"/&gt;
+  &lt;time&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/time&gt;
+  &lt;awarenessCode/&gt;
+&lt;/participant2&gt;</pre>
 
 </div>
 

@@ -37,31 +37,38 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Act</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-49)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">@classCode</tt> = "ACT" (CONF-49)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-50)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">@moodCode</tt> = "EVN" (CONF-50)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-51)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..*] <tt class="ph tt">id</tt> (CONF-51)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-52, CONF-53)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">statusCode</tt><tt class="ph tt">/@code</tt> = "completed"  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus STATIC V3NE08) (CONF-52, CONF-53)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.19832 ActCoverageType</tt><strong class="ph b"> DYNAMIC</strong> (CONF-54, CONF-55)
+</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain [1..1] <tt class="ph tt">code</tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet 2.16.840.1.113883.1.11.19832 ActCoverageType DYNAMIC (CONF-54, CONF-55)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">performer</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="PayerEntity.html" title="[AssignedEntity: templateId null]">CCD Payer Entity</a> (CONF-56)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF-56), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PayerEntity.html" title="[AssignedEntity: templateId null]">Payer Entity</a></li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">participant</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="CoveredParty.html" title="[ParticipantRole: templateId null]">CCD Covered Party</a> (CONF-58)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-58), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CoveredParty.html" title="[ParticipantRole: templateId null]">Covered Party</a></li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain [1..1] <tt class="ph tt">participant</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="PolicySubscriber.html" title="[ParticipantRole: templateId null]">CCD Policy Subscriber</a> (CONF-63)</li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-63), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PolicySubscriber.html" title="[ParticipantRole: templateId null]">Policy Subscriber</a></li>
 </ol>
 </li>
 
@@ -75,31 +82,31 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: The value for participant / participantRole / code in a policy activity's covered party MAY be selected from ValueSet 2.16.840.1.113883.1.11.19809 PolicyOrProgramCoverageRoleType DYNAMIC. (CONF-61)</li>
+<li class="li">The value for participant / participantRole / code in a policy activity's covered party <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.19809 PolicyOrProgramCoverageRoleType DYNAMIC. (CONF-61)</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: A covered party in a policy activity MAY contain exactly one participant / time, to represent the time period over which the patient is covered. (CONF-62)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV
+<li class="li">A covered party in a policy activity <strong class="ph b">MAY</strong> contain exactly one participant / time, to represent the time period over which the patient is covered. (CONF-62)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV
   implies not part.time.oclIsUndefined())</pre>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: A policy activity MAY contain exactly one participant [@typeCode='HLD'], representing the subscriber. (CONF-63)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD)</pre>
+<li class="li">A policy activity <strong class="ph b">MAY</strong> contain exactly one participant [@typeCode='HLD'], representing the subscriber. (CONF-63)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD)</pre>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: A subscriber in a policy activity MAY contain exactly one participant / time, to represent the time period for which the subscriber is enrolled. (CONF-65)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD
+<li class="li">A subscriber in a policy activity <strong class="ph b">MAY</strong> contain exactly one participant / time, to represent the time period for which the subscriber is enrolled. (CONF-65)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD
   implies not part.time.oclIsUndefined())</pre>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The value for entryRelationship / @typeCode in a policy activity SHALL be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-66)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</pre>
+<li class="li">The value for entryRelationship / @typeCode in a policy activity <strong class="ph b">SHALL</strong> be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-66)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</pre>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The target of a policy activity with entryRelationship / @typeCode='REFR' SHALL be an Authorization Activity or an Act, with Act [@classCode = 'ACT'] and Act [@moodCode = 'DEF'], representing a description of the coverage plan. (CONF-67)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)
+<li class="li">The target of a policy activity with entryRelationship / @typeCode='REFR' <strong class="ph b">SHALL</strong> be an Authorization Activity or an Act, with Act [@classCode = 'ACT'] and Act [@moodCode = 'DEF'], representing a description of the coverage plan. (CONF-67)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)
   or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))</pre>
 </li>
 </ul>
@@ -108,50 +115,23 @@
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Policy Activity example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Policy Activity example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;act classCode="ACT" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.26" assigningAuthorityName="CCD Policy Activity"/&gt;
-              &lt;id root="e9be31c9-7c16-4e42-97ec-6763570aa519"/&gt;
-              &lt;code/&gt;
-              &lt;statusCode code="completed"/&gt;
-              &lt;performer&gt;
-                &lt;assignedEntity&gt;
-                  &lt;templateId assigningAuthorityName="CCD Payer Entity"/&gt;
-                  &lt;id root="2d7ed3d0-8133-4035-ab00-4cf64526addb"/&gt;
-                &lt;/assignedEntity&gt;
-              &lt;/performer&gt;
-              &lt;participant&gt;
-                &lt;participantRole&gt;
-                  &lt;templateId assigningAuthorityName="CCD Covered Party"/&gt;
-                  &lt;id root="bc7151f1-f8eb-43d3-880a-35918fd59738"/&gt;
-                  &lt;code/&gt;
-                &lt;/participantRole&gt;
-              &lt;/participant&gt;
-              &lt;participant&gt;
-                &lt;participantRole&gt;
-                  &lt;templateId assigningAuthorityName="CCD Policy Subscriber"/&gt;
-                  &lt;id root="b0937b01-2b09-46b8-b67d-f32585fe34b7"/&gt;
-                &lt;/participantRole&gt;
-              &lt;/participant&gt;
-            &lt;/act&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.26"/&gt;
+  &lt;id root="1d6a7f8c-2430-4409-a391-9271e8700993"/&gt;
+  &lt;code/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+&lt;/act&gt;</pre>
 
 </div>
 

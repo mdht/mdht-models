@@ -9,7 +9,6 @@
 <section conref="generated/_ProblemListSection.dita#classId/description">
 </section>
 <!-- TODO: insert UML class diagram here -->
-<image href="../images/ProblemSection.png" width="500pt"/>
 
 <ol audience="standards" conref="generated/_ProblemListSection.dita#classId/conformance">
 <li></li>

@@ -22,7 +22,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF-231)
 <ul><li>Valued using appropriate datatype.</li></ul></li>
-<li><b>SHOULD</b> satisfy: subject/relatedSubject/subject contains exactly one birthTime (CONF-219)</li>
+<li><b>SHOULD</b> satisfy: subject/relatedSubject/subject contains exactly one birthTime (CONF-219)<ul><li><codeblock>[OCL]: not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</codeblock></li></ul></li>
 <li><b>MAY</b> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedInd (CONF-220)</li>
 <li><b>MAY</b> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedTime (CONF-221)</li>
 <li><b>SHOULD</b> satisfy: The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with effectiveTime (CONF-222)</li>
@@ -39,7 +39,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF-231)
 <ul><li>Valued using appropriate datatype.</li></ul></li>
-<li><b>SHOULD</b> satisfy: subject/relatedSubject/subject contains exactly one birthTime (CONF-219)</li>
+<li><b>SHOULD</b> satisfy: subject/relatedSubject/subject contains exactly one birthTime (CONF-219)<ul><li><codeblock>[OCL]: not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</codeblock></li></ul></li>
 <li><b>MAY</b> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedInd (CONF-220)</li>
 <li><b>MAY</b> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedTime (CONF-221)</li>
 <li><b>SHOULD</b> satisfy: The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with effectiveTime (CONF-222)</li>

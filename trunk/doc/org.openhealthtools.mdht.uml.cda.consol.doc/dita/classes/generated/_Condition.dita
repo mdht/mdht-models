@@ -25,14 +25,14 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF-CONSOL-526)
 <ul><li>The effectiveTime element records the starting and ending times during which the concern was active.</li></ul><ol>
-<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/low element (CONF-CONSOL-520)</li>
-<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/high element if statusCode@code=completed or aborted (CONF-CONSOL-521)</li>
-<li><b>SHALL NOT</b> contain effectiveTime/high element if statusCode@code=active or suspended (CONF-CONSOL-522)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/low element (CONF-CONSOL-520)<ul><li><codeblock>[OCL]: not self.effectiveTime.low.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/high element if statusCode@code=completed or aborted (CONF-CONSOL-521)<ul><li><codeblock>[OCL]: (self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL NOT</b> contain effectiveTime/high element if statusCode@code=active or suspended (CONF-CONSOL-522)<ul><li><codeblock>[OCL]: (self.statusCode.code = 'active' or self.statusCode.code = 'suspended') implies self.effectiveTime.high.oclIsUndefined()</codeblock></li></ul></li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>performer</b></tt>, such that
 <ol>
-<li>The treating provider or providers <b>SHALL</b> be recorded in a &lt;performer&gt; element under the &lt;act&gt; that describes the condition of concern (C83-[DE-7.05-CDA-3])</li>
-<li>The identifier of the treating provider <b>SHALL</b> be present in the &lt;id&gt; element beneath the &lt;assignedEntity&gt;. This identifier <b>SHALL</b> be the identifier of one of the providers listed in the healthcare providers module. (C83-[DE-7.05-CDA-2])</li>
-<li>The time over which this provider treated the condition <b>MAY</b> be recorded in the &lt;time&gt; element beneath the &lt;performer&gt; element (C83-[DE-7.05-CDA-1])</li></ol></li>
+<li>The treating provider or providers <b>SHALL</b> be recorded in a &lt;performer&gt; element under the &lt;act&gt; that describes the condition of concern (C83-[DE-7.05-CDA-3])<ul><li><codeblock>[OCL]: not self.performer-&gt;isEmpty()</codeblock></li></ul></li>
+<li>The identifier of the treating provider <b>SHALL</b> be present in the &lt;id&gt; element beneath the &lt;assignedEntity&gt;. This identifier <b>SHALL</b> be the identifier of one of the providers listed in the healthcare providers module. (C83-[DE-7.05-CDA-2])<ul><li><codeblock>[OCL]: self.performer-&gt;exists(p : cda::Performer2 | p.assignedEntity.id-&gt;size() &gt; 0)</codeblock></li></ul></li>
+<li>The time over which this provider treated the condition <b>MAY</b> be recorded in the &lt;time&gt; element beneath the &lt;performer&gt; element (C83-[DE-7.05-CDA-1])<ul><li><codeblock>[OCL]: self.performer-&gt;exists(p : cda::Performer2 | p.time.oclIsUndefined())</codeblock></li></ul></li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ConditionEntry.dita">Condition Entry</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.4.4</tt>)</li></ol></li>
@@ -42,12 +42,15 @@
 <li>Contains zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
 <ol>
 <li>A Condition <b>MAY</b> reference a Condition Entry, Alert Observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for entryRelationship/@typeCode to be "SUBJ" 2.16.840.1.113883.5.1002 ActRelationshipType. (CONF-152)</li>
-<li>The target of a Condition with entryRelationship/@typeCode="SUBJ" <b>SHOULD</b> be a Condition Entry (in the Problem section) or alert observation (in the Alert section), but <b>MAY</b> be some other clinical statement. (CONF-153)</li>
-<li>In Problem Section, a Condition <b>SHOULD</b> contain one or more Condition Entries (CONF-140)</li>
-<li>In Alert Section, a Condition <b>SHOULD</b> contain one or more Alert Observations. (CONF-256)</li>
+<li>The target of a Condition with entryRelationship/@typeCode="SUBJ" <b>SHOULD</b> be a Condition Entry (in the Problem section) or alert observation (in the Alert section), but <b>MAY</b> be some other clinical statement. (CONF-153)<ul><li><codeblock>[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)-&gt;forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and 
+  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))</codeblock></li></ul></li>
+<li>In Problem Section, a Condition <b>SHOULD</b> contain one or more Condition Entries (CONF-140)<ul><li><codeblock>[OCL]: self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()
+   -&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))</codeblock></li></ul></li>
+<li>In Alert Section, a Condition <b>SHOULD</b> contain one or more Alert Observations. (CONF-256)<ul><li><codeblock>[OCL]: self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()
+   -&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))</codeblock></li></ul></li>
 <li>Each concern is about one or more related problems or allergies. This entry <b>SHALL</b> contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances. This is how a series of related observations can be grouped as a single concern. This <b>SHALL</b> be represented using entryRelationship with typeCode = 'SUBJ'. (CONF-CONSOL-523)</li>
 <li>Each concern <b>MAY</b> have 0 or more related references. These <b>MAY</b> be used to represent related statements such related visits. This <b>MAY</b> be any valid CDA clinical statement, and <b>SHOULD</b> be an IHE entry template. This <b>SHALL</b> be represented using entryRelationship with typeCode = 'REFR'. (CONF-CONSOL-524)</li></ol></li>
-<li><b>MAY</b> contain exactly one Patient Awareness template (CONF-179)</li>
+<li><b>MAY</b> contain exactly one Patient Awareness template (CONF-179)<ul><li><codeblock>[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-146)
@@ -62,14 +65,14 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF-CONSOL-526)
 <ol>
-<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/low element (CONF-CONSOL-520)</li>
-<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/high element if statusCode@code=completed or aborted (CONF-CONSOL-521)</li>
-<li><b>SHALL NOT</b> contain effectiveTime/high element if statusCode@code=active or suspended (CONF-CONSOL-522)</li></ol><ul><li>The effectiveTime element records the starting and ending times during which the concern was active.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/low element (CONF-CONSOL-520)<ul><li><codeblock>[OCL]: not self.effectiveTime.low.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/high element if statusCode@code=completed or aborted (CONF-CONSOL-521)<ul><li><codeblock>[OCL]: (self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL NOT</b> contain effectiveTime/high element if statusCode@code=active or suspended (CONF-CONSOL-522)<ul><li><codeblock>[OCL]: (self.statusCode.code = 'active' or self.statusCode.code = 'suspended') implies self.effectiveTime.high.oclIsUndefined()</codeblock></li></ul></li></ol><ul><li>The effectiveTime element records the starting and ending times during which the concern was active.</li></ul></li>
 <li>Contains zero or more [0..*] <tt><b>performer</b></tt>, such that
 <ol>
-<li>The treating provider or providers <b>SHALL</b> be recorded in a &lt;performer&gt; element under the &lt;act&gt; that describes the condition of concern (C83-[DE-7.05-CDA-3])</li>
-<li>The identifier of the treating provider <b>SHALL</b> be present in the &lt;id&gt; element beneath the &lt;assignedEntity&gt;. This identifier <b>SHALL</b> be the identifier of one of the providers listed in the healthcare providers module. (C83-[DE-7.05-CDA-2])</li>
-<li>The time over which this provider treated the condition <b>MAY</b> be recorded in the &lt;time&gt; element beneath the &lt;performer&gt; element (C83-[DE-7.05-CDA-1])</li></ol></li>
+<li>The treating provider or providers <b>SHALL</b> be recorded in a &lt;performer&gt; element under the &lt;act&gt; that describes the condition of concern (C83-[DE-7.05-CDA-3])<ul><li><codeblock>[OCL]: not self.performer-&gt;isEmpty()</codeblock></li></ul></li>
+<li>The identifier of the treating provider <b>SHALL</b> be present in the &lt;id&gt; element beneath the &lt;assignedEntity&gt;. This identifier <b>SHALL</b> be the identifier of one of the providers listed in the healthcare providers module. (C83-[DE-7.05-CDA-2])<ul><li><codeblock>[OCL]: self.performer-&gt;exists(p : cda::Performer2 | p.assignedEntity.id-&gt;size() &gt; 0)</codeblock></li></ul></li>
+<li>The time over which this provider treated the condition <b>MAY</b> be recorded in the &lt;time&gt; element beneath the &lt;performer&gt; element (C83-[DE-7.05-CDA-1])<ul><li><codeblock>[OCL]: self.performer-&gt;exists(p : cda::Performer2 | p.time.oclIsUndefined())</codeblock></li></ul></li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ConditionEntry.dita">Condition Entry</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.4.4</tt>)</li></ol></li>
@@ -79,24 +82,30 @@
 <li>Contains zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
 <ol>
 <li>A Condition <b>MAY</b> reference a Condition Entry, Alert Observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for entryRelationship/@typeCode to be "SUBJ" 2.16.840.1.113883.5.1002 ActRelationshipType. (CONF-152)</li>
-<li>The target of a Condition with entryRelationship/@typeCode="SUBJ" <b>SHOULD</b> be a Condition Entry (in the Problem section) or alert observation (in the Alert section), but <b>MAY</b> be some other clinical statement. (CONF-153)</li>
-<li>In Problem Section, a Condition <b>SHOULD</b> contain one or more Condition Entries (CONF-140)</li>
-<li>In Alert Section, a Condition <b>SHOULD</b> contain one or more Alert Observations. (CONF-256)</li>
+<li>The target of a Condition with entryRelationship/@typeCode="SUBJ" <b>SHOULD</b> be a Condition Entry (in the Problem section) or alert observation (in the Alert section), but <b>MAY</b> be some other clinical statement. (CONF-153)<ul><li><codeblock>[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)-&gt;forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and 
+  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))</codeblock></li></ul></li>
+<li>In Problem Section, a Condition <b>SHOULD</b> contain one or more Condition Entries (CONF-140)<ul><li><codeblock>[OCL]: self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()
+   -&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))</codeblock></li></ul></li>
+<li>In Alert Section, a Condition <b>SHOULD</b> contain one or more Alert Observations. (CONF-256)<ul><li><codeblock>[OCL]: self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()
+   -&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))</codeblock></li></ul></li>
 <li>Each concern is about one or more related problems or allergies. This entry <b>SHALL</b> contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances. This is how a series of related observations can be grouped as a single concern. This <b>SHALL</b> be represented using entryRelationship with typeCode = 'SUBJ'. (CONF-CONSOL-523)</li>
 <li>Each concern <b>MAY</b> have 0 or more related references. These <b>MAY</b> be used to represent related statements such related visits. This <b>MAY</b> be any valid CDA clinical statement, and <b>SHOULD</b> be an IHE entry template. This <b>SHALL</b> be represented using entryRelationship with typeCode = 'REFR'. (CONF-CONSOL-524)</li></ol></li>
 <li>A Condition <b>MAY</b> reference a Condition Entry, Alert Observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for entryRelationship/@typeCode to be "SUBJ" 2.16.840.1.113883.5.1002 ActRelationshipType. (CONF-152)</li>
-<li>The target of a Condition with entryRelationship/@typeCode="SUBJ" <b>SHOULD</b> be a Condition Entry (in the Problem section) or alert observation (in the Alert section), but <b>MAY</b> be some other clinical statement. (CONF-153)</li>
-<li>In Problem Section, a Condition <b>SHOULD</b> contain one or more Condition Entries (CONF-140)</li>
-<li>In Alert Section, a Condition <b>SHOULD</b> contain one or more Alert Observations. (CONF-256)</li>
-<li><b>MAY</b> contain exactly one Patient Awareness template (CONF-179)</li>
-<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/low element (CONF-CONSOL-520)</li>
-<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/high element if statusCode@code=completed or aborted (CONF-CONSOL-521)</li>
-<li><b>SHALL NOT</b> contain effectiveTime/high element if statusCode@code=active or suspended (CONF-CONSOL-522)</li>
+<li>The target of a Condition with entryRelationship/@typeCode="SUBJ" <b>SHOULD</b> be a Condition Entry (in the Problem section) or alert observation (in the Alert section), but <b>MAY</b> be some other clinical statement. (CONF-153)<ul><li><codeblock>[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)-&gt;forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and 
+  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))</codeblock></li></ul></li>
+<li>In Problem Section, a Condition <b>SHOULD</b> contain one or more Condition Entries (CONF-140)<ul><li><codeblock>[OCL]: self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()
+   -&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))</codeblock></li></ul></li>
+<li>In Alert Section, a Condition <b>SHOULD</b> contain one or more Alert Observations. (CONF-256)<ul><li><codeblock>[OCL]: self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()
+   -&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))</codeblock></li></ul></li>
+<li><b>MAY</b> contain exactly one Patient Awareness template (CONF-179)<ul><li><codeblock>[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/low element (CONF-CONSOL-520)<ul><li><codeblock>[OCL]: not self.effectiveTime.low.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] effectiveTime/high element if statusCode@code=completed or aborted (CONF-CONSOL-521)<ul><li><codeblock>[OCL]: (self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL NOT</b> contain effectiveTime/high element if statusCode@code=active or suspended (CONF-CONSOL-522)<ul><li><codeblock>[OCL]: (self.statusCode.code = 'active' or self.statusCode.code = 'suspended') implies self.effectiveTime.high.oclIsUndefined()</codeblock></li></ul></li>
 <li>Each concern is about one or more related problems or allergies. This entry <b>SHALL</b> contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances. This is how a series of related observations can be grouped as a single concern. This <b>SHALL</b> be represented using entryRelationship with typeCode = 'SUBJ'. (CONF-CONSOL-523)</li>
 <li>Each concern <b>MAY</b> have 0 or more related references. These <b>MAY</b> be used to represent related statements such related visits. This <b>MAY</b> be any valid CDA clinical statement, and <b>SHOULD</b> be an IHE entry template. This <b>SHALL</b> be represented using entryRelationship with typeCode = 'REFR'. (CONF-CONSOL-524)</li>
-<li>The treating provider or providers <b>SHALL</b> be recorded in a &lt;performer&gt; element under the &lt;act&gt; that describes the condition of concern (C83-[DE-7.05-CDA-3])</li>
-<li>The identifier of the treating provider <b>SHALL</b> be present in the &lt;id&gt; element beneath the &lt;assignedEntity&gt;. This identifier <b>SHALL</b> be the identifier of one of the providers listed in the healthcare providers module. (C83-[DE-7.05-CDA-2])</li>
-<li>The time over which this provider treated the condition <b>MAY</b> be recorded in the &lt;time&gt; element beneath the &lt;performer&gt; element (C83-[DE-7.05-CDA-1])</li>
+<li>The treating provider or providers <b>SHALL</b> be recorded in a &lt;performer&gt; element under the &lt;act&gt; that describes the condition of concern (C83-[DE-7.05-CDA-3])<ul><li><codeblock>[OCL]: not self.performer-&gt;isEmpty()</codeblock></li></ul></li>
+<li>The identifier of the treating provider <b>SHALL</b> be present in the &lt;id&gt; element beneath the &lt;assignedEntity&gt;. This identifier <b>SHALL</b> be the identifier of one of the providers listed in the healthcare providers module. (C83-[DE-7.05-CDA-2])<ul><li><codeblock>[OCL]: self.performer-&gt;exists(p : cda::Performer2 | p.assignedEntity.id-&gt;size() &gt; 0)</codeblock></li></ul></li>
+<li>The time over which this provider treated the condition <b>MAY</b> be recorded in the &lt;time&gt; element beneath the &lt;performer&gt; element (C83-[DE-7.05-CDA-1])<ul><li><codeblock>[OCL]: self.performer-&gt;exists(p : cda::Performer2 | p.time.oclIsUndefined())</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

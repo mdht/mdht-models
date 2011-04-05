@@ -37,51 +37,40 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/EncounterActivity.html" title="[Encounter: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.14]">IHE Encounter Activity</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/EncounterActivity.html">IHE Encounter Activity</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>)</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain [1..1] <tt class="ph tt">code</tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet 2.16.840.1.113883.3.88.12.80.32 EncounterType DYNAMIC 20081218 (C83-[DE-16.02-1])</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.3.88.12.80.32 EncounterType</tt><strong class="ph b"> DYNAMIC</strong> (C83-[DE-16.02-1])
+</li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">priorityCode</tt>, which <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.3.88.12.80.33 Admission Type (NUBC) STATIC (C154-[DE-16.07-1])</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">priorityCode</strong></tt>, which <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.3.88.12.80.33 Admission Type (NUBC)</tt><strong class="ph b"> STATIC</strong> (C154-[DE-16.07-1])
+</li>
 
 </ol>
 
 
-<p class="p"/>
+<p class="p"> </p>
 
-<div class="fig fignone"><span class="figcap">Figure 1. Encounter example</span>
+<p class="p"><strong class="ph b">Encounter example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;encounter classCode="ENC" moodCode="EVN"&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.21" assigningAuthorityName="CCD Encounters Activity"/&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/&gt;
-              &lt;templateId root="2.16.840.1.113883.3.88.11.83.16" assigningAuthorityName="HITSP Encounter"/&gt;
-              &lt;id root="6976aec3-e5fc-4267-83de-f8e018541fb0"/&gt;
-              &lt;code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/&gt;
-              &lt;text/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="1972"/&gt;
-                &lt;high value="2008"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;priorityCode/&gt;
-            &lt;/encounter&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN"&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.21"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.16"/&gt;
+  &lt;id root="51c5f7db-c2c3-49da-bbed-90fcbc0438cc"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/&gt;
+  &lt;text/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;priorityCode/&gt;
+&lt;/encounter&gt;</pre>
 
 </div>
 

@@ -20,7 +20,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-CONSOL-539)
 <ol>
-<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-538)</li></ol></li>
+<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-538)<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-291, CONF-292)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> SeverityObservation</tt><b> STATIC</b>, where its data type is CD (CONF-CONSOL-540)
@@ -35,12 +35,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-CONSOL-539)
 <ol>
-<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-538)</li></ol></li>
+<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-538)<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-291, CONF-292)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> SeverityObservation</tt><b> STATIC</b>, where its data type is CD (CONF-CONSOL-540)
 <ul><li>Value code representing high, moderate and low severity depending upon whether the severity is life threatening, presents noticeable adverse consequences, or is unlikely substantially effect the situation of the subject.</li></ul></li>
-<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-538)</li>
+<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-538)<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

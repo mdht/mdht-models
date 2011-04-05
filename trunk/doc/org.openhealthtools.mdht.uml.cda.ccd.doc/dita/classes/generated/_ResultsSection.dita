@@ -33,44 +33,62 @@
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "30954-2" <i>Relevant diagnostic tests and/or laboratory data</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF-389)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt> (CONF-391)</li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
-<li>contains <xref href="../ResultOrganizer.dita">CCD Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.32</tt>) (CONF-388)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt> (CONF-388)</li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'results'. (CONF-392)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="30954-2" </tt><i>Relevant diagnostic tests and/or laboratory data</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-389)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-391)
+<ol>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'results'. (CONF-392)</li></ol></li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-388), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ResultOrganizer.dita">Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.32</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-388)
+</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "30954-2" <i>Relevant diagnostic tests and/or laboratory data</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF-389)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt> (CONF-391)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt> (CONF-388)</li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
-<li>contains <xref href="../ResultOrganizer.dita">CCD Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.32</tt>) (CONF-388)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="30954-2" </tt><i>Relevant diagnostic tests and/or laboratory data</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-389)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-391)
+<ol>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'results'. (CONF-392)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-388)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-388), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ResultOrganizer.dita">Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.32</tt>)</li></ol></li>
 <li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'results'. (CONF-392)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.14"/>
+  <id root="42656baa-6c7d-4950-a5ee-46e9bd9269d0"/>
+  <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+  <title>Relevant diagnostic tests and/or laboratory data</title>
+  <entry>
+    <organizer moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.32"/>
+      <id root="18af04be-f385-4abe-b750-549e83d6a0e5"/>
+      <code/>
+      <statusCode/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
       <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.1.14" assigningAuthorityName="CCD Results Section"/>
-          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
-          <title>Relevant diagnostic tests and/or laboratory data</title>
-          <entry>
-            <organizer moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.1.32" assigningAuthorityName="CCD Result Organizer"/>
-              <id root="d3fe9453-4dc5-4ba4-a933-1e0864705695"/>
-              <code/>
-              <statusCode/>
-            </organizer>
-          </entry>
-        </section>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.31"/>
+          <id root="403f3d2e-eaab-4dcb-82b7-878202074b77"/>
+          <code/>
+          <statusCode/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <interpretationCode/>
+          <methodCode/>
+        </observation>
       </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
 </body>
 </topic>

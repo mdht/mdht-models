@@ -48,43 +48,46 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Organizer (CONF-393)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-394)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">@moodCode</tt> = "EVN" (CONF-394)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..*] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="ResultObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.31]">CCD Result Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.31</tt>) (CONF-405)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-405), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ResultObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.31]">Result Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.31</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain [1..*] <tt class="ph tt">specimen</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains CDA Specimen (CONF-399)</li>
-</ol>
+<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">specimen</strong></tt> (CONF-399), such that
 <ul class="ul"><li class="li">Should be included if the specimen isn't inherent in code value.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..*] <tt class="ph tt">id</tt> (CONF-395)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-395)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">code</tt> (CONF-397)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF-397)
+<ol class="ol" type="a">
+<li class="li">The value for 'code' in a result organizer <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
+</ol>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">statusCode</tt> (CONF-396)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF-396)
+</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The value for 'code' in a result organizer SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
+<li class="li">The specimen element <strong class="ph b">SHALL NOT</strong> conflict with the specimen inherent in code (CONF-400)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The specimen element SHALL NOT conflict with the specimen inherent in code (CONF-400)</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: specimen / specimenRole / id SHOULD be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen. (CONF-401)</li>
+<li class="li">specimen / specimenRole / id <strong class="ph b">SHOULD</strong> be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen. (CONF-401)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more component (CONF-402)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.component-&gt;isEmpty()</pre>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: The target of one or more result organizer component relationships MAY be a procedure, to indicate the means or technique by which a result is obtained, particularly if the means or technique isn't inherent in code or if there is a need to further specialize the code value. (CONF-403)</li>
+<li class="li">The target of one or more result organizer component relationships <strong class="ph b">MAY</strong> be a procedure, to indicate the means or technique by which a result is obtained, particularly if the means or technique isn't inherent in code or if there is a need to further specialize the code value. (CONF-403)</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: A result organizer component / procedure MAY be a reference to a procedure described in the Procedure section. (CONF-404)</li>
+<li class="li">A result organizer component / procedure <strong class="ph b">MAY</strong> be a reference to a procedure described in the Procedure section. (CONF-404)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information. (CONF-406)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.informant-&gt;isEmpty() 
 or not self.getSection().informant-&gt;isEmpty()
@@ -97,45 +100,37 @@ or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActR
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Result Organizer example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Result Organizer example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+&lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.32"/&gt;
+  &lt;id root="238e5109-7289-463c-9157-4632f4897c2e"/&gt;
+  &lt;code/&gt;
+  &lt;statusCode/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
   &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;organizer moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.32" assigningAuthorityName="CCD Result Organizer"/&gt;
-              &lt;id root="97927d83-1d16-4fcd-83e6-74b370048b3a"/&gt;
-              &lt;code/&gt;
-              &lt;statusCode/&gt;
-              &lt;component&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.1.31" assigningAuthorityName="CCD Result Observation"/&gt;
-                  &lt;id root="135212dd-c2d7-40e4-88f6-ee28d4dab359"/&gt;
-                  &lt;code/&gt;
-                  &lt;statusCode/&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="1972"/&gt;
-                    &lt;high value="2008"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;interpretationCode/&gt;
-                  &lt;methodCode/&gt;
-                &lt;/observation&gt;
-              &lt;/component&gt;
-            &lt;/organizer&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
+    &lt;observation moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.31"/&gt;
+      &lt;id root="f8fd4cdc-4b17-4775-ac8b-629be9e8c292"/&gt;
+      &lt;code/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;interpretationCode/&gt;
+      &lt;methodCode/&gt;
+    &lt;/observation&gt;
   &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;/organizer&gt;</pre>
 
 </div>
 

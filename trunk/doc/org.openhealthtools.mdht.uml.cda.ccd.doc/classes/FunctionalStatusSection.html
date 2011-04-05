@@ -75,12 +75,13 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Section</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="47420-5" </tt><em class="ph i">Functional status assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">code</tt><tt class="ph tt">/@code</tt> = "47420-5" <em class="ph i">Functional status assessment</em> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">title</tt></li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
+</li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains one or more Problem Act and/or Result Organizer (CONF-123)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryTargets(ccd::ProblemAct)-&gt;size() &gt; 0
   or self.getEntryTargets(ccd::ResultOrganizer)-&gt;size() &gt; 0</pre>
@@ -91,26 +92,19 @@
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Functional Status Section example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Functional Status Section example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.5" assigningAuthorityName="CCD Functional Status Section"/&gt;
-          &lt;code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment"/&gt;
-          &lt;title&gt;Functional status assessment&lt;/title&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.5"/&gt;
+  &lt;id root="1617f0c9-2001-4786-85bd-ddc81110cbdf"/&gt;
+  &lt;code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment"/&gt;
+  &lt;title&gt;Functional status assessment&lt;/title&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

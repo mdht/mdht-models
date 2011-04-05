@@ -5,4 +5,4 @@ Bundle-Localization: plugin
 Bundle-Name: %pluginName
 Bundle-Vendor: %providerName
 Eclipse-LazyStart: true
-Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.example.doc;singleton:=true
+Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.consol.doc;singleton:=true

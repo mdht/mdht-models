@@ -32,14 +32,14 @@ relevant.
 <ol id="conformance">
 <li><b>MAY</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-366)
 <ul><li>uniquely represents a particular kind of product</li></ul></li>
-<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial. (CONF-357)</li>
-<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial / code. (CONF-358)</li>
+<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial. (CONF-357)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial / code. (CONF-358)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.oclIsUndefined()</codeblock></li></ul></li>
 <li>The value for "manufacturedMaterial / code" in a product template <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017. (CONF-359)</li>
 <li>The value for "manufacturedMaterial / code" in a product template <b>MAY</b> contain a precoordinated product strength, product form, or product concentration (e.g. "metoprolol 25mg tablet", "amoxicillin 400mg/5mL suspension"). (CONF-360)</li>
 <li>If manufacturedMaterial / code contains a precoordinated unit dose (e.g. "metoprolol 25mg tablet"), then SubstanceAdministration / doseQuantity <b>SHALL</b> be a unitless number that indicates the number of products given per administration. (CONF-361)</li>
 <li>If manufacturedMaterial / code does not contain a precoordinated unit dose (e.g. "metoprolol product"), then SubstanceAdministration / doseQuantity <b>SHALL</b> be a physical quantity that indicates the amount of product given per administration. (CONF-362)</li>
-<li><b>SHALL</b> satisfy: A manufacturedMaterial in a product template contains exactly one code / originalText, which represents the generic name of the product. (CONF-363)</li>
-<li><b>MAY</b> satisfy: A manufacturedMaterial in a product template contains exactly one name, which represents the brand name of the product. (CONF-364)</li>
+<li><b>SHALL</b> satisfy: A manufacturedMaterial in a product template contains exactly one code / originalText, which represents the generic name of the product. (CONF-363)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.originalText.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: A manufacturedMaterial in a product template contains exactly one name, which represents the brand name of the product. (CONF-364)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.name.oclIsUndefined()</codeblock></li></ul></li>
 <li><b>MAY</b> satisfy: contains exactly one manufacturedProduct / manufacturerOrganization, which represents the manufacturer of the Material. (CONF-365)</li>
 <li>If ManufacturedProduct in a product template contains manufacturedProduct / id, then ManufacturedProduct <b>SHOULD</b> also contain manufacturedProduct / manufacturerOrganization. (CONF-367)</li>
 <li>The coded product name <b>SHALL</b> appear in the @code attribute of the manufacturedMaterial/code element. (C83-[DE-8.13-CDA-1])<ul><li>A code describing the product from a controlled
@@ -63,14 +63,14 @@ the text associated with the coded concept</li></ul></li>
 <ol id="aggregate">
 <li><b>MAY</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-366)
 <ul><li>uniquely represents a particular kind of product</li></ul></li>
-<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial. (CONF-357)</li>
-<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial / code. (CONF-358)</li>
+<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial. (CONF-357)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial / code. (CONF-358)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.oclIsUndefined()</codeblock></li></ul></li>
 <li>The value for "manufacturedMaterial / code" in a product template <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017. (CONF-359)</li>
 <li>The value for "manufacturedMaterial / code" in a product template <b>MAY</b> contain a precoordinated product strength, product form, or product concentration (e.g. "metoprolol 25mg tablet", "amoxicillin 400mg/5mL suspension"). (CONF-360)</li>
 <li>If manufacturedMaterial / code contains a precoordinated unit dose (e.g. "metoprolol 25mg tablet"), then SubstanceAdministration / doseQuantity <b>SHALL</b> be a unitless number that indicates the number of products given per administration. (CONF-361)</li>
 <li>If manufacturedMaterial / code does not contain a precoordinated unit dose (e.g. "metoprolol product"), then SubstanceAdministration / doseQuantity <b>SHALL</b> be a physical quantity that indicates the amount of product given per administration. (CONF-362)</li>
-<li><b>SHALL</b> satisfy: A manufacturedMaterial in a product template contains exactly one code / originalText, which represents the generic name of the product. (CONF-363)</li>
-<li><b>MAY</b> satisfy: A manufacturedMaterial in a product template contains exactly one name, which represents the brand name of the product. (CONF-364)</li>
+<li><b>SHALL</b> satisfy: A manufacturedMaterial in a product template contains exactly one code / originalText, which represents the generic name of the product. (CONF-363)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.originalText.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: A manufacturedMaterial in a product template contains exactly one name, which represents the brand name of the product. (CONF-364)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.name.oclIsUndefined()</codeblock></li></ul></li>
 <li><b>MAY</b> satisfy: contains exactly one manufacturedProduct / manufacturerOrganization, which represents the manufacturer of the Material. (CONF-365)</li>
 <li>If ManufacturedProduct in a product template contains manufacturedProduct / id, then ManufacturedProduct <b>SHOULD</b> also contain manufacturedProduct / manufacturerOrganization. (CONF-367)</li>
 <li>The coded product name <b>SHALL</b> appear in the @code attribute of the manufacturedMaterial/code element. (C83-[DE-8.13-CDA-1])<ul><li>A code describing the product from a controlled

@@ -11,15 +11,21 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Participant1</li>
-<li><b>SHALL</b> conform to <xref href="../Support.dita">CCD Support</xref></li>
+<li><b>SHALL</b> conform to <xref href="../Support.dita">Support</xref></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref href="../Support.dita">CCD Support</xref></li>
-<li><b>SHALL</b> conform to CDA Participant1</li>
-<li>Contains exactly one [1..1] <tt>@typeCode</tt>, where its data type is ParticipationType</li>
-<li>Contains exactly one [1..1] <tt>associatedEntity</tt>, where its type is CDA Associated Entity</li>
+<li><b>SHALL</b> conform to <xref href="../Support.dita">Support</xref></li>
+<li>Contains exactly one [1..1] <tt><b>@typeCode</b></tt>, where its data type is ParticipationType
+</li>
+<li>Contains exactly one [1..1] <tt><b>associatedEntity</b></tt>, where its type is <xref href="../AssociatedEntity.dita">Associated Entity</xref>
+</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participant1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <time>
+    <low value="2011"/>
+    <high value="2011"/>
+  </time>
+</participant1>]]></codeblock>
 </body>
 </topic>

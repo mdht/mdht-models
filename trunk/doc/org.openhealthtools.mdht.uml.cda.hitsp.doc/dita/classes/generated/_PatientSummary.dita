@@ -12,113 +12,151 @@
 <p>This Component describes the document content that summarizes a consumer's medical status for the purpose of health information exchange. While an EHR or PHR system can contain much more information, this Component only deals with the summary information to be exchanged between such systems as established as requirements described in AHIC Use Cases.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/MedicalDocument.dita">IHE Medical Document</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.1</tt>)</li>
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/ContinuityOfCareDocument.dita">CCD Continuity Of Care Document</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1</tt>)</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../AdvanceDirectivesSection.dita">HITSP Advance Directives Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.116</tt>) (C32-[CT1-1])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../AllergiesReactionsSection.dita">HITSP Allergies Reactions Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.102</tt>) (C32-[CT1-2])</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../Comment.dita">HITSP Comment</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.11</tt>) (C32-[CT1-3])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../ProblemListSection.dita">HITSP Problem List Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.103</tt>) (C32-[CT1-4])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../EncountersSection.dita">HITSP Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.127</tt>) (C32-[CT1-5])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../ImmunizationsSection.dita">HITSP Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.117</tt>) (C32-[CT1-7])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../PayersSection.dita">HITSP Payers Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.101</tt>) (C32-[CT1-9])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../MedicationsSection.dita">HITSP Medications Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.112</tt>) (C32-[CT1-11])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../PlanOfCareSection.dita">HITSP Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.124</tt>) (C32-[CT1-13])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/PregnancyHistorySection.dita">IHE Pregnancy History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4</tt>) (C32-[CT1-14])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../SurgeriesSection.dita">HITSP Surgeries Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.108</tt>) (C32-[CT1-15])</li></ol></li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>supportHeaders</tt>, such that it<ol>
-<li>contains <xref href="../Support.dita">HITSP Support</xref> (C32-[CT1-16])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../VitalSignsSection.dita">HITSP Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.119</tt>) (C32-[CT1-17])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../DiagnosticResultsSection.dita">HITSP Diagnostic Results Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.122</tt>) (C32-[CT1-18])</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/MedicalDocument.html">IHE Medical Document</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ContinuityOfCareDocument.html">CCD Continuity Of Care Document</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1</tt>)</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-1]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectivesSection.dita">Advance Directives Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.116</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-2]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergiesReactionsSection.dita">Allergies Reactions Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.102</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> (C32-[CT1-3]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.11</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-4]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemListSection.dita">Problem List Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.103</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-5]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncountersSection.dita">Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.127</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-7]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationsSection.dita">Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.117</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-9]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PayersSection.dita">Payers Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.101</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-11]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationsSection.dita">Medications Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.112</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-13]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.124</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-14]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PregnancyHistorySection.html">IHE Pregnancy History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-15]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SurgeriesSection.dita">Surgeries Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.108</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>supportHeaders</b></tt> (C32-[CT1-16]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Support.dita">Support</xref></li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-17]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VitalSignsSection.dita">Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.119</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-18]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DiagnosticResultsSection.dita">Diagnostic Results Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.122</tt>)</li></ol></li>
 <li><b>MAY</b> satisfy: Contains 0..* HealthcareProvider in cda:documentationOf/cda:serviceEvent/cda:performer (C32-[CT1-6])</li>
 <li><b>SHALL</b> satisfy: Contains 0..* InformationSource in ancestor-or-self::./cda:author[1] (C32-[CT1-8])</li>
 <li><b>SHOULD</b> satisfy: Contains 0..* LanguageSpoken in cda:recordTarget/cda:patientRole/cda:patient/cda:languageCommunication (C32-[CT1-10])</li>
 <li><b>SHALL</b> satisfy: Contains 1..1 Person Information in cda:recordTarget/cda:patientRole (C32-[CT1-12])</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/ContinuityOfCareDocument.dita">CCD Continuity Of Care Document</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1</tt>)</li>
-<li><b>SHALL</b> conform to CDA Clinical Document</li>
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.cdt.doc/dita/classes/GeneralHeaderConstraints.dita">CDT General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.3</tt>)</li>
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/MedicalDocument.dita">IHE Medical Document</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.1</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt> (CONF-HP-21)<ul><li>Specifies the type of the clinical document.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>languageCode</tt> (CONF-HP-24)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>typeId</tt> (CONF-HP-16)<ul><li>The clinical document type ID identifies the constraints imposed by CDA R2 on the
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ContinuityOfCareDocument.html">CCD Continuity Of Care Document</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.cdt.doc/classes/GeneralHeaderConstraints.html">CDT General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.3</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/MedicalDocument.html">IHE Medical Document</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-HP-21)
+<ul><li>Specifies the type of the clinical document.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt> (CONF-HP-24)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt><tt><b>/@code</b>="US" </tt> (CONF-HP-15)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt> (CONF-HP-16)
+<ul><li>The clinical document type ID identifies the constraints imposed by CDA R2 on the
 content, essentially acting as a version identifier.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>id</tt> (CONF-HP-17)<ul><li>The ClinicalDocument/id element is an instance identifier data type (see HL7 Version 3
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF-HP-17)
+<ul><li>The ClinicalDocument/id element is an instance identifier data type (see HL7 Version 3
 Abstract Data in Section 5 REFERENCES). The root attribute is a UUID or OID. The
 root uniquely identifies the scope of the extension. The root and extension attributes
 uniquely identify the document.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>effectiveTime</tt> (CONF-HP-23)<ul><li>Specifies the creation time of the document. All documents
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-HP-22)
+<ul><li>Specifies the local name used for the document.
+Note that the title does not need to be the same as the display name provided with the
+document type code. For example, the display name provided by LOINC&#174; as an aid in
+debugging may be "HISTORY AND PHYSICAL." The title can be localized, as appropriate.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF-HP-23)
+<ul><li>Specifies the creation time of the document. All documents
 authored by direct input to a computer system should record an effectiveTime that is
 precise to the second. When authored in other ways, for example, by filling out a
 paper form that is then transferred into an EHR system, the precision of
 effectiveTime may be less than to the second.</li></ul></li>
-<li>Contains exactly one [1..1] <tt>confidentialityCode</tt><ul><li>Specifies the confidentiality assigned to the document. This specification provides no further guidance beyond CDA R2
+<li>Contains exactly one [1..1] <tt><b>confidentialityCode</b></tt>
+<ul><li>Specifies the confidentiality assigned to the document. This specification provides no further guidance beyond CDA R2
 on documents with respect to the vocabulary used for confidentialityCode, nor
 treatment or implementation of confidentiality.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>realmCode</tt><tt>/@code</tt> = "US"  (CONF-HP-15)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt> (CONF-HP-22)<ul><li>Specifies the local name used for the document.
-Note that the title does not need to be the same as the display name provided with the
-document type code. For example, the display name provided by LOINC&#174; as an aid in
-debugging may be "HISTORY AND PHYSICAL." The title can be localized, as appropriate.</li></ul></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/ProblemSection.dita">CCD Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>) (CONF-140)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/FamilyHistorySection.dita">CCD Family History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.4</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/SocialHistorySection.dita">CCD Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.15</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/AlertsSection.dita">CCD Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/MedicationsSection.dita">CCD Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>) (CONF-298)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/ResultsSection.dita">CCD Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>) (CONF-388)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/ProceduresSection.dita">CCD Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.12</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/EncountersSection.dita">CCD Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.3</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/PlanOfCareSection.dita">CCD Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/ImmunizationsSection.dita">CCD Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/VitalSignsSection.dita">CCD Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.16</tt>) (CONF-381)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/MedicalEquipmentSection.dita">CCD Medical Equipment Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.7</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/FunctionalStatusSection.dita">CCD Functional Status Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.5</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/AdvanceDirectivesSection.dita">CCD Advance Directives Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.1</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/PayersSection.dita">CCD Payers Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.9</tt>)</li></ol></li>
-<li><b>MAY</b> contain exactly one [1..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/PurposeSection.dita">CCD Purpose Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.13</tt>) (CONF-15)</li></ol></li>
-<li>Contains at least one [1..*] <tt>recordTarget</tt>, where its type is CDA Record Target</li>
-<li>Contains at least one [1..*] <tt>author</tt>, where its type is CDA Author</li>
-<li>Contains exactly one [1..1] <tt>custodian</tt>, where its type is CDA Custodian</li>
-<li>Contains exactly one [1..1] <tt>component</tt>, where its type is CDA Component2</li>
-<li>Contains at least one [1..*] <tt>author</tt>, such that it<ol>
-<li>contains CDA Author</li></ol><ul><li>The author element represents the creator of the clinical document. If the role of the
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-140), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemSection.dita">Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FamilyHistorySection.dita">Family History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.4</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SocialHistorySection.dita">Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.15</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AlertsSection.dita">Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-388), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ResultsSection.dita">Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProceduresSection.dita">Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.12</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncountersSection.dita">Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.3</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationsSection.dita">Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-381), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VitalSignsSection.dita">Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.16</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicalEquipmentSection.dita">Medical Equipment Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.7</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FunctionalStatusSection.dita">Functional Status Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.5</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectivesSection.dita">Advance Directives Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.1</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PayersSection.dita">Payers Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-15), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PurposeSection.dita">Purpose Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.13</tt>)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, where its type is <xref href="../RecordTarget.dita">Record Target</xref>
+</li>
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is <xref href="../Author.dita">Author</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is <xref href="../Custodian.dita">Custodian</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+</li>
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, such that
+<ul><li>The author element represents the creator of the clinical document. If the role of the
 actor is the entry of information from his or her own knowledge or application of skills,
 that actor is the author. If one actor provides information to another actor who filters,
 reasons, or algorithmically creates new information, then that second actor is also an
 author, having created information from his or her own knowledge or skills. However,
 that determination is independent from the determination of the first actor's
 authorship.</li></ul></li>
-<li>Contains zero or one [0..1] <tt>dataEnterer</tt>, such that it<ol>
-<li>contains CDA Data Enterer</li></ol><ul><li><p>The dataEnterer element represents the person who transferred the information from
+<li>Contains zero or one [0..1] <tt><b>dataEnterer</b></tt>, such that
+<ul><li><p>The dataEnterer element represents the person who transferred the information from
 other sources into the clinical document, where the other sources wrote the content of
 the note. The guiding rule of thumb is that an author provides the content found
 within the header or body of the document, subject to their own interpretation. The
@@ -127,17 +165,17 @@ both author and dataEnterer.</p>
 <p>If the role of the actor is to transfer information from one source to another (e.g.,
 transcription or transfer from paper form to electronic system), that actor is considered
 a dataEnterer.</p></li></ul></li>
-<li>Contains exactly one [1..1] <tt>custodian</tt>, such that it<ol>
-<li>contains CDA Custodian</li></ol><ul><li>Based on the CDA R2 constraints (Section 4.2.2.3 of the CDA Normative Web Edition.
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, such that
+<ul><li>Based on the CDA R2 constraints (Section 4.2.2.3 of the CDA Normative Web Edition.
 See Section 5 REFERENCES), the custodian element is required and is the custodian of
 the clinical document.</li></ul></li>
-<li>Contains zero or more [0..*] <tt>informationRecipient</tt>, such that it<ol>
-<li>contains CDA Information Recipient</li></ol><ul><li>informationRecipient, when used in the context of a referral or request for consultation,
+<li>Contains zero or more [0..*] <tt><b>informationRecipient</b></tt>, such that
+<ul><li>informationRecipient, when used in the context of a referral or request for consultation,
 this records the intended recipient of the information at the time the document is
 created. The intended recipient may also be the health chart of the patient, in which
 case the receivedOrganization is the scoping organization of that chart.</li></ul></li>
-<li>Contains zero or one [0..1] <tt>legalAuthenticator</tt>, such that it<ol>
-<li>contains CDA Legal Authenticator</li></ol><ul><li><p>The legalAuthenticator element identifies the legal authenticator of the document and
+<li>Contains zero or one [0..1] <tt><b>legalAuthenticator</b></tt>, such that
+<ul><li><p>The legalAuthenticator element identifies the legal authenticator of the document and
 must be present if the document has been legally authenticated. Based on local
 practice, clinical documents may be released before legal authentication. This implies
 that a clinical document that does not contain this element has not been legally
@@ -148,89 +186,109 @@ legal authentication, given the appropriate credentials.</p>
 <p>Local policies may choose to delegate the function of legal authentication to a device or
 system that generates the clinical document. In these cases, the legal authenticator is
 a person accepting responsibility for the document, not the generating device or system.</p></li></ul></li>
-<li>Contains zero or more [0..*] <tt>authenticator</tt>, such that it<ol>
-<li>contains CDA Authenticator</li></ol><ul><li><p>The authenticator identifies the participant who attested to the accuracy of the
+<li>Contains zero or more [0..*] <tt><b>authenticator</b></tt>, such that
+<ul><li><p>The authenticator identifies the participant who attested to the accuracy of the
 information in the document.</p>
 <p>Automated systems, such as a PHR, that allow a clinical document to be generated need to give
 special consideration to authentication permissions because the information contained in the
 document may come from sources or contain information that the author cannot validate.</p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../AdvanceDirectivesSection.dita">HITSP Advance Directives Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.116</tt>) (C32-[CT1-1])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../AllergiesReactionsSection.dita">HITSP Allergies Reactions Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.102</tt>) (C32-[CT1-2])</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../Comment.dita">HITSP Comment</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.11</tt>) (C32-[CT1-3])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../ProblemListSection.dita">HITSP Problem List Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.103</tt>) (C32-[CT1-4])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../EncountersSection.dita">HITSP Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.127</tt>) (C32-[CT1-5])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../ImmunizationsSection.dita">HITSP Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.117</tt>) (C32-[CT1-7])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../PayersSection.dita">HITSP Payers Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.101</tt>) (C32-[CT1-9])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../MedicationsSection.dita">HITSP Medications Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.112</tt>) (C32-[CT1-11])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../PlanOfCareSection.dita">HITSP Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.124</tt>) (C32-[CT1-13])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/PregnancyHistorySection.dita">IHE Pregnancy History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4</tt>) (C32-[CT1-14])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../SurgeriesSection.dita">HITSP Surgeries Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.108</tt>) (C32-[CT1-15])</li></ol></li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>supportHeaders</tt>, such that it<ol>
-<li>contains <xref href="../Support.dita">HITSP Support</xref> (C32-[CT1-16])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../VitalSignsSection.dita">HITSP Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.119</tt>) (C32-[CT1-17])</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>component</tt>, such that it<ol>
-<li>contains <xref href="../DiagnosticResultsSection.dita">HITSP Diagnostic Results Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.122</tt>) (C32-[CT1-18])</li></ol></li>
-<li><b>SHALL</b> satisfy: Contains exactly one documentationOf / serviceEvent (CONF-2)</li>
-<li><b>SHALL</b> satisfy: documentationOf / serviceEvent / @classCode SHALL be 'PCPR' (CONF-3)</li>
-<li><b>SHALL</b> satisfy: documentationOf / serviceEvent contains exactly one serviceEvent / effectiveTime / low and exactly one serviveEvent / effectiveTime / high (CONF-4)</li>
-<li><b>SHALL</b> satisfy: languageCode has the form nn, or nn-CC. The nn portion SHALL be an ISO-639-1 language code in lower case. The CC portion, if present, SHALL be an ISO-3166 country code in upper case (CONF-6)</li>
-<li><b>SHALL</b> satisfy: SHALL NOT contain templateId / @extension (CONF-8)</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-1]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectivesSection.dita">Advance Directives Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.116</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-2]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergiesReactionsSection.dita">Allergies Reactions Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.102</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> (C32-[CT1-3]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.11</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-4]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemListSection.dita">Problem List Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.103</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-5]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncountersSection.dita">Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.127</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-7]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationsSection.dita">Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.117</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-9]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PayersSection.dita">Payers Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.101</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-11]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationsSection.dita">Medications Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.112</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-13]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.124</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-14]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PregnancyHistorySection.html">IHE Pregnancy History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-15]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SurgeriesSection.dita">Surgeries Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.108</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>supportHeaders</b></tt> (C32-[CT1-16]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Support.dita">Support</xref></li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-17]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VitalSignsSection.dita">Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.119</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (C32-[CT1-18]), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DiagnosticResultsSection.dita">Diagnostic Results Section</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.122</tt>)</li></ol></li>
+<li><b>SHALL</b> satisfy: Contains exactly one documentationOf / serviceEvent (CONF-2)<ul><li><codeblock>[OCL]: self.documentationOf-&gt;one(doc : cda::DocumentationOf | not doc.serviceEvent.oclIsUndefined())</codeblock></li></ul></li>
+<li>documentationOf / serviceEvent / @classCode <b>SHALL</b> be 'PCPR' (CONF-3)<ul><li><codeblock>[OCL]: self.documentationOf-&gt;one(doc : cda::DocumentationOf | doc.serviceEvent.classCode = vocab::ActClassRoot::PCPR)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: documentationOf / serviceEvent contains exactly one serviceEvent / effectiveTime / low and exactly one serviveEvent / effectiveTime / high (CONF-4)<ul><li><codeblock>[OCL]: self.documentationOf-&gt;one(doc : cda::DocumentationOf | 
+   not doc.serviceEvent.effectiveTime.low.oclIsUndefined() and not doc.serviceEvent.effectiveTime.high.oclIsUndefined())</codeblock></li></ul></li>
+<li>languageCode has the form nn, or nn-CC. The nn portion <b>SHALL</b> be an ISO-639-1 language code in lower case. The CC portion, if present, <b>SHALL</b> be an ISO-3166 country code in upper case (CONF-6)</li>
+<li><b>SHALL NOT</b> contain templateId / @extension (CONF-8)<ul><li><codeblock>[OCL]: self.templateId-&gt;forAll(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1' implies id.extension.oclIsUndefined())</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: effectiveTime is expressed with precision to include seconds (CONF-9)</li>
 <li><b>SHALL</b> satisfy: effectiveTime includes an explicit time zone offset (CONF-10)</li>
-<li><b>SHALL</b> satisfy: Contains one or two recordTarget (CONF-11)</li>
-<li><b>SHOULD</b> satisfy: Contains one or more author / assignedAuthor / assignedPerson and/or author / assignedAuthor / representedOrganization (CONF-12)</li>
-<li><b>SHALL</b> satisfy: If author has an associated representedOrganization with no assignedPerson or assignedAuthoringDevice, then the value for author / assignedAuthor / id / @NullFlavor SHALL be 'NA' (CONF-13)</li>
-<li><b>MAY</b> satisfy: Contains one or more informationRecipient (CONF-14)</li>
-<li><b>MAY</b> satisfy: The value for component / structuredBody / component / section / entry / @typeCode MAY be 'DRIV' "is derived from" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate that the CDA Narrative Block is fully derived from the structured entries. (CONF-28)</li>
-<li><b>SHOULD</b> satisfy: A CCD entry SHOULD explicitly reference its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 &lt;content&gt;). (CONF-29)</li>
-<li><b>MAY</b> satisfy: A section MAY contain one or more comments, either as a clinical statement or nested under another clinical statement. (CONF-502)</li>
-<li><b>SHALL</b> satisfy: All patient, guardianPerson, assignedPerson, maintainingPerson, relatedPerson, intendedRecipient/informationRecipient, associatedPerson, and relatedSubject/subject elements have a name. (CONF-HP-6)</li>
-<li><b>SHALL</b> satisfy: All patientRole, assignedAuthor, assignedEntity[not(parent::dataEnterer)] and associatedEntity elements have an addr and telecom element. (CONF-HP-7)</li>
-<li><b>SHOULD</b> satisfy: All guardian, dataEnterer/assignedEntity, relatedEntity, intendedRecipient, relatedSubject and participantRole elements have an addr and telecom element. (CONF-HP-8)</li>
+<li><b>SHALL</b> satisfy: Contains one or two recordTarget (CONF-11)<ul><li><codeblock>[OCL]: self.recordTarget-&gt;size() = 1 or self.recordTarget-&gt;size() =2</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: Contains one or more author / assignedAuthor / assignedPerson and/or author / assignedAuthor / representedOrganization (CONF-12)<ul><li><codeblock>[OCL]: self.author-&gt;exists(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() 
+   or not author.assignedAuthor.representedOrganization.oclIsUndefined())</codeblock></li></ul></li>
+<li>If author has an associated representedOrganization with no assignedPerson or assignedAuthoringDevice, then the value for author / assignedAuthor / id / @NullFlavor <b>SHALL</b> be 'NA' (CONF-13)<ul><li><codeblock>[OCL]: self.author-&gt;exists(author : cda::Author | (not author.assignedAuthor.representedOrganization.oclIsUndefined()
+      and author.assignedAuthor.assignedPerson.oclIsUndefined() and author.assignedAuthor.assignedAuthoringDevice.oclIsUndefined())
+   implies author.assignedAuthor.id-&gt;one(id : datatypes::II | id.nullFlavor = vocab::NullFlavor::NA))</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains one or more informationRecipient (CONF-14)<ul><li><codeblock>[OCL]: self.informationRecipient-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li>The value for component / structuredBody / component / section / entry / @typeCode <b>MAY</b> be 'DRIV' "is derived from" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate that the CDA Narrative Block is fully derived from the structured entries. (CONF-28)</li>
+<li>A CCD entry <b>SHOULD</b> explicitly reference its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 &lt;content&gt;). (CONF-29)</li>
+<li>A section <b>MAY</b> contain one or more comments, either as a clinical statement or nested under another clinical statement. (CONF-502)</li>
+<li><b>SHALL</b> satisfy: All patient, guardianPerson, assignedPerson, maintainingPerson, relatedPerson, intendedRecipient/informationRecipient, associatedPerson, and relatedSubject/subject elements have a name. (CONF-HP-6)<ul><li><codeblock>[OCL]: -- implemented in Java using XPath selector</codeblock></li><li><codeblock>[XPath]: *[self::cda:patient or self::cda:guardianPerson or self::cda:assignedPerson
+   or self::cda:maintainingPerson or self::cda:relatedPerson or self::cda:associatedPerson
+   or self::cda:intendedRecipient/cda:informationRecipient or self::cda:relatedSubject/cda:subject]</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: All patientRole, assignedAuthor, assignedEntity[not(parent::dataEnterer)] and associatedEntity elements have an addr and telecom element. (CONF-HP-7)<ul><li><codeblock>[OCL]: -- implemented in Java using XPath selector</codeblock></li><li><codeblock>[XPath]: *[self::cda:patientRole or self::cda:assignedAuthor or self::cda:assignedEntity[not(parent::cda:dataEnterer)]  or self::cda:associatedEntity]</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: All guardian, dataEnterer/assignedEntity, relatedEntity, intendedRecipient, relatedSubject and participantRole elements have an addr and telecom element. (CONF-HP-8)<ul><li><codeblock>[OCL]: -- implemented in Java using XPath selector</codeblock></li><li><codeblock>[XPath]: *[self::cda:guardian or self::cda:assignedEntity[parent::cda:dataEnterer] or self::cda:relatedEntity or self::cda:intendedRecipient or self::cda:relatedSubject or self::cda:participantRole]</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: All guardianOrganization, providerOrganization, wholeOrganization, representedOrganization, representedCustodianOrganization, receivedOrganization, scopingOrganization and serviceProviderOrganization elements have name, addr and telecom elements. (CONF-HP-9)<ul><li>When name, address, or telecom information is unknown and where these elements are
 required to be present, as with CDA conformance if the information is unknown, these
 elements will be represented using an appropriate value for the nullFlavor attribute on
 the element. Legal values according to this specification come from the HL7 NullFlavor
-vocabulary.</li></ul></li>
-<li><b>SHALL</b> satisfy: Times or time intervals found in the ClinicalDocument/effectiveTime,
+vocabulary.</li></ul><ul><li><codeblock>[OCL]: -- implemented in Java using XPath selector</codeblock></li><li><codeblock>[XPath]: *[self::cda:guardianOrganization or self::cda:providerOrganization or self::cda:wholeOrganization or self::cda:representedOrganization or self::cda:representedCustodianOrganization or self::cda:receivedOrganization or self::cda:scopingOrganization or self::cda:serviceProviderOrganization]</codeblock></li></ul></li>
+<li>Times or time intervals found in the ClinicalDocument/effectiveTime,
 author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and
-encompassingEncounter/effectiveTime elements SHALL be precise to the day, SHALL
-include a time zone if more precise than to the day, and SHOULD be precise to the
-second. (CONF-HP-10)</li>
-<li><b>SHALL</b> satisfy: Times or time intervals found in the asOrganizationPartOf/effectiveTime,
+encompassingEncounter/effectiveTime elements <b>SHALL</b> be precise to the day, <b>SHALL</b>
+include a time zone if more precise than to the day, and <b>SHOULD</b> be precise to the
+second. (CONF-HP-10)<ul><li><codeblock>[OCL]: -- implemented in Java using XPath selector</codeblock></li><li><codeblock>[XPath]: /cda:ClinicalDocument/cda:effectiveTime | //cda:author/cda:time | //cda:dataEnterer/cda:time | //cda:encompassingEncounter/cda:effectiveTime</codeblock></li></ul></li>
+<li>Times or time intervals found in the asOrganizationPartOf/effectiveTime,
 asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,
 serviceEvent/effectiveTime, ClinicalDocument/participant/time,
-serviceEvent/performer/time and encounterParticipant/time SHALL be precise at
-least to the year, SHOULD be precise to the day, and MAY omit time zone. (CONF-HP-11)</li>
+serviceEvent/performer/time and encounterParticipant/time <b>SHALL</b> be precise at
+least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time zone. (CONF-HP-11)<ul><li><codeblock>[OCL]: cda::OrganizationPartOf.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject)-&gt; union(  cda::MaintainedEntity.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )-&gt;union( cda::RelatedEntity.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )-&gt;union(cda::RelatedEntity.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )-&gt;union(cda::RelatedEntity.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )-&gt;union(cda::ServiceEvent.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )-&gt;union(cda::EncounterParticipant.allInstances()-&gt;select( time.oclIsUndefined()).oclAsType( ecore::EObject))-&gt;union(self.participant-&gt;select( time.oclIsUndefined()).oclAsType( ecore::EObject))-&gt;union(cda::OrganizationPartOf.allInstances().effectiveTime-&gt;union(cda::MaintainedEntity.allInstances().effectiveTime)-&gt;union( cda::RelatedEntity.allInstances().effectiveTime)-&gt;union(cda::RelatedEntity.allInstances().effectiveTime)-&gt;union(cda::RelatedEntity.allInstances().effectiveTime)-&gt;union(cda::ServiceEvent.allInstances().effectiveTime)-&gt;union(cda::EncounterParticipant.allInstances().time)-&gt;union(self.participant.time)-&gt;select(current : datatypes::IVL_TS  |  ((not current.low.oclIsUndefined()) and (current.low.value.oclIsUndefined() or current.low.value.size() &lt; 4)) or ((not current.center.oclIsUndefined()) and (current.center.value.oclIsUndefined() or current.center.value.size() &lt; 4)) or ((not current.high.oclIsUndefined()) and (current.high.value.oclIsUndefined() or current.high.value.size() &lt; 4)) or (current.low.oclIsUndefined() and current.center.oclIsUndefined() and current.high.oclIsUndefined()) ).oclAsType( ecore::EObject))</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Telephone numbers match the regular expression pattern tel:\+?[-0-9().]+ (CONF-HP-12)<ul><li>The telecom element is used to provide a contact telephone number for the various
 participants that require it. The value attribute ofthis elements is a URL that specifies
 the telephone number, as indicated by the TEL data type.</li><li>All telephone numbers are to be encoded using a restricted form of the tel: URL scheme. 
 A telephone number used for voice calls begins with the URL scheme tel:. If the
 number is a global phone number, it starts with a plus (+) sign. The remaining number
 is made up of the dialing digits and an optional extension and may also contain visual
-separators.</li></ul></li>
-<li><b>SHALL</b> satisfy: At least one dialing digit is present in the phone number after visual separators are removed. (CONF-HP-13)</li>
+separators.</li></ul><ul><li><codeblock>[OCL]: -- implemented in Java using XPath selector</codeblock></li><li><codeblock>[XPath]: //*[self::cda:telecom]</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: At least one dialing digit is present in the phone number after visual separators are removed. (CONF-HP-13)<ul><li><codeblock>[OCL]: -- implemented in Java using XPath selector</codeblock></li><li><codeblock>[XPath]: //*[self::cda:telecom]</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: If the telephone number is unknown it is represented using the appropriate flavor of null. (CONF-HP-14)<ul><li>There is no way to distinguish between an unknown phone number and an unknown
 e-mail or other telecommunications address. Therefore, the following convention will be
 used: Any telecom element that uses a flavor of null (has a nullFlavor attribute) is
 assumed to be a telephone number, which is the only required telecommunications
-address element within this DSTU.</li></ul></li>
-<li><b>SHALL</b> satisfy: The extension attribute of the typeId element is POCD_HD000040. (CONF-HP-16)</li>
+address element within this DSTU.</li></ul><ul><li><codeblock>[OCL]: -- implemented in Java using XPath selector</codeblock></li><li><codeblock>[XPath]: //*[self::cda:telecom]</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The extension attribute of the typeId element is POCD_HD000040. (CONF-HP-16)<ul><li><codeblock>[OCL]: self.typeId.extension = 'POCD_HD000040'</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The id/@root attribute is a syntactically correct UUID or OID. (CONF-HP-17)</li>
 <li><b>SHALL</b> satisfy: UUIDs are represented in the form XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXXX, where each X is a character from the set [A-Fa-f0-9]. (CONF-HP-18)</li>
-<li><b>SHALL</b> satisfy: OIDs are represented in dotted decimal notation, where each decimal number is either 0, or starts with a nonzero digit. More formally, an OID SHALL be in the form ([0-2])(.([1-9][0-9]*|0))+. (CONF-HP-19)<ul><li><p>Organizations that wish to use OIDs should properly register their OID root and ensure
+<li>OIDs are represented in dotted decimal notation, where each decimal number is either 0, or starts with a nonzero digit. More formally, an OID <b>SHALL</b> be in the form ([0-2])(.([1-9][0-9]*|0))+. (CONF-HP-19)<ul><li><p>Organizations that wish to use OIDs should properly register their OID root and ensure
 uniqueness of the OID roots used in identifiers. A large number of mechanisms exist
 for obtaining OID roots for free or for a reasonable fee. HL7 maintains an OID registry
 page from which organizations may request an OID root under the HL7 OID root. This
@@ -240,85 +298,94 @@ a small fee anywhere in the world and is located at:
 http://www.dclunie.com/medical-image-faq/html/part8.html#UIDRegistration. </p>
 <p>The manner in which the OID root is obtained is not constrained by this DSTU.</p></li></ul></li>
 <li><b>SHALL</b> satisfy: OIDs are no more than 64 characters in length. (CONF-HP-20)<ul><li>OIDs are limited by this specification to no more than 64 characters in length for
-compatibility with other standards and Implementation Guides.</li></ul></li>
+compatibility with other standards and Implementation Guides.</li></ul><ul><li><codeblock>[OCL]: self.id-&gt;select((not id.root.oclIsUndefined()) and id.root.size() &gt; 64 )</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: languageCode has the form nn, or nn-CC. (CONF-HP-25)</li>
 <li><b>SHALL</b> satisfy: The nn portion of languageCode is a legal ISO-639-1 language code in lowercase. (CONF-HP-26)</li>
-<li><b>SHALL</b> satisfy: The CC portion languageCode, if present, SHALL be an ISO-3166 country code in uppercase. (CONF-HP-27)</li>
-<li><b>SHALL</b> satisfy: Both setId and versionNumber SHALL be present or both SHALL be absent. (CONF-HP-28)<ul><li>The ClinicalDocument/setId element uses the instance identifier (II) data type. The root
+<li>The CC portion languageCode, if present, <b>SHALL</b> be an ISO-3166 country code in uppercase. (CONF-HP-27)</li>
+<li>Both setId and versionNumber <b>SHALL</b> be present or both <b>SHALL</b> be absent. (CONF-HP-28)<ul><li>The ClinicalDocument/setId element uses the instance identifier (II) data type. The root
 attribute is a UUID or OID that uniquely identifies the scope of the identifier, and the
 extension attribute is a value that is unique within the scope of the root for the set of
 versions of the document. See Document Identification, Revisions, and Addenda in
 Section 4.2.3.1 of the CDA Specification for some examples showing the use of the setId
-element.</li></ul></li>
-<li><b>SHALL</b> satisfy: The @extension and/or @root of setId and id SHALL be different when both are present. (CONF-HP-29)</li>
-<li><b>SHALL</b> satisfy: A copyTime element SHALL NOT be present. (CONF-HP-30)<ul><li>The ClinicalDocument/copyTime element has been deprecated in CDA R2.</li></ul></li>
-<li><b>SHALL</b> satisfy: At least one recordTarget/patientRole element is present. (CONF-HP-31)</li>
-<li><b>SHALL</b> satisfy: A patient/birthTime element SHALL be present. The patient/birthTime
-element SHALL be precise at least to the year, and SHOULD be precise at least to the
-day, and MAY omit time zone. If unknown, it SHALL be represented using a flavor of
-null. (CONF-HP-32)</li>
-<li><b>SHALL</b> satisfy: A patient/administrativeGenderCode element SHALL be present. If
-unknown, it SHALL be represented using a flavor of null. Values for
-administrativeGenderCode SHOULD be drawn from the HL7 AdministrativeGender
-vocabulary. (CONF-HP-33)<ul><li>TODO: add OCL test for terminology</li></ul></li>
-<li><b>MAY</b> satisfy: The maritalStatusCode, religiousAffiliationCode, raceCode and
-ethnicGroupCode MAY be present. If maritalStatusCode, religiousAffiliationCode,
-raceCode and ethnicGroupCode elements are present, they SHOULD be encoded using
+element.</li></ul><ul><li><codeblock>[OCL]: (self.setId.oclIsUndefined() and self.versionNumber.oclIsUndefined())
+   xor (not self.setId.oclIsUndefined() and not self.versionNumber.oclIsUndefined())</codeblock></li></ul></li>
+<li>The @extension and/or @root of setId and id <b>SHALL</b> be different when both are present. (CONF-HP-29)<ul><li><codeblock>[OCL]: (not self.setId.oclIsUndefined() and not self.id.oclIsUndefined())
+   implies (self.setId.root &lt;&gt; self.id.root or self.setId.extension &lt;&gt; self.id.extension)</codeblock></li></ul></li>
+<li>A copyTime element <b>SHALL NOT</b> be present. (CONF-HP-30)<ul><li>The ClinicalDocument/copyTime element has been deprecated in CDA R2.</li></ul><ul><li><codeblock>[OCL]: self.copyTime.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: At least one recordTarget/patientRole element is present. (CONF-HP-31)<ul><li><codeblock>[OCL]: self.recordTarget-&gt;size() &gt; 0 and self.recordTarget-&gt;exists(target : cda::RecordTarget | not target.patientRole.oclIsUndefined())</codeblock></li></ul></li>
+<li>A patient/birthTime element <b>SHALL</b> be present. The patient/birthTime
+element <b>SHALL</b> be precise at least to the year, and <b>SHOULD</b> be precise at least to the
+day, and <b>MAY</b> omit time zone. If unknown, it <b>SHALL</b> be represented using a flavor of
+null. (CONF-HP-32)<ul><li><codeblock>[OCL]: self.recordTarget-&gt;forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()
+   implies (not target.patientRole.patient.birthTime.value.oclIsUndefined()
+      or not target.patientRole.patient.birthTime.nullFlavor.oclIsUndefined()))</codeblock></li></ul></li>
+<li>A patient/administrativeGenderCode element <b>SHALL</b> be present. If
+unknown, it <b>SHALL</b> be represented using a flavor of null. Values for
+administrativeGenderCode <b>SHOULD</b> be drawn from the HL7 AdministrativeGender
+vocabulary. (CONF-HP-33)<ul><li>TODO: add OCL test for terminology</li></ul><ul><li><codeblock>[OCL]: self.recordTarget-&gt;forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()
+   implies (not target.patientRole.patient.administrativeGenderCode.code.oclIsUndefined()
+      or not target.patientRole.patient.administrativeGenderCode.nullFlavor.oclIsUndefined()))</codeblock></li></ul></li>
+<li>The maritalStatusCode, religiousAffiliationCode, raceCode and
+ethnicGroupCode <b>MAY</b> be present. If maritalStatusCode, religiousAffiliationCode,
+raceCode and ethnicGroupCode elements are present, they <b>SHOULD</b> be encoded using
 the appropriate HL7 vocabularies. (CONF-HP-34)</li>
 <li><b>SHOULD</b> satisfy: The guardian element is present when the patient is a minor child. (CONF-HP-35)</li>
-<li><b>MAY</b> satisfy: The providerOrganization element is present. (CONF-HP-36)</li>
+<li><b>MAY</b> satisfy: The providerOrganization element is present. (CONF-HP-36)<ul><li><codeblock>[OCL]: self.recordTarget-&gt;exists(target : cda::RecordTarget | not target.patientRole.providerOrganization.oclIsUndefined())</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The author/time element is present. (CONF-HP-37)<ul><li>The author/time element represents the start time of the author's
-participation in the creation of the clinical document.</li></ul></li>
-<li><b>SHALL</b> satisfy: The assignedAuthor/id element is present. (CONF-HP-38)</li>
+participation in the creation of the clinical document.</li></ul><ul><li><codeblock>[OCL]: self.author-&gt;forAll(author : cda::Author | not author.time.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The assignedAuthor/id element is present. (CONF-HP-38)<ul><li><codeblock>[OCL]: self.author-&gt;forAll(author : cda::Author | author.assignedAuthor.id-&gt;size() &gt; 0)</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: An assignedAuthor element contains at least one assignedPerson
-or assignedAuthoringDevice elements. (CONF-HP-39)</li>
-<li><b>SHALL</b> satisfy: When dataEnterer is present, an assignedEntity/assignedPerson element is present. (CONF-HP-40)</li>
-<li><b>MAY</b> satisfy: The dataEnterer/time element MAY be present. If present, it represents the starting time of entry of the data. (CONF-HP-41)</li>
-<li><b>MAY</b> satisfy: The informant element is present. (CONF-HP-42)</li>
-<li><b>SHALL</b> satisfy: When informant is present, an assignedEntity/assignedPerson or
-relatedEntity/relatedPerson element SHALL be present. (CONF-HP-43)</li>
-<li><b>SHALL</b> satisfy: When the informant is a healthcare provider with an assigned role, the
-informant SHALL be represented using the assignedEntity element (CONF-HP-44)<ul><li>Assigned health care providers may be a source of information when a document is
+or assignedAuthoringDevice elements. (CONF-HP-39)<ul><li><codeblock>[OCL]: self.author-&gt;forAll(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() 
+   or not author.assignedAuthor.assignedAuthoringDevice.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: When dataEnterer is present, an assignedEntity/assignedPerson element is present. (CONF-HP-40)<ul><li><codeblock>[OCL]: not self.dataEnterer.oclIsUndefined() implies not self.dataEnterer.assignedEntity.assignedPerson.oclIsUndefined()</codeblock></li></ul></li>
+<li>The dataEnterer/time element <b>MAY</b> be present. If present, it represents the starting time of entry of the data. (CONF-HP-41)<ul><li><codeblock>[OCL]: not self.dataEnterer.oclIsUndefined() implies not self.dataEnterer.time.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: The informant element is present. (CONF-HP-42)<ul><li><codeblock>[OCL]: self.informant-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li>When informant is present, an assignedEntity/assignedPerson or
+relatedEntity/relatedPerson element <b>SHALL</b> be present. (CONF-HP-43)<ul><li><codeblock>[OCL]: self.informant-&gt;forAll(i : cda::Informant12 | not i.assignedEntity.assignedPerson.oclIsUndefined()
+   or not i.relatedEntity.relatedPerson.oclIsUndefined())</codeblock></li></ul></li>
+<li>When the informant is a healthcare provider with an assigned role, the
+informant <b>SHALL</b> be represented using the assignedEntity element (CONF-HP-44)<ul><li>Assigned health care providers may be a source of information when a document is
 created. (e.g., a nurse's aide who provides information about a recent significant health
 care event that occurred within an acute care facility.) In these cases, the
 assignedEntity element is used.</li><li>TODO: how to determin if informant is a healthcare provider?  condition for implementing OCL</li></ul></li>
-<li><b>SHALL</b> satisfy: Allowable values for informant/relatedEntity/@classCode SHALL be CON,
+<li>Allowable values for informant/relatedEntity/@classCode <b>SHALL</b> be CON,
 PRS, CAREGIVER, AGNT or PROV from the RoleClass vocabulary. (CONF-HP-45)<ul><li><p>When the informant is a personal relation, that informant is represented in the
 relatedEntity element. The code element of the relatedEntity describes the relationship
 between the informant and the patient.</p>
 <p>The relationship between the informant and the patient needs to be described to help
 the receiver of the clinical document understand the information in the document.</p></li></ul></li>
-<li><b>SHALL</b> satisfy: When relatedEntity/@classCode is PRS, values in relatedEntity/code
-SHALL come from the HL7 PersonalRelationshipRoleType vocabulary or from
+<li>When relatedEntity/@classCode is PRS, values in relatedEntity/code
+<b>SHALL</b> come from the HL7 PersonalRelationshipRoleType vocabulary or from
 SNOMED, any subtype of "Person in the family" (303071001). (CONF-HP-46)</li>
-<li><b>SHALL</b> satisfy: When an informant is an unrelated person not otherwise specified, the
-value relatedEntity/@classCode SHALL be set to CON to indicate that this person is a
+<li>When an informant is an unrelated person not otherwise specified, the
+value relatedEntity/@classCode <b>SHALL</b> be set to CON to indicate that this person is a
 contact. (CONF-HP-47)<ul><li>Individuals with no prior personal relationship to the patient (e.g., a witness to a
 significant health care event) may provide information about the patient.</li></ul></li>
-<li><b>SHALL</b> satisfy: When the informant is a healthcare provider without an assigned role,
-the informant SHALL be represented using the relatedEntity element and the value of
-relatedEntity/@classCode SHALL be set to PROV. (CONF-HP-48)<ul><li>A health care provider who does not have an assigned role at the institution may
+<li>When the informant is a healthcare provider without an assigned role,
+the informant <b>SHALL</b> be represented using the relatedEntity element and the value of
+relatedEntity/@classCode <b>SHALL</b> be set to PROV. (CONF-HP-48)<ul><li>A health care provider who does not have an assigned role at the institution may
 provide information. To record an informant that does not have an assigned role that
 can be represented within the context of the document, the information will be
 represented using the relatedEntity element and the value of relatedEntity/@classCode
 will be set to PROV.</li></ul></li>
-<li><b>SHOULD</b> satisfy: When the informant is a healthcare provider, the value of relatedEntity/code SHOULD be present and indicate the type of healthcare provider. (CONF-HP-49)</li>
-<li><b>MAY</b> satisfy: The ClinicalDocument/informationRecipient element MAY be present.
+<li>When the informant is a healthcare provider, the value of relatedEntity/code <b>SHOULD</b> be present and indicate the type of healthcare provider. (CONF-HP-49)</li>
+<li>The ClinicalDocument/informationRecipient element <b>MAY</b> be present.
 When informationRecipient is used, at least one
 informationRecipient/intendedRecipient/informationRecipient or
-informationRecipient/intendedRecipient/receivedOrganization SHALL be present. (CONF-HP-50)</li>
-<li><b>SHALL</b> satisfy: The assignedEntity/assignedPerson element SHALL be present in legalAuthenticator. (CONF-HP-51)</li>
-<li><b>SHALL</b> satisfy: The assignedEntity/assignedPerson element SHALL be present in an authenticator element. (CONF-HP-52)</li>
-<li><b>SHOULD</b> satisfy: Times or time intervals found in the ClinicalDocument/effectiveTime,
+informationRecipient/intendedRecipient/receivedOrganization <b>SHALL</b> be present. (CONF-HP-50)</li>
+<li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in legalAuthenticator. (CONF-HP-51)<ul><li><codeblock>[OCL]: not self.legalAuthenticator.oclIsUndefined() implies not self.legalAuthenticator.assignedEntity.assignedPerson.oclIsUndefined()</codeblock></li></ul></li>
+<li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in an authenticator element. (CONF-HP-52)<ul><li><codeblock>[OCL]: self.authenticator-&gt;forAll(auth : cda::Authenticator | auth.assignedEntity-&gt;forAll(entity : cda::AssignedEntity |
+   not entity.assignedPerson.oclIsUndefined()))</codeblock></li></ul></li>
+<li>Times or time intervals found in the ClinicalDocument/effectiveTime,
 author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and
-encompassingEncounter/effectiveTime elements SHALL be precise to the day, SHALL
-include a time zone if more precise than to the day, and SHOULD be precise to the
-second. (CONF-HP-10)<ul><li>Should portion of CON-HP-10 constraitn</li></ul></li>
-<li><b>SHOULD</b> satisfy: Times or time intervals found in the asOrganizationPartOf/effectiveTime,
+encompassingEncounter/effectiveTime elements <b>SHALL</b> be precise to the day, <b>SHALL</b>
+include a time zone if more precise than to the day, and <b>SHOULD</b> be precise to the
+second. (CONF-HP-10)<ul><li>Should portion of CON-HP-10 constraitn</li></ul><ul><li><codeblock>[OCL]: -- implemented in Java using XPath selector</codeblock></li><li><codeblock>[XPath]: /cda:ClinicalDocument/cda:effectiveTime | //cda:author/cda:time | //cda:dataEnterer/cda:time | //cda:encompassingEncounter/cda:effectiveTime</codeblock></li></ul></li>
+<li>Times or time intervals found in the asOrganizationPartOf/effectiveTime,
 asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,
 serviceEvent/effectiveTime, ClinicalDocument/participant/time,
-serviceEvent/performer/time and encounterParticipant/time SHALL be precise at
-least to the year, SHOULD be precise to the day, and MAY omit time zone. (CONF-HP-11)<ul><li>Should portion of CON-HP-11 constraint</li></ul></li>
+serviceEvent/performer/time and encounterParticipant/time <b>SHALL</b> be precise at
+least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time zone. (CONF-HP-11)<ul><li>Should portion of CON-HP-11 constraint</li></ul><ul><li><codeblock>[OCL]: cda::OrganizationPartOf.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject)-&gt; union(  cda::MaintainedEntity.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )-&gt;union( cda::RelatedEntity.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )-&gt;union(cda::RelatedEntity.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )-&gt;union(cda::RelatedEntity.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )-&gt;union(cda::ServiceEvent.allInstances()-&gt;select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )-&gt;union(cda::EncounterParticipant.allInstances()-&gt;select( time.oclIsUndefined()).oclAsType( ecore::EObject))-&gt;union(self.participant-&gt;select( time.oclIsUndefined()).oclAsType( ecore::EObject))-&gt;union(cda::OrganizationPartOf.allInstances().effectiveTime-&gt;union(cda::MaintainedEntity.allInstances().effectiveTime)-&gt;union( cda::RelatedEntity.allInstances().effectiveTime)-&gt;union(cda::RelatedEntity.allInstances().effectiveTime)-&gt;union(cda::RelatedEntity.allInstances().effectiveTime)-&gt;union(cda::ServiceEvent.allInstances().effectiveTime)-&gt;union(cda::EncounterParticipant.allInstances().time)-&gt;union(self.participant.time)-&gt;select(current : datatypes::IVL_TS  |  ((not current.low.oclIsUndefined()) and (current.low.value.oclIsUndefined() or current.low.value.size() &lt; 8)) or ((not current.center.oclIsUndefined()) and (current.center.value.oclIsUndefined() or current.center.value.size() &lt; 8)) or ((not current.high.oclIsUndefined()) and (current.high.value.oclIsUndefined() or current.high.value.size() &lt; 8)) or (current.low.oclIsUndefined() and current.center.oclIsUndefined() and current.high.oclIsUndefined()) ).oclAsType( ecore::EObject))</codeblock></li></ul></li>
 <li><b>MAY</b> satisfy: Contains 0..* HealthcareProvider in cda:documentationOf/cda:serviceEvent/cda:performer (C32-[CT1-6])</li>
 <li><b>SHALL</b> satisfy: Contains 0..* InformationSource in ancestor-or-self::./cda:author[1] (C32-[CT1-8])</li>
 <li><b>SHOULD</b> satisfy: Contains 0..* LanguageSpoken in cda:recordTarget/cda:patientRole/cda:patient/cda:languageCommunication (C32-[CT1-10])</li>
@@ -327,124 +394,2025 @@ least to the year, SHOULD be precise to the day, and MAY omit time zone. (CONF-H
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <realmCode code="US"/>
-  <templateId root="2.16.840.1.113883.10.20.1" assigningAuthorityName="CCD Continuity Of Care Document"/>
-  <templateId root="2.16.840.1.113883.10.20.3" assigningAuthorityName="CDT General Header Constraints"/>
-  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1" assigningAuthorityName="IHE Medical Document"/>
-  <templateId root="2.16.840.1.113883.3.88.11.32.1" assigningAuthorityName="HITSP Patient Summary"/>
-  <id root="3ad9eb86-a012-4453-8c09-14203d2db6d3"/>
+  <templateId root="2.16.840.1.113883.10.20.1"/>
+  <templateId root="2.16.840.1.113883.10.20.3"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+  <templateId root="2.16.840.1.113883.3.88.11.32.1"/>
+  <id root="062b2b82-0c61-466d-8737-b6979a516e04"/>
   <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of episode note"/>
   <title/>
   <effectiveTime/>
-  <confidentialityCode/>
   <languageCode/>
   <component>
     <structuredBody>
       <component>
         <section>
-          <templateId root="2.16.840.1.113883.10.20.1.1" assigningAuthorityName="CCD Advance Directives Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.34" assigningAuthorityName="IHE Advance Directives Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.35" assigningAuthorityName="IHE Coded Advance Directives Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.116" assigningAuthorityName="HITSP Advance Directives Section"/>
-          <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/>
-          <title>Advance directives</title>
-        </section>
-      </component>
-      <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.1.2" assigningAuthorityName="CCD Alerts Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13" assigningAuthorityName="IHE Allergies Reactions Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.102" assigningAuthorityName="HITSP Allergies Reactions Section"/>
-          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
-          <title>Allergies, adverse reactions, alerts</title>
-        </section>
-      </component>
-      <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.1.11" assigningAuthorityName="CCD Problem Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6" assigningAuthorityName="IHE Active Problems Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.103" assigningAuthorityName="HITSP Problem List Section"/>
+          <templateId root="2.16.840.1.113883.10.20.1.11"/>
+          <id root="dc9f41fd-4aff-4ff1-a7ee-9f45340c557e"/>
           <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
           <title>Problem list</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27"/>
+              <id root="ab4222b2-572a-468a-a558-8d62a5daa694"/>
+              <code nullFlavor="NA"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.41"/>
+                  <id root="281bfb03-9946-40b5-9880-1076d6577c6a"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <id root="35bbcf56-4178-4776-aaee-077b5602ad65"/>
+                  <code/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <id root="05d8e641-408c-480f-a4cf-8ec3295c41b1"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <id root="928a8f36-9686-4478-8e5a-01b53066c9a5"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                      <id root="46547a72-abca-498a-aa29-cab102b770da"/>
+                      <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
         </section>
       </component>
       <component>
         <section>
-          <templateId root="2.16.840.1.113883.10.20.1.3" assigningAuthorityName="CCD Encounters Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.3" assigningAuthorityName="IHE Encounter History Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.127" assigningAuthorityName="HITSP Encounters Section"/>
-          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
-          <title>History of encounters</title>
+          <templateId root="2.16.840.1.113883.10.20.1.4"/>
+          <id root="d7e52c55-3a65-496b-94c0-c030836e2576"/>
+          <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of family member diseases"/>
+          <title>History of family member diseases</title>
         </section>
       </component>
       <component>
         <section>
-          <templateId root="2.16.840.1.113883.10.20.1.6" assigningAuthorityName="CCD Immunizations Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23" assigningAuthorityName="IHE Immunizations Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.117" assigningAuthorityName="HITSP Immunizations Section"/>
-          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
-          <title>History of immunizations</title>
+          <templateId root="2.16.840.1.113883.10.20.1.15"/>
+          <id root="86a3b4e4-4ec6-46e7-a0a6-8f0f8f820c2f"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
+          <title>Social history</title>
         </section>
       </component>
       <component>
         <section>
-          <templateId root="2.16.840.1.113883.10.20.1.9" assigningAuthorityName="CCD Payers Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7" assigningAuthorityName="IHE Payers Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.101" assigningAuthorityName="HITSP Payers Section"/>
-          <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
-          <title>Payment sources</title>
+          <templateId root="2.16.840.1.113883.10.20.1.2"/>
+          <id root="d78f2c0d-e022-4960-a4b5-70b141951c6b"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+          <title>Allergies, adverse reactions, alerts</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27"/>
+              <id root="941c792e-8d7c-43d8-b5cc-fd3311bda85a"/>
+              <code nullFlavor="NA"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.41"/>
+                  <id root="2176c2fe-a310-4444-a8e4-84ac958d15b9"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <id root="6964618d-8eb1-4267-8d75-5e4d9d2569c2"/>
+                  <code/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <id root="4cc2c5d0-1d09-4de4-88e8-2bea87a864e2"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <id root="23440ac4-a0e8-426f-8a20-8e5c5ec4eb5b"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                      <id root="5a699b0b-a9b6-495a-82b3-0b96f93aaca0"/>
+                      <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
         </section>
       </component>
       <component>
         <section>
-          <templateId root="2.16.840.1.113883.10.20.1.8" assigningAuthorityName="CCD Medications Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.19" assigningAuthorityName="IHE Medications Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.112" assigningAuthorityName="HITSP Medications Section"/>
-          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <templateId root="2.16.840.1.113883.10.20.1.8"/>
+          <id root="a3cb3fc6-11fe-4640-8eb0-75696325955f"/>
+          <code code="10160-0" codeSystemName="" displayName="History of medication use"/>
           <title>History of medication use</title>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <id root="04aa1684-c2d9-4078-bd24-729ed93b5171"/>
+              <statusCode/>
+              <effectiveTime value="20110404"/>
+              <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+              <doseQuantity/>
+              <rateQuantity/>
+              <maxDoseQuantity/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                  <id root="c23732bd-5b2a-4174-a01d-422b7d246185"/>
+                  <code code="30973-2" codeSystemName="" displayName="Dose number"/>
+                  <statusCode/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="INT"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <id root="709c0821-1452-40d4-899f-a22d934d35ea"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <id root="2f129e6c-5342-407a-9439-b2aafc4e8218"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.54"/>
+                  <id root="2b4abae8-353a-42de-b0ad-0495a435e584"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <id root="1dc8eba7-9229-4fd3-a736-7ee6e9e0b7c8"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <supply classCode="SPLY">
+              <templateId root="2.16.840.1.113883.10.20.1.34"/>
+              <id root="86649e58-58a7-4eed-8302-7b353f223228"/>
+              <statusCode/>
+              <effectiveTime value="20110404"/>
+              <repeatNumber/>
+              <quantity/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <id root="6e08153a-f563-437f-b322-e49175e068ef"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.43"/>
+                  <id root="26fce6a7-99f8-42a2-96da-7f611ce4533a"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+            </supply>
+          </entry>
         </section>
       </component>
       <component>
         <section>
-          <templateId root="2.16.840.1.113883.10.20.1.10" assigningAuthorityName="CCD Plan Of Care Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.31" assigningAuthorityName="IHE Care Plan Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.124" assigningAuthorityName="HITSP Plan Of Care Section"/>
-          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
-          <title>Treatment plan</title>
+          <templateId root="2.16.840.1.113883.10.20.1.14"/>
+          <id root="0052af64-6e53-4115-842b-72edc176e8cf"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+          <title>Relevant diagnostic tests and/or laboratory data</title>
+          <entry>
+            <organizer moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.32"/>
+              <id root="078419b0-c1d9-407c-96ba-b774bd9cd74e"/>
+              <code/>
+              <statusCode/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <id root="4a9f76e0-c23f-4025-a9dc-b6873798f5a0"/>
+                  <code/>
+                  <statusCode/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <interpretationCode/>
+                  <methodCode/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
         </section>
       </component>
       <component>
         <section>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4" assigningAuthorityName="IHE Pregnancy History Section"/>
-          <code code="10162-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PREGNANCIES"/>
-          <title>HISTORY OF PREGNANCIES</title>
-        </section>
-      </component>
-      <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.1.12" assigningAuthorityName="CCD Procedures Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11" assigningAuthorityName="IHE Surgeries Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12" assigningAuthorityName="IHE Coded Surgeries Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.108" assigningAuthorityName="HITSP Surgeries Section"/>
+          <templateId root="2.16.840.1.113883.10.20.1.12"/>
+          <id root="301ae0b0-ac5a-42a6-aa87-c7a28473c73c"/>
           <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
           <title>History of procedures</title>
         </section>
       </component>
       <component>
         <section>
-          <templateId root="2.16.840.1.113883.10.20.1.16" assigningAuthorityName="CCD Vital Signs Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.25" assigningAuthorityName="IHE Vital Signs Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2" assigningAuthorityName="IHE Coded Vital Signs Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.119" assigningAuthorityName="HITSP Vital Signs Section"/>
-          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
-          <title>Vital signs</title>
+          <templateId root="2.16.840.1.113883.10.20.1.3"/>
+          <id root="b8014083-a6af-406c-b168-42f49220df9c"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>History of encounters</title>
         </section>
       </component>
       <component>
         <section>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.28" assigningAuthorityName="IHE Coded Results Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.122" assigningAuthorityName="HITSP Diagnostic Results Section"/>
+          <templateId root="2.16.840.1.113883.10.20.1.10"/>
+          <id root="c8934c2c-bd6f-4c85-bd8c-1cba5550fa6b"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>Treatment plan</title>
+          <entry>
+            <act>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="b49471ab-5210-4ae6-b7d9-89027c8819e0"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entry>
+          <entry>
+            <encounter>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="389ad707-101a-4d77-8590-f787debd84da"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="cccacf60-a658-4cc4-b797-cfbca450c9d7"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <procedure>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="708371f6-02c1-466c-a551-35811f927dac"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </procedure>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="ceafb29a-1865-4dde-b1d2-a9e21f9dcfcb"/>
+              <effectiveTime value="20110404"/>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <supply classCode="SPLY">
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="52587968-43ca-4e9b-af7e-47b30da8e010"/>
+              <effectiveTime value="20110404"/>
+            </supply>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.6"/>
+          <id root="c85b8f79-5041-4b9c-8f35-b36f3784d400"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+          <title>History of immunizations</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.16"/>
+          <id root="d9b10950-9bde-4270-8bec-083741618fb8"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>Vital signs</title>
+          <entry>
+            <organizer moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.32"/>
+              <templateId root="2.16.840.1.113883.10.20.1.35"/>
+              <id root="f022c7b3-b347-47b3-8984-44dcba71b222"/>
+              <code/>
+              <statusCode/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <id root="b50058c8-e507-434c-80f3-bdde02c52a48"/>
+                  <code/>
+                  <statusCode/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <interpretationCode/>
+                  <methodCode/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.7"/>
+          <id root="ad01eec1-6615-4dd1-a85e-4b109559cc87"/>
+          <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medical device use"/>
+          <title>History of medical device use</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.5"/>
+          <id root="26b8f681-7c89-4662-b0e8-7800de91fdc2"/>
+          <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment"/>
+          <title>Functional status assessment</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.1"/>
+          <id root="d2d8762a-f75e-442b-9ab8-0f8505dcf7fb"/>
+          <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/>
+          <title>Advance directives</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.17"/>
+              <id root="4a8c8960-98eb-476a-b6f4-fd0584309401"/>
+              <code/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.9"/>
+          <id root="15f43f90-6ca5-4117-a405-39823a4bbc44"/>
+          <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+          <title>Payment sources</title>
+          <entry>
+            <act classCode="ACT" moodCode="DEF">
+              <templateId root="2.16.840.1.113883.10.20.1.20"/>
+              <id root="ab2631fb-f724-45c0-9a84-36c0a0937e52"/>
+              <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.26"/>
+                  <id root="88e1833d-2ac5-4360-a170-f78dbeeb9909"/>
+                  <code/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.13"/>
+          <id root="218e2ed7-a11a-4b38-82b9-4aea78c2302e"/>
+          <code code="48764-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summary purpose"/>
+          <title>Summary purpose</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.30"/>
+              <id root="5e0e2cba-b780-4df1-bdd9-1cffa038275f"/>
+              <code code="23745001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Documentation procedure"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.1"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.34"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.35"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.116"/>
+          <id root="adf9b55a-f369-4b76-b282-8591f280279d"/>
+          <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/>
+          <title>Advance directives</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.17"/>
+              <id root="922884e5-f1a4-40bc-b0cc-50747eb41c58"/>
+              <code/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.2"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.102"/>
+          <id root="eef3c6a7-82d4-4a5d-84ab-6ba209842729"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+          <title>Allergies, adverse reactions, alerts</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27"/>
+              <id root="c3970d3c-0a25-4a63-b2da-1a22f9aa51fb"/>
+              <code nullFlavor="NA"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.41"/>
+                  <id root="3925a796-bdca-449e-9a08-a16b5726d209"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <id root="07ddb877-3cec-495b-8ecf-60f74d37a36f"/>
+                  <code/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <id root="0f94fe06-2a82-4c5e-a2c4-cd6d3f7ba3e5"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <id root="4d53300b-7d0e-4115-b08b-b82e26b46e69"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                      <id root="0e28bc10-3189-4009-8fb5-b354087815a8"/>
+                      <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.11"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.103"/>
+          <id root="2892b7ff-bd7c-4784-9245-e7b8144f554d"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
+          <title>Problem list</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27"/>
+              <id root="8a82f2bf-0683-4646-97e2-852e20da5bc2"/>
+              <code nullFlavor="NA"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.41"/>
+                  <id root="cdf983a4-968d-4d59-867e-6689b1690cce"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <id root="a0741c22-379a-4742-92f0-73ea1cb7e1ac"/>
+                  <code/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <id root="07a3adf8-ed08-4450-bd72-e687385e3432"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <id root="6e26fab1-32ef-4b4f-b9cf-069b9d64b27f"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                      <id root="a1bdfa02-3080-410c-96bb-9dfd5d5106e9"/>
+                      <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+              <id root="266be437-4556-47f1-ab30-e334d7224d18"/>
+              <code nullFlavor="NA"/>
+              <statusCode/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.41"/>
+                  <id root="1895a071-aad5-4340-a783-ddb787c88f25"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <id root="3e0afc8f-fcc4-49b9-9328-667c5fc99e2e"/>
+                  <code/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <id root="1daf2699-f478-4d1b-ba2c-4d6c3ea9b565"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <id root="3cf7169b-609e-4421-996f-5874a225c953"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                      <id root="8d20d72e-6694-42f8-b5e8-11db2f145d80"/>
+                      <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                  <id root="40475759-565b-4c2e-8db3-036b663cf796"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <id root="81443849-8a70-49af-8074-cb4477c4f1ba"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <id root="92fe063c-5c7b-450e-8ed3-8018bf2e394c"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                      <id root="86a1854b-366b-4d8b-b93c-9262d6de5b0d"/>
+                      <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+                      <id root="ef9f0b60-1807-4999-94e4-7440aeb57c97"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                      <text/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CD"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+                      <id root="54efa4f1-7951-4ef7-99e1-aa3afb767ae2"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+                      <id root="798609a2-5043-41ef-8faa-c601bb9e1b15"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <text/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+                      <id root="3c30eb36-9761-4e51-8df4-3338696a9a3b"/>
+                      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </act>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+              <templateId root="2.16.840.1.113883.3.88.11.83.7"/>
+              <id root="51e19c63-7a40-4e06-b1da-48fc16b14d25"/>
+              <code nullFlavor="NA"/>
+              <statusCode/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.41"/>
+                  <id root="24269c4d-4007-47a9-8ac1-81be9fc6e46b"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <id root="7c564a30-4906-4c98-8124-055c8fa06ea5"/>
+                  <code/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <id root="ece37551-0b1c-4940-87eb-dce7f049024f"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <id root="32a5dd69-8103-44d3-bff9-3bda8f79be2f"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                      <id root="71b80891-c2c0-4131-91ba-20b0d6ff129d"/>
+                      <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                  <id root="3ffb5676-3b69-4c71-9d1b-ebe6f3eea791"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <id root="98231117-851b-49ad-8b35-db4b1be6a914"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <id root="a5f897f4-f2a5-49f8-9174-08550a5c4ed0"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                      <id root="21e37a2b-6d57-4e08-8483-250b04ffc151"/>
+                      <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+                      <id root="b9ff4dda-8ff9-41cc-ae5e-dcb00c0139f2"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                      <text/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CD"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+                      <id root="895e3b02-bc4b-4c5c-9cd6-53169b54e6b8"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+                      <id root="1a92600a-cdb3-4997-af59-23694414caea"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <text/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+                      <id root="ef878d07-6823-4d3c-be38-67a1e81e2a73"/>
+                      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </act>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                  <id root="ae3ca440-4abb-4fb3-ae92-fc4f57448163"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <text/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <id root="a1d078ae-e597-445c-9829-f27e8cae6f00"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <id root="4b76bb40-a95f-4f56-b01e-9ec229bed58b"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                      <id root="6dd3ba88-adee-4db7-9ea7-c7b0f4142f1f"/>
+                      <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+                      <id root="f51c12ec-7d4d-418c-b351-330426f45e4b"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                      <text/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CD"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+                      <id root="84d6ff10-44ea-4b1c-a868-dacb33bbd6a8"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+                      <id root="3197330e-a29d-4585-b275-0b4d3700cba0"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <text/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                      <value xsi:type="CE"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+                      <id root="7f29d72e-57dc-40ff-92cd-900f1e80020f"/>
+                      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </act>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.3"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.3"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.127"/>
+          <id root="38840b5c-32a4-46d8-9fb4-d262584f13db"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>History of encounters</title>
+          <entry>
+            <encounter classCode="ENC">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
+              <id root="76f19e5f-ad5d-4c0e-83bb-304fa2a9e150"/>
+              <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActEncounterCode"/>
+              <text/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
+              <templateId root="2.16.840.1.113883.3.88.11.83.16"/>
+              <id root="3e41469b-d45d-44ee-b7a1-503f28ef05ce"/>
+              <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.6"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.117"/>
+          <id root="fded89c5-911c-4e47-aed6-4e4262650251"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+          <title>History of immunizations</title>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+              <id root="3b41986c-5a12-4bd6-9d1a-0df9909c7dad"/>
+              <code/>
+              <statusCode/>
+              <effectiveTime value="20110404"/>
+              <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+              <doseQuantity/>
+              <rateQuantity/>
+              <maxDoseQuantity/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                  <id root="2082606d-672b-44f9-9bce-4faff6110b43"/>
+                  <code code="30973-2" codeSystemName="" displayName="Dose number"/>
+                  <statusCode/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="INT"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <id root="59855bf9-88e2-4c79-a48c-a0ff8b7751e2"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <id root="c4868e2c-206c-44c3-af47-990be8716218"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.54"/>
+                  <id root="7c6b0a75-68f6-4ec6-80d3-412c1490ed1a"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <id root="fd8a3252-c03a-4df4-bf99-d1198e307119"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+              <templateId root="2.16.840.1.113883.3.88.11.83.13"/>
+              <id root="db708287-3831-4792-a1b8-cc536e3b9d0c"/>
+              <effectiveTime value="20110404"/>
+              <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                  <id root="7903bdab-beaf-4e9b-96ec-e53c8e6fea94"/>
+                  <code code="30973-2" codeSystemName="" displayName="Dose number"/>
+                  <statusCode/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="INT"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <id root="193b752b-6b86-44dc-9b4f-5c3ca3e0f7cb"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <id root="5de5b28e-7eaa-4d5f-ac78-09166f581d44"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.54"/>
+                  <id root="28fa396b-7ad4-47e5-b3f4-7e55e6892ef5"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <id root="ef702d92-fdd6-4b67-a437-2cc1ee8841a2"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.9"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.101"/>
+          <id root="4a53cec2-c7a1-4b78-ae12-f2af083cfd9d"/>
+          <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+          <title>Payment sources</title>
+          <entry>
+            <act classCode="ACT" moodCode="DEF">
+              <templateId root="2.16.840.1.113883.10.20.1.20"/>
+              <id root="1235f971-2903-431c-ab38-00195139ce47"/>
+              <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.26"/>
+                  <id root="7c2b641f-bbe1-46df-8bf0-49669fff38b9"/>
+                  <code/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="DEF">
+              <templateId root="2.16.840.1.113883.10.20.1.20"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.17"/>
+              <id root="1401910f-b522-428c-a53b-04ef4e41f9c0"/>
+              <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.26"/>
+                  <id root="5d478925-c40b-483d-a22a-efd49e7fd1d8"/>
+                  <code/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.8"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.19"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.112"/>
+          <id root="b54db80a-054c-4950-99ca-a7526f2bf433"/>
+          <code code="10160-0" codeSystemName="" displayName="History of medication use"/>
+          <title>History of medication use</title>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <id root="8d6b81e9-b973-4caf-a25f-059586cc42d3"/>
+              <statusCode/>
+              <effectiveTime value="20110404"/>
+              <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+              <doseQuantity/>
+              <rateQuantity/>
+              <maxDoseQuantity/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                  <id root="a9504716-9e44-478d-a36d-28f935c441a8"/>
+                  <code code="30973-2" codeSystemName="" displayName="Dose number"/>
+                  <statusCode/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="INT"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <id root="99b59416-963e-4032-9dac-94dfe93f61db"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <id root="d0894d39-5370-4059-b138-2b8e88f6effe"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.54"/>
+                  <id root="d393851e-54b7-40a6-92f2-aa44eaadf25a"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <id root="52b2ca43-82fe-427b-91ef-6799cc176b1e"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <supply classCode="SPLY">
+              <templateId root="2.16.840.1.113883.10.20.1.34"/>
+              <id root="dcf61999-0a76-4b5d-b879-3a47b27a8e6b"/>
+              <statusCode/>
+              <effectiveTime value="20110404"/>
+              <repeatNumber/>
+              <quantity/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <id root="cc6d4356-2b1e-4e4c-b5db-0a9f09f19172"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.43"/>
+                  <id root="2de397a7-ed38-4a65-8911-dcc821725774"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+            </supply>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+              <id root="ee68d17a-b473-4512-be3e-2fae66f9bdb9"/>
+              <statusCode/>
+              <effectiveTime value="20110404"/>
+              <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+              <approachSiteCode/>
+              <doseQuantity/>
+              <rateQuantity/>
+              <maxDoseQuantity/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                  <id root="b8a67e2e-4514-4963-970d-764a852f5636"/>
+                  <code code="30973-2" codeSystemName="" displayName="Dose number"/>
+                  <statusCode/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="INT"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <id root="90e06e62-5561-485a-b4e2-4987b8490617"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <id root="25e65c84-8df2-42cf-b5c0-4ff186ed82ee"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.54"/>
+                  <id root="36822782-e3d2-4e7b-b8d0-468bbf7d264a"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <id root="fece2b3a-c5df-4c39-9db6-206317c210ee"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+              <templateId root="2.16.840.1.113883.3.88.11.83.8"/>
+              <id root="959d67e2-3b6c-4748-8d38-b366f86f2c59"/>
+              <effectiveTime value="20110404"/>
+              <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.46"/>
+                  <id root="a4ac03fe-ee1e-4b5e-9ffa-362bdcbb7be4"/>
+                  <code code="30973-2" codeSystemName="" displayName="Dose number"/>
+                  <statusCode/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="INT"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <id root="0b99f2f3-92fd-4b23-afb7-eec8e6c0bcf3"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <id root="863596d4-0712-40c5-a8eb-4d4e84c27738"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.54"/>
+                  <id root="f85869d2-d08d-49a1-8d14-cae6826baed5"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <id root="7d882ead-9ec8-43f5-ad39-bfcc848efbe1"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2011"/>
+                        <high value="2011"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.12"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.108"/>
+          <id root="e870a616-5fdd-46fd-b8c4-671831a3c8a1"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
+          <title>History of procedures</title>
+          <entry>
+            <procedure>
+              <templateId root="2.16.840.1.113883.10.20.1.29"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+              <templateId root="2.16.840.1.113883.3.88.11.83.17"/>
+              <id root="6e54d287-1408-4231-b9e3-0d61cde20146"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.10"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.31"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.124"/>
+          <id root="d9c6d520-df5b-4877-ada0-3c1d044e23fa"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>Treatment plan</title>
+          <entry>
+            <act>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="b50866f0-4cf6-4eaf-bc08-86ad2e1b78f2"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entry>
+          <entry>
+            <encounter>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="1555a51c-8d85-40ac-841a-1fcabc4500ee"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="1cc1fbb0-1bb9-4e72-bd75-0f05e09faf0f"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <procedure>
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="149802c2-3132-4691-8e19-9bba0a4efefb"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </procedure>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="0cc94720-7b0e-4c24-8dbd-441bbd44e558"/>
+              <effectiveTime value="20110404"/>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <supply classCode="SPLY">
+              <templateId root="2.16.840.1.113883.10.20.1.25"/>
+              <id root="05fe989e-9ba1-4685-8726-a624890ac96d"/>
+              <effectiveTime value="20110404"/>
+            </supply>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4"/>
+          <id root="82fb8782-9d66-4882-97bf-8731955eef4c"/>
+          <code code="10162-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PREGNANCIES"/>
+          <title>HISTORY OF PREGNANCIES</title>
+          <entry>
+            <observation>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"/>
+              <id root="fb79ffaa-a59f-450c-b915-eb3de94358d1"/>
+              <code/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <repeatNumber/>
+              <interpretationCode/>
+              <methodCode/>
+              <targetSiteCode/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.16"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.25"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.119"/>
+          <id root="935e9e06-07ba-4ccd-9956-2030b3297be7"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>Vital signs</title>
+          <entry>
+            <organizer moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.32"/>
+              <templateId root="2.16.840.1.113883.10.20.1.35"/>
+              <id root="2769117a-6ff2-4840-8e58-bab7ca29b06f"/>
+              <code/>
+              <statusCode/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <id root="63031614-e65d-456f-9b83-58b04a50f4ad"/>
+                  <code/>
+                  <statusCode/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <interpretationCode/>
+                  <methodCode/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.32"/>
+              <templateId root="2.16.840.1.113883.10.20.1.35"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+              <id root="39de826e-b449-4e8c-83e8-66b8c5a3fb9f"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <id root="f06c8f33-d009-467a-990b-1ff3f6de8f2e"/>
+                  <code/>
+                  <statusCode/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <interpretationCode/>
+                  <methodCode/>
+                </observation>
+              </component>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                  <id root="9949f942-3071-496d-a30d-037c595bdeee"/>
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="PQ"/>
+                  <interpretationCode/>
+                  <methodCode/>
+                  <targetSiteCode/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.28"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.122"/>
+          <id root="cf068bff-621b-4f14-8b15-c892f18682d1"/>
           <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="STUDIES SUMMARY"/>
           <title>STUDIES SUMMARY</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4"/>
+              <id root="cff2033d-7ab0-4ae7-8267-bd7d0815479d"/>
+              <text/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entry>
+          <entry>
+            <observation>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"/>
+              <id root="cf5c0127-e30f-42b4-8f20-d5193242ed97"/>
+              <code/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <repeatNumber/>
+              <interpretationCode/>
+              <methodCode/>
+              <targetSiteCode/>
+            </observation>
+          </entry>
+          <entry>
+            <procedure>
+              <templateId root="2.16.840.1.113883.10.20.1.29"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+              <templateId root="2.16.840.1.113883.3.88.11.83.17"/>
+              <id root="c7dde385-eb0a-411b-8c3a-a32ae2b3da9d"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+            </procedure>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.31"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+              <templateId root="2.16.840.1.113883.3.88.11.83.15"/>
+              <id root="48ba625d-098f-413a-8c13-b80c0a66e2b6"/>
+              <code/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <interpretationCode/>
+              <methodCode/>
+            </observation>
+          </entry>
         </section>
       </component>
     </structuredBody>

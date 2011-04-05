@@ -17,34 +17,79 @@
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/PayersSection.dita">IHE Payers Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PayersSection.html">IHE Payers Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7</tt>)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/PayersSection.dita">CCD Payers Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.9</tt>)</li>
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/PayersSection.dita">IHE Payers Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "48768-6" <i>Payment sources</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF-31, CONF-32)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt> (CONF-33)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt> (CONF-30)</li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
-<li>contains <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/CoverageEntry.dita">IHE Coverage Entry</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.17</tt>)</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/PayersSection.html">CCD Payers Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.9</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PayersSection.html">IHE Payers Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48768-6" </tt><i>Payment sources</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-31, CONF-32)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-33)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-30)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CoverageEntry.dita">Coverage Entry</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.17</tt>)</li></ol></li>
 <li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
-      <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.1.9" assigningAuthorityName="CCD Payers Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7" assigningAuthorityName="IHE Payers Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.101" assigningAuthorityName="HITSP Payers Section"/>
-          <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
-          <title>Payment sources</title>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.9"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7"/>
+  <templateId root="2.16.840.1.113883.3.88.11.83.101"/>
+  <id root="9229d822-dad0-4090-aab0-13ceb0ebbde9"/>
+  <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+  <title>Payment sources</title>
+  <entry>
+    <act classCode="ACT" moodCode="DEF">
+      <templateId root="2.16.840.1.113883.10.20.1.20"/>
+      <id root="34a29050-c0ed-4910-8351-7d9fd3357d14"/>
+      <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.26"/>
+          <id root="12f2ade7-fb46-4418-a3aa-413da8ac4650"/>
+          <code/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </act>
+  </entry>
+  <entry>
+    <act classCode="ACT" moodCode="DEF">
+      <templateId root="2.16.840.1.113883.10.20.1.20"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.17"/>
+      <id root="b1c5cdde-a188-4aab-8012-a9249afa0edf"/>
+      <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.26"/>
+          <id root="0e2b1c30-7932-407f-aa11-6f6575dda659"/>
+          <code/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
 </body>
 </topic>

@@ -57,53 +57,66 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Section</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="48768-6" </tt><em class="ph i">Payment sources</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-31, CONF-32)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">code</tt><tt class="ph tt">/@code</tt> = "48768-6" <em class="ph i">Payment sources</em> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC) (CONF-31, CONF-32)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">title</tt> (CONF-33)</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain [1..*] <tt class="ph tt">entry</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="CoverageActivity.html" title="[Act: templateId 2.16.840.1.113883.10.20.1.20]">CCD Coverage Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.20</tt>) (CONF-30)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-33)
+<ol class="ol" type="a">
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">text</tt> (CONF-30)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-30), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CoverageActivity.html" title="[Act: templateId 2.16.840.1.113883.10.20.1.20]">Coverage Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.20</tt>)</li>
+</ol>
+</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF-30)
+</li>
 
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Payers Section example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Payers Section example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.9" assigningAuthorityName="CCD Payers Section"/&gt;
-          &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/&gt;
-          &lt;title&gt;Payment sources&lt;/title&gt;
-          &lt;entry&gt;
-            &lt;act classCode="ACT" moodCode="DEF"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.20" assigningAuthorityName="CCD Coverage Activity"/&gt;
-              &lt;id root="ebefd574-48d5-432e-a36e-a493afa611f9"/&gt;
-              &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/&gt;
-              &lt;statusCode code="completed"/&gt;
-            &lt;/act&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.9"/&gt;
+  &lt;id root="5f2e16fd-0e89-4a3b-b3df-af2ecab621e8"/&gt;
+  &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/&gt;
+  &lt;title&gt;Payment sources&lt;/title&gt;
+  &lt;entry&gt;
+    &lt;act classCode="ACT" moodCode="DEF"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.20"/&gt;
+      &lt;id root="cb7b5a6a-0251-4bd9-922a-c2d9c3cc78f0"/&gt;
+      &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;act classCode="ACT" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.26"/&gt;
+          &lt;id root="4ef05630-2f1a-471d-8a9d-0767f2b7a4be"/&gt;
+          &lt;code/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/act&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

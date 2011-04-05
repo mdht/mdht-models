@@ -14,29 +14,22 @@
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/PhysicalExamSection.dita">IHE Physical Exam Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.9.15</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PhysicalExamSection.html">IHE Physical Exam Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.9.15</tt>)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/PhysicalExamNarrativeSection.dita">IHE Physical Exam Narrative Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.24</tt>)</li>
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/PhysicalExamSection.dita">IHE Physical Exam Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.9.15</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "29545-1" <i>PHYSICAL EXAMINATION</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PhysicalExamNarrativeSection.html">IHE Physical Exam Narrative Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.24</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PhysicalExamSection.html">IHE Physical Exam Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.9.15</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="29545-1" </tt><i>PHYSICAL EXAMINATION</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
-      <component>
-        <section>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.24" assigningAuthorityName="IHE Physical Exam Narrative Section"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.15" assigningAuthorityName="IHE Physical Exam Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.118" assigningAuthorityName="HITSP Physical Exam Section"/>
-          <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PHYSICAL EXAMINATION"/>
-          <title>PHYSICAL EXAMINATION</title>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.24"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.15"/>
+  <templateId root="2.16.840.1.113883.3.88.11.83.118"/>
+  <id root="028539fe-259e-4837-8c26-86499e1f8dfd"/>
+  <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PHYSICAL EXAMINATION"/>
+  <title>PHYSICAL EXAMINATION</title>
+</section>]]></codeblock>
 </body>
 </topic>

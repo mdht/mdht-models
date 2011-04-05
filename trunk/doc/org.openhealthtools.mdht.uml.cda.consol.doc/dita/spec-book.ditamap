@@ -5,7 +5,7 @@
 		<booklibrary>Implementation Guide for CDA Release 2</booklibrary>
 		<mainbooktitle>CDA IG Consolidation</mainbooktitle>
 		<booktitlealt>Working Group Draft</booktitlealt>
-		<booktitlealt><image href="images/hl7_logo.gif"/></booktitlealt>
+		<booktitlealt><image href="images/ONC_logo.png"/></booktitlealt>
 		<booktitlealt>PROTOTYPE: FOR DISCUSSION AND DEMONSTRATION USE ONLY</booktitlealt>
 		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>
 	</booktitle>

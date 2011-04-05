@@ -30,44 +30,60 @@
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "48768-6" <i>Payment sources</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF-31, CONF-32)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt> (CONF-33)</li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
-<li>contains <xref href="../CoverageActivity.dita">CCD Coverage Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.20</tt>) (CONF-30)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt> (CONF-30)</li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48768-6" </tt><i>Payment sources</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-31, CONF-32)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-33)
+<ol>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li></ol></li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-30), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CoverageActivity.dita">Coverage Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.20</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-30)
+</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "48768-6" <i>Payment sources</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF-31, CONF-32)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt> (CONF-33)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt> (CONF-30)</li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
-<li>contains <xref href="../CoverageActivity.dita">CCD Coverage Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.20</tt>) (CONF-30)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48768-6" </tt><i>Payment sources</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-31, CONF-32)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-33)
+<ol>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-30)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-30), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CoverageActivity.dita">Coverage Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.20</tt>)</li></ol></li>
 <li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
-      <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.1.9" assigningAuthorityName="CCD Payers Section"/>
-          <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
-          <title>Payment sources</title>
-          <entry>
-            <act classCode="ACT" moodCode="DEF">
-              <templateId root="2.16.840.1.113883.10.20.1.20" assigningAuthorityName="CCD Coverage Activity"/>
-              <id root="e82a6a41-4ed8-42a6-af92-81c345a080f7"/>
-              <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
-              <statusCode code="completed"/>
-            </act>
-          </entry>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.9"/>
+  <id root="5f2e16fd-0e89-4a3b-b3df-af2ecab621e8"/>
+  <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+  <title>Payment sources</title>
+  <entry>
+    <act classCode="ACT" moodCode="DEF">
+      <templateId root="2.16.840.1.113883.10.20.1.20"/>
+      <id root="cb7b5a6a-0251-4bd9-922a-c2d9c3cc78f0"/>
+      <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.26"/>
+          <id root="4ef05630-2f1a-471d-8a9d-0767f2b7a4be"/>
+          <code/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
 </body>
 </topic>

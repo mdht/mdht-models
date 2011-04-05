@@ -16,32 +16,33 @@
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "47519-4" <i>History of procedures</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt></li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>procedureActivity</tt>, such that it<ol>
-<li>contains <xref href="../ProcedureActivity.dita">CCD Procedure Activity</xref></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47519-4" </tt><i>History of procedures</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-423, CONF-424)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-425)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-422)
+<ol>
+<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ol>
+<li><b>SHOULD</b> satisfy: include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure (CONF-422)</li></ol></li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "47519-4" <i>History of procedures</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt></li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>procedureActivity</tt>, such that it<ol>
-<li>contains <xref href="../ProcedureActivity.dita">CCD Procedure Activity</xref></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47519-4" </tt><i>History of procedures</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-423, CONF-424)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-425)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-422)
+<ol>
+<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ol>
+<li><b>SHOULD</b> satisfy: include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure (CONF-422)</li></ol></li></ol></li>
+<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)</li>
+<li><b>SHOULD</b> satisfy: include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure (CONF-422)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
-      <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.1.12" assigningAuthorityName="CCD Procedures Section"/>
-          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
-          <title>History of procedures</title>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.12"/>
+  <id root="61363b66-c198-4b87-9aa8-07c3acac1fb3"/>
+  <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
+  <title>History of procedures</title>
+</section>]]></codeblock>
 </body>
 </topic>

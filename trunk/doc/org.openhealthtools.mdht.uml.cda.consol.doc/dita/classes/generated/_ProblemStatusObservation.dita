@@ -17,7 +17,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-CONSOL-543)
 </li>
-<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-541)</li>
+<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-541)<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../StatusObservation.dita">Status Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.57</tt>)</li>
@@ -35,9 +35,9 @@
 </li>
 <li>Target of an entryRelationship whose value for "entryRelationship / @typeCode" <b>SHALL</b> be "REFR" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-509)</li>
 <li><b>SHALL NOT</b> contain any additional Observation attributes. (CONF-517)</li>
-<li><b>SHALL NOT</b> contain any Observation participants. (CONF-518)</li>
+<li><b>SHALL NOT</b> contain any Observation participants. (CONF-518)<ul><li><codeblock>[OCL]: self.participant-&gt;isEmpty()</codeblock></li></ul></li>
 <li><b>SHALL NOT</b> be the source of any Observation relationships. (CONF-519)</li>
-<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-541)</li>
+<li>The 'text' elements <b>SHALL</b> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-541)<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

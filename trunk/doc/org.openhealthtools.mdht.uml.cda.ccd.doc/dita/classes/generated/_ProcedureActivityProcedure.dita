@@ -11,36 +11,56 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Procedure</li>
-<li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">CCD Procedure Activity</xref></li>
+<li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref></li>
+<li>contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode <b>SHALL NOT</b> conflict with the method inherent in Procedure / code. (CONF-435)</li>
+<li>contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode <b>SHALL NOT</b> conflict with the site inherent in Procedure / code (CONF-436)</li>
+<li><b>MAY</b> satisfy: has one or more Procedure / specimen, reflecting specimens that were obtained as part of the procedure. (CONF-443)</li>
+<li>specimen / specimenRole / id <b>SHOULD</b> be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen. (CONF-444)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">CCD Procedure Activity</xref></li>
-<li><b>SHALL</b> conform to CDA Clinical Statement</li>
-<li><b>SHALL</b> conform to CDA Procedure</li>
-<li>Contains exactly one [1..1] <tt>@classCode</tt>, where its data type is ActClass</li>
-<li>Contains exactly one [1..1] <tt>@moodCode</tt>, where its data type is x_DocumentProcedureMood</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt>, where its data type is II</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>statusCode</tt><tt>/@code</tt> = "completed"  (CodeSystem: 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode), where its data type is CS</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt>effectiveTime</tt>, where its data type is IVL_TS</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt>, where its data type is CD</li>
+<li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref></li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClass
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_DocumentProcedureMood
+</li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>encounterLocation</b></tt>, where its type is <xref href="../EncounterLocation.dita">Encounter Location</xref> (CONF-437)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>patientInstruction</b></tt>, where its type is <xref href="../PatientInstruction.dita">Patient Instruction</xref> (CONF-441, CONF-333)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>ageObservation</b></tt>, where its type is <xref href="../AgeObservation.dita">Age Observation</xref> (CONF-445)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>medicationActivity</b></tt>, where its type is <xref href="../MedicationActivity.dita">Medication Activity</xref> (CONF-446)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li></ol></li>
+<li>The value for act/code in a procedure activity <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4). (CONF-434)</li>
+<li><b>MAY</b> satisfy: contain one or more Act / performer, to represent those practioners who performed the procedure. (CONF-438)</li>
+<li><b>MAY</b> satisfy: A procedure activity contains one or more entryRelationship / @typeCode="RSON", the target of which represents the indication or reason for the procedure. (CONF-439)</li>
+<li>entryRelationship / @typeCode="RSON" in a procedure activity <b>SHALL</b> have a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement. (CONF-440)</li>
+<li><b>MAY</b> satisfy: have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent (CONF-442)</li>
+<li><b>SHALL</b> satisfy: contains one or more sources of information (CONF-447)</li>
+<li><b>MAY</b> satisfy: have one or more Act / participant [@typeCode="DEV"], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52) (CONF-448)</li>
+<li>participant / participantRole / id <b>SHOULD</b> be set to equal a Supply / participant / participantRole / id to indicate that the Procedure and the Supply are referring to the same product instance. (CONF-452)</li>
+<li>contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode <b>SHALL NOT</b> conflict with the method inherent in Procedure / code. (CONF-435)</li>
+<li>contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode <b>SHALL NOT</b> conflict with the site inherent in Procedure / code (CONF-436)</li>
+<li><b>MAY</b> satisfy: has one or more Procedure / specimen, reflecting specimens that were obtained as part of the procedure. (CONF-443)</li>
+<li>specimen / specimenRole / id <b>SHOULD</b> be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen. (CONF-444)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
-      <component>
-        <section>
-          <entry>
-            <procedure>
-              <templateId root="2.16.840.1.113883.10.20.1.29"/>
-              <statusCode code="completed"/>
-            </procedure>
-          </entry>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.29"/>
+  <id root="7d6e3447-8a3d-4004-9c6a-c6d2382b59ba"/>
+  <code/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+</procedure>]]></codeblock>
 </body>
 </topic>
