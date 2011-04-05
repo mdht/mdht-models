@@ -11,38 +11,34 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Substance Administration</li>
-<li><b>SHALL</b> conform to <xref href="../PlanOfCareActivity.dita">CCD Plan Of Care Activity</xref></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>@moodCode</tt></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
-<li><b>SHALL</b> satisfy: moodCodeValue</li>
+<li><b>SHALL</b> conform to <xref href="../PlanOfCareActivity.dita">Plan Of Care Activity</xref></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>
+<ol>
+<li><b>SHALL</b> satisfy: moodCodeValue<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::INT or self.moodCode = vocab::x_DocumentSubstanceMood::RQO
+  or self.moodCode = vocab::x_DocumentSubstanceMood::PRMS or self.moodCode = vocab::x_DocumentSubstanceMood::PRP</codeblock></li></ul></li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref href="../PlanOfCareActivity.dita">CCD Plan Of Care Activity</xref></li>
-<li><b>SHALL</b> conform to CDA Clinical Statement</li>
-<li><b>SHALL</b> conform to CDA Substance Administration</li>
-<li>Contains exactly one [1..1] <tt>@classCode</tt> = "SBADM", where its data type is ActClass</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>@moodCode</tt></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
-<li>Contains exactly one [1..1] <tt>consumable</tt>, where its type is CDA Consumable</li>
-<li><b>SHALL</b> satisfy: moodCodeValue</li>
+<li><b>SHALL</b> conform to <xref href="../PlanOfCareActivity.dita">Plan Of Care Activity</xref></li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>), where its data type is ActClass
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>
+<ol>
+<li><b>SHALL</b> satisfy: moodCodeValue<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::INT or self.moodCode = vocab::x_DocumentSubstanceMood::RQO
+  or self.moodCode = vocab::x_DocumentSubstanceMood::PRMS or self.moodCode = vocab::x_DocumentSubstanceMood::PRP</codeblock></li></ul></li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li>Contains exactly one [1..1] <tt><b>consumable</b></tt>, where its type is <xref href="../Consumable.dita">Consumable</xref>
+</li>
+<li><b>SHALL</b> satisfy: moodCodeValue<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::INT or self.moodCode = vocab::x_DocumentSubstanceMood::RQO
+  or self.moodCode = vocab::x_DocumentSubstanceMood::PRMS or self.moodCode = vocab::x_DocumentSubstanceMood::PRP</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
-      <component>
-        <section>
-          <entry>
-            <substanceAdministration classCode="SBADM">
-              <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="b2c72f08-bedf-4dbe-996b-be6df7441dbf"/>
-            </substanceAdministration>
-          </entry>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.25"/>
+  <id root="be3889c3-b95d-4828-9307-75b00f64d0b9"/>
+  <effectiveTime value="20110404"/>
+</substanceadministration>]]></codeblock>
 </body>
 </topic>

@@ -11,13 +11,16 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Participant Role</li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt>id</tt> (CONF-64)</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>id</b></tt> (CONF-64)
+</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Participant Role</li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt>id</tt> (CONF-64)</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>id</b></tt> (CONF-64)
+</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="d979b9d3-c908-40cd-bf1a-a8479123d9c0"/>
+</participantrole>]]></codeblock>
 </body>
 </topic>

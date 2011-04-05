@@ -17,7 +17,9 @@
 </li>
 <li>Contains exactly one [1..1] <tt><b>participantRole</b></tt>, such that
 </li>
-<li>Patient awareness <b>SHALL</b> contain exactly one participant / participantRole / id, which <b>SHALL</b> have exactly one value, which <b>SHALL</b> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)</li>
+<li>Patient awareness <b>SHALL</b> contain exactly one participant / participantRole / id, which <b>SHALL</b> have exactly one value, which <b>SHALL</b> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)<ul><li><codeblock>[OCL]: self.participantRole.id-&gt;one(id : datatypes::II |
+  not id.root.oclIsUndefined())
+-- TODO compare with ClinicalDocument/recordTarget/patientRole/id</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF-181)
@@ -28,7 +30,9 @@
 </li>
 <li>Contains exactly one [1..1] <tt><b>participantRole</b></tt>, such that
 </li>
-<li>Patient awareness <b>SHALL</b> contain exactly one participant / participantRole / id, which <b>SHALL</b> have exactly one value, which <b>SHALL</b> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)</li>
+<li>Patient awareness <b>SHALL</b> contain exactly one participant / participantRole / id, which <b>SHALL</b> have exactly one value, which <b>SHALL</b> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)<ul><li><codeblock>[OCL]: self.participantRole.id-&gt;one(id : datatypes::II |
+  not id.root.oclIsUndefined())
+-- TODO compare with ClinicalDocument/recordTarget/patientRole/id</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

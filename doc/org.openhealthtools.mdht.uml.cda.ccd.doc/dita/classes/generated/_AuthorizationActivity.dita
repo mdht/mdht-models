@@ -14,35 +14,31 @@
 Authorizations are represented using an act subordinate to the policy or program that provided it. The policy or program is referred to by the authorization. Authorized treatments can be grouped into an Organizer class, where common properties, such as the reason for the authorization, can be expressed. Subordinate acts represent what was authorized.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Act</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>@classCode</tt> = "ACT"</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>@moodCode</tt> = "EVN"</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Clinical Statement</li>
-<li><b>SHALL</b> conform to CDA Act</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>@classCode</tt> = "ACT"</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>@moodCode</tt> = "EVN"</li>
-<li>Contains exactly one [1..1] <tt>code</tt>, where its data type is CD</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li>Contains exactly one [1..1] <tt><b>code</b></tt>, where its data type is CD
+</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
-      <component>
-        <section>
-          <entry>
-            <act classCode="ACT" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.1.19" assigningAuthorityName="CCD Authorization Activity"/>
-              <id root="231a350d-ddc5-4201-9efd-4909ac794985"/>
-            </act>
-          </entry>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.1.19"/>
+  <id root="da41c035-30d7-41aa-b2b6-7a0c0dc662db"/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+</act>]]></codeblock>
 </body>
 </topic>

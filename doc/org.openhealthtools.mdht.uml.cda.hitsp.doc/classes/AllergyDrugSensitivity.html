@@ -40,46 +40,167 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/AllergyIntoleranceConcern.html" title="[Act: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.5.3]">IHE Allergy Intolerance Concern</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.5.3</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AllergyIntoleranceConcern.html">IHE Allergy Intolerance Concern</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.5.3</tt>) (C83-[DE-6-CDA-2])</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: the observation/effectiveTime element is present to record event date<ul class="ul"><li class="li">This is a date that expresses when this particular
+allergy or intolerance was known to be active for the
+patient</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the observation/code element shall be present to record the adverse event type<ul class="ul"><li class="li">Describes the type of product and intolerance suffered
+by the patient. The type of product shall be classified
+with respect to whether the adverse event occurs in
+relationship with a medication, food, or environmental
+or other product. The adverse event should also be
+classified more specifically as an allergy, non-allergy
+intolerance, or just adverse reaction if that level of
+detail is not known</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the code/@code attribute value is from Allergy/Adverse Event Type Value Set, 2.16.840.1.113883.3.88.12.3221.6.2, version: 20081218, Static (C154-[DE-6.02-1])</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: the observation/participant element may be present</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/@typecode attribute shall be 'CSM'</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole element may be present</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/@classcode attribute shall be 'MANU'</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The participant/participantRole/PlayingEntity element may be present</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/playingEntity/name element is present<ul class="ul"><li class="li">This is the name or other description of the product or
+agent that causes the intolerance</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: participant/participantRole/playingEntity/code element is present<ul class="ul"><li class="li">This value is a code describing the product</li>
+</ul>
+</li>
+
+<li class="li">For participant/participantRole/playingEntity/code element, Food and substance allergies <strong class="ph b">SHALL</strong> be coded as Ingredient Name Value Set, 2.16.840.1.113883.3.88.12.80.20, Dynamic (C154-[DE-6.04-1])</li>
+
+<li class="li">For participant/participantRole/playingEntity/code element, Allergies to a class of medication <strong class="ph b">SHALL</strong> be coded as Medication Drug Class Value Set, 2.16.840.1.113883.3.88.12.80.17, version: 20081218, Dynamic (C154-[DE-6.04-2])</li>
+
+<li class="li">For participant/participantRole/playingEntity/code element, Allergies to a specific medication <strong class="ph b">SHALL</strong> be coded with Medication Brand Name Value Set, 2.16.840.1.113883.3.88.12.80.16, version: 20081218, Dynamic (C154-[DE-6.04-3])</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: the text element is present in the Reaction Observation entry<ul class="ul"><li class="li">This is the reaction that may be caused by the product
+or agent</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: the code element is present in the Reaction Observation entry<ul class="ul"><li class="li">This value is a code describing the reaction</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the code element is coded as Problem Value Set, 2.16.840.1.113883.3.88.12.3221.7.4, version: 20100125, Dynamic (C154-[DE-6.06-1])</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The text element is present in the Severity Observation template<ul class="ul"><li class="li">This is a description of the level of severity of the
+allergy or intolerance</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: the code element is present in the Severity Observation entry<ul class="ul"><li class="li">This value is a code describing the level severity of
+the allergy or intolerance</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the code element is coded as Problem Severity Value Set, 2.16.840.1.113883.3.88.12.3221.6.8, version: 20081218, Static (C154-[DE-6.08-1])</li>
 
 </ol>
 
 
-<p class="p"/>
+<p class="p"> </p>
 
-<div class="fig fignone"><span class="figcap">Figure 1. Allergy Drug Sensitivity example</span>
+<p class="p"><strong class="ph b">Allergy Drug Sensitivity example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;act classCode="ACT" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.27" assigningAuthorityName="CCD Problem Act"/&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" assigningAuthorityName="IHE Concern Entry"/&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3" assigningAuthorityName="IHE Allergy Intolerance Concern"/&gt;
-              &lt;templateId root="2.16.840.1.113883.3.88.11.83.6" assigningAuthorityName="HITSP Allergy Drug Sensitivity"/&gt;
-              &lt;id root="052b40f6-1978-42ec-b306-5e65c8c5dfea"/&gt;
-              &lt;code nullFlavor="NA"/&gt;
-              &lt;statusCode/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="1972"/&gt;
-                &lt;high value="2008"/&gt;
-              &lt;/effectiveTime&gt;
-            &lt;/act&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.27"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.6"/&gt;
+  &lt;id root="8ae7d086-cd98-4a18-97ca-25fd64731190"/&gt;
+  &lt;code nullFlavor="NA"/&gt;
+  &lt;statusCode/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.41"/&gt;
+      &lt;id root="a5336773-a85c-4d17-99d7-e6c07d89420b"/&gt;
+      &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CD"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
+      &lt;id root="67bb6e5f-ba8d-408c-90fa-ec0683daa2f4"/&gt;
+      &lt;code/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+          &lt;id root="86df8f33-8b70-4a15-b160-bea3d4cde421"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CE"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
+          &lt;id root="d41ed53e-158b-4ae2-bb36-ceba0d952609"/&gt;
+          &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CE"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
+          &lt;id root="274187a9-a80b-434d-a877-0b6adb5b864c"/&gt;
+          &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+&lt;/act&gt;</pre>
 
 </div>
 

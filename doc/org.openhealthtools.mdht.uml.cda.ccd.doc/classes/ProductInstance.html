@@ -32,24 +32,32 @@
 
 
 <div class="section">
+<p class="p">identifes a particular product instance</p>
+
 </div>
 
 
-<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Participant Role</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">@classCode</tt> = "MANU"</li>
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="MANU" </tt>
+</li>
+
+<li class="li">If participantRole in a product instance contains participantRole / id, then participantRole <strong class="ph b">SHOULD</strong> also contain participantRole / scopingEntity. (CONF-451)</li>
 
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Product Instance example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Product Instance example</strong></p>
 
 
 
-<pre class="pre codeblock"/>
-
-</div>
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="MANU"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.52"/&gt;
+  &lt;id root="15b7cb03-b992-4dc0-9f3e-adf3dbefb9bc"/&gt;
+&lt;/participantrole&gt;</pre>
 
 </div>
 

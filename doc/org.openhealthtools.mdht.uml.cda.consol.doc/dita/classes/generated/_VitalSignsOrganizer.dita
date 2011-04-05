@@ -32,8 +32,11 @@ The vital signs organizer is a cluster of vital signs observations.
 <li>Contains exactly one [1..1] <xref href="../VitalSign.dita">Vital Sign</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.14</tt>)</li></ol></li>
 <li>Contains exactly one [1..1] <tt><b>author</b></tt>, such that
 </li>
-<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-387)<ul><li>A vital signs organizer SHALL contain one or more sources of information, as defined in section <b><i>Source</i></b>.</li></ul></li>
-<li><b>SHALL</b> satisfy: ccd::ResultOrganizer template ID (2.16.840.1.113883.10.20.1.32) is included (6.3.4.21.3)</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-387)<ul><li>A vital signs organizer SHALL contain one or more sources of information, as defined in section <b><i>Source</i></b>.</li></ul><ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
+or not self.getSection().informant-&gt;isEmpty()
+or not self.getClinicalDocument().informant-&gt;isEmpty()
+or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: ccd::ResultOrganizer template ID (2.16.840.1.113883.10.20.1.32) is included (6.3.4.21.3)<ul><li><codeblock>[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root ='2.16.840.1.113883.10.20.1.32')</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../ResultOrganizer.dita">Result Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.21.4.1</tt>)</li>
@@ -61,12 +64,18 @@ The vital signs organizer is a cluster of vital signs observations.
 <li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
 <li>The specimen element <b>SHALL NOT</b> conflict with the specimen inherent in code (CONF-400)</li>
 <li>specimen / specimenRole / id <b>SHOULD</b> be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen. (CONF-401)</li>
-<li><b>SHALL</b> satisfy: Contains one or more component (CONF-402)</li>
+<li><b>SHALL</b> satisfy: Contains one or more component (CONF-402)<ul><li><codeblock>[OCL]: not self.component-&gt;isEmpty()</codeblock></li></ul></li>
 <li>The target of one or more result organizer component relationships <b>MAY</b> be a procedure, to indicate the means or technique by which a result is obtained, particularly if the means or technique isn't inherent in code or if there is a need to further specialize the code value. (CONF-403)</li>
 <li>A result organizer component / procedure <b>MAY</b> be a reference to a procedure described in the Procedure section. (CONF-404)</li>
-<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-406)</li>
-<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-387)<ul><li>A vital signs organizer SHALL contain one or more sources of information, as defined in section <b><i>Source</i></b>.</li></ul></li>
-<li><b>SHALL</b> satisfy: ccd::ResultOrganizer template ID (2.16.840.1.113883.10.20.1.32) is included (6.3.4.21.3)</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-406)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
+or not self.getSection().informant-&gt;isEmpty()
+or not self.getClinicalDocument().informant-&gt;isEmpty()
+or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-387)<ul><li>A vital signs organizer SHALL contain one or more sources of information, as defined in section <b><i>Source</i></b>.</li></ul><ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
+or not self.getSection().informant-&gt;isEmpty()
+or not self.getClinicalDocument().informant-&gt;isEmpty()
+or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: ccd::ResultOrganizer template ID (2.16.840.1.113883.10.20.1.32) is included (6.3.4.21.3)<ul><li><codeblock>[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root ='2.16.840.1.113883.10.20.1.32')</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 </body>

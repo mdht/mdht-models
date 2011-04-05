@@ -12,50 +12,43 @@
 <p>The encounter entry contains data describing the interactions between the patient and clinicians. Interaction includes both in-person and non-in-person encounters such as telephone and e-mail communication.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/EncounterActivity.dita">IHE Encounter Activity</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>)</li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>code</tt>, which <b>SHOULD</b> be selected from EncounterType Value Set (2.16.840.1.113883.3.88.12.80.32) (C83-[DE-16.02-1])</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>priorityCode</tt>, which <b>MAY</b> be selected from Admission Type (NUBC) Value Set (2.16.840.1.113883.3.88.12.80.33) (C154-[DE-16.07-1])</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/EncounterActivity.html">IHE Encounter Activity</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>)</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.32 EncounterType</tt><b> DYNAMIC</b> (C83-[DE-16.02-1])
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.33 Admission Type (NUBC)</tt><b> STATIC</b> (C154-[DE-16.07-1])
+</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/EncounterEntry.dita">IHE Encounter Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>)</li>
-<li><b>SHALL</b> conform to CDA Clinical Statement</li>
-<li><b>SHALL</b> conform to CDA Encounter</li>
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/EncountersActivity.dita">CCD Encounters Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.21</tt>)</li>
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/EncounterActivity.dita">IHE Encounter Activity</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>@classCode</tt> = "ENC"</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>@moodCode</tt> = "EVN"</li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt>code</tt>, which <b>SHOULD</b> be selected from EncounterType Value Set (2.16.840.1.113883.3.88.12.80.32) (C83-[DE-16.02-1])</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt>id</tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>effectiveTime</tt></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt>priorityCode</tt>, which <b>MAY</b> be selected from Admission Type (NUBC) Value Set (2.16.840.1.113883.3.88.12.80.33) (C154-[DE-16.07-1])</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/EncounterEntry.html">IHE Encounter Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/EncountersActivity.html">CCD Encounters Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.21</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/EncounterActivity.html">IHE Encounter Activity</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.14</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.32 EncounterType</tt><b> DYNAMIC</b> (C83-[DE-16.02-1])
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.33 Admission Type (NUBC)</tt><b> STATIC</b> (C154-[DE-16.07-1])
+</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
-      <component>
-        <section>
-          <entry>
-            <encounter classCode="ENC" moodCode="EVN">
-              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
-              <templateId root="2.16.840.1.113883.10.20.1.21" assigningAuthorityName="CCD Encounters Activity"/>
-              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
-              <templateId root="2.16.840.1.113883.3.88.11.83.16" assigningAuthorityName="HITSP Encounter"/>
-              <id root="9ea72126-9df7-447f-9d38-704b9c1a0385"/>
-              <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
-              <text/>
-              <effectiveTime>
-                <low value="1972"/>
-                <high value="2008"/>
-              </effectiveTime>
-              <priorityCode/>
-            </encounter>
-          </entry>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+<encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN">
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
+  <templateId root="2.16.840.1.113883.10.20.1.21"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.14"/>
+  <templateId root="2.16.840.1.113883.3.88.11.83.16"/>
+  <id root="51c5f7db-c2c3-49da-bbed-90fcbc0438cc"/>
+  <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
+  <text/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+  <priorityCode/>
+</encounter>]]></codeblock>
 </body>
 </topic>

@@ -37,20 +37,24 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Observation (CONF-169)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-170)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">@classCode</tt> = "OBS" (CONF-170)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-171)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">@moodCode</tt> = "EVN" (CONF-171)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-172, CONF-173)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">statusCode</tt><tt class="ph tt">/@code</tt> = "completed"  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus STATIC V3NE08) (CONF-172, CONF-173)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="ASSERTION" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF-174)
+</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain [1..1] <tt class="ph tt">code</tt><tt class="ph tt">/@code</tt> = "ASSERTION"  (CodeSystem: 2.16.840.1.113883.5.4 ActCode STATIC V3NE08) (CONF-174)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="404684003" </tt><em class="ph i">Clinical finding</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>), where its data type is CD (CONF-175)
+</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain [1..1] <tt class="ph tt">value</tt><tt class="ph tt">/@code</tt> = "404684003" <em class="ph i">Clinical finding</em> (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT STATIC), where its data type is CD (CONF-175)</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Value in an episode observation SHOULD be the following SNOMED CT expression:
+<li class="li">Value in an episode observation <strong class="ph b">SHOULD</strong> be the following SNOMED CT expression:
 &lt;codeblock&gt;&lt;value xsi:type="CD" code="404684003" codeSystem="2.16.840.1.113883.6.96" displayName="Clinical finding"&gt;
   &lt;qualifier&gt;
     &lt;name code="246456000" displayName="Episodicity"/&gt;
@@ -64,7 +68,7 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: Source of one or more entryRelationship whose typeCode is 'SAS'. The target of the entryRelationship SHALL be a problem act or social history observation. This is used to represent the temporal sequence of episodes. (CONF-177)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, ccd::ProblemAct)-&gt;size() &gt;0
+<li class="li">Source of one or more entryRelationship whose typeCode is 'SAS'. The target of the entryRelationship <strong class="ph b">SHALL</strong> be a problem act or social history observation. This is used to represent the temporal sequence of episodes. (CONF-177)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, ccd::ProblemAct)-&gt;size() &gt;0
   or self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, ccd::SocialHistoryObservation)-&gt;size() &gt; 0</pre>
 </li>
 </ul>
@@ -73,31 +77,24 @@
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Episode Observation example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Episode Observation example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.41" assigningAuthorityName="CCD Episode Observation"/&gt;
-              &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/&gt;
-              &lt;statusCode code="completed"/&gt;
-              &lt;value xsi:type="CD"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.41"/&gt;
+  &lt;id root="6367ce69-0b9c-453e-a573-c6a7d810f630"/&gt;
+  &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;value xsi:type="CD"/&gt;
+&lt;/observation&gt;</pre>
 
 </div>
 

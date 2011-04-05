@@ -22,45 +22,62 @@
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "8716-3" <i>Vital signs</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF-382, CONF-383)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt> (CONF-384)</li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
-<li>contains <xref href="../VitalSignsOrganizer.dita">CCD Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>) (CONF-381)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt> (CONF-381)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-382, CONF-383)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-384)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-381), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-381)
+</li>
 <li><b>SHOULD</b> satisfy: title Contains a case-insensitive language-insensitive string containing 'vital signs'. (CONF-385)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "8716-3" <i>Vital signs</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF-382, CONF-383)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt> (CONF-384)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt> (CONF-381)</li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
-<li>contains <xref href="../VitalSignsOrganizer.dita">CCD Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>) (CONF-381)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-382, CONF-383)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-384)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-381)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-381), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li></ol></li>
 <li><b>SHOULD</b> satisfy: title Contains a case-insensitive language-insensitive string containing 'vital signs'. (CONF-385)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.16"/>
+  <id root="b3db7553-ebb2-413e-a8b5-5edf417ad557"/>
+  <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+  <title>Vital signs</title>
+  <entry>
+    <organizer moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.32"/>
+      <templateId root="2.16.840.1.113883.10.20.1.35"/>
+      <id root="a7af1104-c518-49e3-9aa1-d5f2e3efc5ef"/>
+      <code/>
+      <statusCode/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
       <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.1.16" assigningAuthorityName="CCD Vital Signs Section"/>
-          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
-          <title>Vital signs</title>
-          <entry>
-            <organizer moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.1.32" assigningAuthorityName="CCD Result Organizer"/>
-              <templateId root="2.16.840.1.113883.10.20.1.35" assigningAuthorityName="CCD Vital Signs Organizer"/>
-              <id root="2e7faa32-7279-49dc-be60-f24d431c0668"/>
-              <code/>
-              <statusCode/>
-            </organizer>
-          </entry>
-        </section>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.31"/>
+          <id root="9cddccb6-b375-4ed2-8852-6ebb128808cb"/>
+          <code/>
+          <statusCode/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <interpretationCode/>
+          <methodCode/>
+        </observation>
       </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
 </body>
 </topic>

@@ -15,27 +15,20 @@
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/ReasonForReferralSection.dita">IHE Reason For Referral Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ReasonForReferralSection.html">IHE Reason For Referral Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.1</tt>)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> conform to <xref href="../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/ReasonForReferralSection.dita">IHE Reason For Referral Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.1</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "42349-1" <i>REASON FOR REFERRAL</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ReasonForReferralSection.html">IHE Reason For Referral Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="42349-1" </tt><i>REASON FOR REFERRAL</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
-      <component>
-        <section>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1" assigningAuthorityName="IHE Reason For Referral Section"/>
-          <templateId root="2.16.840.1.113883.3.88.11.83.106" assigningAuthorityName="HITSP Reason For Referral Section"/>
-          <code code="42349-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REASON FOR REFERRAL"/>
-          <title>REASON FOR REFERRAL</title>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1"/>
+  <templateId root="2.16.840.1.113883.3.88.11.83.106"/>
+  <id root="fe0217a7-3f95-43a6-8b0e-8456c34cc024"/>
+  <code code="42349-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REASON FOR REFERRAL"/>
+  <title>REASON FOR REFERRAL</title>
+</section>]]></codeblock>
 </body>
 </topic>

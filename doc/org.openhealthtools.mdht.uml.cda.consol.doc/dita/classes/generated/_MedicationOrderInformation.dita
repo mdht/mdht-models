@@ -48,12 +48,18 @@ medication supplied.</li></ul></li>
 <li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MedicationFullfillmentInstructions.dita">Medication Fullfillment Instructions</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.3.1</tt>)</li></ol></li>
-<li><b>SHALL</b> satisfy: Value for moodCode is 'EVN' or 'INT' 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-317)</li>
-<li><b>MAY</b> satisfy: Contains one or more author. (CONF-323)<ul><li>Indicates the prescriber.</li></ul></li>
-<li><b>MAY</b> satisfy: Contains one or more performer. (CONF-324)<ul><li>Indicates the person dispensing the product.</li></ul></li>
-<li><b>MAY</b> satisfy: Contains exactly one participant / @typeCode = "LOC". (CONF-325)<ul><li>Iindicates the supply location.</li></ul></li>
-<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-326)</li>
-<li><b>MAY</b> satisfy: Contains exactly one product, the target of which is a Product template. (CONF-355)</li>
+<li><b>SHALL</b> satisfy: Value for moodCode is 'EVN' or 'INT' 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-317)<ul><li><codeblock>[OCL]: self.moodCode=vocab::x_DocumentSubstanceMood::EVN or self.moodCode=vocab::x_DocumentSubstanceMood::INT </codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains one or more author. (CONF-323)<ul><li>Indicates the prescriber.</li></ul><ul><li><codeblock>[OCL]: not self.author-&gt;isEmpty()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains one or more performer. (CONF-324)<ul><li>Indicates the person dispensing the product.</li></ul><ul><li><codeblock>[OCL]: not self.performer-&gt;isEmpty()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains exactly one participant / @typeCode = "LOC". (CONF-325)<ul><li>Iindicates the supply location.</li></ul><ul><li><codeblock>[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::LOC)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-326)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
+or not self.getSection().informant-&gt;isEmpty()
+or not self.getClinicalDocument().informant-&gt;isEmpty()
+or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
+or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
+   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
+   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains exactly one product, the target of which is a Product template. (CONF-355)<ul><li><codeblock>[OCL]: not self.product.oclIsUndefined() and self.product.oclIsKindOf(ccd::Product)</codeblock></li></ul></li>
 <li>Supply / participant / participantRole / id <b>SHOULD</b> be set to equal a [Act | Observation | Procedure] / participant / participantRole / id  to indicate that the Supply and the Procedure are referring to the same product instance.</li>
 <li><b>MAY</b> satisfy: A supply entry that describes an intent (&lt;supply classCode='SPLY' moodCode='INT'&gt;) may include an &lt;author&gt; element to identify the prescribing provider.</li>
 <li><b>SHALL</b> satisfy: The &lt;time&gt; element must be present to indicate when the author created the prescription. If this
@@ -137,12 +143,18 @@ medication supplied.</li></ul></li>
 <li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MedicationFullfillmentInstructions.dita">Medication Fullfillment Instructions</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.3.1</tt>)</li></ol></li>
-<li><b>SHALL</b> satisfy: Value for moodCode is 'EVN' or 'INT' 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-317)</li>
-<li><b>MAY</b> satisfy: Contains one or more author. (CONF-323)<ul><li>Indicates the prescriber.</li></ul></li>
-<li><b>MAY</b> satisfy: Contains one or more performer. (CONF-324)<ul><li>Indicates the person dispensing the product.</li></ul></li>
-<li><b>MAY</b> satisfy: Contains exactly one participant / @typeCode = "LOC". (CONF-325)<ul><li>Iindicates the supply location.</li></ul></li>
-<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-326)</li>
-<li><b>MAY</b> satisfy: Contains exactly one product, the target of which is a Product template. (CONF-355)</li>
+<li><b>SHALL</b> satisfy: Value for moodCode is 'EVN' or 'INT' 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-317)<ul><li><codeblock>[OCL]: self.moodCode=vocab::x_DocumentSubstanceMood::EVN or self.moodCode=vocab::x_DocumentSubstanceMood::INT </codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains one or more author. (CONF-323)<ul><li>Indicates the prescriber.</li></ul><ul><li><codeblock>[OCL]: not self.author-&gt;isEmpty()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains one or more performer. (CONF-324)<ul><li>Indicates the person dispensing the product.</li></ul><ul><li><codeblock>[OCL]: not self.performer-&gt;isEmpty()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains exactly one participant / @typeCode = "LOC". (CONF-325)<ul><li>Iindicates the supply location.</li></ul><ul><li><codeblock>[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::LOC)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-326)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
+or not self.getSection().informant-&gt;isEmpty()
+or not self.getClinicalDocument().informant-&gt;isEmpty()
+or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
+or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
+   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
+   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains exactly one product, the target of which is a Product template. (CONF-355)<ul><li><codeblock>[OCL]: not self.product.oclIsUndefined() and self.product.oclIsKindOf(ccd::Product)</codeblock></li></ul></li>
 <li>Supply / participant / participantRole / id <b>SHOULD</b> be set to equal a [Act | Observation | Procedure] / participant / participantRole / id  to indicate that the Supply and the Procedure are referring to the same product instance.</li>
 <li><b>MAY</b> satisfy: A supply entry that describes an intent (&lt;supply classCode='SPLY' moodCode='INT'&gt;) may include an &lt;author&gt; element to identify the prescribing provider.</li>
 <li><b>SHALL</b> satisfy: The &lt;time&gt; element must be present to indicate when the author created the prescription. If this

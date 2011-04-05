@@ -29,7 +29,7 @@
 </li>
 <li>Target of an entryRelationship whose value for "entryRelationship / @typeCode" <b>SHALL</b> be "REFR" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-509)</li>
 <li><b>SHALL NOT</b> contain any additional Observation attributes. (CONF-517)</li>
-<li><b>SHALL NOT</b> contain any Observation participants. (CONF-518)</li>
+<li><b>SHALL NOT</b> contain any Observation participants. (CONF-518)<ul><li><codeblock>[OCL]: self.participant-&gt;isEmpty()</codeblock></li></ul></li>
 <li><b>SHALL NOT</b> be the source of any Observation relationships. (CONF-519)</li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>

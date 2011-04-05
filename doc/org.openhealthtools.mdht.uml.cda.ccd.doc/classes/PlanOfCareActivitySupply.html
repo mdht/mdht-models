@@ -35,47 +35,38 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Supply</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="PlanOfCareActivity.html">Plan Of Care Activity</a></li>
 
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="PlanOfCareActivity.html">CCD Plan Of Care Activity</a></li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">@moodCode</tt></li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..*] <tt class="ph tt">id</tt></li>
-
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>
+<ol class="ol" type="a">
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: moodCodeValue<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::INT or self.moodCode = vocab::x_DocumentSubstanceMood::RQO
   or self.moodCode = vocab::x_DocumentSubstanceMood::PRMS or self.moodCode = vocab::x_DocumentSubstanceMood::PRP</pre>
 </li>
 </ul>
 </li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+</li>
 
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Plan Of Care Activity Supply example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Plan Of Care Activity Supply example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;supply classCode="SPLY"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
-              &lt;id root="87e36955-bf3a-4090-a632-23623ffd27aa"/&gt;
-            &lt;/supply&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
+  &lt;id root="ddaea71b-6f41-4515-826d-a3084be8235b"/&gt;
+  &lt;effectiveTime value="20110404"/&gt;
+&lt;/supply&gt;</pre>
 
 </div>
 

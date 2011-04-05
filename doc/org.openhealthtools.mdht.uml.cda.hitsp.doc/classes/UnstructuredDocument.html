@@ -37,10 +37,11 @@
 </div>
 
 
-<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/ScannedDocument.html" title="[ClinicalDocument: templateId 1.3.6.1.4.1.19376.1.2.20]">IHE Scanned Document</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.2.20</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/classes/MedicalDocument.html" title="[ClinicalDocument: templateId 1.3.6.1.4.1.19376.1.5.3.1.1.1]">IHE Medical Document</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.1.1</tt>)</li>
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ScannedDocument.html">IHE Scanned Document</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.2.20</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/MedicalDocument.html">IHE Medical Document</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.1.1</tt>)</li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> satisfy: This construct should not be used when the data are structured.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.component.structuredBody.oclIsUndefined()</pre>
 </li>
@@ -55,36 +56,26 @@
 </ol>
 
 
-<p class="p"/>
+<p class="p"> </p>
 
-<div class="fig fignone"><span class="figcap">Figure 1. Unstructured Document example</span>
+<p class="p"><strong class="ph b">Unstructured Document example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;realmCode code="US"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.3" assigningAuthorityName="CDT General Header Constraints"/&gt;
-  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1" assigningAuthorityName="IHE Medical Document"/&gt;
-  &lt;templateId root="1.3.6.1.4.1.19376.1.2.20" assigningAuthorityName="IHE Scanned Document"/&gt;
-  &lt;templateId root="2.16.840.1.113883.3.88.11.62.1" assigningAuthorityName="HITSP Unstructured Document"/&gt;
-  &lt;id root="eab8765b-1424-47cc-9495-ddc934cf5f5d"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.3"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.2.20"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.62.1"/&gt;
+  &lt;id root="5f3cc60e-dfdf-4d5f-81eb-e4cddcc7bb66"/&gt;
   &lt;code/&gt;
   &lt;title/&gt;
   &lt;effectiveTime/&gt;
   &lt;confidentialityCode/&gt;
   &lt;languageCode/&gt;
-  &lt;author&gt;
-    &lt;templateId root="1.3.6.1.4.1.19376.1.2.20.2" assigningAuthorityName="IHE Scanning Device"/&gt;
-    &lt;time/&gt;
-  &lt;/author&gt;
-  &lt;dataEnterer&gt;
-    &lt;templateId root="1.3.6.1.4.1.19376.1.2.20.3" assigningAuthorityName="IHE Scan Data Enterer"/&gt;
-    &lt;time/&gt;
-  &lt;/dataEnterer&gt;
 &lt;/ClinicalDocument&gt;</pre>
-
-</div>
 
 </div>
 

@@ -35,45 +35,52 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Observation (CONF-154)</li>
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
 
-<li class="li">Contains [1..1] <tt class="ph tt">@classCode</tt> = "OBS"</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-155)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">@moodCode</tt> = "EVN" (CONF-155)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-156, CONF-157)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">statusCode</tt><tt class="ph tt">/@code</tt> = "completed"  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus STATIC V3NE08) (CONF-156, CONF-157)</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain [1..1] <tt class="ph tt">effectiveTime</tt> (CONF-158)<ul class="ul"><li class="li">Indicates the biological timing of condition (e.g. the time the condition started, the onset of the illness or symptom, the duration of a condition).</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-158)
+<ul class="ul"><li class="li">Indicates the biological timing of condition (e.g. the time the condition started, the onset of the illness or symptom, the duration of a condition).</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain [1..1] <tt class="ph tt">code</tt>, which <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.14 ProblemTypeCode STATIC 20061017 (CONF-159)<ul class="ul"><li class="li">code SHALL be present (per CDA schema), by MAY use specified value set.</li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.20.14 ProblemTypeCode</tt><strong class="ph b"> STATIC</strong> 20061017 (CONF-159)
+<ul class="ul"><li class="li">code SHALL be present (per CDA schema), by MAY use specified value set.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">entryRelationship</tt>, such that it<ol class="ol" type="a">
-<li class="li">has @typeCode="REFR" <em class="ph i">REFR (refers to)</em></li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-162), such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>REFR" </tt><em class="ph i">REFR (refers to)</em></li>
 
-<li class="li">contains <a class="xref" href="ProblemStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.50]">CCD Problem Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.50</tt>) (CONF-162)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.50]">Problem Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.50</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">entryRelationship</tt>, such that it<ol class="ol" type="a">
-<li class="li">has @typeCode="REFR" <em class="ph i">REFR (refers to)</em></li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-165), such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>REFR" </tt><em class="ph i">REFR (refers to)</em></li>
 
-<li class="li">contains <a class="xref" href="ProblemHealthStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.51]">CCD Problem Health Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.51</tt>) (CONF-165)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemHealthStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.51]">Problem Health Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.51</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">entryRelationship</tt>, such that it<ol class="ol" type="a">
-<li class="li">has @typeCode="SUBJ" <em class="ph i">SUBJ (has subject)</em></li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-160), such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
 
-<li class="li">contains <a class="xref" href="AgeObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.38]">CCD Age Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.38</tt>) (CONF-160)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AgeObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.38]">Age Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.38</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information. (CONF-161)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.informant-&gt;isEmpty() 
+<li class="li"><strong class="ph b">SHALL</strong> contain one or more sources of information. (CONF-161)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.informant-&gt;isEmpty() 
 or not self.getSection().informant-&gt;isEmpty()
 or not self.getClinicalDocument().informant-&gt;isEmpty()
 or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
@@ -84,7 +91,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: Contains exactly one Patient Awareness (CONF-180)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</pre>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one Patient Awareness (CONF-180)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</pre>
 </li>
 </ul>
 </li>
@@ -92,59 +99,63 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Problem Observation example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Problem Observation example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.28" assigningAuthorityName="CCD Problem Observation"/&gt;
-              &lt;code/&gt;
-              &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="1972"/&gt;
-                &lt;high value="2008"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;entryRelationship&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.1.57" assigningAuthorityName="CCD Status Observation"/&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.1.50" assigningAuthorityName="CCD Problem Status Observation"/&gt;
-                  &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
-                  &lt;statusCode code="completed"/&gt;
-                  &lt;value xsi:type="CE"/&gt;
-                &lt;/observation&gt;
-              &lt;/entryRelationship&gt;
-              &lt;entryRelationship&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.1.57" assigningAuthorityName="CCD Status Observation"/&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.1.51" assigningAuthorityName="CCD Problem Health Status Observation"/&gt;
-                  &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
-                  &lt;statusCode code="completed"/&gt;
-                  &lt;value xsi:type="CE"/&gt;
-                &lt;/observation&gt;
-              &lt;/entryRelationship&gt;
-              &lt;entryRelationship&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.1.38" assigningAuthorityName="CCD Age Observation"/&gt;
-                  &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
-                  &lt;statusCode code="completed"/&gt;
-                &lt;/observation&gt;
-              &lt;/entryRelationship&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
+  &lt;id root="2f5fd31a-8b86-4036-a75b-c39fe72b3e91"/&gt;
+  &lt;code/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+      &lt;id root="25db68c7-58ba-45aa-b1ba-70a77baa40a9"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
+      &lt;id root="f4aa5ba0-1ff9-49a4-ba8b-dceb115bff48"/&gt;
+      &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
+      &lt;id root="4b2f7b78-9244-45b1-b827-5f959dd100c9"/&gt;
+      &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+&lt;/observation&gt;</pre>
 
 </div>
 

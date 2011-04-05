@@ -12,49 +12,114 @@
 <p>This section is used to list and describe any allergies, adverse reactions, and alerts that are pertinent to the patient's current or past medical history. At a minimum, currently active and any relevant historical allergies and adverse reactions should be listed.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "48765-2" <i>Allergies, adverse reactions, alerts</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt></li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
-<li>contains <xref href="../ProblemAct.dita">CCD Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions".</li>
-<li><b>SHALL</b> satisfy: The absence of known allergies, adverse reactions or alerts SHALL be explicitly asserted.</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48765-2" </tt><i>Allergies, adverse reactions, alerts</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-258, CONF-259)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-260)
+<ol>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-256)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-256), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
+<li>The absence of known allergies, adverse reactions or alerts <b>SHALL</b> be explicitly asserted.</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Section</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>code</tt><tt>/@code</tt> = "48765-2" <i>Allergies, adverse reactions, alerts</i> (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>title</tt></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt>text</tt></li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt>entry</tt>, such that it<ol>
-<li>contains <xref href="../ProblemAct.dita">CCD Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions".</li>
-<li><b>SHALL</b> satisfy: The absence of known allergies, adverse reactions or alerts SHALL be explicitly asserted.</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48765-2" </tt><i>Allergies, adverse reactions, alerts</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-258, CONF-259)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-260)
+<ol>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-256)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-256), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li>
+<li>The absence of known allergies, adverse reactions or alerts <b>SHALL</b> be explicitly asserted.</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <component>
-    <structuredBody>
-      <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.1.2" assigningAuthorityName="CCD Alerts Section"/>
-          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
-          <title>Allergies, adverse reactions, alerts</title>
-          <entry>
-            <act classCode="ACT" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.1.27" assigningAuthorityName="CCD Problem Act"/>
-              <id root="34551170-d789-4a3a-8cd5-a5aca1906e71"/>
-              <code nullFlavor="NA"/>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.2"/>
+  <id root="c428a773-0266-4451-9aa2-56a505356a3f"/>
+  <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+  <title>Allergies, adverse reactions, alerts</title>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.27"/>
+      <id root="ac62ab2e-ace0-43cc-8c0f-ac14cae4a369"/>
+      <code nullFlavor="NA"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.41"/>
+          <id root="f7baab7a-727f-4f7b-861c-9538b5f25dde"/>
+          <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CD"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.28"/>
+          <id root="58558115-6f5d-4a04-b483-e36fd95c8489"/>
+          <code/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <id root="3bd6f983-5f20-4f75-a22d-82eab7ec811c"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
               <effectiveTime>
-                <low value="1972"/>
-                <high value="2008"/>
+                <low value="2011"/>
+                <high value="2011"/>
               </effectiveTime>
-            </act>
-          </entry>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
-</ClinicalDocument>]]></codeblock>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.51"/>
+              <id root="0c4630b2-e7b5-4034-b91b-528ea1fc8e52"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.38"/>
+              <id root="40c7e701-e953-419d-b1da-de59174c1065"/>
+              <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
 </body>
 </topic>

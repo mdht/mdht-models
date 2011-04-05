@@ -24,6 +24,10 @@
 		<topicref href="../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/terminology/HealthStatusValue.dita" type="topic" />
 		<topicref href="../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/terminology/ProblemStatusValue.dita" type="topic" />
 		<topicref href="../../../org.openhealthtools.mdht.uml.cda.ihe.doc/dita/terminology/SeverityObservation.dita" type="topic" />
+		
+		<topicref href="../../../org.openhealthtools.mdht.uml.term.models.doc/dita/terminology/Problem.dita" type="topic" />
+		<topicref href="../../../org.openhealthtools.mdht.uml.term.models.doc/dita/terminology/Problem Severity.dita" type="topic" />
+		<topicref href="../../../org.openhealthtools.mdht.uml.term.models.doc/dita/terminology/Problem Type.dita" type="topic" />
 	
 	</chapter>
 </bookmap>
