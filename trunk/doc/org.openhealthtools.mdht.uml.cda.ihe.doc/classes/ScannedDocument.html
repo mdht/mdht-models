@@ -37,60 +37,65 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to CDA Clinical Document</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">code</tt><ul class="ul"><li class="li">Entered by operator or appropriately fixed for scanned content.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>
+<ul class="ul"><li class="li">Entered by operator or appropriately fixed for scanned content.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">confidentialityCode</tt><ul class="ul"><li class="li">Assigned by the operator in accordance with the scanning facility policy. The notion or level of confidentiality in the header may not be the same as that in the Affinity Domain, but in certain cases could be used to derive a confidentiality value among those specified by the Affinity Domain. Attributes @code and @codeSystem shall be present.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">confidentialityCode</strong></tt>
+<ul class="ul"><li class="li">Assigned by the operator in accordance with the scanning facility policy. The notion or level of confidentiality in the header may not be the same as that in the Affinity Domain, but in certain cases could be used to derive a confidentiality value among those specified by the Affinity Domain. Attributes @code and @codeSystem shall be present.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">effectiveTime</tt><ul class="ul"><li class="li">Denotes the time at which the original content was scanned. At a minimum, the time shall be precise to the day and shall include the time zone offset from GMT.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ul class="ul"><li class="li">Denotes the time at which the original content was scanned. At a minimum, the time shall be precise to the day and shall include the time zone offset from GMT.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">id</tt><ul class="ul"><li class="li">The root attribute shall contain the oid for the document, in which case the extension attribute shall be empty, or an oid that scopes the set of possible unique values for the extension attribute, in which case the extension shall be populated with a globally unique identifier within the scope of the root oid.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+<ul class="ul"><li class="li">The root attribute shall contain the oid for the document, in which case the extension attribute shall be empty, or an oid that scopes the set of possible unique values for the extension attribute, in which case the extension shall be populated with a globally unique identifier within the scope of the root oid.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">languageCode</tt><ul class="ul"><li class="li">Denotes the language used in the character data of the wrapper CDA header. If the scanned content, when rendered, is in a language different than that of the header, the language context of the CDA will be overwritten at the body level (see ITI TF-3: 5.2.3.9 ClinicalDocument/component/nonXMLBody for an example). Attribute @code shall be present.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>
+<ul class="ul"><li class="li">Denotes the language used in the character data of the wrapper CDA header. If the scanned content, when rendered, is in a language different than that of the header, the language context of the CDA will be overwritten at the body level (see ITI TF-3: 5.2.3.9 ClinicalDocument/component/nonXMLBody for an example). Attribute @code shall be present.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain [1..1] <tt class="ph tt">title</tt><ul class="ul"><li class="li">Entered by operator, or possibly can be taken from the scanned content.</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
+<ul class="ul"><li class="li">Entered by operator, or possibly can be taken from the scanned content.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">typeId</tt></li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">typeId</strong></tt>
+</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain [1..*] <tt class="ph tt">scanOriginalAuthor</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="ScanOriginalAuthor.html" title="[Author: templateId 1.3.6.1.4.1.19376.1.2.20.1]">IHE Scan Original Author</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.2.20.1</tt>)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">scanOriginalAuthor</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ScanOriginalAuthor.html" title="[Author: templateId 1.3.6.1.4.1.19376.1.2.20.1]">Scan Original Author</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.2.20.1</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..*] <tt class="ph tt">scanningDevice</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="ScanningDevice.html" title="[Author: templateId 1.3.6.1.4.1.19376.1.2.20.2]">IHE Scanning Device</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.2.20.2</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">scanningDevice</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ScanningDevice.html" title="[Author: templateId 1.3.6.1.4.1.19376.1.2.20.2]">Scanning Device</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.2.20.2</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">scanDataEnterer</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="ScanDataEnterer.html" title="[DataEnterer: templateId 1.3.6.1.4.1.19376.1.2.20.3]">IHE Scan Data Enterer</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.2.20.3</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">scanDataEnterer</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ScanDataEnterer.html" title="[DataEnterer: templateId 1.3.6.1.4.1.19376.1.2.20.3]">Scan Data Enterer</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.2.20.3</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">legalAuthenticator</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains CDA Legal Authenticator</li>
-</ol>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">legalAuthenticator</strong></tt>, such that
 <ul class="ul"><li class="li">Context is left up to the scanning facility to refine in accordance with local policies.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain [0..1] <tt class="ph tt">documentationOf</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains CDA Documentation Of</li>
-</ol>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">documentationOf</strong></tt>, such that
 <ul class="ul"><li class="li">Used to encode the date/time range of the original content. If the original content is representative of a single point in time then the endpoints of the date/time range shall be the same. Information regarding this date/time range shall be included, if it is known. In many cases this will have to be supplied by the operator.</li>
 </ul>
 </li>
@@ -211,36 +216,22 @@
 </ol>
 
 
-<p class="p"/>
+<p class="p"> </p>
 
-<div class="fig fignone"><span class="figcap">Figure 1. Scanned Document example</span>
+<p class="p"><strong class="ph b">Scanned Document example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="1.3.6.1.4.1.19376.1.2.20" assigningAuthorityName="IHE Scanned Document"/&gt;
-  &lt;id root="a88aaf4a-d170-4611-85ed-8b720059494c"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.2.20"/&gt;
+  &lt;id root="63b89f7c-f47a-4b1b-94fa-d846c1fc966e"/&gt;
   &lt;code/&gt;
   &lt;title/&gt;
   &lt;effectiveTime/&gt;
   &lt;confidentialityCode/&gt;
   &lt;languageCode/&gt;
-  &lt;author&gt;
-    &lt;templateId root="1.3.6.1.4.1.19376.1.2.20.1" assigningAuthorityName="IHE Scan Original Author"/&gt;
-    &lt;time/&gt;
-  &lt;/author&gt;
-  &lt;author&gt;
-    &lt;templateId root="1.3.6.1.4.1.19376.1.2.20.2" assigningAuthorityName="IHE Scanning Device"/&gt;
-    &lt;time/&gt;
-  &lt;/author&gt;
-  &lt;dataEnterer&gt;
-    &lt;templateId root="1.3.6.1.4.1.19376.1.2.20.3" assigningAuthorityName="IHE Scan Data Enterer"/&gt;
-    &lt;time/&gt;
-  &lt;/dataEnterer&gt;
 &lt;/ClinicalDocument&gt;</pre>
-
-</div>
 
 </div>
 

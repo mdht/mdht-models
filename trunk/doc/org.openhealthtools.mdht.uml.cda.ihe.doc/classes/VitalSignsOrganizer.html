@@ -39,37 +39,42 @@ A vital signs organizer collects vital signs observations.
 </div>
 
 
-<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../../../../org.openhealthtools.mdht.uml.cda.ccd.doc/dita/classes/VitalSignsOrganizer.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.1.35]">CCD Vital Signs Organizer</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.35</tt>) (6.3.4.21.3)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">@classCode</tt> = "CLUSTER" (6.3.4.21.2)<ul class="ul"><li class="li"><p class="p">
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.35</tt>) (6.3.4.21.3)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="CLUSTER" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (6.3.4.21.2)
+<ul class="ul"><li class="li"><p class="p">
 The vital signs organizer is a cluster of vital signs observations.
 </p>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">code</tt><tt class="ph tt">/@code</tt> = "46680005" <em class="ph i">Vital signs</em> (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT STATIC) (6.3.4.21.5)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="46680005" </tt><em class="ph i">Vital signs</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (6.3.4.21.5)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">effectiveTime</tt> (6.3.4.21.7)<ul class="ul"><li class="li">The effective time element shall be present to indicate when the measurement was taken.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (6.3.4.21.7)
+<ul class="ul"><li class="li">The effective time element shall be present to indicate when the measurement was taken.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">statusCode</tt><tt class="ph tt">/@code</tt> = "completed"  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus STATIC V3NE08) (6.3.4.21.6)<ul class="ul"><li class="li">The observations have all been completed.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (6.3.4.21.6)
+<ul class="ul"><li class="li">The observations have all been completed.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..*] <tt class="ph tt">component</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains <a class="xref" href="VitalSignObservation.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.13.2]">IHE Vital Sign Observation</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.13.2</tt>) (6.3.4.21.9)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (6.3.4.21.9), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="VitalSignObservation.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.13.2]">Vital Sign Observation</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.13.2</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">author</tt>, such that it<ol class="ol" type="a">
-<li class="li">contains CDA Author (6.3.4.21.8)</li>
-</ol>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">author</strong></tt> (6.3.4.21.8), such that
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">id</tt> (6.3.4.21.4)<ul class="ul"><li class="li">The organizer shall have an &lt;id&gt; element.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (6.3.4.21.4)
+<ul class="ul"><li class="li">The organizer shall have an &lt;id&gt; element.</li>
 </ul>
 </li>
 
@@ -81,69 +86,57 @@ The vital signs organizer is a cluster of vital signs observations.
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Vital Signs Organizer example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Vital Signs Organizer example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+&lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="CLUSTER" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.32"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.35"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/&gt;
+  &lt;id root="f71f604f-0efc-46fb-b078-8350c6645ae8"/&gt;
+  &lt;code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
   &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;organizer classCode="CLUSTER" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.32" assigningAuthorityName="CCD Result Organizer"/&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.35" assigningAuthorityName="CCD Vital Signs Organizer"/&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1" assigningAuthorityName="IHE Vital Signs Organizer"/&gt;
-              &lt;id root="b039399c-e072-4281-b7aa-063e730a721e"/&gt;
-              &lt;code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/&gt;
-              &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="1972"/&gt;
-                &lt;high value="2008"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;component&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.1.31" assigningAuthorityName="CCD Result Observation"/&gt;
-                  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" assigningAuthorityName="IHE Simple Observation"/&gt;
-                  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2" assigningAuthorityName="IHE Vital Sign Observation"/&gt;
-                  &lt;id root="6dff5221-0d43-4a0d-89d4-3d2f35f32003"/&gt;
-                  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-                  &lt;statusCode code="completed"/&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="1972"/&gt;
-                    &lt;high value="2008"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;value xsi:type="PQ"/&gt;
-                  &lt;interpretationCode/&gt;
-                  &lt;methodCode/&gt;
-                  &lt;targetSiteCode/&gt;
-                &lt;/observation&gt;
-              &lt;/component&gt;
-              &lt;component&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.1.31" assigningAuthorityName="CCD Result Observation"/&gt;
-                  &lt;id root="66f9a255-a0e7-43c0-8aa9-9aa6a5cfafab"/&gt;
-                  &lt;code/&gt;
-                  &lt;statusCode/&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="1972"/&gt;
-                    &lt;high value="2008"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;interpretationCode/&gt;
-                  &lt;methodCode/&gt;
-                &lt;/observation&gt;
-              &lt;/component&gt;
-            &lt;/organizer&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
+    &lt;observation moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.31"/&gt;
+      &lt;id root="a7b3289a-231e-4af3-8226-71391e45b441"/&gt;
+      &lt;code/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;interpretationCode/&gt;
+      &lt;methodCode/&gt;
+    &lt;/observation&gt;
   &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+  &lt;component&gt;
+    &lt;observation moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.31"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/&gt;
+      &lt;id root="04566702-240c-4619-9c31-b14b7c578772"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="PQ"/&gt;
+      &lt;interpretationCode/&gt;
+      &lt;methodCode/&gt;
+      &lt;targetSiteCode/&gt;
+    &lt;/observation&gt;
+  &lt;/component&gt;
+&lt;/organizer&gt;</pre>
 
 </div>
 

@@ -32,48 +32,188 @@
 
 
 <div class="section">
+<p class="p">Allergies and intolerances are special kinds of problems, and so are also recorded in the CDA
+&lt;observation&gt; element, with classCode='OBS'. They follow the same pattern as the problem
+entry, with exceptions noted below.</p>
+
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProblemEntry.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.5]">IHE Problem Entry</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProblemEntry.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.5]">Problem Entry</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.4 ObservationIntoleranceType</tt>)
+<ul class="ul"><li class="li">The &lt;code&gt; element represents the kind of allergy observation made, to a drug, food or
+environmental agent, and whether it is an allergy, non-allergy intolerance, or unknown class of
+intolerance (not known to be allergy or intolerance).</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>
+<ul class="ul"><li class="li">The &lt;value&gt; is a description of the allergy or adverse reaction. While the value may be a coded
+or an uncoded string, the type is always a coded value (xsi: type='CD'). The codingSystem should reference a controlled
+vocabulary describing allergies and adverse reactions. The allergy or intolerance may
+not be known, in which case that fact shall be recorded appropriately. This might occur in the
+case where a patient experiences an allergic reaction to an unknown substance.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: Other vocabularies may be used for code/@code, such as SNOMED-CT or MEDCIN.</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The code /@code and code/@codeSystem attribute shall be present.</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The code/@displayName and code/@codeSystemName attributes should be present.</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: If &lt;value&gt; is coded, the code and codeSystem attributes must be present. If
+uncoded, all attributes other than xsi:type='CD' must be absent.</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the &lt;participant&gt; element may be present<ul class="ul"><li class="li">The substance that causes the allergy or intolerance may be specified in the &lt;participant&gt; element.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/@typecode attribute shall be 'CSM'</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: the participant/participantRole element may be present</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/@classcode attribute shall be 'MANU'</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: The participant/participantRole/PlayingEntity element may be present</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The participant/participantRole/playingEntity/code element shall be present. It may contain a code and codeSystem attribute to indicate
+the code for the substance causing the allergy or intolerance.</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: participant/participantRole/playingEntity/code shall contain a originalText/reference element as reference to the
+original text in the narrative where the substance is named.</li>
+
+<li class="li">The entryRelationship/@inversionInd for Severity Entry template <strong class="ph b">SHALL</strong> be 'true'</li>
+
+<li class="li">The entryRelationship/@inversionInd for Comment Entry template <strong class="ph b">SHALL</strong> be 'true'</li>
 
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Allergy Intolerance example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Allergy Intolerance example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.28" assigningAuthorityName="CCD Problem Observation"/&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" assigningAuthorityName="IHE Problem Entry"/&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6" assigningAuthorityName="IHE Allergy Intolerance"/&gt;
-              &lt;id root="6c99fb07-dba3-473d-98ea-08ed460c2bea"/&gt;
-              &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-              &lt;text/&gt;
-              &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="1972"/&gt;
-                &lt;high value="2008"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;value xsi:type="CD"/&gt;
-            &lt;/observation&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/&gt;
+  &lt;id root="b2defd10-6177-4029-85d6-472f76e77f30"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+  &lt;text/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;value xsi:type="CD"/&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+      &lt;id root="77f1cde7-ee92-4fde-8fd6-539901409fa7"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
+      &lt;id root="a067812f-30ff-4e22-bd1b-c1a51885d2f5"/&gt;
+      &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
+      &lt;id root="9d956ded-76a4-41c9-ac66-8fbf650c5aea"/&gt;
+      &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/&gt;
+      &lt;id root="93eb5d54-8722-4342-92b3-207f5b0aff76"/&gt;
+      &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+      &lt;text/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CD"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/&gt;
+      &lt;id root="96322b0c-1908-4218-8d10-1645818bd1d3"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/&gt;
+      &lt;id root="83f503bf-8a2c-467f-9a36-4a4f1ca74e38"/&gt;
+      &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+      &lt;text/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.40"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/&gt;
+      &lt;id root="5ea5cd98-03d0-44a2-aa77-4e4a93794065"/&gt;
+      &lt;code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+&lt;/observation&gt;</pre>
 
 </div>
 

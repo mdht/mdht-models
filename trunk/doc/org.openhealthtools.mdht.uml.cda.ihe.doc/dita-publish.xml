@@ -19,6 +19,12 @@
     	</antcall>
 	</target>
 
+	<target name="standards-xhtml">
+		<antcall target="xhtml">
+    		<param name="dita.input.valfile" value="${ditaFilePath}/ditaval_standards.xml" />
+    	</antcall>
+	</target>
+
 	<target name="standards-eclipsehelp">
 		<antcall target="eclipsehelp">
     		<param name="dita.input.valfile" value="${ditaFilePath}/ditaval_standards.xml" />
@@ -77,11 +83,31 @@
 			<property name="clean.temp" value="true" />
 		</ant>
 
-		<!-- <move file="${pdf.output}/${modelName}-book.pdf" tofile="${basedir}/${pdf.filename}" /> -->
-		<move file="${pdf.output}/org.openhealthtools.mdht.uml.cda.ihe.doc/dita/${modelName}-book.pdf" 
-			tofile="${basedir}/${pdf.filename}" />
+		<move file="${pdf.output}/${modelName}-book.pdf" tofile="${basedir}/${pdf.filename}" />
+		<!-- <move file="${pdf.output}/org.openhealthtools.mdht.uml.cda.ihe.doc/dita/${modelName}-book.pdf" 
+			tofile="${basedir}/${pdf.filename}" /> -->
 		<delete dir="${pdf.output}"/>
 		
 		<delete dir="temp"/>
 	</target>
+
+	<target name="xhtml" depends="integrate">
+		<property name="xhtml.output" value="${basedir}/xhtml" />
+		
+		<ant antfile="${dita.dir}/build.xml" target="init">
+			<property name="transtype" value="xhtml" />
+			<property name="args.input" value="${ditaFilePath}/${modelName}-web.ditamap" />
+			<property name="args.hdr" value="${ditaFilePath}/header.xml" />
+			<property name="output.dir" value="${xhtml.output}" />
+			<property name="dita.temp.dir" location="temp" />
+			<property name="clean.temp" value="true" />
+		</ant>
+		
+		<delete dir="temp"/>
+		<delete file="${xhtml.output}/dita.list"/>
+		<delete file="${xhtml.output}/dita.xml.properties"/>
+		<delete file="${xhtml.output}/delta.gif"/>
+		<delete file="${xhtml.output}/deltaend.gif"/>
+	</target>
+
 </project>

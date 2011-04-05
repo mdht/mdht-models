@@ -50,44 +50,95 @@
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="Medication.html" title="[SubstanceAdministration: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.7]">IHE Medication</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="Medication.html" title="[SubstanceAdministration: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.7]">Medication</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Subordinate Medication entries should be created for each distinct dosage.</li>
 
 </ol>
 
 
-<div class="fig fignone"><span class="figcap">Figure 1. Tapered Dose example</span>
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Tapered Dose example</strong></p>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;entry&gt;
-            &lt;substanceAdministration classCode="SBADM"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.24" assigningAuthorityName="CCD Medication Activity"/&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7" assigningAuthorityName="IHE Medication"/&gt;
-              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.8" assigningAuthorityName="IHE Tapered Dose"/&gt;
-              &lt;id root="aba72837-6a2b-4938-943e-114a3d68ae38"/&gt;
-              &lt;statusCode/&gt;
-              &lt;effectiveTime/&gt;
-              &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
-              &lt;approachSiteCode/&gt;
-              &lt;doseQuantity/&gt;
-              &lt;rateQuantity/&gt;
-              &lt;maxDoseQuantity/&gt;
-            &lt;/substanceAdministration&gt;
-          &lt;/entry&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+&lt;substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.8"/&gt;
+  &lt;id root="59618ad2-4c96-4803-a782-7174e5d61762"/&gt;
+  &lt;statusCode/&gt;
+  &lt;effectiveTime value="20110404"/&gt;
+  &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
+  &lt;approachSiteCode/&gt;
+  &lt;doseQuantity/&gt;
+  &lt;rateQuantity/&gt;
+  &lt;maxDoseQuantity/&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
+      &lt;id root="cfe15033-5e3b-4ea4-992b-26e03b03bb48"/&gt;
+      &lt;code code="30973-2" codeSystemName="" displayName="Dose number"/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="INT"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+      &lt;id root="5cd2fd07-415e-47f5-96b7-2728b186aaae"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act moodCode="INT"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
+      &lt;id root="2f52a0bd-a79b-4426-9448-fdaaf58e46ea"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
+      &lt;id root="973a232b-4c28-42af-98f6-7d5a3bb6a389"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+          &lt;id root="e62a1611-bf7f-4476-a6da-60d6c6da2773"/&gt;
+          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+&lt;/substanceadministration&gt;</pre>
 
 </div>
 
