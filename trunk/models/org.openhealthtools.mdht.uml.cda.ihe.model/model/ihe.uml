@@ -913,6 +913,56 @@ may contain other information (take with food, et cetera).</body>
       <memberEnd href=".controlled/ihe-codedSurgeries.uml#__ORoMFWKEeCrQoPO8cZUSQ"/>
       <memberEnd href="#__OSPQVWKEeCrQoPO8cZUSQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OhHM8FsZEeCBQI4cjwqCWQ">
+      <ownedEnd xmi:id="_OhHM8VsZEeCBQI4cjwqCWQ" association="_OhHM8FsZEeCBQI4cjwqCWQ">
+        <type xmi:type="uml:Class" href=".controlled/ihe-allergiesReactions.uml#_O7-UAHrUEd68l9lQ-TLEBQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ihe-allergiesReactions.uml#_OhFXwFsZEeCBQI4cjwqCWQ"/>
+      <memberEnd href="#_OhHM8VsZEeCBQI4cjwqCWQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YQYuoFsZEeCBQI4cjwqCWQ">
+      <ownedEnd xmi:id="_YQYuoVsZEeCBQI4cjwqCWQ" association="_YQYuoFsZEeCBQI4cjwqCWQ">
+        <type xmi:type="uml:Class" href=".controlled/ihe-allergiesReactions.uml#_pOtQsHrDEd68l9lQ-TLEBQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ihe-allergiesReactions.uml#_YQYHkFsZEeCBQI4cjwqCWQ"/>
+      <memberEnd href="#_YQYuoVsZEeCBQI4cjwqCWQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_88SO0FsZEeCBQI4cjwqCWQ" name="ProblemEntryReactionObservationContainer">
+      <generalization xmi:id="_88S14FsZEeCBQI4cjwqCWQ">
+        <general xmi:type="uml:Class" href=".controlled/ihe-activeProblems.uml#_3ZiEwGdIEd6Hk_bPOfEjYA"/>
+      </generalization>
+      <generalization xmi:id="_ATYGcFsaEeCBQI4cjwqCWQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#__XC4cHrREd68l9lQ-TLEBQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DRzmcFsaEeCBQI4cjwqCWQ">
+      <ownedEnd xmi:id="_DRzmcVsaEeCBQI4cjwqCWQ" association="_DRzmcFsaEeCBQI4cjwqCWQ">
+        <type xmi:type="uml:Class" href=".controlled/ihe-allergiesReactions.uml#_gkbLsHrEEd68l9lQ-TLEBQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ihe-allergiesReactions.uml#_DRy_YFsaEeCBQI4cjwqCWQ"/>
+      <memberEnd href="#_DRzmcVsaEeCBQI4cjwqCWQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FCm1sFsaEeCBQI4cjwqCWQ">
+      <ownedEnd xmi:id="_FCm1sVsaEeCBQI4cjwqCWQ" association="_FCm1sFsaEeCBQI4cjwqCWQ">
+        <type xmi:type="uml:Class" href=".controlled/ihe-allergiesReactions.uml#_gkbLsHrEEd68l9lQ-TLEBQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ihe-allergiesReactions.uml#_FCmOoFsaEeCBQI4cjwqCWQ"/>
+      <memberEnd href="#_FCm1sVsaEeCBQI4cjwqCWQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IrRlgFsaEeCBQI4cjwqCWQ">
+      <ownedEnd xmi:id="_IrSMkFsaEeCBQI4cjwqCWQ" association="_IrRlgFsaEeCBQI4cjwqCWQ">
+        <type xmi:type="uml:Class" href=".controlled/ihe-allergiesReactions.uml#_gkbLsHrEEd68l9lQ-TLEBQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ihe-allergiesReactions.uml#_IrMF8FsaEeCBQI4cjwqCWQ"/>
+      <memberEnd href="#_IrSMkFsaEeCBQI4cjwqCWQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NI4ZQVsaEeCBQI4cjwqCWQ">
+      <ownedEnd xmi:id="_NI4ZQlsaEeCBQI4cjwqCWQ" association="_NI4ZQVsaEeCBQI4cjwqCWQ">
+        <type xmi:type="uml:Class" href=".controlled/ihe-allergiesReactions.uml#_gkbLsHrEEd68l9lQ-TLEBQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ihe-allergiesReactions.uml#_NI3yMFsaEeCBQI4cjwqCWQ"/>
+      <memberEnd href="#_NI4ZQlsaEeCBQI4cjwqCWQ"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -1081,4 +1131,10 @@ may contain other information (take with food, et cetera).</body>
   <CDA:ValueSetConstraint xmi:id="_Ss-5EFWKEeCrQoPO8cZUSQ" identifier="2.16.840.1.113883.1.11.20.15" name="ProcedureStatusCode" version="20061017" base_Property="_Ss9D4FWKEeCrQoPO8cZUSQ"/>
   <CDA:AssociationValidation xmi:id="_JlFrAFWLEeCrQoPO8cZUSQ" severity="WARNING" base_Association="_9F60kFWKEeCrQoPO8cZUSQ"/>
   <CDA:AssociationValidation xmi:id="_KEnfoFWLEeCrQoPO8cZUSQ" base_Association="__OSPQFWKEeCrQoPO8cZUSQ"/>
+  <CDA:AssociationValidation xmi:id="_PlCvIFsZEeCBQI4cjwqCWQ" base_Association="_OhHM8FsZEeCBQI4cjwqCWQ"/>
+  <CDA:EntryRelationship xmi:id="_dacYsFsZEeCBQI4cjwqCWQ" base_Association="_YQYuoFsZEeCBQI4cjwqCWQ" typeCode="SUBJ"/>
+  <CDA:EntryRelationship xmi:id="_P_8F8FsaEeCBQI4cjwqCWQ" severity="INFO" base_Association="_NI4ZQVsaEeCBQI4cjwqCWQ" typeCode="SUBJ"/>
+  <CDA:EntryRelationship xmi:id="_TZnXgFsaEeCBQI4cjwqCWQ" severity="INFO" base_Association="_IrRlgFsaEeCBQI4cjwqCWQ" typeCode="REFR"/>
+  <CDA:EntryRelationship xmi:id="_WhhjoFsaEeCBQI4cjwqCWQ" severity="INFO" base_Association="_FCm1sFsaEeCBQI4cjwqCWQ" typeCode="REFR"/>
+  <CDA:EntryRelationship xmi:id="_cT81QFsaEeCBQI4cjwqCWQ" severity="INFO" base_Association="_DRzmcFsaEeCBQI4cjwqCWQ" typeCode="MFST"/>
 </xmi:XMI>

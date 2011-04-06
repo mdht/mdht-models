@@ -491,6 +491,13 @@ resolved</body>
       <memberEnd href=".controlled/hitsp-surgeries.uml#_cuJokFV1EeCw2ulF0_tZWA"/>
       <memberEnd href="#_cuK2sFV1EeCw2ulF0_tZWA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_tXufUVsaEeCBQI4cjwqCWQ">
+      <ownedEnd xmi:id="_tXvGYFsaEeCBQI4cjwqCWQ" association="_tXufUVsaEeCBQI4cjwqCWQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-allergiesReactions.uml#_VGnj8MfZEd6VjLXh4DcWSg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-allergiesReactions.uml#_tXt4QFsaEeCBQI4cjwqCWQ"/>
+      <memberEnd href="#_tXvGYFsaEeCBQI4cjwqCWQ"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -668,4 +675,5 @@ resolved</body>
   <CDA:PropertyValidation xmi:id="_WeiNM1WMEeCrQoPO8cZUSQ" severity="WARNING" base_Property="_WeiNMFWMEeCrQoPO8cZUSQ">
     <ruleId>CONF-433</ruleId>
   </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_umG-AFsaEeCBQI4cjwqCWQ" base_Association="_tXufUVsaEeCBQI4cjwqCWQ"/>
 </xmi:XMI>

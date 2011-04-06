@@ -10,6 +10,11 @@
     <generalization xmi:id="_F7xSEHrEEd68l9lQ-TLEBQ">
       <general xmi:type="uml:Class" href="../ihe.uml#_GgvgUDxbEd6JwqSGecoePg"/>
     </generalization>
+    <ownedAttribute xmi:id="_YQYHkFsZEeCBQI4cjwqCWQ" name="allergyIntolerance" type="_gkbLsHrEEd68l9lQ-TLEBQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_abnQEFsZEeCBQI4cjwqCWQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_abnQEVsZEeCBQI4cjwqCWQ" value="1"/>
+      <association href="../ihe.uml#_YQYuoFsZEeCBQI4cjwqCWQ"/>
+    </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_gkbLsHrEEd68l9lQ-TLEBQ" name="AllergyIntolerance">
     <eAnnotations xmi:id="_4OTz0HrUEd68l9lQ-TLEBQ" source="uml2.alias">
@@ -132,6 +137,28 @@ case where a patient experiences an allergic reaction to an unknown substance.</
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="ihe-activeProblems.uml#_slNZAIwHEd6B6JSUB00H7g"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_DRy_YFsaEeCBQI4cjwqCWQ" name="problemEntryReactionObservationContainer">
+      <type xmi:type="uml:Class" href="../ihe.uml#_88SO0FsZEeCBQI4cjwqCWQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bb-EYFsaEeCBQI4cjwqCWQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bb-EYVsaEeCBQI4cjwqCWQ"/>
+      <association href="../ihe.uml#_DRzmcFsaEeCBQI4cjwqCWQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FCmOoFsaEeCBQI4cjwqCWQ" name="severity">
+      <type xmi:type="uml:Class" href="ihe-activeProblems.uml#_MIoHYCQKEeCxCon8a79rfA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FCmOoVsaEeCBQI4cjwqCWQ"/>
+      <association href="../ihe.uml#_FCm1sFsaEeCBQI4cjwqCWQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IrMF8FsaEeCBQI4cjwqCWQ" name="problemStatusObservation">
+      <type xmi:type="uml:Class" href="ihe-activeProblems.uml#_s7LQECQNEeCxCon8a79rfA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IrQXYFsaEeCBQI4cjwqCWQ"/>
+      <association href="../ihe.uml#_IrRlgFsaEeCBQI4cjwqCWQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NI3yMFsaEeCBQI4cjwqCWQ" name="comment">
+      <type xmi:type="uml:Class" href="../ihe.uml#_R_uVkEvdEd-GNbUQBie2ig"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PWNMcFsaEeCBQI4cjwqCWQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PWNMcVsaEeCBQI4cjwqCWQ"/>
+      <association href="../ihe.uml#_NI4ZQVsaEeCBQI4cjwqCWQ"/>
+    </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_O7-UAHrUEd68l9lQ-TLEBQ" name="AllergiesReactionsSection">
     <eAnnotations xmi:id="_gbVG0XrUEd68l9lQ-TLEBQ" source="uml2.alias">
@@ -144,6 +171,11 @@ associated adverse reactions suffered by the patient.</body>
     <generalization xmi:id="_W-wesHrUEd68l9lQ-TLEBQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-alerts.uml#_PgsSAHrREd68l9lQ-TLEBQ"/>
     </generalization>
+    <ownedAttribute xmi:id="_OhFXwFsZEeCBQI4cjwqCWQ" name="allergyIntoleranceConcern" type="_pOtQsHrDEd68l9lQ-TLEBQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qw6FUFsZEeCBQI4cjwqCWQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qw6FUVsZEeCBQI4cjwqCWQ" value="1"/>
+      <association href="../ihe.uml#_OhHM8FsZEeCBQI4cjwqCWQ"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_JL93gHrEEd68l9lQ-TLEBQ" base_Class="_pOtQsHrDEd68l9lQ-TLEBQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.5.3" assigningAuthorityName="IHE PCC"/>
   <CDA:CDATemplate xmi:id="_ipVpwHrEEd68l9lQ-TLEBQ" base_Class="_gkbLsHrEEd68l9lQ-TLEBQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.6" assigningAuthorityName="IHE PCC"/>
