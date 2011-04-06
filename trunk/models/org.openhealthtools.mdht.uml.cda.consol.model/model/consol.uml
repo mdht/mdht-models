@@ -27,7 +27,6 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-shared.uml#_VEookFfdEeCb0LEisK_hTQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_VE0OwFfdEeCb0LEisK_hTQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-shared.uml#_VE1c4FfdEeCb0LEisK_hTQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_VFEtcFfdEeCb0LEisK_hTQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_VFF7kFfdEeCb0LEisK_hTQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_VFQ6sFfdEeCb0LEisK_hTQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_VFSI0FfdEeCb0LEisK_hTQ"/>
@@ -35,7 +34,6 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-shared.uml#_VFe9IFfdEeCb0LEisK_hTQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-shared.uml#_VFouIlfdEeCb0LEisK_hTQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-shared.uml#_VFpVMFfdEeCb0LEisK_hTQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_VFtmpFfdEeCb0LEisK_hTQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_VFyfIVfdEeCb0LEisK_hTQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_VF7CAFfdEeCb0LEisK_hTQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_VGAhkFfdEeCb0LEisK_hTQ"/>
@@ -118,13 +116,6 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-vitalsigns.uml#_PxR_AFmSEeCxj9gXXiOSmQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_ztXWYFmTEeCxj9gXXiOSmQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_w63kIFmUEeCBjLscJJRYEg"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_onorMFmrEeCpme9GHkYrRA">
-      <ownedEnd xmi:id="_onpSQFmrEeCpme9GHkYrRA" association="_onorMFmrEeCpme9GHkYrRA">
-        <type xmi:type="uml:Class" href=".controlled/consol-problems.uml#_VD4aoFfdEeCb0LEisK_hTQ"/>
-      </ownedEnd>
-      <memberEnd href=".controlled/consol-problems.uml#_onkZwFmrEeCpme9GHkYrRA"/>
-      <memberEnd href="#_onpSQFmrEeCpme9GHkYrRA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_CUG-gFmuEeCpme9GHkYrRA">
       <ownedEnd xmi:id="_CUG-gVmuEeCpme9GHkYrRA" association="_CUG-gFmuEeCpme9GHkYrRA">
         <type xmi:type="uml:Class" href=".controlled/consol-problems.uml#_VD4aoFfdEeCb0LEisK_hTQ"/>
@@ -203,4 +194,6 @@
     <ruleId>6.3.4.17.7</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_WgRlQFsAEeCP3rMQIKQsIw" base_Class="_K6qNAFsAEeCP3rMQIKQsIw" templateId="2.16.840.1.113883.10.20.21.2.7"/>
+  <CDA:AssociationValidation xmi:id="_iKpYMF8SEeC6cuBpIAWIkQ" severity="INFO" base_Association="_CUG-gFmuEeCpme9GHkYrRA"/>
+  <CDA:AssociationValidation xmi:id="_yHAooF-eEeCu6t3PoD5s8Q"/>
 </xmi:XMI>
