@@ -24,7 +24,7 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/apitest-problems.uml#_EYCSoGCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_EYN40mCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/apitest-problems.uml#_EYQVEGCUEeCVapLQyCJtvg"/>
-    <packagedElement xmi:type="uml:Class" href=".controlled/apitest-shared.uml#_EYoIgGCUEeCVapLQyCJtvg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/apitest-familyhistory.uml#_EYoIgGCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_EY5OQGCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/apitest-problems.uml#_EY6cYGCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_EZJs8GCUEeCVapLQyCJtvg"/>
@@ -39,6 +39,12 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_EaFhEWCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/apitest-problems.uml#_EaOrAGCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_EaWm0GCUEeCVapLQyCJtvg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_5TPPkWEvEeCE87GgfH3r_A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/apitest-familyhistory.uml#_szdjEGFZEeCE87GgfH3r_A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/apitest-familyhistory.uml#_szkQwGFZEeCE87GgfH3r_A"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/apitest-familyhistory.uml#_vBHtcGFZEeCE87GgfH3r_A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_rz8xYWFaEeC0c9Poe4-KNQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/apitest-familyhistory.uml#_vGJsgGFbEeC0c9Poe4-KNQ"/>
     <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
       <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
