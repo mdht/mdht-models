@@ -110,13 +110,8 @@
     <eAnnotations xmi:id="_EZvi0GCUEeCVapLQyCJtvg" source="sourceClass">
       <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/hitsp.uml#_B973gEveEd-GNbUQBie2ig"/>
     </eAnnotations>
-    <ownedComment xmi:id="_EaABgGCUEeCVapLQyCJtvg">
-      <body>Used to contain comments associated with any of the data within the document.</body>
-    </ownedComment>
     <ownedComment xmi:id="_EaABgWCUEeCVapLQyCJtvg">
-      <body>&lt;p>This entry allows for a comment to be supplied with each entry. For CDA this structure is usually included in the target act using the &amp;lt;entryRelationship> element defined in the CDA Schema, but can also be used in the &amp;lt;component> element when the comment appears within an &amp;lt;organizer>.&lt;/p>&#xD;
-&#xD;
-&lt;p>Any condition or allergy may be the subject of a comment.&lt;/p></body>
+      <body>&lt;p>This entry allows for a comment to be supplied with each entry. For CDA this structure is usually included in the target act using the &amp;lt;entryRelationship> element defined in the CDA Schema, but can also be used in the &amp;lt;component> element when the comment appears within an &amp;lt;organizer>.&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_EZ8XIWCUEeCVapLQyCJtvg" name="useInversionInd">
       <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_R_uVkEvdEd-GNbUQBie2ig"/>
@@ -211,18 +206,11 @@
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EZ4FsWCUEeCVapLQyCJtvg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_EZttpmCUEeCVapLQyCJtvg" name="author" association="_EZ7wEGCUEeCVapLQyCJtvg">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EZttp2CUEeCVapLQyCJtvg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EZttqGCUEeCVapLQyCJtvg" value="1"/>
-    </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_EZ4swGCUEeCVapLQyCJtvg" memberEnd="_EZ4FsGCUEeCVapLQyCJtvg _EZ4swWCUEeCVapLQyCJtvg">
     <ownedEnd xmi:id="_EZ4swWCUEeCVapLQyCJtvg" type="_EZttoGCUEeCVapLQyCJtvg" association="_EZ4swGCUEeCVapLQyCJtvg"/>
   </uml:Association>
-  <uml:Association xmi:id="_EZ7wEGCUEeCVapLQyCJtvg" memberEnd="_EZttpmCUEeCVapLQyCJtvg _EZ8XIGCUEeCVapLQyCJtvg">
-    <ownedEnd xmi:id="_EZ8XIGCUEeCVapLQyCJtvg" type="_EZttoGCUEeCVapLQyCJtvg" association="_EZ7wEGCUEeCVapLQyCJtvg"/>
-  </uml:Association>
+  <uml:Association xmi:id="_EZ7wEGCUEeCVapLQyCJtvg"/>
   <CDA:CDATemplate xmi:id="_EZttqWCUEeCVapLQyCJtvg" base_Class="_EZttoGCUEeCVapLQyCJtvg" templateId="2.16.840.1.113883.3.88.11.83.11">
     <ruleId>C83-[DE-10-CDA-2]</ruleId>
   </CDA:CDATemplate>

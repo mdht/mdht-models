@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
-  <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="consol">
+  <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="apitest">
     <packageImport xmi:id="_JCoH8FccEeCzOKs2Ez1M5w">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
     </packageImport>
@@ -34,7 +34,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_EZsfgGCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/apitest-shared.uml#_EZttoGCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-shared.uml#_EZ4swGCUEeCVapLQyCJtvg"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/apitest-shared.uml#_EZ7wEGCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_EaAokGCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_EaFhEWCUEeCVapLQyCJtvg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/apitest-problems.uml#_EaOrAGCUEeCVapLQyCJtvg"/>
@@ -45,6 +44,8 @@
     <packagedElement xmi:type="uml:Class" href=".controlled/apitest-familyhistory.uml#_vBHtcGFZEeCE87GgfH3r_A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-problems.uml#_rz8xYWFaEeC0c9Poe4-KNQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-familyhistory.uml#_vGJsgGFbEeC0c9Poe4-KNQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/apitest-documents.uml#_QBOBkGFrEeCrVK9xDfPNKw"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/apitest-documents.uml#_YVCR4GFrEeCrVK9xDfPNKw"/>
     <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
       <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -52,5 +53,5 @@
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
   </uml:Package>
-  <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="consol" nsURI="http://www.openhealthtools.org/mdht/uml/cda/consol" packageName="consol" prefix="Consol" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
+  <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="apitest" nsURI="http://www.openhealthtools.org/mdht/uml/cda/apitest" packageName="apitest" prefix="APITest" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
 </xmi:XMI>
