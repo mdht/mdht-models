@@ -29,7 +29,6 @@ Content Modules.</body>
   </uml:Class>
   <uml:Class xmi:id="_hBLMcBj6EeCf9aMNaCAtDQ" name="ExternalReference">
     <ownedRule xmi:id="_E31joFWJEeCJpM11UriAaA" name="hasNoCode">
-      <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model.kp/model/ihe.uml#_PuMNsFV_EeCV8IJ4NN9vcQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_E31joVWJEeCJpM11UriAaA">
         <language>Analysis</language>
         <body>the code/@nullFlavor attribute value is 'NA'</body>
@@ -41,14 +40,12 @@ Content Modules.</body>
 reference material (typeCode='REFR') for the reader. If this distinction is not supported by the&#xD;
 source EMR system, the value of typeCode should be REFR.</body>
       </ownedComment>
-      <constrainedElement xmi:type="uml:Constraint" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model.kp/model/ihe.uml#_PuMNsVV_EeCV8IJ4NN9vcQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GzjCYVWJEeCJpM11UriAaA">
         <language>Analysis</language>
         <body>reference/@typeCode attribute value is either 'SPRT' (supporting documentation) or 'REFR' (reference material)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_IB3PoFWJEeCJpM11UriAaA" name="hasReferenceExternalDocument">
-      <constrainedElement xmi:type="uml:Constraint" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model.kp/model/ihe.uml#_PuMNs1V_EeCV8IJ4NN9vcQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_IB3PoVWJEeCJpM11UriAaA">
         <language>Analysis</language>
         <body>the reference element contains an externalDocument element with @classCode = 'DOC' and @moodCode = 'EVN'.</body>
@@ -60,14 +57,12 @@ source EMR system, the value of typeCode should be REFR.</body>
 document can be located. For CDA, the link should also be present in the narrative inside the&#xD;
 CDA Narrative in a &amp;lt;linkHTML> element.</body>
       </ownedComment>
-      <constrainedElement xmi:type="uml:Constraint" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model.kp/model/ihe.uml#_PuMNtlV_EeCV8IJ4NN9vcQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_J9BUwlWJEeCJpM11UriAaA">
         <language>Analysis</language>
         <body>the reference/externalDocument/id is present</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_LRd_MFWJEeCJpM11UriAaA" name="hasReferenceExternalDocumentText">
-      <constrainedElement xmi:type="uml:Constraint" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model.kp/model/ihe.uml#_PuMNuFV_EeCV8IJ4NN9vcQ"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_LRd_MVWJEeCJpM11UriAaA">
         <language>Analysis</language>
         <body>the reference/externalDocument/text is present to provide a link to the original document</body>

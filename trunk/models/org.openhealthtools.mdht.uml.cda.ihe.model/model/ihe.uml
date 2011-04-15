@@ -205,7 +205,6 @@ patient's current complaints.</body>
     <packagedElement xmi:type="uml:Class" xmi:id="_uP4tkDuMEd-B8KE6Jx0UNQ" name="ProcedureEntry"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_6yfdEDuNEd-B8KE6Jx0UNQ" name="ProcedureEntryProcedureActivityProcedure">
       <ownedRule xmi:id="_gOxfkFWJEeCJpM11UriAaA" name="moodCode">
-        <constrainedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model.kp/model/.controlled/ihe-codedSurgeries.uml#_uP4tkDuMEd-B8KE6Jx0UNQ"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_gOxfkVWJEeCJpM11UriAaA">
           <language>Analysis</language>
           <body>Value for moodCode is 'INT' to indicate a planned procedure or 'EVN' to describe a procedure that has already occured.</body>
@@ -220,21 +219,18 @@ patient's current complaints.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_jvplUFWJEeCJpM11UriAaA" name="templateSelection">
-        <constrainedElement xmi:type="uml:Constraint" href="../../org.openhealthtools.mdht.uml.cda.ihe.model.kp/model/.controlled/ihe-codedSurgeries.uml#_PGhRUFTdEeCl6d4NWnPQ8Q"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_jvplUVWJEeCJpM11UriAaA">
           <language>Analysis</language>
           <body>When the procedure is in event mood (moodCode='EVN'), this entry conforms to the CCD template 2.16.840.1.113883.10.20.1.29, and when in intent mood, this entry conforms to the CCD template 2.16.840.1.113883.10.20.1.25</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_lpNH8FWJEeCJpM11UriAaA" name="priorityCode">
-        <constrainedElement xmi:type="uml:Constraint" href="../../org.openhealthtools.mdht.uml.cda.ihe.model.kp/model/.controlled/ihe-codedSurgeries.uml#_MlIdMFTeEeCl6d4NWnPQ8Q"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_lpNH8VWJEeCJpM11UriAaA">
           <language>Analysis</language>
           <body>&amp;lt;priorityCode> SHALL be present in INT mood when effectiveTime is not provided, it MAY be present in other moods</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_m32FUFWJEeCJpM11UriAaA" name="hasInversionIndForEncounter">
-        <constrainedElement xmi:type="uml:Constraint" href="../../org.openhealthtools.mdht.uml.cda.ihe.model.kp/model/.controlled/ihe-codedSurgeries.uml#_haHtoFVjEeCF0_eazkq-rw"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_m32FUVWJEeCJpM11UriAaA">
           <language>Analysis</language>
           <body>The entryRelationship/@inversionInd attribute is 'true' for the reference to encounter (typecode=COMP)</body>
@@ -259,7 +255,7 @@ patient's current complaints.</body>
         <type xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_0TsKoEqtEeCJlNjgFmcEiA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8hcrAFWJEeCrQoPO8cZUSQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_-b_FEFWJEeCrQoPO8cZUSQ" name="internalReference2" association="_-b_sIFWJEeCrQoPO8cZUSQ">
+      <ownedAttribute xmi:id="_-b_FEFWJEeCrQoPO8cZUSQ" name="internalReferenceReason" association="_-b_sIFWJEeCrQoPO8cZUSQ">
         <type xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_0TsKoEqtEeCJlNjgFmcEiA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D9QVQFWKEeCrQoPO8cZUSQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D9QVQVWKEeCrQoPO8cZUSQ" value="1"/>
