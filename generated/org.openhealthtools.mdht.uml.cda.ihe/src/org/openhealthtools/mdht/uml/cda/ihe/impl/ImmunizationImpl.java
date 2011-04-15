@@ -59,6 +59,33 @@ public class ImmunizationImpl extends MedicationActivityImpl implements Immuniza
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationOperations.validateImmunizationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationOperations.validateImmunizationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationOperations.validateImmunizationMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Immunization init() {
     		CDAUtil.init(this);
     		return this;

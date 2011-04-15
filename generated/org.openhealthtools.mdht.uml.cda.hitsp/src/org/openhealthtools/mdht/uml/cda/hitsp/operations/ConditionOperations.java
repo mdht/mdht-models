@@ -33,7 +33,6 @@ import org.openhealthtools.mdht.uml.cda.hitsp.HITSPFactory;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPlugin;
 import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ProblemConcernEntryOperations;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
@@ -303,7 +302,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONDITION_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ihe::ProblemEntry) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
+	protected static final String VALIDATE_CONDITION_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(hitsp::ConditionEntry) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionConditionEntry(Condition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Condition Entry</em>}' invariant operation.
@@ -319,7 +318,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ihe::ProblemEntry) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(hitsp::ConditionEntry) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
 	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -375,7 +374,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONDITION_ENTRIES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemEntry)).oclAsType(ihe::ProblemEntry)";
+	protected static final String GET_CONDITION_ENTRIES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hitsp::ConditionEntry)).oclAsType(hitsp::ConditionEntry)";
 
 	/**
 	 * The cached OCL query for the '{@link #getConditionEntries(Condition) <em>Get Condition Entries</em>}' query operation.
@@ -391,12 +390,12 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemEntry)).oclAsType(ihe::ProblemEntry)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hitsp::ConditionEntry)).oclAsType(hitsp::ConditionEntry)
 	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<ProblemEntry> getConditionEntries(Condition condition) {
+	public static  EList<ConditionEntry> getConditionEntries(Condition condition) {
 		if (GET_CONDITION_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(HITSPPackage.Literals.CONDITION, HITSPPackage.Literals.CONDITION.getEAllOperations().get(75));
@@ -409,8 +408,8 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CONDITION_ENTRIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProblemEntry> result = (Collection<ProblemEntry>) query.evaluate(condition);
-		return new BasicEList.UnmodifiableEList<ProblemEntry>(result.size(), result.toArray());
+		Collection<ConditionEntry> result = (Collection<ConditionEntry>) query.evaluate(condition);
+		return new BasicEList.UnmodifiableEList<ConditionEntry>(result.size(), result.toArray());
 	}
 
 } // ConditionOperations

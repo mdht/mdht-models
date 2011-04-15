@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
+import org.openhealthtools.mdht.uml.cda.Supply;
 import org.openhealthtools.mdht.uml.cda.ccd.AlertsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument;
 import org.openhealthtools.mdht.uml.cda.ccd.CoverageActivity;
@@ -34,6 +35,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultObservation;
+import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
@@ -68,8 +70,10 @@ import org.openhealthtools.mdht.uml.cda.hitsp.MedicationCombinationMedication;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationConditionalDose;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationInformation;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationNormalDose;
+import org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformation;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationSplitDose;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationTaperedDose;
+import org.openhealthtools.mdht.uml.cda.hitsp.MedicationType;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.PatientSummary;
@@ -120,6 +124,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProductEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
+import org.openhealthtools.mdht.uml.cda.ihe.SupplyEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
 import org.openhealthtools.mdht.uml.cda.ihe.VitalSignObservation;
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
@@ -190,6 +195,14 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseMedication(Medication object) {
 				return createMedicationAdapter();
+			}
+			@Override
+			public Adapter caseMedicationType(MedicationType object) {
+				return createMedicationTypeAdapter();
+			}
+			@Override
+			public Adapter caseMedicationOrderInformation(MedicationOrderInformation object) {
+				return createMedicationOrderInformationAdapter();
 			}
 			@Override
 			public Adapter caseCondition(Condition object) {
@@ -436,12 +449,24 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 				return createIHE_MedicationAdapter();
 			}
 			@Override
-			public Adapter caseProblemConcernEntry(ProblemConcernEntry object) {
-				return createProblemConcernEntryAdapter();
-			}
-			@Override
 			public Adapter caseObservation(Observation object) {
 				return createObservationAdapter();
+			}
+			@Override
+			public Adapter caseSupply(Supply object) {
+				return createSupplyAdapter();
+			}
+			@Override
+			public Adapter caseSupplyActivity(SupplyActivity object) {
+				return createSupplyActivityAdapter();
+			}
+			@Override
+			public Adapter caseSupplyEntry(SupplyEntry object) {
+				return createSupplyEntryAdapter();
+			}
+			@Override
+			public Adapter caseProblemConcernEntry(ProblemConcernEntry object) {
+				return createProblemConcernEntryAdapter();
 			}
 			@Override
 			public Adapter caseProblemObservation(ProblemObservation object) {
@@ -860,6 +885,34 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMedicationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationType <em>Medication Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.MedicationType
+	 * @generated
+	 */
+	public Adapter createMedicationTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformation <em>Medication Order Information</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformation
+	 * @generated
+	 */
+	public Adapter createMedicationOrderInformationAdapter() {
 		return null;
 	}
 
@@ -1742,6 +1795,48 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Supply <em>Supply</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.Supply
+	 * @generated
+	 */
+	public Adapter createSupplyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity <em>Supply Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity
+	 * @generated
+	 */
+	public Adapter createSupplyActivityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.SupplyEntry <em>Supply Entry</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.SupplyEntry
+	 * @generated
+	 */
+	public Adapter createSupplyEntryAdapter() {
 		return null;
 	}
 

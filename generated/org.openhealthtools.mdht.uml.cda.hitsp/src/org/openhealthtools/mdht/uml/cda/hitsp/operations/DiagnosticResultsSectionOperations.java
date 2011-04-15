@@ -36,7 +36,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedResultsSectionOperat
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.DiagnosticResultsSection#validateDiagnosticResultsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.DiagnosticResultsSection#validateDiagnosticResultsSectionProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Procedure</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.DiagnosticResultsSection#validateDiagnosticResultsSectionDiagnosticProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Diagnostic Procedure</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.DiagnosticResultsSection#validateDiagnosticResultsSectionResult(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Result</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.DiagnosticResultsSection#getDiagnosticProcedures() <em>Get Diagnostic Procedures</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.DiagnosticResultsSection#getResults() <em>Get Results</em>}</li>
@@ -113,24 +113,24 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Procedure</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Diagnostic Procedure</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticResultsSectionProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))";
+	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Procedure</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Diagnostic Procedure</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticResultsSectionProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_DIAGNOSTIC_RESULTS_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,25 +143,25 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDiagnosticResultsSectionProcedure(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_DIAGNOSTIC_RESULTS_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	public static  boolean validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
 			try {
-				VALIDATE_DIAGNOSTIC_RESULTS_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticResultsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticResultsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_PROCEDURE,
-						 HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionProcedure"),
+						 HITSPValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE,
+						 HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionDiagnosticProcedure"),
 						 new Object [] { diagnosticResultsSection }));
 			}
 			return false;

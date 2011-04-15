@@ -44,6 +44,24 @@ public interface HITSPFactory extends EFactory {
 	Medication createMedication();
 
 	/**
+	 * Returns a new object of class '<em>Medication Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Type</em>'.
+	 * @generated
+	 */
+	MedicationType createMedicationType();
+
+	/**
+	 * Returns a new object of class '<em>Medication Order Information</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Order Information</em>'.
+	 * @generated
+	 */
+	MedicationOrderInformation createMedicationOrderInformation();
+
+	/**
 	 * Returns a new object of class '<em>Condition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -122,15 +122,6 @@ public interface IHEFactory extends EFactory {
 	HealthStatusObservation createHealthStatusObservation();
 
 	/**
-	 * Returns a new object of class '<em>Medication</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication</em>'.
-	 * @generated
-	 */
-	Medication createMedication();
-
-	/**
 	 * Returns a new object of class '<em>Medications Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -156,6 +147,15 @@ public interface IHEFactory extends EFactory {
 	 * @generated
 	 */
 	AllergyIntolerance createAllergyIntolerance();
+
+	/**
+	 * Returns a new object of class '<em>Problem Entry Reaction Observation Container</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Entry Reaction Observation Container</em>'.
+	 * @generated
+	 */
+	ProblemEntryReactionObservationContainer createProblemEntryReactionObservationContainer();
 
 	/**
 	 * Returns a new object of class '<em>Allergies Reactions Section</em>'.
@@ -581,6 +581,24 @@ public interface IHEFactory extends EFactory {
 	Comment createComment();
 
 	/**
+	 * Returns a new object of class '<em>Internal Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Internal Reference</em>'.
+	 * @generated
+	 */
+	InternalReference createInternalReference();
+
+	/**
+	 * Returns a new object of class '<em>Patient Medical Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Medical Instructions</em>'.
+	 * @generated
+	 */
+	PatientMedicalInstructions createPatientMedicalInstructions();
+
+	/**
 	 * Returns a new object of class '<em>Payer Entry</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -642,6 +660,15 @@ public interface IHEFactory extends EFactory {
 	 * @generated
 	 */
 	SupplyEntry createSupplyEntry();
+
+	/**
+	 * Returns a new object of class '<em>Medication Fullfillment Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Fullfillment Instructions</em>'.
+	 * @generated
+	 */
+	MedicationFullfillmentInstructions createMedicationFullfillmentInstructions();
 
 	/**
 	 * Returns a new object of class '<em>Pregnancy History Section</em>'.

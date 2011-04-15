@@ -15,7 +15,9 @@ package org.openhealthtools.mdht.uml.cda.ihe.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceConcern;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.AllergyIntoleranceConcernOperations;
@@ -57,6 +59,24 @@ public class AllergyIntoleranceConcernImpl extends ConcernEntryImpl implements A
 	 */
 	public boolean validateAllergyIntoleranceConcernTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyIntoleranceConcernAllergyIntolerance(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernAllergyIntolerance(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AllergyIntolerance> getAllergyIntolerances() {
+		return AllergyIntoleranceConcernOperations.getAllergyIntolerances(this);
 	}
 
 	/**

@@ -9,6 +9,7 @@ package org.openhealthtools.mdht.uml.cda.ihe;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
 
 /**
@@ -18,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getProcedureEntryProcedureActivityProcedure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.19' constraints.validation.error='ProcedureEntryProcedureActivityProcedureTemplateId ProcedureEntryProcedureActivityProcedureHasTextReference ProcedureEntryProcedureActivityProcedureCode ProcedureEntryProcedureActivityProcedureId ProcedureEntryProcedureActivityProcedureStatusCode ProcedureEntryProcedureActivityProcedureText' constraints.validation.warning='ProcedureEntryProcedureActivityProcedureEffectiveTime' constraints.validation.info='ProcedureEntryProcedureActivityProcedureApproachSiteCode ProcedureEntryProcedureActivityProcedureTargetSiteCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.19' constraints.validation.error='ProcedureEntryProcedureActivityProcedureTemplateId ProcedureEntryProcedureActivityProcedureHasTextReference ProcedureEntryProcedureActivityProcedureClassCode ProcedureEntryProcedureActivityProcedureText' classCode='PROC' constraints.validation.info='ProcedureEntryProcedureActivityProcedureApproachSiteCode ProcedureEntryProcedureActivityProcedureInternalReference ProcedureEntryProcedureActivityProcedureInternalReferenceReason'"
  * @generated
  */
 public interface ProcedureEntryProcedureActivityProcedure extends ProcedureActivityProcedure, ProcedureEntry {
@@ -52,11 +53,24 @@ public interface ProcedureEntryProcedureActivityProcedure extends ProcedureActiv
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.approachSiteCode->isEmpty()
+	 * not self.classCode.oclIsUndefined()
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.approachSiteCode->isEmpty()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.classCode.oclIsUndefined()'"
+	 * @generated
+	 */
+	boolean validateProcedureEntryProcedureActivityProcedureClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())'"
 	 * @generated
 	 */
 	boolean validateProcedureEntryProcedureActivityProcedureApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -65,76 +79,61 @@ public interface ProcedureEntryProcedureActivityProcedure extends ProcedureActiv
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.code.oclIsUndefined()
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(ihe::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.oclIsUndefined()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(ihe::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureInternalReference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.effectiveTime.oclIsUndefined()
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(ihe::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.oclIsUndefined()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(ihe::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryProcedureActivityProcedureInternalReferenceReason(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.id->isEmpty()
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::InternalReference))->asSequence()->first().oclAsType(ihe::InternalReference)
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.id->isEmpty()'"
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::InternalReference))->asSequence()->first().oclAsType(ihe::InternalReference)'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	InternalReference getInternalReference();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.statusCode.oclIsUndefined()
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::InternalReference)).oclAsType(ihe::InternalReference)
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.statusCode.oclIsUndefined()'"
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::InternalReference)).oclAsType(ihe::InternalReference)'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryProcedureActivityProcedureStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	EList<InternalReference> getInternalReferenceReasons();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.targetSiteCode->isEmpty()
+	 * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.targetSiteCode->isEmpty()'"
-	 * @generated
-	 */
-	boolean validateProcedureEntryProcedureActivityProcedureTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateProcedureEntryProcedureActivityProcedureText(DiagnosticChain diagnostics, Map<Object, Object> context);

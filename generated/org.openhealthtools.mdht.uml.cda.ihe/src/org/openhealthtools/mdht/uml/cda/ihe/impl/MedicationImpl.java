@@ -15,10 +15,14 @@ package org.openhealthtools.mdht.uml.cda.ihe.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.MedicationActivityImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
+import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.Medication;
+import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
+import org.openhealthtools.mdht.uml.cda.ihe.SupplyEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicationOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -31,7 +35,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationImpl extends MedicationActivityImpl implements Medication {
+public abstract class MedicationImpl extends MedicationActivityImpl implements Medication {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,15 +53,6 @@ public class MedicationImpl extends MedicationActivityImpl implements Medication
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.MEDICATION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationConsumableName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOperations.validateMedicationConsumableName(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +96,35 @@ public class MedicationImpl extends MedicationActivityImpl implements Medication
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOperations.validateMedicationRouteCode(this, diagnostics, context);
+	public boolean validateMedicationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateMedicationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<InternalReference> getInternalReferences() {
+		return MedicationOperations.getInternalReferences(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PatientMedicalInstructions> getPatientMedicalInstructionss() {
+		return MedicationOperations.getPatientMedicalInstructionss(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SupplyEntry getSupplyEntry() {
+		return MedicationOperations.getSupplyEntry(this);
 	}
 
 	/**

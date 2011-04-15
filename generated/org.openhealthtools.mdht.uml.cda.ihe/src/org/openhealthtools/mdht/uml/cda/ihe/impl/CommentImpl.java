@@ -58,6 +58,15 @@ public class CommentImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.Comme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateIHECommentEffectiveTimeWhenAuthorPresent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentOperations.validateIHECommentEffectiveTimeWhenAuthorPresent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateIHECommentStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentOperations.validateIHECommentStatusCode(this, diagnostics, context);
 	}

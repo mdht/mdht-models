@@ -170,9 +170,9 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code.oclIsKindOf(datatypes::CD) and "+
+	protected static final String VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.codeSystem = '2.16.840.1.113883.5.4')";
+"value.codeSystem = '2.16.840.1.113883.5.4'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncounterEntryCode(EncounterEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Entry Code</em>}' invariant operation.
@@ -188,9 +188,9 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.code.oclIsKindOf(datatypes::CD) and 
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and 
 	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.4')
+	 * value.codeSystem = '2.16.840.1.113883.5.4'))
 	 * @param encounterEntry The receiving '<em><b>Encounter Entry</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -231,7 +231,7 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ENCOUNTER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.id->isEmpty()";
+	protected static final String VALIDATE_ENCOUNTER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncounterEntryId(EncounterEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Entry Id</em>}' invariant operation.
@@ -247,7 +247,7 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.id->isEmpty()
+	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param encounterEntry The receiving '<em><b>Encounter Entry</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -288,7 +288,7 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ENCOUNTER_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
+	protected static final String VALIDATE_ENCOUNTER_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncounterEntryText(EncounterEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Entry Text</em>}' invariant operation.
@@ -304,7 +304,7 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
+	 * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
 	 * @param encounterEntry The receiving '<em><b>Encounter Entry</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

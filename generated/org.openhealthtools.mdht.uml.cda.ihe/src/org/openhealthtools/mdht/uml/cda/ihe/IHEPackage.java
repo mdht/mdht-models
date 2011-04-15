@@ -326,7 +326,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getMedicationsSection()
 	 * @generated
 	 */
-	int MEDICATIONS_SECTION = 13;
+	int MEDICATIONS_SECTION = 17;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.AllergyIntoleranceConcernImpl <em>Allergy Intolerance Concern</em>}' class.
@@ -336,7 +336,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getAllergyIntoleranceConcern()
 	 * @generated
 	 */
-	int ALLERGY_INTOLERANCE_CONCERN = 14;
+	int ALLERGY_INTOLERANCE_CONCERN = 18;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.AllergyIntoleranceImpl <em>Allergy Intolerance</em>}' class.
@@ -346,7 +346,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getAllergyIntolerance()
 	 * @generated
 	 */
-	int ALLERGY_INTOLERANCE = 15;
+	int ALLERGY_INTOLERANCE = 19;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.AllergiesReactionsSectionImpl <em>Allergies Reactions Section</em>}' class.
@@ -356,7 +356,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getAllergiesReactionsSection()
 	 * @generated
 	 */
-	int ALLERGIES_REACTIONS_SECTION = 16;
+	int ALLERGIES_REACTIONS_SECTION = 21;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.NormalDoseImpl <em>Normal Dose</em>}' class.
@@ -366,7 +366,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getNormalDose()
 	 * @generated
 	 */
-	int NORMAL_DOSE = 17;
+	int NORMAL_DOSE = 22;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.TaperedDoseImpl <em>Tapered Dose</em>}' class.
@@ -376,7 +376,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getTaperedDose()
 	 * @generated
 	 */
-	int TAPERED_DOSE = 18;
+	int TAPERED_DOSE = 23;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.SplitDoseImpl <em>Split Dose</em>}' class.
@@ -386,7 +386,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getSplitDose()
 	 * @generated
 	 */
-	int SPLIT_DOSE = 19;
+	int SPLIT_DOSE = 24;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ConditionalDoseImpl <em>Conditional Dose</em>}' class.
@@ -396,7 +396,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getConditionalDose()
 	 * @generated
 	 */
-	int CONDITIONAL_DOSE = 20;
+	int CONDITIONAL_DOSE = 25;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.CombinationMedicationImpl <em>Combination Medication</em>}' class.
@@ -406,7 +406,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getCombinationMedication()
 	 * @generated
 	 */
-	int COMBINATION_MEDICATION = 21;
+	int COMBINATION_MEDICATION = 26;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.VitalSignsSectionImpl <em>Vital Signs Section</em>}' class.
@@ -416,7 +416,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getVitalSignsSection()
 	 * @generated
 	 */
-	int VITAL_SIGNS_SECTION = 22;
+	int VITAL_SIGNS_SECTION = 27;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.CodedVitalSignsSectionImpl <em>Coded Vital Signs Section</em>}' class.
@@ -426,7 +426,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getCodedVitalSignsSection()
 	 * @generated
 	 */
-	int CODED_VITAL_SIGNS_SECTION = 23;
+	int CODED_VITAL_SIGNS_SECTION = 28;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.VitalSignObservationImpl <em>Vital Sign Observation</em>}' class.
@@ -436,7 +436,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getVitalSignObservation()
 	 * @generated
 	 */
-	int VITAL_SIGN_OBSERVATION = 25;
+	int VITAL_SIGN_OBSERVATION = 30;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.SimpleObservationImpl <em>Simple Observation</em>}' class.
@@ -446,7 +446,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getSimpleObservation()
 	 * @generated
 	 */
-	int SIMPLE_OBSERVATION = 26;
+	int SIMPLE_OBSERVATION = 31;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.VitalSignsOrganizerImpl <em>Vital Signs Organizer</em>}' class.
@@ -456,7 +456,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getVitalSignsOrganizer()
 	 * @generated
 	 */
-	int VITAL_SIGNS_ORGANIZER = 24;
+	int VITAL_SIGNS_ORGANIZER = 29;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PayersSectionImpl <em>Payers Section</em>}' class.
@@ -466,7 +466,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPayersSection()
 	 * @generated
 	 */
-	int PAYERS_SECTION = 27;
+	int PAYERS_SECTION = 32;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.HistoryOfPastIllnessSectionImpl <em>History Of Past Illness Section</em>}' class.
@@ -476,7 +476,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getHistoryOfPastIllnessSection()
 	 * @generated
 	 */
-	int HISTORY_OF_PAST_ILLNESS_SECTION = 29;
+	int HISTORY_OF_PAST_ILLNESS_SECTION = 34;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ChiefComplaintSectionImpl <em>Chief Complaint Section</em>}' class.
@@ -486,7 +486,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getChiefComplaintSection()
 	 * @generated
 	 */
-	int CHIEF_COMPLAINT_SECTION = 30;
+	int CHIEF_COMPLAINT_SECTION = 35;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ReasonForReferralSectionImpl <em>Reason For Referral Section</em>}' class.
@@ -496,7 +496,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getReasonForReferralSection()
 	 * @generated
 	 */
-	int REASON_FOR_REFERRAL_SECTION = 31;
+	int REASON_FOR_REFERRAL_SECTION = 36;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.HistoryOfPresentIllnessImpl <em>History Of Present Illness</em>}' class.
@@ -506,7 +506,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getHistoryOfPresentIllness()
 	 * @generated
 	 */
-	int HISTORY_OF_PRESENT_ILLNESS = 32;
+	int HISTORY_OF_PRESENT_ILLNESS = 37;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.SurgeriesSectionImpl <em>Surgeries Section</em>}' class.
@@ -516,7 +516,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getSurgeriesSection()
 	 * @generated
 	 */
-	int SURGERIES_SECTION = 33;
+	int SURGERIES_SECTION = 38;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.CodedSurgeriesSectionImpl <em>Coded Surgeries Section</em>}' class.
@@ -526,7 +526,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getCodedSurgeriesSection()
 	 * @generated
 	 */
-	int CODED_SURGERIES_SECTION = 34;
+	int CODED_SURGERIES_SECTION = 39;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.HospitalAdmissionDiagnosisSectionImpl <em>Hospital Admission Diagnosis Section</em>}' class.
@@ -536,7 +536,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getHospitalAdmissionDiagnosisSection()
 	 * @generated
 	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 35;
+	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 43;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.DischargeDiagnosisSectionImpl <em>Discharge Diagnosis Section</em>}' class.
@@ -546,7 +546,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getDischargeDiagnosisSection()
 	 * @generated
 	 */
-	int DISCHARGE_DIAGNOSIS_SECTION = 36;
+	int DISCHARGE_DIAGNOSIS_SECTION = 44;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.AdmissionMedicationHistorySectionImpl <em>Admission Medication History Section</em>}' class.
@@ -556,7 +556,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getAdmissionMedicationHistorySection()
 	 * @generated
 	 */
-	int ADMISSION_MEDICATION_HISTORY_SECTION = 37;
+	int ADMISSION_MEDICATION_HISTORY_SECTION = 45;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.HospitalDischargeMedicationsSectionImpl <em>Hospital Discharge Medications Section</em>}' class.
@@ -566,7 +566,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getHospitalDischargeMedicationsSection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 38;
+	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 46;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.AdvanceDirectivesSectionImpl <em>Advance Directives Section</em>}' class.
@@ -576,7 +576,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getAdvanceDirectivesSection()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVES_SECTION = 40;
+	int ADVANCE_DIRECTIVES_SECTION = 48;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.CodedAdvanceDirectivesSectionImpl <em>Coded Advance Directives Section</em>}' class.
@@ -586,7 +586,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getCodedAdvanceDirectivesSection()
 	 * @generated
 	 */
-	int CODED_ADVANCE_DIRECTIVES_SECTION = 39;
+	int CODED_ADVANCE_DIRECTIVES_SECTION = 47;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PhysicalExamNarrativeSectionImpl <em>Physical Exam Narrative Section</em>}' class.
@@ -596,7 +596,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPhysicalExamNarrativeSection()
 	 * @generated
 	 */
-	int PHYSICAL_EXAM_NARRATIVE_SECTION = 41;
+	int PHYSICAL_EXAM_NARRATIVE_SECTION = 49;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PhysicalExamSectionImpl <em>Physical Exam Section</em>}' class.
@@ -606,7 +606,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPhysicalExamSection()
 	 * @generated
 	 */
-	int PHYSICAL_EXAM_SECTION = 42;
+	int PHYSICAL_EXAM_SECTION = 50;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ReviewOfSystemsSectionImpl <em>Review Of Systems Section</em>}' class.
@@ -616,7 +616,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getReviewOfSystemsSection()
 	 * @generated
 	 */
-	int REVIEW_OF_SYSTEMS_SECTION = 43;
+	int REVIEW_OF_SYSTEMS_SECTION = 51;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.HospitalCourseSectionImpl <em>Hospital Course Section</em>}' class.
@@ -626,7 +626,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getHospitalCourseSection()
 	 * @generated
 	 */
-	int HOSPITAL_COURSE_SECTION = 44;
+	int HOSPITAL_COURSE_SECTION = 52;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.CodedResultsSectionImpl <em>Coded Results Section</em>}' class.
@@ -636,7 +636,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getCodedResultsSection()
 	 * @generated
 	 */
-	int CODED_RESULTS_SECTION = 45;
+	int CODED_RESULTS_SECTION = 53;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.AssessmentAndPlanSectionImpl <em>Assessment And Plan Section</em>}' class.
@@ -646,7 +646,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getAssessmentAndPlanSection()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_SECTION = 47;
+	int ASSESSMENT_AND_PLAN_SECTION = 54;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.CarePlanSectionImpl <em>Care Plan Section</em>}' class.
@@ -656,7 +656,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getCarePlanSection()
 	 * @generated
 	 */
-	int CARE_PLAN_SECTION = 48;
+	int CARE_PLAN_SECTION = 55;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.FamilyMedicalHistorySectionImpl <em>Family Medical History Section</em>}' class.
@@ -666,7 +666,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getFamilyMedicalHistorySection()
 	 * @generated
 	 */
-	int FAMILY_MEDICAL_HISTORY_SECTION = 49;
+	int FAMILY_MEDICAL_HISTORY_SECTION = 56;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.SocialHistorySectionImpl <em>Social History Section</em>}' class.
@@ -676,7 +676,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getSocialHistorySection()
 	 * @generated
 	 */
-	int SOCIAL_HISTORY_SECTION = 50;
+	int SOCIAL_HISTORY_SECTION = 57;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterHistorySectionImpl <em>Encounter History Section</em>}' class.
@@ -686,7 +686,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getEncounterHistorySection()
 	 * @generated
 	 */
-	int ENCOUNTER_HISTORY_SECTION = 51;
+	int ENCOUNTER_HISTORY_SECTION = 58;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.MedicalDevicesSectionImpl <em>Medical Devices Section</em>}' class.
@@ -696,7 +696,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getMedicalDevicesSection()
 	 * @generated
 	 */
-	int MEDICAL_DEVICES_SECTION = 53;
+	int MEDICAL_DEVICES_SECTION = 60;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.LanguageCommunicationImpl <em>Language Communication</em>}' class.
@@ -706,7 +706,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getLanguageCommunication()
 	 * @generated
 	 */
-	int LANGUAGE_COMMUNICATION = 54;
+	int LANGUAGE_COMMUNICATION = 61;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.MedicalSummaryImpl <em>Medical Summary</em>}' class.
@@ -716,7 +716,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getMedicalSummary()
 	 * @generated
 	 */
-	int MEDICAL_SUMMARY = 55;
+	int MEDICAL_SUMMARY = 62;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.DischargeSummaryImpl <em>Discharge Summary</em>}' class.
@@ -726,7 +726,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getDischargeSummary()
 	 * @generated
 	 */
-	int DISCHARGE_SUMMARY = 56;
+	int DISCHARGE_SUMMARY = 63;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.CoverageEntryImpl <em>Coverage Entry</em>}' class.
@@ -736,7 +736,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getCoverageEntry()
 	 * @generated
 	 */
-	int COVERAGE_ENTRY = 28;
+	int COVERAGE_ENTRY = 33;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.HealthcareProvidersPharmaciesImpl <em>Healthcare Providers Pharmacies</em>}' class.
@@ -746,7 +746,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getHealthcareProvidersPharmacies()
 	 * @generated
 	 */
-	int HEALTHCARE_PROVIDERS_PHARMACIES = 57;
+	int HEALTHCARE_PROVIDERS_PHARMACIES = 64;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ImmunizationImpl <em>Immunization</em>}' class.
@@ -3244,7 +3244,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getExternalReference()
 	 * @generated
 	 */
-	int EXTERNAL_REFERENCE = 46;
+	int EXTERNAL_REFERENCE = 40;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterEntryImpl <em>Encounter Entry</em>}' class.
@@ -3254,7 +3254,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getEncounterEntry()
 	 * @generated
 	 */
-	int ENCOUNTER_ENTRY = 52;
+	int ENCOUNTER_ENTRY = 59;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ObservationRequestEntryImpl <em>Observation Request Entry</em>}' class.
@@ -3264,7 +3264,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getObservationRequestEntry()
 	 * @generated
 	 */
-	int OBSERVATION_REQUEST_ENTRY = 58;
+	int OBSERVATION_REQUEST_ENTRY = 65;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ProductEntryImpl <em>Product Entry</em>}' class.
@@ -3274,7 +3274,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getProductEntry()
 	 * @generated
 	 */
-	int PRODUCT_ENTRY = 59;
+	int PRODUCT_ENTRY = 66;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ProcedureEntryImpl <em>Procedure Entry</em>}' class.
@@ -3284,7 +3284,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getProcedureEntry()
 	 * @generated
 	 */
-	int PROCEDURE_ENTRY = 60;
+	int PROCEDURE_ENTRY = 42;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ProcedureEntryProcedureActivityProcedureImpl <em>Procedure Entry Procedure Activity Procedure</em>}' class.
@@ -3294,7 +3294,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getProcedureEntryProcedureActivityProcedure()
 	 * @generated
 	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE = 61;
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE = 41;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ProcedureEntryPlanOfCareActivityProcedureImpl <em>Procedure Entry Plan Of Care Activity Procedure</em>}' class.
@@ -3304,7 +3304,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getProcedureEntryPlanOfCareActivityProcedure()
 	 * @generated
 	 */
-	int PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE = 62;
+	int PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE = 67;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.CommentImpl <em>Comment</em>}' class.
@@ -3810,6 +3810,1007 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION_FEATURE_COUNT = CCDPackage.MEDICATION_ACTIVITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.InternalReferenceImpl <em>Internal Reference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.InternalReferenceImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getInternalReference()
+	 * @generated
+	 */
+	int INTERNAL_REFERENCE = 13;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__ID = CDAPackage.ACT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__CODE = CDAPackage.ACT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__TEXT = CDAPackage.ACT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Internal Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PatientMedicalInstructionsImpl <em>Patient Medical Instructions</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.PatientMedicalInstructionsImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPatientMedicalInstructions()
+	 * @generated
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS = 14;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__REALM_CODE = CCDPackage.PATIENT_INSTRUCTION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__TYPE_ID = CCDPackage.PATIENT_INSTRUCTION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__TEMPLATE_ID = CCDPackage.PATIENT_INSTRUCTION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__ID = CCDPackage.PATIENT_INSTRUCTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__CODE = CCDPackage.PATIENT_INSTRUCTION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__TEXT = CCDPackage.PATIENT_INSTRUCTION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__STATUS_CODE = CCDPackage.PATIENT_INSTRUCTION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__EFFECTIVE_TIME = CCDPackage.PATIENT_INSTRUCTION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__PRIORITY_CODE = CCDPackage.PATIENT_INSTRUCTION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__LANGUAGE_CODE = CCDPackage.PATIENT_INSTRUCTION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__SUBJECT = CCDPackage.PATIENT_INSTRUCTION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__SPECIMEN = CCDPackage.PATIENT_INSTRUCTION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__PERFORMER = CCDPackage.PATIENT_INSTRUCTION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__AUTHOR = CCDPackage.PATIENT_INSTRUCTION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__INFORMANT = CCDPackage.PATIENT_INSTRUCTION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__PARTICIPANT = CCDPackage.PATIENT_INSTRUCTION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__ENTRY_RELATIONSHIP = CCDPackage.PATIENT_INSTRUCTION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__REFERENCE = CCDPackage.PATIENT_INSTRUCTION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__PRECONDITION = CCDPackage.PATIENT_INSTRUCTION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__NULL_FLAVOR = CCDPackage.PATIENT_INSTRUCTION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__CLASS_CODE = CCDPackage.PATIENT_INSTRUCTION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__MOOD_CODE = CCDPackage.PATIENT_INSTRUCTION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__NEGATION_IND = CCDPackage.PATIENT_INSTRUCTION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Patient Medical Instructions</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS_FEATURE_COUNT = CCDPackage.PATIENT_INSTRUCTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ProblemEntryReactionObservationContainerImpl <em>Problem Entry Reaction Observation Container</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.ProblemEntryReactionObservationContainerImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getProblemEntryReactionObservationContainer()
+	 * @generated
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER = 20;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PayerEntryImpl <em>Payer Entry</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.PayerEntryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPayerEntry()
+	 * @generated
+	 */
+	int PAYER_ENTRY = 68;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PHRExtractImpl <em>PHR Extract</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.PHRExtractImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPHRExtract()
+	 * @generated
+	 */
+	int PHR_EXTRACT = 69;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PHRUpdateImpl <em>PHR Update</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.PHRUpdateImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPHRUpdate()
+	 * @generated
+	 */
+	int PHR_UPDATE = 70;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterActivityImpl <em>Encounter Activity</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterActivityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getEncounterActivity()
+	 * @generated
+	 */
+	int ENCOUNTER_ACTIVITY = 71;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterPlanOfCareImpl <em>Encounter Plan Of Care</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterPlanOfCareImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getEncounterPlanOfCare()
+	 * @generated
+	 */
+	int ENCOUNTER_PLAN_OF_CARE = 72;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.IntakeOutputSectionImpl <em>Intake Output Section</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IntakeOutputSectionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getIntakeOutputSection()
+	 * @generated
+	 */
+	int INTAKE_OUTPUT_SECTION = 73;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.SupplyEntryImpl <em>Supply Entry</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.SupplyEntryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getSupplyEntry()
+	 * @generated
+	 */
+	int SUPPLY_ENTRY = 15;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__REALM_CODE = CCDPackage.SUPPLY_ACTIVITY__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__TYPE_ID = CCDPackage.SUPPLY_ACTIVITY__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__TEMPLATE_ID = CCDPackage.SUPPLY_ACTIVITY__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__ID = CCDPackage.SUPPLY_ACTIVITY__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__CODE = CCDPackage.SUPPLY_ACTIVITY__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__TEXT = CCDPackage.SUPPLY_ACTIVITY__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__STATUS_CODE = CCDPackage.SUPPLY_ACTIVITY__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__EFFECTIVE_TIME = CCDPackage.SUPPLY_ACTIVITY__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__PRIORITY_CODE = CCDPackage.SUPPLY_ACTIVITY__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__REPEAT_NUMBER = CCDPackage.SUPPLY_ACTIVITY__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Independent Ind</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__INDEPENDENT_IND = CCDPackage.SUPPLY_ACTIVITY__INDEPENDENT_IND;
+
+	/**
+	 * The feature id for the '<em><b>Quantity</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__QUANTITY = CCDPackage.SUPPLY_ACTIVITY__QUANTITY;
+
+	/**
+	 * The feature id for the '<em><b>Expected Use Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__EXPECTED_USE_TIME = CCDPackage.SUPPLY_ACTIVITY__EXPECTED_USE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__SUBJECT = CCDPackage.SUPPLY_ACTIVITY__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__SPECIMEN = CCDPackage.SUPPLY_ACTIVITY__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Product</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__PRODUCT = CCDPackage.SUPPLY_ACTIVITY__PRODUCT;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__PERFORMER = CCDPackage.SUPPLY_ACTIVITY__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__AUTHOR = CCDPackage.SUPPLY_ACTIVITY__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__INFORMANT = CCDPackage.SUPPLY_ACTIVITY__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__PARTICIPANT = CCDPackage.SUPPLY_ACTIVITY__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__ENTRY_RELATIONSHIP = CCDPackage.SUPPLY_ACTIVITY__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__REFERENCE = CCDPackage.SUPPLY_ACTIVITY__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__PRECONDITION = CCDPackage.SUPPLY_ACTIVITY__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__NULL_FLAVOR = CCDPackage.SUPPLY_ACTIVITY__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__CLASS_CODE = CCDPackage.SUPPLY_ACTIVITY__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY__MOOD_CODE = CCDPackage.SUPPLY_ACTIVITY__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Supply Entry</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ENTRY_FEATURE_COUNT = CCDPackage.SUPPLY_ACTIVITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.MedicationFullfillmentInstructionsImpl <em>Medication Fullfillment Instructions</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.MedicationFullfillmentInstructionsImpl
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getMedicationFullfillmentInstructions()
+	 * @generated
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS = 16;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__REALM_CODE = CCDPackage.FULFILLMENT_INSTRUCTION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__TYPE_ID = CCDPackage.FULFILLMENT_INSTRUCTION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__TEMPLATE_ID = CCDPackage.FULFILLMENT_INSTRUCTION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__ID = CCDPackage.FULFILLMENT_INSTRUCTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__CODE = CCDPackage.FULFILLMENT_INSTRUCTION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__TEXT = CCDPackage.FULFILLMENT_INSTRUCTION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__STATUS_CODE = CCDPackage.FULFILLMENT_INSTRUCTION__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__EFFECTIVE_TIME = CCDPackage.FULFILLMENT_INSTRUCTION__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PRIORITY_CODE = CCDPackage.FULFILLMENT_INSTRUCTION__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__LANGUAGE_CODE = CCDPackage.FULFILLMENT_INSTRUCTION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__SUBJECT = CCDPackage.FULFILLMENT_INSTRUCTION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__SPECIMEN = CCDPackage.FULFILLMENT_INSTRUCTION__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PERFORMER = CCDPackage.FULFILLMENT_INSTRUCTION__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__AUTHOR = CCDPackage.FULFILLMENT_INSTRUCTION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__INFORMANT = CCDPackage.FULFILLMENT_INSTRUCTION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PARTICIPANT = CCDPackage.FULFILLMENT_INSTRUCTION__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__ENTRY_RELATIONSHIP = CCDPackage.FULFILLMENT_INSTRUCTION__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__REFERENCE = CCDPackage.FULFILLMENT_INSTRUCTION__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__PRECONDITION = CCDPackage.FULFILLMENT_INSTRUCTION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__NULL_FLAVOR = CCDPackage.FULFILLMENT_INSTRUCTION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__CLASS_CODE = CCDPackage.FULFILLMENT_INSTRUCTION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__MOOD_CODE = CCDPackage.FULFILLMENT_INSTRUCTION__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__NEGATION_IND = CCDPackage.FULFILLMENT_INSTRUCTION__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Medication Fullfillment Instructions</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS_FEATURE_COUNT = CCDPackage.FULFILLMENT_INSTRUCTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4476,6 +5477,285 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int ALLERGY_INTOLERANCE_FEATURE_COUNT = PROBLEM_ENTRY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__REALM_CODE = PROBLEM_ENTRY__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__TYPE_ID = PROBLEM_ENTRY__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__TEMPLATE_ID = PROBLEM_ENTRY__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__ID = PROBLEM_ENTRY__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__CODE = PROBLEM_ENTRY__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__DERIVATION_EXPR = PROBLEM_ENTRY__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__TEXT = PROBLEM_ENTRY__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__STATUS_CODE = PROBLEM_ENTRY__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__EFFECTIVE_TIME = PROBLEM_ENTRY__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__PRIORITY_CODE = PROBLEM_ENTRY__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__REPEAT_NUMBER = PROBLEM_ENTRY__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__LANGUAGE_CODE = PROBLEM_ENTRY__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__VALUE = PROBLEM_ENTRY__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__INTERPRETATION_CODE = PROBLEM_ENTRY__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__METHOD_CODE = PROBLEM_ENTRY__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__TARGET_SITE_CODE = PROBLEM_ENTRY__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__SUBJECT = PROBLEM_ENTRY__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__SPECIMEN = PROBLEM_ENTRY__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__PERFORMER = PROBLEM_ENTRY__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__AUTHOR = PROBLEM_ENTRY__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__INFORMANT = PROBLEM_ENTRY__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__PARTICIPANT = PROBLEM_ENTRY__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__ENTRY_RELATIONSHIP = PROBLEM_ENTRY__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__REFERENCE = PROBLEM_ENTRY__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__PRECONDITION = PROBLEM_ENTRY__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__REFERENCE_RANGE = PROBLEM_ENTRY__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__NULL_FLAVOR = PROBLEM_ENTRY__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__CLASS_CODE = PROBLEM_ENTRY__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__MOOD_CODE = PROBLEM_ENTRY__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__NEGATION_IND = PROBLEM_ENTRY__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Problem Entry Reaction Observation Container</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER_FEATURE_COUNT = PROBLEM_ENTRY_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -8543,6 +9823,474 @@ public interface IHEPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
+	int EXTERNAL_REFERENCE__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__ID = CDAPackage.ACT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__CODE = CDAPackage.ACT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__TEXT = CDAPackage.ACT__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__SUBJECT = CDAPackage.ACT__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__PERFORMER = CDAPackage.ACT__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__AUTHOR = CDAPackage.ACT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__INFORMANT = CDAPackage.ACT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__REFERENCE = CDAPackage.ACT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>External Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__REALM_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TYPE_ID = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TEMPLATE_ID = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__ID = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TEXT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__STATUS_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__EFFECTIVE_TIME = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PRIORITY_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__LANGUAGE_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__METHOD_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Approach Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__APPROACH_SITE_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__APPROACH_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TARGET_SITE_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__SUBJECT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__SPECIMEN = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PERFORMER = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__AUTHOR = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__INFORMANT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PARTICIPANT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__ENTRY_RELATIONSHIP = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__REFERENCE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__NULL_FLAVOR = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__CLASS_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__MOOD_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__NEGATION_IND = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__NEGATION_IND;
+
+	/**
+	 * The number of structural features of the '<em>Procedure Entry Procedure Activity Procedure</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Procedure Entry</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_FEATURE_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
 	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
 
 	/**
@@ -10416,222 +12164,6 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int CODED_RESULTS_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__REALM_CODE = CDAPackage.ACT__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__TYPE_ID = CDAPackage.ACT__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__ID = CDAPackage.ACT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__CODE = CDAPackage.ACT__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__TEXT = CDAPackage.ACT__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__SUBJECT = CDAPackage.ACT__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__SPECIMEN = CDAPackage.ACT__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__PERFORMER = CDAPackage.ACT__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__AUTHOR = CDAPackage.ACT__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__INFORMANT = CDAPackage.ACT__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__REFERENCE = CDAPackage.ACT__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__PRECONDITION = CDAPackage.ACT__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
-
-	/**
-	 * The number of structural features of the '<em>External Reference</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTERNAL_REFERENCE_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12947,258 +14479,6 @@ public interface IHEPackage extends EPackage {
 	int PRODUCT_ENTRY_FEATURE_COUNT = CCDPackage.PRODUCT_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Procedure Entry</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_FEATURE_COUNT = 0;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__REALM_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TYPE_ID = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TEMPLATE_ID = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__ID = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TEXT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__STATUS_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__EFFECTIVE_TIME = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PRIORITY_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__LANGUAGE_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__METHOD_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__METHOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Approach Site Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__APPROACH_SITE_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__APPROACH_SITE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TARGET_SITE_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__TARGET_SITE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__SUBJECT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__SPECIMEN = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PERFORMER = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__AUTHOR = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__INFORMANT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PARTICIPANT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__ENTRY_RELATIONSHIP = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__REFERENCE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__NULL_FLAVOR = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__CLASS_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__MOOD_CODE = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__NEGATION_IND = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE__NEGATION_IND;
-
-	/**
-	 * The number of structural features of the '<em>Procedure Entry Procedure Activity Procedure</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13442,16 +14722,6 @@ public interface IHEPackage extends EPackage {
 	int PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE_FEATURE_COUNT = CCDPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PayerEntryImpl <em>Payer Entry</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.PayerEntryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPayerEntry()
-	 * @generated
-	 */
-	int PAYER_ENTRY = 63;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13666,16 +14936,6 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int PAYER_ENTRY_FEATURE_COUNT = CCDPackage.POLICY_ACTIVITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PHRExtractImpl <em>PHR Extract</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.PHRExtractImpl
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPHRExtract()
-	 * @generated
-	 */
-	int PHR_EXTRACT = 64;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13957,16 +15217,6 @@ public interface IHEPackage extends EPackage {
 	int PHR_EXTRACT_FEATURE_COUNT = MEDICAL_SUMMARY_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PHRUpdateImpl <em>PHR Update</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.PHRUpdateImpl
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPHRUpdate()
-	 * @generated
-	 */
-	int PHR_UPDATE = 65;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14246,16 +15496,6 @@ public interface IHEPackage extends EPackage {
 	int PHR_UPDATE_FEATURE_COUNT = MEDICAL_SUMMARY_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterActivityImpl <em>Encounter Activity</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterActivityImpl
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getEncounterActivity()
-	 * @generated
-	 */
-	int ENCOUNTER_ACTIVITY = 66;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14452,16 +15692,6 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENCOUNTER_ACTIVITY_FEATURE_COUNT = ENCOUNTER_ENTRY_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterPlanOfCareImpl <em>Encounter Plan Of Care</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterPlanOfCareImpl
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getEncounterPlanOfCare()
-	 * @generated
-	 */
-	int ENCOUNTER_PLAN_OF_CARE = 67;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -14662,16 +15892,6 @@ public interface IHEPackage extends EPackage {
 	int ENCOUNTER_PLAN_OF_CARE_FEATURE_COUNT = ENCOUNTER_ENTRY_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.IntakeOutputSectionImpl <em>Intake Output Section</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IntakeOutputSectionImpl
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getIntakeOutputSection()
-	 * @generated
-	 */
-	int INTAKE_OUTPUT_SECTION = 68;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14843,259 +16063,6 @@ public interface IHEPackage extends EPackage {
 	int INTAKE_OUTPUT_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.SupplyEntryImpl <em>Supply Entry</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.SupplyEntryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getSupplyEntry()
-	 * @generated
-	 */
-	int SUPPLY_ENTRY = 69;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__REALM_CODE = CCDPackage.SUPPLY_ACTIVITY__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__TYPE_ID = CCDPackage.SUPPLY_ACTIVITY__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__TEMPLATE_ID = CCDPackage.SUPPLY_ACTIVITY__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__ID = CCDPackage.SUPPLY_ACTIVITY__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__CODE = CCDPackage.SUPPLY_ACTIVITY__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__TEXT = CCDPackage.SUPPLY_ACTIVITY__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__STATUS_CODE = CCDPackage.SUPPLY_ACTIVITY__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__EFFECTIVE_TIME = CCDPackage.SUPPLY_ACTIVITY__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__PRIORITY_CODE = CCDPackage.SUPPLY_ACTIVITY__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__REPEAT_NUMBER = CCDPackage.SUPPLY_ACTIVITY__REPEAT_NUMBER;
-
-	/**
-	 * The feature id for the '<em><b>Independent Ind</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__INDEPENDENT_IND = CCDPackage.SUPPLY_ACTIVITY__INDEPENDENT_IND;
-
-	/**
-	 * The feature id for the '<em><b>Quantity</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__QUANTITY = CCDPackage.SUPPLY_ACTIVITY__QUANTITY;
-
-	/**
-	 * The feature id for the '<em><b>Expected Use Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__EXPECTED_USE_TIME = CCDPackage.SUPPLY_ACTIVITY__EXPECTED_USE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__SUBJECT = CCDPackage.SUPPLY_ACTIVITY__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__SPECIMEN = CCDPackage.SUPPLY_ACTIVITY__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Product</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__PRODUCT = CCDPackage.SUPPLY_ACTIVITY__PRODUCT;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__PERFORMER = CCDPackage.SUPPLY_ACTIVITY__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__AUTHOR = CCDPackage.SUPPLY_ACTIVITY__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__INFORMANT = CCDPackage.SUPPLY_ACTIVITY__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__PARTICIPANT = CCDPackage.SUPPLY_ACTIVITY__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__ENTRY_RELATIONSHIP = CCDPackage.SUPPLY_ACTIVITY__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__REFERENCE = CCDPackage.SUPPLY_ACTIVITY__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__PRECONDITION = CCDPackage.SUPPLY_ACTIVITY__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__NULL_FLAVOR = CCDPackage.SUPPLY_ACTIVITY__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__CLASS_CODE = CCDPackage.SUPPLY_ACTIVITY__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY__MOOD_CODE = CCDPackage.SUPPLY_ACTIVITY__MOOD_CODE;
-
-	/**
-	 * The number of structural features of the '<em>Supply Entry</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPLY_ENTRY_FEATURE_COUNT = CCDPackage.SUPPLY_ACTIVITY_FEATURE_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PregnancyHistorySectionImpl <em>Pregnancy History Section</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15103,7 +16070,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPregnancyHistorySection()
 	 * @generated
 	 */
-	int PREGNANCY_HISTORY_SECTION = 70;
+	int PREGNANCY_HISTORY_SECTION = 74;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -15284,7 +16251,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPregnancyObservation()
 	 * @generated
 	 */
-	int PREGNANCY_OBSERVATION = 71;
+	int PREGNANCY_OBSERVATION = 75;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -15573,7 +16540,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPatientContact()
 	 * @generated
 	 */
-	int PATIENT_CONTACT = 72;
+	int PATIENT_CONTACT = 76;
 
 	/**
 	 * The number of structural features of the '<em>Patient Contact</em>' class.
@@ -15592,7 +16559,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPatientContactGuardian()
 	 * @generated
 	 */
-	int PATIENT_CONTACT_GUARDIAN = 73;
+	int PATIENT_CONTACT_GUARDIAN = 77;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -15710,7 +16677,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPatientContactParticipant()
 	 * @generated
 	 */
-	int PATIENT_CONTACT_PARTICIPANT = 74;
+	int PATIENT_CONTACT_PARTICIPANT = 78;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -15810,7 +16777,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getScannedDocument()
 	 * @generated
 	 */
-	int SCANNED_DOCUMENT = 75;
+	int SCANNED_DOCUMENT = 79;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -16099,7 +17066,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getScanOriginalAuthor()
 	 * @generated
 	 */
-	int SCAN_ORIGINAL_AUTHOR = 76;
+	int SCAN_ORIGINAL_AUTHOR = 80;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -16199,7 +17166,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getScanningDevice()
 	 * @generated
 	 */
-	int SCANNING_DEVICE = 77;
+	int SCANNING_DEVICE = 81;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -16299,7 +17266,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getScanDataEnterer()
 	 * @generated
 	 */
-	int SCAN_DATA_ENTERER = 78;
+	int SCAN_DATA_ENTERER = 82;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -16390,7 +17357,7 @@ public interface IHEPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getIHERegistryDelegate()
 	 * @generated
 	 */
-	int IHE_REGISTRY_DELEGATE = 79;
+	int IHE_REGISTRY_DELEGATE = 83;
 
 	/**
 	 * The number of structural features of the '<em>Registry Delegate</em>' class.
@@ -16513,6 +17480,26 @@ public interface IHEPackage extends EPackage {
 	EClass getMedication();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.ihe.InternalReference <em>Internal Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Internal Reference</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.InternalReference
+	 * @generated
+	 */
+	EClass getInternalReference();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions <em>Patient Medical Instructions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Patient Medical Instructions</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions
+	 * @generated
+	 */
+	EClass getPatientMedicalInstructions();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection <em>Medications Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16541,6 +17528,16 @@ public interface IHEPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAllergyIntolerance();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer <em>Problem Entry Reaction Observation Container</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Problem Entry Reaction Observation Container</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer
+	 * @generated
+	 */
+	EClass getProblemEntryReactionObservationContainer();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.ihe.AllergiesReactionsSection <em>Allergies Reactions Section</em>}'.
@@ -17103,6 +18100,16 @@ public interface IHEPackage extends EPackage {
 	EClass getSupplyEntry();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions <em>Medication Fullfillment Instructions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Medication Fullfillment Instructions</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions
+	 * @generated
+	 */
+	EClass getMedicationFullfillmentInstructions();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection <em>Pregnancy History Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17335,6 +18342,26 @@ public interface IHEPackage extends EPackage {
 		EClass MEDICATION = eINSTANCE.getMedication();
 
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.InternalReferenceImpl <em>Internal Reference</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.InternalReferenceImpl
+		 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getInternalReference()
+		 * @generated
+		 */
+		EClass INTERNAL_REFERENCE = eINSTANCE.getInternalReference();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PatientMedicalInstructionsImpl <em>Patient Medical Instructions</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.PatientMedicalInstructionsImpl
+		 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getPatientMedicalInstructions()
+		 * @generated
+		 */
+		EClass PATIENT_MEDICAL_INSTRUCTIONS = eINSTANCE.getPatientMedicalInstructions();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.MedicationsSectionImpl <em>Medications Section</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -17363,6 +18390,16 @@ public interface IHEPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ALLERGY_INTOLERANCE = eINSTANCE.getAllergyIntolerance();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.ProblemEntryReactionObservationContainerImpl <em>Problem Entry Reaction Observation Container</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.ProblemEntryReactionObservationContainerImpl
+		 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getProblemEntryReactionObservationContainer()
+		 * @generated
+		 */
+		EClass PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER = eINSTANCE.getProblemEntryReactionObservationContainer();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.AllergiesReactionsSectionImpl <em>Allergies Reactions Section</em>}' class.
@@ -17923,6 +18960,16 @@ public interface IHEPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SUPPLY_ENTRY = eINSTANCE.getSupplyEntry();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.MedicationFullfillmentInstructionsImpl <em>Medication Fullfillment Instructions</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.MedicationFullfillmentInstructionsImpl
+		 * @see org.openhealthtools.mdht.uml.cda.ihe.impl.IHEPackageImpl#getMedicationFullfillmentInstructions()
+		 * @generated
+		 */
+		EClass MEDICATION_FULLFILLMENT_INSTRUCTIONS = eINSTANCE.getMedicationFullfillmentInstructions();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.ihe.impl.PregnancyHistorySectionImpl <em>Pregnancy History Section</em>}' class.

@@ -45,8 +45,10 @@ import org.openhealthtools.mdht.uml.cda.hitsp.MedicationCombinationMedication;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationConditionalDose;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationInformation;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationNormalDose;
+import org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformation;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationSplitDose;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationTaperedDose;
+import org.openhealthtools.mdht.uml.cda.hitsp.MedicationType;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.PatientSummary;
@@ -113,6 +115,8 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 		switch (eClass.getClassifierID()) {
 			case HITSPPackage.ALLERGY_DRUG_SENSITIVITY: return createAllergyDrugSensitivity();
 			case HITSPPackage.MEDICATION: return createMedication();
+			case HITSPPackage.MEDICATION_TYPE: return createMedicationType();
+			case HITSPPackage.MEDICATION_ORDER_INFORMATION: return createMedicationOrderInformation();
 			case HITSPPackage.CONDITION: return createCondition();
 			case HITSPPackage.CONDITION_ENTRY: return createConditionEntry();
 			case HITSPPackage.PATIENT_SUMMARY: return createPatientSummary();
@@ -187,6 +191,26 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	public Medication createMedication() {
 		MedicationImpl medication = new MedicationImpl();
 		return medication;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationType createMedicationType() {
+		MedicationTypeImpl medicationType = new MedicationTypeImpl();
+		return medicationType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationOrderInformation createMedicationOrderInformation() {
+		MedicationOrderInformationImpl medicationOrderInformation = new MedicationOrderInformationImpl();
+		return medicationOrderInformation;
 	}
 
 	/**

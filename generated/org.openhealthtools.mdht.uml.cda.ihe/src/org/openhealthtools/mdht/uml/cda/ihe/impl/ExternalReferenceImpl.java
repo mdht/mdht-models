@@ -77,6 +77,24 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateExternalReferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExternalReferenceOperations.validateExternalReferenceId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateExternalReferenceText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExternalReferenceOperations.validateExternalReferenceText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ExternalReference init() {
     		CDAUtil.init(this);
     		return this;

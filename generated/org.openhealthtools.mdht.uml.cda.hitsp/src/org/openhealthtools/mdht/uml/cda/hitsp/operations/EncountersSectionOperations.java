@@ -35,7 +35,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.EncounterHistorySectionOp
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.EncountersSection#validateHITSPEncountersSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.EncountersSection#validateHITSPEncountersSectionEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Encounter</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.EncountersSection#validateHITSPEncountersSectionEncounterEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Encounter Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.EncountersSection#getHITSPEncounterEntries() <em>Get HITSP Encounter Entries</em>}</li>
  * </ul>
  * </p>
@@ -110,24 +110,24 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPEncountersSectionEncounter(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Encounter</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Encounter Entry</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPEncountersSectionEncounter(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(hitsp::Encounter))";
+	protected static final String VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(hitsp::Encounter))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPEncountersSectionEncounter(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Encounter</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Encounter Entry</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPEncountersSectionEncounter(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -140,25 +140,25 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateHITSPEncountersSectionEncounter(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	public static  boolean validateHITSPEncountersSectionEncounterEntry(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ENCOUNTERS_SECTION);
 			try {
-				VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encountersSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encountersSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_ENCOUNTER,
-						 HITSPPlugin.INSTANCE.getString("HITSPEncountersSectionEncounter"),
+						 HITSPValidator.ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY,
+						 HITSPPlugin.INSTANCE.getString("HITSPEncountersSectionEncounterEntry"),
 						 new Object [] { encountersSection }));
 			}
 			return false;

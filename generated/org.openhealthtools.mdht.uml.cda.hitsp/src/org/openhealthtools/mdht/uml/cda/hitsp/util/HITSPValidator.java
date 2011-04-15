@@ -49,8 +49,10 @@ import org.openhealthtools.mdht.uml.cda.hitsp.MedicationCombinationMedication;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationConditionalDose;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationInformation;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationNormalDose;
+import org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformation;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationSplitDose;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationTaperedDose;
+import org.openhealthtools.mdht.uml.cda.hitsp.MedicationType;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.PatientSummary;
@@ -132,12 +134,92 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int MEDICATION__HITSP_MEDICATION_ROUTE_CODE = 4;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Dose Quantity' of 'Medication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION__HITSP_MEDICATION_DOSE_QUANTITY = 5;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Administration Unit Code' of 'Medication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION__HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE = 6;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Max Dose Quantity' of 'Medication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION__HITSP_MEDICATION_MAX_DOSE_QUANTITY = 7;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Approach Site Code' of 'Medication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION__HITSP_MEDICATION_APPROACH_SITE_CODE = 8;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Code' of 'Medication'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION__HITSP_MEDICATION_CODE = 9;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Type Template Id' of 'Medication Type'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION_TYPE__MEDICATION_TYPE_TEMPLATE_ID = 10;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Type Code' of 'Medication Type'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION_TYPE__MEDICATION_TYPE_CODE = 11;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Template Id' of 'Medication Order Information'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_TEMPLATE_ID = 12;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Repeat Number' of 'Medication Order Information'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_REPEAT_NUMBER = 13;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Status Code' of 'Medication Order Information'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_STATUS_CODE = 14;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Has Treating Provider' of 'Condition'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_HAS_TREATING_PROVIDER = 5;
+	public static final int CONDITION__CONDITION_HAS_TREATING_PROVIDER = 15;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Has Provider Id' of 'Condition'.
@@ -145,7 +227,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_HAS_PROVIDER_ID = 6;
+	public static final int CONDITION__CONDITION_HAS_PROVIDER_ID = 16;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Has Provider Treatment Time' of 'Condition'.
@@ -153,7 +235,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_HAS_PROVIDER_TREATMENT_TIME = 7;
+	public static final int CONDITION__CONDITION_HAS_PROVIDER_TREATMENT_TIME = 17;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Template Id' of 'Condition'.
@@ -161,7 +243,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_TEMPLATE_ID = 8;
+	public static final int CONDITION__CONDITION_TEMPLATE_ID = 18;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Condition Entry' of 'Condition'.
@@ -169,7 +251,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_CONDITION_ENTRY = 9;
+	public static final int CONDITION__CONDITION_CONDITION_ENTRY = 19;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Has Onset Date' of 'Condition Entry'.
@@ -177,7 +259,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_ONSET_DATE = 10;
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_ONSET_DATE = 20;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Has Resolution Date' of 'Condition Entry'.
@@ -185,7 +267,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_RESOLUTION_DATE = 11;
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_RESOLUTION_DATE = 21;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Has Unknown Resolution Date' of 'Condition Entry'.
@@ -193,7 +275,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE = 12;
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE = 22;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Code' of 'Condition Entry'.
@@ -201,7 +283,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_CODE = 13;
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_CODE = 23;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Entry Value' of 'Condition Entry'.
@@ -209,7 +291,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__PROBLEM_ENTRY_VALUE = 14;
+	public static final int CONDITION_ENTRY__PROBLEM_ENTRY_VALUE = 24;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Advance Directives Section' of 'Patient Summary'.
@@ -217,7 +299,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION = 16;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION = 26;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Allergies Reactions Section' of 'Patient Summary'.
@@ -225,7 +307,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION = 17;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION = 27;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Problem List Section' of 'Patient Summary'.
@@ -233,7 +315,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION = 18;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION = 28;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Encounters Section' of 'Patient Summary'.
@@ -241,7 +323,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ENCOUNTERS_SECTION = 19;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ENCOUNTERS_SECTION = 29;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Immunizations Section' of 'Patient Summary'.
@@ -249,7 +331,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_IMMUNIZATIONS_SECTION = 20;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_IMMUNIZATIONS_SECTION = 30;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Payers Section' of 'Patient Summary'.
@@ -257,7 +339,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PAYERS_SECTION = 21;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PAYERS_SECTION = 31;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Medications Section' of 'Patient Summary'.
@@ -265,7 +347,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_MEDICATIONS_SECTION = 22;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_MEDICATIONS_SECTION = 32;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Surgeries Section' of 'Patient Summary'.
@@ -273,7 +355,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_SURGERIES_SECTION = 23;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_SURGERIES_SECTION = 33;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Plan Of Care Section' of 'Patient Summary'.
@@ -281,7 +363,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PLAN_OF_CARE_SECTION = 24;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PLAN_OF_CARE_SECTION = 34;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Pregnancy History Section' of 'Patient Summary'.
@@ -289,7 +371,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION = 25;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION = 35;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Vital Signs Section' of 'Patient Summary'.
@@ -297,7 +379,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_VITAL_SIGNS_SECTION = 26;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_VITAL_SIGNS_SECTION = 36;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Diagnostic Results Section' of 'Patient Summary'.
@@ -305,7 +387,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION = 27;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION = 37;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem List Section Template Id' of 'Problem List Section'.
@@ -313,7 +395,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID = 28;
+	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID = 38;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Vital Signs Section Template Id' of 'Vital Signs Section'.
@@ -321,7 +403,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID = 51;
+	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID = 63;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Sign Template Id' of 'Vital Sign'.
@@ -329,7 +411,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGN__VITAL_SIGN_TEMPLATE_ID = 60;
+	public static final int VITAL_SIGN__VITAL_SIGN_TEMPLATE_ID = 72;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Vital Sign'.
@@ -337,7 +419,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGN__RESULT_OBSERVATION_CODE = 61;
+	public static final int VITAL_SIGN__RESULT_OBSERVATION_CODE = 73;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Payers Section Template Id' of 'Payers Section'.
@@ -345,7 +427,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PAYERS_SECTION__HITSP_PAYERS_SECTION_TEMPLATE_ID = 41;
+	public static final int PAYERS_SECTION__HITSP_PAYERS_SECTION_TEMPLATE_ID = 53;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Allergies Reactions Section Template Id' of 'Allergies Reactions Section'.
@@ -353,7 +435,15 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID = 33;
+	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID = 43;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Allergies Reactions Section Allergy Drug Sensitivity' of 'Allergies Reactions Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY = 44;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP History Of Past Illness Section Template Id' of 'History Of Past Illness Section'.
@@ -361,7 +451,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_OF_PAST_ILLNESS_SECTION__HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID = 62;
+	public static final int HISTORY_OF_PAST_ILLNESS_SECTION__HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID = 74;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Chief Complaint Section Template Id' of 'Chief Complaint Section'.
@@ -369,7 +459,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID = 63;
+	public static final int CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID = 75;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Reason For Referral Section Template Id' of 'Reason For Referral Section'.
@@ -377,7 +467,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID = 64;
+	public static final int REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID = 76;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP History Of Present Illness Template Id' of 'History Of Present Illness'.
@@ -385,7 +475,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_OF_PRESENT_ILLNESS__HITSP_HISTORY_OF_PRESENT_ILLNESS_TEMPLATE_ID = 65;
+	public static final int HISTORY_OF_PRESENT_ILLNESS__HITSP_HISTORY_OF_PRESENT_ILLNESS_TEMPLATE_ID = 77;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Surgeries Section Template Id' of 'Surgeries Section'.
@@ -393,23 +483,15 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_TEMPLATE_ID = 42;
+	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_TEMPLATE_ID = 54;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Surgeries Section Procedure' of 'Surgeries Section'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Surgeries Section Procedure Activity' of 'Surgeries Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_PROCEDURE = 43;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Has Code Code' of 'Procedure'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_HAS_CODE_CODE = 44;
+	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY = 55;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Has Code Original Text' of 'Procedure'.
@@ -417,7 +499,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT = 45;
+	public static final int PROCEDURE__HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT = 56;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Performer Assigned Entity' of 'Procedure'.
@@ -425,7 +507,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY = 46;
+	public static final int PROCEDURE__HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY = 57;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Template Id' of 'Procedure'.
@@ -433,7 +515,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_TEMPLATE_ID = 47;
+	public static final int PROCEDURE__HITSP_PROCEDURE_TEMPLATE_ID = 58;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Target Site Code' of 'Procedure'.
@@ -441,7 +523,15 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_TARGET_SITE_CODE = 48;
+	public static final int PROCEDURE__HITSP_PROCEDURE_TARGET_SITE_CODE = 59;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Code' of 'Procedure'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURE__HITSP_PROCEDURE_CODE = 60;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Functional Status Section Template Id' of 'Functional Status Section'.
@@ -449,7 +539,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__HITSP_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 66;
+	public static final int FUNCTIONAL_STATUS_SECTION__HITSP_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 78;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Admission Diagnosis Section Template Id' of 'Hospital Admission Diagnosis Section'.
@@ -457,7 +547,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID = 67;
+	public static final int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID = 79;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Discharge Diagnosis Section Template Id' of 'Discharge Diagnosis Section'.
@@ -465,7 +555,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_DIAGNOSIS_SECTION__HITSP_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID = 68;
+	public static final int DISCHARGE_DIAGNOSIS_SECTION__HITSP_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID = 80;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Admission Medication History Section Template Id' of 'Admission Medication History Section'.
@@ -473,7 +563,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADMISSION_MEDICATION_HISTORY_SECTION__HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID = 69;
+	public static final int ADMISSION_MEDICATION_HISTORY_SECTION__HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID = 81;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Discharge Medications Section Template Id' of 'Hospital Discharge Medications Section'.
@@ -481,7 +571,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID = 70;
+	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID = 82;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medications Administered Section Template Id' of 'Medications Administered Section'.
@@ -489,7 +579,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_ADMINISTERED_SECTION__HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID = 71;
+	public static final int MEDICATIONS_ADMINISTERED_SECTION__HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID = 83;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Advance Directives Section Template Id' of 'Advance Directives Section'.
@@ -497,7 +587,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION__HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID = 32;
+	public static final int ADVANCE_DIRECTIVES_SECTION__HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID = 42;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunizations Section Template Id' of 'Immunizations Section'.
@@ -505,7 +595,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_TEMPLATE_ID = 38;
+	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_TEMPLATE_ID = 49;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem List Section Condition' of 'Problem List Section'.
@@ -513,7 +603,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CONDITION = 29;
+	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CONDITION = 39;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medications Section Template Id' of 'Medications Section'.
@@ -521,7 +611,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_TEMPLATE_ID = 30;
+	public static final int MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_TEMPLATE_ID = 40;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medications Section Medication' of 'Medications Section'.
@@ -529,7 +619,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_MEDICATION = 31;
+	public static final int MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_MEDICATION = 41;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunizations Section Immunization' of 'Immunizations Section'.
@@ -537,7 +627,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_IMMUNIZATION = 39;
+	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_IMMUNIZATION = 50;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Physical Exam Section Template Id' of 'Physical Exam Section'.
@@ -545,7 +635,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHYSICAL_EXAM_SECTION__HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID = 72;
+	public static final int PHYSICAL_EXAM_SECTION__HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID = 84;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Review Of Systems Section Template Id' of 'Review Of Systems Section'.
@@ -553,7 +643,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REVIEW_OF_SYSTEMS_SECTION__HITSP_REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID = 73;
+	public static final int REVIEW_OF_SYSTEMS_SECTION__HITSP_REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID = 85;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Course Section Template Id' of 'Hospital Course Section'.
@@ -561,7 +651,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_COURSE_SECTION__HITSP_HOSPITAL_COURSE_SECTION_TEMPLATE_ID = 74;
+	public static final int HOSPITAL_COURSE_SECTION__HITSP_HOSPITAL_COURSE_SECTION_TEMPLATE_ID = 86;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Template Id' of 'Diagnostic Results Section'.
@@ -569,15 +659,15 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID = 52;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID = 64;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Procedure' of 'Diagnostic Results Section'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Diagnostic Procedure' of 'Diagnostic Results Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_PROCEDURE = 53;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE = 65;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Result' of 'Diagnostic Results Section'.
@@ -585,7 +675,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT = 54;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT = 66;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Value Presence' of 'Result'.
@@ -593,7 +683,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_VALUE_PRESENCE = 55;
+	public static final int RESULT__RESULT_VALUE_PRESENCE = 67;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Assessment And Plan Section Template Id' of 'Assessment And Plan Section'.
@@ -601,7 +691,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 75;
+	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 87;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Plan Of Care Section Template Id' of 'Plan Of Care Section'.
@@ -609,7 +699,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 49;
+	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 61;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Vital Signs Section Vital Sign Entry' of 'Vital Signs Section'.
@@ -617,7 +707,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY = 50;
+	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY = 62;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Family History Section Template Id' of 'Family History Section'.
@@ -625,7 +715,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_SECTION__HITSP_FAMILY_HISTORY_SECTION_TEMPLATE_ID = 76;
+	public static final int FAMILY_HISTORY_SECTION__HITSP_FAMILY_HISTORY_SECTION_TEMPLATE_ID = 88;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Social History Section Template Id' of 'Social History Section'.
@@ -633,7 +723,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SOCIAL_HISTORY_SECTION__HITSP_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 77;
+	public static final int SOCIAL_HISTORY_SECTION__HITSP_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 89;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounters Section Template Id' of 'Encounters Section'.
@@ -641,15 +731,15 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID = 34;
+	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID = 45;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounters Section Encounter' of 'Encounters Section'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounters Section Encounter Entry' of 'Encounters Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_ENCOUNTER = 35;
+	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY = 46;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medical Equipment Section Template Id' of 'Medical Equipment Section'.
@@ -657,7 +747,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICAL_EQUIPMENT_SECTION__HITSP_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID = 78;
+	public static final int MEDICAL_EQUIPMENT_SECTION__HITSP_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID = 90;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Template Id' of 'Result'.
@@ -665,7 +755,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_TEMPLATE_ID = 56;
+	public static final int RESULT__RESULT_TEMPLATE_ID = 68;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Code' of 'Result'.
@@ -673,7 +763,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_CODE = 57;
+	public static final int RESULT__RESULT_CODE = 69;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Effective Time' of 'Result'.
@@ -681,7 +771,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_EFFECTIVE_TIME = 58;
+	public static final int RESULT__RESULT_EFFECTIVE_TIME = 70;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Value' of 'Result'.
@@ -689,7 +779,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_VALUE = 59;
+	public static final int RESULT__RESULT_VALUE = 71;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Language Spoken No Proficiency Level Code' of 'Language Spoken'.
@@ -697,7 +787,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE = 79;
+	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE = 91;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Language Spoken Template Id' of 'Language Spoken'.
@@ -705,7 +795,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_TEMPLATE_ID = 80;
+	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_TEMPLATE_ID = 92;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Language Spoken Mode Code' of 'Language Spoken'.
@@ -713,7 +803,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_MODE_CODE = 81;
+	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_MODE_CODE = 93;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Template Id' of 'Insurance Provider'.
@@ -721,7 +811,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID = 82;
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID = 94;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Healthcare Provider Template Id' of 'Healthcare Provider'.
@@ -729,7 +819,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID = 83;
+	public static final int HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID = 95;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunization Template Id' of 'Immunization'.
@@ -737,7 +827,15 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_TEMPLATE_ID = 40;
+	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_TEMPLATE_ID = 51;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Immunization Code' of 'Immunization'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int IMMUNIZATION__IMMUNIZATION_CODE = 52;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Comment Template Id' of 'Comment'.
@@ -745,15 +843,15 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT__HITSP_COMMENT_TEMPLATE_ID = 84;
+	public static final int COMMENT__HITSP_COMMENT_TEMPLATE_ID = 96;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Template Id' of 'Medication Tapered Dose'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tapered Dose Template Id' of 'Medication Tapered Dose'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_TAPERED_DOSE__HITSP_MEDICATION_TEMPLATE_ID = 85;
+	public static final int MEDICATION_TAPERED_DOSE__TAPERED_DOSE_TEMPLATE_ID = 97;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Support Guardian Template Id' of 'Support Guardian'.
@@ -761,7 +859,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUPPORT_GUARDIAN__HITSP_SUPPORT_GUARDIAN_TEMPLATE_ID = 86;
+	public static final int SUPPORT_GUARDIAN__HITSP_SUPPORT_GUARDIAN_TEMPLATE_ID = 98;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Support Participant Template Id' of 'Support Participant'.
@@ -769,7 +867,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUPPORT_PARTICIPANT__HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID = 87;
+	public static final int SUPPORT_PARTICIPANT__HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID = 99;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document No Structured Data' of 'Unstructured Document'.
@@ -777,7 +875,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA = 88;
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA = 100;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document One Patient Per Document' of 'Unstructured Document'.
@@ -785,7 +883,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT = 89;
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT = 101;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Scanned Document Template Id' of 'Unstructured Document'.
@@ -793,7 +891,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__SCANNED_DOCUMENT_TEMPLATE_ID = 90;
+	public static final int UNSTRUCTURED_DOCUMENT__SCANNED_DOCUMENT_TEMPLATE_ID = 102;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Template Id' of 'Medication Information'.
@@ -801,7 +899,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_TEMPLATE_ID = 91;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_TEMPLATE_ID = 103;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounter Template Id' of 'Encounter'.
@@ -809,7 +907,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER__HITSP_ENCOUNTER_TEMPLATE_ID = 36;
+	public static final int ENCOUNTER__HITSP_ENCOUNTER_TEMPLATE_ID = 47;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounter Code' of 'Encounter'.
@@ -817,7 +915,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER__HITSP_ENCOUNTER_CODE = 37;
+	public static final int ENCOUNTER__HITSP_ENCOUNTER_CODE = 48;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Template Id' of 'Patient Summary'.
@@ -825,7 +923,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_TEMPLATE_ID = 15;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_TEMPLATE_ID = 25;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -833,7 +931,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 91;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 103;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -913,6 +1011,10 @@ public class HITSPValidator extends EObjectValidator {
 				return validateAllergyDrugSensitivity((AllergyDrugSensitivity)value, diagnostics, context);
 			case HITSPPackage.MEDICATION:
 				return validateMedication((Medication)value, diagnostics, context);
+			case HITSPPackage.MEDICATION_TYPE:
+				return validateMedicationType((MedicationType)value, diagnostics, context);
+			case HITSPPackage.MEDICATION_ORDER_INFORMATION:
+				return validateMedicationOrderInformation((MedicationOrderInformation)value, diagnostics, context);
 			case HITSPPackage.CONDITION:
 				return validateCondition((Condition)value, diagnostics, context);
 			case HITSPPackage.CONDITION_ENTRY:
@@ -1050,6 +1152,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= iheValidator.validateConcernEntry_validateConcernEntryTemplateId(allergyDrugSensitivity, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateConcernEntry_validateConcernEntryEffectiveTime(allergyDrugSensitivity, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateAllergyIntoleranceConcern_validateAllergyIntoleranceConcernTemplateId(allergyDrugSensitivity, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateAllergyIntoleranceConcern_validateAllergyIntoleranceConcernAllergyIntolerance(allergyDrugSensitivity, diagnostics, context);
 		if (result || diagnostics != null) result &= validateAllergyDrugSensitivity_validateAllergyDrugSensitivityTemplateId(allergyDrugSensitivity, diagnostics, context);
 		return result;
 	}
@@ -1097,15 +1200,19 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRouteCode(medication, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medication, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medication, diagnostics, context);
 		return result;
 	}
 
@@ -1137,6 +1244,163 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	public boolean validateMedication_validateHITSPMedicationRouteCode(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medication.validateHITSPMedicationRouteCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHITSPMedicationDoseQuantity constraint of '<em>Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedication_validateHITSPMedicationDoseQuantity(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medication.validateHITSPMedicationDoseQuantity(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHITSPMedicationAdministrationUnitCode constraint of '<em>Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedication_validateHITSPMedicationAdministrationUnitCode(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medication.validateHITSPMedicationAdministrationUnitCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHITSPMedicationMaxDoseQuantity constraint of '<em>Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedication_validateHITSPMedicationMaxDoseQuantity(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medication.validateHITSPMedicationMaxDoseQuantity(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHITSPMedicationApproachSiteCode constraint of '<em>Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedication_validateHITSPMedicationApproachSiteCode(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medication.validateHITSPMedicationApproachSiteCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHITSPMedicationCode constraint of '<em>Medication</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedication_validateHITSPMedicationCode(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medication.validateHITSPMedicationCode(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationType(MedicationType medicationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationType, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(medicationType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(medicationType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationType_validateMedicationTypeTemplateId(medicationType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationType_validateMedicationTypeCode(medicationType, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the validateMedicationTypeTemplateId constraint of '<em>Medication Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationType_validateMedicationTypeTemplateId(MedicationType medicationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medicationType.validateMedicationTypeTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicationTypeCode constraint of '<em>Medication Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationType_validateMedicationTypeCode(MedicationType medicationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medicationType.validateMedicationTypeCode(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationOrderInformation(MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationOrderInformation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSupply_validateClassCode(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityMoodCode(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasAuthor(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasPerformer(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasParticipantLocation(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityInformationSource(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasProduct(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityTemplateId(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityId(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityStatusCode(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityEffectiveTime(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityQuantity(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityRepeatNumber(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityMedicationStatusObservation(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityFulfillmentInstruction(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateSupplyEntry_validateSupplyEntryTemplateId(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateSupplyEntry_validateSupplyEntryQuantity(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateSupplyEntry_validateSupplyEntryRepeatNumber(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationOrderInformation_validateMedicationOrderInformationTemplateId(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationOrderInformation_validateMedicationOrderInformationRepeatNumber(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationOrderInformation_validateMedicationOrderInformationStatusCode(medicationOrderInformation, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the validateMedicationOrderInformationTemplateId constraint of '<em>Medication Order Information</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationOrderInformation_validateMedicationOrderInformationTemplateId(MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medicationOrderInformation.validateMedicationOrderInformationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicationOrderInformationRepeatNumber constraint of '<em>Medication Order Information</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationOrderInformation_validateMedicationOrderInformationRepeatNumber(MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medicationOrderInformation.validateMedicationOrderInformationRepeatNumber(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMedicationOrderInformationStatusCode constraint of '<em>Medication Order Information</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationOrderInformation_validateMedicationOrderInformationStatusCode(MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return medicationOrderInformation.validateMedicationOrderInformationStatusCode(diagnostics, context);
 	}
 
 	/**
@@ -1640,7 +1904,9 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateAlertsSection_validateAlertsSectionText(allergiesReactionsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateAlertsSection_validateAlertsSectionProblemAct(allergiesReactionsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateAllergiesReactionsSection_validateAllergiesReactionsSectionTemplateId(allergiesReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateAllergiesReactionsSection_validateAllergiesReactionsSectionAllergyIntoleranceConcern(allergiesReactionsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionTemplateId(allergiesReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(allergiesReactionsSection, diagnostics, context);
 		return result;
 	}
 
@@ -1652,6 +1918,16 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	public boolean validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionTemplateId(AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return allergiesReactionsSection.validateHITSPAllergiesReactionsSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity constraint of '<em>Allergies Reactions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return allergiesReactionsSection.validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(diagnostics, context);
 	}
 
 	/**
@@ -1851,8 +2127,10 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateProceduresSection_validateProceduresSectionTitle(surgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateSurgeriesSection_validateSurgeriesSectionTemplateId(surgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateCodedSurgeriesSection_validateCodedSurgeriesSectionTemplateId(surgeriesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateCodedSurgeriesSection_validateCodedSurgeriesSectionExternalReference(surgeriesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateCodedSurgeriesSection_validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(surgeriesSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSurgeriesSection_validateHITSPSurgeriesSectionTemplateId(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSurgeriesSection_validateHITSPSurgeriesSectionProcedure(surgeriesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSurgeriesSection_validateHITSPSurgeriesSectionProcedureActivity(surgeriesSection, diagnostics, context);
 		return result;
 	}
 
@@ -1867,13 +2145,13 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateHITSPSurgeriesSectionProcedure constraint of '<em>Surgeries Section</em>'.
+	 * Validates the validateHITSPSurgeriesSectionProcedureActivity constraint of '<em>Surgeries Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurgeriesSection_validateHITSPSurgeriesSectionProcedure(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return surgeriesSection.validateHITSPSurgeriesSectionProcedure(diagnostics, context);
+	public boolean validateSurgeriesSection_validateHITSPSurgeriesSectionProcedureActivity(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return surgeriesSection.validateHITSPSurgeriesSectionProcedureActivity(diagnostics, context);
 	}
 
 	/**
@@ -2320,7 +2598,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionExternalReference(diagnosticResultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionSimpleObservation(diagnosticResultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateDiagnosticResultsSection_validateDiagnosticResultsSectionTemplateId(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateDiagnosticResultsSection_validateDiagnosticResultsSectionProcedure(diagnosticResultsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDiagnosticResultsSection_validateDiagnosticResultsSectionDiagnosticProcedure(diagnosticResultsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateDiagnosticResultsSection_validateDiagnosticResultsSectionResult(diagnosticResultsSection, diagnostics, context);
 		return result;
 	}
@@ -2336,13 +2614,13 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateDiagnosticResultsSectionProcedure constraint of '<em>Diagnostic Results Section</em>'.
+	 * Validates the validateDiagnosticResultsSectionDiagnosticProcedure constraint of '<em>Diagnostic Results Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSection_validateDiagnosticResultsSectionProcedure(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return diagnosticResultsSection.validateDiagnosticResultsSectionProcedure(diagnostics, context);
+	public boolean validateDiagnosticResultsSection_validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return diagnosticResultsSection.validateDiagnosticResultsSectionDiagnosticProcedure(diagnostics, context);
 	}
 
 	/**
@@ -2518,7 +2796,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= iheValidator.validateEncounterHistorySection_validateEncounterHistorySectionTemplateId(encountersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateEncounterHistorySection_validateEncounterHistorySectionEncounterEntry(encountersSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validateEncountersSection_validateHITSPEncountersSectionTemplateId(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEncountersSection_validateHITSPEncountersSectionEncounter(encountersSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEncountersSection_validateHITSPEncountersSectionEncounterEntry(encountersSection, diagnostics, context);
 		return result;
 	}
 
@@ -2533,13 +2811,13 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateHITSPEncountersSectionEncounter constraint of '<em>Encounters Section</em>'.
+	 * Validates the validateHITSPEncountersSectionEncounterEntry constraint of '<em>Encounters Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSection_validateHITSPEncountersSectionEncounter(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return encountersSection.validateHITSPEncountersSectionEncounter(diagnostics, context);
+	public boolean validateEncountersSection_validateHITSPEncountersSectionEncounterEntry(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encountersSection.validateHITSPEncountersSectionEncounterEntry(diagnostics, context);
 	}
 
 	/**
@@ -2812,6 +3090,9 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateImmunization_validateImmunizationTemplateId(immunization, diagnostics, context);
+		if (result || diagnostics != null) result &= validateImmunization_validateImmunizationCode(immunization, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateImmunization_validateImmunizationStatusCode(immunization, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateImmunization_validateImmunizationMoodCode(immunization, diagnostics, context);
 		if (result || diagnostics != null) result &= validateImmunization_validateHITSPImmunizationTemplateId(immunization, diagnostics, context);
 		return result;
 	}
@@ -2824,6 +3105,35 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	public boolean validateImmunization_validateHITSPImmunizationTemplateId(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return immunization.validateHITSPImmunizationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateImmunizationCode constraint of '<em>Immunization</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunization_validateImmunizationCode(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		// TODO override the constraint, if desired
+		// -> uncomment the scaffolding
+		// -> specify the condition that violates the constraint
+		// -> verify the diagnostic details, including severity, code, and message
+		// Ensure that you remove @generated or mark it @generated NOT
+		if (false) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(createDiagnostic
+						(Diagnostic.ERROR,
+						 DIAGNOSTIC_SOURCE,
+						 0,
+						 "_UI_GenericConstraint_diagnostic",
+						 new Object[] { "validateImmunizationCode", getObjectLabel(immunization, context) },
+						 new Object[] { immunization },
+						 context));
+			}
+			return false;
+		}
+		return iheValidator.validateImmunization_validateImmunizationCode(immunization, diagnostics, context);
 	}
 
 	/**
@@ -2845,6 +3155,7 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateComment_validateCommentMoodCode(comment, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateComment_validateCommentCode(comment, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateComment_validateIHECommentHasTextReference(comment, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateComment_validateIHECommentEffectiveTimeWhenAuthorPresent(comment, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateComment_validateIHECommentStatusCode(comment, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateComment_validateIHECommentText(comment, diagnostics, context);
 		if (result || diagnostics != null) result &= validateComment_validateHITSPCommentTemplateId(comment, diagnostics, context);
@@ -2894,15 +3205,19 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRouteCode(medicationNormalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medicationNormalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationNormalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medicationNormalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medicationNormalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medicationNormalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medicationNormalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateNormalDose_validateNormalDoseTemplateId(medicationNormalDose, diagnostics, context);
 		return result;
 	}
@@ -2940,15 +3255,19 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRouteCode(medicationSplitDose, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medicationSplitDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationSplitDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medicationSplitDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medicationSplitDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medicationSplitDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medicationSplitDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateSplitDose_validateSplitDoseTemplateId(medicationSplitDose, diagnostics, context);
 		return result;
 	}
@@ -2986,26 +3305,30 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRouteCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationTaperedDose_validateHITSPMedicationTemplateId(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationTaperedDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateTaperedDose_validateTaperedDoseTemplateId(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationTaperedDose_validateTaperedDoseTemplateId(medicationTaperedDose, diagnostics, context);
 		return result;
 	}
 
 	/**
-	 * Validates the validateHITSPMedicationTemplateId constraint of '<em>Medication Tapered Dose</em>'.
+	 * Validates the validateTaperedDoseTemplateId constraint of '<em>Medication Tapered Dose</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationTaperedDose_validateHITSPMedicationTemplateId(MedicationTaperedDose medicationTaperedDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationTaperedDose_validateTaperedDoseTemplateId(MedicationTaperedDose medicationTaperedDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		// TODO override the constraint, if desired
 		// -> uncomment the scaffolding
 		// -> specify the condition that violates the constraint
@@ -3019,13 +3342,13 @@ public class HITSPValidator extends EObjectValidator {
 						 DIAGNOSTIC_SOURCE,
 						 0,
 						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateHITSPMedicationTemplateId", getObjectLabel(medicationTaperedDose, context) },
+						 new Object[] { "validateTaperedDoseTemplateId", getObjectLabel(medicationTaperedDose, context) },
 						 new Object[] { medicationTaperedDose },
 						 context));
 			}
 			return false;
 		}
-		return validateMedication_validateHITSPMedicationTemplateId(medicationTaperedDose, diagnostics, context);
+		return iheValidator.validateTaperedDose_validateTaperedDoseTemplateId(medicationTaperedDose, diagnostics, context);
 	}
 
 	/**
@@ -3061,16 +3384,20 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRouteCode(medicationConditionalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateConditionalDose_validateConditionalDoseTemplateId(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationConditionalDose, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medicationConditionalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationConditionalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medicationConditionalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medicationConditionalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medicationConditionalDose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medicationConditionalDose, diagnostics, context);
 		return result;
 	}
 
@@ -3107,16 +3434,20 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationConsumableName(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRouteCode(medicationCombinationMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateCombinationMedication_validateCombinationMedicationTemplateId(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationCombinationMedication, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medicationCombinationMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationCombinationMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medicationCombinationMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medicationCombinationMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medicationCombinationMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medicationCombinationMedication, diagnostics, context);
 		return result;
 	}
 
@@ -3137,29 +3468,17 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureTemplateId(procedure, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureHasTextReference(procedure, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureTemplateId(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureApproachSiteCode(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureCode(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureEffectiveTime(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureId(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureStatusCode(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureTargetSiteCode(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureClassCode(procedure, diagnostics, context);
 		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureText(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedureHasCodeCode(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureApproachSiteCode(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureInternalReference(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureInternalReferenceReason(procedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedureHasCodeOriginalText(procedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedurePerformerAssignedEntity(procedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedureTemplateId(procedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedureTargetSiteCode(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedureCode(procedure, diagnostics, context);
 		return result;
-	}
-
-	/**
-	 * Validates the validateHITSPProcedureHasCodeCode constraint of '<em>Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedure_validateHITSPProcedureHasCodeCode(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedure.validateHITSPProcedureHasCodeCode(diagnostics, context);
 	}
 
 	/**
@@ -3200,6 +3519,16 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	public boolean validateProcedure_validateHITSPProcedureTargetSiteCode(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return procedure.validateHITSPProcedureTargetSiteCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHITSPProcedureCode constraint of '<em>Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedure_validateHITSPProcedureCode(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return procedure.validateHITSPProcedureCode(diagnostics, context);
 	}
 
 	/**

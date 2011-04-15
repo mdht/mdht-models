@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getImmunization()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.12' constraints.validation.error='ImmunizationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.5.4' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.12' constraints.validation.error='ImmunizationTemplateId ImmunizationCode ImmunizationStatusCode ImmunizationMoodCode' code.codeSystemName='HL7ActCode' code.code='IMMUNIZ' moodCode='EVN'"
  * @generated
  */
 public interface Immunization extends MedicationActivity {
@@ -34,6 +34,47 @@ public interface Immunization extends MedicationActivity {
 	 * @generated
 	 */
 	boolean validateImmunizationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
+	 * value.code = 'IMMUNIZ' and value.codeSystem = '2.16.840.1.113883.5.4'))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\r\nvalue.code = \'IMMUNIZ\' and value.codeSystem = \'2.16.840.1.113883.5.4\'))'"
+	 * @generated
+	 */
+	boolean validateImmunizationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateImmunizationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.moodCode.oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined()'"
+	 * @generated
+	 */
+	boolean validateImmunizationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
