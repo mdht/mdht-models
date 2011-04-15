@@ -4,7 +4,7 @@
     <generalization xmi:id="_UcKsMMfuEd6VjLXh4DcWSg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-codedSurgeries.uml#_9fsJYMftEd6VjLXh4DcWSg"/>
     </generalization>
-    <ownedAttribute xmi:id="_cuJokFV1EeCw2ulF0_tZWA" name="procedure">
+    <ownedAttribute xmi:id="_cuJokFV1EeCw2ulF0_tZWA" name="procedureActivity">
       <type xmi:type="uml:Class" href="../hitsp.uml#_KYNNMKDlEd-dVeaMP0XXQw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kxxgwFV1EeCw2ulF0_tZWA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kxyH0FV1EeCw2ulF0_tZWA" value="1"/>
