@@ -31,8 +31,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.CoverageActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.ccd.FamilyHistorySection;
+import org.openhealthtools.mdht.uml.cda.ccd.FulfillmentInstruction;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicalEquipmentSection;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
+import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityEncounter;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityObservation;
@@ -47,6 +49,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
+import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.ccd.SeverityObservation;
@@ -94,11 +97,13 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHERegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.ihe.Immunization;
 import org.openhealthtools.mdht.uml.cda.ihe.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.IntakeOutputSection;
+import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalDevicesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
 import org.openhealthtools.mdht.uml.cda.ihe.Medication;
+import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.NormalDose;
@@ -108,6 +113,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.PHRUpdate;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContact;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContactGuardian;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContactParticipant;
+import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.cda.ihe.PayerEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.PayersSection;
 import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamNarrativeSection;
@@ -116,6 +122,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
+import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
@@ -251,6 +258,22 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 				return createMedicationAdapter();
 			}
 			@Override
+			public Adapter caseInternalReference(InternalReference object) {
+				return createInternalReferenceAdapter();
+			}
+			@Override
+			public Adapter casePatientMedicalInstructions(PatientMedicalInstructions object) {
+				return createPatientMedicalInstructionsAdapter();
+			}
+			@Override
+			public Adapter caseSupplyEntry(SupplyEntry object) {
+				return createSupplyEntryAdapter();
+			}
+			@Override
+			public Adapter caseMedicationFullfillmentInstructions(MedicationFullfillmentInstructions object) {
+				return createMedicationFullfillmentInstructionsAdapter();
+			}
+			@Override
 			public Adapter caseMedicationsSection(MedicationsSection object) {
 				return createMedicationsSectionAdapter();
 			}
@@ -261,6 +284,10 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseAllergyIntolerance(AllergyIntolerance object) {
 				return createAllergyIntoleranceAdapter();
+			}
+			@Override
+			public Adapter caseProblemEntryReactionObservationContainer(ProblemEntryReactionObservationContainer object) {
+				return createProblemEntryReactionObservationContainerAdapter();
 			}
 			@Override
 			public Adapter caseAllergiesReactionsSection(AllergiesReactionsSection object) {
@@ -339,6 +366,18 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 				return createCodedSurgeriesSectionAdapter();
 			}
 			@Override
+			public Adapter caseExternalReference(ExternalReference object) {
+				return createExternalReferenceAdapter();
+			}
+			@Override
+			public Adapter caseProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure object) {
+				return createProcedureEntryProcedureActivityProcedureAdapter();
+			}
+			@Override
+			public Adapter caseProcedureEntry(ProcedureEntry object) {
+				return createProcedureEntryAdapter();
+			}
+			@Override
 			public Adapter caseHospitalAdmissionDiagnosisSection(HospitalAdmissionDiagnosisSection object) {
 				return createHospitalAdmissionDiagnosisSectionAdapter();
 			}
@@ -381,10 +420,6 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseCodedResultsSection(CodedResultsSection object) {
 				return createCodedResultsSectionAdapter();
-			}
-			@Override
-			public Adapter caseExternalReference(ExternalReference object) {
-				return createExternalReferenceAdapter();
 			}
 			@Override
 			public Adapter caseAssessmentAndPlanSection(AssessmentAndPlanSection object) {
@@ -439,14 +474,6 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 				return createProductEntryAdapter();
 			}
 			@Override
-			public Adapter caseProcedureEntry(ProcedureEntry object) {
-				return createProcedureEntryAdapter();
-			}
-			@Override
-			public Adapter caseProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure object) {
-				return createProcedureEntryProcedureActivityProcedureAdapter();
-			}
-			@Override
 			public Adapter caseProcedureEntryPlanOfCareActivityProcedure(ProcedureEntryPlanOfCareActivityProcedure object) {
 				return createProcedureEntryPlanOfCareActivityProcedureAdapter();
 			}
@@ -473,10 +500,6 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseIntakeOutputSection(IntakeOutputSection object) {
 				return createIntakeOutputSectionAdapter();
-			}
-			@Override
-			public Adapter caseSupplyEntry(SupplyEntry object) {
-				return createSupplyEntryAdapter();
 			}
 			@Override
 			public Adapter casePregnancyHistorySection(PregnancyHistorySection object) {
@@ -595,8 +618,28 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 				return createCCD_CommentAdapter();
 			}
 			@Override
+			public Adapter casePatientInstruction(PatientInstruction object) {
+				return createPatientInstructionAdapter();
+			}
+			@Override
+			public Adapter caseSupply(Supply object) {
+				return createSupplyAdapter();
+			}
+			@Override
+			public Adapter caseSupplyActivity(SupplyActivity object) {
+				return createSupplyActivityAdapter();
+			}
+			@Override
+			public Adapter caseFulfillmentInstruction(FulfillmentInstruction object) {
+				return createFulfillmentInstructionAdapter();
+			}
+			@Override
 			public Adapter caseCCD_MedicationsSection(org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection object) {
 				return createCCD_MedicationsSectionAdapter();
+			}
+			@Override
+			public Adapter caseReactionObservation(ReactionObservation object) {
+				return createReactionObservationAdapter();
 			}
 			@Override
 			public Adapter caseAlertsSection(AlertsSection object) {
@@ -633,6 +676,18 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseProceduresSection(ProceduresSection object) {
 				return createProceduresSectionAdapter();
+			}
+			@Override
+			public Adapter caseProcedure(Procedure object) {
+				return createProcedureAdapter();
+			}
+			@Override
+			public Adapter caseProcedureActivity(ProcedureActivity object) {
+				return createProcedureActivityAdapter();
+			}
+			@Override
+			public Adapter caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
+				return createProcedureActivityProcedureAdapter();
 			}
 			@Override
 			public Adapter caseCCD_AdvanceDirectivesSection(org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectivesSection object) {
@@ -695,18 +750,6 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 				return createProductAdapter();
 			}
 			@Override
-			public Adapter caseProcedure(Procedure object) {
-				return createProcedureAdapter();
-			}
-			@Override
-			public Adapter caseProcedureActivity(ProcedureActivity object) {
-				return createProcedureActivityAdapter();
-			}
-			@Override
-			public Adapter caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
-				return createProcedureActivityProcedureAdapter();
-			}
-			@Override
 			public Adapter casePlanOfCareActivityProcedure(PlanOfCareActivityProcedure object) {
 				return createPlanOfCareActivityProcedureAdapter();
 			}
@@ -721,14 +764,6 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter casePlanOfCareActivityEncounter(PlanOfCareActivityEncounter object) {
 				return createPlanOfCareActivityEncounterAdapter();
-			}
-			@Override
-			public Adapter caseSupply(Supply object) {
-				return createSupplyAdapter();
-			}
-			@Override
-			public Adapter caseSupplyActivity(SupplyActivity object) {
-				return createSupplyActivityAdapter();
 			}
 			@Override
 			public Adapter caseSupport(Support object) {
@@ -937,6 +972,34 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.InternalReference <em>Internal Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.InternalReference
+	 * @generated
+	 */
+	public Adapter createInternalReferenceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions <em>Patient Medical Instructions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions
+	 * @generated
+	 */
+	public Adapter createPatientMedicalInstructionsAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection <em>Medications Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -975,6 +1038,20 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAllergyIntoleranceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer <em>Problem Entry Reaction Observation Container</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer
+	 * @generated
+	 */
+	public Adapter createProblemEntryReactionObservationContainerAdapter() {
 		return null;
 	}
 
@@ -1763,6 +1840,20 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions <em>Medication Fullfillment Instructions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions
+	 * @generated
+	 */
+	public Adapter createMedicationFullfillmentInstructionsAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection <em>Pregnancy History Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2141,6 +2232,20 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction <em>Patient Instruction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction
+	 * @generated
+	 */
+	public Adapter createPatientInstructionAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.SubstanceAdministration <em>Substance Administration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2179,6 +2284,20 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCCD_MedicationsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation <em>Reaction Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation
+	 * @generated
+	 */
+	public Adapter createReactionObservationAdapter() {
 		return null;
 	}
 
@@ -2641,6 +2760,20 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSupplyActivityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.FulfillmentInstruction <em>Fulfillment Instruction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ccd.FulfillmentInstruction
+	 * @generated
+	 */
+	public Adapter createFulfillmentInstructionAdapter() {
 		return null;
 	}
 

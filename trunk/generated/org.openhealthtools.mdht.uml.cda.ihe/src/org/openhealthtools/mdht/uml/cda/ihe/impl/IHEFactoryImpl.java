@@ -55,11 +55,12 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHERegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.ihe.Immunization;
 import org.openhealthtools.mdht.uml.cda.ihe.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.IntakeOutputSection;
+import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalDevicesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
-import org.openhealthtools.mdht.uml.cda.ihe.Medication;
+import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.NormalDose;
@@ -68,6 +69,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.PHRExtract;
 import org.openhealthtools.mdht.uml.cda.ihe.PHRUpdate;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContactGuardian;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContactParticipant;
+import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.cda.ihe.PayerEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.PayersSection;
 import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamNarrativeSection;
@@ -76,6 +78,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
+import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
@@ -153,10 +156,14 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 			case IHEPackage.PROBLEM_STATUS_OBSERVATION: return createProblemStatusObservation();
 			case IHEPackage.HEALTH_STATUS_OBSERVATION: return createHealthStatusObservation();
 			case IHEPackage.COMMENT: return createComment();
-			case IHEPackage.MEDICATION: return createMedication();
+			case IHEPackage.INTERNAL_REFERENCE: return createInternalReference();
+			case IHEPackage.PATIENT_MEDICAL_INSTRUCTIONS: return createPatientMedicalInstructions();
+			case IHEPackage.SUPPLY_ENTRY: return createSupplyEntry();
+			case IHEPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: return createMedicationFullfillmentInstructions();
 			case IHEPackage.MEDICATIONS_SECTION: return createMedicationsSection();
 			case IHEPackage.ALLERGY_INTOLERANCE_CONCERN: return createAllergyIntoleranceConcern();
 			case IHEPackage.ALLERGY_INTOLERANCE: return createAllergyIntolerance();
+			case IHEPackage.PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER: return createProblemEntryReactionObservationContainer();
 			case IHEPackage.ALLERGIES_REACTIONS_SECTION: return createAllergiesReactionsSection();
 			case IHEPackage.NORMAL_DOSE: return createNormalDose();
 			case IHEPackage.TAPERED_DOSE: return createTaperedDose();
@@ -175,6 +182,9 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 			case IHEPackage.HISTORY_OF_PRESENT_ILLNESS: return createHistoryOfPresentIllness();
 			case IHEPackage.SURGERIES_SECTION: return createSurgeriesSection();
 			case IHEPackage.CODED_SURGERIES_SECTION: return createCodedSurgeriesSection();
+			case IHEPackage.EXTERNAL_REFERENCE: return createExternalReference();
+			case IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureEntryProcedureActivityProcedure();
+			case IHEPackage.PROCEDURE_ENTRY: return createProcedureEntry();
 			case IHEPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: return createHospitalAdmissionDiagnosisSection();
 			case IHEPackage.DISCHARGE_DIAGNOSIS_SECTION: return createDischargeDiagnosisSection();
 			case IHEPackage.ADMISSION_MEDICATION_HISTORY_SECTION: return createAdmissionMedicationHistorySection();
@@ -186,7 +196,6 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 			case IHEPackage.REVIEW_OF_SYSTEMS_SECTION: return createReviewOfSystemsSection();
 			case IHEPackage.HOSPITAL_COURSE_SECTION: return createHospitalCourseSection();
 			case IHEPackage.CODED_RESULTS_SECTION: return createCodedResultsSection();
-			case IHEPackage.EXTERNAL_REFERENCE: return createExternalReference();
 			case IHEPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
 			case IHEPackage.CARE_PLAN_SECTION: return createCarePlanSection();
 			case IHEPackage.FAMILY_MEDICAL_HISTORY_SECTION: return createFamilyMedicalHistorySection();
@@ -199,8 +208,6 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 			case IHEPackage.HEALTHCARE_PROVIDERS_PHARMACIES: return createHealthcareProvidersPharmacies();
 			case IHEPackage.OBSERVATION_REQUEST_ENTRY: return createObservationRequestEntry();
 			case IHEPackage.PRODUCT_ENTRY: return createProductEntry();
-			case IHEPackage.PROCEDURE_ENTRY: return createProcedureEntry();
-			case IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureEntryProcedureActivityProcedure();
 			case IHEPackage.PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE: return createProcedureEntryPlanOfCareActivityProcedure();
 			case IHEPackage.PAYER_ENTRY: return createPayerEntry();
 			case IHEPackage.PHR_EXTRACT: return createPHRExtract();
@@ -208,7 +215,6 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 			case IHEPackage.ENCOUNTER_ACTIVITY: return createEncounterActivity();
 			case IHEPackage.ENCOUNTER_PLAN_OF_CARE: return createEncounterPlanOfCare();
 			case IHEPackage.INTAKE_OUTPUT_SECTION: return createIntakeOutputSection();
-			case IHEPackage.SUPPLY_ENTRY: return createSupplyEntry();
 			case IHEPackage.PREGNANCY_HISTORY_SECTION: return createPregnancyHistorySection();
 			case IHEPackage.PREGNANCY_OBSERVATION: return createPregnancyObservation();
 			case IHEPackage.PATIENT_CONTACT_GUARDIAN: return createPatientContactGuardian();
@@ -328,16 +334,6 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Medication createMedication() {
-		MedicationImpl medication = new MedicationImpl();
-		return medication;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public MedicationsSection createMedicationsSection() {
 		MedicationsSectionImpl medicationsSection = new MedicationsSectionImpl();
 		return medicationsSection;
@@ -361,6 +357,16 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	public AllergyIntolerance createAllergyIntolerance() {
 		AllergyIntoleranceImpl allergyIntolerance = new AllergyIntoleranceImpl();
 		return allergyIntolerance;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemEntryReactionObservationContainer createProblemEntryReactionObservationContainer() {
+		ProblemEntryReactionObservationContainerImpl problemEntryReactionObservationContainer = new ProblemEntryReactionObservationContainerImpl();
+		return problemEntryReactionObservationContainer;
 	}
 
 	/**
@@ -838,6 +844,26 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public InternalReference createInternalReference() {
+		InternalReferenceImpl internalReference = new InternalReferenceImpl();
+		return internalReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientMedicalInstructions createPatientMedicalInstructions() {
+		PatientMedicalInstructionsImpl patientMedicalInstructions = new PatientMedicalInstructionsImpl();
+		return patientMedicalInstructions;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PayerEntry createPayerEntry() {
 		PayerEntryImpl payerEntry = new PayerEntryImpl();
 		return payerEntry;
@@ -901,6 +927,16 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	public SupplyEntry createSupplyEntry() {
 		SupplyEntryImpl supplyEntry = new SupplyEntryImpl();
 		return supplyEntry;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationFullfillmentInstructions createMedicationFullfillmentInstructions() {
+		MedicationFullfillmentInstructionsImpl medicationFullfillmentInstructions = new MedicationFullfillmentInstructionsImpl();
+		return medicationFullfillmentInstructions;
 	}
 
 	/**

@@ -9,7 +9,10 @@ package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.Immunization;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.ImmunizationOperations;
@@ -20,6 +23,10 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  * An implementation of the model object '<em><b>Immunization</b></em>'.
  * <!-- end-user-doc -->
  * <p>
+ * The following features are implemented:
+ * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ImmunizationImpl#getEntryRelationships <em>Entry Relationship</em>}</li>
+ * </ul>
  * </p>
  *
  * @generated
@@ -49,8 +56,40 @@ public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public EList<EntryRelationship> getEntryRelationships() {
+		if (entryRelationships == null) {
+			entryRelationships = new EObjectResolvingEList<EntryRelationship>(EntryRelationship.class, this, HITSPPackage.IMMUNIZATION__ENTRY_RELATIONSHIP);
+		}
+		return entryRelationships;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isSetEntryRelationships() {
+		return entryRelationships != null && !entryRelationships.isEmpty();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateHITSPImmunizationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationOperations.validateHITSPImmunizationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateImmunizationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationOperations.validateImmunizationCode(this, diagnostics, context);
 	}
 
 	/**

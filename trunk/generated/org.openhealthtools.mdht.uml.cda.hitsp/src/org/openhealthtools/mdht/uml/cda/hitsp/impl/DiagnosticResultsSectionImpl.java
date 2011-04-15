@@ -62,8 +62,8 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSectionProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionProcedure(this, diagnostics, context);
+	public boolean validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionDiagnosticProcedure(this, diagnostics, context);
 	}
 
 	/**

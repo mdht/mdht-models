@@ -35,8 +35,8 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedSurgeriesSectionOper
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.SurgeriesSection#validateHITSPSurgeriesSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Surgeries Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.SurgeriesSection#validateHITSPSurgeriesSectionProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Surgeries Section Procedure</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.SurgeriesSection#getSurgicalProcedures() <em>Get Surgical Procedures</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.SurgeriesSection#validateHITSPSurgeriesSectionProcedureActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Surgeries Section Procedure Activity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.SurgeriesSection#getProcedureActivities() <em>Get Procedure Activities</em>}</li>
  * </ul>
  * </p>
  *
@@ -110,24 +110,24 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPSurgeriesSectionProcedure(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Surgeries Section Procedure</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateHITSPSurgeriesSectionProcedureActivity(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Surgeries Section Procedure Activity</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPSurgeriesSectionProcedure(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateHITSPSurgeriesSectionProcedureActivity(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))";
+	protected static final String VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPSurgeriesSectionProcedure(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Surgeries Section Procedure</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateHITSPSurgeriesSectionProcedureActivity(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Surgeries Section Procedure Activity</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPSurgeriesSectionProcedure(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateHITSPSurgeriesSectionProcedureActivity(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -140,25 +140,25 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateHITSPSurgeriesSectionProcedure(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	public static  boolean validateHITSPSurgeriesSectionProcedureActivity(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.SURGERIES_SECTION);
 			try {
-				VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.SURGERIES_SECTION__HITSP_SURGERIES_SECTION_PROCEDURE,
-						 HITSPPlugin.INSTANCE.getString("HITSPSurgeriesSectionProcedure"),
+						 HITSPValidator.SURGERIES_SECTION__HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY,
+						 HITSPPlugin.INSTANCE.getString("HITSPSurgeriesSectionProcedureActivity"),
 						 new Object [] { surgeriesSection }));
 			}
 			return false;
@@ -167,24 +167,24 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getSurgicalProcedures(SurgeriesSection) <em>Get Surgical Procedures</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getProcedureActivities(SurgeriesSection) <em>Get Procedure Activities</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSurgicalProcedures(SurgeriesSection)
+	 * @see #getProcedureActivities(SurgeriesSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SURGICAL_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(hitsp::Procedure)).oclAsType(hitsp::Procedure)";
+	protected static final String GET_PROCEDURE_ACTIVITIES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(hitsp::Procedure)).oclAsType(hitsp::Procedure)";
 
 	/**
-	 * The cached OCL query for the '{@link #getSurgicalProcedures(SurgeriesSection) <em>Get Surgical Procedures</em>}' query operation.
+	 * The cached OCL query for the '{@link #getProcedureActivities(SurgeriesSection) <em>Get Procedure Activities</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSurgicalProcedures(SurgeriesSection)
+	 * @see #getProcedureActivities(SurgeriesSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_SURGICAL_PROCEDURES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PROCEDURE_ACTIVITIES__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,18 +195,18 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<Procedure> getSurgicalProcedures(SurgeriesSection surgeriesSection) {
-		if (GET_SURGICAL_PROCEDURES__EOCL_QRY == null) {
+	public static  EList<Procedure> getProcedureActivities(SurgeriesSection surgeriesSection) {
+		if (GET_PROCEDURE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.SURGERIES_SECTION, HITSPPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(HITSPPackage.Literals.SURGERIES_SECTION, HITSPPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(66));
 			try {
-				GET_SURGICAL_PROCEDURES__EOCL_QRY = helper.createQuery(GET_SURGICAL_PROCEDURES__EOCL_EXP);
+				GET_PROCEDURE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITIES__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SURGICAL_PROCEDURES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Procedure> result = (Collection<Procedure>) query.evaluate(surgeriesSection);
 		return new BasicEList.UnmodifiableEList<Procedure>(result.size(), result.toArray());

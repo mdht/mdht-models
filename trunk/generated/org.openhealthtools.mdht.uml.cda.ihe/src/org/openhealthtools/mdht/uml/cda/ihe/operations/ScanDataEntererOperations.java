@@ -226,7 +226,7 @@ public class ScanDataEntererOperations extends DataEntererOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SCAN_DATA_ENTERER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.time.oclIsUndefined()";
+	protected static final String VALIDATE_SCAN_DATA_ENTERER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.time.oclIsUndefined() or self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateScanDataEntererTime(ScanDataEnterer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scan Data Enterer Time</em>}' invariant operation.
@@ -242,7 +242,7 @@ public class ScanDataEntererOperations extends DataEntererOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.time.oclIsUndefined()
+	 * (self.time.oclIsUndefined() or self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())
 	 * @param scanDataEnterer The receiving '<em><b>Scan Data Enterer</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

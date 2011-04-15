@@ -15,9 +15,14 @@ package org.openhealthtools.mdht.uml.cda.ihe.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance;
+import org.openhealthtools.mdht.uml.cda.ihe.Comment;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
+import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer;
+import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
+import org.openhealthtools.mdht.uml.cda.ihe.Severity;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.AllergyIntoleranceOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -57,6 +62,97 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements AllergyI
 	 */
 	public boolean validateAllergyIntoleranceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyIntoleranceOperations.validateAllergyIntoleranceTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyIntoleranceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyIntoleranceOperations.validateAllergyIntoleranceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyIntoleranceProblemEntryReactionObservationContainer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyIntoleranceOperations.validateAllergyIntoleranceProblemEntryReactionObservationContainer(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyIntoleranceSeverity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyIntoleranceOperations.validateAllergyIntoleranceSeverity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyIntoleranceProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyIntoleranceOperations.validateAllergyIntoleranceProblemStatusObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyIntoleranceComment(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyIntoleranceOperations.validateAllergyIntoleranceComment(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProblemEntryReactionObservationContainer> getProblemEntryReactionObservationContainers() {
+		return AllergyIntoleranceOperations.getProblemEntryReactionObservationContainers(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Severity getIHESeverity() {
+		return AllergyIntoleranceOperations.getIHESeverity(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemStatusObservation getIHEProblemStatusObservation() {
+		return AllergyIntoleranceOperations.getIHEProblemStatusObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Comment> getIHEComments() {
+		return AllergyIntoleranceOperations.getIHEComments(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyIntoleranceOperations.validateProblemEntryCode(this, diagnostics, context);
 	}
 
 	/**

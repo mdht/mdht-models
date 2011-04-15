@@ -61,8 +61,8 @@ public class SurgeriesSectionImpl extends CodedSurgeriesSectionImpl implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPSurgeriesSectionProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SurgeriesSectionOperations.validateHITSPSurgeriesSectionProcedure(this, diagnostics, context);
+	public boolean validateHITSPSurgeriesSectionProcedureActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SurgeriesSectionOperations.validateHITSPSurgeriesSectionProcedureActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +70,8 @@ public class SurgeriesSectionImpl extends CodedSurgeriesSectionImpl implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Procedure> getSurgicalProcedures() {
-		return SurgeriesSectionOperations.getSurgicalProcedures(this);
+	public EList<Procedure> getProcedureActivities() {
+		return SurgeriesSectionOperations.getProcedureActivities(this);
 	}
 
 	/**

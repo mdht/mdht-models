@@ -9,9 +9,12 @@ package org.openhealthtools.mdht.uml.cda.ihe.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedSurgeriesSection;
+import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
+import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedSurgeriesSectionOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -51,6 +54,42 @@ public class CodedSurgeriesSectionImpl extends SurgeriesSectionImpl implements C
 	 */
 	public boolean validateCodedSurgeriesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodedSurgeriesSectionOperations.validateCodedSurgeriesSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCodedSurgeriesSectionExternalReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CodedSurgeriesSectionOperations.validateCodedSurgeriesSectionExternalReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CodedSurgeriesSectionOperations.validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExternalReference getExternalReference() {
+		return CodedSurgeriesSectionOperations.getExternalReference(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures() {
+		return CodedSurgeriesSectionOperations.getProcedureEntryProcedureActivityProcedures(this);
 	}
 
 	/**

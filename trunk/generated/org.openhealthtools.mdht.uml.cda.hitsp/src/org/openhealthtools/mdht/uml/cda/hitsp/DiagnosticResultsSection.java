@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getDiagnosticResultsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.122' constraints.validation.error='DiagnosticResultsSectionTemplateId DiagnosticResultsSectionProcedure DiagnosticResultsSectionResult'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.122' constraints.validation.error='DiagnosticResultsSectionTemplateId DiagnosticResultsSectionDiagnosticProcedure DiagnosticResultsSectionResult'"
  * @generated
  */
 public interface DiagnosticResultsSection extends CodedResultsSection {
@@ -51,7 +51,7 @@ public interface DiagnosticResultsSection extends CodedResultsSection {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))'"
 	 * @generated
 	 */
-	boolean validateDiagnosticResultsSectionProcedure(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

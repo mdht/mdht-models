@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedSurgeriesSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getSurgeriesSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.108' constraints.validation.error='HITSPSurgeriesSectionTemplateId HITSPSurgeriesSectionProcedure'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.108' constraints.validation.error='HITSPSurgeriesSectionTemplateId HITSPSurgeriesSectionProcedureActivity'"
  * @generated
  */
 public interface SurgeriesSection extends CodedSurgeriesSection {
@@ -47,7 +47,7 @@ public interface SurgeriesSection extends CodedSurgeriesSection {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))'"
 	 * @generated
 	 */
-	boolean validateHITSPSurgeriesSectionProcedure(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHITSPSurgeriesSectionProcedureActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,7 +59,7 @@ public interface SurgeriesSection extends CodedSurgeriesSection {
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(hitsp::Procedure)).oclAsType(hitsp::Procedure)'"
 	 * @generated
 	 */
-	EList<Procedure> getSurgicalProcedures();
+	EList<Procedure> getProcedureActivities();
 
 	/**
 	 * <!-- begin-user-doc -->

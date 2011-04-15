@@ -31,8 +31,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.CoverageActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.ccd.FamilyHistorySection;
+import org.openhealthtools.mdht.uml.cda.ccd.FulfillmentInstruction;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicalEquipmentSection;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
+import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityEncounter;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityObservation;
@@ -47,6 +49,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
+import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.ccd.SeverityObservation;
@@ -94,11 +97,13 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHERegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.ihe.Immunization;
 import org.openhealthtools.mdht.uml.cda.ihe.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.IntakeOutputSection;
+import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalDevicesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
 import org.openhealthtools.mdht.uml.cda.ihe.Medication;
+import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.NormalDose;
@@ -108,6 +113,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.PHRUpdate;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContact;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContactGuardian;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContactParticipant;
+import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.cda.ihe.PayerEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.PayersSection;
 import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamNarrativeSection;
@@ -116,6 +122,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
+import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
@@ -357,6 +364,49 @@ public class IHESwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case IHEPackage.INTERNAL_REFERENCE: {
+				InternalReference internalReference = (InternalReference)theEObject;
+				T result = caseInternalReference(internalReference);
+				if (result == null) result = caseCDA_Act(internalReference);
+				if (result == null) result = caseClinicalStatement(internalReference);
+				if (result == null) result = caseAct(internalReference);
+				if (result == null) result = caseInfrastructureRoot(internalReference);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case IHEPackage.PATIENT_MEDICAL_INSTRUCTIONS: {
+				PatientMedicalInstructions patientMedicalInstructions = (PatientMedicalInstructions)theEObject;
+				T result = casePatientMedicalInstructions(patientMedicalInstructions);
+				if (result == null) result = casePatientInstruction(patientMedicalInstructions);
+				if (result == null) result = caseCDA_Act(patientMedicalInstructions);
+				if (result == null) result = caseClinicalStatement(patientMedicalInstructions);
+				if (result == null) result = caseAct(patientMedicalInstructions);
+				if (result == null) result = caseInfrastructureRoot(patientMedicalInstructions);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case IHEPackage.SUPPLY_ENTRY: {
+				SupplyEntry supplyEntry = (SupplyEntry)theEObject;
+				T result = caseSupplyEntry(supplyEntry);
+				if (result == null) result = caseSupplyActivity(supplyEntry);
+				if (result == null) result = caseSupply(supplyEntry);
+				if (result == null) result = caseClinicalStatement(supplyEntry);
+				if (result == null) result = caseAct(supplyEntry);
+				if (result == null) result = caseInfrastructureRoot(supplyEntry);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case IHEPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: {
+				MedicationFullfillmentInstructions medicationFullfillmentInstructions = (MedicationFullfillmentInstructions)theEObject;
+				T result = caseMedicationFullfillmentInstructions(medicationFullfillmentInstructions);
+				if (result == null) result = caseFulfillmentInstruction(medicationFullfillmentInstructions);
+				if (result == null) result = caseCDA_Act(medicationFullfillmentInstructions);
+				if (result == null) result = caseClinicalStatement(medicationFullfillmentInstructions);
+				if (result == null) result = caseAct(medicationFullfillmentInstructions);
+				if (result == null) result = caseInfrastructureRoot(medicationFullfillmentInstructions);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case IHEPackage.MEDICATIONS_SECTION: {
 				MedicationsSection medicationsSection = (MedicationsSection)theEObject;
 				T result = caseMedicationsSection(medicationsSection);
@@ -388,6 +438,19 @@ public class IHESwitch<T> {
 				if (result == null) result = caseClinicalStatement(allergyIntolerance);
 				if (result == null) result = caseAct(allergyIntolerance);
 				if (result == null) result = caseInfrastructureRoot(allergyIntolerance);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case IHEPackage.PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER: {
+				ProblemEntryReactionObservationContainer problemEntryReactionObservationContainer = (ProblemEntryReactionObservationContainer)theEObject;
+				T result = caseProblemEntryReactionObservationContainer(problemEntryReactionObservationContainer);
+				if (result == null) result = caseProblemEntry(problemEntryReactionObservationContainer);
+				if (result == null) result = caseReactionObservation(problemEntryReactionObservationContainer);
+				if (result == null) result = caseProblemObservation(problemEntryReactionObservationContainer);
+				if (result == null) result = caseObservation(problemEntryReactionObservationContainer);
+				if (result == null) result = caseClinicalStatement(problemEntryReactionObservationContainer);
+				if (result == null) result = caseAct(problemEntryReactionObservationContainer);
+				if (result == null) result = caseInfrastructureRoot(problemEntryReactionObservationContainer);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -594,6 +657,35 @@ public class IHESwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case IHEPackage.EXTERNAL_REFERENCE: {
+				ExternalReference externalReference = (ExternalReference)theEObject;
+				T result = caseExternalReference(externalReference);
+				if (result == null) result = caseCDA_Act(externalReference);
+				if (result == null) result = caseClinicalStatement(externalReference);
+				if (result == null) result = caseAct(externalReference);
+				if (result == null) result = caseInfrastructureRoot(externalReference);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: {
+				ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure = (ProcedureEntryProcedureActivityProcedure)theEObject;
+				T result = caseProcedureEntryProcedureActivityProcedure(procedureEntryProcedureActivityProcedure);
+				if (result == null) result = caseProcedureActivityProcedure(procedureEntryProcedureActivityProcedure);
+				if (result == null) result = caseProcedureEntry(procedureEntryProcedureActivityProcedure);
+				if (result == null) result = caseProcedure(procedureEntryProcedureActivityProcedure);
+				if (result == null) result = caseProcedureActivity(procedureEntryProcedureActivityProcedure);
+				if (result == null) result = caseClinicalStatement(procedureEntryProcedureActivityProcedure);
+				if (result == null) result = caseAct(procedureEntryProcedureActivityProcedure);
+				if (result == null) result = caseInfrastructureRoot(procedureEntryProcedureActivityProcedure);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case IHEPackage.PROCEDURE_ENTRY: {
+				ProcedureEntry procedureEntry = (ProcedureEntry)theEObject;
+				T result = caseProcedureEntry(procedureEntry);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case IHEPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: {
 				HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection = (HospitalAdmissionDiagnosisSection)theEObject;
 				T result = caseHospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection);
@@ -694,16 +786,6 @@ public class IHESwitch<T> {
 				if (result == null) result = caseSection(codedResultsSection);
 				if (result == null) result = caseAct(codedResultsSection);
 				if (result == null) result = caseInfrastructureRoot(codedResultsSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IHEPackage.EXTERNAL_REFERENCE: {
-				ExternalReference externalReference = (ExternalReference)theEObject;
-				T result = caseExternalReference(externalReference);
-				if (result == null) result = caseCDA_Act(externalReference);
-				if (result == null) result = caseClinicalStatement(externalReference);
-				if (result == null) result = caseAct(externalReference);
-				if (result == null) result = caseInfrastructureRoot(externalReference);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -837,25 +919,6 @@ public class IHESwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case IHEPackage.PROCEDURE_ENTRY: {
-				ProcedureEntry procedureEntry = (ProcedureEntry)theEObject;
-				T result = caseProcedureEntry(procedureEntry);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: {
-				ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure = (ProcedureEntryProcedureActivityProcedure)theEObject;
-				T result = caseProcedureEntryProcedureActivityProcedure(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseProcedureActivityProcedure(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseProcedureEntry(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseProcedure(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseProcedureActivity(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseClinicalStatement(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseAct(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseInfrastructureRoot(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case IHEPackage.PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE: {
 				ProcedureEntryPlanOfCareActivityProcedure procedureEntryPlanOfCareActivityProcedure = (ProcedureEntryPlanOfCareActivityProcedure)theEObject;
 				T result = caseProcedureEntryPlanOfCareActivityProcedure(procedureEntryPlanOfCareActivityProcedure);
@@ -935,17 +998,6 @@ public class IHESwitch<T> {
 				if (result == null) result = caseSection(intakeOutputSection);
 				if (result == null) result = caseAct(intakeOutputSection);
 				if (result == null) result = caseInfrastructureRoot(intakeOutputSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IHEPackage.SUPPLY_ENTRY: {
-				SupplyEntry supplyEntry = (SupplyEntry)theEObject;
-				T result = caseSupplyEntry(supplyEntry);
-				if (result == null) result = caseSupplyActivity(supplyEntry);
-				if (result == null) result = caseSupply(supplyEntry);
-				if (result == null) result = caseClinicalStatement(supplyEntry);
-				if (result == null) result = caseAct(supplyEntry);
-				if (result == null) result = caseInfrastructureRoot(supplyEntry);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1213,6 +1265,36 @@ public class IHESwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Internal Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Internal Reference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalReference(InternalReference object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Patient Medical Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Patient Medical Instructions</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePatientMedicalInstructions(PatientMedicalInstructions object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Medications Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1254,6 +1336,21 @@ public class IHESwitch<T> {
 	 * @generated
 	 */
 	public T caseAllergyIntolerance(AllergyIntolerance object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Problem Entry Reaction Observation Container</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Problem Entry Reaction Observation Container</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProblemEntryReactionObservationContainer(ProblemEntryReactionObservationContainer object) {
 		return null;
 	}
 
@@ -2098,6 +2195,21 @@ public class IHESwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medication Fullfillment Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medication Fullfillment Instructions</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicationFullfillmentInstructions(MedicationFullfillmentInstructions object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Pregnancy History Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2503,6 +2615,21 @@ public class IHESwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Patient Instruction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Patient Instruction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePatientInstruction(PatientInstruction object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Substance Administration</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2544,6 +2671,21 @@ public class IHESwitch<T> {
 	 * @generated
 	 */
 	public T caseCCD_MedicationsSection(org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Reaction Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reaction Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReactionObservation(ReactionObservation object) {
 		return null;
 	}
 
@@ -3039,6 +3181,21 @@ public class IHESwitch<T> {
 	 * @generated
 	 */
 	public T caseSupplyActivity(SupplyActivity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Fulfillment Instruction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Fulfillment Instruction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFulfillmentInstruction(FulfillmentInstruction object) {
 		return null;
 	}
 

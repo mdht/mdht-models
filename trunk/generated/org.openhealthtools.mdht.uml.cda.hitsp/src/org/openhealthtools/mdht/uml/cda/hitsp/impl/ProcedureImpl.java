@@ -50,15 +50,6 @@ public class ProcedureImpl extends ProcedureEntryProcedureActivityProcedureImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPProcedureHasCodeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateHITSPProcedureHasCodeCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateHITSPProcedureHasCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateHITSPProcedureHasCodeOriginalText(this, diagnostics, context);
 	}
@@ -88,6 +79,15 @@ public class ProcedureImpl extends ProcedureEntryProcedureActivityProcedureImpl 
 	 */
 	public boolean validateHITSPProcedureTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateHITSPProcedureTargetSiteCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateHITSPProcedureCode(this, diagnostics, context);
 	}
 
 	/**
