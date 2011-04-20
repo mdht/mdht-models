@@ -728,7 +728,7 @@ document may come from sources or contain information that the author cannot val
     </ownedComment>
     <ownedEnd xmi:id="_aZCi0VgcEeCIk4xKC_n0QA" type="_ehur8FgbEeCUJu9CrL294w" association="_aZCi0FgcEeCIk4xKC_n0QA"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_ehyWUFgbEeCUJu9CrL294w" message="" base_Class="_ehur8FgbEeCUJu9CrL294w" templateId="2.16.840.1.113883.10.20.21.1.1">
+  <CDA:CDATemplate xmi:id="_ehyWUFgbEeCUJu9CrL294w" message="" base_Class="_ehur8FgbEeCUJu9CrL294w" templateId="2.16.840.1.113883.10.20.22.1.1">
     <ruleId>CONF-CONSOL-0</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_eh65MFgbEeCUJu9CrL294w" base_Constraint="_ehur8lgbEeCUJu9CrL294w">

@@ -44,7 +44,7 @@ past. It shall include entries for medication administration as described in the
   <uml:Association xmi:id="_DWbdUFmREeCDpOdk1XwpBg" memberEnd="_DWUvo1mREeCDpOdk1XwpBg _DWbdUVmREeCDpOdk1XwpBg">
     <ownedEnd xmi:id="_DWbdUVmREeCDpOdk1XwpBg" type="_DWUvoFmREeCDpOdk1XwpBg" association="_DWbdUFmREeCDpOdk1XwpBg"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_DWVWsFmREeCDpOdk1XwpBg" base_Class="_DWUvoFmREeCDpOdk1XwpBg" templateId="2.16.840.1.113883.10.20.21.2.2.1"/>
+  <CDA:CDATemplate xmi:id="_DWVWsFmREeCDpOdk1XwpBg" base_Class="_DWUvoFmREeCDpOdk1XwpBg" templateId="2.16.840.1.113883.10.20.22.2.2.1"/>
   <CDA:ConstraintValidation xmi:id="_DWbdVFmREeCDpOdk1XwpBg" severity="WARNING" base_Constraint="_DWbdUlmREeCDpOdk1XwpBg">
     <ruleId>CONF-380</ruleId>
   </CDA:ConstraintValidation>
@@ -207,5 +207,5 @@ identifying the site.</body>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_6alm4FmUEeCBjLscJJRYEg" base_Class="_w63kIFmUEeCBjLscJJRYEg" templateId="2.16.840.1.113883.10.20.21.2.2"/>
+  <CDA:CDATemplate xmi:id="_6alm4FmUEeCBjLscJJRYEg" base_Class="_w63kIFmUEeCBjLscJJRYEg" templateId="2.16.840.1.113883.10.20.22.2.2"/>
 </xmi:XMI>

@@ -120,7 +120,7 @@
   <uml:Association xmi:id="_VFpVMFfdEeCb0LEisK_hTQ" memberEnd="_VFe9JlfdEeCb0LEisK_hTQ _VFpVMVfdEeCb0LEisK_hTQ">
     <ownedEnd xmi:id="_VFpVMVfdEeCb0LEisK_hTQ" type="_VFe9IFfdEeCb0LEisK_hTQ" association="_VFpVMFfdEeCb0LEisK_hTQ"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_VFe9KVfdEeCb0LEisK_hTQ" base_Class="_VFe9IFfdEeCb0LEisK_hTQ" templateId="2.16.840.1.113883.10.20.21.4.10">
+  <CDA:CDATemplate xmi:id="_VFe9KVfdEeCb0LEisK_hTQ" base_Class="_VFe9IFfdEeCb0LEisK_hTQ" templateId="2.16.840.1.113883.10.20.22.4.10">
     <ruleId>C83-[DE-10-CDA-2]</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_VFp8QlfdEeCb0LEisK_hTQ" base_Constraint="_VFp8QFfdEeCb0LEisK_hTQ">
@@ -168,12 +168,6 @@
     <eAnnotations xmi:id="_TRJRsFfdEeCb0LEisK_hTQ" source="sourceClass">
       <references xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_V3Jy4HrTEd68l9lQ-TLEBQ"/>
     </eAnnotations>
-    <ownedRule xmi:id="_TQ-5oVfdEeCb0LEisK_hTQ" name="targetOfEntryRelationship" constrainedElement="_TQ-5oFfdEeCb0LEisK_hTQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TQ-5olfdEeCb0LEisK_hTQ">
-        <language>Analysis</language>
-        <body>Target of an entryRelationship whose value for &quot;entryRelationship / @typeCode&quot; SHALL be &quot;REFR&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
-      </specification>
-    </ownedRule>
     <ownedRule xmi:id="_TQ-5o1fdEeCb0LEisK_hTQ" name="noAdditionalAttributes" constrainedElement="_TQ-5oFfdEeCb0LEisK_hTQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_TQ-5pFfdEeCb0LEisK_hTQ">
         <language>Analysis</language>
@@ -226,7 +220,7 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_TQ_gsFfdEeCb0LEisK_hTQ" base_Class="_TQ-5oFfdEeCb0LEisK_hTQ" templateId="2.16.840.1.113883.10.20.1.57"/>
-  <CDA:ConstraintValidation xmi:id="_TRG1cFfdEeCb0LEisK_hTQ" base_Constraint="_TQ-5oVfdEeCb0LEisK_hTQ">
+  <CDA:ConstraintValidation xmi:id="_TRG1cFfdEeCb0LEisK_hTQ">
     <ruleId>CONF-509</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_TRHcgFfdEeCb0LEisK_hTQ" base_Constraint="_TQ-5o1fdEeCb0LEisK_hTQ">
@@ -314,7 +308,7 @@
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_tGU2kIHWEd6Ncrr6L3Ublw"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_VE1c6lfdEeCb0LEisK_hTQ" base_Class="_VE1c4FfdEeCb0LEisK_hTQ" templateId="2.16.840.1.113883.10.20.21.4.8"/>
+  <CDA:CDATemplate xmi:id="_VE1c6lfdEeCb0LEisK_hTQ" base_Class="_VE1c4FfdEeCb0LEisK_hTQ" templateId="2.16.840.1.113883.10.20.22.4.8"/>
   <CDA:ConstraintValidation xmi:id="_VE5uUFfdEeCb0LEisK_hTQ" base_Constraint="_VE1c4lfdEeCb0LEisK_hTQ">
     <ruleId>CONF-CONSOL-538</ruleId>
   </CDA:ConstraintValidation>
@@ -350,36 +344,10 @@
     <ownedComment xmi:id="_VEookVfdEeCb0LEisK_hTQ">
       <body>A common scenario is that a patient will know the age of a relative when they had a certain condition or when they died, but will not know the actual year (e.g. &quot;grandpa died of a heart attack at the age of 50&quot;). Often times, neither precise dates nor ages are known (e.g. &quot;cousin died of congenital heart disease as an infant&quot;). In all cases, dates and times and ages can be expressed in narrative.</body>
     </ownedComment>
-    <ownedRule xmi:id="_VEooklfdEeCb0LEisK_hTQ" name="relatedSubjectBirthTime" constrainedElement="_VEookFfdEeCb0LEisK_hTQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VEook1fdEeCb0LEisK_hTQ">
+    <ownedRule xmi:id="_pGa9YGBYEeCrS9ZTowHUZw" name="valueUnit" constrainedElement="_VEoopVfdEeCb0LEisK_hTQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_t82g0GBYEeCrS9ZTowHUZw">
         <language>Analysis</language>
-        <language>OCL</language>
-        <body>subject/relatedSubject/subject contains exactly one birthTime</body>
-        <body>not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_VEoolFfdEeCb0LEisK_hTQ" name="relatedSubjectDeceasedInd" constrainedElement="_VEookFfdEeCb0LEisK_hTQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VEoolVfdEeCb0LEisK_hTQ">
-        <language>Analysis</language>
-        <body>subject/relatedSubject/subject contains exactly one sdtc:deceasedInd</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_VEoollfdEeCb0LEisK_hTQ" name="relatedSubjectDeceasedTime" constrainedElement="_VEookFfdEeCb0LEisK_hTQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VEool1fdEeCb0LEisK_hTQ">
-        <language>Analysis</language>
-        <body>subject/relatedSubject/subject contains exactly one sdtc:deceasedTime</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_VEoomFfdEeCb0LEisK_hTQ" name="ageOfRelativeAtObservationTime" constrainedElement="_VEookFfdEeCb0LEisK_hTQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VEoomVfdEeCb0LEisK_hTQ">
-        <language>Analysis</language>
-        <body>The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with effectiveTime</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_VEoomlfdEeCb0LEisK_hTQ" name="ageOfRelativeAtDeath" constrainedElement="_VEookFfdEeCb0LEisK_hTQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VEoom1fdEeCb0LEisK_hTQ">
-        <language>Analysis</language>
-        <body>The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.</body>
+        <body>SHALL contain @unit, which SHALL be selected from ValueSet 2.16.840.1.113883.11.20.9.21 AgePQ_UCUM DYNAMIC</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_VEznsFfdEeCb0LEisK_hTQ">
@@ -405,34 +373,31 @@
     </ownedAttribute>
     <ownedAttribute xmi:id="_VEooolfdEeCb0LEisK_hTQ" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VEooo1fdEeCb0LEisK_hTQ" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VEoopFfdEeCb0LEisK_hTQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kgkbsGCcEeC4W9nOBThLlQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kgkbsWCcEeC4W9nOBThLlQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_VEoopVfdEeCb0LEisK_hTQ" name="value" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_VEooplfdEeCb0LEisK_hTQ">
-        <body>Valued using appropriate datatype.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VEoop1fdEeCb0LEisK_hTQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VEooqFfdEeCb0LEisK_hTQ" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_VEpPoFfdEeCb0LEisK_hTQ" base_Class="_VEookFfdEeCb0LEisK_hTQ" templateId="2.16.840.1.113883.10.20.1.38"/>
-  <CDA:ConstraintValidation xmi:id="_VEuvMFfdEeCb0LEisK_hTQ" severity="WARNING" base_Constraint="_VEooklfdEeCb0LEisK_hTQ">
+  <CDA:CDATemplate xmi:id="_VEpPoFfdEeCb0LEisK_hTQ" base_Class="_VEookFfdEeCb0LEisK_hTQ" templateId="2.16.840.1.113883.10.20.22.4.31"/>
+  <CDA:ConstraintValidation xmi:id="_VEuvMFfdEeCb0LEisK_hTQ" severity="WARNING">
     <ruleId>CONF-219</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_VEvWQFfdEeCb0LEisK_hTQ" severity="INFO" base_Constraint="_VEoolFfdEeCb0LEisK_hTQ">
+  <CDA:ConstraintValidation xmi:id="_VEvWQFfdEeCb0LEisK_hTQ" severity="INFO">
     <ruleId>CONF-220</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_VEv9UFfdEeCb0LEisK_hTQ" severity="INFO" base_Constraint="_VEoollfdEeCb0LEisK_hTQ">
+  <CDA:ConstraintValidation xmi:id="_VEv9UFfdEeCb0LEisK_hTQ" severity="INFO">
     <ruleId>CONF-221</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_VEwkYFfdEeCb0LEisK_hTQ" severity="WARNING" base_Constraint="_VEoomFfdEeCb0LEisK_hTQ">
+  <CDA:ConstraintValidation xmi:id="_VEwkYFfdEeCb0LEisK_hTQ" severity="WARNING">
     <ruleId>CONF-222</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_VExLcFfdEeCb0LEisK_hTQ" severity="INFO" base_Constraint="_VEoomlfdEeCb0LEisK_hTQ">
+  <CDA:ConstraintValidation xmi:id="_VExLcFfdEeCb0LEisK_hTQ" severity="INFO">
     <ruleId>CONF-223</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_VEp2sFfdEeCb0LEisK_hTQ" base_Property="_VEoonVfdEeCb0LEisK_hTQ">
@@ -644,7 +609,7 @@ attribute should be set to &quot;NA&quot;.</body>
   <uml:Association xmi:id="_xDpGoFmJEeCeYrW7M64v2A" memberEnd="_xDgjyVmJEeCeYrW7M64v2A _xDptsFmJEeCeYrW7M64v2A">
     <ownedEnd xmi:id="_xDptsFmJEeCeYrW7M64v2A" type="_xDgjwFmJEeCeYrW7M64v2A" association="_xDpGoFmJEeCeYrW7M64v2A"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_xDgj0VmJEeCeYrW7M64v2A" base_Class="_xDgjwFmJEeCeYrW7M64v2A" templateId="2.16.840.1.113883.10.20.21.4.9"/>
+  <CDA:CDATemplate xmi:id="_xDgj0VmJEeCeYrW7M64v2A" base_Class="_xDgjwFmJEeCeYrW7M64v2A" templateId="2.16.840.1.113883.10.20.22.4.9"/>
   <CDA:ConstraintValidation xmi:id="_xDkOIFmJEeCeYrW7M64v2A" severity="INFO" base_Constraint="_xDgjwlmJEeCeYrW7M64v2A">
     <ruleId>CONF-280</ruleId>
   </CDA:ConstraintValidation>
@@ -750,4 +715,5 @@ attribute should be set to &quot;NA&quot;.</body>
   <CDA:PropertyValidation xmi:id="__4q4gFr6EeCUOqqxU3d1wQ" base_Property="__4pqblr6EeCUOqqxU3d1wQ">
     <ruleId>CONF-473</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_RR3Y4GChEeC4W9nOBThLlQ" base_Constraint="_pGa9YGBYEeCrS9ZTowHUZw"/>
 </xmi:XMI>
