@@ -30,6 +30,8 @@ import org.openhealthtools.mdht.uml.cda.apitest.ProblemListSection;
 import org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.Severity;
 import org.openhealthtools.mdht.uml.cda.apitest.StatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 
 /**
@@ -193,11 +195,16 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		// Initialize simple dependencies
 		CDAPackage.eINSTANCE.eClass();
 
+		// Obtain or create and register interdependencies
+		DomainPackageImpl theDomainPackage = (DomainPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DomainPackage.eNS_URI) instanceof DomainPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DomainPackage.eNS_URI) : DomainPackage.eINSTANCE);
+
 		// Create package meta-data objects
 		theAPITestPackage.createPackageContents();
+		theDomainPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theAPITestPackage.initializePackageContents();
+		theDomainPackage.initializePackageContents();
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put
@@ -435,7 +442,11 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
+		DomainPackage theDomainPackage = (DomainPackage)EPackage.Registry.INSTANCE.getEPackage(DomainPackage.eNS_URI);
 		CDAPackage theCDAPackage = (CDAPackage)EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
+
+		// Add subpackages
+		getESubpackages().add(theDomainPackage);
 
 		// Create type parameters
 
