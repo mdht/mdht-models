@@ -64,7 +64,7 @@ described in the Entry Content Modules.</body>
   <uml:Association xmi:id="_D_XoIFr7EeCUOqqxU3d1wQ" memberEnd="_D-qdglr7EeCUOqqxU3d1wQ _D_XoIVr7EeCUOqqxU3d1wQ">
     <ownedEnd xmi:id="_D_XoIVr7EeCUOqqxU3d1wQ" type="_D-qdgFr7EeCUOqqxU3d1wQ" association="_D_XoIFr7EeCUOqqxU3d1wQ"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_D-rEkFr7EeCUOqqxU3d1wQ" base_Class="_D-qdgFr7EeCUOqqxU3d1wQ" templateId="2.16.840.1.113883.10.20.21.2.7.1"/>
+  <CDA:CDATemplate xmi:id="_D-rEkFr7EeCUOqqxU3d1wQ" base_Class="_D-qdgFr7EeCUOqqxU3d1wQ" templateId="2.16.840.1.113883.10.20.22.2.7.1"/>
   <CDA:ConstraintValidation xmi:id="_D_XoJFr7EeCUOqqxU3d1wQ" severity="WARNING">
     <ruleId>CONF-426</ruleId>
     <base_Constraint href="../consol.uml#_D_XoIlr7EeCUOqqxU3d1wQ"/>
@@ -268,7 +268,7 @@ described in the Entry Content Modules.</body>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_MyaLEFr7EeCUOqqxU3d1wQ" base_Class="_MyZkAFr7EeCUOqqxU3d1wQ" templateId="2.16.840.1.113883.10.20.21.4.12" contextDependent="true">
+  <CDA:CDATemplate xmi:id="_MyaLEFr7EeCUOqqxU3d1wQ" base_Class="_MyZkAFr7EeCUOqqxU3d1wQ" templateId="2.16.840.1.113883.10.20.22.4.12" contextDependent="true">
     <ruleId>CONF-427</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_NmCncFr7EeCUOqqxU3d1wQ" name="ProcedureActivityObservation" clientDependency="_NmGR0lr7EeCUOqqxU3d1wQ _NmG44Fr7EeCUOqqxU3d1wQ">
@@ -309,7 +309,7 @@ described in the Entry Content Modules.</body>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_NmDOgFr7EeCUOqqxU3d1wQ" base_Class="_NmCncFr7EeCUOqqxU3d1wQ" templateId="2.16.840.1.113883.10.20.21.4.13" contextDependent="true"/>
+  <CDA:CDATemplate xmi:id="_NmDOgFr7EeCUOqqxU3d1wQ" base_Class="_NmCncFr7EeCUOqqxU3d1wQ" templateId="2.16.840.1.113883.10.20.22.4.13" contextDependent="true"/>
   <CDA:ConstraintValidation xmi:id="_NmEcoFr7EeCUOqqxU3d1wQ" severity="INFO" base_Constraint="_NmCncVr7EeCUOqqxU3d1wQ">
     <ruleId>CONF-435</ruleId>
   </CDA:ConstraintValidation>
@@ -502,7 +502,7 @@ Procedure</body>
   <uml:Association xmi:id="_D-_0sVr7EeCUOqqxU3d1wQ" memberEnd="_D-_NoVr7EeCUOqqxU3d1wQ _D-_0slr7EeCUOqqxU3d1wQ">
     <ownedEnd xmi:id="_D-_0slr7EeCUOqqxU3d1wQ" type="_D-zncFr7EeCUOqqxU3d1wQ" association="_D-_0sVr7EeCUOqqxU3d1wQ"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_D-0OgFr7EeCUOqqxU3d1wQ" base_Class="_D-zncFr7EeCUOqqxU3d1wQ" templateId="2.16.840.1.113883.10.20.21.4.14"/>
+  <CDA:CDATemplate xmi:id="_D-0OgFr7EeCUOqqxU3d1wQ" base_Class="_D-zncFr7EeCUOqqxU3d1wQ" templateId="2.16.840.1.113883.10.20.22.4.14"/>
   <CDA:ConstraintValidation xmi:id="_D_BC0Fr7EeCUOqqxU3d1wQ" severity="INFO" base_Constraint="_D_AbwVr7EeCUOqqxU3d1wQ">
     <ruleId>CONF-435</ruleId>
   </CDA:ConstraintValidation>
@@ -539,5 +539,5 @@ Procedure</body>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_D-_NoFr7EeCUOqqxU3d1wQ" severity="INFO" base_Association="_D--mkFr7EeCUOqqxU3d1wQ" typeCode="COMP"/>
   <CDA:EntryRelationship xmi:id="_D_AbwFr7EeCUOqqxU3d1wQ" severity="INFO" base_Association="_D-_0sVr7EeCUOqqxU3d1wQ" typeCode="RSON"/>
-  <CDA:CDATemplate xmi:id="_mdjhUFsAEeCP3rMQIKQsIw" base_Class="__4WIYFr6EeCUOqqxU3d1wQ" templateId="2.16.840.1.113883.10.20.21.4.11"/>
+  <CDA:CDATemplate xmi:id="_mdjhUFsAEeCP3rMQIKQsIw" base_Class="__4WIYFr6EeCUOqqxU3d1wQ" templateId="2.16.840.1.113883.10.20.22.4.11"/>
 </xmi:XMI>

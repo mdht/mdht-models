@@ -4,7 +4,7 @@
     <packageImport xmi:id="_2Ce8sCTOEd-ZbpoADxtvhg">
       <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VECysFfdEeCb0LEisK_hTQ" name="ConcernEntryStatus">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VECysFfdEeCb0LEisK_hTQ" name="ProblemActStatusCode">
       <eAnnotations xmi:id="_VEF2AVfdEeCb0LEisK_hTQ" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_9ys50CM8EeCxCon8a79rfA"/>
       </eAnnotations>
@@ -41,7 +41,7 @@
       <ownedLiteral xmi:id="_VFBDElfdEeCb0LEisK_hTQ" name="M"/>
       <ownedLiteral xmi:id="_VFBDE1fdEeCb0LEisK_hTQ" name="L"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VFK0EFfdEeCb0LEisK_hTQ" name="ProblemStatusValue">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VFK0EFfdEeCb0LEisK_hTQ" name="ProblemStatusCode">
       <eAnnotations xmi:id="_VFPskFfdEeCb0LEisK_hTQ" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_-YF9cCQOEeCxCon8a79rfA"/>
       </eAnnotations>
@@ -54,7 +54,7 @@
       <ownedLiteral xmi:id="_VFK0F1fdEeCb0LEisK_hTQ" name="410516002"/>
       <ownedLiteral xmi:id="_VFK0GFfdEeCb0LEisK_hTQ" name="413322009"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VFXoYFfdEeCb0LEisK_hTQ" name="HealthStatusValue">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VFXoYFfdEeCb0LEisK_hTQ" name="ProblemHealthStatusCode">
       <eAnnotations xmi:id="_VFcg4FfdEeCb0LEisK_hTQ" source="sourceClass">
         <references xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe-vocab.uml#_LSa-gCQSEeCxCon8a79rfA"/>
       </eAnnotations>
@@ -1385,7 +1385,7 @@
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_fXJB4FfXEeCr-tFOa4a5hw" conceptName="Aborted" usageNote="ActStatus"/>
   <term:ValueSetCode xmi:id="_fXJo8FfXEeCr-tFOa4a5hw" conceptName="Completed" usageNote="ActStatus"/>
-  <term:ValueSetVersion xmi:id="_VECytlfdEeCb0LEisK_hTQ" identifier="TEMP-OID-PROBLEM-STATUS-CODE" base_Enumeration="_VECysFfdEeCb0LEisK_hTQ"/>
+  <term:ValueSetVersion xmi:id="_VECytlfdEeCb0LEisK_hTQ" identifier="2.16.840.1.113883.11.20.9.19" base_Enumeration="_VECysFfdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VEEA0FfdEeCb0LEisK_hTQ" usageNote="A concern that is still being tracked." base_EnumerationLiteral="_VECyslfdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VEEn4FfdEeCb0LEisK_hTQ" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_VECys1fdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VEFO8FfdEeCb0LEisK_hTQ" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_VECytFfdEeCb0LEisK_hTQ"/>
@@ -1400,7 +1400,7 @@
   <term:ValueSetCode xmi:id="_VEgswFfdEeCb0LEisK_hTQ" conceptName="Functional limitation" usageNote="SNOMED-CT" base_EnumerationLiteral="_VEcbVVfdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VEhT0FfdEeCb0LEisK_hTQ" conceptName="Symptom" usageNote="SNOMED-CT" base_EnumerationLiteral="_VEcbVlfdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VEh64FfdEeCb0LEisK_hTQ" conceptName="Problem" usageNote="SNOMED-CT" base_EnumerationLiteral="_VEcbV1fdEeCb0LEisK_hTQ"/>
-  <term:ValueSetVersion xmi:id="_VEmMUFfdEeCb0LEisK_hTQ" identifier="2.16.840.1.113883.3.88.12.3221.7.4" version="1" fullName="Problem Value Set" source="Veterans Administration/Kaiser Permanente (VA/KP)" url="http://evs.nci.nih.gov/ftp1/FDA/ProblemList/" definition="This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient s medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient s healthcare (e.g., signs, symptoms, and defined conditions)" revisionDate="07/23/2009" base_Enumeration="_VEllQFfdEeCb0LEisK_hTQ">
+  <term:ValueSetVersion xmi:id="_VEmMUFfdEeCb0LEisK_hTQ" identifier="2.16.840.1.113883.3.88.12.3221.7.4" fullName="Problem Value Set" source="Veterans Administration/Kaiser Permanente (VA/KP)" url="http://evs.nci.nih.gov/ftp1/FDA/ProblemList/" definition="This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient s medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient s healthcare (e.g., signs, symptoms, and defined conditions)" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_VEllQFfdEeCb0LEisK_hTQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_VFBDFFfdEeCb0LEisK_hTQ" base_Enumeration="_VFBDEFfdEeCb0LEisK_hTQ">
@@ -1409,7 +1409,7 @@
   <term:ValueSetCode xmi:id="_VFCRMFfdEeCb0LEisK_hTQ" conceptName="High" base_EnumerationLiteral="_VFBDEVfdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VFC4QFfdEeCb0LEisK_hTQ" conceptName="Moderate" base_EnumerationLiteral="_VFBDElfdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VFC4QVfdEeCb0LEisK_hTQ" conceptName="Low" base_EnumerationLiteral="_VFBDE1fdEeCb0LEisK_hTQ"/>
-  <term:ValueSetVersion xmi:id="_VFK0GVfdEeCb0LEisK_hTQ" base_Enumeration="_VFK0EFfdEeCb0LEisK_hTQ">
+  <term:ValueSetVersion xmi:id="_VFK0GVfdEeCb0LEisK_hTQ" identifier="2.16.840.1.113883.1.11.20.13" base_Enumeration="_VFK0EFfdEeCb0LEisK_hTQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_VFMCMFfdEeCb0LEisK_hTQ" conceptName="Active" base_EnumerationLiteral="_VFK0EVfdEeCb0LEisK_hTQ"/>
@@ -1420,7 +1420,7 @@
   <term:ValueSetCode xmi:id="_VFN3YVfdEeCb0LEisK_hTQ" conceptName="Rule out" base_EnumerationLiteral="_VFK0FlfdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VFOecFfdEeCb0LEisK_hTQ" conceptName="Ruled out" base_EnumerationLiteral="_VFK0F1fdEeCb0LEisK_hTQ"/>
   <term:ValueSetCode xmi:id="_VFPFgFfdEeCb0LEisK_hTQ" conceptName="Resolved" base_EnumerationLiteral="_VFK0GFfdEeCb0LEisK_hTQ"/>
-  <term:ValueSetVersion xmi:id="_VFYPcFfdEeCb0LEisK_hTQ" base_Enumeration="_VFXoYFfdEeCb0LEisK_hTQ">
+  <term:ValueSetVersion xmi:id="_VFYPcFfdEeCb0LEisK_hTQ" identifier="2.16.840.1.113883.1.11.20.12" base_Enumeration="_VFXoYFfdEeCb0LEisK_hTQ">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_VFZdkFfdEeCb0LEisK_hTQ" conceptName="Alive and well" base_EnumerationLiteral="_VFXoYVfdEeCb0LEisK_hTQ"/>

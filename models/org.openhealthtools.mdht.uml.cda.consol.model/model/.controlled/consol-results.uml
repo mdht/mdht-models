@@ -74,7 +74,7 @@ Content Modules.</body>
   <uml:Association xmi:id="__lcGoFfdEeCIIf8CuAH-Kw" memberEnd="__kqqlFfdEeCIIf8CuAH-Kw __lcGoVfdEeCIIf8CuAH-Kw">
     <ownedEnd xmi:id="__lcGoVfdEeCIIf8CuAH-Kw" type="__kqqkFfdEeCIIf8CuAH-Kw" association="__lcGoFfdEeCIIf8CuAH-Kw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="__ktt4FfdEeCIIf8CuAH-Kw" base_Class="__kqqkFfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.21.2.3.1"/>
+  <CDA:CDATemplate xmi:id="__ktt4FfdEeCIIf8CuAH-Kw" base_Class="__kqqkFfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.22.2.3.1"/>
   <CDA:ConstraintValidation xmi:id="__lcGpFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Constraint="__lcGolfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-392</ruleId>
   </CDA:ConstraintValidation>
@@ -239,7 +239,7 @@ ASTM/HL7 Continuity of Care Document).</body>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1jr3cEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="__lETMFfdEeCIIf8CuAH-Kw" base_Class="__lDsIFfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.21.4.2">
+  <CDA:CDATemplate xmi:id="__lETMFfdEeCIIf8CuAH-Kw" base_Class="__lDsIFfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.22.4.2">
     <ruleId>C83-[DE-15-CDA-1]</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="__lOrQFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Constraint="__lOEMVfdEeCIIf8CuAH-Kw">
@@ -400,7 +400,7 @@ ASTM/HL7 Continuity of Care Document).</body>
   <uml:Association xmi:id="__lUx4lfdEeCIIf8CuAH-Kw" memberEnd="__k4GBFfdEeCIIf8CuAH-Kw __lVY8FfdEeCIIf8CuAH-Kw">
     <ownedEnd xmi:id="__lVY8FfdEeCIIf8CuAH-Kw" type="__k4F8FfdEeCIIf8CuAH-Kw" association="__lUx4lfdEeCIIf8CuAH-Kw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="__k4tAFfdEeCIIf8CuAH-Kw" base_Class="__k4F8FfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.21.4.1"/>
+  <CDA:CDATemplate xmi:id="__k4tAFfdEeCIIf8CuAH-Kw" base_Class="__k4F8FfdEeCIIf8CuAH-Kw" templateId="2.16.840.1.113883.10.20.22.4.1"/>
   <CDA:ConstraintValidation xmi:id="__k7wUFfdEeCIIf8CuAH-Kw" severity="WARNING" base_Constraint="__k4F8lfdEeCIIf8CuAH-Kw">
     <ruleId>CONF-398</ruleId>
   </CDA:ConstraintValidation>
@@ -449,5 +449,5 @@ ASTM/HL7 Continuity of Care Document).</body>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_Gxl5gFjJEeCjtJnI04I27A" base_Class="_C-D9gFjJEeCjtJnI04I27A" templateId="2.16.840.1.113883.10.20.21.2.3"/>
+  <CDA:CDATemplate xmi:id="_Gxl5gFjJEeCjtJnI04I27A" base_Class="_C-D9gFjJEeCjtJnI04I27A" templateId="2.16.840.1.113883.10.20.22.2.3"/>
 </xmi:XMI>
