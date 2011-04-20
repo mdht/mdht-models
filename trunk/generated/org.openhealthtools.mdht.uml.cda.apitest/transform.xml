@@ -3,6 +3,9 @@
 	<property name="cdaPluginPath" location="${basedir}/../org.openhealthtools.mdht.uml.cda"/>
 	<property name="modelName" value="apitest"/>
 	
+	<property name="generateDomainInterface" value="true"/>
+	<property name="includeFixedValueGetters" value="false"/>
+	
 	<macrodef name="convertEcorePaths">
 		<attribute name="filePath"/>
 		
