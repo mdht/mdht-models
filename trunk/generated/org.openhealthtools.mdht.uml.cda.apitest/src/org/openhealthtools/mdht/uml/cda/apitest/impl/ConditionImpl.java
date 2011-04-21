@@ -11,14 +11,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
+import org.openhealthtools.mdht.uml.cda.Act;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.Condition;
-import org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry;
-import org.openhealthtools.mdht.uml.cda.apitest.EpisodeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.ConditionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
+import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,6 +50,78 @@ public class ConditionImpl extends ActImpl implements Condition {
 	@Override
 	protected EClass eStaticClass() {
 		return APITestPackage.Literals.CONDITION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Act toCDAType() {
+		return ConditionOperations.toCDAType(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ICondition addId(II value) {
+		return ConditionOperations.addId(this, value);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEpisodeObservation getEpisodeObservation() {
+		return ConditionOperations.getEpisodeObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setEpisodeObservation(IEpisodeObservation value) {
+		ConditionOperations.setEpisodeObservation(this, value);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<IConditionEntry> getConditionEntries() {
+		return ConditionOperations.getConditionEntries(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ICondition addProblemEntry(IConditionEntry value) {
+		return ConditionOperations.addProblemEntry(this, value);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ITreatingProvider getTreatingProvider() {
+		return ConditionOperations.getTreatingProvider(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTreatingProvider(ITreatingProvider value) {
+		ConditionOperations.setTreatingProvider(this, value);
 	}
 
 	/**
@@ -182,33 +257,6 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 */
 	public boolean validateConditionTreatingProvider(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionOperations.validateConditionTreatingProvider(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EpisodeObservation getEpisodeObservation() {
-		return ConditionOperations.getEpisodeObservation(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<ConditionEntry> getConditionEntries() {
-		return ConditionOperations.getConditionEntries(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedEntity getTreatingProvider() {
-		return ConditionOperations.getTreatingProvider(this);
 	}
 
 	/**

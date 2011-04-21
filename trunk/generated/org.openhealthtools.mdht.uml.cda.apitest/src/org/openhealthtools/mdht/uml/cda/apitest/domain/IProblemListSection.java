@@ -14,7 +14,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Problem List Section</b></em>'.
+ * A representation of the model object '<em><b>IProblem List Section</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -23,15 +23,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <!-- end-model-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getProblemListSection()
- * @model interface="true" abstract="true"
+ * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIProblemListSection()
  * @generated
  */
-public interface ProblemListSection extends EObject {
+public interface IProblemListSection extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	Section toCDAType();
@@ -39,7 +37,9 @@ public interface ProblemListSection extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::Section::title.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	ST getTitle();
@@ -48,17 +48,18 @@ public interface ProblemListSection extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-143)</p>
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-143).
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	ProblemListSection setTitle(ST value);
+	void setTitle(ST value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::Section::text.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	StrucDocText getText();
@@ -67,36 +68,37 @@ public interface ProblemListSection extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-140)</p>
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-140).
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	ProblemListSection setText(StrucDocText value);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 * @generated
-	 */
-	EList<Condition> getConditions();
+	void setText(StrucDocText value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>Contains at least one [1..*] <tt><b>entry</b></tt>, such that</p>
+	 * apitest::ProblemListSection::condition.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Condition)).oclAsType(apitest::Condition)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	ProblemListSection addCondition(Condition value);
+	EList<ICondition> getConditions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Contains at least one [1..*] <tt><b>entry</b></tt>, such that.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProblemListSection addCondition(ICondition value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemListSection init();
-} // ProblemListSection
+	public IProblemListSection init();
+} // IProblemListSection

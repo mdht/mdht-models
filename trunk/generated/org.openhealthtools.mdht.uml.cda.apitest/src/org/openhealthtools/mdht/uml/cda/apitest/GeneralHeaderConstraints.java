@@ -7,6 +7,7 @@
 package org.openhealthtools.mdht.uml.cda.apitest;
 
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints;
 
 /**
  * <!-- begin-user-doc -->
@@ -15,10 +16,9 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getGeneralHeaderConstraints()
- * @model
  * @generated
  */
-public interface GeneralHeaderConstraints extends ClinicalDocument {
+public interface GeneralHeaderConstraints extends ClinicalDocument, IGeneralHeaderConstraints {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

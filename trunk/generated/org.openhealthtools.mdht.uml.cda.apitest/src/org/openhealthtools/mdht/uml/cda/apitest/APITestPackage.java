@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.CDAPackage;
  * </ul>
  * <!-- end-user-doc -->
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestFactory
- * @model kind="package"
  * @generated
  */
 public interface APITestPackage extends EPackage {
@@ -358,6 +357,116 @@ public interface APITestPackage extends EPackage {
 	int CONDITION = 1;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.Condition_TreatingProviderImpl <em>Condition Treating Provider</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.Condition_TreatingProviderImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getCondition_TreatingProvider()
+	 * @generated
+	 */
+	int CONDITION_TREATING_PROVIDER = 2;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.EpisodeObservationImpl <em>Episode Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.EpisodeObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getEpisodeObservation()
+	 * @generated
+	 */
+	int EPISODE_OBSERVATION = 3;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.ConditionEntryImpl <em>Condition Entry</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.ConditionEntryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getConditionEntry()
+	 * @generated
+	 */
+	int CONDITION_ENTRY = 4;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.AgeObservationImpl <em>Age Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.AgeObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getAgeObservation()
+	 * @generated
+	 */
+	int AGE_OBSERVATION = 5;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.SeverityImpl <em>Severity</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.SeverityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getSeverity()
+	 * @generated
+	 */
+	int SEVERITY = 6;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.ProblemStatusObservationImpl <em>Problem Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.ProblemStatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getProblemStatusObservation()
+	 * @generated
+	 */
+	int PROBLEM_STATUS_OBSERVATION = 7;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.HealthStatusObservationImpl <em>Health Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.HealthStatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getHealthStatusObservation()
+	 * @generated
+	 */
+	int HEALTH_STATUS_OBSERVATION = 8;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.CommentImpl <em>Comment</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.CommentImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getComment()
+	 * @generated
+	 */
+	int COMMENT = 9;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.FamilyHistoryObservationImpl <em>Family History Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.FamilyHistoryObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getFamilyHistoryObservation()
+	 * @generated
+	 */
+	int FAMILY_HISTORY_OBSERVATION = 11;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.CauseOfDeathObservationImpl <em>Cause Of Death Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.CauseOfDeathObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getCauseOfDeathObservation()
+	 * @generated
+	 */
+	int CAUSE_OF_DEATH_OBSERVATION = 12;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.ProblemListSectionImpl <em>Problem List Section</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.ProblemListSectionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getProblemListSection()
+	 * @generated
+	 */
+	int PROBLEM_LIST_SECTION = 10;
+
+	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -574,16 +683,6 @@ public interface APITestPackage extends EPackage {
 	int CONDITION_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.Condition_TreatingProviderImpl <em>Condition Treating Provider</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.Condition_TreatingProviderImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getCondition_TreatingProvider()
-	 * @generated
-	 */
-	int CONDITION_TREATING_PROVIDER = 2;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -699,16 +798,6 @@ public interface APITestPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONDITION_TREATING_PROVIDER_FEATURE_COUNT = CDAPackage.ASSIGNED_ENTITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.EpisodeObservationImpl <em>Episode Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.EpisodeObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getEpisodeObservation()
-	 * @generated
-	 */
-	int EPISODE_OBSERVATION = 3;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -990,16 +1079,6 @@ public interface APITestPackage extends EPackage {
 	int EPISODE_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.ConditionEntryImpl <em>Condition Entry</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.ConditionEntryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getConditionEntry()
-	 * @generated
-	 */
-	int CONDITION_ENTRY = 4;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1277,16 +1356,6 @@ public interface APITestPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONDITION_ENTRY_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.AgeObservationImpl <em>Age Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.AgeObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getAgeObservation()
-	 * @generated
-	 */
-	int AGE_OBSERVATION = 5;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -1568,16 +1637,6 @@ public interface APITestPackage extends EPackage {
 	int AGE_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.SeverityImpl <em>Severity</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.SeverityImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getSeverity()
-	 * @generated
-	 */
-	int SEVERITY = 6;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1855,16 +1914,6 @@ public interface APITestPackage extends EPackage {
 	 * @ordered
 	 */
 	int SEVERITY_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.ProblemStatusObservationImpl <em>Problem Status Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.ProblemStatusObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getProblemStatusObservation()
-	 * @generated
-	 */
-	int PROBLEM_STATUS_OBSERVATION = 7;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2146,16 +2195,6 @@ public interface APITestPackage extends EPackage {
 	int PROBLEM_STATUS_OBSERVATION_FEATURE_COUNT = STATUS_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.HealthStatusObservationImpl <em>Health Status Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.HealthStatusObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getHealthStatusObservation()
-	 * @generated
-	 */
-	int HEALTH_STATUS_OBSERVATION = 8;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2435,16 +2474,6 @@ public interface APITestPackage extends EPackage {
 	int HEALTH_STATUS_OBSERVATION_FEATURE_COUNT = STATUS_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.CommentImpl <em>Comment</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.CommentImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getComment()
-	 * @generated
-	 */
-	int COMMENT = 9;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2661,14 +2690,175 @@ public interface APITestPackage extends EPackage {
 	int COMMENT_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.FamilyHistoryObservationImpl <em>Family History Observation</em>}' class.
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.FamilyHistoryObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getFamilyHistoryObservation()
 	 * @generated
+	 * @ordered
 	 */
-	int FAMILY_HISTORY_OBSERVATION = 11;
+	int PROBLEM_LIST_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__ID = CDAPackage.SECTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__CODE = CDAPackage.SECTION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Problem List Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2950,16 +3140,6 @@ public interface APITestPackage extends EPackage {
 	int FAMILY_HISTORY_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.CauseOfDeathObservationImpl <em>Cause Of Death Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.CauseOfDeathObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getCauseOfDeathObservation()
-	 * @generated
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION = 10;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3237,187 +3417,6 @@ public interface APITestPackage extends EPackage {
 	 * @ordered
 	 */
 	int CAUSE_OF_DEATH_OBSERVATION_FEATURE_COUNT = FAMILY_HISTORY_OBSERVATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.ProblemListSectionImpl <em>Problem List Section</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.ProblemListSectionImpl
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl#getProblemListSection()
-	 * @generated
-	 */
-	int PROBLEM_LIST_SECTION = 12;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__ID = CDAPackage.SECTION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__CODE = CDAPackage.SECTION__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Title</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__TITLE = CDAPackage.SECTION__TITLE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__TEXT = CDAPackage.SECTION__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
-
-	/**
-	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
-
-	/**
-	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
-
-	/**
-	 * The number of structural features of the '<em>Problem List Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROBLEM_LIST_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.impl.GeneralHeaderConstraintsImpl <em>General Header Constraints</em>}' class.

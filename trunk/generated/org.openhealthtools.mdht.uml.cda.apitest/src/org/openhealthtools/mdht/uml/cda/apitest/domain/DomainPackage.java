@@ -21,7 +21,6 @@ import org.eclipse.emf.ecore.EPackage;
  * </ul>
  * <!-- end-user-doc -->
  * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainFactory
- * @model kind="package"
  * @generated
  */
 public interface DomainPackage extends EPackage {
@@ -58,440 +57,440 @@ public interface DomainPackage extends EPackage {
 	DomainPackage eINSTANCE = org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.StatusObservation <em>Status Observation</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition <em>ICondition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.StatusObservation
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getStatusObservation()
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getICondition()
 	 * @generated
 	 */
-	int STATUS_OBSERVATION = 0;
+	int ICONDITION = 0;
 
 	/**
-	 * The number of structural features of the '<em>Status Observation</em>' class.
+	 * The number of structural features of the '<em>ICondition</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_OBSERVATION_FEATURE_COUNT = 0;
+	int ICONDITION_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Condition <em>Condition</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation <em>IEpisode Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Condition
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getCondition()
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIEpisodeObservation()
 	 * @generated
 	 */
-	int CONDITION = 1;
+	int IEPISODE_OBSERVATION = 1;
 
 	/**
-	 * The number of structural features of the '<em>Condition</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITION_FEATURE_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.EpisodeObservation <em>Episode Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.EpisodeObservation
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getEpisodeObservation()
-	 * @generated
-	 */
-	int EPISODE_OBSERVATION = 2;
-
-	/**
-	 * The number of structural features of the '<em>Episode Observation</em>' class.
+	 * The number of structural features of the '<em>IEpisode Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EPISODE_OBSERVATION_FEATURE_COUNT = 0;
+	int IEPISODE_OBSERVATION_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ConditionEntry <em>Condition Entry</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry <em>ICondition Entry</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ConditionEntry
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getConditionEntry()
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIConditionEntry()
 	 * @generated
 	 */
-	int CONDITION_ENTRY = 3;
+	int ICONDITION_ENTRY = 2;
 
 	/**
-	 * The number of structural features of the '<em>Condition Entry</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITION_ENTRY_FEATURE_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.AgeObservation <em>Age Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.AgeObservation
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getAgeObservation()
-	 * @generated
-	 */
-	int AGE_OBSERVATION = 4;
-
-	/**
-	 * The number of structural features of the '<em>Age Observation</em>' class.
+	 * The number of structural features of the '<em>ICondition Entry</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGE_OBSERVATION_FEATURE_COUNT = 0;
+	int ICONDITION_ENTRY_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Severity <em>Severity</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation <em>IAge Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Severity
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getSeverity()
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIAgeObservation()
 	 * @generated
 	 */
-	int SEVERITY = 5;
+	int IAGE_OBSERVATION = 3;
 
 	/**
-	 * The number of structural features of the '<em>Severity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEVERITY_FEATURE_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemStatusObservation <em>Problem Status Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemStatusObservation
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getProblemStatusObservation()
-	 * @generated
-	 */
-	int PROBLEM_STATUS_OBSERVATION = 6;
-
-	/**
-	 * The number of structural features of the '<em>Problem Status Observation</em>' class.
+	 * The number of structural features of the '<em>IAge Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROBLEM_STATUS_OBSERVATION_FEATURE_COUNT = STATUS_OBSERVATION_FEATURE_COUNT + 0;
+	int IAGE_OBSERVATION_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.HealthStatusObservation <em>Health Status Observation</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity <em>ISeverity</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.HealthStatusObservation
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getHealthStatusObservation()
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getISeverity()
 	 * @generated
 	 */
-	int HEALTH_STATUS_OBSERVATION = 7;
+	int ISEVERITY = 4;
 
 	/**
-	 * The number of structural features of the '<em>Health Status Observation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEALTH_STATUS_OBSERVATION_FEATURE_COUNT = STATUS_OBSERVATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Comment <em>Comment</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Comment
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getComment()
-	 * @generated
-	 */
-	int COMMENT = 8;
-
-	/**
-	 * The number of structural features of the '<em>Comment</em>' class.
+	 * The number of structural features of the '<em>ISeverity</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMMENT_FEATURE_COUNT = 0;
+	int ISEVERITY_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.FamilyHistoryObservation <em>Family History Observation</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.FamilyHistoryObservation
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getFamilyHistoryObservation()
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIStatusObservation()
 	 * @generated
 	 */
-	int FAMILY_HISTORY_OBSERVATION = 10;
+	int ISTATUS_OBSERVATION = 14;
 
 	/**
-	 * The number of structural features of the '<em>Family History Observation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY_OBSERVATION_FEATURE_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.CauseOfDeathObservation <em>Cause Of Death Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.CauseOfDeathObservation
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getCauseOfDeathObservation()
-	 * @generated
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION = 9;
-
-	/**
-	 * The number of structural features of the '<em>Cause Of Death Observation</em>' class.
+	 * The number of structural features of the '<em>IStatus Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CAUSE_OF_DEATH_OBSERVATION_FEATURE_COUNT = FAMILY_HISTORY_OBSERVATION_FEATURE_COUNT + 0;
+	int ISTATUS_OBSERVATION_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.TreatingProvider <em>Treating Provider</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation <em>IProblem Status Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.TreatingProvider
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getTreatingProvider()
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIProblemStatusObservation()
 	 * @generated
 	 */
-	int TREATING_PROVIDER = 11;
+	int IPROBLEM_STATUS_OBSERVATION = 5;
 
 	/**
-	 * The number of structural features of the '<em>Treating Provider</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREATING_PROVIDER_FEATURE_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemListSection <em>Problem List Section</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemListSection
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getProblemListSection()
-	 * @generated
-	 */
-	int PROBLEM_LIST_SECTION = 12;
-
-	/**
-	 * The number of structural features of the '<em>Problem List Section</em>' class.
+	 * The number of structural features of the '<em>IProblem Status Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROBLEM_LIST_SECTION_FEATURE_COUNT = 0;
+	int IPROBLEM_STATUS_OBSERVATION_FEATURE_COUNT = ISTATUS_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.GeneralHeaderConstraints <em>General Header Constraints</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation <em>IHealth Status Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.GeneralHeaderConstraints
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getGeneralHeaderConstraints()
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIHealthStatusObservation()
 	 * @generated
 	 */
-	int GENERAL_HEADER_CONSTRAINTS = 14;
+	int IHEALTH_STATUS_OBSERVATION = 6;
 
 	/**
-	 * The number of structural features of the '<em>General Header Constraints</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.PatientSummary <em>Patient Summary</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.PatientSummary
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getPatientSummary()
-	 * @generated
-	 */
-	int PATIENT_SUMMARY = 13;
-
-	/**
-	 * The number of structural features of the '<em>Patient Summary</em>' class.
+	 * The number of structural features of the '<em>IHealth Status Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PATIENT_SUMMARY_FEATURE_COUNT = GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT + 0;
+	int IHEALTH_STATUS_OBSERVATION_FEATURE_COUNT = ISTATUS_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment <em>IComment</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IComment
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIComment()
+	 * @generated
+	 */
+	int ICOMMENT = 7;
+
+	/**
+	 * The number of structural features of the '<em>IComment</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ICOMMENT_FEATURE_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation <em>IFamily History Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIFamilyHistoryObservation()
+	 * @generated
+	 */
+	int IFAMILY_HISTORY_OBSERVATION = 9;
+
+	/**
+	 * The number of structural features of the '<em>IFamily History Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IFAMILY_HISTORY_OBSERVATION_FEATURE_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation <em>ICause Of Death Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getICauseOfDeathObservation()
+	 * @generated
+	 */
+	int ICAUSE_OF_DEATH_OBSERVATION = 8;
+
+	/**
+	 * The number of structural features of the '<em>ICause Of Death Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ICAUSE_OF_DEATH_OBSERVATION_FEATURE_COUNT = IFAMILY_HISTORY_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider <em>ITreating Provider</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getITreatingProvider()
+	 * @generated
+	 */
+	int ITREATING_PROVIDER = 10;
+
+	/**
+	 * The number of structural features of the '<em>ITreating Provider</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ITREATING_PROVIDER_FEATURE_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection <em>IProblem List Section</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIProblemListSection()
+	 * @generated
+	 */
+	int IPROBLEM_LIST_SECTION = 11;
+
+	/**
+	 * The number of structural features of the '<em>IProblem List Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IPROBLEM_LIST_SECTION_FEATURE_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints <em>IGeneral Header Constraints</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIGeneralHeaderConstraints()
+	 * @generated
+	 */
+	int IGENERAL_HEADER_CONSTRAINTS = 13;
+
+	/**
+	 * The number of structural features of the '<em>IGeneral Header Constraints</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IGENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary <em>IPatient Summary</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIPatientSummary()
+	 * @generated
+	 */
+	int IPATIENT_SUMMARY = 12;
+
+	/**
+	 * The number of structural features of the '<em>IPatient Summary</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IPATIENT_SUMMARY_FEATURE_COUNT = IGENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT + 0;
 
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.StatusObservation <em>Status Observation</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition <em>ICondition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Status Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.StatusObservation
+	 * @return the meta object for class '<em>ICondition</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition
 	 * @generated
 	 */
-	EClass getStatusObservation();
+	EClass getICondition();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Condition <em>Condition</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation <em>IEpisode Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Condition</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Condition
+	 * @return the meta object for class '<em>IEpisode Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation
 	 * @generated
 	 */
-	EClass getCondition();
+	EClass getIEpisodeObservation();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.EpisodeObservation <em>Episode Observation</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry <em>ICondition Entry</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Episode Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.EpisodeObservation
+	 * @return the meta object for class '<em>ICondition Entry</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry
 	 * @generated
 	 */
-	EClass getEpisodeObservation();
+	EClass getIConditionEntry();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ConditionEntry <em>Condition Entry</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation <em>IAge Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Condition Entry</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ConditionEntry
+	 * @return the meta object for class '<em>IAge Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation
 	 * @generated
 	 */
-	EClass getConditionEntry();
+	EClass getIAgeObservation();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.AgeObservation <em>Age Observation</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity <em>ISeverity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Age Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.AgeObservation
+	 * @return the meta object for class '<em>ISeverity</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity
 	 * @generated
 	 */
-	EClass getAgeObservation();
+	EClass getISeverity();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Severity <em>Severity</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation <em>IProblem Status Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Severity</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Severity
+	 * @return the meta object for class '<em>IProblem Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation
 	 * @generated
 	 */
-	EClass getSeverity();
+	EClass getIProblemStatusObservation();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemStatusObservation <em>Problem Status Observation</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation <em>IHealth Status Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Problem Status Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemStatusObservation
+	 * @return the meta object for class '<em>IHealth Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation
 	 * @generated
 	 */
-	EClass getProblemStatusObservation();
+	EClass getIHealthStatusObservation();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.HealthStatusObservation <em>Health Status Observation</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment <em>IComment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Health Status Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.HealthStatusObservation
+	 * @return the meta object for class '<em>IComment</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IComment
 	 * @generated
 	 */
-	EClass getHealthStatusObservation();
+	EClass getIComment();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Comment <em>Comment</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation <em>ICause Of Death Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Comment</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Comment
+	 * @return the meta object for class '<em>ICause Of Death Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation
 	 * @generated
 	 */
-	EClass getComment();
+	EClass getICauseOfDeathObservation();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.CauseOfDeathObservation <em>Cause Of Death Observation</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation <em>IFamily History Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Cause Of Death Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.CauseOfDeathObservation
+	 * @return the meta object for class '<em>IFamily History Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation
 	 * @generated
 	 */
-	EClass getCauseOfDeathObservation();
+	EClass getIFamilyHistoryObservation();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.FamilyHistoryObservation <em>Family History Observation</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider <em>ITreating Provider</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Family History Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.FamilyHistoryObservation
+	 * @return the meta object for class '<em>ITreating Provider</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider
 	 * @generated
 	 */
-	EClass getFamilyHistoryObservation();
+	EClass getITreatingProvider();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.TreatingProvider <em>Treating Provider</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection <em>IProblem List Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Treating Provider</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.TreatingProvider
+	 * @return the meta object for class '<em>IProblem List Section</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection
 	 * @generated
 	 */
-	EClass getTreatingProvider();
+	EClass getIProblemListSection();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemListSection <em>Problem List Section</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary <em>IPatient Summary</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Problem List Section</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemListSection
+	 * @return the meta object for class '<em>IPatient Summary</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary
 	 * @generated
 	 */
-	EClass getProblemListSection();
+	EClass getIPatientSummary();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.PatientSummary <em>Patient Summary</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints <em>IGeneral Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Patient Summary</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.PatientSummary
+	 * @return the meta object for class '<em>IGeneral Header Constraints</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints
 	 * @generated
 	 */
-	EClass getPatientSummary();
+	EClass getIGeneralHeaderConstraints();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>General Header Constraints</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.GeneralHeaderConstraints
+	 * @return the meta object for class '<em>IStatus Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
 	 * @generated
 	 */
-	EClass getGeneralHeaderConstraints();
+	EClass getIStatusObservation();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -516,154 +515,154 @@ public interface DomainPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.StatusObservation <em>Status Observation</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition <em>ICondition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.StatusObservation
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getStatusObservation()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getICondition()
 		 * @generated
 		 */
-		EClass STATUS_OBSERVATION = eINSTANCE.getStatusObservation();
+		EClass ICONDITION = eINSTANCE.getICondition();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Condition <em>Condition</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation <em>IEpisode Observation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Condition
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getCondition()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIEpisodeObservation()
 		 * @generated
 		 */
-		EClass CONDITION = eINSTANCE.getCondition();
+		EClass IEPISODE_OBSERVATION = eINSTANCE.getIEpisodeObservation();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.EpisodeObservation <em>Episode Observation</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry <em>ICondition Entry</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.EpisodeObservation
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getEpisodeObservation()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIConditionEntry()
 		 * @generated
 		 */
-		EClass EPISODE_OBSERVATION = eINSTANCE.getEpisodeObservation();
+		EClass ICONDITION_ENTRY = eINSTANCE.getIConditionEntry();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ConditionEntry <em>Condition Entry</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation <em>IAge Observation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ConditionEntry
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getConditionEntry()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIAgeObservation()
 		 * @generated
 		 */
-		EClass CONDITION_ENTRY = eINSTANCE.getConditionEntry();
+		EClass IAGE_OBSERVATION = eINSTANCE.getIAgeObservation();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.AgeObservation <em>Age Observation</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity <em>ISeverity</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.AgeObservation
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getAgeObservation()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getISeverity()
 		 * @generated
 		 */
-		EClass AGE_OBSERVATION = eINSTANCE.getAgeObservation();
+		EClass ISEVERITY = eINSTANCE.getISeverity();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Severity <em>Severity</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation <em>IProblem Status Observation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Severity
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getSeverity()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIProblemStatusObservation()
 		 * @generated
 		 */
-		EClass SEVERITY = eINSTANCE.getSeverity();
+		EClass IPROBLEM_STATUS_OBSERVATION = eINSTANCE.getIProblemStatusObservation();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemStatusObservation <em>Problem Status Observation</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation <em>IHealth Status Observation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemStatusObservation
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getProblemStatusObservation()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIHealthStatusObservation()
 		 * @generated
 		 */
-		EClass PROBLEM_STATUS_OBSERVATION = eINSTANCE.getProblemStatusObservation();
+		EClass IHEALTH_STATUS_OBSERVATION = eINSTANCE.getIHealthStatusObservation();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.HealthStatusObservation <em>Health Status Observation</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment <em>IComment</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.HealthStatusObservation
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getHealthStatusObservation()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IComment
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIComment()
 		 * @generated
 		 */
-		EClass HEALTH_STATUS_OBSERVATION = eINSTANCE.getHealthStatusObservation();
+		EClass ICOMMENT = eINSTANCE.getIComment();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Comment <em>Comment</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation <em>ICause Of Death Observation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Comment
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getComment()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getICauseOfDeathObservation()
 		 * @generated
 		 */
-		EClass COMMENT = eINSTANCE.getComment();
+		EClass ICAUSE_OF_DEATH_OBSERVATION = eINSTANCE.getICauseOfDeathObservation();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.CauseOfDeathObservation <em>Cause Of Death Observation</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation <em>IFamily History Observation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.CauseOfDeathObservation
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getCauseOfDeathObservation()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIFamilyHistoryObservation()
 		 * @generated
 		 */
-		EClass CAUSE_OF_DEATH_OBSERVATION = eINSTANCE.getCauseOfDeathObservation();
+		EClass IFAMILY_HISTORY_OBSERVATION = eINSTANCE.getIFamilyHistoryObservation();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.FamilyHistoryObservation <em>Family History Observation</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider <em>ITreating Provider</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.FamilyHistoryObservation
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getFamilyHistoryObservation()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getITreatingProvider()
 		 * @generated
 		 */
-		EClass FAMILY_HISTORY_OBSERVATION = eINSTANCE.getFamilyHistoryObservation();
+		EClass ITREATING_PROVIDER = eINSTANCE.getITreatingProvider();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.TreatingProvider <em>Treating Provider</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection <em>IProblem List Section</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.TreatingProvider
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getTreatingProvider()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIProblemListSection()
 		 * @generated
 		 */
-		EClass TREATING_PROVIDER = eINSTANCE.getTreatingProvider();
+		EClass IPROBLEM_LIST_SECTION = eINSTANCE.getIProblemListSection();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemListSection <em>Problem List Section</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary <em>IPatient Summary</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemListSection
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getProblemListSection()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIPatientSummary()
 		 * @generated
 		 */
-		EClass PROBLEM_LIST_SECTION = eINSTANCE.getProblemListSection();
+		EClass IPATIENT_SUMMARY = eINSTANCE.getIPatientSummary();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.PatientSummary <em>Patient Summary</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints <em>IGeneral Header Constraints</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.PatientSummary
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getPatientSummary()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIGeneralHeaderConstraints()
 		 * @generated
 		 */
-		EClass PATIENT_SUMMARY = eINSTANCE.getPatientSummary();
+		EClass IGENERAL_HEADER_CONSTRAINTS = eINSTANCE.getIGeneralHeaderConstraints();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.GeneralHeaderConstraints <em>General Header Constraints</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.GeneralHeaderConstraints
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getGeneralHeaderConstraints()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIStatusObservation()
 		 * @generated
 		 */
-		EClass GENERAL_HEADER_CONSTRAINTS = eINSTANCE.getGeneralHeaderConstraints();
+		EClass ISTATUS_OBSERVATION = eINSTANCE.getIStatusObservation();
 
 	}
 

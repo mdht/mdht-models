@@ -13,7 +13,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Severity</b></em>'.
+ * A representation of the model object '<em><b>ISeverity</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -22,15 +22,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * <!-- end-model-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getSeverity()
- * @model interface="true" abstract="true"
+ * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getISeverity()
  * @generated
  */
-public interface Severity extends EObject {
+public interface ISeverity extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	Observation toCDAType();
@@ -38,7 +36,9 @@ public interface Severity extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::text.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	ED getText();
@@ -47,20 +47,19 @@ public interface Severity extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt></p>
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>.
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	Severity setText(ED value);
+	void setText(ED value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * cda::Observation::value.
 	 * Value code representing high, moderate and low severity depending upon whether the severity is life threatening, presents noticeable adverse consequences, or is unlikely substantially effect the situation of the subject.
 	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
 	 * @generated
 	 */
 	CD getValue();
@@ -69,17 +68,16 @@ public interface Severity extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> SeverityObservation</tt><b> STATIC</b>, where its data type is CD</p>
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> SeverityObservation</tt><b> STATIC</b>, where its data type is CD.
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	Severity setValue(CD value);
+	void setValue(CD value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Severity init();
-} // Severity
+	public ISeverity init();
+} // ISeverity

@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+import org.openhealthtools.mdht.uml.cda.apitest.*;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestFactory;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.AgeObservation;
@@ -83,9 +84,9 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 			case APITestPackage.PROBLEM_STATUS_OBSERVATION: return createProblemStatusObservation();
 			case APITestPackage.HEALTH_STATUS_OBSERVATION: return createHealthStatusObservation();
 			case APITestPackage.COMMENT: return createComment();
-			case APITestPackage.CAUSE_OF_DEATH_OBSERVATION: return createCauseOfDeathObservation();
-			case APITestPackage.FAMILY_HISTORY_OBSERVATION: return createFamilyHistoryObservation();
 			case APITestPackage.PROBLEM_LIST_SECTION: return createProblemListSection();
+			case APITestPackage.FAMILY_HISTORY_OBSERVATION: return createFamilyHistoryObservation();
+			case APITestPackage.CAUSE_OF_DEATH_OBSERVATION: return createCauseOfDeathObservation();
 			case APITestPackage.PATIENT_SUMMARY: return createPatientSummary();
 			case APITestPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
 			default:
@@ -101,26 +102,6 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 	public StatusObservation createStatusObservation() {
 		StatusObservationImpl statusObservation = new StatusObservationImpl();
 		return statusObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Condition createCondition() {
-		ConditionImpl condition = new ConditionImpl();
-		return condition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Condition_TreatingProvider createCondition_TreatingProvider() {
-		Condition_TreatingProviderImpl condition_TreatingProvider = new Condition_TreatingProviderImpl();
-		return condition_TreatingProvider;
 	}
 
 	/**
@@ -211,6 +192,26 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 	public FamilyHistoryObservation createFamilyHistoryObservation() {
 		FamilyHistoryObservationImpl familyHistoryObservation = new FamilyHistoryObservationImpl();
 		return familyHistoryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Condition_TreatingProvider createCondition_TreatingProvider() {
+		Condition_TreatingProviderImpl condition_TreatingProvider = new Condition_TreatingProviderImpl();
+		return condition_TreatingProvider;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Condition createCondition() {
+		ConditionImpl condition = new ConditionImpl();
+		return condition;
 	}
 
 	/**

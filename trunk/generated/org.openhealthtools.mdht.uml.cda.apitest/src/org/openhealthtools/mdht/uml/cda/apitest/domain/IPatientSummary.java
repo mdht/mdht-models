@@ -10,7 +10,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Patient Summary</b></em>'.
+ * A representation of the model object '<em><b>IPatient Summary</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -18,15 +18,16 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
  * <!-- end-model-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getPatientSummary()
- * @model interface="true" abstract="true"
+ * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIPatientSummary()
  * @generated
  */
-public interface PatientSummary extends GeneralHeaderConstraints {
+public interface IPatientSummary extends IGeneralHeaderConstraints {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::ClinicalDocument::code.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	CE getCode();
@@ -35,17 +36,16 @@ public interface PatientSummary extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>Contains exactly one [1..1] <tt><b>code</b></tt></p>
+	 * Contains exactly one [1..1] <tt><b>code</b></tt>.
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	PatientSummary setCode(CE value);
+	void setCode(CE value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientSummary init();
-} // PatientSummary
+	public IPatientSummary init();
+} // IPatientSummary

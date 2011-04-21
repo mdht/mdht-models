@@ -10,22 +10,23 @@ import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.CauseOfDeathObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.Comment;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.Condition;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ConditionEntry;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.*;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.EpisodeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.FamilyHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.HealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.PatientSummary;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemListSection;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.Severity;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.StatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.TreatingProvider;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
 
 /**
  * <!-- begin-user-doc -->
@@ -84,64 +85,64 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	protected DomainSwitch<Adapter> modelSwitch =
 		new DomainSwitch<Adapter>() {
 			@Override
-			public Adapter caseStatusObservation(StatusObservation object) {
-				return createStatusObservationAdapter();
+			public Adapter caseICondition(ICondition object) {
+				return createIConditionAdapter();
 			}
 			@Override
-			public Adapter caseCondition(Condition object) {
-				return createConditionAdapter();
+			public Adapter caseIEpisodeObservation(IEpisodeObservation object) {
+				return createIEpisodeObservationAdapter();
 			}
 			@Override
-			public Adapter caseEpisodeObservation(EpisodeObservation object) {
-				return createEpisodeObservationAdapter();
+			public Adapter caseIConditionEntry(IConditionEntry object) {
+				return createIConditionEntryAdapter();
 			}
 			@Override
-			public Adapter caseConditionEntry(ConditionEntry object) {
-				return createConditionEntryAdapter();
+			public Adapter caseIAgeObservation(IAgeObservation object) {
+				return createIAgeObservationAdapter();
 			}
 			@Override
-			public Adapter caseAgeObservation(AgeObservation object) {
-				return createAgeObservationAdapter();
+			public Adapter caseISeverity(ISeverity object) {
+				return createISeverityAdapter();
 			}
 			@Override
-			public Adapter caseSeverity(Severity object) {
-				return createSeverityAdapter();
+			public Adapter caseIProblemStatusObservation(IProblemStatusObservation object) {
+				return createIProblemStatusObservationAdapter();
 			}
 			@Override
-			public Adapter caseProblemStatusObservation(ProblemStatusObservation object) {
-				return createProblemStatusObservationAdapter();
+			public Adapter caseIHealthStatusObservation(IHealthStatusObservation object) {
+				return createIHealthStatusObservationAdapter();
 			}
 			@Override
-			public Adapter caseHealthStatusObservation(HealthStatusObservation object) {
-				return createHealthStatusObservationAdapter();
+			public Adapter caseIComment(IComment object) {
+				return createICommentAdapter();
 			}
 			@Override
-			public Adapter caseComment(Comment object) {
-				return createCommentAdapter();
+			public Adapter caseICauseOfDeathObservation(ICauseOfDeathObservation object) {
+				return createICauseOfDeathObservationAdapter();
 			}
 			@Override
-			public Adapter caseCauseOfDeathObservation(CauseOfDeathObservation object) {
-				return createCauseOfDeathObservationAdapter();
+			public Adapter caseIFamilyHistoryObservation(IFamilyHistoryObservation object) {
+				return createIFamilyHistoryObservationAdapter();
 			}
 			@Override
-			public Adapter caseFamilyHistoryObservation(FamilyHistoryObservation object) {
-				return createFamilyHistoryObservationAdapter();
+			public Adapter caseITreatingProvider(ITreatingProvider object) {
+				return createITreatingProviderAdapter();
 			}
 			@Override
-			public Adapter caseTreatingProvider(TreatingProvider object) {
-				return createTreatingProviderAdapter();
+			public Adapter caseIProblemListSection(IProblemListSection object) {
+				return createIProblemListSectionAdapter();
 			}
 			@Override
-			public Adapter caseProblemListSection(ProblemListSection object) {
-				return createProblemListSectionAdapter();
+			public Adapter caseIPatientSummary(IPatientSummary object) {
+				return createIPatientSummaryAdapter();
 			}
 			@Override
-			public Adapter casePatientSummary(PatientSummary object) {
-				return createPatientSummaryAdapter();
+			public Adapter caseIGeneralHeaderConstraints(IGeneralHeaderConstraints object) {
+				return createIGeneralHeaderConstraintsAdapter();
 			}
 			@Override
-			public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
-				return createGeneralHeaderConstraintsAdapter();
+			public Adapter caseIStatusObservation(IStatusObservation object) {
+				return createIStatusObservationAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -164,212 +165,212 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.StatusObservation <em>Status Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition <em>ICondition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.StatusObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition
 	 * @generated
 	 */
-	public Adapter createStatusObservationAdapter() {
+	public Adapter createIConditionAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Condition <em>Condition</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation <em>IEpisode Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Condition
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation
 	 * @generated
 	 */
-	public Adapter createConditionAdapter() {
+	public Adapter createIEpisodeObservationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.EpisodeObservation <em>Episode Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry <em>ICondition Entry</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.EpisodeObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry
 	 * @generated
 	 */
-	public Adapter createEpisodeObservationAdapter() {
+	public Adapter createIConditionEntryAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ConditionEntry <em>Condition Entry</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation <em>IAge Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ConditionEntry
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation
 	 * @generated
 	 */
-	public Adapter createConditionEntryAdapter() {
+	public Adapter createIAgeObservationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.AgeObservation <em>Age Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity <em>ISeverity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.AgeObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity
 	 * @generated
 	 */
-	public Adapter createAgeObservationAdapter() {
+	public Adapter createISeverityAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Severity <em>Severity</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation <em>IProblem Status Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Severity
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation
 	 * @generated
 	 */
-	public Adapter createSeverityAdapter() {
+	public Adapter createIProblemStatusObservationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemStatusObservation <em>Problem Status Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation <em>IHealth Status Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemStatusObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation
 	 * @generated
 	 */
-	public Adapter createProblemStatusObservationAdapter() {
+	public Adapter createIHealthStatusObservationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.HealthStatusObservation <em>Health Status Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment <em>IComment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.HealthStatusObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IComment
 	 * @generated
 	 */
-	public Adapter createHealthStatusObservationAdapter() {
+	public Adapter createICommentAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.Comment <em>Comment</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation <em>ICause Of Death Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.Comment
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation
 	 * @generated
 	 */
-	public Adapter createCommentAdapter() {
+	public Adapter createICauseOfDeathObservationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.CauseOfDeathObservation <em>Cause Of Death Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation <em>IFamily History Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.CauseOfDeathObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation
 	 * @generated
 	 */
-	public Adapter createCauseOfDeathObservationAdapter() {
+	public Adapter createIFamilyHistoryObservationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.FamilyHistoryObservation <em>Family History Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider <em>ITreating Provider</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.FamilyHistoryObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider
 	 * @generated
 	 */
-	public Adapter createFamilyHistoryObservationAdapter() {
+	public Adapter createITreatingProviderAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.TreatingProvider <em>Treating Provider</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection <em>IProblem List Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.TreatingProvider
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection
 	 * @generated
 	 */
-	public Adapter createTreatingProviderAdapter() {
+	public Adapter createIProblemListSectionAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemListSection <em>Problem List Section</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary <em>IPatient Summary</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemListSection
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary
 	 * @generated
 	 */
-	public Adapter createProblemListSectionAdapter() {
+	public Adapter createIPatientSummaryAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.PatientSummary <em>Patient Summary</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints <em>IGeneral Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.PatientSummary
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints
 	 * @generated
 	 */
-	public Adapter createPatientSummaryAdapter() {
+	public Adapter createIGeneralHeaderConstraintsAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.GeneralHeaderConstraints
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
 	 * @generated
 	 */
-	public Adapter createGeneralHeaderConstraintsAdapter() {
+	public Adapter createIStatusObservationAdapter() {
 		return null;
 	}
 

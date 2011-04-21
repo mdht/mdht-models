@@ -14,7 +14,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>General Header Constraints</b></em>'.
+ * A representation of the model object '<em><b>IGeneral Header Constraints</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -22,15 +22,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <!-- end-model-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getGeneralHeaderConstraints()
- * @model interface="true" abstract="true"
+ * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIGeneralHeaderConstraints()
  * @generated
  */
-public interface GeneralHeaderConstraints extends EObject {
+public interface IGeneralHeaderConstraints extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	ClinicalDocument toCDAType();
@@ -38,7 +36,9 @@ public interface GeneralHeaderConstraints extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::ClinicalDocument::languageCode.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	CS getLanguageCode();
@@ -47,17 +47,18 @@ public interface GeneralHeaderConstraints extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>Contains zero or one [0..1] <tt><b>languageCode</b></tt></p>
+	 * Contains zero or one [0..1] <tt><b>languageCode</b></tt>.
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	GeneralHeaderConstraints setLanguageCode(CS value);
+	void setLanguageCode(CS value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::ClinicalDocument::setId.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	II getSetId();
@@ -66,17 +67,18 @@ public interface GeneralHeaderConstraints extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>Contains zero or one [0..1] <tt><b>setId</b></tt></p>
+	 * Contains zero or one [0..1] <tt><b>setId</b></tt>.
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	GeneralHeaderConstraints setSetId(II value);
+	void setSetId(II value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::ClinicalDocument::title.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	ST getTitle();
@@ -85,17 +87,16 @@ public interface GeneralHeaderConstraints extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>Contains zero or one [0..1] <tt><b>title</b></tt></p>
+	 * Contains zero or one [0..1] <tt><b>title</b></tt>.
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	GeneralHeaderConstraints setTitle(ST value);
+	void setTitle(ST value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GeneralHeaderConstraints init();
-} // GeneralHeaderConstraints
+	public IGeneralHeaderConstraints init();
+} // IGeneralHeaderConstraints

@@ -11,9 +11,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.Condition;
 import org.openhealthtools.mdht.uml.cda.apitest.ProblemListSection;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.ProblemListSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -52,6 +54,33 @@ public class ProblemListSectionImpl extends SectionImpl implements ProblemListSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Section toCDAType() {
+		return ProblemListSectionOperations.toCDAType(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ICondition> getConditions() {
+		return ProblemListSectionOperations.getConditions(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemListSection addCondition(ICondition value) {
+		return ProblemListSectionOperations.addCondition(this, value);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProblemListSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemListSectionOperations.validateProblemListSectionTemplateId(this, diagnostics, context);
 	}
@@ -81,15 +110,6 @@ public class ProblemListSectionImpl extends SectionImpl implements ProblemListSe
 	 */
 	public boolean validateProblemListSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemListSectionOperations.validateProblemListSectionText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Condition> getConditions() {
-		return ProblemListSectionOperations.getConditions(this);
 	}
 
 	/**

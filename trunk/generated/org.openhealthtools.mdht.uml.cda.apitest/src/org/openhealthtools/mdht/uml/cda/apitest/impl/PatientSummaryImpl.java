@@ -7,8 +7,10 @@
 package org.openhealthtools.mdht.uml.cda.apitest.impl;
 
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.PatientSummary;
+import org.openhealthtools.mdht.uml.cda.apitest.operations.PatientSummaryOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -38,6 +40,16 @@ public class PatientSummaryImpl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	protected EClass eStaticClass() {
 		return APITestPackage.Literals.PATIENT_SUMMARY;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ClinicalDocument toCDAType() {
+		return PatientSummaryOperations.toCDAType(this);
 	}
 
 	/**

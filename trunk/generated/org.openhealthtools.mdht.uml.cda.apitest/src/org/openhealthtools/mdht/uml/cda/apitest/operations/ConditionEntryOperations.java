@@ -19,17 +19,24 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
+import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
-import org.openhealthtools.mdht.uml.cda.apitest.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.Comment;
 import org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry;
-import org.openhealthtools.mdht.uml.cda.apitest.HealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.Severity;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
+import org.openhealthtools.mdht.uml.hl7.datatypes.II;
+import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,6 +46,29 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#toCDAType() <em>To CDA Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getIds() <em>Get Ids</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#addId(org.openhealthtools.mdht.uml.hl7.datatypes.II) <em>Add Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getProblemType() <em>Get Problem Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#setProblemType(org.openhealthtools.mdht.uml.hl7.datatypes.CD) <em>Set Problem Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getProblemName() <em>Get Problem Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#setProblemName(org.openhealthtools.mdht.uml.hl7.datatypes.ED) <em>Set Problem Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getProblemDate() <em>Get Problem Date</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#setProblemDate(org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS) <em>Set Problem Date</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getProblemCode() <em>Get Problem Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#setProblemCode(org.openhealthtools.mdht.uml.hl7.datatypes.CD) <em>Set Problem Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getAgeObservation() <em>Get Age Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#setAgeAtOnset(org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation) <em>Set Age At Onset</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getSeverity() <em>Get Severity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#setSeverity(org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity) <em>Set Severity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getProblemStatusObservation() <em>Get Problem Status Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#setProblemStatus(org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation) <em>Set Problem Status</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getHealthStatusObservation() <em>Get Health Status Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#setHealthStatusObservation(org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation) <em>Set Health Status Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getComments() <em>Get Comments</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#addComment(org.openhealthtools.mdht.uml.cda.apitest.domain.IComment) <em>Add Comment</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#getCauseOfDeathObservation() <em>Get Cause Of Death Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry#setCauseOfDeath(org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation) <em>Set Cause Of Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#validateConditionEntryInformationSource(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Information Source</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#validateConditionEntryContainsPatientAwareness(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Contains Patient Awareness</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#validateConditionEntryHasTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Has Text Reference</em>}</li>
@@ -60,12 +90,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#validateConditionEntryHealthStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Health Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#validateConditionEntryComment(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Comment</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#validateConditionEntryCauseOfDeathObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Cause Of Death Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#getAgeObservation() <em>Get Age Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#getSeverity() <em>Get Severity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#getProblemStatusObservation() <em>Get Problem Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#getHealthStatusObservation() <em>Get Health Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#getComments() <em>Get Comments</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry#getCauseOfDeathObservation() <em>Get Cause Of Death Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -79,6 +103,532 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 */
 	protected ConditionEntryOperations() {
 		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static  Observation toCDAType(ConditionEntry conditionEntry) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::id.
+	 * The specific observation being recorded must have an identifier (&lt;id>) that shall be provided for tracking purposes. If the source EMR does not or cannot supply an intrinsic identifier, then a GUID shall be provided as the root, with no extension (e.g., &lt;id root='CE1215CD-69EC-4C7B-805F-569233C5E159'/>). At least one identifier must be present, more than one may appear.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  EList<II> getIds(ConditionEntry conditionEntry) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IConditionEntry addId(ConditionEntry conditionEntry, II value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::code.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  CD getProblemType(ConditionEntry conditionEntry) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.2 Problem Type</tt><b> STATIC</b> 1.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setProblemType(ConditionEntry conditionEntry, CD value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::text.
+	 * The &lt;text> element is required and points to the text describing the problem being recorded; including any dates, comments, et cetera. The &lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  ED getProblemName(ConditionEntry conditionEntry) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setProblemName(ConditionEntry conditionEntry, ED value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::effectiveTime.
+	 * The &lt;effectiveTime> of this &lt;observation> is the time interval over which the &lt;observation> is known to be true. The &lt;low> and &lt;high> values should be no more precise than known, but as precise as possible. While CDA allows for multiple mechanisms to record this time interval (e.g., by low and high values, low and width, high and width, or center point and width), we are constraining Medical summaries to use only the low/high form. The &lt;low> value is the earliest point for which the condition is known to have existed. The &lt;high> value, when present, indicates the time at which the observation was no longer known to be true. Thus, the implication is made that if the &lt;high> value is specified, that the observation was no longer seen after this time, and it thus represents the date of resolution of the problem. Similarly, the &lt;low> value may seem to represent onset of the problem. Neither of these statements is necessarily precise, as the &lt;low> and &lt;high> values may represent only an approximation of the true onset and resolution (respectively) times. For example, it may be the case that onset occurred prior to the &lt;low> value, but no observation may have been possible before that time to discern whether the condition existed prior to that time. The &lt;low> value should normally be present. There are exceptions, such as for the case where the patient may be able to report that they had chicken pox, but are unsure when. In this case, the &lt;effectiveTime> element shall have a &lt;low> element with a nullFlavor attribute set to 'UNK'. The &lt;high> value need not be present when the observation is about a state of the patient that is unlikely to change (e.g., the diagnosis of an incurable disease).
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IVL_TS getProblemDate(ConditionEntry conditionEntry) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>SHOULD</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setProblemDate(ConditionEntry conditionEntry, IVL_TS value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::value.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  CD getProblemCode(ConditionEntry conditionEntry) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.4 Problem</tt><b> STATIC</b> 1, where its data type is CD.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setProblemCode(ConditionEntry conditionEntry, CD value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getAgeObservation(ConditionEntry) <em>Get Age Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAgeObservation(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::AgeObservation))->asSequence()->first().oclAsType(apitest::AgeObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getAgeObservation(ConditionEntry) <em>Get Age Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAgeObservation(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_AGE_OBSERVATION__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::ageObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::AgeObservation))->asSequence()->first().oclAsType(apitest::AgeObservation)
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IAgeObservation getAgeObservation(ConditionEntry conditionEntry) {
+		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.ICONDITION_ENTRY, DomainPackage.Literals.ICONDITION_ENTRY.getEAllOperations().get(11));
+			try {
+				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_AGE_OBSERVATION__EOCL_QRY);
+		return (IAgeObservation) query.evaluate(conditionEntry);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-160), such that.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setAgeAtOnset(ConditionEntry conditionEntry, IAgeObservation value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getSeverity(ConditionEntry) <em>Get Severity</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSeverity(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_SEVERITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::Severity))->asSequence()->first().oclAsType(apitest::Severity)";
+
+	/**
+	 * The cached OCL query for the '{@link #getSeverity(ConditionEntry) <em>Get Severity</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSeverity(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_SEVERITY__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::severity.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::Severity))->asSequence()->first().oclAsType(apitest::Severity)
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  ISeverity getSeverity(ConditionEntry conditionEntry) {
+		if (GET_SEVERITY__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.ICONDITION_ENTRY, DomainPackage.Literals.ICONDITION_ENTRY.getEAllOperations().get(13));
+			try {
+				GET_SEVERITY__EOCL_QRY = helper.createQuery(GET_SEVERITY__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_SEVERITY__EOCL_QRY);
+		return (ISeverity) query.evaluate(conditionEntry);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setSeverity(ConditionEntry conditionEntry, ISeverity value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getProblemStatusObservation(ConditionEntry) <em>Get Problem Status Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProblemStatusObservation(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::ProblemStatusObservation))->asSequence()->first().oclAsType(apitest::ProblemStatusObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getProblemStatusObservation(ConditionEntry) <em>Get Problem Status Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProblemStatusObservation(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::problemStatusObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::ProblemStatusObservation))->asSequence()->first().oclAsType(apitest::ProblemStatusObservation)
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IProblemStatusObservation getProblemStatusObservation(ConditionEntry conditionEntry) {
+		if (GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.ICONDITION_ENTRY, DomainPackage.Literals.ICONDITION_ENTRY.getEAllOperations().get(15));
+			try {
+				GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY);
+		return (IProblemStatusObservation) query.evaluate(conditionEntry);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setProblemStatus(ConditionEntry conditionEntry, IProblemStatusObservation value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getHealthStatusObservation(ConditionEntry) <em>Get Health Status Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHealthStatusObservation(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::HealthStatusObservation))->asSequence()->first().oclAsType(apitest::HealthStatusObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getHealthStatusObservation(ConditionEntry) <em>Get Health Status Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHealthStatusObservation(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::healthStatusObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::HealthStatusObservation))->asSequence()->first().oclAsType(apitest::HealthStatusObservation)
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IHealthStatusObservation getHealthStatusObservation(ConditionEntry conditionEntry) {
+		if (GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.ICONDITION_ENTRY, DomainPackage.Literals.ICONDITION_ENTRY.getEAllOperations().get(17));
+			try {
+				GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY);
+		return (IHealthStatusObservation) query.evaluate(conditionEntry);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setHealthStatusObservation(ConditionEntry conditionEntry, IHealthStatusObservation value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getComments(ConditionEntry) <em>Get Comments</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getComments(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_COMMENTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Comment)).oclAsType(apitest::Comment)";
+
+	/**
+	 * The cached OCL query for the '{@link #getComments(ConditionEntry) <em>Get Comments</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getComments(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_COMMENTS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::comment.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Comment)).oclAsType(apitest::Comment)
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  EList<IComment> getComments(ConditionEntry conditionEntry) {
+		if (GET_COMMENTS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.ICONDITION_ENTRY, DomainPackage.Literals.ICONDITION_ENTRY.getEAllOperations().get(19));
+			try {
+				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<IComment> result = (Collection<IComment>) query.evaluate(conditionEntry);
+		return new BasicEList.UnmodifiableEList<IComment>(result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IConditionEntry addComment(ConditionEntry conditionEntry, IComment value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getCauseOfDeathObservation(ConditionEntry) <em>Get Cause Of Death Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCauseOfDeathObservation(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::CauseOfDeathObservation))->asSequence()->first().oclAsType(apitest::CauseOfDeathObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getCauseOfDeathObservation(ConditionEntry) <em>Get Cause Of Death Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCauseOfDeathObservation(ConditionEntry)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::causeOfDeathObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::CauseOfDeathObservation))->asSequence()->first().oclAsType(apitest::CauseOfDeathObservation)
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  ICauseOfDeathObservation getCauseOfDeathObservation(ConditionEntry conditionEntry) {
+		if (GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.ICONDITION_ENTRY, DomainPackage.Literals.ICONDITION_ENTRY.getEAllOperations().get(21));
+			try {
+				GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_QRY = helper.createQuery(GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_QRY);
+		return (ICauseOfDeathObservation) query.evaluate(conditionEntry);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that.
+	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setCauseOfDeath(ConditionEntry conditionEntry, ICauseOfDeathObservation value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -1300,272 +1850,6 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 			return false;
 		}
 		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getAgeObservation(ConditionEntry) <em>Get Age Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAgeObservation(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::AgeObservation))->asSequence()->first().oclAsType(apitest::AgeObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getAgeObservation(ConditionEntry) <em>Get Age Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAgeObservation(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_AGE_OBSERVATION__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::AgeObservation))->asSequence()->first().oclAsType(apitest::AgeObservation)
-	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  AgeObservation getAgeObservation(ConditionEntry conditionEntry) {
-		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(70));
-			try {
-				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_AGE_OBSERVATION__EOCL_QRY);
-		return (AgeObservation) query.evaluate(conditionEntry);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getSeverity(ConditionEntry) <em>Get Severity</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSeverity(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_SEVERITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::Severity))->asSequence()->first().oclAsType(apitest::Severity)";
-
-	/**
-	 * The cached OCL query for the '{@link #getSeverity(ConditionEntry) <em>Get Severity</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSeverity(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_SEVERITY__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::Severity))->asSequence()->first().oclAsType(apitest::Severity)
-	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  Severity getSeverity(ConditionEntry conditionEntry) {
-		if (GET_SEVERITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(71));
-			try {
-				GET_SEVERITY__EOCL_QRY = helper.createQuery(GET_SEVERITY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SEVERITY__EOCL_QRY);
-		return (Severity) query.evaluate(conditionEntry);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getProblemStatusObservation(ConditionEntry) <em>Get Problem Status Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProblemStatusObservation(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::ProblemStatusObservation))->asSequence()->first().oclAsType(apitest::ProblemStatusObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getProblemStatusObservation(ConditionEntry) <em>Get Problem Status Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProblemStatusObservation(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::ProblemStatusObservation))->asSequence()->first().oclAsType(apitest::ProblemStatusObservation)
-	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  ProblemStatusObservation getProblemStatusObservation(ConditionEntry conditionEntry) {
-		if (GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(72));
-			try {
-				GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY);
-		return (ProblemStatusObservation) query.evaluate(conditionEntry);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getHealthStatusObservation(ConditionEntry) <em>Get Health Status Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getHealthStatusObservation(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::HealthStatusObservation))->asSequence()->first().oclAsType(apitest::HealthStatusObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getHealthStatusObservation(ConditionEntry) <em>Get Health Status Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getHealthStatusObservation(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::HealthStatusObservation))->asSequence()->first().oclAsType(apitest::HealthStatusObservation)
-	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  HealthStatusObservation getHealthStatusObservation(ConditionEntry conditionEntry) {
-		if (GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(73));
-			try {
-				GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY);
-		return (HealthStatusObservation) query.evaluate(conditionEntry);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getComments(ConditionEntry) <em>Get Comments</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getComments(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_COMMENTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Comment)).oclAsType(apitest::Comment)";
-
-	/**
-	 * The cached OCL query for the '{@link #getComments(ConditionEntry) <em>Get Comments</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getComments(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_COMMENTS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Comment)).oclAsType(apitest::Comment)
-	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  EList<Comment> getComments(ConditionEntry conditionEntry) {
-		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(74));
-			try {
-				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<Comment> result = (Collection<Comment>) query.evaluate(conditionEntry);
-		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getCauseOfDeathObservation(ConditionEntry) <em>Get Cause Of Death Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCauseOfDeathObservation(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::CauseOfDeathObservation))->asSequence()->first().oclAsType(apitest::CauseOfDeathObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getCauseOfDeathObservation(ConditionEntry) <em>Get Cause Of Death Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCauseOfDeathObservation(ConditionEntry)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::CauseOfDeathObservation))->asSequence()->first().oclAsType(apitest::CauseOfDeathObservation)
-	 * @param conditionEntry The receiving '<em><b>Condition Entry</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  CauseOfDeathObservation getCauseOfDeathObservation(ConditionEntry conditionEntry) {
-		if (GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(75));
-			try {
-				GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_QRY = helper.createQuery(GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CAUSE_OF_DEATH_OBSERVATION__EOCL_QRY);
-		return (CauseOfDeathObservation) query.evaluate(conditionEntry);
 	}
 
 } // ConditionEntryOperations
