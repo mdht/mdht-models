@@ -4,8 +4,8 @@
     xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="/org.openhealthtools.mdht.uml.cda.apitest/src"
     modelPluginID="org.openhealthtools.mdht.uml.cda.apitest" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
     dynamicTemplates="true" redirection="" modelName="APITest" modelPluginClass="APITestPlugin"
-    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
-    runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    suppressEMFModelTags="true" importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0"
+    copyrightFields="false" runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
     invariantPrefix="validate">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
@@ -123,9 +123,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//Condition/ConditionTreatingProvider/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//Condition/ConditionTreatingProvider/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//Condition/getEpisodeObservation"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//Condition/getConditionEntries"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//Condition/getTreatingProvider"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//Condition_TreatingProvider">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//Condition_TreatingProvider/TreatingProviderId">
@@ -252,12 +249,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//ConditionEntry/ConditionEntryCauseOfDeathObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//ConditionEntry/ConditionEntryCauseOfDeathObservation/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getAgeObservation"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getSeverity"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getProblemStatusObservation"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getHealthStatusObservation"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getComments"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getCauseOfDeathObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//AgeObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//AgeObservation/AgeObservationRelatedSubjectBirthTime">
@@ -369,24 +360,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//Comment/CommentStatusCode/context"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//CauseOfDeathObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//CauseOfDeathObservation/getAPITestAgeObservation"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//FamilyHistoryObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/getAgeObservation"/>
-    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//ProblemListSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ProblemListSection/ProblemListSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//ProblemListSection/ProblemListSectionTemplateId/diagnostics"/>
@@ -404,229 +377,222 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//ProblemListSection/ProblemListSectionText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//ProblemListSection/ProblemListSectionText/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ProblemListSection/getConditions"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//FamilyHistoryObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//CauseOfDeathObservation"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//PatientSummary"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//GeneralHeaderConstraints"/>
     <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Domain" basePackage="org.openhealthtools.mdht.uml.cda.apitest"
         disposableProviderFactory="true" ecorePackage="apitest.ecore#//domain">
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/StatusObservation">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/StatusObservation/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/StatusObservation/getValue"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/StatusObservation/setValue">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/StatusObservation/setValue/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/ICondition">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/getIds"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/addId">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ICondition/addId/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/StatusObservation/getText"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/StatusObservation/setText">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/StatusObservation/setText/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/getCode"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/setCode">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ICondition/setCode/value"/>
         </genOperations>
-      </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/Condition">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/getIds"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/addId">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Condition/addId/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/getStatusCode"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/setStatusCode">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ICondition/setStatusCode/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/getCode"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/setCode">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Condition/setCode/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/getEffectiveTime"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/setEffectiveTime">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ICondition/setEffectiveTime/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/getStatusCode"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/setStatusCode">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Condition/setStatusCode/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/getEpisodeObservation"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/setEpisodeObservation">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ICondition/setEpisodeObservation/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/getEffectiveTime"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/setEffectiveTime">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Condition/setEffectiveTime/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/getConditionEntries"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/addProblemEntry">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ICondition/addProblemEntry/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/getEpisodeObservation"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/setEpisodeObservation">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Condition/setEpisodeObservation/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/getProblemEntries"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/addProblemEntry">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Condition/addProblemEntry/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/getTreatingProvider"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Condition/setTreatingProvider">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Condition/setTreatingProvider/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/getTreatingProvider"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICondition/setTreatingProvider">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ICondition/setTreatingProvider/value"/>
         </genOperations>
       </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/EpisodeObservation">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/EpisodeObservation/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/EpisodeObservation/getCode"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/EpisodeObservation/setCode">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/EpisodeObservation/setCode/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IEpisodeObservation">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IEpisodeObservation/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IEpisodeObservation/getCode"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IEpisodeObservation/setCode">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IEpisodeObservation/setCode/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/EpisodeObservation/getValue"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/EpisodeObservation/setValue">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/EpisodeObservation/setValue/value"/>
-        </genOperations>
-      </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/ConditionEntry">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getClassCode"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/setClassCode">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/setClassCode/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getIds"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/addId">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/addId/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getProblemType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/setProblemType">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/setProblemType/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getProblemName"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/setProblemName">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/setProblemName/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getProblemDate"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/setProblemDate">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/setProblemDate/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getProblemCode"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/setProblemCode">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/setProblemCode/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getAgeAtOnset"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/setAgeAtOnset">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/setAgeAtOnset/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getSeverity"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/setSeverity">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/setSeverity/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getProblemStatus"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/setProblemStatus">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/setProblemStatus/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getHealthStatusObservation"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/setHealthStatusObservation">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/setHealthStatusObservation/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getComments"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/addComment">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/addComment/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/getCauseOfDeath"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ConditionEntry/setCauseOfDeath">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ConditionEntry/setCauseOfDeath/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IEpisodeObservation/getValue"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IEpisodeObservation/setValue">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IEpisodeObservation/setValue/value"/>
         </genOperations>
       </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/AgeObservation">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/AgeObservation/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/AgeObservation/getValue"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/AgeObservation/setValue">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/AgeObservation/setValue/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IConditionEntry">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getIds"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/addId">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/addId/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getProblemType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/setProblemType">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/setProblemType/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getProblemName"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/setProblemName">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/setProblemName/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getProblemDate"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/setProblemDate">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/setProblemDate/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getProblemCode"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/setProblemCode">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/setProblemCode/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getAgeObservation"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/setAgeAtOnset">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/setAgeAtOnset/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getSeverity"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/setSeverity">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/setSeverity/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getProblemStatusObservation"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/setProblemStatus">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/setProblemStatus/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getHealthStatusObservation"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/setHealthStatusObservation">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/setHealthStatusObservation/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getComments"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/addComment">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/addComment/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/getCauseOfDeathObservation"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IConditionEntry/setCauseOfDeath">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IConditionEntry/setCauseOfDeath/value"/>
         </genOperations>
       </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/Severity">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Severity/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Severity/getText"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Severity/setText">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Severity/setText/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Severity/getValue"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Severity/setValue">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Severity/setValue/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IAgeObservation">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IAgeObservation/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IAgeObservation/getValue"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IAgeObservation/setValue">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IAgeObservation/setValue/value"/>
         </genOperations>
       </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/ProblemStatusObservation">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ProblemStatusObservation/setValue">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ProblemStatusObservation/setValue/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/ISeverity">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ISeverity/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ISeverity/getText"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ISeverity/setText">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ISeverity/setText/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ISeverity/getValue"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ISeverity/setValue">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ISeverity/setValue/value"/>
         </genOperations>
       </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/HealthStatusObservation">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/HealthStatusObservation/setValue">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/HealthStatusObservation/setValue/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IProblemStatusObservation"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IHealthStatusObservation"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IComment">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IComment/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IComment/getText"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IComment/setText">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IComment/setText/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IComment/getAuthor"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IComment/setAuthor">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IComment/setAuthor/value"/>
         </genOperations>
       </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/Comment">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Comment/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Comment/getText"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Comment/setText">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Comment/setText/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/ICauseOfDeathObservation">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICauseOfDeathObservation/getTimeOfDeath"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICauseOfDeathObservation/setTimeOfDeath">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ICauseOfDeathObservation/setTimeOfDeath/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Comment/getAuthor"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/Comment/setAuthor">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/Comment/setAuthor/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ICauseOfDeathObservation/setAgeAtDeath">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ICauseOfDeathObservation/setAgeAtDeath/value"/>
         </genOperations>
       </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/CauseOfDeathObservation">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/CauseOfDeathObservation/getTimeOfDeath"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/CauseOfDeathObservation/setTimeOfDeath">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/CauseOfDeathObservation/setTimeOfDeath/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IFamilyHistoryObservation">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IFamilyHistoryObservation/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IFamilyHistoryObservation/getIds"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IFamilyHistoryObservation/addId">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IFamilyHistoryObservation/addId/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/CauseOfDeathObservation/getAgeAtDeath"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/CauseOfDeathObservation/setAgeAtDeath">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/CauseOfDeathObservation/setAgeAtDeath/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IFamilyHistoryObservation/getCode"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IFamilyHistoryObservation/setCode">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IFamilyHistoryObservation/setCode/value"/>
         </genOperations>
-      </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/FamilyHistoryObservation">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/getClassCode"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/setClassCode">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/FamilyHistoryObservation/setClassCode/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/getMoodCode"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/setMoodCode">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/FamilyHistoryObservation/setMoodCode/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/getIds"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/addId">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/FamilyHistoryObservation/addId/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/getCode"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/setCode">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/FamilyHistoryObservation/setCode/value"/>
-        </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/getAgeObservation"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/FamilyHistoryObservation/setAgeObservation">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/FamilyHistoryObservation/setAgeObservation/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IFamilyHistoryObservation/getAgeObservation"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IFamilyHistoryObservation/setAgeObservation">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IFamilyHistoryObservation/setAgeObservation/value"/>
         </genOperations>
       </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/TreatingProvider">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/TreatingProvider/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/TreatingProvider/getTreatingProviderIDs"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/TreatingProvider/addTreatingProviderID">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/TreatingProvider/addTreatingProviderID/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/ITreatingProvider">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ITreatingProvider/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ITreatingProvider/getTreatingProviderIDs"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ITreatingProvider/addTreatingProviderID">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ITreatingProvider/addTreatingProviderID/value"/>
         </genOperations>
       </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/ProblemListSection">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ProblemListSection/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ProblemListSection/getTitle"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ProblemListSection/setTitle">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ProblemListSection/setTitle/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IProblemListSection">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IProblemListSection/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IProblemListSection/getTitle"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IProblemListSection/setTitle">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IProblemListSection/setTitle/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ProblemListSection/getText"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ProblemListSection/setText">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ProblemListSection/setText/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IProblemListSection/getText"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IProblemListSection/setText">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IProblemListSection/setText/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ProblemListSection/getConditions"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/ProblemListSection/addCondition">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/ProblemListSection/addCondition/value"/>
-        </genOperations>
-      </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/PatientSummary">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/PatientSummary/getCode"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/PatientSummary/setCode">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/PatientSummary/setCode/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IProblemListSection/getConditions"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IProblemListSection/addCondition">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IProblemListSection/addCondition/value"/>
         </genOperations>
       </genClasses>
-      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/GeneralHeaderConstraints">
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/GeneralHeaderConstraints/toCDAType"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/GeneralHeaderConstraints/getLanguageCode"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/GeneralHeaderConstraints/setLanguageCode">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/GeneralHeaderConstraints/setLanguageCode/value"/>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IPatientSummary">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IPatientSummary/getCode"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IPatientSummary/setCode">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IPatientSummary/setCode/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/GeneralHeaderConstraints/getSetId"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/GeneralHeaderConstraints/setSetId">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/GeneralHeaderConstraints/setSetId/value"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IGeneralHeaderConstraints">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IGeneralHeaderConstraints/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IGeneralHeaderConstraints/getLanguageCode"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IGeneralHeaderConstraints/setLanguageCode">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IGeneralHeaderConstraints/setLanguageCode/value"/>
         </genOperations>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/GeneralHeaderConstraints/getTitle"/>
-        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/GeneralHeaderConstraints/setTitle">
-          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/GeneralHeaderConstraints/setTitle/value"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IGeneralHeaderConstraints/getSetId"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IGeneralHeaderConstraints/setSetId">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IGeneralHeaderConstraints/setSetId/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IGeneralHeaderConstraints/getTitle"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IGeneralHeaderConstraints/setTitle">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IGeneralHeaderConstraints/setTitle/value"/>
+        </genOperations>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="apitest.ecore#//domain/IStatusObservation">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IStatusObservation/toCDAType"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IStatusObservation/getValue"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IStatusObservation/setValue">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IStatusObservation/setValue/value"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IStatusObservation/getText"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//domain/IStatusObservation/setText">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//domain/IStatusObservation/setText/value"/>
         </genOperations>
       </genClasses>
     </nestedGenPackages>

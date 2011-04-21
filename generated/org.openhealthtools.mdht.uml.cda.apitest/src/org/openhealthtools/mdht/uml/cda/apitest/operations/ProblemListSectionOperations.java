@@ -19,12 +19,17 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
+import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
-import org.openhealthtools.mdht.uml.cda.apitest.Condition;
 import org.openhealthtools.mdht.uml.cda.apitest.ProblemListSection;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,11 +39,17 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection#toCDAType() <em>To CDA Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection#getTitle() <em>Get Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection#setTitle(org.openhealthtools.mdht.uml.hl7.datatypes.ST) <em>Set Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection#getText() <em>Get Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection#setText(org.openhealthtools.mdht.uml.cda.StrucDocText) <em>Set Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection#getConditions() <em>Get Conditions</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection#addCondition(org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition) <em>Add Condition</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemListSection#validateProblemListSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemListSection#validateProblemListSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemListSection#validateProblemListSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemListSection#validateProblemListSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemListSection#getConditions() <em>Get Conditions</em>}</li>
  * </ul>
  * </p>
  *
@@ -52,6 +63,139 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 */
 	protected ProblemListSectionOperations() {
 		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static  Section toCDAType(ProblemListSection problemListSection) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Section::title.
+	 * @param problemListSection The receiving '<em><b>Problem List Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  ST getTitle(ProblemListSection problemListSection) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-143).
+	 * @param problemListSection The receiving '<em><b>Problem List Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setTitle(ProblemListSection problemListSection, ST value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Section::text.
+	 * @param problemListSection The receiving '<em><b>Problem List Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  StrucDocText getText(ProblemListSection problemListSection) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-140).
+	 * @param problemListSection The receiving '<em><b>Problem List Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setText(ProblemListSection problemListSection, StrucDocText value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getConditions(ProblemListSection) <em>Get Conditions</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConditions(ProblemListSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CONDITIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Condition)).oclAsType(apitest::Condition)";
+
+	/**
+	 * The cached OCL query for the '{@link #getConditions(ProblemListSection) <em>Get Conditions</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConditions(ProblemListSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CONDITIONS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ProblemListSection::condition.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Condition)).oclAsType(apitest::Condition)
+	 * @param problemListSection The receiving '<em><b>Problem List Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  EList<ICondition> getConditions(ProblemListSection problemListSection) {
+		if (GET_CONDITIONS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.IPROBLEM_LIST_SECTION, DomainPackage.Literals.IPROBLEM_LIST_SECTION.getEAllOperations().get(5));
+			try {
+				GET_CONDITIONS__EOCL_QRY = helper.createQuery(GET_CONDITIONS__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONDITIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ICondition> result = (Collection<ICondition>) query.evaluate(problemListSection);
+		return new BasicEList.UnmodifiableEList<ICondition>(result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Contains at least one [1..*] <tt><b>entry</b></tt>, such that.
+	 * @param problemListSection The receiving '<em><b>Problem List Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IProblemListSection addCondition(ProblemListSection problemListSection, ICondition value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -284,52 +428,6 @@ public class ProblemListSectionOperations extends SectionOperations {
 			return false;
 		}
 		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getConditions(ProblemListSection) <em>Get Conditions</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConditions(ProblemListSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONDITIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Condition)).oclAsType(apitest::Condition)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConditions(ProblemListSection) <em>Get Conditions</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConditions(ProblemListSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONDITIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Condition)).oclAsType(apitest::Condition)
-	 * @param problemListSection The receiving '<em><b>Problem List Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  EList<Condition> getConditions(ProblemListSection problemListSection) {
-		if (GET_CONDITIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.PROBLEM_LIST_SECTION, APITestPackage.Literals.PROBLEM_LIST_SECTION.getEAllOperations().get(59));
-			try {
-				GET_CONDITIONS__EOCL_QRY = helper.createQuery(GET_CONDITIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONDITIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<Condition> result = (Collection<Condition>) query.evaluate(problemListSection);
-		return new BasicEList.UnmodifiableEList<Condition>(result.size(), result.toArray());
 	}
 
 } // ProblemListSectionOperations

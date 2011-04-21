@@ -10,11 +10,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.EpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.EpisodeObservationOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,6 +45,33 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	@Override
 	protected EClass eStaticClass() {
 		return APITestPackage.Literals.EPISODE_OBSERVATION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Observation toCDAType() {
+		return EpisodeObservationOperations.toCDAType(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CD getValue() {
+		return EpisodeObservationOperations.getValue(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setValue(CD value) {
+		EpisodeObservationOperations.setValue(this, value);
 	}
 
 	/**

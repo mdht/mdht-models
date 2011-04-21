@@ -7,8 +7,10 @@
 package org.openhealthtools.mdht.uml.cda.apitest.impl;
 
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.GeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.apitest.operations.GeneralHeaderConstraintsOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -39,6 +41,15 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	@Override
 	protected EClass eStaticClass() {
 		return APITestPackage.Literals.GENERAL_HEADER_CONSTRAINTS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClinicalDocument toCDAType() {
+		return GeneralHeaderConstraintsOperations.toCDAType(this);
 	}
 
 	/**

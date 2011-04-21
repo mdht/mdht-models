@@ -14,10 +14,12 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,6 +29,9 @@ import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#toCDAType() <em>To CDA Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#getValue() <em>Get Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#setValue(org.openhealthtools.mdht.uml.hl7.datatypes.CE) <em>Set Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateProblemStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Value</em>}</li>
@@ -43,6 +48,47 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 	 */
 	protected ProblemStatusObservationOperations() {
 		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static  Observation toCDAType(ProblemStatusObservation problemStatusObservation) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::value.
+	 * @param problemStatusObservation The receiving '<em><b>Problem Status Observation</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  CE getValue(ProblemStatusObservation problemStatusObservation) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> ProblemStatusValue</tt><b> STATIC</b>.
+	 * @param problemStatusObservation The receiving '<em><b>Problem Status Observation</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  void setValue(ProblemStatusObservation problemStatusObservation, CE value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**

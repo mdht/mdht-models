@@ -13,7 +13,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Status Observation</b></em>'.
+ * A representation of the model object '<em><b>IStatus Observation</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -21,15 +21,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * <!-- end-model-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getStatusObservation()
- * @model interface="true" abstract="true"
+ * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIStatusObservation()
  * @generated
  */
-public interface StatusObservation extends EObject {
+public interface IStatusObservation extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	Observation toCDAType();
@@ -37,7 +35,9 @@ public interface StatusObservation extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::value.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	CE getValue();
@@ -46,17 +46,18 @@ public interface StatusObservation extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is CE (CONF-516)</p>
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is CE (CONF-516).
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	StatusObservation setValue(CE value);
+	void setValue(CE value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::text.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	ED getText();
@@ -65,17 +66,16 @@ public interface StatusObservation extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt></p>
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>.
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	StatusObservation setText(ED value);
+	void setText(ED value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StatusObservation init();
-} // StatusObservation
+	public IStatusObservation init();
+} // IStatusObservation

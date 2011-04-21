@@ -10,11 +10,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.CauseOfDeathObservationOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
+import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,8 +52,46 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AgeObservation getAPITestAgeObservation() {
-		return CauseOfDeathObservationOperations.getAPITestAgeObservation(this);
+	public IVL_TS getTimeOfDeath() {
+		return CauseOfDeathObservationOperations.getTimeOfDeath(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTimeOfDeath(IVL_TS value) {
+		CauseOfDeathObservationOperations.setTimeOfDeath(this, value);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAgeAtDeath(IAgeObservation value) {
+		CauseOfDeathObservationOperations.setAgeAtDeath(this, value);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Observation toCDAType() {
+		return CauseOfDeathObservationOperations.toCDAType(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public IAgeObservation getAgeObservation() {
+		return CauseOfDeathObservationOperations.getAgeObservation(this);
 	}
 
 	/**

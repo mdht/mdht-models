@@ -10,22 +10,23 @@ import java.util.List;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.CauseOfDeathObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.Comment;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.Condition;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ConditionEntry;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.*;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.EpisodeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.FamilyHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.HealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.PatientSummary;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemListSection;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.Severity;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.StatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.TreatingProvider;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
 
 /**
  * <!-- begin-user-doc -->
@@ -101,97 +102,97 @@ public class DomainSwitch<T> {
 	 */
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case DomainPackage.STATUS_OBSERVATION: {
-				StatusObservation statusObservation = (StatusObservation)theEObject;
-				T result = caseStatusObservation(statusObservation);
+			case DomainPackage.ICONDITION: {
+				ICondition iCondition = (ICondition)theEObject;
+				T result = caseICondition(iCondition);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.CONDITION: {
-				Condition condition = (Condition)theEObject;
-				T result = caseCondition(condition);
+			case DomainPackage.IEPISODE_OBSERVATION: {
+				IEpisodeObservation iEpisodeObservation = (IEpisodeObservation)theEObject;
+				T result = caseIEpisodeObservation(iEpisodeObservation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.EPISODE_OBSERVATION: {
-				EpisodeObservation episodeObservation = (EpisodeObservation)theEObject;
-				T result = caseEpisodeObservation(episodeObservation);
+			case DomainPackage.ICONDITION_ENTRY: {
+				IConditionEntry iConditionEntry = (IConditionEntry)theEObject;
+				T result = caseIConditionEntry(iConditionEntry);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.CONDITION_ENTRY: {
-				ConditionEntry conditionEntry = (ConditionEntry)theEObject;
-				T result = caseConditionEntry(conditionEntry);
+			case DomainPackage.IAGE_OBSERVATION: {
+				IAgeObservation iAgeObservation = (IAgeObservation)theEObject;
+				T result = caseIAgeObservation(iAgeObservation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.AGE_OBSERVATION: {
-				AgeObservation ageObservation = (AgeObservation)theEObject;
-				T result = caseAgeObservation(ageObservation);
+			case DomainPackage.ISEVERITY: {
+				ISeverity iSeverity = (ISeverity)theEObject;
+				T result = caseISeverity(iSeverity);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.SEVERITY: {
-				Severity severity = (Severity)theEObject;
-				T result = caseSeverity(severity);
+			case DomainPackage.IPROBLEM_STATUS_OBSERVATION: {
+				IProblemStatusObservation iProblemStatusObservation = (IProblemStatusObservation)theEObject;
+				T result = caseIProblemStatusObservation(iProblemStatusObservation);
+				if (result == null) result = caseIStatusObservation(iProblemStatusObservation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.PROBLEM_STATUS_OBSERVATION: {
-				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation)theEObject;
-				T result = caseProblemStatusObservation(problemStatusObservation);
-				if (result == null) result = caseStatusObservation(problemStatusObservation);
+			case DomainPackage.IHEALTH_STATUS_OBSERVATION: {
+				IHealthStatusObservation iHealthStatusObservation = (IHealthStatusObservation)theEObject;
+				T result = caseIHealthStatusObservation(iHealthStatusObservation);
+				if (result == null) result = caseIStatusObservation(iHealthStatusObservation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.HEALTH_STATUS_OBSERVATION: {
-				HealthStatusObservation healthStatusObservation = (HealthStatusObservation)theEObject;
-				T result = caseHealthStatusObservation(healthStatusObservation);
-				if (result == null) result = caseStatusObservation(healthStatusObservation);
+			case DomainPackage.ICOMMENT: {
+				IComment iComment = (IComment)theEObject;
+				T result = caseIComment(iComment);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.COMMENT: {
-				Comment comment = (Comment)theEObject;
-				T result = caseComment(comment);
+			case DomainPackage.ICAUSE_OF_DEATH_OBSERVATION: {
+				ICauseOfDeathObservation iCauseOfDeathObservation = (ICauseOfDeathObservation)theEObject;
+				T result = caseICauseOfDeathObservation(iCauseOfDeathObservation);
+				if (result == null) result = caseIFamilyHistoryObservation(iCauseOfDeathObservation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.CAUSE_OF_DEATH_OBSERVATION: {
-				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation)theEObject;
-				T result = caseCauseOfDeathObservation(causeOfDeathObservation);
-				if (result == null) result = caseFamilyHistoryObservation(causeOfDeathObservation);
+			case DomainPackage.IFAMILY_HISTORY_OBSERVATION: {
+				IFamilyHistoryObservation iFamilyHistoryObservation = (IFamilyHistoryObservation)theEObject;
+				T result = caseIFamilyHistoryObservation(iFamilyHistoryObservation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.FAMILY_HISTORY_OBSERVATION: {
-				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation)theEObject;
-				T result = caseFamilyHistoryObservation(familyHistoryObservation);
+			case DomainPackage.ITREATING_PROVIDER: {
+				ITreatingProvider iTreatingProvider = (ITreatingProvider)theEObject;
+				T result = caseITreatingProvider(iTreatingProvider);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.TREATING_PROVIDER: {
-				TreatingProvider treatingProvider = (TreatingProvider)theEObject;
-				T result = caseTreatingProvider(treatingProvider);
+			case DomainPackage.IPROBLEM_LIST_SECTION: {
+				IProblemListSection iProblemListSection = (IProblemListSection)theEObject;
+				T result = caseIProblemListSection(iProblemListSection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.PROBLEM_LIST_SECTION: {
-				ProblemListSection problemListSection = (ProblemListSection)theEObject;
-				T result = caseProblemListSection(problemListSection);
+			case DomainPackage.IPATIENT_SUMMARY: {
+				IPatientSummary iPatientSummary = (IPatientSummary)theEObject;
+				T result = caseIPatientSummary(iPatientSummary);
+				if (result == null) result = caseIGeneralHeaderConstraints(iPatientSummary);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.PATIENT_SUMMARY: {
-				PatientSummary patientSummary = (PatientSummary)theEObject;
-				T result = casePatientSummary(patientSummary);
-				if (result == null) result = caseGeneralHeaderConstraints(patientSummary);
+			case DomainPackage.IGENERAL_HEADER_CONSTRAINTS: {
+				IGeneralHeaderConstraints iGeneralHeaderConstraints = (IGeneralHeaderConstraints)theEObject;
+				T result = caseIGeneralHeaderConstraints(iGeneralHeaderConstraints);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.GENERAL_HEADER_CONSTRAINTS: {
-				GeneralHeaderConstraints generalHeaderConstraints = (GeneralHeaderConstraints)theEObject;
-				T result = caseGeneralHeaderConstraints(generalHeaderConstraints);
+			case DomainPackage.ISTATUS_OBSERVATION: {
+				IStatusObservation iStatusObservation = (IStatusObservation)theEObject;
+				T result = caseIStatusObservation(iStatusObservation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -200,227 +201,227 @@ public class DomainSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Status Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>ICondition</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Status Observation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>ICondition</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseStatusObservation(StatusObservation object) {
+	public T caseICondition(ICondition object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Condition</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IEpisode Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Condition</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IEpisode Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCondition(Condition object) {
+	public T caseIEpisodeObservation(IEpisodeObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Episode Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>ICondition Entry</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Episode Observation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>ICondition Entry</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEpisodeObservation(EpisodeObservation object) {
+	public T caseIConditionEntry(IConditionEntry object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Condition Entry</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IAge Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Condition Entry</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IAge Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConditionEntry(ConditionEntry object) {
+	public T caseIAgeObservation(IAgeObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Age Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>ISeverity</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Age Observation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>ISeverity</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAgeObservation(AgeObservation object) {
+	public T caseISeverity(ISeverity object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Severity</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IProblem Status Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Severity</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IProblem Status Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSeverity(Severity object) {
+	public T caseIProblemStatusObservation(IProblemStatusObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Problem Status Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IHealth Status Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Problem Status Observation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IHealth Status Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProblemStatusObservation(ProblemStatusObservation object) {
+	public T caseIHealthStatusObservation(IHealthStatusObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Health Status Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IComment</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Health Status Observation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IComment</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseHealthStatusObservation(HealthStatusObservation object) {
+	public T caseIComment(IComment object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Comment</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>ICause Of Death Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Comment</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>ICause Of Death Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseComment(Comment object) {
+	public T caseICauseOfDeathObservation(ICauseOfDeathObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cause Of Death Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IFamily History Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cause Of Death Observation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IFamily History Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCauseOfDeathObservation(CauseOfDeathObservation object) {
+	public T caseIFamilyHistoryObservation(IFamilyHistoryObservation object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Family History Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>ITreating Provider</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Family History Observation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>ITreating Provider</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFamilyHistoryObservation(FamilyHistoryObservation object) {
+	public T caseITreatingProvider(ITreatingProvider object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Treating Provider</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IProblem List Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Treating Provider</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IProblem List Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTreatingProvider(TreatingProvider object) {
+	public T caseIProblemListSection(IProblemListSection object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Problem List Section</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IPatient Summary</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Problem List Section</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IPatient Summary</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProblemListSection(ProblemListSection object) {
+	public T caseIPatientSummary(IPatientSummary object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Patient Summary</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IGeneral Header Constraints</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Patient Summary</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IGeneral Header Constraints</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePatientSummary(PatientSummary object) {
+	public T caseIGeneralHeaderConstraints(IGeneralHeaderConstraints object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IStatus Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IStatus Observation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
+	public T caseIStatusObservation(IStatusObservation object) {
 		return null;
 	}
 

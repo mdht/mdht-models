@@ -9,12 +9,16 @@ package org.openhealthtools.mdht.uml.cda.apitest.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.Condition_TreatingProvider;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.Condition_TreatingProviderOperations;
 import org.openhealthtools.mdht.uml.cda.impl.AssignedEntityImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
+import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,6 +47,33 @@ public class Condition_TreatingProviderImpl extends AssignedEntityImpl implement
 	@Override
 	protected EClass eStaticClass() {
 		return APITestPackage.Literals.CONDITION_TREATING_PROVIDER;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AssignedEntity toCDAType() {
+		return Condition_TreatingProviderOperations.toCDAType(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<II> getTreatingProviderIDs() {
+		return Condition_TreatingProviderOperations.getTreatingProviderIDs(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ITreatingProvider addTreatingProviderID(II value) {
+		return Condition_TreatingProviderOperations.addTreatingProviderID(this, value);
 	}
 
 	/**

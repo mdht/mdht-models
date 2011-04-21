@@ -12,7 +12,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ANY;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Age Observation</b></em>'.
+ * A representation of the model object '<em><b>IAge Observation</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -21,15 +21,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ANY;
  * <!-- end-model-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getAgeObservation()
- * @model interface="true" abstract="true"
+ * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIAgeObservation()
  * @generated
  */
-public interface AgeObservation extends EObject {
+public interface IAgeObservation extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	Observation toCDAType();
@@ -38,9 +36,9 @@ public interface AgeObservation extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * cda::Observation::value.
 	 * Valued using appropriate datatype.
 	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
 	 * @generated
 	 */
 	ANY getValue();
@@ -49,17 +47,16 @@ public interface AgeObservation extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF-231)</p>
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF-231).
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	AgeObservation setValue(ANY value);
+	void setValue(ANY value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AgeObservation init();
-} // AgeObservation
+	public IAgeObservation init();
+} // IAgeObservation

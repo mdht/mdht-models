@@ -6,6 +6,8 @@
  */
 package org.openhealthtools.mdht.uml.cda.apitest;
 
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -14,10 +16,9 @@ package org.openhealthtools.mdht.uml.cda.apitest;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getPatientSummary()
- * @model
  * @generated
  */
-public interface PatientSummary extends GeneralHeaderConstraints {
+public interface PatientSummary extends GeneralHeaderConstraints, IPatientSummary {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

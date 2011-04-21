@@ -10,6 +10,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.Act;
+import org.openhealthtools.mdht.uml.cda.Author;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.Comment;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.CommentOperations;
@@ -43,6 +45,33 @@ public class CommentImpl extends ActImpl implements Comment {
 	@Override
 	protected EClass eStaticClass() {
 		return APITestPackage.Literals.COMMENT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Act toCDAType() {
+		return CommentOperations.toCDAType(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Author getAuthor() {
+		return CommentOperations.getAuthor(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAuthor(Author value) {
+		CommentOperations.setAuthor(this, value);
 	}
 
 	/**

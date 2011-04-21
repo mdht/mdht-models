@@ -16,7 +16,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Condition</b></em>'.
+ * A representation of the model object '<em><b>ICondition</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -25,15 +25,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <!-- end-model-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getCondition()
- * @model interface="true" abstract="true"
+ * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getICondition()
  * @generated
  */
-public interface Condition extends EObject {
+public interface ICondition extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	Act toCDAType();
@@ -41,7 +39,9 @@ public interface Condition extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::Act::id.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	EList<II> getIds();
@@ -50,17 +50,18 @@ public interface Condition extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-148)</p>
+	 * <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-148).
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	Condition addId(II value);
+	ICondition addId(II value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
+	 * <!-- begin-model-doc -->
+	 * cda::Act::code.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	CD getCode();
@@ -69,17 +70,17 @@ public interface Condition extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt>/@nullFlavor</tt> = "NA" <i>NA (not applicable)</i> (CONF-149)</p>
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt>/@nullFlavor</tt> = "NA" <i>NA (not applicable)</i> (CONF-149).
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	Condition setCode(CD value);
+	void setCode(CD value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * cda::Act::statusCode.
 	 * <p>
 	 * The statusCode associated with any concern must be one of the following values:
 	 * </p>
@@ -94,7 +95,6 @@ public interface Condition extends EObject {
 	 * historical purposes.
 	 * </p>
 	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
 	 * @generated
 	 */
 	CS getStatusCode();
@@ -103,20 +103,19 @@ public interface Condition extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> ConcernEntryStatus</tt><b> STATIC</b></p>
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> ConcernEntryStatus</tt><b> STATIC</b>.
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	Condition setStatusCode(CS value);
+	void setStatusCode(CS value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * cda::Act::effectiveTime.
 	 * The effectiveTime element records the starting and ending times during which the concern was active.
 	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
 	 * @generated
 	 */
 	IVL_TS getEffectiveTime();
@@ -125,74 +124,79 @@ public interface Condition extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt></p>
+	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>.
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	Condition setEffectiveTime(IVL_TS value);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 * @generated
-	 */
-	EpisodeObservation getEpisodeObservation();
+	void setEffectiveTime(IVL_TS value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-168), such that</p>
+	 * apitest::Condition::episodeObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::EpisodeObservation))->asSequence()->first().oclAsType(apitest::EpisodeObservation)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	Condition setEpisodeObservation(EpisodeObservation value);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 * @generated
-	 */
-	EList<ConditionEntry> getProblemEntries();
+	IEpisodeObservation getEpisodeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>Contains at least one [1..*] <tt><b>entryRelationship</b></tt>, such that</p>
+	 * <b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-168), such that.
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	Condition addProblemEntry(ConditionEntry value);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 * @generated
-	 */
-	TreatingProvider getTreatingProvider();
+	void setEpisodeObservation(IEpisodeObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain zero or one [0..1] <tt><b>performer</b></tt>, such that</p>
+	 * apitest::Condition::conditionEntry.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::ConditionEntry)).oclAsType(apitest::ConditionEntry)
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	Condition setTreatingProvider(TreatingProvider value);
+	EList<IConditionEntry> getConditionEntries();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Contains at least one [1..*] <tt><b>entryRelationship</b></tt>, such that.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ICondition addProblemEntry(IConditionEntry value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::Condition::treatingProvider.
+	 * self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(apitest::Condition::TreatingProvider))->asSequence()->first().oclAsType(apitest::Condition::TreatingProvider)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ITreatingProvider getTreatingProvider();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <b>SHALL</b> contain zero or one [0..1] <tt><b>performer</b></tt>, such that.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	void setTreatingProvider(ITreatingProvider value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Condition init();
-} // Condition
+	public ICondition init();
+} // ICondition

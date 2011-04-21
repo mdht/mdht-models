@@ -13,7 +13,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Treating Provider</b></em>'.
+ * A representation of the model object '<em><b>ITreating Provider</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -21,15 +21,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  * <!-- end-model-doc -->
  *
  *
- * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getTreatingProvider()
- * @model interface="true" abstract="true"
+ * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getITreatingProvider()
  * @generated
  */
-public interface TreatingProvider extends EObject {
+public interface ITreatingProvider extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" ordered="false"
 	 * @generated
 	 */
 	AssignedEntity toCDAType();
@@ -38,9 +36,9 @@ public interface TreatingProvider extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * cda::AssignedEntity::id.
 	 * This identifier SHALL be the identifier of one of the providers listed in the healthcare providers module.
 	 * <!-- end-model-doc -->
-	 * @model kind="operation" required="true" ordered="false"
 	 * @generated
 	 */
 	EList<II> getTreatingProviderIDs();
@@ -49,17 +47,16 @@ public interface TreatingProvider extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (C83-[DE-7.05-CDA-2])</p>
+	 * <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (C83-[DE-7.05-CDA-2]).
 	 * <!-- end-model-doc -->
-	 * @model required="true" ordered="false" valueRequired="true" valueOrdered="false"
 	 * @generated
 	 */
-	TreatingProvider addTreatingProviderID(II value);
+	ITreatingProvider addTreatingProviderID(II value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TreatingProvider init();
-} // TreatingProvider
+	public ITreatingProvider init();
+} // ITreatingProvider

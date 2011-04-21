@@ -10,10 +10,12 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.HealthStatusObservationOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,6 +44,36 @@ public class HealthStatusObservationImpl extends StatusObservationImpl implement
 	@Override
 	protected EClass eStaticClass() {
 		return APITestPackage.Literals.HEALTH_STATUS_OBSERVATION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Observation toCDAType() {
+		return HealthStatusObservationOperations.toCDAType(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CE getValue() {
+		return HealthStatusObservationOperations.getValue(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setValue(CE value) {
+		HealthStatusObservationOperations.setValue(this, value);
 	}
 
 	/**
