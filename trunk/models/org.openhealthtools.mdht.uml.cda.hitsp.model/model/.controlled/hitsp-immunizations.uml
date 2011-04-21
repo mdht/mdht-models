@@ -36,19 +36,11 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_szV_cVayEeCddY1UIvGtQg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_szV_clayEeCddY1UIvGtQg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_zZM5sFchEeCddY1UIvGtQg" name="entryRelationship" association="_zZNgwFchEeCddY1UIvGtQg">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zZM5sVchEeCddY1UIvGtQg"/>
-    </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_zZNgwFchEeCddY1UIvGtQg" name="refusalReason" memberEnd="_zZM5sFchEeCddY1UIvGtQg _zZNgwVchEeCddY1UIvGtQg">
-    <ownedEnd xmi:id="_zZNgwVchEeCddY1UIvGtQg" type="_qkWXUDuJEd-B8KE6Jx0UNQ" association="_zZNgwFchEeCddY1UIvGtQg"/>
-  </uml:Association>
   <CDA:CDATemplate xmi:id="_s4UlEDuJEd-B8KE6Jx0UNQ" base_Class="_qkWXUDuJEd-B8KE6Jx0UNQ" templateId="2.16.840.1.113883.3.88.11.83.13" assigningAuthorityName="HITSP C83"/>
   <CDA:ConstraintValidation xmi:id="_r-nhcFazEeCddY1UIvGtQg" base_Constraint="_qvCv8FazEeCddY1UIvGtQg"/>
   <CDA:ConformsTo xmi:id="_rGbqUFF6Ed-Lud-5SYZhMw" base_Generalization="_qkWXUTuJEd-B8KE6Jx0UNQ" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_tnOTcFayEeCddY1UIvGtQg" base_Property="_szV_cFayEeCddY1UIvGtQg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_28L4QFchEeCddY1UIvGtQg" severity="WARNING" base_Association="_zZNgwFchEeCddY1UIvGtQg"/>
 </xmi:XMI>
