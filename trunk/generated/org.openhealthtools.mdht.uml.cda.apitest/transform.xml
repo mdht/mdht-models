@@ -4,7 +4,10 @@
 	<property name="modelName" value="apitest"/>
 	
 	<property name="generateDomainInterface" value="true"/>
+	<property name="generateDomainClasses" value="false"/>
 	<property name="includeFixedValueGetters" value="false"/>
+	<property name="includeInterfaceRealization" value="true"/>
+	<property name="useBusinessNames" value="true"/>
 	
 	<macrodef name="convertEcorePaths">
 		<attribute name="filePath"/>
