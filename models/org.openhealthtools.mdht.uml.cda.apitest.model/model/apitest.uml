@@ -46,6 +46,13 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/apitest-familyhistory.uml#_vGJsgGFbEeC0c9Poe4-KNQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/apitest-documents.uml#_QBOBkGFrEeCrVK9xDfPNKw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/apitest-documents.uml#_YVCR4GFrEeCrVK9xDfPNKw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AxPjwG-KEeCztu1Duik4og">
+      <ownedEnd xmi:id="_AxPjwW-KEeCztu1Duik4og" association="_AxPjwG-KEeCztu1Duik4og">
+        <type xmi:type="uml:Class" href=".controlled/apitest-documents.uml#_QBOBkGFrEeCrVK9xDfPNKw"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/apitest-documents.uml#_AxLSUG-KEeCztu1Duik4og"/>
+      <memberEnd href="#_AxPjwW-KEeCztu1Duik4og"/>
+    </packagedElement>
     <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
       <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -54,4 +61,5 @@
     </profileApplication>
   </uml:Package>
   <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="apitest" nsURI="http://www.openhealthtools.org/mdht/uml/cda/apitest" packageName="apitest" prefix="APITest" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
+  <CDA:AssociationValidation xmi:id="_ByoIQG-KEeCztu1Duik4og" base_Association="_AxPjwG-KEeCztu1Duik4og"/>
 </xmi:XMI>

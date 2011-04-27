@@ -375,12 +375,16 @@ historical purposes.&#xD;
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_EYQVGWCUEeCVapLQyCJtvg" name="code" visibility="private">
+      <ownedComment xmi:id="_9JzuQHDiEeC03Nz8qlA04w">
+        <body>This is a fixed value indicating the level of medical judgment used to determine the existence of a problem.</body>
+      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_f1n6wIhTEd6UrJD25cKDew"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_EYgzwGCUEeCVapLQyCJtvg" name="text" visibility="private">
       <ownedComment xmi:id="_EYgzwWCUEeCVapLQyCJtvg">
-        <body>The &amp;lt;text> element is required and points to the text describing the problem being recorded; including any dates, comments, et cetera. The &amp;lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.</body>
+        <body>&lt;p>This is a text description of the problem suffered.&lt;/p>&#xD;
+&lt;p>The &amp;lt;text> element is required and points to the text describing the problem being recorded; including any dates, comments, et cetera. The &amp;lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.&lt;/p></body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
@@ -389,7 +393,9 @@ historical purposes.&#xD;
     </ownedAttribute>
     <ownedAttribute xmi:id="_EYj3EGCUEeCVapLQyCJtvg" name="effectiveTime" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_EYj3EWCUEeCVapLQyCJtvg">
-        <body>The &amp;lt;effectiveTime> of this &amp;lt;observation> is the time interval over which the &amp;lt;observation> is known to be true. The &amp;lt;low> and &amp;lt;high> values should be no more precise than known, but as precise as possible. While CDA allows for multiple mechanisms to record this time interval (e.g., by low and high values, low and width, high and width, or center point and width), we are constraining Medical summaries to use only the low/high form. The &amp;lt;low> value is the earliest point for which the condition is known to have existed. The &amp;lt;high> value, when present, indicates the time at which the observation was no longer known to be true. Thus, the implication is made that if the &amp;lt;high> value is specified, that the observation was no longer seen after this time, and it thus represents the date of resolution of the problem. Similarly, the &amp;lt;low> value may seem to represent onset of the problem. Neither of these statements is necessarily precise, as the &amp;lt;low> and &amp;lt;high> values may represent only an approximation of the true onset and resolution (respectively) times. For example, it may be the case that onset occurred prior to the &amp;lt;low> value, but no observation may have been possible before that time to discern whether the condition existed prior to that time. The &amp;lt;low> value should normally be present. There are exceptions, such as for the case where the patient may be able to report that they had chicken pox, but are unsure when. In this case, the &amp;lt;effectiveTime> element shall have a &amp;lt;low> element with a nullFlavor attribute set to 'UNK'. The &amp;lt;high> value need not be present when the observation is about a state of the patient that is unlikely to change (e.g., the diagnosis of an incurable disease).</body>
+        <body>&lt;p>This is the range of time of which the problem was active for the patient or subject.&lt;/p>&#xD;
+&#xD;
+&lt;p>The &amp;lt;effectiveTime> of this &amp;lt;observation> is the time interval over which the &amp;lt;observation> is known to be true. The &amp;lt;low> and &amp;lt;high> values should be no more precise than known, but as precise as possible. While CDA allows for multiple mechanisms to record this time interval (e.g., by low and high values, low and width, high and width, or center point and width), we are constraining Medical summaries to use only the low/high form. The &amp;lt;low> value is the earliest point for which the condition is known to have existed. The &amp;lt;high> value, when present, indicates the time at which the observation was no longer known to be true. Thus, the implication is made that if the &amp;lt;high> value is specified, that the observation was no longer seen after this time, and it thus represents the date of resolution of the problem. Similarly, the &amp;lt;low> value may seem to represent onset of the problem. Neither of these statements is necessarily precise, as the &amp;lt;low> and &amp;lt;high> values may represent only an approximation of the true onset and resolution (respectively) times. For example, it may be the case that onset occurred prior to the &amp;lt;low> value, but no observation may have been possible before that time to discern whether the condition existed prior to that time. The &amp;lt;low> value should normally be present. There are exceptions, such as for the case where the patient may be able to report that they had chicken pox, but are unsure when. In this case, the &amp;lt;effectiveTime> element shall have a &amp;lt;low> element with a nullFlavor attribute set to 'UNK'. The &amp;lt;high> value need not be present when the observation is about a state of the patient that is unlikely to change (e.g., the diagnosis of an incurable disease).&lt;/p></body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EYj3EmCUEeCVapLQyCJtvg" value="1"/>
@@ -397,6 +403,9 @@ historical purposes.&#xD;
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_t3kdcIhREd6UrJD25cKDew"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_EYQVGmCUEeCVapLQyCJtvg" name="value" visibility="private">
+      <ownedComment xmi:id="_G_3NYHDjEeC03Nz8qlA04w">
+        <body>This value is a code describing the problem according to a specific vocabulary of problems.</body>
+      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_slNZAIwHEd6B6JSUB00H7g"/>
     </ownedAttribute>
@@ -425,6 +434,9 @@ historical purposes.&#xD;
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_EY5OQGCUEeCVapLQyCJtvg" memberEnd="_EYm6YWCUEeCVapLQyCJtvg _EY5OQWCUEeCVapLQyCJtvg">
+    <ownedComment xmi:id="_eutBQHDjEeC03Nz8qlA04w">
+      <body>The age of the patient or subject at onset of the condition.</body>
+    </ownedComment>
     <ownedEnd xmi:id="_EY5OQWCUEeCVapLQyCJtvg" type="_EYQVEGCUEeCVapLQyCJtvg" association="_EY5OQGCUEeCVapLQyCJtvg"/>
   </uml:Association>
   <uml:Association xmi:id="_EZJs8GCUEeCVapLQyCJtvg" memberEnd="_EY51UGCUEeCVapLQyCJtvg _EZJs8WCUEeCVapLQyCJtvg">
@@ -803,6 +815,9 @@ historical purposes.&#xD;
     <ruleId>C83-[DE-7.05-CDA-2]</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_rz8xYWFaEeC0c9Poe4-KNQ" memberEnd="_rz5uEGFaEeC0c9Poe4-KNQ _rz9YcGFaEeC0c9Poe4-KNQ">
+    <ownedComment xmi:id="_Z5ovwHDjEeC03Nz8qlA04w">
+      <body>Indicates that this problem was one of the causes of death for the patient or subject of the condition.</body>
+    </ownedComment>
     <ownedEnd xmi:id="_rz9YcGFaEeC0c9Poe4-KNQ" type="_EYQVEGCUEeCVapLQyCJtvg" association="_rz8xYWFaEeC0c9Poe4-KNQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_4o3OUGFaEeC0c9Poe4-KNQ" severity="INFO" base_Association="_rz8xYWFaEeC0c9Poe4-KNQ"/>

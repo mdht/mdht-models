@@ -31,5 +31,11 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SESskmFrEeCrVK9xDfPNKw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jS4QEAIEd6wZe6nFLrjsw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_AxLSUG-KEeCztu1Duik4og" name="problemListSection">
+      <type xmi:type="uml:Class" href="apitest-problems.uml#_EaOrAGCUEeCVapLQyCJtvg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DZta0G-KEeCztu1Duik4og" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DZta0W-KEeCztu1Duik4og" value="1"/>
+      <association href="../apitest.uml#_AxPjwG-KEeCztu1Duik4og"/>
+    </ownedAttribute>
   </uml:Class>
 </xmi:XMI>
