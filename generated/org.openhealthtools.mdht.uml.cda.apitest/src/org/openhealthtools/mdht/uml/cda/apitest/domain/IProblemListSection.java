@@ -6,10 +6,9 @@
  */
 package org.openhealthtools.mdht.uml.cda.apitest.domain;
 
-import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
+
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -26,7 +25,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIProblemListSection()
  * @generated
  */
-public interface IProblemListSection extends EObject {
+public interface IProblemListSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -39,6 +38,7 @@ public interface IProblemListSection extends EObject {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * cda::Section::title.
+	 * self.title.oclAsType(datatypes::ST)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -48,17 +48,40 @@ public interface IProblemListSection extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-143).
+	 * APITest Problem List Section SHALL contain exactly one [1..1] title (CONF-143).
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ST");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * ST value = (ST) eObject;
+	 * setTitle(value);
+	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	void setTitle(ST value);
+	ST withTitle();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Problem List Section SHALL contain exactly one [1..1] title (CONF-143).
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ST");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProblemListSection withTitle(ST value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * cda::Section::text.
+	 * self.text.oclAsType(cda::StrucDocText)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -68,28 +91,57 @@ public interface IProblemListSection extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-140).
+	 * APITest Problem List Section SHALL contain exactly one [1..1] text (CONF-140).
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("StrucDocText");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * StrucDocText value = (StrucDocText) eObject;
+	 * setText(value);
+	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	void setText(StrucDocText value);
+	StrucDocText withText();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * apitest::ProblemListSection::condition.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Condition)).oclAsType(apitest::Condition)
+	 * APITest Problem List Section SHALL contain exactly one [1..1] text (CONF-140).
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("StrucDocText");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ICondition> getConditions();
+	IProblemListSection withText(StrucDocText value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Contains at least one [1..*] <tt><b>entry</b></tt>, such that.
+	 * APITest Problem List Section Contains at least one [1..*] entry, such that Contains exactly one [1..1] Condition (templateId: 2.16.840.1.113883.3.88.11.83.7).
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Condition");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * ICondition clinicalStatement = (ICondition) eObject;
+	 * clinicalStatement.init();
+	 * addAct((org.openhealthtools.mdht.uml.cda.Act)clinicalStatement);
+	 * return clinicalStatement;
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ICondition addCondition();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Problem List Section Contains at least one [1..*] entry, such that Contains exactly one [1..1] Condition (templateId: 2.16.840.1.113883.3.88.11.83.7).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */

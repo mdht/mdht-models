@@ -9,7 +9,9 @@ package org.openhealthtools.mdht.uml.cda.apitest;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
 
 /**
@@ -71,6 +73,17 @@ public interface ProblemListSection extends Section, IProblemListSection {
 	 * @generated
 	 */
 	boolean validateProblemListSectionText(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ProblemListSection::condition.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::ICondition)).oclAsType(domain::ICondition)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<ICondition> getConditions();
 
 	/**
 	 * <!-- begin-user-doc -->

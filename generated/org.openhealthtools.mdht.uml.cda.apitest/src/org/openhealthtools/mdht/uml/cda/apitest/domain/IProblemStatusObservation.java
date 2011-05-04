@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.apitest.domain;
 
+import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,6 +23,21 @@ package org.openhealthtools.mdht.uml.cda.apitest.domain;
  * @generated
  */
 public interface IProblemStatusObservation extends IStatusObservation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Problem Status Observation SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet ProblemStatusValue STATIC.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProblemStatusObservation withValue(CE value);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

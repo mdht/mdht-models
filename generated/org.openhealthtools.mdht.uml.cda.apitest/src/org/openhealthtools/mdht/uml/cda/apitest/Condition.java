@@ -9,8 +9,12 @@ package org.openhealthtools.mdht.uml.cda.apitest;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Act;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
 
 /**
  * <!-- begin-user-doc -->
@@ -206,6 +210,39 @@ public interface Condition extends Act, ICondition {
 	 * @generated
 	 */
 	boolean validateConditionTreatingProvider(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::Condition::episodeObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IEpisodeObservation))->asSequence()->first().oclAsType(domain::IEpisodeObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IEpisodeObservation getEpisodeObservation();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::Condition::conditionEntry.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IProblemEntry)).oclAsType(domain::IProblemEntry)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IProblemEntry> getProblemEntries();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::Condition::treatingProvider.
+	 * self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(domain::ITreatingProvider))->asSequence()->first().oclAsType(domain::ITreatingProvider)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ITreatingProvider getTreatingProvider();
 
 	/**
 	 * <!-- begin-user-doc -->

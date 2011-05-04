@@ -14,6 +14,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.CauseOfDeathObservationOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
@@ -61,8 +62,14 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTimeOfDeath(IVL_TS value) {
-		CauseOfDeathObservationOperations.setTimeOfDeath(this, value);
+	public IVL_TS withTimeOfDeath() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IVL_TS value = (IVL_TS) eObject;
+		setEffectiveTime(value);
+		return value;
 	}
 
 	/**
@@ -70,8 +77,44 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAgeAtDeath(IAgeObservation value) {
-		CauseOfDeathObservationOperations.setAgeAtDeath(this, value);
+	public ICauseOfDeathObservation withTimeOfDeath(IVL_TS value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAgeObservation withAgeAtDeath() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IAgeObservation clinicalStatement = (IAgeObservation) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return clinicalStatement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ICauseOfDeathObservation withAgeAtDeath(IAgeObservation value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IAgeObservation clinicalStatement = (IAgeObservation) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return this;
 	}
 
 	/**
@@ -89,9 +132,8 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public IAgeObservation getAgeObservation() {
-		return CauseOfDeathObservationOperations.getAgeObservation(this);
+	public IAgeObservation getAgeAtDeath() {
+		return CauseOfDeathObservationOperations.getAgeAtDeath(this);
 	}
 
 	/**

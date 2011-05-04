@@ -72,6 +72,21 @@ public class Condition_TreatingProviderImpl extends AssignedEntityImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public II addTreatingProviderID() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("II");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		II value = (II) eObject;
+		getIds().add(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ITreatingProvider addTreatingProviderID(II value) {
 		return Condition_TreatingProviderOperations.addTreatingProviderID(this, value);
 	}

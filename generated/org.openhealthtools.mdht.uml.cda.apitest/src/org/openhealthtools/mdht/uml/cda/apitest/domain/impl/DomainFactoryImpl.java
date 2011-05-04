@@ -9,11 +9,12 @@ package org.openhealthtools.mdht.uml.cda.apitest.domain.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
 import org.openhealthtools.mdht.uml.cda.apitest.domain.*;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainFactory;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ public class DomainFactoryImpl extends EFactoryImpl implements DomainFactory {
 	 */
 	public static DomainFactory init() {
 		try {
-			DomainFactory theDomainFactory = (DomainFactory)EPackage.Registry.INSTANCE.getEFactory("http:///apitest/domain.ecore"); 
+			DomainFactory theDomainFactory = (DomainFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest/domain"); 
 			if (theDomainFactory != null) {
 				return theDomainFactory;
 			}

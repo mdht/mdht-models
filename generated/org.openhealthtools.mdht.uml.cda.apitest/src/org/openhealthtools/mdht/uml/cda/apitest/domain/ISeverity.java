@@ -6,8 +6,8 @@
  */
 package org.openhealthtools.mdht.uml.cda.apitest.domain;
 
-import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.uml.cda.Observation;
+
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getISeverity()
  * @generated
  */
-public interface ISeverity extends EObject {
+public interface ISeverity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38,6 +38,7 @@ public interface ISeverity extends EObject {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * cda::Observation::text.
+	 * self.text.oclAsType(datatypes::ED)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -47,11 +48,33 @@ public interface ISeverity extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>.
+	 * APITest Severity SHALL contain exactly one [1..1] text.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * ED value = (ED) eObject;
+	 * setText(value);
+	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	void setText(ED value);
+	ED withText();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Severity SHALL contain exactly one [1..1] text.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ISeverity withText(ED value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,6 +82,7 @@ public interface ISeverity extends EObject {
 	 * <!-- begin-model-doc -->
 	 * cda::Observation::value.
 	 * Value code representing high, moderate and low severity depending upon whether the severity is life threatening, presents noticeable adverse consequences, or is unlikely substantially effect the situation of the subject.
+	 * self.value.oclAsType(datatypes::CD)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -68,11 +92,33 @@ public interface ISeverity extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> SeverityObservation</tt><b> STATIC</b>, where its data type is CD.
+	 * APITest Severity SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet SeverityObservation STATIC, where its data type is CD.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * CD value = (CD) eObject;
+	 * getValues().add(value);
+	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	void setValue(CD value);
+	CD withValue();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Severity SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet SeverityObservation STATIC, where its data type is CD.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ISeverity withValue(CD value);
 
 	/**
 	 * <!-- begin-user-doc -->

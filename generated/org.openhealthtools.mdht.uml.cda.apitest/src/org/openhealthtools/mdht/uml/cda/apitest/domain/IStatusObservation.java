@@ -6,8 +6,8 @@
  */
 package org.openhealthtools.mdht.uml.cda.apitest.domain;
 
-import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.uml.cda.Observation;
+
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIStatusObservation()
  * @generated
  */
-public interface IStatusObservation extends EObject {
+public interface IStatusObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -37,6 +37,7 @@ public interface IStatusObservation extends EObject {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * cda::Observation::value.
+	 * self.value.oclAsType(datatypes::CE)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -46,17 +47,40 @@ public interface IStatusObservation extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is CE (CONF-516).
+	 * APITest Status Observation SHALL contain exactly one [1..1] value, where its data type is CE (CONF-516).
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * CE value = (CE) eObject;
+	 * getValues().add(value);
+	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	void setValue(CE value);
+	CE withValue();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Status Observation SHALL contain exactly one [1..1] value, where its data type is CE (CONF-516).
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IStatusObservation withValue(CE value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * cda::Observation::text.
+	 * self.text.oclAsType(datatypes::ED)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -66,11 +90,33 @@ public interface IStatusObservation extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>.
+	 * APITest Status Observation SHALL contain exactly one [1..1] text.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * ED value = (ED) eObject;
+	 * setText(value);
+	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	void setText(ED value);
+	ED withText();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Status Observation SHALL contain exactly one [1..1] text.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IStatusObservation withText(ED value);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -9,8 +9,15 @@ package org.openhealthtools.mdht.uml.cda.apitest;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getConditionEntry()
  * @generated
  */
-public interface ConditionEntry extends Observation, IConditionEntry {
+public interface ConditionEntry extends Observation, IProblemEntry {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -285,6 +292,74 @@ public interface ConditionEntry extends Observation, IConditionEntry {
 	 * @generated
 	 */
 	boolean validateConditionEntryCauseOfDeathObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::ageObservation.
+	 * The age of the patient or subject at onset of the condition.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IAgeObservation getAgeAtOnset();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::severity.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ISeverity))->asSequence()->first().oclAsType(domain::ISeverity)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ISeverity getSeverity();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::problemStatusObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IProblemStatusObservation))->asSequence()->first().oclAsType(domain::IProblemStatusObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProblemStatusObservation getProblemStatus();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::healthStatusObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IHealthStatusObservation))->asSequence()->first().oclAsType(domain::IHealthStatusObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IHealthStatusObservation getHealthStatusObservation();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::comment.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::IComment)).oclAsType(domain::IComment)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IComment> getComments();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::causeOfDeathObservation.
+	 * Indicates that this problem was one of the causes of death for the patient or subject of the condition.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ICauseOfDeathObservation))->asSequence()->first().oclAsType(domain::ICauseOfDeathObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ICauseOfDeathObservation getCauseOfDeath();
 
 	/**
 	 * <!-- begin-user-doc -->

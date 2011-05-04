@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.openhealthtools.mdht.uml.cda.Observation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation;
 
 /**
@@ -59,6 +60,17 @@ public interface FamilyHistoryObservation extends Observation, IFamilyHistoryObs
 	 * @generated
 	 */
 	boolean validateFamilyHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::FamilyHistoryObservation::ageObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IAgeObservation getAgeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->

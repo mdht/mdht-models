@@ -36,12 +36,12 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
@@ -172,7 +172,7 @@ public class APITestSwitch<T> {
 				ConditionEntry conditionEntry = (ConditionEntry)theEObject;
 				T result = caseConditionEntry(conditionEntry);
 				if (result == null) result = caseObservation(conditionEntry);
-				if (result == null) result = caseIConditionEntry(conditionEntry);
+				if (result == null) result = caseIProblemEntry(conditionEntry);
 				if (result == null) result = caseClinicalStatement(conditionEntry);
 				if (result == null) result = caseAct(conditionEntry);
 				if (result == null) result = caseInfrastructureRoot(conditionEntry);
@@ -689,17 +689,17 @@ public class APITestSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>ICondition Entry</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IProblem Entry</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>ICondition Entry</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IProblem Entry</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIConditionEntry(IConditionEntry object) {
+	public T caseIProblemEntry(IProblemEntry object) {
 		return null;
 	}
 

@@ -724,6 +724,14 @@ public class APITestValidator extends EObjectValidator {
 	public static final int CAUSE_OF_DEATH_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID = 90;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Problem List Section' of 'Patient Summary'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION = 91;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Template Id' of 'Family History Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -785,7 +793,7 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 90;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 91;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -2208,7 +2216,18 @@ public class APITestValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(patientSummary, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(patientSummary, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryProblemListSection(patientSummary, diagnostics, context);
 		return result;
+	}
+
+	/**
+	 * Validates the validatePatientSummaryProblemListSection constraint of '<em>Patient Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientSummary_validatePatientSummaryProblemListSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientSummary.validatePatientSummaryProblemListSection(diagnostics, context);
 	}
 
 	/**

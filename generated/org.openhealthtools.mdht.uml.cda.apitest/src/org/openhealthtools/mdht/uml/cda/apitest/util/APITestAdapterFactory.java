@@ -36,12 +36,12 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
@@ -212,8 +212,8 @@ public class APITestAdapterFactory extends AdapterFactoryImpl {
 				return createIEpisodeObservationAdapter();
 			}
 			@Override
-			public Adapter caseIConditionEntry(IConditionEntry object) {
-				return createIConditionEntryAdapter();
+			public Adapter caseIProblemEntry(IProblemEntry object) {
+				return createIProblemEntryAdapter();
 			}
 			@Override
 			public Adapter caseIAgeObservation(IAgeObservation object) {
@@ -648,16 +648,16 @@ public class APITestAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry <em>ICondition Entry</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry <em>IProblem Entry</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry
 	 * @generated
 	 */
-	public Adapter createIConditionEntryAdapter() {
+	public Adapter createIProblemEntryAdapter() {
 		return null;
 	}
 

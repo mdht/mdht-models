@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.openhealthtools.mdht.uml.cda.Act;
+import org.openhealthtools.mdht.uml.cda.Author;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
 
 /**
@@ -121,6 +122,17 @@ public interface Comment extends Act, IComment {
 	 * @generated
 	 */
 	boolean validateCommentStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Act::author.
+	 * self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))->asSequence()->first().oclAsType(cda::Author)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	Author getAuthor();
 
 	/**
 	 * <!-- begin-user-doc -->

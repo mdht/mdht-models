@@ -10,23 +10,8 @@ import java.util.List;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+
 import org.openhealthtools.mdht.uml.cda.apitest.domain.*;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
 
 /**
  * <!-- begin-user-doc -->
@@ -102,6 +87,12 @@ public class DomainSwitch<T> {
 	 */
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
+			case DomainPackage.ISTATUS_OBSERVATION: {
+				IStatusObservation iStatusObservation = (IStatusObservation)theEObject;
+				T result = caseIStatusObservation(iStatusObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case DomainPackage.ICONDITION: {
 				ICondition iCondition = (ICondition)theEObject;
 				T result = caseICondition(iCondition);
@@ -114,9 +105,9 @@ public class DomainSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.ICONDITION_ENTRY: {
-				IConditionEntry iConditionEntry = (IConditionEntry)theEObject;
-				T result = caseIConditionEntry(iConditionEntry);
+			case DomainPackage.IPROBLEM_ENTRY: {
+				IProblemEntry iProblemEntry = (IProblemEntry)theEObject;
+				T result = caseIProblemEntry(iProblemEntry);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -190,14 +181,23 @@ public class DomainSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case DomainPackage.ISTATUS_OBSERVATION: {
-				IStatusObservation iStatusObservation = (IStatusObservation)theEObject;
-				T result = caseIStatusObservation(iStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			default: return defaultCase(theEObject);
 		}
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>IStatus Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>IStatus Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIStatusObservation(IStatusObservation object) {
+		return null;
 	}
 
 	/**
@@ -231,17 +231,17 @@ public class DomainSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>ICondition Entry</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>IProblem Entry</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>ICondition Entry</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>IProblem Entry</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIConditionEntry(IConditionEntry object) {
+	public T caseIProblemEntry(IProblemEntry object) {
 		return null;
 	}
 
@@ -407,21 +407,6 @@ public class DomainSwitch<T> {
 	 * @generated
 	 */
 	public T caseIGeneralHeaderConstraints(IGeneralHeaderConstraints object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>IStatus Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>IStatus Observation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseIStatusObservation(IStatusObservation object) {
 		return null;
 	}
 
