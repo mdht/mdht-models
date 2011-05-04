@@ -8,25 +8,12 @@ package org.openhealthtools.mdht.uml.cda.apitest.domain.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
+
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
+
 import org.eclipse.emf.ecore.EObject;
+
 import org.openhealthtools.mdht.uml.cda.apitest.domain.*;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
 
 /**
  * <!-- begin-user-doc -->
@@ -85,6 +72,10 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	protected DomainSwitch<Adapter> modelSwitch =
 		new DomainSwitch<Adapter>() {
 			@Override
+			public Adapter caseIStatusObservation(IStatusObservation object) {
+				return createIStatusObservationAdapter();
+			}
+			@Override
 			public Adapter caseICondition(ICondition object) {
 				return createIConditionAdapter();
 			}
@@ -93,8 +84,8 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 				return createIEpisodeObservationAdapter();
 			}
 			@Override
-			public Adapter caseIConditionEntry(IConditionEntry object) {
-				return createIConditionEntryAdapter();
+			public Adapter caseIProblemEntry(IProblemEntry object) {
+				return createIProblemEntryAdapter();
 			}
 			@Override
 			public Adapter caseIAgeObservation(IAgeObservation object) {
@@ -141,10 +132,6 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 				return createIGeneralHeaderConstraintsAdapter();
 			}
 			@Override
-			public Adapter caseIStatusObservation(IStatusObservation object) {
-				return createIStatusObservationAdapter();
-			}
-			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -163,6 +150,20 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
+	 * @generated
+	 */
+	public Adapter createIStatusObservationAdapter() {
+		return null;
+	}
 
 	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition <em>ICondition</em>}'.
@@ -193,16 +194,16 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry <em>ICondition Entry</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry <em>IProblem Entry</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry
 	 * @generated
 	 */
-	public Adapter createIConditionEntryAdapter() {
+	public Adapter createIProblemEntryAdapter() {
 		return null;
 	}
 
@@ -357,20 +358,6 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createIGeneralHeaderConstraintsAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
-	 * @generated
-	 */
-	public Adapter createIStatusObservationAdapter() {
 		return null;
 	}
 

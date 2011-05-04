@@ -193,18 +193,13 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		isInited = true;
 
 		// Initialize simple dependencies
-		CDAPackage.eINSTANCE.eClass();
-
-		// Obtain or create and register interdependencies
-		DomainPackageImpl theDomainPackage = (DomainPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DomainPackage.eNS_URI) instanceof DomainPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DomainPackage.eNS_URI) : DomainPackage.eINSTANCE);
+		DomainPackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		theAPITestPackage.createPackageContents();
-		theDomainPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theAPITestPackage.initializePackageContents();
-		theDomainPackage.initializePackageContents();
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put
@@ -442,11 +437,8 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		DomainPackage theDomainPackage = (DomainPackage)EPackage.Registry.INSTANCE.getEPackage(DomainPackage.eNS_URI);
 		CDAPackage theCDAPackage = (CDAPackage)EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
-
-		// Add subpackages
-		getESubpackages().add(theDomainPackage);
+		DomainPackage theDomainPackage = (DomainPackage)EPackage.Registry.INSTANCE.getEPackage(DomainPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -462,7 +454,7 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		episodeObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		episodeObservationEClass.getESuperTypes().add(theDomainPackage.getIEpisodeObservation());
 		conditionEntryEClass.getESuperTypes().add(theCDAPackage.getObservation());
-		conditionEntryEClass.getESuperTypes().add(theDomainPackage.getIConditionEntry());
+		conditionEntryEClass.getESuperTypes().add(theDomainPackage.getIProblemEntry());
 		ageObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		ageObservationEClass.getESuperTypes().add(theDomainPackage.getIAgeObservation());
 		severityEClass.getESuperTypes().add(theCDAPackage.getObservation());
@@ -695,6 +687,12 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(conditionEClass, theDomainPackage.getIEpisodeObservation(), "getEpisodeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(conditionEClass, theDomainPackage.getIProblemEntry(), "getProblemEntries", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(conditionEClass, theDomainPackage.getITreatingProvider(), "getTreatingProvider", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(condition_TreatingProviderEClass, Condition_TreatingProvider.class, "Condition_TreatingProvider", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -972,6 +970,18 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		addEOperation(conditionEntryEClass, theDomainPackage.getIAgeObservation(), "getAgeAtOnset", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(conditionEntryEClass, theDomainPackage.getISeverity(), "getSeverity", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(conditionEntryEClass, theDomainPackage.getIProblemStatusObservation(), "getProblemStatus", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(conditionEntryEClass, theDomainPackage.getIHealthStatusObservation(), "getHealthStatusObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(conditionEntryEClass, theDomainPackage.getIComment(), "getComments", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(conditionEntryEClass, theDomainPackage.getICauseOfDeathObservation(), "getCauseOfDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(ageObservationEClass, AgeObservation.class, "AgeObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationRelatedSubjectBirthTime", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1207,6 +1217,8 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		addEOperation(commentEClass, theCDAPackage.getAuthor(), "getAuthor", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(problemListSectionEClass, ProblemListSection.class, "ProblemListSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(problemListSectionEClass, ecorePackage.getEBoolean(), "validateProblemListSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1245,6 +1257,8 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		addEOperation(problemListSectionEClass, theDomainPackage.getICondition(), "getConditions", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(familyHistoryObservationEClass, FamilyHistoryObservation.class, "FamilyHistoryObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryObservationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1274,9 +1288,24 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		addEOperation(familyHistoryObservationEClass, theDomainPackage.getIAgeObservation(), "getAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(causeOfDeathObservationEClass, CauseOfDeathObservation.class, "CauseOfDeathObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+		addEOperation(causeOfDeathObservationEClass, theDomainPackage.getIAgeObservation(), "getAgeAtDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(patientSummaryEClass, PatientSummary.class, "PatientSummary", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(patientSummaryEClass, ecorePackage.getEBoolean(), "validatePatientSummaryProblemListSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(patientSummaryEClass, theDomainPackage.getIProblemListSection(), "getProblemListSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(generalHeaderConstraintsEClass, GeneralHeaderConstraints.class, "GeneralHeaderConstraints", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1319,7 +1348,7 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 			 "classCode", "ACT",
 			 "constraints.validation.info", "ConditionContainsPatientAwareness ConditionHasProviderTreatmentTime ConditionEpisodeObservation",
 			 "moodCode", "EVN"
-		   });																																																														
+		   });																																																																				
 		addAnnotation
 		  (condition_TreatingProviderEClass, 
 		   source, 
@@ -1360,7 +1389,7 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 			 "moodCode", "EVN",
 			 "constraints.validation.info", "ConditionEntryContainsPatientAwareness ConditionEntryAgeObservation ConditionEntrySeverity ConditionEntryProblemStatusObservation ConditionEntryHealthStatusObservation ConditionEntryComment ConditionEntryCauseOfDeathObservation",
 			 "value.codeSystem", "2.16.840.1.113883.6.96"
-		   });																																																																																						
+		   });																																																																																																		
 		addAnnotation
 		  (ageObservationEClass, 
 		   source, 
@@ -1431,7 +1460,7 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 			 "classCode", "ACT",
 			 "code.code", "48767-8",
 			 "moodCode", "EVN"
-		   });																																		
+		   });																																				
 		addAnnotation
 		  (problemListSectionEClass, 
 		   source, 
@@ -1442,7 +1471,7 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 			 "constraints.validation.error", "ProblemListSectionTemplateId ProblemListSectionCode ProblemListSectionTitle ProblemListSectionText",
 			 "code.codeSystemName", "LOINC",
 			 "code.code", "11450-4"
-		   });																		
+		   });																				
 		addAnnotation
 		  (familyHistoryObservationEClass, 
 		   source, 
@@ -1450,14 +1479,20 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 			 "statusCode.code", "completed",
 			 "templateId.root", "2.16.840.1.113883.10.20.1.22",
 			 "constraints.validation.error", "FamilyHistoryObservationTemplateId FamilyHistoryObservationId FamilyHistoryObservationStatusCode"
-		   });														
+		   });																
 		addAnnotation
 		  (causeOfDeathObservationEClass, 
 		   source, 
 		   new String[] {
 			 "templateId.root", "2.16.840.1.113883.10.20.1.42",
 			 "constraints.validation.error", "CauseOfDeathObservationTemplateId"
-		   });	
+		   });					
+		addAnnotation
+		  (patientSummaryEClass, 
+		   source, 
+		   new String[] {
+			 "constraints.validation.error", "PatientSummaryProblemListSection"
+		   });						
 	}
 
 	/**
@@ -1467,7 +1502,7 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 	 * @generated
 	 */
 	protected void createDuplicatesAnnotations() {
-		String source = "duplicates";																																																																																																																																																																																																																																																																																										
+		String source = "duplicates";																																																																																																																																																																																																																																																																																																												
 		addAnnotation
 		  (problemStatusObservationEClass, 
 		   source, 
@@ -1477,12 +1512,12 @@ public class APITestPackageImpl extends EPackageImpl implements APITestPackage {
 		  (healthStatusObservationEClass, 
 		   source, 
 		   new String[] {
-		   });																																																																						
+		   });																																																																												
 		addAnnotation
 		  (causeOfDeathObservationEClass, 
 		   source, 
 		   new String[] {
-		   });
+		   });									
 	}
 
 } //APITestPackageImpl

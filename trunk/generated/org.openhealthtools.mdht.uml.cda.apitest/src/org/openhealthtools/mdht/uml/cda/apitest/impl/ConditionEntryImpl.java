@@ -17,8 +17,8 @@ import org.openhealthtools.mdht.uml.cda.apitest.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.ConditionEntryOperations;
@@ -72,7 +72,22 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IConditionEntry addId(II value) {
+	public II addId() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("II");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		II value = (II) eObject;
+		getIds().add(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntry addId(II value) {
 		return ConditionEntryOperations.addId(this, value);
 	}
 
@@ -90,8 +105,27 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setProblemType(CD value) {
-		ConditionEntryOperations.setProblemType(this, value);
+	public CD withProblemType() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		CD value = (CD) eObject;
+		setCode(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntry withProblemType(CD value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
 	}
 
 	/**
@@ -108,8 +142,27 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setProblemName(ED value) {
-		ConditionEntryOperations.setProblemName(this, value);
+	public ED withProblemName() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		ED value = (ED) eObject;
+		setText(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntry withProblemName(ED value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
 	}
 
 	/**
@@ -126,8 +179,27 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setProblemDate(IVL_TS value) {
-		ConditionEntryOperations.setProblemDate(this, value);
+	public IVL_TS withProblemDate() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IVL_TS value = (IVL_TS) eObject;
+		setEffectiveTime(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntry withProblemDate(IVL_TS value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
 	}
 
 	/**
@@ -144,8 +216,14 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setProblemCode(CD value) {
-		ConditionEntryOperations.setProblemCode(this, value);
+	public CD withProblemCode() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		CD value = (CD) eObject;
+		getValues().add(value);
+		return value;
 	}
 
 	/**
@@ -153,8 +231,12 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IAgeObservation getAgeObservation() {
-		return ConditionEntryOperations.getAgeObservation(this);
+	public IProblemEntry withProblemCode(CD value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
 	}
 
 	/**
@@ -162,8 +244,47 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAgeAtOnset(IAgeObservation value) {
-		ConditionEntryOperations.setAgeAtOnset(this, value);
+	public IAgeObservation withAgeAtOnset() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IAgeObservation clinicalStatement = (IAgeObservation) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return clinicalStatement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntry withAgeAtOnset(IAgeObservation value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IAgeObservation clinicalStatement = (IAgeObservation) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISeverity withSeverity() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Severity");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		ISeverity clinicalStatement = (ISeverity) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return clinicalStatement;
 	}
 
 	/**
@@ -180,8 +301,8 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSeverity(ISeverity value) {
-		ConditionEntryOperations.setSeverity(this, value);
+	public IProblemStatusObservation getProblemStatus() {
+		return ConditionEntryOperations.getProblemStatus(this);
 	}
 
 	/**
@@ -189,8 +310,15 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IProblemStatusObservation getProblemStatusObservation() {
-		return ConditionEntryOperations.getProblemStatusObservation(this);
+	public IProblemEntry withSeverity(ISeverity value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Severity");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		ISeverity clinicalStatement = (ISeverity) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return this;
 	}
 
 	/**
@@ -198,8 +326,47 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setProblemStatus(IProblemStatusObservation value) {
-		ConditionEntryOperations.setProblemStatus(this, value);
+	public IProblemStatusObservation withProblemStatus() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemStatusObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IProblemStatusObservation clinicalStatement = (IProblemStatusObservation) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return clinicalStatement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntry withProblemStatus(IProblemStatusObservation value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemStatusObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IProblemStatusObservation clinicalStatement = (IProblemStatusObservation) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IHealthStatusObservation withHealthStatusObservation() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("HealthStatusObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IHealthStatusObservation clinicalStatement = (IHealthStatusObservation) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return clinicalStatement;
 	}
 
 	/**
@@ -216,8 +383,31 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHealthStatusObservation(IHealthStatusObservation value) {
-		ConditionEntryOperations.setHealthStatusObservation(this, value);
+	public IProblemEntry withHealthStatusObservation(IHealthStatusObservation value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("HealthStatusObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IHealthStatusObservation clinicalStatement = (IHealthStatusObservation) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IComment addComment() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Comment");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IComment clinicalStatement = (IComment) eObject;
+		clinicalStatement.init();
+		addAct((org.openhealthtools.mdht.uml.cda.Act)clinicalStatement);
+		return clinicalStatement;
 	}
 
 	/**
@@ -234,7 +424,16 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IConditionEntry addComment(IComment value) {
+	public ICauseOfDeathObservation getCauseOfDeath() {
+		return ConditionEntryOperations.getCauseOfDeath(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntry addComment(IComment value) {
 		return ConditionEntryOperations.addComment(this, value);
 	}
 
@@ -243,8 +442,15 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ICauseOfDeathObservation getCauseOfDeathObservation() {
-		return ConditionEntryOperations.getCauseOfDeathObservation(this);
+	public ICauseOfDeathObservation withCauseOfDeath() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CauseOfDeathObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		ICauseOfDeathObservation clinicalStatement = (ICauseOfDeathObservation) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return clinicalStatement;
 	}
 
 	/**
@@ -252,8 +458,15 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCauseOfDeath(ICauseOfDeathObservation value) {
-		ConditionEntryOperations.setCauseOfDeath(this, value);
+	public IProblemEntry withCauseOfDeath(ICauseOfDeathObservation value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CauseOfDeathObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		ICauseOfDeathObservation clinicalStatement = (ICauseOfDeathObservation) eObject;
+		clinicalStatement.init();
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		return this;
 	}
 
 	/**
@@ -443,6 +656,15 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 */
 	public boolean validateConditionEntryCauseOfDeathObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryCauseOfDeathObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAgeObservation getAgeAtOnset() {
+		return ConditionEntryOperations.getAgeAtOnset(this);
 	}
 
 	/**

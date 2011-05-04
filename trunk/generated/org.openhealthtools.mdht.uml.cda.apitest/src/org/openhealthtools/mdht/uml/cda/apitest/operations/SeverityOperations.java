@@ -11,13 +11,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.Severity;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
@@ -33,9 +37,11 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#toCDAType() <em>To CDA Type</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#getText() <em>Get Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#setText(org.openhealthtools.mdht.uml.hl7.datatypes.ED) <em>Set Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#withText() <em>With Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#withText(org.openhealthtools.mdht.uml.hl7.datatypes.ED) <em>With Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#getValue() <em>Get Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#setValue(org.openhealthtools.mdht.uml.hl7.datatypes.CD) <em>Set Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#withValue() <em>With Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#withValue(org.openhealthtools.mdht.uml.hl7.datatypes.CD) <em>With Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Severity#validateSeverityHasTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Has Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Severity#validateSeverityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Severity#validateSeverityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Class Code</em>}</li>
@@ -71,34 +77,115 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #getText(Severity) <em>Get Text</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getText(Severity)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(datatypes::ED)";
+	/**
+	 * The cached OCL query for the '{@link #getText(Severity) <em>Get Text</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getText(Severity)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_TEXT__EOCL_QRY;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * cda::Observation::text.
+	 * self.text.oclAsType(datatypes::ED)
 	 * @param severity The receiving '<em><b>Severity</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static  ED getText(Severity severity) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		if (GET_TEXT__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.ISEVERITY, DomainPackage.Literals.ISEVERITY.getEAllOperations().get(1));
+			try {
+				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_TEXT__EOCL_QRY);
+		return (ED) query.evaluate(severity);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>.
+	 * APITest Severity SHALL contain exactly one [1..1] text.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * ED value = (ED) eObject;
+	 * setText(value);
+	 * return value;
 	 * @param severity The receiving '<em><b>Severity</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  void setText(Severity severity, ED value) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+	public static  ED withText(Severity severity) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		ED value = (ED) eObject;
+		setText(value);
+		return value;
 	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Severity SHALL contain exactly one [1..1] text.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * @param severity The receiving '<em><b>Severity</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  ISeverity withText(Severity severity, ED value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getValue(Severity) <em>Get Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue(Severity)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_VALUE__EOCL_EXP = "self.value.oclAsType(datatypes::CD)";
+	/**
+	 * The cached OCL query for the '{@link #getValue(Severity) <em>Get Value</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue(Severity)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_VALUE__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,29 +193,72 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-model-doc -->
 	 * cda::Observation::value.
 	 * Value code representing high, moderate and low severity depending upon whether the severity is life threatening, presents noticeable adverse consequences, or is unlikely substantially effect the situation of the subject.
+	 * self.value.oclAsType(datatypes::CD)
 	 * @param severity The receiving '<em><b>Severity</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static  CD getValue(Severity severity) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		if (GET_VALUE__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.ISEVERITY, DomainPackage.Literals.ISEVERITY.getEAllOperations().get(4));
+			try {
+				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_VALUE__EOCL_QRY);
+		return (CD) query.evaluate(severity);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> SeverityObservation</tt><b> STATIC</b>, where its data type is CD.
+	 * APITest Severity SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet SeverityObservation STATIC, where its data type is CD.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * CD value = (CD) eObject;
+	 * getValues().add(value);
+	 * return value;
 	 * @param severity The receiving '<em><b>Severity</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  void setValue(Severity severity, CD value) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+	public static  CD withValue(Severity severity) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		CD value = (CD) eObject;
+		getValues().add(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Severity SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet SeverityObservation STATIC, where its data type is CD.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * @param severity The receiving '<em><b>Severity</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  ISeverity withValue(Severity severity, CD value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
 	}
 
 	/**
@@ -140,7 +270,6 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SEVERITY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.reference.oclIsUndefined()";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityHasTextReference(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Has Text Reference</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -197,7 +326,6 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.1')";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityTemplateId(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -254,7 +382,6 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityClassCode(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Class Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -311,7 +438,6 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityMoodCode(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Mood Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -370,7 +496,6 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	protected static final String VALIDATE_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
 "value.code = 'SEV' and value.codeSystem = '2.16.840.1.113883.5.4'))";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityCode(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -429,7 +554,6 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityText(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Text</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -488,7 +612,6 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	protected static final String VALIDATE_SEVERITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
 "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
 "value.code = 'completed'))";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityStatusCode(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Status Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -549,7 +672,6 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	protected static final String VALIDATE_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
 "value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'H' or value.code = 'M' or value.code = 'L')))";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityValue(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Value</em>}' invariant operation.
 	 * <!-- begin-user-doc -->

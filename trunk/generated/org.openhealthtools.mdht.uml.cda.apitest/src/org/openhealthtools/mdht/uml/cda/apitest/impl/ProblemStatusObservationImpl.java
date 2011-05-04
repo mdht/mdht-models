@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.ProblemStatusObservationOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
@@ -51,6 +52,19 @@ public class ProblemStatusObservationImpl extends StatusObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public IProblemStatusObservation withValue(CE value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Observation toCDAType() {
 		return ProblemStatusObservationOperations.toCDAType(this);
@@ -72,8 +86,14 @@ public class ProblemStatusObservationImpl extends StatusObservationImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setValue(CE value) {
-		ProblemStatusObservationOperations.setValue(this, value);
+	public CE withValue() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		CE value = (CE) eObject;
+		getValues().add(value);
+		return value;
 	}
 
 	/**

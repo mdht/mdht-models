@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.EpisodeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.EpisodeObservationOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -61,6 +62,34 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public CD withCode() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		CD value = (CD) eObject;
+		setCode(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEpisodeObservation withCode(CD value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public CD getValue() {
 		return EpisodeObservationOperations.getValue(this);
 	}
@@ -70,8 +99,27 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(CD value) {
-		EpisodeObservationOperations.setValue(this, value);
+	public CD withValue() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		CD value = (CD) eObject;
+		getValues().add(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEpisodeObservation withValue(CD value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
 	}
 
 	/**

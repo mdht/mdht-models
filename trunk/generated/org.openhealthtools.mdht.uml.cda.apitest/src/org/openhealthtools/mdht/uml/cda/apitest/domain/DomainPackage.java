@@ -38,7 +38,7 @@ public interface DomainPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http:///apitest/domain.ecore";
+	String eNS_URI = "http://www.openhealthtools.org/mdht/uml/cda/apitest/domain";
 
 	/**
 	 * The package namespace name.
@@ -46,7 +46,7 @@ public interface DomainPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_PREFIX = "apitest.domain";
+	String eNS_PREFIX = "domain";
 
 	/**
 	 * The singleton instance of the package.
@@ -57,6 +57,25 @@ public interface DomainPackage extends EPackage {
 	DomainPackage eINSTANCE = org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl.init();
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIStatusObservation()
+	 * @generated
+	 */
+	int ISTATUS_OBSERVATION = 0;
+
+	/**
+	 * The number of structural features of the '<em>IStatus Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ISTATUS_OBSERVATION_FEATURE_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition <em>ICondition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -64,7 +83,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getICondition()
 	 * @generated
 	 */
-	int ICONDITION = 0;
+	int ICONDITION = 1;
 
 	/**
 	 * The number of structural features of the '<em>ICondition</em>' class.
@@ -83,7 +102,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIEpisodeObservation()
 	 * @generated
 	 */
-	int IEPISODE_OBSERVATION = 1;
+	int IEPISODE_OBSERVATION = 2;
 
 	/**
 	 * The number of structural features of the '<em>IEpisode Observation</em>' class.
@@ -95,23 +114,23 @@ public interface DomainPackage extends EPackage {
 	int IEPISODE_OBSERVATION_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry <em>ICondition Entry</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry <em>IProblem Entry</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIConditionEntry()
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIProblemEntry()
 	 * @generated
 	 */
-	int ICONDITION_ENTRY = 2;
+	int IPROBLEM_ENTRY = 3;
 
 	/**
-	 * The number of structural features of the '<em>ICondition Entry</em>' class.
+	 * The number of structural features of the '<em>IProblem Entry</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ICONDITION_ENTRY_FEATURE_COUNT = 0;
+	int IPROBLEM_ENTRY_FEATURE_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation <em>IAge Observation</em>}' class.
@@ -121,7 +140,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIAgeObservation()
 	 * @generated
 	 */
-	int IAGE_OBSERVATION = 3;
+	int IAGE_OBSERVATION = 4;
 
 	/**
 	 * The number of structural features of the '<em>IAge Observation</em>' class.
@@ -140,7 +159,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getISeverity()
 	 * @generated
 	 */
-	int ISEVERITY = 4;
+	int ISEVERITY = 5;
 
 	/**
 	 * The number of structural features of the '<em>ISeverity</em>' class.
@@ -152,25 +171,6 @@ public interface DomainPackage extends EPackage {
 	int ISEVERITY_FEATURE_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIStatusObservation()
-	 * @generated
-	 */
-	int ISTATUS_OBSERVATION = 14;
-
-	/**
-	 * The number of structural features of the '<em>IStatus Observation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ISTATUS_OBSERVATION_FEATURE_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation <em>IProblem Status Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -178,7 +178,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIProblemStatusObservation()
 	 * @generated
 	 */
-	int IPROBLEM_STATUS_OBSERVATION = 5;
+	int IPROBLEM_STATUS_OBSERVATION = 6;
 
 	/**
 	 * The number of structural features of the '<em>IProblem Status Observation</em>' class.
@@ -197,7 +197,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIHealthStatusObservation()
 	 * @generated
 	 */
-	int IHEALTH_STATUS_OBSERVATION = 6;
+	int IHEALTH_STATUS_OBSERVATION = 7;
 
 	/**
 	 * The number of structural features of the '<em>IHealth Status Observation</em>' class.
@@ -216,7 +216,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIComment()
 	 * @generated
 	 */
-	int ICOMMENT = 7;
+	int ICOMMENT = 8;
 
 	/**
 	 * The number of structural features of the '<em>IComment</em>' class.
@@ -235,7 +235,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIFamilyHistoryObservation()
 	 * @generated
 	 */
-	int IFAMILY_HISTORY_OBSERVATION = 9;
+	int IFAMILY_HISTORY_OBSERVATION = 10;
 
 	/**
 	 * The number of structural features of the '<em>IFamily History Observation</em>' class.
@@ -254,7 +254,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getICauseOfDeathObservation()
 	 * @generated
 	 */
-	int ICAUSE_OF_DEATH_OBSERVATION = 8;
+	int ICAUSE_OF_DEATH_OBSERVATION = 9;
 
 	/**
 	 * The number of structural features of the '<em>ICause Of Death Observation</em>' class.
@@ -273,7 +273,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getITreatingProvider()
 	 * @generated
 	 */
-	int ITREATING_PROVIDER = 10;
+	int ITREATING_PROVIDER = 11;
 
 	/**
 	 * The number of structural features of the '<em>ITreating Provider</em>' class.
@@ -292,7 +292,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIProblemListSection()
 	 * @generated
 	 */
-	int IPROBLEM_LIST_SECTION = 11;
+	int IPROBLEM_LIST_SECTION = 12;
 
 	/**
 	 * The number of structural features of the '<em>IProblem List Section</em>' class.
@@ -311,7 +311,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIGeneralHeaderConstraints()
 	 * @generated
 	 */
-	int IGENERAL_HEADER_CONSTRAINTS = 13;
+	int IGENERAL_HEADER_CONSTRAINTS = 14;
 
 	/**
 	 * The number of structural features of the '<em>IGeneral Header Constraints</em>' class.
@@ -330,7 +330,7 @@ public interface DomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIPatientSummary()
 	 * @generated
 	 */
-	int IPATIENT_SUMMARY = 12;
+	int IPATIENT_SUMMARY = 13;
 
 	/**
 	 * The number of structural features of the '<em>IPatient Summary</em>' class.
@@ -341,6 +341,16 @@ public interface DomainPackage extends EPackage {
 	 */
 	int IPATIENT_SUMMARY_FEATURE_COUNT = IGENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT + 0;
 
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>IStatus Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
+	 * @generated
+	 */
+	EClass getIStatusObservation();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition <em>ICondition</em>}'.
@@ -363,14 +373,14 @@ public interface DomainPackage extends EPackage {
 	EClass getIEpisodeObservation();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry <em>ICondition Entry</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry <em>IProblem Entry</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>ICondition Entry</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry
+	 * @return the meta object for class '<em>IProblem Entry</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry
 	 * @generated
 	 */
-	EClass getIConditionEntry();
+	EClass getIProblemEntry();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation <em>IAge Observation</em>}'.
@@ -483,16 +493,6 @@ public interface DomainPackage extends EPackage {
 	EClass getIGeneralHeaderConstraints();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>IStatus Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
-	 * @generated
-	 */
-	EClass getIStatusObservation();
-
-	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -515,6 +515,16 @@ public interface DomainPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIStatusObservation()
+		 * @generated
+		 */
+		EClass ISTATUS_OBSERVATION = eINSTANCE.getIStatusObservation();
+
+		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition <em>ICondition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -535,14 +545,14 @@ public interface DomainPackage extends EPackage {
 		EClass IEPISODE_OBSERVATION = eINSTANCE.getIEpisodeObservation();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry <em>ICondition Entry</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry <em>IProblem Entry</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIConditionEntry()
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry
+		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIProblemEntry()
 		 * @generated
 		 */
-		EClass ICONDITION_ENTRY = eINSTANCE.getIConditionEntry();
+		EClass IPROBLEM_ENTRY = eINSTANCE.getIProblemEntry();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation <em>IAge Observation</em>}' class.
@@ -653,16 +663,6 @@ public interface DomainPackage extends EPackage {
 		 * @generated
 		 */
 		EClass IGENERAL_HEADER_CONSTRAINTS = eINSTANCE.getIGeneralHeaderConstraints();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation
-		 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl#getIStatusObservation()
-		 * @generated
-		 */
-		EClass ISTATUS_OBSERVATION = eINSTANCE.getIStatusObservation();
 
 	}
 

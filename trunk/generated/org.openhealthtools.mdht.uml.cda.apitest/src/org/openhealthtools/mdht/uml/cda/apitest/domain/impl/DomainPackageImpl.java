@@ -9,27 +9,29 @@ package org.openhealthtools.mdht.uml.cda.apitest.domain.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
+
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
 import org.openhealthtools.mdht.uml.cda.CDAPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
+
 import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainFactory;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IConditionEntry;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
-import org.openhealthtools.mdht.uml.cda.apitest.impl.APITestPackageImpl;
+
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage;
 
 /**
@@ -39,6 +41,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage;
  * @generated
  */
 public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass iStatusObservationEClass = null;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,7 +67,7 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass iConditionEntryEClass = null;
+	private EClass iProblemEntryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -138,13 +147,6 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 	private EClass iGeneralHeaderConstraintsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass iStatusObservationEClass = null;
-
-	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -193,16 +195,11 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		// Initialize simple dependencies
 		CDAPackage.eINSTANCE.eClass();
 
-		// Obtain or create and register interdependencies
-		APITestPackageImpl theAPITestPackage = (APITestPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(APITestPackage.eNS_URI) instanceof APITestPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(APITestPackage.eNS_URI) : APITestPackage.eINSTANCE);
-
 		// Create package meta-data objects
 		theDomainPackage.createPackageContents();
-		theAPITestPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theDomainPackage.initializePackageContents();
-		theAPITestPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theDomainPackage.freeze();
@@ -211,6 +208,15 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(DomainPackage.eNS_URI, theDomainPackage);
 		return theDomainPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getIStatusObservation() {
+		return iStatusObservationEClass;
 	}
 
 	/**
@@ -236,8 +242,8 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getIConditionEntry() {
-		return iConditionEntryEClass;
+	public EClass getIProblemEntry() {
+		return iProblemEntryEClass;
 	}
 
 	/**
@@ -344,15 +350,6 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getIStatusObservation() {
-		return iStatusObservationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public DomainFactory getDomainFactory() {
 		return (DomainFactory)getEFactoryInstance();
 	}
@@ -376,11 +373,13 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		isCreated = true;
 
 		// Create classes and their features
+		iStatusObservationEClass = createEClass(ISTATUS_OBSERVATION);
+
 		iConditionEClass = createEClass(ICONDITION);
 
 		iEpisodeObservationEClass = createEClass(IEPISODE_OBSERVATION);
 
-		iConditionEntryEClass = createEClass(ICONDITION_ENTRY);
+		iProblemEntryEClass = createEClass(IPROBLEM_ENTRY);
 
 		iAgeObservationEClass = createEClass(IAGE_OBSERVATION);
 
@@ -403,8 +402,6 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		iPatientSummaryEClass = createEClass(IPATIENT_SUMMARY);
 
 		iGeneralHeaderConstraintsEClass = createEClass(IGENERAL_HEADER_CONSTRAINTS);
-
-		iStatusObservationEClass = createEClass(ISTATUS_OBSERVATION);
 	}
 
 	/**
@@ -445,43 +442,69 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		iPatientSummaryEClass.getESuperTypes().add(this.getIGeneralHeaderConstraints());
 
 		// Initialize classes and features; add operations and parameters
+		initEClass(iStatusObservationEClass, IStatusObservation.class, "IStatusObservation", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		addEOperation(iStatusObservationEClass, theCDAPackage.getObservation(), "toCDAType", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(iStatusObservationEClass, theDatatypesPackage.getCE(), "getValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(iStatusObservationEClass, theDatatypesPackage.getCE(), "withValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		EOperation op = addEOperation(iStatusObservationEClass, this.getIStatusObservation(), "withValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEParameter(op, theDatatypesPackage.getCE(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(iStatusObservationEClass, theDatatypesPackage.getED(), "getText", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(iStatusObservationEClass, theDatatypesPackage.getED(), "withText", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iStatusObservationEClass, this.getIStatusObservation(), "withText", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEParameter(op, theDatatypesPackage.getED(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(iConditionEClass, ICondition.class, "ICondition", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		addEOperation(iConditionEClass, theCDAPackage.getAct(), "toCDAType", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iConditionEClass, theDatatypesPackage.getII(), "getIds", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
-		EOperation op = addEOperation(iConditionEClass, this.getICondition(), "addId", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iConditionEClass, theDatatypesPackage.getII(), "addId", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iConditionEClass, this.getICondition(), "addId", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getII(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iConditionEClass, theDatatypesPackage.getCD(), "getCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEClass, null, "setCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iConditionEClass, theDatatypesPackage.getCD(), "withCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iConditionEClass, this.getICondition(), "withCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getCD(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iConditionEClass, theDatatypesPackage.getCS(), "getStatusCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEClass, null, "setStatusCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iConditionEClass, theDatatypesPackage.getCS(), "withStatusCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iConditionEClass, this.getICondition(), "withStatusCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getCS(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iConditionEClass, theDatatypesPackage.getIVL_TS(), "getEffectiveTime", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEClass, null, "setEffectiveTime", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iConditionEClass, theDatatypesPackage.getIVL_TS(), "withEffectiveTime", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iConditionEClass, this.getICondition(), "withEffectiveTime", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getIVL_TS(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEClass, this.getIEpisodeObservation(), "getEpisodeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iConditionEClass, this.getIEpisodeObservation(), "withEpisodeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEClass, null, "setEpisodeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		op = addEOperation(iConditionEClass, this.getICondition(), "withEpisodeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getIEpisodeObservation(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEClass, this.getIConditionEntry(), "getConditionEntries", 1, -1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iConditionEClass, this.getIProblemEntry(), "addProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		op = addEOperation(iConditionEClass, this.getICondition(), "addProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
-		addEParameter(op, this.getIConditionEntry(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEParameter(op, this.getIProblemEntry(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEClass, this.getITreatingProvider(), "getTreatingProvider", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iConditionEClass, this.getITreatingProvider(), "withTreatingProvider", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEClass, null, "setTreatingProvider", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		op = addEOperation(iConditionEClass, this.getICondition(), "withTreatingProvider", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getITreatingProvider(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(iEpisodeObservationEClass, IEpisodeObservation.class, "IEpisodeObservation", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -490,71 +513,85 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 
 		addEOperation(iEpisodeObservationEClass, theDatatypesPackage.getCD(), "getCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iEpisodeObservationEClass, null, "setCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iEpisodeObservationEClass, theDatatypesPackage.getCD(), "withCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iEpisodeObservationEClass, this.getIEpisodeObservation(), "withCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getCD(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iEpisodeObservationEClass, theDatatypesPackage.getCD(), "getValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iEpisodeObservationEClass, null, "setValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iEpisodeObservationEClass, theDatatypesPackage.getCD(), "withValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iEpisodeObservationEClass, this.getIEpisodeObservation(), "withValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getCD(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEClass(iConditionEntryEClass, IConditionEntry.class, "IConditionEntry", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(iProblemEntryEClass, IProblemEntry.class, "IProblemEntry", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		addEOperation(iConditionEntryEClass, theCDAPackage.getObservation(), "toCDAType", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theCDAPackage.getObservation(), "toCDAType", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, theDatatypesPackage.getII(), "getIds", 1, -1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theDatatypesPackage.getII(), "getIds", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, this.getIConditionEntry(), "addId", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theDatatypesPackage.getII(), "addId", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "addId", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getII(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, theDatatypesPackage.getCD(), "getProblemType", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theDatatypesPackage.getCD(), "getProblemType", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, null, "setProblemType", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theDatatypesPackage.getCD(), "withProblemType", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "withProblemType", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getCD(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, theDatatypesPackage.getED(), "getProblemName", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theDatatypesPackage.getED(), "getProblemName", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, null, "setProblemName", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theDatatypesPackage.getED(), "withProblemName", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "withProblemName", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getED(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, theDatatypesPackage.getIVL_TS(), "getProblemDate", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theDatatypesPackage.getIVL_TS(), "getProblemDate", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, null, "setProblemDate", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theDatatypesPackage.getIVL_TS(), "withProblemDate", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "withProblemDate", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getIVL_TS(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, theDatatypesPackage.getCD(), "getProblemCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theDatatypesPackage.getCD(), "getProblemCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, null, "setProblemCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, theDatatypesPackage.getCD(), "withProblemCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "withProblemCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getCD(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, this.getIAgeObservation(), "getAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, this.getIAgeObservation(), "withAgeAtOnset", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, null, "setAgeAtOnset", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "withAgeAtOnset", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getIAgeObservation(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, this.getISeverity(), "getSeverity", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, this.getISeverity(), "withSeverity", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, null, "setSeverity", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "withSeverity", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getISeverity(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, this.getIProblemStatusObservation(), "getProblemStatusObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, this.getIProblemStatusObservation(), "withProblemStatus", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, null, "setProblemStatus", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "withProblemStatus", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getIProblemStatusObservation(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, this.getIHealthStatusObservation(), "getHealthStatusObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, this.getIHealthStatusObservation(), "withHealthStatusObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, null, "setHealthStatusObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "withHealthStatusObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getIHealthStatusObservation(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, this.getIComment(), "getComments", 1, -1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, this.getIComment(), "addComment", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, this.getIConditionEntry(), "addComment", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "addComment", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getIComment(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iConditionEntryEClass, this.getICauseOfDeathObservation(), "getCauseOfDeathObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemEntryEClass, this.getICauseOfDeathObservation(), "withCauseOfDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iConditionEntryEClass, null, "setCauseOfDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		op = addEOperation(iProblemEntryEClass, this.getIProblemEntry(), "withCauseOfDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getICauseOfDeathObservation(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(iAgeObservationEClass, IAgeObservation.class, "IAgeObservation", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -563,7 +600,9 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 
 		addEOperation(iAgeObservationEClass, theDatatypesPackage.getANY(), "getValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iAgeObservationEClass, null, "setValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iAgeObservationEClass, theDatatypesPackage.getANY(), "withValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iAgeObservationEClass, this.getIAgeObservation(), "withValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getANY(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(iSeverityEClass, ISeverity.class, "ISeverity", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -572,17 +611,27 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 
 		addEOperation(iSeverityEClass, theDatatypesPackage.getED(), "getText", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iSeverityEClass, null, "setText", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iSeverityEClass, theDatatypesPackage.getED(), "withText", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iSeverityEClass, this.getISeverity(), "withText", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getED(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iSeverityEClass, theDatatypesPackage.getCD(), "getValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iSeverityEClass, null, "setValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iSeverityEClass, theDatatypesPackage.getCD(), "withValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iSeverityEClass, this.getISeverity(), "withValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getCD(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(iProblemStatusObservationEClass, IProblemStatusObservation.class, "IProblemStatusObservation", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+		op = addEOperation(iProblemStatusObservationEClass, this.getIProblemStatusObservation(), "withValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEParameter(op, theDatatypesPackage.getCE(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(iHealthStatusObservationEClass, IHealthStatusObservation.class, "IHealthStatusObservation", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(iHealthStatusObservationEClass, this.getIHealthStatusObservation(), "withValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEParameter(op, theDatatypesPackage.getCE(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(iCommentEClass, IComment.class, "IComment", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -590,22 +639,28 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 
 		addEOperation(iCommentEClass, theDatatypesPackage.getED(), "getText", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iCommentEClass, null, "setText", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iCommentEClass, theDatatypesPackage.getED(), "withText", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iCommentEClass, this.getIComment(), "withText", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getED(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iCommentEClass, theCDAPackage.getAuthor(), "getAuthor", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iCommentEClass, theCDAPackage.getAuthor(), "withAuthor", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iCommentEClass, null, "setAuthor", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		op = addEOperation(iCommentEClass, this.getIComment(), "withAuthor", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theCDAPackage.getAuthor(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(iCauseOfDeathObservationEClass, ICauseOfDeathObservation.class, "ICauseOfDeathObservation", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		addEOperation(iCauseOfDeathObservationEClass, theDatatypesPackage.getIVL_TS(), "getTimeOfDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iCauseOfDeathObservationEClass, null, "setTimeOfDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iCauseOfDeathObservationEClass, theDatatypesPackage.getIVL_TS(), "withTimeOfDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iCauseOfDeathObservationEClass, this.getICauseOfDeathObservation(), "withTimeOfDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getIVL_TS(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iCauseOfDeathObservationEClass, null, "setAgeAtDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iCauseOfDeathObservationEClass, this.getIAgeObservation(), "withAgeAtDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iCauseOfDeathObservationEClass, this.getICauseOfDeathObservation(), "withAgeAtDeath", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getIAgeObservation(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(iFamilyHistoryObservationEClass, IFamilyHistoryObservation.class, "IFamilyHistoryObservation", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -614,17 +669,21 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 
 		addEOperation(iFamilyHistoryObservationEClass, theDatatypesPackage.getII(), "getIds", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
+		addEOperation(iFamilyHistoryObservationEClass, theDatatypesPackage.getII(), "addId", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
 		op = addEOperation(iFamilyHistoryObservationEClass, this.getIFamilyHistoryObservation(), "addId", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getII(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iFamilyHistoryObservationEClass, theDatatypesPackage.getCD(), "getCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iFamilyHistoryObservationEClass, null, "setCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iFamilyHistoryObservationEClass, theDatatypesPackage.getCD(), "withCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iFamilyHistoryObservationEClass, this.getIFamilyHistoryObservation(), "withCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getCD(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iFamilyHistoryObservationEClass, this.getIAgeObservation(), "getAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iFamilyHistoryObservationEClass, this.getIAgeObservation(), "withAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iFamilyHistoryObservationEClass, null, "setAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		op = addEOperation(iFamilyHistoryObservationEClass, this.getIFamilyHistoryObservation(), "withAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getIAgeObservation(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(iTreatingProviderEClass, ITreatingProvider.class, "ITreatingProvider", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -632,6 +691,8 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		addEOperation(iTreatingProviderEClass, theCDAPackage.getAssignedEntity(), "toCDAType", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iTreatingProviderEClass, theDatatypesPackage.getII(), "getTreatingProviderIDs", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(iTreatingProviderEClass, theDatatypesPackage.getII(), "addTreatingProviderID", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		op = addEOperation(iTreatingProviderEClass, this.getITreatingProvider(), "addTreatingProviderID", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getII(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
@@ -642,15 +703,19 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 
 		addEOperation(iProblemListSectionEClass, theDatatypesPackage.getST(), "getTitle", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iProblemListSectionEClass, null, "setTitle", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemListSectionEClass, theDatatypesPackage.getST(), "withTitle", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iProblemListSectionEClass, this.getIProblemListSection(), "withTitle", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getST(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iProblemListSectionEClass, theCDAPackage.getStrucDocText(), "getText", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iProblemListSectionEClass, null, "setText", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemListSectionEClass, theCDAPackage.getStrucDocText(), "withText", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iProblemListSectionEClass, this.getIProblemListSection(), "withText", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theCDAPackage.getStrucDocText(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(iProblemListSectionEClass, this.getICondition(), "getConditions", 1, -1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iProblemListSectionEClass, this.getICondition(), "addCondition", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		op = addEOperation(iProblemListSectionEClass, this.getIProblemListSection(), "addCondition", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, this.getICondition(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
@@ -659,8 +724,15 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 
 		addEOperation(iPatientSummaryEClass, theDatatypesPackage.getCE(), "getCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iPatientSummaryEClass, null, "setCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iPatientSummaryEClass, theDatatypesPackage.getCE(), "withCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iPatientSummaryEClass, this.getIPatientSummary(), "withCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getCE(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(iPatientSummaryEClass, this.getIProblemListSection(), "withProblemListSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iPatientSummaryEClass, this.getIPatientSummary(), "withProblemListSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEParameter(op, this.getIProblemListSection(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(iGeneralHeaderConstraintsEClass, IGeneralHeaderConstraints.class, "IGeneralHeaderConstraints", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -668,32 +740,27 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 
 		addEOperation(iGeneralHeaderConstraintsEClass, theDatatypesPackage.getCS(), "getLanguageCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iGeneralHeaderConstraintsEClass, null, "setLanguageCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iGeneralHeaderConstraintsEClass, theDatatypesPackage.getCS(), "withLanguageCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iGeneralHeaderConstraintsEClass, this.getIGeneralHeaderConstraints(), "withLanguageCode", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getCS(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iGeneralHeaderConstraintsEClass, theDatatypesPackage.getII(), "getSetId", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iGeneralHeaderConstraintsEClass, null, "setSetId", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iGeneralHeaderConstraintsEClass, theDatatypesPackage.getII(), "withSetId", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iGeneralHeaderConstraintsEClass, this.getIGeneralHeaderConstraints(), "withSetId", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getII(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(iGeneralHeaderConstraintsEClass, theDatatypesPackage.getST(), "getTitle", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		op = addEOperation(iGeneralHeaderConstraintsEClass, null, "setTitle", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(iGeneralHeaderConstraintsEClass, theDatatypesPackage.getST(), "withTitle", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		op = addEOperation(iGeneralHeaderConstraintsEClass, this.getIGeneralHeaderConstraints(), "withTitle", 1, 1, IS_UNIQUE, !IS_ORDERED);
 		addEParameter(op, theDatatypesPackage.getST(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		initEClass(iStatusObservationEClass, IStatusObservation.class, "IStatusObservation", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		addEOperation(iStatusObservationEClass, theCDAPackage.getObservation(), "toCDAType", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-		addEOperation(iStatusObservationEClass, theDatatypesPackage.getCE(), "getValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-		op = addEOperation(iStatusObservationEClass, null, "setValue", 1, 1, IS_UNIQUE, !IS_ORDERED);
-		addEParameter(op, theDatatypesPackage.getCE(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-		addEOperation(iStatusObservationEClass, theDatatypesPackage.getED(), "getText", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-		op = addEOperation(iStatusObservationEClass, null, "setText", 1, 1, IS_UNIQUE, !IS_ORDERED);
-		addEParameter(op, theDatatypesPackage.getED(), "value", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		// Create resource
+		createResource(eNS_URI);
 
 		// Create annotations
 		// duplicates
@@ -707,27 +774,27 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 	 * @generated
 	 */
 	protected void createDuplicatesAnnotations() {
-		String source = "duplicates";																																																															
+		String source = "duplicates";																																																																																											
 		addAnnotation
 		  (iProblemStatusObservationEClass, 
 		   source, 
 		   new String[] {
-		   });			
+		   });				
 		addAnnotation
 		  (iHealthStatusObservationEClass, 
 		   source, 
 		   new String[] {
-		   });									
+		   });											
 		addAnnotation
 		  (iCauseOfDeathObservationEClass, 
 		   source, 
 		   new String[] {
-		   });																									
+		   });																																				
 		addAnnotation
 		  (iPatientSummaryEClass, 
 		   source, 
 		   new String[] {
-		   });														
+		   });																			
 	}
 
 } //DomainPackageImpl

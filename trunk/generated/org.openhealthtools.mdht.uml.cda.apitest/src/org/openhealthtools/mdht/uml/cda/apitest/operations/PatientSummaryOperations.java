@@ -6,8 +6,24 @@
  */
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
+import java.util.Map;
+
+import org.eclipse.emf.common.util.BasicDiagnostic;
+import org.eclipse.emf.common.util.Diagnostic;
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.ocl.ParserException;
+import org.eclipse.ocl.ecore.Constraint;
+import org.eclipse.ocl.ecore.OCL;
+import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
+import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
+import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.PatientSummary;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
+import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 
 /**
@@ -19,8 +35,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary#getCode() <em>Get Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary#setCode(org.openhealthtools.mdht.uml.hl7.datatypes.CE) <em>Set Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary#withCode() <em>With Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary#withCode(org.openhealthtools.mdht.uml.hl7.datatypes.CE) <em>With Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary#withProblemListSection() <em>With Problem List Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary#withProblemListSection(org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection) <em>With Problem List Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary#toCDAType() <em>To CDA Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.PatientSummary#validatePatientSummaryProblemListSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Problem List Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.PatientSummary#getProblemListSection() <em>Get Problem List Section</em>}</li>
  * </ul>
  * </p>
  *
@@ -37,33 +58,145 @@ public class PatientSummaryOperations extends GeneralHeaderConstraintsOperations
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #getCode(PatientSummary) <em>Get Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCode(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CODE__EOCL_EXP = "self.code.oclAsType(datatypes::CE)";
+	/**
+	 * The cached OCL query for the '{@link #getCode(PatientSummary) <em>Get Code</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCode(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CODE__EOCL_QRY;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * cda::ClinicalDocument::code.
+	 * self.code.oclAsType(datatypes::CE)
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static  CE getCode(PatientSummary patientSummary) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		if (GET_CODE__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.IPATIENT_SUMMARY, DomainPackage.Literals.IPATIENT_SUMMARY.getEAllOperations().get(10));
+			try {
+				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_CODE__EOCL_QRY);
+		return (CE) query.evaluate(patientSummary);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Contains exactly one [1..1] <tt><b>code</b></tt>.
+	 * APITest Patient Summary Contains exactly one [1..1] code.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * CE value = (CE) eObject;
+	 * setCode(value);
+	 * return value;
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  void setCode(PatientSummary patientSummary, CE value) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+	public static  CE withCode(PatientSummary patientSummary) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		CE value = (CE) eObject;
+		setCode(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Patient Summary Contains exactly one [1..1] code.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IPatientSummary withCode(PatientSummary patientSummary, CE value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Patient Summary SHALL contain exactly one [1..1] component, where its type is Problem List Section.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemListSection");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * IProblemListSection section = (IProblemListSection) eObject;
+	 * section.init();
+	 * addSection((org.openhealthtools.mdht.uml.cda.Section)section);
+	 * return (IProblemListSection)section;
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IProblemListSection withProblemListSection(PatientSummary patientSummary) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemListSection");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		IProblemListSection section = (IProblemListSection) eObject;
+		section.init();
+		addSection((org.openhealthtools.mdht.uml.cda.Section)section);
+		return (IProblemListSection)section;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Patient Summary SHALL contain exactly one [1..1] component, where its type is Problem List Section.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemListSection");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IPatientSummary withProblemListSection(PatientSummary patientSummary, IProblemListSection value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemListSection");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
 	}
 
 	/**
@@ -75,6 +208,106 @@ public class PatientSummaryOperations extends GeneralHeaderConstraintsOperations
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Problem List Section</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(apitest::ProblemListSection))";
+	/**
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Problem List Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(apitest::ProblemListSection))
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  boolean validatePatientSummaryProblemListSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(APITestPackage.Literals.PATIENT_SUMMARY);
+			try {
+				VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 APITestValidator.DIAGNOSTIC_SOURCE,
+						 APITestValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION,
+						 APITestPlugin.INSTANCE.getString("PatientSummaryProblemListSection"),
+						 new Object [] { patientSummary }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getProblemListSection(PatientSummary) <em>Get Problem List Section</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProblemListSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PROBLEM_LIST_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::IProblemListSection))->asSequence()->first().oclAsType(domain::IProblemListSection)";
+	/**
+	 * The cached OCL query for the '{@link #getProblemListSection(PatientSummary) <em>Get Problem List Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProblemListSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PROBLEM_LIST_SECTION__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::PatientSummary::problemListSection.
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::IProblemListSection))->asSequence()->first().oclAsType(domain::IProblemListSection)
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IProblemListSection getProblemListSection(PatientSummary patientSummary) {
+		if (GET_PROBLEM_LIST_SECTION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(APITestPackage.Literals.PATIENT_SUMMARY, APITestPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(45));
+			try {
+				GET_PROBLEM_LIST_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_LIST_SECTION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_LIST_SECTION__EOCL_QRY);
+		return (IProblemListSection) query.evaluate(patientSummary);
 	}
 
 } // PatientSummaryOperations

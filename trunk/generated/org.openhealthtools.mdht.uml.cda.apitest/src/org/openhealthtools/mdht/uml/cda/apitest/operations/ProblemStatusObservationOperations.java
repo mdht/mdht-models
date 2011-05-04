@@ -11,13 +11,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 
@@ -29,9 +33,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#withValue(org.openhealthtools.mdht.uml.hl7.datatypes.CE) <em>With Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#toCDAType() <em>To CDA Type</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#getValue() <em>Get Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#setValue(org.openhealthtools.mdht.uml.hl7.datatypes.CE) <em>Set Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#withValue() <em>With Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateProblemStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Value</em>}</li>
@@ -53,6 +58,28 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Problem Status Observation SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet ProblemStatusValue STATIC.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * @param problemStatusObservation The receiving '<em><b>Problem Status Observation</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  IProblemStatusObservation withValue(ProblemStatusObservation problemStatusObservation, CE value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public static  Observation toCDAType(ProblemStatusObservation problemStatusObservation) {
@@ -62,33 +89,73 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #getValue(ProblemStatusObservation) <em>Get Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue(ProblemStatusObservation)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_VALUE__EOCL_EXP = "self.value.oclAsType(datatypes::CE)";
+	/**
+	 * The cached OCL query for the '{@link #getValue(ProblemStatusObservation) <em>Get Value</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue(ProblemStatusObservation)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_VALUE__EOCL_QRY;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * cda::Observation::value.
+	 * self.value.oclAsType(datatypes::CE)
 	 * @param problemStatusObservation The receiving '<em><b>Problem Status Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static  CE getValue(ProblemStatusObservation problemStatusObservation) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		if (GET_VALUE__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(DomainPackage.Literals.IPROBLEM_STATUS_OBSERVATION, DomainPackage.Literals.IPROBLEM_STATUS_OBSERVATION.getEAllOperations().get(1));
+			try {
+				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_VALUE__EOCL_QRY);
+		return (CE) query.evaluate(problemStatusObservation);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> ProblemStatusValue</tt><b> STATIC</b>.
+	 * APITest Problem Status Observation SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet ProblemStatusValue STATIC.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * CE value = (CE) eObject;
+	 * getValues().add(value);
+	 * return value;
 	 * @param problemStatusObservation The receiving '<em><b>Problem Status Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  void setValue(ProblemStatusObservation problemStatusObservation, CE value) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+	public static  CE withValue(ProblemStatusObservation problemStatusObservation) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		CE value = (CE) eObject;
+		getValues().add(value);
+		return value;
 	}
 
 	/**
@@ -102,7 +169,6 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 	protected static final String VALIDATE_PROBLEM_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
 "value.code = '33999-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemStatusObservationCode(ProblemStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Observation Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -161,7 +227,6 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 	 * @ordered
 	 */
 	protected static final String VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.1.1')";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateStatusObservationTemplateId(ProblemStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -220,7 +285,6 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 	protected static final String VALIDATE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
 "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '55561003' or value.code = '73425007' or value.code = '90734009' or value.code = '7087005' or value.code = '255227004' or value.code = '415684004' or value.code = '410516002' or value.code = '413322009')))";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateStatusObservationValue(ProblemStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Value</em>}' invariant operation.
 	 * <!-- begin-user-doc -->

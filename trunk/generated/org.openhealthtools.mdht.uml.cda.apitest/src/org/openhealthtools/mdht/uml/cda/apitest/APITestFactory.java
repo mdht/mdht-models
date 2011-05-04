@@ -24,7 +24,6 @@ public interface APITestFactory extends EFactory {
 	 * @generated
 	 */
 	APITestFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.apitest.impl.APITestFactoryImpl.init();
-
 	/**
 	 * Returns a new object of class '<em>Status Observation</em>'.
 	 * <!-- begin-user-doc -->

@@ -6,9 +6,9 @@
  */
 package org.openhealthtools.mdht.uml.cda.apitest.domain;
 
-import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.uml.cda.Act;
 import org.openhealthtools.mdht.uml.cda.Author;
+
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIComment()
  * @generated
  */
-public interface IComment extends EObject {
+public interface IComment {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38,6 +38,7 @@ public interface IComment extends EObject {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * cda::Act::text.
+	 * self.text.oclAsType(datatypes::ED)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -47,32 +48,65 @@ public interface IComment extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>.
+	 * APITest Comment SHALL contain exactly one [1..1] text.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * ED value = (ED) eObject;
+	 * setText(value);
+	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	void setText(ED value);
+	ED withText();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * cda::Act::author.
-	 * self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))->asSequence()->first().oclAsType(cda::Author)
+	 * APITest Comment SHALL contain exactly one [1..1] text.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	Author getAuthor();
+	IComment withText(ED value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt>, such that.
+	 * APITest Comment MAY contain zero or one [0..1] author, such that.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Author");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * Author value = (Author) eObject;
+	 * getAuthors().add(value);
+	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	void setAuthor(Author value);
+	Author withAuthor();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * APITest Comment MAY contain zero or one [0..1] author, such that.
+	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
+	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
+	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Author");
+	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+	 * return this;
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IComment withAuthor(Author value);
 
 	/**
 	 * <!-- begin-user-doc -->

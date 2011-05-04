@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.AgeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.operations.AgeObservationOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -70,8 +71,27 @@ public class AgeObservationImpl extends ObservationImpl implements AgeObservatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(ANY value) {
-		AgeObservationOperations.setValue(this, value);
+	public ANY withValue() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ANY");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		ANY value = (ANY) eObject;
+		getValues().add(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAgeObservation withValue(ANY value) {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ANY");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		return this;
 	}
 
 	/**
