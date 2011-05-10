@@ -7,7 +7,6 @@
 package org.openhealthtools.mdht.uml.cda.apitest.domain;
 
 import org.openhealthtools.mdht.uml.cda.Observation;
-
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 
 /**
@@ -48,13 +47,6 @@ public interface IEpisodeObservation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Episode Observation SHOULD contain exactly one [1..1] code/@code="ASSERTION"  (CodeSystem: 2.16.840.1.113883.5.4 HL7ActCode) (CONF-174).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * CD value = (CD) eObject;
-	 * setCode(value);
-	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -65,11 +57,6 @@ public interface IEpisodeObservation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Episode Observation SHOULD contain exactly one [1..1] code/@code="ASSERTION"  (CodeSystem: 2.16.840.1.113883.5.4 HL7ActCode) (CONF-174).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -91,13 +78,6 @@ public interface IEpisodeObservation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Episode Observation SHOULD contain exactly one [1..1] value/@code="404684003" Clinical finding (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT), where its data type is CD (CONF-175).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * CD value = (CD) eObject;
-	 * getValues().add(value);
-	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -108,11 +88,6 @@ public interface IEpisodeObservation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Episode Observation SHOULD contain exactly one [1..1] value/@code="404684003" Clinical finding (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT), where its data type is CD (CONF-175).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */

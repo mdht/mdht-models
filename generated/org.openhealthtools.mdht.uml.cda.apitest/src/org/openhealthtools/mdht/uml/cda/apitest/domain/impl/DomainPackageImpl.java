@@ -9,11 +9,8 @@ package org.openhealthtools.mdht.uml.cda.apitest.domain.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
 import org.openhealthtools.mdht.uml.cda.CDAPackage;
-
 import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainFactory;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
@@ -31,7 +28,6 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
-
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage;
 
 /**

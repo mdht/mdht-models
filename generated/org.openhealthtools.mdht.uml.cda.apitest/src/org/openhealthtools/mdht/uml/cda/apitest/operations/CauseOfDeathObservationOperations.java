@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
@@ -34,10 +33,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation#getTimeOfDeath() <em>Get Time Of Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation#withTimeOfDeath() <em>With Time Of Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation#withTimeOfDeath(org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS) <em>With Time Of Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation#withAgeAtDeath() <em>With Age At Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation#withAgeAtDeath(org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation) <em>With Age At Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation#toCDAType() <em>To CDA Type</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation#getAgeAtDeath() <em>Get Age At Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation#validateFamilyHistoryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Template Id</em>}</li>
@@ -98,110 +93,6 @@ public class CauseOfDeathObservationOperations extends FamilyHistoryObservationO
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_TIME_OF_DEATH__EOCL_QRY);
 		return (IVL_TS) query.evaluate(causeOfDeathObservation);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Cause Of Death Observation Contains zero or one [0..1] effectiveTime.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * IVL_TS value = (IVL_TS) eObject;
-	 * setEffectiveTime(value);
-	 * return value;
-	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IVL_TS withTimeOfDeath(CauseOfDeathObservation causeOfDeathObservation) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		IVL_TS value = (IVL_TS) eObject;
-		setEffectiveTime(value);
-		return value;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Cause Of Death Observation Contains zero or one [0..1] effectiveTime.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
-	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  ICauseOfDeathObservation withTimeOfDeath(CauseOfDeathObservation causeOfDeathObservation, IVL_TS value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		return this;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Cause Of Death Observation Contains zero or one [0..1] entryRelationship, such that Contains exactly one [1..1] Age Observation (templateId: 2.16.840.1.113883.10.20.1.38).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * IAgeObservation clinicalStatement = (IAgeObservation) eObject;
-	 * clinicalStatement.init();
-	 * addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-	 * return clinicalStatement;
-	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IAgeObservation withAgeAtDeath(CauseOfDeathObservation causeOfDeathObservation) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		IAgeObservation clinicalStatement = (IAgeObservation) eObject;
-		clinicalStatement.init();
-		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-		return clinicalStatement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Cause Of Death Observation Contains zero or one [0..1] entryRelationship, such that Contains exactly one [1..1] Age Observation (templateId: 2.16.840.1.113883.10.20.1.38).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * IAgeObservation clinicalStatement = (IAgeObservation) eObject;
-	 * clinicalStatement.init();
-	 * addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-	 * return this;
-	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  ICauseOfDeathObservation withAgeAtDeath(CauseOfDeathObservation causeOfDeathObservation, IAgeObservation value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		IAgeObservation clinicalStatement = (IAgeObservation) eObject;
-		clinicalStatement.init();
-		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-		return this;
 	}
 
 	/**

@@ -39,7 +39,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider#toCDAType() <em>To CDA Type</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider#getTreatingProviderIDs() <em>Get Treating Provider IDs</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider#addTreatingProviderID() <em>Add Treating Provider ID</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider#addTreatingProviderID(org.openhealthtools.mdht.uml.hl7.datatypes.II) <em>Add Treating Provider ID</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Condition_TreatingProvider#validateTreatingProviderId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Treating Provider Id</em>}</li>
  * </ul>
@@ -113,32 +112,6 @@ public class Condition_TreatingProviderOperations extends AssignedEntityOperatio
 		@SuppressWarnings("unchecked")
 		Collection<II> result = (Collection<II>) query.evaluate(condition_TreatingProvider);
 		return new BasicEList.UnmodifiableEList<II>(result.size(), result.toArray());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Treating Provider SHALL contain at least one [1..*] id (C83-[DE-7.05-CDA-2]).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("II");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * II value = (II) eObject;
-	 * getIds().add(value);
-	 * return value;
-	 * @param condition_TreatingProvider The receiving '<em><b>Condition Treating Provider</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  II addTreatingProviderID(Condition_TreatingProvider condition_TreatingProvider) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("II");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		II value = (II) eObject;
-		getIds().add(value);
-		return value;
 	}
 
 	/**

@@ -7,7 +7,6 @@
 package org.openhealthtools.mdht.uml.cda.apitest.domain;
 
 import org.openhealthtools.mdht.uml.cda.Observation;
-
 import org.openhealthtools.mdht.uml.hl7.datatypes.ANY;
 
 /**
@@ -49,13 +48,6 @@ public interface IAgeObservation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Age Observation SHALL contain exactly one [1..1] value (CONF-231).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ANY");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * ANY value = (ANY) eObject;
-	 * getValues().add(value);
-	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -66,11 +58,6 @@ public interface IAgeObservation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Age Observation SHALL contain exactly one [1..1] value (CONF-231).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ANY");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */

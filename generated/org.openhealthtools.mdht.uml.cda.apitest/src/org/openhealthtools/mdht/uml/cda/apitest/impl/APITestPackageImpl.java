@@ -31,7 +31,6 @@ import org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.Severity;
 import org.openhealthtools.mdht.uml.cda.apitest.StatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.impl.DomainPackageImpl;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 
 /**

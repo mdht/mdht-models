@@ -7,9 +7,7 @@
 package org.openhealthtools.mdht.uml.cda.apitest.domain;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
@@ -50,13 +48,6 @@ public interface ITreatingProvider {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Treating Provider SHALL contain at least one [1..*] id (C83-[DE-7.05-CDA-2]).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("II");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * II value = (II) eObject;
-	 * getIds().add(value);
-	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
