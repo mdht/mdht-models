@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.Comment;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
@@ -37,10 +36,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment#toCDAType() <em>To CDA Type</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment#getText() <em>Get Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment#withText() <em>With Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment#withText(org.openhealthtools.mdht.uml.hl7.datatypes.ED) <em>With Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment#withAuthor() <em>With Author</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment#withAuthor(org.openhealthtools.mdht.uml.cda.Author) <em>With Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Comment#validateCommentHasTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Has Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Comment#validateCommentEffectiveTimeWhenAuthorPresent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Effective Time When Author Present</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Comment#validateCommentTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Template Id</em>}</li>
@@ -118,102 +113,6 @@ public class CommentOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_TEXT__EOCL_QRY);
 		return (ED) query.evaluate(comment);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Comment SHALL contain exactly one [1..1] text.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * ED value = (ED) eObject;
-	 * setText(value);
-	 * return value;
-	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  ED withText(Comment comment) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		ED value = (ED) eObject;
-		setText(value);
-		return value;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Comment SHALL contain exactly one [1..1] text.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
-	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IComment withText(Comment comment, ED value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		return this;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Comment MAY contain zero or one [0..1] author, such that.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Author");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * Author value = (Author) eObject;
-	 * getAuthors().add(value);
-	 * return value;
-	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  Author withAuthor(Comment comment) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Author");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		Author value = (Author) eObject;
-		getAuthors().add(value);
-		return value;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Comment MAY contain zero or one [0..1] author, such that.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Author");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
-	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IComment withAuthor(Comment comment, Author value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Author");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		return this;
 	}
 
 	/**

@@ -45,23 +45,11 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#toCDAType() <em>To CDA Type</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#getIds() <em>Get Ids</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#addId() <em>Add Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#addId(org.openhealthtools.mdht.uml.hl7.datatypes.II) <em>Add Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#getCode() <em>Get Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#withCode() <em>With Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#withCode(org.openhealthtools.mdht.uml.hl7.datatypes.CD) <em>With Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#getStatusCode() <em>Get Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#withStatusCode() <em>With Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#withStatusCode(org.openhealthtools.mdht.uml.hl7.datatypes.CS) <em>With Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#getEffectiveTime() <em>Get Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#withEffectiveTime() <em>With Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#withEffectiveTime(org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS) <em>With Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#withEpisodeObservation() <em>With Episode Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#withEpisodeObservation(org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation) <em>With Episode Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#addProblemEntry() <em>Add Problem Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#addProblemEntry(org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry) <em>Add Problem Entry</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#withTreatingProvider() <em>With Treating Provider</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition#withTreatingProvider(org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider) <em>With Treating Provider</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Condition#validateConditionEntryRelationshipRequired(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Relationship Required</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Condition#validateConditionSubjectOfTarget(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Subject Of Target</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Condition#validateConditionContainsProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Contains Problem Observation</em>}</li>
@@ -157,32 +145,6 @@ public class ConditionOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Condition SHALL contain at least one [1..*] id (CONF-148).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("II");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * II value = (II) eObject;
-	 * getIds().add(value);
-	 * return value;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  II addId(Condition condition) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("II");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		II value = (II) eObject;
-		getIds().add(value);
-		return value;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition SHALL contain at least one [1..*] id (CONF-148).
 	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -235,54 +197,6 @@ public class ConditionOperations extends ClinicalStatementOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CODE__EOCL_QRY);
 		return (CD) query.evaluate(condition);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition SHALL contain exactly one [1..1] code/@nullFlavor = "NA" NA (not applicable) (CONF-149).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * CD value = (CD) eObject;
-	 * setCode(value);
-	 * return value;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  CD withCode(Condition condition) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		CD value = (CD) eObject;
-		setCode(value);
-		return value;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition SHALL contain exactly one [1..1] code/@nullFlavor = "NA" NA (not applicable) (CONF-149).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  ICondition withCode(Condition condition, CD value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		return this;
 	}
 
 	/**
@@ -343,54 +257,6 @@ public class ConditionOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition SHALL contain exactly one [1..1] statusCode, which SHALL be selected from ValueSet ConcernEntryStatus STATIC.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CS");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * CS value = (CS) eObject;
-	 * setStatusCode(value);
-	 * return value;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  CS withStatusCode(Condition condition) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CS");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		CS value = (CS) eObject;
-		setStatusCode(value);
-		return value;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition SHALL contain exactly one [1..1] statusCode, which SHALL be selected from ValueSet ConcernEntryStatus STATIC.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CS");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  ICondition withStatusCode(Condition condition, CS value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CS");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		return this;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #getEffectiveTime(Condition) <em>Get Effective Time</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -439,138 +305,6 @@ public class ConditionOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * APITest Condition SHALL contain exactly one [1..1] effectiveTime.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * IVL_TS value = (IVL_TS) eObject;
-	 * setEffectiveTime(value);
-	 * return value;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IVL_TS withEffectiveTime(Condition condition) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		IVL_TS value = (IVL_TS) eObject;
-		setEffectiveTime(value);
-		return value;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition SHALL contain exactly one [1..1] effectiveTime.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  ICondition withEffectiveTime(Condition condition, IVL_TS value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		return this;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition MAY contain exactly one [1..1] entryRelationship (CONF-168), such that Contains exactly one [1..1] Episode Observation (templateId: 2.16.840.1.113883.10.20.1.41).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("EpisodeObservation");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * IEpisodeObservation clinicalStatement = (IEpisodeObservation) eObject;
-	 * clinicalStatement.init();
-	 * addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-	 * return clinicalStatement;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IEpisodeObservation withEpisodeObservation(Condition condition) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("EpisodeObservation");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		IEpisodeObservation clinicalStatement = (IEpisodeObservation) eObject;
-		clinicalStatement.init();
-		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-		return clinicalStatement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition MAY contain exactly one [1..1] entryRelationship (CONF-168), such that Contains exactly one [1..1] Episode Observation (templateId: 2.16.840.1.113883.10.20.1.41).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("EpisodeObservation");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * IEpisodeObservation clinicalStatement = (IEpisodeObservation) eObject;
-	 * clinicalStatement.init();
-	 * addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-	 * return this;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  ICondition withEpisodeObservation(Condition condition, IEpisodeObservation value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("EpisodeObservation");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		IEpisodeObservation clinicalStatement = (IEpisodeObservation) eObject;
-		clinicalStatement.init();
-		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-		return this;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition Contains at least one [1..*] entryRelationship, such that Contains exactly one [1..1] Condition Entry (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.5).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ConditionEntry");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * IProblemEntry clinicalStatement = (IProblemEntry) eObject;
-	 * clinicalStatement.init();
-	 * addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-	 * return clinicalStatement;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IProblemEntry addProblemEntry(Condition condition) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ConditionEntry");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		IProblemEntry clinicalStatement = (IProblemEntry) eObject;
-		clinicalStatement.init();
-		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-		return clinicalStatement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * APITest Condition Contains at least one [1..*] entryRelationship, such that Contains exactly one [1..1] Condition Entry (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.5).
 	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
 	 * <!-- end-model-doc -->
@@ -580,50 +314,6 @@ public class ConditionOperations extends ClinicalStatementOperations {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition SHALL contain zero or one [0..1] performer, such that Contains exactly one [1..1] Treating Provider.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("TreatingProvider");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * 
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  ITreatingProvider withTreatingProvider(Condition condition) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("TreatingProvider");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Condition SHALL contain zero or one [0..1] performer, such that Contains exactly one [1..1] Treating Provider.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("TreatingProvider");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
-	 * @param condition The receiving '<em><b>Condition</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  ICondition withTreatingProvider(Condition condition, ITreatingProvider value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("TreatingProvider");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		return this;
 	}
 
 	/**

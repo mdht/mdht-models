@@ -258,6 +258,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("TreatingProvider");
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
 		
+		return null;
 	}
 
 	/**

@@ -19,7 +19,7 @@
     <packageImport xmi:id="_R7HyoFccEeCzOKs2Ez1M5w">
       <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_CQJZEGCUEeCVapLQyCJtvg" name="StatusObservation" clientDependency="_2EQPVXZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_CQJZEGCUEeCVapLQyCJtvg" name="StatusObservation" clientDependency="_QowDsHsqEeC7cbFADHxY5w">
       <ownedRule xmi:id="_CQJZFWCUEeCVapLQyCJtvg" name="StatusObservationNoAdditionalParticipants" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_CQJZFmCUEeCVapLQyCJtvg">
           <language>OCL</language>
@@ -33,38 +33,38 @@
           <body>not self.text.reference.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2EQPWXZdEeCUbKFG2w1KIw" name="StatusObservationTemplateId" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EQPWnZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qpm_UnsqEeC7cbFADHxY5w" name="StatusObservationTemplateId" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qpm_U3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.57')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2EaAUHZdEeCUbKFG2w1KIw" name="StatusObservationClassCode" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaAUXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QqX0UHsqEeC7cbFADHxY5w" name="StatusObservationClassCode" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QqX0UXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.classCode=vocab::ActClassObservation::OBS</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2EaAUnZdEeCUbKFG2w1KIw" name="StatusObservationMoodCode" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaAU3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QqkBkHsqEeC7cbFADHxY5w" name="StatusObservationMoodCode" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QqkBkXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2EaAVHZdEeCUbKFG2w1KIw" name="StatusObservationStatusCode" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaAVXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QqqIMHsqEeC7cbFADHxY5w" name="StatusObservationStatusCode" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QqqIMXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2EjxYXZdEeCUbKFG2w1KIw" name="StatusObservationValue" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EjxYnZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QqwO4XsqEeC7cbFADHxY5w" name="StatusObservationValue" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QqwO4nsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CE)))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2EjxdHZdEeCUbKFG2w1KIw" name="StatusObservationText" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EjxdXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qq2Ve3sqEeC7cbFADHxY5w" name="StatusObservationText" constrainedElement="_CQJZEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qq2VfHsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
         </specification>
@@ -72,12 +72,12 @@
       <generalization xmi:id="_CQcUAGCUEeCVapLQyCJtvg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
-      <interfaceRealization xmi:id="_2EQPVXZdEeCUbKFG2w1KIw" client="_CQJZEGCUEeCVapLQyCJtvg">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2EQPVHZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2EQPVHZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QowDsHsqEeC7cbFADHxY5w" client="_CQJZEGCUEeCVapLQyCJtvg">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_Qoj2dHsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_Qoj2dHsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EXNMMGCUEeCVapLQyCJtvg" name="Condition" clientDependency="_2Ejxd3ZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EXNMMGCUEeCVapLQyCJtvg" name="Condition" clientDependency="_Qq2VfnsqEeC7cbFADHxY5w">
       <ownedComment xmi:id="_EaM10GCUEeCVapLQyCJtvg">
         <body>A problem is a clinical statement that a clinician is particularly concerned about and wants to track. It has important patient management use cases (e.g. health records often present the problem list as a way of summarizing a patient's medical history).</body>
       </ownedComment>
@@ -129,50 +129,50 @@
           <body>self.performer->exists(p : cda::Performer2 | p.time.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2EjxfHZdEeCUbKFG2w1KIw" name="ConditionTemplateId" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EjxfXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qq2Vg3sqEeC7cbFADHxY5w" name="ConditionTemplateId" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qq2VhHsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.7')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Es7QXZdEeCUbKFG2w1KIw" name="ConditionClassCode" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Es7QnZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QrCisHsqEeC7cbFADHxY5w" name="ConditionClassCode" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QrCisXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2E2sQHZdEeCUbKFG2w1KIw" name="ConditionMoodCode" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2E2sQXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QrCisnsqEeC7cbFADHxY5w" name="ConditionMoodCode" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QrCis3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2E2sUXZdEeCUbKFG2w1KIw" name="ConditionId" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2E2sUnZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QrIpX3sqEeC7cbFADHxY5w" name="ConditionId" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QrIpYHsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2E_2MnZdEeCUbKFG2w1KIw" name="ConditionCodeNullFlavor" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2E_2M3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qra9MnsqEeC7cbFADHxY5w" name="ConditionCodeNullFlavor" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qra9M3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.nullFlavor = vocab::NullFlavor::NA)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2FJnRHZdEeCUbKFG2w1KIw" name="ConditionEffectiveTime" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FJnRXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QrnKdHsqEeC7cbFADHxY5w" name="ConditionEffectiveTime" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QrnKdXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2FmTM3ZdEeCUbKFG2w1KIw" name="ConditionEpisodeObservation" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FmTNHZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QsR40HsqEeC7cbFADHxY5w" name="ConditionEpisodeObservation" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QsR40XsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::EpisodeObservation))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2JKkgHZdEeCUbKFG2w1KIw" name="ConditionTreatingProvider" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JKkgXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qv-tIXsqEeC7cbFADHxY5w" name="ConditionTreatingProvider" constrainedElement="_EXNMMGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qv-tInsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.performer->one(performer : cda::Performer2 | not performer.assignedEntity.oclIsUndefined() and performer.assignedEntity.oclIsKindOf(cda::AssignedEntity))</body>
         </specification>
@@ -180,13 +180,13 @@
       <generalization xmi:id="_EaNc4GCUEeCVapLQyCJtvg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
       </generalization>
-      <interfaceRealization xmi:id="_2Ejxd3ZdEeCUbKFG2w1KIw" client="_EXNMMGCUEeCVapLQyCJtvg">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2EjxdnZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2EjxdnZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_Qq2VfnsqEeC7cbFADHxY5w" client="_EXNMMGCUEeCVapLQyCJtvg">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_Qq2VfXsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_Qq2VfXsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_ncJSMGEvEeCE87GgfH3r_A" name="TreatingProvider" clientDependency="_2FTYM3ZdEeCUbKFG2w1KIw">
-        <ownedRule xmi:id="_2FTYR3ZdEeCUbKFG2w1KIw" name="TreatingProviderId" constrainedElement="_ncJSMGEvEeCE87GgfH3r_A">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FTYSHZdEeCUbKFG2w1KIw">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_ncJSMGEvEeCE87GgfH3r_A" name="TreatingProvider" clientDependency="_QrtRJHsqEeC7cbFADHxY5w">
+        <ownedRule xmi:id="_QrzXsHsqEeC7cbFADHxY5w" name="TreatingProviderId" constrainedElement="_ncJSMGEvEeCE87GgfH3r_A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QrzXsXsqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())</body>
           </specification>
@@ -194,58 +194,58 @@
         <generalization xmi:id="_ncJSMWEvEeCE87GgfH3r_A">
           <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
         </generalization>
-        <interfaceRealization xmi:id="_2FTYM3ZdEeCUbKFG2w1KIw" client="_ncJSMGEvEeCE87GgfH3r_A">
-          <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2FJnaHZdEeCUbKFG2w1KIw"/>
-          <contract href="apitest_domain_Ecore.uml#_2FJnaHZdEeCUbKFG2w1KIw"/>
+        <interfaceRealization xmi:id="_QrtRJHsqEeC7cbFADHxY5w" client="_ncJSMGEvEeCE87GgfH3r_A">
+          <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QrtREnsqEeC7cbFADHxY5w"/>
+          <contract href="apitest_domain_Ecore.uml#_QrtREnsqEeC7cbFADHxY5w"/>
         </interfaceRealization>
       </nestedClassifier>
-      <ownedOperation xmi:id="_2FJnR3ZdEeCUbKFG2w1KIw" name="getEpisodeObservation" isQuery="true" bodyCondition="_2FJnSnZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2FJnTHZdEeCUbKFG2w1KIw" annotatedElement="_2FJnR3ZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QrnKd3sqEeC7cbFADHxY5w" name="getEpisodeObservation" isQuery="true" bodyCondition="_QrnKensqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QrnKfHsqEeC7cbFADHxY5w" annotatedElement="_QrnKd3sqEeC7cbFADHxY5w">
           <body>apitest::Condition::episodeObservation.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2FJnSnZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2FJnR3ZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FJnS3ZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QrnKensqEeC7cbFADHxY5w" name="body" constrainedElement="_QrnKd3sqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QrnKe3sqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IEpisodeObservation))->asSequence()->first().oclAsType(domain::IEpisodeObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2FJnSHZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2FJnRnZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FJnSXZdEeCUbKFG2w1KIw" value="1"/>
+        <ownedParameter xmi:id="_QrnKeHsqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QrnKdnsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QrnKeXsqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_2FJnWXZdEeCUbKFG2w1KIw" name="getProblemEntries" isQuery="true" bodyCondition="_2FJnXHZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2FJnXnZdEeCUbKFG2w1KIw" annotatedElement="_2FJnWXZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QrnKiXsqEeC7cbFADHxY5w" name="getProblemEntries" isQuery="true" bodyCondition="_QrnKjHsqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QrnKjnsqEeC7cbFADHxY5w" annotatedElement="_QrnKiXsqEeC7cbFADHxY5w">
           <body>apitest::Condition::conditionEntry.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2FJnXHZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2FJnWXZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FJnXXZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QrnKjHsqEeC7cbFADHxY5w" name="body" constrainedElement="_QrnKiXsqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QrnKjXsqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IProblemEntry)).oclAsType(domain::IProblemEntry)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2FJnWnZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2FJnWHZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FJnW3ZdEeCUbKFG2w1KIw" value="*"/>
+        <ownedParameter xmi:id="_QrnKinsqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QrnKiHsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QrnKi3sqEeC7cbFADHxY5w" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_2FJnaXZdEeCUbKFG2w1KIw" name="getTreatingProvider" isQuery="true" bodyCondition="_2FJnbHZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2FJnbnZdEeCUbKFG2w1KIw" annotatedElement="_2FJnaXZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QrtRE3sqEeC7cbFADHxY5w" name="getTreatingProvider" isQuery="true" bodyCondition="_QrtRFnsqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QrtRGHsqEeC7cbFADHxY5w" annotatedElement="_QrtRE3sqEeC7cbFADHxY5w">
           <body>apitest::Condition::treatingProvider.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2FJnbHZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2FJnaXZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FJnbXZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QrtRFnsqEeC7cbFADHxY5w" name="body" constrainedElement="_QrtRE3sqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QrtRF3sqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(domain::ITreatingProvider))->asSequence()->first().oclAsType(domain::ITreatingProvider)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2FJnanZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2FJnaHZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FJna3ZdEeCUbKFG2w1KIw" value="1"/>
+        <ownedParameter xmi:id="_QrtRFHsqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QrtREnsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QrtRFXsqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EYCSoGCUEeCVapLQyCJtvg" name="EpisodeObservation" clientDependency="_2FTYSnZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EYCSoGCUEeCVapLQyCJtvg" name="EpisodeObservation" clientDependency="_QrzXs3sqEeC7cbFADHxY5w">
       <ownedComment xmi:id="_EYCSoWCUEeCVapLQyCJtvg">
         <body>Episode observations are used to distinguish among multiple occurrences of a problem or social history item. An episode observation is used to indicate that a problem act represents a new episode, distinct from other episodes of a similar concern.</body>
       </ownedComment>
@@ -261,38 +261,38 @@
           <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, ccd::ProblemAct)->size() >0&#xD;&#xA;  or self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SAS, ccd::SocialHistoryObservation)->size() > 0</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2FTYT3ZdEeCUbKFG2w1KIw" name="EpisodeObservationTemplateId" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FTYUHZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QrzXuHsqEeC7cbFADHxY5w" name="EpisodeObservationTemplateId" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QrzXuXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.41')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2FTYUnZdEeCUbKFG2w1KIw" name="EpisodeObservationClassCode" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FTYU3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qr5eUHsqEeC7cbFADHxY5w" name="EpisodeObservationClassCode" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qr5eUXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.classCode=vocab::ActClassObservation::OBS</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2FciIHZdEeCUbKFG2w1KIw" name="EpisodeObservationMoodCode" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FciIXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qr5eUnsqEeC7cbFADHxY5w" name="EpisodeObservationMoodCode" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qr5eU3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2FciM3ZdEeCUbKFG2w1KIw" name="EpisodeObservationCode" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FciNHZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qr_k-3sqEeC7cbFADHxY5w" name="EpisodeObservationCode" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qr_k_HsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2FciNXZdEeCUbKFG2w1KIw" name="EpisodeObservationStatusCode" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FciNnZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QsFrkHsqEeC7cbFADHxY5w" name="EpisodeObservationStatusCode" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QsFrkXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2FmTMXZdEeCUbKFG2w1KIw" name="EpisodeObservationValue" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FmTMnZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QsLyQXsqEeC7cbFADHxY5w" name="EpisodeObservationValue" constrainedElement="_EYCSoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QsLyQnsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '404684003' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
         </specification>
@@ -300,12 +300,12 @@
       <generalization xmi:id="_EYN40GCUEeCVapLQyCJtvg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
-      <interfaceRealization xmi:id="_2FTYSnZdEeCUbKFG2w1KIw" client="_EYCSoGCUEeCVapLQyCJtvg">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2FJnRnZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2FJnRnZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QrzXs3sqEeC7cbFADHxY5w" client="_EYCSoGCUEeCVapLQyCJtvg">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QrnKdnsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QrnKdnsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EYQVEGCUEeCVapLQyCJtvg" name="ConditionEntry" clientDependency="_2FmTNXZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EYQVEGCUEeCVapLQyCJtvg" name="ConditionEntry" clientDependency="_QsR40nsqEeC7cbFADHxY5w">
       <ownedComment xmi:id="_EaE6AGCUEeCVapLQyCJtvg">
         <body>&lt;p>This section makes use of the linking, severity, clinical status and comment content specifications defined elsewhere in the technical framework. In HL7 RIM parlance, observations about a problem, complaint, symptom, finding, diagnosis, or functional limitation of a patient is the event (moodCode='EVN') of observing (&amp;lt;observation classCode='OBS'>) that problem. The &amp;lt;value> of the observation comes from a controlled vocabulary representing such things. The &amp;lt;code> contained within the &amp;lt;observation> describes the method of determination from yet another controlled vocabulary.&lt;/p>&#xD;
 &#xD;
@@ -357,86 +357,86 @@
           <body>not self.effectiveTime.high.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2FmTOnZdEeCUbKFG2w1KIw" name="ConditionEntryTemplateId" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FmTO3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QsR413sqEeC7cbFADHxY5w" name="ConditionEntryTemplateId" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QsR42HsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.5')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2FvdEHZdEeCUbKFG2w1KIw" name="ConditionEntryMoodCode" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2FvdEXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QseGEHsqEeC7cbFADHxY5w" name="ConditionEntryMoodCode" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QseGEXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2F5OEnZdEeCUbKFG2w1KIw" name="ConditionEntryId" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F5OE3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QskMsnsqEeC7cbFADHxY5w" name="ConditionEntryId" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QskMs3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2F5OJnZdEeCUbKFG2w1KIw" name="ConditionEntryCode" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F5OJ3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QskMxnsqEeC7cbFADHxY5w" name="ConditionEntryCode" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QskMx3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006')))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2F5OOnZdEeCUbKFG2w1KIw" name="ConditionEntryText" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F5OO3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QstWsnsqEeC7cbFADHxY5w" name="ConditionEntryText" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QstWs3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2GC_EHZdEeCUbKFG2w1KIw" name="ConditionEntryStatusCode" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GC_EXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QstWtHsqEeC7cbFADHxY5w" name="ConditionEntryStatusCode" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QstWtXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2GC_JHZdEeCUbKFG2w1KIw" name="ConditionEntryEffectiveTime" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GC_JXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qs3HsnsqEeC7cbFADHxY5w" name="ConditionEntryEffectiveTime" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qs3Hs3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2GMJAHZdEeCUbKFG2w1KIw" name="ConditionEntryValue" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GMJAXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QtARkHsqEeC7cbFADHxY5w" name="ConditionEntryValue" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtARkXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Go1BHZdEeCUbKFG2w1KIw" name="ConditionEntryAgeObservation" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Go1BXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QtmulHsqEeC7cbFADHxY5w" name="ConditionEntryAgeObservation" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtmulXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::AgeObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2G7v9nZdEeCUbKFG2w1KIw" name="ConditionEntrySeverity" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2G7v93ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuDacHsqEeC7cbFADHxY5w" name="ConditionEntrySeverity" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuDacXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::Severity))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2HOq0nZdEeCUbKFG2w1KIw" name="ConditionEntryProblemStatusObservation" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2HOq03ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuMkbXsqEeC7cbFADHxY5w" name="ConditionEntryProblemStatusObservation" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuMkbnsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::ProblemStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2H-RsnZdEeCUbKFG2w1KIw" name="ConditionEntryHealthStatusObservation" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2H-Rs3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuffUHsqEeC7cbFADHxY5w" name="ConditionEntryHealthStatusObservation" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuffUXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::HealthStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2I3pkHZdEeCUbKFG2w1KIw" name="ConditionEntryComment" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2I3pkXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QvF8QHsqEeC7cbFADHxY5w" name="ConditionEntryComment" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QvF8QXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(apitest::Comment) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2JdfcnZdEeCUbKFG2w1KIw" name="ConditionEntryCauseOfDeathObservation" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Jdfc3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QwSPRHsqEeC7cbFADHxY5w" name="ConditionEntryCauseOfDeathObservation" constrainedElement="_EYQVEGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QwSPRXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::CauseOfDeathObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)</body>
         </specification>
@@ -444,108 +444,108 @@
       <generalization xmi:id="_EaE6AWCUEeCVapLQyCJtvg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
-      <interfaceRealization xmi:id="_2FmTNXZdEeCUbKFG2w1KIw" client="_EYQVEGCUEeCVapLQyCJtvg">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2FJnWHZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2FJnWHZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QsR40nsqEeC7cbFADHxY5w" client="_EYQVEGCUEeCVapLQyCJtvg">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QrnKiHsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QrnKiHsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
-      <ownedOperation xmi:id="_2GMJA3ZdEeCUbKFG2w1KIw" name="getAgeAtOnset" isQuery="true" bodyCondition="_2GMJBnZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2GMJCXZdEeCUbKFG2w1KIw" annotatedElement="_2GMJA3ZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QtARk3sqEeC7cbFADHxY5w" name="getAgeAtOnset" isQuery="true" bodyCondition="_QtARlnsqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QtARmXsqEeC7cbFADHxY5w" annotatedElement="_QtARk3sqEeC7cbFADHxY5w">
           <body>apitest::ConditionEntry::ageObservation.</body>
         </ownedComment>
-        <ownedComment xmi:id="_2GMJCHZdEeCUbKFG2w1KIw" annotatedElement="_2GMJA3ZdEeCUbKFG2w1KIw">
+        <ownedComment xmi:id="_QtARmHsqEeC7cbFADHxY5w" annotatedElement="_QtARk3sqEeC7cbFADHxY5w">
           <body>The age of the patient or subject at onset of the condition.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2GMJBnZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2GMJA3ZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GMJB3ZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QtARlnsqEeC7cbFADHxY5w" name="body" constrainedElement="_QtARk3sqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtARl3sqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2GMJBHZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GMJAnZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GMJBXZdEeCUbKFG2w1KIw" value="1"/>
+        <ownedParameter xmi:id="_QtARlHsqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtARknsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QtARlXsqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_2GMJFnZdEeCUbKFG2w1KIw" name="getSeverity" isQuery="true" bodyCondition="_2GMJGXZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2GMJG3ZdEeCUbKFG2w1KIw" annotatedElement="_2GMJFnZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QtARpnsqEeC7cbFADHxY5w" name="getSeverity" isQuery="true" bodyCondition="_QtARqXsqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QtARq3sqEeC7cbFADHxY5w" annotatedElement="_QtARpnsqEeC7cbFADHxY5w">
           <body>apitest::ConditionEntry::severity.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2GMJGXZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2GMJFnZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GMJGnZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QtARqXsqEeC7cbFADHxY5w" name="body" constrainedElement="_QtARpnsqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtARqnsqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ISeverity))->asSequence()->first().oclAsType(domain::ISeverity)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2GMJF3ZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GMJFXZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GMJGHZdEeCUbKFG2w1KIw" value="1"/>
+        <ownedParameter xmi:id="_QtARp3sqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtARpXsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QtARqHsqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_2GMJKHZdEeCUbKFG2w1KIw" name="getProblemStatus" isQuery="true" bodyCondition="_2GMJK3ZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2GMJLXZdEeCUbKFG2w1KIw" annotatedElement="_2GMJKHZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QtARuHsqEeC7cbFADHxY5w" name="getProblemStatus" isQuery="true" bodyCondition="_QtARu3sqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QtARvXsqEeC7cbFADHxY5w" annotatedElement="_QtARuHsqEeC7cbFADHxY5w">
           <body>apitest::ConditionEntry::problemStatusObservation.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2GMJK3ZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2GMJKHZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GMJLHZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QtARu3sqEeC7cbFADHxY5w" name="body" constrainedElement="_QtARuHsqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtARvHsqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IProblemStatusObservation))->asSequence()->first().oclAsType(domain::IProblemStatusObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2GMJKXZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GMJJ3ZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GMJKnZdEeCUbKFG2w1KIw" value="1"/>
+        <ownedParameter xmi:id="_QtARuXsqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtARt3sqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QtARunsqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_2GMJOnZdEeCUbKFG2w1KIw" name="getHealthStatusObservation" isQuery="true" bodyCondition="_2GMJPXZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2GMJP3ZdEeCUbKFG2w1KIw" annotatedElement="_2GMJOnZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QtARynsqEeC7cbFADHxY5w" name="getHealthStatusObservation" isQuery="true" bodyCondition="_QtKCkHsqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QtKCknsqEeC7cbFADHxY5w" annotatedElement="_QtARynsqEeC7cbFADHxY5w">
           <body>apitest::ConditionEntry::healthStatusObservation.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2GMJPXZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2GMJOnZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GMJPnZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QtKCkHsqEeC7cbFADHxY5w" name="body" constrainedElement="_QtARynsqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtKCkXsqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IHealthStatusObservation))->asSequence()->first().oclAsType(domain::IHealthStatusObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2GMJO3ZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GMJOXZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GMJPHZdEeCUbKFG2w1KIw" value="1"/>
+        <ownedParameter xmi:id="_QtARy3sqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtARyXsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QtARzHsqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_2GV6BXZdEeCUbKFG2w1KIw" name="getComments" isQuery="true" bodyCondition="_2GV6CHZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2GV6CnZdEeCUbKFG2w1KIw" annotatedElement="_2GV6BXZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QtKCn3sqEeC7cbFADHxY5w" name="getComments" isQuery="true" bodyCondition="_QtKConsqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QtKCpHsqEeC7cbFADHxY5w" annotatedElement="_QtKCn3sqEeC7cbFADHxY5w">
           <body>apitest::ConditionEntry::comment.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2GV6CHZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2GV6BXZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GV6CXZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QtKConsqEeC7cbFADHxY5w" name="body" constrainedElement="_QtKCn3sqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtKCo3sqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::IComment)).oclAsType(domain::IComment)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2GV6BnZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GV6BHZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GV6B3ZdEeCUbKFG2w1KIw" value="*"/>
+        <ownedParameter xmi:id="_QtKCoHsqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtKCnnsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QtKCoXsqEeC7cbFADHxY5w" value="*"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_2GV6FXZdEeCUbKFG2w1KIw" name="getCauseOfDeath" isQuery="true" bodyCondition="_2GV6GHZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2GV6G3ZdEeCUbKFG2w1KIw" annotatedElement="_2GV6FXZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QtKCr3sqEeC7cbFADHxY5w" name="getCauseOfDeath" isQuery="true" bodyCondition="_QtKCsnsqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QtKCtXsqEeC7cbFADHxY5w" annotatedElement="_QtKCr3sqEeC7cbFADHxY5w">
           <body>apitest::ConditionEntry::causeOfDeathObservation.</body>
         </ownedComment>
-        <ownedComment xmi:id="_2GV6GnZdEeCUbKFG2w1KIw" annotatedElement="_2GV6FXZdEeCUbKFG2w1KIw">
+        <ownedComment xmi:id="_QtKCtHsqEeC7cbFADHxY5w" annotatedElement="_QtKCr3sqEeC7cbFADHxY5w">
           <body>Indicates that this problem was one of the causes of death for the patient or subject of the condition.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2GV6GHZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2GV6FXZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GV6GXZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QtKCsnsqEeC7cbFADHxY5w" name="body" constrainedElement="_QtKCr3sqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtKCs3sqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ICauseOfDeathObservation))->asSequence()->first().oclAsType(domain::ICauseOfDeathObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2GV6FnZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GV6FHZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GV6F3ZdEeCUbKFG2w1KIw" value="1"/>
+        <ownedParameter xmi:id="_QtKCsHsqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtKCrnsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QtKCsXsqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EYoIgGCUEeCVapLQyCJtvg" name="AgeObservation" clientDependency="_2GV6J3ZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EYoIgGCUEeCVapLQyCJtvg" name="AgeObservation" clientDependency="_QtTzkHsqEeC7cbFADHxY5w">
       <ownedComment xmi:id="_EYoIgWCUEeCVapLQyCJtvg">
         <body>A common scenario is that a patient will know the age of a relative when they had a certain condition or when they died, but will not know the actual year (e.g. &quot;grandpa died of a heart attack at the age of 50&quot;). Often times, neither precise dates nor ages are known (e.g. &quot;cousin died of congenital heart disease as an infant&quot;). In all cases, dates and times and ages can be expressed in narrative.</body>
       </ownedComment>
@@ -555,38 +555,38 @@
           <body>not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2GV6LHZdEeCUbKFG2w1KIw" name="AgeObservationTemplateId" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GV6LXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QtTzlXsqEeC7cbFADHxY5w" name="AgeObservationTemplateId" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtTzlnsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.38')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2GfD8HZdEeCUbKFG2w1KIw" name="AgeObservationClassCode" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GfD8XZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QtTzmHsqEeC7cbFADHxY5w" name="AgeObservationClassCode" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtTzmXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.classCode=vocab::ActClassObservation::OBS</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2GfD8nZdEeCUbKFG2w1KIw" name="AgeObservationMoodCode" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GfD83ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qtc9gHsqEeC7cbFADHxY5w" name="AgeObservationMoodCode" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qtc9gXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2GfD9HZdEeCUbKFG2w1KIw" name="AgeObservationCode" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GfD9XZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qtc9gnsqEeC7cbFADHxY5w" name="AgeObservationCode" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qtc9g3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '397659008' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2GfD9nZdEeCUbKFG2w1KIw" name="AgeObservationStatusCode" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GfD93ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qtc9hHsqEeC7cbFADHxY5w" name="AgeObservationStatusCode" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qtc9hXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Go1AnZdEeCUbKFG2w1KIw" name="AgeObservationValue" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Go1A3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QtmuknsqEeC7cbFADHxY5w" name="AgeObservationValue" constrainedElement="_EYoIgGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qtmuk3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)</body>
         </specification>
@@ -594,12 +594,12 @@
       <generalization xmi:id="_EY4nMGCUEeCVapLQyCJtvg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
-      <interfaceRealization xmi:id="_2GV6J3ZdEeCUbKFG2w1KIw" client="_EYoIgGCUEeCVapLQyCJtvg">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GMJAnZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2GMJAnZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QtTzkHsqEeC7cbFADHxY5w" client="_EYoIgGCUEeCVapLQyCJtvg">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtARknsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QtARknsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EY6cYGCUEeCVapLQyCJtvg" name="Severity" clientDependency="_2Go1BnZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EY6cYGCUEeCVapLQyCJtvg" name="Severity" clientDependency="_QtmulnsqEeC7cbFADHxY5w">
       <ownedComment xmi:id="_EY6cYWCUEeCVapLQyCJtvg">
         <body>This specification models a severity observation as a separate observation from the condition. While this model is different from work presently underway by various organizations (i.e., SNOMED, HL7, TermInfo), it is not wholly incompatible with that work. In that work, qualifiers may be used to identify severity in the coded condition observation, and a separate severity observation is no longer necessary. The use of qualifiers is not precluded by this specification. However, to support semantic interoperability between EMR systems using different vocabularies, this specification does require that severity information also be provided in a separate observation. This ensures that all EMR systems have equal access to the information, regardless of the vocabularies they support.</body>
       </ownedComment>
@@ -609,44 +609,44 @@
           <body>not self.text.reference.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Go1C3ZdEeCUbKFG2w1KIw" name="SeverityTemplateId" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Go1DHZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qtmum3sqEeC7cbFADHxY5w" name="SeverityTemplateId" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QtmunHsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.1')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Go1DnZdEeCUbKFG2w1KIw" name="SeverityClassCode" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Go1D3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QtmunnsqEeC7cbFADHxY5w" name="SeverityClassCode" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qtmun3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.classCode=vocab::ActClassObservation::OBS</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Gyl8HZdEeCUbKFG2w1KIw" name="SeverityMoodCode" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Gyl8XZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qtv4cHsqEeC7cbFADHxY5w" name="SeverityMoodCode" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qtv4cXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Gyl8nZdEeCUbKFG2w1KIw" name="SeverityCode" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Gyl83ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qtv4cnsqEeC7cbFADHxY5w" name="SeverityCode" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qtv4c3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'SEV' and value.codeSystem = '2.16.840.1.113883.5.4'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2GymBXZdEeCUbKFG2w1KIw" name="SeverityText" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2GymBnZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qtv4hXsqEeC7cbFADHxY5w" name="SeverityText" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qtv4hnsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2G7v4HZdEeCUbKFG2w1KIw" name="SeverityStatusCode" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2G7v4XZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qt5pcHsqEeC7cbFADHxY5w" name="SeverityStatusCode" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qt5pcXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2G7v9HZdEeCUbKFG2w1KIw" name="SeverityValue" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2G7v9XZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qt5phHsqEeC7cbFADHxY5w" name="SeverityValue" constrainedElement="_EY6cYGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qt5phXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'H' or value.code = 'M' or value.code = 'L')))</body>
         </specification>
@@ -654,68 +654,68 @@
       <generalization xmi:id="_EZJF4GCUEeCVapLQyCJtvg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
-      <interfaceRealization xmi:id="_2Go1BnZdEeCUbKFG2w1KIw" client="_EY6cYGCUEeCVapLQyCJtvg">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GMJFXZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2GMJFXZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QtmulnsqEeC7cbFADHxY5w" client="_EY6cYGCUEeCVapLQyCJtvg">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtARpXsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QtARpXsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EZK7EGCUEeCVapLQyCJtvg" name="ProblemStatusObservation" clientDependency="_2HFg4HZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EZK7EGCUEeCVapLQyCJtvg" name="ProblemStatusObservation" clientDependency="_QuDacnsqEeC7cbFADHxY5w">
       <ownedComment xmi:id="_EZK7EWCUEeCVapLQyCJtvg">
         <body>Any problem or allergy observation may reference a problem status observation. The clinical status observation records information about the current status of the problem or allergy, for example, whether it is active, in remission, resolved, et cetera.</body>
       </ownedComment>
-      <ownedRule xmi:id="_2HFg53ZdEeCUbKFG2w1KIw" name="StatusObservationTemplateId" constrainedElement="_EZK7EGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2HFg6HZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuDaeXsqEeC7cbFADHxY5w" name="StatusObservationTemplateId" constrainedElement="_EZK7EGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuDaensqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.1.1')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2HFg6nZdEeCUbKFG2w1KIw" name="ProblemStatusObservationCode" constrainedElement="_EZK7EGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2HFg63ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuDafHsqEeC7cbFADHxY5w" name="ProblemStatusObservationCode" constrainedElement="_EZK7EGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuDafXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '33999-4' and value.codeSystem = '2.16.840.1.113883.6.1'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2HOq0HZdEeCUbKFG2w1KIw" name="StatusObservationValue" constrainedElement="_EZK7EGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2HOq0XZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuMka3sqEeC7cbFADHxY5w" name="StatusObservationValue" constrainedElement="_EZK7EGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuMkbHsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '55561003' or value.code = '73425007' or value.code = '90734009' or value.code = '7087005' or value.code = '255227004' or value.code = '415684004' or value.code = '410516002' or value.code = '413322009')))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_EZWhQGCUEeCVapLQyCJtvg" general="_CQJZEGCUEeCVapLQyCJtvg"/>
-      <interfaceRealization xmi:id="_2HFg4HZdEeCUbKFG2w1KIw" client="_EZK7EGCUEeCVapLQyCJtvg">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GMJJ3ZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2GMJJ3ZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QuDacnsqEeC7cbFADHxY5w" client="_EZK7EGCUEeCVapLQyCJtvg">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtARt3sqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QtARt3sqEeC7cbFADHxY5w"/>
       </interfaceRealization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EZXvYmCUEeCVapLQyCJtvg" name="HealthStatusObservation" clientDependency="_2HOq1HZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EZXvYmCUEeCVapLQyCJtvg" name="HealthStatusObservation" clientDependency="_QuMkb3sqEeC7cbFADHxY5w">
       <ownedComment xmi:id="_EZXvY2CUEeCVapLQyCJtvg">
         <body>The health status observation records information about the current health status of the patient.</body>
       </ownedComment>
-      <ownedRule xmi:id="_2HOq23ZdEeCUbKFG2w1KIw" name="StatusObservationTemplateId" constrainedElement="_EZXvYmCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2HOq3HZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuMkdnsqEeC7cbFADHxY5w" name="StatusObservationTemplateId" constrainedElement="_EZXvYmCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuMkd3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.1.2')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2HOq3nZdEeCUbKFG2w1KIw" name="HealthStatusObservationCode" constrainedElement="_EZXvYmCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2HOq33ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuWVYXsqEeC7cbFADHxY5w" name="HealthStatusObservationCode" constrainedElement="_EZXvYmCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuWVYnsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '11323-3' and value.codeSystem = '2.16.840.1.113883.6.1'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2H-RsHZdEeCUbKFG2w1KIw" name="StatusObservationValue" constrainedElement="_EZXvYmCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2H-RsXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuWVdHsqEeC7cbFADHxY5w" name="StatusObservationValue" constrainedElement="_EZXvYmCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuWVdXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '81323004' or value.code = '313386006' or value.code = '162467007' or value.code = '161901003' or value.code = '271593001' or value.code = '21134002' or value.code = '161045001' or value.code = '419099009')))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_EZr4cGCUEeCVapLQyCJtvg" general="_CQJZEGCUEeCVapLQyCJtvg"/>
-      <interfaceRealization xmi:id="_2HOq1HZdEeCUbKFG2w1KIw" client="_EZXvYmCUEeCVapLQyCJtvg">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GMJOXZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2GMJOXZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QuMkb3sqEeC7cbFADHxY5w" client="_EZXvYmCUEeCVapLQyCJtvg">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtARyXsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QtARyXsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EZttoGCUEeCVapLQyCJtvg" name="Comment" clientDependency="_2IRzsHZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EZttoGCUEeCVapLQyCJtvg" name="Comment" clientDependency="_QuffUnsqEeC7cbFADHxY5w">
       <ownedComment xmi:id="_EaABgWCUEeCVapLQyCJtvg">
         <body>&lt;p>This entry allows for a comment to be supplied with each entry. For CDA this structure is usually included in the target act using the &amp;lt;entryRelationship> element defined in the CDA Schema, but can also be used in the &amp;lt;component> element when the comment appears within an &amp;lt;organizer>.&lt;/p></body>
       </ownedComment>
@@ -733,38 +733,38 @@
           <body>not self.author->isEmpty() implies not self.effectiveTime.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2IRztXZdEeCUbKFG2w1KIw" name="CommentTemplateId" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2IRztnZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuffV3sqEeC7cbFADHxY5w" name="CommentTemplateId" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuffWHsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.11')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Ia9oHZdEeCUbKFG2w1KIw" name="CommentClassCode" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Ia9oXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QupQUHsqEeC7cbFADHxY5w" name="CommentClassCode" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QupQUXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Ia9onZdEeCUbKFG2w1KIw" name="CommentMoodCode" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Ia9o3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QupQUnsqEeC7cbFADHxY5w" name="CommentMoodCode" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QupQU3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Ia9pHZdEeCUbKFG2w1KIw" name="CommentCode" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2Ia9pXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QupQVHsqEeC7cbFADHxY5w" name="CommentCode" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QupQVXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '48767-8' and value.codeSystem = '2.16.840.1.113883.6.1'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2IkusXZdEeCUbKFG2w1KIw" name="CommentText" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2IkusnZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuzBUXsqEeC7cbFADHxY5w" name="CommentText" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuzBUnsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2Ikus3ZdEeCUbKFG2w1KIw" name="CommentStatusCode" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2IkutHZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QuzBU3sqEeC7cbFADHxY5w" name="CommentStatusCode" constrainedElement="_EZttoGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuzBVHsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
         </specification>
@@ -772,50 +772,50 @@
       <generalization xmi:id="_EaABgmCUEeCVapLQyCJtvg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
       </generalization>
-      <interfaceRealization xmi:id="_2IRzsHZdEeCUbKFG2w1KIw" client="_EZttoGCUEeCVapLQyCJtvg">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GV6BHZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2GV6BHZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QuffUnsqEeC7cbFADHxY5w" client="_EZttoGCUEeCVapLQyCJtvg">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtKCnnsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QtKCnnsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
-      <ownedOperation xmi:id="_2IkutXZdEeCUbKFG2w1KIw" name="getAuthor" isQuery="true" bodyCondition="_2IkuuHZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2IkuunZdEeCUbKFG2w1KIw" annotatedElement="_2IkutXZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QuzBVXsqEeC7cbFADHxY5w" name="getAuthor" isQuery="true" bodyCondition="_QuzBWHsqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QuzBWnsqEeC7cbFADHxY5w" annotatedElement="_QuzBVXsqEeC7cbFADHxY5w">
           <body>cda::Act::author.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2IkuuHZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2IkutXZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2IkuuXZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QuzBWHsqEeC7cbFADHxY5w" name="body" constrainedElement="_QuzBVXsqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QuzBWXsqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))->asSequence()->first().oclAsType(cda::Author)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2IkutnZdEeCUbKFG2w1KIw" direction="return">
+        <ownedParameter xmi:id="_QuzBVnsqEeC7cbFADHxY5w" direction="return">
           <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Ikut3ZdEeCUbKFG2w1KIw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QuzBV3sqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EaOrAGCUEeCVapLQyCJtvg" name="ProblemListSection" clientDependency="_2I3pk3ZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EaOrAGCUEeCVapLQyCJtvg" name="ProblemListSection" clientDependency="_QvF8Q3sqEeC7cbFADHxY5w">
       <ownedComment xmi:id="_EaYcAGCUEeCVapLQyCJtvg">
         <body>This section lists and describes all relevant clinical problems at the time the summary is generated. At a minimum, all pertinent current and historical problems should be listed. CDA R2 represents problems as Observations.</body>
       </ownedComment>
-      <ownedRule xmi:id="_2I3pmHZdEeCUbKFG2w1KIw" name="ProblemListSectionTemplateId" constrainedElement="_EaOrAGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2I3pmXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QvF8SHsqEeC7cbFADHxY5w" name="ProblemListSectionTemplateId" constrainedElement="_EaOrAGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QvY3MHsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.103')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2JBakHZdEeCUbKFG2w1KIw" name="ProblemListSectionCode" constrainedElement="_EaOrAGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JBakXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QvY3MnsqEeC7cbFADHxY5w" name="ProblemListSectionCode" constrainedElement="_EaOrAGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QvY3M3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (&#xD;&#xA;value.code = '11450-4' and value.codeSystem = '2.16.840.1.113883.6.1'))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2JBao3ZdEeCUbKFG2w1KIw" name="ProblemListSectionTitle" constrainedElement="_EaOrAGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JBapHZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qv1jMXsqEeC7cbFADHxY5w" name="ProblemListSectionTitle" constrainedElement="_EaOrAGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qv1jMnsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2JBatnZdEeCUbKFG2w1KIw" name="ProblemListSectionText" constrainedElement="_EaOrAGCUEeCVapLQyCJtvg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JBat3ZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_Qv-tEHsqEeC7cbFADHxY5w" name="ProblemListSectionText" constrainedElement="_EaOrAGCUEeCVapLQyCJtvg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qv-tEXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>not self.text.oclIsUndefined()</body>
         </specification>
@@ -823,41 +823,41 @@
       <generalization xmi:id="_EaYcAmCUEeCVapLQyCJtvg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
-      <interfaceRealization xmi:id="_2I3pk3ZdEeCUbKFG2w1KIw" client="_EaOrAGCUEeCVapLQyCJtvg">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2I3pknZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2I3pknZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QvF8Q3sqEeC7cbFADHxY5w" client="_EaOrAGCUEeCVapLQyCJtvg">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QvF8QnsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QvF8QnsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
-      <ownedOperation xmi:id="_2JBauHZdEeCUbKFG2w1KIw" name="getConditions" isQuery="true" bodyCondition="_2JBau3ZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2JBavXZdEeCUbKFG2w1KIw" annotatedElement="_2JBauHZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_Qv-tEnsqEeC7cbFADHxY5w" name="getConditions" isQuery="true" bodyCondition="_Qv-tFXsqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_Qv-tF3sqEeC7cbFADHxY5w" annotatedElement="_Qv-tEnsqEeC7cbFADHxY5w">
           <body>apitest::ProblemListSection::condition.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2JBau3ZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2JBauHZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JBavHZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_Qv-tFXsqEeC7cbFADHxY5w" name="body" constrainedElement="_Qv-tEnsqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qv-tFnsqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::ICondition)).oclAsType(domain::ICondition)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2JBauXZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2EjxdnZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2JBaunZdEeCUbKFG2w1KIw" value="*"/>
+        <ownedParameter xmi:id="_Qv-tE3sqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_Qq2VfXsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qv-tFHsqEeC7cbFADHxY5w" value="*"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_szdjEGFZEeCE87GgfH3r_A" name="FamilyHistoryObservation" clientDependency="_2JKkg3ZdEeCUbKFG2w1KIw">
-      <ownedRule xmi:id="_2JKkh3ZdEeCUbKFG2w1KIw" name="FamilyHistoryObservationTemplateId" constrainedElement="_szdjEGFZEeCE87GgfH3r_A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JKkiHZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_szdjEGFZEeCE87GgfH3r_A" name="FamilyHistoryObservation" clientDependency="_Qv-tJHsqEeC7cbFADHxY5w">
+      <ownedRule xmi:id="_Qv-tKHsqEeC7cbFADHxY5w" name="FamilyHistoryObservationTemplateId" constrainedElement="_szdjEGFZEeCE87GgfH3r_A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qv-tKXsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.22')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2JKkmXZdEeCUbKFG2w1KIw" name="FamilyHistoryObservationId" constrainedElement="_szdjEGFZEeCE87GgfH3r_A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JKkmnZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QwIeH3sqEeC7cbFADHxY5w" name="FamilyHistoryObservationId" constrainedElement="_szdjEGFZEeCE87GgfH3r_A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QwIeIHsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_2JUVgHZdEeCUbKFG2w1KIw" name="FamilyHistoryObservationStatusCode" constrainedElement="_szdjEGFZEeCE87GgfH3r_A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JUVgXZdEeCUbKFG2w1KIw">
+      <ownedRule xmi:id="_QwIeMnsqEeC7cbFADHxY5w" name="FamilyHistoryObservationStatusCode" constrainedElement="_szdjEGFZEeCE87GgfH3r_A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QwIeM3sqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
         </specification>
@@ -865,89 +865,89 @@
       <generalization xmi:id="_szk30GFZEeCE87GgfH3r_A">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
-      <interfaceRealization xmi:id="_2JKkg3ZdEeCUbKFG2w1KIw" client="_szdjEGFZEeCE87GgfH3r_A">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2JKkgnZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2JKkgnZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_Qv-tJHsqEeC7cbFADHxY5w" client="_szdjEGFZEeCE87GgfH3r_A">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_Qv-tI3sqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_Qv-tI3sqEeC7cbFADHxY5w"/>
       </interfaceRealization>
-      <ownedOperation xmi:id="_2JUVgnZdEeCUbKFG2w1KIw" name="getAgeObservation" isQuery="true" bodyCondition="_2JUVhXZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2JUVh3ZdEeCUbKFG2w1KIw" annotatedElement="_2JUVgnZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QwIeNHsqEeC7cbFADHxY5w" name="getAgeObservation" isQuery="true" bodyCondition="_QwIeN3sqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QwIeOXsqEeC7cbFADHxY5w" annotatedElement="_QwIeNHsqEeC7cbFADHxY5w">
           <body>apitest::FamilyHistoryObservation::ageObservation.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2JUVhXZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2JUVgnZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JUVhnZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QwIeN3sqEeC7cbFADHxY5w" name="body" constrainedElement="_QwIeNHsqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QwIeOHsqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2JUVg3ZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GMJAnZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2JUVhHZdEeCUbKFG2w1KIw" value="1"/>
+        <ownedParameter xmi:id="_QwIeNXsqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtARknsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QwIeNnsqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_vBHtcGFZEeCE87GgfH3r_A" name="CauseOfDeathObservation" clientDependency="_2JUVk3ZdEeCUbKFG2w1KIw">
-      <ownedRule xmi:id="_2JUVmXZdEeCUbKFG2w1KIw" name="FamilyHistoryObservationTemplateId" constrainedElement="_vBHtcGFZEeCE87GgfH3r_A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JUVmnZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_vBHtcGFZEeCE87GgfH3r_A" name="CauseOfDeathObservation" clientDependency="_QwSPGXsqEeC7cbFADHxY5w">
+      <ownedRule xmi:id="_QwSPH3sqEeC7cbFADHxY5w" name="FamilyHistoryObservationTemplateId" constrainedElement="_vBHtcGFZEeCE87GgfH3r_A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QwSPIHsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.42')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_vBJioGFZEeCE87GgfH3r_A" general="_szdjEGFZEeCE87GgfH3r_A"/>
-      <interfaceRealization xmi:id="_2JUVk3ZdEeCUbKFG2w1KIw" client="_vBHtcGFZEeCE87GgfH3r_A">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GV6FHZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2GV6FHZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QwSPGXsqEeC7cbFADHxY5w" client="_vBHtcGFZEeCE87GgfH3r_A">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtKCrnsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QtKCrnsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
-      <ownedOperation xmi:id="_2JUVrXZdEeCUbKFG2w1KIw" name="getAgeAtDeath" isQuery="true" bodyCondition="_2JUVsHZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2JUVsnZdEeCUbKFG2w1KIw" annotatedElement="_2JUVrXZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QwSPM3sqEeC7cbFADHxY5w" name="getAgeAtDeath" isQuery="true" bodyCondition="_QwSPNnsqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QwSPOHsqEeC7cbFADHxY5w" annotatedElement="_QwSPM3sqEeC7cbFADHxY5w">
           <body>apitest::CauseOfDeathObservation::ageObservation.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2JUVsHZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2JUVrXZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JUVsXZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QwSPNnsqEeC7cbFADHxY5w" name="body" constrainedElement="_QwSPM3sqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QwSPN3sqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2JUVrnZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2GMJAnZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2JUVr3ZdEeCUbKFG2w1KIw" value="1"/>
+        <ownedParameter xmi:id="_QwSPNHsqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QtARknsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QwSPNXsqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_QBOBkGFrEeCrVK9xDfPNKw" name="PatientSummary" clientDependency="_2JdfdXZdEeCUbKFG2w1KIw">
-      <ownedRule xmi:id="_2JnQiHZdEeCUbKFG2w1KIw" name="PatientSummaryProblemListSection" constrainedElement="_QBOBkGFrEeCrVK9xDfPNKw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JnQiXZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_QBOBkGFrEeCrVK9xDfPNKw" name="PatientSummary" clientDependency="_QwbZAXsqEeC7cbFADHxY5w">
+      <ownedRule xmi:id="_QwlKEXsqEeC7cbFADHxY5w" name="PatientSummaryProblemListSection" constrainedElement="_QBOBkGFrEeCrVK9xDfPNKw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QwlKEnsqEeC7cbFADHxY5w">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(apitest::ProblemListSection))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_QBOBkWFrEeCrVK9xDfPNKw" general="_YVCR4GFrEeCrVK9xDfPNKw"/>
-      <interfaceRealization xmi:id="_2JdfdXZdEeCUbKFG2w1KIw" client="_QBOBkGFrEeCrVK9xDfPNKw">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2JdfdHZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2JdfdHZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QwbZAXsqEeC7cbFADHxY5w" client="_QBOBkGFrEeCrVK9xDfPNKw">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QwbZAHsqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QwbZAHsqEeC7cbFADHxY5w"/>
       </interfaceRealization>
-      <ownedOperation xmi:id="_2JdfjHZdEeCUbKFG2w1KIw" name="getProblemListSection" isQuery="true" bodyCondition="_2Jdfj3ZdEeCUbKFG2w1KIw">
-        <ownedComment xmi:id="_2JdfkXZdEeCUbKFG2w1KIw" annotatedElement="_2JdfjHZdEeCUbKFG2w1KIw">
+      <ownedOperation xmi:id="_QwbZGHsqEeC7cbFADHxY5w" name="getProblemListSection" isQuery="true" bodyCondition="_QwbZG3sqEeC7cbFADHxY5w">
+        <ownedComment xmi:id="_QwbZHXsqEeC7cbFADHxY5w" annotatedElement="_QwbZGHsqEeC7cbFADHxY5w">
           <body>apitest::PatientSummary::problemListSection.</body>
         </ownedComment>
-        <ownedRule xmi:id="_2Jdfj3ZdEeCUbKFG2w1KIw" name="body" constrainedElement="_2JdfjHZdEeCUbKFG2w1KIw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_2JdfkHZdEeCUbKFG2w1KIw">
+        <ownedRule xmi:id="_QwbZG3sqEeC7cbFADHxY5w" name="body" constrainedElement="_QwbZGHsqEeC7cbFADHxY5w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_QwbZHHsqEeC7cbFADHxY5w">
             <language>OCL</language>
             <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::IProblemListSection))->asSequence()->first().oclAsType(domain::IProblemListSection)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_2JdfjXZdEeCUbKFG2w1KIw" direction="return">
-          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2I3pknZdEeCUbKFG2w1KIw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2JdfjnZdEeCUbKFG2w1KIw" value="1"/>
+        <ownedParameter xmi:id="_QwbZGXsqEeC7cbFADHxY5w" direction="return">
+          <type xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QvF8QnsqEeC7cbFADHxY5w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QwbZGnsqEeC7cbFADHxY5w" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_YVCR4GFrEeCrVK9xDfPNKw" name="GeneralHeaderConstraints" clientDependency="_2JdfnXZdEeCUbKFG2w1KIw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_YVCR4GFrEeCrVK9xDfPNKw" name="GeneralHeaderConstraints" clientDependency="_QwbZKXsqEeC7cbFADHxY5w">
       <generalization xmi:id="_YVC48GFrEeCrVK9xDfPNKw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
       </generalization>
-      <interfaceRealization xmi:id="_2JdfnXZdEeCUbKFG2w1KIw" client="_YVCR4GFrEeCrVK9xDfPNKw">
-        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_2Jdfd3ZdEeCUbKFG2w1KIw"/>
-        <contract href="apitest_domain_Ecore.uml#_2Jdfd3ZdEeCUbKFG2w1KIw"/>
+      <interfaceRealization xmi:id="_QwbZKXsqEeC7cbFADHxY5w" client="_YVCR4GFrEeCrVK9xDfPNKw">
+        <supplier xmi:type="uml:Interface" href="apitest_domain_Ecore.uml#_QwbZA3sqEeC7cbFADHxY5w"/>
+        <contract href="apitest_domain_Ecore.uml#_QwbZA3sqEeC7cbFADHxY5w"/>
       </interfaceRealization>
     </packagedElement>
     <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
@@ -956,8 +956,8 @@
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-    <profileApplication xmi:id="_2EHFYHZdEeCUbKFG2w1KIw">
-      <eAnnotations xmi:id="_2EHFYXZdEeCUbKFG2w1KIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_Qn5IEHsqEeC7cbFADHxY5w">
+      <eAnnotations xmi:id="_Qn_OsHsqEeC7cbFADHxY5w" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
@@ -1045,50 +1045,50 @@
   <CDA:ConstraintValidation xmi:id="_EYuPIWCUEeCVapLQyCJtvg" severity="WARNING" base_Constraint="_EYoIgmCUEeCVapLQyCJtvg">
     <ruleId>CONF-219</ruleId>
   </CDA:ConstraintValidation>
-  <Ecore:EPackage xmi:id="_2EHFYnZdEeCUbKFG2w1KIw" base_Package="_qQyD8jxVEd6JwqSGecoePg" packageName="apitest" nsPrefix="apitest" nsURI="http://www.openhealthtools.org/mdht/uml/cda/apitest" basePackage="org.openhealthtools.mdht.uml.cda" prefix="APITest"/>
-  <Ecore:EClass xmi:id="_2EQPW3ZdEeCUbKFG2w1KIw" base_Class="_CQJZEGCUEeCVapLQyCJtvg">
+  <Ecore:EPackage xmi:id="_QoRikHsqEeC7cbFADHxY5w" base_Package="_qQyD8jxVEd6JwqSGecoePg" packageName="apitest" nsPrefix="apitest" nsURI="http://www.openhealthtools.org/mdht/uml/cda/apitest" basePackage="org.openhealthtools.mdht.uml.cda" prefix="APITest"/>
+  <Ecore:EClass xmi:id="_Qp5TMHsqEeC7cbFADHxY5w" base_Class="_CQJZEGCUEeCVapLQyCJtvg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.1.57' constraints.validation.error='StatusObservationTemplateId StatusObservationNoAdditionalParticipants StatusObservationHasTextReference StatusObservationClassCode StatusObservationMoodCode StatusObservationStatusCode StatusObservationValue StatusObservationText' classCode='OBS' moodCode='EVN'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_2Es7QHZdEeCUbKFG2w1KIw" base_Class="_EXNMMGCUEeCVapLQyCJtvg">
+  <Ecore:EClass xmi:id="_Qq2VhXsqEeC7cbFADHxY5w" base_Class="_EXNMMGCUEeCVapLQyCJtvg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.7' code.nullFlavor='NA' constraints.validation.error='ConditionTemplateId ConditionEntryRelationshipRequired ConditionEffectiveTimeLowHigh ConditionClassCode ConditionMoodCode ConditionId ConditionCodeNullFlavor ConditionEffectiveTime ConditionTreatingProvider' constraints.validation.warning='ConditionSubjectOfTarget ConditionContainsProblemObservation ConditionContainsAlertObservation' classCode='ACT' constraints.validation.info='ConditionContainsPatientAwareness ConditionHasProviderTreatmentTime ConditionEpisodeObservation' moodCode='EVN'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_2FTYSXZdEeCUbKFG2w1KIw" base_Class="_ncJSMGEvEeCE87GgfH3r_A">
+  <Ecore:EClass xmi:id="_QrzXsnsqEeC7cbFADHxY5w" base_Class="_ncJSMGEvEeCE87GgfH3r_A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TreatingProviderId'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_2FTYUXZdEeCUbKFG2w1KIw" base_Class="_EYCSoGCUEeCVapLQyCJtvg">
+  <Ecore:EClass xmi:id="_QrzXunsqEeC7cbFADHxY5w" base_Class="_EYCSoGCUEeCVapLQyCJtvg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.1.41' constraints.validation.error='EpisodeObservationTemplateId EpisodeObservationOneEntryRelationshipSUBJ EpisodeObservationClassCode EpisodeObservationMoodCode EpisodeObservationStatusCode' code.code='ASSERTION' constraints.validation.info='EpisodeObservationExistsEntryRelationshipSAS' value.displayName='Clinical finding' statusCode.code='completed' value.code='404684003' code.codeSystemName='HL7ActCode' constraints.validation.warning='EpisodeObservationCode EpisodeObservationValue' classCode='OBS' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_2FmTPHZdEeCUbKFG2w1KIw" base_Class="_EYQVEGCUEeCVapLQyCJtvg">
+  <Ecore:EClass xmi:id="_QsR42XsqEeC7cbFADHxY5w" base_Class="_EYQVEGCUEeCVapLQyCJtvg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5' constraints.validation.error='ConditionEntryTemplateId ConditionEntryInformationSource ConditionEntryHasTextReference ConditionEntryCommentInversionInd ConditionEntryMoodCode ConditionEntryId ConditionEntryText ConditionEntryStatusCode ConditionEntryValue' code.codeSystemName='SNOMEDCT' constraints.validation.warning='ConditionEntryHasOnsetDate ConditionEntryHasResolutionDate ConditionEntryHasUnknownResolutionDate ConditionEntryCode ConditionEntryEffectiveTime' classCode='OBS' moodCode='EVN' constraints.validation.info='ConditionEntryContainsPatientAwareness ConditionEntryAgeObservation ConditionEntrySeverity ConditionEntryProblemStatusObservation ConditionEntryHealthStatusObservation ConditionEntryComment ConditionEntryCauseOfDeathObservation' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_2GV6LnZdEeCUbKFG2w1KIw" base_Class="_EYoIgGCUEeCVapLQyCJtvg">
+  <Ecore:EClass xmi:id="_QtTzl3sqEeC7cbFADHxY5w" base_Class="_EYoIgGCUEeCVapLQyCJtvg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' code.displayName='Age' templateId.root='2.16.840.1.113883.10.20.1.38' constraints.validation.error='AgeObservationTemplateId AgeObservationClassCode AgeObservationMoodCode AgeObservationCode AgeObservationStatusCode AgeObservationValue' code.codeSystemName='SNOMEDCT' classCode='OBS' constraints.validation.warning='AgeObservationRelatedSubjectBirthTime' code.code='397659008' moodCode='EVN'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_2Go1DXZdEeCUbKFG2w1KIw" base_Class="_EY6cYGCUEeCVapLQyCJtvg">
+  <Ecore:EClass xmi:id="_QtmunXsqEeC7cbFADHxY5w" base_Class="_EY6cYGCUEeCVapLQyCJtvg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SeverityObservation' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='Severity observation' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.1' constraints.validation.error='SeverityTemplateId SeverityHasTextReference SeverityClassCode SeverityMoodCode SeverityCode SeverityText SeverityStatusCode SeverityValue' code.codeSystemName='HL7ActCode' classCode='OBS' code.code='SEV' moodCode='EVN' value.codeSystem='2.16.840.1.113883.5.1063'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_2HFg5nZdEeCUbKFG2w1KIw" base_Generalization="_EZWhQGCUEeCVapLQyCJtvg"/>
-  <Ecore:EClass xmi:id="_2HFg6XZdEeCUbKFG2w1KIw" base_Class="_EZK7EGCUEeCVapLQyCJtvg">
+  <CDA:ConformsTo xmi:id="_QuDaeHsqEeC7cbFADHxY5w" base_Generalization="_EZWhQGCUEeCVapLQyCJtvg"/>
+  <Ecore:EClass xmi:id="_QuDae3sqEeC7cbFADHxY5w" base_Class="_EZK7EGCUEeCVapLQyCJtvg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.1.1' code.displayName='Status' constraints.validation.error='ProblemStatusObservationTemplateId ProblemStatusObservationCode StatusObservationValue' code.codeSystemName='LOINC' code.code='33999-4' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_2HOq2nZdEeCUbKFG2w1KIw" base_Generalization="_EZr4cGCUEeCVapLQyCJtvg"/>
-  <Ecore:EClass xmi:id="_2HOq3XZdEeCUbKFG2w1KIw" base_Class="_EZXvYmCUEeCVapLQyCJtvg">
+  <CDA:ConformsTo xmi:id="_QuMkdXsqEeC7cbFADHxY5w" base_Generalization="_EZr4cGCUEeCVapLQyCJtvg"/>
+  <Ecore:EClass xmi:id="_QuWVYHsqEeC7cbFADHxY5w" base_Class="_EZXvYmCUEeCVapLQyCJtvg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.1.2' code.displayName='Health status' constraints.validation.error='HealthStatusObservationTemplateId HealthStatusObservationCode StatusObservationValue' code.codeSystemName='LOINC' code.code='11323-3' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_2IRzt3ZdEeCUbKFG2w1KIw" base_Class="_EZttoGCUEeCVapLQyCJtvg">
+  <Ecore:EClass xmi:id="_QuffWXsqEeC7cbFADHxY5w" base_Class="_EZttoGCUEeCVapLQyCJtvg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Annotation comment' templateId.root='2.16.840.1.113883.3.88.11.83.11' constraints.validation.error='CommentTemplateId CommentHasTextReference CommentEffectiveTimeWhenAuthorPresent CommentClassCode CommentMoodCode CommentCode CommentText CommentStatusCode' code.codeSystemName='LOINC' classCode='ACT' code.code='48767-8' moodCode='EVN'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_2I3pmnZdEeCUbKFG2w1KIw" base_Class="_EaOrAGCUEeCVapLQyCJtvg">
+  <Ecore:EClass xmi:id="_QvY3MXsqEeC7cbFADHxY5w" base_Class="_EaOrAGCUEeCVapLQyCJtvg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.3.88.11.83.103' code.displayName='Problem list' constraints.validation.error='ProblemListSectionTemplateId ProblemListSectionCode ProblemListSectionTitle ProblemListSectionText' code.codeSystemName='LOINC' code.code='11450-4'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_2JKkiXZdEeCUbKFG2w1KIw" base_Class="_szdjEGFZEeCE87GgfH3r_A">
+  <Ecore:EClass xmi:id="_Qv-tKnsqEeC7cbFADHxY5w" base_Class="_szdjEGFZEeCE87GgfH3r_A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.1.22' constraints.validation.error='FamilyHistoryObservationTemplateId FamilyHistoryObservationId FamilyHistoryObservationStatusCode'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_2JUVmHZdEeCUbKFG2w1KIw" base_Generalization="_vBJioGFZEeCE87GgfH3r_A"/>
-  <Ecore:EClass xmi:id="_2JUVm3ZdEeCUbKFG2w1KIw" base_Class="_vBHtcGFZEeCE87GgfH3r_A">
+  <CDA:ConformsTo xmi:id="_QwSPHnsqEeC7cbFADHxY5w" base_Generalization="_vBJioGFZEeCE87GgfH3r_A"/>
+  <Ecore:EClass xmi:id="_QwSPIXsqEeC7cbFADHxY5w" base_Class="_vBHtcGFZEeCE87GgfH3r_A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.42' constraints.validation.error='CauseOfDeathObservationTemplateId'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_2JnQinZdEeCUbKFG2w1KIw" base_Class="_QBOBkGFrEeCrVK9xDfPNKw">
+  <Ecore:EClass xmi:id="_QwlKE3sqEeC7cbFADHxY5w" base_Class="_QBOBkGFrEeCrVK9xDfPNKw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PatientSummaryProblemListSection'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

@@ -41,13 +41,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation#toCDAType() <em>To CDA Type</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation#getIds() <em>Get Ids</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation#addId() <em>Add Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation#addId(org.openhealthtools.mdht.uml.hl7.datatypes.II) <em>Add Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation#getCode() <em>Get Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation#withCode() <em>With Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation#withCode(org.openhealthtools.mdht.uml.hl7.datatypes.CD) <em>With Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation#withAgeObservation() <em>With Age Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation#withAgeObservation(org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation) <em>With Age Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.FamilyHistoryObservation#validateFamilyHistoryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.FamilyHistoryObservation#validateFamilyHistoryObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.FamilyHistoryObservation#validateFamilyHistoryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Status Code</em>}</li>
@@ -129,32 +124,6 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Family History Observation SHALL contain at least one [1..*] id.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("II");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * II value = (II) eObject;
-	 * getIds().add(value);
-	 * return value;
-	 * @param familyHistoryObservation The receiving '<em><b>Family History Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  II addId(FamilyHistoryObservation familyHistoryObservation) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("II");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		II value = (II) eObject;
-		getIds().add(value);
-		return value;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Family History Observation SHALL contain at least one [1..*] id.
 	 * @param familyHistoryObservation The receiving '<em><b>Family History Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -207,110 +176,6 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CODE__EOCL_QRY);
 		return (CD) query.evaluate(familyHistoryObservation);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Family History Observation Contains exactly one [1..1] code.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * CD value = (CD) eObject;
-	 * setCode(value);
-	 * return value;
-	 * @param familyHistoryObservation The receiving '<em><b>Family History Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  CD withCode(FamilyHistoryObservation familyHistoryObservation) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		CD value = (CD) eObject;
-		setCode(value);
-		return value;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Family History Observation Contains exactly one [1..1] code.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
-	 * @param familyHistoryObservation The receiving '<em><b>Family History Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IFamilyHistoryObservation withCode(FamilyHistoryObservation familyHistoryObservation, CD value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		return this;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Family History Observation Contains zero or one [0..1] entryRelationship, such that Contains exactly one [1..1] Age Observation (templateId: 2.16.840.1.113883.10.20.1.38).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * IAgeObservation clinicalStatement = (IAgeObservation) eObject;
-	 * clinicalStatement.init();
-	 * addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-	 * return clinicalStatement;
-	 * @param familyHistoryObservation The receiving '<em><b>Family History Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IAgeObservation withAgeObservation(FamilyHistoryObservation familyHistoryObservation) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		IAgeObservation clinicalStatement = (IAgeObservation) eObject;
-		clinicalStatement.init();
-		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-		return clinicalStatement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Family History Observation Contains zero or one [0..1] entryRelationship, such that Contains exactly one [1..1] Age Observation (templateId: 2.16.840.1.113883.10.20.1.38).
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * IAgeObservation clinicalStatement = (IAgeObservation) eObject;
-	 * clinicalStatement.init();
-	 * addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-	 * return this;
-	 * @param familyHistoryObservation The receiving '<em><b>Family History Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IFamilyHistoryObservation withAgeObservation(FamilyHistoryObservation familyHistoryObservation, IAgeObservation value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		IAgeObservation clinicalStatement = (IAgeObservation) eObject;
-		clinicalStatement.init();
-		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
-		return this;
 	}
 
 	/**

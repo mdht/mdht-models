@@ -8,7 +8,6 @@ package org.openhealthtools.mdht.uml.cda.apitest.domain;
 
 import org.openhealthtools.mdht.uml.cda.Act;
 import org.openhealthtools.mdht.uml.cda.Author;
-
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
@@ -49,13 +48,6 @@ public interface IComment {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Comment SHALL contain exactly one [1..1] text.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * ED value = (ED) eObject;
-	 * setText(value);
-	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -66,11 +58,6 @@ public interface IComment {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Comment SHALL contain exactly one [1..1] text.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -81,13 +68,6 @@ public interface IComment {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Comment MAY contain zero or one [0..1] author, such that.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Author");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * Author value = (Author) eObject;
-	 * getAuthors().add(value);
-	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -98,11 +78,6 @@ public interface IComment {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Comment MAY contain zero or one [0..1] author, such that.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Author");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */

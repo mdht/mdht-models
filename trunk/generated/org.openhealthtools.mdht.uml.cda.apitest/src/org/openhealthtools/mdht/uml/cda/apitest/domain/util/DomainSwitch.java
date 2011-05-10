@@ -10,8 +10,22 @@ import java.util.List;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.uml.cda.apitest.domain.*;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IComment;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IGeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IHealthStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
 
 /**
  * <!-- begin-user-doc -->

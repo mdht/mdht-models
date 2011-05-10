@@ -38,13 +38,6 @@ public interface IPatientSummary extends IGeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Patient Summary Contains exactly one [1..1] code.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * CE value = (CE) eObject;
-	 * setCode(value);
-	 * return value;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -55,11 +48,6 @@ public interface IPatientSummary extends IGeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Patient Summary Contains exactly one [1..1] code.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -70,14 +58,6 @@ public interface IPatientSummary extends IGeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Patient Summary SHALL contain exactly one [1..1] component, where its type is Problem List Section.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemListSection");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * IProblemListSection section = (IProblemListSection) eObject;
-	 * section.init();
-	 * addSection((org.openhealthtools.mdht.uml.cda.Section)section);
-	 * return (IProblemListSection)section;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -88,11 +68,6 @@ public interface IPatientSummary extends IGeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * APITest Patient Summary SHALL contain exactly one [1..1] component, where its type is Problem List Section.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemListSection");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */

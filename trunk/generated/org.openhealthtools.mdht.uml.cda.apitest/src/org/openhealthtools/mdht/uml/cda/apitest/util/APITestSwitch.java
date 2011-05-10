@@ -15,7 +15,6 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.apitest.*;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation;

@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 
@@ -33,10 +32,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#withValue(org.openhealthtools.mdht.uml.hl7.datatypes.CE) <em>With Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#toCDAType() <em>To CDA Type</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#getValue() <em>Get Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#withValue() <em>With Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateProblemStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Value</em>}</li>
@@ -53,28 +50,6 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 	 */
 	protected ProblemStatusObservationOperations() {
 		super();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Problem Status Observation SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet ProblemStatusValue STATIC.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * return this;
-	 * @param problemStatusObservation The receiving '<em><b>Problem Status Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  IProblemStatusObservation withValue(ProblemStatusObservation problemStatusObservation, CE value) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		return this;
 	}
 
 	/**
@@ -130,32 +105,6 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_VALUE__EOCL_QRY);
 		return (CE) query.evaluate(problemStatusObservation);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * APITest Problem Status Observation SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet ProblemStatusValue STATIC.
-	 * org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-	 * org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-	 * org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
-	 * org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-	 * CE value = (CE) eObject;
-	 * getValues().add(value);
-	 * return value;
-	 * @param problemStatusObservation The receiving '<em><b>Problem Status Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  CE withValue(ProblemStatusObservation problemStatusObservation) {
-		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
-		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		CE value = (CE) eObject;
-		getValues().add(value);
-		return value;
 	}
 
 	/**
