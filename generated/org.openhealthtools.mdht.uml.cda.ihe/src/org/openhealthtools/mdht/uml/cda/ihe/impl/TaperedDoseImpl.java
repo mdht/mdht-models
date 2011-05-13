@@ -49,6 +49,15 @@ public class TaperedDoseImpl extends MedicationImpl implements TaperedDose {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TaperedDoseOperations.validateTaperedDoseTaperedDosingSubstanceAdministration(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateTaperedDoseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TaperedDoseOperations.validateTaperedDoseTemplateId(this, diagnostics, context);
 	}

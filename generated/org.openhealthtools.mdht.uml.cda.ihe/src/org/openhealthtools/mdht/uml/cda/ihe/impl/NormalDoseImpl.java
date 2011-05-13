@@ -49,6 +49,15 @@ public class NormalDoseImpl extends MedicationImpl implements NormalDose {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateNormalDoseNoSubordinateSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NormalDoseOperations.validateNormalDoseNoSubordinateSubstanceAdministration(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateNormalDoseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NormalDoseOperations.validateNormalDoseTemplateId(this, diagnostics, context);
 	}

@@ -41,13 +41,17 @@ of being concerned about a problem, allergy or other issue about the patient con
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_D4dAACNREeCxCon8a79rfA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>This entry SHALL contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances.</body>
+          <body>self.entryRelationship.observation.templateId->exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.5') or self.entryRelationship.observation.templateId->exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.6')</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_VB8x4FfmEeCQ8PeHNHg5Pw" name="relatedObservationsTypeCode" constrainedElement="_-tR7oCNQEeCxCon8a79rfA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_XgGPUFfmEeCQ8PeHNHg5Pw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>This SHALL be represented using entryRelationship with typeCode = 'SUBJ'</body>
+          <body>self.entryRelationship->select(er|er.typeCode &lt;> vocab::ActRelationshipType::SUBJ)->isEmpty()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_f7J1wCNREeCxCon8a79rfA" name="hasRelatedReferences" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
@@ -207,7 +211,9 @@ patient's current complaints.</body>
       <ownedRule xmi:id="_gOxfkFWJEeCJpM11UriAaA" name="moodCode">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_gOxfkVWJEeCJpM11UriAaA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Value for moodCode is 'INT' to indicate a planned procedure or 'EVN' to describe a procedure that has already occured.</body>
+          <body>self.moodCode = vocab::ActMood::EVN or self.moodCode = vocab::ActMood::INT</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_MWzTcBdrEeCf9aMNaCAtDQ" name="hasTextReference" constrainedElement="_6yfdEDuNEd-B8KE6Jx0UNQ">
@@ -227,13 +233,17 @@ patient's current complaints.</body>
       <ownedRule xmi:id="_lpNH8FWJEeCJpM11UriAaA" name="priorityCode">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_lpNH8VWJEeCJpM11UriAaA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>&amp;lt;priorityCode> SHALL be present in INT mood when effectiveTime is not provided, it MAY be present in other moods</body>
+          <body>self.moodCode = vocab::ActMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_m32FUFWJEeCJpM11UriAaA" name="hasInversionIndForEncounter">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_m32FUVWJEeCJpM11UriAaA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The entryRelationship/@inversionInd attribute is 'true' for the reference to encounter (typecode=COMP)</body>
+          <body>self.entryRelationship->select(er | er.typeCode = vocab::ActRelationshipType::COMP and er.inversionInd &lt;> true)->isEmpty()</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_6yfdETuNEd-B8KE6Jx0UNQ">
@@ -318,13 +328,17 @@ patient's current complaints.</body>
       <ownedRule xmi:id="_bTMdYEkHEeCOWNbpDoETQw" name="hasAuthorId" constrainedElement="_R_uVkEvdEd-GNbUQBie2ig">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_hf6eUEkHEeCOWNbpDoETQw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The identifier of the author, and their address and telephone number must be present inside the 'id', 'addr' and 'telecom' elements when the 'author' element is present.</body>
+          <body>not self.author->isEmpty() implies (  self.author.assignedAuthor.id ->size() > 0 and self.author.assignedAuthor.addr ->size() > 0 and self.author.assignedAuthor.telecom ->size() > 0)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_p0gxwEkHEeCOWNbpDoETQw" name="hasAuthorOrganization" constrainedElement="_R_uVkEvdEd-GNbUQBie2ig">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_vFsXgEkHEeCOWNbpDoETQw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The author's and/or the organization's name must be present when the 'author' element is present.</body>
+          <body>not self.author->isEmpty() implies ( self.author->exists( a : cda::Author | ( (not a.assignedAuthor.assignedPerson.oclIsUndefined()) and not a.assignedAuthor.assignedPerson.name->isEmpty()) or (not a.assignedAuthor.representedOrganization.name->isEmpty())  ) )</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_R_vjsEvdEd-GNbUQBie2ig">
@@ -842,7 +856,7 @@ patient's current complaints.</body>
     <packagedElement xmi:type="uml:Association" href=".controlled/ihe-activeProblems.uml#_j4WHMiQZEeCxCon8a79rfA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_nzLQYEqtEeCJlNjgFmcEiA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medications.uml#_0TsKoEqtEeCJlNjgFmcEiA"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_l0FEAEs9EeCAK_Z5vqvtzg">
+    <packagedElement xmi:type="uml:Association" xmi:id="_l0FEAEs9EeCAK_Z5vqvtzg" name="internalReference">
       <ownedComment xmi:id="_uKsJoEs9EeCAK_Z5vqvtzg">
         <body>Entry may indicate one or more reasons for the use of the&#xD;
 medication. The extension and root of each observation present must match the identifier of a concern entry&#xD;
@@ -1133,4 +1147,5 @@ may contain other information (take with food, et cetera).</body>
   <CDA:EntryRelationship xmi:id="_TZnXgFsaEeCBQI4cjwqCWQ" severity="INFO" base_Association="_IrRlgFsaEeCBQI4cjwqCWQ" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_WhhjoFsaEeCBQI4cjwqCWQ" severity="INFO" base_Association="_FCm1sFsaEeCBQI4cjwqCWQ" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_cT81QFsaEeCBQI4cjwqCWQ" severity="INFO" base_Association="_DRzmcFsaEeCBQI4cjwqCWQ" typeCode="MFST"/>
+  <CDA:ConstraintValidation xmi:id="_m7dpIHpsEeClUPwBnV8CsA" base_Constraint="_VB8x4FfmEeCQ8PeHNHg5Pw"/>
 </xmi:XMI>

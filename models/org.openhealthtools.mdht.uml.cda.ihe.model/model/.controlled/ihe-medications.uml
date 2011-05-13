@@ -22,7 +22,9 @@ some measurement. When the dosage changes, then additional entries are required 
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_JSheYEqVEeCTurDhhRqwBw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Contains one dosing template to identify this entry as a particular type of medication event. Possible dosing templates: 1.3.6.1.4.1.19376.1.5.3.1.4.7.1 Normal Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.8, Tapered Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.9 Split Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.10 Conditional Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.11 Combination Dosing.</body>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.1') xor self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor self.templateId->exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.11')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_AO1-4Et7EeCAK_Z5vqvtzg" name="DosingRelationship" constrainedElement="_MWNEMEt5EeCAK_Z5vqvtzg">
@@ -36,7 +38,9 @@ Components shall be sent in &amp;lt;sequenceNumber> order.</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_RNsssEt7EeCAK_Z5vqvtzg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>contains one or more related components (&lt;entryRelationship typeCode='COMP'>, either to handle split, tapered or conditional dosing, or to support combination medications.</body>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor &#xA;self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor &#xA;self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor &#xA;self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship->exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_AXxswEqcEeCTurDhhRqwBw" name="hasDescriptionNoMedNotKnown">
@@ -51,65 +55,81 @@ Components shall be sent in &amp;lt;sequenceNumber> order.</body>
 408350003 &quot;Patient Not On Self-Medications&quot; (To indicate no treatment)&#xD;
 &lt;/p></body>
       </ownedComment>
+      <ownedComment xmi:id="_Fi4GAHZJEeCvxvMoSjRGEw">
+        <body>Values from SNOMED CT shall be used in the &lt;code> element to record that a patient is either not on medications, or that medications are not known.
+
+No need for OCL, the net result is that code always  required</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GsU0AEqcEeCTurDhhRqwBw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Values from SNOMED CT shall be used in the &lt;code> element to record that a patient is either not on medications, or that medications are not known.</body>
+        <body>true</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0gwT0Es9EeCAK_Z5vqvtzg" name="ReasonClassMood" constrainedElement="_AXxswEqcEeCTurDhhRqwBw">
+      <ownedComment xmi:id="_shQtkHZGEeCvxvMoSjRGEw">
+        <body>self.internalReference->exists(ir : ihe::InternalReference | ar.classCode &lt;> 'ACT' or ar.moodCode &lt;> 'EVN')</body>
+      </ownedComment>
+      <ownedComment xmi:id="_auRswHZJEeCvxvMoSjRGEw">
+        <body>OCL Issue - What is the internalReference relationship?  unable to get OCL to reference</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_DdxFsEs-EeCAK_Z5vqvtzg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The act/@classCode='ACT' and act/@moodCode='EVN' when recording reason for medication in InternalReference Template.</body>
+        <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_-dRKAEtuEeCAK_Z5vqvtzg" name="hasEffectiveTime" constrainedElement="_0gwT0Es9EeCAK_Z5vqvtzg">
-      <ownedComment xmi:id="_My-rUEtvEeCAK_Z5vqvtzg">
-        <body>&lt;p>&#xD;
-The first &amp;lt;effectiveTime> element encodes the start and stop time of the medication regimen.&#xD;
-This an interval of time (xsi:type='IVL_TS'), and must be specified as shown. This is an&#xD;
-additional constraint placed upon CDA Release 2.0 by this profile, and simplifies the exchange&#xD;
-of start/stop and frequency information between EMR systems.&#xD;
-&lt;/p></body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_HI-V4EtvEeCAK_Z5vqvtzg">
-        <language>Analysis</language>
-        <body>Contains [0..2] effectiveTime elements.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_MWNEMEt5EeCAK_Z5vqvtzg" name="hasProductEntry" constrainedElement="_-dRKAEtuEeCAK_Z5vqvtzg">
+    <ownedRule xmi:id="_MWNEMEt5EeCAK_Z5vqvtzg" name="hasProductEntry">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_UlYFEEt5EeCAK_Z5vqvtzg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The &lt;consumable> element shall be present, and shall contain a Product Entry template</body>
+        <body>self.consumable.manufacturedProduct.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.2')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_i0d5oEt8EeCAK_Z5vqvtzg" name="hasIntructionsInversion" constrainedElement="_MWNEMEt5EeCAK_Z5vqvtzg">
+      <ownedComment xmi:id="_jPm0oHZJEeCvxvMoSjRGEw">
+        <body>OCL Issue - What is the patientInstructions relationship?  unable to get OCL to reference</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_5PKlEEt8EeCAK_Z5vqvtzg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The entryRelationship/@inversionInd attribute is 'true' for Patient Medical Instructions relationship</body>
+        <body>not self.entryRelationship->exists( er : cda::EntryRelationship | er.inversionInd &lt;> true and er.act.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')  )</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_fk_lkEt_EeCAK_Z5vqvtzg" name="ProductStrength">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_CewZwEuAEeCAK_Z5vqvtzg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The name and strength of the medication is recorded in consumable/manufacturedProduct/manufacturedMaterial/code/originalText</body>
+        <body>not self.consumable.manufacturedProduct.manufacturedMaterial.code.oclIsUndefined() implies not self.consumable.manufacturedProduct.manufacturedMaterial.code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_pw4KwEt_EeCAK_Z5vqvtzg" name="ProductName" constrainedElement="_fk_lkEt_EeCAK_Z5vqvtzg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_3vfasEt_EeCAK_Z5vqvtzg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Name of the substance or product is recorded in consumable/manufacturedProduct/manufacturedMaterial/name</body>
+        <body>not self.consumable.manufacturedProduct.manufacturedMaterial.name.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_bYIRoEuBEeCAK_Z5vqvtzg" name="PreconditionReference" constrainedElement="_pw4KwEt_EeCAK_Z5vqvtzg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_fMCoIEuBEeCAK_Z5vqvtzg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the preconditions for use of the medication are recorded in the&#xD;&#xA;&lt;precondition> element. element. The value attribute of the &lt;reference> element is a URL that points to&#xD;&#xA;the CDA narrative describing those preconditions.</body>
+        <body>not self.precondition.criterion.text->exists (t | t.reference.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_yYE_4E9KEeCYjrG3z1gQrQ" name="hasSupplyEntryInversion" constrainedElement="_bYIRoEuBEeCAK_Z5vqvtzg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_3sEpEE9KEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The entryRelationship/@inversionInd attribute is 'false' for Supply Entry relationship</body>
+        <body>not self.entryRelationship->exists(er : cda::EntryRelationship | (not er.supply->isEmpty()) and er.inversionInd&lt;>false )</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_JFsAQE9LEeCYjrG3z1gQrQ" name="hasFillNumber" constrainedElement="_yYE_4E9KEeCYjrG3z1gQrQ">
@@ -120,7 +140,9 @@ prescription.</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_PHyFkE9LEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>entryRelationship/sequenceNumber element should be present when the embedded 'supply' element has a&#xD;&#xA;moodCode attribute of EVN.</body>
+        <body>not self.entryRelationship->exists(er| (not er.supply->isEmpty()) and er.sequenceNumber.value.oclIsUndefined() )</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_zZRrcHq8Ed68l9lQ-TLEBQ">
@@ -166,8 +188,8 @@ administration, such as by intravenous injection. The type of medication is code
 consumable, do not supply the code for the medication in this element. This element is optional.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uixSsUqeEeCTurDhhRqwBw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uixSskqeEeCTurDhhRqwBw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZwXsUHZEEeCvxvMoSjRGEw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZwYTYHZEEeCvxvMoSjRGEw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_jEJb8ErsEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IMYUsEqgEeCJlNjgFmcEiA" name="statusCode" visibility="private" isReadOnly="true">
@@ -195,6 +217,13 @@ occurred, or the request or order has been placed.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7HUEYEt6EeCAK_Z5vqvtzg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7HUEYUt6EeCAK_Z5vqvtzg" value="1"/>
       <association href="../ihe.uml#_49B-IUt6EeCAK_Z5vqvtzg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_01_10HZEEeCvxvMoSjRGEw" name="effectiveTime" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2jn1QHZEEeCvxvMoSjRGEw" value="2"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2jn1QXZEEeCvxvMoSjRGEw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_u37zEErsEd6FXKclYGEDCw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_w93GUOecEd-aaJELhEID-A"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_8YbB4HomEd6WAZ28-5wkSg" name="MedicationsSection">
@@ -246,7 +275,9 @@ any special processing.</body>
     <ownedRule xmi:id="_PlDFAEqYEeCTurDhhRqwBw" name="NoSubordinateSubstanceAdministration" constrainedElement="__HPx4HySEd6FS-4xbA1fBQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_UjwasEqYEeCTurDhhRqwBw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Medications that use this template identifier shall not use subordinate 'substanceAdministation' acts.</body>
+        <body>self.entryRelationship.substanceAdministration->isEmpty()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_CsEjgHyTEd6FS-4xbA1fBQ" general="_sFGZUHGfEd6bf47ZOcft4w"/>
@@ -270,7 +301,9 @@ any special processing.</body>
     <ownedRule xmi:id="_gvxroEqYEeCTurDhhRqwBw" name="TaperedDosingSubstanceAdministration" constrainedElement="_OCqBQHyTEd6FS-4xbA1fBQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_mchMAEqYEeCTurDhhRqwBw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Subordinate Medication entries should be created for each distinct dosage.</body>
+        <body>self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsTypeOf( ihe::Medication) )</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_OCqBQXyTEd6FS-4xbA1fBQ" general="_sFGZUHGfEd6bf47ZOcft4w"/>
@@ -289,7 +322,9 @@ dose form).&#xD;
     <ownedRule xmi:id="_wqJdoEqYEeCTurDhhRqwBw" name="SplitDosingSubstanceAdministration" constrainedElement="_OY9BYHyTEd6FS-4xbA1fBQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_4EpgUEqYEeCTurDhhRqwBw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A subordinate &lt;substanceAdministration> entry is required for each separate dosage.</body>
+        <body>not self.entryRelationship.substanceAdministration->isEmpty()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_OY9BYXyTEd6FS-4xbA1fBQ" general="_sFGZUHGfEd6bf47ZOcft4w"/>
@@ -306,7 +341,9 @@ an insulin sliding scale dose based on blood sugar level).&#xD;
     <ownedRule xmi:id="_NesAAEqZEeCTurDhhRqwBw" name="ConditionalDosingSubstanceAdministration" constrainedElement="_OeXF0HyTEd6FS-4xbA1fBQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_SRwtcEqZEeCTurDhhRqwBw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A subordinate 'substanceAdministration' entry is required for each different dose, and the condition should be&#xD;&#xA;recorded</body>
+        <body>not self.entryRelationship.substanceAdministration->isEmpty()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_OeXF0XyTEd6FS-4xbA1fBQ" general="_sFGZUHGfEd6bf47ZOcft4w"/>
@@ -333,7 +370,9 @@ is not required, to have subordinate &amp;lt;substanceAdministration> entries in
     <ownedRule xmi:id="_VJZMcEqaEeCTurDhhRqwBw" name="CombinationMedicationSubstanceAdministration" constrainedElement="_QDIEMHyTEd6FS-4xbA1fBQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_mDZPcEqaEeCTurDhhRqwBw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Subordinate &lt;substanceAdminstration> entries are included to record the components of the prepared mixture. If medication is a prepackaged mixture, a single &lt;substanceAdministration> entry is sufficient.</body>
+        <body>not self.entryRelationship.substanceAdministration->isEmpty()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_QDIEMXyTEd6FS-4xbA1fBQ" general="_sFGZUHGfEd6bf47ZOcft4w"/>
@@ -651,7 +690,7 @@ of the document. The comment itself is not the act being coded, so it appears in
   <CDA:CodeSystemConstraint xmi:id="_GgRbUEtoEeCAK_Z5vqvtzg" identifier="1.3.6.1.4.1.19376.1.5.3.2" name="IHEActCode" code="FINSTRUCT" base_Property="_FNwqkEtoEeCAK_Z5vqvtzg"/>
   <CDA:TextValue xmi:id="_kA5noEtoEeCAK_Z5vqvtzg" base_Property="_jTXMMEtoEeCAK_Z5vqvtzg"/>
   <CDA:PropertyValidation xmi:id="_rGa40EtoEeCAK_Z5vqvtzg" base_Property="_jTWlIEtoEeCAK_Z5vqvtzg"/>
-  <CDA:ConstraintValidation xmi:id="_HWz9kEtvEeCAK_Z5vqvtzg" base_Constraint="_-dRKAEtuEeCAK_Z5vqvtzg"/>
+  <CDA:ConstraintValidation xmi:id="_HWz9kEtvEeCAK_Z5vqvtzg"/>
   <CDA:ConstraintValidation xmi:id="_VfhZIEt5EeCAK_Z5vqvtzg" base_Constraint="_MWNEMEt5EeCAK_Z5vqvtzg"/>
   <CDA:ConstraintValidation xmi:id="_lgqaIEt8EeCAK_Z5vqvtzg" base_Constraint="_i0d5oEt8EeCAK_Z5vqvtzg"/>
   <CDA:ConstraintValidation xmi:id="_M7gM0Et9EeCAK_Z5vqvtzg" severity="INFO" base_Constraint="_AO1-4Et7EeCAK_Z5vqvtzg"/>
@@ -660,4 +699,10 @@ of the document. The comment itself is not the act being coded, so it appears in
   <CDA:ConstraintValidation xmi:id="_dAbsMEuBEeCAK_Z5vqvtzg" severity="INFO" base_Constraint="_bYIRoEuBEeCAK_Z5vqvtzg"/>
   <CDA:ConstraintValidation xmi:id="_C8Gy4E9LEeCYjrG3z1gQrQ" base_Constraint="_yYE_4E9KEeCYjrG3z1gQrQ"/>
   <CDA:ConstraintValidation xmi:id="_Rnu50E9LEeCYjrG3z1gQrQ" severity="WARNING" base_Constraint="_JFsAQE9LEeCYjrG3z1gQrQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_T8gQQHZEEeCvxvMoSjRGEw" base_Property="_uixSsEqeEeCTurDhhRqwBw">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_02Ac4HZEEeCvxvMoSjRGEw" base_Property="_01_10HZEEeCvxvMoSjRGEw">
+    <ruleId>CONF-308</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

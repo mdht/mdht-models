@@ -14,25 +14,13 @@ past. It shall include entries for medication administration as described in the
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_aFDTUDuJEd-B8KE6Jx0UNQ" name="Immunization">
-    <ownedRule xmi:id="_hztp4FTVEeCUesz7J0dFlQ" name="moodCode" constrainedElement="_aFDTUDuJEd-B8KE6Jx0UNQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ROYZ4FTWEeCUesz7J0dFlQ">
-        <language>Analysis</language>
-        <body>Value for moodCode is &quot;EVN&quot; 2.16.840.1.113883.5.1001 ActMood STATIC</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_V79mgFTaEeCUesz7J0dFlQ" name="textReference" constrainedElement="_hztp4FTVEeCUesz7J0dFlQ">
+    <ownedRule xmi:id="_V79mgFTaEeCUesz7J0dFlQ" name="textReference">
       <ownedComment xmi:id="_NyD1QFTcEeCUesz7J0dFlQ">
         <body>In a CDA document, the URI given in the value attribute of the 'reference' element points to an element in the narrative content that contains the complete text describing the immunization activity. In an HL7 message, the content of the text element shall contain the complete text describing the immunization activity.</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_PiREEFTbEeCUesz7J0dFlQ">
         <language>Analysis</language>
         <body>In a CDA document, the URI given in the value attribute of the &lt;reference> element points to an element in the narrative content that contains the complete text describing the immunization activity.</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_MQqIwFUwEeCUesz7J0dFlQ" name="effectiveTime" constrainedElement="_aFDTUDuJEd-B8KE6Jx0UNQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_SHgAUFUwEeCUesz7J0dFlQ">
-        <language>Analysis</language>
-        <body>The effectiveTime element shall be present and should contain a time value that indicates the date of the substance administration. If the date is unkown, this shall be recorded using the nullFlavor attribute, with the reason that the information is unknown being specified. Otherwise, the date shall be recorded, and should have precision of at least the day.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_9TxzQFavEeCddY1UIvGtQg" name="substanceAdministrationCode" constrainedElement="_aFDTUDuJEd-B8KE6Jx0UNQ">
@@ -44,7 +32,9 @@ past. It shall include entries for medication administration as described in the
     <ownedRule xmi:id="_U2yi4Fa2EeCddY1UIvGtQg" name="comments" constrainedElement="_aFDTUDuJEd-B8KE6Jx0UNQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_iD9HwFa2EeCddY1UIvGtQg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>If negationInd is set to TRUE atleast one comment shall exist that provides an explanation for why the immunization did not take place. Other comments may also be present</body>
+        <body>self.negationInd=true implies not self.entryRelationship.act->select( act | act.oclIsKindOf(ccd::Comment) )->isEmpty()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_aFDTUTuJEd-B8KE6Jx0UNQ">
@@ -96,6 +86,13 @@ identifying the site.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YcM8o1axEeCddY1UIvGtQg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_GsU1UErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_5bOeIHpuEeCPBNaWF5MH3Q" name="effectiveTime" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B7tRcHpvEeCPBNaWF5MH3Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B7tRcXpvEeCPBNaWF5MH3Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_u37zEErsEd6FXKclYGEDCw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_w93GUOecEd-aaJELhEID-A"/>
+    </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_4X18YTuJEd-B8KE6Jx0UNQ" memberEnd="_4X18YDuJEd-B8KE6Jx0UNQ _4X18YjuJEd-B8KE6Jx0UNQ">
     <ownedEnd xmi:id="_4X18YjuJEd-B8KE6Jx0UNQ" type="_ZEjk4Mf0Ed6VjLXh4DcWSg" association="_4X18YTuJEd-B8KE6Jx0UNQ"/>
@@ -109,7 +106,7 @@ identifying the site.</body>
   <CDA:CodeSystemConstraint xmi:id="_I5Km8FTMEeCUesz7J0dFlQ" code="11369-6">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ConstraintValidation xmi:id="_o-kuEFTVEeCUesz7J0dFlQ" base_Constraint="_hztp4FTVEeCUesz7J0dFlQ">
+  <CDA:ConstraintValidation xmi:id="_o-kuEFTVEeCUesz7J0dFlQ">
     <ruleId>6.3.4.17.2</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_RRfQ4FTZEeCUesz7J0dFlQ" code="IMMUNIZ" base_Property="_OHjEcFTZEeCUesz7J0dFlQ">
@@ -125,7 +122,10 @@ identifying the site.</body>
   <CDA:PropertyValidation xmi:id="_VkXQIFUtEeCUesz7J0dFlQ" base_Property="_Rk2GkFUtEeCUesz7J0dFlQ">
     <ruleId>6.3.4.17.2</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_UM3xYFUwEeCUesz7J0dFlQ" base_Constraint="_MQqIwFUwEeCUesz7J0dFlQ">
+  <CDA:ConstraintValidation xmi:id="_UM3xYFUwEeCUesz7J0dFlQ">
     <ruleId>6.3.4.17.8</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_5bPsQHpuEeCPBNaWF5MH3Q" message="IHE Immunization SHALL satisfy: The effectiveTime element shall be present and should contain a time value that indicates the date of the substance administration. If the date is unkown, this shall be recorded using the nullFlavor attribute, with the reason that the information is unknown being specified. Otherwise, the date shall be recorded, and should have precision of at least the day. (6.3.4.17.8)" base_Property="_5bOeIHpuEeCPBNaWF5MH3Q">
+    <ruleId>CONF-308</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
