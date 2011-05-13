@@ -75,18 +75,26 @@ public class SocialHistorySectionOperations extends org.openhealthtools.mdht.uml
 	 * @generated
 	 */
 	public static  boolean validateIHESocialHistorySectionTemplateId(SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_IHE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SOCIAL_HISTORY_SECTION);
 			try {
-				VALIDATE_IHE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_IHE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IHE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_IHE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -94,10 +102,18 @@ public class SocialHistorySectionOperations extends org.openhealthtools.mdht.uml
 						 IHEValidator.SOCIAL_HISTORY_SECTION__IHE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
 						 IHEPlugin.INSTANCE.getString("IHESocialHistorySectionTemplateId"),
 						 new Object [] { socialHistorySection }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 } // SocialHistorySectionOperations

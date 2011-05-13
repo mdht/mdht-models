@@ -106,18 +106,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryHasTextReference(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -125,10 +133,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_HAS_TEXT_REFERENCE,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryHasTextReference"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -139,7 +155,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd='true')";
+	protected static final String VALIDATE_PROBLEM_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd=true)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemEntryCommentInversionInd(ProblemEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Comment Inversion Ind</em>}' invariant operation.
@@ -163,18 +179,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryCommentInversionInd(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -182,10 +206,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_COMMENT_INVERSION_IND,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryCommentInversionInd"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -220,18 +252,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryTemplateId(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -239,10 +279,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_TEMPLATE_ID,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryTemplateId"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -281,18 +329,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryCode(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.WARNING,
@@ -300,10 +356,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_CODE,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryCode"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -338,18 +402,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryEffectiveTime(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.WARNING,
@@ -357,10 +429,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_EFFECTIVE_TIME,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryEffectiveTime"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -395,18 +475,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryId(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -414,10 +502,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_ID,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryId"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -452,18 +548,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryText(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -471,10 +575,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_TEXT,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryText"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -509,18 +621,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryValue(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -528,10 +648,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_VALUE,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryValue"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -566,18 +694,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntrySeverity(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
@@ -585,10 +721,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_SEVERITY,
 						 IHEPlugin.INSTANCE.getString("ProblemEntrySeverity"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -623,18 +767,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryProblemStatusObservation(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
@@ -642,10 +794,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryProblemStatusObservation"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -680,18 +840,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryHealthStatusObservation(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
@@ -699,10 +867,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_HEALTH_STATUS_OBSERVATION,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryHealthStatusObservation"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -737,18 +913,26 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemEntryComment(ProblemEntry problemEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PROBLEM_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
 			try {
-				VALIDATE_PROBLEM_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PROBLEM_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
@@ -756,10 +940,18 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 						 IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_COMMENT,
 						 IHEPlugin.INSTANCE.getString("ProblemEntryComment"),
 						 new Object [] { problemEntry }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**

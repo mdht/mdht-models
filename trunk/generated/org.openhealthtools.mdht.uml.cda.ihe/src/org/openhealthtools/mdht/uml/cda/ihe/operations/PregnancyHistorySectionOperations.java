@@ -85,18 +85,26 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 */
 	public static  boolean validatePregnancyHistorySectionTemplateId(PregnancyHistorySection pregnancyHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PREGNANCY_HISTORY_SECTION);
 			try {
-				VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyHistorySection)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyHistorySection)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -104,10 +112,18 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 						 IHEValidator.PREGNANCY_HISTORY_SECTION__PREGNANCY_HISTORY_SECTION_TEMPLATE_ID,
 						 IHEPlugin.INSTANCE.getString("PregnancyHistorySectionTemplateId"),
 						 new Object [] { pregnancyHistorySection }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -146,18 +162,26 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 */
 	public static  boolean validatePregnancyHistorySectionCode(PregnancyHistorySection pregnancyHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PREGNANCY_HISTORY_SECTION);
 			try {
-				VALIDATE_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyHistorySection)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyHistorySection)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -165,10 +189,18 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 						 IHEValidator.PREGNANCY_HISTORY_SECTION__PREGNANCY_HISTORY_SECTION_CODE,
 						 IHEPlugin.INSTANCE.getString("PregnancyHistorySectionCode"),
 						 new Object [] { pregnancyHistorySection }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -203,18 +235,26 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 */
 	public static  boolean validatePregnancyHistorySectionPregnancyObservation(PregnancyHistorySection pregnancyHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PREGNANCY_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PREGNANCY_HISTORY_SECTION);
 			try {
-				VALIDATE_PREGNANCY_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PREGNANCY_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyHistorySection)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pregnancyHistorySection)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -222,10 +262,18 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 						 IHEValidator.PREGNANCY_HISTORY_SECTION__PREGNANCY_HISTORY_SECTION_PREGNANCY_OBSERVATION,
 						 IHEPlugin.INSTANCE.getString("PregnancyHistorySectionPregnancyObservation"),
 						 new Object [] { pregnancyHistorySection }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**

@@ -78,18 +78,26 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 	 * @generated
 	 */
 	public static  boolean validatePatientContactParticipantTemplateId(PatientContactParticipant patientContactParticipant, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_PARTICIPANT);
 			try {
-				VALIDATE_PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientContactParticipant)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientContactParticipant)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -97,10 +105,18 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 						 IHEValidator.PATIENT_CONTACT_PARTICIPANT__PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID,
 						 IHEPlugin.INSTANCE.getString("PatientContactParticipantTemplateId"),
 						 new Object [] { patientContactParticipant }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -135,18 +151,26 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 	 * @generated
 	 */
 	public static  boolean validatePatientContactParticipantTime(PatientContactParticipant patientContactParticipant, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_PARTICIPANT);
 			try {
-				VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientContactParticipant)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientContactParticipant)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
@@ -154,10 +178,18 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 						 IHEValidator.PATIENT_CONTACT_PARTICIPANT__PATIENT_CONTACT_PARTICIPANT_TIME,
 						 IHEPlugin.INSTANCE.getString("PatientContactParticipantTime"),
 						 new Object [] { patientContactParticipant }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 	/**
@@ -192,18 +224,26 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 	 * @generated
 	 */
 	public static  boolean validatePatientContactParticipantTypeCode(PatientContactParticipant patientContactParticipant, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PATIENT_CONTACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_PARTICIPANT);
 			try {
-				VALIDATE_PATIENT_CONTACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PATIENT_CONTACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientContactParticipant)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CONTACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientContactParticipant)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -211,10 +251,18 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 						 IHEValidator.PATIENT_CONTACT_PARTICIPANT__PATIENT_CONTACT_PARTICIPANT_TYPE_CODE,
 						 IHEPlugin.INSTANCE.getString("PatientContactParticipantTypeCode"),
 						 new Object [] { patientContactParticipant }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 } // PatientContactParticipantOperations

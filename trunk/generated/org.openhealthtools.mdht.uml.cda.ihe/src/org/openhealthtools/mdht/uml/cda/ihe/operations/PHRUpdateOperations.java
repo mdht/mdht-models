@@ -75,18 +75,26 @@ public class PHRUpdateOperations extends MedicalSummaryOperations {
 	 * @generated
 	 */
 	public static  boolean validatePHRUpdateTemplateId(PHRUpdate phrUpdate, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_PHR_UPDATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PHR_UPDATE);
 			try {
-				VALIDATE_PHR_UPDATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHR_UPDATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_PHR_UPDATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHR_UPDATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHR_UPDATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phrUpdate)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_PHR_UPDATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phrUpdate)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -94,10 +102,18 @@ public class PHRUpdateOperations extends MedicalSummaryOperations {
 						 IHEValidator.PHR_UPDATE__PHR_UPDATE_TEMPLATE_ID,
 						 IHEPlugin.INSTANCE.getString("PHRUpdateTemplateId"),
 						 new Object [] { phrUpdate }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 } // PHRUpdateOperations

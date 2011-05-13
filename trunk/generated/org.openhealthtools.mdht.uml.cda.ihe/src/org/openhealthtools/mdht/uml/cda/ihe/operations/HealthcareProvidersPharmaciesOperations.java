@@ -76,18 +76,26 @@ public class HealthcareProvidersPharmaciesOperations extends ParticipationOperat
 	 * @generated
 	 */
 	public static  boolean validateHealthcareProvidersPharmaciesTemplateId(HealthcareProvidersPharmacies healthcareProvidersPharmacies, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HEALTHCARE_PROVIDERS_PHARMACIES);
 			try {
-				VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthcareProvidersPharmacies)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthcareProvidersPharmacies)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -95,10 +103,18 @@ public class HealthcareProvidersPharmaciesOperations extends ParticipationOperat
 						 IHEValidator.HEALTHCARE_PROVIDERS_PHARMACIES__HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID,
 						 IHEPlugin.INSTANCE.getString("HealthcareProvidersPharmaciesTemplateId"),
 						 new Object [] { healthcareProvidersPharmacies }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 } // HealthcareProvidersPharmaciesOperations

@@ -51,7 +51,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>If entryRelationship / Comment is present, then entryRelationship SHALL include inversionInd = 'true'.</body>
-        <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd='true')</body>
+        <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_3ZiExWdIEd6Hk_bPOfEjYA">

@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.TaperedDose#validateTaperedDoseTaperedDosingSubstanceAdministration(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tapered Dose Tapered Dosing Substance Administration</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.TaperedDose#validateTaperedDoseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tapered Dose Template Id</em>}</li>
  * </ul>
  * </p>
@@ -41,6 +42,80 @@ public class TaperedDoseOperations extends MedicationOperations {
 	 */
 	protected TaperedDoseOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTaperedDoseTaperedDosingSubstanceAdministration(TaperedDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tapered Dose Tapered Dosing Substance Administration</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTaperedDoseTaperedDosingSubstanceAdministration(TaperedDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsTypeOf( ihe::Medication) )";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTaperedDoseTaperedDosingSubstanceAdministration(TaperedDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tapered Dose Tapered Dosing Substance Administration</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTaperedDoseTaperedDosingSubstanceAdministration(TaperedDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+		protected static Constraint VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsTypeOf( ihe::Medication) )
+	 * @param taperedDose The receiving '<em><b>Tapered Dose</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  boolean validateTaperedDoseTaperedDosingSubstanceAdministration(TaperedDose taperedDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
+		if (VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(IHEPackage.Literals.TAPERED_DOSE);
+			try {
+				
+					VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(taperedDose)) {
+				if (diagnostics != null) {
+					
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 IHEValidator.DIAGNOSTIC_SOURCE,
+						 IHEValidator.TAPERED_DOSE__TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION,
+						 IHEPlugin.INSTANCE.getString("TaperedDoseTaperedDosingSubstanceAdministration"),
+						 new Object [] { taperedDose }));
+				}
+			return false;
+		}		
+				
+		
+		
+		
+		
+      	
+		
+		return true;
+		
 	}
 
 	/**
@@ -75,18 +150,26 @@ public class TaperedDoseOperations extends MedicationOperations {
 	 * @generated
 	 */
 	public static  boolean validateTaperedDoseTemplateId(TaperedDose taperedDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.TAPERED_DOSE);
 			try {
-				VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(taperedDose)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(taperedDose)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -94,10 +177,18 @@ public class TaperedDoseOperations extends MedicationOperations {
 						 IHEValidator.TAPERED_DOSE__TAPERED_DOSE_TEMPLATE_ID,
 						 IHEPlugin.INSTANCE.getString("TaperedDoseTemplateId"),
 						 new Object [] { taperedDose }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 } // TaperedDoseOperations

@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.NormalDose#validateNormalDoseNoSubordinateSubstanceAdministration(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose No Subordinate Substance Administration</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.NormalDose#validateNormalDoseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose Template Id</em>}</li>
  * </ul>
  * </p>
@@ -41,6 +42,80 @@ public class NormalDoseOperations extends MedicationOperations {
 	 */
 	protected NormalDoseOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose No Subordinate Substance Administration</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship.substanceAdministration->isEmpty()";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose No Subordinate Substance Administration</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+		protected static Constraint VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship.substanceAdministration->isEmpty()
+	 * @param normalDose The receiving '<em><b>Normal Dose</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  boolean validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose normalDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
+		if (VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(IHEPackage.Literals.NORMAL_DOSE);
+			try {
+				
+					VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(normalDose)) {
+				if (diagnostics != null) {
+					
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 IHEValidator.DIAGNOSTIC_SOURCE,
+						 IHEValidator.NORMAL_DOSE__NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION,
+						 IHEPlugin.INSTANCE.getString("NormalDoseNoSubordinateSubstanceAdministration"),
+						 new Object [] { normalDose }));
+				}
+			return false;
+		}		
+				
+		
+		
+		
+		
+      	
+		
+		return true;
+		
 	}
 
 	/**
@@ -75,18 +150,26 @@ public class NormalDoseOperations extends MedicationOperations {
 	 * @generated
 	 */
 	public static  boolean validateNormalDoseTemplateId(NormalDose normalDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.NORMAL_DOSE);
 			try {
-				VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(normalDose)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(normalDose)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -94,10 +177,18 @@ public class NormalDoseOperations extends MedicationOperations {
 						 IHEValidator.NORMAL_DOSE__NORMAL_DOSE_TEMPLATE_ID,
 						 IHEPlugin.INSTANCE.getString("NormalDoseTemplateId"),
 						 new Object [] { normalDose }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 } // NormalDoseOperations

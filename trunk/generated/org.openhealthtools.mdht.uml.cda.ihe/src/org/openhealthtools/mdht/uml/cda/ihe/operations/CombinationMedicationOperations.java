@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CombinationMedication#validateCombinationMedicationSubstanceAdministration(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Combination Medication Substance Administration</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CombinationMedication#validateCombinationMedicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Combination Medication Template Id</em>}</li>
  * </ul>
  * </p>
@@ -41,6 +42,80 @@ public class CombinationMedicationOperations extends MedicationOperations {
 	 */
 	protected CombinationMedicationOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCombinationMedicationSubstanceAdministration(CombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Combination Medication Substance Administration</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCombinationMedicationSubstanceAdministration(CombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.entryRelationship.substanceAdministration->isEmpty()";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCombinationMedicationSubstanceAdministration(CombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Combination Medication Substance Administration</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCombinationMedicationSubstanceAdministration(CombinationMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+		protected static Constraint VALIDATE_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.entryRelationship.substanceAdministration->isEmpty()
+	 * @param combinationMedication The receiving '<em><b>Combination Medication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  boolean validateCombinationMedicationSubstanceAdministration(CombinationMedication combinationMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
+		if (VALIDATE_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(IHEPackage.Literals.COMBINATION_MEDICATION);
+			try {
+				
+					VALIDATE_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(combinationMedication)) {
+				if (diagnostics != null) {
+					
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 IHEValidator.DIAGNOSTIC_SOURCE,
+						 IHEValidator.COMBINATION_MEDICATION__COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION,
+						 IHEPlugin.INSTANCE.getString("CombinationMedicationSubstanceAdministration"),
+						 new Object [] { combinationMedication }));
+				}
+			return false;
+		}		
+				
+		
+		
+		
+		
+      	
+		
+		return true;
+		
 	}
 
 	/**
@@ -75,18 +150,26 @@ public class CombinationMedicationOperations extends MedicationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCombinationMedicationTemplateId(CombinationMedication combinationMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  		
+       
+      	
 		if (VALIDATE_COMBINATION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMBINATION_MEDICATION);
 			try {
-				VALIDATE_COMBINATION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMBINATION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				
+					VALIDATE_COMBINATION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMBINATION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
+				
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMBINATION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(combinationMedication)) {
-			if (diagnostics != null) {
+
+		
+			if (!EOCL_ENV.createQuery(VALIDATE_COMBINATION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(combinationMedication)) {
+				if (diagnostics != null) {
+					
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
@@ -94,10 +177,18 @@ public class CombinationMedicationOperations extends MedicationOperations {
 						 IHEValidator.COMBINATION_MEDICATION__COMBINATION_MEDICATION_TEMPLATE_ID,
 						 IHEPlugin.INSTANCE.getString("CombinationMedicationTemplateId"),
 						 new Object [] { combinationMedication }));
-			}
+				}
 			return false;
-		}
+		}		
+				
+		
+		
+		
+		
+      	
+		
 		return true;
+		
 	}
 
 } // CombinationMedicationOperations

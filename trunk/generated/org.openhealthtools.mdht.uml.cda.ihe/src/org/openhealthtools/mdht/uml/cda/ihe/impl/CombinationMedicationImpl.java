@@ -49,6 +49,15 @@ public class CombinationMedicationImpl extends MedicationImpl implements Combina
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCombinationMedicationSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CombinationMedicationOperations.validateCombinationMedicationSubstanceAdministration(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCombinationMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CombinationMedicationOperations.validateCombinationMedicationTemplateId(this, diagnostics, context);
 	}

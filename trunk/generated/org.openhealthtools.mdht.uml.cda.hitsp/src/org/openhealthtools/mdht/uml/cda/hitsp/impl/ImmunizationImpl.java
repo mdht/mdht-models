@@ -23,10 +23,6 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  * An implementation of the model object '<em><b>Immunization</b></em>'.
  * <!-- end-user-doc -->
  * <p>
- * The following features are implemented:
- * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ImmunizationImpl#getEntryRelationships <em>Entry Relationship</em>}</li>
- * </ul>
  * </p>
  *
  * @generated
@@ -49,28 +45,6 @@ public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.IMMUNIZATION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<EntryRelationship> getEntryRelationships() {
-		if (entryRelationships == null) {
-			entryRelationships = new EObjectResolvingEList<EntryRelationship>(EntryRelationship.class, this, HITSPPackage.IMMUNIZATION__ENTRY_RELATIONSHIP);
-		}
-		return entryRelationships;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isSetEntryRelationships() {
-		return entryRelationships != null && !entryRelationships.isEmpty();
 	}
 
 	/**
