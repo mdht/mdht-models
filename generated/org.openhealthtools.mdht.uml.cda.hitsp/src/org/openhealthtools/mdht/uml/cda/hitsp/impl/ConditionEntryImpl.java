@@ -68,7 +68,8 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryHasUnknownResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryHasUnknownResolutionDate(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryHasUnknownResolutionDate(this, diagnostics, context);
 	}
 
@@ -96,8 +97,9 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConditionEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ConditionEntryImpl
+} // ConditionEntryImpl

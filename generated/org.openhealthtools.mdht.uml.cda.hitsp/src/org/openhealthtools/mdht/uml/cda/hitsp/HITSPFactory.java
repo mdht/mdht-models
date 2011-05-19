@@ -529,4 +529,4 @@ public interface HITSPFactory extends EFactory {
 	 */
 	HITSPPackage getHITSPPackage();
 
-} //HITSPFactory
+} // HITSPFactory

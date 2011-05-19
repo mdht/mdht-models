@@ -59,7 +59,8 @@ public class ProcedureImpl extends ProcedureEntryProcedureActivityProcedureImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPProcedurePerformerAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPProcedurePerformerAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureOperations.validateHITSPProcedurePerformerAssignedEntity(this, diagnostics, context);
 	}
 
@@ -95,8 +96,9 @@ public class ProcedureImpl extends ProcedureEntryProcedureActivityProcedureImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Procedure init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProcedureImpl
+} // ProcedureImpl

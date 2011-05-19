@@ -50,8 +50,10 @@ public class AdvanceDirectivesSectionImpl extends CodedAdvanceDirectivesSectionI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateHITSPAdvanceDirectivesSectionTemplateId(this, diagnostics, context);
+	public boolean validateHITSPAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectivesSectionOperations.validateHITSPAdvanceDirectivesSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +61,9 @@ public class AdvanceDirectivesSectionImpl extends CodedAdvanceDirectivesSectionI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectivesSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AdvanceDirectivesSectionImpl
+} // AdvanceDirectivesSectionImpl

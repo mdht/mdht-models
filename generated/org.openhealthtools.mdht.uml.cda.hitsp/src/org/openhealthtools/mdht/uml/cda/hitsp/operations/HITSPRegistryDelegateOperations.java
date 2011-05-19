@@ -44,7 +44,7 @@ public class HITSPRegistryDelegateOperations {
 	 * <!-- end-user-doc -->
 	 * @generated NOT
 	 */
-	public static  EClass getEClass(HITSPRegistryDelegate hitspRegistryDelegate, String templateId, Object context) {
+	public static EClass getEClass(HITSPRegistryDelegate hitspRegistryDelegate, String templateId, Object context) {
 		EClass result = null;
 		if (context instanceof Element) {
 			Element element = (Element) context;
@@ -70,8 +70,7 @@ public class HITSPRegistryDelegateOperations {
 					// no dose information
 					result = HITSPPackage.Literals.MEDICATION;
 				}
-			}
-			else if ("2.16.840.1.113883.3.88.11.83.3".equals(templateId)) {
+			} else if ("2.16.840.1.113883.3.88.11.83.3".equals(templateId)) {
 				// Support
 				if ("guardian".equals(localName)) {
 					result = HITSPPackage.Literals.SUPPORT_GUARDIAN;
@@ -82,7 +81,7 @@ public class HITSPRegistryDelegateOperations {
 		}
 		return result;
 	}
-	
+
 	private static List<String> getTemplateIds(Element element) {
 		List<String> templateIds = new ArrayList<String>();
 		NodeList nodeList = element.getChildNodes();

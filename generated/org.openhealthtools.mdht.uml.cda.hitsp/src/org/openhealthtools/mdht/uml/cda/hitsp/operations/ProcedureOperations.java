@@ -79,26 +79,24 @@ public class ProcedureOperations extends ProcedureEntryProcedureActivityProcedur
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateHITSPProcedureHasCodeOriginalText(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateHITSPProcedureHasCodeOriginalText(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROCEDURE);
 			try {
 				VALIDATE_HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedure)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PROCEDURE__HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT,
-						 HITSPPlugin.INSTANCE.getString("HITSPProcedureHasCodeOriginalText"),
-						 new Object [] { procedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PROCEDURE__HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT,
+					HITSPPlugin.INSTANCE.getString("HITSPProcedureHasCodeOriginalText"), new Object[] { procedure }));
 			}
 			return false;
 		}
@@ -136,26 +134,24 @@ public class ProcedureOperations extends ProcedureEntryProcedureActivityProcedur
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateHITSPProcedurePerformerAssignedEntity(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateHITSPProcedurePerformerAssignedEntity(Procedure procedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROCEDURE);
 			try {
 				VALIDATE_HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedure)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PROCEDURE__HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY,
-						 HITSPPlugin.INSTANCE.getString("HITSPProcedurePerformerAssignedEntity"),
-						 new Object [] { procedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PROCEDURE__HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY,
+					HITSPPlugin.INSTANCE.getString("HITSPProcedurePerformerAssignedEntity"), new Object[] { procedure }));
 			}
 			return false;
 		}
@@ -193,26 +189,23 @@ public class ProcedureOperations extends ProcedureEntryProcedureActivityProcedur
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateHITSPProcedureTemplateId(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateHITSPProcedureTemplateId(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_HITSP_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROCEDURE);
 			try {
 				VALIDATE_HITSP_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PROCEDURE__HITSP_PROCEDURE_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("HITSPProcedureTemplateId"),
-						 new Object [] { procedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PROCEDURE__HITSP_PROCEDURE_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("HITSPProcedureTemplateId"), new Object[] { procedure }));
 			}
 			return false;
 		}
@@ -227,9 +220,9 @@ public class ProcedureOperations extends ProcedureEntryProcedureActivityProcedur
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() = 1 and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_HITSP_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() = 1 and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPProcedureTargetSiteCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Procedure Target Site Code</em>}' invariant operation.
@@ -254,26 +247,24 @@ public class ProcedureOperations extends ProcedureEntryProcedureActivityProcedur
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateHITSPProcedureTargetSiteCode(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateHITSPProcedureTargetSiteCode(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_HITSP_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROCEDURE);
 			try {
 				VALIDATE_HITSP_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedure)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PROCEDURE__HITSP_PROCEDURE_TARGET_SITE_CODE,
-						 HITSPPlugin.INSTANCE.getString("HITSPProcedureTargetSiteCode"),
-						 new Object [] { procedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PROCEDURE__HITSP_PROCEDURE_TARGET_SITE_CODE,
+					HITSPPlugin.INSTANCE.getString("HITSPProcedureTargetSiteCode"), new Object[] { procedure }));
 			}
 			return false;
 		}
@@ -311,26 +302,23 @@ public class ProcedureOperations extends ProcedureEntryProcedureActivityProcedur
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateHITSPProcedureCode(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateHITSPProcedureCode(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_HITSP_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROCEDURE);
 			try {
 				VALIDATE_HITSP_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedure)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PROCEDURE__HITSP_PROCEDURE_CODE,
-						 HITSPPlugin.INSTANCE.getString("HITSPProcedureCode"),
-						 new Object [] { procedure }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PROCEDURE__HITSP_PROCEDURE_CODE,
+					HITSPPlugin.INSTANCE.getString("HITSPProcedureCode"), new Object[] { procedure }));
 			}
 			return false;
 		}

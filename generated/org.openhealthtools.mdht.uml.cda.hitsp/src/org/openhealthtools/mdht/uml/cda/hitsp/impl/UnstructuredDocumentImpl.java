@@ -150,8 +150,10 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScannedDocumentOperations.validateScannedDocumentHasRepresentedCustodianOrganizationName(this, diagnostics, context);
+	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentHasRepresentedCustodianOrganizationName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -159,8 +161,10 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScannedDocumentOperations.validateScannedDocumentHasRepresentedCustodianOrganizationAddr(this, diagnostics, context);
+	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentHasRepresentedCustodianOrganizationAddr(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -168,8 +172,10 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScannedDocumentOperations.validateScannedDocumentLegalAuthenticatorAssignedEntityId(this, diagnostics, context);
+	public boolean validateScannedDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentLegalAuthenticatorAssignedEntityId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -186,7 +192,8 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyBinaryText(this, diagnostics, context);
 	}
 
@@ -195,7 +202,8 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyTextMediaType(this, diagnostics, context);
 	}
 
@@ -204,8 +212,10 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyTextRepresentation(this, diagnostics, context);
+	public boolean validateScannedDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyTextRepresentation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -294,8 +304,10 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentOnePatientPerDocument(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentOnePatientPerDocument(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentOnePatientPerDocument(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentOnePatientPerDocument(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -303,8 +315,9 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UnstructuredDocument init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //UnstructuredDocumentImpl
+} // UnstructuredDocumentImpl

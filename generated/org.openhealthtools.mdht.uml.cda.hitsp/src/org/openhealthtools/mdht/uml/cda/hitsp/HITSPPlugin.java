@@ -39,7 +39,7 @@ public final class HITSPPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public HITSPPlugin() {
-		super(new ResourceLocator [] {});
+		super(new ResourceLocator[] {});
 	}
 
 	/**

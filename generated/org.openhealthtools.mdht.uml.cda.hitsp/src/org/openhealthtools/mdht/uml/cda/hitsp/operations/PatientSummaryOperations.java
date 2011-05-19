@@ -101,6 +101,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.32.1')";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryTemplateId(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -122,26 +123,24 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryTemplateId(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryTemplateId(PatientSummary patientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryTemplateId"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryTemplateId"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -157,6 +156,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryAdvanceDirectivesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Advance Directives Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -178,26 +178,25 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryAdvanceDirectivesSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryAdvanceDirectivesSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryAdvanceDirectivesSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryAdvanceDirectivesSection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -213,6 +212,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryAllergiesReactionsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Allergies Reactions Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -234,26 +234,25 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryAllergiesReactionsSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryAllergiesReactionsSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryAllergiesReactionsSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryAllergiesReactionsSection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -269,6 +268,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Problem List Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -290,26 +290,24 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryProblemListSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryProblemListSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryProblemListSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryProblemListSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -325,6 +323,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryEncountersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Encounters Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -346,26 +345,24 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryEncountersSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryEncountersSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ENCOUNTERS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryEncountersSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ENCOUNTERS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryEncountersSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -381,6 +378,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryImmunizationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Immunizations Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -402,26 +400,25 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryImmunizationsSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryImmunizationsSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_IMMUNIZATIONS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryImmunizationsSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_IMMUNIZATIONS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryImmunizationsSection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -437,6 +434,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryPayersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Payers Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -458,26 +456,24 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryPayersSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryPayersSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PAYERS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryPayersSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PAYERS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryPayersSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -493,6 +489,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryMedicationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Medications Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -514,26 +511,24 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryMedicationsSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryMedicationsSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_MEDICATIONS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryMedicationsSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_MEDICATIONS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryMedicationsSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -549,6 +544,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummarySurgeriesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Surgeries Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -570,26 +566,24 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummarySurgeriesSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummarySurgeriesSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_SURGERIES_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummarySurgeriesSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_SURGERIES_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummarySurgeriesSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -605,6 +599,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryPlanOfCareSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Plan Of Care Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -626,26 +621,24 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryPlanOfCareSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryPlanOfCareSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PLAN_OF_CARE_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryPlanOfCareSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PLAN_OF_CARE_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryPlanOfCareSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -661,6 +654,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::PregnancyHistorySection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryPregnancyHistorySection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Pregnancy History Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -682,26 +676,25 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryPregnancyHistorySection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryPregnancyHistorySection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryPregnancyHistorySection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryPregnancyHistorySection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -717,6 +710,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryVitalSignsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Vital Signs Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -738,26 +732,24 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryVitalSignsSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryVitalSignsSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_VITAL_SIGNS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryVitalSignsSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_VITAL_SIGNS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryVitalSignsSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -773,6 +765,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryDiagnosticResultsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Diagnostic Results Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -794,26 +787,25 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryDiagnosticResultsSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryDiagnosticResultsSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryDiagnosticResultsSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryDiagnosticResultsSection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -825,12 +817,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-user-doc -->
 	 * @generated NOT
 	 */
-	public static  ProblemListSection createProblemListSection(PatientSummary patientSummary) {
+	public static ProblemListSection createProblemListSection(PatientSummary patientSummary) {
 		ProblemListSection section = HITSPFactory.eINSTANCE.createProblemListSection().init();
 		patientSummary.addSection(section);
 
 		section.setTitle(DatatypesFactory.eINSTANCE.createST("Conditions or Problems"));
-		
+
 		return section;
 	}
 
@@ -839,10 +831,10 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-user-doc -->
 	 * @generated NOT
 	 */
-	public static  MedicationsSection createMedicationsSection(PatientSummary patientSummary) {
+	public static MedicationsSection createMedicationsSection(PatientSummary patientSummary) {
 		MedicationsSection section = HITSPFactory.eINSTANCE.createMedicationsSection().init();
 		patientSummary.addSection(section);
-		
+
 		return section;
 	}
 
@@ -855,6 +847,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_HITSP_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getHITSPAdvanceDirectivesSection(PatientSummary) <em>Get HITSP Advance Directives Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -874,14 +867,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AdvanceDirectivesSection getHITSPAdvanceDirectivesSection(PatientSummary patientSummary) {
+	public static AdvanceDirectivesSection getHITSPAdvanceDirectivesSection(PatientSummary patientSummary) {
 		if (GET_HITSP_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(125));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(125));
 			try {
 				GET_HITSP_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -898,6 +892,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getAllergiesReactionsSection(PatientSummary) <em>Get Allergies Reactions Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -917,14 +912,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AllergiesReactionsSection getAllergiesReactionsSection(PatientSummary patientSummary) {
+	public static AllergiesReactionsSection getAllergiesReactionsSection(PatientSummary patientSummary) {
 		if (GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(126));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(126));
 			try {
 				GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -941,6 +937,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_PROBLEM_LIST_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getProblemListSection(PatientSummary) <em>Get Problem List Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -960,14 +957,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ProblemListSection getProblemListSection(PatientSummary patientSummary) {
+	public static ProblemListSection getProblemListSection(PatientSummary patientSummary) {
 		if (GET_PROBLEM_LIST_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(127));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(127));
 			try {
 				GET_PROBLEM_LIST_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_LIST_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -984,6 +982,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_HITSP_ENCOUNTERS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->first().oclAsType(hitsp::EncountersSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getHITSPEncountersSection(PatientSummary) <em>Get HITSP Encounters Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1003,14 +1002,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EncountersSection getHITSPEncountersSection(PatientSummary patientSummary) {
+	public static EncountersSection getHITSPEncountersSection(PatientSummary patientSummary) {
 		if (GET_HITSP_ENCOUNTERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(128));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(128));
 			try {
 				GET_HITSP_ENCOUNTERS_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_ENCOUNTERS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1027,6 +1027,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_HITSP_IMMUNIZATIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getHITSPImmunizationsSection(PatientSummary) <em>Get HITSP Immunizations Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1046,14 +1047,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ImmunizationsSection getHITSPImmunizationsSection(PatientSummary patientSummary) {
+	public static ImmunizationsSection getHITSPImmunizationsSection(PatientSummary patientSummary) {
 		if (GET_HITSP_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(129));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(129));
 			try {
 				GET_HITSP_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_IMMUNIZATIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1070,6 +1072,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_HITSP_PAYERS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->first().oclAsType(hitsp::PayersSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getHITSPPayersSection(PatientSummary) <em>Get HITSP Payers Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1089,14 +1092,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  PayersSection getHITSPPayersSection(PatientSummary patientSummary) {
+	public static PayersSection getHITSPPayersSection(PatientSummary patientSummary) {
 		if (GET_HITSP_PAYERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(130));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(130));
 			try {
 				GET_HITSP_PAYERS_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_PAYERS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1113,6 +1117,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_HITSP_MEDICATIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->first().oclAsType(hitsp::MedicationsSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getHITSPMedicationsSection(PatientSummary) <em>Get HITSP Medications Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1132,14 +1137,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  MedicationsSection getHITSPMedicationsSection(PatientSummary patientSummary) {
+	public static MedicationsSection getHITSPMedicationsSection(PatientSummary patientSummary) {
 		if (GET_HITSP_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(131));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(131));
 			try {
 				GET_HITSP_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_MEDICATIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1156,6 +1162,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_SURGERIES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getSurgeriesSection(PatientSummary) <em>Get Surgeries Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1175,14 +1182,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  SurgeriesSection getSurgeriesSection(PatientSummary patientSummary) {
+	public static SurgeriesSection getSurgeriesSection(PatientSummary patientSummary) {
 		if (GET_SURGERIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(132));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(132));
 			try {
 				GET_SURGERIES_SECTION__EOCL_QRY = helper.createQuery(GET_SURGERIES_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1199,6 +1207,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_HITSP_PLAN_OF_CARE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getHITSPPlanOfCareSection(PatientSummary) <em>Get HITSP Plan Of Care Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1218,14 +1227,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  PlanOfCareSection getHITSPPlanOfCareSection(PatientSummary patientSummary) {
+	public static PlanOfCareSection getHITSPPlanOfCareSection(PatientSummary patientSummary) {
 		if (GET_HITSP_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(133));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(133));
 			try {
 				GET_HITSP_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_PLAN_OF_CARE_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1242,6 +1252,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_PREGNANCY_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::PregnancyHistorySection))->asSequence()->first().oclAsType(ihe::PregnancyHistorySection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getPregnancyHistorySection(PatientSummary) <em>Get Pregnancy History Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1261,14 +1272,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  PregnancyHistorySection getPregnancyHistorySection(PatientSummary patientSummary) {
+	public static PregnancyHistorySection getPregnancyHistorySection(PatientSummary patientSummary) {
 		if (GET_PREGNANCY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(134));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(134));
 			try {
 				GET_PREGNANCY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_PREGNANCY_HISTORY_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1285,6 +1297,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_HITSP_VITAL_SIGNS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getHITSPVitalSignsSection(PatientSummary) <em>Get HITSP Vital Signs Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1304,14 +1317,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  VitalSignsSection getHITSPVitalSignsSection(PatientSummary patientSummary) {
+	public static VitalSignsSection getHITSPVitalSignsSection(PatientSummary patientSummary) {
 		if (GET_HITSP_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(135));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(135));
 			try {
 				GET_HITSP_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_VITAL_SIGNS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1328,6 +1342,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * @ordered
 	 */
 	protected static final String GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->first().oclAsType(hitsp::DiagnosticResultsSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getDiagnosticResultsSection(PatientSummary) <em>Get Diagnostic Results Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1347,14 +1362,15 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  DiagnosticResultsSection getDiagnosticResultsSection(PatientSummary patientSummary) {
+	public static DiagnosticResultsSection getDiagnosticResultsSection(PatientSummary patientSummary) {
 		if (GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(136));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(136));
 			try {
 				GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

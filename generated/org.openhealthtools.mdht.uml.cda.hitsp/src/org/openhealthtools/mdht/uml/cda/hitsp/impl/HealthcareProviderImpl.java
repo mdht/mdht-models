@@ -59,8 +59,9 @@ public class HealthcareProviderImpl extends HealthcareProvidersPharmaciesImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthcareProvider init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HealthcareProviderImpl
+} // HealthcareProviderImpl

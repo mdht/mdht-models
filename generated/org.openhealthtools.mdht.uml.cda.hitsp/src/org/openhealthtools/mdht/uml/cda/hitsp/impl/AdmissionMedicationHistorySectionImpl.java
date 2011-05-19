@@ -24,7 +24,9 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class AdmissionMedicationHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.AdmissionMedicationHistorySectionImpl implements AdmissionMedicationHistorySection {
+public class AdmissionMedicationHistorySectionImpl extends
+		org.openhealthtools.mdht.uml.cda.ihe.impl.AdmissionMedicationHistorySectionImpl implements
+		AdmissionMedicationHistorySection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,8 +51,10 @@ public class AdmissionMedicationHistorySectionImpl extends org.openhealthtools.m
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPAdmissionMedicationHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdmissionMedicationHistorySectionOperations.validateHITSPAdmissionMedicationHistorySectionTemplateId(this, diagnostics, context);
+	public boolean validateHITSPAdmissionMedicationHistorySectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdmissionMedicationHistorySectionOperations.validateHITSPAdmissionMedicationHistorySectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +62,9 @@ public class AdmissionMedicationHistorySectionImpl extends org.openhealthtools.m
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdmissionMedicationHistorySection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AdmissionMedicationHistorySectionImpl
+} // AdmissionMedicationHistorySectionImpl

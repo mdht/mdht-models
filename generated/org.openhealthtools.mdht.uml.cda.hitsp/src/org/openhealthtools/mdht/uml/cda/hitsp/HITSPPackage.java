@@ -11042,7 +11042,6 @@ public interface HITSPPackage extends EPackage {
 	 */
 	int HITSP_REGISTRY_DELEGATE_FEATURE_COUNT = CDAPackage.REGISTRY_DELEGATE_FEATURE_COUNT + 0;
 
-
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.AllergyDrugSensitivity <em>Allergy Drug Sensitivity</em>}'.
 	 * <!-- begin-user-doc -->
@@ -12167,4 +12166,4 @@ public interface HITSPPackage extends EPackage {
 
 	}
 
-} //HITSPPackage
+} // HITSPPackage

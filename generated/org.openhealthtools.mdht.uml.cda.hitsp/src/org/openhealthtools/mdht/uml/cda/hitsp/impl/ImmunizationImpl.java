@@ -9,10 +9,7 @@ package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.Immunization;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.ImmunizationOperations;
@@ -27,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ImmunizationImpl implements Immunization {
+public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ImmunizationImpl implements
+		Immunization {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,8 +69,9 @@ public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Immunization init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ImmunizationImpl
+} // ImmunizationImpl

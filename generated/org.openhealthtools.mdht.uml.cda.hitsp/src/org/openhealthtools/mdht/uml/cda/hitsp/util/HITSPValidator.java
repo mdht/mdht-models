@@ -15,7 +15,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
 import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
-import org.openhealthtools.mdht.uml.cda.hitsp.*;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AllergiesReactionsSection;
@@ -996,7 +995,7 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	@Override
 	protected EPackage getEPackage() {
-	  return HITSPPackage.eINSTANCE;
+		return HITSPPackage.eINSTANCE;
 	}
 
 	/**
@@ -1009,115 +1008,120 @@ public class HITSPValidator extends EObjectValidator {
 	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		switch (classifierID) {
 			case HITSPPackage.ALLERGY_DRUG_SENSITIVITY:
-				return validateAllergyDrugSensitivity((AllergyDrugSensitivity)value, diagnostics, context);
+				return validateAllergyDrugSensitivity((AllergyDrugSensitivity) value, diagnostics, context);
 			case HITSPPackage.MEDICATION:
-				return validateMedication((Medication)value, diagnostics, context);
+				return validateMedication((Medication) value, diagnostics, context);
 			case HITSPPackage.MEDICATION_TYPE:
-				return validateMedicationType((MedicationType)value, diagnostics, context);
+				return validateMedicationType((MedicationType) value, diagnostics, context);
 			case HITSPPackage.MEDICATION_ORDER_INFORMATION:
-				return validateMedicationOrderInformation((MedicationOrderInformation)value, diagnostics, context);
+				return validateMedicationOrderInformation((MedicationOrderInformation) value, diagnostics, context);
 			case HITSPPackage.CONDITION:
-				return validateCondition((Condition)value, diagnostics, context);
+				return validateCondition((Condition) value, diagnostics, context);
 			case HITSPPackage.CONDITION_ENTRY:
-				return validateConditionEntry((ConditionEntry)value, diagnostics, context);
+				return validateConditionEntry((ConditionEntry) value, diagnostics, context);
 			case HITSPPackage.PATIENT_SUMMARY:
-				return validatePatientSummary((PatientSummary)value, diagnostics, context);
+				return validatePatientSummary((PatientSummary) value, diagnostics, context);
 			case HITSPPackage.PROBLEM_LIST_SECTION:
-				return validateProblemListSection((ProblemListSection)value, diagnostics, context);
+				return validateProblemListSection((ProblemListSection) value, diagnostics, context);
 			case HITSPPackage.MEDICATIONS_SECTION:
-				return validateMedicationsSection((MedicationsSection)value, diagnostics, context);
+				return validateMedicationsSection((MedicationsSection) value, diagnostics, context);
 			case HITSPPackage.ADVANCE_DIRECTIVES_SECTION:
-				return validateAdvanceDirectivesSection((AdvanceDirectivesSection)value, diagnostics, context);
+				return validateAdvanceDirectivesSection((AdvanceDirectivesSection) value, diagnostics, context);
 			case HITSPPackage.ALLERGIES_REACTIONS_SECTION:
-				return validateAllergiesReactionsSection((AllergiesReactionsSection)value, diagnostics, context);
+				return validateAllergiesReactionsSection((AllergiesReactionsSection) value, diagnostics, context);
 			case HITSPPackage.ENCOUNTERS_SECTION:
-				return validateEncountersSection((EncountersSection)value, diagnostics, context);
+				return validateEncountersSection((EncountersSection) value, diagnostics, context);
 			case HITSPPackage.ENCOUNTER:
-				return validateEncounter((Encounter)value, diagnostics, context);
+				return validateEncounter((Encounter) value, diagnostics, context);
 			case HITSPPackage.IMMUNIZATIONS_SECTION:
-				return validateImmunizationsSection((ImmunizationsSection)value, diagnostics, context);
+				return validateImmunizationsSection((ImmunizationsSection) value, diagnostics, context);
 			case HITSPPackage.IMMUNIZATION:
-				return validateImmunization((Immunization)value, diagnostics, context);
+				return validateImmunization((Immunization) value, diagnostics, context);
 			case HITSPPackage.PAYERS_SECTION:
-				return validatePayersSection((PayersSection)value, diagnostics, context);
+				return validatePayersSection((PayersSection) value, diagnostics, context);
 			case HITSPPackage.SURGERIES_SECTION:
-				return validateSurgeriesSection((SurgeriesSection)value, diagnostics, context);
+				return validateSurgeriesSection((SurgeriesSection) value, diagnostics, context);
 			case HITSPPackage.PROCEDURE:
-				return validateProcedure((Procedure)value, diagnostics, context);
+				return validateProcedure((Procedure) value, diagnostics, context);
 			case HITSPPackage.PLAN_OF_CARE_SECTION:
-				return validatePlanOfCareSection((PlanOfCareSection)value, diagnostics, context);
+				return validatePlanOfCareSection((PlanOfCareSection) value, diagnostics, context);
 			case HITSPPackage.VITAL_SIGNS_SECTION:
-				return validateVitalSignsSection((VitalSignsSection)value, diagnostics, context);
+				return validateVitalSignsSection((VitalSignsSection) value, diagnostics, context);
 			case HITSPPackage.DIAGNOSTIC_RESULTS_SECTION:
-				return validateDiagnosticResultsSection((DiagnosticResultsSection)value, diagnostics, context);
+				return validateDiagnosticResultsSection((DiagnosticResultsSection) value, diagnostics, context);
 			case HITSPPackage.RESULT:
-				return validateResult((Result)value, diagnostics, context);
+				return validateResult((Result) value, diagnostics, context);
 			case HITSPPackage.VITAL_SIGN:
-				return validateVitalSign((VitalSign)value, diagnostics, context);
+				return validateVitalSign((VitalSign) value, diagnostics, context);
 			case HITSPPackage.HISTORY_OF_PAST_ILLNESS_SECTION:
-				return validateHistoryOfPastIllnessSection((HistoryOfPastIllnessSection)value, diagnostics, context);
+				return validateHistoryOfPastIllnessSection((HistoryOfPastIllnessSection) value, diagnostics, context);
 			case HITSPPackage.CHIEF_COMPLAINT_SECTION:
-				return validateChiefComplaintSection((ChiefComplaintSection)value, diagnostics, context);
+				return validateChiefComplaintSection((ChiefComplaintSection) value, diagnostics, context);
 			case HITSPPackage.REASON_FOR_REFERRAL_SECTION:
-				return validateReasonForReferralSection((ReasonForReferralSection)value, diagnostics, context);
+				return validateReasonForReferralSection((ReasonForReferralSection) value, diagnostics, context);
 			case HITSPPackage.HISTORY_OF_PRESENT_ILLNESS:
-				return validateHistoryOfPresentIllness((HistoryOfPresentIllness)value, diagnostics, context);
+				return validateHistoryOfPresentIllness((HistoryOfPresentIllness) value, diagnostics, context);
 			case HITSPPackage.FUNCTIONAL_STATUS_SECTION:
-				return validateFunctionalStatusSection((FunctionalStatusSection)value, diagnostics, context);
+				return validateFunctionalStatusSection((FunctionalStatusSection) value, diagnostics, context);
 			case HITSPPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
-				return validateHospitalAdmissionDiagnosisSection((HospitalAdmissionDiagnosisSection)value, diagnostics, context);
+				return validateHospitalAdmissionDiagnosisSection(
+					(HospitalAdmissionDiagnosisSection) value, diagnostics, context);
 			case HITSPPackage.DISCHARGE_DIAGNOSIS_SECTION:
-				return validateDischargeDiagnosisSection((DischargeDiagnosisSection)value, diagnostics, context);
+				return validateDischargeDiagnosisSection((DischargeDiagnosisSection) value, diagnostics, context);
 			case HITSPPackage.ADMISSION_MEDICATION_HISTORY_SECTION:
-				return validateAdmissionMedicationHistorySection((AdmissionMedicationHistorySection)value, diagnostics, context);
+				return validateAdmissionMedicationHistorySection(
+					(AdmissionMedicationHistorySection) value, diagnostics, context);
 			case HITSPPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
-				return validateHospitalDischargeMedicationsSection((HospitalDischargeMedicationsSection)value, diagnostics, context);
+				return validateHospitalDischargeMedicationsSection(
+					(HospitalDischargeMedicationsSection) value, diagnostics, context);
 			case HITSPPackage.MEDICATIONS_ADMINISTERED_SECTION:
-				return validateMedicationsAdministeredSection((MedicationsAdministeredSection)value, diagnostics, context);
+				return validateMedicationsAdministeredSection(
+					(MedicationsAdministeredSection) value, diagnostics, context);
 			case HITSPPackage.PHYSICAL_EXAM_SECTION:
-				return validatePhysicalExamSection((PhysicalExamSection)value, diagnostics, context);
+				return validatePhysicalExamSection((PhysicalExamSection) value, diagnostics, context);
 			case HITSPPackage.REVIEW_OF_SYSTEMS_SECTION:
-				return validateReviewOfSystemsSection((ReviewOfSystemsSection)value, diagnostics, context);
+				return validateReviewOfSystemsSection((ReviewOfSystemsSection) value, diagnostics, context);
 			case HITSPPackage.HOSPITAL_COURSE_SECTION:
-				return validateHospitalCourseSection((HospitalCourseSection)value, diagnostics, context);
+				return validateHospitalCourseSection((HospitalCourseSection) value, diagnostics, context);
 			case HITSPPackage.ASSESSMENT_AND_PLAN_SECTION:
-				return validateAssessmentAndPlanSection((AssessmentAndPlanSection)value, diagnostics, context);
+				return validateAssessmentAndPlanSection((AssessmentAndPlanSection) value, diagnostics, context);
 			case HITSPPackage.FAMILY_HISTORY_SECTION:
-				return validateFamilyHistorySection((FamilyHistorySection)value, diagnostics, context);
+				return validateFamilyHistorySection((FamilyHistorySection) value, diagnostics, context);
 			case HITSPPackage.SOCIAL_HISTORY_SECTION:
-				return validateSocialHistorySection((SocialHistorySection)value, diagnostics, context);
+				return validateSocialHistorySection((SocialHistorySection) value, diagnostics, context);
 			case HITSPPackage.MEDICAL_EQUIPMENT_SECTION:
-				return validateMedicalEquipmentSection((MedicalEquipmentSection)value, diagnostics, context);
+				return validateMedicalEquipmentSection((MedicalEquipmentSection) value, diagnostics, context);
 			case HITSPPackage.LANGUAGE_SPOKEN:
-				return validateLanguageSpoken((LanguageSpoken)value, diagnostics, context);
+				return validateLanguageSpoken((LanguageSpoken) value, diagnostics, context);
 			case HITSPPackage.INSURANCE_PROVIDER:
-				return validateInsuranceProvider((InsuranceProvider)value, diagnostics, context);
+				return validateInsuranceProvider((InsuranceProvider) value, diagnostics, context);
 			case HITSPPackage.HEALTHCARE_PROVIDER:
-				return validateHealthcareProvider((HealthcareProvider)value, diagnostics, context);
+				return validateHealthcareProvider((HealthcareProvider) value, diagnostics, context);
 			case HITSPPackage.COMMENT:
-				return validateComment((Comment)value, diagnostics, context);
+				return validateComment((Comment) value, diagnostics, context);
 			case HITSPPackage.MEDICATION_NORMAL_DOSE:
-				return validateMedicationNormalDose((MedicationNormalDose)value, diagnostics, context);
+				return validateMedicationNormalDose((MedicationNormalDose) value, diagnostics, context);
 			case HITSPPackage.MEDICATION_SPLIT_DOSE:
-				return validateMedicationSplitDose((MedicationSplitDose)value, diagnostics, context);
+				return validateMedicationSplitDose((MedicationSplitDose) value, diagnostics, context);
 			case HITSPPackage.MEDICATION_TAPERED_DOSE:
-				return validateMedicationTaperedDose((MedicationTaperedDose)value, diagnostics, context);
+				return validateMedicationTaperedDose((MedicationTaperedDose) value, diagnostics, context);
 			case HITSPPackage.MEDICATION_CONDITIONAL_DOSE:
-				return validateMedicationConditionalDose((MedicationConditionalDose)value, diagnostics, context);
+				return validateMedicationConditionalDose((MedicationConditionalDose) value, diagnostics, context);
 			case HITSPPackage.MEDICATION_COMBINATION_MEDICATION:
-				return validateMedicationCombinationMedication((MedicationCombinationMedication)value, diagnostics, context);
+				return validateMedicationCombinationMedication(
+					(MedicationCombinationMedication) value, diagnostics, context);
 			case HITSPPackage.SUPPORT:
-				return validateSupport((Support)value, diagnostics, context);
+				return validateSupport((Support) value, diagnostics, context);
 			case HITSPPackage.SUPPORT_GUARDIAN:
-				return validateSupportGuardian((SupportGuardian)value, diagnostics, context);
+				return validateSupportGuardian((SupportGuardian) value, diagnostics, context);
 			case HITSPPackage.SUPPORT_PARTICIPANT:
-				return validateSupportParticipant((SupportParticipant)value, diagnostics, context);
+				return validateSupportParticipant((SupportParticipant) value, diagnostics, context);
 			case HITSPPackage.UNSTRUCTURED_DOCUMENT:
-				return validateUnstructuredDocument((UnstructuredDocument)value, diagnostics, context);
+				return validateUnstructuredDocument((UnstructuredDocument) value, diagnostics, context);
 			case HITSPPackage.MEDICATION_INFORMATION:
-				return validateMedicationInformation((MedicationInformation)value, diagnostics, context);
+				return validateMedicationInformation((MedicationInformation) value, diagnostics, context);
 			case HITSPPackage.HITSP_REGISTRY_DELEGATE:
-				return validateHITSPRegistryDelegate((HITSPRegistryDelegate)value, diagnostics, context);
+				return validateHITSPRegistryDelegate((HITSPRegistryDelegate) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -1128,33 +1132,109 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivity(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(allergyDrugSensitivity, diagnostics, context)) return false;
+	public boolean validateAllergyDrugSensitivity(AllergyDrugSensitivity allergyDrugSensitivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(allergyDrugSensitivity, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActEntryRelationshipRequired(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActSubjectOfTarget(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActContainsProblemObservation(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActContainsAlertObservation(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActContainsPatientAwareness(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActTemplateId(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActClassCode(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActMoodCode(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActId(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActCodeNullFlavor(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActEffectiveTime(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActEpisodeObservation(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateConcernEntry_validateConcernEntryEffectiveTimeLowHigh(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateConcernEntry_validateConcernEntryTemplateId(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateConcernEntry_validateConcernEntryEffectiveTime(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateAllergyIntoleranceConcern_validateAllergyIntoleranceConcernTemplateId(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateAllergyIntoleranceConcern_validateAllergyIntoleranceConcernAllergyIntolerance(allergyDrugSensitivity, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAllergyDrugSensitivity_validateAllergyDrugSensitivityTemplateId(allergyDrugSensitivity, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActEntryRelationshipRequired(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActSubjectOfTarget(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActContainsProblemObservation(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActContainsAlertObservation(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActContainsPatientAwareness(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActTemplateId(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActClassCode(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActMoodCode(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActId(allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActCodeNullFlavor(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActEffectiveTime(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActEpisodeObservation(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConcernEntry_validateConcernEntryEffectiveTimeLowHigh(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConcernEntry_validateConcernEntryHasRelatedObservations(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConcernEntry_validateConcernEntryRelatedObservationsTypeCode(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConcernEntry_validateConcernEntryTemplateId(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConcernEntry_validateConcernEntryEffectiveTime(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateAllergyIntoleranceConcern_validateAllergyIntoleranceConcernTemplateId(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateAllergyIntoleranceConcern_validateAllergyIntoleranceConcernAllergyIntolerance(
+				allergyDrugSensitivity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAllergyDrugSensitivity_validateAllergyDrugSensitivityTemplateId(
+				allergyDrugSensitivity, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1164,7 +1244,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivity_validateAllergyDrugSensitivityTemplateId(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyDrugSensitivity_validateAllergyDrugSensitivityTemplateId(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return allergyDrugSensitivity.validateAllergyDrugSensitivityTemplateId(diagnostics, context);
 	}
 
@@ -1174,58 +1255,190 @@ public class HITSPValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMedication(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medication, diagnostics, context)) return false;
+		if (!validate_NoCircularContainment(medication, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDosing(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDosingRelationship(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasProductEntry(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductStrength(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductName(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationPreconditionReference(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasFillNumber(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationCode(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationEffectiveTime(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medication, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDosing(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDosingRelationship(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasProductEntry(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductStrength(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductName(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationPreconditionReference(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasFillNumber(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationTemplateId(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationRateQuantity(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationCode(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationStatusCode(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationTemplateId(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationEffectiveTime(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationRouteCode(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationDoseQuantity(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationApproachSiteCode(medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationCode(medication, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1235,7 +1448,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationTemplateId(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedication_validateHITSPMedicationTemplateId(Medication medication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medication.validateHITSPMedicationTemplateId(diagnostics, context);
 	}
 
@@ -1245,7 +1459,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationEffectiveTime(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedication_validateHITSPMedicationEffectiveTime(Medication medication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medication.validateHITSPMedicationEffectiveTime(diagnostics, context);
 	}
 
@@ -1255,7 +1470,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationRouteCode(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedication_validateHITSPMedicationRouteCode(Medication medication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medication.validateHITSPMedicationRouteCode(diagnostics, context);
 	}
 
@@ -1265,7 +1481,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationDoseQuantity(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedication_validateHITSPMedicationDoseQuantity(Medication medication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medication.validateHITSPMedicationDoseQuantity(diagnostics, context);
 	}
 
@@ -1275,7 +1492,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationAdministrationUnitCode(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedication_validateHITSPMedicationAdministrationUnitCode(Medication medication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medication.validateHITSPMedicationAdministrationUnitCode(diagnostics, context);
 	}
 
@@ -1285,7 +1503,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationMaxDoseQuantity(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedication_validateHITSPMedicationMaxDoseQuantity(Medication medication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medication.validateHITSPMedicationMaxDoseQuantity(diagnostics, context);
 	}
 
@@ -1295,7 +1514,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationApproachSiteCode(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedication_validateHITSPMedicationApproachSiteCode(Medication medication,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medication.validateHITSPMedicationApproachSiteCode(diagnostics, context);
 	}
 
@@ -1305,7 +1525,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedication_validateHITSPMedicationCode(Medication medication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedication_validateHITSPMedicationCode(Medication medication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return medication.validateHITSPMedicationCode(diagnostics, context);
 	}
 
@@ -1314,17 +1535,36 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationType(MedicationType medicationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationType, diagnostics, context)) return false;
+	public boolean validateMedicationType(MedicationType medicationType, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationType, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicationType, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationType, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationType, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationType, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicationType, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationType, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationType, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationType_validateMedicationTypeTemplateId(medicationType, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationType_validateMedicationTypeCode(medicationType, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicationType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicationType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicationType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicationType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicationType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicationType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicationType_validateMedicationTypeTemplateId(medicationType, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicationType_validateMedicationTypeCode(medicationType, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1334,7 +1574,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationType_validateMedicationTypeTemplateId(MedicationType medicationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationType_validateMedicationTypeTemplateId(MedicationType medicationType,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medicationType.validateMedicationTypeTemplateId(diagnostics, context);
 	}
 
@@ -1344,7 +1585,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationType_validateMedicationTypeCode(MedicationType medicationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationType_validateMedicationTypeCode(MedicationType medicationType,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medicationType.validateMedicationTypeCode(diagnostics, context);
 	}
 
@@ -1353,36 +1595,113 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformation(MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationOrderInformation, diagnostics, context)) return false;
+	public boolean validateMedicationOrderInformation(MedicationOrderInformation medicationOrderInformation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationOrderInformation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSupply_validateClassCode(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityMoodCode(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasAuthor(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasPerformer(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasParticipantLocation(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityInformationSource(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasProduct(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityTemplateId(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityId(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityStatusCode(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityEffectiveTime(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityQuantity(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityRepeatNumber(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityMedicationStatusObservation(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSupplyActivity_validateSupplyActivityFulfillmentInstruction(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSupplyEntry_validateSupplyEntryTemplateId(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSupplyEntry_validateSupplyEntryQuantity(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSupplyEntry_validateSupplyEntryRepeatNumber(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationOrderInformation_validateMedicationOrderInformationTemplateId(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationOrderInformation_validateMedicationOrderInformationRepeatNumber(medicationOrderInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationOrderInformation_validateMedicationOrderInformationStatusCode(medicationOrderInformation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSupply_validateClassCode(medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityMoodCode(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasAuthor(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasPerformer(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasParticipantLocation(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityInformationSource(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityHasProduct(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityTemplateId(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityId(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityStatusCode(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityEffectiveTime(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityQuantity(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityRepeatNumber(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityMedicationStatusObservation(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityFulfillmentInstruction(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryTemplateId(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryQuantity(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryRepeatNumber(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicationOrderInformation_validateMedicationOrderInformationTemplateId(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicationOrderInformation_validateMedicationOrderInformationRepeatNumber(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicationOrderInformation_validateMedicationOrderInformationStatusCode(
+				medicationOrderInformation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1392,7 +1711,9 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformation_validateMedicationOrderInformationTemplateId(MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationOrderInformation_validateMedicationOrderInformationTemplateId(
+			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return medicationOrderInformation.validateMedicationOrderInformationTemplateId(diagnostics, context);
 	}
 
@@ -1402,7 +1723,9 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformation_validateMedicationOrderInformationRepeatNumber(MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationOrderInformation_validateMedicationOrderInformationRepeatNumber(
+			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return medicationOrderInformation.validateMedicationOrderInformationRepeatNumber(diagnostics, context);
 	}
 
@@ -1412,7 +1735,9 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformation_validateMedicationOrderInformationStatusCode(MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationOrderInformation_validateMedicationOrderInformationStatusCode(
+			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return medicationOrderInformation.validateMedicationOrderInformationStatusCode(diagnostics, context);
 	}
 
@@ -1422,36 +1747,111 @@ public class HITSPValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateCondition(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(condition, diagnostics, context)) return false;
+		if (!validate_NoCircularContainment(condition, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActEntryRelationshipRequired(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActSubjectOfTarget(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActContainsProblemObservation(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActContainsAlertObservation(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActContainsPatientAwareness(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActTemplateId(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActClassCode(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActMoodCode(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActId(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActCodeNullFlavor(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActEffectiveTime(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemAct_validateProblemActEpisodeObservation(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateConcernEntry_validateConcernEntryEffectiveTimeLowHigh(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateConcernEntry_validateConcernEntryTemplateId(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateConcernEntry_validateConcernEntryEffectiveTime(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemConcernEntry_validateProblemConcernEntryTemplateId(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemConcernEntry_validateProblemConcernEntryProblemEntry(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionHasTreatingProvider(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionHasProviderId(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionHasProviderTreatmentTime(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionTemplateId(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionConditionEntry(condition, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActEntryRelationshipRequired(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActSubjectOfTarget(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActContainsProblemObservation(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActContainsAlertObservation(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActContainsPatientAwareness(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActTemplateId(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActClassCode(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActMoodCode(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActId(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActCodeNullFlavor(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActEffectiveTime(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemAct_validateProblemActEpisodeObservation(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConcernEntry_validateConcernEntryEffectiveTimeLowHigh(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConcernEntry_validateConcernEntryHasRelatedObservations(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConcernEntry_validateConcernEntryRelatedObservationsTypeCode(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConcernEntry_validateConcernEntryTemplateId(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConcernEntry_validateConcernEntryEffectiveTime(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemConcernEntry_validateProblemConcernEntryTemplateId(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemConcernEntry_validateProblemConcernEntryProblemEntry(
+				condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionHasTreatingProvider(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionHasProviderId(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionHasProviderTreatmentTime(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionTemplateId(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionConditionEntry(condition, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1461,7 +1861,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionHasTreatingProvider(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionHasTreatingProvider(Condition condition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return condition.validateConditionHasTreatingProvider(diagnostics, context);
 	}
 
@@ -1471,7 +1872,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionHasProviderId(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionHasProviderId(Condition condition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition.validateConditionHasProviderId(diagnostics, context);
 	}
 
@@ -1481,7 +1883,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionHasProviderTreatmentTime(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionHasProviderTreatmentTime(Condition condition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return condition.validateConditionHasProviderTreatmentTime(diagnostics, context);
 	}
 
@@ -1491,7 +1894,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionTemplateId(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionTemplateId(Condition condition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition.validateConditionTemplateId(diagnostics, context);
 	}
 
@@ -1501,7 +1905,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionConditionEntry(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionConditionEntry(Condition condition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition.validateConditionConditionEntry(diagnostics, context);
 	}
 
@@ -1510,95 +1915,346 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(patientSummary, diagnostics, context)) return false;
+	public boolean validatePatientSummary(PatientSummary patientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(patientSummary, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventRequired(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventClassCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventEffectiveTime(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentNoTemplateIdExtension(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentOneOrTwoRecordTarget(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasAssignedAuthor(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasInformationRecipient(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentTemplateId(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentLanguageCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentProblemSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentFamilyHistorySection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentSocialHistorySection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentAlertsSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentMedicationsSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentResultsSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentProceduresSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentEncountersSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentPlanOfCareSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentImmunizationsSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentVitalSignsSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentMedicalEquipmentSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentFunctionalStatusSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentAdvanceDirectivesSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentPayersSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentPurposeSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedicalDocument_validateMedicalDocumentTemplateId(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryTemplateId(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryAdvanceDirectivesSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryAllergiesReactionsSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryProblemListSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryEncountersSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryImmunizationsSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryPayersSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryMedicationsSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummarySurgeriesSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryPlanOfCareSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryPregnancyHistorySection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryVitalSignsSection(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryDiagnosticResultsSection(patientSummary, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventRequired(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventClassCode(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventEffectiveTime(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentNoTemplateIdExtension(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentOneOrTwoRecordTarget(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasAssignedAuthor(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasInformationRecipient(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentTemplateId(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentCode(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentLanguageCode(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentProblemSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentFamilyHistorySection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentSocialHistorySection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentAlertsSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentMedicationsSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentResultsSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentProceduresSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentEncountersSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentPlanOfCareSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentImmunizationsSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentVitalSignsSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentMedicalEquipmentSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentFunctionalStatusSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentAdvanceDirectivesSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentPayersSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateContinuityOfCareDocument_validateContinuityOfCareDocumentPurposeSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedicalDocument_validateMedicalDocumentTemplateId(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryTemplateId(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryAdvanceDirectivesSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryAllergiesReactionsSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryProblemListSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryEncountersSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryImmunizationsSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryPayersSection(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryMedicationsSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummarySurgeriesSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryPlanOfCareSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryPregnancyHistorySection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryVitalSignsSection(
+				patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryDiagnosticResultsSection(
+				patientSummary, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1608,7 +2264,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryTemplateId(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryTemplateId(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryTemplateId(diagnostics, context);
 	}
 
@@ -1618,7 +2275,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryAdvanceDirectivesSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryAdvanceDirectivesSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryAdvanceDirectivesSection(diagnostics, context);
 	}
 
@@ -1628,7 +2286,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryAllergiesReactionsSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryAllergiesReactionsSection(
+			PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryAllergiesReactionsSection(diagnostics, context);
 	}
 
@@ -1638,7 +2297,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryProblemListSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryProblemListSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryProblemListSection(diagnostics, context);
 	}
 
@@ -1648,7 +2308,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryEncountersSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryEncountersSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryEncountersSection(diagnostics, context);
 	}
 
@@ -1658,7 +2319,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryImmunizationsSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryImmunizationsSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryImmunizationsSection(diagnostics, context);
 	}
 
@@ -1668,7 +2330,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryPayersSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryPayersSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryPayersSection(diagnostics, context);
 	}
 
@@ -1678,7 +2341,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryMedicationsSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryMedicationsSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryMedicationsSection(diagnostics, context);
 	}
 
@@ -1688,7 +2352,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummarySurgeriesSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummarySurgeriesSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummarySurgeriesSection(diagnostics, context);
 	}
 
@@ -1698,7 +2363,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryPlanOfCareSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryPlanOfCareSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryPlanOfCareSection(diagnostics, context);
 	}
 
@@ -1708,7 +2374,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryPregnancyHistorySection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryPregnancyHistorySection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryPregnancyHistorySection(diagnostics, context);
 	}
 
@@ -1718,7 +2385,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryVitalSignsSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryVitalSignsSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryVitalSignsSection(diagnostics, context);
 	}
 
@@ -1728,7 +2396,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryDiagnosticResultsSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryDiagnosticResultsSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryDiagnosticResultsSection(diagnostics, context);
 	}
 
@@ -1737,27 +2406,76 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsSection(VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(vitalSignsSection, diagnostics, context)) return false;
+	public boolean validateVitalSignsSection(VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(vitalSignsSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTemplateId(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionCode(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTitle(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionText(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionVitalSignsOrganizer(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignsSection_validateIHEVitalSignsSectionTemplateId(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCodedVitalSignsSection_validateCodedVitalSignsSectionTemplateId(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCodedVitalSignsSection_validateCodedVitalSignsSectionVitalSignsOrganizer(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateVitalSignsSection_validateHITSPVitalSignsSectionVitalSignEntry(vitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateVitalSignsSection_validateHITSPVitalSignsSectionTemplateId(vitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTemplateId(
+				vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionCode(
+				vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTitle(
+				vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionText(
+				vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionVitalSignsOrganizer(
+				vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateVitalSignsSection_validateIHEVitalSignsSectionTemplateId(
+				vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCodedVitalSignsSection_validateCodedVitalSignsSectionTemplateId(
+				vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCodedVitalSignsSection_validateCodedVitalSignsSectionVitalSignsOrganizer(
+				vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateVitalSignsSection_validateHITSPVitalSignsSectionVitalSignEntry(
+				vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateVitalSignsSection_validateHITSPVitalSignsSectionTemplateId(
+				vitalSignsSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1767,7 +2485,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsSection_validateHITSPVitalSignsSectionVitalSignEntry(VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignsSection_validateHITSPVitalSignsSectionVitalSignEntry(
+			VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return vitalSignsSection.validateHITSPVitalSignsSectionVitalSignEntry(diagnostics, context);
 	}
 
@@ -1777,7 +2496,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsSection_validateHITSPVitalSignsSectionTemplateId(VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignsSection_validateHITSPVitalSignsSectionTemplateId(
+			VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return vitalSignsSection.validateHITSPVitalSignsSectionTemplateId(diagnostics, context);
 	}
 
@@ -1787,35 +2507,110 @@ public class HITSPValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateVitalSign(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(vitalSign, diagnostics, context)) return false;
+		if (!validate_NoCircularContainment(vitalSign, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationReferenceRangeRequired(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInformationSource(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationTemplateId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= validateVitalSign_validateResultObservationCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationValue(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSimpleObservation_validateSimpleObservationTemplateId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSimpleObservation_validateSimpleObservationId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSimpleObservation_validateSimpleObservationStatusCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationTemplateId(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationInterpretationCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationMethodCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationTargetSiteCode(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationValue(vitalSign, diagnostics, context);
-		if (result || diagnostics != null) result &= validateVitalSign_validateVitalSignTemplateId(vitalSign, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationReferenceRangeRequired(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationInformationSource(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationTemplateId(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationId(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateVitalSign_validateResultObservationCode(vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationValue(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSimpleObservation_validateSimpleObservationTemplateId(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSimpleObservation_validateSimpleObservationId(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSimpleObservation_validateSimpleObservationStatusCode(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationTemplateId(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationInterpretationCode(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationMethodCode(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationTargetSiteCode(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateVitalSignObservation_validateVitalSignObservationValue(
+				vitalSign, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateVitalSign_validateVitalSignTemplateId(vitalSign, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1825,7 +2620,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSign_validateVitalSignTemplateId(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSign_validateVitalSignTemplateId(VitalSign vitalSign, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return vitalSign.validateVitalSignTemplateId(diagnostics, context);
 	}
 
@@ -1835,7 +2631,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSign_validateResultObservationCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSign_validateResultObservationCode(VitalSign vitalSign, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		// TODO override the constraint, if desired
 		// -> uncomment the scaffolding
 		// -> specify the condition that violates the constraint
@@ -1843,15 +2640,10 @@ public class HITSPValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateResultObservationCode", getObjectLabel(vitalSign, context) },
-						 new Object[] { vitalSign },
-						 context));
+				diagnostics.add(createDiagnostic(
+					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
+							"validateResultObservationCode", getObjectLabel(vitalSign, context) },
+					new Object[] { vitalSign }, context));
 			}
 			return false;
 		}
@@ -1863,25 +2655,64 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePayersSection(PayersSection payersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(payersSection, diagnostics, context)) return false;
+	public boolean validatePayersSection(PayersSection payersSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(payersSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePayersSection_validatePayersSectionTemplateId(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePayersSection_validatePayersSectionCode(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePayersSection_validatePayersSectionTitle(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePayersSection_validatePayersSectionText(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePayersSection_validatePayersSectionCoverageActivity(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePayersSection_validateIHEPayersSectionTemplateId(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePayersSection_validateIHEPayersSectionCoverageEntry(payersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePayersSection_validateHITSPPayersSectionTemplateId(payersSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePayersSection_validatePayersSectionTemplateId(
+				payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePayersSection_validatePayersSectionCode(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePayersSection_validatePayersSectionTitle(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePayersSection_validatePayersSectionText(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePayersSection_validatePayersSectionCoverageActivity(
+				payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePayersSection_validateIHEPayersSectionTemplateId(
+				payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePayersSection_validateIHEPayersSectionCoverageEntry(
+				payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayersSection_validateHITSPPayersSectionTemplateId(payersSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1891,7 +2722,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePayersSection_validateHITSPPayersSectionTemplateId(PayersSection payersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePayersSection_validateHITSPPayersSectionTemplateId(PayersSection payersSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return payersSection.validateHITSPPayersSectionTemplateId(diagnostics, context);
 	}
 
@@ -1900,26 +2732,72 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesReactionsSection(AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(allergiesReactionsSection, diagnostics, context)) return false;
+	public boolean validateAllergiesReactionsSection(AllergiesReactionsSection allergiesReactionsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(allergiesReactionsSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateAlertsSection_validateAlertsSectionTemplateId(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateAlertsSection_validateAlertsSectionCode(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateAlertsSection_validateAlertsSectionTitle(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateAlertsSection_validateAlertsSectionText(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateAlertsSection_validateAlertsSectionProblemAct(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateAllergiesReactionsSection_validateAllergiesReactionsSectionTemplateId(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateAllergiesReactionsSection_validateAllergiesReactionsSectionAllergyIntoleranceConcern(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionTemplateId(allergiesReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(allergiesReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAlertsSection_validateAlertsSectionTemplateId(
+				allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAlertsSection_validateAlertsSectionCode(
+				allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAlertsSection_validateAlertsSectionTitle(
+				allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAlertsSection_validateAlertsSectionText(
+				allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAlertsSection_validateAlertsSectionProblemAct(
+				allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateAllergiesReactionsSection_validateAllergiesReactionsSectionTemplateId(
+				allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateAllergiesReactionsSection_validateAllergiesReactionsSectionAllergyIntoleranceConcern(
+				allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionTemplateId(
+				allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(
+				allergiesReactionsSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1929,7 +2807,9 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionTemplateId(AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionTemplateId(
+			AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return allergiesReactionsSection.validateHITSPAllergiesReactionsSectionTemplateId(diagnostics, context);
 	}
 
@@ -1939,8 +2819,11 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return allergiesReactionsSection.validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(diagnostics, context);
+	public boolean validateAllergiesReactionsSection_validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(
+			AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return allergiesReactionsSection.validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(
+			diagnostics, context);
 	}
 
 	/**
@@ -1948,26 +2831,72 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemListSection(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(problemListSection, diagnostics, context)) return false;
+	public boolean validateProblemListSection(ProblemListSection problemListSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(problemListSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemSection_validateProblemSectionTemplateId(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemSection_validateProblemSectionCode(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemSection_validateProblemSectionTitle(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemSection_validateProblemSectionText(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemSection_validateProblemSectionProblemAct(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateActiveProblemsSection_validateActiveProblemsSectionTemplateId(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateActiveProblemsSection_validateActiveProblemsSectionProblemConcernEntry(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProblemListSection_validateProblemListSectionTemplateId(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProblemListSection_validateProblemListSectionCondition(problemListSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemSection_validateProblemSectionTemplateId(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemSection_validateProblemSectionCode(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemSection_validateProblemSectionTitle(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemSection_validateProblemSectionText(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemSection_validateProblemSectionProblemAct(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateActiveProblemsSection_validateActiveProblemsSectionTemplateId(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateActiveProblemsSection_validateActiveProblemsSectionProblemConcernEntry(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProblemListSection_validateProblemListSectionTemplateId(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProblemListSection_validateProblemListSectionCondition(
+				problemListSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1977,7 +2906,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemListSection_validateProblemListSectionTemplateId(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemListSection_validateProblemListSectionTemplateId(
+			ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return problemListSection.validateProblemListSectionTemplateId(diagnostics, context);
 	}
 
@@ -1987,7 +2917,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemListSection_validateProblemListSectionCondition(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemListSection_validateProblemListSectionCondition(
+			ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return problemListSection.validateProblemListSectionCondition(diagnostics, context);
 	}
 
@@ -1996,20 +2927,48 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryOfPastIllnessSection(HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(historyOfPastIllnessSection, diagnostics, context)) return false;
+	public boolean validateHistoryOfPastIllnessSection(HistoryOfPastIllnessSection historyOfPastIllnessSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(historyOfPastIllnessSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHistoryOfPastIllnessSection_validateHistoryOfPastIllnessSectionTemplateId(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHistoryOfPastIllnessSection_validateHistoryOfPastIllnessSectionCode(historyOfPastIllnessSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateHistoryOfPastIllnessSection_validateHITSPHistoryOfPastIllnessSectionTemplateId(historyOfPastIllnessSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHistoryOfPastIllnessSection_validateHistoryOfPastIllnessSectionTemplateId(
+				historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHistoryOfPastIllnessSection_validateHistoryOfPastIllnessSectionCode(
+				historyOfPastIllnessSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryOfPastIllnessSection_validateHITSPHistoryOfPastIllnessSectionTemplateId(
+				historyOfPastIllnessSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2019,7 +2978,9 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryOfPastIllnessSection_validateHITSPHistoryOfPastIllnessSectionTemplateId(HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryOfPastIllnessSection_validateHITSPHistoryOfPastIllnessSectionTemplateId(
+			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return historyOfPastIllnessSection.validateHITSPHistoryOfPastIllnessSectionTemplateId(diagnostics, context);
 	}
 
@@ -2028,20 +2989,48 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateChiefComplaintSection(ChiefComplaintSection chiefComplaintSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(chiefComplaintSection, diagnostics, context)) return false;
+	public boolean validateChiefComplaintSection(ChiefComplaintSection chiefComplaintSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(chiefComplaintSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateChiefComplaintSection_validateChiefComplaintSectionTemplateId(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateChiefComplaintSection_validateChiefComplaintSectionCode(chiefComplaintSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateChiefComplaintSection_validateHITSPChiefComplaintSectionTemplateId(chiefComplaintSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateChiefComplaintSection_validateChiefComplaintSectionTemplateId(
+				chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateChiefComplaintSection_validateChiefComplaintSectionCode(
+				chiefComplaintSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateChiefComplaintSection_validateHITSPChiefComplaintSectionTemplateId(
+				chiefComplaintSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2051,7 +3040,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateChiefComplaintSection_validateHITSPChiefComplaintSectionTemplateId(ChiefComplaintSection chiefComplaintSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateChiefComplaintSection_validateHITSPChiefComplaintSectionTemplateId(
+			ChiefComplaintSection chiefComplaintSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return chiefComplaintSection.validateHITSPChiefComplaintSectionTemplateId(diagnostics, context);
 	}
 
@@ -2060,20 +3050,48 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReasonForReferralSection(ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(reasonForReferralSection, diagnostics, context)) return false;
+	public boolean validateReasonForReferralSection(ReasonForReferralSection reasonForReferralSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(reasonForReferralSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateReasonForReferralSection_validateReasonForReferralSectionTemplateId(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateReasonForReferralSection_validateReasonForReferralSectionCode(reasonForReferralSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateReasonForReferralSection_validateHITSPReasonForReferralSectionTemplateId(reasonForReferralSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateReasonForReferralSection_validateReasonForReferralSectionTemplateId(
+				reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateReasonForReferralSection_validateReasonForReferralSectionCode(
+				reasonForReferralSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateReasonForReferralSection_validateHITSPReasonForReferralSectionTemplateId(
+				reasonForReferralSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2083,7 +3101,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReasonForReferralSection_validateHITSPReasonForReferralSectionTemplateId(ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateReasonForReferralSection_validateHITSPReasonForReferralSectionTemplateId(
+			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return reasonForReferralSection.validateHITSPReasonForReferralSectionTemplateId(diagnostics, context);
 	}
 
@@ -2092,20 +3111,48 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryOfPresentIllness(HistoryOfPresentIllness historyOfPresentIllness, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(historyOfPresentIllness, diagnostics, context)) return false;
+	public boolean validateHistoryOfPresentIllness(HistoryOfPresentIllness historyOfPresentIllness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(historyOfPresentIllness, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHistoryOfPresentIllness_validateHistoryOfPresentIllnessTemplateId(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHistoryOfPresentIllness_validateHistoryOfPresentIllnessCode(historyOfPresentIllness, diagnostics, context);
-		if (result || diagnostics != null) result &= validateHistoryOfPresentIllness_validateHITSPHistoryOfPresentIllnessTemplateId(historyOfPresentIllness, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHistoryOfPresentIllness_validateHistoryOfPresentIllnessTemplateId(
+				historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHistoryOfPresentIllness_validateHistoryOfPresentIllnessCode(
+				historyOfPresentIllness, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHistoryOfPresentIllness_validateHITSPHistoryOfPresentIllnessTemplateId(
+				historyOfPresentIllness, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2115,7 +3162,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryOfPresentIllness_validateHITSPHistoryOfPresentIllnessTemplateId(HistoryOfPresentIllness historyOfPresentIllness, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryOfPresentIllness_validateHITSPHistoryOfPresentIllnessTemplateId(
+			HistoryOfPresentIllness historyOfPresentIllness, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return historyOfPresentIllness.validateHITSPHistoryOfPresentIllnessTemplateId(diagnostics, context);
 	}
 
@@ -2124,26 +3172,72 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurgeriesSection(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(surgeriesSection, diagnostics, context)) return false;
+	public boolean validateSurgeriesSection(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(surgeriesSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProceduresSection_validateProceduresSectionTemplateId(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProceduresSection_validateProceduresSectionCode(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProceduresSection_validateProceduresSectionTitle(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSurgeriesSection_validateSurgeriesSectionTemplateId(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCodedSurgeriesSection_validateCodedSurgeriesSectionTemplateId(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCodedSurgeriesSection_validateCodedSurgeriesSectionExternalReference(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCodedSurgeriesSection_validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSurgeriesSection_validateHITSPSurgeriesSectionTemplateId(surgeriesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSurgeriesSection_validateHITSPSurgeriesSectionProcedureActivity(surgeriesSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProceduresSection_validateProceduresSectionTemplateId(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProceduresSection_validateProceduresSectionCode(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProceduresSection_validateProceduresSectionTitle(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSurgeriesSection_validateSurgeriesSectionTemplateId(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCodedSurgeriesSection_validateCodedSurgeriesSectionTemplateId(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCodedSurgeriesSection_validateCodedSurgeriesSectionExternalReference(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCodedSurgeriesSection_validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSurgeriesSection_validateHITSPSurgeriesSectionTemplateId(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSurgeriesSection_validateHITSPSurgeriesSectionProcedureActivity(
+				surgeriesSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2153,7 +3247,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurgeriesSection_validateHITSPSurgeriesSectionTemplateId(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSurgeriesSection_validateHITSPSurgeriesSectionTemplateId(SurgeriesSection surgeriesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return surgeriesSection.validateHITSPSurgeriesSectionTemplateId(diagnostics, context);
 	}
 
@@ -2163,7 +3258,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSurgeriesSection_validateHITSPSurgeriesSectionProcedureActivity(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSurgeriesSection_validateHITSPSurgeriesSectionProcedureActivity(
+			SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return surgeriesSection.validateHITSPSurgeriesSectionProcedureActivity(diagnostics, context);
 	}
 
@@ -2172,22 +3268,56 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFunctionalStatusSection(FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(functionalStatusSection, diagnostics, context)) return false;
+	public boolean validateFunctionalStatusSection(FunctionalStatusSection functionalStatusSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(functionalStatusSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionClinicalStatements(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionTemplateId(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionCode(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionTitle(functionalStatusSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateFunctionalStatusSection_validateHITSPFunctionalStatusSectionTemplateId(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionClinicalStatements(
+				functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionTemplateId(
+				functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionCode(
+				functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionTitle(
+				functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFunctionalStatusSection_validateHITSPFunctionalStatusSectionTemplateId(
+				functionalStatusSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2197,7 +3327,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFunctionalStatusSection_validateHITSPFunctionalStatusSectionTemplateId(FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateFunctionalStatusSection_validateHITSPFunctionalStatusSectionTemplateId(
+			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return functionalStatusSection.validateHITSPFunctionalStatusSectionTemplateId(diagnostics, context);
 	}
 
@@ -2206,20 +3337,51 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalAdmissionDiagnosisSection(HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(hospitalAdmissionDiagnosisSection, diagnostics, context)) return false;
+	public boolean validateHospitalAdmissionDiagnosisSection(
+			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(hospitalAdmissionDiagnosisSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHospitalAdmissionDiagnosisSection_validateHospitalAdmissionDiagnosisSectionTemplateId(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHospitalAdmissionDiagnosisSection_validateHospitalAdmissionDiagnosisSectionCode(hospitalAdmissionDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateHospitalAdmissionDiagnosisSection_validateHITSPHospitalAdmissionDiagnosisSectionTemplateId(hospitalAdmissionDiagnosisSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(
+				hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(
+				hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHospitalAdmissionDiagnosisSection_validateHospitalAdmissionDiagnosisSectionTemplateId(
+				hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHospitalAdmissionDiagnosisSection_validateHospitalAdmissionDiagnosisSectionCode(
+				hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHospitalAdmissionDiagnosisSection_validateHITSPHospitalAdmissionDiagnosisSectionTemplateId(
+				hospitalAdmissionDiagnosisSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2229,8 +3391,11 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalAdmissionDiagnosisSection_validateHITSPHospitalAdmissionDiagnosisSectionTemplateId(HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return hospitalAdmissionDiagnosisSection.validateHITSPHospitalAdmissionDiagnosisSectionTemplateId(diagnostics, context);
+	public boolean validateHospitalAdmissionDiagnosisSection_validateHITSPHospitalAdmissionDiagnosisSectionTemplateId(
+			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalAdmissionDiagnosisSection.validateHITSPHospitalAdmissionDiagnosisSectionTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -2238,20 +3403,48 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeDiagnosisSection(DischargeDiagnosisSection dischargeDiagnosisSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(dischargeDiagnosisSection, diagnostics, context)) return false;
+	public boolean validateDischargeDiagnosisSection(DischargeDiagnosisSection dischargeDiagnosisSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(dischargeDiagnosisSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateDischargeDiagnosisSection_validateDischargeDiagnosisSectionTemplateId(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateDischargeDiagnosisSection_validateDischargeDiagnosisSectionCode(dischargeDiagnosisSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateDischargeDiagnosisSection_validateHITSPDischargeDiagnosisSectionTemplateId(dischargeDiagnosisSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateDischargeDiagnosisSection_validateDischargeDiagnosisSectionTemplateId(
+				dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateDischargeDiagnosisSection_validateDischargeDiagnosisSectionCode(
+				dischargeDiagnosisSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDischargeDiagnosisSection_validateHITSPDischargeDiagnosisSectionTemplateId(
+				dischargeDiagnosisSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2261,7 +3454,9 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeDiagnosisSection_validateHITSPDischargeDiagnosisSectionTemplateId(DischargeDiagnosisSection dischargeDiagnosisSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDischargeDiagnosisSection_validateHITSPDischargeDiagnosisSectionTemplateId(
+			DischargeDiagnosisSection dischargeDiagnosisSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return dischargeDiagnosisSection.validateHITSPDischargeDiagnosisSectionTemplateId(diagnostics, context);
 	}
 
@@ -2270,26 +3465,72 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSection(MedicationsSection medicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationsSection, diagnostics, context)) return false;
+	public boolean validateMedicationsSection(MedicationsSection medicationsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationsSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionHasMedicationOrSupplyActivity(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTemplateId(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionCode(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTitle(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionText(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedicationsSection_validateIHEMedicationsSectionTemplateId(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedicationsSection_validateIHEMedicationsSectionMedication(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationsSection_validateHITSPMedicationsSectionTemplateId(medicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationsSection_validateHITSPMedicationsSectionMedication(medicationsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionHasMedicationOrSupplyActivity(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTemplateId(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionCode(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTitle(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionText(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedicationsSection_validateIHEMedicationsSectionTemplateId(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedicationsSection_validateIHEMedicationsSectionMedication(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicationsSection_validateHITSPMedicationsSectionTemplateId(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicationsSection_validateHITSPMedicationsSectionMedication(
+				medicationsSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2299,7 +3540,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSection_validateHITSPMedicationsSectionTemplateId(MedicationsSection medicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationsSection_validateHITSPMedicationsSectionTemplateId(
+			MedicationsSection medicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medicationsSection.validateHITSPMedicationsSectionTemplateId(diagnostics, context);
 	}
 
@@ -2309,7 +3551,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSection_validateHITSPMedicationsSectionMedication(MedicationsSection medicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationsSection_validateHITSPMedicationsSectionMedication(
+			MedicationsSection medicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medicationsSection.validateHITSPMedicationsSectionMedication(diagnostics, context);
 	}
 
@@ -2318,20 +3561,51 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdmissionMedicationHistorySection(AdmissionMedicationHistorySection admissionMedicationHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(admissionMedicationHistorySection, diagnostics, context)) return false;
+	public boolean validateAdmissionMedicationHistorySection(
+			AdmissionMedicationHistorySection admissionMedicationHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(admissionMedicationHistorySection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateAdmissionMedicationHistorySection_validateAdmissionMedicationHistorySectionTemplateId(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateAdmissionMedicationHistorySection_validateAdmissionMedicationHistorySectionCode(admissionMedicationHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAdmissionMedicationHistorySection_validateHITSPAdmissionMedicationHistorySectionTemplateId(admissionMedicationHistorySection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(
+				admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(
+				admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateAdmissionMedicationHistorySection_validateAdmissionMedicationHistorySectionTemplateId(
+				admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateAdmissionMedicationHistorySection_validateAdmissionMedicationHistorySectionCode(
+				admissionMedicationHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdmissionMedicationHistorySection_validateHITSPAdmissionMedicationHistorySectionTemplateId(
+				admissionMedicationHistorySection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2341,8 +3615,11 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdmissionMedicationHistorySection_validateHITSPAdmissionMedicationHistorySectionTemplateId(AdmissionMedicationHistorySection admissionMedicationHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return admissionMedicationHistorySection.validateHITSPAdmissionMedicationHistorySectionTemplateId(diagnostics, context);
+	public boolean validateAdmissionMedicationHistorySection_validateHITSPAdmissionMedicationHistorySectionTemplateId(
+			AdmissionMedicationHistorySection admissionMedicationHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return admissionMedicationHistorySection.validateHITSPAdmissionMedicationHistorySectionTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -2350,20 +3627,51 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalDischargeMedicationsSection(HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(hospitalDischargeMedicationsSection, diagnostics, context)) return false;
+	public boolean validateHospitalDischargeMedicationsSection(
+			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(hospitalDischargeMedicationsSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionTemplateId(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionCode(hospitalDischargeMedicationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateHospitalDischargeMedicationsSection_validateHITSPHospitalDischargeMedicationsSectionTemplateId(hospitalDischargeMedicationsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(
+				hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(
+				hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionTemplateId(
+				hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHospitalDischargeMedicationsSection_validateHospitalDischargeMedicationsSectionCode(
+				hospitalDischargeMedicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHospitalDischargeMedicationsSection_validateHITSPHospitalDischargeMedicationsSectionTemplateId(
+				hospitalDischargeMedicationsSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2373,8 +3681,11 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalDischargeMedicationsSection_validateHITSPHospitalDischargeMedicationsSectionTemplateId(HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return hospitalDischargeMedicationsSection.validateHITSPHospitalDischargeMedicationsSectionTemplateId(diagnostics, context);
+	public boolean validateHospitalDischargeMedicationsSection_validateHITSPHospitalDischargeMedicationsSectionTemplateId(
+			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargeMedicationsSection.validateHITSPHospitalDischargeMedicationsSectionTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -2382,20 +3693,51 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsAdministeredSection(MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationsAdministeredSection, diagnostics, context)) return false;
+	public boolean validateMedicationsAdministeredSection(
+			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationsAdministeredSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionTemplateId(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionCode(medicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationsAdministeredSection_validateHITSPMedicationsAdministeredSectionTemplateId(medicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(
+				medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(
+				medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionTemplateId(
+				medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionCode(
+				medicationsAdministeredSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicationsAdministeredSection_validateHITSPMedicationsAdministeredSectionTemplateId(
+				medicationsAdministeredSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2405,8 +3747,11 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsAdministeredSection_validateHITSPMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationsAdministeredSection.validateHITSPMedicationsAdministeredSectionTemplateId(diagnostics, context);
+	public boolean validateMedicationsAdministeredSection_validateHITSPMedicationsAdministeredSectionTemplateId(
+			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicationsAdministeredSection.validateHITSPMedicationsAdministeredSectionTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -2414,24 +3759,64 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectivesSection(AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(advanceDirectivesSection, diagnostics, context)) return false;
+	public boolean validateAdvanceDirectivesSection(AdvanceDirectivesSection advanceDirectivesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(advanceDirectivesSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTemplateId(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionCode(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTitle(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionAdvanceDirectiveObservation(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateAdvanceDirectivesSection_validateIHEAdvanceDirectivesSectionTemplateId(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCodedAdvanceDirectivesSection_validateCodedAdvanceDirectivesSectionTemplateId(advanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAdvanceDirectivesSection_validateHITSPAdvanceDirectivesSectionTemplateId(advanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTemplateId(
+				advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionCode(
+				advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTitle(
+				advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
+				advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateAdvanceDirectivesSection_validateIHEAdvanceDirectivesSectionTemplateId(
+				advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCodedAdvanceDirectivesSection_validateCodedAdvanceDirectivesSectionTemplateId(
+				advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirectivesSection_validateHITSPAdvanceDirectivesSectionTemplateId(
+				advanceDirectivesSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2441,7 +3826,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectivesSection_validateHITSPAdvanceDirectivesSectionTemplateId(AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectivesSection_validateHITSPAdvanceDirectivesSectionTemplateId(
+			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return advanceDirectivesSection.validateHITSPAdvanceDirectivesSectionTemplateId(diagnostics, context);
 	}
 
@@ -2450,26 +3836,72 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSection(ImmunizationsSection immunizationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(immunizationsSection, diagnostics, context)) return false;
+	public boolean validateImmunizationsSection(ImmunizationsSection immunizationsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(immunizationsSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionClinicalStatements(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTemplateId(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionCode(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTitle(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionText(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateImmunizationsSection_validateIHEImmunizationsSectionTemplateId(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateImmunizationsSection_validateIHEImmunizationsSectionImmunization(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateImmunizationsSection_validateHITSPImmunizationsSectionTemplateId(immunizationsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateImmunizationsSection_validateHITSPImmunizationsSectionImmunization(immunizationsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionClinicalStatements(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTemplateId(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionCode(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTitle(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionText(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateImmunizationsSection_validateIHEImmunizationsSectionTemplateId(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateImmunizationsSection_validateIHEImmunizationsSectionImmunization(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateImmunizationsSection_validateHITSPImmunizationsSectionTemplateId(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateImmunizationsSection_validateHITSPImmunizationsSectionImmunization(
+				immunizationsSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2479,7 +3911,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSection_validateHITSPImmunizationsSectionTemplateId(ImmunizationsSection immunizationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationsSection_validateHITSPImmunizationsSectionTemplateId(
+			ImmunizationsSection immunizationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return immunizationsSection.validateHITSPImmunizationsSectionTemplateId(diagnostics, context);
 	}
 
@@ -2489,7 +3922,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSection_validateHITSPImmunizationsSectionImmunization(ImmunizationsSection immunizationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationsSection_validateHITSPImmunizationsSectionImmunization(
+			ImmunizationsSection immunizationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return immunizationsSection.validateHITSPImmunizationsSectionImmunization(diagnostics, context);
 	}
 
@@ -2498,21 +3932,52 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSection(PhysicalExamSection physicalExamSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(physicalExamSection, diagnostics, context)) return false;
+	public boolean validatePhysicalExamSection(PhysicalExamSection physicalExamSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(physicalExamSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePhysicalExamNarrativeSection_validatePhysicalExamNarrativeSectionTemplateId(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePhysicalExamNarrativeSection_validatePhysicalExamNarrativeSectionCode(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePhysicalExamSection_validatePhysicalExamSectionTemplateId(physicalExamSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePhysicalExamSection_validateHITSPPhysicalExamSectionTemplateId(physicalExamSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePhysicalExamNarrativeSection_validatePhysicalExamNarrativeSectionTemplateId(
+				physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePhysicalExamNarrativeSection_validatePhysicalExamNarrativeSectionCode(
+				physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePhysicalExamSection_validatePhysicalExamSectionTemplateId(
+				physicalExamSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePhysicalExamSection_validateHITSPPhysicalExamSectionTemplateId(
+				physicalExamSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2522,7 +3987,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamSection_validateHITSPPhysicalExamSectionTemplateId(PhysicalExamSection physicalExamSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePhysicalExamSection_validateHITSPPhysicalExamSectionTemplateId(
+			PhysicalExamSection physicalExamSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return physicalExamSection.validateHITSPPhysicalExamSectionTemplateId(diagnostics, context);
 	}
 
@@ -2531,20 +3997,48 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReviewOfSystemsSection(ReviewOfSystemsSection reviewOfSystemsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(reviewOfSystemsSection, diagnostics, context)) return false;
+	public boolean validateReviewOfSystemsSection(ReviewOfSystemsSection reviewOfSystemsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(reviewOfSystemsSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateReviewOfSystemsSection_validateReviewOfSystemsSectionTemplateId(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateReviewOfSystemsSection_validateReviewOfSystemsSectionCode(reviewOfSystemsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateReviewOfSystemsSection_validateHITSPReviewOfSystemsSectionTemplateId(reviewOfSystemsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateReviewOfSystemsSection_validateReviewOfSystemsSectionTemplateId(
+				reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateReviewOfSystemsSection_validateReviewOfSystemsSectionCode(
+				reviewOfSystemsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateReviewOfSystemsSection_validateHITSPReviewOfSystemsSectionTemplateId(
+				reviewOfSystemsSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2554,7 +4048,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReviewOfSystemsSection_validateHITSPReviewOfSystemsSectionTemplateId(ReviewOfSystemsSection reviewOfSystemsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateReviewOfSystemsSection_validateHITSPReviewOfSystemsSectionTemplateId(
+			ReviewOfSystemsSection reviewOfSystemsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return reviewOfSystemsSection.validateHITSPReviewOfSystemsSectionTemplateId(diagnostics, context);
 	}
 
@@ -2563,20 +4058,48 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalCourseSection(HospitalCourseSection hospitalCourseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(hospitalCourseSection, diagnostics, context)) return false;
+	public boolean validateHospitalCourseSection(HospitalCourseSection hospitalCourseSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(hospitalCourseSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHospitalCourseSection_validateHospitalCourseSectionTemplateId(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHospitalCourseSection_validateHospitalCourseSectionCode(hospitalCourseSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateHospitalCourseSection_validateHITSPHospitalCourseSectionTemplateId(hospitalCourseSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHospitalCourseSection_validateHospitalCourseSectionTemplateId(
+				hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHospitalCourseSection_validateHospitalCourseSectionCode(
+				hospitalCourseSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHospitalCourseSection_validateHITSPHospitalCourseSectionTemplateId(
+				hospitalCourseSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2586,7 +4109,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalCourseSection_validateHITSPHospitalCourseSectionTemplateId(HospitalCourseSection hospitalCourseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHospitalCourseSection_validateHITSPHospitalCourseSectionTemplateId(
+			HospitalCourseSection hospitalCourseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return hospitalCourseSection.validateHITSPHospitalCourseSectionTemplateId(diagnostics, context);
 	}
 
@@ -2595,24 +4119,64 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSection(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(diagnosticResultsSection, diagnostics, context)) return false;
+	public boolean validateDiagnosticResultsSection(DiagnosticResultsSection diagnosticResultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(diagnosticResultsSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionTemplateId(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionCode(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionExternalReference(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionSimpleObservation(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateDiagnosticResultsSection_validateDiagnosticResultsSectionTemplateId(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateDiagnosticResultsSection_validateDiagnosticResultsSectionDiagnosticProcedure(diagnosticResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateDiagnosticResultsSection_validateDiagnosticResultsSectionResult(diagnosticResultsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionTemplateId(
+				diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionCode(
+				diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionExternalReference(
+				diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCodedResultsSection_validateCodedResultsSectionSimpleObservation(
+				diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDiagnosticResultsSection_validateDiagnosticResultsSectionTemplateId(
+				diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDiagnosticResultsSection_validateDiagnosticResultsSectionDiagnosticProcedure(
+				diagnosticResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDiagnosticResultsSection_validateDiagnosticResultsSectionResult(
+				diagnosticResultsSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2622,7 +4186,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSection_validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiagnosticResultsSection_validateDiagnosticResultsSectionTemplateId(
+			DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return diagnosticResultsSection.validateDiagnosticResultsSectionTemplateId(diagnostics, context);
 	}
 
@@ -2632,7 +4197,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSection_validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiagnosticResultsSection_validateDiagnosticResultsSectionDiagnosticProcedure(
+			DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return diagnosticResultsSection.validateDiagnosticResultsSectionDiagnosticProcedure(diagnostics, context);
 	}
 
@@ -2642,7 +4208,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSection_validateDiagnosticResultsSectionResult(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiagnosticResultsSection_validateDiagnosticResultsSectionResult(
+			DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return diagnosticResultsSection.validateDiagnosticResultsSectionResult(diagnostics, context);
 	}
 
@@ -2651,20 +4218,48 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentAndPlanSection(AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(assessmentAndPlanSection, diagnostics, context)) return false;
+	public boolean validateAssessmentAndPlanSection(AssessmentAndPlanSection assessmentAndPlanSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(assessmentAndPlanSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateAssessmentAndPlanSection_validateAssessmentAndPlanSectionTemplateId(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateAssessmentAndPlanSection_validateAssessmentAndPlanSectionCode(assessmentAndPlanSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAssessmentAndPlanSection_validateHITSPAssessmentAndPlanSectionTemplateId(assessmentAndPlanSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateAssessmentAndPlanSection_validateAssessmentAndPlanSectionTemplateId(
+				assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateAssessmentAndPlanSection_validateAssessmentAndPlanSectionCode(
+				assessmentAndPlanSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAssessmentAndPlanSection_validateHITSPAssessmentAndPlanSectionTemplateId(
+				assessmentAndPlanSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2674,7 +4269,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentAndPlanSection_validateHITSPAssessmentAndPlanSectionTemplateId(AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAssessmentAndPlanSection_validateHITSPAssessmentAndPlanSectionTemplateId(
+			AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return assessmentAndPlanSection.validateHITSPAssessmentAndPlanSectionTemplateId(diagnostics, context);
 	}
 
@@ -2683,29 +4279,84 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareSection(PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(planOfCareSection, diagnostics, context)) return false;
+	public boolean validatePlanOfCareSection(PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(planOfCareSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionTemplateId(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionCode(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionTitle(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionText(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityAct(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityEncounter(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityObservation(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityProcedure(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivitySupply(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCarePlanSection_validateCarePlanSectionTemplateId(planOfCareSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePlanOfCareSection_validateHITSPPlanOfCareSectionTemplateId(planOfCareSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionTemplateId(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionCode(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionTitle(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionText(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityAct(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityEncounter(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityObservation(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivityProcedure(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivitySupply(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCarePlanSection_validateCarePlanSectionTemplateId(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePlanOfCareSection_validateHITSPPlanOfCareSectionTemplateId(
+				planOfCareSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2715,7 +4366,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareSection_validateHITSPPlanOfCareSectionTemplateId(PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlanOfCareSection_validateHITSPPlanOfCareSectionTemplateId(
+			PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return planOfCareSection.validateHITSPPlanOfCareSectionTemplateId(diagnostics, context);
 	}
 
@@ -2724,22 +4376,56 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistorySection(FamilyHistorySection familyHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(familyHistorySection, diagnostics, context)) return false;
+	public boolean validateFamilyHistorySection(FamilyHistorySection familyHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(familyHistorySection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionTemplateId(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionCode(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionTitle(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateFamilyMedicalHistorySection_validateFamilyMedicalHistorySectionTemplateId(familyHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateFamilyHistorySection_validateHITSPFamilyHistorySectionTemplateId(familyHistorySection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionTemplateId(
+				familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionCode(
+				familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionTitle(
+				familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateFamilyMedicalHistorySection_validateFamilyMedicalHistorySectionTemplateId(
+				familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFamilyHistorySection_validateHITSPFamilyHistorySectionTemplateId(
+				familyHistorySection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2749,7 +4435,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistorySection_validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection familyHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateFamilyHistorySection_validateHITSPFamilyHistorySectionTemplateId(
+			FamilyHistorySection familyHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return familyHistorySection.validateHITSPFamilyHistorySectionTemplateId(diagnostics, context);
 	}
 
@@ -2758,22 +4445,56 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistorySection(SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(socialHistorySection, diagnostics, context)) return false;
+	public boolean validateSocialHistorySection(SocialHistorySection socialHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(socialHistorySection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTemplateId(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionCode(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSocialHistorySection_validateIHESocialHistorySectionTemplateId(socialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSocialHistorySection_validateHITSPSocialHistorySectionTemplateId(socialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTemplateId(
+				socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionCode(
+				socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(
+				socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSocialHistorySection_validateIHESocialHistorySectionTemplateId(
+				socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSocialHistorySection_validateHITSPSocialHistorySectionTemplateId(
+				socialHistorySection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2783,7 +4504,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistorySection_validateHITSPSocialHistorySectionTemplateId(SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSocialHistorySection_validateHITSPSocialHistorySectionTemplateId(
+			SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return socialHistorySection.validateHITSPSocialHistorySectionTemplateId(diagnostics, context);
 	}
 
@@ -2792,24 +4514,64 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSection(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(encountersSection, diagnostics, context)) return false;
+	public boolean validateEncountersSection(EncountersSection encountersSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(encountersSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateEncountersSection_validateEncountersSectionTemplateId(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateEncountersSection_validateEncountersSectionCode(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateEncountersSection_validateEncountersSectionTitle(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateEncounterHistorySection_validateEncounterHistorySectionTemplateId(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateEncounterHistorySection_validateEncounterHistorySectionEncounterEntry(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEncountersSection_validateHITSPEncountersSectionTemplateId(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEncountersSection_validateHITSPEncountersSectionEncounterEntry(encountersSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateEncountersSection_validateEncountersSectionTemplateId(
+				encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateEncountersSection_validateEncountersSectionCode(
+				encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateEncountersSection_validateEncountersSectionTitle(
+				encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateEncounterHistorySection_validateEncounterHistorySectionTemplateId(
+				encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateEncounterHistorySection_validateEncounterHistorySectionEncounterEntry(
+				encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEncountersSection_validateHITSPEncountersSectionTemplateId(
+				encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEncountersSection_validateHITSPEncountersSectionEncounterEntry(
+				encountersSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2819,7 +4581,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSection_validateHITSPEncountersSectionTemplateId(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersSection_validateHITSPEncountersSectionTemplateId(
+			EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return encountersSection.validateHITSPEncountersSectionTemplateId(diagnostics, context);
 	}
 
@@ -2829,7 +4592,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSection_validateHITSPEncountersSectionEncounterEntry(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersSection_validateHITSPEncountersSectionEncounterEntry(
+			EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return encountersSection.validateHITSPEncountersSectionEncounterEntry(diagnostics, context);
 	}
 
@@ -2838,22 +4602,56 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicalEquipmentSection(MedicalEquipmentSection medicalEquipmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicalEquipmentSection, diagnostics, context)) return false;
+	public boolean validateMedicalEquipmentSection(MedicalEquipmentSection medicalEquipmentSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicalEquipmentSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionTemplateId(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionCode(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionTitle(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedicalDevicesSection_validateMedicalDevicesSectionTemplateId(medicalEquipmentSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicalEquipmentSection_validateHITSPMedicalEquipmentSectionTemplateId(medicalEquipmentSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionTemplateId(
+				medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionCode(
+				medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionTitle(
+				medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedicalDevicesSection_validateMedicalDevicesSectionTemplateId(
+				medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicalEquipmentSection_validateHITSPMedicalEquipmentSectionTemplateId(
+				medicalEquipmentSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2863,7 +4661,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicalEquipmentSection_validateHITSPMedicalEquipmentSectionTemplateId(MedicalEquipmentSection medicalEquipmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicalEquipmentSection_validateHITSPMedicalEquipmentSectionTemplateId(
+			MedicalEquipmentSection medicalEquipmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medicalEquipmentSection.validateHITSPMedicalEquipmentSectionTemplateId(diagnostics, context);
 	}
 
@@ -2874,30 +4673,93 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	public boolean validateResult(Result result, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean theResult = validate_EveryMultiplicityConforms(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= validate_EveryDataValueConforms(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= validate_EveryReferenceIsContained(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= validate_EveryProxyResolves(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= validate_UniqueID(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= validate_EveryKeyUnique(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= validate_EveryMapEntryUnique(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationReferenceRangeRequired(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationInformationSource(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationTemplateId(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationId(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationCode(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= ccdValidator.validateResultObservation_validateResultObservationValue(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= iheValidator.validateSimpleObservation_validateSimpleObservationTemplateId(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= iheValidator.validateSimpleObservation_validateSimpleObservationId(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= iheValidator.validateSimpleObservation_validateSimpleObservationStatusCode(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= validateResult_validateResultTemplateId(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= validateResult_validateResultCode(result, diagnostics, context);
-		if (theResult || diagnostics != null) theResult &= validateResult_validateResultEffectiveTime(result, diagnostics, context);
+		if (theResult || diagnostics != null) {
+			theResult &= validate_EveryDataValueConforms(result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= validate_EveryReferenceIsContained(result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= validate_EveryProxyResolves(result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= validate_UniqueID(result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= validate_EveryKeyUnique(result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= validate_EveryMapEntryUnique(result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationReferenceRangeRequired(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationInformationSource(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationTemplateId(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationId(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationStatusCode(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationCode(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= ccdValidator.validateResultObservation_validateResultObservationValue(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= iheValidator.validateSimpleObservation_validateSimpleObservationTemplateId(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= iheValidator.validateSimpleObservation_validateSimpleObservationId(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= iheValidator.validateSimpleObservation_validateSimpleObservationStatusCode(
+				result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= validateResult_validateResultTemplateId(result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= validateResult_validateResultCode(result, diagnostics, context);
+		}
+		if (theResult || diagnostics != null) {
+			theResult &= validateResult_validateResultEffectiveTime(result, diagnostics, context);
+		}
 		return theResult;
 	}
 
@@ -2907,7 +4769,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResult_validateResultValuePresence(Result result, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResult_validateResultValuePresence(Result result, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return result.validateResultValuePresence(diagnostics, context);
 	}
 
@@ -2917,7 +4780,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResult_validateResultTemplateId(Result result, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResult_validateResultTemplateId(Result result, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return result.validateResultTemplateId(diagnostics, context);
 	}
 
@@ -2927,7 +4791,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResult_validateResultCode(Result result, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResult_validateResultCode(Result result, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return result.validateResultCode(diagnostics, context);
 	}
 
@@ -2937,7 +4802,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResult_validateResultEffectiveTime(Result result, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResult_validateResultEffectiveTime(Result result, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return result.validateResultEffectiveTime(diagnostics, context);
 	}
 
@@ -2947,7 +4813,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResult_validateResultValue(Result result, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResult_validateResultValue(Result result, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return result.validateResultValue(diagnostics, context);
 	}
 
@@ -2956,19 +4823,44 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLanguageSpoken(LanguageSpoken languageSpoken, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(languageSpoken, diagnostics, context)) return false;
+	public boolean validateLanguageSpoken(LanguageSpoken languageSpoken, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(languageSpoken, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(languageSpoken, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(languageSpoken, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(languageSpoken, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(languageSpoken, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(languageSpoken, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(languageSpoken, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(languageSpoken, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateLanguageCommunication_validateIHELanguageCommunicationTemplateId(languageSpoken, diagnostics, context);
-		if (result || diagnostics != null) result &= validateLanguageSpoken_validateLanguageSpokenNoProficiencyLevelCode(languageSpoken, diagnostics, context);
-		if (result || diagnostics != null) result &= validateLanguageSpoken_validateLanguageSpokenTemplateId(languageSpoken, diagnostics, context);
-		if (result || diagnostics != null) result &= validateLanguageSpoken_validateLanguageSpokenModeCode(languageSpoken, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(languageSpoken, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(languageSpoken, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(languageSpoken, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(languageSpoken, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(languageSpoken, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(languageSpoken, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateLanguageCommunication_validateIHELanguageCommunicationTemplateId(
+				languageSpoken, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateLanguageSpoken_validateLanguageSpokenNoProficiencyLevelCode(
+				languageSpoken, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateLanguageSpoken_validateLanguageSpokenTemplateId(languageSpoken, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateLanguageSpoken_validateLanguageSpokenModeCode(languageSpoken, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2978,7 +4870,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLanguageSpoken_validateLanguageSpokenNoProficiencyLevelCode(LanguageSpoken languageSpoken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateLanguageSpoken_validateLanguageSpokenNoProficiencyLevelCode(LanguageSpoken languageSpoken,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return languageSpoken.validateLanguageSpokenNoProficiencyLevelCode(diagnostics, context);
 	}
 
@@ -2988,7 +4881,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLanguageSpoken_validateLanguageSpokenTemplateId(LanguageSpoken languageSpoken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateLanguageSpoken_validateLanguageSpokenTemplateId(LanguageSpoken languageSpoken,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return languageSpoken.validateLanguageSpokenTemplateId(diagnostics, context);
 	}
 
@@ -2998,7 +4892,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLanguageSpoken_validateLanguageSpokenModeCode(LanguageSpoken languageSpoken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateLanguageSpoken_validateLanguageSpokenModeCode(LanguageSpoken languageSpoken,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return languageSpoken.validateLanguageSpokenModeCode(diagnostics, context);
 	}
 
@@ -3007,26 +4902,74 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProvider(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(insuranceProvider, diagnostics, context)) return false;
+	public boolean validateInsuranceProvider(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(insuranceProvider, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateCoverageActivity_validateCoverageActivityInformationSource(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateCoverageActivity_validateCoverageActivitySequenceNumber(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateCoverageActivity_validateCoverageActivityTemplateId(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateCoverageActivity_validateCoverageActivityClassCode(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateCoverageActivity_validateCoverageActivityMoodCode(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateCoverageActivity_validateCoverageActivityId(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateCoverageActivity_validateCoverageActivityStatusCode(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateCoverageActivity_validateCoverageActivityCode(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateCoverageActivity_validateCoverageActivityPolicyActivity(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCoverageEntry_validateCoverageEntryTemplateId(insuranceProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validateInsuranceProvider_validateInsuranceProviderTemplateId(insuranceProvider, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateCoverageActivity_validateCoverageActivityInformationSource(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateCoverageActivity_validateCoverageActivitySequenceNumber(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateCoverageActivity_validateCoverageActivityTemplateId(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateCoverageActivity_validateCoverageActivityClassCode(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateCoverageActivity_validateCoverageActivityMoodCode(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateCoverageActivity_validateCoverageActivityId(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateCoverageActivity_validateCoverageActivityStatusCode(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateCoverageActivity_validateCoverageActivityCode(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateCoverageActivity_validateCoverageActivityPolicyActivity(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCoverageEntry_validateCoverageEntryTemplateId(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderTemplateId(
+				insuranceProvider, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3036,7 +4979,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProvider_validateInsuranceProviderTemplateId(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInsuranceProvider_validateInsuranceProviderTemplateId(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return insuranceProvider.validateInsuranceProviderTemplateId(diagnostics, context);
 	}
 
@@ -3045,17 +4989,38 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthcareProvider(HealthcareProvider healthcareProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(healthcareProvider, diagnostics, context)) return false;
+	public boolean validateHealthcareProvider(HealthcareProvider healthcareProvider, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(healthcareProvider, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(healthcareProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(healthcareProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(healthcareProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(healthcareProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(healthcareProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(healthcareProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(healthcareProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateHealthcareProvidersPharmacies_validateHealthcareProvidersPharmaciesTemplateId(healthcareProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validateHealthcareProvider_validateHealthcareProviderTemplateId(healthcareProvider, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(healthcareProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(healthcareProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(healthcareProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(healthcareProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(healthcareProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(healthcareProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateHealthcareProvidersPharmacies_validateHealthcareProvidersPharmaciesTemplateId(
+				healthcareProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthcareProvider_validateHealthcareProviderTemplateId(
+				healthcareProvider, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3065,7 +5030,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthcareProvider_validateHealthcareProviderTemplateId(HealthcareProvider healthcareProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHealthcareProvider_validateHealthcareProviderTemplateId(
+			HealthcareProvider healthcareProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return healthcareProvider.validateHealthcareProviderTemplateId(diagnostics, context);
 	}
 
@@ -3074,39 +5040,129 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunization(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(immunization, diagnostics, context)) return false;
+	public boolean validateImmunization(Immunization immunization, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(immunization, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateImmunization_validateImmunizationTemplateId(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= validateImmunization_validateImmunizationCode(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateImmunization_validateImmunizationStatusCode(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateImmunization_validateImmunizationMoodCode(immunization, diagnostics, context);
-		if (result || diagnostics != null) result &= validateImmunization_validateHITSPImmunizationTemplateId(immunization, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSubstanceAdministration_validateClassCode(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateImmunization_validateImmunizationComments(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateImmunization_validateImmunizationTemplateId(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateImmunization_validateImmunizationCode(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateImmunization_validateImmunizationStatusCode(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateImmunization_validateImmunizationMoodCode(immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateImmunization_validateImmunizationEffectiveTime(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateImmunization_validateHITSPImmunizationTemplateId(immunization, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3116,7 +5172,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunization_validateHITSPImmunizationTemplateId(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunization_validateHITSPImmunizationTemplateId(Immunization immunization,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return immunization.validateHITSPImmunizationTemplateId(diagnostics, context);
 	}
 
@@ -3126,7 +5183,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunization_validateImmunizationCode(Immunization immunization, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunization_validateImmunizationCode(Immunization immunization,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		// TODO override the constraint, if desired
 		// -> uncomment the scaffolding
 		// -> specify the condition that violates the constraint
@@ -3134,15 +5192,10 @@ public class HITSPValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateImmunizationCode", getObjectLabel(immunization, context) },
-						 new Object[] { immunization },
-						 context));
+				diagnostics.add(createDiagnostic(
+					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
+							"validateImmunizationCode", getObjectLabel(immunization, context) },
+					new Object[] { immunization }, context));
 			}
 			return false;
 		}
@@ -3155,25 +5208,63 @@ public class HITSPValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateComment(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(comment, diagnostics, context)) return false;
+		if (!validate_NoCircularContainment(comment, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateComment_validateCommentTemplateId(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateComment_validateCommentClassCode(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateComment_validateCommentMoodCode(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateComment_validateCommentCode(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateComment_validateIHECommentHasTextReference(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateComment_validateIHECommentEffectiveTimeWhenAuthorPresent(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateComment_validateIHECommentHasAuthorId(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateComment_validateIHECommentHasAuthorOrganization(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateComment_validateIHECommentStatusCode(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateComment_validateIHECommentText(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComment_validateHITSPCommentTemplateId(comment, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateComment_validateCommentTemplateId(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateComment_validateCommentClassCode(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateComment_validateCommentMoodCode(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateComment_validateCommentCode(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateComment_validateIHECommentHasTextReference(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateComment_validateIHECommentEffectiveTimeWhenAuthorPresent(
+				comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateComment_validateIHECommentHasAuthorId(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateComment_validateIHECommentHasAuthorOrganization(
+				comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateComment_validateIHECommentStatusCode(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateComment_validateIHECommentText(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComment_validateHITSPCommentTemplateId(comment, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3183,7 +5274,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComment_validateHITSPCommentTemplateId(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComment_validateHITSPCommentTemplateId(Comment comment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return comment.validateHITSPCommentTemplateId(diagnostics, context);
 	}
 
@@ -3192,61 +5284,213 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationNormalDose(MedicationNormalDose medicationNormalDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationNormalDose, diagnostics, context)) return false;
+	public boolean validateMedicationNormalDose(MedicationNormalDose medicationNormalDose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationNormalDose, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDosing(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDosingRelationship(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasProductEntry(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductStrength(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductName(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationPreconditionReference(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasFillNumber(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationEffectiveTime(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateNormalDose_validateNormalDoseNoSubordinateSubstanceAdministration(medicationNormalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateNormalDose_validateNormalDoseTemplateId(medicationNormalDose, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSubstanceAdministration_validateClassCode(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDosing(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDosingRelationship(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasProductEntry(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductStrength(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductName(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationPreconditionReference(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasFillNumber(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationTemplateId(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDoseQuantity(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationRateQuantity(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationCode(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationStatusCode(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationTemplateId(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationEffectiveTime(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationRouteCode(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationApproachSiteCode(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationCode(medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateNormalDose_validateNormalDoseNoSubordinateSubstanceAdministration(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateNormalDose_validateNormalDoseTemplateId(
+				medicationNormalDose, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3255,61 +5499,212 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationSplitDose(MedicationSplitDose medicationSplitDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationSplitDose, diagnostics, context)) return false;
+	public boolean validateMedicationSplitDose(MedicationSplitDose medicationSplitDose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationSplitDose, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDosing(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDosingRelationship(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasProductEntry(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductStrength(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductName(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationPreconditionReference(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasFillNumber(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationEffectiveTime(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSplitDose_validateSplitDoseSplitDosingSubstanceAdministration(medicationSplitDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateSplitDose_validateSplitDoseTemplateId(medicationSplitDose, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSubstanceAdministration_validateClassCode(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDosing(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDosingRelationship(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasProductEntry(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductStrength(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductName(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationPreconditionReference(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasFillNumber(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationTemplateId(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDoseQuantity(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationRateQuantity(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationCode(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationStatusCode(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationTemplateId(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationRouteCode(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationApproachSiteCode(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationCode(medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSplitDose_validateSplitDoseSplitDosingSubstanceAdministration(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSplitDose_validateSplitDoseTemplateId(
+				medicationSplitDose, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3318,61 +5713,215 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationTaperedDose(MedicationTaperedDose medicationTaperedDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationTaperedDose, diagnostics, context)) return false;
+	public boolean validateMedicationTaperedDose(MedicationTaperedDose medicationTaperedDose,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationTaperedDose, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDosing(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDosingRelationship(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasProductEntry(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductStrength(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductName(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationPreconditionReference(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasFillNumber(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationEffectiveTime(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateTaperedDose_validateTaperedDoseTaperedDosingSubstanceAdministration(medicationTaperedDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationTaperedDose_validateTaperedDoseTemplateId(medicationTaperedDose, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSubstanceAdministration_validateClassCode(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDosing(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDosingRelationship(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasProductEntry(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductStrength(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductName(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationPreconditionReference(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasFillNumber(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationTemplateId(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDoseQuantity(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationRateQuantity(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationCode(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationStatusCode(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationTemplateId(medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationEffectiveTime(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationRouteCode(medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationDoseQuantity(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationApproachSiteCode(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationCode(medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateTaperedDose_validateTaperedDoseTaperedDosingSubstanceAdministration(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicationTaperedDose_validateTaperedDoseTemplateId(
+				medicationTaperedDose, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3382,7 +5931,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationTaperedDose_validateTaperedDoseTemplateId(MedicationTaperedDose medicationTaperedDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationTaperedDose_validateTaperedDoseTemplateId(
+			MedicationTaperedDose medicationTaperedDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		// TODO override the constraint, if desired
 		// -> uncomment the scaffolding
 		// -> specify the condition that violates the constraint
@@ -3390,19 +5940,15 @@ public class HITSPValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateTaperedDoseTemplateId", getObjectLabel(medicationTaperedDose, context) },
-						 new Object[] { medicationTaperedDose },
-						 context));
+				diagnostics.add(createDiagnostic(
+					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
+							"validateTaperedDoseTemplateId", getObjectLabel(medicationTaperedDose, context) },
+					new Object[] { medicationTaperedDose }, context));
 			}
 			return false;
 		}
-		return iheValidator.validateTaperedDose_validateTaperedDoseTemplateId(medicationTaperedDose, diagnostics, context);
+		return iheValidator.validateTaperedDose_validateTaperedDoseTemplateId(
+			medicationTaperedDose, diagnostics, context);
 	}
 
 	/**
@@ -3410,61 +5956,217 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationConditionalDose(MedicationConditionalDose medicationConditionalDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationConditionalDose, diagnostics, context)) return false;
+	public boolean validateMedicationConditionalDose(MedicationConditionalDose medicationConditionalDose,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationConditionalDose, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDosing(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDosingRelationship(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasProductEntry(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductStrength(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductName(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationPreconditionReference(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasFillNumber(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationCode(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationEffectiveTime(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateConditionalDose_validateConditionalDoseConditionalDosingSubstanceAdministration(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateConditionalDose_validateConditionalDoseTemplateId(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medicationConditionalDose, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medicationConditionalDose, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSubstanceAdministration_validateClassCode(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDosing(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDosingRelationship(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasProductEntry(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductStrength(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductName(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationPreconditionReference(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasFillNumber(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationTemplateId(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDoseQuantity(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationRateQuantity(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationCode(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationStatusCode(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConditionalDose_validateConditionalDoseConditionalDosingSubstanceAdministration(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateConditionalDose_validateConditionalDoseTemplateId(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationTemplateId(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationEffectiveTime(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationRouteCode(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationDoseQuantity(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationApproachSiteCode(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationCode(medicationConditionalDose, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3473,61 +6175,219 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationCombinationMedication(MedicationCombinationMedication medicationCombinationMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationCombinationMedication, diagnostics, context)) return false;
+	public boolean validateMedicationCombinationMedication(
+			MedicationCombinationMedication medicationCombinationMedication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationCombinationMedication, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDosing(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDosingRelationship(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasProductEntry(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductStrength(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationProductName(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationPreconditionReference(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationHasFillNumber(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationTemplateId(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationDoseQuantity(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationRateQuantity(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationCode(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationStatusCode(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedication_validateMedicationEffectiveTime(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCombinationMedication_validateCombinationMedicationSubstanceAdministration(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateCombinationMedication_validateCombinationMedicationTemplateId(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationTemplateId(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationEffectiveTime(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationRouteCode(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationDoseQuantity(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationApproachSiteCode(medicationCombinationMedication, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedication_validateHITSPMedicationCode(medicationCombinationMedication, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSubstanceAdministration_validateClassCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMoodCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasDoseQuantityOrRateQuantity(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasConsents(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityInformationSource(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasPreconditionCriterion(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReason(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasReasonProblem(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityHasProduct(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityTemplateId(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityId(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityStatusCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityEffectiveTime(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMaxDoseQuantity(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRouteCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationStatusObservation(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityPatientInstruction(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDosing(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDosingRelationship(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasProductEntry(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasIntructionsInversion(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductStrength(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationProductName(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationPreconditionReference(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasSupplyEntryInversion(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationHasFillNumber(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationTemplateId(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationApproachSiteCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationDoseQuantity(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationRateQuantity(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationStatusCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCombinationMedication_validateCombinationMedicationSubstanceAdministration(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateCombinationMedication_validateCombinationMedicationTemplateId(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationTemplateId(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationEffectiveTime(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationRouteCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationDoseQuantity(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationAdministrationUnitCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationMaxDoseQuantity(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationApproachSiteCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedication_validateHITSPMedicationCode(
+				medicationCombinationMedication, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3537,27 +6397,87 @@ public class HITSPValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateProcedure(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(procedure, diagnostics, context)) return false;
+		if (!validate_NoCircularContainment(procedure, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureTemplateId(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureHasTextReference(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureTemplateId(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureClassCode(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureText(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureApproachSiteCode(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureInternalReference(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureInternalReferenceReason(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedureHasCodeOriginalText(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedurePerformerAssignedEntity(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedureTemplateId(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedureTargetSiteCode(procedure, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProcedure_validateHITSPProcedureCode(procedure, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureTemplateId(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureMoodCode(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureHasTextReference(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedurePriorityCode(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureHasInversionIndForEncounter(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureTemplateId(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureClassCode(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureText(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureApproachSiteCode(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureInternalReference(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProcedureEntryProcedureActivityProcedure_validateProcedureEntryProcedureActivityProcedureInternalReferenceReason(
+				procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureHasCodeOriginalText(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedurePerformerAssignedEntity(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureTemplateId(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureTargetSiteCode(procedure, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProcedure_validateHITSPProcedureCode(procedure, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3567,7 +6487,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedure_validateHITSPProcedureHasCodeOriginalText(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedure_validateHITSPProcedureHasCodeOriginalText(Procedure procedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return procedure.validateHITSPProcedureHasCodeOriginalText(diagnostics, context);
 	}
 
@@ -3577,7 +6498,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedure_validateHITSPProcedurePerformerAssignedEntity(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedure_validateHITSPProcedurePerformerAssignedEntity(Procedure procedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return procedure.validateHITSPProcedurePerformerAssignedEntity(diagnostics, context);
 	}
 
@@ -3587,7 +6509,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedure_validateHITSPProcedureTemplateId(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedure_validateHITSPProcedureTemplateId(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return procedure.validateHITSPProcedureTemplateId(diagnostics, context);
 	}
 
@@ -3597,7 +6520,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedure_validateHITSPProcedureTargetSiteCode(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedure_validateHITSPProcedureTargetSiteCode(Procedure procedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return procedure.validateHITSPProcedureTargetSiteCode(diagnostics, context);
 	}
 
@@ -3607,7 +6531,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedure_validateHITSPProcedureCode(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedure_validateHITSPProcedureCode(Procedure procedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return procedure.validateHITSPProcedureCode(diagnostics, context);
 	}
 
@@ -3625,23 +6550,60 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSupportGuardian(SupportGuardian supportGuardian, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(supportGuardian, diagnostics, context)) return false;
+	public boolean validateSupportGuardian(SupportGuardian supportGuardian, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(supportGuardian, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateGuardian_validateGuardianChoice(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateGuardian_validateClassCode(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianTemplateId(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianAddr(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianClassCode(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianCode(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianTelecom(supportGuardian, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSupportGuardian_validateHITSPSupportGuardianTemplateId(supportGuardian, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateGuardian_validateGuardianChoice(supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateGuardian_validateClassCode(supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianTemplateId(
+				supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianAddr(
+				supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianClassCode(
+				supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianCode(
+				supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePatientContactGuardian_validatePatientContactGuardianTelecom(
+				supportGuardian, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSupportGuardian_validateHITSPSupportGuardianTemplateId(
+				supportGuardian, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3651,7 +6613,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSupportGuardian_validateHITSPSupportGuardianTemplateId(SupportGuardian supportGuardian, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSupportGuardian_validateHITSPSupportGuardianTemplateId(SupportGuardian supportGuardian,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return supportGuardian.validateHITSPSupportGuardianTemplateId(diagnostics, context);
 	}
 
@@ -3660,20 +6623,50 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSupportParticipant(SupportParticipant supportParticipant, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(supportParticipant, diagnostics, context)) return false;
+	public boolean validateSupportParticipant(SupportParticipant supportParticipant, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(supportParticipant, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateParticipant1_validateContextControlCode(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePatientContactParticipant_validatePatientContactParticipantTemplateId(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePatientContactParticipant_validatePatientContactParticipantTime(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validatePatientContactParticipant_validatePatientContactParticipantTypeCode(supportParticipant, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSupportParticipant_validateHITSPSupportParticipantTemplateId(supportParticipant, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateParticipant1_validateContextControlCode(
+				supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePatientContactParticipant_validatePatientContactParticipantTemplateId(
+				supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePatientContactParticipant_validatePatientContactParticipantTime(
+				supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validatePatientContactParticipant_validatePatientContactParticipantTypeCode(
+				supportParticipant, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSupportParticipant_validateHITSPSupportParticipantTemplateId(
+				supportParticipant, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3683,7 +6676,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSupportParticipant_validateHITSPSupportParticipantTemplateId(SupportParticipant supportParticipant, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSupportParticipant_validateHITSPSupportParticipantTemplateId(
+			SupportParticipant supportParticipant, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return supportParticipant.validateHITSPSupportParticipantTemplateId(diagnostics, context);
 	}
 
@@ -3692,83 +6686,301 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocument(UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(unstructuredDocument, diagnostics, context)) return false;
+	public boolean validateUnstructuredDocument(UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(unstructuredDocument, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateMedicalDocument_validateMedicalDocumentTemplateId(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentTypeIdFixed(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasOneRecordTarget(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasAssignedAuthor(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentPatientRoleId(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasPatientRoleAddress(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasPatientName(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasPatientGenderCode(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasPatientBirthYear(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasOriginalAuthor(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasScanningDevice(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasScanDataEnterer(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasRepresentedCustodianOrganizationName(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasRepresentedCustodianOrganizationAddr(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentLegalAuthenticatorAssignedEntityId(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasNonXMLBody(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasNonXMLBodyBinaryText(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasNonXMLBodyTextMediaType(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentHasNonXMLBodyTextRepresentation(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validateUnstructuredDocument_validateScannedDocumentTemplateId(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentCode(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentConfidentialityCode(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentEffectiveTime(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentId(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentLanguageCode(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentTitle(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateScannedDocument_validateScannedDocumentTypeId(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validateUnstructuredDocument_validateUnstructuredDocumentNoStructuredData(unstructuredDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validateUnstructuredDocument_validateUnstructuredDocumentOnePatientPerDocument(unstructuredDocument, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateMedicalDocument_validateMedicalDocumentTemplateId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentTypeIdFixed(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasOneRecordTarget(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasAssignedAuthor(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentPatientRoleId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasPatientRoleAddress(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasPatientName(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasPatientGenderCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasPatientBirthYear(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasOriginalAuthor(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasScanningDevice(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasScanDataEnterer(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasRepresentedCustodianOrganizationName(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasRepresentedCustodianOrganizationAddr(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentLegalAuthenticatorAssignedEntityId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasNonXMLBody(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasNonXMLBodyBinaryText(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasNonXMLBodyTextMediaType(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentHasNonXMLBodyTextRepresentation(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateScannedDocumentTemplateId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentConfidentialityCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentEffectiveTime(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentLanguageCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentTitle(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateScannedDocument_validateScannedDocumentTypeId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentNoStructuredData(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentOnePatientPerDocument(
+				unstructuredDocument, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3778,7 +6990,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocument_validateUnstructuredDocumentNoStructuredData(UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentNoStructuredData(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return unstructuredDocument.validateUnstructuredDocumentNoStructuredData(diagnostics, context);
 	}
 
@@ -3788,7 +7001,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocument_validateUnstructuredDocumentOnePatientPerDocument(UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentOnePatientPerDocument(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return unstructuredDocument.validateUnstructuredDocumentOnePatientPerDocument(diagnostics, context);
 	}
 
@@ -3798,7 +7012,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocument_validateScannedDocumentTemplateId(UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUnstructuredDocument_validateScannedDocumentTemplateId(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		// TODO override the constraint, if desired
 		// -> uncomment the scaffolding
 		// -> specify the condition that violates the constraint
@@ -3806,19 +7021,15 @@ public class HITSPValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateScannedDocumentTemplateId", getObjectLabel(unstructuredDocument, context) },
-						 new Object[] { unstructuredDocument },
-						 context));
+				diagnostics.add(createDiagnostic(
+					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
+							"validateScannedDocumentTemplateId", getObjectLabel(unstructuredDocument, context) },
+					new Object[] { unstructuredDocument }, context));
 			}
 			return false;
 		}
-		return iheValidator.validateScannedDocument_validateScannedDocumentTemplateId(unstructuredDocument, diagnostics, context);
+		return iheValidator.validateScannedDocument_validateScannedDocumentTemplateId(
+			unstructuredDocument, diagnostics, context);
 	}
 
 	/**
@@ -3826,24 +7037,66 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationInformation(MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationInformation, diagnostics, context)) return false;
+	public boolean validateMedicationInformation(MedicationInformation medicationInformation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(medicationInformation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateManufacturedProduct_validateManufacturedDrugOrOtherMaterial(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateManufacturedProduct_validateClassCode(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProduct_validateProductHasMaterial(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProduct_validateProductHasMaterialCode(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProduct_validateProductHasMaterialCodeOriginalText(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProduct_validateProductHasMaterialName(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProduct_validateProductTemplateId(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProductEntry_validateProductEntryTemplateId(medicationInformation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMedicationInformation_validateMedicationInformationTemplateId(medicationInformation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateManufacturedProduct_validateManufacturedDrugOrOtherMaterial(
+				medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateManufacturedProduct_validateClassCode(
+				medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProduct_validateProductHasMaterial(
+				medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProduct_validateProductHasMaterialCode(
+				medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProduct_validateProductHasMaterialCodeOriginalText(
+				medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProduct_validateProductHasMaterialName(
+				medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProduct_validateProductTemplateId(
+				medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProductEntry_validateProductEntryTemplateId(
+				medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMedicationInformation_validateMedicationInformationTemplateId(
+				medicationInformation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3853,7 +7106,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationInformation_validateMedicationInformationTemplateId(MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationInformation_validateMedicationInformationTemplateId(
+			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medicationInformation.validateMedicationInformationTemplateId(diagnostics, context);
 	}
 
@@ -3863,26 +7117,71 @@ public class HITSPValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateEncounter(Encounter encounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(encounter, diagnostics, context)) return false;
+		if (!validate_NoCircularContainment(encounter, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateEncounterEntry_validateEncounterEntryTemplateId(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateEncounterEntry_validateEncounterEntryClassCode(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateEncounterEntry_validateEncounterEntryCode(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateEncounterEntry_validateEncounterEntryId(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateEncounterEntry_validateEncounterEntryText(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateEncounterActivity_validateEncountersActivityTemplateId(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateEncountersActivity_validateEncountersActivityClassCode(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateEncountersActivity_validateEncountersActivityMoodCode(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateEncountersActivity_validateEncountersActivityId(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateEncountersActivity_validateEncountersActivityEffectiveTime(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEncounter_validateHITSPEncounterTemplateId(encounter, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEncounter_validateHITSPEncounterCode(encounter, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateEncounterEntry_validateEncounterEntryTemplateId(
+				encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateEncounterEntry_validateEncounterEntryClassCode(
+				encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateEncounterEntry_validateEncounterEntryCode(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateEncounterEntry_validateEncounterEntryId(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateEncounterEntry_validateEncounterEntryText(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateEncounterActivity_validateEncountersActivityTemplateId(
+				encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateEncountersActivity_validateEncountersActivityClassCode(
+				encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateEncountersActivity_validateEncountersActivityMoodCode(
+				encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateEncountersActivity_validateEncountersActivityId(
+				encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateEncountersActivity_validateEncountersActivityEffectiveTime(
+				encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEncounter_validateHITSPEncounterTemplateId(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEncounter_validateHITSPEncounterCode(encounter, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3892,7 +7191,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncounter_validateHITSPEncounterTemplateId(Encounter encounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncounter_validateHITSPEncounterTemplateId(Encounter encounter, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return encounter.validateHITSPEncounterTemplateId(diagnostics, context);
 	}
 
@@ -3902,7 +7202,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncounter_validateHITSPEncounterCode(Encounter encounter, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncounter_validateHITSPEncounterCode(Encounter encounter, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return encounter.validateHITSPEncounterCode(diagnostics, context);
 	}
 
@@ -3911,7 +7212,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPRegistryDelegate(HITSPRegistryDelegate hitspRegistryDelegate, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPRegistryDelegate(HITSPRegistryDelegate hitspRegistryDelegate,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(hitspRegistryDelegate, diagnostics, context);
 	}
 
@@ -3920,40 +7222,124 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(conditionEntry, diagnostics, context)) return false;
+	public boolean validateConditionEntry(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(conditionEntry, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationInformationSource(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationTemplateId(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatusObservation(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatusObservation(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationAgeObservation(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntryHasTextReference(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntryCommentInversionInd(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntryTemplateId(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntryCode(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntryEffectiveTime(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntryId(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntryText(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateProblemEntryValue(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntrySeverity(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntryProblemStatusObservation(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntryHealthStatusObservation(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= iheValidator.validateProblemEntry_validateProblemEntryComment(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryHasOnsetDate(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryHasResolutionDate(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryHasUnknownResolutionDate(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryCode(conditionEntry, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationInformationSource(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationTemplateId(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatusObservation(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatusObservation(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationAgeObservation(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntryHasTextReference(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntryCommentInversionInd(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntryTemplateId(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntryCode(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntryEffectiveTime(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntryId(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntryText(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateProblemEntryValue(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntrySeverity(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntryProblemStatusObservation(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntryHealthStatusObservation(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateProblemEntry_validateProblemEntryComment(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryHasOnsetDate(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryHasResolutionDate(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryHasUnknownResolutionDate(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryCode(conditionEntry, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -3963,7 +7349,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryHasOnsetDate(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryHasOnsetDate(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryHasOnsetDate(diagnostics, context);
 	}
 
@@ -3973,7 +7360,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryHasResolutionDate(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryHasResolutionDate(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryHasResolutionDate(diagnostics, context);
 	}
 
@@ -3983,7 +7371,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryHasUnknownResolutionDate(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryHasUnknownResolutionDate(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryHasUnknownResolutionDate(diagnostics, context);
 	}
 
@@ -3993,7 +7382,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryCode(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryCode(diagnostics, context);
 	}
 
@@ -4003,7 +7393,8 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateProblemEntryValue(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateProblemEntryValue(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		// TODO override the constraint, if desired
 		// -> uncomment the scaffolding
 		// -> specify the condition that violates the constraint
@@ -4011,15 +7402,10 @@ public class HITSPValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateProblemEntryValue", getObjectLabel(conditionEntry, context) },
-						 new Object[] { conditionEntry },
-						 context));
+				diagnostics.add(createDiagnostic(
+					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
+							"validateProblemEntryValue", getObjectLabel(conditionEntry, context) },
+					new Object[] { conditionEntry }, context));
 			}
 			return false;
 		}
@@ -4037,4 +7423,4 @@ public class HITSPValidator extends EObjectValidator {
 		return HITSPPlugin.INSTANCE;
 	}
 
-} //HITSPValidator
+} // HITSPValidator

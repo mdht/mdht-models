@@ -10,8 +10,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
-
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Hospital Discharge Medications Section</b></em>'.
@@ -29,7 +27,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.114' constraints.validation.error='HITSPHospitalDischargeMedicationsSectionTemplateId'"
  * @generated
  */
-public interface HospitalDischargeMedicationsSection extends org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargeMedicationsSection {
+public interface HospitalDischargeMedicationsSection extends
+		org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargeMedicationsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -41,7 +40,8 @@ public interface HospitalDischargeMedicationsSection extends org.openhealthtools
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.114\')'"
 	 * @generated
 	 */
-	boolean validateHITSPHospitalDischargeMedicationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHITSPHospitalDischargeMedicationsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

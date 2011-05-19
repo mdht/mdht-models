@@ -24,7 +24,9 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationsAdministeredSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.MedicationsAdministeredSectionImpl implements MedicationsAdministeredSection {
+public class MedicationsAdministeredSectionImpl extends
+		org.openhealthtools.mdht.uml.cda.ihe.impl.MedicationsAdministeredSectionImpl implements
+		MedicationsAdministeredSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,8 +51,10 @@ public class MedicationsAdministeredSectionImpl extends org.openhealthtools.mdht
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateHITSPMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
+	public boolean validateHITSPMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationsAdministeredSectionOperations.validateHITSPMedicationsAdministeredSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +62,9 @@ public class MedicationsAdministeredSectionImpl extends org.openhealthtools.mdht
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsAdministeredSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationsAdministeredSectionImpl
+} // MedicationsAdministeredSectionImpl
