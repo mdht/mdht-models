@@ -77,26 +77,25 @@ public class LanguageSpokenOperations extends LanguageCommunicationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateLanguageSpokenNoProficiencyLevelCode(LanguageSpoken languageSpoken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateLanguageSpokenNoProficiencyLevelCode(LanguageSpoken languageSpoken,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.LANGUAGE_SPOKEN);
 			try {
 				VALIDATE_LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(languageSpoken)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			languageSpoken)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE,
-						 HITSPPlugin.INSTANCE.getString("LanguageSpokenNoProficiencyLevelCode"),
-						 new Object [] { languageSpoken }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE,
+					HITSPPlugin.INSTANCE.getString("LanguageSpokenNoProficiencyLevelCode"),
+					new Object[] { languageSpoken }));
 			}
 			return false;
 		}
@@ -134,26 +133,24 @@ public class LanguageSpokenOperations extends LanguageCommunicationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateLanguageSpokenTemplateId(LanguageSpoken languageSpoken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateLanguageSpokenTemplateId(LanguageSpoken languageSpoken, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_LANGUAGE_SPOKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.LANGUAGE_SPOKEN);
 			try {
 				VALIDATE_LANGUAGE_SPOKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LANGUAGE_SPOKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_SPOKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(languageSpoken)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_SPOKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			languageSpoken)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("LanguageSpokenTemplateId"),
-						 new Object [] { languageSpoken }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("LanguageSpokenTemplateId"), new Object[] { languageSpoken }));
 			}
 			return false;
 		}
@@ -168,9 +165,9 @@ public class LanguageSpokenOperations extends LanguageCommunicationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LANGUAGE_SPOKEN_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.modeCode.oclIsUndefined() or self.modeCode.isNullFlavorUndefined()) implies (self.modeCode.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.modeCode.oclAsType(datatypes::CE) in ("+
-"value.codeSystem = '2.16.840.1.113883.5.60' and (value.code = 'ESGN' or value.code = 'ESP' or value.code = 'EWR' or value.code = 'RSGN' or value.code = 'RSP' or value.code = 'RWR')))";
+	protected static final String VALIDATE_LANGUAGE_SPOKEN_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.modeCode.oclIsUndefined() or self.modeCode.isNullFlavorUndefined()) implies (self.modeCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.modeCode.oclAsType(datatypes::CE) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.5.60' and (value.code = 'ESGN' or value.code = 'ESP' or value.code = 'EWR' or value.code = 'RSGN' or value.code = 'RSP' or value.code = 'RWR')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLanguageSpokenModeCode(LanguageSpoken, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Language Spoken Mode Code</em>}' invariant operation.
@@ -195,26 +192,24 @@ public class LanguageSpokenOperations extends LanguageCommunicationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateLanguageSpokenModeCode(LanguageSpoken languageSpoken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateLanguageSpokenModeCode(LanguageSpoken languageSpoken, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_LANGUAGE_SPOKEN_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.LANGUAGE_SPOKEN);
 			try {
 				VALIDATE_LANGUAGE_SPOKEN_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LANGUAGE_SPOKEN_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_SPOKEN_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(languageSpoken)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LANGUAGE_SPOKEN_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			languageSpoken)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_MODE_CODE,
-						 HITSPPlugin.INSTANCE.getString("LanguageSpokenModeCode"),
-						 new Object [] { languageSpoken }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_MODE_CODE,
+					HITSPPlugin.INSTANCE.getString("LanguageSpokenModeCode"), new Object[] { languageSpoken }));
 			}
 			return false;
 		}

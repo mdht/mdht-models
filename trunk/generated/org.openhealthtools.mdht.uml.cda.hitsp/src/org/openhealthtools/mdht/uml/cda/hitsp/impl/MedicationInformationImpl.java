@@ -59,8 +59,9 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationInformation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationInformationImpl
+} // MedicationInformationImpl

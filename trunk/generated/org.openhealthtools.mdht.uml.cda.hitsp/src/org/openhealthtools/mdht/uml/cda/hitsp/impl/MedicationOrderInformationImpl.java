@@ -51,7 +51,8 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 * @generated
 	 */
 	public boolean validateMedicationOrderInformationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationTemplateId(this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +60,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformationRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationRepeatNumber(this, diagnostics, context);
+	public boolean validateMedicationOrderInformationRepeatNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationRepeatNumber(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +72,8 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 * @generated
 	 */
 	public boolean validateMedicationOrderInformationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationStatusCode(this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +81,9 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationOrderInformation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationOrderInformationImpl
+} // MedicationOrderInformationImpl

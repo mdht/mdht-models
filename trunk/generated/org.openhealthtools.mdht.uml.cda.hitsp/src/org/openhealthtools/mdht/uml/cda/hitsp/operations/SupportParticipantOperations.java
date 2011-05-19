@@ -75,26 +75,25 @@ public class SupportParticipantOperations extends PatientContactParticipantOpera
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateHITSPSupportParticipantTemplateId(SupportParticipant supportParticipant, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateHITSPSupportParticipantTemplateId(SupportParticipant supportParticipant,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.SUPPORT_PARTICIPANT);
 			try {
 				VALIDATE_HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supportParticipant)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supportParticipant)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.SUPPORT_PARTICIPANT__HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("HITSPSupportParticipantTemplateId"),
-						 new Object [] { supportParticipant }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.SUPPORT_PARTICIPANT__HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("HITSPSupportParticipantTemplateId"),
+					new Object[] { supportParticipant }));
 			}
 			return false;
 		}

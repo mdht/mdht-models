@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class AllergiesReactionsSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.AllergiesReactionsSectionImpl implements AllergiesReactionsSection {
+public class AllergiesReactionsSectionImpl extends
+		org.openhealthtools.mdht.uml.cda.ihe.impl.AllergiesReactionsSectionImpl implements AllergiesReactionsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,8 +52,10 @@ public class AllergiesReactionsSectionImpl extends org.openhealthtools.mdht.uml.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPAllergiesReactionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesReactionsSectionOperations.validateHITSPAllergiesReactionsSectionTemplateId(this, diagnostics, context);
+	public boolean validateHITSPAllergiesReactionsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesReactionsSectionOperations.validateHITSPAllergiesReactionsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,8 +63,10 @@ public class AllergiesReactionsSectionImpl extends org.openhealthtools.mdht.uml.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesReactionsSectionOperations.validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(this, diagnostics, context);
+	public boolean validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesReactionsSectionOperations.validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +83,9 @@ public class AllergiesReactionsSectionImpl extends org.openhealthtools.mdht.uml.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesReactionsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AllergiesReactionsSectionImpl
+} // AllergiesReactionsSectionImpl

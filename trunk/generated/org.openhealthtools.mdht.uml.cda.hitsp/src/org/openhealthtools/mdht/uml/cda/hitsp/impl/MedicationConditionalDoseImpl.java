@@ -90,7 +90,8 @@ public class MedicationConditionalDoseImpl extends ConditionalDoseImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationAdministrationUnitCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationAdministrationUnitCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationAdministrationUnitCode(this, diagnostics, context);
 	}
 
@@ -153,8 +154,9 @@ public class MedicationConditionalDoseImpl extends ConditionalDoseImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationConditionalDose init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationConditionalDoseImpl
+} // MedicationConditionalDoseImpl

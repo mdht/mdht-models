@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class AssessmentAndPlanSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.AssessmentAndPlanSectionImpl implements AssessmentAndPlanSection {
+public class AssessmentAndPlanSectionImpl extends
+		org.openhealthtools.mdht.uml.cda.ihe.impl.AssessmentAndPlanSectionImpl implements AssessmentAndPlanSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,8 +50,10 @@ public class AssessmentAndPlanSectionImpl extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateHITSPAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
+	public boolean validateHITSPAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AssessmentAndPlanSectionOperations.validateHITSPAssessmentAndPlanSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +61,9 @@ public class AssessmentAndPlanSectionImpl extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AssessmentAndPlanSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AssessmentAndPlanSectionImpl
+} // AssessmentAndPlanSectionImpl

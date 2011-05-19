@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ReasonForReferralSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ReasonForReferralSectionImpl implements ReasonForReferralSection {
+public class ReasonForReferralSectionImpl extends
+		org.openhealthtools.mdht.uml.cda.ihe.impl.ReasonForReferralSectionImpl implements ReasonForReferralSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,8 +50,10 @@ public class ReasonForReferralSectionImpl extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPReasonForReferralSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateHITSPReasonForReferralSectionTemplateId(this, diagnostics, context);
+	public boolean validateHITSPReasonForReferralSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForReferralSectionOperations.validateHITSPReasonForReferralSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +61,9 @@ public class ReasonForReferralSectionImpl extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReasonForReferralSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ReasonForReferralSectionImpl
+} // ReasonForReferralSectionImpl

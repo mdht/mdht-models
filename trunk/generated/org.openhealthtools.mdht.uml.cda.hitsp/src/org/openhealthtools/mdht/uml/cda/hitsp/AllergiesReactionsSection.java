@@ -11,8 +11,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
-
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Allergies Reactions Section</b></em>'.
@@ -56,7 +54,8 @@ public interface AllergiesReactionsSection extends org.openhealthtools.mdht.uml.
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::AllergyDrugSensitivity))'"
 	 * @generated
 	 */
-	boolean validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -50,4 +50,4 @@ public class HITSPRegistryDelegateImpl extends EObjectImpl implements HITSPRegis
 		return HITSPRegistryDelegateOperations.getEClass(this, templateId, context);
 	}
 
-} //HITSPRegistryDelegateImpl
+} // HITSPRegistryDelegateImpl

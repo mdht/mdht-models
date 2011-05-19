@@ -51,11 +51,11 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 
 public class TestUnstructuredDocument {
 	public static final IVXB_TS TS_UNK = DatatypesFactory.eINSTANCE.createIVXB_TS();
-	
+
 	{
 		TS_UNK.setNullFlavor(NullFlavor.UNK);
 	}
-	
+
 	public static void main(String[] args) throws Exception {
 		System.out.println("***** Generate Unstructured Document *****");
 		UnstructuredDocument unstructuredDoc = createUnstructuredDocuments();
@@ -75,15 +75,15 @@ public class TestUnstructuredDocument {
 		addDocumentCustodian(doc);
 		addPatient(doc);
 		// adding second patient should produce validation error
-//		addPatient(doc);
+		// addPatient(doc);
 
 		II id = DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString());
 		doc.setId(id);
-		
-		CE code = DatatypesFactory.eINSTANCE.createCE("34133-9", "2.16.840.1.113883.6.1", 
-				"LOINC", "Summarization of episode note (CCD/CONF-1)");
+
+		CE code = DatatypesFactory.eINSTANCE.createCE(
+			"34133-9", "2.16.840.1.113883.6.1", "LOINC", "Summarization of episode note (CCD/CONF-1)");
 		doc.setCode(code);
-		
+
 		TS ts = DatatypesFactory.eINSTANCE.createTS("20071204103022-0500");
 		doc.setEffectiveTime(ts);
 
@@ -91,19 +91,19 @@ public class TestUnstructuredDocument {
 		langCode.setCode("en-US");
 		doc.setLanguageCode(langCode);
 
-//		ST title = DatatypesFactory.eINSTANCE.createST(
-//			"Test Instance of HITSP C62 Unstructured Document");
-//		doc.setTitle(title);
+		// ST title = DatatypesFactory.eINSTANCE.createST(
+		// "Test Instance of HITSP C62 Unstructured Document");
+		// doc.setTitle(title);
 
 		CE confCode = DatatypesFactory.eINSTANCE.createCE("N", "2.16.840.1.113883.5.25");
 		doc.setConfidentialityCode(confCode);
-		
+
 		return doc;
 	}
-	
+
 	public static void addPatient(ClinicalDocument doc) {
 		RecordTarget target = CDAFactory.eINSTANCE.createRecordTarget();
-		PatientRole patientRole =  CDAFactory.eINSTANCE.createPatientRole();
+		PatientRole patientRole = CDAFactory.eINSTANCE.createPatientRole();
 		Patient patient = CDAFactory.eINSTANCE.createPatient();
 		doc.getRecordTargets().add(target);
 		target.setPatientRole(patientRole);
@@ -111,7 +111,7 @@ public class TestUnstructuredDocument {
 
 		II id = DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString());
 		patientRole.getIds().add(id);
-		
+
 		AD addr = DatatypesFactory.eINSTANCE.createAD();
 		ADXP country = DatatypesFactory.eINSTANCE.createADXP(AddressPartType.CNT, "US");
 		addr.getCountries().add(country);
@@ -122,18 +122,18 @@ public class TestUnstructuredDocument {
 		ScanOriginalAuthor author = IHEFactory.eINSTANCE.createScanOriginalAuthor().init();
 		doc.getAuthors().add(author);
 		author.setTime(DatatypesFactory.eINSTANCE.createTS("20070916130000"));
-		//assignedAuthor
+		// assignedAuthor
 		AssignedAuthor assignedAuthor = CDAFactory.eINSTANCE.createAssignedAuthor();
 		author.setAssignedAuthor(assignedAuthor);
 		assignedAuthor.getIds().add(DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString()));
-		//assignedPerson
+		// assignedPerson
 		Person person = CDAFactory.eINSTANCE.createPerson();
 		assignedAuthor.setAssignedPerson(person);
 		PN pn = DatatypesFactory.eINSTANCE.createPN();
 		pn.addGiven("John").addFamily("Doe");
 		person.getNames().add(pn);
-		
-		//representedOrganization
+
+		// representedOrganization
 		Organization organization = CDAFactory.eINSTANCE.createOrganization();
 		assignedAuthor.setRepresentedOrganization(organization);
 		II orgId = DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString());
@@ -147,22 +147,22 @@ public class TestUnstructuredDocument {
 	public static void addScanningDevice(ClinicalDocument doc) {
 		ScanningDevice scanningDevice = IHEFactory.eINSTANCE.createScanningDevice().init();
 		doc.getAuthors().add(scanningDevice);
-		
+
 		// should produce error when time is != document.effectiveTime
-//		scanningDevice.setTime(DatatypesFactory.eINSTANCE.createTS("20070916130000"));
+		// scanningDevice.setTime(DatatypesFactory.eINSTANCE.createTS("20070916130000"));
 		scanningDevice.setTime(DatatypesFactory.eINSTANCE.createTS("20071204103022-0500"));
-		
-		//assignedAuthor
+
+		// assignedAuthor
 		AssignedAuthor assignedAuthor = CDAFactory.eINSTANCE.createAssignedAuthor();
 		scanningDevice.setAssignedAuthor(assignedAuthor);
 		assignedAuthor.getIds().add(DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString()));
-		//assignedAuthoringDevice
+		// assignedAuthoringDevice
 		AuthoringDevice assignedDevice = CDAFactory.eINSTANCE.createAuthoringDevice();
 		assignedAuthor.setAssignedAuthoringDevice(assignedDevice);
-		assignedDevice.setManufacturerModelName((SC)DatatypesFactory.eINSTANCE.createSC().addText("Nikon"));
-		assignedDevice.setSoftwareName((SC)DatatypesFactory.eINSTANCE.createSC().addText("HewlettPackard"));
+		assignedDevice.setManufacturerModelName((SC) DatatypesFactory.eINSTANCE.createSC().addText("Nikon"));
+		assignedDevice.setSoftwareName((SC) DatatypesFactory.eINSTANCE.createSC().addText("HewlettPackard"));
 
-		//representedOrganization
+		// representedOrganization
 		Organization organization = CDAFactory.eINSTANCE.createOrganization();
 		assignedAuthor.setRepresentedOrganization(organization);
 		II orgId = DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString());
@@ -178,7 +178,7 @@ public class TestUnstructuredDocument {
 		doc.setCustodian(custodian);
 		AssignedCustodian assignedCustodian = CDAFactory.eINSTANCE.createAssignedCustodian();
 		custodian.setAssignedCustodian(assignedCustodian);
-		//representedOrganization
+		// representedOrganization
 		CustodianOrganization custodianOrganization = CDAFactory.eINSTANCE.createCustodianOrganization();
 		assignedCustodian.setRepresentedCustodianOrganization(custodianOrganization);
 		II custodianId = DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString());
@@ -193,32 +193,33 @@ public class TestUnstructuredDocument {
 		addr.getCountries().add(country);
 		custodianOrganization.setAddr(addr);
 	}
-	
+
 	public static void save(ClinicalDocument clinicalDocument) throws Exception {
 		CDAUtil.save(clinicalDocument, System.out);
 	}
-	
+
 	public static void validate(ClinicalDocument clinicalDocument) throws Exception {
 		boolean valid = CDAUtil.validate(clinicalDocument, new BasicValidationHandler() {
 			@Override
 			public void handleError(Diagnostic diagnostic) {
 				System.out.println("ERROR: " + diagnostic.getMessage());
 			}
+
 			@Override
 			public void handleWarning(Diagnostic diagnostic) {
 				System.out.println("WARNING: " + diagnostic.getMessage());
 			}
-//			@Override
-//			public void handleInfo(Diagnostic diagnostic) {
-//				System.out.println("INFO: " + diagnostic.getMessage());
-//			}
+			// @Override
+			// public void handleInfo(Diagnostic diagnostic) {
+			// System.out.println("INFO: " + diagnostic.getMessage());
+			// }
 		});
-		
+
 		if (valid) {
 			System.out.println("Document is valid");
 		} else {
 			System.out.println("Document is invalid");
 		}
 	}
-	
+
 }

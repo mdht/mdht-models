@@ -33,7 +33,8 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
  *
  * @generated
  */
-public class AdmissionMedicationHistorySectionOperations extends org.openhealthtools.mdht.uml.cda.ihe.operations.AdmissionMedicationHistorySectionOperations {
+public class AdmissionMedicationHistorySectionOperations extends
+		org.openhealthtools.mdht.uml.cda.ihe.operations.AdmissionMedicationHistorySectionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,26 +75,28 @@ public class AdmissionMedicationHistorySectionOperations extends org.openhealtht
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateHITSPAdmissionMedicationHistorySectionTemplateId(AdmissionMedicationHistorySection admissionMedicationHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateHITSPAdmissionMedicationHistorySectionTemplateId(
+			AdmissionMedicationHistorySection admissionMedicationHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ADMISSION_MEDICATION_HISTORY_SECTION);
 			try {
 				VALIDATE_HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(admissionMedicationHistorySection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			admissionMedicationHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ADMISSION_MEDICATION_HISTORY_SECTION__HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("HITSPAdmissionMedicationHistorySectionTemplateId"),
-						 new Object [] { admissionMedicationHistorySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ADMISSION_MEDICATION_HISTORY_SECTION__HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("HITSPAdmissionMedicationHistorySectionTemplateId"),
+					new Object[] { admissionMedicationHistorySection }));
 			}
 			return false;
 		}

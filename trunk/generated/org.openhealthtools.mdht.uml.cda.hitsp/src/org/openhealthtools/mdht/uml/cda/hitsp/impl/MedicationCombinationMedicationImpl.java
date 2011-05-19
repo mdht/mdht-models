@@ -29,7 +29,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class MedicationCombinationMedicationImpl extends CombinationMedicationImpl implements MedicationCombinationMedication {
+public class MedicationCombinationMedicationImpl extends CombinationMedicationImpl implements
+		MedicationCombinationMedication {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -90,7 +91,8 @@ public class MedicationCombinationMedicationImpl extends CombinationMedicationIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationAdministrationUnitCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationAdministrationUnitCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationAdministrationUnitCode(this, diagnostics, context);
 	}
 
@@ -153,8 +155,9 @@ public class MedicationCombinationMedicationImpl extends CombinationMedicationIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationCombinationMedication init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationCombinationMedicationImpl
+} // MedicationCombinationMedicationImpl

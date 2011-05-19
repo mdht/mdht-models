@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ChiefComplaintSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ChiefComplaintSectionImpl implements ChiefComplaintSection {
+public class ChiefComplaintSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ChiefComplaintSectionImpl
+		implements ChiefComplaintSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,8 +59,9 @@ public class ChiefComplaintSectionImpl extends org.openhealthtools.mdht.uml.cda.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ChiefComplaintSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ChiefComplaintSectionImpl
+} // ChiefComplaintSectionImpl

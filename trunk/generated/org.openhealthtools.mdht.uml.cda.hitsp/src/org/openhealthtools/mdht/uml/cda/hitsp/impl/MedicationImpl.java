@@ -95,7 +95,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationAdministrationUnitCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationAdministrationUnitCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationAdministrationUnitCode(this, diagnostics, context);
 	}
 
@@ -158,8 +159,9 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Medication init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationImpl
+} // MedicationImpl

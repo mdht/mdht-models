@@ -24,7 +24,9 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class HistoryOfPastIllnessSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.HistoryOfPastIllnessSectionImpl implements HistoryOfPastIllnessSection {
+public class HistoryOfPastIllnessSectionImpl extends
+		org.openhealthtools.mdht.uml.cda.ihe.impl.HistoryOfPastIllnessSectionImpl implements
+		HistoryOfPastIllnessSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,8 +51,10 @@ public class HistoryOfPastIllnessSectionImpl extends org.openhealthtools.mdht.um
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPHistoryOfPastIllnessSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHITSPHistoryOfPastIllnessSectionTemplateId(this, diagnostics, context);
+	public boolean validateHITSPHistoryOfPastIllnessSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryOfPastIllnessSectionOperations.validateHITSPHistoryOfPastIllnessSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +62,9 @@ public class HistoryOfPastIllnessSectionImpl extends org.openhealthtools.mdht.um
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HistoryOfPastIllnessSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HistoryOfPastIllnessSectionImpl
+} // HistoryOfPastIllnessSectionImpl

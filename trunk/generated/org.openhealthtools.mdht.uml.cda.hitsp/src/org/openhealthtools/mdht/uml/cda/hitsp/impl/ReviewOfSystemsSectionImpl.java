@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ReviewOfSystemsSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ReviewOfSystemsSectionImpl implements ReviewOfSystemsSection {
+public class ReviewOfSystemsSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ReviewOfSystemsSectionImpl
+		implements ReviewOfSystemsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,8 +50,10 @@ public class ReviewOfSystemsSectionImpl extends org.openhealthtools.mdht.uml.cda
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReviewOfSystemsSectionOperations.validateHITSPReviewOfSystemsSectionTemplateId(this, diagnostics, context);
+	public boolean validateHITSPReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReviewOfSystemsSectionOperations.validateHITSPReviewOfSystemsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +61,9 @@ public class ReviewOfSystemsSectionImpl extends org.openhealthtools.mdht.uml.cda
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReviewOfSystemsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ReviewOfSystemsSectionImpl
+} // ReviewOfSystemsSectionImpl

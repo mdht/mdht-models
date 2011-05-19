@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.FunctionalStatusSectionImpl implements FunctionalStatusSection {
+public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.FunctionalStatusSectionImpl
+		implements FunctionalStatusSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,8 +50,10 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateHITSPFunctionalStatusSectionTemplateId(this, diagnostics, context);
+	public boolean validateHITSPFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSectionOperations.validateHITSPFunctionalStatusSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +61,9 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FunctionalStatusSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //FunctionalStatusSectionImpl
+} // FunctionalStatusSectionImpl

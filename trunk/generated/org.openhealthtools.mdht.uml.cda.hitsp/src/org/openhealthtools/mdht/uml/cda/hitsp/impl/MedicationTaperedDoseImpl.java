@@ -50,7 +50,8 @@ public class MedicationTaperedDoseImpl extends MedicationImpl implements Medicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TaperedDoseOperations.validateTaperedDoseTaperedDosingSubstanceAdministration(this, diagnostics, context);
 	}
 
@@ -68,8 +69,9 @@ public class MedicationTaperedDoseImpl extends MedicationImpl implements Medicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationTaperedDose init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationTaperedDoseImpl
+} // MedicationTaperedDoseImpl

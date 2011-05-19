@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class HistoryOfPresentIllnessImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.HistoryOfPresentIllnessImpl implements HistoryOfPresentIllness {
+public class HistoryOfPresentIllnessImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.HistoryOfPresentIllnessImpl
+		implements HistoryOfPresentIllness {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,8 +50,10 @@ public class HistoryOfPresentIllnessImpl extends org.openhealthtools.mdht.uml.cd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPHistoryOfPresentIllnessTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessOperations.validateHITSPHistoryOfPresentIllnessTemplateId(this, diagnostics, context);
+	public boolean validateHITSPHistoryOfPresentIllnessTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryOfPresentIllnessOperations.validateHITSPHistoryOfPresentIllnessTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +61,9 @@ public class HistoryOfPresentIllnessImpl extends org.openhealthtools.mdht.uml.cd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HistoryOfPresentIllness init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HistoryOfPresentIllnessImpl
+} // HistoryOfPresentIllnessImpl

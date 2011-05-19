@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.SocialHistorySectionImpl implements SocialHistorySection {
+public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.SocialHistorySectionImpl
+		implements SocialHistorySection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,8 +59,9 @@ public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SocialHistorySection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SocialHistorySectionImpl
+} // SocialHistorySectionImpl

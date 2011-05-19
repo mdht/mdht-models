@@ -65,8 +65,9 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyDrugSensitivity init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AllergyDrugSensitivityImpl
+} // AllergyDrugSensitivityImpl

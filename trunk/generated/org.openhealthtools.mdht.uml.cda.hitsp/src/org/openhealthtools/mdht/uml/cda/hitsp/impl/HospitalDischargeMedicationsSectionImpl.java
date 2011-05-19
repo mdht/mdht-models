@@ -24,7 +24,9 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class HospitalDischargeMedicationsSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.HospitalDischargeMedicationsSectionImpl implements HospitalDischargeMedicationsSection {
+public class HospitalDischargeMedicationsSectionImpl extends
+		org.openhealthtools.mdht.uml.cda.ihe.impl.HospitalDischargeMedicationsSectionImpl implements
+		HospitalDischargeMedicationsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,8 +51,10 @@ public class HospitalDischargeMedicationsSectionImpl extends org.openhealthtools
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPHospitalDischargeMedicationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHITSPHospitalDischargeMedicationsSectionTemplateId(this, diagnostics, context);
+	public boolean validateHITSPHospitalDischargeMedicationsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalDischargeMedicationsSectionOperations.validateHITSPHospitalDischargeMedicationsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +62,9 @@ public class HospitalDischargeMedicationsSectionImpl extends org.openhealthtools
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HospitalDischargeMedicationsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HospitalDischargeMedicationsSectionImpl
+} // HospitalDischargeMedicationsSectionImpl

@@ -18,8 +18,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
 
-
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Medication</b></em>'.
