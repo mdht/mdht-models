@@ -72,7 +72,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalBothAssessmentAndPlan(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalBothAssessmentAndPlan(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalBothAssessmentAndPlan(this, diagnostics, context);
 	}
 
@@ -81,8 +82,10 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalReasonForVisitAndChiefComplaint(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalReasonForVisitAndChiefComplaint(this, diagnostics, context);
+	public boolean validateHistoryAndPhysicalReasonForVisitAndChiefComplaint(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalReasonForVisitAndChiefComplaint(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +93,10 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalBothReasonForVisitAndChiefComplaint(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalBothReasonForVisitAndChiefComplaint(this, diagnostics, context);
+	public boolean validateHistoryAndPhysicalBothReasonForVisitAndChiefComplaint(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalBothReasonForVisitAndChiefComplaint(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +114,10 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalHistoryOfPresentIllness(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalHistoryOfPresentIllness(this, diagnostics, context);
+	public boolean validateHistoryAndPhysicalHistoryOfPresentIllness(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalHistoryOfPresentIllness(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +125,10 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalPastMedicalHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalPastMedicalHistorySection(this, diagnostics, context);
+	public boolean validateHistoryAndPhysicalPastMedicalHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalPastMedicalHistorySection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -145,7 +154,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalSocialHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalSocialHistorySection(this, diagnostics, context);
 	}
 
@@ -154,7 +164,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalFamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalFamilyHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalFamilyHistorySection(this, diagnostics, context);
 	}
 
@@ -163,8 +174,10 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalReviewOfSystemsSectionIHE(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalReviewOfSystemsSectionIHE(this, diagnostics, context);
+	public boolean validateHistoryAndPhysicalReviewOfSystemsSectionIHE(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalReviewOfSystemsSectionIHE(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -172,8 +185,10 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalPhysicalExaminationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalPhysicalExaminationSection(this, diagnostics, context);
+	public boolean validateHistoryAndPhysicalPhysicalExaminationSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalPhysicalExaminationSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -190,7 +205,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalGeneralStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalGeneralStatusSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalGeneralStatusSection(this, diagnostics, context);
 	}
 
@@ -226,7 +242,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalImmunizationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalImmunizationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalImmunizationsSection(this, diagnostics, context);
 	}
 
@@ -371,8 +388,9 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HistoryAndPhysical init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HistoryAndPhysicalImpl
+} // HistoryAndPhysicalImpl

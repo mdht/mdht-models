@@ -76,26 +76,26 @@ public class ReviewOfSystemsSectionIHEOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateReviewOfSystemsSectionIHETemplateId(ReviewOfSystemsSectionIHE reviewOfSystemsSectionIHE, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateReviewOfSystemsSectionIHETemplateId(
+			ReviewOfSystemsSectionIHE reviewOfSystemsSectionIHE, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.REVIEW_OF_SYSTEMS_SECTION_IHE);
 			try {
 				VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reviewOfSystemsSectionIHE)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			reviewOfSystemsSectionIHE)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.REVIEW_OF_SYSTEMS_SECTION_IHE__REVIEW_OF_SYSTEMS_SECTION_IHE_TEMPLATE_ID,
-						 CDTPlugin.INSTANCE.getString("ReviewOfSystemsSectionIHETemplateId"),
-						 new Object [] { reviewOfSystemsSectionIHE }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.REVIEW_OF_SYSTEMS_SECTION_IHE__REVIEW_OF_SYSTEMS_SECTION_IHE_TEMPLATE_ID,
+					CDTPlugin.INSTANCE.getString("ReviewOfSystemsSectionIHETemplateId"),
+					new Object[] { reviewOfSystemsSectionIHE }));
 			}
 			return false;
 		}
@@ -110,9 +110,9 @@ public class ReviewOfSystemsSectionIHEOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10187-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10187-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReviewOfSystemsSectionIHECode(ReviewOfSystemsSectionIHE, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Review Of Systems Section IHE Code</em>}' invariant operation.
@@ -137,26 +137,25 @@ public class ReviewOfSystemsSectionIHEOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateReviewOfSystemsSectionIHECode(ReviewOfSystemsSectionIHE reviewOfSystemsSectionIHE, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateReviewOfSystemsSectionIHECode(ReviewOfSystemsSectionIHE reviewOfSystemsSectionIHE,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.REVIEW_OF_SYSTEMS_SECTION_IHE);
 			try {
 				VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reviewOfSystemsSectionIHE)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REVIEW_OF_SYSTEMS_SECTION_IHE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			reviewOfSystemsSectionIHE)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.REVIEW_OF_SYSTEMS_SECTION_IHE__REVIEW_OF_SYSTEMS_SECTION_IHE_CODE,
-						 CDTPlugin.INSTANCE.getString("ReviewOfSystemsSectionIHECode"),
-						 new Object [] { reviewOfSystemsSectionIHE }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.REVIEW_OF_SYSTEMS_SECTION_IHE__REVIEW_OF_SYSTEMS_SECTION_IHE_CODE,
+					CDTPlugin.INSTANCE.getString("ReviewOfSystemsSectionIHECode"),
+					new Object[] { reviewOfSystemsSectionIHE }));
 			}
 			return false;
 		}

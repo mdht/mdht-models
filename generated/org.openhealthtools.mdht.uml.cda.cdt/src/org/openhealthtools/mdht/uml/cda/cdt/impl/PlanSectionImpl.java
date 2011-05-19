@@ -69,7 +69,7 @@ public class PlanSectionImpl extends SectionImpl implements PlanSection {
 	 * @generated
 	 */
 	public PlanSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PlanSectionImpl
+} // PlanSectionImpl

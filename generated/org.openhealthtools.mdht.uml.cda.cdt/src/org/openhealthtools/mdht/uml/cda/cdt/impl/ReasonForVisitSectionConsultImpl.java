@@ -50,8 +50,10 @@ public class ReasonForVisitSectionConsultImpl extends SectionImpl implements Rea
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReasonForVisitSectionConsultTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForVisitSectionConsultOperations.validateReasonForVisitSectionConsultTemplateId(this, diagnostics, context);
+	public boolean validateReasonForVisitSectionConsultTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForVisitSectionConsultOperations.validateReasonForVisitSectionConsultTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,7 +62,8 @@ public class ReasonForVisitSectionConsultImpl extends SectionImpl implements Rea
 	 * @generated
 	 */
 	public boolean validateReasonForVisitSectionConsultCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForVisitSectionConsultOperations.validateReasonForVisitSectionConsultCode(this, diagnostics, context);
+		return ReasonForVisitSectionConsultOperations.validateReasonForVisitSectionConsultCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +72,7 @@ public class ReasonForVisitSectionConsultImpl extends SectionImpl implements Rea
 	 * @generated
 	 */
 	public ReasonForVisitSectionConsult init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ReasonForVisitSectionConsultImpl
+} // ReasonForVisitSectionConsultImpl

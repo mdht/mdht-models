@@ -39,7 +39,7 @@ public final class CDTPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public CDTPlugin() {
-		super(new ResourceLocator [] {});
+		super(new ResourceLocator[] {});
 	}
 
 	/**

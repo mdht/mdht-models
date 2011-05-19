@@ -50,8 +50,10 @@ public class PastMedicalHistorySectionConsultImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePastMedicalHistorySectionConsultTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PastMedicalHistorySectionConsultOperations.validatePastMedicalHistorySectionConsultTemplateId(this, diagnostics, context);
+	public boolean validatePastMedicalHistorySectionConsultTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PastMedicalHistorySectionConsultOperations.validatePastMedicalHistorySectionConsultTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,7 +62,8 @@ public class PastMedicalHistorySectionConsultImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public boolean validatePastMedicalHistorySectionConsultCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PastMedicalHistorySectionConsultOperations.validatePastMedicalHistorySectionConsultCode(this, diagnostics, context);
+		return PastMedicalHistorySectionConsultOperations.validatePastMedicalHistorySectionConsultCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +72,8 @@ public class PastMedicalHistorySectionConsultImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public boolean validatePastMedicalHistorySectionConsultText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PastMedicalHistorySectionConsultOperations.validatePastMedicalHistorySectionConsultText(this, diagnostics, context);
+		return PastMedicalHistorySectionConsultOperations.validatePastMedicalHistorySectionConsultText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,7 +82,7 @@ public class PastMedicalHistorySectionConsultImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public PastMedicalHistorySectionConsult init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PastMedicalHistorySectionConsultImpl
+} // PastMedicalHistorySectionConsultImpl

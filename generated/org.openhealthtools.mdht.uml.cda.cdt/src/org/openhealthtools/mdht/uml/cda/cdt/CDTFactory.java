@@ -304,4 +304,4 @@ public interface CDTFactory extends EFactory {
 	 */
 	CDTPackage getCDTPackage();
 
-} //CDTFactory
+} // CDTFactory

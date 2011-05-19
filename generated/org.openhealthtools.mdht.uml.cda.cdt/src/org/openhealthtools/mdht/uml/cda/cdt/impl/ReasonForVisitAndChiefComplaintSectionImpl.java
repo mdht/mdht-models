@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl implements ReasonForVisitAndChiefComplaintSection {
+public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl implements
+		ReasonForVisitAndChiefComplaintSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,8 +51,10 @@ public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReasonForVisitAndChiefComplaintSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionTemplateId(this, diagnostics, context);
+	public boolean validateReasonForVisitAndChiefComplaintSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +62,10 @@ public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReasonForVisitAndChiefComplaintSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionCode(this, diagnostics, context);
+	public boolean validateReasonForVisitAndChiefComplaintSectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +74,7 @@ public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl impl
 	 * @generated
 	 */
 	public ReasonForVisitAndChiefComplaintSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ReasonForVisitAndChiefComplaintSectionImpl
+} // ReasonForVisitAndChiefComplaintSectionImpl

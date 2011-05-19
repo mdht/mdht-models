@@ -59,8 +59,9 @@ public class DiagnosticFindingsImpl extends ResultsSectionImpl implements Diagno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DiagnosticFindings init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //DiagnosticFindingsImpl
+} // DiagnosticFindingsImpl

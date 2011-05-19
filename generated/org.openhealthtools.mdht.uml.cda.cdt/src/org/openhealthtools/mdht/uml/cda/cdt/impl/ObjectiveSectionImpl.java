@@ -50,7 +50,8 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObjectiveSectionHasClinicalStatements(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateObjectiveSectionHasClinicalStatements(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ObjectiveSectionOperations.validateObjectiveSectionHasClinicalStatements(this, diagnostics, context);
 	}
 
@@ -96,7 +97,7 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	 * @generated
 	 */
 	public ObjectiveSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ObjectiveSectionImpl
+} // ObjectiveSectionImpl

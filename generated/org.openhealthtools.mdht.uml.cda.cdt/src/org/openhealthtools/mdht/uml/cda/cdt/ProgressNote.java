@@ -135,7 +135,8 @@ public interface ProgressNote extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.componentOf.encompassingEncounter.effectiveTime.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateProgressNoteHasEncompassingEncounterEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNoteHasEncompassingEncounterEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,7 +149,8 @@ public interface ProgressNote extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.componentOf.encompassingEncounter.effectiveTime.low.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateProgressNoteHasEncompassingEncounterEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNoteHasEncompassingEncounterEffectiveTimeLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,7 +163,8 @@ public interface ProgressNote extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf.encompassingEncounter.location.healthCareFacility.id->notEmpty()'"
 	 * @generated
 	 */
-	boolean validateProgressNoteHasEncompassingEncounterFacilityId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNoteHasEncompassingEncounterFacilityId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

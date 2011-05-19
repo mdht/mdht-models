@@ -19,7 +19,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsSection;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Consultation Note</b></em>'.
@@ -108,7 +107,8 @@ public interface ConsultationNote extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::PastMedicalHistorySectionConsult))'"
 	 * @generated
 	 */
-	boolean validateConsultationNotePastMedicalHistorySectionConsult(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateConsultationNotePastMedicalHistorySectionConsult(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

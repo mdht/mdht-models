@@ -38,9 +38,9 @@ public class Main {
 		one.setValue(1);
 		consultationNote.setVersionNumber(one);
 
-//		ReasonForVisitSectionConsult visitSection = CDTFactory.eINSTANCE.createReasonForVisitSectionConsult().init();
-//		consultationNote.addSection(visitSection);
-		
+		// ReasonForVisitSectionConsult visitSection = CDTFactory.eINSTANCE.createReasonForVisitSectionConsult().init();
+		// consultationNote.addSection(visitSection);
+
 		ReasonForReferralSection referralSection = CDTFactory.eINSTANCE.createReasonForReferralSection().init();
 		consultationNote.addSection(referralSection);
 
@@ -52,36 +52,38 @@ public class Main {
 		System.out.println("\n***** Validate sample H & P *****");
 		ClinicalDocument sampleHandP = CDAUtil.load(new FileInputStream("samples/HandP.sample.xml"));
 		validate(sampleHandP);
-		
+
 		System.out.println("\n***** Validate sample Consultation Note *****");
 		ClinicalDocument sampleConsultNote = CDAUtil.load(new FileInputStream("samples/Consults.Sample.xml"));
 		validate(sampleConsultNote);
-		
+
 		System.out.println("\n***** Validate sample Progress Note *****");
 		ClinicalDocument sampleProgressNote = CDAUtil.load(new FileInputStream("samples/Progress_Note.xml"));
 		validate(sampleProgressNote);
 	}
-	
+
 	private static void save(ClinicalDocument clinicalDocument) throws Exception {
 		CDAUtil.save(clinicalDocument, System.out);
 	}
-	
+
 	private static void validate(ClinicalDocument clinicalDocument) throws Exception {
 		boolean valid = CDAUtil.validate(clinicalDocument, new BasicValidationHandler() {
 			@Override
 			public void handleError(Diagnostic diagnostic) {
 				System.out.println("ERROR: " + diagnostic.getMessage());
 			}
+
 			@Override
 			public void handleWarning(Diagnostic diagnostic) {
 				System.out.println("WARNING: " + diagnostic.getMessage());
 			}
+
 			@Override
 			public void handleInfo(Diagnostic diagnostic) {
 				System.out.println("INFO: " + diagnostic.getMessage());
 			}
 		});
-		
+
 		if (valid) {
 			System.out.println("Document is valid");
 		} else {

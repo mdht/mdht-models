@@ -14,7 +14,6 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
-import org.openhealthtools.mdht.uml.cda.cdt.*;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSectionProcNote;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentSection;
@@ -104,13 +103,11 @@ public class CDTSwitch<T> {
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
-		}
-		else {
+		} else {
 			List<EClass> eSuperTypes = theEClass.getESuperTypes();
-			return
-				eSuperTypes.isEmpty() ?
-					defaultCase(theEObject) :
-					doSwitch(eSuperTypes.get(0), theEObject);
+			return eSuperTypes.isEmpty()
+					? defaultCase(theEObject)
+					: doSwitch(eSuperTypes.get(0), theEObject);
 		}
 	}
 
@@ -124,281 +121,532 @@ public class CDTSwitch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case CDTPackage.GENERAL_HEADER_CONSTRAINTS: {
-				GeneralHeaderConstraints generalHeaderConstraints = (GeneralHeaderConstraints)theEObject;
+				GeneralHeaderConstraints generalHeaderConstraints = (GeneralHeaderConstraints) theEObject;
 				T result = caseGeneralHeaderConstraints(generalHeaderConstraints);
-				if (result == null) result = caseClinicalDocument(generalHeaderConstraints);
-				if (result == null) result = caseAct(generalHeaderConstraints);
-				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseClinicalDocument(generalHeaderConstraints);
+				}
+				if (result == null) {
+					result = caseAct(generalHeaderConstraints);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.HISTORY_AND_PHYSICAL: {
-				HistoryAndPhysical historyAndPhysical = (HistoryAndPhysical)theEObject;
+				HistoryAndPhysical historyAndPhysical = (HistoryAndPhysical) theEObject;
 				T result = caseHistoryAndPhysical(historyAndPhysical);
-				if (result == null) result = caseGeneralHeaderConstraints(historyAndPhysical);
-				if (result == null) result = caseClinicalDocument(historyAndPhysical);
-				if (result == null) result = caseAct(historyAndPhysical);
-				if (result == null) result = caseInfrastructureRoot(historyAndPhysical);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(historyAndPhysical);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(historyAndPhysical);
+				}
+				if (result == null) {
+					result = caseAct(historyAndPhysical);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(historyAndPhysical);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.HISTORY_OF_PRESENT_ILLNESS: {
-				HistoryOfPresentIllness historyOfPresentIllness = (HistoryOfPresentIllness)theEObject;
+				HistoryOfPresentIllness historyOfPresentIllness = (HistoryOfPresentIllness) theEObject;
 				T result = caseHistoryOfPresentIllness(historyOfPresentIllness);
-				if (result == null) result = caseSection(historyOfPresentIllness);
-				if (result == null) result = caseAct(historyOfPresentIllness);
-				if (result == null) result = caseInfrastructureRoot(historyOfPresentIllness);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(historyOfPresentIllness);
+				}
+				if (result == null) {
+					result = caseAct(historyOfPresentIllness);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(historyOfPresentIllness);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.PAST_MEDICAL_HISTORY_SECTION: {
-				PastMedicalHistorySection pastMedicalHistorySection = (PastMedicalHistorySection)theEObject;
+				PastMedicalHistorySection pastMedicalHistorySection = (PastMedicalHistorySection) theEObject;
 				T result = casePastMedicalHistorySection(pastMedicalHistorySection);
-				if (result == null) result = caseSection(pastMedicalHistorySection);
-				if (result == null) result = caseAct(pastMedicalHistorySection);
-				if (result == null) result = caseInfrastructureRoot(pastMedicalHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(pastMedicalHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(pastMedicalHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(pastMedicalHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.REVIEW_OF_SYSTEMS_SECTION_IHE: {
-				ReviewOfSystemsSectionIHE reviewOfSystemsSectionIHE = (ReviewOfSystemsSectionIHE)theEObject;
+				ReviewOfSystemsSectionIHE reviewOfSystemsSectionIHE = (ReviewOfSystemsSectionIHE) theEObject;
 				T result = caseReviewOfSystemsSectionIHE(reviewOfSystemsSectionIHE);
-				if (result == null) result = caseSection(reviewOfSystemsSectionIHE);
-				if (result == null) result = caseAct(reviewOfSystemsSectionIHE);
-				if (result == null) result = caseInfrastructureRoot(reviewOfSystemsSectionIHE);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(reviewOfSystemsSectionIHE);
+				}
+				if (result == null) {
+					result = caseAct(reviewOfSystemsSectionIHE);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reviewOfSystemsSectionIHE);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.PHYSICAL_EXAMINATION_SECTION: {
-				PhysicalExaminationSection physicalExaminationSection = (PhysicalExaminationSection)theEObject;
+				PhysicalExaminationSection physicalExaminationSection = (PhysicalExaminationSection) theEObject;
 				T result = casePhysicalExaminationSection(physicalExaminationSection);
-				if (result == null) result = caseSection(physicalExaminationSection);
-				if (result == null) result = caseAct(physicalExaminationSection);
-				if (result == null) result = caseInfrastructureRoot(physicalExaminationSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(physicalExaminationSection);
+				}
+				if (result == null) {
+					result = caseAct(physicalExaminationSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(physicalExaminationSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.VITAL_SIGNS_SECTION: {
-				VitalSignsSection vitalSignsSection = (VitalSignsSection)theEObject;
+				VitalSignsSection vitalSignsSection = (VitalSignsSection) theEObject;
 				T result = caseVitalSignsSection(vitalSignsSection);
-				if (result == null) result = caseSection(vitalSignsSection);
-				if (result == null) result = caseAct(vitalSignsSection);
-				if (result == null) result = caseInfrastructureRoot(vitalSignsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.GENERAL_STATUS_SECTION: {
-				GeneralStatusSection generalStatusSection = (GeneralStatusSection)theEObject;
+				GeneralStatusSection generalStatusSection = (GeneralStatusSection) theEObject;
 				T result = caseGeneralStatusSection(generalStatusSection);
-				if (result == null) result = caseSection(generalStatusSection);
-				if (result == null) result = caseAct(generalStatusSection);
-				if (result == null) result = caseInfrastructureRoot(generalStatusSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(generalStatusSection);
+				}
+				if (result == null) {
+					result = caseAct(generalStatusSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalStatusSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.CONSULTATION_NOTE: {
-				ConsultationNote consultationNote = (ConsultationNote)theEObject;
+				ConsultationNote consultationNote = (ConsultationNote) theEObject;
 				T result = caseConsultationNote(consultationNote);
-				if (result == null) result = caseGeneralHeaderConstraints(consultationNote);
-				if (result == null) result = caseClinicalDocument(consultationNote);
-				if (result == null) result = caseAct(consultationNote);
-				if (result == null) result = caseInfrastructureRoot(consultationNote);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(consultationNote);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(consultationNote);
+				}
+				if (result == null) {
+					result = caseAct(consultationNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(consultationNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.PAST_MEDICAL_HISTORY_SECTION_CONSULT: {
-				PastMedicalHistorySectionConsult pastMedicalHistorySectionConsult = (PastMedicalHistorySectionConsult)theEObject;
+				PastMedicalHistorySectionConsult pastMedicalHistorySectionConsult = (PastMedicalHistorySectionConsult) theEObject;
 				T result = casePastMedicalHistorySectionConsult(pastMedicalHistorySectionConsult);
-				if (result == null) result = caseSection(pastMedicalHistorySectionConsult);
-				if (result == null) result = caseAct(pastMedicalHistorySectionConsult);
-				if (result == null) result = caseInfrastructureRoot(pastMedicalHistorySectionConsult);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(pastMedicalHistorySectionConsult);
+				}
+				if (result == null) {
+					result = caseAct(pastMedicalHistorySectionConsult);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(pastMedicalHistorySectionConsult);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.REVIEW_OF_SYSTEMS_SECTION: {
-				ReviewOfSystemsSection reviewOfSystemsSection = (ReviewOfSystemsSection)theEObject;
+				ReviewOfSystemsSection reviewOfSystemsSection = (ReviewOfSystemsSection) theEObject;
 				T result = caseReviewOfSystemsSection(reviewOfSystemsSection);
-				if (result == null) result = caseSection(reviewOfSystemsSection);
-				if (result == null) result = caseAct(reviewOfSystemsSection);
-				if (result == null) result = caseInfrastructureRoot(reviewOfSystemsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(reviewOfSystemsSection);
+				}
+				if (result == null) {
+					result = caseAct(reviewOfSystemsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reviewOfSystemsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.REASON_FOR_REFERRAL_SECTION: {
-				ReasonForReferralSection reasonForReferralSection = (ReasonForReferralSection)theEObject;
+				ReasonForReferralSection reasonForReferralSection = (ReasonForReferralSection) theEObject;
 				T result = caseReasonForReferralSection(reasonForReferralSection);
-				if (result == null) result = caseSection(reasonForReferralSection);
-				if (result == null) result = caseAct(reasonForReferralSection);
-				if (result == null) result = caseInfrastructureRoot(reasonForReferralSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseAct(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.REASON_FOR_VISIT_SECTION_CONSULT: {
-				ReasonForVisitSectionConsult reasonForVisitSectionConsult = (ReasonForVisitSectionConsult)theEObject;
+				ReasonForVisitSectionConsult reasonForVisitSectionConsult = (ReasonForVisitSectionConsult) theEObject;
 				T result = caseReasonForVisitSectionConsult(reasonForVisitSectionConsult);
-				if (result == null) result = caseSection(reasonForVisitSectionConsult);
-				if (result == null) result = caseAct(reasonForVisitSectionConsult);
-				if (result == null) result = caseInfrastructureRoot(reasonForVisitSectionConsult);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(reasonForVisitSectionConsult);
+				}
+				if (result == null) {
+					result = caseAct(reasonForVisitSectionConsult);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reasonForVisitSectionConsult);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.LEVEL_ONE_CONFORMANCE: {
-				LevelOneConformance levelOneConformance = (LevelOneConformance)theEObject;
+				LevelOneConformance levelOneConformance = (LevelOneConformance) theEObject;
 				T result = caseLevelOneConformance(levelOneConformance);
-				if (result == null) result = caseClinicalDocument(levelOneConformance);
-				if (result == null) result = caseAct(levelOneConformance);
-				if (result == null) result = caseInfrastructureRoot(levelOneConformance);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseClinicalDocument(levelOneConformance);
+				}
+				if (result == null) {
+					result = caseAct(levelOneConformance);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(levelOneConformance);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.LEVEL_TWO_CONFORMANCE: {
-				LevelTwoConformance levelTwoConformance = (LevelTwoConformance)theEObject;
+				LevelTwoConformance levelTwoConformance = (LevelTwoConformance) theEObject;
 				T result = caseLevelTwoConformance(levelTwoConformance);
-				if (result == null) result = caseLevelOneConformance(levelTwoConformance);
-				if (result == null) result = caseClinicalDocument(levelTwoConformance);
-				if (result == null) result = caseAct(levelTwoConformance);
-				if (result == null) result = caseInfrastructureRoot(levelTwoConformance);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseLevelOneConformance(levelTwoConformance);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(levelTwoConformance);
+				}
+				if (result == null) {
+					result = caseAct(levelTwoConformance);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(levelTwoConformance);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.LEVEL_THREE_CONFORMANCE: {
-				LevelThreeConformance levelThreeConformance = (LevelThreeConformance)theEObject;
+				LevelThreeConformance levelThreeConformance = (LevelThreeConformance) theEObject;
 				T result = caseLevelThreeConformance(levelThreeConformance);
-				if (result == null) result = caseLevelTwoConformance(levelThreeConformance);
-				if (result == null) result = caseLevelOneConformance(levelThreeConformance);
-				if (result == null) result = caseClinicalDocument(levelThreeConformance);
-				if (result == null) result = caseAct(levelThreeConformance);
-				if (result == null) result = caseInfrastructureRoot(levelThreeConformance);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseLevelTwoConformance(levelThreeConformance);
+				}
+				if (result == null) {
+					result = caseLevelOneConformance(levelThreeConformance);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(levelThreeConformance);
+				}
+				if (result == null) {
+					result = caseAct(levelThreeConformance);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(levelThreeConformance);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.DIAGNOSTIC_FINDINGS: {
-				DiagnosticFindings diagnosticFindings = (DiagnosticFindings)theEObject;
+				DiagnosticFindings diagnosticFindings = (DiagnosticFindings) theEObject;
 				T result = caseDiagnosticFindings(diagnosticFindings);
-				if (result == null) result = caseResultsSection(diagnosticFindings);
-				if (result == null) result = caseSection(diagnosticFindings);
-				if (result == null) result = caseAct(diagnosticFindings);
-				if (result == null) result = caseInfrastructureRoot(diagnosticFindings);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseResultsSection(diagnosticFindings);
+				}
+				if (result == null) {
+					result = caseSection(diagnosticFindings);
+				}
+				if (result == null) {
+					result = caseAct(diagnosticFindings);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(diagnosticFindings);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.ASSESSMENT_SECTION: {
-				AssessmentSection assessmentSection = (AssessmentSection)theEObject;
+				AssessmentSection assessmentSection = (AssessmentSection) theEObject;
 				T result = caseAssessmentSection(assessmentSection);
-				if (result == null) result = caseSection(assessmentSection);
-				if (result == null) result = caseAct(assessmentSection);
-				if (result == null) result = caseInfrastructureRoot(assessmentSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(assessmentSection);
+				}
+				if (result == null) {
+					result = caseAct(assessmentSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assessmentSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.PLAN_SECTION: {
-				PlanSection planSection = (PlanSection)theEObject;
+				PlanSection planSection = (PlanSection) theEObject;
 				T result = casePlanSection(planSection);
-				if (result == null) result = caseSection(planSection);
-				if (result == null) result = caseAct(planSection);
-				if (result == null) result = caseInfrastructureRoot(planSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(planSection);
+				}
+				if (result == null) {
+					result = caseAct(planSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(planSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.ASSESSMENT_AND_PLAN_SECTION: {
-				AssessmentAndPlanSection assessmentAndPlanSection = (AssessmentAndPlanSection)theEObject;
+				AssessmentAndPlanSection assessmentAndPlanSection = (AssessmentAndPlanSection) theEObject;
 				T result = caseAssessmentAndPlanSection(assessmentAndPlanSection);
-				if (result == null) result = caseSection(assessmentAndPlanSection);
-				if (result == null) result = caseAct(assessmentAndPlanSection);
-				if (result == null) result = caseInfrastructureRoot(assessmentAndPlanSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = caseAct(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.REASON_FOR_VISIT_SECTION: {
-				ReasonForVisitSection reasonForVisitSection = (ReasonForVisitSection)theEObject;
+				ReasonForVisitSection reasonForVisitSection = (ReasonForVisitSection) theEObject;
 				T result = caseReasonForVisitSection(reasonForVisitSection);
-				if (result == null) result = caseSection(reasonForVisitSection);
-				if (result == null) result = caseAct(reasonForVisitSection);
-				if (result == null) result = caseInfrastructureRoot(reasonForVisitSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(reasonForVisitSection);
+				}
+				if (result == null) {
+					result = caseAct(reasonForVisitSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reasonForVisitSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.CHIEF_COMPLAINT_SECTION: {
-				ChiefComplaintSection chiefComplaintSection = (ChiefComplaintSection)theEObject;
+				ChiefComplaintSection chiefComplaintSection = (ChiefComplaintSection) theEObject;
 				T result = caseChiefComplaintSection(chiefComplaintSection);
-				if (result == null) result = caseSection(chiefComplaintSection);
-				if (result == null) result = caseAct(chiefComplaintSection);
-				if (result == null) result = caseInfrastructureRoot(chiefComplaintSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = caseAct(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.REASON_FOR_VISIT_AND_CHIEF_COMPLAINT_SECTION: {
-				ReasonForVisitAndChiefComplaintSection reasonForVisitAndChiefComplaintSection = (ReasonForVisitAndChiefComplaintSection)theEObject;
+				ReasonForVisitAndChiefComplaintSection reasonForVisitAndChiefComplaintSection = (ReasonForVisitAndChiefComplaintSection) theEObject;
 				T result = caseReasonForVisitAndChiefComplaintSection(reasonForVisitAndChiefComplaintSection);
-				if (result == null) result = caseSection(reasonForVisitAndChiefComplaintSection);
-				if (result == null) result = caseAct(reasonForVisitAndChiefComplaintSection);
-				if (result == null) result = caseInfrastructureRoot(reasonForVisitAndChiefComplaintSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(reasonForVisitAndChiefComplaintSection);
+				}
+				if (result == null) {
+					result = caseAct(reasonForVisitAndChiefComplaintSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reasonForVisitAndChiefComplaintSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.PROGRESS_NOTE: {
-				ProgressNote progressNote = (ProgressNote)theEObject;
+				ProgressNote progressNote = (ProgressNote) theEObject;
 				T result = caseProgressNote(progressNote);
-				if (result == null) result = caseGeneralHeaderConstraints(progressNote);
-				if (result == null) result = caseClinicalDocument(progressNote);
-				if (result == null) result = caseAct(progressNote);
-				if (result == null) result = caseInfrastructureRoot(progressNote);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(progressNote);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(progressNote);
+				}
+				if (result == null) {
+					result = caseAct(progressNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(progressNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE: {
-				AssessmentAndPlanSectionProcNote assessmentAndPlanSectionProcNote = (AssessmentAndPlanSectionProcNote)theEObject;
+				AssessmentAndPlanSectionProcNote assessmentAndPlanSectionProcNote = (AssessmentAndPlanSectionProcNote) theEObject;
 				T result = caseAssessmentAndPlanSectionProcNote(assessmentAndPlanSectionProcNote);
-				if (result == null) result = caseSection(assessmentAndPlanSectionProcNote);
-				if (result == null) result = caseAct(assessmentAndPlanSectionProcNote);
-				if (result == null) result = caseInfrastructureRoot(assessmentAndPlanSectionProcNote);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(assessmentAndPlanSectionProcNote);
+				}
+				if (result == null) {
+					result = caseAct(assessmentAndPlanSectionProcNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assessmentAndPlanSectionProcNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.ASSESSMENT_SECTION_PROC_NOTE: {
-				AssessmentSectionProcNote assessmentSectionProcNote = (AssessmentSectionProcNote)theEObject;
+				AssessmentSectionProcNote assessmentSectionProcNote = (AssessmentSectionProcNote) theEObject;
 				T result = caseAssessmentSectionProcNote(assessmentSectionProcNote);
-				if (result == null) result = caseSection(assessmentSectionProcNote);
-				if (result == null) result = caseAct(assessmentSectionProcNote);
-				if (result == null) result = caseInfrastructureRoot(assessmentSectionProcNote);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(assessmentSectionProcNote);
+				}
+				if (result == null) {
+					result = caseAct(assessmentSectionProcNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assessmentSectionProcNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.CHIEF_COMPLAINT_SECTION_PROC_NOTE: {
-				ChiefComplaintSectionProcNote chiefComplaintSectionProcNote = (ChiefComplaintSectionProcNote)theEObject;
+				ChiefComplaintSectionProcNote chiefComplaintSectionProcNote = (ChiefComplaintSectionProcNote) theEObject;
 				T result = caseChiefComplaintSectionProcNote(chiefComplaintSectionProcNote);
-				if (result == null) result = caseSection(chiefComplaintSectionProcNote);
-				if (result == null) result = caseAct(chiefComplaintSectionProcNote);
-				if (result == null) result = caseInfrastructureRoot(chiefComplaintSectionProcNote);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(chiefComplaintSectionProcNote);
+				}
+				if (result == null) {
+					result = caseAct(chiefComplaintSectionProcNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(chiefComplaintSectionProcNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.OBJECTIVE_SECTION: {
-				ObjectiveSection objectiveSection = (ObjectiveSection)theEObject;
+				ObjectiveSection objectiveSection = (ObjectiveSection) theEObject;
 				T result = caseObjectiveSection(objectiveSection);
-				if (result == null) result = caseSection(objectiveSection);
-				if (result == null) result = caseAct(objectiveSection);
-				if (result == null) result = caseInfrastructureRoot(objectiveSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(objectiveSection);
+				}
+				if (result == null) {
+					result = caseAct(objectiveSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(objectiveSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.SUBJECTIVE_SECTION: {
-				SubjectiveSection subjectiveSection = (SubjectiveSection)theEObject;
+				SubjectiveSection subjectiveSection = (SubjectiveSection) theEObject;
 				T result = caseSubjectiveSection(subjectiveSection);
-				if (result == null) result = caseSection(subjectiveSection);
-				if (result == null) result = caseAct(subjectiveSection);
-				if (result == null) result = caseInfrastructureRoot(subjectiveSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(subjectiveSection);
+				}
+				if (result == null) {
+					result = caseAct(subjectiveSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(subjectiveSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CDTPackage.CDT_REGISTRY_DELEGATE: {
-				CDTRegistryDelegate cdtRegistryDelegate = (CDTRegistryDelegate)theEObject;
+				CDTRegistryDelegate cdtRegistryDelegate = (CDTRegistryDelegate) theEObject;
 				T result = caseCDTRegistryDelegate(cdtRegistryDelegate);
-				if (result == null) result = caseRegistryDelegate(cdtRegistryDelegate);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseRegistryDelegate(cdtRegistryDelegate);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			default: return defaultCase(theEObject);
+			default:
+				return defaultCase(theEObject);
 		}
 	}
 
@@ -957,4 +1205,4 @@ public class CDTSwitch<T> {
 		return null;
 	}
 
-} //CDTSwitch
+} // CDTSwitch

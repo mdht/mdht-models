@@ -60,7 +60,7 @@ public class LevelOneConformanceImpl extends ClinicalDocumentImpl implements Lev
 	 * @generated
 	 */
 	public LevelOneConformance init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //LevelOneConformanceImpl
+} // LevelOneConformanceImpl
