@@ -60,7 +60,7 @@ public class PayerEntityImpl extends AssignedEntityImpl implements PayerEntity {
 	 * @generated
 	 */
 	public PayerEntity init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PayerEntityImpl
+} // PayerEntityImpl

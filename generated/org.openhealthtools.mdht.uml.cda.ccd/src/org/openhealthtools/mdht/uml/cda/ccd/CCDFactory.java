@@ -697,4 +697,4 @@ public interface CCDFactory extends EFactory {
 	 */
 	CCDPackage getCCDPackage();
 
-} //CCDFactory
+} // CCDFactory

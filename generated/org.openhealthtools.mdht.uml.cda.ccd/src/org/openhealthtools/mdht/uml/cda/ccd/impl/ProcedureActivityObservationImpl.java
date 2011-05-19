@@ -50,8 +50,10 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTemplateId(this, diagnostics, context);
+	public boolean validateProcedureActivityObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,7 +62,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public ProcedureActivityObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProcedureActivityObservationImpl
+} // ProcedureActivityObservationImpl

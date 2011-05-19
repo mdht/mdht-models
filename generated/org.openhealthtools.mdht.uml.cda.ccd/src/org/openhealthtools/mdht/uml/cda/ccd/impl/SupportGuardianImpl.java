@@ -47,7 +47,7 @@ public class SupportGuardianImpl extends GuardianImpl implements SupportGuardian
 	 * @generated
 	 */
 	public SupportGuardian init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SupportGuardianImpl
+} // SupportGuardianImpl

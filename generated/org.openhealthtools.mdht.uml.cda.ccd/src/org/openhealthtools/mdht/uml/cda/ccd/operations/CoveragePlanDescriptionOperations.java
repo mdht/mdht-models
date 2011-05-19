@@ -77,26 +77,25 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateCoveragePlanDescriptionClassCode(CoveragePlanDescription coveragePlanDescription, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateCoveragePlanDescriptionClassCode(CoveragePlanDescription coveragePlanDescription,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_COVERAGE_PLAN_DESCRIPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_PLAN_DESCRIPTION);
 			try {
 				VALIDATE_COVERAGE_PLAN_DESCRIPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_PLAN_DESCRIPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_PLAN_DESCRIPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coveragePlanDescription)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_PLAN_DESCRIPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			coveragePlanDescription)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.COVERAGE_PLAN_DESCRIPTION__COVERAGE_PLAN_DESCRIPTION_CLASS_CODE,
-						 CCDPlugin.INSTANCE.getString("CoveragePlanDescriptionClassCode"),
-						 new Object [] { coveragePlanDescription }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.COVERAGE_PLAN_DESCRIPTION__COVERAGE_PLAN_DESCRIPTION_CLASS_CODE,
+					CCDPlugin.INSTANCE.getString("CoveragePlanDescriptionClassCode"),
+					new Object[] { coveragePlanDescription }));
 			}
 			return false;
 		}
@@ -134,26 +133,24 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateCoveragePlanDescriptionId(CoveragePlanDescription coveragePlanDescription, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateCoveragePlanDescriptionId(CoveragePlanDescription coveragePlanDescription,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_COVERAGE_PLAN_DESCRIPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_PLAN_DESCRIPTION);
 			try {
 				VALIDATE_COVERAGE_PLAN_DESCRIPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_PLAN_DESCRIPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_PLAN_DESCRIPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coveragePlanDescription)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_PLAN_DESCRIPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			coveragePlanDescription)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.COVERAGE_PLAN_DESCRIPTION__COVERAGE_PLAN_DESCRIPTION_ID,
-						 CCDPlugin.INSTANCE.getString("CoveragePlanDescriptionId"),
-						 new Object [] { coveragePlanDescription }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.COVERAGE_PLAN_DESCRIPTION__COVERAGE_PLAN_DESCRIPTION_ID,
+					CCDPlugin.INSTANCE.getString("CoveragePlanDescriptionId"), new Object[] { coveragePlanDescription }));
 			}
 			return false;
 		}
@@ -191,26 +188,25 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription coveragePlanDescription, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription coveragePlanDescription,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_COVERAGE_PLAN_DESCRIPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_PLAN_DESCRIPTION);
 			try {
 				VALIDATE_COVERAGE_PLAN_DESCRIPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_PLAN_DESCRIPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_PLAN_DESCRIPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coveragePlanDescription)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_PLAN_DESCRIPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			coveragePlanDescription)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.COVERAGE_PLAN_DESCRIPTION__COVERAGE_PLAN_DESCRIPTION_MOOD_CODE,
-						 CCDPlugin.INSTANCE.getString("CoveragePlanDescriptionMoodCode"),
-						 new Object [] { coveragePlanDescription }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.COVERAGE_PLAN_DESCRIPTION__COVERAGE_PLAN_DESCRIPTION_MOOD_CODE,
+					CCDPlugin.INSTANCE.getString("CoveragePlanDescriptionMoodCode"),
+					new Object[] { coveragePlanDescription }));
 			}
 			return false;
 		}

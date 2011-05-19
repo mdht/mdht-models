@@ -78,7 +78,7 @@ public class CoveragePlanDescriptionImpl extends ActImpl implements CoveragePlan
 	 * @generated
 	 */
 	public CoveragePlanDescription init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CoveragePlanDescriptionImpl
+} // CoveragePlanDescriptionImpl

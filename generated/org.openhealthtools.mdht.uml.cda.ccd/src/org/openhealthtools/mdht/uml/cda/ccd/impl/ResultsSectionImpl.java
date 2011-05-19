@@ -107,7 +107,7 @@ public class ResultsSectionImpl extends SectionImpl implements ResultsSection {
 	 * @generated
 	 */
 	public ResultsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ResultsSectionImpl
+} // ResultsSectionImpl

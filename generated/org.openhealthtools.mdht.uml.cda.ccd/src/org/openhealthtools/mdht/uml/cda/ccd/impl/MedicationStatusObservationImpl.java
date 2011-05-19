@@ -59,8 +59,9 @@ public class MedicationStatusObservationImpl extends StatusObservationImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationStatusObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationStatusObservationImpl
+} // MedicationStatusObservationImpl

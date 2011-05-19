@@ -50,4 +50,4 @@ public class CCDRegistryDelegateImpl extends EObjectImpl implements CCDRegistryD
 		return CCDRegistryDelegateOperations.getEClass(this, templateId, context);
 	}
 
-} //CCDRegistryDelegateImpl
+} // CCDRegistryDelegateImpl

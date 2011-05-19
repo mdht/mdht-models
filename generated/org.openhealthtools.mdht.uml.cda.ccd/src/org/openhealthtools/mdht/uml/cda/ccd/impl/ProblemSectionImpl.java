@@ -107,7 +107,7 @@ public class ProblemSectionImpl extends SectionImpl implements ProblemSection {
 	 * @generated
 	 */
 	public ProblemSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProblemSectionImpl
+} // ProblemSectionImpl

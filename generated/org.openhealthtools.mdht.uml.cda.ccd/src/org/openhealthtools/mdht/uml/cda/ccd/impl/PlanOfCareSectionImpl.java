@@ -94,7 +94,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareSectionPlanOfCareActivityAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlanOfCareSectionPlanOfCareActivityAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityAct(this, diagnostics, context);
 	}
 
@@ -103,8 +104,10 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareSectionPlanOfCareActivityEncounter(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityEncounter(this, diagnostics, context);
+	public boolean validatePlanOfCareSectionPlanOfCareActivityEncounter(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityEncounter(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -112,8 +115,10 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
+	public boolean validatePlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +126,10 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityProcedure(this, diagnostics, context);
+	public boolean validatePlanOfCareSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +137,10 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(this, diagnostics, context);
+	public boolean validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -139,7 +148,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareSectionPlanOfCareActivitySupply(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlanOfCareSectionPlanOfCareActivitySupply(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySupply(this, diagnostics, context);
 	}
 
@@ -212,7 +222,7 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * @generated
 	 */
 	public PlanOfCareSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PlanOfCareSectionImpl
+} // PlanOfCareSectionImpl

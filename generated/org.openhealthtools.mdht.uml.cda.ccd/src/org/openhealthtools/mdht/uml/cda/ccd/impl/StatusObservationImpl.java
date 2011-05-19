@@ -50,7 +50,8 @@ public class StatusObservationImpl extends ObservationImpl implements StatusObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateStatusObservationNoAdditionalParticipants(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return StatusObservationOperations.validateStatusObservationNoAdditionalParticipants(this, diagnostics, context);
 	}
 
@@ -114,7 +115,7 @@ public class StatusObservationImpl extends ObservationImpl implements StatusObse
 	 * @generated
 	 */
 	public StatusObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //StatusObservationImpl
+} // StatusObservationImpl

@@ -76,26 +76,25 @@ public class FulfillmentInstructionOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFulfillmentInstructionTemplateId(FulfillmentInstruction fulfillmentInstruction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFulfillmentInstructionTemplateId(FulfillmentInstruction fulfillmentInstruction,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_FULFILLMENT_INSTRUCTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FULFILLMENT_INSTRUCTION);
 			try {
 				VALIDATE_FULFILLMENT_INSTRUCTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FULFILLMENT_INSTRUCTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FULFILLMENT_INSTRUCTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(fulfillmentInstruction)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FULFILLMENT_INSTRUCTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			fulfillmentInstruction)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.FULFILLMENT_INSTRUCTION__FULFILLMENT_INSTRUCTION_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("FulfillmentInstructionTemplateId"),
-						 new Object [] { fulfillmentInstruction }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.FULFILLMENT_INSTRUCTION__FULFILLMENT_INSTRUCTION_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("FulfillmentInstructionTemplateId"),
+					new Object[] { fulfillmentInstruction }));
 			}
 			return false;
 		}
@@ -133,26 +132,25 @@ public class FulfillmentInstructionOperations extends ClinicalStatementOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFulfillmentInstructionMoodCode(FulfillmentInstruction fulfillmentInstruction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFulfillmentInstructionMoodCode(FulfillmentInstruction fulfillmentInstruction,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_FULFILLMENT_INSTRUCTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FULFILLMENT_INSTRUCTION);
 			try {
 				VALIDATE_FULFILLMENT_INSTRUCTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FULFILLMENT_INSTRUCTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FULFILLMENT_INSTRUCTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(fulfillmentInstruction)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FULFILLMENT_INSTRUCTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			fulfillmentInstruction)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.FULFILLMENT_INSTRUCTION__FULFILLMENT_INSTRUCTION_MOOD_CODE,
-						 CCDPlugin.INSTANCE.getString("FulfillmentInstructionMoodCode"),
-						 new Object [] { fulfillmentInstruction }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.FULFILLMENT_INSTRUCTION__FULFILLMENT_INSTRUCTION_MOOD_CODE,
+					CCDPlugin.INSTANCE.getString("FulfillmentInstructionMoodCode"),
+					new Object[] { fulfillmentInstruction }));
 			}
 			return false;
 		}

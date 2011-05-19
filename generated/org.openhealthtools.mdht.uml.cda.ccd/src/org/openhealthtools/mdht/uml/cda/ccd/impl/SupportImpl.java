@@ -47,7 +47,7 @@ public abstract class SupportImpl extends EObjectImpl implements Support {
 	 * @generated
 	 */
 	public Support init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SupportImpl
+} // SupportImpl

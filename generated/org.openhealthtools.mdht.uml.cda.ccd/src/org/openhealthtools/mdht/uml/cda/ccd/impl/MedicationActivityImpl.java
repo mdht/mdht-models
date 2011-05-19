@@ -64,8 +64,10 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivityHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityHasDoseQuantityOrRateQuantity(this, diagnostics, context);
+	public boolean validateMedicationActivityHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityHasDoseQuantityOrRateQuantity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +93,10 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivityHasPreconditionCriterion(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityHasPreconditionCriterion(this, diagnostics, context);
+	public boolean validateMedicationActivityHasPreconditionCriterion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityHasPreconditionCriterion(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -181,8 +185,10 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivityMedicationSeriesNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityMedicationSeriesNumberObservation(this, diagnostics, context);
+	public boolean validateMedicationActivityMedicationSeriesNumberObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityMedicationSeriesNumberObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -190,8 +196,10 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivityMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityMedicationStatusObservation(this, diagnostics, context);
+	public boolean validateMedicationActivityMedicationStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityMedicationStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -208,7 +216,8 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivityReactionObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationActivityReactionObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityReactionObservation(this, diagnostics, context);
 	}
 
@@ -254,7 +263,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * @generated
 	 */
 	public MedicationActivity init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationActivityImpl
+} // MedicationActivityImpl

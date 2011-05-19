@@ -106,7 +106,8 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePolicyActivityEntryRelationshipTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePolicyActivityEntryRelationshipTarget(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipTarget(this, diagnostics, context);
 	}
 
@@ -215,7 +216,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * @generated
 	 */
 	public PolicyActivity init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PolicyActivityImpl
+} // PolicyActivityImpl

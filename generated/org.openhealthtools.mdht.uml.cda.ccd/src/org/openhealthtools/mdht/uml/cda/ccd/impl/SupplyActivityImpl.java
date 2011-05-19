@@ -161,7 +161,8 @@ public class SupplyActivityImpl extends SupplyImpl implements SupplyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSupplyActivityMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSupplyActivityMedicationStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityMedicationStatusObservation(this, diagnostics, context);
 	}
 
@@ -198,7 +199,7 @@ public class SupplyActivityImpl extends SupplyImpl implements SupplyActivity {
 	 * @generated
 	 */
 	public SupplyActivity init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SupplyActivityImpl
+} // SupplyActivityImpl

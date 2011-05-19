@@ -108,12 +108,11 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 	 */
 	public static CCDFactory init() {
 		try {
-			CCDFactory theCCDFactory = (CCDFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd"); 
+			CCDFactory theCCDFactory = (CCDFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 			if (theCCDFactory != null) {
 				return theCCDFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new CCDFactoryImpl();
@@ -137,79 +136,152 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case CCDPackage.MEDICATIONS_SECTION: return createMedicationsSection();
-			case CCDPackage.MEDICATION_ACTIVITY: return createMedicationActivity();
-			case CCDPackage.MEDICATION_SERIES_NUMBER_OBSERVATION: return createMedicationSeriesNumberObservation();
-			case CCDPackage.MEDICATION_STATUS_OBSERVATION: return createMedicationStatusObservation();
-			case CCDPackage.STATUS_OBSERVATION: return createStatusObservation();
-			case CCDPackage.PATIENT_INSTRUCTION: return createPatientInstruction();
-			case CCDPackage.REACTION_OBSERVATION: return createReactionObservation();
-			case CCDPackage.SEVERITY_OBSERVATION: return createSeverityObservation();
-			case CCDPackage.SUPPLY_ACTIVITY: return createSupplyActivity();
-			case CCDPackage.FULFILLMENT_INSTRUCTION: return createFulfillmentInstruction();
-			case CCDPackage.CONTINUITY_OF_CARE_DOCUMENT: return createContinuityOfCareDocument();
-			case CCDPackage.PROBLEM_SECTION: return createProblemSection();
-			case CCDPackage.PROBLEM_ACT: return createProblemAct();
-			case CCDPackage.EPISODE_OBSERVATION: return createEpisodeObservation();
-			case CCDPackage.PROBLEM_OBSERVATION: return createProblemObservation();
-			case CCDPackage.PROBLEM_STATUS_OBSERVATION: return createProblemStatusObservation();
-			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION: return createProblemHealthStatusObservation();
-			case CCDPackage.AGE_OBSERVATION: return createAgeObservation();
-			case CCDPackage.FAMILY_HISTORY_SECTION: return createFamilyHistorySection();
-			case CCDPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
-			case CCDPackage.ALERTS_SECTION: return createAlertsSection();
-			case CCDPackage.RESULTS_SECTION: return createResultsSection();
-			case CCDPackage.RESULT_ORGANIZER: return createResultOrganizer();
-			case CCDPackage.RESULT_OBSERVATION: return createResultObservation();
-			case CCDPackage.PROCEDURES_SECTION: return createProceduresSection();
-			case CCDPackage.ENCOUNTERS_SECTION: return createEncountersSection();
-			case CCDPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
-			case CCDPackage.PLAN_OF_CARE_ACTIVITY: return createPlanOfCareActivity();
-			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ACT: return createPlanOfCareActivityAct();
-			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER: return createPlanOfCareActivityEncounter();
-			case CCDPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION: return createPlanOfCareActivityObservation();
-			case CCDPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE: return createPlanOfCareActivityProcedure();
-			case CCDPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION: return createPlanOfCareActivitySubstanceAdministration();
-			case CCDPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY: return createPlanOfCareActivitySupply();
-			case CCDPackage.IMMUNIZATIONS_SECTION: return createImmunizationsSection();
-			case CCDPackage.VITAL_SIGNS_SECTION: return createVitalSignsSection();
-			case CCDPackage.VITAL_SIGNS_ORGANIZER: return createVitalSignsOrganizer();
-			case CCDPackage.MEDICAL_EQUIPMENT_SECTION: return createMedicalEquipmentSection();
-			case CCDPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
-			case CCDPackage.ADVANCE_DIRECTIVES_SECTION: return createAdvanceDirectivesSection();
-			case CCDPackage.ADVANCE_DIRECTIVE_OBSERVATION: return createAdvanceDirectiveObservation();
-			case CCDPackage.PAYERS_SECTION: return createPayersSection();
-			case CCDPackage.COVERAGE_ACTIVITY: return createCoverageActivity();
-			case CCDPackage.POLICY_ACTIVITY: return createPolicyActivity();
-			case CCDPackage.PURPOSE_SECTION: return createPurposeSection();
-			case CCDPackage.PURPOSE_ACTIVITY: return createPurposeActivity();
-			case CCDPackage.PATIENT_AWARENESS: return createPatientAwareness();
-			case CCDPackage.FAMILY_HISTORY_OBSERVATION: return createFamilyHistoryObservation();
-			case CCDPackage.FAMILY_HISTORY_ORGANIZER: return createFamilyHistoryOrganizer();
-			case CCDPackage.SOCIAL_HISTORY_OBSERVATION: return createSocialHistoryObservation();
-			case CCDPackage.ENCOUNTERS_ACTIVITY: return createEncountersActivity();
-			case CCDPackage.ALERT_OBSERVATION: return createAlertObservation();
-			case CCDPackage.ALERT_STATUS_OBSERVATION: return createAlertStatusObservation();
-			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION: return createCauseOfDeathObservation();
-			case CCDPackage.ENCOUNTER_LOCATION: return createEncounterLocation();
-			case CCDPackage.PRODUCT: return createProduct();
-			case CCDPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: return createAdvanceDirectiveStatusObservation();
-			case CCDPackage.ADVANCE_DIRECTIVE_VERIFICATION: return createAdvanceDirectiveVerification();
-			case CCDPackage.AUTHORIZATION_ACTIVITY: return createAuthorizationActivity();
-			case CCDPackage.PROCEDURE_ACTIVITY: return createProcedureActivity();
-			case CCDPackage.FUNCTIONAL_STATUS_OBSERVATION: return createFunctionalStatusObservation();
-			case CCDPackage.PRODUCT_INSTANCE: return createProductInstance();
-			case CCDPackage.PROCEDURE_ACTIVITY_ACT: return createProcedureActivityAct();
-			case CCDPackage.PROCEDURE_ACTIVITY_OBSERVATION: return createProcedureActivityObservation();
-			case CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
-			case CCDPackage.PAYER_ENTITY: return createPayerEntity();
-			case CCDPackage.COVERED_PARTY: return createCoveredParty();
-			case CCDPackage.POLICY_SUBSCRIBER: return createPolicySubscriber();
-			case CCDPackage.COVERAGE_PLAN_DESCRIPTION: return createCoveragePlanDescription();
-			case CCDPackage.SUPPORT_PARTICIPANT: return createSupportParticipant();
-			case CCDPackage.SUPPORT_GUARDIAN: return createSupportGuardian();
-			case CCDPackage.COMMENT: return createComment();
-			case CCDPackage.CCD_REGISTRY_DELEGATE: return createCCDRegistryDelegate();
+			case CCDPackage.MEDICATIONS_SECTION:
+				return createMedicationsSection();
+			case CCDPackage.MEDICATION_ACTIVITY:
+				return createMedicationActivity();
+			case CCDPackage.MEDICATION_SERIES_NUMBER_OBSERVATION:
+				return createMedicationSeriesNumberObservation();
+			case CCDPackage.MEDICATION_STATUS_OBSERVATION:
+				return createMedicationStatusObservation();
+			case CCDPackage.STATUS_OBSERVATION:
+				return createStatusObservation();
+			case CCDPackage.PATIENT_INSTRUCTION:
+				return createPatientInstruction();
+			case CCDPackage.REACTION_OBSERVATION:
+				return createReactionObservation();
+			case CCDPackage.SEVERITY_OBSERVATION:
+				return createSeverityObservation();
+			case CCDPackage.SUPPLY_ACTIVITY:
+				return createSupplyActivity();
+			case CCDPackage.FULFILLMENT_INSTRUCTION:
+				return createFulfillmentInstruction();
+			case CCDPackage.CONTINUITY_OF_CARE_DOCUMENT:
+				return createContinuityOfCareDocument();
+			case CCDPackage.PROBLEM_SECTION:
+				return createProblemSection();
+			case CCDPackage.PROBLEM_ACT:
+				return createProblemAct();
+			case CCDPackage.EPISODE_OBSERVATION:
+				return createEpisodeObservation();
+			case CCDPackage.PROBLEM_OBSERVATION:
+				return createProblemObservation();
+			case CCDPackage.PROBLEM_STATUS_OBSERVATION:
+				return createProblemStatusObservation();
+			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION:
+				return createProblemHealthStatusObservation();
+			case CCDPackage.AGE_OBSERVATION:
+				return createAgeObservation();
+			case CCDPackage.FAMILY_HISTORY_SECTION:
+				return createFamilyHistorySection();
+			case CCDPackage.SOCIAL_HISTORY_SECTION:
+				return createSocialHistorySection();
+			case CCDPackage.ALERTS_SECTION:
+				return createAlertsSection();
+			case CCDPackage.RESULTS_SECTION:
+				return createResultsSection();
+			case CCDPackage.RESULT_ORGANIZER:
+				return createResultOrganizer();
+			case CCDPackage.RESULT_OBSERVATION:
+				return createResultObservation();
+			case CCDPackage.PROCEDURES_SECTION:
+				return createProceduresSection();
+			case CCDPackage.ENCOUNTERS_SECTION:
+				return createEncountersSection();
+			case CCDPackage.PLAN_OF_CARE_SECTION:
+				return createPlanOfCareSection();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY:
+				return createPlanOfCareActivity();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ACT:
+				return createPlanOfCareActivityAct();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER:
+				return createPlanOfCareActivityEncounter();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION:
+				return createPlanOfCareActivityObservation();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE:
+				return createPlanOfCareActivityProcedure();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION:
+				return createPlanOfCareActivitySubstanceAdministration();
+			case CCDPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY:
+				return createPlanOfCareActivitySupply();
+			case CCDPackage.IMMUNIZATIONS_SECTION:
+				return createImmunizationsSection();
+			case CCDPackage.VITAL_SIGNS_SECTION:
+				return createVitalSignsSection();
+			case CCDPackage.VITAL_SIGNS_ORGANIZER:
+				return createVitalSignsOrganizer();
+			case CCDPackage.MEDICAL_EQUIPMENT_SECTION:
+				return createMedicalEquipmentSection();
+			case CCDPackage.FUNCTIONAL_STATUS_SECTION:
+				return createFunctionalStatusSection();
+			case CCDPackage.ADVANCE_DIRECTIVES_SECTION:
+				return createAdvanceDirectivesSection();
+			case CCDPackage.ADVANCE_DIRECTIVE_OBSERVATION:
+				return createAdvanceDirectiveObservation();
+			case CCDPackage.PAYERS_SECTION:
+				return createPayersSection();
+			case CCDPackage.COVERAGE_ACTIVITY:
+				return createCoverageActivity();
+			case CCDPackage.POLICY_ACTIVITY:
+				return createPolicyActivity();
+			case CCDPackage.PURPOSE_SECTION:
+				return createPurposeSection();
+			case CCDPackage.PURPOSE_ACTIVITY:
+				return createPurposeActivity();
+			case CCDPackage.PATIENT_AWARENESS:
+				return createPatientAwareness();
+			case CCDPackage.FAMILY_HISTORY_OBSERVATION:
+				return createFamilyHistoryObservation();
+			case CCDPackage.FAMILY_HISTORY_ORGANIZER:
+				return createFamilyHistoryOrganizer();
+			case CCDPackage.SOCIAL_HISTORY_OBSERVATION:
+				return createSocialHistoryObservation();
+			case CCDPackage.ENCOUNTERS_ACTIVITY:
+				return createEncountersActivity();
+			case CCDPackage.ALERT_OBSERVATION:
+				return createAlertObservation();
+			case CCDPackage.ALERT_STATUS_OBSERVATION:
+				return createAlertStatusObservation();
+			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION:
+				return createCauseOfDeathObservation();
+			case CCDPackage.ENCOUNTER_LOCATION:
+				return createEncounterLocation();
+			case CCDPackage.PRODUCT:
+				return createProduct();
+			case CCDPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
+				return createAdvanceDirectiveStatusObservation();
+			case CCDPackage.ADVANCE_DIRECTIVE_VERIFICATION:
+				return createAdvanceDirectiveVerification();
+			case CCDPackage.AUTHORIZATION_ACTIVITY:
+				return createAuthorizationActivity();
+			case CCDPackage.PROCEDURE_ACTIVITY:
+				return createProcedureActivity();
+			case CCDPackage.FUNCTIONAL_STATUS_OBSERVATION:
+				return createFunctionalStatusObservation();
+			case CCDPackage.PRODUCT_INSTANCE:
+				return createProductInstance();
+			case CCDPackage.PROCEDURE_ACTIVITY_ACT:
+				return createProcedureActivityAct();
+			case CCDPackage.PROCEDURE_ACTIVITY_OBSERVATION:
+				return createProcedureActivityObservation();
+			case CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE:
+				return createProcedureActivityProcedure();
+			case CCDPackage.PAYER_ENTITY:
+				return createPayerEntity();
+			case CCDPackage.COVERED_PARTY:
+				return createCoveredParty();
+			case CCDPackage.POLICY_SUBSCRIBER:
+				return createPolicySubscriber();
+			case CCDPackage.COVERAGE_PLAN_DESCRIPTION:
+				return createCoveragePlanDescription();
+			case CCDPackage.SUPPORT_PARTICIPANT:
+				return createSupportParticipant();
+			case CCDPackage.SUPPORT_GUARDIAN:
+				return createSupportGuardian();
+			case CCDPackage.COMMENT:
+				return createComment();
+			case CCDPackage.CCD_REGISTRY_DELEGATE:
+				return createCCDRegistryDelegate();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -951,7 +1023,7 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 	 * @generated
 	 */
 	public CCDPackage getCCDPackage() {
-		return (CCDPackage)getEPackage();
+		return (CCDPackage) getEPackage();
 	}
 
 	/**
@@ -965,4 +1037,4 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 		return CCDPackage.eINSTANCE;
 	}
 
-} //CCDFactoryImpl
+} // CCDFactoryImpl
