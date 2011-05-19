@@ -59,7 +59,8 @@ public class DischargeSummaryImpl extends MedicalSummaryImpl implements Discharg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryActiveProblemsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDischargeSummaryActiveProblemsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryActiveProblemsSection(this, diagnostics, context);
 	}
 
@@ -87,8 +88,9 @@ public class DischargeSummaryImpl extends MedicalSummaryImpl implements Discharg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeSummary init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //DischargeSummaryImpl
+} // DischargeSummaryImpl

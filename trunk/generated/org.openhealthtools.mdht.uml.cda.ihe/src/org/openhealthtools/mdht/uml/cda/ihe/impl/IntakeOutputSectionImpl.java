@@ -60,7 +60,7 @@ public class IntakeOutputSectionImpl extends SectionImpl implements IntakeOutput
 	 * @generated
 	 */
 	public IntakeOutputSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //IntakeOutputSectionImpl
+} // IntakeOutputSectionImpl

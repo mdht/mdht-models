@@ -10,7 +10,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Combination Medication</b></em>'.
@@ -33,7 +32,8 @@ public interface CombinationMedication extends Medication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.entryRelationship.substanceAdministration->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateCombinationMedicationSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCombinationMedicationSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

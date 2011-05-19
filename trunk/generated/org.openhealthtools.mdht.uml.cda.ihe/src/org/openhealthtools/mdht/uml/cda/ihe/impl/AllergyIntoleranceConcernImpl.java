@@ -58,7 +58,8 @@ public class AllergyIntoleranceConcernImpl extends ConcernEntryImpl implements A
 	 * @generated
 	 */
 	public boolean validateAllergyIntoleranceConcernTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernTemplateId(this, diagnostics, context);
+		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +67,10 @@ public class AllergyIntoleranceConcernImpl extends ConcernEntryImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyIntoleranceConcernAllergyIntolerance(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernAllergyIntolerance(this, diagnostics, context);
+	public boolean validateAllergyIntoleranceConcernAllergyIntolerance(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernAllergyIntolerance(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +87,9 @@ public class AllergyIntoleranceConcernImpl extends ConcernEntryImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyIntoleranceConcern init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AllergyIntoleranceConcernImpl
+} // AllergyIntoleranceConcernImpl

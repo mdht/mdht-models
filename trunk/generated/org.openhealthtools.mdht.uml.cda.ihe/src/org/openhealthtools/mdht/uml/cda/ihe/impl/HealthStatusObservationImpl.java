@@ -50,8 +50,10 @@ public class HealthStatusObservationImpl extends ProblemHealthStatusObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(this, diagnostics, context);
+	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +89,9 @@ public class HealthStatusObservationImpl extends ProblemHealthStatusObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthStatusObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HealthStatusObservationImpl
+} // HealthStatusObservationImpl

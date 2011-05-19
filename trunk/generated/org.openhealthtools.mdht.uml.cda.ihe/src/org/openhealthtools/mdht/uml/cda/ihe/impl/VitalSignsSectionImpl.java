@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.VitalSignsSectionImpl implements VitalSignsSection {
+public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.VitalSignsSectionImpl implements
+		VitalSignsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,8 +59,9 @@ public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //VitalSignsSectionImpl
+} // VitalSignsSectionImpl

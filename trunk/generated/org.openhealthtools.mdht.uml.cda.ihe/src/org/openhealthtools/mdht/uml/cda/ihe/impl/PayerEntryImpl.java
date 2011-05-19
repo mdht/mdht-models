@@ -60,8 +60,9 @@ public class PayerEntryImpl extends PolicyActivityImpl implements PayerEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PayerEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PayerEntryImpl
+} // PayerEntryImpl

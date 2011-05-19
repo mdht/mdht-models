@@ -33,7 +33,8 @@ public interface MedicationFullfillmentInstructions extends FulfillmentInstructi
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.3.1\')'"
 	 * @generated
 	 */
-	boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,7 +62,8 @@ public interface MedicationFullfillmentInstructions extends FulfillmentInstructi
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationFullfillmentInstructionsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationFullfillmentInstructionsStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

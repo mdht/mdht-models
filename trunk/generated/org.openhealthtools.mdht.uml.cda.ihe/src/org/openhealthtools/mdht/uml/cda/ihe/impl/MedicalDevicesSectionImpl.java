@@ -59,8 +59,9 @@ public class MedicalDevicesSectionImpl extends MedicalEquipmentSectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalDevicesSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicalDevicesSectionImpl
+} // MedicalDevicesSectionImpl

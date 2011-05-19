@@ -96,7 +96,7 @@ public abstract class EncounterEntryImpl extends EncounterImpl implements Encoun
 	 * @generated
 	 */
 	public EncounterEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //EncounterEntryImpl
+} // EncounterEntryImpl

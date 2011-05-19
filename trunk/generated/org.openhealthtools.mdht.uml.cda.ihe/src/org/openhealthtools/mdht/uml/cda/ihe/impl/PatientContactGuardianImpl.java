@@ -95,8 +95,9 @@ public class PatientContactGuardianImpl extends SupportGuardianImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PatientContactGuardian init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PatientContactGuardianImpl
+} // PatientContactGuardianImpl

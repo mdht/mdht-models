@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.openhealthtools.mdht.uml.cda.ihe.*;
 import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectivesSection;
@@ -116,12 +115,11 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	 */
 	public static IHEFactory init() {
 		try {
-			IHEFactory theIHEFactory = (IHEFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe"); 
+			IHEFactory theIHEFactory = (IHEFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 			if (theIHEFactory != null) {
 				return theIHEFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new IHEFactoryImpl();
@@ -145,86 +143,166 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case IHEPackage.IMMUNIZATIONS_SECTION: return createImmunizationsSection();
-			case IHEPackage.IMMUNIZATION: return createImmunization();
-			case IHEPackage.MEDICATIONS_ADMINISTERED_SECTION: return createMedicationsAdministeredSection();
-			case IHEPackage.CONCERN_ENTRY: return createConcernEntry();
-			case IHEPackage.MEDICAL_DOCUMENT: return createMedicalDocument();
-			case IHEPackage.ACTIVE_PROBLEMS_SECTION: return createActiveProblemsSection();
-			case IHEPackage.PROBLEM_CONCERN_ENTRY: return createProblemConcernEntry();
-			case IHEPackage.PROBLEM_ENTRY: return createProblemEntry();
-			case IHEPackage.SEVERITY: return createSeverity();
-			case IHEPackage.PROBLEM_STATUS_OBSERVATION: return createProblemStatusObservation();
-			case IHEPackage.HEALTH_STATUS_OBSERVATION: return createHealthStatusObservation();
-			case IHEPackage.COMMENT: return createComment();
-			case IHEPackage.INTERNAL_REFERENCE: return createInternalReference();
-			case IHEPackage.PATIENT_MEDICAL_INSTRUCTIONS: return createPatientMedicalInstructions();
-			case IHEPackage.SUPPLY_ENTRY: return createSupplyEntry();
-			case IHEPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: return createMedicationFullfillmentInstructions();
-			case IHEPackage.MEDICATIONS_SECTION: return createMedicationsSection();
-			case IHEPackage.ALLERGY_INTOLERANCE_CONCERN: return createAllergyIntoleranceConcern();
-			case IHEPackage.ALLERGY_INTOLERANCE: return createAllergyIntolerance();
-			case IHEPackage.PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER: return createProblemEntryReactionObservationContainer();
-			case IHEPackage.ALLERGIES_REACTIONS_SECTION: return createAllergiesReactionsSection();
-			case IHEPackage.NORMAL_DOSE: return createNormalDose();
-			case IHEPackage.TAPERED_DOSE: return createTaperedDose();
-			case IHEPackage.SPLIT_DOSE: return createSplitDose();
-			case IHEPackage.CONDITIONAL_DOSE: return createConditionalDose();
-			case IHEPackage.COMBINATION_MEDICATION: return createCombinationMedication();
-			case IHEPackage.VITAL_SIGNS_SECTION: return createVitalSignsSection();
-			case IHEPackage.CODED_VITAL_SIGNS_SECTION: return createCodedVitalSignsSection();
-			case IHEPackage.VITAL_SIGNS_ORGANIZER: return createVitalSignsOrganizer();
-			case IHEPackage.VITAL_SIGN_OBSERVATION: return createVitalSignObservation();
-			case IHEPackage.PAYERS_SECTION: return createPayersSection();
-			case IHEPackage.COVERAGE_ENTRY: return createCoverageEntry();
-			case IHEPackage.HISTORY_OF_PAST_ILLNESS_SECTION: return createHistoryOfPastIllnessSection();
-			case IHEPackage.CHIEF_COMPLAINT_SECTION: return createChiefComplaintSection();
-			case IHEPackage.REASON_FOR_REFERRAL_SECTION: return createReasonForReferralSection();
-			case IHEPackage.HISTORY_OF_PRESENT_ILLNESS: return createHistoryOfPresentIllness();
-			case IHEPackage.SURGERIES_SECTION: return createSurgeriesSection();
-			case IHEPackage.CODED_SURGERIES_SECTION: return createCodedSurgeriesSection();
-			case IHEPackage.EXTERNAL_REFERENCE: return createExternalReference();
-			case IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureEntryProcedureActivityProcedure();
-			case IHEPackage.PROCEDURE_ENTRY: return createProcedureEntry();
-			case IHEPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: return createHospitalAdmissionDiagnosisSection();
-			case IHEPackage.DISCHARGE_DIAGNOSIS_SECTION: return createDischargeDiagnosisSection();
-			case IHEPackage.ADMISSION_MEDICATION_HISTORY_SECTION: return createAdmissionMedicationHistorySection();
-			case IHEPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: return createHospitalDischargeMedicationsSection();
-			case IHEPackage.CODED_ADVANCE_DIRECTIVES_SECTION: return createCodedAdvanceDirectivesSection();
-			case IHEPackage.ADVANCE_DIRECTIVES_SECTION: return createAdvanceDirectivesSection();
-			case IHEPackage.PHYSICAL_EXAM_NARRATIVE_SECTION: return createPhysicalExamNarrativeSection();
-			case IHEPackage.PHYSICAL_EXAM_SECTION: return createPhysicalExamSection();
-			case IHEPackage.REVIEW_OF_SYSTEMS_SECTION: return createReviewOfSystemsSection();
-			case IHEPackage.HOSPITAL_COURSE_SECTION: return createHospitalCourseSection();
-			case IHEPackage.CODED_RESULTS_SECTION: return createCodedResultsSection();
-			case IHEPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
-			case IHEPackage.CARE_PLAN_SECTION: return createCarePlanSection();
-			case IHEPackage.FAMILY_MEDICAL_HISTORY_SECTION: return createFamilyMedicalHistorySection();
-			case IHEPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
-			case IHEPackage.ENCOUNTER_HISTORY_SECTION: return createEncounterHistorySection();
-			case IHEPackage.MEDICAL_DEVICES_SECTION: return createMedicalDevicesSection();
-			case IHEPackage.LANGUAGE_COMMUNICATION: return createLanguageCommunication();
-			case IHEPackage.MEDICAL_SUMMARY: return createMedicalSummary();
-			case IHEPackage.DISCHARGE_SUMMARY: return createDischargeSummary();
-			case IHEPackage.HEALTHCARE_PROVIDERS_PHARMACIES: return createHealthcareProvidersPharmacies();
-			case IHEPackage.OBSERVATION_REQUEST_ENTRY: return createObservationRequestEntry();
-			case IHEPackage.PRODUCT_ENTRY: return createProductEntry();
-			case IHEPackage.PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE: return createProcedureEntryPlanOfCareActivityProcedure();
-			case IHEPackage.PAYER_ENTRY: return createPayerEntry();
-			case IHEPackage.PHR_EXTRACT: return createPHRExtract();
-			case IHEPackage.PHR_UPDATE: return createPHRUpdate();
-			case IHEPackage.ENCOUNTER_ACTIVITY: return createEncounterActivity();
-			case IHEPackage.ENCOUNTER_PLAN_OF_CARE: return createEncounterPlanOfCare();
-			case IHEPackage.INTAKE_OUTPUT_SECTION: return createIntakeOutputSection();
-			case IHEPackage.PREGNANCY_HISTORY_SECTION: return createPregnancyHistorySection();
-			case IHEPackage.PREGNANCY_OBSERVATION: return createPregnancyObservation();
-			case IHEPackage.PATIENT_CONTACT_GUARDIAN: return createPatientContactGuardian();
-			case IHEPackage.PATIENT_CONTACT_PARTICIPANT: return createPatientContactParticipant();
-			case IHEPackage.SCANNED_DOCUMENT: return createScannedDocument();
-			case IHEPackage.SCAN_ORIGINAL_AUTHOR: return createScanOriginalAuthor();
-			case IHEPackage.SCANNING_DEVICE: return createScanningDevice();
-			case IHEPackage.SCAN_DATA_ENTERER: return createScanDataEnterer();
-			case IHEPackage.IHE_REGISTRY_DELEGATE: return createIHERegistryDelegate();
+			case IHEPackage.IMMUNIZATIONS_SECTION:
+				return createImmunizationsSection();
+			case IHEPackage.IMMUNIZATION:
+				return createImmunization();
+			case IHEPackage.MEDICATIONS_ADMINISTERED_SECTION:
+				return createMedicationsAdministeredSection();
+			case IHEPackage.CONCERN_ENTRY:
+				return createConcernEntry();
+			case IHEPackage.MEDICAL_DOCUMENT:
+				return createMedicalDocument();
+			case IHEPackage.ACTIVE_PROBLEMS_SECTION:
+				return createActiveProblemsSection();
+			case IHEPackage.PROBLEM_CONCERN_ENTRY:
+				return createProblemConcernEntry();
+			case IHEPackage.PROBLEM_ENTRY:
+				return createProblemEntry();
+			case IHEPackage.SEVERITY:
+				return createSeverity();
+			case IHEPackage.PROBLEM_STATUS_OBSERVATION:
+				return createProblemStatusObservation();
+			case IHEPackage.HEALTH_STATUS_OBSERVATION:
+				return createHealthStatusObservation();
+			case IHEPackage.COMMENT:
+				return createComment();
+			case IHEPackage.INTERNAL_REFERENCE:
+				return createInternalReference();
+			case IHEPackage.PATIENT_MEDICAL_INSTRUCTIONS:
+				return createPatientMedicalInstructions();
+			case IHEPackage.SUPPLY_ENTRY:
+				return createSupplyEntry();
+			case IHEPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS:
+				return createMedicationFullfillmentInstructions();
+			case IHEPackage.MEDICATIONS_SECTION:
+				return createMedicationsSection();
+			case IHEPackage.ALLERGY_INTOLERANCE_CONCERN:
+				return createAllergyIntoleranceConcern();
+			case IHEPackage.ALLERGY_INTOLERANCE:
+				return createAllergyIntolerance();
+			case IHEPackage.PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER:
+				return createProblemEntryReactionObservationContainer();
+			case IHEPackage.ALLERGIES_REACTIONS_SECTION:
+				return createAllergiesReactionsSection();
+			case IHEPackage.NORMAL_DOSE:
+				return createNormalDose();
+			case IHEPackage.TAPERED_DOSE:
+				return createTaperedDose();
+			case IHEPackage.SPLIT_DOSE:
+				return createSplitDose();
+			case IHEPackage.CONDITIONAL_DOSE:
+				return createConditionalDose();
+			case IHEPackage.COMBINATION_MEDICATION:
+				return createCombinationMedication();
+			case IHEPackage.VITAL_SIGNS_SECTION:
+				return createVitalSignsSection();
+			case IHEPackage.CODED_VITAL_SIGNS_SECTION:
+				return createCodedVitalSignsSection();
+			case IHEPackage.VITAL_SIGNS_ORGANIZER:
+				return createVitalSignsOrganizer();
+			case IHEPackage.VITAL_SIGN_OBSERVATION:
+				return createVitalSignObservation();
+			case IHEPackage.PAYERS_SECTION:
+				return createPayersSection();
+			case IHEPackage.COVERAGE_ENTRY:
+				return createCoverageEntry();
+			case IHEPackage.HISTORY_OF_PAST_ILLNESS_SECTION:
+				return createHistoryOfPastIllnessSection();
+			case IHEPackage.CHIEF_COMPLAINT_SECTION:
+				return createChiefComplaintSection();
+			case IHEPackage.REASON_FOR_REFERRAL_SECTION:
+				return createReasonForReferralSection();
+			case IHEPackage.HISTORY_OF_PRESENT_ILLNESS:
+				return createHistoryOfPresentIllness();
+			case IHEPackage.SURGERIES_SECTION:
+				return createSurgeriesSection();
+			case IHEPackage.CODED_SURGERIES_SECTION:
+				return createCodedSurgeriesSection();
+			case IHEPackage.EXTERNAL_REFERENCE:
+				return createExternalReference();
+			case IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE:
+				return createProcedureEntryProcedureActivityProcedure();
+			case IHEPackage.PROCEDURE_ENTRY:
+				return createProcedureEntry();
+			case IHEPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
+				return createHospitalAdmissionDiagnosisSection();
+			case IHEPackage.DISCHARGE_DIAGNOSIS_SECTION:
+				return createDischargeDiagnosisSection();
+			case IHEPackage.ADMISSION_MEDICATION_HISTORY_SECTION:
+				return createAdmissionMedicationHistorySection();
+			case IHEPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
+				return createHospitalDischargeMedicationsSection();
+			case IHEPackage.CODED_ADVANCE_DIRECTIVES_SECTION:
+				return createCodedAdvanceDirectivesSection();
+			case IHEPackage.ADVANCE_DIRECTIVES_SECTION:
+				return createAdvanceDirectivesSection();
+			case IHEPackage.PHYSICAL_EXAM_NARRATIVE_SECTION:
+				return createPhysicalExamNarrativeSection();
+			case IHEPackage.PHYSICAL_EXAM_SECTION:
+				return createPhysicalExamSection();
+			case IHEPackage.REVIEW_OF_SYSTEMS_SECTION:
+				return createReviewOfSystemsSection();
+			case IHEPackage.HOSPITAL_COURSE_SECTION:
+				return createHospitalCourseSection();
+			case IHEPackage.CODED_RESULTS_SECTION:
+				return createCodedResultsSection();
+			case IHEPackage.ASSESSMENT_AND_PLAN_SECTION:
+				return createAssessmentAndPlanSection();
+			case IHEPackage.CARE_PLAN_SECTION:
+				return createCarePlanSection();
+			case IHEPackage.FAMILY_MEDICAL_HISTORY_SECTION:
+				return createFamilyMedicalHistorySection();
+			case IHEPackage.SOCIAL_HISTORY_SECTION:
+				return createSocialHistorySection();
+			case IHEPackage.ENCOUNTER_HISTORY_SECTION:
+				return createEncounterHistorySection();
+			case IHEPackage.MEDICAL_DEVICES_SECTION:
+				return createMedicalDevicesSection();
+			case IHEPackage.LANGUAGE_COMMUNICATION:
+				return createLanguageCommunication();
+			case IHEPackage.MEDICAL_SUMMARY:
+				return createMedicalSummary();
+			case IHEPackage.DISCHARGE_SUMMARY:
+				return createDischargeSummary();
+			case IHEPackage.HEALTHCARE_PROVIDERS_PHARMACIES:
+				return createHealthcareProvidersPharmacies();
+			case IHEPackage.OBSERVATION_REQUEST_ENTRY:
+				return createObservationRequestEntry();
+			case IHEPackage.PRODUCT_ENTRY:
+				return createProductEntry();
+			case IHEPackage.PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE:
+				return createProcedureEntryPlanOfCareActivityProcedure();
+			case IHEPackage.PAYER_ENTRY:
+				return createPayerEntry();
+			case IHEPackage.PHR_EXTRACT:
+				return createPHRExtract();
+			case IHEPackage.PHR_UPDATE:
+				return createPHRUpdate();
+			case IHEPackage.ENCOUNTER_ACTIVITY:
+				return createEncounterActivity();
+			case IHEPackage.ENCOUNTER_PLAN_OF_CARE:
+				return createEncounterPlanOfCare();
+			case IHEPackage.INTAKE_OUTPUT_SECTION:
+				return createIntakeOutputSection();
+			case IHEPackage.PREGNANCY_HISTORY_SECTION:
+				return createPregnancyHistorySection();
+			case IHEPackage.PREGNANCY_OBSERVATION:
+				return createPregnancyObservation();
+			case IHEPackage.PATIENT_CONTACT_GUARDIAN:
+				return createPatientContactGuardian();
+			case IHEPackage.PATIENT_CONTACT_PARTICIPANT:
+				return createPatientContactParticipant();
+			case IHEPackage.SCANNED_DOCUMENT:
+				return createScannedDocument();
+			case IHEPackage.SCAN_ORIGINAL_AUTHOR:
+				return createScanOriginalAuthor();
+			case IHEPackage.SCANNING_DEVICE:
+				return createScanningDevice();
+			case IHEPackage.SCAN_DATA_ENTERER:
+				return createScanDataEnterer();
+			case IHEPackage.IHE_REGISTRY_DELEGATE:
+				return createIHERegistryDelegate();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1036,7 +1114,7 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	 * @generated
 	 */
 	public IHEPackage getIHEPackage() {
-		return (IHEPackage)getEPackage();
+		return (IHEPackage) getEPackage();
 	}
 
 	/**
@@ -1050,4 +1128,4 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 		return IHEPackage.eINSTANCE;
 	}
 
-} //IHEFactoryImpl
+} // IHEFactoryImpl

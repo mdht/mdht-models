@@ -61,8 +61,10 @@ public class EncounterHistorySectionImpl extends EncountersSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncounterHistorySectionEncounterEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterHistorySectionOperations.validateEncounterHistorySectionEncounterEntry(this, diagnostics, context);
+	public boolean validateEncounterHistorySectionEncounterEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncounterHistorySectionOperations.validateEncounterHistorySectionEncounterEntry(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +81,9 @@ public class EncounterHistorySectionImpl extends EncountersSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterHistorySection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //EncounterHistorySectionImpl
+} // EncounterHistorySectionImpl

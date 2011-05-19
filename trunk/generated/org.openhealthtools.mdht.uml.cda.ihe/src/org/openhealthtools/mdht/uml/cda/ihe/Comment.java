@@ -64,11 +64,11 @@ public interface Comment extends org.openhealthtools.mdht.uml.cda.ccd.Comment {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.author->isEmpty() implies (  self.author.assignedAuthor.assignedPerson.name ->size() > 0 or  self.author.assignedAuthor.representedOrganization.name ->size() > 0)
+	 * not self.author->isEmpty() implies ( self.author->exists( a : cda::Author | ( (not a.assignedAuthor.assignedPerson.oclIsUndefined()) and not a.assignedAuthor.assignedPerson.name->isEmpty()) or (not a.assignedAuthor.representedOrganization.name->isEmpty())  ) )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.author->isEmpty() implies (  self.author.assignedAuthor.assignedPerson.name ->size() > 0 or  self.author.assignedAuthor.representedOrganization.name ->size() > 0)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.author->isEmpty() implies ( self.author->exists( a : cda::Author | ( (not a.assignedAuthor.assignedPerson.oclIsUndefined()) and not a.assignedAuthor.assignedPerson.name->isEmpty()) or (not a.assignedAuthor.representedOrganization.name->isEmpty())  ) )'"
 	 * @generated
 	 */
 	boolean validateIHECommentHasAuthorOrganization(DiagnosticChain diagnostics, Map<Object, Object> context);

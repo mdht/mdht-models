@@ -78,7 +78,7 @@ public abstract class SimpleObservationImpl extends ObservationImpl implements S
 	 * @generated
 	 */
 	public SimpleObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SimpleObservationImpl
+} // SimpleObservationImpl

@@ -50,8 +50,10 @@ public class FamilyMedicalHistorySectionImpl extends FamilyHistorySectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyMedicalHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyMedicalHistorySectionOperations.validateFamilyMedicalHistorySectionTemplateId(this, diagnostics, context);
+	public boolean validateFamilyMedicalHistorySectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyMedicalHistorySectionOperations.validateFamilyMedicalHistorySectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +61,9 @@ public class FamilyMedicalHistorySectionImpl extends FamilyHistorySectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FamilyMedicalHistorySection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //FamilyMedicalHistorySectionImpl
+} // FamilyMedicalHistorySectionImpl

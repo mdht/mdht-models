@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class LanguageCommunicationImpl extends org.openhealthtools.mdht.uml.cda.impl.LanguageCommunicationImpl implements LanguageCommunication {
+public class LanguageCommunicationImpl extends org.openhealthtools.mdht.uml.cda.impl.LanguageCommunicationImpl
+		implements LanguageCommunication {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,7 +60,7 @@ public class LanguageCommunicationImpl extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	public LanguageCommunication init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //LanguageCommunicationImpl
+} // LanguageCommunicationImpl

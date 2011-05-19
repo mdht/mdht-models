@@ -58,8 +58,9 @@ public class PHRExtractImpl extends MedicalSummaryImpl implements PHRExtract {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PHRExtract init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PHRExtractImpl
+} // PHRExtractImpl

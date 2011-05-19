@@ -51,7 +51,8 @@ public class PatientMedicalInstructionsImpl extends PatientInstructionImpl imple
 	 * @generated
 	 */
 	public boolean validatePatientMedicalInstructionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsTemplateId(this, diagnostics, context);
+		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,7 +61,8 @@ public class PatientMedicalInstructionsImpl extends PatientInstructionImpl imple
 	 * @generated
 	 */
 	public boolean validatePatientMedicalInstructionsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsClassCode(this, diagnostics, context);
+		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,7 +80,8 @@ public class PatientMedicalInstructionsImpl extends PatientInstructionImpl imple
 	 * @generated
 	 */
 	public boolean validatePatientMedicalInstructionsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsStatusCode(this, diagnostics, context);
+		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +98,9 @@ public class PatientMedicalInstructionsImpl extends PatientInstructionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PatientMedicalInstructions init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PatientMedicalInstructionsImpl
+} // PatientMedicalInstructionsImpl

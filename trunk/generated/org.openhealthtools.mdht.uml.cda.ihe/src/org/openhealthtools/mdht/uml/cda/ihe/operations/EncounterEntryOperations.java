@@ -79,46 +79,28 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterEntryTemplateId(EncounterEntry encounterEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateEncounterEntryTemplateId(EncounterEntry encounterEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENCOUNTER_ENTRY);
 			try {
-				
-					VALIDATE_ENCOUNTER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_ENCOUNTER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterEntry)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.ENCOUNTER_ENTRY__ENCOUNTER_ENTRY_TEMPLATE_ID,
-						 IHEPlugin.INSTANCE.getString("EncounterEntryTemplateId"),
-						 new Object [] { encounterEntry }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterEntry)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.ENCOUNTER_ENTRY__ENCOUNTER_ENTRY_TEMPLATE_ID,
+					IHEPlugin.INSTANCE.getString("EncounterEntryTemplateId"), new Object[] { encounterEntry }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -152,46 +134,28 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterEntryClassCode(EncounterEntry encounterEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateEncounterEntryClassCode(EncounterEntry encounterEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENCOUNTER_ENTRY);
 			try {
-				
-					VALIDATE_ENCOUNTER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_ENCOUNTER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterEntry)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.ENCOUNTER_ENTRY__ENCOUNTER_ENTRY_CLASS_CODE,
-						 IHEPlugin.INSTANCE.getString("EncounterEntryClassCode"),
-						 new Object [] { encounterEntry }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterEntry)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.ENCOUNTER_ENTRY__ENCOUNTER_ENTRY_CLASS_CODE,
+					IHEPlugin.INSTANCE.getString("EncounterEntryClassCode"), new Object[] { encounterEntry }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -202,9 +166,9 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.codeSystem = '2.16.840.1.113883.5.4'))";
+	protected static final String VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.5.4'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncounterEntryCode(EncounterEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Entry Code</em>}' invariant operation.
@@ -229,46 +193,27 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterEntryCode(EncounterEntry encounterEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateEncounterEntryCode(EncounterEntry encounterEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENCOUNTER_ENTRY);
 			try {
-				
-					VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterEntry)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.ENCOUNTER_ENTRY__ENCOUNTER_ENTRY_CODE,
-						 IHEPlugin.INSTANCE.getString("EncounterEntryCode"),
-						 new Object [] { encounterEntry }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterEntry)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.ENCOUNTER_ENTRY__ENCOUNTER_ENTRY_CODE,
+					IHEPlugin.INSTANCE.getString("EncounterEntryCode"), new Object[] { encounterEntry }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -302,46 +247,26 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterEntryId(EncounterEntry encounterEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateEncounterEntryId(EncounterEntry encounterEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENCOUNTER_ENTRY);
 			try {
-				
-					VALIDATE_ENCOUNTER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_ENCOUNTER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterEntry)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.ENCOUNTER_ENTRY__ENCOUNTER_ENTRY_ID,
-						 IHEPlugin.INSTANCE.getString("EncounterEntryId"),
-						 new Object [] { encounterEntry }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterEntry)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.ENCOUNTER_ENTRY__ENCOUNTER_ENTRY_ID,
+					IHEPlugin.INSTANCE.getString("EncounterEntryId"), new Object[] { encounterEntry }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -375,46 +300,27 @@ public class EncounterEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterEntryText(EncounterEntry encounterEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateEncounterEntryText(EncounterEntry encounterEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENCOUNTER_ENTRY);
 			try {
-				
-					VALIDATE_ENCOUNTER_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_ENCOUNTER_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterEntry)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.ENCOUNTER_ENTRY__ENCOUNTER_ENTRY_TEXT,
-						 IHEPlugin.INSTANCE.getString("EncounterEntryText"),
-						 new Object [] { encounterEntry }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterEntry)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.ENCOUNTER_ENTRY__ENCOUNTER_ENTRY_TEXT,
+					IHEPlugin.INSTANCE.getString("EncounterEntryText"), new Object[] { encounterEntry }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 } // EncounterEntryOperations

@@ -47,7 +47,7 @@ public class ProcedureEntryImpl extends EObjectImpl implements ProcedureEntry {
 	 * @generated
 	 */
 	public ProcedureEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProcedureEntryImpl
+} // ProcedureEntryImpl

@@ -70,8 +70,10 @@ public class PregnancyHistorySectionImpl extends SectionImpl implements Pregnanc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyHistorySectionPregnancyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PregnancyHistorySectionOperations.validatePregnancyHistorySectionPregnancyObservation(this, diagnostics, context);
+	public boolean validatePregnancyHistorySectionPregnancyObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PregnancyHistorySectionOperations.validatePregnancyHistorySectionPregnancyObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -89,7 +91,7 @@ public class PregnancyHistorySectionImpl extends SectionImpl implements Pregnanc
 	 * @generated
 	 */
 	public PregnancyHistorySection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PregnancyHistorySectionImpl
+} // PregnancyHistorySectionImpl

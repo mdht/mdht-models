@@ -95,8 +95,9 @@ public class MedicalSummaryImpl extends MedicalDocumentImpl implements MedicalSu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalSummary init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicalSummaryImpl
+} // MedicalSummaryImpl

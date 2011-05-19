@@ -60,8 +60,10 @@ public class CodedVitalSignsSectionImpl extends VitalSignsSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCodedVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CodedVitalSignsSectionOperations.validateCodedVitalSignsSectionVitalSignsOrganizer(this, diagnostics, context);
+	public boolean validateCodedVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CodedVitalSignsSectionOperations.validateCodedVitalSignsSectionVitalSignsOrganizer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +80,9 @@ public class CodedVitalSignsSectionImpl extends VitalSignsSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CodedVitalSignsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CodedVitalSignsSectionImpl
+} // CodedVitalSignsSectionImpl

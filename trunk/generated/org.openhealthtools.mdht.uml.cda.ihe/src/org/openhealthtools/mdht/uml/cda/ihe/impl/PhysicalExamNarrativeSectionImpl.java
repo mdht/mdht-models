@@ -50,8 +50,10 @@ public class PhysicalExamNarrativeSectionImpl extends SectionImpl implements Phy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicalExamNarrativeSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamNarrativeSectionOperations.validatePhysicalExamNarrativeSectionTemplateId(this, diagnostics, context);
+	public boolean validatePhysicalExamNarrativeSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalExamNarrativeSectionOperations.validatePhysicalExamNarrativeSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,7 +62,8 @@ public class PhysicalExamNarrativeSectionImpl extends SectionImpl implements Phy
 	 * @generated
 	 */
 	public boolean validatePhysicalExamNarrativeSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamNarrativeSectionOperations.validatePhysicalExamNarrativeSectionCode(this, diagnostics, context);
+		return PhysicalExamNarrativeSectionOperations.validatePhysicalExamNarrativeSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +72,7 @@ public class PhysicalExamNarrativeSectionImpl extends SectionImpl implements Phy
 	 * @generated
 	 */
 	public PhysicalExamNarrativeSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PhysicalExamNarrativeSectionImpl
+} // PhysicalExamNarrativeSectionImpl

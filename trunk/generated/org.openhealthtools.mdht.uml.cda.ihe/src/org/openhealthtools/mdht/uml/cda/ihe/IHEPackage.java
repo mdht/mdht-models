@@ -17368,7 +17368,6 @@ public interface IHEPackage extends EPackage {
 	 */
 	int IHE_REGISTRY_DELEGATE_FEATURE_COUNT = CDAPackage.REGISTRY_DELEGATE_FEATURE_COUNT + 0;
 
-
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.ihe.ImmunizationsSection <em>Immunizations Section</em>}'.
 	 * <!-- begin-user-doc -->
@@ -19073,4 +19072,4 @@ public interface IHEPackage extends EPackage {
 
 	}
 
-} //IHEPackage
+} // IHEPackage

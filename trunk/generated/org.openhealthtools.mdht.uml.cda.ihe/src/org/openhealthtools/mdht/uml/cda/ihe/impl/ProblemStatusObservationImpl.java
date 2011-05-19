@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ProblemStatusObservationImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.ProblemStatusObservationImpl implements ProblemStatusObservation {
+public class ProblemStatusObservationImpl extends
+		org.openhealthtools.mdht.uml.cda.ccd.impl.ProblemStatusObservationImpl implements ProblemStatusObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,8 +50,10 @@ public class ProblemStatusObservationImpl extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIHEProblemStatusObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationHasTextReference(this, diagnostics, context);
+	public boolean validateIHEProblemStatusObservationHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationHasTextReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +61,10 @@ public class ProblemStatusObservationImpl extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIHEProblemStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationTemplateId(this, diagnostics, context);
+	public boolean validateIHEProblemStatusObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +91,9 @@ public class ProblemStatusObservationImpl extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemStatusObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProblemStatusObservationImpl
+} // ProblemStatusObservationImpl

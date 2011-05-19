@@ -67,8 +67,10 @@ public class ActiveProblemsSectionImpl extends ProblemSectionImpl implements Act
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateActiveProblemsSectionProblemConcernEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ActiveProblemsSectionOperations.validateActiveProblemsSectionProblemConcernEntry(this, diagnostics, context);
+	public boolean validateActiveProblemsSectionProblemConcernEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ActiveProblemsSectionOperations.validateActiveProblemsSectionProblemConcernEntry(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +87,9 @@ public class ActiveProblemsSectionImpl extends ProblemSectionImpl implements Act
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ActiveProblemsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ActiveProblemsSectionImpl
+} // ActiveProblemsSectionImpl

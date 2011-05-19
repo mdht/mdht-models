@@ -50,4 +50,4 @@ public class IHERegistryDelegateImpl extends EObjectImpl implements IHERegistryD
 		return IHERegistryDelegateOperations.getEClass(this, templateId, context);
 	}
 
-} //IHERegistryDelegateImpl
+} // IHERegistryDelegateImpl

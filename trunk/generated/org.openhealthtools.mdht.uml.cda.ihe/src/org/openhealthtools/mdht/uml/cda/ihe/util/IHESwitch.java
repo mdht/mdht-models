@@ -59,7 +59,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.Support;
 import org.openhealthtools.mdht.uml.cda.ccd.SupportGuardian;
 import org.openhealthtools.mdht.uml.cda.ccd.SupportParticipant;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.ihe.*;
 import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectivesSection;
@@ -205,13 +204,11 @@ public class IHESwitch<T> {
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
-		}
-		else {
+		} else {
 			List<EClass> eSuperTypes = theEClass.getESuperTypes();
-			return
-				eSuperTypes.isEmpty() ?
-					defaultCase(theEObject) :
-					doSwitch(eSuperTypes.get(0), theEObject);
+			return eSuperTypes.isEmpty()
+					? defaultCase(theEObject)
+					: doSwitch(eSuperTypes.get(0), theEObject);
 		}
 	}
 
@@ -225,878 +222,1783 @@ public class IHESwitch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case IHEPackage.IMMUNIZATIONS_SECTION: {
-				ImmunizationsSection immunizationsSection = (ImmunizationsSection)theEObject;
+				ImmunizationsSection immunizationsSection = (ImmunizationsSection) theEObject;
 				T result = caseImmunizationsSection(immunizationsSection);
-				if (result == null) result = caseCCD_ImmunizationsSection(immunizationsSection);
-				if (result == null) result = caseSection(immunizationsSection);
-				if (result == null) result = caseAct(immunizationsSection);
-				if (result == null) result = caseInfrastructureRoot(immunizationsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCCD_ImmunizationsSection(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseSection(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseAct(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(immunizationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.IMMUNIZATION: {
-				Immunization immunization = (Immunization)theEObject;
+				Immunization immunization = (Immunization) theEObject;
 				T result = caseImmunization(immunization);
-				if (result == null) result = caseMedicationActivity(immunization);
-				if (result == null) result = caseSubstanceAdministration(immunization);
-				if (result == null) result = caseClinicalStatement(immunization);
-				if (result == null) result = caseAct(immunization);
-				if (result == null) result = caseInfrastructureRoot(immunization);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedicationActivity(immunization);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(immunization);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(immunization);
+				}
+				if (result == null) {
+					result = caseAct(immunization);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(immunization);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.MEDICATIONS_ADMINISTERED_SECTION: {
-				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection)theEObject;
+				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection) theEObject;
 				T result = caseMedicationsAdministeredSection(medicationsAdministeredSection);
-				if (result == null) result = caseSection(medicationsAdministeredSection);
-				if (result == null) result = caseAct(medicationsAdministeredSection);
-				if (result == null) result = caseInfrastructureRoot(medicationsAdministeredSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(medicationsAdministeredSection);
+				}
+				if (result == null) {
+					result = caseAct(medicationsAdministeredSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationsAdministeredSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.CONCERN_ENTRY: {
-				ConcernEntry concernEntry = (ConcernEntry)theEObject;
+				ConcernEntry concernEntry = (ConcernEntry) theEObject;
 				T result = caseConcernEntry(concernEntry);
-				if (result == null) result = caseProblemAct(concernEntry);
-				if (result == null) result = caseCDA_Act(concernEntry);
-				if (result == null) result = caseClinicalStatement(concernEntry);
-				if (result == null) result = caseAct(concernEntry);
-				if (result == null) result = caseInfrastructureRoot(concernEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProblemAct(concernEntry);
+				}
+				if (result == null) {
+					result = caseCDA_Act(concernEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(concernEntry);
+				}
+				if (result == null) {
+					result = caseAct(concernEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(concernEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.MEDICAL_DOCUMENT: {
-				MedicalDocument medicalDocument = (MedicalDocument)theEObject;
+				MedicalDocument medicalDocument = (MedicalDocument) theEObject;
 				T result = caseMedicalDocument(medicalDocument);
-				if (result == null) result = caseGeneralHeaderConstraints(medicalDocument);
-				if (result == null) result = caseClinicalDocument(medicalDocument);
-				if (result == null) result = caseAct(medicalDocument);
-				if (result == null) result = caseInfrastructureRoot(medicalDocument);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(medicalDocument);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(medicalDocument);
+				}
+				if (result == null) {
+					result = caseAct(medicalDocument);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicalDocument);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ACTIVE_PROBLEMS_SECTION: {
-				ActiveProblemsSection activeProblemsSection = (ActiveProblemsSection)theEObject;
+				ActiveProblemsSection activeProblemsSection = (ActiveProblemsSection) theEObject;
 				T result = caseActiveProblemsSection(activeProblemsSection);
-				if (result == null) result = caseProblemSection(activeProblemsSection);
-				if (result == null) result = caseSection(activeProblemsSection);
-				if (result == null) result = caseAct(activeProblemsSection);
-				if (result == null) result = caseInfrastructureRoot(activeProblemsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProblemSection(activeProblemsSection);
+				}
+				if (result == null) {
+					result = caseSection(activeProblemsSection);
+				}
+				if (result == null) {
+					result = caseAct(activeProblemsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(activeProblemsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PROBLEM_CONCERN_ENTRY: {
-				ProblemConcernEntry problemConcernEntry = (ProblemConcernEntry)theEObject;
+				ProblemConcernEntry problemConcernEntry = (ProblemConcernEntry) theEObject;
 				T result = caseProblemConcernEntry(problemConcernEntry);
-				if (result == null) result = caseConcernEntry(problemConcernEntry);
-				if (result == null) result = caseProblemAct(problemConcernEntry);
-				if (result == null) result = caseCDA_Act(problemConcernEntry);
-				if (result == null) result = caseClinicalStatement(problemConcernEntry);
-				if (result == null) result = caseAct(problemConcernEntry);
-				if (result == null) result = caseInfrastructureRoot(problemConcernEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseConcernEntry(problemConcernEntry);
+				}
+				if (result == null) {
+					result = caseProblemAct(problemConcernEntry);
+				}
+				if (result == null) {
+					result = caseCDA_Act(problemConcernEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemConcernEntry);
+				}
+				if (result == null) {
+					result = caseAct(problemConcernEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemConcernEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PROBLEM_ENTRY: {
-				ProblemEntry problemEntry = (ProblemEntry)theEObject;
+				ProblemEntry problemEntry = (ProblemEntry) theEObject;
 				T result = caseProblemEntry(problemEntry);
-				if (result == null) result = caseProblemObservation(problemEntry);
-				if (result == null) result = caseObservation(problemEntry);
-				if (result == null) result = caseClinicalStatement(problemEntry);
-				if (result == null) result = caseAct(problemEntry);
-				if (result == null) result = caseInfrastructureRoot(problemEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProblemObservation(problemEntry);
+				}
+				if (result == null) {
+					result = caseObservation(problemEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemEntry);
+				}
+				if (result == null) {
+					result = caseAct(problemEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.SEVERITY: {
-				Severity severity = (Severity)theEObject;
+				Severity severity = (Severity) theEObject;
 				T result = caseSeverity(severity);
-				if (result == null) result = caseSeverityObservation(severity);
-				if (result == null) result = caseObservation(severity);
-				if (result == null) result = caseClinicalStatement(severity);
-				if (result == null) result = caseAct(severity);
-				if (result == null) result = caseInfrastructureRoot(severity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSeverityObservation(severity);
+				}
+				if (result == null) {
+					result = caseObservation(severity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(severity);
+				}
+				if (result == null) {
+					result = caseAct(severity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(severity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PROBLEM_STATUS_OBSERVATION: {
-				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation)theEObject;
+				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation) theEObject;
 				T result = caseProblemStatusObservation(problemStatusObservation);
-				if (result == null) result = caseCCD_ProblemStatusObservation(problemStatusObservation);
-				if (result == null) result = caseStatusObservation(problemStatusObservation);
-				if (result == null) result = caseObservation(problemStatusObservation);
-				if (result == null) result = caseClinicalStatement(problemStatusObservation);
-				if (result == null) result = caseAct(problemStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(problemStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCCD_ProblemStatusObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseStatusObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.HEALTH_STATUS_OBSERVATION: {
-				HealthStatusObservation healthStatusObservation = (HealthStatusObservation)theEObject;
+				HealthStatusObservation healthStatusObservation = (HealthStatusObservation) theEObject;
 				T result = caseHealthStatusObservation(healthStatusObservation);
-				if (result == null) result = caseProblemHealthStatusObservation(healthStatusObservation);
-				if (result == null) result = caseStatusObservation(healthStatusObservation);
-				if (result == null) result = caseObservation(healthStatusObservation);
-				if (result == null) result = caseClinicalStatement(healthStatusObservation);
-				if (result == null) result = caseAct(healthStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(healthStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProblemHealthStatusObservation(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseStatusObservation(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(healthStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.COMMENT: {
-				Comment comment = (Comment)theEObject;
+				Comment comment = (Comment) theEObject;
 				T result = caseComment(comment);
-				if (result == null) result = caseCCD_Comment(comment);
-				if (result == null) result = caseCDA_Act(comment);
-				if (result == null) result = caseClinicalStatement(comment);
-				if (result == null) result = caseAct(comment);
-				if (result == null) result = caseInfrastructureRoot(comment);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCCD_Comment(comment);
+				}
+				if (result == null) {
+					result = caseCDA_Act(comment);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(comment);
+				}
+				if (result == null) {
+					result = caseAct(comment);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(comment);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.MEDICATION: {
-				Medication medication = (Medication)theEObject;
+				Medication medication = (Medication) theEObject;
 				T result = caseMedication(medication);
-				if (result == null) result = caseMedicationActivity(medication);
-				if (result == null) result = caseSubstanceAdministration(medication);
-				if (result == null) result = caseClinicalStatement(medication);
-				if (result == null) result = caseAct(medication);
-				if (result == null) result = caseInfrastructureRoot(medication);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedicationActivity(medication);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(medication);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medication);
+				}
+				if (result == null) {
+					result = caseAct(medication);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medication);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.INTERNAL_REFERENCE: {
-				InternalReference internalReference = (InternalReference)theEObject;
+				InternalReference internalReference = (InternalReference) theEObject;
 				T result = caseInternalReference(internalReference);
-				if (result == null) result = caseCDA_Act(internalReference);
-				if (result == null) result = caseClinicalStatement(internalReference);
-				if (result == null) result = caseAct(internalReference);
-				if (result == null) result = caseInfrastructureRoot(internalReference);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(internalReference);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(internalReference);
+				}
+				if (result == null) {
+					result = caseAct(internalReference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(internalReference);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PATIENT_MEDICAL_INSTRUCTIONS: {
-				PatientMedicalInstructions patientMedicalInstructions = (PatientMedicalInstructions)theEObject;
+				PatientMedicalInstructions patientMedicalInstructions = (PatientMedicalInstructions) theEObject;
 				T result = casePatientMedicalInstructions(patientMedicalInstructions);
-				if (result == null) result = casePatientInstruction(patientMedicalInstructions);
-				if (result == null) result = caseCDA_Act(patientMedicalInstructions);
-				if (result == null) result = caseClinicalStatement(patientMedicalInstructions);
-				if (result == null) result = caseAct(patientMedicalInstructions);
-				if (result == null) result = caseInfrastructureRoot(patientMedicalInstructions);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePatientInstruction(patientMedicalInstructions);
+				}
+				if (result == null) {
+					result = caseCDA_Act(patientMedicalInstructions);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(patientMedicalInstructions);
+				}
+				if (result == null) {
+					result = caseAct(patientMedicalInstructions);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientMedicalInstructions);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.SUPPLY_ENTRY: {
-				SupplyEntry supplyEntry = (SupplyEntry)theEObject;
+				SupplyEntry supplyEntry = (SupplyEntry) theEObject;
 				T result = caseSupplyEntry(supplyEntry);
-				if (result == null) result = caseSupplyActivity(supplyEntry);
-				if (result == null) result = caseSupply(supplyEntry);
-				if (result == null) result = caseClinicalStatement(supplyEntry);
-				if (result == null) result = caseAct(supplyEntry);
-				if (result == null) result = caseInfrastructureRoot(supplyEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSupplyActivity(supplyEntry);
+				}
+				if (result == null) {
+					result = caseSupply(supplyEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(supplyEntry);
+				}
+				if (result == null) {
+					result = caseAct(supplyEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(supplyEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: {
-				MedicationFullfillmentInstructions medicationFullfillmentInstructions = (MedicationFullfillmentInstructions)theEObject;
+				MedicationFullfillmentInstructions medicationFullfillmentInstructions = (MedicationFullfillmentInstructions) theEObject;
 				T result = caseMedicationFullfillmentInstructions(medicationFullfillmentInstructions);
-				if (result == null) result = caseFulfillmentInstruction(medicationFullfillmentInstructions);
-				if (result == null) result = caseCDA_Act(medicationFullfillmentInstructions);
-				if (result == null) result = caseClinicalStatement(medicationFullfillmentInstructions);
-				if (result == null) result = caseAct(medicationFullfillmentInstructions);
-				if (result == null) result = caseInfrastructureRoot(medicationFullfillmentInstructions);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseFulfillmentInstruction(medicationFullfillmentInstructions);
+				}
+				if (result == null) {
+					result = caseCDA_Act(medicationFullfillmentInstructions);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationFullfillmentInstructions);
+				}
+				if (result == null) {
+					result = caseAct(medicationFullfillmentInstructions);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationFullfillmentInstructions);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.MEDICATIONS_SECTION: {
-				MedicationsSection medicationsSection = (MedicationsSection)theEObject;
+				MedicationsSection medicationsSection = (MedicationsSection) theEObject;
 				T result = caseMedicationsSection(medicationsSection);
-				if (result == null) result = caseCCD_MedicationsSection(medicationsSection);
-				if (result == null) result = caseSection(medicationsSection);
-				if (result == null) result = caseAct(medicationsSection);
-				if (result == null) result = caseInfrastructureRoot(medicationsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCCD_MedicationsSection(medicationsSection);
+				}
+				if (result == null) {
+					result = caseSection(medicationsSection);
+				}
+				if (result == null) {
+					result = caseAct(medicationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ALLERGY_INTOLERANCE_CONCERN: {
-				AllergyIntoleranceConcern allergyIntoleranceConcern = (AllergyIntoleranceConcern)theEObject;
+				AllergyIntoleranceConcern allergyIntoleranceConcern = (AllergyIntoleranceConcern) theEObject;
 				T result = caseAllergyIntoleranceConcern(allergyIntoleranceConcern);
-				if (result == null) result = caseConcernEntry(allergyIntoleranceConcern);
-				if (result == null) result = caseProblemAct(allergyIntoleranceConcern);
-				if (result == null) result = caseCDA_Act(allergyIntoleranceConcern);
-				if (result == null) result = caseClinicalStatement(allergyIntoleranceConcern);
-				if (result == null) result = caseAct(allergyIntoleranceConcern);
-				if (result == null) result = caseInfrastructureRoot(allergyIntoleranceConcern);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseConcernEntry(allergyIntoleranceConcern);
+				}
+				if (result == null) {
+					result = caseProblemAct(allergyIntoleranceConcern);
+				}
+				if (result == null) {
+					result = caseCDA_Act(allergyIntoleranceConcern);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(allergyIntoleranceConcern);
+				}
+				if (result == null) {
+					result = caseAct(allergyIntoleranceConcern);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergyIntoleranceConcern);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ALLERGY_INTOLERANCE: {
-				AllergyIntolerance allergyIntolerance = (AllergyIntolerance)theEObject;
+				AllergyIntolerance allergyIntolerance = (AllergyIntolerance) theEObject;
 				T result = caseAllergyIntolerance(allergyIntolerance);
-				if (result == null) result = caseProblemEntry(allergyIntolerance);
-				if (result == null) result = caseProblemObservation(allergyIntolerance);
-				if (result == null) result = caseObservation(allergyIntolerance);
-				if (result == null) result = caseClinicalStatement(allergyIntolerance);
-				if (result == null) result = caseAct(allergyIntolerance);
-				if (result == null) result = caseInfrastructureRoot(allergyIntolerance);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProblemEntry(allergyIntolerance);
+				}
+				if (result == null) {
+					result = caseProblemObservation(allergyIntolerance);
+				}
+				if (result == null) {
+					result = caseObservation(allergyIntolerance);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(allergyIntolerance);
+				}
+				if (result == null) {
+					result = caseAct(allergyIntolerance);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergyIntolerance);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER: {
-				ProblemEntryReactionObservationContainer problemEntryReactionObservationContainer = (ProblemEntryReactionObservationContainer)theEObject;
+				ProblemEntryReactionObservationContainer problemEntryReactionObservationContainer = (ProblemEntryReactionObservationContainer) theEObject;
 				T result = caseProblemEntryReactionObservationContainer(problemEntryReactionObservationContainer);
-				if (result == null) result = caseProblemEntry(problemEntryReactionObservationContainer);
-				if (result == null) result = caseReactionObservation(problemEntryReactionObservationContainer);
-				if (result == null) result = caseProblemObservation(problemEntryReactionObservationContainer);
-				if (result == null) result = caseObservation(problemEntryReactionObservationContainer);
-				if (result == null) result = caseClinicalStatement(problemEntryReactionObservationContainer);
-				if (result == null) result = caseAct(problemEntryReactionObservationContainer);
-				if (result == null) result = caseInfrastructureRoot(problemEntryReactionObservationContainer);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProblemEntry(problemEntryReactionObservationContainer);
+				}
+				if (result == null) {
+					result = caseReactionObservation(problemEntryReactionObservationContainer);
+				}
+				if (result == null) {
+					result = caseProblemObservation(problemEntryReactionObservationContainer);
+				}
+				if (result == null) {
+					result = caseObservation(problemEntryReactionObservationContainer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemEntryReactionObservationContainer);
+				}
+				if (result == null) {
+					result = caseAct(problemEntryReactionObservationContainer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemEntryReactionObservationContainer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ALLERGIES_REACTIONS_SECTION: {
-				AllergiesReactionsSection allergiesReactionsSection = (AllergiesReactionsSection)theEObject;
+				AllergiesReactionsSection allergiesReactionsSection = (AllergiesReactionsSection) theEObject;
 				T result = caseAllergiesReactionsSection(allergiesReactionsSection);
-				if (result == null) result = caseAlertsSection(allergiesReactionsSection);
-				if (result == null) result = caseSection(allergiesReactionsSection);
-				if (result == null) result = caseAct(allergiesReactionsSection);
-				if (result == null) result = caseInfrastructureRoot(allergiesReactionsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseAlertsSection(allergiesReactionsSection);
+				}
+				if (result == null) {
+					result = caseSection(allergiesReactionsSection);
+				}
+				if (result == null) {
+					result = caseAct(allergiesReactionsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergiesReactionsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.NORMAL_DOSE: {
-				NormalDose normalDose = (NormalDose)theEObject;
+				NormalDose normalDose = (NormalDose) theEObject;
 				T result = caseNormalDose(normalDose);
-				if (result == null) result = caseMedication(normalDose);
-				if (result == null) result = caseMedicationActivity(normalDose);
-				if (result == null) result = caseSubstanceAdministration(normalDose);
-				if (result == null) result = caseClinicalStatement(normalDose);
-				if (result == null) result = caseAct(normalDose);
-				if (result == null) result = caseInfrastructureRoot(normalDose);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedication(normalDose);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(normalDose);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(normalDose);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(normalDose);
+				}
+				if (result == null) {
+					result = caseAct(normalDose);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(normalDose);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.TAPERED_DOSE: {
-				TaperedDose taperedDose = (TaperedDose)theEObject;
+				TaperedDose taperedDose = (TaperedDose) theEObject;
 				T result = caseTaperedDose(taperedDose);
-				if (result == null) result = caseMedication(taperedDose);
-				if (result == null) result = caseMedicationActivity(taperedDose);
-				if (result == null) result = caseSubstanceAdministration(taperedDose);
-				if (result == null) result = caseClinicalStatement(taperedDose);
-				if (result == null) result = caseAct(taperedDose);
-				if (result == null) result = caseInfrastructureRoot(taperedDose);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedication(taperedDose);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(taperedDose);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(taperedDose);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(taperedDose);
+				}
+				if (result == null) {
+					result = caseAct(taperedDose);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(taperedDose);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.SPLIT_DOSE: {
-				SplitDose splitDose = (SplitDose)theEObject;
+				SplitDose splitDose = (SplitDose) theEObject;
 				T result = caseSplitDose(splitDose);
-				if (result == null) result = caseMedication(splitDose);
-				if (result == null) result = caseMedicationActivity(splitDose);
-				if (result == null) result = caseSubstanceAdministration(splitDose);
-				if (result == null) result = caseClinicalStatement(splitDose);
-				if (result == null) result = caseAct(splitDose);
-				if (result == null) result = caseInfrastructureRoot(splitDose);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedication(splitDose);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(splitDose);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(splitDose);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(splitDose);
+				}
+				if (result == null) {
+					result = caseAct(splitDose);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(splitDose);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.CONDITIONAL_DOSE: {
-				ConditionalDose conditionalDose = (ConditionalDose)theEObject;
+				ConditionalDose conditionalDose = (ConditionalDose) theEObject;
 				T result = caseConditionalDose(conditionalDose);
-				if (result == null) result = caseMedication(conditionalDose);
-				if (result == null) result = caseMedicationActivity(conditionalDose);
-				if (result == null) result = caseSubstanceAdministration(conditionalDose);
-				if (result == null) result = caseClinicalStatement(conditionalDose);
-				if (result == null) result = caseAct(conditionalDose);
-				if (result == null) result = caseInfrastructureRoot(conditionalDose);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedication(conditionalDose);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(conditionalDose);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(conditionalDose);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(conditionalDose);
+				}
+				if (result == null) {
+					result = caseAct(conditionalDose);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(conditionalDose);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.COMBINATION_MEDICATION: {
-				CombinationMedication combinationMedication = (CombinationMedication)theEObject;
+				CombinationMedication combinationMedication = (CombinationMedication) theEObject;
 				T result = caseCombinationMedication(combinationMedication);
-				if (result == null) result = caseMedication(combinationMedication);
-				if (result == null) result = caseMedicationActivity(combinationMedication);
-				if (result == null) result = caseSubstanceAdministration(combinationMedication);
-				if (result == null) result = caseClinicalStatement(combinationMedication);
-				if (result == null) result = caseAct(combinationMedication);
-				if (result == null) result = caseInfrastructureRoot(combinationMedication);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedication(combinationMedication);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(combinationMedication);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(combinationMedication);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(combinationMedication);
+				}
+				if (result == null) {
+					result = caseAct(combinationMedication);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(combinationMedication);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.VITAL_SIGNS_SECTION: {
-				VitalSignsSection vitalSignsSection = (VitalSignsSection)theEObject;
+				VitalSignsSection vitalSignsSection = (VitalSignsSection) theEObject;
 				T result = caseVitalSignsSection(vitalSignsSection);
-				if (result == null) result = caseCCD_VitalSignsSection(vitalSignsSection);
-				if (result == null) result = caseSection(vitalSignsSection);
-				if (result == null) result = caseAct(vitalSignsSection);
-				if (result == null) result = caseInfrastructureRoot(vitalSignsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCCD_VitalSignsSection(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseSection(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.CODED_VITAL_SIGNS_SECTION: {
-				CodedVitalSignsSection codedVitalSignsSection = (CodedVitalSignsSection)theEObject;
+				CodedVitalSignsSection codedVitalSignsSection = (CodedVitalSignsSection) theEObject;
 				T result = caseCodedVitalSignsSection(codedVitalSignsSection);
-				if (result == null) result = caseVitalSignsSection(codedVitalSignsSection);
-				if (result == null) result = caseCCD_VitalSignsSection(codedVitalSignsSection);
-				if (result == null) result = caseSection(codedVitalSignsSection);
-				if (result == null) result = caseAct(codedVitalSignsSection);
-				if (result == null) result = caseInfrastructureRoot(codedVitalSignsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseVitalSignsSection(codedVitalSignsSection);
+				}
+				if (result == null) {
+					result = caseCCD_VitalSignsSection(codedVitalSignsSection);
+				}
+				if (result == null) {
+					result = caseSection(codedVitalSignsSection);
+				}
+				if (result == null) {
+					result = caseAct(codedVitalSignsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(codedVitalSignsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.VITAL_SIGNS_ORGANIZER: {
-				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer)theEObject;
+				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer) theEObject;
 				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
-				if (result == null) result = caseCCD_VitalSignsOrganizer(vitalSignsOrganizer);
-				if (result == null) result = caseResultOrganizer(vitalSignsOrganizer);
-				if (result == null) result = caseOrganizer(vitalSignsOrganizer);
-				if (result == null) result = caseClinicalStatement(vitalSignsOrganizer);
-				if (result == null) result = caseAct(vitalSignsOrganizer);
-				if (result == null) result = caseInfrastructureRoot(vitalSignsOrganizer);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCCD_VitalSignsOrganizer(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseResultOrganizer(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseOrganizer(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.VITAL_SIGN_OBSERVATION: {
-				VitalSignObservation vitalSignObservation = (VitalSignObservation)theEObject;
+				VitalSignObservation vitalSignObservation = (VitalSignObservation) theEObject;
 				T result = caseVitalSignObservation(vitalSignObservation);
-				if (result == null) result = caseResultObservation(vitalSignObservation);
-				if (result == null) result = caseSimpleObservation(vitalSignObservation);
-				if (result == null) result = caseObservation(vitalSignObservation);
-				if (result == null) result = caseClinicalStatement(vitalSignObservation);
-				if (result == null) result = caseAct(vitalSignObservation);
-				if (result == null) result = caseInfrastructureRoot(vitalSignObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseResultObservation(vitalSignObservation);
+				}
+				if (result == null) {
+					result = caseSimpleObservation(vitalSignObservation);
+				}
+				if (result == null) {
+					result = caseObservation(vitalSignObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(vitalSignObservation);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.SIMPLE_OBSERVATION: {
-				SimpleObservation simpleObservation = (SimpleObservation)theEObject;
+				SimpleObservation simpleObservation = (SimpleObservation) theEObject;
 				T result = caseSimpleObservation(simpleObservation);
-				if (result == null) result = caseObservation(simpleObservation);
-				if (result == null) result = caseClinicalStatement(simpleObservation);
-				if (result == null) result = caseAct(simpleObservation);
-				if (result == null) result = caseInfrastructureRoot(simpleObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(simpleObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(simpleObservation);
+				}
+				if (result == null) {
+					result = caseAct(simpleObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(simpleObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PAYERS_SECTION: {
-				PayersSection payersSection = (PayersSection)theEObject;
+				PayersSection payersSection = (PayersSection) theEObject;
 				T result = casePayersSection(payersSection);
-				if (result == null) result = caseCCD_PayersSection(payersSection);
-				if (result == null) result = caseSection(payersSection);
-				if (result == null) result = caseAct(payersSection);
-				if (result == null) result = caseInfrastructureRoot(payersSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCCD_PayersSection(payersSection);
+				}
+				if (result == null) {
+					result = caseSection(payersSection);
+				}
+				if (result == null) {
+					result = caseAct(payersSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(payersSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.COVERAGE_ENTRY: {
-				CoverageEntry coverageEntry = (CoverageEntry)theEObject;
+				CoverageEntry coverageEntry = (CoverageEntry) theEObject;
 				T result = caseCoverageEntry(coverageEntry);
-				if (result == null) result = caseCoverageActivity(coverageEntry);
-				if (result == null) result = caseCDA_Act(coverageEntry);
-				if (result == null) result = caseClinicalStatement(coverageEntry);
-				if (result == null) result = caseAct(coverageEntry);
-				if (result == null) result = caseInfrastructureRoot(coverageEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCoverageActivity(coverageEntry);
+				}
+				if (result == null) {
+					result = caseCDA_Act(coverageEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(coverageEntry);
+				}
+				if (result == null) {
+					result = caseAct(coverageEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(coverageEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.HISTORY_OF_PAST_ILLNESS_SECTION: {
-				HistoryOfPastIllnessSection historyOfPastIllnessSection = (HistoryOfPastIllnessSection)theEObject;
+				HistoryOfPastIllnessSection historyOfPastIllnessSection = (HistoryOfPastIllnessSection) theEObject;
 				T result = caseHistoryOfPastIllnessSection(historyOfPastIllnessSection);
-				if (result == null) result = caseSection(historyOfPastIllnessSection);
-				if (result == null) result = caseAct(historyOfPastIllnessSection);
-				if (result == null) result = caseInfrastructureRoot(historyOfPastIllnessSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(historyOfPastIllnessSection);
+				}
+				if (result == null) {
+					result = caseAct(historyOfPastIllnessSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(historyOfPastIllnessSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.CHIEF_COMPLAINT_SECTION: {
-				ChiefComplaintSection chiefComplaintSection = (ChiefComplaintSection)theEObject;
+				ChiefComplaintSection chiefComplaintSection = (ChiefComplaintSection) theEObject;
 				T result = caseChiefComplaintSection(chiefComplaintSection);
-				if (result == null) result = caseSection(chiefComplaintSection);
-				if (result == null) result = caseAct(chiefComplaintSection);
-				if (result == null) result = caseInfrastructureRoot(chiefComplaintSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = caseAct(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.REASON_FOR_REFERRAL_SECTION: {
-				ReasonForReferralSection reasonForReferralSection = (ReasonForReferralSection)theEObject;
+				ReasonForReferralSection reasonForReferralSection = (ReasonForReferralSection) theEObject;
 				T result = caseReasonForReferralSection(reasonForReferralSection);
-				if (result == null) result = caseSection(reasonForReferralSection);
-				if (result == null) result = caseAct(reasonForReferralSection);
-				if (result == null) result = caseInfrastructureRoot(reasonForReferralSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseAct(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.HISTORY_OF_PRESENT_ILLNESS: {
-				HistoryOfPresentIllness historyOfPresentIllness = (HistoryOfPresentIllness)theEObject;
+				HistoryOfPresentIllness historyOfPresentIllness = (HistoryOfPresentIllness) theEObject;
 				T result = caseHistoryOfPresentIllness(historyOfPresentIllness);
-				if (result == null) result = caseSection(historyOfPresentIllness);
-				if (result == null) result = caseAct(historyOfPresentIllness);
-				if (result == null) result = caseInfrastructureRoot(historyOfPresentIllness);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(historyOfPresentIllness);
+				}
+				if (result == null) {
+					result = caseAct(historyOfPresentIllness);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(historyOfPresentIllness);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.SURGERIES_SECTION: {
-				SurgeriesSection surgeriesSection = (SurgeriesSection)theEObject;
+				SurgeriesSection surgeriesSection = (SurgeriesSection) theEObject;
 				T result = caseSurgeriesSection(surgeriesSection);
-				if (result == null) result = caseProceduresSection(surgeriesSection);
-				if (result == null) result = caseSection(surgeriesSection);
-				if (result == null) result = caseAct(surgeriesSection);
-				if (result == null) result = caseInfrastructureRoot(surgeriesSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProceduresSection(surgeriesSection);
+				}
+				if (result == null) {
+					result = caseSection(surgeriesSection);
+				}
+				if (result == null) {
+					result = caseAct(surgeriesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(surgeriesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.CODED_SURGERIES_SECTION: {
-				CodedSurgeriesSection codedSurgeriesSection = (CodedSurgeriesSection)theEObject;
+				CodedSurgeriesSection codedSurgeriesSection = (CodedSurgeriesSection) theEObject;
 				T result = caseCodedSurgeriesSection(codedSurgeriesSection);
-				if (result == null) result = caseSurgeriesSection(codedSurgeriesSection);
-				if (result == null) result = caseProceduresSection(codedSurgeriesSection);
-				if (result == null) result = caseSection(codedSurgeriesSection);
-				if (result == null) result = caseAct(codedSurgeriesSection);
-				if (result == null) result = caseInfrastructureRoot(codedSurgeriesSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSurgeriesSection(codedSurgeriesSection);
+				}
+				if (result == null) {
+					result = caseProceduresSection(codedSurgeriesSection);
+				}
+				if (result == null) {
+					result = caseSection(codedSurgeriesSection);
+				}
+				if (result == null) {
+					result = caseAct(codedSurgeriesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(codedSurgeriesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.EXTERNAL_REFERENCE: {
-				ExternalReference externalReference = (ExternalReference)theEObject;
+				ExternalReference externalReference = (ExternalReference) theEObject;
 				T result = caseExternalReference(externalReference);
-				if (result == null) result = caseCDA_Act(externalReference);
-				if (result == null) result = caseClinicalStatement(externalReference);
-				if (result == null) result = caseAct(externalReference);
-				if (result == null) result = caseInfrastructureRoot(externalReference);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(externalReference);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(externalReference);
+				}
+				if (result == null) {
+					result = caseAct(externalReference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(externalReference);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: {
-				ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure = (ProcedureEntryProcedureActivityProcedure)theEObject;
+				ProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure = (ProcedureEntryProcedureActivityProcedure) theEObject;
 				T result = caseProcedureEntryProcedureActivityProcedure(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseProcedureActivityProcedure(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseProcedureEntry(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseProcedure(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseProcedureActivity(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseClinicalStatement(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseAct(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseInfrastructureRoot(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProcedureActivityProcedure(procedureEntryProcedureActivityProcedure);
+				}
+				if (result == null) {
+					result = caseProcedureEntry(procedureEntryProcedureActivityProcedure);
+				}
+				if (result == null) {
+					result = caseProcedure(procedureEntryProcedureActivityProcedure);
+				}
+				if (result == null) {
+					result = caseProcedureActivity(procedureEntryProcedureActivityProcedure);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureEntryProcedureActivityProcedure);
+				}
+				if (result == null) {
+					result = caseAct(procedureEntryProcedureActivityProcedure);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureEntryProcedureActivityProcedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PROCEDURE_ENTRY: {
-				ProcedureEntry procedureEntry = (ProcedureEntry)theEObject;
+				ProcedureEntry procedureEntry = (ProcedureEntry) theEObject;
 				T result = caseProcedureEntry(procedureEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: {
-				HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection = (HospitalAdmissionDiagnosisSection)theEObject;
+				HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection = (HospitalAdmissionDiagnosisSection) theEObject;
 				T result = caseHospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseSection(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseAct(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseInfrastructureRoot(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(hospitalAdmissionDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalAdmissionDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalAdmissionDiagnosisSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.DISCHARGE_DIAGNOSIS_SECTION: {
-				DischargeDiagnosisSection dischargeDiagnosisSection = (DischargeDiagnosisSection)theEObject;
+				DischargeDiagnosisSection dischargeDiagnosisSection = (DischargeDiagnosisSection) theEObject;
 				T result = caseDischargeDiagnosisSection(dischargeDiagnosisSection);
-				if (result == null) result = caseSection(dischargeDiagnosisSection);
-				if (result == null) result = caseAct(dischargeDiagnosisSection);
-				if (result == null) result = caseInfrastructureRoot(dischargeDiagnosisSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(dischargeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseAct(dischargeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dischargeDiagnosisSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ADMISSION_MEDICATION_HISTORY_SECTION: {
-				AdmissionMedicationHistorySection admissionMedicationHistorySection = (AdmissionMedicationHistorySection)theEObject;
+				AdmissionMedicationHistorySection admissionMedicationHistorySection = (AdmissionMedicationHistorySection) theEObject;
 				T result = caseAdmissionMedicationHistorySection(admissionMedicationHistorySection);
-				if (result == null) result = caseSection(admissionMedicationHistorySection);
-				if (result == null) result = caseAct(admissionMedicationHistorySection);
-				if (result == null) result = caseInfrastructureRoot(admissionMedicationHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(admissionMedicationHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(admissionMedicationHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(admissionMedicationHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: {
-				HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (HospitalDischargeMedicationsSection)theEObject;
+				HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (HospitalDischargeMedicationsSection) theEObject;
 				T result = caseHospitalDischargeMedicationsSection(hospitalDischargeMedicationsSection);
-				if (result == null) result = caseSection(hospitalDischargeMedicationsSection);
-				if (result == null) result = caseAct(hospitalDischargeMedicationsSection);
-				if (result == null) result = caseInfrastructureRoot(hospitalDischargeMedicationsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.CODED_ADVANCE_DIRECTIVES_SECTION: {
-				CodedAdvanceDirectivesSection codedAdvanceDirectivesSection = (CodedAdvanceDirectivesSection)theEObject;
+				CodedAdvanceDirectivesSection codedAdvanceDirectivesSection = (CodedAdvanceDirectivesSection) theEObject;
 				T result = caseCodedAdvanceDirectivesSection(codedAdvanceDirectivesSection);
-				if (result == null) result = caseAdvanceDirectivesSection(codedAdvanceDirectivesSection);
-				if (result == null) result = caseCCD_AdvanceDirectivesSection(codedAdvanceDirectivesSection);
-				if (result == null) result = caseSection(codedAdvanceDirectivesSection);
-				if (result == null) result = caseAct(codedAdvanceDirectivesSection);
-				if (result == null) result = caseInfrastructureRoot(codedAdvanceDirectivesSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseAdvanceDirectivesSection(codedAdvanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseCCD_AdvanceDirectivesSection(codedAdvanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseSection(codedAdvanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseAct(codedAdvanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(codedAdvanceDirectivesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ADVANCE_DIRECTIVES_SECTION: {
-				AdvanceDirectivesSection advanceDirectivesSection = (AdvanceDirectivesSection)theEObject;
+				AdvanceDirectivesSection advanceDirectivesSection = (AdvanceDirectivesSection) theEObject;
 				T result = caseAdvanceDirectivesSection(advanceDirectivesSection);
-				if (result == null) result = caseCCD_AdvanceDirectivesSection(advanceDirectivesSection);
-				if (result == null) result = caseSection(advanceDirectivesSection);
-				if (result == null) result = caseAct(advanceDirectivesSection);
-				if (result == null) result = caseInfrastructureRoot(advanceDirectivesSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCCD_AdvanceDirectivesSection(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseSection(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PHYSICAL_EXAM_NARRATIVE_SECTION: {
-				PhysicalExamNarrativeSection physicalExamNarrativeSection = (PhysicalExamNarrativeSection)theEObject;
+				PhysicalExamNarrativeSection physicalExamNarrativeSection = (PhysicalExamNarrativeSection) theEObject;
 				T result = casePhysicalExamNarrativeSection(physicalExamNarrativeSection);
-				if (result == null) result = caseSection(physicalExamNarrativeSection);
-				if (result == null) result = caseAct(physicalExamNarrativeSection);
-				if (result == null) result = caseInfrastructureRoot(physicalExamNarrativeSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(physicalExamNarrativeSection);
+				}
+				if (result == null) {
+					result = caseAct(physicalExamNarrativeSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(physicalExamNarrativeSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PHYSICAL_EXAM_SECTION: {
-				PhysicalExamSection physicalExamSection = (PhysicalExamSection)theEObject;
+				PhysicalExamSection physicalExamSection = (PhysicalExamSection) theEObject;
 				T result = casePhysicalExamSection(physicalExamSection);
-				if (result == null) result = casePhysicalExamNarrativeSection(physicalExamSection);
-				if (result == null) result = caseSection(physicalExamSection);
-				if (result == null) result = caseAct(physicalExamSection);
-				if (result == null) result = caseInfrastructureRoot(physicalExamSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePhysicalExamNarrativeSection(physicalExamSection);
+				}
+				if (result == null) {
+					result = caseSection(physicalExamSection);
+				}
+				if (result == null) {
+					result = caseAct(physicalExamSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(physicalExamSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.REVIEW_OF_SYSTEMS_SECTION: {
-				ReviewOfSystemsSection reviewOfSystemsSection = (ReviewOfSystemsSection)theEObject;
+				ReviewOfSystemsSection reviewOfSystemsSection = (ReviewOfSystemsSection) theEObject;
 				T result = caseReviewOfSystemsSection(reviewOfSystemsSection);
-				if (result == null) result = caseSection(reviewOfSystemsSection);
-				if (result == null) result = caseAct(reviewOfSystemsSection);
-				if (result == null) result = caseInfrastructureRoot(reviewOfSystemsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(reviewOfSystemsSection);
+				}
+				if (result == null) {
+					result = caseAct(reviewOfSystemsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reviewOfSystemsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.HOSPITAL_COURSE_SECTION: {
-				HospitalCourseSection hospitalCourseSection = (HospitalCourseSection)theEObject;
+				HospitalCourseSection hospitalCourseSection = (HospitalCourseSection) theEObject;
 				T result = caseHospitalCourseSection(hospitalCourseSection);
-				if (result == null) result = caseSection(hospitalCourseSection);
-				if (result == null) result = caseAct(hospitalCourseSection);
-				if (result == null) result = caseInfrastructureRoot(hospitalCourseSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(hospitalCourseSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalCourseSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalCourseSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.CODED_RESULTS_SECTION: {
-				CodedResultsSection codedResultsSection = (CodedResultsSection)theEObject;
+				CodedResultsSection codedResultsSection = (CodedResultsSection) theEObject;
 				T result = caseCodedResultsSection(codedResultsSection);
-				if (result == null) result = caseSection(codedResultsSection);
-				if (result == null) result = caseAct(codedResultsSection);
-				if (result == null) result = caseInfrastructureRoot(codedResultsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(codedResultsSection);
+				}
+				if (result == null) {
+					result = caseAct(codedResultsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(codedResultsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ASSESSMENT_AND_PLAN_SECTION: {
-				AssessmentAndPlanSection assessmentAndPlanSection = (AssessmentAndPlanSection)theEObject;
+				AssessmentAndPlanSection assessmentAndPlanSection = (AssessmentAndPlanSection) theEObject;
 				T result = caseAssessmentAndPlanSection(assessmentAndPlanSection);
-				if (result == null) result = caseSection(assessmentAndPlanSection);
-				if (result == null) result = caseAct(assessmentAndPlanSection);
-				if (result == null) result = caseInfrastructureRoot(assessmentAndPlanSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = caseAct(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.CARE_PLAN_SECTION: {
-				CarePlanSection carePlanSection = (CarePlanSection)theEObject;
+				CarePlanSection carePlanSection = (CarePlanSection) theEObject;
 				T result = caseCarePlanSection(carePlanSection);
-				if (result == null) result = casePlanOfCareSection(carePlanSection);
-				if (result == null) result = caseSection(carePlanSection);
-				if (result == null) result = caseAct(carePlanSection);
-				if (result == null) result = caseInfrastructureRoot(carePlanSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePlanOfCareSection(carePlanSection);
+				}
+				if (result == null) {
+					result = caseSection(carePlanSection);
+				}
+				if (result == null) {
+					result = caseAct(carePlanSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(carePlanSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.FAMILY_MEDICAL_HISTORY_SECTION: {
-				FamilyMedicalHistorySection familyMedicalHistorySection = (FamilyMedicalHistorySection)theEObject;
+				FamilyMedicalHistorySection familyMedicalHistorySection = (FamilyMedicalHistorySection) theEObject;
 				T result = caseFamilyMedicalHistorySection(familyMedicalHistorySection);
-				if (result == null) result = caseFamilyHistorySection(familyMedicalHistorySection);
-				if (result == null) result = caseSection(familyMedicalHistorySection);
-				if (result == null) result = caseAct(familyMedicalHistorySection);
-				if (result == null) result = caseInfrastructureRoot(familyMedicalHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseFamilyHistorySection(familyMedicalHistorySection);
+				}
+				if (result == null) {
+					result = caseSection(familyMedicalHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(familyMedicalHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyMedicalHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.SOCIAL_HISTORY_SECTION: {
-				SocialHistorySection socialHistorySection = (SocialHistorySection)theEObject;
+				SocialHistorySection socialHistorySection = (SocialHistorySection) theEObject;
 				T result = caseSocialHistorySection(socialHistorySection);
-				if (result == null) result = caseCCD_SocialHistorySection(socialHistorySection);
-				if (result == null) result = caseSection(socialHistorySection);
-				if (result == null) result = caseAct(socialHistorySection);
-				if (result == null) result = caseInfrastructureRoot(socialHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCCD_SocialHistorySection(socialHistorySection);
+				}
+				if (result == null) {
+					result = caseSection(socialHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(socialHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(socialHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ENCOUNTER_HISTORY_SECTION: {
-				EncounterHistorySection encounterHistorySection = (EncounterHistorySection)theEObject;
+				EncounterHistorySection encounterHistorySection = (EncounterHistorySection) theEObject;
 				T result = caseEncounterHistorySection(encounterHistorySection);
-				if (result == null) result = caseEncountersSection(encounterHistorySection);
-				if (result == null) result = caseSection(encounterHistorySection);
-				if (result == null) result = caseAct(encounterHistorySection);
-				if (result == null) result = caseInfrastructureRoot(encounterHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseEncountersSection(encounterHistorySection);
+				}
+				if (result == null) {
+					result = caseSection(encounterHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(encounterHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encounterHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ENCOUNTER_ENTRY: {
-				EncounterEntry encounterEntry = (EncounterEntry)theEObject;
+				EncounterEntry encounterEntry = (EncounterEntry) theEObject;
 				T result = caseEncounterEntry(encounterEntry);
-				if (result == null) result = caseEncounter(encounterEntry);
-				if (result == null) result = caseClinicalStatement(encounterEntry);
-				if (result == null) result = caseAct(encounterEntry);
-				if (result == null) result = caseInfrastructureRoot(encounterEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseEncounter(encounterEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(encounterEntry);
+				}
+				if (result == null) {
+					result = caseAct(encounterEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encounterEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.MEDICAL_DEVICES_SECTION: {
-				MedicalDevicesSection medicalDevicesSection = (MedicalDevicesSection)theEObject;
+				MedicalDevicesSection medicalDevicesSection = (MedicalDevicesSection) theEObject;
 				T result = caseMedicalDevicesSection(medicalDevicesSection);
-				if (result == null) result = caseMedicalEquipmentSection(medicalDevicesSection);
-				if (result == null) result = caseSection(medicalDevicesSection);
-				if (result == null) result = caseAct(medicalDevicesSection);
-				if (result == null) result = caseInfrastructureRoot(medicalDevicesSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedicalEquipmentSection(medicalDevicesSection);
+				}
+				if (result == null) {
+					result = caseSection(medicalDevicesSection);
+				}
+				if (result == null) {
+					result = caseAct(medicalDevicesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicalDevicesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.LANGUAGE_COMMUNICATION: {
-				LanguageCommunication languageCommunication = (LanguageCommunication)theEObject;
+				LanguageCommunication languageCommunication = (LanguageCommunication) theEObject;
 				T result = caseLanguageCommunication(languageCommunication);
-				if (result == null) result = caseCDA_LanguageCommunication(languageCommunication);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_LanguageCommunication(languageCommunication);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.MEDICAL_SUMMARY: {
-				MedicalSummary medicalSummary = (MedicalSummary)theEObject;
+				MedicalSummary medicalSummary = (MedicalSummary) theEObject;
 				T result = caseMedicalSummary(medicalSummary);
-				if (result == null) result = caseMedicalDocument(medicalSummary);
-				if (result == null) result = caseGeneralHeaderConstraints(medicalSummary);
-				if (result == null) result = caseClinicalDocument(medicalSummary);
-				if (result == null) result = caseAct(medicalSummary);
-				if (result == null) result = caseInfrastructureRoot(medicalSummary);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedicalDocument(medicalSummary);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(medicalSummary);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(medicalSummary);
+				}
+				if (result == null) {
+					result = caseAct(medicalSummary);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicalSummary);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.DISCHARGE_SUMMARY: {
-				DischargeSummary dischargeSummary = (DischargeSummary)theEObject;
+				DischargeSummary dischargeSummary = (DischargeSummary) theEObject;
 				T result = caseDischargeSummary(dischargeSummary);
-				if (result == null) result = caseMedicalSummary(dischargeSummary);
-				if (result == null) result = caseMedicalDocument(dischargeSummary);
-				if (result == null) result = caseGeneralHeaderConstraints(dischargeSummary);
-				if (result == null) result = caseClinicalDocument(dischargeSummary);
-				if (result == null) result = caseAct(dischargeSummary);
-				if (result == null) result = caseInfrastructureRoot(dischargeSummary);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedicalSummary(dischargeSummary);
+				}
+				if (result == null) {
+					result = caseMedicalDocument(dischargeSummary);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(dischargeSummary);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(dischargeSummary);
+				}
+				if (result == null) {
+					result = caseAct(dischargeSummary);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dischargeSummary);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.HEALTHCARE_PROVIDERS_PHARMACIES: {
-				HealthcareProvidersPharmacies healthcareProvidersPharmacies = (HealthcareProvidersPharmacies)theEObject;
+				HealthcareProvidersPharmacies healthcareProvidersPharmacies = (HealthcareProvidersPharmacies) theEObject;
 				T result = caseHealthcareProvidersPharmacies(healthcareProvidersPharmacies);
-				if (result == null) result = casePerformer1(healthcareProvidersPharmacies);
-				if (result == null) result = caseParticipation(healthcareProvidersPharmacies);
-				if (result == null) result = caseInfrastructureRoot(healthcareProvidersPharmacies);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePerformer1(healthcareProvidersPharmacies);
+				}
+				if (result == null) {
+					result = caseParticipation(healthcareProvidersPharmacies);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(healthcareProvidersPharmacies);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.OBSERVATION_REQUEST_ENTRY: {
-				ObservationRequestEntry observationRequestEntry = (ObservationRequestEntry)theEObject;
+				ObservationRequestEntry observationRequestEntry = (ObservationRequestEntry) theEObject;
 				T result = caseObservationRequestEntry(observationRequestEntry);
-				if (result == null) result = casePlanOfCareActivityObservation(observationRequestEntry);
-				if (result == null) result = caseObservation(observationRequestEntry);
-				if (result == null) result = casePlanOfCareActivity(observationRequestEntry);
-				if (result == null) result = caseClinicalStatement(observationRequestEntry);
-				if (result == null) result = caseAct(observationRequestEntry);
-				if (result == null) result = caseInfrastructureRoot(observationRequestEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePlanOfCareActivityObservation(observationRequestEntry);
+				}
+				if (result == null) {
+					result = caseObservation(observationRequestEntry);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivity(observationRequestEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(observationRequestEntry);
+				}
+				if (result == null) {
+					result = caseAct(observationRequestEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(observationRequestEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PRODUCT_ENTRY: {
-				ProductEntry productEntry = (ProductEntry)theEObject;
+				ProductEntry productEntry = (ProductEntry) theEObject;
 				T result = caseProductEntry(productEntry);
-				if (result == null) result = caseProduct(productEntry);
-				if (result == null) result = caseManufacturedProduct(productEntry);
-				if (result == null) result = caseRole(productEntry);
-				if (result == null) result = caseInfrastructureRoot(productEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProduct(productEntry);
+				}
+				if (result == null) {
+					result = caseManufacturedProduct(productEntry);
+				}
+				if (result == null) {
+					result = caseRole(productEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(productEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE: {
-				ProcedureEntryPlanOfCareActivityProcedure procedureEntryPlanOfCareActivityProcedure = (ProcedureEntryPlanOfCareActivityProcedure)theEObject;
+				ProcedureEntryPlanOfCareActivityProcedure procedureEntryPlanOfCareActivityProcedure = (ProcedureEntryPlanOfCareActivityProcedure) theEObject;
 				T result = caseProcedureEntryPlanOfCareActivityProcedure(procedureEntryPlanOfCareActivityProcedure);
-				if (result == null) result = casePlanOfCareActivityProcedure(procedureEntryPlanOfCareActivityProcedure);
-				if (result == null) result = caseProcedureEntry(procedureEntryPlanOfCareActivityProcedure);
-				if (result == null) result = caseProcedure(procedureEntryPlanOfCareActivityProcedure);
-				if (result == null) result = casePlanOfCareActivity(procedureEntryPlanOfCareActivityProcedure);
-				if (result == null) result = caseClinicalStatement(procedureEntryPlanOfCareActivityProcedure);
-				if (result == null) result = caseAct(procedureEntryPlanOfCareActivityProcedure);
-				if (result == null) result = caseInfrastructureRoot(procedureEntryPlanOfCareActivityProcedure);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePlanOfCareActivityProcedure(procedureEntryPlanOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = caseProcedureEntry(procedureEntryPlanOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = caseProcedure(procedureEntryPlanOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivity(procedureEntryPlanOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureEntryPlanOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = caseAct(procedureEntryPlanOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureEntryPlanOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PAYER_ENTRY: {
-				PayerEntry payerEntry = (PayerEntry)theEObject;
+				PayerEntry payerEntry = (PayerEntry) theEObject;
 				T result = casePayerEntry(payerEntry);
-				if (result == null) result = casePolicyActivity(payerEntry);
-				if (result == null) result = caseCDA_Act(payerEntry);
-				if (result == null) result = caseClinicalStatement(payerEntry);
-				if (result == null) result = caseAct(payerEntry);
-				if (result == null) result = caseInfrastructureRoot(payerEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePolicyActivity(payerEntry);
+				}
+				if (result == null) {
+					result = caseCDA_Act(payerEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(payerEntry);
+				}
+				if (result == null) {
+					result = caseAct(payerEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(payerEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PHR_EXTRACT: {
-				PHRExtract phrExtract = (PHRExtract)theEObject;
+				PHRExtract phrExtract = (PHRExtract) theEObject;
 				T result = casePHRExtract(phrExtract);
-				if (result == null) result = caseMedicalSummary(phrExtract);
-				if (result == null) result = caseMedicalDocument(phrExtract);
-				if (result == null) result = caseGeneralHeaderConstraints(phrExtract);
-				if (result == null) result = caseClinicalDocument(phrExtract);
-				if (result == null) result = caseAct(phrExtract);
-				if (result == null) result = caseInfrastructureRoot(phrExtract);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedicalSummary(phrExtract);
+				}
+				if (result == null) {
+					result = caseMedicalDocument(phrExtract);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(phrExtract);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(phrExtract);
+				}
+				if (result == null) {
+					result = caseAct(phrExtract);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(phrExtract);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PHR_UPDATE: {
-				PHRUpdate phrUpdate = (PHRUpdate)theEObject;
+				PHRUpdate phrUpdate = (PHRUpdate) theEObject;
 				T result = casePHRUpdate(phrUpdate);
-				if (result == null) result = caseMedicalSummary(phrUpdate);
-				if (result == null) result = caseMedicalDocument(phrUpdate);
-				if (result == null) result = caseGeneralHeaderConstraints(phrUpdate);
-				if (result == null) result = caseClinicalDocument(phrUpdate);
-				if (result == null) result = caseAct(phrUpdate);
-				if (result == null) result = caseInfrastructureRoot(phrUpdate);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedicalSummary(phrUpdate);
+				}
+				if (result == null) {
+					result = caseMedicalDocument(phrUpdate);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(phrUpdate);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(phrUpdate);
+				}
+				if (result == null) {
+					result = caseAct(phrUpdate);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(phrUpdate);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ENCOUNTER_ACTIVITY: {
-				EncounterActivity encounterActivity = (EncounterActivity)theEObject;
+				EncounterActivity encounterActivity = (EncounterActivity) theEObject;
 				T result = caseEncounterActivity(encounterActivity);
-				if (result == null) result = caseEncounterEntry(encounterActivity);
-				if (result == null) result = caseEncountersActivity(encounterActivity);
-				if (result == null) result = caseEncounter(encounterActivity);
-				if (result == null) result = caseClinicalStatement(encounterActivity);
-				if (result == null) result = caseAct(encounterActivity);
-				if (result == null) result = caseInfrastructureRoot(encounterActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseEncounterEntry(encounterActivity);
+				}
+				if (result == null) {
+					result = caseEncountersActivity(encounterActivity);
+				}
+				if (result == null) {
+					result = caseEncounter(encounterActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(encounterActivity);
+				}
+				if (result == null) {
+					result = caseAct(encounterActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encounterActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.ENCOUNTER_PLAN_OF_CARE: {
-				EncounterPlanOfCare encounterPlanOfCare = (EncounterPlanOfCare)theEObject;
+				EncounterPlanOfCare encounterPlanOfCare = (EncounterPlanOfCare) theEObject;
 				T result = caseEncounterPlanOfCare(encounterPlanOfCare);
-				if (result == null) result = caseEncounterEntry(encounterPlanOfCare);
-				if (result == null) result = casePlanOfCareActivityEncounter(encounterPlanOfCare);
-				if (result == null) result = caseEncounter(encounterPlanOfCare);
-				if (result == null) result = casePlanOfCareActivity(encounterPlanOfCare);
-				if (result == null) result = caseClinicalStatement(encounterPlanOfCare);
-				if (result == null) result = caseAct(encounterPlanOfCare);
-				if (result == null) result = caseInfrastructureRoot(encounterPlanOfCare);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseEncounterEntry(encounterPlanOfCare);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivityEncounter(encounterPlanOfCare);
+				}
+				if (result == null) {
+					result = caseEncounter(encounterPlanOfCare);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivity(encounterPlanOfCare);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(encounterPlanOfCare);
+				}
+				if (result == null) {
+					result = caseAct(encounterPlanOfCare);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encounterPlanOfCare);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.INTAKE_OUTPUT_SECTION: {
-				IntakeOutputSection intakeOutputSection = (IntakeOutputSection)theEObject;
+				IntakeOutputSection intakeOutputSection = (IntakeOutputSection) theEObject;
 				T result = caseIntakeOutputSection(intakeOutputSection);
-				if (result == null) result = caseSection(intakeOutputSection);
-				if (result == null) result = caseAct(intakeOutputSection);
-				if (result == null) result = caseInfrastructureRoot(intakeOutputSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(intakeOutputSection);
+				}
+				if (result == null) {
+					result = caseAct(intakeOutputSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(intakeOutputSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PREGNANCY_HISTORY_SECTION: {
-				PregnancyHistorySection pregnancyHistorySection = (PregnancyHistorySection)theEObject;
+				PregnancyHistorySection pregnancyHistorySection = (PregnancyHistorySection) theEObject;
 				T result = casePregnancyHistorySection(pregnancyHistorySection);
-				if (result == null) result = caseSection(pregnancyHistorySection);
-				if (result == null) result = caseAct(pregnancyHistorySection);
-				if (result == null) result = caseInfrastructureRoot(pregnancyHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(pregnancyHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(pregnancyHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(pregnancyHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PREGNANCY_OBSERVATION: {
-				PregnancyObservation pregnancyObservation = (PregnancyObservation)theEObject;
+				PregnancyObservation pregnancyObservation = (PregnancyObservation) theEObject;
 				T result = casePregnancyObservation(pregnancyObservation);
-				if (result == null) result = caseSimpleObservation(pregnancyObservation);
-				if (result == null) result = caseObservation(pregnancyObservation);
-				if (result == null) result = caseClinicalStatement(pregnancyObservation);
-				if (result == null) result = caseAct(pregnancyObservation);
-				if (result == null) result = caseInfrastructureRoot(pregnancyObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSimpleObservation(pregnancyObservation);
+				}
+				if (result == null) {
+					result = caseObservation(pregnancyObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(pregnancyObservation);
+				}
+				if (result == null) {
+					result = caseAct(pregnancyObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(pregnancyObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PATIENT_CONTACT: {
-				PatientContact patientContact = (PatientContact)theEObject;
+				PatientContact patientContact = (PatientContact) theEObject;
 				T result = casePatientContact(patientContact);
-				if (result == null) result = caseSupport(patientContact);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSupport(patientContact);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PATIENT_CONTACT_GUARDIAN: {
-				PatientContactGuardian patientContactGuardian = (PatientContactGuardian)theEObject;
+				PatientContactGuardian patientContactGuardian = (PatientContactGuardian) theEObject;
 				T result = casePatientContactGuardian(patientContactGuardian);
-				if (result == null) result = caseSupportGuardian(patientContactGuardian);
-				if (result == null) result = casePatientContact(patientContactGuardian);
-				if (result == null) result = caseGuardian(patientContactGuardian);
-				if (result == null) result = caseSupport(patientContactGuardian);
-				if (result == null) result = caseRole(patientContactGuardian);
-				if (result == null) result = caseInfrastructureRoot(patientContactGuardian);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSupportGuardian(patientContactGuardian);
+				}
+				if (result == null) {
+					result = casePatientContact(patientContactGuardian);
+				}
+				if (result == null) {
+					result = caseGuardian(patientContactGuardian);
+				}
+				if (result == null) {
+					result = caseSupport(patientContactGuardian);
+				}
+				if (result == null) {
+					result = caseRole(patientContactGuardian);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientContactGuardian);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.PATIENT_CONTACT_PARTICIPANT: {
-				PatientContactParticipant patientContactParticipant = (PatientContactParticipant)theEObject;
+				PatientContactParticipant patientContactParticipant = (PatientContactParticipant) theEObject;
 				T result = casePatientContactParticipant(patientContactParticipant);
-				if (result == null) result = caseSupportParticipant(patientContactParticipant);
-				if (result == null) result = casePatientContact(patientContactParticipant);
-				if (result == null) result = caseParticipant1(patientContactParticipant);
-				if (result == null) result = caseSupport(patientContactParticipant);
-				if (result == null) result = caseParticipation(patientContactParticipant);
-				if (result == null) result = caseInfrastructureRoot(patientContactParticipant);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSupportParticipant(patientContactParticipant);
+				}
+				if (result == null) {
+					result = casePatientContact(patientContactParticipant);
+				}
+				if (result == null) {
+					result = caseParticipant1(patientContactParticipant);
+				}
+				if (result == null) {
+					result = caseSupport(patientContactParticipant);
+				}
+				if (result == null) {
+					result = caseParticipation(patientContactParticipant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientContactParticipant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.SCANNED_DOCUMENT: {
-				ScannedDocument scannedDocument = (ScannedDocument)theEObject;
+				ScannedDocument scannedDocument = (ScannedDocument) theEObject;
 				T result = caseScannedDocument(scannedDocument);
-				if (result == null) result = caseClinicalDocument(scannedDocument);
-				if (result == null) result = caseAct(scannedDocument);
-				if (result == null) result = caseInfrastructureRoot(scannedDocument);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseClinicalDocument(scannedDocument);
+				}
+				if (result == null) {
+					result = caseAct(scannedDocument);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(scannedDocument);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.SCAN_ORIGINAL_AUTHOR: {
-				ScanOriginalAuthor scanOriginalAuthor = (ScanOriginalAuthor)theEObject;
+				ScanOriginalAuthor scanOriginalAuthor = (ScanOriginalAuthor) theEObject;
 				T result = caseScanOriginalAuthor(scanOriginalAuthor);
-				if (result == null) result = caseAuthor(scanOriginalAuthor);
-				if (result == null) result = caseParticipation(scanOriginalAuthor);
-				if (result == null) result = caseInfrastructureRoot(scanOriginalAuthor);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseAuthor(scanOriginalAuthor);
+				}
+				if (result == null) {
+					result = caseParticipation(scanOriginalAuthor);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(scanOriginalAuthor);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.SCANNING_DEVICE: {
-				ScanningDevice scanningDevice = (ScanningDevice)theEObject;
+				ScanningDevice scanningDevice = (ScanningDevice) theEObject;
 				T result = caseScanningDevice(scanningDevice);
-				if (result == null) result = caseAuthor(scanningDevice);
-				if (result == null) result = caseParticipation(scanningDevice);
-				if (result == null) result = caseInfrastructureRoot(scanningDevice);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseAuthor(scanningDevice);
+				}
+				if (result == null) {
+					result = caseParticipation(scanningDevice);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(scanningDevice);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.SCAN_DATA_ENTERER: {
-				ScanDataEnterer scanDataEnterer = (ScanDataEnterer)theEObject;
+				ScanDataEnterer scanDataEnterer = (ScanDataEnterer) theEObject;
 				T result = caseScanDataEnterer(scanDataEnterer);
-				if (result == null) result = caseDataEnterer(scanDataEnterer);
-				if (result == null) result = caseParticipation(scanDataEnterer);
-				if (result == null) result = caseInfrastructureRoot(scanDataEnterer);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseDataEnterer(scanDataEnterer);
+				}
+				if (result == null) {
+					result = caseParticipation(scanDataEnterer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(scanDataEnterer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IHEPackage.IHE_REGISTRY_DELEGATE: {
-				IHERegistryDelegate iheRegistryDelegate = (IHERegistryDelegate)theEObject;
+				IHERegistryDelegate iheRegistryDelegate = (IHERegistryDelegate) theEObject;
 				T result = caseIHERegistryDelegate(iheRegistryDelegate);
-				if (result == null) result = caseRegistryDelegate(iheRegistryDelegate);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseRegistryDelegate(iheRegistryDelegate);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			default: return defaultCase(theEObject);
+			default:
+				return defaultCase(theEObject);
 		}
 	}
 
@@ -3335,4 +4237,4 @@ public class IHESwitch<T> {
 		return null;
 	}
 
-} //IHESwitch
+} // IHESwitch

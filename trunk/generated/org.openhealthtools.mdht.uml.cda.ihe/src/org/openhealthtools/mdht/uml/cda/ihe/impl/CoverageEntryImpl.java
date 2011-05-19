@@ -59,8 +59,9 @@ public class CoverageEntryImpl extends CoverageActivityImpl implements CoverageE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CoverageEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CoverageEntryImpl
+} // CoverageEntryImpl

@@ -33,7 +33,8 @@ public interface ScanningDevice extends Author {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.time.value = self.getClinicalDocument().effectiveTime.value'"
 	 * @generated
 	 */
-	boolean validateScanningDeviceTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateScanningDeviceTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,7 +62,8 @@ public interface ScanningDevice extends Author {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthor.assignedAuthoringDevice.code.codeSystem = \'1.2.840.10008.2.16.4\'\r\n   and not self.assignedAuthor.assignedAuthoringDevice.code.code.oclIsUndefined()\r\n   and not self.assignedAuthor.assignedAuthoringDevice.code.displayName.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateScanningDeviceHasAssignedAuthoringDeviceCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateScanningDeviceHasAssignedAuthoringDeviceCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -74,7 +76,8 @@ public interface ScanningDevice extends Author {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.assignedAuthor.assignedAuthoringDevice.manufacturerModelName.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateScanningDeviceHasDeviceManufacturerModelName(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateScanningDeviceHasDeviceManufacturerModelName(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -100,7 +103,8 @@ public interface ScanningDevice extends Author {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II | not ident.root.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

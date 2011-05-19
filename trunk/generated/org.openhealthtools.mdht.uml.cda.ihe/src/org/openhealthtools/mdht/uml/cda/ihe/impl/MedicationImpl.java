@@ -78,8 +78,18 @@ public abstract class MedicationImpl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationHasDescriptionNoMedNotKnown(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateMedicationHasDescriptionNoMedNotKnown(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationReasonClassMood(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateMedicationReasonClassMood(this, diagnostics, context);
 	}
 
 	/**
@@ -240,8 +250,9 @@ public abstract class MedicationImpl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Medication init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationImpl
+} // MedicationImpl

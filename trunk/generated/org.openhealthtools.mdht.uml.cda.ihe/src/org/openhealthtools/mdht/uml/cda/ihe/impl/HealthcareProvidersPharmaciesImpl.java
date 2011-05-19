@@ -50,8 +50,10 @@ public class HealthcareProvidersPharmaciesImpl extends Performer1Impl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthcareProvidersPharmaciesTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthcareProvidersPharmaciesOperations.validateHealthcareProvidersPharmaciesTemplateId(this, diagnostics, context);
+	public boolean validateHealthcareProvidersPharmaciesTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthcareProvidersPharmaciesOperations.validateHealthcareProvidersPharmaciesTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,7 +62,7 @@ public class HealthcareProvidersPharmaciesImpl extends Performer1Impl implements
 	 * @generated
 	 */
 	public HealthcareProvidersPharmacies init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HealthcareProvidersPharmaciesImpl
+} // HealthcareProvidersPharmaciesImpl

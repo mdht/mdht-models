@@ -87,8 +87,9 @@ public class SeverityImpl extends SeverityObservationImpl implements Severity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Severity init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SeverityImpl
+} // SeverityImpl

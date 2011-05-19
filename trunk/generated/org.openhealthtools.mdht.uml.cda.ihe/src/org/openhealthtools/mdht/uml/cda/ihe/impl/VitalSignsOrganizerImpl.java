@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.VitalSignsOrganizerImpl implements VitalSignsOrganizer {
+public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.VitalSignsOrganizerImpl
+		implements VitalSignsOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,8 +52,10 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.cc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIHEVitalSignsOrganizerRequireResultsOrganizerTemplateID(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateIHEVitalSignsOrganizerRequireResultsOrganizerTemplateID(this, diagnostics, context);
+	public boolean validateIHEVitalSignsOrganizerRequireResultsOrganizerTemplateID(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateIHEVitalSignsOrganizerRequireResultsOrganizerTemplateID(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +99,10 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.cc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIHEVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateIHEVitalSignsOrganizerVitalSignObservation(this, diagnostics, context);
+	public boolean validateIHEVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateIHEVitalSignsOrganizerVitalSignObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -134,8 +139,9 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.cc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsOrganizer init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //VitalSignsOrganizerImpl
+} // VitalSignsOrganizerImpl
