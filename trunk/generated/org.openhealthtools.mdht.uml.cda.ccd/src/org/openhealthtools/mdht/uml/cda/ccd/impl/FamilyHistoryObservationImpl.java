@@ -78,7 +78,7 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * @generated
 	 */
 	public FamilyHistoryObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //FamilyHistoryObservationImpl
+} // FamilyHistoryObservationImpl

@@ -107,7 +107,7 @@ public class VitalSignsSectionImpl extends SectionImpl implements VitalSignsSect
 	 * @generated
 	 */
 	public VitalSignsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //VitalSignsSectionImpl
+} // VitalSignsSectionImpl

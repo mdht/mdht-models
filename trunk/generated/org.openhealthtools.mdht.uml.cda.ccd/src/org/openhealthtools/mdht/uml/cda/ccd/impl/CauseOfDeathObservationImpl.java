@@ -59,8 +59,9 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CauseOfDeathObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CauseOfDeathObservationImpl
+} // CauseOfDeathObservationImpl

@@ -6,7 +6,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.ccd;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Problem Health Status Observation</b></em>'.

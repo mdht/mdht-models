@@ -50,7 +50,8 @@ public class ImmunizationsSectionImpl extends SectionImpl implements Immunizatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSectionClinicalStatements(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationsSectionClinicalStatements(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ImmunizationsSectionOperations.validateImmunizationsSectionClinicalStatements(this, diagnostics, context);
 	}
 
@@ -96,7 +97,7 @@ public class ImmunizationsSectionImpl extends SectionImpl implements Immunizatio
 	 * @generated
 	 */
 	public ImmunizationsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ImmunizationsSectionImpl
+} // ImmunizationsSectionImpl

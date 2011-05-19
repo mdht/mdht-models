@@ -69,7 +69,7 @@ public class EncounterLocationImpl extends Participant2Impl implements Encounter
 	 * @generated
 	 */
 	public EncounterLocation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //EncounterLocationImpl
+} // EncounterLocationImpl

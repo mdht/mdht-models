@@ -38,14 +38,14 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 public class Main {
-	public static void main(String[] args) throws Exception {	
+	public static void main(String[] args) throws Exception {
 		ContinuityOfCareDocument doc = CCDFactory.eINSTANCE.createContinuityOfCareDocument().init();
-		
+
 		Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
 		AssignedEntity assignedEntity = CDAFactory.eINSTANCE.createAssignedEntity();
 		informant.setAssignedEntity(assignedEntity);
 		doc.getInformants().add(informant);
-		
+
 		PurposeSection purposeSection = CCDFactory.eINSTANCE.createPurposeSection().init();
 		doc.addSection(purposeSection);
 		PurposeActivity purposeActivity = CCDFactory.eINSTANCE.createPurposeActivity().init();
@@ -53,21 +53,21 @@ public class Main {
 		SubstanceAdministration purposeReason = CDAFactory.eINSTANCE.createSubstanceAdministration();
 		purposeActivity.addSubstanceAdministration(purposeReason);
 		// should produce validation error for incorrect reason type
-//		Organizer purposeReason = CDAFactory.eINSTANCE.createOrganizer();
-//		purposeActivity.addOrganizer(purposeReason);
+		// Organizer purposeReason = CDAFactory.eINSTANCE.createOrganizer();
+		// purposeActivity.addOrganizer(purposeReason);
 		purposeActivity.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-		
+
 		ProblemAct problemAct = CCDFactory.eINSTANCE.createProblemAct().init();
-		ProblemObservation problemObservation = CCDFactory.eINSTANCE.createProblemObservation().init();	
+		ProblemObservation problemObservation = CCDFactory.eINSTANCE.createProblemObservation().init();
 		ProblemStatusObservation problemStatus = CCDFactory.eINSTANCE.createProblemStatusObservation().init();
 		ProblemHealthStatusObservation problemHealthStatus = CCDFactory.eINSTANCE.createProblemHealthStatusObservation().init();
 		EpisodeObservation episodeObservation = CCDFactory.eINSTANCE.createEpisodeObservation().init();
-		
+
 		ProblemSection problemSection = CCDFactory.eINSTANCE.createProblemSection().init();
 		doc.addSection(problemSection);
 		problemSection.addAct(problemAct);
 		problemAct.addObservation(problemObservation);
-		
+
 		problemSection.addObservation(problemStatus);
 		problemSection.addObservation(problemHealthStatus);
 		problemSection.addObservation(episodeObservation);
@@ -96,16 +96,17 @@ public class Main {
 			public void handleError(Diagnostic diagnostic) {
 				System.out.println("ERROR: " + diagnostic.getMessage());
 			}
+
 			@Override
 			public void handleWarning(Diagnostic diagnostic) {
 				System.out.println("WARNING: " + diagnostic.getMessage());
 			}
-//			@Override
-//			public void handleInfo(Diagnostic diagnostic) {
-//				System.out.println("INFO: " + diagnostic.getMessage());
-//			}
+			// @Override
+			// public void handleInfo(Diagnostic diagnostic) {
+			// System.out.println("INFO: " + diagnostic.getMessage());
+			// }
 		});
-		
+
 		if (valid) {
 			System.out.println("Document is valid");
 		} else {

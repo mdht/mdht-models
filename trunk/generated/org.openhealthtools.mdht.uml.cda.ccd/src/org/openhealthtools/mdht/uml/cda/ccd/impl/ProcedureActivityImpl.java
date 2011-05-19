@@ -47,7 +47,7 @@ public class ProcedureActivityImpl extends EObjectImpl implements ProcedureActiv
 	 * @generated
 	 */
 	public ProcedureActivity init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProcedureActivityImpl
+} // ProcedureActivityImpl

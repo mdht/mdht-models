@@ -24,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class AdvanceDirectiveStatusObservationImpl extends StatusObservationImpl implements AdvanceDirectiveStatusObservation {
+public class AdvanceDirectiveStatusObservationImpl extends StatusObservationImpl implements
+		AdvanceDirectiveStatusObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,7 +52,8 @@ public class AdvanceDirectiveStatusObservationImpl extends StatusObservationImpl
 	 */
 	@Override
 	public boolean validateStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveStatusObservationOperations.validateStatusObservationTemplateId(this, diagnostics, context);
+		return AdvanceDirectiveStatusObservationOperations.validateStatusObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +61,9 @@ public class AdvanceDirectiveStatusObservationImpl extends StatusObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdvanceDirectiveStatusObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AdvanceDirectiveStatusObservationImpl
+} // AdvanceDirectiveStatusObservationImpl

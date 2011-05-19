@@ -68,8 +68,10 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationContainsPatientAwareness(this, diagnostics, context);
+	public boolean validateProblemObservationContainsPatientAwareness(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemObservationOperations.validateProblemObservationContainsPatientAwareness(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -113,8 +115,10 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationProblemStatusObservation(this, diagnostics, context);
+	public boolean validateProblemObservationProblemStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemObservationOperations.validateProblemObservationProblemStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,8 +126,10 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationProblemHealthStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationProblemHealthStatusObservation(this, diagnostics, context);
+	public boolean validateProblemObservationProblemHealthStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemObservationOperations.validateProblemObservationProblemHealthStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -168,7 +174,7 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * @generated
 	 */
 	public ProblemObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProblemObservationImpl
+} // ProblemObservationImpl

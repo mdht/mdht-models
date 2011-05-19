@@ -17087,4 +17087,4 @@ public interface CCDPackage extends EPackage {
 
 	}
 
-} //CCDPackage
+} // CCDPackage

@@ -60,7 +60,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * @generated
 	 */
 	public ProcedureActivityAct init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProcedureActivityActImpl
+} // ProcedureActivityActImpl

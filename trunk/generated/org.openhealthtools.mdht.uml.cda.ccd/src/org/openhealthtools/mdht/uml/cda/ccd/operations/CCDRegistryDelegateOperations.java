@@ -40,7 +40,7 @@ public class CCDRegistryDelegateOperations {
 	 * <!-- end-user-doc -->
 	 * @generated NOT
 	 */
-	public static  EClass getEClass(CCDRegistryDelegate ccdRegistryDelegate, String templateId, Object context) {
+	public static EClass getEClass(CCDRegistryDelegate ccdRegistryDelegate, String templateId, Object context) {
 		EClass result = null;
 		if (context instanceof Element) {
 			Element element = (Element) context;

@@ -96,7 +96,7 @@ public class ProductImpl extends ManufacturedProductImpl implements Product {
 	 * @generated
 	 */
 	public Product init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProductImpl
+} // ProductImpl

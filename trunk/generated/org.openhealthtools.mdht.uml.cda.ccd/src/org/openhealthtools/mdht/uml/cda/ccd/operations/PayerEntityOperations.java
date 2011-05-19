@@ -75,26 +75,22 @@ public class PayerEntityOperations extends AssignedEntityOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePayerEntityId(PayerEntity payerEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePayerEntityId(PayerEntity payerEntity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PAYER_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PAYER_ENTITY);
 			try {
 				VALIDATE_PAYER_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYER_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYER_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payerEntity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PAYER_ENTITY__PAYER_ENTITY_ID,
-						 CCDPlugin.INSTANCE.getString("PayerEntityId"),
-						 new Object [] { payerEntity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PAYER_ENTITY__PAYER_ENTITY_ID,
+					CCDPlugin.INSTANCE.getString("PayerEntityId"), new Object[] { payerEntity }));
 			}
 			return false;
 		}

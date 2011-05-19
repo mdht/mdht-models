@@ -47,7 +47,7 @@ public class SupportParticipantImpl extends Participant1Impl implements SupportP
 	 * @generated
 	 */
 	public SupportParticipant init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SupportParticipantImpl
+} // SupportParticipantImpl

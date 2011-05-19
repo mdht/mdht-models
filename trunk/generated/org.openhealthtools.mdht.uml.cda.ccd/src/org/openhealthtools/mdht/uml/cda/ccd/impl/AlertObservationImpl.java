@@ -71,7 +71,8 @@ public class AlertObservationImpl extends ObservationImpl implements AlertObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAlertObservationPlayingEntityRequired(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAlertObservationPlayingEntityRequired(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationPlayingEntityRequired(this, diagnostics, context);
 	}
 
@@ -116,7 +117,8 @@ public class AlertObservationImpl extends ObservationImpl implements AlertObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAlertObservationAlertStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAlertObservationAlertStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationAlertStatusObservation(this, diagnostics, context);
 	}
 
@@ -153,7 +155,7 @@ public class AlertObservationImpl extends ObservationImpl implements AlertObserv
 	 * @generated
 	 */
 	public AlertObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AlertObservationImpl
+} // AlertObservationImpl

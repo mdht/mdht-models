@@ -33,7 +33,8 @@ public interface PolicyActivityCoveragePlanDescription extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.classCode=vocab::x_ActClassDocumentEntryAct::ACT'"
 	 * @generated
 	 */
-	boolean validatePolicyActivityCoveragePlanDescriptionClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePolicyActivityCoveragePlanDescriptionClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,7 +60,8 @@ public interface PolicyActivityCoveragePlanDescription extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode=vocab::x_DocumentActMood::DEF'"
 	 * @generated
 	 */
-	boolean validatePolicyActivityCoveragePlanDescriptionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePolicyActivityCoveragePlanDescriptionMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

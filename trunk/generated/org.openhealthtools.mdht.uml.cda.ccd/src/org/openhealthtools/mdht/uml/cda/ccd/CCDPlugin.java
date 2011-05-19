@@ -39,7 +39,7 @@ public final class CCDPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public CCDPlugin() {
-		super(new ResourceLocator [] {});
+		super(new ResourceLocator[] {});
 	}
 
 	/**

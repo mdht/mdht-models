@@ -68,8 +68,9 @@ public class VitalSignsOrganizerImpl extends ResultOrganizerImpl implements Vita
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignsOrganizer init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //VitalSignsOrganizerImpl
+} // VitalSignsOrganizerImpl
