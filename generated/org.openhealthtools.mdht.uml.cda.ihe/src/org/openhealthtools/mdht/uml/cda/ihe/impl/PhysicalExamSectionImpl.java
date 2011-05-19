@@ -58,8 +58,9 @@ public class PhysicalExamSectionImpl extends PhysicalExamNarrativeSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicalExamSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PhysicalExamSectionImpl
+} // PhysicalExamSectionImpl

@@ -82,46 +82,29 @@ public class CodedVitalSignsSectionOperations extends VitalSignsSectionOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateCodedVitalSignsSectionTemplateId(CodedVitalSignsSection codedVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateCodedVitalSignsSectionTemplateId(CodedVitalSignsSection codedVitalSignsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CODED_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION);
 			try {
-				
-					VALIDATE_CODED_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CODED_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_CODED_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CODED_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_CODED_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(codedVitalSignsSection)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.CODED_VITAL_SIGNS_SECTION__CODED_VITAL_SIGNS_SECTION_TEMPLATE_ID,
-						 IHEPlugin.INSTANCE.getString("CodedVitalSignsSectionTemplateId"),
-						 new Object [] { codedVitalSignsSection }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_CODED_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			codedVitalSignsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.CODED_VITAL_SIGNS_SECTION__CODED_VITAL_SIGNS_SECTION_TEMPLATE_ID,
+					IHEPlugin.INSTANCE.getString("CodedVitalSignsSectionTemplateId"),
+					new Object[] { codedVitalSignsSection }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -155,46 +138,30 @@ public class CodedVitalSignsSectionOperations extends VitalSignsSectionOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateCodedVitalSignsSectionVitalSignsOrganizer(CodedVitalSignsSection codedVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateCodedVitalSignsSectionVitalSignsOrganizer(
+			CodedVitalSignsSection codedVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CODED_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION);
 			try {
-				
-					VALIDATE_CODED_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CODED_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_CODED_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CODED_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_CODED_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(codedVitalSignsSection)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.CODED_VITAL_SIGNS_SECTION__CODED_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER,
-						 IHEPlugin.INSTANCE.getString("CodedVitalSignsSectionVitalSignsOrganizer"),
-						 new Object [] { codedVitalSignsSection }));
-				}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CODED_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			codedVitalSignsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.CODED_VITAL_SIGNS_SECTION__CODED_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER,
+					IHEPlugin.INSTANCE.getString("CodedVitalSignsSectionVitalSignsOrganizer"),
+					new Object[] { codedVitalSignsSection }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -226,14 +193,15 @@ public class CodedVitalSignsSectionOperations extends VitalSignsSectionOperation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<VitalSignsOrganizer> getIHEVitalSignsOrganizers(CodedVitalSignsSection codedVitalSignsSection) {
+	public static EList<VitalSignsOrganizer> getIHEVitalSignsOrganizers(CodedVitalSignsSection codedVitalSignsSection) {
 		if (GET_IHE_VITAL_SIGNS_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION, IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(
+				IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION,
+				IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION.getEAllOperations().get(64));
 			try {
 				GET_IHE_VITAL_SIGNS_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_IHE_VITAL_SIGNS_ORGANIZERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

@@ -17,7 +17,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Allergy Intolerance</b></em>'.
@@ -67,7 +66,8 @@ public interface AllergyIntolerance extends ProblemEntry {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ihe::ProblemEntryReactionObservationContainer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)'"
 	 * @generated
 	 */
-	boolean validateAllergyIntoleranceProblemEntryReactionObservationContainer(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyIntoleranceProblemEntryReactionObservationContainer(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

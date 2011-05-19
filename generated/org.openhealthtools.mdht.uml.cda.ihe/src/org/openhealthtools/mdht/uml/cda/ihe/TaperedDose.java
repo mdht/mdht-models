@@ -10,7 +10,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Tapered Dose</b></em>'.
@@ -49,7 +48,8 @@ public interface TaperedDose extends Medication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsTypeOf( ihe::Medication) )'"
 	 * @generated
 	 */
-	boolean validateTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

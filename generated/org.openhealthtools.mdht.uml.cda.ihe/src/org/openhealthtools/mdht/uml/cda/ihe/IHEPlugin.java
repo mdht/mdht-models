@@ -39,7 +39,7 @@ public final class IHEPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public IHEPlugin() {
-		super(new ResourceLocator [] {});
+		super(new ResourceLocator[] {});
 	}
 
 	/**

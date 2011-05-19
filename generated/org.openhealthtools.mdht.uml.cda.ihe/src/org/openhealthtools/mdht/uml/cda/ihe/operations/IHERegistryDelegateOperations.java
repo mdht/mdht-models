@@ -62,7 +62,7 @@ public class IHERegistryDelegateOperations {
 		}
 		return result;
 	}
-	
+
 	private static List<String> getTemplateIds(Element element) {
 		List<String> templateIds = new ArrayList<String>();
 		NodeList nodeList = element.getChildNodes();

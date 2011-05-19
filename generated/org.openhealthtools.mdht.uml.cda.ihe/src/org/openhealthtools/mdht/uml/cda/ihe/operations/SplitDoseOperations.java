@@ -62,8 +62,8 @@ public class SplitDoseOperations extends MedicationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-		protected static Constraint VALIDATE_SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	protected static Constraint VALIDATE_SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -76,46 +76,29 @@ public class SplitDoseOperations extends MedicationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSplitDoseSplitDosingSubstanceAdministration(SplitDose splitDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateSplitDoseSplitDosingSubstanceAdministration(SplitDose splitDose,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SPLIT_DOSE);
 			try {
-				
-					VALIDATE_SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(splitDose)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.SPLIT_DOSE__SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION,
-						 IHEPlugin.INSTANCE.getString("SplitDoseSplitDosingSubstanceAdministration"),
-						 new Object [] { splitDose }));
-				}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(splitDose)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.SPLIT_DOSE__SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION,
+					IHEPlugin.INSTANCE.getString("SplitDoseSplitDosingSubstanceAdministration"),
+					new Object[] { splitDose }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -149,46 +132,26 @@ public class SplitDoseOperations extends MedicationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSplitDoseTemplateId(SplitDose splitDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateSplitDoseTemplateId(SplitDose splitDose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_SPLIT_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SPLIT_DOSE);
 			try {
-				
-					VALIDATE_SPLIT_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPLIT_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_SPLIT_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPLIT_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_SPLIT_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(splitDose)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.SPLIT_DOSE__SPLIT_DOSE_TEMPLATE_ID,
-						 IHEPlugin.INSTANCE.getString("SplitDoseTemplateId"),
-						 new Object [] { splitDose }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_SPLIT_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(splitDose)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.SPLIT_DOSE__SPLIT_DOSE_TEMPLATE_ID,
+					IHEPlugin.INSTANCE.getString("SplitDoseTemplateId"), new Object[] { splitDose }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 } // SplitDoseOperations

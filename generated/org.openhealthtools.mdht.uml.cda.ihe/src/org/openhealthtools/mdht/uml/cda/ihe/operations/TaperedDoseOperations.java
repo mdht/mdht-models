@@ -62,8 +62,8 @@ public class TaperedDoseOperations extends MedicationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-		protected static Constraint VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	protected static Constraint VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -76,46 +76,30 @@ public class TaperedDoseOperations extends MedicationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTaperedDoseTaperedDosingSubstanceAdministration(TaperedDose taperedDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateTaperedDoseTaperedDosingSubstanceAdministration(TaperedDose taperedDose,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.TAPERED_DOSE);
 			try {
-				
-					VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(taperedDose)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.TAPERED_DOSE__TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION,
-						 IHEPlugin.INSTANCE.getString("TaperedDoseTaperedDosingSubstanceAdministration"),
-						 new Object [] { taperedDose }));
-				}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			taperedDose)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.TAPERED_DOSE__TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION,
+					IHEPlugin.INSTANCE.getString("TaperedDoseTaperedDosingSubstanceAdministration"),
+					new Object[] { taperedDose }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -149,46 +133,27 @@ public class TaperedDoseOperations extends MedicationOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTaperedDoseTemplateId(TaperedDose taperedDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateTaperedDoseTemplateId(TaperedDose taperedDose, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.TAPERED_DOSE);
 			try {
-				
-					VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(taperedDose)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.TAPERED_DOSE__TAPERED_DOSE_TEMPLATE_ID,
-						 IHEPlugin.INSTANCE.getString("TaperedDoseTemplateId"),
-						 new Object [] { taperedDose }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(taperedDose)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.TAPERED_DOSE__TAPERED_DOSE_TEMPLATE_ID,
+					IHEPlugin.INSTANCE.getString("TaperedDoseTemplateId"), new Object[] { taperedDose }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 } // TaperedDoseOperations

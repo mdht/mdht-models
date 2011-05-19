@@ -59,7 +59,8 @@ public class AllergiesReactionsSectionImpl extends AlertsSectionImpl implements 
 	 * @generated
 	 */
 	public boolean validateAllergiesReactionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionTemplateId(this, diagnostics, context);
+		return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +68,10 @@ public class AllergiesReactionsSectionImpl extends AlertsSectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesReactionsSectionAllergyIntoleranceConcern(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionAllergyIntoleranceConcern(this, diagnostics, context);
+	public boolean validateAllergiesReactionsSectionAllergyIntoleranceConcern(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesReactionsSectionOperations.validateAllergiesReactionsSectionAllergyIntoleranceConcern(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +88,9 @@ public class AllergiesReactionsSectionImpl extends AlertsSectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergiesReactionsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AllergiesReactionsSectionImpl
+} // AllergiesReactionsSectionImpl

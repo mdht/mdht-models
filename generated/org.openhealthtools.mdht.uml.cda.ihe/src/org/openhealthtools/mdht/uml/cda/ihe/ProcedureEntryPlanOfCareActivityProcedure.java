@@ -33,7 +33,8 @@ public interface ProcedureEntryPlanOfCareActivityProcedure extends PlanOfCareAct
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.4.19\')'"
 	 * @generated
 	 */
-	boolean validateProcedureEntryPlanOfCareActivityProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureEntryPlanOfCareActivityProcedureTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

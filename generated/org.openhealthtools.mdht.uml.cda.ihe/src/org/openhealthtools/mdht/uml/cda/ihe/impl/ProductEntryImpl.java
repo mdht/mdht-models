@@ -59,8 +59,9 @@ public class ProductEntryImpl extends ProductImpl implements ProductEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProductEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProductEntryImpl
+} // ProductEntryImpl

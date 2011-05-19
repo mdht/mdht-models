@@ -33,7 +33,8 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  *
  * @generated
  */
-public class VitalSignsSectionOperations extends org.openhealthtools.mdht.uml.cda.ccd.operations.VitalSignsSectionOperations {
+public class VitalSignsSectionOperations extends
+		org.openhealthtools.mdht.uml.cda.ccd.operations.VitalSignsSectionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,46 +75,28 @@ public class VitalSignsSectionOperations extends org.openhealthtools.mdht.uml.cd
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateIHEVitalSignsSectionTemplateId(VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateIHEVitalSignsSectionTemplateId(VitalSignsSection vitalSignsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_SECTION);
 			try {
-				
-					VALIDATE_IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSignsSection)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.VITAL_SIGNS_SECTION__IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID,
-						 IHEPlugin.INSTANCE.getString("IHEVitalSignsSectionTemplateId"),
-						 new Object [] { vitalSignsSection }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			vitalSignsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.VITAL_SIGNS_SECTION__IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID,
+					IHEPlugin.INSTANCE.getString("IHEVitalSignsSectionTemplateId"), new Object[] { vitalSignsSection }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 } // VitalSignsSectionOperations

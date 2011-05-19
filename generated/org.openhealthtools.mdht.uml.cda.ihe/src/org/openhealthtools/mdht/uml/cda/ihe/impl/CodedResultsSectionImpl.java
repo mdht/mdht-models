@@ -108,7 +108,7 @@ public class CodedResultsSectionImpl extends SectionImpl implements CodedResults
 	 * @generated
 	 */
 	public CodedResultsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CodedResultsSectionImpl
+} // CodedResultsSectionImpl

@@ -87,8 +87,9 @@ public class SupplyEntryImpl extends SupplyActivityImpl implements SupplyEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SupplyEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SupplyEntryImpl
+} // SupplyEntryImpl

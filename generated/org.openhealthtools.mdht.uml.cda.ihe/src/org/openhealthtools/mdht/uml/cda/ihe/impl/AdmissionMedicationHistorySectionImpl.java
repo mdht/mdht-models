@@ -50,8 +50,10 @@ public class AdmissionMedicationHistorySectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdmissionMedicationHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdmissionMedicationHistorySectionOperations.validateAdmissionMedicationHistorySectionTemplateId(this, diagnostics, context);
+	public boolean validateAdmissionMedicationHistorySectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdmissionMedicationHistorySectionOperations.validateAdmissionMedicationHistorySectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +61,10 @@ public class AdmissionMedicationHistorySectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdmissionMedicationHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdmissionMedicationHistorySectionOperations.validateAdmissionMedicationHistorySectionCode(this, diagnostics, context);
+	public boolean validateAdmissionMedicationHistorySectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdmissionMedicationHistorySectionOperations.validateAdmissionMedicationHistorySectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +73,7 @@ public class AdmissionMedicationHistorySectionImpl extends SectionImpl implement
 	 * @generated
 	 */
 	public AdmissionMedicationHistorySection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AdmissionMedicationHistorySectionImpl
+} // AdmissionMedicationHistorySectionImpl

@@ -95,8 +95,9 @@ public class EncounterActivityImpl extends EncounterEntryImpl implements Encount
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterActivity init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //EncounterActivityImpl
+} // EncounterActivityImpl

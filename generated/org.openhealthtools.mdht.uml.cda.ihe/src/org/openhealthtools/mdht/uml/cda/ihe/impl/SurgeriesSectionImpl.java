@@ -59,8 +59,9 @@ public class SurgeriesSectionImpl extends ProceduresSectionImpl implements Surge
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SurgeriesSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SurgeriesSectionImpl
+} // SurgeriesSectionImpl

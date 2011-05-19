@@ -51,7 +51,8 @@ public class PatientContactParticipantImpl extends SupportParticipantImpl implem
 	 * @generated
 	 */
 	public boolean validatePatientContactParticipantTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientContactParticipantOperations.validatePatientContactParticipantTemplateId(this, diagnostics, context);
+		return PatientContactParticipantOperations.validatePatientContactParticipantTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +78,9 @@ public class PatientContactParticipantImpl extends SupportParticipantImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PatientContactParticipant init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PatientContactParticipantImpl
+} // PatientContactParticipantImpl

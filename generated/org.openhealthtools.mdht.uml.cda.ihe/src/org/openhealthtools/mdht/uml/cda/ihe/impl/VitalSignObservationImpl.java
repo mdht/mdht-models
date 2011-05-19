@@ -96,7 +96,8 @@ public class VitalSignObservationImpl extends ResultObservationImpl implements V
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignObservationInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignObservationOperations.validateVitalSignObservationInterpretationCode(this, diagnostics, context);
 	}
 
@@ -133,8 +134,9 @@ public class VitalSignObservationImpl extends ResultObservationImpl implements V
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VitalSignObservation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //VitalSignObservationImpl
+} // VitalSignObservationImpl

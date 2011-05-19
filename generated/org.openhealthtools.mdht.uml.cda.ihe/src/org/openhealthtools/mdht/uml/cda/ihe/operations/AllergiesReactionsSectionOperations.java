@@ -89,46 +89,30 @@ public class AllergiesReactionsSectionOperations extends AlertsSectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergiesReactionsSectionTemplateId(AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateAllergiesReactionsSectionTemplateId(
+			AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION);
 			try {
-				
-					VALIDATE_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesReactionsSection)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.ALLERGIES_REACTIONS_SECTION__ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID,
-						 IHEPlugin.INSTANCE.getString("AllergiesReactionsSectionTemplateId"),
-						 new Object [] { allergiesReactionsSection }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergiesReactionsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.ALLERGIES_REACTIONS_SECTION__ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID,
+					IHEPlugin.INSTANCE.getString("AllergiesReactionsSectionTemplateId"),
+					new Object[] { allergiesReactionsSection }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -162,46 +146,31 @@ public class AllergiesReactionsSectionOperations extends AlertsSectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergiesReactionsSectionAllergyIntoleranceConcern(AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateAllergiesReactionsSectionAllergyIntoleranceConcern(
+			AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_ALLERGIES_REACTIONS_SECTION_ALLERGY_INTOLERANCE_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION);
 			try {
-				
-					VALIDATE_ALLERGIES_REACTIONS_SECTION_ALLERGY_INTOLERANCE_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_REACTIONS_SECTION_ALLERGY_INTOLERANCE_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_ALLERGIES_REACTIONS_SECTION_ALLERGY_INTOLERANCE_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_REACTIONS_SECTION_ALLERGY_INTOLERANCE_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_REACTIONS_SECTION_ALLERGY_INTOLERANCE_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesReactionsSection)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.ALLERGIES_REACTIONS_SECTION__ALLERGIES_REACTIONS_SECTION_ALLERGY_INTOLERANCE_CONCERN,
-						 IHEPlugin.INSTANCE.getString("AllergiesReactionsSectionAllergyIntoleranceConcern"),
-						 new Object [] { allergiesReactionsSection }));
-				}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGIES_REACTIONS_SECTION_ALLERGY_INTOLERANCE_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergiesReactionsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.ALLERGIES_REACTIONS_SECTION__ALLERGIES_REACTIONS_SECTION_ALLERGY_INTOLERANCE_CONCERN,
+					IHEPlugin.INSTANCE.getString("AllergiesReactionsSectionAllergyIntoleranceConcern"),
+					new Object[] { allergiesReactionsSection }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -233,14 +202,16 @@ public class AllergiesReactionsSectionOperations extends AlertsSectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<AllergyIntoleranceConcern> getAllergyIntoleranceConcerns(AllergiesReactionsSection allergiesReactionsSection) {
+	public static EList<AllergyIntoleranceConcern> getAllergyIntoleranceConcerns(
+			AllergiesReactionsSection allergiesReactionsSection) {
 		if (GET_ALLERGY_INTOLERANCE_CONCERNS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION, IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(
+				IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION,
+				IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION.getEAllOperations().get(63));
 			try {
 				GET_ALLERGY_INTOLERANCE_CONCERNS__EOCL_QRY = helper.createQuery(GET_ALLERGY_INTOLERANCE_CONCERNS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

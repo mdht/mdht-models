@@ -65,6 +65,25 @@ public class ConcernEntryImpl extends ProblemActImpl implements ConcernEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConcernEntryHasRelatedObservations(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConcernEntryOperations.validateConcernEntryHasRelatedObservations(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConcernEntryRelatedObservationsTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConcernEntryOperations.validateConcernEntryRelatedObservationsTypeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateConcernEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConcernEntryOperations.validateConcernEntryTemplateId(this, diagnostics, context);
 	}
@@ -83,8 +102,9 @@ public class ConcernEntryImpl extends ProblemActImpl implements ConcernEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConcernEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ConcernEntryImpl
+} // ConcernEntryImpl

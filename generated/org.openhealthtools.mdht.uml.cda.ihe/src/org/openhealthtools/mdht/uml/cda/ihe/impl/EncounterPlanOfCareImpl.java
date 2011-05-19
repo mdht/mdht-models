@@ -50,8 +50,10 @@ public class EncounterPlanOfCareImpl extends EncounterEntryImpl implements Encou
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivityEncounterMoodCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCodeValue(this, diagnostics, context);
+	public boolean validatePlanOfCareActivityEncounterMoodCodeValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCodeValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,7 +61,8 @@ public class EncounterPlanOfCareImpl extends EncounterEntryImpl implements Encou
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivityEncounterTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlanOfCareActivityEncounterTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncounterPlanOfCareOperations.validatePlanOfCareActivityEncounterTemplateId(this, diagnostics, context);
 	}
 
@@ -78,7 +81,8 @@ public class EncounterPlanOfCareImpl extends EncounterEntryImpl implements Encou
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(this, diagnostics, context);
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +99,9 @@ public class EncounterPlanOfCareImpl extends EncounterEntryImpl implements Encou
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EncounterPlanOfCare init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //EncounterPlanOfCareImpl
+} // EncounterPlanOfCareImpl

@@ -61,8 +61,10 @@ public class CodedSurgeriesSectionImpl extends SurgeriesSectionImpl implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCodedSurgeriesSectionExternalReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CodedSurgeriesSectionOperations.validateCodedSurgeriesSectionExternalReference(this, diagnostics, context);
+	public boolean validateCodedSurgeriesSectionExternalReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CodedSurgeriesSectionOperations.validateCodedSurgeriesSectionExternalReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +72,10 @@ public class CodedSurgeriesSectionImpl extends SurgeriesSectionImpl implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CodedSurgeriesSectionOperations.validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(this, diagnostics, context);
+	public boolean validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CodedSurgeriesSectionOperations.validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +101,9 @@ public class CodedSurgeriesSectionImpl extends SurgeriesSectionImpl implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CodedSurgeriesSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CodedSurgeriesSectionImpl
+} // CodedSurgeriesSectionImpl

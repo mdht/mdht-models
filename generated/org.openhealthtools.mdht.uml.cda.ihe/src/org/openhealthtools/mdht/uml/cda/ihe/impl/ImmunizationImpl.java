@@ -50,6 +50,15 @@ public class ImmunizationImpl extends MedicationActivityImpl implements Immuniza
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationComments(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationOperations.validateImmunizationComments(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateImmunizationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationOperations.validateImmunizationTemplateId(this, diagnostics, context);
 	}
@@ -86,8 +95,18 @@ public class ImmunizationImpl extends MedicationActivityImpl implements Immuniza
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Immunization init() {
-    		CDAUtil.init(this);
-    		return this;
+	public boolean validateImmunizationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationOperations.validateImmunizationEffectiveTime(this, diagnostics, context);
 	}
-} //ImmunizationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Immunization init() {
+		CDAUtil.init(this);
+		return this;
+	}
+} // ImmunizationImpl

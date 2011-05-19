@@ -59,8 +59,9 @@ public class ObservationRequestEntryImpl extends PlanOfCareActivityObservationIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ObservationRequestEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ObservationRequestEntryImpl
+} // ObservationRequestEntryImpl

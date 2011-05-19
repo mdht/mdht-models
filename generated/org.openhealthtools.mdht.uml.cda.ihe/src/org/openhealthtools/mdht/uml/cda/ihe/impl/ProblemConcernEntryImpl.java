@@ -84,8 +84,9 @@ public class ProblemConcernEntryImpl extends ConcernEntryImpl implements Problem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemConcernEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProblemConcernEntryImpl
+} // ProblemConcernEntryImpl

@@ -82,46 +82,28 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.cc
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateIHEPayersSectionTemplateId(PayersSection payersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateIHEPayersSectionTemplateId(PayersSection payersSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_IHE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PAYERS_SECTION);
 			try {
-				
-					VALIDATE_IHE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_IHE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_IHE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payersSection)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.PAYERS_SECTION__IHE_PAYERS_SECTION_TEMPLATE_ID,
-						 IHEPlugin.INSTANCE.getString("IHEPayersSectionTemplateId"),
-						 new Object [] { payersSection }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_IHE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payersSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.PAYERS_SECTION__IHE_PAYERS_SECTION_TEMPLATE_ID,
+					IHEPlugin.INSTANCE.getString("IHEPayersSectionTemplateId"), new Object[] { payersSection }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -155,46 +137,28 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.cc
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateIHEPayersSectionCoverageEntry(PayersSection payersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateIHEPayersSectionCoverageEntry(PayersSection payersSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IHE_PAYERS_SECTION_COVERAGE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PAYERS_SECTION);
 			try {
-				
-					VALIDATE_IHE_PAYERS_SECTION_COVERAGE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_PAYERS_SECTION_COVERAGE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_IHE_PAYERS_SECTION_COVERAGE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_PAYERS_SECTION_COVERAGE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_IHE_PAYERS_SECTION_COVERAGE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payersSection)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.PAYERS_SECTION__IHE_PAYERS_SECTION_COVERAGE_ENTRY,
-						 IHEPlugin.INSTANCE.getString("IHEPayersSectionCoverageEntry"),
-						 new Object [] { payersSection }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_IHE_PAYERS_SECTION_COVERAGE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payersSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.PAYERS_SECTION__IHE_PAYERS_SECTION_COVERAGE_ENTRY,
+					IHEPlugin.INSTANCE.getString("IHEPayersSectionCoverageEntry"), new Object[] { payersSection }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -226,14 +190,14 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.cc
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<CoverageEntry> getCoverageEntries(PayersSection payersSection) {
+	public static EList<CoverageEntry> getCoverageEntries(PayersSection payersSection) {
 		if (GET_COVERAGE_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.PAYERS_SECTION, IHEPackage.Literals.PAYERS_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(
+				IHEPackage.Literals.PAYERS_SECTION, IHEPackage.Literals.PAYERS_SECTION.getEAllOperations().get(63));
 			try {
 				GET_COVERAGE_ENTRIES__EOCL_QRY = helper.createQuery(GET_COVERAGE_ENTRIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

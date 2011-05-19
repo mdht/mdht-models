@@ -49,7 +49,8 @@ public class SplitDoseImpl extends MedicationImpl implements SplitDose {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSplitDoseSplitDosingSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSplitDoseSplitDosingSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SplitDoseOperations.validateSplitDoseSplitDosingSubstanceAdministration(this, diagnostics, context);
 	}
 
@@ -67,8 +68,9 @@ public class SplitDoseImpl extends MedicationImpl implements SplitDose {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SplitDose init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SplitDoseImpl
+} // SplitDoseImpl

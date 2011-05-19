@@ -78,8 +78,10 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements AllergyI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyIntoleranceProblemEntryReactionObservationContainer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyIntoleranceOperations.validateAllergyIntoleranceProblemEntryReactionObservationContainer(this, diagnostics, context);
+	public boolean validateAllergyIntoleranceProblemEntryReactionObservationContainer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyIntoleranceOperations.validateAllergyIntoleranceProblemEntryReactionObservationContainer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +98,10 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements AllergyI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyIntoleranceProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyIntoleranceOperations.validateAllergyIntoleranceProblemStatusObservation(this, diagnostics, context);
+	public boolean validateAllergyIntoleranceProblemStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyIntoleranceOperations.validateAllergyIntoleranceProblemStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -160,8 +164,9 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements AllergyI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyIntolerance init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AllergyIntoleranceImpl
+} // AllergyIntoleranceImpl

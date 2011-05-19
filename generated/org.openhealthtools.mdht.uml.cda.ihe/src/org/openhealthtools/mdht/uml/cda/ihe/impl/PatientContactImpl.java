@@ -46,8 +46,9 @@ public abstract class PatientContactImpl extends SupportImpl implements PatientC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PatientContact init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PatientContactImpl
+} // PatientContactImpl

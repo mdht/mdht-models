@@ -58,8 +58,9 @@ public class PHRUpdateImpl extends MedicalSummaryImpl implements PHRUpdate {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PHRUpdate init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PHRUpdateImpl
+} // PHRUpdateImpl

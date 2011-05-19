@@ -59,7 +59,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.Support;
 import org.openhealthtools.mdht.uml.cda.ccd.SupportGuardian;
 import org.openhealthtools.mdht.uml.cda.ccd.SupportParticipant;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.ihe.*;
 import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectivesSection;
@@ -193,7 +192,7 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 			return true;
 		}
 		if (object instanceof EObject) {
-			return ((EObject)object).eClass().getEPackage() == modelPackage;
+			return ((EObject) object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
 	}
@@ -204,605 +203,754 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IHESwitch<Adapter> modelSwitch =
-		new IHESwitch<Adapter>() {
-			@Override
-			public Adapter caseImmunizationsSection(ImmunizationsSection object) {
-				return createImmunizationsSectionAdapter();
-			}
-			@Override
-			public Adapter caseImmunization(Immunization object) {
-				return createImmunizationAdapter();
-			}
-			@Override
-			public Adapter caseMedicationsAdministeredSection(MedicationsAdministeredSection object) {
-				return createMedicationsAdministeredSectionAdapter();
-			}
-			@Override
-			public Adapter caseConcernEntry(ConcernEntry object) {
-				return createConcernEntryAdapter();
-			}
-			@Override
-			public Adapter caseMedicalDocument(MedicalDocument object) {
-				return createMedicalDocumentAdapter();
-			}
-			@Override
-			public Adapter caseActiveProblemsSection(ActiveProblemsSection object) {
-				return createActiveProblemsSectionAdapter();
-			}
-			@Override
-			public Adapter caseProblemConcernEntry(ProblemConcernEntry object) {
-				return createProblemConcernEntryAdapter();
-			}
-			@Override
-			public Adapter caseProblemEntry(ProblemEntry object) {
-				return createProblemEntryAdapter();
-			}
-			@Override
-			public Adapter caseSeverity(Severity object) {
-				return createSeverityAdapter();
-			}
-			@Override
-			public Adapter caseProblemStatusObservation(ProblemStatusObservation object) {
-				return createProblemStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseHealthStatusObservation(HealthStatusObservation object) {
-				return createHealthStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseComment(Comment object) {
-				return createCommentAdapter();
-			}
-			@Override
-			public Adapter caseMedication(Medication object) {
-				return createMedicationAdapter();
-			}
-			@Override
-			public Adapter caseInternalReference(InternalReference object) {
-				return createInternalReferenceAdapter();
-			}
-			@Override
-			public Adapter casePatientMedicalInstructions(PatientMedicalInstructions object) {
-				return createPatientMedicalInstructionsAdapter();
-			}
-			@Override
-			public Adapter caseSupplyEntry(SupplyEntry object) {
-				return createSupplyEntryAdapter();
-			}
-			@Override
-			public Adapter caseMedicationFullfillmentInstructions(MedicationFullfillmentInstructions object) {
-				return createMedicationFullfillmentInstructionsAdapter();
-			}
-			@Override
-			public Adapter caseMedicationsSection(MedicationsSection object) {
-				return createMedicationsSectionAdapter();
-			}
-			@Override
-			public Adapter caseAllergyIntoleranceConcern(AllergyIntoleranceConcern object) {
-				return createAllergyIntoleranceConcernAdapter();
-			}
-			@Override
-			public Adapter caseAllergyIntolerance(AllergyIntolerance object) {
-				return createAllergyIntoleranceAdapter();
-			}
-			@Override
-			public Adapter caseProblemEntryReactionObservationContainer(ProblemEntryReactionObservationContainer object) {
-				return createProblemEntryReactionObservationContainerAdapter();
-			}
-			@Override
-			public Adapter caseAllergiesReactionsSection(AllergiesReactionsSection object) {
-				return createAllergiesReactionsSectionAdapter();
-			}
-			@Override
-			public Adapter caseNormalDose(NormalDose object) {
-				return createNormalDoseAdapter();
-			}
-			@Override
-			public Adapter caseTaperedDose(TaperedDose object) {
-				return createTaperedDoseAdapter();
-			}
-			@Override
-			public Adapter caseSplitDose(SplitDose object) {
-				return createSplitDoseAdapter();
-			}
-			@Override
-			public Adapter caseConditionalDose(ConditionalDose object) {
-				return createConditionalDoseAdapter();
-			}
-			@Override
-			public Adapter caseCombinationMedication(CombinationMedication object) {
-				return createCombinationMedicationAdapter();
-			}
-			@Override
-			public Adapter caseVitalSignsSection(VitalSignsSection object) {
-				return createVitalSignsSectionAdapter();
-			}
-			@Override
-			public Adapter caseCodedVitalSignsSection(CodedVitalSignsSection object) {
-				return createCodedVitalSignsSectionAdapter();
-			}
-			@Override
-			public Adapter caseVitalSignsOrganizer(VitalSignsOrganizer object) {
-				return createVitalSignsOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseVitalSignObservation(VitalSignObservation object) {
-				return createVitalSignObservationAdapter();
-			}
-			@Override
-			public Adapter caseSimpleObservation(SimpleObservation object) {
-				return createSimpleObservationAdapter();
-			}
-			@Override
-			public Adapter casePayersSection(PayersSection object) {
-				return createPayersSectionAdapter();
-			}
-			@Override
-			public Adapter caseCoverageEntry(CoverageEntry object) {
-				return createCoverageEntryAdapter();
-			}
-			@Override
-			public Adapter caseHistoryOfPastIllnessSection(HistoryOfPastIllnessSection object) {
-				return createHistoryOfPastIllnessSectionAdapter();
-			}
-			@Override
-			public Adapter caseChiefComplaintSection(ChiefComplaintSection object) {
-				return createChiefComplaintSectionAdapter();
-			}
-			@Override
-			public Adapter caseReasonForReferralSection(ReasonForReferralSection object) {
-				return createReasonForReferralSectionAdapter();
-			}
-			@Override
-			public Adapter caseHistoryOfPresentIllness(HistoryOfPresentIllness object) {
-				return createHistoryOfPresentIllnessAdapter();
-			}
-			@Override
-			public Adapter caseSurgeriesSection(SurgeriesSection object) {
-				return createSurgeriesSectionAdapter();
-			}
-			@Override
-			public Adapter caseCodedSurgeriesSection(CodedSurgeriesSection object) {
-				return createCodedSurgeriesSectionAdapter();
-			}
-			@Override
-			public Adapter caseExternalReference(ExternalReference object) {
-				return createExternalReferenceAdapter();
-			}
-			@Override
-			public Adapter caseProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure object) {
-				return createProcedureEntryProcedureActivityProcedureAdapter();
-			}
-			@Override
-			public Adapter caseProcedureEntry(ProcedureEntry object) {
-				return createProcedureEntryAdapter();
-			}
-			@Override
-			public Adapter caseHospitalAdmissionDiagnosisSection(HospitalAdmissionDiagnosisSection object) {
-				return createHospitalAdmissionDiagnosisSectionAdapter();
-			}
-			@Override
-			public Adapter caseDischargeDiagnosisSection(DischargeDiagnosisSection object) {
-				return createDischargeDiagnosisSectionAdapter();
-			}
-			@Override
-			public Adapter caseAdmissionMedicationHistorySection(AdmissionMedicationHistorySection object) {
-				return createAdmissionMedicationHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseHospitalDischargeMedicationsSection(HospitalDischargeMedicationsSection object) {
-				return createHospitalDischargeMedicationsSectionAdapter();
-			}
-			@Override
-			public Adapter caseCodedAdvanceDirectivesSection(CodedAdvanceDirectivesSection object) {
-				return createCodedAdvanceDirectivesSectionAdapter();
-			}
-			@Override
-			public Adapter caseAdvanceDirectivesSection(AdvanceDirectivesSection object) {
-				return createAdvanceDirectivesSectionAdapter();
-			}
-			@Override
-			public Adapter casePhysicalExamNarrativeSection(PhysicalExamNarrativeSection object) {
-				return createPhysicalExamNarrativeSectionAdapter();
-			}
-			@Override
-			public Adapter casePhysicalExamSection(PhysicalExamSection object) {
-				return createPhysicalExamSectionAdapter();
-			}
-			@Override
-			public Adapter caseReviewOfSystemsSection(ReviewOfSystemsSection object) {
-				return createReviewOfSystemsSectionAdapter();
-			}
-			@Override
-			public Adapter caseHospitalCourseSection(HospitalCourseSection object) {
-				return createHospitalCourseSectionAdapter();
-			}
-			@Override
-			public Adapter caseCodedResultsSection(CodedResultsSection object) {
-				return createCodedResultsSectionAdapter();
-			}
-			@Override
-			public Adapter caseAssessmentAndPlanSection(AssessmentAndPlanSection object) {
-				return createAssessmentAndPlanSectionAdapter();
-			}
-			@Override
-			public Adapter caseCarePlanSection(CarePlanSection object) {
-				return createCarePlanSectionAdapter();
-			}
-			@Override
-			public Adapter caseFamilyMedicalHistorySection(FamilyMedicalHistorySection object) {
-				return createFamilyMedicalHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseSocialHistorySection(SocialHistorySection object) {
-				return createSocialHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseEncounterHistorySection(EncounterHistorySection object) {
-				return createEncounterHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseEncounterEntry(EncounterEntry object) {
-				return createEncounterEntryAdapter();
-			}
-			@Override
-			public Adapter caseMedicalDevicesSection(MedicalDevicesSection object) {
-				return createMedicalDevicesSectionAdapter();
-			}
-			@Override
-			public Adapter caseLanguageCommunication(LanguageCommunication object) {
-				return createLanguageCommunicationAdapter();
-			}
-			@Override
-			public Adapter caseMedicalSummary(MedicalSummary object) {
-				return createMedicalSummaryAdapter();
-			}
-			@Override
-			public Adapter caseDischargeSummary(DischargeSummary object) {
-				return createDischargeSummaryAdapter();
-			}
-			@Override
-			public Adapter caseHealthcareProvidersPharmacies(HealthcareProvidersPharmacies object) {
-				return createHealthcareProvidersPharmaciesAdapter();
-			}
-			@Override
-			public Adapter caseObservationRequestEntry(ObservationRequestEntry object) {
-				return createObservationRequestEntryAdapter();
-			}
-			@Override
-			public Adapter caseProductEntry(ProductEntry object) {
-				return createProductEntryAdapter();
-			}
-			@Override
-			public Adapter caseProcedureEntryPlanOfCareActivityProcedure(ProcedureEntryPlanOfCareActivityProcedure object) {
-				return createProcedureEntryPlanOfCareActivityProcedureAdapter();
-			}
-			@Override
-			public Adapter casePayerEntry(PayerEntry object) {
-				return createPayerEntryAdapter();
-			}
-			@Override
-			public Adapter casePHRExtract(PHRExtract object) {
-				return createPHRExtractAdapter();
-			}
-			@Override
-			public Adapter casePHRUpdate(PHRUpdate object) {
-				return createPHRUpdateAdapter();
-			}
-			@Override
-			public Adapter caseEncounterActivity(EncounterActivity object) {
-				return createEncounterActivityAdapter();
-			}
-			@Override
-			public Adapter caseEncounterPlanOfCare(EncounterPlanOfCare object) {
-				return createEncounterPlanOfCareAdapter();
-			}
-			@Override
-			public Adapter caseIntakeOutputSection(IntakeOutputSection object) {
-				return createIntakeOutputSectionAdapter();
-			}
-			@Override
-			public Adapter casePregnancyHistorySection(PregnancyHistorySection object) {
-				return createPregnancyHistorySectionAdapter();
-			}
-			@Override
-			public Adapter casePregnancyObservation(PregnancyObservation object) {
-				return createPregnancyObservationAdapter();
-			}
-			@Override
-			public Adapter casePatientContact(PatientContact object) {
-				return createPatientContactAdapter();
-			}
-			@Override
-			public Adapter casePatientContactGuardian(PatientContactGuardian object) {
-				return createPatientContactGuardianAdapter();
-			}
-			@Override
-			public Adapter casePatientContactParticipant(PatientContactParticipant object) {
-				return createPatientContactParticipantAdapter();
-			}
-			@Override
-			public Adapter caseScannedDocument(ScannedDocument object) {
-				return createScannedDocumentAdapter();
-			}
-			@Override
-			public Adapter caseScanOriginalAuthor(ScanOriginalAuthor object) {
-				return createScanOriginalAuthorAdapter();
-			}
-			@Override
-			public Adapter caseScanningDevice(ScanningDevice object) {
-				return createScanningDeviceAdapter();
-			}
-			@Override
-			public Adapter caseScanDataEnterer(ScanDataEnterer object) {
-				return createScanDataEntererAdapter();
-			}
-			@Override
-			public Adapter caseIHERegistryDelegate(IHERegistryDelegate object) {
-				return createIHERegistryDelegateAdapter();
-			}
-			@Override
-			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
-				return createInfrastructureRootAdapter();
-			}
-			@Override
-			public Adapter caseAct(Act object) {
-				return createActAdapter();
-			}
-			@Override
-			public Adapter caseSection(Section object) {
-				return createSectionAdapter();
-			}
-			@Override
-			public Adapter caseCCD_ImmunizationsSection(org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection object) {
-				return createCCD_ImmunizationsSectionAdapter();
-			}
-			@Override
-			public Adapter caseClinicalStatement(ClinicalStatement object) {
-				return createClinicalStatementAdapter();
-			}
-			@Override
-			public Adapter caseSubstanceAdministration(SubstanceAdministration object) {
-				return createSubstanceAdministrationAdapter();
-			}
-			@Override
-			public Adapter caseMedicationActivity(MedicationActivity object) {
-				return createMedicationActivityAdapter();
-			}
-			@Override
-			public Adapter caseCDA_Act(org.openhealthtools.mdht.uml.cda.Act object) {
-				return createCDA_ActAdapter();
-			}
-			@Override
-			public Adapter caseProblemAct(ProblemAct object) {
-				return createProblemActAdapter();
-			}
-			@Override
-			public Adapter caseClinicalDocument(ClinicalDocument object) {
-				return createClinicalDocumentAdapter();
-			}
-			@Override
-			public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
-				return createGeneralHeaderConstraintsAdapter();
-			}
-			@Override
-			public Adapter caseProblemSection(ProblemSection object) {
-				return createProblemSectionAdapter();
-			}
-			@Override
-			public Adapter caseObservation(Observation object) {
-				return createObservationAdapter();
-			}
-			@Override
-			public Adapter caseProblemObservation(ProblemObservation object) {
-				return createProblemObservationAdapter();
-			}
-			@Override
-			public Adapter caseSeverityObservation(SeverityObservation object) {
-				return createSeverityObservationAdapter();
-			}
-			@Override
-			public Adapter caseStatusObservation(StatusObservation object) {
-				return createStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseCCD_ProblemStatusObservation(org.openhealthtools.mdht.uml.cda.ccd.ProblemStatusObservation object) {
-				return createCCD_ProblemStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseProblemHealthStatusObservation(ProblemHealthStatusObservation object) {
-				return createProblemHealthStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseCCD_Comment(org.openhealthtools.mdht.uml.cda.ccd.Comment object) {
-				return createCCD_CommentAdapter();
-			}
-			@Override
-			public Adapter casePatientInstruction(PatientInstruction object) {
-				return createPatientInstructionAdapter();
-			}
-			@Override
-			public Adapter caseSupply(Supply object) {
-				return createSupplyAdapter();
-			}
-			@Override
-			public Adapter caseSupplyActivity(SupplyActivity object) {
-				return createSupplyActivityAdapter();
-			}
-			@Override
-			public Adapter caseFulfillmentInstruction(FulfillmentInstruction object) {
-				return createFulfillmentInstructionAdapter();
-			}
-			@Override
-			public Adapter caseCCD_MedicationsSection(org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection object) {
-				return createCCD_MedicationsSectionAdapter();
-			}
-			@Override
-			public Adapter caseReactionObservation(ReactionObservation object) {
-				return createReactionObservationAdapter();
-			}
-			@Override
-			public Adapter caseAlertsSection(AlertsSection object) {
-				return createAlertsSectionAdapter();
-			}
-			@Override
-			public Adapter caseCCD_VitalSignsSection(org.openhealthtools.mdht.uml.cda.ccd.VitalSignsSection object) {
-				return createCCD_VitalSignsSectionAdapter();
-			}
-			@Override
-			public Adapter caseOrganizer(Organizer object) {
-				return createOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseResultOrganizer(ResultOrganizer object) {
-				return createResultOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseCCD_VitalSignsOrganizer(org.openhealthtools.mdht.uml.cda.ccd.VitalSignsOrganizer object) {
-				return createCCD_VitalSignsOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseResultObservation(ResultObservation object) {
-				return createResultObservationAdapter();
-			}
-			@Override
-			public Adapter caseCCD_PayersSection(org.openhealthtools.mdht.uml.cda.ccd.PayersSection object) {
-				return createCCD_PayersSectionAdapter();
-			}
-			@Override
-			public Adapter caseCoverageActivity(CoverageActivity object) {
-				return createCoverageActivityAdapter();
-			}
-			@Override
-			public Adapter caseProceduresSection(ProceduresSection object) {
-				return createProceduresSectionAdapter();
-			}
-			@Override
-			public Adapter caseProcedure(Procedure object) {
-				return createProcedureAdapter();
-			}
-			@Override
-			public Adapter caseProcedureActivity(ProcedureActivity object) {
-				return createProcedureActivityAdapter();
-			}
-			@Override
-			public Adapter caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
-				return createProcedureActivityProcedureAdapter();
-			}
-			@Override
-			public Adapter caseCCD_AdvanceDirectivesSection(org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectivesSection object) {
-				return createCCD_AdvanceDirectivesSectionAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareSection(PlanOfCareSection object) {
-				return createPlanOfCareSectionAdapter();
-			}
-			@Override
-			public Adapter caseFamilyHistorySection(FamilyHistorySection object) {
-				return createFamilyHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseCCD_SocialHistorySection(org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection object) {
-				return createCCD_SocialHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseEncountersSection(EncountersSection object) {
-				return createEncountersSectionAdapter();
-			}
-			@Override
-			public Adapter caseEncounter(Encounter object) {
-				return createEncounterAdapter();
-			}
-			@Override
-			public Adapter caseMedicalEquipmentSection(MedicalEquipmentSection object) {
-				return createMedicalEquipmentSectionAdapter();
-			}
-			@Override
-			public Adapter caseCDA_LanguageCommunication(org.openhealthtools.mdht.uml.cda.LanguageCommunication object) {
-				return createCDA_LanguageCommunicationAdapter();
-			}
-			@Override
-			public Adapter caseParticipation(Participation object) {
-				return createParticipationAdapter();
-			}
-			@Override
-			public Adapter casePerformer1(Performer1 object) {
-				return createPerformer1Adapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivity(PlanOfCareActivity object) {
-				return createPlanOfCareActivityAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivityObservation(PlanOfCareActivityObservation object) {
-				return createPlanOfCareActivityObservationAdapter();
-			}
-			@Override
-			public Adapter caseRole(Role object) {
-				return createRoleAdapter();
-			}
-			@Override
-			public Adapter caseManufacturedProduct(ManufacturedProduct object) {
-				return createManufacturedProductAdapter();
-			}
-			@Override
-			public Adapter caseProduct(Product object) {
-				return createProductAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivityProcedure(PlanOfCareActivityProcedure object) {
-				return createPlanOfCareActivityProcedureAdapter();
-			}
-			@Override
-			public Adapter casePolicyActivity(PolicyActivity object) {
-				return createPolicyActivityAdapter();
-			}
-			@Override
-			public Adapter caseEncountersActivity(EncountersActivity object) {
-				return createEncountersActivityAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivityEncounter(PlanOfCareActivityEncounter object) {
-				return createPlanOfCareActivityEncounterAdapter();
-			}
-			@Override
-			public Adapter caseSupport(Support object) {
-				return createSupportAdapter();
-			}
-			@Override
-			public Adapter caseGuardian(Guardian object) {
-				return createGuardianAdapter();
-			}
-			@Override
-			public Adapter caseSupportGuardian(SupportGuardian object) {
-				return createSupportGuardianAdapter();
-			}
-			@Override
-			public Adapter caseParticipant1(Participant1 object) {
-				return createParticipant1Adapter();
-			}
-			@Override
-			public Adapter caseSupportParticipant(SupportParticipant object) {
-				return createSupportParticipantAdapter();
-			}
-			@Override
-			public Adapter caseAuthor(Author object) {
-				return createAuthorAdapter();
-			}
-			@Override
-			public Adapter caseDataEnterer(DataEnterer object) {
-				return createDataEntererAdapter();
-			}
-			@Override
-			public Adapter caseRegistryDelegate(RegistryDelegate object) {
-				return createRegistryDelegateAdapter();
-			}
-			@Override
-			public Adapter defaultCase(EObject object) {
-				return createEObjectAdapter();
-			}
-		};
+	protected IHESwitch<Adapter> modelSwitch = new IHESwitch<Adapter>() {
+		@Override
+		public Adapter caseImmunizationsSection(ImmunizationsSection object) {
+			return createImmunizationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseImmunization(Immunization object) {
+			return createImmunizationAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationsAdministeredSection(MedicationsAdministeredSection object) {
+			return createMedicationsAdministeredSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseConcernEntry(ConcernEntry object) {
+			return createConcernEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicalDocument(MedicalDocument object) {
+			return createMedicalDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseActiveProblemsSection(ActiveProblemsSection object) {
+			return createActiveProblemsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemConcernEntry(ProblemConcernEntry object) {
+			return createProblemConcernEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemEntry(ProblemEntry object) {
+			return createProblemEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseSeverity(Severity object) {
+			return createSeverityAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemStatusObservation(ProblemStatusObservation object) {
+			return createProblemStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseHealthStatusObservation(HealthStatusObservation object) {
+			return createHealthStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseComment(Comment object) {
+			return createCommentAdapter();
+		}
+
+		@Override
+		public Adapter caseMedication(Medication object) {
+			return createMedicationAdapter();
+		}
+
+		@Override
+		public Adapter caseInternalReference(InternalReference object) {
+			return createInternalReferenceAdapter();
+		}
+
+		@Override
+		public Adapter casePatientMedicalInstructions(PatientMedicalInstructions object) {
+			return createPatientMedicalInstructionsAdapter();
+		}
+
+		@Override
+		public Adapter caseSupplyEntry(SupplyEntry object) {
+			return createSupplyEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationFullfillmentInstructions(MedicationFullfillmentInstructions object) {
+			return createMedicationFullfillmentInstructionsAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationsSection(MedicationsSection object) {
+			return createMedicationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseAllergyIntoleranceConcern(AllergyIntoleranceConcern object) {
+			return createAllergyIntoleranceConcernAdapter();
+		}
+
+		@Override
+		public Adapter caseAllergyIntolerance(AllergyIntolerance object) {
+			return createAllergyIntoleranceAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemEntryReactionObservationContainer(ProblemEntryReactionObservationContainer object) {
+			return createProblemEntryReactionObservationContainerAdapter();
+		}
+
+		@Override
+		public Adapter caseAllergiesReactionsSection(AllergiesReactionsSection object) {
+			return createAllergiesReactionsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseNormalDose(NormalDose object) {
+			return createNormalDoseAdapter();
+		}
+
+		@Override
+		public Adapter caseTaperedDose(TaperedDose object) {
+			return createTaperedDoseAdapter();
+		}
+
+		@Override
+		public Adapter caseSplitDose(SplitDose object) {
+			return createSplitDoseAdapter();
+		}
+
+		@Override
+		public Adapter caseConditionalDose(ConditionalDose object) {
+			return createConditionalDoseAdapter();
+		}
+
+		@Override
+		public Adapter caseCombinationMedication(CombinationMedication object) {
+			return createCombinationMedicationAdapter();
+		}
+
+		@Override
+		public Adapter caseVitalSignsSection(VitalSignsSection object) {
+			return createVitalSignsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCodedVitalSignsSection(CodedVitalSignsSection object) {
+			return createCodedVitalSignsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseVitalSignsOrganizer(VitalSignsOrganizer object) {
+			return createVitalSignsOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseVitalSignObservation(VitalSignObservation object) {
+			return createVitalSignObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSimpleObservation(SimpleObservation object) {
+			return createSimpleObservationAdapter();
+		}
+
+		@Override
+		public Adapter casePayersSection(PayersSection object) {
+			return createPayersSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCoverageEntry(CoverageEntry object) {
+			return createCoverageEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseHistoryOfPastIllnessSection(HistoryOfPastIllnessSection object) {
+			return createHistoryOfPastIllnessSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseChiefComplaintSection(ChiefComplaintSection object) {
+			return createChiefComplaintSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseReasonForReferralSection(ReasonForReferralSection object) {
+			return createReasonForReferralSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHistoryOfPresentIllness(HistoryOfPresentIllness object) {
+			return createHistoryOfPresentIllnessAdapter();
+		}
+
+		@Override
+		public Adapter caseSurgeriesSection(SurgeriesSection object) {
+			return createSurgeriesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCodedSurgeriesSection(CodedSurgeriesSection object) {
+			return createCodedSurgeriesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseExternalReference(ExternalReference object) {
+			return createExternalReferenceAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure object) {
+			return createProcedureEntryProcedureActivityProcedureAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureEntry(ProcedureEntry object) {
+			return createProcedureEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseHospitalAdmissionDiagnosisSection(HospitalAdmissionDiagnosisSection object) {
+			return createHospitalAdmissionDiagnosisSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseDischargeDiagnosisSection(DischargeDiagnosisSection object) {
+			return createDischargeDiagnosisSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseAdmissionMedicationHistorySection(AdmissionMedicationHistorySection object) {
+			return createAdmissionMedicationHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHospitalDischargeMedicationsSection(HospitalDischargeMedicationsSection object) {
+			return createHospitalDischargeMedicationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCodedAdvanceDirectivesSection(CodedAdvanceDirectivesSection object) {
+			return createCodedAdvanceDirectivesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseAdvanceDirectivesSection(AdvanceDirectivesSection object) {
+			return createAdvanceDirectivesSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePhysicalExamNarrativeSection(PhysicalExamNarrativeSection object) {
+			return createPhysicalExamNarrativeSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePhysicalExamSection(PhysicalExamSection object) {
+			return createPhysicalExamSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseReviewOfSystemsSection(ReviewOfSystemsSection object) {
+			return createReviewOfSystemsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHospitalCourseSection(HospitalCourseSection object) {
+			return createHospitalCourseSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCodedResultsSection(CodedResultsSection object) {
+			return createCodedResultsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseAssessmentAndPlanSection(AssessmentAndPlanSection object) {
+			return createAssessmentAndPlanSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCarePlanSection(CarePlanSection object) {
+			return createCarePlanSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyMedicalHistorySection(FamilyMedicalHistorySection object) {
+			return createFamilyMedicalHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseSocialHistorySection(SocialHistorySection object) {
+			return createSocialHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEncounterHistorySection(EncounterHistorySection object) {
+			return createEncounterHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEncounterEntry(EncounterEntry object) {
+			return createEncounterEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicalDevicesSection(MedicalDevicesSection object) {
+			return createMedicalDevicesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseLanguageCommunication(LanguageCommunication object) {
+			return createLanguageCommunicationAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicalSummary(MedicalSummary object) {
+			return createMedicalSummaryAdapter();
+		}
+
+		@Override
+		public Adapter caseDischargeSummary(DischargeSummary object) {
+			return createDischargeSummaryAdapter();
+		}
+
+		@Override
+		public Adapter caseHealthcareProvidersPharmacies(HealthcareProvidersPharmacies object) {
+			return createHealthcareProvidersPharmaciesAdapter();
+		}
+
+		@Override
+		public Adapter caseObservationRequestEntry(ObservationRequestEntry object) {
+			return createObservationRequestEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseProductEntry(ProductEntry object) {
+			return createProductEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureEntryPlanOfCareActivityProcedure(ProcedureEntryPlanOfCareActivityProcedure object) {
+			return createProcedureEntryPlanOfCareActivityProcedureAdapter();
+		}
+
+		@Override
+		public Adapter casePayerEntry(PayerEntry object) {
+			return createPayerEntryAdapter();
+		}
+
+		@Override
+		public Adapter casePHRExtract(PHRExtract object) {
+			return createPHRExtractAdapter();
+		}
+
+		@Override
+		public Adapter casePHRUpdate(PHRUpdate object) {
+			return createPHRUpdateAdapter();
+		}
+
+		@Override
+		public Adapter caseEncounterActivity(EncounterActivity object) {
+			return createEncounterActivityAdapter();
+		}
+
+		@Override
+		public Adapter caseEncounterPlanOfCare(EncounterPlanOfCare object) {
+			return createEncounterPlanOfCareAdapter();
+		}
+
+		@Override
+		public Adapter caseIntakeOutputSection(IntakeOutputSection object) {
+			return createIntakeOutputSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePregnancyHistorySection(PregnancyHistorySection object) {
+			return createPregnancyHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter casePregnancyObservation(PregnancyObservation object) {
+			return createPregnancyObservationAdapter();
+		}
+
+		@Override
+		public Adapter casePatientContact(PatientContact object) {
+			return createPatientContactAdapter();
+		}
+
+		@Override
+		public Adapter casePatientContactGuardian(PatientContactGuardian object) {
+			return createPatientContactGuardianAdapter();
+		}
+
+		@Override
+		public Adapter casePatientContactParticipant(PatientContactParticipant object) {
+			return createPatientContactParticipantAdapter();
+		}
+
+		@Override
+		public Adapter caseScannedDocument(ScannedDocument object) {
+			return createScannedDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseScanOriginalAuthor(ScanOriginalAuthor object) {
+			return createScanOriginalAuthorAdapter();
+		}
+
+		@Override
+		public Adapter caseScanningDevice(ScanningDevice object) {
+			return createScanningDeviceAdapter();
+		}
+
+		@Override
+		public Adapter caseScanDataEnterer(ScanDataEnterer object) {
+			return createScanDataEntererAdapter();
+		}
+
+		@Override
+		public Adapter caseIHERegistryDelegate(IHERegistryDelegate object) {
+			return createIHERegistryDelegateAdapter();
+		}
+
+		@Override
+		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
+			return createInfrastructureRootAdapter();
+		}
+
+		@Override
+		public Adapter caseAct(Act object) {
+			return createActAdapter();
+		}
+
+		@Override
+		public Adapter caseSection(Section object) {
+			return createSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_ImmunizationsSection(org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection object) {
+			return createCCD_ImmunizationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseClinicalStatement(ClinicalStatement object) {
+			return createClinicalStatementAdapter();
+		}
+
+		@Override
+		public Adapter caseSubstanceAdministration(SubstanceAdministration object) {
+			return createSubstanceAdministrationAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationActivity(MedicationActivity object) {
+			return createMedicationActivityAdapter();
+		}
+
+		@Override
+		public Adapter caseCDA_Act(org.openhealthtools.mdht.uml.cda.Act object) {
+			return createCDA_ActAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemAct(ProblemAct object) {
+			return createProblemActAdapter();
+		}
+
+		@Override
+		public Adapter caseClinicalDocument(ClinicalDocument object) {
+			return createClinicalDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
+			return createGeneralHeaderConstraintsAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemSection(ProblemSection object) {
+			return createProblemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseObservation(Observation object) {
+			return createObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemObservation(ProblemObservation object) {
+			return createProblemObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSeverityObservation(SeverityObservation object) {
+			return createSeverityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseStatusObservation(StatusObservation object) {
+			return createStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_ProblemStatusObservation(
+				org.openhealthtools.mdht.uml.cda.ccd.ProblemStatusObservation object) {
+			return createCCD_ProblemStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemHealthStatusObservation(ProblemHealthStatusObservation object) {
+			return createProblemHealthStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_Comment(org.openhealthtools.mdht.uml.cda.ccd.Comment object) {
+			return createCCD_CommentAdapter();
+		}
+
+		@Override
+		public Adapter casePatientInstruction(PatientInstruction object) {
+			return createPatientInstructionAdapter();
+		}
+
+		@Override
+		public Adapter caseSupply(Supply object) {
+			return createSupplyAdapter();
+		}
+
+		@Override
+		public Adapter caseSupplyActivity(SupplyActivity object) {
+			return createSupplyActivityAdapter();
+		}
+
+		@Override
+		public Adapter caseFulfillmentInstruction(FulfillmentInstruction object) {
+			return createFulfillmentInstructionAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_MedicationsSection(org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection object) {
+			return createCCD_MedicationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseReactionObservation(ReactionObservation object) {
+			return createReactionObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseAlertsSection(AlertsSection object) {
+			return createAlertsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_VitalSignsSection(org.openhealthtools.mdht.uml.cda.ccd.VitalSignsSection object) {
+			return createCCD_VitalSignsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseOrganizer(Organizer object) {
+			return createOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseResultOrganizer(ResultOrganizer object) {
+			return createResultOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_VitalSignsOrganizer(org.openhealthtools.mdht.uml.cda.ccd.VitalSignsOrganizer object) {
+			return createCCD_VitalSignsOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseResultObservation(ResultObservation object) {
+			return createResultObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_PayersSection(org.openhealthtools.mdht.uml.cda.ccd.PayersSection object) {
+			return createCCD_PayersSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCoverageActivity(CoverageActivity object) {
+			return createCoverageActivityAdapter();
+		}
+
+		@Override
+		public Adapter caseProceduresSection(ProceduresSection object) {
+			return createProceduresSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedure(Procedure object) {
+			return createProcedureAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureActivity(ProcedureActivity object) {
+			return createProcedureActivityAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
+			return createProcedureActivityProcedureAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_AdvanceDirectivesSection(
+				org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectivesSection object) {
+			return createCCD_AdvanceDirectivesSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareSection(PlanOfCareSection object) {
+			return createPlanOfCareSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistorySection(FamilyHistorySection object) {
+			return createFamilyHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_SocialHistorySection(org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection object) {
+			return createCCD_SocialHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEncountersSection(EncountersSection object) {
+			return createEncountersSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEncounter(Encounter object) {
+			return createEncounterAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicalEquipmentSection(MedicalEquipmentSection object) {
+			return createMedicalEquipmentSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCDA_LanguageCommunication(org.openhealthtools.mdht.uml.cda.LanguageCommunication object) {
+			return createCDA_LanguageCommunicationAdapter();
+		}
+
+		@Override
+		public Adapter caseParticipation(Participation object) {
+			return createParticipationAdapter();
+		}
+
+		@Override
+		public Adapter casePerformer1(Performer1 object) {
+			return createPerformer1Adapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivity(PlanOfCareActivity object) {
+			return createPlanOfCareActivityAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivityObservation(PlanOfCareActivityObservation object) {
+			return createPlanOfCareActivityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseRole(Role object) {
+			return createRoleAdapter();
+		}
+
+		@Override
+		public Adapter caseManufacturedProduct(ManufacturedProduct object) {
+			return createManufacturedProductAdapter();
+		}
+
+		@Override
+		public Adapter caseProduct(Product object) {
+			return createProductAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivityProcedure(PlanOfCareActivityProcedure object) {
+			return createPlanOfCareActivityProcedureAdapter();
+		}
+
+		@Override
+		public Adapter casePolicyActivity(PolicyActivity object) {
+			return createPolicyActivityAdapter();
+		}
+
+		@Override
+		public Adapter caseEncountersActivity(EncountersActivity object) {
+			return createEncountersActivityAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivityEncounter(PlanOfCareActivityEncounter object) {
+			return createPlanOfCareActivityEncounterAdapter();
+		}
+
+		@Override
+		public Adapter caseSupport(Support object) {
+			return createSupportAdapter();
+		}
+
+		@Override
+		public Adapter caseGuardian(Guardian object) {
+			return createGuardianAdapter();
+		}
+
+		@Override
+		public Adapter caseSupportGuardian(SupportGuardian object) {
+			return createSupportGuardianAdapter();
+		}
+
+		@Override
+		public Adapter caseParticipant1(Participant1 object) {
+			return createParticipant1Adapter();
+		}
+
+		@Override
+		public Adapter caseSupportParticipant(SupportParticipant object) {
+			return createSupportParticipantAdapter();
+		}
+
+		@Override
+		public Adapter caseAuthor(Author object) {
+			return createAuthorAdapter();
+		}
+
+		@Override
+		public Adapter caseDataEnterer(DataEnterer object) {
+			return createDataEntererAdapter();
+		}
+
+		@Override
+		public Adapter caseRegistryDelegate(RegistryDelegate object) {
+			return createRegistryDelegateAdapter();
+		}
+
+		@Override
+		public Adapter defaultCase(EObject object) {
+			return createEObjectAdapter();
+		}
+	};
 
 	/**
 	 * Creates an adapter for the <code>target</code>.
@@ -814,9 +962,8 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 	 */
 	@Override
 	public Adapter createAdapter(Notifier target) {
-		return modelSwitch.doSwitch((EObject)target);
+		return modelSwitch.doSwitch((EObject) target);
 	}
-
 
 	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.ImmunizationsSection <em>Immunizations Section</em>}'.
@@ -2902,4 +3049,4 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //IHEAdapterFactory
+} // IHEAdapterFactory

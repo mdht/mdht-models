@@ -39,7 +39,8 @@ public interface HospitalDischargeMedicationsSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.3.22\')'"
 	 * @generated
 	 */
-	boolean validateHospitalDischargeMedicationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHospitalDischargeMedicationsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

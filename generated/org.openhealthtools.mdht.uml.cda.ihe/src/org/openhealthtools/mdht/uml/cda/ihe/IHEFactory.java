@@ -760,4 +760,4 @@ public interface IHEFactory extends EFactory {
 	 */
 	IHEPackage getIHEPackage();
 
-} //IHEFactory
+} // IHEFactory

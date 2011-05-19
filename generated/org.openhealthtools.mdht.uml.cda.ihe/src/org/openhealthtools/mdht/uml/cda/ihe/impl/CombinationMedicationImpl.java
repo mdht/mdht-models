@@ -49,8 +49,10 @@ public class CombinationMedicationImpl extends MedicationImpl implements Combina
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCombinationMedicationSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CombinationMedicationOperations.validateCombinationMedicationSubstanceAdministration(this, diagnostics, context);
+	public boolean validateCombinationMedicationSubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CombinationMedicationOperations.validateCombinationMedicationSubstanceAdministration(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +69,9 @@ public class CombinationMedicationImpl extends MedicationImpl implements Combina
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CombinationMedication init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CombinationMedicationImpl
+} // CombinationMedicationImpl

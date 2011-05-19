@@ -47,7 +47,8 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  *
  * @generated
  */
-public class MedicationsSectionOperations extends org.openhealthtools.mdht.uml.cda.ccd.operations.MedicationsSectionOperations {
+public class MedicationsSectionOperations extends
+		org.openhealthtools.mdht.uml.cda.ccd.operations.MedicationsSectionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -88,46 +89,29 @@ public class MedicationsSectionOperations extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateIHEMedicationsSectionTemplateId(MedicationsSection medicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateIHEMedicationsSectionTemplateId(MedicationsSection medicationsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IHE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATIONS_SECTION);
 			try {
-				
-					VALIDATE_IHE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_IHE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_IHE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsSection)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.MEDICATIONS_SECTION__IHE_MEDICATIONS_SECTION_TEMPLATE_ID,
-						 IHEPlugin.INSTANCE.getString("IHEMedicationsSectionTemplateId"),
-						 new Object [] { medicationsSection }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_IHE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.MEDICATIONS_SECTION__IHE_MEDICATIONS_SECTION_TEMPLATE_ID,
+					IHEPlugin.INSTANCE.getString("IHEMedicationsSectionTemplateId"),
+					new Object[] { medicationsSection }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -161,46 +145,29 @@ public class MedicationsSectionOperations extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateIHEMedicationsSectionMedication(MedicationsSection medicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  		
-       
-      	
+	public static boolean validateIHEMedicationsSectionMedication(MedicationsSection medicationsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IHE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATIONS_SECTION);
 			try {
-				
-					VALIDATE_IHE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);				
-				
-			}
-			catch (ParserException pe) {
+				VALIDATE_IHE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IHE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-
-		
-			if (!EOCL_ENV.createQuery(VALIDATE_IHE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsSection)) {
-				if (diagnostics != null) {
-					
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 IHEValidator.DIAGNOSTIC_SOURCE,
-						 IHEValidator.MEDICATIONS_SECTION__IHE_MEDICATIONS_SECTION_MEDICATION,
-						 IHEPlugin.INSTANCE.getString("IHEMedicationsSectionMedication"),
-						 new Object [] { medicationsSection }));
-				}
+		if (!EOCL_ENV.createQuery(VALIDATE_IHE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.MEDICATIONS_SECTION__IHE_MEDICATIONS_SECTION_MEDICATION,
+					IHEPlugin.INSTANCE.getString("IHEMedicationsSectionMedication"),
+					new Object[] { medicationsSection }));
+			}
 			return false;
-		}		
-				
-		
-		
-		
-		
-      	
-		
+		}
 		return true;
-		
 	}
 
 	/**
@@ -232,14 +199,15 @@ public class MedicationsSectionOperations extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<Medication> getMedications(MedicationsSection medicationsSection) {
+	public static EList<Medication> getMedications(MedicationsSection medicationsSection) {
 		if (GET_MEDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IHEPackage.Literals.MEDICATIONS_SECTION, IHEPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(
+				IHEPackage.Literals.MEDICATIONS_SECTION,
+				IHEPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(64));
 			try {
 				GET_MEDICATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

@@ -69,7 +69,7 @@ public class HistoryOfPresentIllnessImpl extends SectionImpl implements HistoryO
 	 * @generated
 	 */
 	public HistoryOfPresentIllness init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HistoryOfPresentIllnessImpl
+} // HistoryOfPresentIllnessImpl

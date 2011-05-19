@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class PayersSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.PayersSectionImpl implements PayersSection {
+public class PayersSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.PayersSectionImpl implements
+		PayersSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -78,8 +79,9 @@ public class PayersSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PayersSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PayersSectionImpl
+} // PayersSectionImpl

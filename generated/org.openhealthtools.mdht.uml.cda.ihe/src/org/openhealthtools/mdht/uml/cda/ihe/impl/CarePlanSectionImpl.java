@@ -59,8 +59,9 @@ public class CarePlanSectionImpl extends PlanOfCareSectionImpl implements CarePl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CarePlanSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CarePlanSectionImpl
+} // CarePlanSectionImpl

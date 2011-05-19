@@ -65,8 +65,9 @@ public class MedicalDocumentImpl extends GeneralHeaderConstraintsImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicalDocument init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicalDocumentImpl
+} // MedicalDocumentImpl

@@ -58,7 +58,8 @@ public class CommentImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.Comme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIHECommentEffectiveTimeWhenAuthorPresent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateIHECommentEffectiveTimeWhenAuthorPresent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CommentOperations.validateIHECommentEffectiveTimeWhenAuthorPresent(this, diagnostics, context);
 	}
 
@@ -113,8 +114,9 @@ public class CommentImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.Comme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Comment init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CommentImpl
+} // CommentImpl

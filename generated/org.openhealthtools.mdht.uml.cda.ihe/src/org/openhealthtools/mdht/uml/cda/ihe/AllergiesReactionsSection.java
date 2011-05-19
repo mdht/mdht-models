@@ -59,7 +59,8 @@ public interface AllergiesReactionsSection extends AlertsSection {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ihe::AllergyIntoleranceConcern))'"
 	 * @generated
 	 */
-	boolean validateAllergiesReactionsSectionAllergyIntoleranceConcern(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergiesReactionsSectionAllergyIntoleranceConcern(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

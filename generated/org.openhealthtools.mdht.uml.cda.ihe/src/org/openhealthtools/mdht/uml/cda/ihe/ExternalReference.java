@@ -18,10 +18,78 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getExternalReference()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.4' constraints.validation.error='ExternalReferenceTemplateId ExternalReferenceClassCode ExternalReferenceMoodCode ExternalReferenceId ExternalReferenceText' classCode='ACT' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.4' constraints.validation.error='ExternalReferenceTemplateId ExternalReferenceHasNoCode ExternalReferenceHasReference ExternalReferenceHasReferenceExternalDocument ExternalReferenceHasReferenceExternalDocumentID ExternalReferenceHasReferenceExternalDocumentText ExternalReferenceClassCode ExternalReferenceMoodCode ExternalReferenceId ExternalReferenceText' classCode='ACT' moodCode='EVN'"
  * @generated
  */
 public interface ExternalReference extends Act {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.code.oclIsUndefined() implies self.code.nullFlavor = vocab::NullFlavor::NA
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.oclIsUndefined() implies self.code.nullFlavor = vocab::NullFlavor::NA'"
+	 * @generated
+	 */
+	boolean validateExternalReferenceHasNoCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.reference->select(r| r.typeCode <> vocab::ActRelationshipType::REFR and r.typeCode <> vocab::ActRelationshipType::SPRT)->size() = 0
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(r| r.typeCode <> vocab::ActRelationshipType::REFR and r.typeCode <> vocab::ActRelationshipType::SPRT)->size() = 0'"
+	 * @generated
+	 */
+	boolean validateExternalReferenceHasReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClass::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClass::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1'"
+	 * @generated
+	 */
+	boolean validateExternalReferenceHasReferenceExternalDocument(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.reference->select(  r | r.externalDocument.id->isEmpty() )->size() = 0
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(  r | r.externalDocument.id->isEmpty() )->size() = 0'"
+	 * @generated
+	 */
+	boolean validateExternalReferenceHasReferenceExternalDocumentID(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.reference->select(  r | r.externalDocument.text.reference.oclIsUndefined()  )->size() = 0
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(  r | r.externalDocument.text.reference.oclIsUndefined()  )->size() = 0'"
+	 * @generated
+	 */
+	boolean validateExternalReferenceHasReferenceExternalDocumentText(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
