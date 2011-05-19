@@ -51,7 +51,8 @@ public class AssessmentSectionProcNoteImpl extends SectionImpl implements Assess
 	 * @generated
 	 */
 	public boolean validateAssessmentSectionProcNoteTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentSectionProcNoteOperations.validateAssessmentSectionProcNoteTemplateId(this, diagnostics, context);
+		return AssessmentSectionProcNoteOperations.validateAssessmentSectionProcNoteTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +70,7 @@ public class AssessmentSectionProcNoteImpl extends SectionImpl implements Assess
 	 * @generated
 	 */
 	public AssessmentSectionProcNote init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AssessmentSectionProcNoteImpl
+} // AssessmentSectionProcNoteImpl

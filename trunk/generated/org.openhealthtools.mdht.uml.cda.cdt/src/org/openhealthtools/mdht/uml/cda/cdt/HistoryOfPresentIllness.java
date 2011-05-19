@@ -11,7 +11,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.openhealthtools.mdht.uml.cda.Section;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>History Of Present Illness</b></em>'.

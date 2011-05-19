@@ -51,7 +51,8 @@ public class ReviewOfSystemsSectionIHEImpl extends SectionImpl implements Review
 	 * @generated
 	 */
 	public boolean validateReviewOfSystemsSectionIHETemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReviewOfSystemsSectionIHEOperations.validateReviewOfSystemsSectionIHETemplateId(this, diagnostics, context);
+		return ReviewOfSystemsSectionIHEOperations.validateReviewOfSystemsSectionIHETemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +70,7 @@ public class ReviewOfSystemsSectionIHEImpl extends SectionImpl implements Review
 	 * @generated
 	 */
 	public ReviewOfSystemsSectionIHE init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ReviewOfSystemsSectionIHEImpl
+} // ReviewOfSystemsSectionIHEImpl

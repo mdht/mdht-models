@@ -50,7 +50,8 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSubjectiveSectionHasClinicalStatements(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSubjectiveSectionHasClinicalStatements(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionHasClinicalStatements(this, diagnostics, context);
 	}
 
@@ -96,7 +97,7 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	 * @generated
 	 */
 	public SubjectiveSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SubjectiveSectionImpl
+} // SubjectiveSectionImpl

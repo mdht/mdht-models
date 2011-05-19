@@ -6084,7 +6084,6 @@ public interface CDTPackage extends EPackage {
 	 */
 	int CDT_REGISTRY_DELEGATE_FEATURE_COUNT = CDAPackage.REGISTRY_DELEGATE_FEATURE_COUNT + 0;
 
-
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
@@ -6709,4 +6708,4 @@ public interface CDTPackage extends EPackage {
 
 	}
 
-} //CDTPackage
+} // CDTPackage

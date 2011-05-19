@@ -82,7 +82,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNoteHistoryOfPresentIllness(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNoteHistoryOfPresentIllness(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteHistoryOfPresentIllness(this, diagnostics, context);
 	}
 
@@ -91,7 +92,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNotePhysicalExaminationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNotePhysicalExaminationSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNotePhysicalExaminationSection(this, diagnostics, context);
 	}
 
@@ -118,8 +120,10 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNotePastMedicalHistorySectionConsult(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNotePastMedicalHistorySectionConsult(this, diagnostics, context);
+	public boolean validateConsultationNotePastMedicalHistorySectionConsult(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNotePastMedicalHistorySectionConsult(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -172,7 +176,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNoteReviewOfSystemsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNoteReviewOfSystemsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteReviewOfSystemsSection(this, diagnostics, context);
 	}
 
@@ -344,8 +349,9 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConsultationNote init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ConsultationNoteImpl
+} // ConsultationNoteImpl

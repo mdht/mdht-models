@@ -69,7 +69,7 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * @generated
 	 */
 	public AssessmentAndPlanSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AssessmentAndPlanSectionImpl
+} // AssessmentAndPlanSectionImpl

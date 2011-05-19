@@ -73,26 +73,29 @@ public class LevelThreeConformanceOperations extends LevelTwoConformanceOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateLevelOneConformanceTemplateId(LevelThreeConformance levelThreeConformance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateLevelOneConformanceTemplateId(LevelThreeConformance levelThreeConformance,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_LEVEL_ONE_CONFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.LEVEL_THREE_CONFORMANCE);
 			try {
 				VALIDATE_LEVEL_ONE_CONFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LEVEL_ONE_CONFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_ONE_CONFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(levelThreeConformance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LEVEL_ONE_CONFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			levelThreeConformance)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.LEVEL_THREE_CONFORMANCE__LEVEL_ONE_CONFORMANCE_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LevelOneConformanceTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(levelThreeConformance, context) }),
-						 new Object [] { levelThreeConformance }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.LEVEL_THREE_CONFORMANCE__LEVEL_ONE_CONFORMANCE_TEMPLATE_ID,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"LevelOneConformanceTemplateId",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+									levelThreeConformance, context) }), new Object[] { levelThreeConformance }));
 			}
 			return false;
 		}

@@ -6,7 +6,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.cdt;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Level Two Conformance</b></em>'.

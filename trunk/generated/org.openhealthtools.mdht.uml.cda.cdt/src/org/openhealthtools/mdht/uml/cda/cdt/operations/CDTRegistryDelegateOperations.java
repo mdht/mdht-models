@@ -41,7 +41,7 @@ public class CDTRegistryDelegateOperations {
 	 * <!-- end-user-doc -->
 	 * @generated NOT
 	 */
-	public static  EClass getEClass(CDTRegistryDelegate cdtRegistryDelegate, String templateId, Object context) {
+	public static EClass getEClass(CDTRegistryDelegate cdtRegistryDelegate, String templateId, Object context) {
 		EClass result = null;
 		if (context instanceof Element) {
 			Element element = (Element) context;
@@ -54,8 +54,7 @@ public class CDTRegistryDelegateOperations {
 				} else if ("51847-2".equals(code)) {
 					result = CDTPackage.Literals.ASSESSMENT_AND_PLAN_SECTION;
 				}
-			}
-			else if ("2.16.840.1.113883.10.20.2.8".equals(templateId)) {
+			} else if ("2.16.840.1.113883.10.20.2.8".equals(templateId)) {
 				String code = getCode(element);
 				if ("29299-5".equals(code)) {
 					result = CDTPackage.Literals.REASON_FOR_VISIT_SECTION;
@@ -64,8 +63,7 @@ public class CDTRegistryDelegateOperations {
 				} else if ("46239-0".equals(code)) {
 					result = CDTPackage.Literals.REASON_FOR_VISIT_AND_CHIEF_COMPLAINT_SECTION;
 				}
-			}
-			else if ("2.16.840.1.113883.10.20.4.8".equals(templateId)) {
+			} else if ("2.16.840.1.113883.10.20.4.8".equals(templateId)) {
 				String code = getCode(element);
 				if ("42349-1".equals(code)) {
 					result = CDTPackage.Literals.REASON_FOR_REFERRAL_SECTION;

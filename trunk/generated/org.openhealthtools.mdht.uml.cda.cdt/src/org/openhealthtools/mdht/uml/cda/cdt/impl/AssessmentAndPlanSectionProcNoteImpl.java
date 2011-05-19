@@ -50,8 +50,10 @@ public class AssessmentAndPlanSectionProcNoteImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentAndPlanSectionProcNoteTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentAndPlanSectionProcNoteOperations.validateAssessmentAndPlanSectionProcNoteTemplateId(this, diagnostics, context);
+	public boolean validateAssessmentAndPlanSectionProcNoteTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AssessmentAndPlanSectionProcNoteOperations.validateAssessmentAndPlanSectionProcNoteTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,7 +62,8 @@ public class AssessmentAndPlanSectionProcNoteImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public boolean validateAssessmentAndPlanSectionProcNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentAndPlanSectionProcNoteOperations.validateAssessmentAndPlanSectionProcNoteCode(this, diagnostics, context);
+		return AssessmentAndPlanSectionProcNoteOperations.validateAssessmentAndPlanSectionProcNoteCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +72,7 @@ public class AssessmentAndPlanSectionProcNoteImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public AssessmentAndPlanSectionProcNote init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AssessmentAndPlanSectionProcNoteImpl
+} // AssessmentAndPlanSectionProcNoteImpl

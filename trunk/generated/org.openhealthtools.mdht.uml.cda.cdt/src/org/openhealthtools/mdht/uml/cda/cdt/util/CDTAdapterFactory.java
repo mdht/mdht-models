@@ -14,7 +14,6 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
-import org.openhealthtools.mdht.uml.cda.cdt.*;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSectionProcNote;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentSection;
@@ -92,7 +91,7 @@ public class CDTAdapterFactory extends AdapterFactoryImpl {
 			return true;
 		}
 		if (object instanceof EObject) {
-			return ((EObject)object).eClass().getEPackage() == modelPackage;
+			return ((EObject) object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
 	}
@@ -103,157 +102,192 @@ public class CDTAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CDTSwitch<Adapter> modelSwitch =
-		new CDTSwitch<Adapter>() {
-			@Override
-			public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
-				return createGeneralHeaderConstraintsAdapter();
-			}
-			@Override
-			public Adapter caseHistoryAndPhysical(HistoryAndPhysical object) {
-				return createHistoryAndPhysicalAdapter();
-			}
-			@Override
-			public Adapter caseHistoryOfPresentIllness(HistoryOfPresentIllness object) {
-				return createHistoryOfPresentIllnessAdapter();
-			}
-			@Override
-			public Adapter casePastMedicalHistorySection(PastMedicalHistorySection object) {
-				return createPastMedicalHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseReviewOfSystemsSectionIHE(ReviewOfSystemsSectionIHE object) {
-				return createReviewOfSystemsSectionIHEAdapter();
-			}
-			@Override
-			public Adapter casePhysicalExaminationSection(PhysicalExaminationSection object) {
-				return createPhysicalExaminationSectionAdapter();
-			}
-			@Override
-			public Adapter caseVitalSignsSection(VitalSignsSection object) {
-				return createVitalSignsSectionAdapter();
-			}
-			@Override
-			public Adapter caseGeneralStatusSection(GeneralStatusSection object) {
-				return createGeneralStatusSectionAdapter();
-			}
-			@Override
-			public Adapter caseConsultationNote(ConsultationNote object) {
-				return createConsultationNoteAdapter();
-			}
-			@Override
-			public Adapter casePastMedicalHistorySectionConsult(PastMedicalHistorySectionConsult object) {
-				return createPastMedicalHistorySectionConsultAdapter();
-			}
-			@Override
-			public Adapter caseReviewOfSystemsSection(ReviewOfSystemsSection object) {
-				return createReviewOfSystemsSectionAdapter();
-			}
-			@Override
-			public Adapter caseReasonForReferralSection(ReasonForReferralSection object) {
-				return createReasonForReferralSectionAdapter();
-			}
-			@Override
-			public Adapter caseReasonForVisitSectionConsult(ReasonForVisitSectionConsult object) {
-				return createReasonForVisitSectionConsultAdapter();
-			}
-			@Override
-			public Adapter caseLevelOneConformance(LevelOneConformance object) {
-				return createLevelOneConformanceAdapter();
-			}
-			@Override
-			public Adapter caseLevelTwoConformance(LevelTwoConformance object) {
-				return createLevelTwoConformanceAdapter();
-			}
-			@Override
-			public Adapter caseLevelThreeConformance(LevelThreeConformance object) {
-				return createLevelThreeConformanceAdapter();
-			}
-			@Override
-			public Adapter caseDiagnosticFindings(DiagnosticFindings object) {
-				return createDiagnosticFindingsAdapter();
-			}
-			@Override
-			public Adapter caseAssessmentSection(AssessmentSection object) {
-				return createAssessmentSectionAdapter();
-			}
-			@Override
-			public Adapter casePlanSection(PlanSection object) {
-				return createPlanSectionAdapter();
-			}
-			@Override
-			public Adapter caseAssessmentAndPlanSection(AssessmentAndPlanSection object) {
-				return createAssessmentAndPlanSectionAdapter();
-			}
-			@Override
-			public Adapter caseReasonForVisitSection(ReasonForVisitSection object) {
-				return createReasonForVisitSectionAdapter();
-			}
-			@Override
-			public Adapter caseChiefComplaintSection(ChiefComplaintSection object) {
-				return createChiefComplaintSectionAdapter();
-			}
-			@Override
-			public Adapter caseReasonForVisitAndChiefComplaintSection(ReasonForVisitAndChiefComplaintSection object) {
-				return createReasonForVisitAndChiefComplaintSectionAdapter();
-			}
-			@Override
-			public Adapter caseProgressNote(ProgressNote object) {
-				return createProgressNoteAdapter();
-			}
-			@Override
-			public Adapter caseAssessmentAndPlanSectionProcNote(AssessmentAndPlanSectionProcNote object) {
-				return createAssessmentAndPlanSectionProcNoteAdapter();
-			}
-			@Override
-			public Adapter caseAssessmentSectionProcNote(AssessmentSectionProcNote object) {
-				return createAssessmentSectionProcNoteAdapter();
-			}
-			@Override
-			public Adapter caseChiefComplaintSectionProcNote(ChiefComplaintSectionProcNote object) {
-				return createChiefComplaintSectionProcNoteAdapter();
-			}
-			@Override
-			public Adapter caseObjectiveSection(ObjectiveSection object) {
-				return createObjectiveSectionAdapter();
-			}
-			@Override
-			public Adapter caseSubjectiveSection(SubjectiveSection object) {
-				return createSubjectiveSectionAdapter();
-			}
-			@Override
-			public Adapter caseCDTRegistryDelegate(CDTRegistryDelegate object) {
-				return createCDTRegistryDelegateAdapter();
-			}
-			@Override
-			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
-				return createInfrastructureRootAdapter();
-			}
-			@Override
-			public Adapter caseAct(Act object) {
-				return createActAdapter();
-			}
-			@Override
-			public Adapter caseClinicalDocument(ClinicalDocument object) {
-				return createClinicalDocumentAdapter();
-			}
-			@Override
-			public Adapter caseSection(Section object) {
-				return createSectionAdapter();
-			}
-			@Override
-			public Adapter caseResultsSection(ResultsSection object) {
-				return createResultsSectionAdapter();
-			}
-			@Override
-			public Adapter caseRegistryDelegate(RegistryDelegate object) {
-				return createRegistryDelegateAdapter();
-			}
-			@Override
-			public Adapter defaultCase(EObject object) {
-				return createEObjectAdapter();
-			}
-		};
+	protected CDTSwitch<Adapter> modelSwitch = new CDTSwitch<Adapter>() {
+		@Override
+		public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
+			return createGeneralHeaderConstraintsAdapter();
+		}
+
+		@Override
+		public Adapter caseHistoryAndPhysical(HistoryAndPhysical object) {
+			return createHistoryAndPhysicalAdapter();
+		}
+
+		@Override
+		public Adapter caseHistoryOfPresentIllness(HistoryOfPresentIllness object) {
+			return createHistoryOfPresentIllnessAdapter();
+		}
+
+		@Override
+		public Adapter casePastMedicalHistorySection(PastMedicalHistorySection object) {
+			return createPastMedicalHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseReviewOfSystemsSectionIHE(ReviewOfSystemsSectionIHE object) {
+			return createReviewOfSystemsSectionIHEAdapter();
+		}
+
+		@Override
+		public Adapter casePhysicalExaminationSection(PhysicalExaminationSection object) {
+			return createPhysicalExaminationSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseVitalSignsSection(VitalSignsSection object) {
+			return createVitalSignsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseGeneralStatusSection(GeneralStatusSection object) {
+			return createGeneralStatusSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseConsultationNote(ConsultationNote object) {
+			return createConsultationNoteAdapter();
+		}
+
+		@Override
+		public Adapter casePastMedicalHistorySectionConsult(PastMedicalHistorySectionConsult object) {
+			return createPastMedicalHistorySectionConsultAdapter();
+		}
+
+		@Override
+		public Adapter caseReviewOfSystemsSection(ReviewOfSystemsSection object) {
+			return createReviewOfSystemsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseReasonForReferralSection(ReasonForReferralSection object) {
+			return createReasonForReferralSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseReasonForVisitSectionConsult(ReasonForVisitSectionConsult object) {
+			return createReasonForVisitSectionConsultAdapter();
+		}
+
+		@Override
+		public Adapter caseLevelOneConformance(LevelOneConformance object) {
+			return createLevelOneConformanceAdapter();
+		}
+
+		@Override
+		public Adapter caseLevelTwoConformance(LevelTwoConformance object) {
+			return createLevelTwoConformanceAdapter();
+		}
+
+		@Override
+		public Adapter caseLevelThreeConformance(LevelThreeConformance object) {
+			return createLevelThreeConformanceAdapter();
+		}
+
+		@Override
+		public Adapter caseDiagnosticFindings(DiagnosticFindings object) {
+			return createDiagnosticFindingsAdapter();
+		}
+
+		@Override
+		public Adapter caseAssessmentSection(AssessmentSection object) {
+			return createAssessmentSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePlanSection(PlanSection object) {
+			return createPlanSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseAssessmentAndPlanSection(AssessmentAndPlanSection object) {
+			return createAssessmentAndPlanSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseReasonForVisitSection(ReasonForVisitSection object) {
+			return createReasonForVisitSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseChiefComplaintSection(ChiefComplaintSection object) {
+			return createChiefComplaintSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseReasonForVisitAndChiefComplaintSection(ReasonForVisitAndChiefComplaintSection object) {
+			return createReasonForVisitAndChiefComplaintSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseProgressNote(ProgressNote object) {
+			return createProgressNoteAdapter();
+		}
+
+		@Override
+		public Adapter caseAssessmentAndPlanSectionProcNote(AssessmentAndPlanSectionProcNote object) {
+			return createAssessmentAndPlanSectionProcNoteAdapter();
+		}
+
+		@Override
+		public Adapter caseAssessmentSectionProcNote(AssessmentSectionProcNote object) {
+			return createAssessmentSectionProcNoteAdapter();
+		}
+
+		@Override
+		public Adapter caseChiefComplaintSectionProcNote(ChiefComplaintSectionProcNote object) {
+			return createChiefComplaintSectionProcNoteAdapter();
+		}
+
+		@Override
+		public Adapter caseObjectiveSection(ObjectiveSection object) {
+			return createObjectiveSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseSubjectiveSection(SubjectiveSection object) {
+			return createSubjectiveSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCDTRegistryDelegate(CDTRegistryDelegate object) {
+			return createCDTRegistryDelegateAdapter();
+		}
+
+		@Override
+		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
+			return createInfrastructureRootAdapter();
+		}
+
+		@Override
+		public Adapter caseAct(Act object) {
+			return createActAdapter();
+		}
+
+		@Override
+		public Adapter caseClinicalDocument(ClinicalDocument object) {
+			return createClinicalDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseSection(Section object) {
+			return createSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseResultsSection(ResultsSection object) {
+			return createResultsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseRegistryDelegate(RegistryDelegate object) {
+			return createRegistryDelegateAdapter();
+		}
+
+		@Override
+		public Adapter defaultCase(EObject object) {
+			return createEObjectAdapter();
+		}
+	};
 
 	/**
 	 * Creates an adapter for the <code>target</code>.
@@ -265,9 +299,8 @@ public class CDTAdapterFactory extends AdapterFactoryImpl {
 	 */
 	@Override
 	public Adapter createAdapter(Notifier target) {
-		return modelSwitch.doSwitch((EObject)target);
+		return modelSwitch.doSwitch((EObject) target);
 	}
-
 
 	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
@@ -785,4 +818,4 @@ public class CDTAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //CDTAdapterFactory
+} // CDTAdapterFactory

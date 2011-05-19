@@ -97,8 +97,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONSULTATION_NOTE_REFERRAL_OR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForReferralSection))"+
-"   xor self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSectionConsult))";
+	protected static final String VALIDATE_CONSULTATION_NOTE_REFERRAL_OR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForReferralSection))"
+			+ "   xor self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSectionConsult))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateConsultationNoteReferralOrVisit(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consultation Note Referral Or Visit</em>}' invariant operation.
@@ -122,26 +122,24 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteReferralOrVisit(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteReferralOrVisit(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_REFERRAL_OR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_REFERRAL_OR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_REFERRAL_OR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_REFERRAL_OR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_REFERRAL_OR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REFERRAL_OR_VISIT,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteReferralOrVisit"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REFERRAL_OR_VISIT,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteReferralOrVisit"), new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -161,26 +159,24 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateGeneralHeaderConstraintsCode(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralHeaderConstraintsCode(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-						 CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
+					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -218,26 +214,25 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteHistoryOfPresentIllness(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteHistoryOfPresentIllness(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteHistoryOfPresentIllness"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteHistoryOfPresentIllness"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -275,26 +270,26 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNotePhysicalExaminationSection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNotePhysicalExaminationSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PHYSICAL_EXAMINATION_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNotePhysicalExaminationSection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PHYSICAL_EXAMINATION_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNotePhysicalExaminationSection"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -332,26 +327,24 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteProblemSection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteProblemSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROBLEM_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteProblemSection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROBLEM_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteProblemSection"), new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -389,26 +382,25 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteProceduresSection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteProceduresSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROCEDURES_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteProceduresSection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROCEDURES_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteProceduresSection"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -446,26 +438,26 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNotePastMedicalHistorySectionConsult(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNotePastMedicalHistorySectionConsult(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_PAST_MEDICAL_HISTORY_SECTION_CONSULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_PAST_MEDICAL_HISTORY_SECTION_CONSULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_PAST_MEDICAL_HISTORY_SECTION_CONSULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PAST_MEDICAL_HISTORY_SECTION_CONSULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CONSULTATION_NOTE_PAST_MEDICAL_HISTORY_SECTION_CONSULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PAST_MEDICAL_HISTORY_SECTION_CONSULT,
-						 CDTPlugin.INSTANCE.getString("ConsultationNotePastMedicalHistorySectionConsult"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PAST_MEDICAL_HISTORY_SECTION_CONSULT,
+					CDTPlugin.INSTANCE.getString("ConsultationNotePastMedicalHistorySectionConsult"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -503,26 +495,25 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteImmunizationsSection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteImmunizationsSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IMMUNIZATIONS_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteImmunizationsSection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IMMUNIZATIONS_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteImmunizationsSection"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -560,26 +551,25 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteMedicationsSection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteMedicationsSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_MEDICATIONS_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteMedicationsSection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_MEDICATIONS_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteMedicationsSection"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -617,26 +607,24 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteAlertsSection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteAlertsSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ALERTS_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteAlertsSection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ALERTS_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteAlertsSection"), new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -674,26 +662,25 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteSocialHistorySection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteSocialHistorySection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteSocialHistorySection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteSocialHistorySection"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -731,26 +718,25 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteFamilyHistorySection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteFamilyHistorySection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_FAMILY_HISTORY_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteFamilyHistorySection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_FAMILY_HISTORY_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteFamilyHistorySection"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -788,26 +774,25 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteReviewOfSystemsSection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteReviewOfSystemsSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteReviewOfSystemsSection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteReviewOfSystemsSection"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -845,26 +830,25 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteVitalSignsSection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteVitalSignsSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_VITAL_SIGNS_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteVitalSignsSection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_VITAL_SIGNS_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteVitalSignsSection"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -902,26 +886,25 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteGeneralStatusSection(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteGeneralStatusSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_GENERAL_STATUS_SECTION,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteGeneralStatusSection"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_GENERAL_STATUS_SECTION,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteGeneralStatusSection"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -959,26 +942,25 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConsultationNoteDiagnosticFindings(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConsultationNoteDiagnosticFindings(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONSULTATION_NOTE_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_DIAGNOSTIC_FINDINGS,
-						 CDTPlugin.INSTANCE.getString("ConsultationNoteDiagnosticFindings"),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_DIAGNOSTIC_FINDINGS,
+					CDTPlugin.INSTANCE.getString("ConsultationNoteDiagnosticFindings"),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
@@ -1014,14 +996,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  HistoryOfPresentIllness getHistoryOfPresentIllness(ConsultationNote consultationNote) {
+	public static HistoryOfPresentIllness getHistoryOfPresentIllness(ConsultationNote consultationNote) {
 		if (GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(73));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(81));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1058,14 +1041,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  PhysicalExaminationSection getPhysicalExamination(ConsultationNote consultationNote) {
+	public static PhysicalExaminationSection getPhysicalExamination(ConsultationNote consultationNote) {
 		if (GET_PHYSICAL_EXAMINATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(74));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(82));
 			try {
 				GET_PHYSICAL_EXAMINATION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAMINATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1102,14 +1086,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ProblemSection getProblemSection(ConsultationNote consultationNote) {
+	public static ProblemSection getProblemSection(ConsultationNote consultationNote) {
 		if (GET_PROBLEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(75));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(83));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1146,14 +1131,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ProceduresSection getProceduresSection(ConsultationNote consultationNote) {
+	public static ProceduresSection getProceduresSection(ConsultationNote consultationNote) {
 		if (GET_PROCEDURES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(76));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(84));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1190,14 +1176,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  PastMedicalHistorySectionConsult getPastMedicalHistorySection(ConsultationNote consultationNote) {
+	public static PastMedicalHistorySectionConsult getPastMedicalHistorySection(ConsultationNote consultationNote) {
 		if (GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(77));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(85));
 			try {
 				GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1234,14 +1221,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ImmunizationsSection getImmunizationsSection(ConsultationNote consultationNote) {
+	public static ImmunizationsSection getImmunizationsSection(ConsultationNote consultationNote) {
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(78));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(86));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1278,14 +1266,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  MedicationsSection getMedicationsSection(ConsultationNote consultationNote) {
+	public static MedicationsSection getMedicationsSection(ConsultationNote consultationNote) {
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(79));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(87));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1322,14 +1311,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  AlertsSection getAlertsSection(ConsultationNote consultationNote) {
+	public static AlertsSection getAlertsSection(ConsultationNote consultationNote) {
 		if (GET_ALERTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(80));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(88));
 			try {
 				GET_ALERTS_SECTION__EOCL_QRY = helper.createQuery(GET_ALERTS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1366,14 +1356,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  SocialHistorySection getSocialHistorySection(ConsultationNote consultationNote) {
+	public static SocialHistorySection getSocialHistorySection(ConsultationNote consultationNote) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(81));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(89));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1410,14 +1401,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  FamilyHistorySection getFamilyHistorySection(ConsultationNote consultationNote) {
+	public static FamilyHistorySection getFamilyHistorySection(ConsultationNote consultationNote) {
 		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(82));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(90));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1454,14 +1446,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ReviewOfSystemsSection getReviewOfSystemsSection(ConsultationNote consultationNote) {
+	public static ReviewOfSystemsSection getReviewOfSystemsSection(ConsultationNote consultationNote) {
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(83));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(91));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1498,14 +1491,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  VitalSignsSection getVitalSignsSection(ConsultationNote consultationNote) {
+	public static VitalSignsSection getVitalSignsSection(ConsultationNote consultationNote) {
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(84));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(92));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1542,14 +1536,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  GeneralStatusSection getGeneralStatusSection(ConsultationNote consultationNote) {
+	public static GeneralStatusSection getGeneralStatusSection(ConsultationNote consultationNote) {
 		if (GET_GENERAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(85));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(93));
 			try {
 				GET_GENERAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1586,14 +1581,15 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ResultsSection getDiagnosticFindings(ConsultationNote consultationNote) {
+	public static ResultsSection getDiagnosticFindings(ConsultationNote consultationNote) {
 		if (GET_DIAGNOSTIC_FINDINGS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDTPackage.Literals.CONSULTATION_NOTE, CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(86));
+			helper.setOperationContext(
+				CDTPackage.Literals.CONSULTATION_NOTE,
+				CDTPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(94));
 			try {
 				GET_DIAGNOSTIC_FINDINGS__EOCL_QRY = helper.createQuery(GET_DIAGNOSTIC_FINDINGS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1629,9 +1625,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCode(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' invariant operation.
@@ -1654,26 +1650,30 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateGeneralHeaderConstraintsTemplateId(ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralHeaderConstraintsTemplateId(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GeneralHeaderConstraintsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
-						 new Object [] { consultationNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"GeneralHeaderConstraintsTemplateId",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consultationNote, context) }),
+					new Object[] { consultationNote }));
 			}
 			return false;
 		}
