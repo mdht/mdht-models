@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2009, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.example.operations;
 
 import java.util.Collection;
@@ -86,26 +90,23 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMySectionTemplateId(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMySectionTemplateId(MySection mySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_MY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_TEMPLATE_ID,
-						 ExamplePlugin.INSTANCE.getString("MySectionTemplateId"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
+					ExampleValidator.MY_SECTION__MY_SECTION_TEMPLATE_ID,
+					ExamplePlugin.INSTANCE.getString("MySectionTemplateId"), new Object[] { mySection }));
 			}
 			return false;
 		}
@@ -120,9 +121,9 @@ public class MySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMySectionCode(MySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Section Code</em>}' invariant operation.
@@ -138,35 +139,31 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1'))
 	 * @param mySection The receiving '<em><b>My Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMySectionCode(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMySectionCode(MySection mySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_CODE,
-						 ExamplePlugin.INSTANCE.getString("MySectionCode"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE, ExampleValidator.MY_SECTION__MY_SECTION_CODE,
+					ExamplePlugin.INSTANCE.getString("MySectionCode"), new Object[] { mySection }));
 			}
 			return false;
 		}
@@ -181,7 +178,7 @@ public class MySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.confidentialityCode.oclIsUndefined()";
+	protected static final String VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMySectionConfidentialityCode(MySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Section Confidentiality Code</em>}' invariant operation.
@@ -197,33 +194,31 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.confidentialityCode.oclIsUndefined()
+	 * (self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined())
 	 * @param mySection The receiving '<em><b>My Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMySectionConfidentialityCode(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMySectionConfidentialityCode(MySection mySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_CONFIDENTIALITY_CODE,
-						 ExamplePlugin.INSTANCE.getString("MySectionConfidentialityCode"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ExampleValidator.DIAGNOSTIC_SOURCE,
+					ExampleValidator.MY_SECTION__MY_SECTION_CONFIDENTIALITY_CODE,
+					ExamplePlugin.INSTANCE.getString("MySectionConfidentialityCode"), new Object[] { mySection }));
 			}
 			return false;
 		}
@@ -238,7 +233,7 @@ public class MySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.title.oclIsUndefined()";
+	protected static final String VALIDATE_MY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMySectionTitle(MySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Section Title</em>}' invariant operation.
@@ -254,33 +249,30 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.title.oclIsUndefined()
+	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
 	 * @param mySection The receiving '<em><b>My Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMySectionTitle(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMySectionTitle(MySection mySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_MY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_TITLE,
-						 ExamplePlugin.INSTANCE.getString("MySectionTitle"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
+					ExampleValidator.MY_SECTION__MY_SECTION_TITLE, ExamplePlugin.INSTANCE.getString("MySectionTitle"),
+					new Object[] { mySection }));
 			}
 			return false;
 		}
@@ -318,26 +310,23 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMySectionMyObservation(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMySectionMyObservation(MySection mySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_MY_SECTION_MY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_SECTION);
 			try {
 				VALIDATE_MY_SECTION_MY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_SECTION_MY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_MY_SECTION_MY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_SECTION__MY_SECTION_MY_OBSERVATION,
-						 ExamplePlugin.INSTANCE.getString("MySectionMyObservation"),
-						 new Object [] { mySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
+					ExampleValidator.MY_SECTION__MY_SECTION_MY_OBSERVATION,
+					ExamplePlugin.INSTANCE.getString("MySectionMyObservation"), new Object[] { mySection }));
 			}
 			return false;
 		}
@@ -373,14 +362,14 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<MyObservation> getMyObservations(MySection mySection) {
+	public static EList<MyObservation> getMyObservations(MySection mySection) {
 		if (GET_MY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ExamplePackage.Literals.MY_SECTION, ExamplePackage.Literals.MY_SECTION.getEAllOperations().get(52));
+			helper.setOperationContext(
+				ExamplePackage.Literals.MY_SECTION, ExamplePackage.Literals.MY_SECTION.getEAllOperations().get(60));
 			try {
 				GET_MY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_MY_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
