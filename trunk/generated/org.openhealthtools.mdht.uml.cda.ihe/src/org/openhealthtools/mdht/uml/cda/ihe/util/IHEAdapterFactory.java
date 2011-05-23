@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2009, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.util;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -640,6 +644,11 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseCCD_MedicationsSection(org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection object) {
+			return createCCD_MedicationsSectionAdapter();
+		}
+
+		@Override
 		public Adapter caseCCD_ImmunizationsSection(org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection object) {
 			return createCCD_ImmunizationsSectionAdapter();
 		}
@@ -738,11 +747,6 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseFulfillmentInstruction(FulfillmentInstruction object) {
 			return createFulfillmentInstructionAdapter();
-		}
-
-		@Override
-		public Adapter caseCCD_MedicationsSection(org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection object) {
-			return createCCD_MedicationsSectionAdapter();
 		}
 
 		@Override
