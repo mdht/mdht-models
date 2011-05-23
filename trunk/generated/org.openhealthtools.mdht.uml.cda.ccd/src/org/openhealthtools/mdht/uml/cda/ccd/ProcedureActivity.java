@@ -10,7 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd;
 
-import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getProcedureActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed'"
+ * @model abstract="true"
  * @generated
  */
-public interface ProcedureActivity extends EObject {
+public interface ProcedureActivity extends ClinicalStatement {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

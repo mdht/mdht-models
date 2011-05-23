@@ -498,15 +498,6 @@ public interface CCDFactory extends EFactory {
 	PlanOfCareActivityAct createPlanOfCareActivityAct();
 
 	/**
-	 * Returns a new object of class '<em>Procedure Activity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Activity</em>'.
-	 * @generated
-	 */
-	ProcedureActivity createProcedureActivity();
-
-	/**
 	 * Returns a new object of class '<em>Patient Instruction</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

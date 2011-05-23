@@ -85,6 +85,16 @@ public class AlertObservationImpl extends ObservationImpl implements AlertObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAlertObservationPlayingEntityClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AlertObservationOperations.validateAlertObservationPlayingEntityClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAlertObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationTemplateId(this, diagnostics, context);
 	}

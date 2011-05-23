@@ -54,6 +54,16 @@ public class AgeObservationImpl extends ObservationImpl implements AgeObservatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAgeObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AgeObservationOperations.validateAgeObservationRelatedSubjectBirthTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAgeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AgeObservationOperations.validateAgeObservationTemplateId(this, diagnostics, context);
 	}

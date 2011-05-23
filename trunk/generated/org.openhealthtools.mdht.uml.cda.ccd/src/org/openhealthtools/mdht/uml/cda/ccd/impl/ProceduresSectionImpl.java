@@ -81,6 +81,15 @@ public class ProceduresSectionImpl extends SectionImpl implements ProceduresSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProceduresSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProceduresSection init() {
 		CDAUtil.init(this);
 		return this;

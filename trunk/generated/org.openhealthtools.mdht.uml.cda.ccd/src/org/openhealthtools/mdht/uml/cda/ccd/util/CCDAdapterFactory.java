@@ -206,6 +206,11 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseProductInstance(ProductInstance object) {
+			return createProductInstanceAdapter();
+		}
+
+		@Override
 		public Adapter caseSupplyActivity(SupplyActivity object) {
 			return createSupplyActivityAdapter();
 		}
@@ -233,26 +238,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseEpisodeObservation(EpisodeObservation object) {
 			return createEpisodeObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseProblemObservation(ProblemObservation object) {
-			return createProblemObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseProblemStatusObservation(ProblemStatusObservation object) {
-			return createProblemStatusObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseProblemHealthStatusObservation(ProblemHealthStatusObservation object) {
-			return createProblemHealthStatusObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseAgeObservation(AgeObservation object) {
-			return createAgeObservationAdapter();
 		}
 
 		@Override
@@ -396,6 +381,26 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseProblemObservation(ProblemObservation object) {
+			return createProblemObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemStatusObservation(ProblemStatusObservation object) {
+			return createProblemStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemHealthStatusObservation(ProblemHealthStatusObservation object) {
+			return createProblemHealthStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseAgeObservation(AgeObservation object) {
+			return createAgeObservationAdapter();
+		}
+
+		@Override
 		public Adapter casePatientAwareness(PatientAwareness object) {
 			return createPatientAwarenessAdapter();
 		}
@@ -468,11 +473,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseFunctionalStatusObservation(FunctionalStatusObservation object) {
 			return createFunctionalStatusObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseProductInstance(ProductInstance object) {
-			return createProductInstanceAdapter();
 		}
 
 		@Override
@@ -571,6 +571,16 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseRole(Role object) {
+			return createRoleAdapter();
+		}
+
+		@Override
+		public Adapter caseParticipantRole(ParticipantRole object) {
+			return createParticipantRoleAdapter();
+		}
+
+		@Override
 		public Adapter caseSupply(Supply object) {
 			return createSupplyAdapter();
 		}
@@ -606,18 +616,8 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseRole(Role object) {
-			return createRoleAdapter();
-		}
-
-		@Override
 		public Adapter caseManufacturedProduct(ManufacturedProduct object) {
 			return createManufacturedProductAdapter();
-		}
-
-		@Override
-		public Adapter caseParticipantRole(ParticipantRole object) {
-			return createParticipantRoleAdapter();
 		}
 
 		@Override

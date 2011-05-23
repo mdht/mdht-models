@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ManufacturedProductOperations
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.Product#validateProductHasMaterialCodeOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Has Material Code Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.Product#validateProductHasMaterialName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Has Material Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.Product#validateProductTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.Product#validateProductId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -313,6 +314,58 @@ public class ProductOperations extends ManufacturedProductOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PRODUCT__PRODUCT_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("ProductTemplateId"), new Object[] { product }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProductId(Product, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProductId(Product, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PRODUCT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProductId(Product, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProductId(Product, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_PRODUCT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
+	 * @param product The receiving '<em><b>Product</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateProductId(Product product, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_PRODUCT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(CCDPackage.Literals.PRODUCT);
+			try {
+				VALIDATE_PRODUCT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(product)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PRODUCT__PRODUCT_ID,
+					CCDPlugin.INSTANCE.getString("ProductId"), new Object[] { product }));
 			}
 			return false;
 		}
