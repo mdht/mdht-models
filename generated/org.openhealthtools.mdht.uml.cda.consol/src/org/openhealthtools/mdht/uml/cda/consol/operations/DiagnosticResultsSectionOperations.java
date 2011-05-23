@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Collection;
@@ -87,26 +91,25 @@ public class DiagnosticResultsSectionOperations extends DiagnosticResultsNarrati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDiagnosticResultsSectionResultOrganizer(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDiagnosticResultsSectionResultOrganizer(
+			DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
 			try {
 				VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticResultsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diagnosticResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER,
-						 ConsolPlugin.INSTANCE.getString("DiagnosticResultsSectionResultOrganizer"),
-						 new Object [] { diagnosticResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER,
+					ConsolPlugin.INSTANCE.getString("DiagnosticResultsSectionResultOrganizer"),
+					new Object[] { diagnosticResultsSection }));
 			}
 			return false;
 		}
@@ -144,26 +147,26 @@ public class DiagnosticResultsSectionOperations extends DiagnosticResultsNarrati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDiagnosticResultsSectionExternalReference(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDiagnosticResultsSectionExternalReference(
+			DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_DIAGNOSTIC_RESULTS_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
 			try {
 				VALIDATE_DIAGNOSTIC_RESULTS_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticResultsSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DIAGNOSTIC_RESULTS_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diagnosticResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_EXTERNAL_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("DiagnosticResultsSectionExternalReference"),
-						 new Object [] { diagnosticResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_EXTERNAL_REFERENCE,
+					ConsolPlugin.INSTANCE.getString("DiagnosticResultsSectionExternalReference"),
+					new Object[] { diagnosticResultsSection }));
 			}
 			return false;
 		}
@@ -199,14 +202,15 @@ public class DiagnosticResultsSectionOperations extends DiagnosticResultsNarrati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<ResultOrganizer> getResultOrganizers(DiagnosticResultsSection diagnosticResultsSection) {
+	public static EList<ResultOrganizer> getResultOrganizers(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_RESULT_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION, ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(59));
+			helper.setOperationContext(
+				ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION,
+				ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(59));
 			try {
 				GET_RESULT_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_RESULT_ORGANIZERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -245,14 +249,15 @@ public class DiagnosticResultsSectionOperations extends DiagnosticResultsNarrati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<ExternalReference> getExternalReferences(DiagnosticResultsSection diagnosticResultsSection) {
+	public static EList<ExternalReference> getExternalReferences(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_EXTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION, ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(60));
+			helper.setOperationContext(
+				ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION,
+				ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(60));
 			try {
 				GET_EXTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_EXTERNAL_REFERENCES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -291,14 +296,15 @@ public class DiagnosticResultsSectionOperations extends DiagnosticResultsNarrati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<Result> getResults(DiagnosticResultsSection diagnosticResultsSection) {
+	public static EList<Result> getResults(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_RESULTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION, ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(61));
+			helper.setOperationContext(
+				ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION,
+				ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(61));
 			try {
 				GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -316,7 +322,7 @@ public class DiagnosticResultsSectionOperations extends DiagnosticResultsNarrati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.2.3.1')";
+	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsNarrativeSectionTemplateId(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Narrative Section Template Id</em>}' invariant operation.
@@ -332,33 +338,37 @@ public class DiagnosticResultsSectionOperations extends DiagnosticResultsNarrati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.2.3.1')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3.1')
 	 * @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDiagnosticResultsNarrativeSectionTemplateId(DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDiagnosticResultsNarrativeSectionTemplateId(
+			DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
 			try {
 				VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticResultsSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diagnosticResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DiagnosticResultsNarrativeSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(diagnosticResultsSection, context) }),
-						 new Object [] { diagnosticResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"DiagnosticResultsNarrativeSectionTemplateId",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+									diagnosticResultsSection, context) }), new Object[] { diagnosticResultsSection }));
 			}
 			return false;
 		}

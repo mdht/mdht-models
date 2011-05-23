@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.util.Map;
@@ -73,7 +77,8 @@ public interface MedicationOrderInformation extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::LOC)'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationHasParticipantLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationOrderInformationHasParticipantLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,7 +203,8 @@ public interface MedicationOrderInformation extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::MedicationStatusObservation))'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationOrderInformationMedicationStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Map;
@@ -55,9 +59,8 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_AWARENESS_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participantRole.id->one(id : datatypes::II |"+
-"  not id.root.oclIsUndefined())"+
-"-- TODO compare with ClinicalDocument/recordTarget/patientRole/id";
+	protected static final String VALIDATE_PATIENT_AWARENESS_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participantRole.id->one(id : datatypes::II |"
+			+ "  not id.root.oclIsUndefined())" + "-- TODO compare with ClinicalDocument/recordTarget/patientRole/id";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientAwarenessParticipantRoleId(PatientAwareness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Awareness Participant Role Id</em>}' invariant operation.
@@ -82,26 +85,25 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientAwarenessParticipantRoleId(PatientAwareness patientAwareness, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientAwarenessParticipantRoleId(PatientAwareness patientAwareness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_AWARENESS_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_AWARENESS);
 			try {
 				VALIDATE_PATIENT_AWARENESS_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_AWARENESS_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_AWARENESS_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientAwareness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_AWARENESS_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientAwareness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_PARTICIPANT_ROLE_ID,
-						 ConsolPlugin.INSTANCE.getString("PatientAwarenessParticipantRoleId"),
-						 new Object [] { patientAwareness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_PARTICIPANT_ROLE_ID,
+					ConsolPlugin.INSTANCE.getString("PatientAwarenessParticipantRoleId"),
+					new Object[] { patientAwareness }));
 			}
 			return false;
 		}
@@ -139,26 +141,24 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientAwarenessTemplateId(PatientAwareness patientAwareness, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientAwarenessTemplateId(PatientAwareness patientAwareness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_AWARENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_AWARENESS);
 			try {
 				VALIDATE_PATIENT_AWARENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_AWARENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_AWARENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientAwareness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_AWARENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientAwareness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("PatientAwarenessTemplateId"),
-						 new Object [] { patientAwareness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("PatientAwarenessTemplateId"), new Object[] { patientAwareness }));
 			}
 			return false;
 		}
@@ -196,26 +196,24 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientAwarenessTypeCode(PatientAwareness patientAwareness, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientAwarenessTypeCode(PatientAwareness patientAwareness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_AWARENESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_AWARENESS);
 			try {
 				VALIDATE_PATIENT_AWARENESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_AWARENESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_AWARENESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientAwareness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_AWARENESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientAwareness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("PatientAwarenessTypeCode"),
-						 new Object [] { patientAwareness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_TYPE_CODE,
+					ConsolPlugin.INSTANCE.getString("PatientAwarenessTypeCode"), new Object[] { patientAwareness }));
 			}
 			return false;
 		}
@@ -253,26 +251,24 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientAwarenessAwarenessCode(PatientAwareness patientAwareness, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientAwarenessAwarenessCode(PatientAwareness patientAwareness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_AWARENESS_AWARENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_AWARENESS);
 			try {
 				VALIDATE_PATIENT_AWARENESS_AWARENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_AWARENESS_AWARENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_AWARENESS_AWARENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientAwareness)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_AWARENESS_AWARENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientAwareness)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_AWARENESS_CODE,
-						 ConsolPlugin.INSTANCE.getString("PatientAwarenessAwarenessCode"),
-						 new Object [] { patientAwareness }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_AWARENESS_CODE,
+					ConsolPlugin.INSTANCE.getString("PatientAwarenessAwarenessCode"), new Object[] { patientAwareness }));
 			}
 			return false;
 		}

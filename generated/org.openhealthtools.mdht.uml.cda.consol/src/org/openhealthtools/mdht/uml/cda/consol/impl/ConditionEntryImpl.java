@@ -1,23 +1,24 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.consol.Comment;
 import org.openhealthtools.mdht.uml.cda.consol.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.consol.Severity;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ConditionEntryOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -56,35 +57,8 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionEntryOperations.validateConditionEntryInformationSource(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionEntryContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionEntryOperations.validateConditionEntryContainsPatientAwareness(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateConditionEntryHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryHasTextReference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionEntryCommentInversionInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionEntryOperations.validateConditionEntryCommentInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -110,7 +84,8 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryHasUnknownResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryHasUnknownResolutionDate(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryHasUnknownResolutionDate(this, diagnostics, context);
 	}
 
@@ -121,6 +96,15 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 */
 	public boolean validateConditionEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionEntryOperations.validateConditionEntryClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -200,16 +184,8 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntrySeverity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionEntryOperations.validateConditionEntrySeverity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionEntryProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryProblemStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryProblemStatusObservation(this, diagnostics, context);
 	}
 
@@ -218,17 +194,9 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryHealthStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryHealthStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryHealthStatusObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionEntryComment(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionEntryOperations.validateConditionEntryComment(this, diagnostics, context);
 	}
 
 	/**
@@ -238,15 +206,6 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 */
 	public AgeObservation getAgeObservation() {
 		return ConditionEntryOperations.getAgeObservation(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Severity getSeverity() {
-		return ConditionEntryOperations.getSeverity(this);
 	}
 
 	/**
@@ -272,17 +231,8 @@ public class ConditionEntryImpl extends ObservationImpl implements ConditionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Comment> getComments() {
-		return ConditionEntryOperations.getComments(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public ConditionEntry init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ConditionEntryImpl
+} // ConditionEntryImpl

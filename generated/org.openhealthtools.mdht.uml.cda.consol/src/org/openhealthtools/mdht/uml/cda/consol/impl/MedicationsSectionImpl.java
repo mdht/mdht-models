@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -52,8 +56,10 @@ public class MedicationsSectionImpl extends MedicationsNarrativeSectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionHasMedicationOrSupplyActivity(this, diagnostics, context);
+	public boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationsSectionOperations.validateMedicationsSectionHasMedicationOrSupplyActivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -61,8 +67,8 @@ public class MedicationsSectionImpl extends MedicationsNarrativeSectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionMedicationOrderInformation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionMedicationOrderInformation(this, diagnostics, context);
+	public boolean validateMedicationsSectionSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSectionOperations.validateMedicationsSectionSupplyActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -89,7 +95,8 @@ public class MedicationsSectionImpl extends MedicationsNarrativeSectionImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationsNarrativeSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationsNarrativeSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationsSectionOperations.validateMedicationsNarrativeSectionTemplateId(this, diagnostics, context);
 	}
 
@@ -98,8 +105,9 @@ public class MedicationsSectionImpl extends MedicationsNarrativeSectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationsSectionImpl
+} // MedicationsSectionImpl

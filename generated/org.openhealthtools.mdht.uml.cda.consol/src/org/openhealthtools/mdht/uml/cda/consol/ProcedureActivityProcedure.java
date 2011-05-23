@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.util.Map;
@@ -19,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Procedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureActivityProcedure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.21.4.14' constraints.validation.error='ProcedureActivityProcedureTemplateId ProcedureActivityProcedureHasTextReference ProcedureActivityProcedureHasCodeOriginalText ProcedureActivityProcedureClassCode ProcedureActivityProcedureText' classCode='PROC' constraints.validation.warning='ProcedureActivityProcedurePerformerAssignedEntity ProcedureActivityProcedureCode ProcedureActivityProcedureTargetSiteCode' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' constraints.validation.info='ProcedureActivityProcedureApproachSiteCode ProcedureActivityProcedureInternalReference' targetSiteCode.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.14' constraints.validation.error='ProcedureActivityProcedureTemplateId ProcedureActivityProcedureHasTextReference ProcedureActivityProcedureHasCodeOriginalText ProcedureActivityProcedureClassCode ProcedureActivityProcedureText' classCode='PROC' constraints.validation.warning='ProcedureActivityProcedurePerformerAssignedEntity ProcedureActivityProcedureCode ProcedureActivityProcedureTargetSiteCode' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' constraints.validation.info='ProcedureActivityProcedureApproachSiteCode ProcedureActivityProcedureInternalReference ProcedureActivityProcedureInternalReferenceReason' targetSiteCode.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface ProcedureActivityProcedure extends Procedure, ProcedureActivity {
@@ -47,7 +51,8 @@ public interface ProcedureActivityProcedure extends Procedure, ProcedureActivity
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.originalText.reference.value.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityProcedureHasCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityProcedureHasCodeOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,17 +65,18 @@ public interface ProcedureActivityProcedure extends Procedure, ProcedureActivity
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->forAll(perf : cda::Performer2 | not perf.oclIsUndefined() and perf.assignedEntity->size() > 0)'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityProcedurePerformerAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityProcedurePerformerAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.4.14')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.14')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.21.4.14\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.14\')'"
 	 * @generated
 	 */
 	boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -154,6 +160,20 @@ public interface ProcedureActivityProcedure extends Procedure, ProcedureActivity
 	 * @generated
 	 */
 	boolean validateProcedureActivityProcedureInternalReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::InternalReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityProcedureInternalReferenceReason(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

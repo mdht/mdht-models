@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Map;
@@ -53,7 +57,7 @@ public class DiagnosticResultsNarrativeSectionOperations extends SectionOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.2.3')";
+	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsNarrativeSectionTemplateId(DiagnosticResultsNarrativeSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Narrative Section Template Id</em>}' invariant operation.
@@ -69,33 +73,35 @@ public class DiagnosticResultsNarrativeSectionOperations extends SectionOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.2.3')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3')
 	 * @param diagnosticResultsNarrativeSection The receiving '<em><b>Diagnostic Results Narrative Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDiagnosticResultsNarrativeSectionTemplateId(DiagnosticResultsNarrativeSection diagnosticResultsNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDiagnosticResultsNarrativeSectionTemplateId(
+			DiagnosticResultsNarrativeSection diagnosticResultsNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_RESULTS_NARRATIVE_SECTION);
 			try {
 				VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticResultsNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diagnosticResultsNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DIAGNOSTIC_RESULTS_NARRATIVE_SECTION__DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("DiagnosticResultsNarrativeSectionTemplateId"),
-						 new Object [] { diagnosticResultsNarrativeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DIAGNOSTIC_RESULTS_NARRATIVE_SECTION__DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("DiagnosticResultsNarrativeSectionTemplateId"),
+					new Object[] { diagnosticResultsNarrativeSection }));
 			}
 			return false;
 		}
@@ -110,9 +116,9 @@ public class DiagnosticResultsNarrativeSectionOperations extends SectionOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsNarrativeSectionCode(DiagnosticResultsNarrativeSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Narrative Section Code</em>}' invariant operation.
@@ -137,26 +143,26 @@ public class DiagnosticResultsNarrativeSectionOperations extends SectionOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateDiagnosticResultsNarrativeSectionCode(DiagnosticResultsNarrativeSection diagnosticResultsNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDiagnosticResultsNarrativeSectionCode(
+			DiagnosticResultsNarrativeSection diagnosticResultsNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_RESULTS_NARRATIVE_SECTION);
 			try {
 				VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticResultsNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diagnosticResultsNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DIAGNOSTIC_RESULTS_NARRATIVE_SECTION__DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("DiagnosticResultsNarrativeSectionCode"),
-						 new Object [] { diagnosticResultsNarrativeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.DIAGNOSTIC_RESULTS_NARRATIVE_SECTION__DIAGNOSTIC_RESULTS_NARRATIVE_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("DiagnosticResultsNarrativeSectionCode"),
+					new Object[] { diagnosticResultsNarrativeSection }));
 			}
 			return false;
 		}

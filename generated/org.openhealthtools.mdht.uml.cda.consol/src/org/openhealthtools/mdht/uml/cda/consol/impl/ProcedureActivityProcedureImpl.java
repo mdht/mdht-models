@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -62,8 +66,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedureInternalReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureInternalReference(this, diagnostics, context);
+	public boolean validateProcedureActivityProcedureInternalReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureInternalReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +77,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedureHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureHasTextReference(this, diagnostics, context);
+	public boolean validateProcedureActivityProcedureInternalReferenceReason(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureInternalReferenceReason(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +88,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedureHasCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureHasCodeOriginalText(this, diagnostics, context);
+	public boolean validateProcedureActivityProcedureHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureHasTextReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +99,21 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedurePerformerAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedurePerformerAssignedEntity(this, diagnostics, context);
+	public boolean validateProcedureActivityProcedureHasCodeOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureHasCodeOriginalText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityProcedurePerformerAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedurePerformerAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -99,7 +122,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureTemplateId(this, diagnostics, context);
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -108,7 +132,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedureClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureClassCode(this, diagnostics, context);
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -134,8 +159,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedureApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureApproachSiteCode(this, diagnostics, context);
+	public boolean validateProcedureActivityProcedureApproachSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureApproachSiteCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -143,8 +170,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedureTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureTargetSiteCode(this, diagnostics, context);
+	public boolean validateProcedureActivityProcedureTargetSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureTargetSiteCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -171,7 +200,7 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	public ProcedureActivityProcedure init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProcedureActivityProcedureImpl
+} // ProcedureActivityProcedureImpl

@@ -59,22 +59,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//Condition">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionSubjectOfTarget">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionSubjectOfTarget/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionSubjectOfTarget/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionContainsProblemObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionContainsProblemObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionContainsProblemObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionContainsAlertObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionContainsAlertObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionContainsAlertObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionContainsPatientAwareness">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionContainsPatientAwareness/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionContainsPatientAwareness/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionEffectiveTimeLow">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionEffectiveTimeLow/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionEffectiveTimeLow/context"/>
@@ -86,18 +70,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionEffectiveTimeHighProhibited">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionEffectiveTimeHighProhibited/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionEffectiveTimeHighProhibited/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionHasTreatingProvider">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionHasTreatingProvider/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionHasTreatingProvider/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionHasProviderId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionHasProviderId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionHasProviderId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionHasProviderTreatmentTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionHasProviderTreatmentTime/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionHasProviderTreatmentTime/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionTemplateId/diagnostics"/>
@@ -127,18 +99,14 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionEpisodeObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionEpisodeObservation/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/ConditionConditionEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionConditionEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Condition/ConditionConditionEntry/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/getEpisodeObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Condition/getConditionEntries"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//EpisodeObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EpisodeObservation/EpisodeObservationOneEntryRelationshipSUBJ">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EpisodeObservation/EpisodeObservationOneEntryRelationshipSUBJ/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EpisodeObservation/EpisodeObservationOneEntryRelationshipSUBJ/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EpisodeObservation/EpisodeObservationExistsEntryRelationshipSAS">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EpisodeObservation/EpisodeObservationExistsEntryRelationshipSAS/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EpisodeObservation/EpisodeObservationExistsEntryRelationshipSAS/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EpisodeObservation/EpisodeObservationTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EpisodeObservation/EpisodeObservationTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EpisodeObservation/EpisodeObservationTemplateId/context"/>
@@ -159,27 +127,11 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EpisodeObservation/EpisodeObservationStatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EpisodeObservation/EpisodeObservationStatusCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EpisodeObservation/EpisodeObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EpisodeObservation/EpisodeObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EpisodeObservation/EpisodeObservationValue/context"/>
-      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ConditionEntry">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntryInformationSource">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryInformationSource/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryInformationSource/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntryContainsPatientAwareness">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryContainsPatientAwareness/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryContainsPatientAwareness/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntryHasTextReference">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryHasTextReference/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryHasTextReference/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntryCommentInversionInd">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryCommentInversionInd/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryCommentInversionInd/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntryHasOnsetDate">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryHasOnsetDate/diagnostics"/>
@@ -196,6 +148,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntryTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryClassCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntryMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryMoodCode/diagnostics"/>
@@ -229,10 +185,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryAgeObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryAgeObservation/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntrySeverity">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntrySeverity/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntrySeverity/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntryProblemStatusObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryProblemStatusObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryProblemStatusObservation/context"/>
@@ -241,21 +193,11 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryHealthStatusObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryHealthStatusObservation/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/ConditionEntryComment">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryComment/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConditionEntry/ConditionEntryComment/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/getAgeObservation"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/getSeverity"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/getProblemStatusObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/getHealthStatusObservation"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConditionEntry/getComments"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//AgeObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AgeObservation/AgeObservationRelatedSubjectBirthTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AgeObservation/AgeObservationRelatedSubjectBirthTime/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AgeObservation/AgeObservationRelatedSubjectBirthTime/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AgeObservation/AgeObservationTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AgeObservation/AgeObservationTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AgeObservation/AgeObservationTemplateId/context"/>
@@ -279,6 +221,82 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AgeObservation/AgeObservationValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AgeObservation/AgeObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AgeObservation/AgeObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ProblemStatusObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationHasTextReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationHasTextReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationHasTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationNoAdditionalParticipants">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationNoAdditionalParticipants/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationNoAdditionalParticipants/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationText/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//HealthStatusObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationHasTextReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationHasTextReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationHasTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationNoAdditionalParticipants">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationNoAdditionalParticipants/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationNoAdditionalParticipants/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationText/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//Severity">
@@ -313,26 +331,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//Severity/SeverityValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Severity/SeverityValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//Severity/SeverityValue/context"/>
-      </genOperations>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ProblemStatusObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationHasTextReference">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationHasTextReference/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationHasTextReference/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemStatusObservation/ProblemStatusObservationText/context"/>
-      </genOperations>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//HealthStatusObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationHasTextReference">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationHasTextReference/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationHasTextReference/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HealthStatusObservation/HealthStatusObservationText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HealthStatusObservation/HealthStatusObservationText/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//Comment">
@@ -562,9 +560,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsOrganizer/VitalSignsOrganizerId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsOrganizer/VitalSignsOrganizerId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//VitalSignsOrganizer/VitalSignsOrganizerVitalSign">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsOrganizer/VitalSignsOrganizerVitalSign/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsOrganizer/VitalSignsOrganizerVitalSign/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//VitalSignsOrganizer/VitalSignsOrganizerVitalSignObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsOrganizer/VitalSignsOrganizerVitalSignObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//VitalSignsOrganizer/VitalSignsOrganizerVitalSignObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//VitalSignsOrganizer/getVitalSignObservations"/>
     </genClasses>
@@ -1054,9 +1052,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationsSection/MedicationsSectionHasMedicationOrSupplyActivity/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationsSection/MedicationsSectionHasMedicationOrSupplyActivity/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationsSection/MedicationsSectionMedicationOrderInformation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationsSection/MedicationsSectionMedicationOrderInformation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationsSection/MedicationsSectionMedicationOrderInformation/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationsSection/MedicationsSectionSupplyActivity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationsSection/MedicationsSectionSupplyActivity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationsSection/MedicationsSectionSupplyActivity/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationsSection/getSupplyActivities"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationsSection/getMedications"/>
@@ -1219,6 +1217,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureInternalReference">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureInternalReference/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureInternalReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureInternalReferenceReason">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureInternalReferenceReason/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureInternalReferenceReason/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureActivityProcedure/getInternalReference"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureActivityProcedure/getInternalReferenceReasons"/>

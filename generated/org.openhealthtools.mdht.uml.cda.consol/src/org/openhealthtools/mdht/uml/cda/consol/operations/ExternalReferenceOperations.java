@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Map;
@@ -77,26 +81,24 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateExternalReferenceTemplateId(ExternalReference externalReference, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateExternalReferenceTemplateId(ExternalReference externalReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_EXTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(externalReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			externalReference)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ExternalReferenceTemplateId"),
-						 new Object [] { externalReference }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("ExternalReferenceTemplateId"), new Object[] { externalReference }));
 			}
 			return false;
 		}
@@ -134,26 +136,24 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateExternalReferenceClassCode(ExternalReference externalReference, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateExternalReferenceClassCode(ExternalReference externalReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_EXTERNAL_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(externalReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			externalReference)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("ExternalReferenceClassCode"),
-						 new Object [] { externalReference }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_CLASS_CODE,
+					ConsolPlugin.INSTANCE.getString("ExternalReferenceClassCode"), new Object[] { externalReference }));
 			}
 			return false;
 		}
@@ -191,26 +191,24 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateExternalReferenceMoodCode(ExternalReference externalReference, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateExternalReferenceMoodCode(ExternalReference externalReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_EXTERNAL_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(externalReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			externalReference)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("ExternalReferenceMoodCode"),
-						 new Object [] { externalReference }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_MOOD_CODE,
+					ConsolPlugin.INSTANCE.getString("ExternalReferenceMoodCode"), new Object[] { externalReference }));
 			}
 			return false;
 		}
