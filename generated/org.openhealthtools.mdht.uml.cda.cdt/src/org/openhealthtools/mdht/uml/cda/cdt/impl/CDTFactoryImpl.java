@@ -103,6 +103,8 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 				return createVitalSignsSection();
 			case CDTPackage.GENERAL_STATUS_SECTION:
 				return createGeneralStatusSection();
+			case CDTPackage.DIAGNOSTIC_FINDINGS:
+				return createDiagnosticFindings();
 			case CDTPackage.CONSULTATION_NOTE:
 				return createConsultationNote();
 			case CDTPackage.PAST_MEDICAL_HISTORY_SECTION_CONSULT:
@@ -119,8 +121,6 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 				return createLevelTwoConformance();
 			case CDTPackage.LEVEL_THREE_CONFORMANCE:
 				return createLevelThreeConformance();
-			case CDTPackage.DIAGNOSTIC_FINDINGS:
-				return createDiagnosticFindings();
 			case CDTPackage.ASSESSMENT_SECTION:
 				return createAssessmentSection();
 			case CDTPackage.PLAN_SECTION:

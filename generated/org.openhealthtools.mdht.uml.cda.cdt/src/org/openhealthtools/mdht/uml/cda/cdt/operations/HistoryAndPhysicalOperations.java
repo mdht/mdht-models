@@ -22,10 +22,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
-import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPlugin;
+import org.openhealthtools.mdht.uml.cda.cdt.DiagnosticFindings;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryOfPresentIllness;
@@ -53,7 +53,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical#validateHistoryAndPhysicalAlertsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Alerts Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical#validateHistoryAndPhysicalSocialHistorySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Social History Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical#validateHistoryAndPhysicalFamilyHistorySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Family History Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical#validateHistoryAndPhysicalReviewOfSystemsSectionIHE(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Review Of Systems Section IHE</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical#validateHistoryAndPhysicalReviewOfSystemsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Review Of Systems Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical#validateHistoryAndPhysicalPhysicalExaminationSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Physical Examination Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical#validateHistoryAndPhysicalVitalSignsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Vital Signs Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical#validateHistoryAndPhysicalGeneralStatusSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical General Status Section</em>}</li>
@@ -339,9 +339,9 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())
+	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))
 	 * @param historyAndPhysical The receiving '<em><b>History And Physical</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -711,24 +711,24 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalReviewOfSystemsSectionIHE(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Review Of Systems Section IHE</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalReviewOfSystemsSection(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Review Of Systems Section</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHistoryAndPhysicalReviewOfSystemsSectionIHE(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateHistoryAndPhysicalReviewOfSystemsSection(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION_IHE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReviewOfSystemsSectionIHE))";
+	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReviewOfSystemsSectionIHE))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalReviewOfSystemsSectionIHE(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Review Of Systems Section IHE</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalReviewOfSystemsSection(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Review Of Systems Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHistoryAndPhysicalReviewOfSystemsSectionIHE(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateHistoryAndPhysicalReviewOfSystemsSection(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION_IHE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -741,25 +741,25 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateHistoryAndPhysicalReviewOfSystemsSectionIHE(HistoryAndPhysical historyAndPhysical,
+	public static boolean validateHistoryAndPhysicalReviewOfSystemsSection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION_IHE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION_IHE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION_IHE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION_IHE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			historyAndPhysical)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION_IHE,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalReviewOfSystemsSectionIHE"),
+					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION,
+					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalReviewOfSystemsSection"),
 					new Object[] { historyAndPhysical }));
 			}
 			return false;
@@ -944,7 +944,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ResultsSection))";
+	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::DiagnosticFindings))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalDiagnosticFindings(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Diagnostic Findings</em>}' invariant operation.
@@ -960,7 +960,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ResultsSection))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::DiagnosticFindings))
 	 * @param historyAndPhysical The receiving '<em><b>History And Physical</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1618,7 +1618,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_DIAGNOSTIC_FINDINGS__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ResultsSection))->asSequence()->first().oclAsType(ccd::ResultsSection)";
+	protected static final String GET_DIAGNOSTIC_FINDINGS__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::DiagnosticFindings))->asSequence()->first().oclAsType(cdt::DiagnosticFindings)";
 
 	/**
 	 * The cached OCL query for the '{@link #getDiagnosticFindings(HistoryAndPhysical) <em>Get Diagnostic Findings</em>}' query operation.
@@ -1634,12 +1634,12 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ResultsSection))->asSequence()->first().oclAsType(ccd::ResultsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::DiagnosticFindings))->asSequence()->first().oclAsType(cdt::DiagnosticFindings)
 	 * @param historyAndPhysical The receiving '<em><b>History And Physical</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static ResultsSection getDiagnosticFindings(HistoryAndPhysical historyAndPhysical) {
+	public static DiagnosticFindings getDiagnosticFindings(HistoryAndPhysical historyAndPhysical) {
 		if (GET_DIAGNOSTIC_FINDINGS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1652,7 +1652,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_DIAGNOSTIC_FINDINGS__EOCL_QRY);
-		return (ResultsSection) query.evaluate(historyAndPhysical);
+		return (DiagnosticFindings) query.evaluate(historyAndPhysical);
 	}
 
 	/**
@@ -1818,9 +1818,9 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCode(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' invariant operation.

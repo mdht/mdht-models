@@ -52,7 +52,7 @@ public class DiagnosticFindingsOperations extends ResultsSectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_FINDINGS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.title.oclIsUndefined()";
+	protected static final String VALIDATE_DIAGNOSTIC_FINDINGS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiagnosticFindingsTitle(DiagnosticFindings, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Findings Title</em>}' invariant operation.
@@ -68,7 +68,7 @@ public class DiagnosticFindingsOperations extends ResultsSectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.title.oclIsUndefined()
+	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
 	 * @param diagnosticFindings The receiving '<em><b>Diagnostic Findings</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
