@@ -1406,6 +1406,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 
 		severityObservationEClass = createEClass(SEVERITY_OBSERVATION);
 
+		productInstanceEClass = createEClass(PRODUCT_INSTANCE);
+
 		supplyActivityEClass = createEClass(SUPPLY_ACTIVITY);
 
 		fulfillmentInstructionEClass = createEClass(FULFILLMENT_INSTRUCTION);
@@ -1417,14 +1419,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		problemActEClass = createEClass(PROBLEM_ACT);
 
 		episodeObservationEClass = createEClass(EPISODE_OBSERVATION);
-
-		problemObservationEClass = createEClass(PROBLEM_OBSERVATION);
-
-		problemStatusObservationEClass = createEClass(PROBLEM_STATUS_OBSERVATION);
-
-		problemHealthStatusObservationEClass = createEClass(PROBLEM_HEALTH_STATUS_OBSERVATION);
-
-		ageObservationEClass = createEClass(AGE_OBSERVATION);
 
 		familyHistorySectionEClass = createEClass(FAMILY_HISTORY_SECTION);
 
@@ -1482,6 +1476,14 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 
 		purposeActivityEClass = createEClass(PURPOSE_ACTIVITY);
 
+		problemObservationEClass = createEClass(PROBLEM_OBSERVATION);
+
+		problemStatusObservationEClass = createEClass(PROBLEM_STATUS_OBSERVATION);
+
+		problemHealthStatusObservationEClass = createEClass(PROBLEM_HEALTH_STATUS_OBSERVATION);
+
+		ageObservationEClass = createEClass(AGE_OBSERVATION);
+
 		patientAwarenessEClass = createEClass(PATIENT_AWARENESS);
 
 		familyHistoryObservationEClass = createEClass(FAMILY_HISTORY_OBSERVATION);
@@ -1511,8 +1513,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		procedureActivityEClass = createEClass(PROCEDURE_ACTIVITY);
 
 		functionalStatusObservationEClass = createEClass(FUNCTIONAL_STATUS_OBSERVATION);
-
-		productInstanceEClass = createEClass(PRODUCT_INSTANCE);
 
 		procedureActivityActEClass = createEClass(PROCEDURE_ACTIVITY_ACT);
 
@@ -1580,16 +1580,13 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		patientInstructionEClass.getESuperTypes().add(theCDAPackage.getAct());
 		reactionObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		severityObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
+		productInstanceEClass.getESuperTypes().add(theCDAPackage.getParticipantRole());
 		supplyActivityEClass.getESuperTypes().add(theCDAPackage.getSupply());
 		fulfillmentInstructionEClass.getESuperTypes().add(theCDAPackage.getAct());
 		continuityOfCareDocumentEClass.getESuperTypes().add(theCDAPackage.getClinicalDocument());
 		problemSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		problemActEClass.getESuperTypes().add(theCDAPackage.getAct());
 		episodeObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
-		problemObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
-		problemStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
-		problemHealthStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
-		ageObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		familyHistorySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		socialHistorySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		alertsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
@@ -1611,7 +1608,7 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		planOfCareActivitySubstanceAdministrationEClass.getESuperTypes().add(this.getPlanOfCareActivity());
 		planOfCareActivitySupplyEClass.getESuperTypes().add(theCDAPackage.getSupply());
 		planOfCareActivitySupplyEClass.getESuperTypes().add(this.getPlanOfCareActivity());
-		immunizationsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		immunizationsSectionEClass.getESuperTypes().add(this.getMedicationsSection());
 		vitalSignsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		vitalSignsOrganizerEClass.getESuperTypes().add(this.getResultOrganizer());
 		medicalEquipmentSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
@@ -1623,6 +1620,10 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		policyActivityEClass.getESuperTypes().add(theCDAPackage.getAct());
 		purposeSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		purposeActivityEClass.getESuperTypes().add(theCDAPackage.getAct());
+		problemObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
+		problemStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
+		problemHealthStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
+		ageObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		patientAwarenessEClass.getESuperTypes().add(theCDAPackage.getParticipant2());
 		familyHistoryObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		familyHistoryOrganizerEClass.getESuperTypes().add(theCDAPackage.getOrganizer());
@@ -1636,8 +1637,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		advanceDirectiveStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
 		advanceDirectiveVerificationEClass.getESuperTypes().add(theCDAPackage.getParticipant2());
 		authorizationActivityEClass.getESuperTypes().add(theCDAPackage.getAct());
+		procedureActivityEClass.getESuperTypes().add(theCDAPackage.getClinicalStatement());
 		functionalStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
-		productInstanceEClass.getESuperTypes().add(theCDAPackage.getParticipantRole());
 		procedureActivityActEClass.getESuperTypes().add(theCDAPackage.getAct());
 		procedureActivityActEClass.getESuperTypes().add(this.getProcedureActivity());
 		procedureActivityObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
@@ -1707,6 +1708,28 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		op = addEOperation(
 			medicationsSectionEClass, ecorePackage.getEBoolean(), "validateMedicationsSectionText", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			medicationsSectionEClass, ecorePackage.getEBoolean(), "validateMedicationsSectionMedicationActivity", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			medicationsSectionEClass, ecorePackage.getEBoolean(), "validateMedicationsSectionSupplyActivity", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1881,6 +1904,28 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
+			medicationActivityEClass, ecorePackage.getEBoolean(), "validateMedicationActivityDoseQuantity", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			medicationActivityEClass, ecorePackage.getEBoolean(), "validateMedicationActivityRateQuantity", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
 			medicationActivityEClass, ecorePackage.getEBoolean(),
 			"validateMedicationActivityMedicationSeriesNumberObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1924,6 +1969,17 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(
+			medicationActivityEClass, ecorePackage.getEBoolean(), "validateMedicationActivityProductInstance", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		addEOperation(
 			medicationActivityEClass, this.getMedicationSeriesNumberObservation(),
 			"getMedicationSeriesNumberObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
@@ -1937,8 +1993,11 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 			!IS_ORDERED);
 
 		addEOperation(
-			medicationActivityEClass, this.getReactionObservation(), "getReactionObservation", 1, 1, IS_UNIQUE,
+			medicationActivityEClass, this.getReactionObservation(), "getReactionObservations", 1, -1, IS_UNIQUE,
 			!IS_ORDERED);
+
+		addEOperation(
+			medicationActivityEClass, this.getProductInstance(), "getProductInstances", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
 			medicationSeriesNumberObservationEClass, MedicationSeriesNumberObservation.class,
@@ -2255,6 +2314,32 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
+			productInstanceEClass, ProductInstance.class, "ProductInstance", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			productInstanceEClass, ecorePackage.getEBoolean(), "validateProductInstanceTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			productInstanceEClass, ecorePackage.getEBoolean(), "validateProductInstanceClassCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(
 			supplyActivityEClass, SupplyActivity.class, "SupplyActivity", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
 
@@ -2411,6 +2496,17 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(
+			supplyActivityEClass, ecorePackage.getEBoolean(), "validateSupplyActivityProductInstance", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		addEOperation(
 			supplyActivityEClass, this.getMedicationStatusObservation(), "getMedicationStatusObservation", 1, 1,
 			IS_UNIQUE, !IS_ORDERED);
@@ -2418,6 +2514,9 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		addEOperation(
 			supplyActivityEClass, this.getFulfillmentInstruction(), "getFulfillmentInstructions", 1, -1, IS_UNIQUE,
 			!IS_ORDERED);
+
+		addEOperation(
+			supplyActivityEClass, this.getProductInstance(), "getProductInstances", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
 			fulfillmentInstructionEClass, FulfillmentInstruction.class, "FulfillmentInstruction", !IS_ABSTRACT,
@@ -2998,9 +3097,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		addEOperation(
 			problemActEClass, this.getEpisodeObservation(), "getEpisodeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(
-			problemActEClass, this.getProblemObservation(), "getProblemObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
-
 		initEClass(
 			episodeObservationEClass, EpisodeObservation.class, "EpisodeObservation", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
@@ -3084,197 +3180,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 
 		op = addEOperation(
 			episodeObservationEClass, ecorePackage.getEBoolean(), "validateEpisodeObservationValue", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		initEClass(
-			problemObservationEClass, ProblemObservation.class, "ProblemObservation", !IS_ABSTRACT, !IS_INTERFACE,
-			IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationInformationSource", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationContainsPatientAwareness",
-			0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationTemplateId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationMoodCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationStatusCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationEffectiveTime", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationProblemStatusObservation",
-			0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			problemObservationEClass, ecorePackage.getEBoolean(),
-			"validateProblemObservationProblemHealthStatusObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationAgeObservation", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		addEOperation(
-			problemObservationEClass, this.getProblemStatusObservation(), "getProblemStatus", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
-
-		addEOperation(
-			problemObservationEClass, this.getProblemHealthStatusObservation(), "getProblemHealthStatus", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
-
-		addEOperation(
-			problemObservationEClass, this.getAgeObservation(), "getAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-		initEClass(
-			problemStatusObservationEClass, ProblemStatusObservation.class, "ProblemStatusObservation", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(
-			problemHealthStatusObservationEClass, ProblemHealthStatusObservation.class,
-			"ProblemHealthStatusObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(
-			ageObservationEClass, AgeObservation.class, "AgeObservation", !IS_ABSTRACT, !IS_INTERFACE,
-			IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationTemplateId", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationClassCode", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationMoodCode", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationStatusCode", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationValue", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -3734,6 +3639,17 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 
 		op = addEOperation(
 			proceduresSectionEClass, ecorePackage.getEBoolean(), "validateProceduresSectionTitle", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			proceduresSectionEClass, ecorePackage.getEBoolean(), "validateProceduresSectionText", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -4217,39 +4133,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		initEClass(
 			immunizationsSectionEClass, ImmunizationsSection.class, "ImmunizationsSection", !IS_ABSTRACT,
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			immunizationsSectionEClass, ecorePackage.getEBoolean(), "validateImmunizationsSectionClinicalStatements",
-			0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			immunizationsSectionEClass, ecorePackage.getEBoolean(), "validateImmunizationsSectionTemplateId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			immunizationsSectionEClass, ecorePackage.getEBoolean(), "validateImmunizationsSectionCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
 			immunizationsSectionEClass, ecorePackage.getEBoolean(), "validateImmunizationsSectionTitle", 0, 1,
@@ -4881,8 +4764,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			policyActivityEClass, ecorePackage.getEBoolean(), "validatePolicyActivityPolicySubscriber", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			policyActivityEClass, ecorePackage.getEBoolean(), "validatePolicyActivitySubscriber", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5042,6 +4925,208 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
+			problemObservationEClass, ProblemObservation.class, "ProblemObservation", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationInformationSource", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationContainsPatientAwareness",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationTemplateId", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationMoodCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationStatusCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationEffectiveTime", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationProblemStatus", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationProblemHealthStatus", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			problemObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationAgeObservation", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			problemObservationEClass, this.getProblemStatusObservation(), "getProblemStatus", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
+
+		addEOperation(
+			problemObservationEClass, this.getProblemHealthStatusObservation(), "getProblemHealthStatus", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			problemObservationEClass, this.getAgeObservation(), "getAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			problemStatusObservationEClass, ProblemStatusObservation.class, "ProblemStatusObservation", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(
+			problemHealthStatusObservationEClass, ProblemHealthStatusObservation.class,
+			"ProblemHealthStatusObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(
+			ageObservationEClass, AgeObservation.class, "AgeObservation", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationRelatedSubjectBirthTime", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationClassCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationMoodCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationStatusCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationValue", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(
 			patientAwarenessEClass, PatientAwareness.class, "PatientAwareness", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
 
@@ -5125,6 +5210,20 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
+			"validateFamilyHistoryObservationAgeObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			familyHistoryObservationEClass, this.getAgeObservation(), "getAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
 			familyHistoryOrganizerEClass, FamilyHistoryOrganizer.class, "FamilyHistoryOrganizer", !IS_ABSTRACT,
@@ -5254,6 +5353,17 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 
 		op = addEOperation(
 			alertObservationEClass, ecorePackage.getEBoolean(), "validateAlertObservationPlayingEntityRequired", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			alertObservationEClass, ecorePackage.getEBoolean(), "validateAlertObservationPlayingEntityClassCode", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -5424,6 +5534,15 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(productEClass, ecorePackage.getEBoolean(), "validateProductId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(
 			advanceDirectiveStatusObservationEClass, AdvanceDirectiveStatusObservation.class,
 			"AdvanceDirectiveStatusObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -5514,38 +5633,12 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
-			procedureActivityEClass, ProcedureActivity.class, "ProcedureActivity", !IS_ABSTRACT, !IS_INTERFACE,
+			procedureActivityEClass, ProcedureActivity.class, "ProcedureActivity", IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(
 			functionalStatusObservationEClass, FunctionalStatusObservation.class, "FunctionalStatusObservation",
 			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(
-			productInstanceEClass, ProductInstance.class, "ProductInstance", !IS_ABSTRACT, !IS_INTERFACE,
-			IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			productInstanceEClass, ecorePackage.getEBoolean(), "validateProductInstanceTemplateId", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			productInstanceEClass, ecorePackage.getEBoolean(), "validateProductInstanceClassCode", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
 			procedureActivityActEClass, ProcedureActivityAct.class, "ProcedureActivityAct", !IS_ABSTRACT,
@@ -5757,9 +5850,10 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	protected void createDuplicatesAnnotations() {
 		String source = "duplicates";
 		addAnnotation(medicationStatusObservationEClass, source, new String[] {});
+		addAnnotation(immunizationsSectionEClass, source, new String[] {});
+		addAnnotation(vitalSignsOrganizerEClass, source, new String[] {});
 		addAnnotation(problemStatusObservationEClass, source, new String[] {});
 		addAnnotation(problemHealthStatusObservationEClass, source, new String[] {});
-		addAnnotation(vitalSignsOrganizerEClass, source, new String[] {});
 		addAnnotation(alertStatusObservationEClass, source, new String[] {});
 		addAnnotation(causeOfDeathObservationEClass, source, new String[] {});
 		addAnnotation(advanceDirectiveStatusObservationEClass, source, new String[] {});
@@ -5775,12 +5869,23 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	protected void createAnnotationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";
 		addAnnotation(this, source, new String[] { "registryDelegate", "CCDRegistryDelegate" });
-		addAnnotation(medicationsSectionEClass, source, new String[] {
-				"templateId.root", "2.16.840.1.113883.10.20.1.8", "code.displayName", "History of medication use",
-				"constraints.validation.error",
-				"MedicationsSectionTemplateId MedicationsSectionCode MedicationsSectionTitle MedicationsSectionText",
-				"code.codeSystemName", "", "constraints.validation.warning",
-				"MedicationsSectionHasMedicationOrSupplyActivity", "code.code", "10160-0" });
+		addAnnotation(
+			medicationsSectionEClass,
+			source,
+			new String[] {
+					"code.codeSystem",
+					"2.16.840.1.113883.6.1",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.1.8",
+					"code.displayName",
+					"History of medication use",
+					"constraints.validation.error",
+					"MedicationsSectionTemplateId MedicationsSectionCode MedicationsSectionTitle MedicationsSectionText",
+					"code.codeSystemName",
+					"LOINC",
+					"constraints.validation.warning",
+					"MedicationsSectionHasMedicationOrSupplyActivity MedicationsSectionMedicationActivity MedicationsSectionSupplyActivity",
+					"code.code", "10160-0" });
 		addAnnotation(
 			medicationActivityEClass,
 			source,
@@ -5791,23 +5896,25 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"MedicationActivityTemplateId MedicationActivityMoodCode MedicationActivityInformationSource MedicationActivityHasReasonProblem MedicationActivityHasProduct MedicationActivityId",
 					"routeCode.codeSystem",
 					"2.16.840.1.113883.5.112",
-					"constraints.validation.warning",
-					"MedicationActivityHasDoseQuantityOrRateQuantity MedicationActivityStatusCode MedicationActivityEffectiveTime MedicationActivityRouteCode",
 					"routeCode.codeSystemName",
 					"HL7 RouteOfAdministration",
+					"constraints.validation.warning",
+					"MedicationActivityHasDoseQuantityOrRateQuantity MedicationActivityStatusCode MedicationActivityEffectiveTime MedicationActivityRouteCode MedicationActivityDoseQuantity MedicationActivityRateQuantity",
 					"constraints.validation.info",
-					"MedicationActivityHasConsents MedicationActivityHasPreconditionCriterion MedicationActivityHasReason MedicationActivityMaxDoseQuantity MedicationActivityMedicationSeriesNumberObservation MedicationActivityMedicationStatusObservation MedicationActivityPatientInstruction MedicationActivityReactionObservation" });
+					"MedicationActivityHasConsents MedicationActivityHasPreconditionCriterion MedicationActivityHasReason MedicationActivityMaxDoseQuantity MedicationActivityMedicationSeriesNumberObservation MedicationActivityMedicationStatusObservation MedicationActivityPatientInstruction MedicationActivityReactionObservation MedicationActivityProductInstance" });
 		addAnnotation(
 			medicationSeriesNumberObservationEClass,
 			source,
 			new String[] {
+					"code.codeSystem",
+					"2.16.840.1.113883.6.1",
 					"code.displayName",
 					"Dose number",
 					"templateId.root",
 					"2.16.840.1.113883.10.20.1.46",
 					"constraints.validation.error",
 					"MedicationSeriesNumberObservationTemplateId MedicationSeriesNumberObservationClassCode MedicationSeriesNumberObservationMoodCode MedicationSeriesNumberObservationStatusCode MedicationSeriesNumberObservationCode MedicationSeriesNumberObservationValue",
-					"code.codeSystemName", "", "classCode", "OBS", "code.code", "30973-2", "moodCode", "EVN" });
+					"code.codeSystemName", "LOINC", "classCode", "OBS", "code.code", "30973-2", "moodCode", "EVN" });
 		addAnnotation(medicationStatusObservationEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.10.20.1.47", "constraints.validation.error",
 				"MedicationStatusObservationTemplateId" });
@@ -5855,7 +5962,10 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"2.16.840.1.113883.10.20.1.55",
 					"constraints.validation.error",
 					"SeverityObservationTemplateId SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationStatusCode SeverityObservationValue",
-					"code.codeSystemName", "ActCode", "classCode", "OBS", "code.code", "SEV", "moodCode", "EVN" });
+					"code.codeSystemName", "HL7ActCode", "classCode", "OBS", "code.code", "SEV", "moodCode", "EVN" });
+		addAnnotation(productInstanceEClass, source, new String[] {
+				"templateId.root", "2.16.840.1.113883.10.20.1.52", "constraints.validation.error",
+				"ProductInstanceTemplateId ProductInstanceClassCode", "classCode", "MANU" });
 		addAnnotation(
 			supplyActivityEClass,
 			source,
@@ -5867,7 +5977,7 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"constraints.validation.warning",
 					"SupplyActivityStatusCode SupplyActivityEffectiveTime",
 					"constraints.validation.info",
-					"SupplyActivityHasAuthor SupplyActivityHasPerformer SupplyActivityHasParticipantLocation SupplyActivityHasProduct SupplyActivityQuantity SupplyActivityRepeatNumber SupplyActivityMedicationStatusObservation SupplyActivityFulfillmentInstruction" });
+					"SupplyActivityHasAuthor SupplyActivityHasPerformer SupplyActivityHasParticipantLocation SupplyActivityHasProduct SupplyActivityQuantity SupplyActivityRepeatNumber SupplyActivityMedicationStatusObservation SupplyActivityFulfillmentInstruction SupplyActivityProductInstance" });
 		addAnnotation(fulfillmentInstructionEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.10.20.1.43", "constraints.validation.error",
 				"FulfillmentInstructionTemplateId FulfillmentInstructionMoodCode", "moodCode", "INT" });
@@ -5925,49 +6035,9 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"EpisodeObservationTemplateId EpisodeObservationOneEntryRelationshipSUBJ EpisodeObservationClassCode EpisodeObservationMoodCode EpisodeObservationStatusCode",
 					"code.code", "ASSERTION", "constraints.validation.info",
 					"EpisodeObservationExistsEntryRelationshipSAS", "value.displayName", "Clinical finding",
-					"statusCode.code", "completed", "value.code", "404684003", "code.codeSystemName", "ActCode",
+					"statusCode.code", "completed", "value.code", "404684003", "code.codeSystemName", "HL7ActCode",
 					"constraints.validation.warning", "EpisodeObservationCode EpisodeObservationValue", "classCode",
 					"OBS", "moodCode", "EVN", "value.codeSystem", "2.16.840.1.113883.6.96" });
-		addAnnotation(
-			problemObservationEClass,
-			source,
-			new String[] {
-					"statusCode.code",
-					"completed",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.1.28",
-					"constraints.validation.error",
-					"ProblemObservationTemplateId ProblemObservationInformationSource ProblemObservationMoodCode ProblemObservationStatusCode",
-					"classCode",
-					"OBS",
-					"constraints.validation.warning",
-					"ProblemObservationEffectiveTime",
-					"constraints.validation.info",
-					"ProblemObservationContainsPatientAwareness ProblemObservationProblemStatusObservation ProblemObservationProblemHealthStatusObservation ProblemObservationAgeObservation",
-					"moodCode", "EVN" });
-		addAnnotation(problemStatusObservationEClass, source, new String[] {
-				"templateId.root", "2.16.840.1.113883.10.20.1.50", "constraints.validation.error",
-				"ProblemStatusObservationTemplateId" });
-		addAnnotation(problemHealthStatusObservationEClass, source, new String[] {
-				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "2.16.840.1.113883.10.20.1.51",
-				"code.displayName", "Health status", "constraints.validation.error",
-				"ProblemHealthStatusObservationTemplateId StatusObservationCode", "code.codeSystemName", "LOINC",
-				"code.code", "11323-3" });
-		addAnnotation(
-			ageObservationEClass,
-			source,
-			new String[] {
-					"statusCode.code",
-					"completed",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.96",
-					"code.displayName",
-					"Age",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.1.38",
-					"constraints.validation.error",
-					"AgeObservationTemplateId AgeObservationClassCode AgeObservationMoodCode AgeObservationCode AgeObservationStatusCode AgeObservationValue",
-					"code.codeSystemName", "SNOMEDCT", "classCode", "OBS", "code.code", "397659008", "moodCode", "EVN" });
 		addAnnotation(familyHistorySectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "History of family member diseases",
 				"templateId.root", "2.16.840.1.113883.10.20.1.4", "constraints.validation.error",
@@ -6012,10 +6082,10 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"ResultObservationReferenceRangeRequired ResultObservationEffectiveTime ResultObservationInterpretationCode",
 					"constraints.validation.info", "ResultObservationMethodCode", "moodCode", "EVN" });
 		addAnnotation(proceduresSectionEClass, source, new String[] {
-				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "History of procedures",
-				"templateId.root", "2.16.840.1.113883.10.20.1.12", "constraints.validation.error",
-				"ProceduresSectionTemplateId ProceduresSectionCode ProceduresSectionTitle", "code.codeSystemName",
-				"LOINC", "code.code", "47519-4" });
+				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "2.16.840.1.113883.10.20.1.12",
+				"code.displayName", "History of procedures", "constraints.validation.error",
+				"ProceduresSectionTemplateId ProceduresSectionCode ProceduresSectionTitle ProceduresSectionText",
+				"code.codeSystemName", "LOINC", "code.code", "47519-4" });
 		addAnnotation(encountersSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "History of encounters",
 				"templateId.root", "2.16.840.1.113883.10.20.1.3", "constraints.validation.error",
@@ -6110,9 +6180,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"code.displayName",
 					"History of immunizations",
 					"constraints.validation.error",
-					"ImmunizationsSectionTemplateId ImmunizationsSectionCode ImmunizationsSectionTitle ImmunizationsSectionText",
-					"code.codeSystemName", "LOINC", "constraints.validation.warning",
-					"ImmunizationsSectionClinicalStatements", "code.code", "11369-6" });
+					"ImmunizationsSectionTemplateId MedicationsSectionCode ImmunizationsSectionTitle ImmunizationsSectionText",
+					"code.codeSystemName", "LOINC", "code.code", "11369-6" });
 		addAnnotation(vitalSignsSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "Vital signs", "templateId.root",
 				"2.16.840.1.113883.10.20.1.16", "constraints.validation.error",
@@ -6193,7 +6262,7 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"classCode",
 					"ACT",
 					"constraints.validation.info",
-					"PolicyActivityCoveredPartyTime PolicyActivitySubscriberIsAllowed PolicyActivitySubscriberTime PolicyActivityPolicySubscriber",
+					"PolicyActivityCoveredPartyTime PolicyActivitySubscriberIsAllowed PolicyActivitySubscriberTime PolicyActivitySubscriber",
 					"moodCode", "EVN" });
 		addAnnotation(purposeSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "Summary purpose", "templateId.root",
@@ -6217,6 +6286,47 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"PurposeActivityTemplateId PurposeActivityHasReason PurposeActivityReasonType PurposeActivityClassCode PurposeActivityMoodCode PurposeActivityCode PurposeActivityStatusCode",
 					"code.codeSystemName", "SNOMEDCT", "classCode", "ACT", "code.code", "23745001", "moodCode", "EVN" });
 		addAnnotation(
+			problemObservationEClass,
+			source,
+			new String[] {
+					"statusCode.code",
+					"completed",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.1.28",
+					"constraints.validation.error",
+					"ProblemObservationTemplateId ProblemObservationInformationSource ProblemObservationMoodCode ProblemObservationStatusCode",
+					"classCode",
+					"OBS",
+					"constraints.validation.warning",
+					"ProblemObservationEffectiveTime",
+					"constraints.validation.info",
+					"ProblemObservationContainsPatientAwareness ProblemObservationProblemStatus ProblemObservationProblemHealthStatus ProblemObservationAgeObservation",
+					"moodCode", "EVN" });
+		addAnnotation(problemStatusObservationEClass, source, new String[] {
+				"templateId.root", "2.16.840.1.113883.10.20.1.50", "constraints.validation.error",
+				"ProblemStatusObservationTemplateId" });
+		addAnnotation(problemHealthStatusObservationEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "2.16.840.1.113883.10.20.1.51",
+				"code.displayName", "Health status", "constraints.validation.error",
+				"ProblemHealthStatusObservationTemplateId StatusObservationCode", "code.codeSystemName", "LOINC",
+				"code.code", "11323-3" });
+		addAnnotation(
+			ageObservationEClass,
+			source,
+			new String[] {
+					"statusCode.code",
+					"completed",
+					"code.codeSystem",
+					"2.16.840.1.113883.6.96",
+					"code.displayName",
+					"Age",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.1.38",
+					"constraints.validation.error",
+					"AgeObservationTemplateId AgeObservationClassCode AgeObservationMoodCode AgeObservationCode AgeObservationStatusCode AgeObservationValue",
+					"code.codeSystemName", "SNOMEDCT", "classCode", "OBS", "constraints.validation.warning",
+					"AgeObservationRelatedSubjectBirthTime", "code.code", "397659008", "moodCode", "EVN" });
+		addAnnotation(
 			patientAwarenessEClass,
 			source,
 			new String[] {
@@ -6228,7 +6338,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		addAnnotation(familyHistoryObservationEClass, source, new String[] {
 				"statusCode.code", "completed", "templateId.root", "2.16.840.1.113883.10.20.1.22",
 				"constraints.validation.error",
-				"FamilyHistoryObservationTemplateId FamilyHistoryObservationId FamilyHistoryObservationStatusCode" });
+				"FamilyHistoryObservationTemplateId FamilyHistoryObservationId FamilyHistoryObservationStatusCode",
+				"constraints.validation.info", "FamilyHistoryObservationAgeObservation" });
 		addAnnotation(familyHistoryOrganizerEClass, source, new String[] {
 				"statusCode.code", "completed", "templateId.root", "2.16.840.1.113883.10.20.1.23",
 				"constraints.validation.error", "FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizerStatusCode" });
@@ -6254,7 +6365,7 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"templateId.root",
 					"2.16.840.1.113883.10.20.1.18",
 					"constraints.validation.error",
-					"AlertObservationTemplateId AlertObservationInformationSource AlertObservationPlayingEntityRequired AlertObservationMoodCode AlertObservationStatusCode",
+					"AlertObservationTemplateId AlertObservationInformationSource AlertObservationPlayingEntityRequired AlertObservationPlayingEntityClassCode AlertObservationMoodCode AlertObservationStatusCode",
 					"constraints.validation.warning",
 					"AlertObservationAgentRepresentation",
 					"constraints.validation.info",
@@ -6272,7 +6383,7 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		addAnnotation(productEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.10.20.1.53", "constraints.validation.error",
 				"ProductTemplateId ProductHasMaterial ProductHasMaterialCode ProductHasMaterialCodeOriginalText",
-				"constraints.validation.info", "ProductHasMaterialName" });
+				"constraints.validation.info", "ProductHasMaterialName ProductId" });
 		addAnnotation(advanceDirectiveStatusObservationEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.10.20.1.37", "constraints.validation.error",
 				"AdvanceDirectiveStatusObservationTemplateId" });
@@ -6289,13 +6400,9 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"constraints.validation.error",
 					"AuthorizationActivityTemplateId AuthorizationActivityClassCode AuthorizationActivityMoodCode AuthorizationActivityId",
 					"classCode", "ACT", "moodCode", "EVN" });
-		addAnnotation(procedureActivityEClass, source, new String[] { "statusCode.code", "completed" });
 		addAnnotation(functionalStatusObservationEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.10.20.1.44", "constraints.validation.error",
 				"FunctionalStatusObservationTemplateId" });
-		addAnnotation(productInstanceEClass, source, new String[] {
-				"templateId.root", "2.16.840.1.113883.10.20.1.52", "constraints.validation.error",
-				"ProductInstanceTemplateId ProductInstanceClassCode", "classCode", "MANU" });
 		addAnnotation(procedureActivityActEClass, source, new String[] {
 				"contextDependent", "true", "templateId.root", "2.16.840.1.113883.10.20.1.29",
 				"constraints.validation.error", "ProcedureActivityActTemplateId" });

@@ -104,6 +104,24 @@ public class MedicationsSectionImpl extends SectionImpl implements MedicationsSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationsSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSectionOperations.validateMedicationsSectionMedicationActivity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationsSectionSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSectionOperations.validateMedicationsSectionSupplyActivity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<MedicationActivity> getMedicationActivities() {
 		return MedicationsSectionOperations.getMedicationActivities(this);
 	}

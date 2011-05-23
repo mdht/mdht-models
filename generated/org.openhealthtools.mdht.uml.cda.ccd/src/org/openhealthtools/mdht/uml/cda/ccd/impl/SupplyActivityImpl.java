@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.FulfillmentInstruction;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationStatusObservation;
+import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.SupplyActivityOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
@@ -184,6 +185,15 @@ public class SupplyActivityImpl extends SupplyImpl implements SupplyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSupplyActivityProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SupplyActivityOperations.validateSupplyActivityProductInstance(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationStatusObservation getMedicationStatusObservation() {
 		return SupplyActivityOperations.getMedicationStatusObservation(this);
 	}
@@ -195,6 +205,15 @@ public class SupplyActivityImpl extends SupplyImpl implements SupplyActivity {
 	 */
 	public EList<FulfillmentInstruction> getFulfillmentInstructions() {
 		return SupplyActivityOperations.getFulfillmentInstructions(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProductInstance> getProductInstances() {
+		return SupplyActivityOperations.getProductInstances(this);
 	}
 
 	/**

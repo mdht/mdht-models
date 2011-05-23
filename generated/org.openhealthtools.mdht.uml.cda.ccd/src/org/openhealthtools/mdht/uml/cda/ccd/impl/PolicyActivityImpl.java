@@ -183,8 +183,8 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePolicyActivityPolicySubscriber(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPolicySubscriber(this, diagnostics, context);
+	public boolean validatePolicyActivitySubscriber(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PolicyActivityOperations.validatePolicyActivitySubscriber(this, diagnostics, context);
 	}
 
 	/**

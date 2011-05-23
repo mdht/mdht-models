@@ -342,6 +342,23 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
+			case CCDPackage.PRODUCT_INSTANCE: {
+				ProductInstance productInstance = (ProductInstance) theEObject;
+				T result = caseProductInstance(productInstance);
+				if (result == null) {
+					result = caseParticipantRole(productInstance);
+				}
+				if (result == null) {
+					result = caseRole(productInstance);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(productInstance);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case CCDPackage.SUPPLY_ACTIVITY: {
 				SupplyActivity supplyActivity = (SupplyActivity) theEObject;
 				T result = caseSupplyActivity(supplyActivity);
@@ -450,92 +467,6 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(episodeObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.PROBLEM_OBSERVATION: {
-				ProblemObservation problemObservation = (ProblemObservation) theEObject;
-				T result = caseProblemObservation(problemObservation);
-				if (result == null) {
-					result = caseObservation(problemObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemObservation);
-				}
-				if (result == null) {
-					result = caseAct(problemObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.PROBLEM_STATUS_OBSERVATION: {
-				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation) theEObject;
-				T result = caseProblemStatusObservation(problemStatusObservation);
-				if (result == null) {
-					result = caseStatusObservation(problemStatusObservation);
-				}
-				if (result == null) {
-					result = caseObservation(problemStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(problemStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION: {
-				ProblemHealthStatusObservation problemHealthStatusObservation = (ProblemHealthStatusObservation) theEObject;
-				T result = caseProblemHealthStatusObservation(problemHealthStatusObservation);
-				if (result == null) {
-					result = caseStatusObservation(problemHealthStatusObservation);
-				}
-				if (result == null) {
-					result = caseObservation(problemHealthStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemHealthStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(problemHealthStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemHealthStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.AGE_OBSERVATION: {
-				AgeObservation ageObservation = (AgeObservation) theEObject;
-				T result = caseAgeObservation(ageObservation);
-				if (result == null) {
-					result = caseObservation(ageObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(ageObservation);
-				}
-				if (result == null) {
-					result = caseAct(ageObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(ageObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -851,6 +782,9 @@ public class CCDSwitch<T> {
 				ImmunizationsSection immunizationsSection = (ImmunizationsSection) theEObject;
 				T result = caseImmunizationsSection(immunizationsSection);
 				if (result == null) {
+					result = caseMedicationsSection(immunizationsSection);
+				}
+				if (result == null) {
 					result = caseSection(immunizationsSection);
 				}
 				if (result == null) {
@@ -1063,6 +997,92 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(purposeActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.PROBLEM_OBSERVATION: {
+				ProblemObservation problemObservation = (ProblemObservation) theEObject;
+				T result = caseProblemObservation(problemObservation);
+				if (result == null) {
+					result = caseObservation(problemObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemObservation);
+				}
+				if (result == null) {
+					result = caseAct(problemObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.PROBLEM_STATUS_OBSERVATION: {
+				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation) theEObject;
+				T result = caseProblemStatusObservation(problemStatusObservation);
+				if (result == null) {
+					result = caseStatusObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION: {
+				ProblemHealthStatusObservation problemHealthStatusObservation = (ProblemHealthStatusObservation) theEObject;
+				T result = caseProblemHealthStatusObservation(problemHealthStatusObservation);
+				if (result == null) {
+					result = caseStatusObservation(problemHealthStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(problemHealthStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemHealthStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(problemHealthStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemHealthStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.AGE_OBSERVATION: {
+				AgeObservation ageObservation = (AgeObservation) theEObject;
+				T result = caseAgeObservation(ageObservation);
+				if (result == null) {
+					result = caseObservation(ageObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(ageObservation);
+				}
+				if (result == null) {
+					result = caseAct(ageObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(ageObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1330,6 +1350,15 @@ public class CCDSwitch<T> {
 				ProcedureActivity procedureActivity = (ProcedureActivity) theEObject;
 				T result = caseProcedureActivity(procedureActivity);
 				if (result == null) {
+					result = caseClinicalStatement(procedureActivity);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivity);
+				}
+				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
@@ -1351,23 +1380,6 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(functionalStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.PRODUCT_INSTANCE: {
-				ProductInstance productInstance = (ProductInstance) theEObject;
-				T result = caseProductInstance(productInstance);
-				if (result == null) {
-					result = caseParticipantRole(productInstance);
-				}
-				if (result == null) {
-					result = caseRole(productInstance);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(productInstance);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

@@ -99,6 +99,15 @@ public class ProductImpl extends ManufacturedProductImpl implements Product {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProductId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProductOperations.validateProductId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Product init() {
 		CDAUtil.init(this);
 		return this;

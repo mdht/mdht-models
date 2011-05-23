@@ -68,7 +68,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProblemHealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityAct;
 import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
@@ -150,6 +149,8 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createReactionObservation();
 			case CCDPackage.SEVERITY_OBSERVATION:
 				return createSeverityObservation();
+			case CCDPackage.PRODUCT_INSTANCE:
+				return createProductInstance();
 			case CCDPackage.SUPPLY_ACTIVITY:
 				return createSupplyActivity();
 			case CCDPackage.FULFILLMENT_INSTRUCTION:
@@ -162,14 +163,6 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createProblemAct();
 			case CCDPackage.EPISODE_OBSERVATION:
 				return createEpisodeObservation();
-			case CCDPackage.PROBLEM_OBSERVATION:
-				return createProblemObservation();
-			case CCDPackage.PROBLEM_STATUS_OBSERVATION:
-				return createProblemStatusObservation();
-			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION:
-				return createProblemHealthStatusObservation();
-			case CCDPackage.AGE_OBSERVATION:
-				return createAgeObservation();
 			case CCDPackage.FAMILY_HISTORY_SECTION:
 				return createFamilyHistorySection();
 			case CCDPackage.SOCIAL_HISTORY_SECTION:
@@ -226,6 +219,14 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createPurposeSection();
 			case CCDPackage.PURPOSE_ACTIVITY:
 				return createPurposeActivity();
+			case CCDPackage.PROBLEM_OBSERVATION:
+				return createProblemObservation();
+			case CCDPackage.PROBLEM_STATUS_OBSERVATION:
+				return createProblemStatusObservation();
+			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION:
+				return createProblemHealthStatusObservation();
+			case CCDPackage.AGE_OBSERVATION:
+				return createAgeObservation();
 			case CCDPackage.PATIENT_AWARENESS:
 				return createPatientAwareness();
 			case CCDPackage.FAMILY_HISTORY_OBSERVATION:
@@ -252,12 +253,8 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createAdvanceDirectiveVerification();
 			case CCDPackage.AUTHORIZATION_ACTIVITY:
 				return createAuthorizationActivity();
-			case CCDPackage.PROCEDURE_ACTIVITY:
-				return createProcedureActivity();
 			case CCDPackage.FUNCTIONAL_STATUS_OBSERVATION:
 				return createFunctionalStatusObservation();
-			case CCDPackage.PRODUCT_INSTANCE:
-				return createProductInstance();
 			case CCDPackage.PROCEDURE_ACTIVITY_ACT:
 				return createProcedureActivityAct();
 			case CCDPackage.PROCEDURE_ACTIVITY_OBSERVATION:
@@ -803,16 +800,6 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 	public PlanOfCareActivityAct createPlanOfCareActivityAct() {
 		PlanOfCareActivityActImpl planOfCareActivityAct = new PlanOfCareActivityActImpl();
 		return planOfCareActivityAct;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureActivity createProcedureActivity() {
-		ProcedureActivityImpl procedureActivity = new ProcedureActivityImpl();
-		return procedureActivity;
 	}
 
 	/**
