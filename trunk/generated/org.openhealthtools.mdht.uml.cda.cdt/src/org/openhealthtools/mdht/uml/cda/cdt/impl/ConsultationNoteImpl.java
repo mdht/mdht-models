@@ -16,11 +16,11 @@ import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
-import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.ConsultationNote;
+import org.openhealthtools.mdht.uml.cda.cdt.DiagnosticFindings;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryOfPresentIllness;
 import org.openhealthtools.mdht.uml.cda.cdt.PastMedicalHistorySectionConsult;
@@ -92,9 +92,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNotePhysicalExaminationSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNotePhysicalExaminationSection(this, diagnostics, context);
+	public boolean validateConsultationNotePhysicalExamination(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNotePhysicalExamination(this, diagnostics, context);
 	}
 
 	/**
@@ -120,10 +119,9 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNotePastMedicalHistorySectionConsult(DiagnosticChain diagnostics,
+	public boolean validateConsultationNotePastMedicalHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNotePastMedicalHistorySectionConsult(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNotePastMedicalHistorySection(this, diagnostics, context);
 	}
 
 	/**
@@ -330,7 +328,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResultsSection getDiagnosticFindings() {
+	public DiagnosticFindings getDiagnosticFindings() {
 		return ConsultationNoteOperations.getDiagnosticFindings(this);
 	}
 

@@ -16,9 +16,9 @@ import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
-import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
+import org.openhealthtools.mdht.uml.cda.cdt.DiagnosticFindings;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryOfPresentIllness;
@@ -174,10 +174,9 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalReviewOfSystemsSectionIHE(DiagnosticChain diagnostics,
+	public boolean validateHistoryAndPhysicalReviewOfSystemsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalReviewOfSystemsSectionIHE(
-			this, diagnostics, context);
+		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalReviewOfSystemsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -342,7 +341,7 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResultsSection getDiagnosticFindings() {
+	public DiagnosticFindings getDiagnosticFindings() {
 		return HistoryAndPhysicalOperations.getDiagnosticFindings(this);
 	}
 

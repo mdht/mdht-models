@@ -144,6 +144,11 @@ public class CDTAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseDiagnosticFindings(DiagnosticFindings object) {
+			return createDiagnosticFindingsAdapter();
+		}
+
+		@Override
 		public Adapter caseConsultationNote(ConsultationNote object) {
 			return createConsultationNoteAdapter();
 		}
@@ -181,11 +186,6 @@ public class CDTAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseLevelThreeConformance(LevelThreeConformance object) {
 			return createLevelThreeConformanceAdapter();
-		}
-
-		@Override
-		public Adapter caseDiagnosticFindings(DiagnosticFindings object) {
-			return createDiagnosticFindingsAdapter();
 		}
 
 		@Override

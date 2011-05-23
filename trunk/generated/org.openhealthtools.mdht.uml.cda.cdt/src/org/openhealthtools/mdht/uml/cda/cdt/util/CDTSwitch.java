@@ -259,6 +259,26 @@ public class CDTSwitch<T> {
 				}
 				return result;
 			}
+			case CDTPackage.DIAGNOSTIC_FINDINGS: {
+				DiagnosticFindings diagnosticFindings = (DiagnosticFindings) theEObject;
+				T result = caseDiagnosticFindings(diagnosticFindings);
+				if (result == null) {
+					result = caseResultsSection(diagnosticFindings);
+				}
+				if (result == null) {
+					result = caseSection(diagnosticFindings);
+				}
+				if (result == null) {
+					result = caseAct(diagnosticFindings);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(diagnosticFindings);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case CDTPackage.CONSULTATION_NOTE: {
 				ConsultationNote consultationNote = (ConsultationNote) theEObject;
 				T result = caseConsultationNote(consultationNote);
@@ -401,26 +421,6 @@ public class CDTSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(levelThreeConformance);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CDTPackage.DIAGNOSTIC_FINDINGS: {
-				DiagnosticFindings diagnosticFindings = (DiagnosticFindings) theEObject;
-				T result = caseDiagnosticFindings(diagnosticFindings);
-				if (result == null) {
-					result = caseResultsSection(diagnosticFindings);
-				}
-				if (result == null) {
-					result = caseSection(diagnosticFindings);
-				}
-				if (result == null) {
-					result = caseAct(diagnosticFindings);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(diagnosticFindings);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

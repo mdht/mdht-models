@@ -655,6 +655,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 
 		generalStatusSectionEClass = createEClass(GENERAL_STATUS_SECTION);
 
+		diagnosticFindingsEClass = createEClass(DIAGNOSTIC_FINDINGS);
+
 		consultationNoteEClass = createEClass(CONSULTATION_NOTE);
 
 		pastMedicalHistorySectionConsultEClass = createEClass(PAST_MEDICAL_HISTORY_SECTION_CONSULT);
@@ -670,8 +672,6 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		levelTwoConformanceEClass = createEClass(LEVEL_TWO_CONFORMANCE);
 
 		levelThreeConformanceEClass = createEClass(LEVEL_THREE_CONFORMANCE);
-
-		diagnosticFindingsEClass = createEClass(DIAGNOSTIC_FINDINGS);
 
 		assessmentSectionEClass = createEClass(ASSESSMENT_SECTION);
 
@@ -742,6 +742,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		physicalExaminationSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		vitalSignsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		generalStatusSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		diagnosticFindingsEClass.getESuperTypes().add(theCCDPackage.getResultsSection());
 		consultationNoteEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
 		pastMedicalHistorySectionConsultEClass.getESuperTypes().add(theCDAPackage.getSection());
 		reviewOfSystemsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
@@ -750,7 +751,6 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		levelOneConformanceEClass.getESuperTypes().add(theCDAPackage.getClinicalDocument());
 		levelTwoConformanceEClass.getESuperTypes().add(this.getLevelOneConformance());
 		levelThreeConformanceEClass.getESuperTypes().add(this.getLevelTwoConformance());
-		diagnosticFindingsEClass.getESuperTypes().add(theCCDPackage.getResultsSection());
 		assessmentSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		planSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		assessmentAndPlanSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
@@ -1292,8 +1292,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			historyAndPhysicalEClass, ecorePackage.getEBoolean(),
-			"validateHistoryAndPhysicalReviewOfSystemsSectionIHE", 0, 1, IS_UNIQUE, IS_ORDERED);
+			historyAndPhysicalEClass, ecorePackage.getEBoolean(), "validateHistoryAndPhysicalReviewOfSystemsSection",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1419,7 +1419,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			!IS_ORDERED);
 
 		addEOperation(
-			historyAndPhysicalEClass, theCCDPackage.getResultsSection(), "getDiagnosticFindings", 1, 1, IS_UNIQUE,
+			historyAndPhysicalEClass, this.getDiagnosticFindings(), "getDiagnosticFindings", 1, 1, IS_UNIQUE,
 			!IS_ORDERED);
 
 		addEOperation(
@@ -1650,6 +1650,21 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
+			diagnosticFindingsEClass, DiagnosticFindings.class, "DiagnosticFindings", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			diagnosticFindingsEClass, ecorePackage.getEBoolean(), "validateDiagnosticFindingsTitle", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(
 			consultationNoteEClass, ConsultationNote.class, "ConsultationNote", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
 
@@ -1676,8 +1691,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			consultationNoteEClass, ecorePackage.getEBoolean(), "validateConsultationNotePhysicalExaminationSection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			consultationNoteEClass, ecorePackage.getEBoolean(), "validateConsultationNotePhysicalExamination", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1709,8 +1724,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			consultationNoteEClass, ecorePackage.getEBoolean(),
-			"validateConsultationNotePastMedicalHistorySectionConsult", 0, 1, IS_UNIQUE, IS_ORDERED);
+			consultationNoteEClass, ecorePackage.getEBoolean(), "validateConsultationNotePastMedicalHistorySection", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1870,8 +1885,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			!IS_ORDERED);
 
 		addEOperation(
-			consultationNoteEClass, theCCDPackage.getResultsSection(), "getDiagnosticFindings", 1, 1, IS_UNIQUE,
-			!IS_ORDERED);
+			consultationNoteEClass, this.getDiagnosticFindings(), "getDiagnosticFindings", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
 			pastMedicalHistorySectionConsultEClass, PastMedicalHistorySectionConsult.class,
@@ -2010,21 +2024,6 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		initEClass(
 			levelThreeConformanceEClass, LevelThreeConformance.class, "LevelThreeConformance", !IS_ABSTRACT,
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(
-			diagnosticFindingsEClass, DiagnosticFindings.class, "DiagnosticFindings", !IS_ABSTRACT, !IS_INTERFACE,
-			IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			diagnosticFindingsEClass, ecorePackage.getEBoolean(), "validateDiagnosticFindingsTitle", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
 			assessmentSectionEClass, AssessmentSection.class, "AssessmentSection", !IS_ABSTRACT, !IS_INTERFACE,
@@ -2306,7 +2305,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			progressNoteEClass, ecorePackage.getEBoolean(), "validateProgressNoteChiefComplaintSectionProcNote", 0, 1,
+			progressNoteEClass, ecorePackage.getEBoolean(), "validateProgressNoteChiefComplaintSection", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -2383,7 +2382,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			progressNoteEClass, ecorePackage.getEBoolean(), "validateProgressNoteReviewOfSystemsSectionIHE", 0, 1,
+			progressNoteEClass, ecorePackage.getEBoolean(), "validateProgressNoteReviewOfSystemsSection", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -2691,7 +2690,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 					"templateId.root",
 					"2.16.840.1.113883.10.20.2",
 					"constraints.validation.error",
-					"HistoryAndPhysicalTemplateId HistoryAndPhysicalAssessmentAndPlan HistoryAndPhysicalBothAssessmentAndPlan HistoryAndPhysicalReasonForVisitAndChiefComplaint HistoryAndPhysicalBothReasonForVisitAndChiefComplaint GeneralHeaderConstraintsCode HistoryAndPhysicalHistoryOfPresentIllness HistoryAndPhysicalPastMedicalHistorySection HistoryAndPhysicalMedicationsSection HistoryAndPhysicalAlertsSection HistoryAndPhysicalSocialHistorySection HistoryAndPhysicalFamilyHistorySection HistoryAndPhysicalReviewOfSystemsSectionIHE HistoryAndPhysicalPhysicalExaminationSection HistoryAndPhysicalVitalSignsSection HistoryAndPhysicalGeneralStatusSection HistoryAndPhysicalDiagnosticFindings",
+					"HistoryAndPhysicalTemplateId HistoryAndPhysicalAssessmentAndPlan HistoryAndPhysicalBothAssessmentAndPlan HistoryAndPhysicalReasonForVisitAndChiefComplaint HistoryAndPhysicalBothReasonForVisitAndChiefComplaint GeneralHeaderConstraintsCode HistoryAndPhysicalHistoryOfPresentIllness HistoryAndPhysicalPastMedicalHistorySection HistoryAndPhysicalMedicationsSection HistoryAndPhysicalAlertsSection HistoryAndPhysicalSocialHistorySection HistoryAndPhysicalFamilyHistorySection HistoryAndPhysicalReviewOfSystemsSection HistoryAndPhysicalPhysicalExaminationSection HistoryAndPhysicalVitalSignsSection HistoryAndPhysicalGeneralStatusSection HistoryAndPhysicalDiagnosticFindings",
 					"code.codeSystemName", "LOINC", "constraints.validation.info",
 					"HistoryAndPhysicalProblemSection HistoryAndPhysicalProceduresSection HistoryAndPhysicalImmunizationsSection" });
 		addAnnotation(historyOfPresentIllnessEClass, source, new String[] {
@@ -2726,6 +2725,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 				"code.displayName", "GENERAL STATUS, PHYSICAL FINDINGS", "constraints.validation.error",
 				"GeneralStatusSectionTemplateId GeneralStatusSectionCode", "code.codeSystemName", "LOINC", "code.code",
 				"10210-3" });
+		addAnnotation(diagnosticFindingsEClass, source, new String[] {
+				"constraints.validation.error", "DiagnosticFindingsTitle" });
 		addAnnotation(
 			consultationNoteEClass,
 			source,
@@ -2735,11 +2736,11 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 					"templateId.root",
 					"2.16.840.1.113883.10.20.4",
 					"constraints.validation.error",
-					"ConsultationNoteTemplateId ConsultationNoteReferralOrVisit GeneralHeaderConstraintsCode ConsultationNoteHistoryOfPresentIllness ConsultationNotePhysicalExaminationSection",
+					"ConsultationNoteTemplateId ConsultationNoteReferralOrVisit GeneralHeaderConstraintsCode ConsultationNoteHistoryOfPresentIllness ConsultationNotePhysicalExamination",
 					"code.codeSystemName",
 					"LOINC",
 					"constraints.validation.info",
-					"ConsultationNoteProblemSection ConsultationNoteProceduresSection ConsultationNotePastMedicalHistorySectionConsult ConsultationNoteImmunizationsSection ConsultationNoteMedicationsSection ConsultationNoteAlertsSection ConsultationNoteSocialHistorySection ConsultationNoteFamilyHistorySection ConsultationNoteReviewOfSystemsSection ConsultationNoteVitalSignsSection ConsultationNoteGeneralStatusSection ConsultationNoteDiagnosticFindings" });
+					"ConsultationNoteProblemSection ConsultationNoteProceduresSection ConsultationNotePastMedicalHistorySection ConsultationNoteImmunizationsSection ConsultationNoteMedicationsSection ConsultationNoteAlertsSection ConsultationNoteSocialHistorySection ConsultationNoteFamilyHistorySection ConsultationNoteReviewOfSystemsSection ConsultationNoteVitalSignsSection ConsultationNoteGeneralStatusSection ConsultationNoteDiagnosticFindings" });
 		addAnnotation(
 			pastMedicalHistorySectionConsultEClass,
 			source,
@@ -2777,8 +2778,6 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addAnnotation(levelThreeConformanceEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.10.20.30", "constraints.validation.error",
 				"LevelThreeConformanceTemplateId" });
-		addAnnotation(diagnosticFindingsEClass, source, new String[] {
-				"constraints.validation.error", "DiagnosticFindingsTitle" });
 		addAnnotation(assessmentSectionEClass, source, new String[] {
 				"contextDependent", "true", "code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root",
 				"2.16.840.1.113883.10.20.2.7", "code.displayName", "Assessment", "constraints.validation.error",
@@ -2824,7 +2823,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 					"constraints.validation.warning",
 					"ProgressNoteHasServiceEvent ProgressNoteHasServiceEventEffectiveTime ProgressNoteHasEncompassingEncounterFacilityId",
 					"constraints.validation.info",
-					"ProgressNoteAlertsSection ProgressNoteChiefComplaintSectionProcNote ProgressNoteMedicationsSection ProgressNoteObjectiveSection ProgressNotePhysicalExaminationSection ProgressNoteProblemSection ProgressNoteResultsSection ProgressNoteVitalSignsSection ProgressNoteReviewOfSystemsSectionIHE ProgressNoteSubjectiveSection" });
+					"ProgressNoteAlertsSection ProgressNoteChiefComplaintSection ProgressNoteMedicationsSection ProgressNoteObjectiveSection ProgressNotePhysicalExaminationSection ProgressNoteProblemSection ProgressNoteResultsSection ProgressNoteVitalSignsSection ProgressNoteReviewOfSystemsSection ProgressNoteSubjectiveSection" });
 		addAnnotation(assessmentAndPlanSectionProcNoteEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "2.16.840.1.113883.10.20.18.2.14",
 				"code.displayName", "ASSESSMENT AND PLAN", "constraints.validation.error",

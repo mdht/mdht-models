@@ -168,9 +168,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNoteChiefComplaintSectionProcNote(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteChiefComplaintSectionProcNote(this, diagnostics, context);
+	public boolean validateProgressNoteChiefComplaintSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProgressNoteOperations.validateProgressNoteChiefComplaintSection(this, diagnostics, context);
 	}
 
 	/**
@@ -233,9 +232,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNoteReviewOfSystemsSectionIHE(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteReviewOfSystemsSectionIHE(this, diagnostics, context);
+	public boolean validateProgressNoteReviewOfSystemsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProgressNoteOperations.validateProgressNoteReviewOfSystemsSection(this, diagnostics, context);
 	}
 
 	/**

@@ -646,7 +646,7 @@ public interface CDTPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.CDTPackageImpl#getConsultationNote()
 	 * @generated
 	 */
-	int CONSULTATION_NOTE = 8;
+	int CONSULTATION_NOTE = 9;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.cdt.impl.LevelThreeConformanceImpl <em>Level Three Conformance</em>}' class.
@@ -656,7 +656,7 @@ public interface CDTPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.CDTPackageImpl#getLevelThreeConformance()
 	 * @generated
 	 */
-	int LEVEL_THREE_CONFORMANCE = 15;
+	int LEVEL_THREE_CONFORMANCE = 16;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.cdt.impl.ReasonForReferralSectionImpl <em>Reason For Referral Section</em>}' class.
@@ -666,7 +666,7 @@ public interface CDTPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.CDTPackageImpl#getReasonForReferralSection()
 	 * @generated
 	 */
-	int REASON_FOR_REFERRAL_SECTION = 11;
+	int REASON_FOR_REFERRAL_SECTION = 12;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.cdt.impl.ReasonForVisitSectionConsultImpl <em>Reason For Visit Section Consult</em>}' class.
@@ -676,7 +676,7 @@ public interface CDTPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.CDTPackageImpl#getReasonForVisitSectionConsult()
 	 * @generated
 	 */
-	int REASON_FOR_VISIT_SECTION_CONSULT = 12;
+	int REASON_FOR_VISIT_SECTION_CONSULT = 13;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.cdt.impl.ReasonForVisitSectionImpl <em>Reason For Visit Section</em>}' class.
@@ -716,7 +716,7 @@ public interface CDTPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.CDTPackageImpl#getLevelOneConformance()
 	 * @generated
 	 */
-	int LEVEL_ONE_CONFORMANCE = 13;
+	int LEVEL_ONE_CONFORMANCE = 14;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.cdt.impl.LevelTwoConformanceImpl <em>Level Two Conformance</em>}' class.
@@ -726,7 +726,7 @@ public interface CDTPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.CDTPackageImpl#getLevelTwoConformance()
 	 * @generated
 	 */
-	int LEVEL_TWO_CONFORMANCE = 14;
+	int LEVEL_TWO_CONFORMANCE = 15;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.cdt.impl.PhysicalExaminationSectionImpl <em>Physical Examination Section</em>}' class.
@@ -766,7 +766,7 @@ public interface CDTPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.CDTPackageImpl#getReviewOfSystemsSection()
 	 * @generated
 	 */
-	int REVIEW_OF_SYSTEMS_SECTION = 10;
+	int REVIEW_OF_SYSTEMS_SECTION = 11;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.cdt.impl.GeneralStatusSectionImpl <em>General Status Section</em>}' class.
@@ -786,7 +786,7 @@ public interface CDTPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.CDTPackageImpl#getDiagnosticFindings()
 	 * @generated
 	 */
-	int DIAGNOSTIC_FINDINGS = 16;
+	int DIAGNOSTIC_FINDINGS = 8;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.cdt.impl.VitalSignsSectionImpl <em>Vital Signs Section</em>}' class.
@@ -1865,6 +1865,187 @@ public interface CDTPackage extends EPackage {
 	int GENERAL_STATUS_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.cdt.impl.PastMedicalHistorySectionConsultImpl <em>Past Medical History Section Consult</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.PastMedicalHistorySectionConsultImpl
+	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.CDTPackageImpl#getPastMedicalHistorySectionConsult()
+	 * @generated
+	 */
+	int PAST_MEDICAL_HISTORY_SECTION_CONSULT = 10;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__REALM_CODE = CCDPackage.RESULTS_SECTION__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__TYPE_ID = CCDPackage.RESULTS_SECTION__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__TEMPLATE_ID = CCDPackage.RESULTS_SECTION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__ID = CCDPackage.RESULTS_SECTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__CODE = CCDPackage.RESULTS_SECTION__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__TITLE = CCDPackage.RESULTS_SECTION__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__TEXT = CCDPackage.RESULTS_SECTION__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__CONFIDENTIALITY_CODE = CCDPackage.RESULTS_SECTION__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__LANGUAGE_CODE = CCDPackage.RESULTS_SECTION__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__SUBJECT = CCDPackage.RESULTS_SECTION__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__AUTHOR = CCDPackage.RESULTS_SECTION__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__INFORMANT = CCDPackage.RESULTS_SECTION__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__ENTRY = CCDPackage.RESULTS_SECTION__ENTRY;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__COMPONENT = CCDPackage.RESULTS_SECTION__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__SECTION_ID = CCDPackage.RESULTS_SECTION__SECTION_ID;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__NULL_FLAVOR = CCDPackage.RESULTS_SECTION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__CLASS_CODE = CCDPackage.RESULTS_SECTION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS__MOOD_CODE = CCDPackage.RESULTS_SECTION__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Diagnostic Findings</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_FINDINGS_FEATURE_COUNT = CCDPackage.RESULTS_SECTION_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2142,16 +2323,6 @@ public interface CDTPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONSULTATION_NOTE_FEATURE_COUNT = GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.cdt.impl.PastMedicalHistorySectionConsultImpl <em>Past Medical History Section Consult</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.PastMedicalHistorySectionConsultImpl
-	 * @see org.openhealthtools.mdht.uml.cda.cdt.impl.CDTPackageImpl#getPastMedicalHistorySectionConsult()
-	 * @generated
-	 */
-	int PAST_MEDICAL_HISTORY_SECTION_CONSULT = 9;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3673,177 +3844,6 @@ public interface CDTPackage extends EPackage {
 	 * @ordered
 	 */
 	int LEVEL_THREE_CONFORMANCE_FEATURE_COUNT = LEVEL_TWO_CONFORMANCE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__REALM_CODE = CCDPackage.RESULTS_SECTION__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__TYPE_ID = CCDPackage.RESULTS_SECTION__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__TEMPLATE_ID = CCDPackage.RESULTS_SECTION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__ID = CCDPackage.RESULTS_SECTION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__CODE = CCDPackage.RESULTS_SECTION__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Title</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__TITLE = CCDPackage.RESULTS_SECTION__TITLE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__TEXT = CCDPackage.RESULTS_SECTION__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__CONFIDENTIALITY_CODE = CCDPackage.RESULTS_SECTION__CONFIDENTIALITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__LANGUAGE_CODE = CCDPackage.RESULTS_SECTION__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__SUBJECT = CCDPackage.RESULTS_SECTION__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__AUTHOR = CCDPackage.RESULTS_SECTION__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__INFORMANT = CCDPackage.RESULTS_SECTION__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__ENTRY = CCDPackage.RESULTS_SECTION__ENTRY;
-
-	/**
-	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__COMPONENT = CCDPackage.RESULTS_SECTION__COMPONENT;
-
-	/**
-	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__SECTION_ID = CCDPackage.RESULTS_SECTION__SECTION_ID;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__NULL_FLAVOR = CCDPackage.RESULTS_SECTION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__CLASS_CODE = CCDPackage.RESULTS_SECTION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS__MOOD_CODE = CCDPackage.RESULTS_SECTION__MOOD_CODE;
-
-	/**
-	 * The number of structural features of the '<em>Diagnostic Findings</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_FINDINGS_FEATURE_COUNT = CCDPackage.RESULTS_SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
