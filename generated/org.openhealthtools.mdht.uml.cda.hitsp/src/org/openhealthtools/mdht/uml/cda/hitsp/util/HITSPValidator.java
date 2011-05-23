@@ -1,14 +1,17 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2009, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.util;
 
 import java.util.Map;
 
-import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
@@ -1337,6 +1340,14 @@ public class HITSPValidator extends EObjectValidator {
 				medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				medication, diagnostics, context);
 		}
@@ -1350,6 +1361,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -1676,6 +1691,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityFulfillmentInstruction(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityProductInstance(
 				medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -2633,21 +2652,7 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	public boolean validateVitalSign_validateResultObservationCode(VitalSign vitalSign, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateResultObservationCode", getObjectLabel(vitalSign, context) },
-					new Object[] { vitalSign }, context));
-			}
-			return false;
-		}
-		return iheValidator.validateVitalSignObservation_validateResultObservationCode(vitalSign, diagnostics, context);
+		return vitalSign.validateResultObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -3215,6 +3220,10 @@ public class HITSPValidator extends EObjectValidator {
 				surgeriesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProceduresSection_validateProceduresSectionText(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= iheValidator.validateSurgeriesSection_validateSurgeriesSectionTemplateId(
 				surgeriesSection, diagnostics, context);
 		}
@@ -3513,6 +3522,14 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionText(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionMedicationActivity(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionSupplyActivity(
 				medicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3867,15 +3884,31 @@ public class HITSPValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionClinicalStatements(
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionHasMedicationOrSupplyActivity(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTemplateId(
+			result &= ccdValidator.validateImmunizationsSection_validateMedicationsSectionTemplateId(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionCode(
+			result &= ccdValidator.validateImmunizationsSection_validateMedicationsSectionCode(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTitle(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionText(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionMedicationActivity(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionSupplyActivity(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5124,6 +5157,14 @@ public class HITSPValidator extends EObjectValidator {
 				immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				immunization, diagnostics, context);
 		}
@@ -5137,6 +5178,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5185,21 +5230,7 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	public boolean validateImmunization_validateImmunizationCode(Immunization immunization,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateImmunizationCode", getObjectLabel(immunization, context) },
-					new Object[] { immunization }, context));
-			}
-			return false;
-		}
-		return iheValidator.validateImmunization_validateImmunizationCode(immunization, diagnostics, context);
+		return immunization.validateImmunizationCode(diagnostics, context);
 	}
 
 	/**
@@ -5369,6 +5400,14 @@ public class HITSPValidator extends EObjectValidator {
 				medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				medicationNormalDose, diagnostics, context);
 		}
@@ -5382,6 +5421,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medicationNormalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5584,6 +5627,14 @@ public class HITSPValidator extends EObjectValidator {
 				medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				medicationSplitDose, diagnostics, context);
 		}
@@ -5597,6 +5648,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medicationSplitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5798,6 +5853,14 @@ public class HITSPValidator extends EObjectValidator {
 				medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				medicationTaperedDose, diagnostics, context);
 		}
@@ -5811,6 +5874,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medicationTaperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5933,22 +6000,7 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	public boolean validateMedicationTaperedDose_validateTaperedDoseTemplateId(
 			MedicationTaperedDose medicationTaperedDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateTaperedDoseTemplateId", getObjectLabel(medicationTaperedDose, context) },
-					new Object[] { medicationTaperedDose }, context));
-			}
-			return false;
-		}
-		return iheValidator.validateTaperedDose_validateTaperedDoseTemplateId(
-			medicationTaperedDose, diagnostics, context);
+		return medicationTaperedDose.validateTaperedDoseTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -6041,6 +6093,14 @@ public class HITSPValidator extends EObjectValidator {
 				medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				medicationConditionalDose, diagnostics, context);
 		}
@@ -6054,6 +6114,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medicationConditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -6261,6 +6325,14 @@ public class HITSPValidator extends EObjectValidator {
 				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				medicationCombinationMedication, diagnostics, context);
 		}
@@ -6274,6 +6346,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medicationCombinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -7014,22 +7090,7 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	public boolean validateUnstructuredDocument_validateScannedDocumentTemplateId(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateScannedDocumentTemplateId", getObjectLabel(unstructuredDocument, context) },
-					new Object[] { unstructuredDocument }, context));
-			}
-			return false;
-		}
-		return iheValidator.validateScannedDocument_validateScannedDocumentTemplateId(
-			unstructuredDocument, diagnostics, context);
+		return unstructuredDocument.validateScannedDocumentTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -7088,6 +7149,9 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateProduct_validateProductTemplateId(
 				medicationInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProduct_validateProductId(medicationInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateProductEntry_validateProductEntryTemplateId(
@@ -7271,11 +7335,11 @@ public class HITSPValidator extends EObjectValidator {
 				conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatusObservation(
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(
 				conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatusObservation(
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(
 				conditionEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -7395,21 +7459,7 @@ public class HITSPValidator extends EObjectValidator {
 	 */
 	public boolean validateConditionEntry_validateProblemEntryValue(ConditionEntry conditionEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateProblemEntryValue", getObjectLabel(conditionEntry, context) },
-					new Object[] { conditionEntry }, context));
-			}
-			return false;
-		}
-		return iheValidator.validateProblemEntry_validateProblemEntryValue(conditionEntry, diagnostics, context);
+		return conditionEntry.validateProblemEntryValue(diagnostics, context);
 	}
 
 	/**
