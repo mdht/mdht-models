@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -50,8 +54,10 @@ public class DiagnosticResultsNarrativeSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsNarrativeSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticResultsNarrativeSectionOperations.validateDiagnosticResultsNarrativeSectionTemplateId(this, diagnostics, context);
+	public boolean validateDiagnosticResultsNarrativeSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticResultsNarrativeSectionOperations.validateDiagnosticResultsNarrativeSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +65,10 @@ public class DiagnosticResultsNarrativeSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsNarrativeSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticResultsNarrativeSectionOperations.validateDiagnosticResultsNarrativeSectionCode(this, diagnostics, context);
+	public boolean validateDiagnosticResultsNarrativeSectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticResultsNarrativeSectionOperations.validateDiagnosticResultsNarrativeSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +77,7 @@ public class DiagnosticResultsNarrativeSectionImpl extends SectionImpl implement
 	 * @generated
 	 */
 	public DiagnosticResultsNarrativeSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //DiagnosticResultsNarrativeSectionImpl
+} // DiagnosticResultsNarrativeSectionImpl

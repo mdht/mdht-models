@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -50,8 +54,10 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsTemplateId(this, diagnostics, context);
+	public boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +65,10 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsMoodCode(this, diagnostics, context);
+	public boolean validateMedicationFullfillmentInstructionsMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +76,10 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCode(this, diagnostics, context);
+	public boolean validateMedicationFullfillmentInstructionsCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +87,10 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsText(this, diagnostics, context);
+	public boolean validateMedicationFullfillmentInstructionsText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +98,10 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationFullfillmentInstructionsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsStatusCode(this, diagnostics, context);
+	public boolean validateMedicationFullfillmentInstructionsStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -96,7 +110,7 @@ public class MedicationFullfillmentInstructionsImpl extends ActImpl implements M
 	 * @generated
 	 */
 	public MedicationFullfillmentInstructions init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationFullfillmentInstructionsImpl
+} // MedicationFullfillmentInstructionsImpl

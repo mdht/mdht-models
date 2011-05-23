@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Map;
@@ -55,7 +59,7 @@ public class ProblemListNarrativeSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.2.5')";
+	protected static final String VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.5')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemListNarrativeSectionTemplateId(ProblemListNarrativeSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Narrative Section Template Id</em>}' invariant operation.
@@ -71,33 +75,33 @@ public class ProblemListNarrativeSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.2.5')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.5')
 	 * @param problemListNarrativeSection The receiving '<em><b>Problem List Narrative Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProblemListNarrativeSectionTemplateId(ProblemListNarrativeSection problemListNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProblemListNarrativeSectionTemplateId(
+			ProblemListNarrativeSection problemListNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_LIST_NARRATIVE_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemListNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_LIST_NARRATIVE_SECTION__PROBLEM_LIST_NARRATIVE_SECTION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ProblemListNarrativeSectionTemplateId"),
-						 new Object [] { problemListNarrativeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROBLEM_LIST_NARRATIVE_SECTION__PROBLEM_LIST_NARRATIVE_SECTION_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("ProblemListNarrativeSectionTemplateId"),
+					new Object[] { problemListNarrativeSection }));
 			}
 			return false;
 		}
@@ -112,9 +116,9 @@ public class ProblemListNarrativeSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '11450-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '11450-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemListNarrativeSectionCode(ProblemListNarrativeSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Narrative Section Code</em>}' invariant operation.
@@ -139,26 +143,26 @@ public class ProblemListNarrativeSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProblemListNarrativeSectionCode(ProblemListNarrativeSection problemListNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProblemListNarrativeSectionCode(
+			ProblemListNarrativeSection problemListNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_LIST_NARRATIVE_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemListNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_LIST_NARRATIVE_SECTION__PROBLEM_LIST_NARRATIVE_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProblemListNarrativeSectionCode"),
-						 new Object [] { problemListNarrativeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROBLEM_LIST_NARRATIVE_SECTION__PROBLEM_LIST_NARRATIVE_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("ProblemListNarrativeSectionCode"),
+					new Object[] { problemListNarrativeSection }));
 			}
 			return false;
 		}
@@ -196,26 +200,26 @@ public class ProblemListNarrativeSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProblemListNarrativeSectionTitle(ProblemListNarrativeSection problemListNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProblemListNarrativeSectionTitle(
+			ProblemListNarrativeSection problemListNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_LIST_NARRATIVE_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemListNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_LIST_NARRATIVE_SECTION__PROBLEM_LIST_NARRATIVE_SECTION_TITLE,
-						 ConsolPlugin.INSTANCE.getString("ProblemListNarrativeSectionTitle"),
-						 new Object [] { problemListNarrativeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROBLEM_LIST_NARRATIVE_SECTION__PROBLEM_LIST_NARRATIVE_SECTION_TITLE,
+					ConsolPlugin.INSTANCE.getString("ProblemListNarrativeSectionTitle"),
+					new Object[] { problemListNarrativeSection }));
 			}
 			return false;
 		}
@@ -253,26 +257,26 @@ public class ProblemListNarrativeSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProblemListNarrativeSectionText(ProblemListNarrativeSection problemListNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProblemListNarrativeSectionText(
+			ProblemListNarrativeSection problemListNarrativeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_LIST_NARRATIVE_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemListNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_LIST_NARRATIVE_SECTION__PROBLEM_LIST_NARRATIVE_SECTION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("ProblemListNarrativeSectionText"),
-						 new Object [] { problemListNarrativeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROBLEM_LIST_NARRATIVE_SECTION__PROBLEM_LIST_NARRATIVE_SECTION_TEXT,
+					ConsolPlugin.INSTANCE.getString("ProblemListNarrativeSectionText"),
+					new Object[] { problemListNarrativeSection }));
 			}
 			return false;
 		}

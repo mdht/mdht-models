@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Collection;
@@ -84,26 +88,25 @@ public class SurgeriesSectionOperations extends SurgeriesNarrativeSectionOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSurgeriesSectionExternalReference(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSurgeriesSectionExternalReference(SurgeriesSection surgeriesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_EXTERNAL_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("SurgeriesSectionExternalReference"),
-						 new Object [] { surgeriesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SURGERIES_SECTION__SURGERIES_SECTION_EXTERNAL_REFERENCE,
+					ConsolPlugin.INSTANCE.getString("SurgeriesSectionExternalReference"),
+					new Object[] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -139,14 +142,15 @@ public class SurgeriesSectionOperations extends SurgeriesNarrativeSectionOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ExternalReference getExternalReference(SurgeriesSection surgeriesSection) {
+	public static ExternalReference getExternalReference(SurgeriesSection surgeriesSection) {
 		if (GET_EXTERNAL_REFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.SURGERIES_SECTION, ConsolPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(60));
+			helper.setOperationContext(
+				ConsolPackage.Literals.SURGERIES_SECTION,
+				ConsolPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(60));
 			try {
 				GET_EXTERNAL_REFERENCE__EOCL_QRY = helper.createQuery(GET_EXTERNAL_REFERENCE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -183,14 +187,15 @@ public class SurgeriesSectionOperations extends SurgeriesNarrativeSectionOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<ProcedureActivityProcedure> getProcedureActivities(SurgeriesSection surgeriesSection) {
+	public static EList<ProcedureActivityProcedure> getProcedureActivities(SurgeriesSection surgeriesSection) {
 		if (GET_PROCEDURE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.SURGERIES_SECTION, ConsolPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(61));
+			helper.setOperationContext(
+				ConsolPackage.Literals.SURGERIES_SECTION,
+				ConsolPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(61));
 			try {
 				GET_PROCEDURE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -208,7 +213,7 @@ public class SurgeriesSectionOperations extends SurgeriesNarrativeSectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SURGERIES_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.2.7.1')";
+	protected static final String VALIDATE_SURGERIES_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.7.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSurgeriesNarrativeSectionTemplateId(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Surgeries Narrative Section Template Id</em>}' invariant operation.
@@ -224,33 +229,37 @@ public class SurgeriesSectionOperations extends SurgeriesNarrativeSectionOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.2.7.1')
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.7.1')
 	 * @param surgeriesSection The receiving '<em><b>Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSurgeriesNarrativeSectionTemplateId(SurgeriesSection surgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSurgeriesNarrativeSectionTemplateId(SurgeriesSection surgeriesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_SURGERIES_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_SURGERIES_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGERIES_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGERIES_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SURGERIES_SECTION__SURGERIES_NARRATIVE_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SurgeriesNarrativeSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(surgeriesSection, context) }),
-						 new Object [] { surgeriesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.SURGERIES_SECTION__SURGERIES_NARRATIVE_SECTION_TEMPLATE_ID,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"SurgeriesNarrativeSectionTemplateId",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(surgeriesSection, context) }),
+					new Object[] { surgeriesSection }));
 			}
 			return false;
 		}

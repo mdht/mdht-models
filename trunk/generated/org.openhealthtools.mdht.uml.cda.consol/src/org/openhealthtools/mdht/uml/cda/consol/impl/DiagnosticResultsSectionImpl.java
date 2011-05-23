@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -28,7 +32,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class DiagnosticResultsSectionImpl extends DiagnosticResultsNarrativeSectionImpl implements DiagnosticResultsSection {
+public class DiagnosticResultsSectionImpl extends DiagnosticResultsNarrativeSectionImpl implements
+		DiagnosticResultsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,8 +58,10 @@ public class DiagnosticResultsSectionImpl extends DiagnosticResultsNarrativeSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionResultOrganizer(this, diagnostics, context);
+	public boolean validateDiagnosticResultsSectionResultOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionResultOrganizer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,8 +69,10 @@ public class DiagnosticResultsSectionImpl extends DiagnosticResultsNarrativeSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSectionExternalReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionExternalReference(this, diagnostics, context);
+	public boolean validateDiagnosticResultsSectionExternalReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionExternalReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +108,10 @@ public class DiagnosticResultsSectionImpl extends DiagnosticResultsNarrativeSect
 	 * @generated
 	 */
 	@Override
-	public boolean validateDiagnosticResultsNarrativeSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsNarrativeSectionTemplateId(this, diagnostics, context);
+	public boolean validateDiagnosticResultsNarrativeSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsNarrativeSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +119,9 @@ public class DiagnosticResultsSectionImpl extends DiagnosticResultsNarrativeSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DiagnosticResultsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //DiagnosticResultsSectionImpl
+} // DiagnosticResultsSectionImpl

@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -68,7 +72,8 @@ public class MedicationImpl extends SubstanceAdministrationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateMedicationHasDoseQuantityOrRateQuantity(this, diagnostics, context);
 	}
 
@@ -230,7 +235,8 @@ public class MedicationImpl extends SubstanceAdministrationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationMedicationSeriesNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationMedicationSeriesNumberObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateMedicationMedicationSeriesNumberObservation(this, diagnostics, context);
 	}
 
@@ -239,7 +245,8 @@ public class MedicationImpl extends SubstanceAdministrationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationMedicationStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateMedicationMedicationStatusObservation(this, diagnostics, context);
 	}
 
@@ -339,7 +346,7 @@ public class MedicationImpl extends SubstanceAdministrationImpl implements Medic
 	 * @generated
 	 */
 	public Medication init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationImpl
+} // MedicationImpl

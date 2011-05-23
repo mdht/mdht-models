@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.util.Map;
@@ -18,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignsOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' code.displayName='Vital signs' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.1' constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerInformationSource VitalSignsOrganizerRequireResultsOrganizerTemplateID VitalSignsOrganizerClassCode ResultOrganizerCode VitalSignsOrganizerEffectiveTime ResultOrganizerStatusCode VitalSignsOrganizerId VitalSignsOrganizerVitalSign' code.codeSystemName='SNOMEDCT' classCode='CLUSTER' code.code='46680005'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' code.displayName='Vital signs' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.1' constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerInformationSource VitalSignsOrganizerRequireResultsOrganizerTemplateID VitalSignsOrganizerClassCode ResultOrganizerCode VitalSignsOrganizerEffectiveTime ResultOrganizerStatusCode VitalSignsOrganizerId VitalSignsOrganizerVitalSignObservation' code.codeSystemName='SNOMEDCT' classCode='CLUSTER' code.code='46680005'"
  * @generated
  */
 public interface VitalSignsOrganizer extends ResultOrganizer {
@@ -49,7 +53,8 @@ public interface VitalSignsOrganizer extends ResultOrganizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root =\'2.16.840.1.113883.10.20.1.32\')'"
 	 * @generated
 	 */
-	boolean validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVitalSignsOrganizerRequireResultsOrganizerTemplateID(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,7 +106,7 @@ public interface VitalSignsOrganizer extends ResultOrganizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::VitalSign))'"
 	 * @generated
 	 */
-	boolean validateVitalSignsOrganizerVitalSign(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

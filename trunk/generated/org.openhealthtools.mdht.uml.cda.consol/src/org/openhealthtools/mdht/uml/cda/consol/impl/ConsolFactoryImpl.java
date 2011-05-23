@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -79,12 +83,11 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 */
 	public static ConsolFactory init() {
 		try {
-			ConsolFactory theConsolFactory = (ConsolFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/consol"); 
+			ConsolFactory theConsolFactory = (ConsolFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/consol");
 			if (theConsolFactory != null) {
 				return theConsolFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new ConsolFactoryImpl();
@@ -108,56 +111,106 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case ConsolPackage.STATUS_OBSERVATION: return createStatusObservation();
-			case ConsolPackage.CONDITION: return createCondition();
-			case ConsolPackage.EPISODE_OBSERVATION: return createEpisodeObservation();
-			case ConsolPackage.CONDITION_ENTRY: return createConditionEntry();
-			case ConsolPackage.AGE_OBSERVATION: return createAgeObservation();
-			case ConsolPackage.SEVERITY: return createSeverity();
-			case ConsolPackage.PROBLEM_STATUS_OBSERVATION: return createProblemStatusObservation();
-			case ConsolPackage.HEALTH_STATUS_OBSERVATION: return createHealthStatusObservation();
-			case ConsolPackage.COMMENT: return createComment();
-			case ConsolPackage.PROBLEM_LIST_SECTION: return createProblemListSection();
-			case ConsolPackage.PROBLEM_LIST_NARRATIVE_SECTION: return createProblemListNarrativeSection();
-			case ConsolPackage.DIAGNOSTIC_RESULTS_SECTION: return createDiagnosticResultsSection();
-			case ConsolPackage.DIAGNOSTIC_RESULTS_NARRATIVE_SECTION: return createDiagnosticResultsNarrativeSection();
-			case ConsolPackage.RESULT_ORGANIZER: return createResultOrganizer();
-			case ConsolPackage.RESULT: return createResult();
-			case ConsolPackage.EXTERNAL_REFERENCE: return createExternalReference();
-			case ConsolPackage.VITAL_SIGNS_SECTION: return createVitalSignsSection();
-			case ConsolPackage.VITAL_SIGNS_NARRATIVE_SECTION: return createVitalSignsNarrativeSection();
-			case ConsolPackage.VITAL_SIGNS_ORGANIZER: return createVitalSignsOrganizer();
-			case ConsolPackage.VITAL_SIGN: return createVitalSign();
-			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
-			case ConsolPackage.PATIENT_AWARENESS: return createPatientAwareness();
-			case ConsolPackage.MEDICATION: return createMedication();
-			case ConsolPackage.MEDICATION_SERIES_NUMBER_OBSERVATION: return createMedicationSeriesNumberObservation();
-			case ConsolPackage.MEDICATION_STATUS_OBSERVATION: return createMedicationStatusObservation();
-			case ConsolPackage.REACTION_OBSERVATION: return createReactionObservation();
-			case ConsolPackage.PRODUCT_INSTANCE: return createProductInstance();
-			case ConsolPackage.INTERNAL_REFERENCE: return createInternalReference();
-			case ConsolPackage.PATIENT_MEDICAL_INSTRUCTIONS: return createPatientMedicalInstructions();
-			case ConsolPackage.MEDICATION_TYPE: return createMedicationType();
-			case ConsolPackage.MEDICATION_ORDER_INFORMATION: return createMedicationOrderInformation();
-			case ConsolPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: return createMedicationFullfillmentInstructions();
-			case ConsolPackage.MEDICATIONS_SECTION: return createMedicationsSection();
-			case ConsolPackage.MEDICATIONS_NARRATIVE_SECTION: return createMedicationsNarrativeSection();
-			case ConsolPackage.MEDICATION_NORMAL_DOSE: return createMedicationNormalDose();
-			case ConsolPackage.MEDICATION_SPLIT_DOSE: return createMedicationSplitDose();
-			case ConsolPackage.MEDICATION_TAPERED_DOSE: return createMedicationTaperedDose();
-			case ConsolPackage.MEDICATION_CONDITIONAL_DOSE: return createMedicationConditionalDose();
-			case ConsolPackage.MEDICATION_COMBINATION_MEDICATION: return createMedicationCombinationMedication();
-			case ConsolPackage.MEDICATION_INFORMATION: return createMedicationInformation();
-			case ConsolPackage.IMMUNIZATION: return createImmunization();
-			case ConsolPackage.IMMUNIZATIONS_SECTION: return createImmunizationsSection();
-			case ConsolPackage.IMMUNIZATIONS_NARRATIVE_SECTION: return createImmunizationsNarrativeSection();
-			case ConsolPackage.ENCOUNTER_LOCATION: return createEncounterLocation();
-			case ConsolPackage.SURGERIES_SECTION: return createSurgeriesSection();
-			case ConsolPackage.SURGERIES_NARRATIVE_SECTION: return createSurgeriesNarrativeSection();
-			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
-			case ConsolPackage.PROCEDURE_ACTIVITY_ACT: return createProcedureActivityAct();
-			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION: return createProcedureActivityObservation();
-			case ConsolPackage.CONSOL_REGISTRY_DELEGATE: return createConsolRegistryDelegate();
+			case ConsolPackage.STATUS_OBSERVATION:
+				return createStatusObservation();
+			case ConsolPackage.CONDITION:
+				return createCondition();
+			case ConsolPackage.EPISODE_OBSERVATION:
+				return createEpisodeObservation();
+			case ConsolPackage.CONDITION_ENTRY:
+				return createConditionEntry();
+			case ConsolPackage.AGE_OBSERVATION:
+				return createAgeObservation();
+			case ConsolPackage.PROBLEM_STATUS_OBSERVATION:
+				return createProblemStatusObservation();
+			case ConsolPackage.HEALTH_STATUS_OBSERVATION:
+				return createHealthStatusObservation();
+			case ConsolPackage.SEVERITY:
+				return createSeverity();
+			case ConsolPackage.COMMENT:
+				return createComment();
+			case ConsolPackage.PROBLEM_LIST_SECTION:
+				return createProblemListSection();
+			case ConsolPackage.PROBLEM_LIST_NARRATIVE_SECTION:
+				return createProblemListNarrativeSection();
+			case ConsolPackage.DIAGNOSTIC_RESULTS_SECTION:
+				return createDiagnosticResultsSection();
+			case ConsolPackage.DIAGNOSTIC_RESULTS_NARRATIVE_SECTION:
+				return createDiagnosticResultsNarrativeSection();
+			case ConsolPackage.RESULT_ORGANIZER:
+				return createResultOrganizer();
+			case ConsolPackage.RESULT:
+				return createResult();
+			case ConsolPackage.EXTERNAL_REFERENCE:
+				return createExternalReference();
+			case ConsolPackage.VITAL_SIGNS_SECTION:
+				return createVitalSignsSection();
+			case ConsolPackage.VITAL_SIGNS_NARRATIVE_SECTION:
+				return createVitalSignsNarrativeSection();
+			case ConsolPackage.VITAL_SIGNS_ORGANIZER:
+				return createVitalSignsOrganizer();
+			case ConsolPackage.VITAL_SIGN:
+				return createVitalSign();
+			case ConsolPackage.GENERAL_HEADER_CONSTRAINTS:
+				return createGeneralHeaderConstraints();
+			case ConsolPackage.PATIENT_AWARENESS:
+				return createPatientAwareness();
+			case ConsolPackage.MEDICATION:
+				return createMedication();
+			case ConsolPackage.MEDICATION_SERIES_NUMBER_OBSERVATION:
+				return createMedicationSeriesNumberObservation();
+			case ConsolPackage.MEDICATION_STATUS_OBSERVATION:
+				return createMedicationStatusObservation();
+			case ConsolPackage.REACTION_OBSERVATION:
+				return createReactionObservation();
+			case ConsolPackage.PRODUCT_INSTANCE:
+				return createProductInstance();
+			case ConsolPackage.INTERNAL_REFERENCE:
+				return createInternalReference();
+			case ConsolPackage.PATIENT_MEDICAL_INSTRUCTIONS:
+				return createPatientMedicalInstructions();
+			case ConsolPackage.MEDICATION_TYPE:
+				return createMedicationType();
+			case ConsolPackage.MEDICATION_ORDER_INFORMATION:
+				return createMedicationOrderInformation();
+			case ConsolPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS:
+				return createMedicationFullfillmentInstructions();
+			case ConsolPackage.MEDICATIONS_SECTION:
+				return createMedicationsSection();
+			case ConsolPackage.MEDICATIONS_NARRATIVE_SECTION:
+				return createMedicationsNarrativeSection();
+			case ConsolPackage.MEDICATION_NORMAL_DOSE:
+				return createMedicationNormalDose();
+			case ConsolPackage.MEDICATION_SPLIT_DOSE:
+				return createMedicationSplitDose();
+			case ConsolPackage.MEDICATION_TAPERED_DOSE:
+				return createMedicationTaperedDose();
+			case ConsolPackage.MEDICATION_CONDITIONAL_DOSE:
+				return createMedicationConditionalDose();
+			case ConsolPackage.MEDICATION_COMBINATION_MEDICATION:
+				return createMedicationCombinationMedication();
+			case ConsolPackage.MEDICATION_INFORMATION:
+				return createMedicationInformation();
+			case ConsolPackage.IMMUNIZATION:
+				return createImmunization();
+			case ConsolPackage.IMMUNIZATIONS_SECTION:
+				return createImmunizationsSection();
+			case ConsolPackage.IMMUNIZATIONS_NARRATIVE_SECTION:
+				return createImmunizationsNarrativeSection();
+			case ConsolPackage.ENCOUNTER_LOCATION:
+				return createEncounterLocation();
+			case ConsolPackage.SURGERIES_SECTION:
+				return createSurgeriesSection();
+			case ConsolPackage.SURGERIES_NARRATIVE_SECTION:
+				return createSurgeriesNarrativeSection();
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE:
+				return createProcedureActivityProcedure();
+			case ConsolPackage.PROCEDURE_ACTIVITY_ACT:
+				return createProcedureActivityAct();
+			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION:
+				return createProcedureActivityObservation();
+			case ConsolPackage.CONSOL_REGISTRY_DELEGATE:
+				return createConsolRegistryDelegate();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -669,7 +722,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * @generated
 	 */
 	public ConsolPackage getConsolPackage() {
-		return (ConsolPackage)getEPackage();
+		return (ConsolPackage) getEPackage();
 	}
 
 	/**
@@ -683,4 +736,4 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 		return ConsolPackage.eINSTANCE;
 	}
 
-} //ConsolFactoryImpl
+} // ConsolFactoryImpl

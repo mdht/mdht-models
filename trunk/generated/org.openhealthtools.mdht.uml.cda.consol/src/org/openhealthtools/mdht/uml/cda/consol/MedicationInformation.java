@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.util.Map;
@@ -59,7 +63,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.manufacturedMaterial.code.originalText.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationHasMaterialCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationHasMaterialCodeOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

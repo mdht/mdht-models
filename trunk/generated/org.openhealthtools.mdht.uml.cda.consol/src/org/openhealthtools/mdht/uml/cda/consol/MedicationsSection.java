@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.util.Map;
@@ -18,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.21.2.1.1' constraints.validation.error='MedicationsSectionTemplateId' constraints.validation.warning='MedicationsSectionHasMedicationOrSupplyActivity MedicationsSectionMedicationOrderInformation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.2.1.1' constraints.validation.error='MedicationsSectionTemplateId' constraints.validation.warning='MedicationsSectionHasMedicationOrSupplyActivity MedicationsSectionSupplyActivity'"
  * @generated
  */
 public interface MedicationsSection extends MedicationsNarrativeSection {
@@ -34,7 +38,8 @@ public interface MedicationsSection extends MedicationsNarrativeSection {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))\r\n   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))'"
 	 * @generated
 	 */
-	boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -47,7 +52,7 @@ public interface MedicationsSection extends MedicationsNarrativeSection {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.supply.oclIsUndefined() and entry.supply.oclIsKindOf(consol::MedicationOrderInformation))'"
 	 * @generated
 	 */
-	boolean validateMedicationsSectionMedicationOrderInformation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationsSectionSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

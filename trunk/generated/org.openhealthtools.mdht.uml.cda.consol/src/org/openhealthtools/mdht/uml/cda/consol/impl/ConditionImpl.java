@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -53,42 +57,6 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionSubjectOfTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionOperations.validateConditionSubjectOfTarget(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionContainsProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionOperations.validateConditionContainsProblemObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionContainsAlertObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionOperations.validateConditionContainsAlertObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionOperations.validateConditionContainsPatientAwareness(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateConditionEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionOperations.validateConditionEffectiveTimeLow(this, diagnostics, context);
 	}
@@ -109,33 +77,6 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 */
 	public boolean validateConditionEffectiveTimeHighProhibited(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionOperations.validateConditionEffectiveTimeHighProhibited(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionHasTreatingProvider(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionOperations.validateConditionHasTreatingProvider(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionHasProviderId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionOperations.validateConditionHasProviderId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConditionHasProviderTreatmentTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionOperations.validateConditionHasProviderTreatmentTime(this, diagnostics, context);
 	}
 
 	/**
@@ -206,6 +147,15 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConditionConditionEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionOperations.validateConditionConditionEntry(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EpisodeObservation getEpisodeObservation() {
 		return ConditionOperations.getEpisodeObservation(this);
 	}
@@ -225,7 +175,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 * @generated
 	 */
 	public Condition init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ConditionImpl
+} // ConditionImpl

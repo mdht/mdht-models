@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -55,7 +59,8 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * @generated
 	 */
 	public boolean validateMedicationOrderInformationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationMoodCode(this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,7 +69,8 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * @generated
 	 */
 	public boolean validateMedicationOrderInformationHasAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasAuthor(this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasAuthor(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +78,10 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformationHasPerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasPerformer(this, diagnostics, context);
+	public boolean validateMedicationOrderInformationHasPerformer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasPerformer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +89,10 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformationHasParticipantLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasParticipantLocation(this, diagnostics, context);
+	public boolean validateMedicationOrderInformationHasParticipantLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasParticipantLocation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +100,10 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformationInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationInformationSource(this, diagnostics, context);
+	public boolean validateMedicationOrderInformationInformationSource(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationInformationSource(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,7 +112,8 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * @generated
 	 */
 	public boolean validateMedicationOrderInformationHasProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasProduct(this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasProduct(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -109,7 +122,8 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * @generated
 	 */
 	public boolean validateMedicationOrderInformationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationTemplateId(this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -127,7 +141,8 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * @generated
 	 */
 	public boolean validateMedicationOrderInformationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationStatusCode(this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -135,8 +150,10 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationEffectiveTime(this, diagnostics, context);
+	public boolean validateMedicationOrderInformationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -144,8 +161,10 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformationRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationRepeatNumber(this, diagnostics, context);
+	public boolean validateMedicationOrderInformationRepeatNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationRepeatNumber(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -154,7 +173,8 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * @generated
 	 */
 	public boolean validateMedicationOrderInformationQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantity(this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -162,8 +182,10 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformationMedicationStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationMedicationStatusObservation(this, diagnostics, context);
+	public boolean validateMedicationOrderInformationMedicationStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationMedicationStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -171,8 +193,10 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationOrderInformationProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationProductInstance(this, diagnostics, context);
+	public boolean validateMedicationOrderInformationProductInstance(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationProductInstance(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -208,7 +232,7 @@ public class MedicationOrderInformationImpl extends SupplyImpl implements Medica
 	 * @generated
 	 */
 	public MedicationOrderInformation init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationOrderInformationImpl
+} // MedicationOrderInformationImpl
