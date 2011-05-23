@@ -1,14 +1,12 @@
 /*******************************************************************************
- * Copyright (c) 2009 David A Carlson.
+ * Copyright (c) 2009, 2011 David A Carlson and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
- * 
+ *
  * Contributors:
  *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *     
- * $Id$
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.operations;
 
@@ -204,7 +202,7 @@ public class MedicationsSectionOperations extends
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.MEDICATIONS_SECTION,
-				IHEPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(64));
+				IHEPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(66));
 			try {
 				GET_MEDICATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

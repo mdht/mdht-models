@@ -1,14 +1,17 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2009, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.util;
 
 import java.util.Map;
 
-import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
@@ -2613,15 +2616,31 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionClinicalStatements(
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionHasMedicationOrSupplyActivity(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTemplateId(
+			result &= ccdValidator.validateImmunizationsSection_validateMedicationsSectionTemplateId(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionCode(
+			result &= ccdValidator.validateImmunizationsSection_validateMedicationsSectionCode(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTitle(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionText(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionMedicationActivity(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionSupplyActivity(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -2754,6 +2773,14 @@ public class IHEValidator extends EObjectValidator {
 				immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				immunization, diagnostics, context);
 		}
@@ -2767,6 +2794,10 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				immunization, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				immunization, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3546,11 +3577,11 @@ public class IHEValidator extends EObjectValidator {
 				problemEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatusObservation(
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(
 				problemEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatusObservation(
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(
 				problemEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3834,21 +3865,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateSeverity_validateSeverityObservationValue(Severity severity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateSeverityObservationValue", getObjectLabel(severity, context) },
-					new Object[] { severity }, context));
-			}
-			return false;
-		}
-		return ccdValidator.validateSeverityObservation_validateSeverityObservationValue(severity, diagnostics, context);
+		return severity.validateSeverityObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -3964,22 +3981,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateProblemStatusObservation_validateStatusObservationValue(
 			ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateStatusObservationValue", getObjectLabel(problemStatusObservation, context) },
-					new Object[] { problemStatusObservation }, context));
-			}
-			return false;
-		}
-		return ccdValidator.validateStatusObservation_validateStatusObservationValue(
-			problemStatusObservation, diagnostics, context);
+		return problemStatusObservation.validateStatusObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -4095,22 +4097,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateHealthStatusObservation_validateStatusObservationValue(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateStatusObservationValue", getObjectLabel(healthStatusObservation, context) },
-					new Object[] { healthStatusObservation }, context));
-			}
-			return false;
-		}
-		return ccdValidator.validateStatusObservation_validateStatusObservationValue(
-			healthStatusObservation, diagnostics, context);
+		return healthStatusObservation.validateStatusObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -4248,21 +4235,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateComment_validateCommentTemplateId(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateCommentTemplateId", getObjectLabel(comment, context) }, new Object[] { comment },
-					context));
-			}
-			return false;
-		}
-		return ccdValidator.validateComment_validateCommentTemplateId(comment, diagnostics, context);
+		return comment.validateCommentTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -4353,6 +4326,14 @@ public class IHEValidator extends EObjectValidator {
 				medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				medication, diagnostics, context);
 		}
@@ -4366,6 +4347,10 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				medication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -4905,6 +4890,10 @@ public class IHEValidator extends EObjectValidator {
 				supplyEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSupplyActivity_validateSupplyActivityProductInstance(
+				supplyEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateSupplyEntry_validateSupplyEntryTemplateId(supplyEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5109,6 +5098,14 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionText(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionMedicationActivity(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionSupplyActivity(
 				medicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5330,11 +5327,11 @@ public class IHEValidator extends EObjectValidator {
 				allergyIntolerance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatusObservation(
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(
 				allergyIntolerance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatusObservation(
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(
 				allergyIntolerance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5483,21 +5480,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateAllergyIntolerance_validateProblemEntryCode(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateProblemEntryCode", getObjectLabel(allergyIntolerance, context) },
-					new Object[] { allergyIntolerance }, context));
-			}
-			return false;
-		}
-		return validateProblemEntry_validateProblemEntryCode(allergyIntolerance, diagnostics, context);
+		return allergyIntolerance.validateProblemEntryCode(diagnostics, context);
 	}
 
 	/**
@@ -5556,11 +5539,11 @@ public class IHEValidator extends EObjectValidator {
 				problemEntryReactionObservationContainer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatusObservation(
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(
 				problemEntryReactionObservationContainer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatusObservation(
+			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(
 				problemEntryReactionObservationContainer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5817,6 +5800,14 @@ public class IHEValidator extends EObjectValidator {
 				normalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				normalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				normalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				normalDose, diagnostics, context);
 		}
@@ -5830,6 +5821,10 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				normalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				normalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -6006,6 +6001,14 @@ public class IHEValidator extends EObjectValidator {
 				taperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				taperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				taperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				taperedDose, diagnostics, context);
 		}
@@ -6019,6 +6022,10 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				taperedDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				taperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -6196,6 +6203,14 @@ public class IHEValidator extends EObjectValidator {
 				splitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				splitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				splitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				splitDose, diagnostics, context);
 		}
@@ -6209,6 +6224,10 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				splitDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				splitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -6387,6 +6406,14 @@ public class IHEValidator extends EObjectValidator {
 				conditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				conditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				conditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				conditionalDose, diagnostics, context);
 		}
@@ -6400,6 +6427,10 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				conditionalDose, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				conditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -6581,6 +6612,14 @@ public class IHEValidator extends EObjectValidator {
 				combinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityDoseQuantity(
+				combinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityRateQuantity(
+				combinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityMedicationSeriesNumberObservation(
 				combinationMedication, diagnostics, context);
 		}
@@ -6594,6 +6633,10 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityReactionObservation(
+				combinationMedication, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationActivity_validateMedicationActivityProductInstance(
 				combinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -7018,22 +7061,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateVitalSignsOrganizer_validateResultOrganizerCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateResultOrganizerCode", getObjectLabel(vitalSignsOrganizer, context) },
-					new Object[] { vitalSignsOrganizer }, context));
-			}
-			return false;
-		}
-		return ccdValidator.validateResultOrganizer_validateResultOrganizerCode(
-			vitalSignsOrganizer, diagnostics, context);
+		return vitalSignsOrganizer.validateResultOrganizerCode(diagnostics, context);
 	}
 
 	/**
@@ -7044,22 +7072,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateVitalSignsOrganizer_validateResultOrganizerStatusCode(
 			VitalSignsOrganizer vitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateResultOrganizerStatusCode", getObjectLabel(vitalSignsOrganizer, context) },
-					new Object[] { vitalSignsOrganizer }, context));
-			}
-			return false;
-		}
-		return ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(
-			vitalSignsOrganizer, diagnostics, context);
+		return vitalSignsOrganizer.validateResultOrganizerStatusCode(diagnostics, context);
 	}
 
 	/**
@@ -7236,22 +7249,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateVitalSignObservation_validateResultObservationCode(
 			VitalSignObservation vitalSignObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateResultObservationCode", getObjectLabel(vitalSignObservation, context) },
-					new Object[] { vitalSignObservation }, context));
-			}
-			return false;
-		}
-		return ccdValidator.validateResultObservation_validateResultObservationCode(
-			vitalSignObservation, diagnostics, context);
+		return vitalSignObservation.validateResultObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -7817,6 +7815,10 @@ public class IHEValidator extends EObjectValidator {
 				surgeriesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProceduresSection_validateProceduresSectionText(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateSurgeriesSection_validateSurgeriesSectionTemplateId(
 				surgeriesSection, diagnostics, context);
 		}
@@ -7879,6 +7881,10 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateProceduresSection_validateProceduresSectionTitle(
+				codedSurgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProceduresSection_validateProceduresSectionText(
 				codedSurgeriesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -9972,22 +9978,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateMedicalSummary_validateGeneralHeaderConstraintsCode(MedicalSummary medicalSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateGeneralHeaderConstraintsCode", getObjectLabel(medicalSummary, context) },
-					new Object[] { medicalSummary }, context));
-			}
-			return false;
-		}
-		return cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-			medicalSummary, diagnostics, context);
+		return medicalSummary.validateGeneralHeaderConstraintsCode(diagnostics, context);
 	}
 
 	/**
@@ -10231,21 +10222,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateDischargeSummary_validateGeneralHeaderConstraintsCode(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateGeneralHeaderConstraintsCode", getObjectLabel(dischargeSummary, context) },
-					new Object[] { dischargeSummary }, context));
-			}
-			return false;
-		}
-		return validateMedicalSummary_validateGeneralHeaderConstraintsCode(dischargeSummary, diagnostics, context);
+		return dischargeSummary.validateGeneralHeaderConstraintsCode(diagnostics, context);
 	}
 
 	/**
@@ -10410,6 +10387,9 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateProduct_validateProductTemplateId(productEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProduct_validateProductId(productEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateProductEntry_validateProductEntryTemplateId(productEntry, diagnostics, context);
@@ -10579,7 +10559,7 @@ public class IHEValidator extends EObjectValidator {
 				payerEntry, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePolicyActivity_validatePolicyActivityPolicySubscriber(
+			result &= ccdValidator.validatePolicyActivity_validatePolicyActivitySubscriber(
 				payerEntry, diagnostics, context);
 		}
 		return result;
@@ -10593,21 +10573,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validatePayerEntry_validatePolicyActivityTemplateId(PayerEntry payerEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validatePolicyActivityTemplateId", getObjectLabel(payerEntry, context) },
-					new Object[] { payerEntry }, context));
-			}
-			return false;
-		}
-		return ccdValidator.validatePolicyActivity_validatePolicyActivityTemplateId(payerEntry, diagnostics, context);
+		return payerEntry.validatePolicyActivityTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -11111,22 +11077,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateEncounterActivity_validateEncountersActivityTemplateId(EncounterActivity encounterActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateEncountersActivityTemplateId", getObjectLabel(encounterActivity, context) },
-					new Object[] { encounterActivity }, context));
-			}
-			return false;
-		}
-		return ccdValidator.validateEncountersActivity_validateEncountersActivityTemplateId(
-			encounterActivity, diagnostics, context);
+		return encounterActivity.validateEncountersActivityTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -11215,27 +11166,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validateEncounterPlanOfCare_validatePlanOfCareActivityEncounterTemplateId(
 			EncounterPlanOfCare encounterPlanOfCare, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR,
-					DIAGNOSTIC_SOURCE,
-					0,
-					"_UI_GenericConstraint_diagnostic",
-					new Object[] {
-							"validatePlanOfCareActivityEncounterTemplateId",
-							getObjectLabel(encounterPlanOfCare, context) }, new Object[] { encounterPlanOfCare },
-					context));
-			}
-			return false;
-		}
-		return ccdValidator.validatePlanOfCareActivityEncounter_validatePlanOfCareActivityEncounterTemplateId(
-			encounterPlanOfCare, diagnostics, context);
+		return encounterPlanOfCare.validatePlanOfCareActivityEncounterTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -11515,21 +11446,7 @@ public class IHEValidator extends EObjectValidator {
 	 */
 	public boolean validatePregnancyObservation_validateSimpleObservationTemplateId(
 			PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(
-					Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic", new Object[] {
-							"validateSimpleObservationTemplateId", getObjectLabel(pregnancyObservation, context) },
-					new Object[] { pregnancyObservation }, context));
-			}
-			return false;
-		}
-		return validateSimpleObservation_validateSimpleObservationTemplateId(pregnancyObservation, diagnostics, context);
+		return pregnancyObservation.validateSimpleObservationTemplateId(diagnostics, context);
 	}
 
 	/**

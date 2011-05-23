@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2009, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.operations;
 
 import java.util.Collection;
@@ -258,7 +262,7 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.CODED_SURGERIES_SECTION,
-				IHEPackage.Literals.CODED_SURGERIES_SECTION.getEAllOperations().get(62));
+				IHEPackage.Literals.CODED_SURGERIES_SECTION.getEAllOperations().get(63));
 			try {
 				GET_EXTERNAL_REFERENCE__EOCL_QRY = helper.createQuery(GET_EXTERNAL_REFERENCE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -304,7 +308,7 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.CODED_SURGERIES_SECTION,
-				IHEPackage.Literals.CODED_SURGERIES_SECTION.getEAllOperations().get(63));
+				IHEPackage.Literals.CODED_SURGERIES_SECTION.getEAllOperations().get(64));
 			try {
 				GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP);
 			} catch (ParserException pe) {

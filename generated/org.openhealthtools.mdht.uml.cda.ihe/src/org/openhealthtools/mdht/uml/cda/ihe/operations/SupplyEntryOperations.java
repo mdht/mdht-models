@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2009, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.operations;
 
 import java.util.Map;
@@ -246,7 +250,7 @@ public class SupplyEntryOperations extends SupplyActivityOperations {
 		if (GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.SUPPLY_ENTRY, IHEPackage.Literals.SUPPLY_ENTRY.getEAllOperations().get(69));
+				IHEPackage.Literals.SUPPLY_ENTRY, IHEPackage.Literals.SUPPLY_ENTRY.getEAllOperations().get(71));
 			try {
 				GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_EXP);
 			} catch (ParserException pe) {
