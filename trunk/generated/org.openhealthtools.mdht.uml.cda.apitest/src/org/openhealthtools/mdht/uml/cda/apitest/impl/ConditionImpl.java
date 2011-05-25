@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.impl;
 
 import java.util.Map;
@@ -112,7 +116,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
 		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		eFactory.create(eClass);
 		return this;
 	}
 
@@ -140,7 +144,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
 		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CS");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		eFactory.create(eClass);
 		return this;
 	}
 
@@ -168,7 +172,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
 		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		eFactory.create(eClass);
 		return this;
 	}
 
@@ -184,7 +188,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
 		IEpisodeObservation clinicalStatement = (IEpisodeObservation) eObject;
 		clinicalStatement.init();
-		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation) clinicalStatement);
 		return clinicalStatement;
 	}
 
@@ -218,7 +222,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
 		IEpisodeObservation clinicalStatement = (IEpisodeObservation) eObject;
 		clinicalStatement.init();
-		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation) clinicalStatement);
 		return this;
 	}
 
@@ -234,7 +238,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
 		IProblemEntry clinicalStatement = (IProblemEntry) eObject;
 		clinicalStatement.init();
-		addObservation((org.openhealthtools.mdht.uml.cda.Observation)clinicalStatement);
+		addObservation((org.openhealthtools.mdht.uml.cda.Observation) clinicalStatement);
 		return clinicalStatement;
 	}
 
@@ -256,8 +260,8 @@ public class ConditionImpl extends ActImpl implements Condition {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("TreatingProvider");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		
+		eFactory.create(eClass);
+
 		return null;
 	}
 
@@ -279,7 +283,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("TreatingProvider");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		eFactory.create(eClass);
 		return this;
 	}
 
@@ -424,7 +428,7 @@ public class ConditionImpl extends ActImpl implements Condition {
 	 * @generated
 	 */
 	public Condition init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ConditionImpl
+} // ConditionImpl

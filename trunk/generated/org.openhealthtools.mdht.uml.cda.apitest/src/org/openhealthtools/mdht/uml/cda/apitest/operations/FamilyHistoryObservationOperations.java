@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Collection;
@@ -67,7 +71,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  Observation toCDAType(FamilyHistoryObservation familyHistoryObservation) {
+	public static Observation toCDAType(FamilyHistoryObservation familyHistoryObservation) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -82,6 +86,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 	protected static final String GET_IDS__EOCL_EXP = "self.id.oclAsType(datatypes::II)";
+
 	/**
 	 * The cached OCL query for the '{@link #getIds(FamilyHistoryObservation) <em>Get Ids</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -102,14 +107,15 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<II> getIds(FamilyHistoryObservation familyHistoryObservation) {
+	public static EList<II> getIds(FamilyHistoryObservation familyHistoryObservation) {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IFAMILY_HISTORY_OBSERVATION, DomainPackage.Literals.IFAMILY_HISTORY_OBSERVATION.getEAllOperations().get(1));
+			helper.setOperationContext(
+				DomainPackage.Literals.IFAMILY_HISTORY_OBSERVATION,
+				DomainPackage.Literals.IFAMILY_HISTORY_OBSERVATION.getEAllOperations().get(1));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -128,7 +134,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  IFamilyHistoryObservation addId(FamilyHistoryObservation familyHistoryObservation, II value) {
+	public static IFamilyHistoryObservation addId(FamilyHistoryObservation familyHistoryObservation, II value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -143,6 +149,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 	protected static final String GET_CODE__EOCL_EXP = "self.code.oclAsType(datatypes::CD)";
+
 	/**
 	 * The cached OCL query for the '{@link #getCode(FamilyHistoryObservation) <em>Get Code</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -163,14 +170,15 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  CD getCode(FamilyHistoryObservation familyHistoryObservation) {
+	public static CD getCode(FamilyHistoryObservation familyHistoryObservation) {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IFAMILY_HISTORY_OBSERVATION, DomainPackage.Literals.IFAMILY_HISTORY_OBSERVATION.getEAllOperations().get(4));
+			helper.setOperationContext(
+				DomainPackage.Literals.IFAMILY_HISTORY_OBSERVATION,
+				DomainPackage.Literals.IFAMILY_HISTORY_OBSERVATION.getEAllOperations().get(4));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -187,6 +195,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 	protected static final String VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.22')";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateFamilyHistoryObservationTemplateId(FamilyHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -208,26 +217,25 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryObservationTemplateId(FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryObservationTemplateId(FamilyHistoryObservation familyHistoryObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.FAMILY_HISTORY_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID,
-						 APITestPlugin.INSTANCE.getString("FamilyHistoryObservationTemplateId"),
-						 new Object [] { familyHistoryObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID,
+					APITestPlugin.INSTANCE.getString("FamilyHistoryObservationTemplateId"),
+					new Object[] { familyHistoryObservation }));
 			}
 			return false;
 		}
@@ -243,6 +251,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 	protected static final String VALIDATE_FAMILY_HISTORY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateFamilyHistoryObservationId(FamilyHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -264,26 +273,25 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryObservationId(FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryObservationId(FamilyHistoryObservation familyHistoryObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.FAMILY_HISTORY_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_ID,
-						 APITestPlugin.INSTANCE.getString("FamilyHistoryObservationId"),
-						 new Object [] { familyHistoryObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_ID,
+					APITestPlugin.INSTANCE.getString("FamilyHistoryObservationId"),
+					new Object[] { familyHistoryObservation }));
 			}
 			return false;
 		}
@@ -298,9 +306,10 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+	protected static final String VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
+			+ "value.code = 'completed'))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateFamilyHistoryObservationStatusCode(FamilyHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Status Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -324,26 +333,25 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateFamilyHistoryObservationStatusCode(FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateFamilyHistoryObservationStatusCode(FamilyHistoryObservation familyHistoryObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.FAMILY_HISTORY_OBSERVATION);
 			try {
 				VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			familyHistoryObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_STATUS_CODE,
-						 APITestPlugin.INSTANCE.getString("FamilyHistoryObservationStatusCode"),
-						 new Object [] { familyHistoryObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_STATUS_CODE,
+					APITestPlugin.INSTANCE.getString("FamilyHistoryObservationStatusCode"),
+					new Object[] { familyHistoryObservation }));
 			}
 			return false;
 		}
@@ -359,6 +367,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 	protected static final String GET_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)";
+
 	/**
 	 * The cached OCL query for the '{@link #getAgeObservation(FamilyHistoryObservation) <em>Get Age Observation</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -379,14 +388,15 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  IAgeObservation getAgeObservation(FamilyHistoryObservation familyHistoryObservation) {
+	public static IAgeObservation getAgeObservation(FamilyHistoryObservation familyHistoryObservation) {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.FAMILY_HISTORY_OBSERVATION, APITestPackage.Literals.FAMILY_HISTORY_OBSERVATION.getEAllOperations().get(61));
+			helper.setOperationContext(
+				APITestPackage.Literals.FAMILY_HISTORY_OBSERVATION,
+				APITestPackage.Literals.FAMILY_HISTORY_OBSERVATION.getEAllOperations().get(61));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

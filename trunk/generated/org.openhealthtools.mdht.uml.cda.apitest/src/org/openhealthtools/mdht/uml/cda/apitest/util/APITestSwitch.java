@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.util;
 
 import java.util.List;
@@ -105,13 +109,11 @@ public class APITestSwitch<T> {
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
-		}
-		else {
+		} else {
 			List<EClass> eSuperTypes = theEClass.getESuperTypes();
-			return
-				eSuperTypes.isEmpty() ?
-					defaultCase(theEObject) :
-					doSwitch(eSuperTypes.get(0), theEObject);
+			return eSuperTypes.isEmpty()
+					? defaultCase(theEObject)
+					: doSwitch(eSuperTypes.get(0), theEObject);
 		}
 	}
 
@@ -125,175 +127,364 @@ public class APITestSwitch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case APITestPackage.STATUS_OBSERVATION: {
-				StatusObservation statusObservation = (StatusObservation)theEObject;
+				StatusObservation statusObservation = (StatusObservation) theEObject;
 				T result = caseStatusObservation(statusObservation);
-				if (result == null) result = caseObservation(statusObservation);
-				if (result == null) result = caseIStatusObservation(statusObservation);
-				if (result == null) result = caseClinicalStatement(statusObservation);
-				if (result == null) result = caseAct(statusObservation);
-				if (result == null) result = caseInfrastructureRoot(statusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(statusObservation);
+				}
+				if (result == null) {
+					result = caseIStatusObservation(statusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(statusObservation);
+				}
+				if (result == null) {
+					result = caseAct(statusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(statusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.CONDITION: {
-				Condition condition = (Condition)theEObject;
+				Condition condition = (Condition) theEObject;
 				T result = caseCondition(condition);
-				if (result == null) result = caseCDA_Act(condition);
-				if (result == null) result = caseICondition(condition);
-				if (result == null) result = caseClinicalStatement(condition);
-				if (result == null) result = caseAct(condition);
-				if (result == null) result = caseInfrastructureRoot(condition);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(condition);
+				}
+				if (result == null) {
+					result = caseICondition(condition);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(condition);
+				}
+				if (result == null) {
+					result = caseAct(condition);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(condition);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.CONDITION_TREATING_PROVIDER: {
-				Condition_TreatingProvider condition_TreatingProvider = (Condition_TreatingProvider)theEObject;
+				Condition_TreatingProvider condition_TreatingProvider = (Condition_TreatingProvider) theEObject;
 				T result = caseCondition_TreatingProvider(condition_TreatingProvider);
-				if (result == null) result = caseAssignedEntity(condition_TreatingProvider);
-				if (result == null) result = caseITreatingProvider(condition_TreatingProvider);
-				if (result == null) result = caseRole(condition_TreatingProvider);
-				if (result == null) result = caseInfrastructureRoot(condition_TreatingProvider);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseAssignedEntity(condition_TreatingProvider);
+				}
+				if (result == null) {
+					result = caseITreatingProvider(condition_TreatingProvider);
+				}
+				if (result == null) {
+					result = caseRole(condition_TreatingProvider);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(condition_TreatingProvider);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.EPISODE_OBSERVATION: {
-				EpisodeObservation episodeObservation = (EpisodeObservation)theEObject;
+				EpisodeObservation episodeObservation = (EpisodeObservation) theEObject;
 				T result = caseEpisodeObservation(episodeObservation);
-				if (result == null) result = caseObservation(episodeObservation);
-				if (result == null) result = caseIEpisodeObservation(episodeObservation);
-				if (result == null) result = caseClinicalStatement(episodeObservation);
-				if (result == null) result = caseAct(episodeObservation);
-				if (result == null) result = caseInfrastructureRoot(episodeObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(episodeObservation);
+				}
+				if (result == null) {
+					result = caseIEpisodeObservation(episodeObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(episodeObservation);
+				}
+				if (result == null) {
+					result = caseAct(episodeObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(episodeObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.CONDITION_ENTRY: {
-				ConditionEntry conditionEntry = (ConditionEntry)theEObject;
+				ConditionEntry conditionEntry = (ConditionEntry) theEObject;
 				T result = caseConditionEntry(conditionEntry);
-				if (result == null) result = caseObservation(conditionEntry);
-				if (result == null) result = caseIProblemEntry(conditionEntry);
-				if (result == null) result = caseClinicalStatement(conditionEntry);
-				if (result == null) result = caseAct(conditionEntry);
-				if (result == null) result = caseInfrastructureRoot(conditionEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(conditionEntry);
+				}
+				if (result == null) {
+					result = caseIProblemEntry(conditionEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(conditionEntry);
+				}
+				if (result == null) {
+					result = caseAct(conditionEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(conditionEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.AGE_OBSERVATION: {
-				AgeObservation ageObservation = (AgeObservation)theEObject;
+				AgeObservation ageObservation = (AgeObservation) theEObject;
 				T result = caseAgeObservation(ageObservation);
-				if (result == null) result = caseObservation(ageObservation);
-				if (result == null) result = caseIAgeObservation(ageObservation);
-				if (result == null) result = caseClinicalStatement(ageObservation);
-				if (result == null) result = caseAct(ageObservation);
-				if (result == null) result = caseInfrastructureRoot(ageObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(ageObservation);
+				}
+				if (result == null) {
+					result = caseIAgeObservation(ageObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(ageObservation);
+				}
+				if (result == null) {
+					result = caseAct(ageObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(ageObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.SEVERITY: {
-				Severity severity = (Severity)theEObject;
+				Severity severity = (Severity) theEObject;
 				T result = caseSeverity(severity);
-				if (result == null) result = caseObservation(severity);
-				if (result == null) result = caseISeverity(severity);
-				if (result == null) result = caseClinicalStatement(severity);
-				if (result == null) result = caseAct(severity);
-				if (result == null) result = caseInfrastructureRoot(severity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(severity);
+				}
+				if (result == null) {
+					result = caseISeverity(severity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(severity);
+				}
+				if (result == null) {
+					result = caseAct(severity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(severity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.PROBLEM_STATUS_OBSERVATION: {
-				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation)theEObject;
+				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation) theEObject;
 				T result = caseProblemStatusObservation(problemStatusObservation);
-				if (result == null) result = caseStatusObservation(problemStatusObservation);
-				if (result == null) result = caseIProblemStatusObservation(problemStatusObservation);
-				if (result == null) result = caseObservation(problemStatusObservation);
-				if (result == null) result = caseIStatusObservation(problemStatusObservation);
-				if (result == null) result = caseClinicalStatement(problemStatusObservation);
-				if (result == null) result = caseAct(problemStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(problemStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseIProblemStatusObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseIStatusObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.HEALTH_STATUS_OBSERVATION: {
-				HealthStatusObservation healthStatusObservation = (HealthStatusObservation)theEObject;
+				HealthStatusObservation healthStatusObservation = (HealthStatusObservation) theEObject;
 				T result = caseHealthStatusObservation(healthStatusObservation);
-				if (result == null) result = caseStatusObservation(healthStatusObservation);
-				if (result == null) result = caseIHealthStatusObservation(healthStatusObservation);
-				if (result == null) result = caseObservation(healthStatusObservation);
-				if (result == null) result = caseIStatusObservation(healthStatusObservation);
-				if (result == null) result = caseClinicalStatement(healthStatusObservation);
-				if (result == null) result = caseAct(healthStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(healthStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseIHealthStatusObservation(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseIStatusObservation(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(healthStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(healthStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.COMMENT: {
-				Comment comment = (Comment)theEObject;
+				Comment comment = (Comment) theEObject;
 				T result = caseComment(comment);
-				if (result == null) result = caseCDA_Act(comment);
-				if (result == null) result = caseIComment(comment);
-				if (result == null) result = caseClinicalStatement(comment);
-				if (result == null) result = caseAct(comment);
-				if (result == null) result = caseInfrastructureRoot(comment);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(comment);
+				}
+				if (result == null) {
+					result = caseIComment(comment);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(comment);
+				}
+				if (result == null) {
+					result = caseAct(comment);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(comment);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.PROBLEM_LIST_SECTION: {
-				ProblemListSection problemListSection = (ProblemListSection)theEObject;
+				ProblemListSection problemListSection = (ProblemListSection) theEObject;
 				T result = caseProblemListSection(problemListSection);
-				if (result == null) result = caseSection(problemListSection);
-				if (result == null) result = caseIProblemListSection(problemListSection);
-				if (result == null) result = caseAct(problemListSection);
-				if (result == null) result = caseInfrastructureRoot(problemListSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(problemListSection);
+				}
+				if (result == null) {
+					result = caseIProblemListSection(problemListSection);
+				}
+				if (result == null) {
+					result = caseAct(problemListSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemListSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.FAMILY_HISTORY_OBSERVATION: {
-				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation)theEObject;
+				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation) theEObject;
 				T result = caseFamilyHistoryObservation(familyHistoryObservation);
-				if (result == null) result = caseObservation(familyHistoryObservation);
-				if (result == null) result = caseIFamilyHistoryObservation(familyHistoryObservation);
-				if (result == null) result = caseClinicalStatement(familyHistoryObservation);
-				if (result == null) result = caseAct(familyHistoryObservation);
-				if (result == null) result = caseInfrastructureRoot(familyHistoryObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseIFamilyHistoryObservation(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.CAUSE_OF_DEATH_OBSERVATION: {
-				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation)theEObject;
+				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation) theEObject;
 				T result = caseCauseOfDeathObservation(causeOfDeathObservation);
-				if (result == null) result = caseFamilyHistoryObservation(causeOfDeathObservation);
-				if (result == null) result = caseICauseOfDeathObservation(causeOfDeathObservation);
-				if (result == null) result = caseObservation(causeOfDeathObservation);
-				if (result == null) result = caseIFamilyHistoryObservation(causeOfDeathObservation);
-				if (result == null) result = caseClinicalStatement(causeOfDeathObservation);
-				if (result == null) result = caseAct(causeOfDeathObservation);
-				if (result == null) result = caseInfrastructureRoot(causeOfDeathObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseFamilyHistoryObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseICauseOfDeathObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseIFamilyHistoryObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseAct(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.PATIENT_SUMMARY: {
-				PatientSummary patientSummary = (PatientSummary)theEObject;
+				PatientSummary patientSummary = (PatientSummary) theEObject;
 				T result = casePatientSummary(patientSummary);
-				if (result == null) result = caseGeneralHeaderConstraints(patientSummary);
-				if (result == null) result = caseIPatientSummary(patientSummary);
-				if (result == null) result = caseClinicalDocument(patientSummary);
-				if (result == null) result = caseIGeneralHeaderConstraints(patientSummary);
-				if (result == null) result = caseAct(patientSummary);
-				if (result == null) result = caseInfrastructureRoot(patientSummary);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(patientSummary);
+				}
+				if (result == null) {
+					result = caseIPatientSummary(patientSummary);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(patientSummary);
+				}
+				if (result == null) {
+					result = caseIGeneralHeaderConstraints(patientSummary);
+				}
+				if (result == null) {
+					result = caseAct(patientSummary);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientSummary);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case APITestPackage.GENERAL_HEADER_CONSTRAINTS: {
-				GeneralHeaderConstraints generalHeaderConstraints = (GeneralHeaderConstraints)theEObject;
+				GeneralHeaderConstraints generalHeaderConstraints = (GeneralHeaderConstraints) theEObject;
 				T result = caseGeneralHeaderConstraints(generalHeaderConstraints);
-				if (result == null) result = caseClinicalDocument(generalHeaderConstraints);
-				if (result == null) result = caseIGeneralHeaderConstraints(generalHeaderConstraints);
-				if (result == null) result = caseAct(generalHeaderConstraints);
-				if (result == null) result = caseInfrastructureRoot(generalHeaderConstraints);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseClinicalDocument(generalHeaderConstraints);
+				}
+				if (result == null) {
+					result = caseIGeneralHeaderConstraints(generalHeaderConstraints);
+				}
+				if (result == null) {
+					result = caseAct(generalHeaderConstraints);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalHeaderConstraints);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			default: return defaultCase(theEObject);
+			default:
+				return defaultCase(theEObject);
 		}
 	}
 
@@ -897,4 +1088,4 @@ public class APITestSwitch<T> {
 		return null;
 	}
 
-} //APITestSwitch
+} // APITestSwitch

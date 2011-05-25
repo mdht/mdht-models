@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -44,12 +48,11 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 	 */
 	public static APITestFactory init() {
 		try {
-			APITestFactory theAPITestFactory = (APITestFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest"); 
+			APITestFactory theAPITestFactory = (APITestFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
 			if (theAPITestFactory != null) {
 				return theAPITestFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new APITestFactoryImpl();
@@ -73,21 +76,36 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case APITestPackage.STATUS_OBSERVATION: return createStatusObservation();
-			case APITestPackage.CONDITION: return createCondition();
-			case APITestPackage.CONDITION_TREATING_PROVIDER: return createCondition_TreatingProvider();
-			case APITestPackage.EPISODE_OBSERVATION: return createEpisodeObservation();
-			case APITestPackage.CONDITION_ENTRY: return createConditionEntry();
-			case APITestPackage.AGE_OBSERVATION: return createAgeObservation();
-			case APITestPackage.SEVERITY: return createSeverity();
-			case APITestPackage.PROBLEM_STATUS_OBSERVATION: return createProblemStatusObservation();
-			case APITestPackage.HEALTH_STATUS_OBSERVATION: return createHealthStatusObservation();
-			case APITestPackage.COMMENT: return createComment();
-			case APITestPackage.PROBLEM_LIST_SECTION: return createProblemListSection();
-			case APITestPackage.FAMILY_HISTORY_OBSERVATION: return createFamilyHistoryObservation();
-			case APITestPackage.CAUSE_OF_DEATH_OBSERVATION: return createCauseOfDeathObservation();
-			case APITestPackage.PATIENT_SUMMARY: return createPatientSummary();
-			case APITestPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
+			case APITestPackage.STATUS_OBSERVATION:
+				return createStatusObservation();
+			case APITestPackage.CONDITION:
+				return createCondition();
+			case APITestPackage.CONDITION_TREATING_PROVIDER:
+				return createCondition_TreatingProvider();
+			case APITestPackage.EPISODE_OBSERVATION:
+				return createEpisodeObservation();
+			case APITestPackage.CONDITION_ENTRY:
+				return createConditionEntry();
+			case APITestPackage.AGE_OBSERVATION:
+				return createAgeObservation();
+			case APITestPackage.SEVERITY:
+				return createSeverity();
+			case APITestPackage.PROBLEM_STATUS_OBSERVATION:
+				return createProblemStatusObservation();
+			case APITestPackage.HEALTH_STATUS_OBSERVATION:
+				return createHealthStatusObservation();
+			case APITestPackage.COMMENT:
+				return createComment();
+			case APITestPackage.PROBLEM_LIST_SECTION:
+				return createProblemListSection();
+			case APITestPackage.FAMILY_HISTORY_OBSERVATION:
+				return createFamilyHistoryObservation();
+			case APITestPackage.CAUSE_OF_DEATH_OBSERVATION:
+				return createCauseOfDeathObservation();
+			case APITestPackage.PATIENT_SUMMARY:
+				return createPatientSummary();
+			case APITestPackage.GENERAL_HEADER_CONSTRAINTS:
+				return createGeneralHeaderConstraints();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -249,7 +267,7 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 	 * @generated
 	 */
 	public APITestPackage getAPITestPackage() {
-		return (APITestPackage)getEPackage();
+		return (APITestPackage) getEPackage();
 	}
 
 	/**
@@ -263,4 +281,4 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 		return APITestPackage.eINSTANCE;
 	}
 
-} //APITestFactoryImpl
+} // APITestFactoryImpl

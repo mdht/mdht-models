@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Map;
@@ -65,7 +69,7 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  Observation toCDAType(Severity severity) {
+	public static Observation toCDAType(Severity severity) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -80,6 +84,7 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(datatypes::ED)";
+
 	/**
 	 * The cached OCL query for the '{@link #getText(Severity) <em>Get Text</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -100,14 +105,14 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ED getText(Severity severity) {
+	public static ED getText(Severity severity) {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.ISEVERITY, DomainPackage.Literals.ISEVERITY.getEAllOperations().get(1));
+			helper.setOperationContext(
+				DomainPackage.Literals.ISEVERITY, DomainPackage.Literals.ISEVERITY.getEAllOperations().get(1));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -124,6 +129,7 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_VALUE__EOCL_EXP = "self.value.oclAsType(datatypes::CD)";
+
 	/**
 	 * The cached OCL query for the '{@link #getValue(Severity) <em>Get Value</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -145,14 +151,14 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  CD getValue(Severity severity) {
+	public static CD getValue(Severity severity) {
 		if (GET_VALUE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.ISEVERITY, DomainPackage.Literals.ISEVERITY.getEAllOperations().get(4));
+			helper.setOperationContext(
+				DomainPackage.Literals.ISEVERITY, DomainPackage.Literals.ISEVERITY.getEAllOperations().get(4));
 			try {
 				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -169,6 +175,7 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SEVERITY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.reference.oclIsUndefined()";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityHasTextReference(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Has Text Reference</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -190,26 +197,23 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSeverityHasTextReference(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSeverityHasTextReference(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_SEVERITY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.SEVERITY);
 			try {
 				VALIDATE_SEVERITY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SEVERITY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SEVERITY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(severity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.SEVERITY__SEVERITY_HAS_TEXT_REFERENCE,
-						 APITestPlugin.INSTANCE.getString("SeverityHasTextReference"),
-						 new Object [] { severity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.SEVERITY__SEVERITY_HAS_TEXT_REFERENCE,
+					APITestPlugin.INSTANCE.getString("SeverityHasTextReference"), new Object[] { severity }));
 			}
 			return false;
 		}
@@ -225,6 +229,7 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.1')";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityTemplateId(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -246,26 +251,23 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSeverityTemplateId(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSeverityTemplateId(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.SEVERITY);
 			try {
 				VALIDATE_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(severity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.SEVERITY__SEVERITY_TEMPLATE_ID,
-						 APITestPlugin.INSTANCE.getString("SeverityTemplateId"),
-						 new Object [] { severity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.SEVERITY__SEVERITY_TEMPLATE_ID,
+					APITestPlugin.INSTANCE.getString("SeverityTemplateId"), new Object[] { severity }));
 			}
 			return false;
 		}
@@ -281,6 +283,7 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityClassCode(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Class Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -302,26 +305,23 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSeverityClassCode(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSeverityClassCode(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.SEVERITY);
 			try {
 				VALIDATE_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(severity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.SEVERITY__SEVERITY_CLASS_CODE,
-						 APITestPlugin.INSTANCE.getString("SeverityClassCode"),
-						 new Object [] { severity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.SEVERITY__SEVERITY_CLASS_CODE,
+					APITestPlugin.INSTANCE.getString("SeverityClassCode"), new Object[] { severity }));
 			}
 			return false;
 		}
@@ -337,6 +337,7 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityMoodCode(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Mood Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -358,26 +359,23 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSeverityMoodCode(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSeverityMoodCode(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.SEVERITY);
 			try {
 				VALIDATE_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(severity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.SEVERITY__SEVERITY_MOOD_CODE,
-						 APITestPlugin.INSTANCE.getString("SeverityMoodCode"),
-						 new Object [] { severity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.SEVERITY__SEVERITY_MOOD_CODE,
+					APITestPlugin.INSTANCE.getString("SeverityMoodCode"), new Object[] { severity }));
 			}
 			return false;
 		}
@@ -392,9 +390,10 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.code = 'SEV' and value.codeSystem = '2.16.840.1.113883.5.4'))";
+	protected static final String VALIDATE_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
+			+ "value.code = 'SEV' and value.codeSystem = '2.16.840.1.113883.5.4'))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityCode(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -418,26 +417,22 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSeverityCode(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSeverityCode(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.SEVERITY);
 			try {
 				VALIDATE_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(severity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.SEVERITY__SEVERITY_CODE,
-						 APITestPlugin.INSTANCE.getString("SeverityCode"),
-						 new Object [] { severity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE, APITestValidator.SEVERITY__SEVERITY_CODE,
+					APITestPlugin.INSTANCE.getString("SeverityCode"), new Object[] { severity }));
 			}
 			return false;
 		}
@@ -453,6 +448,7 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityText(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Text</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -474,26 +470,22 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSeverityText(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSeverityText(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.SEVERITY);
 			try {
 				VALIDATE_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(severity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.SEVERITY__SEVERITY_TEXT,
-						 APITestPlugin.INSTANCE.getString("SeverityText"),
-						 new Object [] { severity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE, APITestValidator.SEVERITY__SEVERITY_TEXT,
+					APITestPlugin.INSTANCE.getString("SeverityText"), new Object[] { severity }));
 			}
 			return false;
 		}
@@ -508,9 +500,10 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SEVERITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+	protected static final String VALIDATE_SEVERITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
+			+ "value.code = 'completed'))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityStatusCode(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Status Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -534,26 +527,23 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSeverityStatusCode(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSeverityStatusCode(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_SEVERITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.SEVERITY);
 			try {
 				VALIDATE_SEVERITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SEVERITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SEVERITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(severity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.SEVERITY__SEVERITY_STATUS_CODE,
-						 APITestPlugin.INSTANCE.getString("SeverityStatusCode"),
-						 new Object [] { severity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.SEVERITY__SEVERITY_STATUS_CODE,
+					APITestPlugin.INSTANCE.getString("SeverityStatusCode"), new Object[] { severity }));
 			}
 			return false;
 		}
@@ -568,9 +558,10 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'H' or value.code = 'M' or value.code = 'L')))";
+	protected static final String VALIDATE_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'H' or value.code = 'M' or value.code = 'L')))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateSeverityValue(Severity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Value</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -594,26 +585,22 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateSeverityValue(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSeverityValue(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.SEVERITY);
 			try {
 				VALIDATE_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(severity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.SEVERITY__SEVERITY_VALUE,
-						 APITestPlugin.INSTANCE.getString("SeverityValue"),
-						 new Object [] { severity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE, APITestValidator.SEVERITY__SEVERITY_VALUE,
+					APITestPlugin.INSTANCE.getString("SeverityValue"), new Object[] { severity }));
 			}
 			return false;
 		}

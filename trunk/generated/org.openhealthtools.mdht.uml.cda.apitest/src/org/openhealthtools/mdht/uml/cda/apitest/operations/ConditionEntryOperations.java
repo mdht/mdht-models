@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Collection;
@@ -101,7 +105,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  Observation toCDAType(ConditionEntry conditionEntry) {
+	public static Observation toCDAType(ConditionEntry conditionEntry) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -116,6 +120,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_IDS__EOCL_EXP = "self.id.oclAsType(datatypes::II)";
+
 	/**
 	 * The cached OCL query for the '{@link #getIds(ConditionEntry) <em>Get Ids</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -137,14 +142,14 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<II> getIds(ConditionEntry conditionEntry) {
+	public static EList<II> getIds(ConditionEntry conditionEntry) {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IPROBLEM_ENTRY, DomainPackage.Literals.IPROBLEM_ENTRY.getEAllOperations().get(1));
+			helper.setOperationContext(
+				DomainPackage.Literals.IPROBLEM_ENTRY, DomainPackage.Literals.IPROBLEM_ENTRY.getEAllOperations().get(1));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -163,7 +168,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  IProblemEntry addId(ConditionEntry conditionEntry, II value) {
+	public static IProblemEntry addId(ConditionEntry conditionEntry, II value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -178,6 +183,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_PROBLEM_TYPE__EOCL_EXP = "self.code.oclAsType(datatypes::CD)";
+
 	/**
 	 * The cached OCL query for the '{@link #getProblemType(ConditionEntry) <em>Get Problem Type</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -199,14 +205,14 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  CD getProblemType(ConditionEntry conditionEntry) {
+	public static CD getProblemType(ConditionEntry conditionEntry) {
 		if (GET_PROBLEM_TYPE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IPROBLEM_ENTRY, DomainPackage.Literals.IPROBLEM_ENTRY.getEAllOperations().get(4));
+			helper.setOperationContext(
+				DomainPackage.Literals.IPROBLEM_ENTRY, DomainPackage.Literals.IPROBLEM_ENTRY.getEAllOperations().get(4));
 			try {
 				GET_PROBLEM_TYPE__EOCL_QRY = helper.createQuery(GET_PROBLEM_TYPE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -223,6 +229,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_PROBLEM_NAME__EOCL_EXP = "self.text.oclAsType(datatypes::ED)";
+
 	/**
 	 * The cached OCL query for the '{@link #getProblemName(ConditionEntry) <em>Get Problem Name</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -245,14 +252,14 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ED getProblemName(ConditionEntry conditionEntry) {
+	public static ED getProblemName(ConditionEntry conditionEntry) {
 		if (GET_PROBLEM_NAME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IPROBLEM_ENTRY, DomainPackage.Literals.IPROBLEM_ENTRY.getEAllOperations().get(7));
+			helper.setOperationContext(
+				DomainPackage.Literals.IPROBLEM_ENTRY, DomainPackage.Literals.IPROBLEM_ENTRY.getEAllOperations().get(7));
 			try {
 				GET_PROBLEM_NAME__EOCL_QRY = helper.createQuery(GET_PROBLEM_NAME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -269,6 +276,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_PROBLEM_DATE__EOCL_EXP = "self.effectiveTime.oclAsType(datatypes::IVL_TS)";
+
 	/**
 	 * The cached OCL query for the '{@link #getProblemDate(ConditionEntry) <em>Get Problem Date</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -292,14 +300,15 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  IVL_TS getProblemDate(ConditionEntry conditionEntry) {
+	public static IVL_TS getProblemDate(ConditionEntry conditionEntry) {
 		if (GET_PROBLEM_DATE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IPROBLEM_ENTRY, DomainPackage.Literals.IPROBLEM_ENTRY.getEAllOperations().get(10));
+			helper.setOperationContext(
+				DomainPackage.Literals.IPROBLEM_ENTRY,
+				DomainPackage.Literals.IPROBLEM_ENTRY.getEAllOperations().get(10));
 			try {
 				GET_PROBLEM_DATE__EOCL_QRY = helper.createQuery(GET_PROBLEM_DATE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -316,6 +325,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_PROBLEM_CODE__EOCL_EXP = "self.value.oclAsType(datatypes::CD)";
+
 	/**
 	 * The cached OCL query for the '{@link #getProblemCode(ConditionEntry) <em>Get Problem Code</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -337,14 +347,15 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  CD getProblemCode(ConditionEntry conditionEntry) {
+	public static CD getProblemCode(ConditionEntry conditionEntry) {
 		if (GET_PROBLEM_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IPROBLEM_ENTRY, DomainPackage.Literals.IPROBLEM_ENTRY.getEAllOperations().get(13));
+			helper.setOperationContext(
+				DomainPackage.Literals.IPROBLEM_ENTRY,
+				DomainPackage.Literals.IPROBLEM_ENTRY.getEAllOperations().get(13));
 			try {
 				GET_PROBLEM_CODE__EOCL_QRY = helper.createQuery(GET_PROBLEM_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -361,7 +372,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  IProblemEntry addComment(ConditionEntry conditionEntry, IComment value) {
+	public static IProblemEntry addComment(ConditionEntry conditionEntry, IComment value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -375,13 +386,14 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONDITION_ENTRY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "+
-"or not self.getSection().informant->isEmpty()"+
-"or not self.getClinicalDocument().informant->isEmpty()"+
-"or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"+
-"or (self.entryRelationship->exists(rel : cda::EntryRelationship | "+
-"   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"+
-"   and rel.observation.code.code = '48766-0'))";
+	protected static final String VALIDATE_CONDITION_ENTRY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "
+			+ "or not self.getSection().informant->isEmpty()"
+			+ "or not self.getClinicalDocument().informant->isEmpty()"
+			+ "or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"
+			+ "or (self.entryRelationship->exists(rel : cda::EntryRelationship | "
+			+ "   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"
+			+ "   and rel.observation.code.code = '48766-0'))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryInformationSource(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Information Source</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -409,26 +421,25 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryInformationSource(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryInformationSource(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_INFORMATION_SOURCE,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryInformationSource"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_INFORMATION_SOURCE,
+					APITestPlugin.INSTANCE.getString("ConditionEntryInformationSource"),
+					new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -444,6 +455,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryContainsPatientAwareness(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Contains Patient Awareness</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -465,26 +477,25 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryContainsPatientAwareness(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryContainsPatientAwareness(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_CONTAINS_PATIENT_AWARENESS,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryContainsPatientAwareness"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_CONTAINS_PATIENT_AWARENESS,
+					APITestPlugin.INSTANCE.getString("ConditionEntryContainsPatientAwareness"),
+					new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -500,6 +511,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.reference.oclIsUndefined()";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryHasTextReference(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Has Text Reference</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -521,26 +533,24 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryHasTextReference(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryHasTextReference(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_HAS_TEXT_REFERENCE,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryHasTextReference"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_HAS_TEXT_REFERENCE,
+					APITestPlugin.INSTANCE.getString("ConditionEntryHasTextReference"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -556,6 +566,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd='true')";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryCommentInversionInd(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Comment Inversion Ind</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -577,26 +588,25 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryCommentInversionInd(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryCommentInversionInd(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_COMMENT_INVERSION_IND,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryCommentInversionInd"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_COMMENT_INVERSION_IND,
+					APITestPlugin.INSTANCE.getString("ConditionEntryCommentInversionInd"),
+					new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -612,6 +622,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_HAS_ONSET_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.low.oclIsUndefined()";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryHasOnsetDate(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Has Onset Date</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -633,26 +644,24 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryHasOnsetDate(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryHasOnsetDate(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_HAS_ONSET_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_HAS_ONSET_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_HAS_ONSET_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_HAS_ONSET_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_HAS_ONSET_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_HAS_ONSET_DATE,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryHasOnsetDate"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_HAS_ONSET_DATE,
+					APITestPlugin.INSTANCE.getString("ConditionEntryHasOnsetDate"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -668,6 +677,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.high.oclIsUndefined()";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryHasResolutionDate(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Has Resolution Date</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -689,26 +699,25 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryHasResolutionDate(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryHasResolutionDate(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_HAS_RESOLUTION_DATE,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryHasResolutionDate"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_HAS_RESOLUTION_DATE,
+					APITestPlugin.INSTANCE.getString("ConditionEntryHasResolutionDate"),
+					new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -724,6 +733,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.high.oclIsUndefined()";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryHasUnknownResolutionDate(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Has Unknown Resolution Date</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -745,26 +755,25 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryHasUnknownResolutionDate(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryHasUnknownResolutionDate(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryHasUnknownResolutionDate"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE,
+					APITestPlugin.INSTANCE.getString("ConditionEntryHasUnknownResolutionDate"),
+					new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -780,6 +789,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.5')";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryTemplateId(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -801,26 +811,24 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryTemplateId(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryTemplateId(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_TEMPLATE_ID,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryTemplateId"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_TEMPLATE_ID,
+					APITestPlugin.INSTANCE.getString("ConditionEntryTemplateId"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -836,6 +844,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryMoodCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Mood Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -857,26 +866,24 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryMoodCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryMoodCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_MOOD_CODE,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryMoodCode"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_MOOD_CODE,
+					APITestPlugin.INSTANCE.getString("ConditionEntryMoodCode"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -892,6 +899,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryId(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -913,26 +921,23 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryId(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryId(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_ID,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryId"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_ID,
+					APITestPlugin.INSTANCE.getString("ConditionEntryId"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -947,9 +952,10 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONDITION_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006')))";
+	protected static final String VALIDATE_CONDITION_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006')))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -973,26 +979,23 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_CODE,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryCode"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_CODE,
+					APITestPlugin.INSTANCE.getString("ConditionEntryCode"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1008,6 +1011,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryText(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Text</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -1029,26 +1033,23 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryText(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryText(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_TEXT,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryText"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_TEXT,
+					APITestPlugin.INSTANCE.getString("ConditionEntryText"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1063,9 +1064,10 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONDITION_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+	protected static final String VALIDATE_CONDITION_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
+			+ "value.code = 'completed'))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryStatusCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Status Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -1089,26 +1091,24 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryStatusCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryStatusCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_STATUS_CODE,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryStatusCode"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_STATUS_CODE,
+					APITestPlugin.INSTANCE.getString("ConditionEntryStatusCode"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1124,6 +1124,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryEffectiveTime(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Effective Time</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -1145,26 +1146,24 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryEffectiveTime(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryEffectiveTime(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_EFFECTIVE_TIME,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryEffectiveTime"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_EFFECTIVE_TIME,
+					APITestPlugin.INSTANCE.getString("ConditionEntryEffectiveTime"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1179,9 +1178,10 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONDITION_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_CONDITION_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryValue(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Value</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -1205,26 +1205,23 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryValue(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryValue(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_VALUE,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryValue"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_VALUE,
+					APITestPlugin.INSTANCE.getString("ConditionEntryValue"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1240,6 +1237,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::AgeObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryAgeObservation(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Age Observation</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -1261,26 +1259,24 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryAgeObservation(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryAgeObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_AGE_OBSERVATION,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryAgeObservation"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_AGE_OBSERVATION,
+					APITestPlugin.INSTANCE.getString("ConditionEntryAgeObservation"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1296,6 +1292,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::Severity))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntrySeverity(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Severity</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -1317,26 +1314,24 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntrySeverity(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntrySeverity(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_SEVERITY,
-						 APITestPlugin.INSTANCE.getString("ConditionEntrySeverity"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_SEVERITY,
+					APITestPlugin.INSTANCE.getString("ConditionEntrySeverity"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1352,6 +1347,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::ProblemStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryProblemStatusObservation(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Problem Status Observation</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -1373,26 +1369,25 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryProblemStatusObservation(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryProblemStatusObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_PROBLEM_STATUS_OBSERVATION,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryProblemStatusObservation"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_PROBLEM_STATUS_OBSERVATION,
+					APITestPlugin.INSTANCE.getString("ConditionEntryProblemStatusObservation"),
+					new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1408,6 +1403,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::HealthStatusObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryHealthStatusObservation(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Health Status Observation</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -1429,26 +1425,25 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryHealthStatusObservation(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryHealthStatusObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_HEALTH_STATUS_OBSERVATION,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryHealthStatusObservation"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_HEALTH_STATUS_OBSERVATION,
+					APITestPlugin.INSTANCE.getString("ConditionEntryHealthStatusObservation"),
+					new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1464,6 +1459,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(apitest::Comment) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryComment(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Comment</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -1485,26 +1481,24 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryComment(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryComment(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_COMMENT,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryComment"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_COMMENT,
+					APITestPlugin.INSTANCE.getString("ConditionEntryComment"), new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1520,6 +1514,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONDITION_ENTRY_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(apitest::CauseOfDeathObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateConditionEntryCauseOfDeathObservation(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Condition Entry Cause Of Death Observation</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -1541,26 +1536,25 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateConditionEntryCauseOfDeathObservation(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateConditionEntryCauseOfDeathObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CONDITION_ENTRY_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_ENTRY);
 			try {
 				VALIDATE_CONDITION_ENTRY_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			conditionEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_CAUSE_OF_DEATH_OBSERVATION,
-						 APITestPlugin.INSTANCE.getString("ConditionEntryCauseOfDeathObservation"),
-						 new Object [] { conditionEntry }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_ENTRY__CONDITION_ENTRY_CAUSE_OF_DEATH_OBSERVATION,
+					APITestPlugin.INSTANCE.getString("ConditionEntryCauseOfDeathObservation"),
+					new Object[] { conditionEntry }));
 			}
 			return false;
 		}
@@ -1576,6 +1570,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_AGE_AT_ONSET__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)";
+
 	/**
 	 * The cached OCL query for the '{@link #getAgeAtOnset(ConditionEntry) <em>Get Age At Onset</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1597,14 +1592,15 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  IAgeObservation getAgeAtOnset(ConditionEntry conditionEntry) {
+	public static IAgeObservation getAgeAtOnset(ConditionEntry conditionEntry) {
 		if (GET_AGE_AT_ONSET__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(98));
+			helper.setOperationContext(
+				APITestPackage.Literals.CONDITION_ENTRY,
+				APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(98));
 			try {
 				GET_AGE_AT_ONSET__EOCL_QRY = helper.createQuery(GET_AGE_AT_ONSET__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1621,6 +1617,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_SEVERITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ISeverity))->asSequence()->first().oclAsType(domain::ISeverity)";
+
 	/**
 	 * The cached OCL query for the '{@link #getSeverity(ConditionEntry) <em>Get Severity</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1641,14 +1638,15 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ISeverity getSeverity(ConditionEntry conditionEntry) {
+	public static ISeverity getSeverity(ConditionEntry conditionEntry) {
 		if (GET_SEVERITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(99));
+			helper.setOperationContext(
+				APITestPackage.Literals.CONDITION_ENTRY,
+				APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(99));
 			try {
 				GET_SEVERITY__EOCL_QRY = helper.createQuery(GET_SEVERITY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1665,6 +1663,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_PROBLEM_STATUS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IProblemStatusObservation))->asSequence()->first().oclAsType(domain::IProblemStatusObservation)";
+
 	/**
 	 * The cached OCL query for the '{@link #getProblemStatus(ConditionEntry) <em>Get Problem Status</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1685,14 +1684,15 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  IProblemStatusObservation getProblemStatus(ConditionEntry conditionEntry) {
+	public static IProblemStatusObservation getProblemStatus(ConditionEntry conditionEntry) {
 		if (GET_PROBLEM_STATUS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(100));
+			helper.setOperationContext(
+				APITestPackage.Literals.CONDITION_ENTRY,
+				APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(100));
 			try {
 				GET_PROBLEM_STATUS__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1709,6 +1709,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IHealthStatusObservation))->asSequence()->first().oclAsType(domain::IHealthStatusObservation)";
+
 	/**
 	 * The cached OCL query for the '{@link #getHealthStatusObservation(ConditionEntry) <em>Get Health Status Observation</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1729,14 +1730,15 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  IHealthStatusObservation getHealthStatusObservation(ConditionEntry conditionEntry) {
+	public static IHealthStatusObservation getHealthStatusObservation(ConditionEntry conditionEntry) {
 		if (GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(101));
+			helper.setOperationContext(
+				APITestPackage.Literals.CONDITION_ENTRY,
+				APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(101));
 			try {
 				GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1753,6 +1755,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_COMMENTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::IComment)).oclAsType(domain::IComment)";
+
 	/**
 	 * The cached OCL query for the '{@link #getComments(ConditionEntry) <em>Get Comments</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1773,14 +1776,15 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<IComment> getComments(ConditionEntry conditionEntry) {
+	public static EList<IComment> getComments(ConditionEntry conditionEntry) {
 		if (GET_COMMENTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(102));
+			helper.setOperationContext(
+				APITestPackage.Literals.CONDITION_ENTRY,
+				APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(102));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1799,6 +1803,7 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_CAUSE_OF_DEATH__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ICauseOfDeathObservation))->asSequence()->first().oclAsType(domain::ICauseOfDeathObservation)";
+
 	/**
 	 * The cached OCL query for the '{@link #getCauseOfDeath(ConditionEntry) <em>Get Cause Of Death</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -1820,14 +1825,15 @@ public class ConditionEntryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ICauseOfDeathObservation getCauseOfDeath(ConditionEntry conditionEntry) {
+	public static ICauseOfDeathObservation getCauseOfDeath(ConditionEntry conditionEntry) {
 		if (GET_CAUSE_OF_DEATH__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.CONDITION_ENTRY, APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(103));
+			helper.setOperationContext(
+				APITestPackage.Literals.CONDITION_ENTRY,
+				APITestPackage.Literals.CONDITION_ENTRY.getEAllOperations().get(103));
 			try {
 				GET_CAUSE_OF_DEATH__EOCL_QRY = helper.createQuery(GET_CAUSE_OF_DEATH__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

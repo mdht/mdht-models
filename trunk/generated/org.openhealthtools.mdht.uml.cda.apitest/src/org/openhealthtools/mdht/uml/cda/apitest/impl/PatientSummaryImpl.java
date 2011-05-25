@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.impl;
 
 import java.util.Map;
@@ -72,7 +76,7 @@ public class PatientSummaryImpl extends GeneralHeaderConstraintsImpl implements 
 		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
 		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CE");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		eFactory.create(eClass);
 		return this;
 	}
 
@@ -88,8 +92,8 @@ public class PatientSummaryImpl extends GeneralHeaderConstraintsImpl implements 
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
 		IProblemListSection section = (IProblemListSection) eObject;
 		section.init();
-		addSection((org.openhealthtools.mdht.uml.cda.Section)section);
-		return (IProblemListSection)section;
+		addSection((org.openhealthtools.mdht.uml.cda.Section) section);
+		return section;
 	}
 
 	/**
@@ -101,7 +105,7 @@ public class PatientSummaryImpl extends GeneralHeaderConstraintsImpl implements 
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/apitest");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemListSection");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		eFactory.create(eClass);
 		return this;
 	}
 
@@ -138,8 +142,9 @@ public class PatientSummaryImpl extends GeneralHeaderConstraintsImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PatientSummary init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PatientSummaryImpl
+} // PatientSummaryImpl

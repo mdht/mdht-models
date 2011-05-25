@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import org.eclipse.emf.ecore.EClassifier;
@@ -50,7 +54,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  ClinicalDocument toCDAType(GeneralHeaderConstraints generalHeaderConstraints) {
+	public static ClinicalDocument toCDAType(GeneralHeaderConstraints generalHeaderConstraints) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -65,6 +69,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * @ordered
 	 */
 	protected static final String GET_LANGUAGE_CODE__EOCL_EXP = "self.languageCode.oclAsType(datatypes::CS)";
+
 	/**
 	 * The cached OCL query for the '{@link #getLanguageCode(GeneralHeaderConstraints) <em>Get Language Code</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -85,14 +90,15 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  CS getLanguageCode(GeneralHeaderConstraints generalHeaderConstraints) {
+	public static CS getLanguageCode(GeneralHeaderConstraints generalHeaderConstraints) {
 		if (GET_LANGUAGE_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS, DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS.getEAllOperations().get(1));
+			helper.setOperationContext(
+				DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS,
+				DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS.getEAllOperations().get(1));
 			try {
 				GET_LANGUAGE_CODE__EOCL_QRY = helper.createQuery(GET_LANGUAGE_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -109,6 +115,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * @ordered
 	 */
 	protected static final String GET_SET_ID__EOCL_EXP = "self.setId.oclAsType(datatypes::II)";
+
 	/**
 	 * The cached OCL query for the '{@link #getSetId(GeneralHeaderConstraints) <em>Get Set Id</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -129,14 +136,15 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  II getSetId(GeneralHeaderConstraints generalHeaderConstraints) {
+	public static II getSetId(GeneralHeaderConstraints generalHeaderConstraints) {
 		if (GET_SET_ID__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS, DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS.getEAllOperations().get(4));
+			helper.setOperationContext(
+				DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS,
+				DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS.getEAllOperations().get(4));
 			try {
 				GET_SET_ID__EOCL_QRY = helper.createQuery(GET_SET_ID__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -153,6 +161,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * @ordered
 	 */
 	protected static final String GET_TITLE__EOCL_EXP = "self.title.oclAsType(datatypes::ST)";
+
 	/**
 	 * The cached OCL query for the '{@link #getTitle(GeneralHeaderConstraints) <em>Get Title</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -173,14 +182,15 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ST getTitle(GeneralHeaderConstraints generalHeaderConstraints) {
+	public static ST getTitle(GeneralHeaderConstraints generalHeaderConstraints) {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS, DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS.getEAllOperations().get(7));
+			helper.setOperationContext(
+				DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS,
+				DomainPackage.Literals.IGENERAL_HEADER_CONSTRAINTS.getEAllOperations().get(7));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

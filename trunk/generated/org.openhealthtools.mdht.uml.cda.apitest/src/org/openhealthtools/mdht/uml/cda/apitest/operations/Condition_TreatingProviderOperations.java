@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Collection;
@@ -61,7 +65,7 @@ public class Condition_TreatingProviderOperations extends AssignedEntityOperatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  AssignedEntity toCDAType(Condition_TreatingProvider condition_TreatingProvider) {
+	public static AssignedEntity toCDAType(Condition_TreatingProvider condition_TreatingProvider) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -76,6 +80,7 @@ public class Condition_TreatingProviderOperations extends AssignedEntityOperatio
 	 * @ordered
 	 */
 	protected static final String GET_TREATING_PROVIDER_IDS__EOCL_EXP = "self.id.oclAsType(datatypes::II)";
+
 	/**
 	 * The cached OCL query for the '{@link #getTreatingProviderIDs(Condition_TreatingProvider) <em>Get Treating Provider IDs</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -97,14 +102,15 @@ public class Condition_TreatingProviderOperations extends AssignedEntityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<II> getTreatingProviderIDs(Condition_TreatingProvider condition_TreatingProvider) {
+	public static EList<II> getTreatingProviderIDs(Condition_TreatingProvider condition_TreatingProvider) {
 		if (GET_TREATING_PROVIDER_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.ITREATING_PROVIDER, DomainPackage.Literals.ITREATING_PROVIDER.getEAllOperations().get(1));
+			helper.setOperationContext(
+				DomainPackage.Literals.ITREATING_PROVIDER,
+				DomainPackage.Literals.ITREATING_PROVIDER.getEAllOperations().get(1));
 			try {
 				GET_TREATING_PROVIDER_IDS__EOCL_QRY = helper.createQuery(GET_TREATING_PROVIDER_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -123,7 +129,8 @@ public class Condition_TreatingProviderOperations extends AssignedEntityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ITreatingProvider addTreatingProviderID(Condition_TreatingProvider condition_TreatingProvider, II value) {
+	public static ITreatingProvider addTreatingProviderID(Condition_TreatingProvider condition_TreatingProvider,
+			II value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -138,6 +145,7 @@ public class Condition_TreatingProviderOperations extends AssignedEntityOperatio
 	 * @ordered
 	 */
 	protected static final String VALIDATE_TREATING_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateTreatingProviderId(Condition_TreatingProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Treating Provider Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -159,26 +167,24 @@ public class Condition_TreatingProviderOperations extends AssignedEntityOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTreatingProviderId(Condition_TreatingProvider condition_TreatingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateTreatingProviderId(Condition_TreatingProvider condition_TreatingProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_TREATING_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.CONDITION_TREATING_PROVIDER);
 			try {
 				VALIDATE_TREATING_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TREATING_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TREATING_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(condition_TreatingProvider)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TREATING_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			condition_TreatingProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.CONDITION_TREATING_PROVIDER__TREATING_PROVIDER_ID,
-						 APITestPlugin.INSTANCE.getString("TreatingProviderId"),
-						 new Object [] { condition_TreatingProvider }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.CONDITION_TREATING_PROVIDER__TREATING_PROVIDER_ID,
+					APITestPlugin.INSTANCE.getString("TreatingProviderId"), new Object[] { condition_TreatingProvider }));
 			}
 			return false;
 		}

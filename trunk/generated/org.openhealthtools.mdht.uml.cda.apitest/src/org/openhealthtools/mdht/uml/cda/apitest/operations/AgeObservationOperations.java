@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Map;
@@ -62,7 +66,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  Observation toCDAType(AgeObservation ageObservation) {
+	public static Observation toCDAType(AgeObservation ageObservation) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -77,6 +81,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String GET_VALUE__EOCL_EXP = "self.value.oclAsType(datatypes::ANY)";
+
 	/**
 	 * The cached OCL query for the '{@link #getValue(AgeObservation) <em>Get Value</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -98,14 +103,15 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ANY getValue(AgeObservation ageObservation) {
+	public static ANY getValue(AgeObservation ageObservation) {
 		if (GET_VALUE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IAGE_OBSERVATION, DomainPackage.Literals.IAGE_OBSERVATION.getEAllOperations().get(1));
+			helper.setOperationContext(
+				DomainPackage.Literals.IAGE_OBSERVATION,
+				DomainPackage.Literals.IAGE_OBSERVATION.getEAllOperations().get(1));
 			try {
 				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -122,6 +128,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_AGE_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateAgeObservationRelatedSubjectBirthTime(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Related Subject Birth Time</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -143,26 +150,25 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAgeObservationRelatedSubjectBirthTime(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAgeObservationRelatedSubjectBirthTime(AgeObservation ageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_AGE_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.AGE_OBSERVATION);
 			try {
 				VALIDATE_AGE_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AGE_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ageObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			ageObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME,
-						 APITestPlugin.INSTANCE.getString("AgeObservationRelatedSubjectBirthTime"),
-						 new Object [] { ageObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME,
+					APITestPlugin.INSTANCE.getString("AgeObservationRelatedSubjectBirthTime"),
+					new Object[] { ageObservation }));
 			}
 			return false;
 		}
@@ -178,6 +184,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_AGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.38')";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateAgeObservationTemplateId(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -199,26 +206,24 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAgeObservationTemplateId(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAgeObservationTemplateId(AgeObservation ageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_AGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.AGE_OBSERVATION);
 			try {
 				VALIDATE_AGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ageObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			ageObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_TEMPLATE_ID,
-						 APITestPlugin.INSTANCE.getString("AgeObservationTemplateId"),
-						 new Object [] { ageObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_TEMPLATE_ID,
+					APITestPlugin.INSTANCE.getString("AgeObservationTemplateId"), new Object[] { ageObservation }));
 			}
 			return false;
 		}
@@ -234,6 +239,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_AGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateAgeObservationClassCode(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Class Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -255,26 +261,24 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAgeObservationClassCode(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAgeObservationClassCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_AGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.AGE_OBSERVATION);
 			try {
 				VALIDATE_AGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ageObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			ageObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_CLASS_CODE,
-						 APITestPlugin.INSTANCE.getString("AgeObservationClassCode"),
-						 new Object [] { ageObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_CLASS_CODE,
+					APITestPlugin.INSTANCE.getString("AgeObservationClassCode"), new Object[] { ageObservation }));
 			}
 			return false;
 		}
@@ -290,6 +294,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_AGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateAgeObservationMoodCode(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Mood Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -311,26 +316,24 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAgeObservationMoodCode(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAgeObservationMoodCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_AGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.AGE_OBSERVATION);
 			try {
 				VALIDATE_AGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ageObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			ageObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_MOOD_CODE,
-						 APITestPlugin.INSTANCE.getString("AgeObservationMoodCode"),
-						 new Object [] { ageObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_MOOD_CODE,
+					APITestPlugin.INSTANCE.getString("AgeObservationMoodCode"), new Object[] { ageObservation }));
 			}
 			return false;
 		}
@@ -345,9 +348,10 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_AGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.code = '397659008' and value.codeSystem = '2.16.840.1.113883.6.96'))";
+	protected static final String VALIDATE_AGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
+			+ "value.code = '397659008' and value.codeSystem = '2.16.840.1.113883.6.96'))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateAgeObservationCode(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -371,26 +375,23 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAgeObservationCode(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAgeObservationCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_AGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.AGE_OBSERVATION);
 			try {
 				VALIDATE_AGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ageObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_CODE,
-						 APITestPlugin.INSTANCE.getString("AgeObservationCode"),
-						 new Object [] { ageObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_CODE,
+					APITestPlugin.INSTANCE.getString("AgeObservationCode"), new Object[] { ageObservation }));
 			}
 			return false;
 		}
@@ -405,9 +406,10 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_AGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+	protected static final String VALIDATE_AGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
+			+ "value.code = 'completed'))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateAgeObservationStatusCode(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Status Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -431,26 +433,24 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAgeObservationStatusCode(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAgeObservationStatusCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_AGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.AGE_OBSERVATION);
 			try {
 				VALIDATE_AGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ageObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			ageObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_STATUS_CODE,
-						 APITestPlugin.INSTANCE.getString("AgeObservationStatusCode"),
-						 new Object [] { ageObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_STATUS_CODE,
+					APITestPlugin.INSTANCE.getString("AgeObservationStatusCode"), new Object[] { ageObservation }));
 			}
 			return false;
 		}
@@ -466,6 +466,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_AGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateAgeObservationValue(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Value</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -487,26 +488,23 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAgeObservationValue(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAgeObservationValue(AgeObservation ageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_AGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.AGE_OBSERVATION);
 			try {
 				VALIDATE_AGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_AGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ageObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_VALUE,
-						 APITestPlugin.INSTANCE.getString("AgeObservationValue"),
-						 new Object [] { ageObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.AGE_OBSERVATION__AGE_OBSERVATION_VALUE,
+					APITestPlugin.INSTANCE.getString("AgeObservationValue"), new Object[] { ageObservation }));
 			}
 			return false;
 		}

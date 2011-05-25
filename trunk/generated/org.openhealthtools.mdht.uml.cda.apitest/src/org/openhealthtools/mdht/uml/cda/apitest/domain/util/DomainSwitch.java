@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.domain.util;
 
 import java.util.List;
@@ -82,13 +86,11 @@ public class DomainSwitch<T> {
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
-		}
-		else {
+		} else {
 			List<EClass> eSuperTypes = theEClass.getESuperTypes();
-			return
-				eSuperTypes.isEmpty() ?
-					defaultCase(theEObject) :
-					doSwitch(eSuperTypes.get(0), theEObject);
+			return eSuperTypes.isEmpty()
+					? defaultCase(theEObject)
+					: doSwitch(eSuperTypes.get(0), theEObject);
 		}
 	}
 
@@ -102,100 +104,139 @@ public class DomainSwitch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case DomainPackage.ISTATUS_OBSERVATION: {
-				IStatusObservation iStatusObservation = (IStatusObservation)theEObject;
+				IStatusObservation iStatusObservation = (IStatusObservation) theEObject;
 				T result = caseIStatusObservation(iStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.ICONDITION: {
-				ICondition iCondition = (ICondition)theEObject;
+				ICondition iCondition = (ICondition) theEObject;
 				T result = caseICondition(iCondition);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.IEPISODE_OBSERVATION: {
-				IEpisodeObservation iEpisodeObservation = (IEpisodeObservation)theEObject;
+				IEpisodeObservation iEpisodeObservation = (IEpisodeObservation) theEObject;
 				T result = caseIEpisodeObservation(iEpisodeObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.IPROBLEM_ENTRY: {
-				IProblemEntry iProblemEntry = (IProblemEntry)theEObject;
+				IProblemEntry iProblemEntry = (IProblemEntry) theEObject;
 				T result = caseIProblemEntry(iProblemEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.IAGE_OBSERVATION: {
-				IAgeObservation iAgeObservation = (IAgeObservation)theEObject;
+				IAgeObservation iAgeObservation = (IAgeObservation) theEObject;
 				T result = caseIAgeObservation(iAgeObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.ISEVERITY: {
-				ISeverity iSeverity = (ISeverity)theEObject;
+				ISeverity iSeverity = (ISeverity) theEObject;
 				T result = caseISeverity(iSeverity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.IPROBLEM_STATUS_OBSERVATION: {
-				IProblemStatusObservation iProblemStatusObservation = (IProblemStatusObservation)theEObject;
+				IProblemStatusObservation iProblemStatusObservation = (IProblemStatusObservation) theEObject;
 				T result = caseIProblemStatusObservation(iProblemStatusObservation);
-				if (result == null) result = caseIStatusObservation(iProblemStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIStatusObservation(iProblemStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.IHEALTH_STATUS_OBSERVATION: {
-				IHealthStatusObservation iHealthStatusObservation = (IHealthStatusObservation)theEObject;
+				IHealthStatusObservation iHealthStatusObservation = (IHealthStatusObservation) theEObject;
 				T result = caseIHealthStatusObservation(iHealthStatusObservation);
-				if (result == null) result = caseIStatusObservation(iHealthStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIStatusObservation(iHealthStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.ICOMMENT: {
-				IComment iComment = (IComment)theEObject;
+				IComment iComment = (IComment) theEObject;
 				T result = caseIComment(iComment);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.ICAUSE_OF_DEATH_OBSERVATION: {
-				ICauseOfDeathObservation iCauseOfDeathObservation = (ICauseOfDeathObservation)theEObject;
+				ICauseOfDeathObservation iCauseOfDeathObservation = (ICauseOfDeathObservation) theEObject;
 				T result = caseICauseOfDeathObservation(iCauseOfDeathObservation);
-				if (result == null) result = caseIFamilyHistoryObservation(iCauseOfDeathObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIFamilyHistoryObservation(iCauseOfDeathObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.IFAMILY_HISTORY_OBSERVATION: {
-				IFamilyHistoryObservation iFamilyHistoryObservation = (IFamilyHistoryObservation)theEObject;
+				IFamilyHistoryObservation iFamilyHistoryObservation = (IFamilyHistoryObservation) theEObject;
 				T result = caseIFamilyHistoryObservation(iFamilyHistoryObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.ITREATING_PROVIDER: {
-				ITreatingProvider iTreatingProvider = (ITreatingProvider)theEObject;
+				ITreatingProvider iTreatingProvider = (ITreatingProvider) theEObject;
 				T result = caseITreatingProvider(iTreatingProvider);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.IPROBLEM_LIST_SECTION: {
-				IProblemListSection iProblemListSection = (IProblemListSection)theEObject;
+				IProblemListSection iProblemListSection = (IProblemListSection) theEObject;
 				T result = caseIProblemListSection(iProblemListSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.IPATIENT_SUMMARY: {
-				IPatientSummary iPatientSummary = (IPatientSummary)theEObject;
+				IPatientSummary iPatientSummary = (IPatientSummary) theEObject;
 				T result = caseIPatientSummary(iPatientSummary);
-				if (result == null) result = caseIGeneralHeaderConstraints(iPatientSummary);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIGeneralHeaderConstraints(iPatientSummary);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case DomainPackage.IGENERAL_HEADER_CONSTRAINTS: {
-				IGeneralHeaderConstraints iGeneralHeaderConstraints = (IGeneralHeaderConstraints)theEObject;
+				IGeneralHeaderConstraints iGeneralHeaderConstraints = (IGeneralHeaderConstraints) theEObject;
 				T result = caseIGeneralHeaderConstraints(iGeneralHeaderConstraints);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			default: return defaultCase(theEObject);
+			default:
+				return defaultCase(theEObject);
 		}
 	}
 
@@ -439,4 +480,4 @@ public class DomainSwitch<T> {
 		return null;
 	}
 
-} //DomainSwitch
+} // DomainSwitch
