@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot;
 
 import java.util.Map;
@@ -22,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.pilot.TBPNPackage#getTBResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.15.3.21' constraints.validation.error='TBResultOrganizerTemplateId ResultOrganizerCode TBResultOrganizerTBResultObservation' code.codeSystemName='LOINC'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.15.3.21' constraints.validation.error='TBResultOrganizerTemplateId ResultOrganizerCode TBResultOrganizerTbResultObservation' code.codeSystemName='LOINC'"
  * @generated
  */
 public interface TBResultOrganizer extends ResultOrganizer {
@@ -37,7 +41,7 @@ public interface TBResultOrganizer extends ResultOrganizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(pilot::TBResultObservation))'"
 	 * @generated
 	 */
-	boolean validateTBResultOrganizerTBResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateTBResultOrganizerTbResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

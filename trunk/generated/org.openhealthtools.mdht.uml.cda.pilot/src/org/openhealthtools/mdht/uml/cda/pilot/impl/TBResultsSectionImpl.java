@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot.impl;
 
 import java.util.Map;
@@ -71,8 +75,8 @@ public class TBResultsSectionImpl extends ResultsSectionImpl implements TBResult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultsSectionTBResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TBResultsSectionOperations.validateTBResultsSectionTBResultOrganizer(this, diagnostics, context);
+	public boolean validateTBResultsSectionTbResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TBResultsSectionOperations.validateTBResultsSectionTbResultOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +84,8 @@ public class TBResultsSectionImpl extends ResultsSectionImpl implements TBResult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultsSectionTBResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TBResultsSectionOperations.validateTBResultsSectionTBResultObservation(this, diagnostics, context);
+	public boolean validateTBResultsSectionTbResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TBResultsSectionOperations.validateTBResultsSectionTbResultObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -127,8 +131,9 @@ public class TBResultsSectionImpl extends ResultsSectionImpl implements TBResult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TBResultsSection init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //TBResultsSectionImpl
+} // TBResultsSectionImpl

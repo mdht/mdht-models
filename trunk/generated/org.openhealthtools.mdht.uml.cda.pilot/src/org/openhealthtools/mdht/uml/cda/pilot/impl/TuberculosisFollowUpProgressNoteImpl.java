@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot.impl;
 
 import java.util.Map;
@@ -26,7 +30,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class TuberculosisFollowUpProgressNoteImpl extends ClinicalDocumentImpl implements TuberculosisFollowUpProgressNote {
+public class TuberculosisFollowUpProgressNoteImpl extends ClinicalDocumentImpl implements
+		TuberculosisFollowUpProgressNote {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,8 +56,10 @@ public class TuberculosisFollowUpProgressNoteImpl extends ClinicalDocumentImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTuberculosisFollowUpProgressNotePatientNames(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisFollowUpProgressNoteOperations.validateTuberculosisFollowUpProgressNotePatientNames(this, diagnostics, context);
+	public boolean validateTuberculosisFollowUpProgressNotePatientNames(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TuberculosisFollowUpProgressNoteOperations.validateTuberculosisFollowUpProgressNotePatientNames(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,8 +67,10 @@ public class TuberculosisFollowUpProgressNoteImpl extends ClinicalDocumentImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTuberculosisFollowUpProgressNoteTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisFollowUpProgressNoteOperations.validateTuberculosisFollowUpProgressNoteTemplateId(this, diagnostics, context);
+	public boolean validateTuberculosisFollowUpProgressNoteTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TuberculosisFollowUpProgressNoteOperations.validateTuberculosisFollowUpProgressNoteTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +78,10 @@ public class TuberculosisFollowUpProgressNoteImpl extends ClinicalDocumentImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTuberculosisFollowUpProgressNoteTBResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TuberculosisFollowUpProgressNoteOperations.validateTuberculosisFollowUpProgressNoteTBResultsSection(this, diagnostics, context);
+	public boolean validateTuberculosisFollowUpProgressNoteTbResultsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TuberculosisFollowUpProgressNoteOperations.validateTuberculosisFollowUpProgressNoteTbResultsSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,7 +99,7 @@ public class TuberculosisFollowUpProgressNoteImpl extends ClinicalDocumentImpl i
 	 * @generated
 	 */
 	public TuberculosisFollowUpProgressNote init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //TuberculosisFollowUpProgressNoteImpl
+} // TuberculosisFollowUpProgressNoteImpl

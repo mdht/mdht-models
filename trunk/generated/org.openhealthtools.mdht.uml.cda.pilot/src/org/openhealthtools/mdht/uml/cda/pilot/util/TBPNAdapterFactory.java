@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot.util;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -69,7 +73,7 @@ public class TBPNAdapterFactory extends AdapterFactoryImpl {
 			return true;
 		}
 		if (object instanceof EObject) {
-			return ((EObject)object).eClass().getEPackage() == modelPackage;
+			return ((EObject) object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
 	}
@@ -80,69 +84,82 @@ public class TBPNAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TBPNSwitch<Adapter> modelSwitch =
-		new TBPNSwitch<Adapter>() {
-			@Override
-			public Adapter caseTuberculosisFollowUpProgressNote(TuberculosisFollowUpProgressNote object) {
-				return createTuberculosisFollowUpProgressNoteAdapter();
-			}
-			@Override
-			public Adapter caseTBResultsSection(TBResultsSection object) {
-				return createTBResultsSectionAdapter();
-			}
-			@Override
-			public Adapter caseTBResultOrganizer(TBResultOrganizer object) {
-				return createTBResultOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseTBResultObservation(TBResultObservation object) {
-				return createTBResultObservationAdapter();
-			}
-			@Override
-			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
-				return createInfrastructureRootAdapter();
-			}
-			@Override
-			public Adapter caseAct(Act object) {
-				return createActAdapter();
-			}
-			@Override
-			public Adapter caseClinicalDocument(ClinicalDocument object) {
-				return createClinicalDocumentAdapter();
-			}
-			@Override
-			public Adapter caseSection(Section object) {
-				return createSectionAdapter();
-			}
-			@Override
-			public Adapter caseResultsSection(ResultsSection object) {
-				return createResultsSectionAdapter();
-			}
-			@Override
-			public Adapter caseClinicalStatement(ClinicalStatement object) {
-				return createClinicalStatementAdapter();
-			}
-			@Override
-			public Adapter caseOrganizer(Organizer object) {
-				return createOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseResultOrganizer(ResultOrganizer object) {
-				return createResultOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseObservation(Observation object) {
-				return createObservationAdapter();
-			}
-			@Override
-			public Adapter caseResultObservation(ResultObservation object) {
-				return createResultObservationAdapter();
-			}
-			@Override
-			public Adapter defaultCase(EObject object) {
-				return createEObjectAdapter();
-			}
-		};
+	protected TBPNSwitch<Adapter> modelSwitch = new TBPNSwitch<Adapter>() {
+		@Override
+		public Adapter caseTuberculosisFollowUpProgressNote(TuberculosisFollowUpProgressNote object) {
+			return createTuberculosisFollowUpProgressNoteAdapter();
+		}
+
+		@Override
+		public Adapter caseTBResultsSection(TBResultsSection object) {
+			return createTBResultsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseTBResultOrganizer(TBResultOrganizer object) {
+			return createTBResultOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseTBResultObservation(TBResultObservation object) {
+			return createTBResultObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
+			return createInfrastructureRootAdapter();
+		}
+
+		@Override
+		public Adapter caseAct(Act object) {
+			return createActAdapter();
+		}
+
+		@Override
+		public Adapter caseClinicalDocument(ClinicalDocument object) {
+			return createClinicalDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseSection(Section object) {
+			return createSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseResultsSection(ResultsSection object) {
+			return createResultsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseClinicalStatement(ClinicalStatement object) {
+			return createClinicalStatementAdapter();
+		}
+
+		@Override
+		public Adapter caseOrganizer(Organizer object) {
+			return createOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseResultOrganizer(ResultOrganizer object) {
+			return createResultOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseObservation(Observation object) {
+			return createObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseResultObservation(ResultObservation object) {
+			return createResultObservationAdapter();
+		}
+
+		@Override
+		public Adapter defaultCase(EObject object) {
+			return createEObjectAdapter();
+		}
+	};
 
 	/**
 	 * Creates an adapter for the <code>target</code>.
@@ -154,9 +171,8 @@ public class TBPNAdapterFactory extends AdapterFactoryImpl {
 	 */
 	@Override
 	public Adapter createAdapter(Notifier target) {
-		return modelSwitch.doSwitch((EObject)target);
+		return modelSwitch.doSwitch((EObject) target);
 	}
-
 
 	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.pilot.TuberculosisFollowUpProgressNote <em>Tuberculosis Follow Up Progress Note</em>}'.
@@ -366,4 +382,4 @@ public class TBPNAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //TBPNAdapterFactory
+} // TBPNAdapterFactory

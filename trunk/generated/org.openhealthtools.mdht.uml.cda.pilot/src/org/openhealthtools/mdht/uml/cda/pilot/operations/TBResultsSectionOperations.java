@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot.operations;
 
 import java.util.Collection;
@@ -37,8 +41,8 @@ import org.openhealthtools.mdht.uml.cda.pilot.util.TBPNValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TBResultsSection#validateTBResultsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TBResultsSection#validateTBResultsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section Title</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TBResultsSection#validateTBResultsSectionTBResultOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section TB Result Organizer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TBResultsSection#validateTBResultsSectionTBResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section TB Result Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TBResultsSection#validateTBResultsSectionTbResultOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section Tb Result Organizer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TBResultsSection#validateTBResultsSectionTbResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section Tb Result Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TBResultsSection#getTbResultOrganizers() <em>Get Tb Result Organizers</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TBResultsSection#getTbResultObservations() <em>Get Tb Result Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TBResultsSection#validateResultsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Template Id</em>}</li>
@@ -89,26 +93,24 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTBResultsSectionText(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateTBResultsSectionText(TBResultsSection tbResultsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_TB_RESULTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(TBPNPackage.Literals.TB_RESULTS_SECTION);
 			try {
 				VALIDATE_TB_RESULTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TB_RESULTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TB_RESULTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tbResultsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TB_RESULTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			tbResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 TBPNValidator.DIAGNOSTIC_SOURCE,
-						 TBPNValidator.TB_RESULTS_SECTION__TB_RESULTS_SECTION_TEXT,
-						 PilotPlugin.INSTANCE.getString("TBResultsSectionText"),
-						 new Object [] { tbResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, TBPNValidator.DIAGNOSTIC_SOURCE,
+					TBPNValidator.TB_RESULTS_SECTION__TB_RESULTS_SECTION_TEXT,
+					PilotPlugin.INSTANCE.getString("TBResultsSectionText"), new Object[] { tbResultsSection }));
 			}
 			return false;
 		}
@@ -123,7 +125,7 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TB_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.title.getText() = 'Relevant diagnostic tests and/or laboratory data'";
+	protected static final String VALIDATE_TB_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Relevant diagnostic tests and/or laboratory data')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTBResultsSectionTitle(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section Title</em>}' invariant operation.
@@ -139,33 +141,31 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.title.getText() = 'Relevant diagnostic tests and/or laboratory data'
+	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Relevant diagnostic tests and/or laboratory data')
 	 * @param tbResultsSection The receiving '<em><b>TB Results Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTBResultsSectionTitle(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateTBResultsSectionTitle(TBResultsSection tbResultsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_TB_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(TBPNPackage.Literals.TB_RESULTS_SECTION);
 			try {
 				VALIDATE_TB_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TB_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TB_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tbResultsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TB_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			tbResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 TBPNValidator.DIAGNOSTIC_SOURCE,
-						 TBPNValidator.TB_RESULTS_SECTION__TB_RESULTS_SECTION_TITLE,
-						 PilotPlugin.INSTANCE.getString("TBResultsSectionTitle"),
-						 new Object [] { tbResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, TBPNValidator.DIAGNOSTIC_SOURCE,
+					TBPNValidator.TB_RESULTS_SECTION__TB_RESULTS_SECTION_TITLE,
+					PilotPlugin.INSTANCE.getString("TBResultsSectionTitle"), new Object[] { tbResultsSection }));
 			}
 			return false;
 		}
@@ -173,20 +173,20 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateTBResultsSectionTBResultOrganizer(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section TB Result Organizer</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTBResultsSectionTbResultOrganizer(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section Tb Result Organizer</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateTBResultsSectionTBResultOrganizer(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateTBResultsSectionTbResultOrganizer(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_TB_RESULTS_SECTION_TB_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(pilot::TBResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateTBResultsSectionTBResultOrganizer(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section TB Result Organizer</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateTBResultsSectionTbResultOrganizer(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section Tb Result Organizer</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateTBResultsSectionTBResultOrganizer(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateTBResultsSectionTbResultOrganizer(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -203,26 +203,25 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTBResultsSectionTBResultOrganizer(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateTBResultsSectionTbResultOrganizer(TBResultsSection tbResultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_TB_RESULTS_SECTION_TB_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(TBPNPackage.Literals.TB_RESULTS_SECTION);
 			try {
 				VALIDATE_TB_RESULTS_SECTION_TB_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TB_RESULTS_SECTION_TB_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TB_RESULTS_SECTION_TB_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tbResultsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TB_RESULTS_SECTION_TB_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			tbResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 TBPNValidator.DIAGNOSTIC_SOURCE,
-						 TBPNValidator.TB_RESULTS_SECTION__TB_RESULTS_SECTION_TB_RESULT_ORGANIZER,
-						 PilotPlugin.INSTANCE.getString("TBResultsSectionTBResultOrganizer"),
-						 new Object [] { tbResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, TBPNValidator.DIAGNOSTIC_SOURCE,
+					TBPNValidator.TB_RESULTS_SECTION__TB_RESULTS_SECTION_TB_RESULT_ORGANIZER,
+					PilotPlugin.INSTANCE.getString("TBResultsSectionTbResultOrganizer"),
+					new Object[] { tbResultsSection }));
 			}
 			return false;
 		}
@@ -230,20 +229,20 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateTBResultsSectionTBResultObservation(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section TB Result Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTBResultsSectionTbResultObservation(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section Tb Result Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateTBResultsSectionTBResultObservation(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateTBResultsSectionTbResultObservation(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_TB_RESULTS_SECTION_TB_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(pilot::TBResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateTBResultsSectionTBResultObservation(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section TB Result Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateTBResultsSectionTbResultObservation(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate TB Results Section Tb Result Observation</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateTBResultsSectionTBResultObservation(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateTBResultsSectionTbResultObservation(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -260,26 +259,25 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTBResultsSectionTBResultObservation(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateTBResultsSectionTbResultObservation(TBResultsSection tbResultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_TB_RESULTS_SECTION_TB_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(TBPNPackage.Literals.TB_RESULTS_SECTION);
 			try {
 				VALIDATE_TB_RESULTS_SECTION_TB_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TB_RESULTS_SECTION_TB_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TB_RESULTS_SECTION_TB_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tbResultsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TB_RESULTS_SECTION_TB_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			tbResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 TBPNValidator.DIAGNOSTIC_SOURCE,
-						 TBPNValidator.TB_RESULTS_SECTION__TB_RESULTS_SECTION_TB_RESULT_OBSERVATION,
-						 PilotPlugin.INSTANCE.getString("TBResultsSectionTBResultObservation"),
-						 new Object [] { tbResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, TBPNValidator.DIAGNOSTIC_SOURCE,
+					TBPNValidator.TB_RESULTS_SECTION__TB_RESULTS_SECTION_TB_RESULT_OBSERVATION,
+					PilotPlugin.INSTANCE.getString("TBResultsSectionTbResultObservation"),
+					new Object[] { tbResultsSection }));
 			}
 			return false;
 		}
@@ -315,14 +313,15 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<TBResultOrganizer> getTbResultOrganizers(TBResultsSection tbResultsSection) {
+	public static EList<TBResultOrganizer> getTbResultOrganizers(TBResultsSection tbResultsSection) {
 		if (GET_TB_RESULT_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(TBPNPackage.Literals.TB_RESULTS_SECTION, TBPNPackage.Literals.TB_RESULTS_SECTION.getEAllOperations().get(57));
+			helper.setOperationContext(
+				TBPNPackage.Literals.TB_RESULTS_SECTION,
+				TBPNPackage.Literals.TB_RESULTS_SECTION.getEAllOperations().get(65));
 			try {
 				GET_TB_RESULT_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_TB_RESULT_ORGANIZERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -361,14 +360,15 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<TBResultObservation> getTbResultObservations(TBResultsSection tbResultsSection) {
+	public static EList<TBResultObservation> getTbResultObservations(TBResultsSection tbResultsSection) {
 		if (GET_TB_RESULT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(TBPNPackage.Literals.TB_RESULTS_SECTION, TBPNPackage.Literals.TB_RESULTS_SECTION.getEAllOperations().get(58));
+			helper.setOperationContext(
+				TBPNPackage.Literals.TB_RESULTS_SECTION,
+				TBPNPackage.Literals.TB_RESULTS_SECTION.getEAllOperations().get(66));
 			try {
 				GET_TB_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_TB_RESULT_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -409,26 +409,30 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateResultsSectionTemplateId(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateResultsSectionTemplateId(TBResultsSection tbResultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(TBPNPackage.Literals.TB_RESULTS_SECTION);
 			try {
 				VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tbResultsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			tbResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 TBPNValidator.DIAGNOSTIC_SOURCE,
-						 TBPNValidator.TB_RESULTS_SECTION__RESULTS_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tbResultsSection, context) }),
-						 new Object [] { tbResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					TBPNValidator.DIAGNOSTIC_SOURCE,
+					TBPNValidator.TB_RESULTS_SECTION__RESULTS_SECTION_TEMPLATE_ID,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"ResultsSectionTemplateId",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tbResultsSection, context) }),
+					new Object[] { tbResultsSection }));
 			}
 			return false;
 		}
@@ -443,9 +447,9 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResultsSectionCode(TBResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Code</em>}' invariant operation.
@@ -461,35 +465,32 @@ public class TBResultsSectionOperations extends ResultsSectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
 	 * @param tbResultsSection The receiving '<em><b>TB Results Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateResultsSectionCode(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateResultsSectionCode(TBResultsSection tbResultsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(TBPNPackage.Literals.TB_RESULTS_SECTION);
 			try {
 				VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tbResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 TBPNValidator.DIAGNOSTIC_SOURCE,
-						 TBPNValidator.TB_RESULTS_SECTION__RESULTS_SECTION_CODE,
-						 PilotPlugin.INSTANCE.getString("ResultsSectionCode"),
-						 new Object [] { tbResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, TBPNValidator.DIAGNOSTIC_SOURCE,
+					TBPNValidator.TB_RESULTS_SECTION__RESULTS_SECTION_CODE,
+					PilotPlugin.INSTANCE.getString("ResultsSectionCode"), new Object[] { tbResultsSection }));
 			}
 			return false;
 		}

@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot.util;
 
 import java.util.List;
@@ -81,13 +85,11 @@ public class TBPNSwitch<T> {
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
-		}
-		else {
+		} else {
 			List<EClass> eSuperTypes = theEClass.getESuperTypes();
-			return
-				eSuperTypes.isEmpty() ?
-					defaultCase(theEObject) :
-					doSwitch(eSuperTypes.get(0), theEObject);
+			return eSuperTypes.isEmpty()
+					? defaultCase(theEObject)
+					: doSwitch(eSuperTypes.get(0), theEObject);
 		}
 	}
 
@@ -101,47 +103,90 @@ public class TBPNSwitch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case TBPNPackage.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE: {
-				TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote = (TuberculosisFollowUpProgressNote)theEObject;
+				TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote = (TuberculosisFollowUpProgressNote) theEObject;
 				T result = caseTuberculosisFollowUpProgressNote(tuberculosisFollowUpProgressNote);
-				if (result == null) result = caseClinicalDocument(tuberculosisFollowUpProgressNote);
-				if (result == null) result = caseAct(tuberculosisFollowUpProgressNote);
-				if (result == null) result = caseInfrastructureRoot(tuberculosisFollowUpProgressNote);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseClinicalDocument(tuberculosisFollowUpProgressNote);
+				}
+				if (result == null) {
+					result = caseAct(tuberculosisFollowUpProgressNote);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(tuberculosisFollowUpProgressNote);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case TBPNPackage.TB_RESULTS_SECTION: {
-				TBResultsSection tbResultsSection = (TBResultsSection)theEObject;
+				TBResultsSection tbResultsSection = (TBResultsSection) theEObject;
 				T result = caseTBResultsSection(tbResultsSection);
-				if (result == null) result = caseResultsSection(tbResultsSection);
-				if (result == null) result = caseSection(tbResultsSection);
-				if (result == null) result = caseAct(tbResultsSection);
-				if (result == null) result = caseInfrastructureRoot(tbResultsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseResultsSection(tbResultsSection);
+				}
+				if (result == null) {
+					result = caseSection(tbResultsSection);
+				}
+				if (result == null) {
+					result = caseAct(tbResultsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(tbResultsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case TBPNPackage.TB_RESULT_ORGANIZER: {
-				TBResultOrganizer tbResultOrganizer = (TBResultOrganizer)theEObject;
+				TBResultOrganizer tbResultOrganizer = (TBResultOrganizer) theEObject;
 				T result = caseTBResultOrganizer(tbResultOrganizer);
-				if (result == null) result = caseResultOrganizer(tbResultOrganizer);
-				if (result == null) result = caseOrganizer(tbResultOrganizer);
-				if (result == null) result = caseClinicalStatement(tbResultOrganizer);
-				if (result == null) result = caseAct(tbResultOrganizer);
-				if (result == null) result = caseInfrastructureRoot(tbResultOrganizer);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseResultOrganizer(tbResultOrganizer);
+				}
+				if (result == null) {
+					result = caseOrganizer(tbResultOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(tbResultOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(tbResultOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(tbResultOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case TBPNPackage.TB_RESULT_OBSERVATION: {
-				TBResultObservation tbResultObservation = (TBResultObservation)theEObject;
+				TBResultObservation tbResultObservation = (TBResultObservation) theEObject;
 				T result = caseTBResultObservation(tbResultObservation);
-				if (result == null) result = caseResultObservation(tbResultObservation);
-				if (result == null) result = caseObservation(tbResultObservation);
-				if (result == null) result = caseClinicalStatement(tbResultObservation);
-				if (result == null) result = caseAct(tbResultObservation);
-				if (result == null) result = caseInfrastructureRoot(tbResultObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseResultObservation(tbResultObservation);
+				}
+				if (result == null) {
+					result = caseObservation(tbResultObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(tbResultObservation);
+				}
+				if (result == null) {
+					result = caseAct(tbResultObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(tbResultObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			default: return defaultCase(theEObject);
+			default:
+				return defaultCase(theEObject);
 		}
 	}
 
@@ -370,4 +415,4 @@ public class TBPNSwitch<T> {
 		return null;
 	}
 
-} //TBPNSwitch
+} // TBPNSwitch

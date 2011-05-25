@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot.operations;
 
 import java.util.Map;
@@ -33,7 +37,7 @@ import org.openhealthtools.mdht.uml.cda.pilot.util.TBPNValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TuberculosisFollowUpProgressNote#validateTuberculosisFollowUpProgressNotePatientNames(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Follow Up Progress Note Patient Names</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TuberculosisFollowUpProgressNote#validateTuberculosisFollowUpProgressNoteTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Follow Up Progress Note Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TuberculosisFollowUpProgressNote#validateTuberculosisFollowUpProgressNoteTBResultsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Follow Up Progress Note TB Results Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TuberculosisFollowUpProgressNote#validateTuberculosisFollowUpProgressNoteTbResultsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Follow Up Progress Note Tb Results Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.pilot.TuberculosisFollowUpProgressNote#getTbResultsSection() <em>Get Tb Results Section</em>}</li>
  * </ul>
  * </p>
@@ -58,8 +62,8 @@ public class TuberculosisFollowUpProgressNoteOperations extends ClinicalDocument
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_PATIENT_NAMES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget.patientRole.patient.name->exists("+
-"   name : datatypes::PN | not name.given->isEmpty() and not name.family->isEmpty())";
+	protected static final String VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_PATIENT_NAMES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget.patientRole.patient.name->exists("
+			+ "   name : datatypes::PN | not name.given->isEmpty() and not name.family->isEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTuberculosisFollowUpProgressNotePatientNames(TuberculosisFollowUpProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Follow Up Progress Note Patient Names</em>}' invariant operation.
@@ -83,26 +87,28 @@ public class TuberculosisFollowUpProgressNoteOperations extends ClinicalDocument
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTuberculosisFollowUpProgressNotePatientNames(TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateTuberculosisFollowUpProgressNotePatientNames(
+			TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_PATIENT_NAMES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(TBPNPackage.Literals.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE);
 			try {
 				VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_PATIENT_NAMES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_PATIENT_NAMES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_PATIENT_NAMES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tuberculosisFollowUpProgressNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_PATIENT_NAMES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			tuberculosisFollowUpProgressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 TBPNValidator.DIAGNOSTIC_SOURCE,
-						 TBPNValidator.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE__TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_PATIENT_NAMES,
-						 PilotPlugin.INSTANCE.getString("TuberculosisFollowUpProgressNotePatientNames"),
-						 new Object [] { tuberculosisFollowUpProgressNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					TBPNValidator.DIAGNOSTIC_SOURCE,
+					TBPNValidator.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE__TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_PATIENT_NAMES,
+					PilotPlugin.INSTANCE.getString("TuberculosisFollowUpProgressNotePatientNames"),
+					new Object[] { tuberculosisFollowUpProgressNote }));
 			}
 			return false;
 		}
@@ -140,26 +146,28 @@ public class TuberculosisFollowUpProgressNoteOperations extends ClinicalDocument
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTuberculosisFollowUpProgressNoteTemplateId(TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateTuberculosisFollowUpProgressNoteTemplateId(
+			TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(TBPNPackage.Literals.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE);
 			try {
 				VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tuberculosisFollowUpProgressNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			tuberculosisFollowUpProgressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 TBPNValidator.DIAGNOSTIC_SOURCE,
-						 TBPNValidator.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE__TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TEMPLATE_ID,
-						 PilotPlugin.INSTANCE.getString("TuberculosisFollowUpProgressNoteTemplateId"),
-						 new Object [] { tuberculosisFollowUpProgressNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					TBPNValidator.DIAGNOSTIC_SOURCE,
+					TBPNValidator.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE__TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TEMPLATE_ID,
+					PilotPlugin.INSTANCE.getString("TuberculosisFollowUpProgressNoteTemplateId"),
+					new Object[] { tuberculosisFollowUpProgressNote }));
 			}
 			return false;
 		}
@@ -167,20 +175,20 @@ public class TuberculosisFollowUpProgressNoteOperations extends ClinicalDocument
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateTuberculosisFollowUpProgressNoteTBResultsSection(TuberculosisFollowUpProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Follow Up Progress Note TB Results Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTuberculosisFollowUpProgressNoteTbResultsSection(TuberculosisFollowUpProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Follow Up Progress Note Tb Results Section</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateTuberculosisFollowUpProgressNoteTBResultsSection(TuberculosisFollowUpProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateTuberculosisFollowUpProgressNoteTbResultsSection(TuberculosisFollowUpProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TB_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pilot::TBResultsSection))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateTuberculosisFollowUpProgressNoteTBResultsSection(TuberculosisFollowUpProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Follow Up Progress Note TB Results Section</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateTuberculosisFollowUpProgressNoteTbResultsSection(TuberculosisFollowUpProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tuberculosis Follow Up Progress Note Tb Results Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateTuberculosisFollowUpProgressNoteTBResultsSection(TuberculosisFollowUpProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateTuberculosisFollowUpProgressNoteTbResultsSection(TuberculosisFollowUpProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -197,26 +205,28 @@ public class TuberculosisFollowUpProgressNoteOperations extends ClinicalDocument
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTuberculosisFollowUpProgressNoteTBResultsSection(TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateTuberculosisFollowUpProgressNoteTbResultsSection(
+			TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TB_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(TBPNPackage.Literals.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE);
 			try {
 				VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TB_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TB_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TB_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tuberculosisFollowUpProgressNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TB_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			tuberculosisFollowUpProgressNote)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 TBPNValidator.DIAGNOSTIC_SOURCE,
-						 TBPNValidator.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE__TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TB_RESULTS_SECTION,
-						 PilotPlugin.INSTANCE.getString("TuberculosisFollowUpProgressNoteTBResultsSection"),
-						 new Object [] { tuberculosisFollowUpProgressNote }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					TBPNValidator.DIAGNOSTIC_SOURCE,
+					TBPNValidator.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE__TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TB_RESULTS_SECTION,
+					PilotPlugin.INSTANCE.getString("TuberculosisFollowUpProgressNoteTbResultsSection"),
+					new Object[] { tuberculosisFollowUpProgressNote }));
 			}
 			return false;
 		}
@@ -252,14 +262,15 @@ public class TuberculosisFollowUpProgressNoteOperations extends ClinicalDocument
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  TBResultsSection getTbResultsSection(TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote) {
+	public static TBResultsSection getTbResultsSection(TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote) {
 		if (GET_TB_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(TBPNPackage.Literals.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE, TBPNPackage.Literals.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE.getEAllOperations().get(24));
+			helper.setOperationContext(
+				TBPNPackage.Literals.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE,
+				TBPNPackage.Literals.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE.getEAllOperations().get(32));
 			try {
 				GET_TB_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_TB_RESULTS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
