@@ -276,10 +276,6 @@ public class TBPNValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(tuberculosisFollowUpProgressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				tuberculosisFollowUpProgressNote, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(tuberculosisFollowUpProgressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -368,9 +364,6 @@ public class TBPNValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(tbResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(tbResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(tbResultOrganizer, diagnostics, context);
@@ -471,9 +464,6 @@ public class TBPNValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(tbResultsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(tbResultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(tbResultsSection, diagnostics, context);
@@ -610,9 +600,6 @@ public class TBPNValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryReferenceIsContained(tbResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(tbResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(tbResultObservation, diagnostics, context);
