@@ -1,14 +1,17 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.util;
 
 import java.util.Map;
 
-import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
@@ -829,7 +832,7 @@ public class APITestValidator extends EObjectValidator {
 	 */
 	@Override
 	protected EPackage getEPackage() {
-	  return APITestPackage.eINSTANCE;
+		return APITestPackage.eINSTANCE;
 	}
 
 	/**
@@ -842,35 +845,35 @@ public class APITestValidator extends EObjectValidator {
 	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		switch (classifierID) {
 			case APITestPackage.STATUS_OBSERVATION:
-				return validateStatusObservation((StatusObservation)value, diagnostics, context);
+				return validateStatusObservation((StatusObservation) value, diagnostics, context);
 			case APITestPackage.CONDITION:
-				return validateCondition((Condition)value, diagnostics, context);
+				return validateCondition((Condition) value, diagnostics, context);
 			case APITestPackage.CONDITION_TREATING_PROVIDER:
-				return validateCondition_TreatingProvider((Condition_TreatingProvider)value, diagnostics, context);
+				return validateCondition_TreatingProvider((Condition_TreatingProvider) value, diagnostics, context);
 			case APITestPackage.EPISODE_OBSERVATION:
-				return validateEpisodeObservation((EpisodeObservation)value, diagnostics, context);
+				return validateEpisodeObservation((EpisodeObservation) value, diagnostics, context);
 			case APITestPackage.CONDITION_ENTRY:
-				return validateConditionEntry((ConditionEntry)value, diagnostics, context);
+				return validateConditionEntry((ConditionEntry) value, diagnostics, context);
 			case APITestPackage.AGE_OBSERVATION:
-				return validateAgeObservation((AgeObservation)value, diagnostics, context);
+				return validateAgeObservation((AgeObservation) value, diagnostics, context);
 			case APITestPackage.SEVERITY:
-				return validateSeverity((Severity)value, diagnostics, context);
+				return validateSeverity((Severity) value, diagnostics, context);
 			case APITestPackage.PROBLEM_STATUS_OBSERVATION:
-				return validateProblemStatusObservation((ProblemStatusObservation)value, diagnostics, context);
+				return validateProblemStatusObservation((ProblemStatusObservation) value, diagnostics, context);
 			case APITestPackage.HEALTH_STATUS_OBSERVATION:
-				return validateHealthStatusObservation((HealthStatusObservation)value, diagnostics, context);
+				return validateHealthStatusObservation((HealthStatusObservation) value, diagnostics, context);
 			case APITestPackage.COMMENT:
-				return validateComment((Comment)value, diagnostics, context);
+				return validateComment((Comment) value, diagnostics, context);
 			case APITestPackage.PROBLEM_LIST_SECTION:
-				return validateProblemListSection((ProblemListSection)value, diagnostics, context);
+				return validateProblemListSection((ProblemListSection) value, diagnostics, context);
 			case APITestPackage.FAMILY_HISTORY_OBSERVATION:
-				return validateFamilyHistoryObservation((FamilyHistoryObservation)value, diagnostics, context);
+				return validateFamilyHistoryObservation((FamilyHistoryObservation) value, diagnostics, context);
 			case APITestPackage.CAUSE_OF_DEATH_OBSERVATION:
-				return validateCauseOfDeathObservation((CauseOfDeathObservation)value, diagnostics, context);
+				return validateCauseOfDeathObservation((CauseOfDeathObservation) value, diagnostics, context);
 			case APITestPackage.PATIENT_SUMMARY:
-				return validatePatientSummary((PatientSummary)value, diagnostics, context);
+				return validatePatientSummary((PatientSummary) value, diagnostics, context);
 			case APITestPackage.GENERAL_HEADER_CONSTRAINTS:
-				return validateGeneralHeaderConstraints((GeneralHeaderConstraints)value, diagnostics, context);
+				return validateGeneralHeaderConstraints((GeneralHeaderConstraints) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -881,23 +884,60 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStatusObservation(StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(statusObservation, diagnostics, context)) return false;
+	public boolean validateStatusObservation(StatusObservation statusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(statusObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationNoAdditionalParticipants(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationHasTextReference(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationTemplateId(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationClassCode(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationMoodCode(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationStatusCode(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationValue(statusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationText(statusObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationNoAdditionalParticipants(
+				statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationHasTextReference(
+				statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationTemplateId(
+				statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationClassCode(
+				statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationMoodCode(
+				statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationStatusCode(
+				statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationValue(statusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationText(statusObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -907,7 +947,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStatusObservation_validateStatusObservationNoAdditionalParticipants(StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateStatusObservation_validateStatusObservationNoAdditionalParticipants(
+			StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return statusObservation.validateStatusObservationNoAdditionalParticipants(diagnostics, context);
 	}
 
@@ -917,7 +958,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStatusObservation_validateStatusObservationHasTextReference(StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateStatusObservation_validateStatusObservationHasTextReference(
+			StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return statusObservation.validateStatusObservationHasTextReference(diagnostics, context);
 	}
 
@@ -927,7 +969,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStatusObservation_validateStatusObservationTemplateId(StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateStatusObservation_validateStatusObservationTemplateId(StatusObservation statusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return statusObservation.validateStatusObservationTemplateId(diagnostics, context);
 	}
 
@@ -937,7 +980,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStatusObservation_validateStatusObservationClassCode(StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateStatusObservation_validateStatusObservationClassCode(StatusObservation statusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return statusObservation.validateStatusObservationClassCode(diagnostics, context);
 	}
 
@@ -947,7 +991,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStatusObservation_validateStatusObservationMoodCode(StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateStatusObservation_validateStatusObservationMoodCode(StatusObservation statusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return statusObservation.validateStatusObservationMoodCode(diagnostics, context);
 	}
 
@@ -957,7 +1002,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStatusObservation_validateStatusObservationStatusCode(StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateStatusObservation_validateStatusObservationStatusCode(StatusObservation statusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return statusObservation.validateStatusObservationStatusCode(diagnostics, context);
 	}
 
@@ -967,7 +1013,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStatusObservation_validateStatusObservationValue(StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateStatusObservation_validateStatusObservationValue(StatusObservation statusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return statusObservation.validateStatusObservationValue(diagnostics, context);
 	}
 
@@ -977,7 +1024,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStatusObservation_validateStatusObservationText(StatusObservation statusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateStatusObservation_validateStatusObservationText(StatusObservation statusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return statusObservation.validateStatusObservationText(diagnostics, context);
 	}
 
@@ -987,29 +1035,73 @@ public class APITestValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateCondition(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(condition, diagnostics, context)) return false;
+		if (!validate_NoCircularContainment(condition, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionEntryRelationshipRequired(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionSubjectOfTarget(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionContainsProblemObservation(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionContainsAlertObservation(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionContainsPatientAwareness(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionEffectiveTimeLowHigh(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionHasProviderTreatmentTime(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionTemplateId(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionClassCode(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionMoodCode(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionId(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionCodeNullFlavor(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionEffectiveTime(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionEpisodeObservation(condition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_validateConditionTreatingProvider(condition, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionEntryRelationshipRequired(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionSubjectOfTarget(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionContainsProblemObservation(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionContainsAlertObservation(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionContainsPatientAwareness(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionEffectiveTimeLowHigh(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionHasProviderTreatmentTime(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionTemplateId(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionClassCode(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionMoodCode(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionId(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionCodeNullFlavor(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionEffectiveTime(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionEpisodeObservation(condition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_validateConditionTreatingProvider(condition, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1019,7 +1111,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionEntryRelationshipRequired(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionEntryRelationshipRequired(Condition condition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return condition.validateConditionEntryRelationshipRequired(diagnostics, context);
 	}
 
@@ -1029,7 +1122,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionSubjectOfTarget(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionSubjectOfTarget(Condition condition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition.validateConditionSubjectOfTarget(diagnostics, context);
 	}
 
@@ -1039,7 +1133,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionContainsProblemObservation(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionContainsProblemObservation(Condition condition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return condition.validateConditionContainsProblemObservation(diagnostics, context);
 	}
 
@@ -1049,7 +1144,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionContainsAlertObservation(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionContainsAlertObservation(Condition condition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return condition.validateConditionContainsAlertObservation(diagnostics, context);
 	}
 
@@ -1059,7 +1155,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionContainsPatientAwareness(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionContainsPatientAwareness(Condition condition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return condition.validateConditionContainsPatientAwareness(diagnostics, context);
 	}
 
@@ -1069,7 +1166,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionEffectiveTimeLowHigh(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionEffectiveTimeLowHigh(Condition condition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return condition.validateConditionEffectiveTimeLowHigh(diagnostics, context);
 	}
 
@@ -1079,7 +1177,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionHasProviderTreatmentTime(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionHasProviderTreatmentTime(Condition condition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return condition.validateConditionHasProviderTreatmentTime(diagnostics, context);
 	}
 
@@ -1089,7 +1188,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionTemplateId(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionTemplateId(Condition condition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition.validateConditionTemplateId(diagnostics, context);
 	}
 
@@ -1099,7 +1199,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionClassCode(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionClassCode(Condition condition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition.validateConditionClassCode(diagnostics, context);
 	}
 
@@ -1109,7 +1210,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionMoodCode(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionMoodCode(Condition condition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition.validateConditionMoodCode(diagnostics, context);
 	}
 
@@ -1119,7 +1221,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionId(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionId(Condition condition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition.validateConditionId(diagnostics, context);
 	}
 
@@ -1129,7 +1232,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionCodeNullFlavor(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionCodeNullFlavor(Condition condition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition.validateConditionCodeNullFlavor(diagnostics, context);
 	}
 
@@ -1139,7 +1243,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionEffectiveTime(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionEffectiveTime(Condition condition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition.validateConditionEffectiveTime(diagnostics, context);
 	}
 
@@ -1149,7 +1254,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionEpisodeObservation(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionEpisodeObservation(Condition condition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return condition.validateConditionEpisodeObservation(diagnostics, context);
 	}
 
@@ -1159,7 +1265,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionTreatingProvider(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_validateConditionTreatingProvider(Condition condition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return condition.validateConditionTreatingProvider(diagnostics, context);
 	}
 
@@ -1168,17 +1275,38 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_TreatingProvider(Condition_TreatingProvider condition_TreatingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(condition_TreatingProvider, diagnostics, context)) return false;
+	public boolean validateCondition_TreatingProvider(Condition_TreatingProvider condition_TreatingProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(condition_TreatingProvider, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(condition_TreatingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(condition_TreatingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(condition_TreatingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(condition_TreatingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(condition_TreatingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(condition_TreatingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(condition_TreatingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAssignedEntity_validateClassCode(condition_TreatingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCondition_TreatingProvider_validateTreatingProviderId(condition_TreatingProvider, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(condition_TreatingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(condition_TreatingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(condition_TreatingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(condition_TreatingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(condition_TreatingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(condition_TreatingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAssignedEntity_validateClassCode(
+				condition_TreatingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCondition_TreatingProvider_validateTreatingProviderId(
+				condition_TreatingProvider, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1188,7 +1316,9 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_TreatingProvider_validateTreatingProviderId(Condition_TreatingProvider condition_TreatingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCondition_TreatingProvider_validateTreatingProviderId(
+			Condition_TreatingProvider condition_TreatingProvider, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return condition_TreatingProvider.validateTreatingProviderId(diagnostics, context);
 	}
 
@@ -1197,23 +1327,62 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservation(EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(episodeObservation, diagnostics, context)) return false;
+	public boolean validateEpisodeObservation(EpisodeObservation episodeObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(episodeObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEpisodeObservation_validateEpisodeObservationOneEntryRelationshipSUBJ(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEpisodeObservation_validateEpisodeObservationExistsEntryRelationshipSAS(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEpisodeObservation_validateEpisodeObservationTemplateId(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEpisodeObservation_validateEpisodeObservationClassCode(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEpisodeObservation_validateEpisodeObservationMoodCode(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEpisodeObservation_validateEpisodeObservationCode(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEpisodeObservation_validateEpisodeObservationStatusCode(episodeObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEpisodeObservation_validateEpisodeObservationValue(episodeObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEpisodeObservation_validateEpisodeObservationOneEntryRelationshipSUBJ(
+				episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEpisodeObservation_validateEpisodeObservationExistsEntryRelationshipSAS(
+				episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEpisodeObservation_validateEpisodeObservationTemplateId(
+				episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEpisodeObservation_validateEpisodeObservationClassCode(
+				episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEpisodeObservation_validateEpisodeObservationMoodCode(
+				episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEpisodeObservation_validateEpisodeObservationCode(
+				episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEpisodeObservation_validateEpisodeObservationStatusCode(
+				episodeObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateEpisodeObservation_validateEpisodeObservationValue(
+				episodeObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1223,7 +1392,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservation_validateEpisodeObservationOneEntryRelationshipSUBJ(EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEpisodeObservation_validateEpisodeObservationOneEntryRelationshipSUBJ(
+			EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return episodeObservation.validateEpisodeObservationOneEntryRelationshipSUBJ(diagnostics, context);
 	}
 
@@ -1233,7 +1403,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservation_validateEpisodeObservationExistsEntryRelationshipSAS(EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEpisodeObservation_validateEpisodeObservationExistsEntryRelationshipSAS(
+			EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return episodeObservation.validateEpisodeObservationExistsEntryRelationshipSAS(diagnostics, context);
 	}
 
@@ -1243,7 +1414,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservation_validateEpisodeObservationTemplateId(EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEpisodeObservation_validateEpisodeObservationTemplateId(
+			EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return episodeObservation.validateEpisodeObservationTemplateId(diagnostics, context);
 	}
 
@@ -1253,7 +1425,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservation_validateEpisodeObservationClassCode(EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEpisodeObservation_validateEpisodeObservationClassCode(
+			EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return episodeObservation.validateEpisodeObservationClassCode(diagnostics, context);
 	}
 
@@ -1263,7 +1436,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservation_validateEpisodeObservationMoodCode(EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEpisodeObservation_validateEpisodeObservationMoodCode(EpisodeObservation episodeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return episodeObservation.validateEpisodeObservationMoodCode(diagnostics, context);
 	}
 
@@ -1273,7 +1447,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservation_validateEpisodeObservationCode(EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEpisodeObservation_validateEpisodeObservationCode(EpisodeObservation episodeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return episodeObservation.validateEpisodeObservationCode(diagnostics, context);
 	}
 
@@ -1283,7 +1458,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservation_validateEpisodeObservationStatusCode(EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEpisodeObservation_validateEpisodeObservationStatusCode(
+			EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return episodeObservation.validateEpisodeObservationStatusCode(diagnostics, context);
 	}
 
@@ -1293,7 +1469,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservation_validateEpisodeObservationValue(EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEpisodeObservation_validateEpisodeObservationValue(EpisodeObservation episodeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return episodeObservation.validateEpisodeObservationValue(diagnostics, context);
 	}
 
@@ -1302,36 +1479,102 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(conditionEntry, diagnostics, context)) return false;
+	public boolean validateConditionEntry(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(conditionEntry, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryInformationSource(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryContainsPatientAwareness(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryHasTextReference(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryCommentInversionInd(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryHasOnsetDate(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryHasResolutionDate(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryHasUnknownResolutionDate(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryTemplateId(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryMoodCode(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryId(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryCode(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryText(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryStatusCode(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryEffectiveTime(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryValue(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryAgeObservation(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntrySeverity(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryProblemStatusObservation(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryHealthStatusObservation(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryComment(conditionEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConditionEntry_validateConditionEntryCauseOfDeathObservation(conditionEntry, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryInformationSource(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryContainsPatientAwareness(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryHasTextReference(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryCommentInversionInd(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryHasOnsetDate(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryHasResolutionDate(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryHasUnknownResolutionDate(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryTemplateId(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryMoodCode(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryId(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryCode(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryText(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryStatusCode(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryEffectiveTime(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryValue(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryAgeObservation(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntrySeverity(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryProblemStatusObservation(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryHealthStatusObservation(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryComment(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryCauseOfDeathObservation(
+				conditionEntry, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1341,7 +1584,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryInformationSource(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryInformationSource(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryInformationSource(diagnostics, context);
 	}
 
@@ -1351,7 +1595,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryContainsPatientAwareness(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryContainsPatientAwareness(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryContainsPatientAwareness(diagnostics, context);
 	}
 
@@ -1361,7 +1606,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryHasTextReference(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryHasTextReference(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryHasTextReference(diagnostics, context);
 	}
 
@@ -1371,7 +1617,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryCommentInversionInd(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryCommentInversionInd(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryCommentInversionInd(diagnostics, context);
 	}
 
@@ -1381,7 +1628,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryHasOnsetDate(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryHasOnsetDate(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryHasOnsetDate(diagnostics, context);
 	}
 
@@ -1391,7 +1639,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryHasResolutionDate(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryHasResolutionDate(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryHasResolutionDate(diagnostics, context);
 	}
 
@@ -1401,7 +1650,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryHasUnknownResolutionDate(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryHasUnknownResolutionDate(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryHasUnknownResolutionDate(diagnostics, context);
 	}
 
@@ -1411,7 +1661,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryTemplateId(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryTemplateId(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryTemplateId(diagnostics, context);
 	}
 
@@ -1421,7 +1672,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryMoodCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryMoodCode(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryMoodCode(diagnostics, context);
 	}
 
@@ -1431,7 +1683,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryId(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryId(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryId(diagnostics, context);
 	}
 
@@ -1441,7 +1694,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryCode(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryCode(diagnostics, context);
 	}
 
@@ -1451,7 +1705,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryText(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryText(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryText(diagnostics, context);
 	}
 
@@ -1461,7 +1716,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryStatusCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryStatusCode(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryStatusCode(diagnostics, context);
 	}
 
@@ -1471,7 +1727,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryEffectiveTime(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryEffectiveTime(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryEffectiveTime(diagnostics, context);
 	}
 
@@ -1481,7 +1738,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryValue(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryValue(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryValue(diagnostics, context);
 	}
 
@@ -1491,7 +1749,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryAgeObservation(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryAgeObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryAgeObservation(diagnostics, context);
 	}
 
@@ -1501,7 +1760,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntrySeverity(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntrySeverity(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntrySeverity(diagnostics, context);
 	}
 
@@ -1511,7 +1771,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryProblemStatusObservation(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryProblemStatusObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryProblemStatusObservation(diagnostics, context);
 	}
 
@@ -1521,7 +1782,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryHealthStatusObservation(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryHealthStatusObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryHealthStatusObservation(diagnostics, context);
 	}
 
@@ -1531,7 +1793,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryComment(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryComment(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryComment(diagnostics, context);
 	}
 
@@ -1541,7 +1804,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntry_validateConditionEntryCauseOfDeathObservation(ConditionEntry conditionEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntry_validateConditionEntryCauseOfDeathObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryCauseOfDeathObservation(diagnostics, context);
 	}
 
@@ -1550,22 +1814,52 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAgeObservation(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(ageObservation, diagnostics, context)) return false;
+	public boolean validateAgeObservation(AgeObservation ageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(ageObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAgeObservation_validateAgeObservationRelatedSubjectBirthTime(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAgeObservation_validateAgeObservationTemplateId(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAgeObservation_validateAgeObservationClassCode(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAgeObservation_validateAgeObservationMoodCode(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAgeObservation_validateAgeObservationCode(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAgeObservation_validateAgeObservationStatusCode(ageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateAgeObservation_validateAgeObservationValue(ageObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAgeObservation_validateAgeObservationRelatedSubjectBirthTime(
+				ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAgeObservation_validateAgeObservationTemplateId(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAgeObservation_validateAgeObservationClassCode(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAgeObservation_validateAgeObservationMoodCode(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAgeObservation_validateAgeObservationCode(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAgeObservation_validateAgeObservationStatusCode(ageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAgeObservation_validateAgeObservationValue(ageObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1575,7 +1869,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAgeObservation_validateAgeObservationRelatedSubjectBirthTime(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAgeObservation_validateAgeObservationRelatedSubjectBirthTime(AgeObservation ageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ageObservation.validateAgeObservationRelatedSubjectBirthTime(diagnostics, context);
 	}
 
@@ -1585,7 +1880,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAgeObservation_validateAgeObservationTemplateId(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAgeObservation_validateAgeObservationTemplateId(AgeObservation ageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ageObservation.validateAgeObservationTemplateId(diagnostics, context);
 	}
 
@@ -1595,7 +1891,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAgeObservation_validateAgeObservationClassCode(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAgeObservation_validateAgeObservationClassCode(AgeObservation ageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ageObservation.validateAgeObservationClassCode(diagnostics, context);
 	}
 
@@ -1605,7 +1902,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAgeObservation_validateAgeObservationMoodCode(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAgeObservation_validateAgeObservationMoodCode(AgeObservation ageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ageObservation.validateAgeObservationMoodCode(diagnostics, context);
 	}
 
@@ -1615,7 +1913,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAgeObservation_validateAgeObservationCode(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAgeObservation_validateAgeObservationCode(AgeObservation ageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ageObservation.validateAgeObservationCode(diagnostics, context);
 	}
 
@@ -1625,7 +1924,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAgeObservation_validateAgeObservationStatusCode(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAgeObservation_validateAgeObservationStatusCode(AgeObservation ageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ageObservation.validateAgeObservationStatusCode(diagnostics, context);
 	}
 
@@ -1635,7 +1935,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAgeObservation_validateAgeObservationValue(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAgeObservation_validateAgeObservationValue(AgeObservation ageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ageObservation.validateAgeObservationValue(diagnostics, context);
 	}
 
@@ -1645,22 +1946,52 @@ public class APITestValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSeverity(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(severity, diagnostics, context)) return false;
+		if (!validate_NoCircularContainment(severity, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSeverity_validateSeverityHasTextReference(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSeverity_validateSeverityTemplateId(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSeverity_validateSeverityClassCode(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSeverity_validateSeverityMoodCode(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSeverity_validateSeverityCode(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSeverity_validateSeverityText(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSeverity_validateSeverityStatusCode(severity, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSeverity_validateSeverityValue(severity, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSeverity_validateSeverityHasTextReference(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSeverity_validateSeverityTemplateId(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSeverity_validateSeverityClassCode(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSeverity_validateSeverityMoodCode(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSeverity_validateSeverityCode(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSeverity_validateSeverityText(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSeverity_validateSeverityStatusCode(severity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSeverity_validateSeverityValue(severity, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1670,7 +2001,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeverity_validateSeverityHasTextReference(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSeverity_validateSeverityHasTextReference(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return severity.validateSeverityHasTextReference(diagnostics, context);
 	}
 
@@ -1680,7 +2012,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeverity_validateSeverityTemplateId(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSeverity_validateSeverityTemplateId(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return severity.validateSeverityTemplateId(diagnostics, context);
 	}
 
@@ -1690,7 +2023,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeverity_validateSeverityClassCode(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSeverity_validateSeverityClassCode(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return severity.validateSeverityClassCode(diagnostics, context);
 	}
 
@@ -1700,7 +2034,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeverity_validateSeverityMoodCode(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSeverity_validateSeverityMoodCode(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return severity.validateSeverityMoodCode(diagnostics, context);
 	}
 
@@ -1710,7 +2045,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeverity_validateSeverityCode(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSeverity_validateSeverityCode(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return severity.validateSeverityCode(diagnostics, context);
 	}
 
@@ -1720,7 +2056,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeverity_validateSeverityText(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSeverity_validateSeverityText(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return severity.validateSeverityText(diagnostics, context);
 	}
 
@@ -1730,7 +2067,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeverity_validateSeverityStatusCode(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSeverity_validateSeverityStatusCode(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return severity.validateSeverityStatusCode(diagnostics, context);
 	}
 
@@ -1740,7 +2078,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeverity_validateSeverityValue(Severity severity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSeverity_validateSeverityValue(Severity severity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return severity.validateSeverityValue(diagnostics, context);
 	}
 
@@ -1749,24 +2088,66 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemStatusObservation(ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(problemStatusObservation, diagnostics, context)) return false;
+	public boolean validateProblemStatusObservation(ProblemStatusObservation problemStatusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(problemStatusObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationNoAdditionalParticipants(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationHasTextReference(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProblemStatusObservation_validateStatusObservationTemplateId(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationClassCode(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationMoodCode(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationStatusCode(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProblemStatusObservation_validateStatusObservationValue(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationText(problemStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProblemStatusObservation_validateProblemStatusObservationCode(problemStatusObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationNoAdditionalParticipants(
+				problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationHasTextReference(
+				problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProblemStatusObservation_validateStatusObservationTemplateId(
+				problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationClassCode(
+				problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationMoodCode(
+				problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationStatusCode(
+				problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProblemStatusObservation_validateStatusObservationValue(
+				problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationText(
+				problemStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProblemStatusObservation_validateProblemStatusObservationCode(
+				problemStatusObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1776,7 +2157,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemStatusObservation_validateProblemStatusObservationCode(ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemStatusObservation_validateProblemStatusObservationCode(
+			ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return problemStatusObservation.validateProblemStatusObservationCode(diagnostics, context);
 	}
 
@@ -1786,27 +2168,10 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemStatusObservation_validateStatusObservationTemplateId(ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateStatusObservationTemplateId", getObjectLabel(problemStatusObservation, context) },
-						 new Object[] { problemStatusObservation },
-						 context));
-			}
-			return false;
-		}
-		return validateStatusObservation_validateStatusObservationTemplateId(problemStatusObservation, diagnostics, context);
+	public boolean validateProblemStatusObservation_validateStatusObservationTemplateId(
+			ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validateStatusObservation_validateStatusObservationTemplateId(
+			problemStatusObservation, diagnostics, context);
 	}
 
 	/**
@@ -1815,26 +2180,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemStatusObservation_validateStatusObservationValue(ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateStatusObservationValue", getObjectLabel(problemStatusObservation, context) },
-						 new Object[] { problemStatusObservation },
-						 context));
-			}
-			return false;
-		}
+	public boolean validateProblemStatusObservation_validateStatusObservationValue(
+			ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validateStatusObservation_validateStatusObservationValue(problemStatusObservation, diagnostics, context);
 	}
 
@@ -1843,24 +2190,66 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservation(HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(healthStatusObservation, diagnostics, context)) return false;
+	public boolean validateHealthStatusObservation(HealthStatusObservation healthStatusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(healthStatusObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationNoAdditionalParticipants(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationHasTextReference(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateHealthStatusObservation_validateStatusObservationTemplateId(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationClassCode(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationMoodCode(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationStatusCode(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateHealthStatusObservation_validateStatusObservationValue(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateStatusObservation_validateStatusObservationText(healthStatusObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateHealthStatusObservation_validateHealthStatusObservationCode(healthStatusObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationNoAdditionalParticipants(
+				healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationHasTextReference(
+				healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthStatusObservation_validateStatusObservationTemplateId(
+				healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationClassCode(
+				healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationMoodCode(
+				healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationStatusCode(
+				healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthStatusObservation_validateStatusObservationValue(
+				healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateStatusObservation_validateStatusObservationText(
+				healthStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHealthStatusObservation_validateHealthStatusObservationCode(
+				healthStatusObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1870,7 +2259,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservation_validateHealthStatusObservationCode(HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHealthStatusObservation_validateHealthStatusObservationCode(
+			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return healthStatusObservation.validateHealthStatusObservationCode(diagnostics, context);
 	}
 
@@ -1880,27 +2270,10 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservation_validateStatusObservationTemplateId(HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateStatusObservationTemplateId", getObjectLabel(healthStatusObservation, context) },
-						 new Object[] { healthStatusObservation },
-						 context));
-			}
-			return false;
-		}
-		return validateStatusObservation_validateStatusObservationTemplateId(healthStatusObservation, diagnostics, context);
+	public boolean validateHealthStatusObservation_validateStatusObservationTemplateId(
+			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validateStatusObservation_validateStatusObservationTemplateId(
+			healthStatusObservation, diagnostics, context);
 	}
 
 	/**
@@ -1909,26 +2282,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusObservation_validateStatusObservationValue(HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateStatusObservationValue", getObjectLabel(healthStatusObservation, context) },
-						 new Object[] { healthStatusObservation },
-						 context));
-			}
-			return false;
-		}
+	public boolean validateHealthStatusObservation_validateStatusObservationValue(
+			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validateStatusObservation_validateStatusObservationValue(healthStatusObservation, diagnostics, context);
 	}
 
@@ -1938,22 +2293,52 @@ public class APITestValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateComment(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(comment, diagnostics, context)) return false;
+		if (!validate_NoCircularContainment(comment, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComment_validateCommentHasTextReference(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComment_validateCommentEffectiveTimeWhenAuthorPresent(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComment_validateCommentTemplateId(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComment_validateCommentClassCode(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComment_validateCommentMoodCode(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComment_validateCommentCode(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComment_validateCommentText(comment, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComment_validateCommentStatusCode(comment, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComment_validateCommentHasTextReference(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComment_validateCommentEffectiveTimeWhenAuthorPresent(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComment_validateCommentTemplateId(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComment_validateCommentClassCode(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComment_validateCommentMoodCode(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComment_validateCommentCode(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComment_validateCommentText(comment, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComment_validateCommentStatusCode(comment, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1963,7 +2348,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComment_validateCommentHasTextReference(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComment_validateCommentHasTextReference(Comment comment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return comment.validateCommentHasTextReference(diagnostics, context);
 	}
 
@@ -1973,7 +2359,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComment_validateCommentEffectiveTimeWhenAuthorPresent(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComment_validateCommentEffectiveTimeWhenAuthorPresent(Comment comment,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return comment.validateCommentEffectiveTimeWhenAuthorPresent(diagnostics, context);
 	}
 
@@ -1983,7 +2370,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComment_validateCommentTemplateId(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComment_validateCommentTemplateId(Comment comment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return comment.validateCommentTemplateId(diagnostics, context);
 	}
 
@@ -1993,7 +2381,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComment_validateCommentClassCode(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComment_validateCommentClassCode(Comment comment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return comment.validateCommentClassCode(diagnostics, context);
 	}
 
@@ -2003,7 +2392,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComment_validateCommentMoodCode(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComment_validateCommentMoodCode(Comment comment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return comment.validateCommentMoodCode(diagnostics, context);
 	}
 
@@ -2013,7 +2403,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComment_validateCommentCode(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComment_validateCommentCode(Comment comment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return comment.validateCommentCode(diagnostics, context);
 	}
 
@@ -2023,7 +2414,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComment_validateCommentText(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComment_validateCommentText(Comment comment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return comment.validateCommentText(diagnostics, context);
 	}
 
@@ -2033,7 +2425,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComment_validateCommentStatusCode(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComment_validateCommentStatusCode(Comment comment, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return comment.validateCommentStatusCode(diagnostics, context);
 	}
 
@@ -2042,18 +2435,42 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCauseOfDeathObservation(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(causeOfDeathObservation, diagnostics, context)) return false;
+	public boolean validateCauseOfDeathObservation(CauseOfDeathObservation causeOfDeathObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(causeOfDeathObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(causeOfDeathObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(causeOfDeathObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(causeOfDeathObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(causeOfDeathObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(causeOfDeathObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(causeOfDeathObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(causeOfDeathObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCauseOfDeathObservation_validateFamilyHistoryObservationTemplateId(causeOfDeathObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateFamilyHistoryObservation_validateFamilyHistoryObservationId(causeOfDeathObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateFamilyHistoryObservation_validateFamilyHistoryObservationStatusCode(causeOfDeathObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(causeOfDeathObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(causeOfDeathObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(causeOfDeathObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(causeOfDeathObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(causeOfDeathObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(causeOfDeathObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCauseOfDeathObservation_validateFamilyHistoryObservationTemplateId(
+				causeOfDeathObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFamilyHistoryObservation_validateFamilyHistoryObservationId(
+				causeOfDeathObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFamilyHistoryObservation_validateFamilyHistoryObservationStatusCode(
+				causeOfDeathObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2063,27 +2480,10 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCauseOfDeathObservation_validateFamilyHistoryObservationTemplateId(CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateFamilyHistoryObservationTemplateId", getObjectLabel(causeOfDeathObservation, context) },
-						 new Object[] { causeOfDeathObservation },
-						 context));
-			}
-			return false;
-		}
-		return validateFamilyHistoryObservation_validateFamilyHistoryObservationTemplateId(causeOfDeathObservation, diagnostics, context);
+	public boolean validateCauseOfDeathObservation_validateFamilyHistoryObservationTemplateId(
+			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validateFamilyHistoryObservation_validateFamilyHistoryObservationTemplateId(
+			causeOfDeathObservation, diagnostics, context);
 	}
 
 	/**
@@ -2091,18 +2491,42 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservation(FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(familyHistoryObservation, diagnostics, context)) return false;
+	public boolean validateFamilyHistoryObservation(FamilyHistoryObservation familyHistoryObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(familyHistoryObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(familyHistoryObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(familyHistoryObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(familyHistoryObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(familyHistoryObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(familyHistoryObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(familyHistoryObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(familyHistoryObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateFamilyHistoryObservation_validateFamilyHistoryObservationTemplateId(familyHistoryObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateFamilyHistoryObservation_validateFamilyHistoryObservationId(familyHistoryObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateFamilyHistoryObservation_validateFamilyHistoryObservationStatusCode(familyHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(familyHistoryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(familyHistoryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(familyHistoryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(familyHistoryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(familyHistoryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(familyHistoryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFamilyHistoryObservation_validateFamilyHistoryObservationTemplateId(
+				familyHistoryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFamilyHistoryObservation_validateFamilyHistoryObservationId(
+				familyHistoryObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFamilyHistoryObservation_validateFamilyHistoryObservationStatusCode(
+				familyHistoryObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2112,7 +2536,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationTemplateId(FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationTemplateId(
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationTemplateId(diagnostics, context);
 	}
 
@@ -2122,7 +2547,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationId(FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationId(
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationId(diagnostics, context);
 	}
 
@@ -2132,7 +2558,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationStatusCode(FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationStatusCode(
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationStatusCode(diagnostics, context);
 	}
 
@@ -2141,21 +2568,52 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemListSection(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(problemListSection, diagnostics, context)) return false;
+	public boolean validateProblemListSection(ProblemListSection problemListSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(problemListSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProblemListSection_validateProblemListSectionTemplateId(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProblemListSection_validateProblemListSectionCode(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProblemListSection_validateProblemListSectionTitle(problemListSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProblemListSection_validateProblemListSectionText(problemListSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProblemListSection_validateProblemListSectionTemplateId(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProblemListSection_validateProblemListSectionCode(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProblemListSection_validateProblemListSectionTitle(
+				problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProblemListSection_validateProblemListSectionText(
+				problemListSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2165,7 +2623,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemListSection_validateProblemListSectionTemplateId(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemListSection_validateProblemListSectionTemplateId(
+			ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return problemListSection.validateProblemListSectionTemplateId(diagnostics, context);
 	}
 
@@ -2175,7 +2634,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemListSection_validateProblemListSectionCode(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemListSection_validateProblemListSectionCode(ProblemListSection problemListSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return problemListSection.validateProblemListSectionCode(diagnostics, context);
 	}
 
@@ -2185,7 +2645,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemListSection_validateProblemListSectionTitle(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemListSection_validateProblemListSectionTitle(ProblemListSection problemListSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return problemListSection.validateProblemListSectionTitle(diagnostics, context);
 	}
 
@@ -2195,7 +2656,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemListSection_validateProblemListSectionText(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemListSection_validateProblemListSectionText(ProblemListSection problemListSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return problemListSection.validateProblemListSectionText(diagnostics, context);
 	}
 
@@ -2204,18 +2666,40 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(patientSummary, diagnostics, context)) return false;
+	public boolean validatePatientSummary(PatientSummary patientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(patientSummary, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(patientSummary, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePatientSummary_validatePatientSummaryProblemListSection(patientSummary, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(patientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePatientSummary_validatePatientSummaryProblemListSection(
+				patientSummary, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2225,7 +2709,8 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummary_validatePatientSummaryProblemListSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummary_validatePatientSummaryProblemListSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientSummary.validatePatientSummaryProblemListSection(diagnostics, context);
 	}
 
@@ -2234,17 +2719,38 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraints(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(generalHeaderConstraints, diagnostics, context)) return false;
+	public boolean validateGeneralHeaderConstraints(GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(generalHeaderConstraints, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(generalHeaderConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(generalHeaderConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(generalHeaderConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(generalHeaderConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(generalHeaderConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(generalHeaderConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(generalHeaderConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(generalHeaderConstraints, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(generalHeaderConstraints, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+				generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+				generalHeaderConstraints, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2259,4 +2765,4 @@ public class APITestValidator extends EObjectValidator {
 		return APITestPlugin.INSTANCE;
 	}
 
-} //APITestValidator
+} // APITestValidator

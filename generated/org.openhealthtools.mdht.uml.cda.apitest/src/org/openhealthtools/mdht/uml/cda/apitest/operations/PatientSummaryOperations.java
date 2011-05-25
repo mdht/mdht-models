@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Map;
@@ -61,6 +65,7 @@ public class PatientSummaryOperations extends GeneralHeaderConstraintsOperations
 	 * @ordered
 	 */
 	protected static final String GET_CODE__EOCL_EXP = "self.code.oclAsType(datatypes::CE)";
+
 	/**
 	 * The cached OCL query for the '{@link #getCode(PatientSummary) <em>Get Code</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -81,14 +86,15 @@ public class PatientSummaryOperations extends GeneralHeaderConstraintsOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  CE getCode(PatientSummary patientSummary) {
+	public static CE getCode(PatientSummary patientSummary) {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IPATIENT_SUMMARY, DomainPackage.Literals.IPATIENT_SUMMARY.getEAllOperations().get(10));
+			helper.setOperationContext(
+				DomainPackage.Literals.IPATIENT_SUMMARY,
+				DomainPackage.Literals.IPATIENT_SUMMARY.getEAllOperations().get(10));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -101,7 +107,7 @@ public class PatientSummaryOperations extends GeneralHeaderConstraintsOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  ClinicalDocument toCDAType(PatientSummary patientSummary) {
+	public static ClinicalDocument toCDAType(PatientSummary patientSummary) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -116,6 +122,7 @@ public class PatientSummaryOperations extends GeneralHeaderConstraintsOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(apitest::ProblemListSection))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Problem List Section</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -137,26 +144,25 @@ public class PatientSummaryOperations extends GeneralHeaderConstraintsOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePatientSummaryProblemListSection(PatientSummary patientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePatientSummaryProblemListSection(PatientSummary patientSummary,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION,
-						 APITestPlugin.INSTANCE.getString("PatientSummaryProblemListSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION,
+					APITestPlugin.INSTANCE.getString("PatientSummaryProblemListSection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -172,6 +178,7 @@ public class PatientSummaryOperations extends GeneralHeaderConstraintsOperations
 	 * @ordered
 	 */
 	protected static final String GET_PROBLEM_LIST_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::IProblemListSection))->asSequence()->first().oclAsType(domain::IProblemListSection)";
+
 	/**
 	 * The cached OCL query for the '{@link #getProblemListSection(PatientSummary) <em>Get Problem List Section</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -192,14 +199,15 @@ public class PatientSummaryOperations extends GeneralHeaderConstraintsOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  IProblemListSection getProblemListSection(PatientSummary patientSummary) {
+	public static IProblemListSection getProblemListSection(PatientSummary patientSummary) {
 		if (GET_PROBLEM_LIST_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.PATIENT_SUMMARY, APITestPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(45));
+			helper.setOperationContext(
+				APITestPackage.Literals.PATIENT_SUMMARY,
+				APITestPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(45));
 			try {
 				GET_PROBLEM_LIST_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_LIST_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

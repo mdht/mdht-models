@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.domain.util;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -70,7 +74,7 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 			return true;
 		}
 		if (object instanceof EObject) {
-			return ((EObject)object).eClass().getEPackage() == modelPackage;
+			return ((EObject) object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
 	}
@@ -81,73 +85,87 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DomainSwitch<Adapter> modelSwitch =
-		new DomainSwitch<Adapter>() {
-			@Override
-			public Adapter caseIStatusObservation(IStatusObservation object) {
-				return createIStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseICondition(ICondition object) {
-				return createIConditionAdapter();
-			}
-			@Override
-			public Adapter caseIEpisodeObservation(IEpisodeObservation object) {
-				return createIEpisodeObservationAdapter();
-			}
-			@Override
-			public Adapter caseIProblemEntry(IProblemEntry object) {
-				return createIProblemEntryAdapter();
-			}
-			@Override
-			public Adapter caseIAgeObservation(IAgeObservation object) {
-				return createIAgeObservationAdapter();
-			}
-			@Override
-			public Adapter caseISeverity(ISeverity object) {
-				return createISeverityAdapter();
-			}
-			@Override
-			public Adapter caseIProblemStatusObservation(IProblemStatusObservation object) {
-				return createIProblemStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseIHealthStatusObservation(IHealthStatusObservation object) {
-				return createIHealthStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseIComment(IComment object) {
-				return createICommentAdapter();
-			}
-			@Override
-			public Adapter caseICauseOfDeathObservation(ICauseOfDeathObservation object) {
-				return createICauseOfDeathObservationAdapter();
-			}
-			@Override
-			public Adapter caseIFamilyHistoryObservation(IFamilyHistoryObservation object) {
-				return createIFamilyHistoryObservationAdapter();
-			}
-			@Override
-			public Adapter caseITreatingProvider(ITreatingProvider object) {
-				return createITreatingProviderAdapter();
-			}
-			@Override
-			public Adapter caseIProblemListSection(IProblemListSection object) {
-				return createIProblemListSectionAdapter();
-			}
-			@Override
-			public Adapter caseIPatientSummary(IPatientSummary object) {
-				return createIPatientSummaryAdapter();
-			}
-			@Override
-			public Adapter caseIGeneralHeaderConstraints(IGeneralHeaderConstraints object) {
-				return createIGeneralHeaderConstraintsAdapter();
-			}
-			@Override
-			public Adapter defaultCase(EObject object) {
-				return createEObjectAdapter();
-			}
-		};
+	protected DomainSwitch<Adapter> modelSwitch = new DomainSwitch<Adapter>() {
+		@Override
+		public Adapter caseIStatusObservation(IStatusObservation object) {
+			return createIStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseICondition(ICondition object) {
+			return createIConditionAdapter();
+		}
+
+		@Override
+		public Adapter caseIEpisodeObservation(IEpisodeObservation object) {
+			return createIEpisodeObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseIProblemEntry(IProblemEntry object) {
+			return createIProblemEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseIAgeObservation(IAgeObservation object) {
+			return createIAgeObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseISeverity(ISeverity object) {
+			return createISeverityAdapter();
+		}
+
+		@Override
+		public Adapter caseIProblemStatusObservation(IProblemStatusObservation object) {
+			return createIProblemStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseIHealthStatusObservation(IHealthStatusObservation object) {
+			return createIHealthStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseIComment(IComment object) {
+			return createICommentAdapter();
+		}
+
+		@Override
+		public Adapter caseICauseOfDeathObservation(ICauseOfDeathObservation object) {
+			return createICauseOfDeathObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseIFamilyHistoryObservation(IFamilyHistoryObservation object) {
+			return createIFamilyHistoryObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseITreatingProvider(ITreatingProvider object) {
+			return createITreatingProviderAdapter();
+		}
+
+		@Override
+		public Adapter caseIProblemListSection(IProblemListSection object) {
+			return createIProblemListSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseIPatientSummary(IPatientSummary object) {
+			return createIPatientSummaryAdapter();
+		}
+
+		@Override
+		public Adapter caseIGeneralHeaderConstraints(IGeneralHeaderConstraints object) {
+			return createIGeneralHeaderConstraintsAdapter();
+		}
+
+		@Override
+		public Adapter defaultCase(EObject object) {
+			return createEObjectAdapter();
+		}
+	};
 
 	/**
 	 * Creates an adapter for the <code>target</code>.
@@ -159,9 +177,8 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 */
 	@Override
 	public Adapter createAdapter(Notifier target) {
-		return modelSwitch.doSwitch((EObject)target);
+		return modelSwitch.doSwitch((EObject) target);
 	}
-
 
 	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IStatusObservation <em>IStatus Observation</em>}'.
@@ -385,4 +402,4 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //DomainAdapterFactory
+} // DomainAdapterFactory

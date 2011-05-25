@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -80,7 +84,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
 		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CS");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		eFactory.create(eClass);
 		return this;
 	}
 
@@ -108,7 +112,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
 		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("II");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		eFactory.create(eClass);
 		return this;
 	}
 
@@ -136,7 +140,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
 		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ST");
-		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		eFactory.create(eClass);
 		return this;
 	}
 
@@ -146,7 +150,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	public GeneralHeaderConstraints init() {
-    		CDAUtil.init(this);
-    		return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //GeneralHeaderConstraintsImpl
+} // GeneralHeaderConstraintsImpl

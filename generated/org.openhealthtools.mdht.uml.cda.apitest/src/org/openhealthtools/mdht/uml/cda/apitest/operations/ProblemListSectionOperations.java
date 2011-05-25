@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Collection;
@@ -68,7 +72,7 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  Section toCDAType(ProblemListSection problemListSection) {
+	public static Section toCDAType(ProblemListSection problemListSection) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -83,6 +87,7 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String GET_TITLE__EOCL_EXP = "self.title.oclAsType(datatypes::ST)";
+
 	/**
 	 * The cached OCL query for the '{@link #getTitle(ProblemListSection) <em>Get Title</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -103,14 +108,15 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  ST getTitle(ProblemListSection problemListSection) {
+	public static ST getTitle(ProblemListSection problemListSection) {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IPROBLEM_LIST_SECTION, DomainPackage.Literals.IPROBLEM_LIST_SECTION.getEAllOperations().get(1));
+			helper.setOperationContext(
+				DomainPackage.Literals.IPROBLEM_LIST_SECTION,
+				DomainPackage.Literals.IPROBLEM_LIST_SECTION.getEAllOperations().get(1));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -127,6 +133,7 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(cda::StrucDocText)";
+
 	/**
 	 * The cached OCL query for the '{@link #getText(ProblemListSection) <em>Get Text</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -147,14 +154,15 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  StrucDocText getText(ProblemListSection problemListSection) {
+	public static StrucDocText getText(ProblemListSection problemListSection) {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(DomainPackage.Literals.IPROBLEM_LIST_SECTION, DomainPackage.Literals.IPROBLEM_LIST_SECTION.getEAllOperations().get(4));
+			helper.setOperationContext(
+				DomainPackage.Literals.IPROBLEM_LIST_SECTION,
+				DomainPackage.Literals.IPROBLEM_LIST_SECTION.getEAllOperations().get(4));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -171,7 +179,7 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  IProblemListSection addCondition(ProblemListSection problemListSection, ICondition value) {
+	public static IProblemListSection addCondition(ProblemListSection problemListSection, ICondition value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -186,6 +194,7 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.103')";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemListSectionTemplateId(ProblemListSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Section Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -207,26 +216,25 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProblemListSectionTemplateId(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProblemListSectionTemplateId(ProblemListSection problemListSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID,
-						 APITestPlugin.INSTANCE.getString("ProblemListSectionTemplateId"),
-						 new Object [] { problemListSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID,
+					APITestPlugin.INSTANCE.getString("ProblemListSectionTemplateId"),
+					new Object[] { problemListSection }));
 			}
 			return false;
 		}
@@ -241,9 +249,10 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '11450-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '11450-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemListSectionCode(ProblemListSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Section Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -267,26 +276,24 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProblemListSectionCode(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProblemListSectionCode(ProblemListSection problemListSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CODE,
-						 APITestPlugin.INSTANCE.getString("ProblemListSectionCode"),
-						 new Object [] { problemListSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CODE,
+					APITestPlugin.INSTANCE.getString("ProblemListSectionCode"), new Object[] { problemListSection }));
 			}
 			return false;
 		}
@@ -302,6 +309,7 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemListSectionTitle(ProblemListSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Section Title</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -323,26 +331,24 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProblemListSectionTitle(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProblemListSectionTitle(ProblemListSection problemListSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TITLE,
-						 APITestPlugin.INSTANCE.getString("ProblemListSectionTitle"),
-						 new Object [] { problemListSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TITLE,
+					APITestPlugin.INSTANCE.getString("ProblemListSectionTitle"), new Object[] { problemListSection }));
 			}
 			return false;
 		}
@@ -358,6 +364,7 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemListSectionText(ProblemListSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem List Section Text</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -379,26 +386,24 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProblemListSectionText(ProblemListSection problemListSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProblemListSectionText(ProblemListSection problemListSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(APITestPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 APITestValidator.DIAGNOSTIC_SOURCE,
-						 APITestValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEXT,
-						 APITestPlugin.INSTANCE.getString("ProblemListSectionText"),
-						 new Object [] { problemListSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, APITestValidator.DIAGNOSTIC_SOURCE,
+					APITestValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEXT,
+					APITestPlugin.INSTANCE.getString("ProblemListSectionText"), new Object[] { problemListSection }));
 			}
 			return false;
 		}
@@ -414,6 +419,7 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String GET_CONDITIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::ICondition)).oclAsType(domain::ICondition)";
+
 	/**
 	 * The cached OCL query for the '{@link #getConditions(ProblemListSection) <em>Get Conditions</em>}' query operation.
 	 * <!-- begin-user-doc -->
@@ -434,14 +440,15 @@ public class ProblemListSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  EList<ICondition> getConditions(ProblemListSection problemListSection) {
+	public static EList<ICondition> getConditions(ProblemListSection problemListSection) {
 		if (GET_CONDITIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(APITestPackage.Literals.PROBLEM_LIST_SECTION, APITestPackage.Literals.PROBLEM_LIST_SECTION.getEAllOperations().get(68));
+			helper.setOperationContext(
+				APITestPackage.Literals.PROBLEM_LIST_SECTION,
+				APITestPackage.Literals.PROBLEM_LIST_SECTION.getEAllOperations().get(68));
 			try {
 				GET_CONDITIONS__EOCL_QRY = helper.createQuery(GET_CONDITIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

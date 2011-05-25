@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.domain.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -29,12 +33,11 @@ public class DomainFactoryImpl extends EFactoryImpl implements DomainFactory {
 	 */
 	public static DomainFactory init() {
 		try {
-			DomainFactory theDomainFactory = (DomainFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest/domain"); 
+			DomainFactory theDomainFactory = (DomainFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/apitest/domain");
 			if (theDomainFactory != null) {
 				return theDomainFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new DomainFactoryImpl();
@@ -69,7 +72,7 @@ public class DomainFactoryImpl extends EFactoryImpl implements DomainFactory {
 	 * @generated
 	 */
 	public DomainPackage getDomainPackage() {
-		return (DomainPackage)getEPackage();
+		return (DomainPackage) getEPackage();
 	}
 
 	/**
@@ -83,4 +86,4 @@ public class DomainFactoryImpl extends EFactoryImpl implements DomainFactory {
 		return DomainPackage.eINSTANCE;
 	}
 
-} //DomainFactoryImpl
+} // DomainFactoryImpl
