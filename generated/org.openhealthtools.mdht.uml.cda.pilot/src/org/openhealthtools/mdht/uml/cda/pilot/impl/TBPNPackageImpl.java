@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -96,10 +100,14 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 	 * @generated
 	 */
 	public static TBPNPackage init() {
-		if (isInited) return (TBPNPackage)EPackage.Registry.INSTANCE.getEPackage(TBPNPackage.eNS_URI);
+		if (isInited) {
+			return (TBPNPackage) EPackage.Registry.INSTANCE.getEPackage(TBPNPackage.eNS_URI);
+		}
 
 		// Obtain or create and register package
-		TBPNPackageImpl theTBPNPackage = (TBPNPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof TBPNPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new TBPNPackageImpl());
+		TBPNPackageImpl theTBPNPackage = (TBPNPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof TBPNPackageImpl
+				? EPackage.Registry.INSTANCE.get(eNS_URI)
+				: new TBPNPackageImpl());
 
 		isInited = true;
 
@@ -113,18 +121,15 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		theTBPNPackage.initializePackageContents();
 
 		// Register package validator
-		EValidator.Registry.INSTANCE.put
-			(theTBPNPackage, 
-			 new EValidator.Descriptor() {
-				 public EValidator getEValidator() {
-					 return TBPNValidator.INSTANCE;
-				 }
-			 });
+		EValidator.Registry.INSTANCE.put(theTBPNPackage, new EValidator.Descriptor() {
+			public EValidator getEValidator() {
+				return TBPNValidator.INSTANCE;
+			}
+		});
 
 		// Mark meta-data to indicate it can't be changed
 		theTBPNPackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(TBPNPackage.eNS_URI, theTBPNPackage);
 		return theTBPNPackage;
@@ -172,7 +177,7 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 	 * @generated
 	 */
 	public TBPNFactory getTBPNFactory() {
-		return (TBPNFactory)getEFactoryInstance();
+		return (TBPNFactory) getEFactoryInstance();
 	}
 
 	/**
@@ -190,7 +195,9 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 	 * @generated
 	 */
 	public void createPackageContents() {
-		if (isCreated) return;
+		if (isCreated) {
+			return;
+		}
 		isCreated = true;
 
 		// Create classes and their features
@@ -218,7 +225,9 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 	 * @generated
 	 */
 	public void initializePackageContents() {
-		if (isInitialized) return;
+		if (isInitialized) {
+			return;
+		}
 		isInitialized = true;
 
 		// Initialize package
@@ -227,8 +236,8 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		CDAPackage theCDAPackage = (CDAPackage)EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
-		CCDPackage theCCDPackage = (CCDPackage)EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI);
+		CDAPackage theCDAPackage = (CDAPackage) EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
+		CCDPackage theCCDPackage = (CCDPackage) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -241,9 +250,13 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		tbResultObservationEClass.getESuperTypes().add(theCCDPackage.getResultObservation());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(tuberculosisFollowUpProgressNoteEClass, TuberculosisFollowUpProgressNote.class, "TuberculosisFollowUpProgressNote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(
+			tuberculosisFollowUpProgressNoteEClass, TuberculosisFollowUpProgressNote.class,
+			"TuberculosisFollowUpProgressNote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		EOperation op = addEOperation(tuberculosisFollowUpProgressNoteEClass, ecorePackage.getEBoolean(), "validateTuberculosisFollowUpProgressNotePatientNames", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = addEOperation(
+			tuberculosisFollowUpProgressNoteEClass, ecorePackage.getEBoolean(),
+			"validateTuberculosisFollowUpProgressNotePatientNames", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -252,7 +265,9 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(tuberculosisFollowUpProgressNoteEClass, ecorePackage.getEBoolean(), "validateTuberculosisFollowUpProgressNoteTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(
+			tuberculosisFollowUpProgressNoteEClass, ecorePackage.getEBoolean(),
+			"validateTuberculosisFollowUpProgressNoteTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -261,7 +276,9 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(tuberculosisFollowUpProgressNoteEClass, ecorePackage.getEBoolean(), "validateTuberculosisFollowUpProgressNoteTBResultsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(
+			tuberculosisFollowUpProgressNoteEClass, ecorePackage.getEBoolean(),
+			"validateTuberculosisFollowUpProgressNoteTbResultsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -270,11 +287,17 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(tuberculosisFollowUpProgressNoteEClass, this.getTBResultsSection(), "getTbResultsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(
+			tuberculosisFollowUpProgressNoteEClass, this.getTBResultsSection(), "getTbResultsSection", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
-		initEClass(tbResultsSectionEClass, TBResultsSection.class, "TBResultsSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(
+			tbResultsSectionEClass, TBResultsSection.class, "TBResultsSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(tbResultsSectionEClass, ecorePackage.getEBoolean(), "validateTBResultsSectionText", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(
+			tbResultsSectionEClass, ecorePackage.getEBoolean(), "validateTBResultsSectionText", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -283,7 +306,9 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(tbResultsSectionEClass, ecorePackage.getEBoolean(), "validateTBResultsSectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(
+			tbResultsSectionEClass, ecorePackage.getEBoolean(), "validateTBResultsSectionTitle", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -292,7 +317,9 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(tbResultsSectionEClass, ecorePackage.getEBoolean(), "validateTBResultsSectionTBResultOrganizer", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(
+			tbResultsSectionEClass, ecorePackage.getEBoolean(), "validateTBResultsSectionTbResultOrganizer", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -301,7 +328,9 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(tbResultsSectionEClass, ecorePackage.getEBoolean(), "validateTBResultsSectionTBResultObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(
+			tbResultsSectionEClass, ecorePackage.getEBoolean(), "validateTBResultsSectionTbResultObservation", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -310,13 +339,20 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(tbResultsSectionEClass, this.getTBResultOrganizer(), "getTbResultOrganizers", 1, -1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(
+			tbResultsSectionEClass, this.getTBResultOrganizer(), "getTbResultOrganizers", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(tbResultsSectionEClass, this.getTBResultObservation(), "getTbResultObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(
+			tbResultsSectionEClass, this.getTBResultObservation(), "getTbResultObservations", 1, -1, IS_UNIQUE,
+			!IS_ORDERED);
 
-		initEClass(tbResultOrganizerEClass, TBResultOrganizer.class, "TBResultOrganizer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(
+			tbResultOrganizerEClass, TBResultOrganizer.class, "TBResultOrganizer", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(tbResultOrganizerEClass, ecorePackage.getEBoolean(), "validateTBResultOrganizerTBResultObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(
+			tbResultOrganizerEClass, ecorePackage.getEBoolean(), "validateTBResultOrganizerTbResultObservation", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -325,11 +361,17 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(tbResultOrganizerEClass, this.getTBResultObservation(), "getTbResultObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(
+			tbResultOrganizerEClass, this.getTBResultObservation(), "getTbResultObservation", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
-		initEClass(tbResultObservationEClass, TBResultObservation.class, "TBResultObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(
+			tbResultObservationEClass, TBResultObservation.class, "TBResultObservation", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(tbResultObservationEClass, ecorePackage.getEBoolean(), "validateTBResultObservationClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(
+			tbResultObservationEClass, ecorePackage.getEBoolean(), "validateTBResultObservationClassCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -355,47 +397,40 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 	 * @generated
 	 */
 	protected void createAnnotationAnnotations() {
-		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";		
-		addAnnotation
-		  (tuberculosisFollowUpProgressNoteEClass, 
-		   source, 
-		   new String[] {
-			 "templateId.root", "2.16.840.1.113883.10.20.15.2.6.1.1.1.1.1.2.3",
-			 "constraints.validation.error", "TuberculosisFollowUpProgressNoteTemplateId TuberculosisFollowUpProgressNotePatientNames TuberculosisFollowUpProgressNoteTBResultsSection"
-		   });																	
-		addAnnotation
-		  (tbResultsSectionEClass, 
-		   source, 
-		   new String[] {
-			 "title.mixed", "Relevant diagnostic tests and/or laboratory data",
-			 "code.codeSystem", "2.16.840.1.113883.6.1",
-			 "code.displayName", "Relevant diagnostic tests and/or laboratory data",
-			 "templateId.root", "2.16.840.1.113883.10.20.15.2.6",
-			 "constraints.validation.error", "TBResultsSectionTemplateId ResultsSectionCode TBResultsSectionText TBResultsSectionTitle",
-			 "code.codeSystemName", "LOINC",
-			 "code.code", "30954-2",
-			 "constraints.validation.info", "TBResultsSectionTBResultOrganizer TBResultsSectionTBResultObservation"
-		   });																								
-		addAnnotation
-		  (tbResultOrganizerEClass, 
-		   source, 
-		   new String[] {
-			 "code.codeSystem", "2.16.840.1.113883.6.1",
-			 "templateId.root", "2.16.840.1.113883.10.20.15.3.21",
-			 "constraints.validation.error", "TBResultOrganizerTemplateId ResultOrganizerCode TBResultOrganizerTBResultObservation",
-			 "code.codeSystemName", "LOINC"
-		   });									
-		addAnnotation
-		  (tbResultObservationEClass, 
-		   source, 
-		   new String[] {
-			 "statusCode.code", "completed",
-			 "code.codeSystem", "2.16.840.1.113883.6.1",
-			 "templateId.root", "2.16.840.1.113883.10.20.15.3.13",
-			 "constraints.validation.error", "TBResultObservationTemplateId TBResultObservationClassCode ResultObservationCode ResultObservationStatusCode",
-			 "code.codeSystemName", "LOINC",
-			 "classCode", "OBS"
-		   });					
+		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";
+		addAnnotation(
+			tuberculosisFollowUpProgressNoteEClass,
+			source,
+			new String[] {
+					"templateId.root",
+					"2.16.840.1.113883.10.20.15.2.6.1.1.1.1.1.2.3",
+					"constraints.validation.error",
+					"TuberculosisFollowUpProgressNoteTemplateId TuberculosisFollowUpProgressNotePatientNames TuberculosisFollowUpProgressNoteTbResultsSection" });
+		addAnnotation(tbResultsSectionEClass, source, new String[] {
+				"title.mixed", "Relevant diagnostic tests and/or laboratory data", "code.codeSystem",
+				"2.16.840.1.113883.6.1", "code.displayName", "Relevant diagnostic tests and/or laboratory data",
+				"templateId.root", "2.16.840.1.113883.10.20.15.2.6", "constraints.validation.error",
+				"TBResultsSectionTemplateId ResultsSectionCode TBResultsSectionText TBResultsSectionTitle",
+				"code.codeSystemName", "LOINC", "code.code", "30954-2", "constraints.validation.info",
+				"TBResultsSectionTbResultOrganizer TBResultsSectionTbResultObservation" });
+		addAnnotation(tbResultOrganizerEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "2.16.840.1.113883.10.20.15.3.21",
+				"constraints.validation.error",
+				"TBResultOrganizerTemplateId ResultOrganizerCode TBResultOrganizerTbResultObservation",
+				"code.codeSystemName", "LOINC" });
+		addAnnotation(
+			tbResultObservationEClass,
+			source,
+			new String[] {
+					"statusCode.code",
+					"completed",
+					"code.codeSystem",
+					"2.16.840.1.113883.6.1",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.15.3.13",
+					"constraints.validation.error",
+					"TBResultObservationTemplateId TBResultObservationClassCode ResultObservationCode ResultObservationStatusCode",
+					"code.codeSystemName", "LOINC", "classCode", "OBS" });
 	}
 
 	/**
@@ -405,22 +440,10 @@ public class TBPNPackageImpl extends EPackageImpl implements TBPNPackage {
 	 * @generated
 	 */
 	protected void createDuplicatesAnnotations() {
-		String source = "duplicates";																			
-		addAnnotation
-		  (tbResultsSectionEClass, 
-		   source, 
-		   new String[] {
-		   });																								
-		addAnnotation
-		  (tbResultOrganizerEClass, 
-		   source, 
-		   new String[] {
-		   });									
-		addAnnotation
-		  (tbResultObservationEClass, 
-		   source, 
-		   new String[] {
-		   });				
+		String source = "duplicates";
+		addAnnotation(tbResultsSectionEClass, source, new String[] {});
+		addAnnotation(tbResultOrganizerEClass, source, new String[] {});
+		addAnnotation(tbResultObservationEClass, source, new String[] {});
 	}
 
-} //TBPNPackageImpl
+} // TBPNPackageImpl

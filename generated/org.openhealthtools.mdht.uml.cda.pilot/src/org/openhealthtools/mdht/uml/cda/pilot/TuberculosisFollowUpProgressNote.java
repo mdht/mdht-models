@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot;
 
 import java.util.Map;
@@ -18,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.pilot.TBPNPackage#getTuberculosisFollowUpProgressNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.6.1.1.1.1.1.2.3' constraints.validation.error='TuberculosisFollowUpProgressNoteTemplateId TuberculosisFollowUpProgressNotePatientNames TuberculosisFollowUpProgressNoteTBResultsSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.6.1.1.1.1.1.2.3' constraints.validation.error='TuberculosisFollowUpProgressNoteTemplateId TuberculosisFollowUpProgressNotePatientNames TuberculosisFollowUpProgressNoteTbResultsSection'"
  * @generated
  */
 public interface TuberculosisFollowUpProgressNote extends ClinicalDocument {
@@ -34,7 +38,8 @@ public interface TuberculosisFollowUpProgressNote extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget.patientRole.patient.name->exists(\r\n   name : datatypes::PN | not name.given->isEmpty() and not name.family->isEmpty())'"
 	 * @generated
 	 */
-	boolean validateTuberculosisFollowUpProgressNotePatientNames(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateTuberculosisFollowUpProgressNotePatientNames(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,7 +65,8 @@ public interface TuberculosisFollowUpProgressNote extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pilot::TBResultsSection))'"
 	 * @generated
 	 */
-	boolean validateTuberculosisFollowUpProgressNoteTBResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateTuberculosisFollowUpProgressNoteTbResultsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

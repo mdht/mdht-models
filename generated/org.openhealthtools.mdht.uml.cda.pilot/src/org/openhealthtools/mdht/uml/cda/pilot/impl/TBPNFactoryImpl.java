@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -33,12 +37,11 @@ public class TBPNFactoryImpl extends EFactoryImpl implements TBPNFactory {
 	 */
 	public static TBPNFactory init() {
 		try {
-			TBPNFactory theTBPNFactory = (TBPNFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/pilot"); 
+			TBPNFactory theTBPNFactory = (TBPNFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/pilot");
 			if (theTBPNFactory != null) {
 				return theTBPNFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new TBPNFactoryImpl();
@@ -62,10 +65,14 @@ public class TBPNFactoryImpl extends EFactoryImpl implements TBPNFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case TBPNPackage.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE: return createTuberculosisFollowUpProgressNote();
-			case TBPNPackage.TB_RESULTS_SECTION: return createTBResultsSection();
-			case TBPNPackage.TB_RESULT_ORGANIZER: return createTBResultOrganizer();
-			case TBPNPackage.TB_RESULT_OBSERVATION: return createTBResultObservation();
+			case TBPNPackage.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE:
+				return createTuberculosisFollowUpProgressNote();
+			case TBPNPackage.TB_RESULTS_SECTION:
+				return createTBResultsSection();
+			case TBPNPackage.TB_RESULT_ORGANIZER:
+				return createTBResultOrganizer();
+			case TBPNPackage.TB_RESULT_OBSERVATION:
+				return createTBResultObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -117,7 +124,7 @@ public class TBPNFactoryImpl extends EFactoryImpl implements TBPNFactory {
 	 * @generated
 	 */
 	public TBPNPackage getTBPNPackage() {
-		return (TBPNPackage)getEPackage();
+		return (TBPNPackage) getEPackage();
 	}
 
 	/**
@@ -131,4 +138,4 @@ public class TBPNFactoryImpl extends EFactoryImpl implements TBPNFactory {
 		return TBPNPackage.eINSTANCE;
 	}
 
-} //TBPNFactoryImpl
+} // TBPNFactoryImpl

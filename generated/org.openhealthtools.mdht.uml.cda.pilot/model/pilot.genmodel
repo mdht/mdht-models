@@ -40,9 +40,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TuberculosisFollowUpProgressNote/TuberculosisFollowUpProgressNoteTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TuberculosisFollowUpProgressNote/TuberculosisFollowUpProgressNoteTemplateId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TuberculosisFollowUpProgressNote/TuberculosisFollowUpProgressNoteTBResultsSection">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TuberculosisFollowUpProgressNote/TuberculosisFollowUpProgressNoteTBResultsSection/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TuberculosisFollowUpProgressNote/TuberculosisFollowUpProgressNoteTBResultsSection/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TuberculosisFollowUpProgressNote/TuberculosisFollowUpProgressNoteTbResultsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TuberculosisFollowUpProgressNote/TuberculosisFollowUpProgressNoteTbResultsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TuberculosisFollowUpProgressNote/TuberculosisFollowUpProgressNoteTbResultsSection/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TuberculosisFollowUpProgressNote/getTbResultsSection"/>
     </genClasses>
@@ -55,21 +55,21 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultsSection/TBResultsSectionTitle/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultsSection/TBResultsSectionTitle/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TBResultsSection/TBResultsSectionTBResultOrganizer">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultsSection/TBResultsSectionTBResultOrganizer/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultsSection/TBResultsSectionTBResultOrganizer/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TBResultsSection/TBResultsSectionTbResultOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultsSection/TBResultsSectionTbResultOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultsSection/TBResultsSectionTbResultOrganizer/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TBResultsSection/TBResultsSectionTBResultObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultsSection/TBResultsSectionTBResultObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultsSection/TBResultsSectionTBResultObservation/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TBResultsSection/TBResultsSectionTbResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultsSection/TBResultsSectionTbResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultsSection/TBResultsSectionTbResultObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TBResultsSection/getTbResultOrganizers"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TBResultsSection/getTbResultObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="pilot.ecore#//TBResultOrganizer">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TBResultOrganizer/TBResultOrganizerTBResultObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultOrganizer/TBResultOrganizerTBResultObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultOrganizer/TBResultOrganizerTBResultObservation/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TBResultOrganizer/TBResultOrganizerTbResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultOrganizer/TBResultOrganizerTbResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="pilot.ecore#//TBResultOrganizer/TBResultOrganizerTbResultObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="pilot.ecore#//TBResultOrganizer/getTbResultObservation"/>
     </genClasses>

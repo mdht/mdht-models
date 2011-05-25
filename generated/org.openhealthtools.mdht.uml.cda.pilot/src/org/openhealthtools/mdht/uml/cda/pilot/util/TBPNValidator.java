@@ -1,14 +1,17 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2010, 2011 David A Carlson and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.pilot.util;
 
 import java.util.Map;
 
-import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
@@ -20,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.pilot.TBResultObservation;
 import org.openhealthtools.mdht.uml.cda.pilot.TBResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.pilot.TBResultsSection;
 import org.openhealthtools.mdht.uml.cda.pilot.TuberculosisFollowUpProgressNote;
+import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
 
 /**
  * <!-- begin-user-doc -->
@@ -64,7 +68,7 @@ public class TBPNValidator extends EObjectValidator {
 	public static final int TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE__TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TEMPLATE_ID = 2;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tuberculosis Follow Up Progress Note TB Results Section' of 'Tuberculosis Follow Up Progress Note'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tuberculosis Follow Up Progress Note Tb Results Section' of 'Tuberculosis Follow Up Progress Note'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -72,7 +76,7 @@ public class TBPNValidator extends EObjectValidator {
 	public static final int TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE__TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE_TB_RESULTS_SECTION = 3;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate TB Result Organizer TB Result Observation' of 'TB Result Organizer'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate TB Result Organizer Tb Result Observation' of 'TB Result Organizer'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -112,7 +116,7 @@ public class TBPNValidator extends EObjectValidator {
 	public static final int TB_RESULTS_SECTION__TB_RESULTS_SECTION_TITLE = 5;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate TB Results Section TB Result Organizer' of 'TB Results Section'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate TB Results Section Tb Result Organizer' of 'TB Results Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -120,7 +124,7 @@ public class TBPNValidator extends EObjectValidator {
 	public static final int TB_RESULTS_SECTION__TB_RESULTS_SECTION_TB_RESULT_ORGANIZER = 6;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate TB Results Section TB Result Observation' of 'TB Results Section'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate TB Results Section Tb Result Observation' of 'TB Results Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -197,6 +201,14 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected CDAValidator cdaValidator;
+
+	/**
+	 * The cached base package validator.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected CCDValidator ccdValidator;
 
 	/**
@@ -207,6 +219,7 @@ public class TBPNValidator extends EObjectValidator {
 	 */
 	public TBPNValidator() {
 		super();
+		cdaValidator = CDAValidator.INSTANCE;
 		ccdValidator = CCDValidator.INSTANCE;
 	}
 
@@ -218,7 +231,7 @@ public class TBPNValidator extends EObjectValidator {
 	 */
 	@Override
 	protected EPackage getEPackage() {
-	  return TBPNPackage.eINSTANCE;
+		return TBPNPackage.eINSTANCE;
 	}
 
 	/**
@@ -231,13 +244,14 @@ public class TBPNValidator extends EObjectValidator {
 	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		switch (classifierID) {
 			case TBPNPackage.TUBERCULOSIS_FOLLOW_UP_PROGRESS_NOTE:
-				return validateTuberculosisFollowUpProgressNote((TuberculosisFollowUpProgressNote)value, diagnostics, context);
+				return validateTuberculosisFollowUpProgressNote(
+					(TuberculosisFollowUpProgressNote) value, diagnostics, context);
 			case TBPNPackage.TB_RESULTS_SECTION:
-				return validateTBResultsSection((TBResultsSection)value, diagnostics, context);
+				return validateTBResultsSection((TBResultsSection) value, diagnostics, context);
 			case TBPNPackage.TB_RESULT_ORGANIZER:
-				return validateTBResultOrganizer((TBResultOrganizer)value, diagnostics, context);
+				return validateTBResultOrganizer((TBResultOrganizer) value, diagnostics, context);
 			case TBPNPackage.TB_RESULT_OBSERVATION:
-				return validateTBResultObservation((TBResultObservation)value, diagnostics, context);
+				return validateTBResultObservation((TBResultObservation) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -248,19 +262,55 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTuberculosisFollowUpProgressNote(TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(tuberculosisFollowUpProgressNote, diagnostics, context)) return false;
+	public boolean validateTuberculosisFollowUpProgressNote(
+			TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(tuberculosisFollowUpProgressNote, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(tuberculosisFollowUpProgressNote, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(tuberculosisFollowUpProgressNote, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(tuberculosisFollowUpProgressNote, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(tuberculosisFollowUpProgressNote, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(tuberculosisFollowUpProgressNote, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(tuberculosisFollowUpProgressNote, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(tuberculosisFollowUpProgressNote, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(tuberculosisFollowUpProgressNote, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNotePatientNames(tuberculosisFollowUpProgressNote, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNoteTemplateId(tuberculosisFollowUpProgressNote, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNoteTBResultsSection(tuberculosisFollowUpProgressNote, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+				tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+				tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNotePatientNames(
+				tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNoteTemplateId(
+				tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNoteTbResultsSection(
+				tuberculosisFollowUpProgressNote, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -270,8 +320,11 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNotePatientNames(TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return tuberculosisFollowUpProgressNote.validateTuberculosisFollowUpProgressNotePatientNames(diagnostics, context);
+	public boolean validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNotePatientNames(
+			TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return tuberculosisFollowUpProgressNote.validateTuberculosisFollowUpProgressNotePatientNames(
+			diagnostics, context);
 	}
 
 	/**
@@ -280,18 +333,23 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNoteTemplateId(TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNoteTemplateId(
+			TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return tuberculosisFollowUpProgressNote.validateTuberculosisFollowUpProgressNoteTemplateId(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateTuberculosisFollowUpProgressNoteTBResultsSection constraint of '<em>Tuberculosis Follow Up Progress Note</em>'.
+	 * Validates the validateTuberculosisFollowUpProgressNoteTbResultsSection constraint of '<em>Tuberculosis Follow Up Progress Note</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNoteTBResultsSection(TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return tuberculosisFollowUpProgressNote.validateTuberculosisFollowUpProgressNoteTBResultsSection(diagnostics, context);
+	public boolean validateTuberculosisFollowUpProgressNote_validateTuberculosisFollowUpProgressNoteTbResultsSection(
+			TuberculosisFollowUpProgressNote tuberculosisFollowUpProgressNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return tuberculosisFollowUpProgressNote.validateTuberculosisFollowUpProgressNoteTbResultsSection(
+			diagnostics, context);
 	}
 
 	/**
@@ -299,36 +357,80 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultOrganizer(TBResultOrganizer tbResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(tbResultOrganizer, diagnostics, context)) return false;
+	public boolean validateTBResultOrganizer(TBResultOrganizer tbResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(tbResultOrganizer, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerComponentElement(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerInformationSource(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultOrganizer_validateResultOrganizerTemplateId(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerMoodCode(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerId(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultOrganizer_validateResultOrganizerCode(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(tbResultOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultOrganizer_validateTBResultOrganizerTBResultObservation(tbResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultOrganizer_validateResultOrganizerComponentElement(
+				tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultOrganizer_validateResultOrganizerInformationSource(
+				tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultOrganizer_validateResultOrganizerTemplateId(
+				tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultOrganizer_validateResultOrganizerMoodCode(
+				tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultOrganizer_validateResultOrganizerId(
+				tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultOrganizer_validateResultOrganizerCode(tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultOrganizer_validateResultOrganizerStatusCode(
+				tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultOrganizer_validateResultOrganizerResultObservation(
+				tbResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultOrganizer_validateTBResultOrganizerTbResultObservation(
+				tbResultOrganizer, diagnostics, context);
+		}
 		return result;
 	}
 
 	/**
-	 * Validates the validateTBResultOrganizerTBResultObservation constraint of '<em>TB Result Organizer</em>'.
+	 * Validates the validateTBResultOrganizerTbResultObservation constraint of '<em>TB Result Organizer</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultOrganizer_validateTBResultOrganizerTBResultObservation(TBResultOrganizer tbResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return tbResultOrganizer.validateTBResultOrganizerTBResultObservation(diagnostics, context);
+	public boolean validateTBResultOrganizer_validateTBResultOrganizerTbResultObservation(
+			TBResultOrganizer tbResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return tbResultOrganizer.validateTBResultOrganizerTbResultObservation(diagnostics, context);
 	}
 
 	/**
@@ -337,27 +439,9 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultOrganizer_validateResultOrganizerTemplateId(TBResultOrganizer tbResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateResultOrganizerTemplateId", getObjectLabel(tbResultOrganizer, context) },
-						 new Object[] { tbResultOrganizer },
-						 context));
-			}
-			return false;
-		}
-		return ccdValidator.validateResultOrganizer_validateResultOrganizerTemplateId(tbResultOrganizer, diagnostics, context);
+	public boolean validateTBResultOrganizer_validateResultOrganizerTemplateId(TBResultOrganizer tbResultOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return tbResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -366,27 +450,9 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultOrganizer_validateResultOrganizerCode(TBResultOrganizer tbResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateResultOrganizerCode", getObjectLabel(tbResultOrganizer, context) },
-						 new Object[] { tbResultOrganizer },
-						 context));
-			}
-			return false;
-		}
-		return ccdValidator.validateResultOrganizer_validateResultOrganizerCode(tbResultOrganizer, diagnostics, context);
+	public boolean validateTBResultOrganizer_validateResultOrganizerCode(TBResultOrganizer tbResultOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return tbResultOrganizer.validateResultOrganizerCode(diagnostics, context);
 	}
 
 	/**
@@ -394,25 +460,71 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultsSection(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(tbResultsSection, diagnostics, context)) return false;
+	public boolean validateTBResultsSection(TBResultsSection tbResultsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(tbResultsSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultsSection_validateResultsSectionTemplateId(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultsSection_validateResultsSectionCode(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionTitle(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionText(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionResultOrganizer(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultsSection_validateTBResultsSectionText(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultsSection_validateTBResultsSectionTitle(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultsSection_validateTBResultsSectionTBResultOrganizer(tbResultsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultsSection_validateTBResultsSectionTBResultObservation(tbResultsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultsSection_validateResultsSectionTemplateId(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultsSection_validateResultsSectionCode(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultsSection_validateResultsSectionTitle(
+				tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultsSection_validateResultsSectionText(
+				tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultsSection_validateResultsSectionResultOrganizer(
+				tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultsSection_validateTBResultsSectionText(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultsSection_validateTBResultsSectionTitle(tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultsSection_validateTBResultsSectionTbResultOrganizer(
+				tbResultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultsSection_validateTBResultsSectionTbResultObservation(
+				tbResultsSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -422,7 +534,8 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultsSection_validateTBResultsSectionText(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTBResultsSection_validateTBResultsSectionText(TBResultsSection tbResultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return tbResultsSection.validateTBResultsSectionText(diagnostics, context);
 	}
 
@@ -432,28 +545,31 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultsSection_validateTBResultsSectionTitle(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTBResultsSection_validateTBResultsSectionTitle(TBResultsSection tbResultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return tbResultsSection.validateTBResultsSectionTitle(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateTBResultsSectionTBResultOrganizer constraint of '<em>TB Results Section</em>'.
+	 * Validates the validateTBResultsSectionTbResultOrganizer constraint of '<em>TB Results Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultsSection_validateTBResultsSectionTBResultOrganizer(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return tbResultsSection.validateTBResultsSectionTBResultOrganizer(diagnostics, context);
+	public boolean validateTBResultsSection_validateTBResultsSectionTbResultOrganizer(
+			TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return tbResultsSection.validateTBResultsSectionTbResultOrganizer(diagnostics, context);
 	}
 
 	/**
-	 * Validates the validateTBResultsSectionTBResultObservation constraint of '<em>TB Results Section</em>'.
+	 * Validates the validateTBResultsSectionTbResultObservation constraint of '<em>TB Results Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultsSection_validateTBResultsSectionTBResultObservation(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return tbResultsSection.validateTBResultsSectionTBResultObservation(diagnostics, context);
+	public boolean validateTBResultsSection_validateTBResultsSectionTbResultObservation(
+			TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return tbResultsSection.validateTBResultsSectionTbResultObservation(diagnostics, context);
 	}
 
 	/**
@@ -462,27 +578,9 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultsSection_validateResultsSectionTemplateId(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateResultsSectionTemplateId", getObjectLabel(tbResultsSection, context) },
-						 new Object[] { tbResultsSection },
-						 context));
-			}
-			return false;
-		}
-		return ccdValidator.validateResultsSection_validateResultsSectionTemplateId(tbResultsSection, diagnostics, context);
+	public boolean validateTBResultsSection_validateResultsSectionTemplateId(TBResultsSection tbResultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return tbResultsSection.validateResultsSectionTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -491,27 +589,9 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultsSection_validateResultsSectionCode(TBResultsSection tbResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateResultsSectionCode", getObjectLabel(tbResultsSection, context) },
-						 new Object[] { tbResultsSection },
-						 context));
-			}
-			return false;
-		}
-		return ccdValidator.validateResultsSection_validateResultsSectionCode(tbResultsSection, diagnostics, context);
+	public boolean validateTBResultsSection_validateResultsSectionCode(TBResultsSection tbResultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return tbResultsSection.validateResultsSectionCode(diagnostics, context);
 	}
 
 	/**
@@ -519,29 +599,85 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultObservation(TBResultObservation tbResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(tbResultObservation, diagnostics, context)) return false;
+	public boolean validateTBResultObservation(TBResultObservation tbResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(tbResultObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationReferenceRangeRequired(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInformationSource(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultObservation_validateResultObservationTemplateId(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationId(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultObservation_validateResultObservationStatusCode(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultObservation_validateResultObservationCode(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationValue(tbResultObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateTBResultObservation_validateTBResultObservationClassCode(tbResultObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationReferenceRangeRequired(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationInformationSource(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultObservation_validateResultObservationTemplateId(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationMoodCode(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationId(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationEffectiveTime(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultObservation_validateResultObservationStatusCode(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultObservation_validateResultObservationCode(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationMethodCode(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationInterpretationCode(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultObservation_validateResultObservationValue(
+				tbResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateTBResultObservation_validateTBResultObservationClassCode(
+				tbResultObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -551,7 +687,8 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultObservation_validateTBResultObservationClassCode(TBResultObservation tbResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTBResultObservation_validateTBResultObservationClassCode(
+			TBResultObservation tbResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return tbResultObservation.validateTBResultObservationClassCode(diagnostics, context);
 	}
 
@@ -561,27 +698,9 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultObservation_validateResultObservationTemplateId(TBResultObservation tbResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateResultObservationTemplateId", getObjectLabel(tbResultObservation, context) },
-						 new Object[] { tbResultObservation },
-						 context));
-			}
-			return false;
-		}
-		return ccdValidator.validateResultObservation_validateResultObservationTemplateId(tbResultObservation, diagnostics, context);
+	public boolean validateTBResultObservation_validateResultObservationTemplateId(
+			TBResultObservation tbResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return tbResultObservation.validateResultObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -590,27 +709,9 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultObservation_validateResultObservationCode(TBResultObservation tbResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateResultObservationCode", getObjectLabel(tbResultObservation, context) },
-						 new Object[] { tbResultObservation },
-						 context));
-			}
-			return false;
-		}
-		return ccdValidator.validateResultObservation_validateResultObservationCode(tbResultObservation, diagnostics, context);
+	public boolean validateTBResultObservation_validateResultObservationCode(TBResultObservation tbResultObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return tbResultObservation.validateResultObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -619,27 +720,9 @@ public class TBPNValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTBResultObservation_validateResultObservationStatusCode(TBResultObservation tbResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		// TODO override the constraint, if desired
-		// -> uncomment the scaffolding
-		// -> specify the condition that violates the constraint
-		// -> verify the diagnostic details, including severity, code, and message
-		// Ensure that you remove @generated or mark it @generated NOT
-		if (false) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(createDiagnostic
-						(Diagnostic.ERROR,
-						 DIAGNOSTIC_SOURCE,
-						 0,
-						 "_UI_GenericConstraint_diagnostic",
-						 new Object[] { "validateResultObservationStatusCode", getObjectLabel(tbResultObservation, context) },
-						 new Object[] { tbResultObservation },
-						 context));
-			}
-			return false;
-		}
-		return ccdValidator.validateResultObservation_validateResultObservationStatusCode(tbResultObservation, diagnostics, context);
+	public boolean validateTBResultObservation_validateResultObservationStatusCode(
+			TBResultObservation tbResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return tbResultObservation.validateResultObservationStatusCode(diagnostics, context);
 	}
 
 	/**
@@ -653,4 +736,4 @@ public class TBPNValidator extends EObjectValidator {
 		return PilotPlugin.INSTANCE;
 	}
 
-} //TBPNValidator
+} // TBPNValidator
