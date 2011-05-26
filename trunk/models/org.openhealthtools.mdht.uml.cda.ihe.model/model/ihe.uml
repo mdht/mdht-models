@@ -591,7 +591,7 @@ patient's current complaints.</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_iaz6EPvIEd-GKY_8ySda1g">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>The component/nonXMLBody/text@mediaType is “application/pdf” for PDF, or “text/plain” for plaintext.</body>
+          <body>The component/nonXMLBody/text@mediaType is 'application/pdf' for PDF, or 'text/plain' for plaintext.</body>
           <body>self.component.nonXMLBody.text.mediaType = 'application/pdf' or self.component.nonXMLBody.text.mediaType = 'text/plain'</body>
         </specification>
       </ownedRule>
