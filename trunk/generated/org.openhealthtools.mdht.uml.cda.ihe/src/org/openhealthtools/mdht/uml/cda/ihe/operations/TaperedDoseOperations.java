@@ -56,7 +56,7 @@ public class TaperedDoseOperations extends MedicationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsTypeOf( ihe::Medication) )";
+	protected static final String VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsKindOf( ihe::Medication) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTaperedDoseTaperedDosingSubstanceAdministration(TaperedDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tapered Dose Tapered Dosing Substance Administration</em>}' invariant operation.
@@ -73,7 +73,7 @@ public class TaperedDoseOperations extends MedicationOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsTypeOf( ihe::Medication) )
+	 * self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsKindOf( ihe::Medication) )
 	 * @param taperedDose The receiving '<em><b>Tapered Dose</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
