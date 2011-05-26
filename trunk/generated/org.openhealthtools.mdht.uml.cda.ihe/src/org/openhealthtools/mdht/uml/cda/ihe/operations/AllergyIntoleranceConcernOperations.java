@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  */
 public class AllergyIntoleranceConcernOperations extends ConcernEntryOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AllergyIntoleranceConcernOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAllergyIntoleranceConcernTemplateId(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Concern Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAllergyIntoleranceConcernTemplateId(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Concern Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAllergyIntoleranceConcernTemplateId(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAllergyIntoleranceConcernTemplateId(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ALLERGY_INTOLERANCE_CONCERN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.5.3')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAllergyIntoleranceConcernTemplateId(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Concern Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAllergyIntoleranceConcernTemplateId(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Concern Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAllergyIntoleranceConcernTemplateId(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAllergyIntoleranceConcernTemplateId(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_ALLERGY_INTOLERANCE_CONCERN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.5.3')
-	* @param allergyIntoleranceConcern The receiving '<em><b>Allergy Intolerance Concern</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.5.3')
+	 * @param allergyIntoleranceConcern The receiving '<em><b>Allergy Intolerance Concern</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateAllergyIntoleranceConcernTemplateId(
 			AllergyIntoleranceConcern allergyIntoleranceConcern, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -113,36 +113,36 @@ public class AllergyIntoleranceConcernOperations extends ConcernEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAllergyIntoleranceConcernAllergyIntolerance(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Concern Allergy Intolerance</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAllergyIntoleranceConcernAllergyIntolerance(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Concern Allergy Intolerance</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAllergyIntoleranceConcernAllergyIntolerance(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAllergyIntoleranceConcernAllergyIntolerance(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ALLERGY_INTOLERANCE_CONCERN_ALLERGY_INTOLERANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ihe::AllergyIntolerance) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAllergyIntoleranceConcernAllergyIntolerance(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Concern Allergy Intolerance</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAllergyIntoleranceConcernAllergyIntolerance(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Concern Allergy Intolerance</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAllergyIntoleranceConcernAllergyIntolerance(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAllergyIntoleranceConcernAllergyIntolerance(AllergyIntoleranceConcern, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_ALLERGY_INTOLERANCE_CONCERN_ALLERGY_INTOLERANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ihe::AllergyIntolerance) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
-	* @param allergyIntoleranceConcern The receiving '<em><b>Allergy Intolerance Concern</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ihe::AllergyIntolerance) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
+	 * @param allergyIntoleranceConcern The receiving '<em><b>Allergy Intolerance Concern</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateAllergyIntoleranceConcernAllergyIntolerance(
 			AllergyIntoleranceConcern allergyIntoleranceConcern, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -171,34 +171,34 @@ public class AllergyIntoleranceConcernOperations extends ConcernEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getAllergyIntolerances(AllergyIntoleranceConcern) <em>Get Allergy Intolerances</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getAllergyIntolerances(AllergyIntoleranceConcern) <em>Get Allergy Intolerances</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getAllergyIntolerances(AllergyIntoleranceConcern)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getAllergyIntolerances(AllergyIntoleranceConcern)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_ALLERGY_INTOLERANCES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::AllergyIntolerance)).oclAsType(ihe::AllergyIntolerance)";
 
 	/**
-	* The cached OCL query for the '{@link #getAllergyIntolerances(AllergyIntoleranceConcern) <em>Get Allergy Intolerances</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getAllergyIntolerances(AllergyIntoleranceConcern) <em>Get Allergy Intolerances</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getAllergyIntolerances(AllergyIntoleranceConcern)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getAllergyIntolerances(AllergyIntoleranceConcern)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_ALLERGY_INTOLERANCES__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::AllergyIntolerance)).oclAsType(ihe::AllergyIntolerance)
-	* @param allergyIntoleranceConcern The receiving '<em><b>Allergy Intolerance Concern</b></em>' model object.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::AllergyIntolerance)).oclAsType(ihe::AllergyIntolerance)
+	 * @param allergyIntoleranceConcern The receiving '<em><b>Allergy Intolerance Concern</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static EList<AllergyIntolerance> getAllergyIntolerances(AllergyIntoleranceConcern allergyIntoleranceConcern) {
 		if (GET_ALLERGY_INTOLERANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

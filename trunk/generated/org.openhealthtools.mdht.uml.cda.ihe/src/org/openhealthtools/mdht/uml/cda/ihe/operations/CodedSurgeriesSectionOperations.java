@@ -50,45 +50,45 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  */
 public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CodedSurgeriesSectionOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCodedSurgeriesSectionTemplateId(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCodedSurgeriesSectionTemplateId(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCodedSurgeriesSectionTemplateId(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCodedSurgeriesSectionTemplateId(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CODED_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.12')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCodedSurgeriesSectionTemplateId(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCodedSurgeriesSectionTemplateId(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCodedSurgeriesSectionTemplateId(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCodedSurgeriesSectionTemplateId(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_CODED_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.12')
-	* @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.12')
+	 * @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateCodedSurgeriesSectionTemplateId(CodedSurgeriesSection codedSurgeriesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CODED_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -115,36 +115,36 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCodedSurgeriesSectionExternalReference(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section External Reference</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCodedSurgeriesSectionExternalReference(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section External Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCodedSurgeriesSectionExternalReference(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCodedSurgeriesSectionExternalReference(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CODED_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ihe::ExternalReference))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCodedSurgeriesSectionExternalReference(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section External Reference</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCodedSurgeriesSectionExternalReference(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section External Reference</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCodedSurgeriesSectionExternalReference(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCodedSurgeriesSectionExternalReference(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_CODED_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ihe::ExternalReference))
-	* @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ihe::ExternalReference))
+	 * @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateCodedSurgeriesSectionExternalReference(CodedSurgeriesSection codedSurgeriesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CODED_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -171,36 +171,36 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section Procedure Entry Procedure Activity Procedure</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section Procedure Entry Procedure Activity Procedure</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CODED_SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section Procedure Entry Procedure Activity Procedure</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Surgeries Section Procedure Entry Procedure Activity Procedure</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(CodedSurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_CODED_SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure))
-	* @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure))
+	 * @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(
 			CodedSurgeriesSection codedSurgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CODED_SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -229,34 +229,34 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getExternalReference(CodedSurgeriesSection) <em>Get External Reference</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getExternalReference(CodedSurgeriesSection) <em>Get External Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getExternalReference(CodedSurgeriesSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getExternalReference(CodedSurgeriesSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_EXTERNAL_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ExternalReference))->asSequence()->first().oclAsType(ihe::ExternalReference)";
 
 	/**
-	* The cached OCL query for the '{@link #getExternalReference(CodedSurgeriesSection) <em>Get External Reference</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getExternalReference(CodedSurgeriesSection) <em>Get External Reference</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getExternalReference(CodedSurgeriesSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getExternalReference(CodedSurgeriesSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_EXTERNAL_REFERENCE__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ExternalReference))->asSequence()->first().oclAsType(ihe::ExternalReference)
-	* @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ExternalReference))->asSequence()->first().oclAsType(ihe::ExternalReference)
+	 * @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static ExternalReference getExternalReference(CodedSurgeriesSection codedSurgeriesSection) {
 		if (GET_EXTERNAL_REFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -274,34 +274,34 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getProcedureEntryProcedureActivityProcedures(CodedSurgeriesSection) <em>Get Procedure Entry Procedure Activity Procedures</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getProcedureEntryProcedureActivityProcedures(CodedSurgeriesSection) <em>Get Procedure Entry Procedure Activity Procedures</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getProcedureEntryProcedureActivityProcedures(CodedSurgeriesSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getProcedureEntryProcedureActivityProcedures(CodedSurgeriesSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure)).oclAsType(ihe::ProcedureEntryProcedureActivityProcedure)";
 
 	/**
-	* The cached OCL query for the '{@link #getProcedureEntryProcedureActivityProcedures(CodedSurgeriesSection) <em>Get Procedure Entry Procedure Activity Procedures</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getProcedureEntryProcedureActivityProcedures(CodedSurgeriesSection) <em>Get Procedure Entry Procedure Activity Procedures</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getProcedureEntryProcedureActivityProcedures(CodedSurgeriesSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getProcedureEntryProcedureActivityProcedures(CodedSurgeriesSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure)).oclAsType(ihe::ProcedureEntryProcedureActivityProcedure)
-	* @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure)).oclAsType(ihe::ProcedureEntryProcedureActivityProcedure)
+	 * @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static EList<ProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures(
 			CodedSurgeriesSection codedSurgeriesSection) {
 		if (GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {

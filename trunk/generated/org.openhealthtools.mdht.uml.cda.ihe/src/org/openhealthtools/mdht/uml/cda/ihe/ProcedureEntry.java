@@ -24,9 +24,9 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface ProcedureEntry extends EObject {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureEntry init();
 } // ProcedureEntry
