@@ -33,38 +33,38 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CodedSurgeriesSectionImpl extends SurgeriesSectionImpl implements CodedSurgeriesSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CodedSurgeriesSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.CODED_SURGERIES_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedSurgeriesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodedSurgeriesSectionOperations.validateCodedSurgeriesSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedSurgeriesSectionExternalReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodedSurgeriesSectionOperations.validateCodedSurgeriesSectionExternalReference(
@@ -72,10 +72,10 @@ public class CodedSurgeriesSectionImpl extends SurgeriesSectionImpl implements C
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodedSurgeriesSectionOperations.validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(
@@ -83,28 +83,28 @@ public class CodedSurgeriesSectionImpl extends SurgeriesSectionImpl implements C
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExternalReference getExternalReference() {
 		return CodedSurgeriesSectionOperations.getExternalReference(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures() {
 		return CodedSurgeriesSectionOperations.getProcedureEntryProcedureActivityProcedures(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public CodedSurgeriesSection init() {
 		CDAUtil.init(this);
