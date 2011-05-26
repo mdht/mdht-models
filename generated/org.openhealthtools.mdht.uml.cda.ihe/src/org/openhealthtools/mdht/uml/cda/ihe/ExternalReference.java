@@ -43,11 +43,11 @@ public interface ExternalReference extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.reference->select(r| r.typeCode <> vocab::ActRelationshipType::REFR and r.typeCode <> vocab::ActRelationshipType::SPRT)->size() = 0
+	 * self.reference->select(r| r.typeCode <> vocab::x_ActRelationshipExternalReference::REFR and r.typeCode <> vocab::x_ActRelationshipExternalReference::SPRT)->size() = 0
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(r| r.typeCode <> vocab::ActRelationshipType::REFR and r.typeCode <> vocab::ActRelationshipType::SPRT)->size() = 0'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->select(r| r.typeCode <> vocab::x_ActRelationshipExternalReference::REFR and r.typeCode <> vocab::x_ActRelationshipExternalReference::SPRT)->size() = 0'"
 	 * @generated
 	 */
 	boolean validateExternalReferenceHasReference(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -56,11 +56,11 @@ public interface ExternalReference extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClass::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1
+	 * self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClass::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1'"
 	 * @generated
 	 */
 	boolean validateExternalReferenceHasReferenceExternalDocument(DiagnosticChain diagnostics,

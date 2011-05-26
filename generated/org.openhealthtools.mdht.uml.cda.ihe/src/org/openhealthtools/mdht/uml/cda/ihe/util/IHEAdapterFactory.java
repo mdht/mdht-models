@@ -63,6 +63,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.Support;
 import org.openhealthtools.mdht.uml.cda.ccd.SupportGuardian;
 import org.openhealthtools.mdht.uml.cda.ccd.SupportParticipant;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.ihe.*;
 import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectivesSection;

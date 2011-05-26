@@ -120,7 +120,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_REFERENCE_HAS_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->select(r| r.typeCode <> vocab::ActRelationshipType::REFR and r.typeCode <> vocab::ActRelationshipType::SPRT)->size() = 0";
+	protected static final String VALIDATE_EXTERNAL_REFERENCE_HAS_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->select(r| r.typeCode <> vocab::x_ActRelationshipExternalReference::REFR and r.typeCode <> vocab::x_ActRelationshipExternalReference::SPRT)->size() = 0";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExternalReferenceHasReference(ExternalReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Reference Has Reference</em>}' invariant operation.
@@ -136,7 +136,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.reference->select(r| r.typeCode <> vocab::ActRelationshipType::REFR and r.typeCode <> vocab::ActRelationshipType::SPRT)->size() = 0
+	 * self.reference->select(r| r.typeCode <> vocab::x_ActRelationshipExternalReference::REFR and r.typeCode <> vocab::x_ActRelationshipExternalReference::SPRT)->size() = 0
 	 * @param externalReference The receiving '<em><b>External Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -175,7 +175,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_REFERENCE_HAS_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClass::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1";
+	protected static final String VALIDATE_EXTERNAL_REFERENCE_HAS_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExternalReferenceHasReferenceExternalDocument(ExternalReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Reference Has Reference External Document</em>}' invariant operation.
@@ -191,7 +191,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClass::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1
+	 * self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1
 	 * @param externalReference The receiving '<em><b>External Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
