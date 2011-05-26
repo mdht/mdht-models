@@ -318,10 +318,10 @@
     </eOperations>
     <eOperations name="ConcernEntryRelatedObservationsTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entryRelationship->select(er|er.typeCode &lt;> vocab::ActRelationshipType::SUBJ)->isEmpty()"/>
+        <details key="body" value="self.entryRelationship->select(er|er.typeCode &lt;> vocab::x_ActRelationshipEntryRelationship::SUBJ)->isEmpty()"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entryRelationship->select(er|er.typeCode &lt;> vocab::ActRelationshipType::SUBJ)->isEmpty()"/>
+        <details key="documentation" value="self.entryRelationship->select(er|er.typeCode &lt;> vocab::x_ActRelationshipEntryRelationship::SUBJ)->isEmpty()"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3964,10 +3964,10 @@
     </eAnnotations>
     <eOperations name="ProcedureEntryProcedureActivityProcedureMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.moodCode = vocab::ActMood::EVN or self.moodCode = vocab::ActMood::INT"/>
+        <details key="body" value="self.moodCode = vocab::x_DocumentProcedureMood::EVN or self.moodCode = vocab::x_DocumentProcedureMood::INT"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.moodCode = vocab::ActMood::EVN or self.moodCode = vocab::ActMood::INT"/>
+        <details key="documentation" value="self.moodCode = vocab::x_DocumentProcedureMood::EVN or self.moodCode = vocab::x_DocumentProcedureMood::INT"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4008,10 +4008,10 @@
     </eOperations>
     <eOperations name="ProcedureEntryProcedureActivityProcedurePriorityCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.moodCode = vocab::ActMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()"/>
+        <details key="body" value="self.moodCode = vocab::x_DocumentProcedureMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.moodCode = vocab::ActMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()"/>
+        <details key="documentation" value="self.moodCode = vocab::x_DocumentProcedureMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4031,10 +4031,10 @@
     <eOperations name="ProcedureEntryProcedureActivityProcedureHasInversionIndForEncounter"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entryRelationship->select(er | er.typeCode = vocab::ActRelationshipType::COMP and er.inversionInd &lt;> true)->isEmpty()"/>
+        <details key="body" value="self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.inversionInd &lt;> true)->isEmpty()"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.entryRelationship->select(er | er.typeCode = vocab::ActRelationshipType::COMP and er.inversionInd &lt;> true)->isEmpty()"/>
+        <details key="documentation" value="self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.inversionInd &lt;> true)->isEmpty()"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

@@ -42,45 +42,45 @@ import org.openhealthtools.mdht.uml.cda.operations.Participant1Operations;
  */
 public class PatientContactParticipantOperations extends Participant1Operations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PatientContactParticipantOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePatientContactParticipantTemplateId(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePatientContactParticipantTemplateId(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientContactParticipantTemplateId(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientContactParticipantTemplateId(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.2.4')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePatientContactParticipantTemplateId(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePatientContactParticipantTemplateId(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientContactParticipantTemplateId(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientContactParticipantTemplateId(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.2.4')
-	 * @param patientContactParticipant The receiving '<em><b>Patient Contact Participant</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.2.4')
+	* @param patientContactParticipant The receiving '<em><b>Patient Contact Participant</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validatePatientContactParticipantTemplateId(
 			PatientContactParticipant patientContactParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -108,36 +108,36 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePatientContactParticipantTime(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Time</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePatientContactParticipantTime(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Time</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientContactParticipantTime(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientContactParticipantTime(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.time.oclIsUndefined() or self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePatientContactParticipantTime(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Time</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePatientContactParticipantTime(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Time</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientContactParticipantTime(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientContactParticipantTime(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.time.oclIsUndefined() or self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())
-	 * @param patientContactParticipant The receiving '<em><b>Patient Contact Participant</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* (self.time.oclIsUndefined() or self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())
+	* @param patientContactParticipant The receiving '<em><b>Patient Contact Participant</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validatePatientContactParticipantTime(PatientContactParticipant patientContactParticipant,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -164,36 +164,36 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePatientContactParticipantTypeCode(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Type Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePatientContactParticipantTypeCode(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Type Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientContactParticipantTypeCode(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientContactParticipantTypeCode(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PATIENT_CONTACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.typeCode=vocab::ParticipationType::IND";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePatientContactParticipantTypeCode(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Type Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePatientContactParticipantTypeCode(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Participant Type Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePatientContactParticipantTypeCode(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePatientContactParticipantTypeCode(PatientContactParticipant, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PATIENT_CONTACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.typeCode=vocab::ParticipationType::IND
-	 * @param patientContactParticipant The receiving '<em><b>Patient Contact Participant</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* self.typeCode=vocab::ParticipationType::IND
+	* @param patientContactParticipant The receiving '<em><b>Patient Contact Participant</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validatePatientContactParticipantTypeCode(
 			PatientContactParticipant patientContactParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
