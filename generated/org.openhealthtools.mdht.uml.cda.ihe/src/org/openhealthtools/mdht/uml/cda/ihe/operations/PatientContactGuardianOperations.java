@@ -44,45 +44,45 @@ import org.openhealthtools.mdht.uml.cda.operations.GuardianOperations;
  */
 public class PatientContactGuardianOperations extends GuardianOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PatientContactGuardianOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientContactGuardianTemplateId(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientContactGuardianTemplateId(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientContactGuardianTemplateId(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientContactGuardianTemplateId(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_CONTACT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.2.4')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientContactGuardianTemplateId(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientContactGuardianTemplateId(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientContactGuardianTemplateId(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientContactGuardianTemplateId(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_CONTACT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.2.4')
-	* @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.2.4')
+	 * @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientContactGuardianTemplateId(PatientContactGuardian patientContactGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_CONTACT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -109,36 +109,36 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientContactGuardianAddr(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Addr</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientContactGuardianAddr(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Addr</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientContactGuardianAddr(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientContactGuardianAddr(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_CONTACT_GUARDIAN_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.addr->isEmpty() or self.addr->exists(element | element.isNullFlavorUndefined())) implies (not self.addr->isEmpty())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientContactGuardianAddr(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Addr</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientContactGuardianAddr(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Addr</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientContactGuardianAddr(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientContactGuardianAddr(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_CONTACT_GUARDIAN_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* (self.addr->isEmpty() or self.addr->exists(element | element.isNullFlavorUndefined())) implies (not self.addr->isEmpty())
-	* @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.addr->isEmpty() or self.addr->exists(element | element.isNullFlavorUndefined())) implies (not self.addr->isEmpty())
+	 * @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientContactGuardianAddr(PatientContactGuardian patientContactGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_CONTACT_GUARDIAN_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -164,36 +164,36 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientContactGuardianClassCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Class Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientContactGuardianClassCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientContactGuardianClassCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientContactGuardianClassCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_CONTACT_GUARDIAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.classCode.oclIsUndefined() and self.classCode=vocab::RoleClass::GUAR";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientContactGuardianClassCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientContactGuardianClassCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientContactGuardianClassCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientContactGuardianClassCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_CONTACT_GUARDIAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* not self.classCode.oclIsUndefined() and self.classCode=vocab::RoleClass::GUAR
-	* @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * not self.classCode.oclIsUndefined() and self.classCode=vocab::RoleClass::GUAR
+	 * @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientContactGuardianClassCode(PatientContactGuardian patientContactGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_CONTACT_GUARDIAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -220,40 +220,40 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientContactGuardianCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientContactGuardianCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientContactGuardianCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientContactGuardianCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_CONTACT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
 			+ "value.codeSystem = '2.16.840.1.113883.5.111'))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientContactGuardianCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientContactGuardianCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientContactGuardianCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientContactGuardianCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_CONTACT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and 
-	* let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	* value.codeSystem = '2.16.840.1.113883.5.111'))
-	* @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
+	 * value.codeSystem = '2.16.840.1.113883.5.111'))
+	 * @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientContactGuardianCode(PatientContactGuardian patientContactGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_CONTACT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -279,36 +279,36 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientContactGuardianTelecom(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Telecom</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientContactGuardianTelecom(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Telecom</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientContactGuardianTelecom(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientContactGuardianTelecom(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_CONTACT_GUARDIAN_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.telecom->isEmpty() or self.telecom->exists(element | element.isNullFlavorUndefined())) implies (not self.telecom->isEmpty())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientContactGuardianTelecom(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Telecom</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientContactGuardianTelecom(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Telecom</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientContactGuardianTelecom(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientContactGuardianTelecom(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_CONTACT_GUARDIAN_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* (self.telecom->isEmpty() or self.telecom->exists(element | element.isNullFlavorUndefined())) implies (not self.telecom->isEmpty())
-	* @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.telecom->isEmpty() or self.telecom->exists(element | element.isNullFlavorUndefined())) implies (not self.telecom->isEmpty())
+	 * @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientContactGuardianTelecom(PatientContactGuardian patientContactGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PATIENT_CONTACT_GUARDIAN_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {

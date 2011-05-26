@@ -30,29 +30,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CombinationMedicationImpl extends MedicationImpl implements CombinationMedication {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CombinationMedicationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.COMBINATION_MEDICATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCombinationMedicationSubstanceAdministration(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CombinationMedicationOperations.validateCombinationMedicationSubstanceAdministration(
@@ -60,19 +60,19 @@ public class CombinationMedicationImpl extends MedicationImpl implements Combina
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCombinationMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CombinationMedicationOperations.validateCombinationMedicationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public CombinationMedication init() {
 		CDAUtil.init(this);

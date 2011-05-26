@@ -33,47 +33,47 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PregnancyHistorySectionImpl extends SectionImpl implements PregnancyHistorySection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PregnancyHistorySectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.PREGNANCY_HISTORY_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePregnancyHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyHistorySectionOperations.validatePregnancyHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePregnancyHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyHistorySectionOperations.validatePregnancyHistorySectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePregnancyHistorySectionPregnancyObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PregnancyHistorySectionOperations.validatePregnancyHistorySectionPregnancyObservation(
@@ -81,19 +81,19 @@ public class PregnancyHistorySectionImpl extends SectionImpl implements Pregnanc
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<PregnancyObservation> getPregnancyObservations() {
 		return PregnancyHistorySectionOperations.getPregnancyObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PregnancyHistorySection init() {
 		CDAUtil.init(this);
 		return this;

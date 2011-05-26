@@ -31,29 +31,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class AdvanceDirectivesSectionImpl extends
 		org.openhealthtools.mdht.uml.cda.ccd.impl.AdvanceDirectivesSectionImpl implements AdvanceDirectivesSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdvanceDirectivesSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.ADVANCE_DIRECTIVES_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIHEAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionOperations.validateIHEAdvanceDirectivesSectionTemplateId(
@@ -61,10 +61,10 @@ public class AdvanceDirectivesSectionImpl extends
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public AdvanceDirectivesSection init() {
 		CDAUtil.init(this);
