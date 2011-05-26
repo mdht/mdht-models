@@ -46,7 +46,7 @@ source EMR system, the value of typeCode should be REFR.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@typeCode attribute value is either 'SPRT' (supporting documentation) or 'REFR' (reference material)</body>
-        <body>self.reference->select(r| r.typeCode &lt;> vocab::ActRelationshipType::REFR and r.typeCode &lt;> vocab::ActRelationshipType::SPRT)->size() = 0</body>
+        <body>self.reference->select(r| r.typeCode &lt;> vocab::x_ActRelationshipExternalReference::REFR and r.typeCode &lt;> vocab::x_ActRelationshipExternalReference::SPRT)->size() = 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_IB3PoFWJEeCJpM11UriAaA" name="hasReferenceExternalDocument">
@@ -54,7 +54,7 @@ source EMR system, the value of typeCode should be REFR.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>the reference element contains an externalDocument element with @classCode = 'DOC' and @moodCode = 'EVN'.</body>
-        <body>self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClass::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1</body>
+        <body>self.reference.externalDocument->select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_J9BUwFWJEeCJpM11UriAaA" name="hasReferenceExternalDocumentID">
