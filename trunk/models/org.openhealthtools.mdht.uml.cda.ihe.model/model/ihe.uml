@@ -51,7 +51,7 @@ of being concerned about a problem, allergy or other issue about the patient con
           <language>Analysis</language>
           <language>OCL</language>
           <body>This SHALL be represented using entryRelationship with typeCode = 'SUBJ'</body>
-          <body>self.entryRelationship->select(er|er.typeCode &lt;> vocab::ActRelationshipType::SUBJ)->isEmpty()</body>
+          <body>self.entryRelationship->select(er|er.typeCode &lt;> vocab::x_ActRelationshipEntryRelationship::SUBJ)->isEmpty()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_f7J1wCNREeCxCon8a79rfA" name="hasRelatedReferences" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
@@ -213,7 +213,7 @@ patient's current complaints.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>Value for moodCode is 'INT' to indicate a planned procedure or 'EVN' to describe a procedure that has already occured.</body>
-          <body>self.moodCode = vocab::ActMood::EVN or self.moodCode = vocab::ActMood::INT</body>
+          <body>self.moodCode = vocab::x_DocumentProcedureMood::EVN or self.moodCode = vocab::x_DocumentProcedureMood::INT</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_MWzTcBdrEeCf9aMNaCAtDQ" name="hasTextReference" constrainedElement="_6yfdEDuNEd-B8KE6Jx0UNQ">
@@ -235,7 +235,7 @@ patient's current complaints.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>&amp;lt;priorityCode> SHALL be present in INT mood when effectiveTime is not provided, it MAY be present in other moods</body>
-          <body>self.moodCode = vocab::ActMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()</body>
+          <body>self.moodCode = vocab::x_DocumentProcedureMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_m32FUFWJEeCJpM11UriAaA" name="hasInversionIndForEncounter">
@@ -243,7 +243,7 @@ patient's current complaints.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The entryRelationship/@inversionInd attribute is 'true' for the reference to encounter (typecode=COMP)</body>
-          <body>self.entryRelationship->select(er | er.typeCode = vocab::ActRelationshipType::COMP and er.inversionInd &lt;> true)->isEmpty()</body>
+          <body>self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.inversionInd &lt;> true)->isEmpty()</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_6yfdETuNEd-B8KE6Jx0UNQ">
