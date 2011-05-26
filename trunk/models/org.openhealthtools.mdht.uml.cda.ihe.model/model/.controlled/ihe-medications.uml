@@ -303,7 +303,7 @@ any special processing.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>Subordinate Medication entries should be created for each distinct dosage.</body>
-        <body>self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsTypeOf( ihe::Medication) )</body>
+        <body>self.entryRelationship.substanceAdministration->exists( substanceAdministration  | substanceAdministration.oclIsKindOf( ihe::Medication) )</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_OCqBQXyTEd6FS-4xbA1fBQ" general="_sFGZUHGfEd6bf47ZOcft4w"/>
