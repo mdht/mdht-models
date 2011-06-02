@@ -56,6 +56,15 @@ public class AlertsSectionImpl extends SectionImpl implements AlertsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAlertsSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AlertsSectionOperations.validateAlertsSectionTitleValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAlertsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AlertsSectionOperations.validateAlertsSectionTemplateId(this, diagnostics, context);
 	}
@@ -111,7 +120,7 @@ public class AlertsSectionImpl extends SectionImpl implements AlertsSection {
 	 * @generated
 	 */
 	public AlertsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AlertsSectionImpl

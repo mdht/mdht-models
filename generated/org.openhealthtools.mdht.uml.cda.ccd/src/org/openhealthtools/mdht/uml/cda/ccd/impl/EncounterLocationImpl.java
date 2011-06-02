@@ -54,6 +54,60 @@ public class EncounterLocationImpl extends Participant2Impl implements Encounter
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncounterLocationHasParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterLocationOperations.validateEncounterLocationHasParticipantRole(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterLocationHasParticipantRoleLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterLocationOperations.validateEncounterLocationHasParticipantRoleLocation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterLocationHasParticipantRoleCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterLocationOperations.validateEncounterLocationHasParticipantRoleCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterLocationOperations.validateEncounterLocationHasParticipantRoleCodeVocab(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterLocationHasPlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterLocationOperations.validateEncounterLocationHasPlayingEntity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterLocationHasPlayingEntityPlace(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterLocationOperations.validateEncounterLocationHasPlayingEntityPlace(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateEncounterLocationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterLocationOperations.validateEncounterLocationTemplateId(this, diagnostics, context);
 	}
@@ -73,7 +127,7 @@ public class EncounterLocationImpl extends Participant2Impl implements Encounter
 	 * @generated
 	 */
 	public EncounterLocation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // EncounterLocationImpl

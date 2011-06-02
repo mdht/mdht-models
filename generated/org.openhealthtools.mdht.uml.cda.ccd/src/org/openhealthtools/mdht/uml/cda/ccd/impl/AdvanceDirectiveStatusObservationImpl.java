@@ -56,8 +56,7 @@ public class AdvanceDirectiveStatusObservationImpl extends StatusObservationImpl
 	 */
 	@Override
 	public boolean validateStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveStatusObservationOperations.validateStatusObservationTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectiveStatusObservationOperations.validateStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class AdvanceDirectiveStatusObservationImpl extends StatusObservationImpl
 	 */
 	@Override
 	public AdvanceDirectiveStatusObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AdvanceDirectiveStatusObservationImpl

@@ -68,8 +68,7 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 */
 	public boolean validateProblemObservationContainsPatientAwareness(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationContainsPatientAwareness(
-			this, diagnostics, context);
+		return ProblemObservationOperations.validateProblemObservationContainsPatientAwareness(this, diagnostics, context);
 	}
 
 	/**
@@ -169,7 +168,7 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * @generated
 	 */
 	public ProblemObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProblemObservationImpl

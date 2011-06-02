@@ -89,15 +89,20 @@ public class CommentOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.COMMENT);
 			try {
 				VALIDATE_COMMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_COMMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(comment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.COMMENT__COMMENT_TEMPLATE_ID,
-					CCDPlugin.INSTANCE.getString("CommentTemplateId"), new Object[] { comment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CCDValidator.DIAGNOSTIC_SOURCE,
+						 CCDValidator.COMMENT__COMMENT_TEMPLATE_ID,
+						 CCDPlugin.INSTANCE.getString("CommentTemplateId"),
+						 new Object [] { comment }));
 			}
 			return false;
 		}
@@ -142,15 +147,20 @@ public class CommentOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.COMMENT);
 			try {
 				VALIDATE_COMMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_COMMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(comment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.COMMENT__COMMENT_CLASS_CODE,
-					CCDPlugin.INSTANCE.getString("CommentClassCode"), new Object[] { comment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CCDValidator.DIAGNOSTIC_SOURCE,
+						 CCDValidator.COMMENT__COMMENT_CLASS_CODE,
+						 CCDPlugin.INSTANCE.getString("CommentClassCode"),
+						 new Object [] { comment }));
 			}
 			return false;
 		}
@@ -195,15 +205,20 @@ public class CommentOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.COMMENT);
 			try {
 				VALIDATE_COMMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_COMMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(comment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.COMMENT__COMMENT_MOOD_CODE,
-					CCDPlugin.INSTANCE.getString("CommentMoodCode"), new Object[] { comment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CCDValidator.DIAGNOSTIC_SOURCE,
+						 CCDValidator.COMMENT__COMMENT_MOOD_CODE,
+						 CCDPlugin.INSTANCE.getString("CommentMoodCode"),
+						 new Object [] { comment }));
 			}
 			return false;
 		}
@@ -218,9 +233,9 @@ public class CommentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COMMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = '48767-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_COMMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
+"value.code = '48767-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCommentCode(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Code</em>}' invariant operation.
@@ -251,15 +266,20 @@ public class CommentOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.COMMENT);
 			try {
 				VALIDATE_COMMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_COMMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(comment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.COMMENT__COMMENT_CODE,
-					CCDPlugin.INSTANCE.getString("CommentCode"), new Object[] { comment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CCDValidator.DIAGNOSTIC_SOURCE,
+						 CCDValidator.COMMENT__COMMENT_CODE,
+						 CCDPlugin.INSTANCE.getString("CommentCode"),
+						 new Object [] { comment }));
 			}
 			return false;
 		}

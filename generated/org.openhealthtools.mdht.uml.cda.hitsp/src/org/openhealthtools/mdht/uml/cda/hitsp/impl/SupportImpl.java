@@ -52,7 +52,7 @@ public class SupportImpl extends PatientContactImpl implements Support {
 	 */
 	@Override
 	public Support init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // SupportImpl

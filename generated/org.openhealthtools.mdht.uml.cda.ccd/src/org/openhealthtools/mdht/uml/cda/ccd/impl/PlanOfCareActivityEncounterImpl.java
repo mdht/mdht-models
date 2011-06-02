@@ -56,8 +56,7 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 */
 	public boolean validatePlanOfCareActivityEncounterMoodCodeValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCodeValue(
-			this, diagnostics, context);
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCodeValue(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 */
 	public boolean validatePlanOfCareActivityEncounterTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterTemplateId(
-			this, diagnostics, context);
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +84,7 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(
-			this, diagnostics, context);
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -96,7 +93,7 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 * @generated
 	 */
 	public PlanOfCareActivityEncounter init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PlanOfCareActivityEncounterImpl

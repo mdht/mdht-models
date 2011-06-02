@@ -56,6 +56,15 @@ public class PurposeSectionImpl extends SectionImpl implements PurposeSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePurposeSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PurposeSectionOperations.validatePurposeSectionTitleValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePurposeSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeSectionOperations.validatePurposeSectionTemplateId(this, diagnostics, context);
 	}
@@ -111,7 +120,7 @@ public class PurposeSectionImpl extends SectionImpl implements PurposeSection {
 	 * @generated
 	 */
 	public PurposeSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PurposeSectionImpl

@@ -56,8 +56,7 @@ public class ReviewOfSystemsSectionImpl extends org.openhealthtools.mdht.uml.cda
 	 */
 	public boolean validateHITSPReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReviewOfSystemsSectionOperations.validateHITSPReviewOfSystemsSectionTemplateId(
-			this, diagnostics, context);
+		return ReviewOfSystemsSectionOperations.validateHITSPReviewOfSystemsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class ReviewOfSystemsSectionImpl extends org.openhealthtools.mdht.uml.cda
 	 */
 	@Override
 	public ReviewOfSystemsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ReviewOfSystemsSectionImpl

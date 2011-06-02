@@ -73,7 +73,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * @generated
 	 */
 	public FamilyHistoryOrganizer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // FamilyHistoryOrganizerImpl

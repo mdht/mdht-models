@@ -72,8 +72,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentServiceEventRequired(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventRequired(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventRequired(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +82,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentServiceEventClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventClassCode(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +92,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentServiceEventEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventEffectiveTime(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentServiceEventEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +102,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentNoTemplateIdExtension(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentNoTemplateIdExtension(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentNoTemplateIdExtension(this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +112,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentOneOrTwoRecordTarget(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentOneOrTwoRecordTarget(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentOneOrTwoRecordTarget(this, diagnostics, context);
 	}
 
 	/**
@@ -127,8 +122,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentHasAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasAssignedAuthor(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -138,8 +132,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(this, diagnostics, context);
 	}
 
 	/**
@@ -149,8 +142,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentHasInformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasInformationRecipient(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentHasInformationRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -177,8 +169,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocumentLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentLanguageCode(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentLanguageCode(this, diagnostics, context);
 	}
 
 	/**
@@ -188,8 +179,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentProblemSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentProblemSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentProblemSection(this, diagnostics, context);
 	}
 
 	/**
@@ -199,8 +189,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentFamilyHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentFamilyHistorySection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentFamilyHistorySection(this, diagnostics, context);
 	}
 
 	/**
@@ -210,8 +199,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentSocialHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentSocialHistorySection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentSocialHistorySection(this, diagnostics, context);
 	}
 
 	/**
@@ -221,8 +209,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentAlertsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAlertsSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAlertsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -232,8 +219,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentMedicationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentMedicationsSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentMedicationsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -243,8 +229,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentResultsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentResultsSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentResultsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -254,8 +239,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentProceduresSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentProceduresSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentProceduresSection(this, diagnostics, context);
 	}
 
 	/**
@@ -265,8 +249,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentEncountersSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentEncountersSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentEncountersSection(this, diagnostics, context);
 	}
 
 	/**
@@ -276,8 +259,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentPlanOfCareSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPlanOfCareSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPlanOfCareSection(this, diagnostics, context);
 	}
 
 	/**
@@ -287,8 +269,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentImmunizationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentImmunizationsSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentImmunizationsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -298,8 +279,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentVitalSignsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentVitalSignsSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentVitalSignsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -309,8 +289,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentMedicalEquipmentSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentMedicalEquipmentSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentMedicalEquipmentSection(this, diagnostics, context);
 	}
 
 	/**
@@ -320,8 +299,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentFunctionalStatusSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentFunctionalStatusSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentFunctionalStatusSection(this, diagnostics, context);
 	}
 
 	/**
@@ -331,8 +309,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentAdvanceDirectivesSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAdvanceDirectivesSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAdvanceDirectivesSection(this, diagnostics, context);
 	}
 
 	/**
@@ -342,8 +319,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentPayersSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPayersSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPayersSection(this, diagnostics, context);
 	}
 
 	/**
@@ -353,8 +329,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateContinuityOfCareDocumentPurposeSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPurposeSection(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPurposeSection(this, diagnostics, context);
 	}
 
 	/**
@@ -507,7 +482,7 @@ public class ContinuityOfCareDocumentImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	public ContinuityOfCareDocument init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ContinuityOfCareDocumentImpl

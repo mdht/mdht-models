@@ -85,8 +85,7 @@ public class AdvanceDirectivesSectionImpl extends SectionImpl implements Advance
 	 */
 	public boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -104,7 +103,7 @@ public class AdvanceDirectivesSectionImpl extends SectionImpl implements Advance
 	 * @generated
 	 */
 	public AdvanceDirectivesSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AdvanceDirectivesSectionImpl

@@ -54,6 +54,15 @@ public class ProceduresSectionImpl extends SectionImpl implements ProceduresSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProceduresSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionTitleValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProceduresSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionTemplateId(this, diagnostics, context);
 	}
@@ -91,7 +100,7 @@ public class ProceduresSectionImpl extends SectionImpl implements ProceduresSect
 	 * @generated
 	 */
 	public ProceduresSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProceduresSectionImpl

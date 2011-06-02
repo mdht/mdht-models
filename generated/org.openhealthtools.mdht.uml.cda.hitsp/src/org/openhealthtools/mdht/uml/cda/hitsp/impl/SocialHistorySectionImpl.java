@@ -65,7 +65,7 @@ public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.i
 	 */
 	@Override
 	public SocialHistorySection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // SocialHistorySectionImpl

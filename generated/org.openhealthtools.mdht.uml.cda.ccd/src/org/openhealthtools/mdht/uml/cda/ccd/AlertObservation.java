@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getAlertObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.1.18' constraints.validation.error='AlertObservationTemplateId AlertObservationInformationSource AlertObservationPlayingEntityRequired AlertObservationPlayingEntityClassCode AlertObservationMoodCode AlertObservationStatusCode' constraints.validation.warning='AlertObservationAgentRepresentation' constraints.validation.info='AlertObservationEffectiveTime AlertObservationAlertStatusObservation AlertObservationReactionObservation' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.1.18' constraints.validation.error='AlertObservationTemplateId AlertObservationInformationSource AlertObservationPlayingEntityRequired AlertObservationAgentRepresentationVocab AlertObservationParticipantRoleClassCode AlertObservationPlayingEntityClassCode AlertObservationPlayingEntityCode AlertObservationMoodCode AlertObservationStatusCode' constraints.validation.warning='AlertObservationAgentRepresentation AlertObservationPlayingEntityCodeVocab' constraints.validation.info='AlertObservationEffectiveTime AlertObservationAlertStatusObservation AlertObservationReactionObservation' moodCode='EVN'"
  * @generated
  */
 public interface AlertObservation extends Observation {
@@ -63,15 +63,42 @@ public interface AlertObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant.participantRole.playingEntity->one(entity : cda::PlayingEntity |
-	 *   entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())
+	 * self.participant.participantRole.playingEntity->size() > 0
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->one(entity : cda::PlayingEntity |\r\n  entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->size() > 0'"
 	 * @generated
 	 */
 	boolean validateAlertObservationPlayingEntityRequired(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.participant->one(entity : cda::Participant2 |
+	 *   entity.typeCode = 'CSM')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(entity : cda::Participant2 |\r\n  entity.typeCode = \'CSM\')'"
+	 * @generated
+	 */
+	boolean validateAlertObservationAgentRepresentationVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.participant.participantRole->one(entity : cda::ParticipantRole |
+	 *   entity.classCode = 'MANU')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole->one(entity : cda::ParticipantRole |\r\n  entity.classCode = \'MANU\')'"
+	 * @generated
+	 */
+	boolean validateAlertObservationParticipantRoleClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,6 +113,32 @@ public interface AlertObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateAlertObservationPlayingEntityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.participant.participantRole.playingEntity->one(entity : cda::PlayingEntity |  not entity.code.oclIsUndefined())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->one(entity : cda::PlayingEntity |  not entity.code.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateAlertObservationPlayingEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.participant.participantRole.playingEntity->one(entity : cda::PlayingEntity | not entity.code.oclIsUndefined() and (entity.code.codeSystem='2.16.840.1.113883.6.88' xor entity.code.codeSystem='2.16.840.1.113883.6.59'))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->one(entity : cda::PlayingEntity | not entity.code.oclIsUndefined() and (entity.code.codeSystem=\'2.16.840.1.113883.6.88\' xor entity.code.codeSystem=\'2.16.840.1.113883.6.59\'))'"
+	 * @generated
+	 */
+	boolean validateAlertObservationPlayingEntityCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

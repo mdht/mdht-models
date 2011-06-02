@@ -147,7 +147,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * @generated
 	 */
 	public CoverageActivity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // CoverageActivityImpl

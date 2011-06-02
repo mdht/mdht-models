@@ -51,7 +51,7 @@ public abstract class ProcedureActivityImpl extends ClinicalStatementImpl implem
 	 * @generated
 	 */
 	public ProcedureActivity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureActivityImpl

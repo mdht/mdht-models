@@ -57,8 +57,7 @@ public class MedicationsAdministeredSectionImpl extends
 	 */
 	public boolean validateHITSPMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateHITSPMedicationsAdministeredSectionTemplateId(
-			this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateHITSPMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +67,7 @@ public class MedicationsAdministeredSectionImpl extends
 	 */
 	@Override
 	public MedicationsAdministeredSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationsAdministeredSectionImpl

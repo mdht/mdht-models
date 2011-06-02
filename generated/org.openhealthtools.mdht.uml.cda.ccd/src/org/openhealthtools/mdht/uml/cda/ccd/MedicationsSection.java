@@ -34,7 +34,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getMedicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.1.8' code.displayName='History of medication use' constraints.validation.error='MedicationsSectionTemplateId MedicationsSectionCode MedicationsSectionTitle MedicationsSectionText' code.codeSystemName='LOINC' constraints.validation.warning='MedicationsSectionHasMedicationOrSupplyActivity MedicationsSectionMedicationActivity MedicationsSectionSupplyActivity' code.code='10160-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.1.8' code.displayName='History of medication use' constraints.validation.error='MedicationsSectionTemplateId MedicationsSectionCode MedicationsSectionTitle MedicationsSectionText' code.codeSystemName='LOINC' constraints.validation.warning='MedicationsSectionHasMedicationOrSupplyActivity MedicationsSectionTitleValue MedicationsSectionMedicationActivity MedicationsSectionSupplyActivity' code.code='10160-0'"
  * @generated
  */
 public interface MedicationsSection extends Section {
@@ -52,6 +52,19 @@ public interface MedicationsSection extends Section {
 	 */
 	boolean validateMedicationsSectionHasMedicationOrSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.title = 'medication'
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.title = \'medication\''"
+	 * @generated
+	 */
+	boolean validateMedicationsSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -91,7 +91,7 @@ public class PatientAwarenessImpl extends Participant2Impl implements PatientAwa
 	 * @generated
 	 */
 	public PatientAwareness init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PatientAwarenessImpl

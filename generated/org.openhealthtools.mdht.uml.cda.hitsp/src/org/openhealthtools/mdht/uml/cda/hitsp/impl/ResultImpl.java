@@ -82,6 +82,24 @@ public class ResultImpl extends ResultObservationImpl implements Result {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultTypeCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOperations.validateResultTypeCodeSystem(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultLaboratoryResultsValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOperations.validateResultLaboratoryResultsValueSet(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateResultValuePresence(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOperations.validateResultValuePresence(this, diagnostics, context);
 	}
@@ -129,7 +147,7 @@ public class ResultImpl extends ResultObservationImpl implements Result {
 	 */
 	@Override
 	public Result init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ResultImpl
