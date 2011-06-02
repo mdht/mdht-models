@@ -29,7 +29,9 @@
       <constrainedElement xmi:type="uml:Property" href="ccd-problem.uml#_S9W4sIHNEd6Ncrr6L3Ublw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_BoaqAeebEd-aaJELhEID-A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Valued with a case-insensitive language-insensitive string containing 'medication'.</body>
+        <body>self.title = 'medication'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_rdDU0HfUEd6ZeOKq_2_a9g">
@@ -392,7 +394,9 @@
     <ownedRule xmi:id="_s4BRcCp7EeCuGIaOlnUvyw" name="hasMaterialCodeVocab" constrainedElement="_8Xj7UIiBEd66cKocspyVOg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_V68X0C2TEeCrtaini_hOYQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value for &quot;manufacturedMaterial / code&quot; in a product template SHOULD be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017.</body>
+        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.59' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.1.11.20.8'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_zmIIMCp7EeCuGIaOlnUvyw" name="mayHavePrecoordinatedCode" constrainedElement="_8Xj7UIiBEd66cKocspyVOg">
@@ -432,13 +436,17 @@
     <ownedRule xmi:id="_HyK-8D6tEeCAHY6aowfd8Q" name="mayHaveMaterialManufacturer" constrainedElement="_8Xj7UIiBEd66cKocspyVOg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q-Y24D6tEeCAHY6aowfd8Q">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>contains exactly one manufacturedProduct / manufacturerOrganization, which represents the manufacturer of the Material.</body>
+        <body>self.manufacturerOrganization->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_T-9E4D6tEeCAHY6aowfd8Q" name="shouldHaveMaterialManufacturer" constrainedElement="_8Xj7UIiBEd66cKocspyVOg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_xDWoMD6tEeCAHY6aowfd8Q">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>If ManufacturedProduct in a product template contains manufacturedProduct / id, then ManufacturedProduct SHOULD also contain manufacturedProduct / manufacturerOrganization.</body>
+        <body>self.id->size() > 0 implies self.manufacturerOrganization->size() > 0</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_zWedQIjtEd66cKocspyVOg">
@@ -527,7 +535,9 @@
     <ownedRule xmi:id="_pekmwEqjEeCJlNjgFmcEiA" name="hasScopingEntity" constrainedElement="_JpjIEMMVEd6-XpBv2uxYrQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_syhDwEqjEeCJlNjgFmcEiA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>If participantRole in a product instance contains participantRole / id, then participantRole SHOULD also contain participantRole / scopingEntity.</body>
+        <body>self.id->size() > 0 implies self.scopingEntity->size() > 0</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_L831kMMVEd6-XpBv2uxYrQ">

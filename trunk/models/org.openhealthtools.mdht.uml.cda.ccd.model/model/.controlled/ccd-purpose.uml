@@ -14,7 +14,9 @@
     <ownedRule xmi:id="_gTPjUBg8Ed-PS-Y_2ABBMQ" name="titleValue" constrainedElement="_f0mKEKRtEd6t_4WfM070fA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_iZKG8Bg8Ed-PS-Y_2ABBMQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing 'purpose'.</body>
+        <body>self.title = 'purpose'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_mrDrkKRtEd6t_4WfM070fA">
