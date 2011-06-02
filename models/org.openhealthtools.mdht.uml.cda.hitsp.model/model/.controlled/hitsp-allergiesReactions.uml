@@ -21,7 +21,9 @@ patient</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_KPuloFgLEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the observation/effectiveTime element is present to record event date</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.effectiveTime.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ET5gYFgLEeCQ8PeHNHg5Pw" name="advereEventType" constrainedElement="_-2bLEFgKEeCQ8PeHNHg5Pw">
@@ -37,55 +39,71 @@ detail is not known</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_OoUWgFgLEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the observation/code element shall be present to record the adverse event type</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.code.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_WLsBUFgLEeCQ8PeHNHg5Pw" name="advereEventTypeVocab" constrainedElement="_ET5gYFgLEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_hL2jIFgLEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the code/@code attribute value is from Allergy/Adverse Event Type Value Set, 2.16.840.1.113883.3.88.12.3221.6.2, version: 20081218, Static</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.2')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_SSDPkFgGEeCQ8PeHNHg5Pw" name="allergyProduct">
       <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_GgvgUDxbEd6JwqSGecoePg"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_SSDPklgGEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
-        <body>the observation/participant element may be present</body>
+        <language>OCL</language>
+        <body>the observation/participant element SHOULD be present</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_UXaZkFgGEeCQ8PeHNHg5Pw" name="allergyProductTypeCode">
       <constrainedElement xmi:type="uml:Constraint" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-allergiesReactions.uml#_yFyY4FgEEeCQ8PeHNHg5Pw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_UXaZkVgGEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the participant/@typecode attribute shall be 'CSM'</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = 'CSM'))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_V-aMkFgGEeCQ8PeHNHg5Pw" name="productDetailParticipantRole">
       <constrainedElement xmi:type="uml:Constraint" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-allergiesReactions.uml#_vzvfwFfuEeCQ8PeHNHg5Pw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_V-aMkVgGEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the participant/participantRole element may be present</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tJTl4FgGEeCQ8PeHNHg5Pw" name="productDetailParticipantRoleClassCode">
       <constrainedElement xmi:type="uml:Constraint" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-allergiesReactions.uml#_yFyY4FgEEeCQ8PeHNHg5Pw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_tJTl4VgGEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the participant/participantRole/@classcode attribute shall be 'MANU'</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode='MANU'))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_us4RcFgGEeCQ8PeHNHg5Pw" name="productDetailPlayingEntity">
       <constrainedElement xmi:type="uml:Constraint" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-allergiesReactions.uml#_yFyY4FgEEeCQ8PeHNHg5Pw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_us4RcVgGEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The participant/participantRole/PlayingEntity element may be present</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_wMseYFgGEeCQ8PeHNHg5Pw" name="productDetailPlayingEntityClassCode">
       <constrainedElement xmi:type="uml:Constraint" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-allergiesReactions.uml#_yFyY4FgEEeCQ8PeHNHg5Pw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wMseYVgGEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' )))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ct19MFf_EeCQ8PeHNHg5Pw" name="productDetailName" constrainedElement="_vB4EUGEIEd6bFO5yxRh3Nw">
@@ -95,7 +113,9 @@ agent that causes the intolerance</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_6OjpEFf_EeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the participant/participantRole/playingEntity/name element is present</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.name->size() = 1)))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hEbi8Ff_EeCQ8PeHNHg5Pw" name="productCode" constrainedElement="_ct19MFf_EeCQ8PeHNHg5Pw">
@@ -104,25 +124,33 @@ agent that causes the intolerance</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_-8KxQFgLEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>participant/participantRole/playingEntity/code element is present</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies( par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1)))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_r6TC0FgLEeCQ8PeHNHg5Pw" name="allergyProductFoodVocab" constrainedElement="_SSDPkFgGEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_4ilZAFgLEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>For participant/participantRole/playingEntity/code element, Food and substance allergies SHALL be coded as Ingredient Name Value Set, 2.16.840.1.113883.3.88.12.80.20, Dynamic</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_td0rEFgLEeCQ8PeHNHg5Pw" name="allergyProductMedClassVocab" constrainedElement="_SSDPkFgGEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_l8Tk8FgMEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>For participant/participantRole/playingEntity/code element, Allergies to a class of medication SHALL be coded as Medication Drug Class Value Set, 2.16.840.1.113883.3.88.12.80.17, version: 20081218, Dynamic</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_vuu9wFgLEeCQ8PeHNHg5Pw" name="allergyProductSpecificMedVocab" constrainedElement="_SSDPkFgGEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_olAskFgMEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>For participant/participantRole/playingEntity/code element, Allergies to a specific medication SHALL be coded with Medication Brand Name Value Set, 2.16.840.1.113883.3.88.12.80.16, version: 20081218, Dynamic</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_BD2hYFgKEeCQ8PeHNHg5Pw" name="reactionText" constrainedElement="_hEbi8Ff_EeCQ8PeHNHg5Pw">
@@ -132,7 +160,9 @@ or agent</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_NISjoFgKEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the text element is present in the Reaction Observation entry</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.text.oclIsUndefined()))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_DLF6sFgKEeCQ8PeHNHg5Pw" name="reactionCode" constrainedElement="_BD2hYFgKEeCQ8PeHNHg5Pw">
@@ -141,13 +171,17 @@ or agent</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_yoBpoFgMEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the code element is present in the Reaction Observation entry</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.code.oclIsUndefined()))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_siiSEFgMEeCQ8PeHNHg5Pw" name="reactionCodeVocab" constrainedElement="_DLF6sFgKEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_i3sH8FgNEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the code element is coded as Problem Value Set, 2.16.840.1.113883.3.88.12.3221.7.4, version: 20100125, Dynamic</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4'))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Ep2-wFgKEeCQ8PeHNHg5Pw" name="severityText" constrainedElement="_DLF6sFgKEeCQ8PeHNHg5Pw">
@@ -157,7 +191,9 @@ allergy or intolerance</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_RgujgFgKEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The text element is present in the Severity Observation template</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.text.oclIsUndefined()))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_HfqHMFgKEeCQ8PeHNHg5Pw" name="severityCode" constrainedElement="_Ep2-wFgKEeCQ8PeHNHg5Pw">
@@ -167,13 +203,17 @@ the allergy or intolerance</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_0cq3EFgMEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the code element is present in the Severity Observation entry</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.code.oclIsUndefined()))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tXWaMFgMEeCQ8PeHNHg5Pw" name="severityCodeVocab" constrainedElement="_HfqHMFgKEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_snywEFgNEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the code element is coded as Problem Severity Value Set, 2.16.840.1.113883.3.88.12.3221.6.8, version: 20081218, Static</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.8'))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_hsBnwHrWEd68l9lQ-TLEBQ">

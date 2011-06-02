@@ -4,7 +4,9 @@
     <ownedRule xmi:id="_K0E2MOxaEd-JOaR14t7EwQ" name="medicationStopped" constrainedElement="_IjIO0DxbEd6JwqSGecoePg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_N9hTYOxaEd-JOaR14t7EwQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The time at which the medication was stopped is determined based on the content of the &amp;lt;high> element of the first &amp;lt;effectiveTime> element.</body>
+        <body>self.effectiveTime.high->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_R_IusOxaEd-JOaR14t7EwQ" name="administrativeTiming" constrainedElement="_IjIO0DxbEd6JwqSGecoePg">
@@ -22,7 +24,9 @@ Meals, Before Bed) or an exact time</body>
     <ownedRule xmi:id="_frFhUOxaEd-JOaR14t7EwQ" name="firstEffectiveTimeDatatype" constrainedElement="_IjIO0DxbEd6JwqSGecoePg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_nSbtMOxaEd-JOaR14t7EwQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The first &amp;lt;effectiveTime> SHALL use the IVL_TS data type unless for a single administration, in which case, it SHALL use the TS data type.</body>
+        <body>self.effectiveTime->exists (ef : datatypes::SXCM_TS | not ef.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_qtehkBaoEeCf9aMNaCAtDQ" name="dailyLivingActivities" constrainedElement="_IjIO0DxbEd6JwqSGecoePg">
@@ -63,7 +67,9 @@ implications (e.g., every 8 hours versus 3 times a day)</body>
     <ownedRule xmi:id="_QG0qUEwiEeCN6rMvTBre1A" name="doseUnits" constrainedElement="_r7w5oBaoEeCf9aMNaCAtDQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_nfwfoEwiEeCN6rMvTBre1A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>doseQuantity/@unit, Dose Units MAY be present when needed. If present it SHALL be coded as 2.16.840.1.113883.3.88.12.80.29 Unit of Measure</body>
+        <body>self.doseQuantity->exists(dq : datatypes::IVL_PQ | dq.unit='2.16.840.1.113883.3.88.12.80.29')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_xV1-gEwjEeCN6rMvTBre1A" name="medicationStrengthUnit" constrainedElement="_QG0qUEwiEeCN6rMvTBre1A">
@@ -75,13 +81,17 @@ implications (e.g., every 8 hours versus 3 times a day)</body>
     <ownedRule xmi:id="_Khe4cE5REeC-IOl-lQ-2xA" name="deliveryMethodDescription">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_OejK8E5REeC-IOl-lQ-2xA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The free text description of the delivery method MAY be included within a &lt;originalText> element beneath the &lt;code> element</body>
+        <body>not self.code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_WCCmAE5bEeC-IOl-lQ-2xA" name="hasMedicationInformation" constrainedElement="_IjIO0DxbEd6JwqSGecoePg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_gV_iEE5bEeC-IOl-lQ-2xA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Contains one consumable element which contains the Medication Information template. The name and code for the medication are recorded in the &lt;consumable> element.</body>
+        <body>self.consumable.manufacturedProduct->exists(mp : cda::ManufacturedProduct | mp.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8.2'))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_8zg4gE6QEeC7C4Qxze6ysQ" name="hasStatusOfMedication" constrainedElement="_WCCmAE5bEeC-IOl-lQ-2xA">
@@ -91,7 +101,9 @@ Acute, etc</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Muxl4E6SEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The medication status MAY be recorded using the CCD Medication Status observation using the value set defined in the CCD</body>
+        <body>self.hasObservationTemplate('2.16.840.1.113883.10.20.1.47')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_jMwZYE6TEeC7C4Qxze6ysQ" name="hasIndication" constrainedElement="_8zg4gE6QEeC7C4Qxze6ysQ">
@@ -103,19 +115,25 @@ pressure</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_o1rwwE6TEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>[0..*] indications SHALL be recorded using the Indication problem observation (templateID 2.16.840.1.113883.10.20.1.28) described in the CCD Implementation Guide.</body>
+        <body>self.hasObservationTemplate('2.16.840.1.113883.10.20.1.28')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_wST6YE6TEeC7C4Qxze6ysQ" name="hasIndicationNarrativeText" constrainedElement="_jMwZYE6TEeC7C4Qxze6ysQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_1SBVoE6TEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The indication problem observation SHALL contain a &lt;text> element that includes a &lt;reference> element whose value attribute points to the narrative text that is the indication for the medication</body>
+        <body>self.getObservations()->exists(po : cda::Observation | po.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.28') and not po.text.reference.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_3tCmkE6TEeC7C4Qxze6ysQ" name="hasIndicationVocab" constrainedElement="_jMwZYE6TEeC7C4Qxze6ysQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_G9TroE6UEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The indication SHALL be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic</body>
+        <body>self.getObservations()->exists(po : cda::Observation | po.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.28') and po.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_xDmX8E6UEeC7C4Qxze6ysQ" name="hasPatientInstructions" constrainedElement="_3tCmkE6TEeC7C4Qxze6ysQ">
@@ -132,7 +150,9 @@ External patient educational materials can be referenced with an appropriate URL
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_G-uygE6VEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Patient Instructions SHALL be recorded using the Patient Medication Instructions template (templateID 1.3.6.1.4.1.19376.1.5.3.1.4.3)</body>
+        <body>self.hasActTemplate('1.3.6.1.4.1.19376.1.5.3.1.4.3')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_XYIX8E6XEeC7C4Qxze6ysQ" name="hasMedicationVehicle" constrainedElement="_xDmX8E6UEeC7C4Qxze6ysQ">
@@ -147,43 +167,57 @@ Aquaphor is the vehicle in &quot;10% LCD in Aquaphor&quot;</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_PSAv8E6YEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The vehicle for administering a medication MAY be recorded in a &lt;participantRole> element inside a &lt;participant> element in the &lt;substanceAdministration> element</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant.participantRole->size() > 0)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_S3awYE6YEeC7C4Qxze6ysQ" name="medicationVehicleType" constrainedElement="_XYIX8E6XEeC7C4Qxze6ysQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_UXO9UE6YEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The typeCode attribute of the &lt;participant> element SHALL be CSM</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = 'CSM'))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_YpO-AE6YEeC7C4Qxze6ysQ" name="medicationVehicleClass" constrainedElement="_S3awYE6YEeC7C4Qxze6ysQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_dLMGQE6YEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The classCode of the &lt;participantRole> SHALL be MANU</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = 'MANU')))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_scyoEE6YEeC7C4Qxze6ysQ" name="medicationVehicleCode" constrainedElement="_YpO-AE6YEeC7C4Qxze6ysQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ubQf4E6YEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A &lt;code> element for the &lt;participantRole> SHALL be present and SHALL contain the code 412307009 from the SNOMED CT code system</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96')))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_zk7vcE6YEeC7C4Qxze6ysQ" name="medicationVehicleName" constrainedElement="_scyoEE6YEeC7C4Qxze6ysQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_6FWvgE6YEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The &lt;name> element in the &lt;playingEntity> element SHALL record the name of the drug vehicle</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.name->size() > 0)))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="__E7A0E6YEeC7C4Qxze6ysQ" name="medicationVehicleCodedName" constrainedElement="_zk7vcE6YEeC7C4Qxze6ysQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_A8FWwE6ZEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The &lt;code> element in the &lt;playingEntity> element MAY be used to supply a coded term for the drug vehicle</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code->size() > 0)))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ELLI8E6ZEeC7C4Qxze6ysQ" name="medicationVehicleCodedNameVocab" constrainedElement="__E7A0E6YEeC7C4Qxze6ysQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_v5rJME6ZEeC7C4Qxze6ysQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code->size() > 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.3.88.12.80.21')))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_w0bkkHrGEd68l9lQ-TLEBQ">
@@ -205,7 +239,7 @@ Aquaphor is the vehicle in &quot;10% LCD in Aquaphor&quot;</body>
       <ownedComment xmi:id="_hTSAcOxVEd-JOaR14t7EwQ">
         <body>Duration: for non-instantaneous administrations, indicates the length of time the administration should be continued. For example, (infuse) over 30 minutes.</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s3OC4exDEd-HcKrkbxroPA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s3OC4uxDEd-HcKrkbxroPA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_u37zEErsEd6FXKclYGEDCw"/>
@@ -421,7 +455,9 @@ vocabulary</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_f6eOQE5cEeC-IOl-lQ-2xA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The coded product name SHALL appear in the @code attribute of the manufacturedMaterial/code element.</body>
+        <body>not self.manufacturedMaterial.code.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_jXRFQE5cEeC-IOl-lQ-2xA" name="genericProductCodeUnknown" constrainedElement="_cGx6ME5cEeC-IOl-lQ-2xA">
@@ -433,19 +469,25 @@ vocabulary</body>
     <ownedRule xmi:id="_xys0EE5cEeC-IOl-lQ-2xA" name="codedProductVocab" constrainedElement="_jXRFQE5cEeC-IOl-lQ-2xA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="__p2xIE5cEeC-IOl-lQ-2xA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The coded product name SHALL be coded as 2.16.840.1.113883.3.88.12.80.17, Medication Clinical Drug Name Value Set, version: 20081218, Dynamic</body>
+        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_09MaIE5cEeC-IOl-lQ-2xA" name="codedDrugClassVocab" constrainedElement="_xys0EE5cEeC-IOl-lQ-2xA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_SMx5wE5dEeC-IOl-lQ-2xA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>When only the class of the drug is known (e.g., Beta Blocker or Sulfa Drug), it SHALL be coded as 2.16.840.1.113883.3.88.12.80.18, Medication Drug Class Value Set, version: 20081218, Dynamic</body>
+        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.18'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2aeQcE5cEeC-IOl-lQ-2xA" name="codedIngredientVocab" constrainedElement="_09MaIE5cEeC-IOl-lQ-2xA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_pCBzME5dEeC-IOl-lQ-2xA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>When only the medication ingredient name is know, the coded product name MAY be coded as 2.16.840.1.113883.3.88.12.80.20, Ingredient Name Value Set, Dynamic</body>
+        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2bejwE5hEeC-IOl-lQ-2xA" name="codedBrandName" constrainedElement="_2aeQcE5cEeC-IOl-lQ-2xA">
@@ -455,13 +497,17 @@ trademarked entity from a controlled vocabulary</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_OQlXsE5iEeC-IOl-lQ-2xA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The code for the specific brand of product SHALL appear in a manufacturedMaterial/translation element</body>
+        <body>self.manufacturedMaterial.code.translation->size() > 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_PKv54E5iEeC-IOl-lQ-2xA" name="codedBrandNameVocab" constrainedElement="_2bejwE5hEeC-IOl-lQ-2xA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_TBuLcE5iEeC-IOl-lQ-2xA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The brand name SHALL be coded as 2.16.840.1.113883.3.88.12.80.16, Medication Brand Name Value Set, version: 20081218, Dynamic, OR SHALL be coded as  2.16.840.1.113883.3.88.12.80.19, Medication Packaged Product Value Set, Dynamic</body>
+        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_FNdecE5vEeC-IOl-lQ-2xA" name="freeTextProductName" constrainedElement="_PKv54E5iEeC-IOl-lQ-2xA">
@@ -474,7 +520,9 @@ concept</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_KwoMEE5vEeC-IOl-lQ-2xA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The product (generic) name SHALL appear in the originalText element beneath the manufacturedMaterial/code element</body>
+        <body>not self.manufacturedMaterial.code.originalText.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_RuyRAE5vEeC-IOl-lQ-2xA" name="freeTextBrandName" constrainedElement="_FNdecE5vEeC-IOl-lQ-2xA">
@@ -485,7 +533,9 @@ the text associated with the coded concept</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_WW0MEE5vEeC-IOl-lQ-2xA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The brand name SHALL appear in the &lt;name> element of the &lt;manufacturedMaterial> element</body>
+        <body>not self.manufacturedMaterial.name.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_ZxMHYE5SEeC-IOl-lQ-2xA">
@@ -606,7 +656,9 @@ number')</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_s2NdUE9LEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The order number, i.e., the identifier from the perspective of the ordering provider, SHOULD be recorded in the id element within the supply element with moodcode = 'INT'</body>
+        <body>self.moodCode = 'INT' implies self.id->size() > 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_wxphsE9XEeCYjrG3z1gQrQ" name="orderExpiration" constrainedElement="_ntSbsE9LEeCYjrG3z1gQrQ">
@@ -617,7 +669,9 @@ not continued past this date for an order instance</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_9u2_AE9XEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The effectiveTime/high element is present to record the order expiration date and time when supply/@moodcode = INT</body>
+        <body>self.moodCode = 'INT' implies not self.effectiveTime.high.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_vCrU4E9LEeCYjrG3z1gQrQ" name="quantityOrdered" constrainedElement="_gZ5JkE8qEeCYjrG3z1gQrQ">
@@ -630,13 +684,17 @@ measure</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_x1mvgE9LEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The quantity ordered SHALL be recorded in the value attribute of quantity element inside a supply element used to record order information</body>
+        <body>not self.quantity.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_gZ5JkE8qEeCYjrG3z1gQrQ" name="quantityUnit">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_jxmFME8qEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the @unit attribute of quantity element is present</body>
+        <body>not self.quantity.unit.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_qU5aIE8qEeCYjrG3z1gQrQ" name="quantityNotAdminUnits" constrainedElement="_gZ5JkE8qEeCYjrG3z1gQrQ">
@@ -658,7 +716,9 @@ identifier assigned by the pharmacy</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_HTNS0E9HEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The prescription number SHALL be recorded in the extension attribute of the &lt;id> element within a supply element having a moodCode attribute of EVN</body>
+        <body>self.moodCode = 'EVN' implies self.id.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="__k3HEE9GEeCYjrG3z1gQrQ" name="assigningAuthority" constrainedElement="_w2-9YE9GEeCYjrG3z1gQrQ">
@@ -667,7 +727,9 @@ identifier assigned by the pharmacy</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_TKxWsE9HEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The root attribute of the id element SHOULD be the OID of the assigning authority for the identifier.</body>
+        <body>not self.id.root.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_UqHCgE9HEeCYjrG3z1gQrQ" name="assigningAuthorityGUID" constrainedElement="__k3HEE9GEeCYjrG3z1gQrQ">
@@ -683,13 +745,17 @@ dispense</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_gSA3wE9dEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The dispense date is recorded in effectiveTime element within a supply element with a moodCode attribute set to EVN</body>
+        <body>self.moodCode = 'EVN' implies not self.effectiveTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_7apEME9YEeCYjrG3z1gQrQ" name="dispensingPharmacyLocation" constrainedElement="_j9XicE9NEeCYjrG3z1gQrQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_CF-60E9ZEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The dispensing pharmacy's location is present in the addr element in performer/assignEntity element inside a supply element with a moodCode attribute set to EVN</body>
+        <body>self.moodCode = 'EVN' implies not self.performer.assignEntity.addr.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_j9XicE9NEeCYjrG3z1gQrQ" name="dispensingPharmacyLocationState" constrainedElement="_uz6LAE9JEeCYjrG3z1gQrQ">
@@ -719,7 +785,9 @@ measure</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ENv2YE9KEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The quantity dispensed SHALL be recorded in the value attribute of quantity element inside a supply element with a moodCode attribute set to EVN</body>
+        <body>self.moodCode = 'EVN' implies not self.quantity.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_xwwKEE9eEeCYjrG3z1gQrQ" name="hasFillNumber" constrainedElement="_uz6LAE9JEeCYjrG3z1gQrQ">
@@ -729,7 +797,9 @@ history entry. The fill number identifies the supply (dispense) event as a disti
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_zshTME9eEeCYjrG3z1gQrQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The fill number SHOULD be recorded in the sequenceNumber attribute of a entryRelationship element with a typeCode attribute set to COMP</body>
+        <body>self.entryRelationship.typeCode = 'COMP' implies not self.entryRelationship.sequenceNumber.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_vMkQgE8mEeCYjrG3z1gQrQ">

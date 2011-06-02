@@ -29,7 +29,9 @@
       <ownedRule xmi:id="_mYOrQEyXEd-GNbUQBie2ig" name="healthcareProvider" constrainedElement="_wDMM0GEHEd6bFO5yxRh3Nw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_uUy5MEyXEd-GNbUQBie2ig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Contains 0..* HealthcareProvider in cda:documentationOf/cda:serviceEvent/cda:performer</body>
+          <body>self.documentationOf.serviceEvent.performer->size() > 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_JDwPIEyYEd-GNbUQBie2ig" name="informationSource" constrainedElement="_wDMM0GEHEd6bFO5yxRh3Nw">
@@ -175,13 +177,17 @@
       <ownedRule xmi:id="_K7iAwBeWEeCf9aMNaCAtDQ" name="resultTypeCodeSystem" constrainedElement="_ColIkDIXEd-SYNRf-pkwtw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_YH7JkBeWEeCf9aMNaCAtDQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Result Type SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
+          <body>self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_N2G7gBeWEeCf9aMNaCAtDQ" name="laboratoryResultsValueSet" constrainedElement="_ColIkDIXEd-SYNRf-pkwtw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_eK9qEBeWEeCf9aMNaCAtDQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Result Type for laboratory results SHOULD be coded as specified in HITSP/C80 Section 2.2.3.6.1 Laboratory Observations.</body>
+          <body>self.code.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_yfmA4BeWEeCf9aMNaCAtDQ" name="resultValuePresence" constrainedElement="_p0cOoBeWEeCf9aMNaCAtDQ">
