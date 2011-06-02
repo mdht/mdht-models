@@ -28,7 +28,9 @@
     <ownedRule xmi:id="_TFty0BtBEd-vGNAsDUJvgw" name="titleValue" constrainedElement="_GMTtEIjpEd66cKocspyVOg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_WFIxUBtBEd-vGNAsDUJvgw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing 'results'.</body>
+        <body>self.title = 'results'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_-vG7sIjoEd66cKocspyVOg">
@@ -68,7 +70,9 @@
     <ownedRule xmi:id="_x4g8MBtCEd-vGNAsDUJvgw" name="codeValue" constrainedElement="_UbVD8K6uEd6_ioDelDcPPg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_4XWn4BtCEd-vGNAsDUJvgw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value for 'code' in a result organizer SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC.</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.1.11.20.16'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_SvpKQBtDEd-vGNAsDUJvgw" name="specimenConflict" constrainedElement="_Ht_RsHDAEd6eItyqb1FoWg">
@@ -146,7 +150,9 @@
     <ownedRule xmi:id="_XhWT0BtFEd-vGNAsDUJvgw" name="codeValue" constrainedElement="_MQHZEHDAEd6eItyqb1FoWg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_evjm8BtFEd-vGNAsDUJvgw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value for 'code' SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12).</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_9f02MBtFEd-vGNAsDUJvgw" name="codeConflict" constrainedElement="_MQHZEHDAEd6eItyqb1FoWg">

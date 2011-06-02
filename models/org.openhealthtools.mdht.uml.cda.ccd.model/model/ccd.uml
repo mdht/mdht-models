@@ -321,13 +321,17 @@
       <ownedRule xmi:id="__CX4MBXNEd-6K-YJpbwRmQ" name="reactionInterventionTypeCode" constrainedElement="__XC4cHrREd68l9lQ-TLEBQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_IrUIYBXOEd-6K-YJpbwRmQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The value for entryRelationship / @typeCode in a relationship between a reaction observation and reaction intervention SHALL be &quot;RSON&quot; &quot;Has reason&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
+          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_OgP7cBXOEd-6K-YJpbwRmQ" name="reactionInterventionType" constrainedElement="__XC4cHrREd68l9lQ-TLEBQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLkWoBXOEd-6K-YJpbwRmQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>A reaction intervention SHALL be represented as a procedure activity (templateId 2.16.840.1.113883.10.20.1.29), a medication activity (templateId 2.16.840.1.113883.10.20.1.24), or some other clinical statement.</body>
+          <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_PipkYHrSEd68l9lQ-TLEBQ">
@@ -385,7 +389,9 @@
       <ownedRule xmi:id="_ds-BoCTrEeCvyarv2dSCoQ" name="targetOfEntryRelationship" constrainedElement="_V3Jy4HrTEd68l9lQ-TLEBQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_sqmekCTrEeCvyarv2dSCoQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Target of an entryRelationship whose value for &quot;entryRelationship / @typeCode&quot; SHALL be &quot;REFR&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
+          <body>self.entryRelationship->exists(entry : cda::EntryRelationship | entry.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_nPDbgBWiEd-6K-YJpbwRmQ" name="noAdditionalAttributes" constrainedElement="_V3Jy4HrTEd68l9lQ-TLEBQ">
