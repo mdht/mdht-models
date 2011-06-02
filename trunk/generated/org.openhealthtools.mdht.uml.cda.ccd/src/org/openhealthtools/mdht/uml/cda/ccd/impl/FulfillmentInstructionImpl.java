@@ -73,7 +73,7 @@ public class FulfillmentInstructionImpl extends ActImpl implements FulfillmentIn
 	 * @generated
 	 */
 	public FulfillmentInstruction init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // FulfillmentInstructionImpl

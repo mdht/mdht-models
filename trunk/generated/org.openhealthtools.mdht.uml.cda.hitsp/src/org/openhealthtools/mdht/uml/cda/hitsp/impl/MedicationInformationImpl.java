@@ -54,6 +54,78 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationInformationCodedProductName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationCodedProductName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationInformationCodedProductVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationCodedProductVocab(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationInformationCodedDrugClassVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationCodedDrugClassVocab(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationInformationCodedIngredientVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationCodedIngredientVocab(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationInformationCodedBrandName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationCodedBrandName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationInformationCodedBrandNameVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationCodedBrandNameVocab(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationInformationFreeTextProductName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationFreeTextProductName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationInformationFreeTextBrandName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationFreeTextBrandName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationInformationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationTemplateId(this, diagnostics, context);
 	}
@@ -65,7 +137,7 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 */
 	@Override
 	public MedicationInformation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationInformationImpl

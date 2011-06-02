@@ -103,7 +103,7 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 */
 	@Override
 	public ConditionEntry init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ConditionEntryImpl

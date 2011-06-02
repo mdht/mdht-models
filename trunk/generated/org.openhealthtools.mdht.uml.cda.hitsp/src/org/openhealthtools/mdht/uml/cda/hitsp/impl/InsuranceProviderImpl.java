@@ -65,7 +65,7 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	 */
 	@Override
 	public InsuranceProvider init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // InsuranceProviderImpl

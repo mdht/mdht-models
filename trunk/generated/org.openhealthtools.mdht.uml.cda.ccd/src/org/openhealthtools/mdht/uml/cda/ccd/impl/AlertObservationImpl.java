@@ -85,9 +85,45 @@ public class AlertObservationImpl extends ObservationImpl implements AlertObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAlertObservationAgentRepresentationVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AlertObservationOperations.validateAlertObservationAgentRepresentationVocab(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAlertObservationParticipantRoleClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AlertObservationOperations.validateAlertObservationParticipantRoleClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAlertObservationPlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationPlayingEntityClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAlertObservationPlayingEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AlertObservationOperations.validateAlertObservationPlayingEntityCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAlertObservationPlayingEntityCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AlertObservationOperations.validateAlertObservationPlayingEntityCodeVocab(this, diagnostics, context);
 	}
 
 	/**
@@ -169,7 +205,7 @@ public class AlertObservationImpl extends ObservationImpl implements AlertObserv
 	 * @generated
 	 */
 	public AlertObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AlertObservationImpl

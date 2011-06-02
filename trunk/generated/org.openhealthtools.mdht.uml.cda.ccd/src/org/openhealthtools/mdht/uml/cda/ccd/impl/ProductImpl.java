@@ -72,6 +72,15 @@ public class ProductImpl extends ManufacturedProductImpl implements Product {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProductHasMaterialCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProductOperations.validateProductHasMaterialCodeVocab(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProductHasMaterialCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProductOperations.validateProductHasMaterialCodeOriginalText(this, diagnostics, context);
 	}
@@ -83,6 +92,24 @@ public class ProductImpl extends ManufacturedProductImpl implements Product {
 	 */
 	public boolean validateProductHasMaterialName(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProductOperations.validateProductHasMaterialName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProductMayHaveMaterialManufacturer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProductOperations.validateProductMayHaveMaterialManufacturer(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProductShouldHaveMaterialManufacturer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProductOperations.validateProductShouldHaveMaterialManufacturer(this, diagnostics, context);
 	}
 
 	/**
@@ -109,7 +136,7 @@ public class ProductImpl extends ManufacturedProductImpl implements Product {
 	 * @generated
 	 */
 	public Product init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProductImpl

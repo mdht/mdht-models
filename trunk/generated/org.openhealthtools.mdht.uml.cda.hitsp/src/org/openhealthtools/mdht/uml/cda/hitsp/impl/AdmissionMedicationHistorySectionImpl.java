@@ -57,8 +57,7 @@ public class AdmissionMedicationHistorySectionImpl extends
 	 */
 	public boolean validateHITSPAdmissionMedicationHistorySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdmissionMedicationHistorySectionOperations.validateHITSPAdmissionMedicationHistorySectionTemplateId(
-			this, diagnostics, context);
+		return AdmissionMedicationHistorySectionOperations.validateHITSPAdmissionMedicationHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +67,7 @@ public class AdmissionMedicationHistorySectionImpl extends
 	 */
 	@Override
 	public AdmissionMedicationHistorySection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AdmissionMedicationHistorySectionImpl

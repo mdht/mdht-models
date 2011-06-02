@@ -118,7 +118,7 @@ public class PurposeActivityImpl extends ActImpl implements PurposeActivity {
 	 * @generated
 	 */
 	public PurposeActivity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PurposeActivityImpl

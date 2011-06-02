@@ -54,6 +54,15 @@ public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHITSPImmunizationRefusalReason(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationOperations.validateHITSPImmunizationRefusalReason(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateHITSPImmunizationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationOperations.validateHITSPImmunizationTemplateId(this, diagnostics, context);
 	}
@@ -75,7 +84,7 @@ public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.
 	 */
 	@Override
 	public Immunization init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ImmunizationImpl

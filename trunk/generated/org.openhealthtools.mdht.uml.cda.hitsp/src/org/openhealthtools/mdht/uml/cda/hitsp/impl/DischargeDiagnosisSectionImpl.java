@@ -56,8 +56,7 @@ public class DischargeDiagnosisSectionImpl extends
 	 */
 	public boolean validateHITSPDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSectionOperations.validateHITSPDischargeDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return DischargeDiagnosisSectionOperations.validateHITSPDischargeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class DischargeDiagnosisSectionImpl extends
 	 */
 	@Override
 	public DischargeDiagnosisSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DischargeDiagnosisSectionImpl

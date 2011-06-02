@@ -82,7 +82,7 @@ public class EncountersSectionImpl extends SectionImpl implements EncountersSect
 	 * @generated
 	 */
 	public EncountersSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // EncountersSectionImpl

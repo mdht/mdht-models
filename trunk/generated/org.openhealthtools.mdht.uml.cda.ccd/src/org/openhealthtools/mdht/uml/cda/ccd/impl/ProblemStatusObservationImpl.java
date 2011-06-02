@@ -65,7 +65,7 @@ public class ProblemStatusObservationImpl extends StatusObservationImpl implemen
 	 */
 	@Override
 	public ProblemStatusObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProblemStatusObservationImpl

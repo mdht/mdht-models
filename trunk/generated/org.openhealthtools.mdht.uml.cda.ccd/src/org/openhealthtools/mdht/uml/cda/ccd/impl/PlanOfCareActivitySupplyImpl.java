@@ -56,8 +56,7 @@ public class PlanOfCareActivitySupplyImpl extends SupplyImpl implements PlanOfCa
 	 */
 	public boolean validatePlanOfCareActivitySupplyMoodCodeValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivitySupplyOperations.validatePlanOfCareActivitySupplyMoodCodeValue(
-			this, diagnostics, context);
+		return PlanOfCareActivitySupplyOperations.validatePlanOfCareActivitySupplyMoodCodeValue(this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +92,7 @@ public class PlanOfCareActivitySupplyImpl extends SupplyImpl implements PlanOfCa
 	 * @generated
 	 */
 	public PlanOfCareActivitySupply init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PlanOfCareActivitySupplyImpl

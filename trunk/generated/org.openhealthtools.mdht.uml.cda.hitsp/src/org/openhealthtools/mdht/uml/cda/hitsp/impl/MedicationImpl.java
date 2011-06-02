@@ -57,6 +57,159 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHITSPMedicationMedicationStopped(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationMedicationStopped(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationFirstEffectiveTimeDatatype(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationFirstEffectiveTimeDatatype(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationDoseUnits(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationDoseUnits(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationDeliveryMethodDescription(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationDeliveryMethodDescription(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationHasMedicationInformation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationHasMedicationInformation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationHasStatusOfMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationHasStatusOfMedication(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationHasIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationHasIndication(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationHasIndicationNarrativeText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationHasIndicationNarrativeText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationHasIndicationVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationHasIndicationVocab(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationHasPatientInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationHasPatientInstructions(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationHasMedicationVehicle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationHasMedicationVehicle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationMedicationVehicleType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationMedicationVehicleType(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationMedicationVehicleClass(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationMedicationVehicleClass(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationMedicationVehicleCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationMedicationVehicleCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationMedicationVehicleName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationMedicationVehicleName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationMedicationVehicleCodedName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationMedicationVehicleCodedName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPMedicationMedicationVehicleCodedNameVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOperations.validateHITSPMedicationMedicationVehicleCodedNameVocab(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateHITSPMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationTemplateId(this, diagnostics, context);
 	}
@@ -159,7 +312,7 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 */
 	@Override
 	public Medication init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationImpl

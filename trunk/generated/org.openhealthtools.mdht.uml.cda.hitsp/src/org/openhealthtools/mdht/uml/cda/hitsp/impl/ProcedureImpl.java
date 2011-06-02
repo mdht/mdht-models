@@ -102,7 +102,7 @@ public class ProcedureImpl extends ProcedureEntryProcedureActivityProcedureImpl 
 	 */
 	@Override
 	public Procedure init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureImpl

@@ -65,7 +65,7 @@ public class SupportGuardianImpl extends PatientContactGuardianImpl implements S
 	 */
 	@Override
 	public SupportGuardian init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // SupportGuardianImpl

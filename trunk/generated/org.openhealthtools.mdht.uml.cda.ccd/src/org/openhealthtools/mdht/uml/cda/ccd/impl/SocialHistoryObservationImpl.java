@@ -64,7 +64,7 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * @generated
 	 */
 	public SocialHistoryObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // SocialHistoryObservationImpl
