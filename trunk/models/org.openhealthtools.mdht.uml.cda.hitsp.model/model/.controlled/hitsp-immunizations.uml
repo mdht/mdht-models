@@ -25,7 +25,9 @@
     <ownedRule xmi:id="_qvCv8FazEeCddY1UIvGtQg" name="refusalReason" constrainedElement="_qkWXUDuJEd-B8KE6Jx0UNQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYm3oFazEeCddY1UIvGtQg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The reason for refusal SHALL be coded as specified in HITSP/C80 Section 2.2.3.5.3 No Immunization Reason</body>
+        <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, ccd::ProblemAct)->exists(pa : ccd::ProblemAct | not pa.oclIsUndefined() and pa.code.codeSystem = '2.16.840.1.113883.1.11.19717')</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_qkWXUTuJEd-B8KE6Jx0UNQ">
@@ -40,7 +42,7 @@
   <CDA:CDATemplate xmi:id="_s4UlEDuJEd-B8KE6Jx0UNQ" base_Class="_qkWXUDuJEd-B8KE6Jx0UNQ" templateId="2.16.840.1.113883.3.88.11.83.13" assigningAuthorityName="HITSP C83"/>
   <CDA:ConstraintValidation xmi:id="_r-nhcFazEeCddY1UIvGtQg" base_Constraint="_qvCv8FazEeCddY1UIvGtQg"/>
   <CDA:ConformsTo xmi:id="_rGbqUFF6Ed-Lud-5SYZhMw" base_Generalization="_qkWXUTuJEd-B8KE6Jx0UNQ" requiresParentId="true"/>
-  <CDA:CodeSystemConstraint xmi:id="_tnOTcFayEeCddY1UIvGtQg" base_Property="_szV_cFayEeCddY1UIvGtQg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
-  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_KFeygGxZEeCVhdosyN0o1A" base_Property="_szV_cFayEeCddY1UIvGtQg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dkykkaDqEd-dVeaMP0XXQw"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
