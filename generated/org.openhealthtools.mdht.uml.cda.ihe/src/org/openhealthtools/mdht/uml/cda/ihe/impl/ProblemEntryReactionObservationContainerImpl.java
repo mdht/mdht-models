@@ -55,6 +55,28 @@ public class ProblemEntryReactionObservationContainerImpl extends ProblemEntryIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReactionObservationReactionInterventionTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationReactionInterventionTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationReactionInterventionType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationReactionInterventionType(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateReactionObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservationOperations.validateReactionObservationTemplateId(this, diagnostics, context);
 	}

@@ -203,7 +203,7 @@ public class ActiveProblemsSectionOperations extends ProblemSectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.ACTIVE_PROBLEMS_SECTION,
-				IHEPackage.Literals.ACTIVE_PROBLEMS_SECTION.getEAllOperations().get(63));
+				IHEPackage.Literals.ACTIVE_PROBLEMS_SECTION.getEAllOperations().get(64));
 			try {
 				GET_PROBLEM_CONCERN_ENTRIES__EOCL_QRY = helper.createQuery(GET_PROBLEM_CONCERN_ENTRIES__EOCL_EXP);
 			} catch (ParserException pe) {

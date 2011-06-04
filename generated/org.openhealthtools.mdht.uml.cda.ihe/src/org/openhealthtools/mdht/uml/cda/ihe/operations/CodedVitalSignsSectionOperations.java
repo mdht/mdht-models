@@ -202,7 +202,7 @@ public class CodedVitalSignsSectionOperations extends VitalSignsSectionOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION,
-				IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION.getEAllOperations().get(64));
+				IHEPackage.Literals.CODED_VITAL_SIGNS_SECTION.getEAllOperations().get(65));
 			try {
 				GET_IHE_VITAL_SIGNS_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_IHE_VITAL_SIGNS_ORGANIZERS__EOCL_EXP);
 			} catch (ParserException pe) {
