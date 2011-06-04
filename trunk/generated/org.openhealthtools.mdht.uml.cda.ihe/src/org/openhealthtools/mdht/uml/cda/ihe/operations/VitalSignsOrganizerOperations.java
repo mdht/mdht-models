@@ -434,7 +434,7 @@ public class VitalSignsOrganizerOperations extends
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.VITAL_SIGNS_ORGANIZER,
-				IHEPackage.Literals.VITAL_SIGNS_ORGANIZER.getEAllOperations().get(66));
+				IHEPackage.Literals.VITAL_SIGNS_ORGANIZER.getEAllOperations().get(67));
 			try {
 				GET_VITAL_SIGN_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGN_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
