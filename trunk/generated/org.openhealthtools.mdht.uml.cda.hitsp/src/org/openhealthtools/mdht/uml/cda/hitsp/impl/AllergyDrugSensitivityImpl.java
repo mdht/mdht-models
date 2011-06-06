@@ -54,8 +54,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAdvereEventDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdvereEventDate(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityAdvereEventDate(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdvereEventDate(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,8 +65,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAdvereEventType(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdvereEventType(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityAdvereEventType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdvereEventType(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +76,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAdvereEventTypeVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdvereEventTypeVocab(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityAdvereEventTypeVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAdvereEventTypeVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +96,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAllergyProductTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAllergyProductTypeCode(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityAllergyProductTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAllergyProductTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +107,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityProductDetailParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityProductDetailParticipantRole(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityProductDetailParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityProductDetailParticipantRole(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +118,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityProductDetailParticipantRoleClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityProductDetailParticipantRoleClassCode(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityProductDetailParticipantRoleClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityProductDetailParticipantRoleClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -117,8 +129,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityProductDetailPlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityProductDetailPlayingEntity(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityProductDetailPlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityProductDetailPlayingEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -126,8 +140,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityProductDetailPlayingEntityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityProductDetailPlayingEntityClassCode(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityProductDetailPlayingEntityClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityProductDetailPlayingEntityClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -135,8 +151,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityProductDetailName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityProductDetailName(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityProductDetailName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityProductDetailName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -153,8 +171,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAllergyProductFoodVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAllergyProductFoodVocab(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityAllergyProductFoodVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAllergyProductFoodVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -162,8 +182,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAllergyProductMedClassVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAllergyProductMedClassVocab(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityAllergyProductMedClassVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAllergyProductMedClassVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -171,8 +193,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAllergyProductSpecificMedVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAllergyProductSpecificMedVocab(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityAllergyProductSpecificMedVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAllergyProductSpecificMedVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -198,8 +222,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityReactionCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityReactionCodeVocab(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityReactionCodeVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityReactionCodeVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -225,8 +251,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivitySeverityCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivitySeverityCodeVocab(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivitySeverityCodeVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivitySeverityCodeVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -245,7 +273,7 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 */
 	@Override
 	public AllergyDrugSensitivity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AllergyDrugSensitivityImpl

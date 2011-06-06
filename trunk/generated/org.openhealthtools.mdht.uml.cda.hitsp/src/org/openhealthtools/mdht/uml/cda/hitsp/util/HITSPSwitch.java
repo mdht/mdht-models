@@ -191,13 +191,11 @@ public class HITSPSwitch<T> {
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
-		}
-		else {
+		} else {
 			List<EClass> eSuperTypes = theEClass.getESuperTypes();
-			return
-				eSuperTypes.isEmpty() ?
-					defaultCase(theEObject) :
-					doSwitch(eSuperTypes.get(0), theEObject);
+			return eSuperTypes.isEmpty()
+					? defaultCase(theEObject)
+					: doSwitch(eSuperTypes.get(0), theEObject);
 		}
 	}
 
@@ -211,630 +209,1329 @@ public class HITSPSwitch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case HITSPPackage.ALLERGY_DRUG_SENSITIVITY: {
-				AllergyDrugSensitivity allergyDrugSensitivity = (AllergyDrugSensitivity)theEObject;
+				AllergyDrugSensitivity allergyDrugSensitivity = (AllergyDrugSensitivity) theEObject;
 				T result = caseAllergyDrugSensitivity(allergyDrugSensitivity);
-				if (result == null) result = caseAllergyIntoleranceConcern(allergyDrugSensitivity);
-				if (result == null) result = caseConcernEntry(allergyDrugSensitivity);
-				if (result == null) result = caseProblemAct(allergyDrugSensitivity);
-				if (result == null) result = caseCDA_Act(allergyDrugSensitivity);
-				if (result == null) result = caseClinicalStatement(allergyDrugSensitivity);
-				if (result == null) result = caseAct(allergyDrugSensitivity);
-				if (result == null) result = caseInfrastructureRoot(allergyDrugSensitivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseAllergyIntoleranceConcern(allergyDrugSensitivity);
+				}
+				if (result == null) {
+					result = caseConcernEntry(allergyDrugSensitivity);
+				}
+				if (result == null) {
+					result = caseProblemAct(allergyDrugSensitivity);
+				}
+				if (result == null) {
+					result = caseCDA_Act(allergyDrugSensitivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(allergyDrugSensitivity);
+				}
+				if (result == null) {
+					result = caseAct(allergyDrugSensitivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergyDrugSensitivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATION: {
-				Medication medication = (Medication)theEObject;
+				Medication medication = (Medication) theEObject;
 				T result = caseMedication(medication);
-				if (result == null) result = caseIHE_Medication(medication);
-				if (result == null) result = caseMedicationActivity(medication);
-				if (result == null) result = caseSubstanceAdministration(medication);
-				if (result == null) result = caseClinicalStatement(medication);
-				if (result == null) result = caseAct(medication);
-				if (result == null) result = caseInfrastructureRoot(medication);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_Medication(medication);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(medication);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(medication);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medication);
+				}
+				if (result == null) {
+					result = caseAct(medication);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medication);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATION_TYPE: {
-				MedicationType medicationType = (MedicationType)theEObject;
+				MedicationType medicationType = (MedicationType) theEObject;
 				T result = caseMedicationType(medicationType);
-				if (result == null) result = caseObservation(medicationType);
-				if (result == null) result = caseClinicalStatement(medicationType);
-				if (result == null) result = caseAct(medicationType);
-				if (result == null) result = caseInfrastructureRoot(medicationType);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(medicationType);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationType);
+				}
+				if (result == null) {
+					result = caseAct(medicationType);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationType);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATION_ORDER_INFORMATION: {
-				MedicationOrderInformation medicationOrderInformation = (MedicationOrderInformation)theEObject;
+				MedicationOrderInformation medicationOrderInformation = (MedicationOrderInformation) theEObject;
 				T result = caseMedicationOrderInformation(medicationOrderInformation);
-				if (result == null) result = caseSupplyEntry(medicationOrderInformation);
-				if (result == null) result = caseSupplyActivity(medicationOrderInformation);
-				if (result == null) result = caseSupply(medicationOrderInformation);
-				if (result == null) result = caseClinicalStatement(medicationOrderInformation);
-				if (result == null) result = caseAct(medicationOrderInformation);
-				if (result == null) result = caseInfrastructureRoot(medicationOrderInformation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSupplyEntry(medicationOrderInformation);
+				}
+				if (result == null) {
+					result = caseSupplyActivity(medicationOrderInformation);
+				}
+				if (result == null) {
+					result = caseSupply(medicationOrderInformation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationOrderInformation);
+				}
+				if (result == null) {
+					result = caseAct(medicationOrderInformation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationOrderInformation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.CONDITION: {
-				Condition condition = (Condition)theEObject;
+				Condition condition = (Condition) theEObject;
 				T result = caseCondition(condition);
-				if (result == null) result = caseProblemConcernEntry(condition);
-				if (result == null) result = caseConcernEntry(condition);
-				if (result == null) result = caseProblemAct(condition);
-				if (result == null) result = caseCDA_Act(condition);
-				if (result == null) result = caseClinicalStatement(condition);
-				if (result == null) result = caseAct(condition);
-				if (result == null) result = caseInfrastructureRoot(condition);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProblemConcernEntry(condition);
+				}
+				if (result == null) {
+					result = caseConcernEntry(condition);
+				}
+				if (result == null) {
+					result = caseProblemAct(condition);
+				}
+				if (result == null) {
+					result = caseCDA_Act(condition);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(condition);
+				}
+				if (result == null) {
+					result = caseAct(condition);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(condition);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.CONDITION_ENTRY: {
-				ConditionEntry conditionEntry = (ConditionEntry)theEObject;
+				ConditionEntry conditionEntry = (ConditionEntry) theEObject;
 				T result = caseConditionEntry(conditionEntry);
-				if (result == null) result = caseProblemEntry(conditionEntry);
-				if (result == null) result = caseProblemObservation(conditionEntry);
-				if (result == null) result = caseObservation(conditionEntry);
-				if (result == null) result = caseClinicalStatement(conditionEntry);
-				if (result == null) result = caseAct(conditionEntry);
-				if (result == null) result = caseInfrastructureRoot(conditionEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProblemEntry(conditionEntry);
+				}
+				if (result == null) {
+					result = caseProblemObservation(conditionEntry);
+				}
+				if (result == null) {
+					result = caseObservation(conditionEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(conditionEntry);
+				}
+				if (result == null) {
+					result = caseAct(conditionEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(conditionEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.PATIENT_SUMMARY: {
-				PatientSummary patientSummary = (PatientSummary)theEObject;
+				PatientSummary patientSummary = (PatientSummary) theEObject;
 				T result = casePatientSummary(patientSummary);
-				if (result == null) result = caseContinuityOfCareDocument(patientSummary);
-				if (result == null) result = caseMedicalDocument(patientSummary);
-				if (result == null) result = caseGeneralHeaderConstraints(patientSummary);
-				if (result == null) result = caseClinicalDocument(patientSummary);
-				if (result == null) result = caseAct(patientSummary);
-				if (result == null) result = caseInfrastructureRoot(patientSummary);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseContinuityOfCareDocument(patientSummary);
+				}
+				if (result == null) {
+					result = caseMedicalDocument(patientSummary);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(patientSummary);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(patientSummary);
+				}
+				if (result == null) {
+					result = caseAct(patientSummary);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientSummary);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.PROBLEM_LIST_SECTION: {
-				ProblemListSection problemListSection = (ProblemListSection)theEObject;
+				ProblemListSection problemListSection = (ProblemListSection) theEObject;
 				T result = caseProblemListSection(problemListSection);
-				if (result == null) result = caseActiveProblemsSection(problemListSection);
-				if (result == null) result = caseProblemSection(problemListSection);
-				if (result == null) result = caseSection(problemListSection);
-				if (result == null) result = caseAct(problemListSection);
-				if (result == null) result = caseInfrastructureRoot(problemListSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseActiveProblemsSection(problemListSection);
+				}
+				if (result == null) {
+					result = caseProblemSection(problemListSection);
+				}
+				if (result == null) {
+					result = caseSection(problemListSection);
+				}
+				if (result == null) {
+					result = caseAct(problemListSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemListSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATIONS_SECTION: {
-				MedicationsSection medicationsSection = (MedicationsSection)theEObject;
+				MedicationsSection medicationsSection = (MedicationsSection) theEObject;
 				T result = caseMedicationsSection(medicationsSection);
-				if (result == null) result = caseIHE_MedicationsSection(medicationsSection);
-				if (result == null) result = caseCCD_MedicationsSection(medicationsSection);
-				if (result == null) result = caseSection(medicationsSection);
-				if (result == null) result = caseAct(medicationsSection);
-				if (result == null) result = caseInfrastructureRoot(medicationsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_MedicationsSection(medicationsSection);
+				}
+				if (result == null) {
+					result = caseCCD_MedicationsSection(medicationsSection);
+				}
+				if (result == null) {
+					result = caseSection(medicationsSection);
+				}
+				if (result == null) {
+					result = caseAct(medicationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.ADVANCE_DIRECTIVES_SECTION: {
-				AdvanceDirectivesSection advanceDirectivesSection = (AdvanceDirectivesSection)theEObject;
+				AdvanceDirectivesSection advanceDirectivesSection = (AdvanceDirectivesSection) theEObject;
 				T result = caseAdvanceDirectivesSection(advanceDirectivesSection);
-				if (result == null) result = caseCodedAdvanceDirectivesSection(advanceDirectivesSection);
-				if (result == null) result = caseIHE_AdvanceDirectivesSection(advanceDirectivesSection);
-				if (result == null) result = caseCCD_AdvanceDirectivesSection(advanceDirectivesSection);
-				if (result == null) result = caseSection(advanceDirectivesSection);
-				if (result == null) result = caseAct(advanceDirectivesSection);
-				if (result == null) result = caseInfrastructureRoot(advanceDirectivesSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCodedAdvanceDirectivesSection(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseIHE_AdvanceDirectivesSection(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseCCD_AdvanceDirectivesSection(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseSection(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.ALLERGIES_REACTIONS_SECTION: {
-				AllergiesReactionsSection allergiesReactionsSection = (AllergiesReactionsSection)theEObject;
+				AllergiesReactionsSection allergiesReactionsSection = (AllergiesReactionsSection) theEObject;
 				T result = caseAllergiesReactionsSection(allergiesReactionsSection);
-				if (result == null) result = caseIHE_AllergiesReactionsSection(allergiesReactionsSection);
-				if (result == null) result = caseAlertsSection(allergiesReactionsSection);
-				if (result == null) result = caseSection(allergiesReactionsSection);
-				if (result == null) result = caseAct(allergiesReactionsSection);
-				if (result == null) result = caseInfrastructureRoot(allergiesReactionsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_AllergiesReactionsSection(allergiesReactionsSection);
+				}
+				if (result == null) {
+					result = caseAlertsSection(allergiesReactionsSection);
+				}
+				if (result == null) {
+					result = caseSection(allergiesReactionsSection);
+				}
+				if (result == null) {
+					result = caseAct(allergiesReactionsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergiesReactionsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.ENCOUNTERS_SECTION: {
-				EncountersSection encountersSection = (EncountersSection)theEObject;
+				EncountersSection encountersSection = (EncountersSection) theEObject;
 				T result = caseEncountersSection(encountersSection);
-				if (result == null) result = caseEncounterHistorySection(encountersSection);
-				if (result == null) result = caseCCD_EncountersSection(encountersSection);
-				if (result == null) result = caseSection(encountersSection);
-				if (result == null) result = caseAct(encountersSection);
-				if (result == null) result = caseInfrastructureRoot(encountersSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseEncounterHistorySection(encountersSection);
+				}
+				if (result == null) {
+					result = caseCCD_EncountersSection(encountersSection);
+				}
+				if (result == null) {
+					result = caseSection(encountersSection);
+				}
+				if (result == null) {
+					result = caseAct(encountersSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encountersSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.ENCOUNTER: {
-				Encounter encounter = (Encounter)theEObject;
+				Encounter encounter = (Encounter) theEObject;
 				T result = caseEncounter(encounter);
-				if (result == null) result = caseEncounterActivity(encounter);
-				if (result == null) result = caseEncounterEntry(encounter);
-				if (result == null) result = caseEncountersActivity(encounter);
-				if (result == null) result = caseCDA_Encounter(encounter);
-				if (result == null) result = caseClinicalStatement(encounter);
-				if (result == null) result = caseAct(encounter);
-				if (result == null) result = caseInfrastructureRoot(encounter);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseEncounterActivity(encounter);
+				}
+				if (result == null) {
+					result = caseEncounterEntry(encounter);
+				}
+				if (result == null) {
+					result = caseEncountersActivity(encounter);
+				}
+				if (result == null) {
+					result = caseCDA_Encounter(encounter);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(encounter);
+				}
+				if (result == null) {
+					result = caseAct(encounter);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encounter);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.IMMUNIZATIONS_SECTION: {
-				ImmunizationsSection immunizationsSection = (ImmunizationsSection)theEObject;
+				ImmunizationsSection immunizationsSection = (ImmunizationsSection) theEObject;
 				T result = caseImmunizationsSection(immunizationsSection);
-				if (result == null) result = caseIHE_ImmunizationsSection(immunizationsSection);
-				if (result == null) result = caseCCD_ImmunizationsSection(immunizationsSection);
-				if (result == null) result = caseCCD_MedicationsSection(immunizationsSection);
-				if (result == null) result = caseSection(immunizationsSection);
-				if (result == null) result = caseAct(immunizationsSection);
-				if (result == null) result = caseInfrastructureRoot(immunizationsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_ImmunizationsSection(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseCCD_ImmunizationsSection(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseCCD_MedicationsSection(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseSection(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseAct(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(immunizationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.IMMUNIZATION: {
-				Immunization immunization = (Immunization)theEObject;
+				Immunization immunization = (Immunization) theEObject;
 				T result = caseImmunization(immunization);
-				if (result == null) result = caseIHE_Immunization(immunization);
-				if (result == null) result = caseMedicationActivity(immunization);
-				if (result == null) result = caseSubstanceAdministration(immunization);
-				if (result == null) result = caseClinicalStatement(immunization);
-				if (result == null) result = caseAct(immunization);
-				if (result == null) result = caseInfrastructureRoot(immunization);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_Immunization(immunization);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(immunization);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(immunization);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(immunization);
+				}
+				if (result == null) {
+					result = caseAct(immunization);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(immunization);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.PAYERS_SECTION: {
-				PayersSection payersSection = (PayersSection)theEObject;
+				PayersSection payersSection = (PayersSection) theEObject;
 				T result = casePayersSection(payersSection);
-				if (result == null) result = caseIHE_PayersSection(payersSection);
-				if (result == null) result = caseCCD_PayersSection(payersSection);
-				if (result == null) result = caseSection(payersSection);
-				if (result == null) result = caseAct(payersSection);
-				if (result == null) result = caseInfrastructureRoot(payersSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_PayersSection(payersSection);
+				}
+				if (result == null) {
+					result = caseCCD_PayersSection(payersSection);
+				}
+				if (result == null) {
+					result = caseSection(payersSection);
+				}
+				if (result == null) {
+					result = caseAct(payersSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(payersSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.SURGERIES_SECTION: {
-				SurgeriesSection surgeriesSection = (SurgeriesSection)theEObject;
+				SurgeriesSection surgeriesSection = (SurgeriesSection) theEObject;
 				T result = caseSurgeriesSection(surgeriesSection);
-				if (result == null) result = caseCodedSurgeriesSection(surgeriesSection);
-				if (result == null) result = caseIHE_SurgeriesSection(surgeriesSection);
-				if (result == null) result = caseProceduresSection(surgeriesSection);
-				if (result == null) result = caseSection(surgeriesSection);
-				if (result == null) result = caseAct(surgeriesSection);
-				if (result == null) result = caseInfrastructureRoot(surgeriesSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCodedSurgeriesSection(surgeriesSection);
+				}
+				if (result == null) {
+					result = caseIHE_SurgeriesSection(surgeriesSection);
+				}
+				if (result == null) {
+					result = caseProceduresSection(surgeriesSection);
+				}
+				if (result == null) {
+					result = caseSection(surgeriesSection);
+				}
+				if (result == null) {
+					result = caseAct(surgeriesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(surgeriesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.PROCEDURE: {
-				Procedure procedure = (Procedure)theEObject;
+				Procedure procedure = (Procedure) theEObject;
 				T result = caseProcedure(procedure);
-				if (result == null) result = caseProcedureEntryProcedureActivityProcedure(procedure);
-				if (result == null) result = caseProcedureActivityProcedure(procedure);
-				if (result == null) result = caseProcedureEntry(procedure);
-				if (result == null) result = caseCDA_Procedure(procedure);
-				if (result == null) result = caseProcedureActivity(procedure);
-				if (result == null) result = caseClinicalStatement(procedure);
-				if (result == null) result = caseAct(procedure);
-				if (result == null) result = caseInfrastructureRoot(procedure);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProcedureEntryProcedureActivityProcedure(procedure);
+				}
+				if (result == null) {
+					result = caseProcedureActivityProcedure(procedure);
+				}
+				if (result == null) {
+					result = caseProcedureEntry(procedure);
+				}
+				if (result == null) {
+					result = caseCDA_Procedure(procedure);
+				}
+				if (result == null) {
+					result = caseProcedureActivity(procedure);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedure);
+				}
+				if (result == null) {
+					result = caseAct(procedure);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.PLAN_OF_CARE_SECTION: {
-				PlanOfCareSection planOfCareSection = (PlanOfCareSection)theEObject;
+				PlanOfCareSection planOfCareSection = (PlanOfCareSection) theEObject;
 				T result = casePlanOfCareSection(planOfCareSection);
-				if (result == null) result = caseCarePlanSection(planOfCareSection);
-				if (result == null) result = caseCCD_PlanOfCareSection(planOfCareSection);
-				if (result == null) result = caseSection(planOfCareSection);
-				if (result == null) result = caseAct(planOfCareSection);
-				if (result == null) result = caseInfrastructureRoot(planOfCareSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCarePlanSection(planOfCareSection);
+				}
+				if (result == null) {
+					result = caseCCD_PlanOfCareSection(planOfCareSection);
+				}
+				if (result == null) {
+					result = caseSection(planOfCareSection);
+				}
+				if (result == null) {
+					result = caseAct(planOfCareSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(planOfCareSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.VITAL_SIGNS_SECTION: {
-				VitalSignsSection vitalSignsSection = (VitalSignsSection)theEObject;
+				VitalSignsSection vitalSignsSection = (VitalSignsSection) theEObject;
 				T result = caseVitalSignsSection(vitalSignsSection);
-				if (result == null) result = caseCodedVitalSignsSection(vitalSignsSection);
-				if (result == null) result = caseIHE_VitalSignsSection(vitalSignsSection);
-				if (result == null) result = caseCCD_VitalSignsSection(vitalSignsSection);
-				if (result == null) result = caseSection(vitalSignsSection);
-				if (result == null) result = caseAct(vitalSignsSection);
-				if (result == null) result = caseInfrastructureRoot(vitalSignsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCodedVitalSignsSection(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseIHE_VitalSignsSection(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseCCD_VitalSignsSection(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseSection(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.DIAGNOSTIC_RESULTS_SECTION: {
-				DiagnosticResultsSection diagnosticResultsSection = (DiagnosticResultsSection)theEObject;
+				DiagnosticResultsSection diagnosticResultsSection = (DiagnosticResultsSection) theEObject;
 				T result = caseDiagnosticResultsSection(diagnosticResultsSection);
-				if (result == null) result = caseCodedResultsSection(diagnosticResultsSection);
-				if (result == null) result = caseSection(diagnosticResultsSection);
-				if (result == null) result = caseAct(diagnosticResultsSection);
-				if (result == null) result = caseInfrastructureRoot(diagnosticResultsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCodedResultsSection(diagnosticResultsSection);
+				}
+				if (result == null) {
+					result = caseSection(diagnosticResultsSection);
+				}
+				if (result == null) {
+					result = caseAct(diagnosticResultsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(diagnosticResultsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.RESULT: {
-				Result result = (Result)theEObject;
+				Result result = (Result) theEObject;
 				T theResult = caseResult(result);
-				if (theResult == null) theResult = caseResultObservation(result);
-				if (theResult == null) theResult = caseSimpleObservation(result);
-				if (theResult == null) theResult = caseObservation(result);
-				if (theResult == null) theResult = caseClinicalStatement(result);
-				if (theResult == null) theResult = caseAct(result);
-				if (theResult == null) theResult = caseInfrastructureRoot(result);
-				if (theResult == null) theResult = defaultCase(theEObject);
+				if (theResult == null) {
+					theResult = caseResultObservation(result);
+				}
+				if (theResult == null) {
+					theResult = caseSimpleObservation(result);
+				}
+				if (theResult == null) {
+					theResult = caseObservation(result);
+				}
+				if (theResult == null) {
+					theResult = caseClinicalStatement(result);
+				}
+				if (theResult == null) {
+					theResult = caseAct(result);
+				}
+				if (theResult == null) {
+					theResult = caseInfrastructureRoot(result);
+				}
+				if (theResult == null) {
+					theResult = defaultCase(theEObject);
+				}
 				return theResult;
 			}
 			case HITSPPackage.VITAL_SIGN: {
-				VitalSign vitalSign = (VitalSign)theEObject;
+				VitalSign vitalSign = (VitalSign) theEObject;
 				T result = caseVitalSign(vitalSign);
-				if (result == null) result = caseVitalSignObservation(vitalSign);
-				if (result == null) result = caseResultObservation(vitalSign);
-				if (result == null) result = caseSimpleObservation(vitalSign);
-				if (result == null) result = caseObservation(vitalSign);
-				if (result == null) result = caseClinicalStatement(vitalSign);
-				if (result == null) result = caseAct(vitalSign);
-				if (result == null) result = caseInfrastructureRoot(vitalSign);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseVitalSignObservation(vitalSign);
+				}
+				if (result == null) {
+					result = caseResultObservation(vitalSign);
+				}
+				if (result == null) {
+					result = caseSimpleObservation(vitalSign);
+				}
+				if (result == null) {
+					result = caseObservation(vitalSign);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(vitalSign);
+				}
+				if (result == null) {
+					result = caseAct(vitalSign);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSign);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.HISTORY_OF_PAST_ILLNESS_SECTION: {
-				HistoryOfPastIllnessSection historyOfPastIllnessSection = (HistoryOfPastIllnessSection)theEObject;
+				HistoryOfPastIllnessSection historyOfPastIllnessSection = (HistoryOfPastIllnessSection) theEObject;
 				T result = caseHistoryOfPastIllnessSection(historyOfPastIllnessSection);
-				if (result == null) result = caseIHE_HistoryOfPastIllnessSection(historyOfPastIllnessSection);
-				if (result == null) result = caseSection(historyOfPastIllnessSection);
-				if (result == null) result = caseAct(historyOfPastIllnessSection);
-				if (result == null) result = caseInfrastructureRoot(historyOfPastIllnessSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_HistoryOfPastIllnessSection(historyOfPastIllnessSection);
+				}
+				if (result == null) {
+					result = caseSection(historyOfPastIllnessSection);
+				}
+				if (result == null) {
+					result = caseAct(historyOfPastIllnessSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(historyOfPastIllnessSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.CHIEF_COMPLAINT_SECTION: {
-				ChiefComplaintSection chiefComplaintSection = (ChiefComplaintSection)theEObject;
+				ChiefComplaintSection chiefComplaintSection = (ChiefComplaintSection) theEObject;
 				T result = caseChiefComplaintSection(chiefComplaintSection);
-				if (result == null) result = caseIHE_ChiefComplaintSection(chiefComplaintSection);
-				if (result == null) result = caseSection(chiefComplaintSection);
-				if (result == null) result = caseAct(chiefComplaintSection);
-				if (result == null) result = caseInfrastructureRoot(chiefComplaintSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_ChiefComplaintSection(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = caseSection(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = caseAct(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.REASON_FOR_REFERRAL_SECTION: {
-				ReasonForReferralSection reasonForReferralSection = (ReasonForReferralSection)theEObject;
+				ReasonForReferralSection reasonForReferralSection = (ReasonForReferralSection) theEObject;
 				T result = caseReasonForReferralSection(reasonForReferralSection);
-				if (result == null) result = caseIHE_ReasonForReferralSection(reasonForReferralSection);
-				if (result == null) result = caseSection(reasonForReferralSection);
-				if (result == null) result = caseAct(reasonForReferralSection);
-				if (result == null) result = caseInfrastructureRoot(reasonForReferralSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_ReasonForReferralSection(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseSection(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseAct(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.HISTORY_OF_PRESENT_ILLNESS: {
-				HistoryOfPresentIllness historyOfPresentIllness = (HistoryOfPresentIllness)theEObject;
+				HistoryOfPresentIllness historyOfPresentIllness = (HistoryOfPresentIllness) theEObject;
 				T result = caseHistoryOfPresentIllness(historyOfPresentIllness);
-				if (result == null) result = caseIHE_HistoryOfPresentIllness(historyOfPresentIllness);
-				if (result == null) result = caseSection(historyOfPresentIllness);
-				if (result == null) result = caseAct(historyOfPresentIllness);
-				if (result == null) result = caseInfrastructureRoot(historyOfPresentIllness);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_HistoryOfPresentIllness(historyOfPresentIllness);
+				}
+				if (result == null) {
+					result = caseSection(historyOfPresentIllness);
+				}
+				if (result == null) {
+					result = caseAct(historyOfPresentIllness);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(historyOfPresentIllness);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.FUNCTIONAL_STATUS_SECTION: {
-				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection)theEObject;
+				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection) theEObject;
 				T result = caseFunctionalStatusSection(functionalStatusSection);
-				if (result == null) result = caseCCD_FunctionalStatusSection(functionalStatusSection);
-				if (result == null) result = caseSection(functionalStatusSection);
-				if (result == null) result = caseAct(functionalStatusSection);
-				if (result == null) result = caseInfrastructureRoot(functionalStatusSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCCD_FunctionalStatusSection(functionalStatusSection);
+				}
+				if (result == null) {
+					result = caseSection(functionalStatusSection);
+				}
+				if (result == null) {
+					result = caseAct(functionalStatusSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(functionalStatusSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: {
-				HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection = (HospitalAdmissionDiagnosisSection)theEObject;
+				HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection = (HospitalAdmissionDiagnosisSection) theEObject;
 				T result = caseHospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseIHE_HospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseSection(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseAct(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = caseInfrastructureRoot(hospitalAdmissionDiagnosisSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_HospitalAdmissionDiagnosisSection(hospitalAdmissionDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseSection(hospitalAdmissionDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalAdmissionDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalAdmissionDiagnosisSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.DISCHARGE_DIAGNOSIS_SECTION: {
-				DischargeDiagnosisSection dischargeDiagnosisSection = (DischargeDiagnosisSection)theEObject;
+				DischargeDiagnosisSection dischargeDiagnosisSection = (DischargeDiagnosisSection) theEObject;
 				T result = caseDischargeDiagnosisSection(dischargeDiagnosisSection);
-				if (result == null) result = caseIHE_DischargeDiagnosisSection(dischargeDiagnosisSection);
-				if (result == null) result = caseSection(dischargeDiagnosisSection);
-				if (result == null) result = caseAct(dischargeDiagnosisSection);
-				if (result == null) result = caseInfrastructureRoot(dischargeDiagnosisSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_DischargeDiagnosisSection(dischargeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseSection(dischargeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseAct(dischargeDiagnosisSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dischargeDiagnosisSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.ADMISSION_MEDICATION_HISTORY_SECTION: {
-				AdmissionMedicationHistorySection admissionMedicationHistorySection = (AdmissionMedicationHistorySection)theEObject;
+				AdmissionMedicationHistorySection admissionMedicationHistorySection = (AdmissionMedicationHistorySection) theEObject;
 				T result = caseAdmissionMedicationHistorySection(admissionMedicationHistorySection);
-				if (result == null) result = caseIHE_AdmissionMedicationHistorySection(admissionMedicationHistorySection);
-				if (result == null) result = caseSection(admissionMedicationHistorySection);
-				if (result == null) result = caseAct(admissionMedicationHistorySection);
-				if (result == null) result = caseInfrastructureRoot(admissionMedicationHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_AdmissionMedicationHistorySection(admissionMedicationHistorySection);
+				}
+				if (result == null) {
+					result = caseSection(admissionMedicationHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(admissionMedicationHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(admissionMedicationHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: {
-				HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (HospitalDischargeMedicationsSection)theEObject;
+				HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (HospitalDischargeMedicationsSection) theEObject;
 				T result = caseHospitalDischargeMedicationsSection(hospitalDischargeMedicationsSection);
-				if (result == null) result = caseIHE_HospitalDischargeMedicationsSection(hospitalDischargeMedicationsSection);
-				if (result == null) result = caseSection(hospitalDischargeMedicationsSection);
-				if (result == null) result = caseAct(hospitalDischargeMedicationsSection);
-				if (result == null) result = caseInfrastructureRoot(hospitalDischargeMedicationsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_HospitalDischargeMedicationsSection(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = caseSection(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeMedicationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATIONS_ADMINISTERED_SECTION: {
-				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection)theEObject;
+				MedicationsAdministeredSection medicationsAdministeredSection = (MedicationsAdministeredSection) theEObject;
 				T result = caseMedicationsAdministeredSection(medicationsAdministeredSection);
-				if (result == null) result = caseIHE_MedicationsAdministeredSection(medicationsAdministeredSection);
-				if (result == null) result = caseSection(medicationsAdministeredSection);
-				if (result == null) result = caseAct(medicationsAdministeredSection);
-				if (result == null) result = caseInfrastructureRoot(medicationsAdministeredSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_MedicationsAdministeredSection(medicationsAdministeredSection);
+				}
+				if (result == null) {
+					result = caseSection(medicationsAdministeredSection);
+				}
+				if (result == null) {
+					result = caseAct(medicationsAdministeredSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationsAdministeredSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.PHYSICAL_EXAM_SECTION: {
-				PhysicalExamSection physicalExamSection = (PhysicalExamSection)theEObject;
+				PhysicalExamSection physicalExamSection = (PhysicalExamSection) theEObject;
 				T result = casePhysicalExamSection(physicalExamSection);
-				if (result == null) result = caseIHE_PhysicalExamSection(physicalExamSection);
-				if (result == null) result = casePhysicalExamNarrativeSection(physicalExamSection);
-				if (result == null) result = caseSection(physicalExamSection);
-				if (result == null) result = caseAct(physicalExamSection);
-				if (result == null) result = caseInfrastructureRoot(physicalExamSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_PhysicalExamSection(physicalExamSection);
+				}
+				if (result == null) {
+					result = casePhysicalExamNarrativeSection(physicalExamSection);
+				}
+				if (result == null) {
+					result = caseSection(physicalExamSection);
+				}
+				if (result == null) {
+					result = caseAct(physicalExamSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(physicalExamSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.REVIEW_OF_SYSTEMS_SECTION: {
-				ReviewOfSystemsSection reviewOfSystemsSection = (ReviewOfSystemsSection)theEObject;
+				ReviewOfSystemsSection reviewOfSystemsSection = (ReviewOfSystemsSection) theEObject;
 				T result = caseReviewOfSystemsSection(reviewOfSystemsSection);
-				if (result == null) result = caseIHE_ReviewOfSystemsSection(reviewOfSystemsSection);
-				if (result == null) result = caseSection(reviewOfSystemsSection);
-				if (result == null) result = caseAct(reviewOfSystemsSection);
-				if (result == null) result = caseInfrastructureRoot(reviewOfSystemsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_ReviewOfSystemsSection(reviewOfSystemsSection);
+				}
+				if (result == null) {
+					result = caseSection(reviewOfSystemsSection);
+				}
+				if (result == null) {
+					result = caseAct(reviewOfSystemsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reviewOfSystemsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.HOSPITAL_COURSE_SECTION: {
-				HospitalCourseSection hospitalCourseSection = (HospitalCourseSection)theEObject;
+				HospitalCourseSection hospitalCourseSection = (HospitalCourseSection) theEObject;
 				T result = caseHospitalCourseSection(hospitalCourseSection);
-				if (result == null) result = caseIHE_HospitalCourseSection(hospitalCourseSection);
-				if (result == null) result = caseSection(hospitalCourseSection);
-				if (result == null) result = caseAct(hospitalCourseSection);
-				if (result == null) result = caseInfrastructureRoot(hospitalCourseSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_HospitalCourseSection(hospitalCourseSection);
+				}
+				if (result == null) {
+					result = caseSection(hospitalCourseSection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalCourseSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalCourseSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.ASSESSMENT_AND_PLAN_SECTION: {
-				AssessmentAndPlanSection assessmentAndPlanSection = (AssessmentAndPlanSection)theEObject;
+				AssessmentAndPlanSection assessmentAndPlanSection = (AssessmentAndPlanSection) theEObject;
 				T result = caseAssessmentAndPlanSection(assessmentAndPlanSection);
-				if (result == null) result = caseIHE_AssessmentAndPlanSection(assessmentAndPlanSection);
-				if (result == null) result = caseSection(assessmentAndPlanSection);
-				if (result == null) result = caseAct(assessmentAndPlanSection);
-				if (result == null) result = caseInfrastructureRoot(assessmentAndPlanSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_AssessmentAndPlanSection(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = caseSection(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = caseAct(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.FAMILY_HISTORY_SECTION: {
-				FamilyHistorySection familyHistorySection = (FamilyHistorySection)theEObject;
+				FamilyHistorySection familyHistorySection = (FamilyHistorySection) theEObject;
 				T result = caseFamilyHistorySection(familyHistorySection);
-				if (result == null) result = caseFamilyMedicalHistorySection(familyHistorySection);
-				if (result == null) result = caseCCD_FamilyHistorySection(familyHistorySection);
-				if (result == null) result = caseSection(familyHistorySection);
-				if (result == null) result = caseAct(familyHistorySection);
-				if (result == null) result = caseInfrastructureRoot(familyHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseFamilyMedicalHistorySection(familyHistorySection);
+				}
+				if (result == null) {
+					result = caseCCD_FamilyHistorySection(familyHistorySection);
+				}
+				if (result == null) {
+					result = caseSection(familyHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(familyHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.SOCIAL_HISTORY_SECTION: {
-				SocialHistorySection socialHistorySection = (SocialHistorySection)theEObject;
+				SocialHistorySection socialHistorySection = (SocialHistorySection) theEObject;
 				T result = caseSocialHistorySection(socialHistorySection);
-				if (result == null) result = caseIHE_SocialHistorySection(socialHistorySection);
-				if (result == null) result = caseCCD_SocialHistorySection(socialHistorySection);
-				if (result == null) result = caseSection(socialHistorySection);
-				if (result == null) result = caseAct(socialHistorySection);
-				if (result == null) result = caseInfrastructureRoot(socialHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_SocialHistorySection(socialHistorySection);
+				}
+				if (result == null) {
+					result = caseCCD_SocialHistorySection(socialHistorySection);
+				}
+				if (result == null) {
+					result = caseSection(socialHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(socialHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(socialHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICAL_EQUIPMENT_SECTION: {
-				MedicalEquipmentSection medicalEquipmentSection = (MedicalEquipmentSection)theEObject;
+				MedicalEquipmentSection medicalEquipmentSection = (MedicalEquipmentSection) theEObject;
 				T result = caseMedicalEquipmentSection(medicalEquipmentSection);
-				if (result == null) result = caseMedicalDevicesSection(medicalEquipmentSection);
-				if (result == null) result = caseCCD_MedicalEquipmentSection(medicalEquipmentSection);
-				if (result == null) result = caseSection(medicalEquipmentSection);
-				if (result == null) result = caseAct(medicalEquipmentSection);
-				if (result == null) result = caseInfrastructureRoot(medicalEquipmentSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedicalDevicesSection(medicalEquipmentSection);
+				}
+				if (result == null) {
+					result = caseCCD_MedicalEquipmentSection(medicalEquipmentSection);
+				}
+				if (result == null) {
+					result = caseSection(medicalEquipmentSection);
+				}
+				if (result == null) {
+					result = caseAct(medicalEquipmentSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicalEquipmentSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.LANGUAGE_SPOKEN: {
-				LanguageSpoken languageSpoken = (LanguageSpoken)theEObject;
+				LanguageSpoken languageSpoken = (LanguageSpoken) theEObject;
 				T result = caseLanguageSpoken(languageSpoken);
-				if (result == null) result = caseIHE_LanguageCommunication(languageSpoken);
-				if (result == null) result = caseLanguageCommunication(languageSpoken);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_LanguageCommunication(languageSpoken);
+				}
+				if (result == null) {
+					result = caseLanguageCommunication(languageSpoken);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.INSURANCE_PROVIDER: {
-				InsuranceProvider insuranceProvider = (InsuranceProvider)theEObject;
+				InsuranceProvider insuranceProvider = (InsuranceProvider) theEObject;
 				T result = caseInsuranceProvider(insuranceProvider);
-				if (result == null) result = caseCoverageEntry(insuranceProvider);
-				if (result == null) result = caseCoverageActivity(insuranceProvider);
-				if (result == null) result = caseCDA_Act(insuranceProvider);
-				if (result == null) result = caseClinicalStatement(insuranceProvider);
-				if (result == null) result = caseAct(insuranceProvider);
-				if (result == null) result = caseInfrastructureRoot(insuranceProvider);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCoverageEntry(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseCoverageActivity(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseCDA_Act(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseAct(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(insuranceProvider);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.HEALTHCARE_PROVIDER: {
-				HealthcareProvider healthcareProvider = (HealthcareProvider)theEObject;
+				HealthcareProvider healthcareProvider = (HealthcareProvider) theEObject;
 				T result = caseHealthcareProvider(healthcareProvider);
-				if (result == null) result = caseHealthcareProvidersPharmacies(healthcareProvider);
-				if (result == null) result = casePerformer1(healthcareProvider);
-				if (result == null) result = caseParticipation(healthcareProvider);
-				if (result == null) result = caseInfrastructureRoot(healthcareProvider);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseHealthcareProvidersPharmacies(healthcareProvider);
+				}
+				if (result == null) {
+					result = casePerformer1(healthcareProvider);
+				}
+				if (result == null) {
+					result = caseParticipation(healthcareProvider);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(healthcareProvider);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.COMMENT: {
-				Comment comment = (Comment)theEObject;
+				Comment comment = (Comment) theEObject;
 				T result = caseComment(comment);
-				if (result == null) result = caseIHE_Comment(comment);
-				if (result == null) result = caseCCD_Comment(comment);
-				if (result == null) result = caseCDA_Act(comment);
-				if (result == null) result = caseClinicalStatement(comment);
-				if (result == null) result = caseAct(comment);
-				if (result == null) result = caseInfrastructureRoot(comment);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseIHE_Comment(comment);
+				}
+				if (result == null) {
+					result = caseCCD_Comment(comment);
+				}
+				if (result == null) {
+					result = caseCDA_Act(comment);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(comment);
+				}
+				if (result == null) {
+					result = caseAct(comment);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(comment);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATION_NORMAL_DOSE: {
-				MedicationNormalDose medicationNormalDose = (MedicationNormalDose)theEObject;
+				MedicationNormalDose medicationNormalDose = (MedicationNormalDose) theEObject;
 				T result = caseMedicationNormalDose(medicationNormalDose);
-				if (result == null) result = caseMedication(medicationNormalDose);
-				if (result == null) result = caseNormalDose(medicationNormalDose);
-				if (result == null) result = caseIHE_Medication(medicationNormalDose);
-				if (result == null) result = caseMedicationActivity(medicationNormalDose);
-				if (result == null) result = caseSubstanceAdministration(medicationNormalDose);
-				if (result == null) result = caseClinicalStatement(medicationNormalDose);
-				if (result == null) result = caseAct(medicationNormalDose);
-				if (result == null) result = caseInfrastructureRoot(medicationNormalDose);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedication(medicationNormalDose);
+				}
+				if (result == null) {
+					result = caseNormalDose(medicationNormalDose);
+				}
+				if (result == null) {
+					result = caseIHE_Medication(medicationNormalDose);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(medicationNormalDose);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(medicationNormalDose);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationNormalDose);
+				}
+				if (result == null) {
+					result = caseAct(medicationNormalDose);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationNormalDose);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATION_SPLIT_DOSE: {
-				MedicationSplitDose medicationSplitDose = (MedicationSplitDose)theEObject;
+				MedicationSplitDose medicationSplitDose = (MedicationSplitDose) theEObject;
 				T result = caseMedicationSplitDose(medicationSplitDose);
-				if (result == null) result = caseMedication(medicationSplitDose);
-				if (result == null) result = caseSplitDose(medicationSplitDose);
-				if (result == null) result = caseIHE_Medication(medicationSplitDose);
-				if (result == null) result = caseMedicationActivity(medicationSplitDose);
-				if (result == null) result = caseSubstanceAdministration(medicationSplitDose);
-				if (result == null) result = caseClinicalStatement(medicationSplitDose);
-				if (result == null) result = caseAct(medicationSplitDose);
-				if (result == null) result = caseInfrastructureRoot(medicationSplitDose);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedication(medicationSplitDose);
+				}
+				if (result == null) {
+					result = caseSplitDose(medicationSplitDose);
+				}
+				if (result == null) {
+					result = caseIHE_Medication(medicationSplitDose);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(medicationSplitDose);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(medicationSplitDose);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationSplitDose);
+				}
+				if (result == null) {
+					result = caseAct(medicationSplitDose);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationSplitDose);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATION_TAPERED_DOSE: {
-				MedicationTaperedDose medicationTaperedDose = (MedicationTaperedDose)theEObject;
+				MedicationTaperedDose medicationTaperedDose = (MedicationTaperedDose) theEObject;
 				T result = caseMedicationTaperedDose(medicationTaperedDose);
-				if (result == null) result = caseMedication(medicationTaperedDose);
-				if (result == null) result = caseTaperedDose(medicationTaperedDose);
-				if (result == null) result = caseIHE_Medication(medicationTaperedDose);
-				if (result == null) result = caseMedicationActivity(medicationTaperedDose);
-				if (result == null) result = caseSubstanceAdministration(medicationTaperedDose);
-				if (result == null) result = caseClinicalStatement(medicationTaperedDose);
-				if (result == null) result = caseAct(medicationTaperedDose);
-				if (result == null) result = caseInfrastructureRoot(medicationTaperedDose);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedication(medicationTaperedDose);
+				}
+				if (result == null) {
+					result = caseTaperedDose(medicationTaperedDose);
+				}
+				if (result == null) {
+					result = caseIHE_Medication(medicationTaperedDose);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(medicationTaperedDose);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(medicationTaperedDose);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationTaperedDose);
+				}
+				if (result == null) {
+					result = caseAct(medicationTaperedDose);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationTaperedDose);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATION_CONDITIONAL_DOSE: {
-				MedicationConditionalDose medicationConditionalDose = (MedicationConditionalDose)theEObject;
+				MedicationConditionalDose medicationConditionalDose = (MedicationConditionalDose) theEObject;
 				T result = caseMedicationConditionalDose(medicationConditionalDose);
-				if (result == null) result = caseConditionalDose(medicationConditionalDose);
-				if (result == null) result = caseMedication(medicationConditionalDose);
-				if (result == null) result = caseIHE_Medication(medicationConditionalDose);
-				if (result == null) result = caseMedicationActivity(medicationConditionalDose);
-				if (result == null) result = caseSubstanceAdministration(medicationConditionalDose);
-				if (result == null) result = caseClinicalStatement(medicationConditionalDose);
-				if (result == null) result = caseAct(medicationConditionalDose);
-				if (result == null) result = caseInfrastructureRoot(medicationConditionalDose);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseConditionalDose(medicationConditionalDose);
+				}
+				if (result == null) {
+					result = caseMedication(medicationConditionalDose);
+				}
+				if (result == null) {
+					result = caseIHE_Medication(medicationConditionalDose);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(medicationConditionalDose);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(medicationConditionalDose);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationConditionalDose);
+				}
+				if (result == null) {
+					result = caseAct(medicationConditionalDose);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationConditionalDose);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATION_COMBINATION_MEDICATION: {
-				MedicationCombinationMedication medicationCombinationMedication = (MedicationCombinationMedication)theEObject;
+				MedicationCombinationMedication medicationCombinationMedication = (MedicationCombinationMedication) theEObject;
 				T result = caseMedicationCombinationMedication(medicationCombinationMedication);
-				if (result == null) result = caseCombinationMedication(medicationCombinationMedication);
-				if (result == null) result = caseMedication(medicationCombinationMedication);
-				if (result == null) result = caseIHE_Medication(medicationCombinationMedication);
-				if (result == null) result = caseMedicationActivity(medicationCombinationMedication);
-				if (result == null) result = caseSubstanceAdministration(medicationCombinationMedication);
-				if (result == null) result = caseClinicalStatement(medicationCombinationMedication);
-				if (result == null) result = caseAct(medicationCombinationMedication);
-				if (result == null) result = caseInfrastructureRoot(medicationCombinationMedication);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCombinationMedication(medicationCombinationMedication);
+				}
+				if (result == null) {
+					result = caseMedication(medicationCombinationMedication);
+				}
+				if (result == null) {
+					result = caseIHE_Medication(medicationCombinationMedication);
+				}
+				if (result == null) {
+					result = caseMedicationActivity(medicationCombinationMedication);
+				}
+				if (result == null) {
+					result = caseSubstanceAdministration(medicationCombinationMedication);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationCombinationMedication);
+				}
+				if (result == null) {
+					result = caseAct(medicationCombinationMedication);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationCombinationMedication);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.SUPPORT: {
-				Support support = (Support)theEObject;
+				Support support = (Support) theEObject;
 				T result = caseSupport(support);
-				if (result == null) result = casePatientContact(support);
-				if (result == null) result = caseCCD_Support(support);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePatientContact(support);
+				}
+				if (result == null) {
+					result = caseCCD_Support(support);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.SUPPORT_GUARDIAN: {
-				SupportGuardian supportGuardian = (SupportGuardian)theEObject;
+				SupportGuardian supportGuardian = (SupportGuardian) theEObject;
 				T result = caseSupportGuardian(supportGuardian);
-				if (result == null) result = casePatientContactGuardian(supportGuardian);
-				if (result == null) result = caseSupport(supportGuardian);
-				if (result == null) result = caseCCD_SupportGuardian(supportGuardian);
-				if (result == null) result = casePatientContact(supportGuardian);
-				if (result == null) result = caseGuardian(supportGuardian);
-				if (result == null) result = caseCCD_Support(supportGuardian);
-				if (result == null) result = caseRole(supportGuardian);
-				if (result == null) result = caseInfrastructureRoot(supportGuardian);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePatientContactGuardian(supportGuardian);
+				}
+				if (result == null) {
+					result = caseSupport(supportGuardian);
+				}
+				if (result == null) {
+					result = caseCCD_SupportGuardian(supportGuardian);
+				}
+				if (result == null) {
+					result = casePatientContact(supportGuardian);
+				}
+				if (result == null) {
+					result = caseGuardian(supportGuardian);
+				}
+				if (result == null) {
+					result = caseCCD_Support(supportGuardian);
+				}
+				if (result == null) {
+					result = caseRole(supportGuardian);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(supportGuardian);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.SUPPORT_PARTICIPANT: {
-				SupportParticipant supportParticipant = (SupportParticipant)theEObject;
+				SupportParticipant supportParticipant = (SupportParticipant) theEObject;
 				T result = caseSupportParticipant(supportParticipant);
-				if (result == null) result = casePatientContactParticipant(supportParticipant);
-				if (result == null) result = caseSupport(supportParticipant);
-				if (result == null) result = caseCCD_SupportParticipant(supportParticipant);
-				if (result == null) result = casePatientContact(supportParticipant);
-				if (result == null) result = caseParticipant1(supportParticipant);
-				if (result == null) result = caseCCD_Support(supportParticipant);
-				if (result == null) result = caseParticipation(supportParticipant);
-				if (result == null) result = caseInfrastructureRoot(supportParticipant);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePatientContactParticipant(supportParticipant);
+				}
+				if (result == null) {
+					result = caseSupport(supportParticipant);
+				}
+				if (result == null) {
+					result = caseCCD_SupportParticipant(supportParticipant);
+				}
+				if (result == null) {
+					result = casePatientContact(supportParticipant);
+				}
+				if (result == null) {
+					result = caseParticipant1(supportParticipant);
+				}
+				if (result == null) {
+					result = caseCCD_Support(supportParticipant);
+				}
+				if (result == null) {
+					result = caseParticipation(supportParticipant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(supportParticipant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.UNSTRUCTURED_DOCUMENT: {
-				UnstructuredDocument unstructuredDocument = (UnstructuredDocument)theEObject;
+				UnstructuredDocument unstructuredDocument = (UnstructuredDocument) theEObject;
 				T result = caseUnstructuredDocument(unstructuredDocument);
-				if (result == null) result = caseMedicalDocument(unstructuredDocument);
-				if (result == null) result = caseScannedDocument(unstructuredDocument);
-				if (result == null) result = caseGeneralHeaderConstraints(unstructuredDocument);
-				if (result == null) result = caseClinicalDocument(unstructuredDocument);
-				if (result == null) result = caseAct(unstructuredDocument);
-				if (result == null) result = caseInfrastructureRoot(unstructuredDocument);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedicalDocument(unstructuredDocument);
+				}
+				if (result == null) {
+					result = caseScannedDocument(unstructuredDocument);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(unstructuredDocument);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(unstructuredDocument);
+				}
+				if (result == null) {
+					result = caseAct(unstructuredDocument);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(unstructuredDocument);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.MEDICATION_INFORMATION: {
-				MedicationInformation medicationInformation = (MedicationInformation)theEObject;
+				MedicationInformation medicationInformation = (MedicationInformation) theEObject;
 				T result = caseMedicationInformation(medicationInformation);
-				if (result == null) result = caseProductEntry(medicationInformation);
-				if (result == null) result = caseProduct(medicationInformation);
-				if (result == null) result = caseManufacturedProduct(medicationInformation);
-				if (result == null) result = caseRole(medicationInformation);
-				if (result == null) result = caseInfrastructureRoot(medicationInformation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProductEntry(medicationInformation);
+				}
+				if (result == null) {
+					result = caseProduct(medicationInformation);
+				}
+				if (result == null) {
+					result = caseManufacturedProduct(medicationInformation);
+				}
+				if (result == null) {
+					result = caseRole(medicationInformation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationInformation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case HITSPPackage.HITSP_REGISTRY_DELEGATE: {
-				HITSPRegistryDelegate hitspRegistryDelegate = (HITSPRegistryDelegate)theEObject;
+				HITSPRegistryDelegate hitspRegistryDelegate = (HITSPRegistryDelegate) theEObject;
 				T result = caseHITSPRegistryDelegate(hitspRegistryDelegate);
-				if (result == null) result = caseRegistryDelegate(hitspRegistryDelegate);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseRegistryDelegate(hitspRegistryDelegate);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			default: return defaultCase(theEObject);
+			default:
+				return defaultCase(theEObject);
 		}
 	}
 

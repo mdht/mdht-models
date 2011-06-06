@@ -74,7 +74,7 @@ public class MedicationSplitDoseImpl extends MedicationImpl implements Medicatio
 	 */
 	@Override
 	public MedicationSplitDose init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationSplitDoseImpl
