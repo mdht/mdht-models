@@ -75,7 +75,7 @@ public class VitalSignImpl extends VitalSignObservationImpl implements VitalSign
 	 */
 	@Override
 	public VitalSign init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // VitalSignImpl

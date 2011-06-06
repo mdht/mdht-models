@@ -56,7 +56,8 @@ public class HistoryOfPresentIllnessImpl extends org.openhealthtools.mdht.uml.cd
 	 */
 	public boolean validateHITSPHistoryOfPresentIllnessTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPresentIllnessOperations.validateHITSPHistoryOfPresentIllnessTemplateId(this, diagnostics, context);
+		return HistoryOfPresentIllnessOperations.validateHITSPHistoryOfPresentIllnessTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class HistoryOfPresentIllnessImpl extends org.openhealthtools.mdht.uml.cd
 	 */
 	@Override
 	public HistoryOfPresentIllness init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HistoryOfPresentIllnessImpl

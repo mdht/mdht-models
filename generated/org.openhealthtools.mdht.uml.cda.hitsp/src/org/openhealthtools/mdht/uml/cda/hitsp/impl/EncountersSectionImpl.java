@@ -85,7 +85,7 @@ public class EncountersSectionImpl extends EncounterHistorySectionImpl implement
 	 */
 	@Override
 	public EncountersSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncountersSectionImpl

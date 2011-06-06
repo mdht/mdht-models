@@ -74,7 +74,7 @@ public class VitalSignsSectionImpl extends CodedVitalSignsSectionImpl implements
 	 */
 	@Override
 	public VitalSignsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // VitalSignsSectionImpl

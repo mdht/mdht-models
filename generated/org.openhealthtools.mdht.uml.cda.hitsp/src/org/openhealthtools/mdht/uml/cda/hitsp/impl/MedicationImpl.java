@@ -66,7 +66,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationFirstEffectiveTimeDatatype(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationFirstEffectiveTimeDatatype(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationFirstEffectiveTimeDatatype(this, diagnostics, context);
 	}
 
@@ -84,7 +85,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationDeliveryMethodDescription(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationDeliveryMethodDescription(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationDeliveryMethodDescription(this, diagnostics, context);
 	}
 
@@ -93,7 +95,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationHasMedicationInformation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationHasMedicationInformation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationHasMedicationInformation(this, diagnostics, context);
 	}
 
@@ -120,7 +123,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationHasIndicationNarrativeText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationHasIndicationNarrativeText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationHasIndicationNarrativeText(this, diagnostics, context);
 	}
 
@@ -138,7 +142,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationHasPatientInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationHasPatientInstructions(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationHasPatientInstructions(this, diagnostics, context);
 	}
 
@@ -165,7 +170,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationMedicationVehicleClass(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationMedicationVehicleClass(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationMedicationVehicleClass(this, diagnostics, context);
 	}
 
@@ -192,7 +198,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationMedicationVehicleCodedName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationMedicationVehicleCodedName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationMedicationVehicleCodedName(this, diagnostics, context);
 	}
 
@@ -201,7 +208,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationMedicationVehicleCodedNameVocab(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationMedicationVehicleCodedNameVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationMedicationVehicleCodedNameVocab(this, diagnostics, context);
 	}
 
@@ -312,7 +320,7 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 */
 	@Override
 	public Medication init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationImpl

@@ -65,7 +65,7 @@ public class SupportParticipantImpl extends PatientContactParticipantImpl implem
 	 */
 	@Override
 	public SupportParticipant init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // SupportParticipantImpl

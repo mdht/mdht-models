@@ -56,7 +56,8 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 */
 	public boolean validateHITSPFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateHITSPFunctionalStatusSectionTemplateId(this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateHITSPFunctionalStatusSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 */
 	@Override
 	public FunctionalStatusSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // FunctionalStatusSectionImpl
