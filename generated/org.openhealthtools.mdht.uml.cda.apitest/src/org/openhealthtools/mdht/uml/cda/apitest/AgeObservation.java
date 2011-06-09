@@ -14,7 +14,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getAgeObservation()
  * @generated
  */
-public interface AgeObservation extends Observation, IAgeObservation {
+public interface AgeObservation extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

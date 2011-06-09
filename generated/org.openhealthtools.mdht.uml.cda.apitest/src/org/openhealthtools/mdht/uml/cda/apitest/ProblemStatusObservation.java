@@ -13,7 +13,6 @@ package org.openhealthtools.mdht.uml.cda.apitest;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getProblemStatusObservation()
  * @generated
  */
-public interface ProblemStatusObservation extends StatusObservation, IProblemStatusObservation {
+public interface ProblemStatusObservation extends StatusObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

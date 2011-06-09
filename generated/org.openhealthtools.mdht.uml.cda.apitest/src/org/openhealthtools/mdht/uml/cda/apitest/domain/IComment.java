@@ -24,17 +24,41 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <!-- end-model-doc -->
  *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment#getCDAType <em>CDA Type</em>}</li>
+ * </ul>
+ * </p>
  *
  * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIComment()
  * @generated
  */
 public interface IComment {
 	/**
+	 * Returns the value of the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>CDA Type</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
 	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>CDA Type</em>' reference.
+	 * @see #setCDAType(Act)
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIComment_CDAType()
 	 * @generated
 	 */
-	Act toCDAType();
+	Act getCDAType();
+
+	/**
+	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment#getCDAType <em>CDA Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>CDA Type</em>' reference.
+	 * @see #getCDAType()
+	 * @generated
+	 */
+	void setCDAType(Act value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -66,6 +90,17 @@ public interface IComment {
 	 * @generated
 	 */
 	IComment withText(ED value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Act::author.
+	 * self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))->asSequence()->first().oclAsType(cda::Author)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	Author getAuthor();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -14,8 +14,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.IFamilyHistoryObservation
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getFamilyHistoryObservation()
  * @generated
  */
-public interface FamilyHistoryObservation extends Observation, IFamilyHistoryObservation {
+public interface FamilyHistoryObservation extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,12 +67,11 @@ public interface FamilyHistoryObservation extends Observation, IFamilyHistoryObs
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * apitest::FamilyHistoryObservation::ageObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::AgeObservation))->asSequence()->first().oclAsType(apitest::AgeObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IAgeObservation getAgeObservation();
+	AgeObservation getAgeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->

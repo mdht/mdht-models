@@ -15,10 +15,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
+import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getCondition()
  * @generated
  */
-public interface Condition extends Act, ICondition {
+public interface Condition extends Act {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -219,34 +216,31 @@ public interface Condition extends Act, ICondition {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * apitest::Condition::episodeObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IEpisodeObservation))->asSequence()->first().oclAsType(domain::IEpisodeObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::EpisodeObservation))->asSequence()->first().oclAsType(apitest::EpisodeObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IEpisodeObservation getEpisodeObservation();
+	EpisodeObservation getEpisodeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * apitest::Condition::conditionEntry.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IProblemEntry)).oclAsType(domain::IProblemEntry)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::ConditionEntry)).oclAsType(apitest::ConditionEntry)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<IProblemEntry> getProblemEntries();
+	EList<ConditionEntry> getConditionEntries();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * apitest::Condition::treatingProvider.
-	 * self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(domain::ITreatingProvider))->asSequence()->first().oclAsType(domain::ITreatingProvider)
+	 * self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))->asSequence()->first().oclAsType(cda::AssignedEntity)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ITreatingProvider getTreatingProvider();
+	AssignedEntity getTreatingProvider();
 
 	/**
 	 * <!-- begin-user-doc -->

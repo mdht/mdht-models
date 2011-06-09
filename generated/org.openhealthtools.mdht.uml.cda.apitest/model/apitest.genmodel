@@ -5,7 +5,7 @@
     modelPluginID="org.openhealthtools.mdht.uml.cda.apitest" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
     dynamicTemplates="true" redirection="" modelName="APITest" modelPluginClass="APITestPlugin"
     suppressEMFModelTags="true" importerID="org.eclipse.uml2.uml.ecore.importer" suppressNotification="true"
-    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes apitest_domain.genmodel#//domain platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
     classNamePattern="" invariantPrefix="validate">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
@@ -124,7 +124,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//Condition/ConditionTreatingProvider/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//Condition/getEpisodeObservation"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//Condition/getProblemEntries"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//Condition/getConditionEntries"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//Condition/getTreatingProvider"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//Condition_TreatingProvider">
@@ -252,12 +252,12 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//ConditionEntry/ConditionEntryCauseOfDeathObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//ConditionEntry/ConditionEntryCauseOfDeathObservation/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getAgeAtOnset"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getAgeObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getSeverity"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getProblemStatus"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getProblemStatusObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getHealthStatusObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getComments"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getCauseOfDeath"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ConditionEntry/getCauseOfDeathObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//AgeObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//AgeObservation/AgeObservationRelatedSubjectBirthTime">
@@ -368,7 +368,24 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//Comment/CommentStatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//Comment/CommentStatusCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//Comment/getAuthor"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//CauseOfDeathObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//CauseOfDeathObservation/getAPITestAgeObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//FamilyHistoryObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/getAgeObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//ProblemListSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ProblemListSection/ProblemListSectionTemplateId">
@@ -388,24 +405,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//ProblemListSection/ProblemListSectionText/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//ProblemListSection/getConditions"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//FamilyHistoryObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="apitest.ecore#//FamilyHistoryObservation/FamilyHistoryObservationStatusCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//FamilyHistoryObservation/getAgeObservation"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//CauseOfDeathObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//CauseOfDeathObservation/getAgeAtDeath"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="apitest.ecore#//PatientSummary">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="apitest.ecore#//PatientSummary/PatientSummaryProblemListSection">

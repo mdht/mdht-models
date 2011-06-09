@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Map;
@@ -15,19 +11,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-import org.eclipse.ocl.expressions.OCLExpression;
-import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ANY;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,8 +28,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ANY;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation#toCDAType() <em>To CDA Type</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation#getValue() <em>Get Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.AgeObservation#validateAgeObservationRelatedSubjectBirthTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Related Subject Birth Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.AgeObservation#validateAgeObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.AgeObservation#validateAgeObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Class Code</em>}</li>
@@ -59,64 +48,6 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	 */
 	protected AgeObservationOperations() {
 		super();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static Observation toCDAType(AgeObservation ageObservation) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getValue(AgeObservation) <em>Get Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getValue(AgeObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_VALUE__EOCL_EXP = "self.value.oclAsType(datatypes::ANY)";
-
-	/**
-	 * The cached OCL query for the '{@link #getValue(AgeObservation) <em>Get Value</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getValue(AgeObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_VALUE__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * cda::Observation::value.
-	 * Valued using appropriate datatype.
-	 * self.value.oclAsType(datatypes::ANY)
-	 * @param ageObservation The receiving '<em><b>Age Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static ANY getValue(AgeObservation ageObservation) {
-		if (GET_VALUE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				DomainPackage.Literals.IAGE_OBSERVATION,
-				DomainPackage.Literals.IAGE_OBSERVATION.getEAllOperations().get(1));
-			try {
-				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_VALUE__EOCL_QRY);
-		return (ANY) query.evaluate(ageObservation);
 	}
 
 	/**

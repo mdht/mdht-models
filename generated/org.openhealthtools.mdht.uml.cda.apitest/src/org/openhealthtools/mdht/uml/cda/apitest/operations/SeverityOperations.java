@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Map;
@@ -15,20 +11,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-import org.eclipse.ocl.expressions.OCLExpression;
-import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.Severity;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,9 +28,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#toCDAType() <em>To CDA Type</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#getText() <em>Get Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ISeverity#getValue() <em>Get Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Severity#validateSeverityHasTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Has Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Severity#validateSeverityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Severity#validateSeverityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Class Code</em>}</li>
@@ -62,108 +49,6 @@ public class SeverityOperations extends ClinicalStatementOperations {
 	 */
 	protected SeverityOperations() {
 		super();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static Observation toCDAType(Severity severity) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getText(Severity) <em>Get Text</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getText(Severity)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(datatypes::ED)";
-
-	/**
-	 * The cached OCL query for the '{@link #getText(Severity) <em>Get Text</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getText(Severity)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_TEXT__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * cda::Observation::text.
-	 * self.text.oclAsType(datatypes::ED)
-	 * @param severity The receiving '<em><b>Severity</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static ED getText(Severity severity) {
-		if (GET_TEXT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				DomainPackage.Literals.ISEVERITY, DomainPackage.Literals.ISEVERITY.getEAllOperations().get(1));
-			try {
-				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TEXT__EOCL_QRY);
-		return (ED) query.evaluate(severity);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getValue(Severity) <em>Get Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getValue(Severity)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_VALUE__EOCL_EXP = "self.value.oclAsType(datatypes::CD)";
-
-	/**
-	 * The cached OCL query for the '{@link #getValue(Severity) <em>Get Value</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getValue(Severity)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_VALUE__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * cda::Observation::value.
-	 * Value code representing high, moderate and low severity depending upon whether the severity is life threatening, presents noticeable adverse consequences, or is unlikely substantially effect the situation of the subject.
-	 * self.value.oclAsType(datatypes::CD)
-	 * @param severity The receiving '<em><b>Severity</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static CD getValue(Severity severity) {
-		if (GET_VALUE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				DomainPackage.Literals.ISEVERITY, DomainPackage.Literals.ISEVERITY.getEAllOperations().get(4));
-			try {
-				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_VALUE__EOCL_QRY);
-		return (CD) query.evaluate(severity);
 	}
 
 	/**

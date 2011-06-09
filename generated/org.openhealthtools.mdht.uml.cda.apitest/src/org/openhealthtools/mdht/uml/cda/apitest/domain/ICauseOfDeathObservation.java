@@ -61,6 +61,17 @@ public interface ICauseOfDeathObservation extends IFamilyHistoryObservation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * apitest::CauseOfDeathObservation::ageObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IAgeObservation getAgeAtDeath();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * APITest Cause Of Death Observation Contains zero or one [0..1] entryRelationship, such that Contains exactly one [1..1] Age Observation (templateId: 2.16.840.1.113883.10.20.1.38).
 	 * <!-- end-model-doc -->
 	 * @generated

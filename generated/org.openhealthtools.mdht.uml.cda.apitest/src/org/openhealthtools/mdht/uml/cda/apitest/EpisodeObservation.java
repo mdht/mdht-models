@@ -14,7 +14,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getEpisodeObservation()
  * @generated
  */
-public interface EpisodeObservation extends Observation, IEpisodeObservation {
+public interface EpisodeObservation extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

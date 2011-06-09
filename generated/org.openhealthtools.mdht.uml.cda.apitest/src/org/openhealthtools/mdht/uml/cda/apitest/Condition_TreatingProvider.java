@@ -14,7 +14,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.ITreatingProvider;
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getCondition_TreatingProvider()
  * @generated
  */
-public interface Condition_TreatingProvider extends AssignedEntity, ITreatingProvider {
+public interface Condition_TreatingProvider extends AssignedEntity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

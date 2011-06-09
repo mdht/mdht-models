@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Map;
@@ -15,20 +11,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-import org.eclipse.ocl.expressions.OCLExpression;
-import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.Author;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.Comment;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,8 +28,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment#toCDAType() <em>To CDA Type</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IComment#getText() <em>Get Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Comment#validateCommentHasTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Has Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Comment#validateCommentEffectiveTimeWhenAuthorPresent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Effective Time When Author Present</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Comment#validateCommentTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Template Id</em>}</li>
@@ -48,7 +36,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Comment#validateCommentCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Comment#validateCommentText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Comment#validateCommentStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.Comment#getAuthor() <em>Get Author</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,62 +49,6 @@ public class CommentOperations extends ClinicalStatementOperations {
 	 */
 	protected CommentOperations() {
 		super();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static Act toCDAType(Comment comment) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getText(Comment) <em>Get Text</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getText(Comment)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(datatypes::ED)";
-
-	/**
-	 * The cached OCL query for the '{@link #getText(Comment) <em>Get Text</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getText(Comment)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_TEXT__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * cda::Act::text.
-	 * self.text.oclAsType(datatypes::ED)
-	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static ED getText(Comment comment) {
-		if (GET_TEXT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				DomainPackage.Literals.ICOMMENT, DomainPackage.Literals.ICOMMENT.getEAllOperations().get(1));
-			try {
-				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TEXT__EOCL_QRY);
-		return (ED) query.evaluate(comment);
 	}
 
 	/**
@@ -553,51 +484,6 @@ public class CommentOperations extends ClinicalStatementOperations {
 			return false;
 		}
 		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getAuthor(Comment) <em>Get Author</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAuthor(Comment)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_AUTHOR__EOCL_EXP = "self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))->asSequence()->first().oclAsType(cda::Author)";
-
-	/**
-	 * The cached OCL query for the '{@link #getAuthor(Comment) <em>Get Author</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAuthor(Comment)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_AUTHOR__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * cda::Act::author.
-	 * self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))->asSequence()->first().oclAsType(cda::Author)
-	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static Author getAuthor(Comment comment) {
-		if (GET_AUTHOR__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				APITestPackage.Literals.COMMENT, APITestPackage.Literals.COMMENT.getEAllOperations().get(63));
-			try {
-				GET_AUTHOR__EOCL_QRY = helper.createQuery(GET_AUTHOR__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_AUTHOR__EOCL_QRY);
-		return (Author) query.evaluate(comment);
 	}
 
 } // CommentOperations
