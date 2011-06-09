@@ -723,7 +723,7 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CAUSE_OF_DEATH_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID = 90;
+	public static final int CAUSE_OF_DEATH_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID = 83;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Problem List Section' of 'Patient Summary'.
@@ -739,7 +739,7 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID = 87;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID = 84;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Id' of 'Family History Observation'.
@@ -747,7 +747,7 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_ID = 88;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_ID = 85;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Observation Status Code' of 'Family History Observation'.
@@ -755,7 +755,7 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_STATUS_CODE = 89;
+	public static final int FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_STATUS_CODE = 86;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem List Section Template Id' of 'Problem List Section'.
@@ -763,7 +763,7 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID = 83;
+	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID = 87;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem List Section Code' of 'Problem List Section'.
@@ -771,7 +771,7 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CODE = 84;
+	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CODE = 88;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem List Section Title' of 'Problem List Section'.
@@ -779,7 +779,7 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TITLE = 85;
+	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TITLE = 89;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem List Section Text' of 'Problem List Section'.
@@ -787,7 +787,7 @@ public class APITestValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEXT = 86;
+	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEXT = 90;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -864,12 +864,12 @@ public class APITestValidator extends EObjectValidator {
 				return validateHealthStatusObservation((HealthStatusObservation) value, diagnostics, context);
 			case APITestPackage.COMMENT:
 				return validateComment((Comment) value, diagnostics, context);
-			case APITestPackage.PROBLEM_LIST_SECTION:
-				return validateProblemListSection((ProblemListSection) value, diagnostics, context);
-			case APITestPackage.FAMILY_HISTORY_OBSERVATION:
-				return validateFamilyHistoryObservation((FamilyHistoryObservation) value, diagnostics, context);
 			case APITestPackage.CAUSE_OF_DEATH_OBSERVATION:
 				return validateCauseOfDeathObservation((CauseOfDeathObservation) value, diagnostics, context);
+			case APITestPackage.FAMILY_HISTORY_OBSERVATION:
+				return validateFamilyHistoryObservation((FamilyHistoryObservation) value, diagnostics, context);
+			case APITestPackage.PROBLEM_LIST_SECTION:
+				return validateProblemListSection((ProblemListSection) value, diagnostics, context);
 			case APITestPackage.PATIENT_SUMMARY:
 				return validatePatientSummary((PatientSummary) value, diagnostics, context);
 			case APITestPackage.GENERAL_HEADER_CONSTRAINTS:
@@ -2170,8 +2170,7 @@ public class APITestValidator extends EObjectValidator {
 	 */
 	public boolean validateProblemStatusObservation_validateStatusObservationTemplateId(
 			ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validateStatusObservation_validateStatusObservationTemplateId(
-			problemStatusObservation, diagnostics, context);
+		return problemStatusObservation.validateStatusObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -2182,7 +2181,7 @@ public class APITestValidator extends EObjectValidator {
 	 */
 	public boolean validateProblemStatusObservation_validateStatusObservationValue(
 			ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validateStatusObservation_validateStatusObservationValue(problemStatusObservation, diagnostics, context);
+		return problemStatusObservation.validateStatusObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -2272,8 +2271,7 @@ public class APITestValidator extends EObjectValidator {
 	 */
 	public boolean validateHealthStatusObservation_validateStatusObservationTemplateId(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validateStatusObservation_validateStatusObservationTemplateId(
-			healthStatusObservation, diagnostics, context);
+		return healthStatusObservation.validateStatusObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -2284,7 +2282,7 @@ public class APITestValidator extends EObjectValidator {
 	 */
 	public boolean validateHealthStatusObservation_validateStatusObservationValue(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validateStatusObservation_validateStatusObservationValue(healthStatusObservation, diagnostics, context);
+		return healthStatusObservation.validateStatusObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -2482,8 +2480,7 @@ public class APITestValidator extends EObjectValidator {
 	 */
 	public boolean validateCauseOfDeathObservation_validateFamilyHistoryObservationTemplateId(
 			CauseOfDeathObservation causeOfDeathObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validateFamilyHistoryObservation_validateFamilyHistoryObservationTemplateId(
-			causeOfDeathObservation, diagnostics, context);
+		return causeOfDeathObservation.validateFamilyHistoryObservationTemplateId(diagnostics, context);
 	}
 
 	/**

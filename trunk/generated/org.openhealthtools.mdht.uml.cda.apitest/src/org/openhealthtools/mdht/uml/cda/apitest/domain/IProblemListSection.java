@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest.domain;
 
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
@@ -24,17 +25,41 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <!-- end-model-doc -->
  *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection#getCDAType <em>CDA Type</em>}</li>
+ * </ul>
+ * </p>
  *
  * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIProblemListSection()
  * @generated
  */
 public interface IProblemListSection {
 	/**
+	 * Returns the value of the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>CDA Type</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
 	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>CDA Type</em>' reference.
+	 * @see #setCDAType(Section)
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIProblemListSection_CDAType()
 	 * @generated
 	 */
-	Section toCDAType();
+	Section getCDAType();
+
+	/**
+	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection#getCDAType <em>CDA Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>CDA Type</em>' reference.
+	 * @see #getCDAType()
+	 * @generated
+	 */
+	void setCDAType(Section value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,6 +122,17 @@ public interface IProblemListSection {
 	 * @generated
 	 */
 	IProblemListSection withText(StrucDocText value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ProblemListSection::condition.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::ICondition)).oclAsType(domain::ICondition)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<ICondition> getConditions();
 
 	/**
 	 * <!-- begin-user-doc -->

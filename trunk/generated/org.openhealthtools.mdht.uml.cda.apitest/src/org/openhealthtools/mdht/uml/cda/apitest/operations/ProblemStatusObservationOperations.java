@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Map;
@@ -15,18 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-import org.eclipse.ocl.expressions.OCLExpression;
-import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,8 +27,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#toCDAType() <em>To CDA Type</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemStatusObservation#getValue() <em>Get Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateProblemStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.ProblemStatusObservation#validateStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Value</em>}</li>
@@ -54,63 +43,6 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 	 */
 	protected ProblemStatusObservationOperations() {
 		super();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static Observation toCDAType(ProblemStatusObservation problemStatusObservation) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getValue(ProblemStatusObservation) <em>Get Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getValue(ProblemStatusObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_VALUE__EOCL_EXP = "self.value.oclAsType(datatypes::CE)";
-
-	/**
-	 * The cached OCL query for the '{@link #getValue(ProblemStatusObservation) <em>Get Value</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getValue(ProblemStatusObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_VALUE__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * cda::Observation::value.
-	 * self.value.oclAsType(datatypes::CE)
-	 * @param problemStatusObservation The receiving '<em><b>Problem Status Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static CE getValue(ProblemStatusObservation problemStatusObservation) {
-		if (GET_VALUE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				DomainPackage.Literals.IPROBLEM_STATUS_OBSERVATION,
-				DomainPackage.Literals.IPROBLEM_STATUS_OBSERVATION.getEAllOperations().get(1));
-			try {
-				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_VALUE__EOCL_QRY);
-		return (CE) query.evaluate(problemStatusObservation);
 	}
 
 	/**

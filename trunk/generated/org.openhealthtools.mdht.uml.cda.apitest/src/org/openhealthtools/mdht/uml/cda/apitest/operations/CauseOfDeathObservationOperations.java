@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Map;
@@ -20,13 +16,10 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
-import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
+import org.openhealthtools.mdht.uml.cda.apitest.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,9 +29,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation#getTimeOfDeath() <em>Get Time Of Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation#toCDAType() <em>To CDA Type</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation#getAgeAtDeath() <em>Get Age At Death</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation#getAPITestAgeObservation() <em>Get API Test Age Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.CauseOfDeathObservation#validateFamilyHistoryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Template Id</em>}</li>
  * </ul>
  * </p>
@@ -56,106 +47,48 @@ public class CauseOfDeathObservationOperations extends FamilyHistoryObservationO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getTimeOfDeath(CauseOfDeathObservation) <em>Get Time Of Death</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getAPITestAgeObservation(CauseOfDeathObservation) <em>Get API Test Age Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTimeOfDeath(CauseOfDeathObservation)
+	 * @see #getAPITestAgeObservation(CauseOfDeathObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_TIME_OF_DEATH__EOCL_EXP = "self.effectiveTime.oclAsType(datatypes::IVL_TS)";
+	protected static final String GET_API_TEST_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::AgeObservation))->asSequence()->first().oclAsType(apitest::AgeObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getTimeOfDeath(CauseOfDeathObservation) <em>Get Time Of Death</em>}' query operation.
+	 * The cached OCL query for the '{@link #getAPITestAgeObservation(CauseOfDeathObservation) <em>Get API Test Age Observation</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTimeOfDeath(CauseOfDeathObservation)
+	 * @see #getAPITestAgeObservation(CauseOfDeathObservation)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_TIME_OF_DEATH__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_API_TEST_AGE_OBSERVATION__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * cda::Observation::effectiveTime.
-	 * self.effectiveTime.oclAsType(datatypes::IVL_TS)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::AgeObservation))->asSequence()->first().oclAsType(apitest::AgeObservation)
 	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static IVL_TS getTimeOfDeath(CauseOfDeathObservation causeOfDeathObservation) {
-		if (GET_TIME_OF_DEATH__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				DomainPackage.Literals.ICAUSE_OF_DEATH_OBSERVATION,
-				DomainPackage.Literals.ICAUSE_OF_DEATH_OBSERVATION.getEAllOperations().get(9));
-			try {
-				GET_TIME_OF_DEATH__EOCL_QRY = helper.createQuery(GET_TIME_OF_DEATH__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TIME_OF_DEATH__EOCL_QRY);
-		return (IVL_TS) query.evaluate(causeOfDeathObservation);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static Observation toCDAType(CauseOfDeathObservation causeOfDeathObservation) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getAgeAtDeath(CauseOfDeathObservation) <em>Get Age At Death</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAgeAtDeath(CauseOfDeathObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_AGE_AT_DEATH__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getAgeAtDeath(CauseOfDeathObservation) <em>Get Age At Death</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAgeAtDeath(CauseOfDeathObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_AGE_AT_DEATH__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * apitest::CauseOfDeathObservation::ageObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)
-	 * @param causeOfDeathObservation The receiving '<em><b>Cause Of Death Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static IAgeObservation getAgeAtDeath(CauseOfDeathObservation causeOfDeathObservation) {
-		if (GET_AGE_AT_DEATH__EOCL_QRY == null) {
+	public static AgeObservation getAPITestAgeObservation(CauseOfDeathObservation causeOfDeathObservation) {
+		if (GET_API_TEST_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				APITestPackage.Literals.CAUSE_OF_DEATH_OBSERVATION,
-				APITestPackage.Literals.CAUSE_OF_DEATH_OBSERVATION.getEAllOperations().get(67));
+				APITestPackage.Literals.CAUSE_OF_DEATH_OBSERVATION.getEAllOperations().get(53));
 			try {
-				GET_AGE_AT_DEATH__EOCL_QRY = helper.createQuery(GET_AGE_AT_DEATH__EOCL_EXP);
+				GET_API_TEST_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_API_TEST_AGE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_AGE_AT_DEATH__EOCL_QRY);
-		return (IAgeObservation) query.evaluate(causeOfDeathObservation);
+		OCL.Query query = EOCL_ENV.createQuery(GET_API_TEST_AGE_OBSERVATION__EOCL_QRY);
+		return (AgeObservation) query.evaluate(causeOfDeathObservation);
 	}
 
 	/**

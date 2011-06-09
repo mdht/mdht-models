@@ -10,9 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.apitest;
 
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IAgeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Cause Of Death Observation</b></em>'.
@@ -22,17 +19,16 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.ICauseOfDeathObservation;
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getCauseOfDeathObservation()
  * @generated
  */
-public interface CauseOfDeathObservation extends FamilyHistoryObservation, ICauseOfDeathObservation {
+public interface CauseOfDeathObservation extends FamilyHistoryObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * apitest::CauseOfDeathObservation::ageObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(apitest::AgeObservation))->asSequence()->first().oclAsType(apitest::AgeObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IAgeObservation getAgeAtDeath();
+	AgeObservation getAPITestAgeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->

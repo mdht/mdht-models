@@ -13,8 +13,6 @@ package org.openhealthtools.mdht.uml.cda.apitest;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getPatientSummary()
  * @generated
  */
-public interface PatientSummary extends GeneralHeaderConstraints, IPatientSummary {
+public interface PatientSummary extends GeneralHeaderConstraints {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -42,12 +40,11 @@ public interface PatientSummary extends GeneralHeaderConstraints, IPatientSummar
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * apitest::PatientSummary::problemListSection.
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::IProblemListSection))->asSequence()->first().oclAsType(domain::IProblemListSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(apitest::ProblemListSection))->asSequence()->first().oclAsType(apitest::ProblemListSection)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IProblemListSection getProblemListSection();
+	ProblemListSection getProblemListSection();
 
 	/**
 	 * <!-- begin-user-doc -->

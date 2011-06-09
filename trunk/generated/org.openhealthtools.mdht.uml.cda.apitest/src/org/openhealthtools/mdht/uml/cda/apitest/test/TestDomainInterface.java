@@ -16,6 +16,8 @@ import java.util.UUID;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestFactory;
+import org.openhealthtools.mdht.uml.cda.apitest.PatientSummary;
+import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainFactory;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.apitest.domain.IPatientSummary;
@@ -30,7 +32,11 @@ public class TestDomainInterface {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception {
-		IPatientSummary patientSummary = APITestFactory.eINSTANCE.createPatientSummary().init();
+		// IPatientSummary patientSummary = (IPatientSummary) APITestFactory.eINSTANCE.createPatientSummary().init();
+
+		PatientSummary patientSummaryImpl = APITestFactory.eINSTANCE.createPatientSummary().init();
+		IPatientSummary patientSummary = DomainFactory.eINSTANCE.createIPatientSummary();
+		patientSummary.setCDAType(patientSummaryImpl);
 
 		IProblemListSection problemListSection = patientSummary.withProblemListSection();
 		ICondition condition = problemListSection.addCondition();
@@ -50,8 +56,16 @@ public class TestDomainInterface {
 		episodeObservation.withCode().setCode("9999-2");
 		episodeObservation.withValue().setCode("7623487");
 
-		save((ClinicalDocument) patientSummary);
-		// validate((ClinicalDocument)patientSummary);
+		save(patientSummary.getCDAType());
+
+		// test toCDAType()
+		System.out.println();
+		System.out.println();
+		System.out.println("ProblemSection code = " + problemListSection.getCDAType().getCode());
+		System.out.println("ProblemEntry classCode = " + problemEntry.getCDAType().getClassCode());
+		System.out.println("ProblemEntry statusCode = " + problemEntry.getCDAType().getStatusCode().getCode());
+
+		// validate(patientSummary.getCDAType());
 
 	}
 

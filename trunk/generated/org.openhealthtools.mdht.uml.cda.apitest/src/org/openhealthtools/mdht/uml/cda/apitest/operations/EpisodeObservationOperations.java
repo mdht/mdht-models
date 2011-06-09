@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.apitest.operations;
 
 import java.util.Map;
@@ -15,19 +11,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-import org.eclipse.ocl.expressions.OCLExpression;
-import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.APITestPlugin;
 import org.openhealthtools.mdht.uml.cda.apitest.EpisodeObservation;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage;
 import org.openhealthtools.mdht.uml.cda.apitest.util.APITestValidator;
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,9 +28,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation#toCDAType() <em>To CDA Type</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation#getCode() <em>Get Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IEpisodeObservation#getValue() <em>Get Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.EpisodeObservation#validateEpisodeObservationOneEntryRelationshipSUBJ(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Episode Observation One Entry Relationship SUBJ</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.EpisodeObservation#validateEpisodeObservationExistsEntryRelationshipSAS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Episode Observation Exists Entry Relationship SAS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.EpisodeObservation#validateEpisodeObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Episode Observation Template Id</em>}</li>
@@ -61,109 +49,6 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 */
 	protected EpisodeObservationOperations() {
 		super();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static Observation toCDAType(EpisodeObservation episodeObservation) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getCode(EpisodeObservation) <em>Get Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCode(EpisodeObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CODE__EOCL_EXP = "self.code.oclAsType(datatypes::CD)";
-
-	/**
-	 * The cached OCL query for the '{@link #getCode(EpisodeObservation) <em>Get Code</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCode(EpisodeObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CODE__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * cda::Observation::code.
-	 * self.code.oclAsType(datatypes::CD)
-	 * @param episodeObservation The receiving '<em><b>Episode Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static CD getCode(EpisodeObservation episodeObservation) {
-		if (GET_CODE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				DomainPackage.Literals.IEPISODE_OBSERVATION,
-				DomainPackage.Literals.IEPISODE_OBSERVATION.getEAllOperations().get(1));
-			try {
-				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CODE__EOCL_QRY);
-		return (CD) query.evaluate(episodeObservation);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getValue(EpisodeObservation) <em>Get Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getValue(EpisodeObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_VALUE__EOCL_EXP = "self.value.oclAsType(datatypes::CD)";
-
-	/**
-	 * The cached OCL query for the '{@link #getValue(EpisodeObservation) <em>Get Value</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getValue(EpisodeObservation)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_VALUE__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * cda::Observation::value.
-	 * self.value.oclAsType(datatypes::CD)
-	 * @param episodeObservation The receiving '<em><b>Episode Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static CD getValue(EpisodeObservation episodeObservation) {
-		if (GET_VALUE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				DomainPackage.Literals.IEPISODE_OBSERVATION,
-				DomainPackage.Literals.IEPISODE_OBSERVATION.getEAllOperations().get(4));
-			try {
-				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_VALUE__EOCL_QRY);
-		return (CD) query.evaluate(episodeObservation);
 	}
 
 	/**

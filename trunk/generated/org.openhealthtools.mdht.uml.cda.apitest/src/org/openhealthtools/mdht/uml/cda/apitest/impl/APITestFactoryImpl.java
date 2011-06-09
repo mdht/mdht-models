@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.apitest.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -96,12 +92,12 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 				return createHealthStatusObservation();
 			case APITestPackage.COMMENT:
 				return createComment();
-			case APITestPackage.PROBLEM_LIST_SECTION:
-				return createProblemListSection();
-			case APITestPackage.FAMILY_HISTORY_OBSERVATION:
-				return createFamilyHistoryObservation();
 			case APITestPackage.CAUSE_OF_DEATH_OBSERVATION:
 				return createCauseOfDeathObservation();
+			case APITestPackage.FAMILY_HISTORY_OBSERVATION:
+				return createFamilyHistoryObservation();
+			case APITestPackage.PROBLEM_LIST_SECTION:
+				return createProblemListSection();
 			case APITestPackage.PATIENT_SUMMARY:
 				return createPatientSummary();
 			case APITestPackage.GENERAL_HEADER_CONSTRAINTS:
@@ -119,6 +115,26 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 	public StatusObservation createStatusObservation() {
 		StatusObservationImpl statusObservation = new StatusObservationImpl();
 		return statusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Condition createCondition() {
+		ConditionImpl condition = new ConditionImpl();
+		return condition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Condition_TreatingProvider createCondition_TreatingProvider() {
+		Condition_TreatingProviderImpl condition_TreatingProvider = new Condition_TreatingProviderImpl();
+		return condition_TreatingProvider;
 	}
 
 	/**
@@ -196,9 +212,9 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CauseOfDeathObservation createCauseOfDeathObservation() {
-		CauseOfDeathObservationImpl causeOfDeathObservation = new CauseOfDeathObservationImpl();
-		return causeOfDeathObservation;
+	public ProblemListSection createProblemListSection() {
+		ProblemListSectionImpl problemListSection = new ProblemListSectionImpl();
+		return problemListSection;
 	}
 
 	/**
@@ -216,29 +232,9 @@ public class APITestFactoryImpl extends EFactoryImpl implements APITestFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Condition_TreatingProvider createCondition_TreatingProvider() {
-		Condition_TreatingProviderImpl condition_TreatingProvider = new Condition_TreatingProviderImpl();
-		return condition_TreatingProvider;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Condition createCondition() {
-		ConditionImpl condition = new ConditionImpl();
-		return condition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProblemListSection createProblemListSection() {
-		ProblemListSectionImpl problemListSection = new ProblemListSectionImpl();
-		return problemListSection;
+	public CauseOfDeathObservation createCauseOfDeathObservation() {
+		CauseOfDeathObservationImpl causeOfDeathObservation = new CauseOfDeathObservationImpl();
+		return causeOfDeathObservation;
 	}
 
 	/**

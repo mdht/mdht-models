@@ -29,17 +29,41 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <!-- end-model-doc -->
  *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry#getCDAType <em>CDA Type</em>}</li>
+ * </ul>
+ * </p>
  *
  * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIProblemEntry()
  * @generated
  */
 public interface IProblemEntry {
 	/**
+	 * Returns the value of the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>CDA Type</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
 	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>CDA Type</em>' reference.
+	 * @see #setCDAType(Observation)
+	 * @see org.openhealthtools.mdht.uml.cda.apitest.domain.DomainPackage#getIProblemEntry_CDAType()
 	 * @generated
 	 */
-	Observation toCDAType();
+	Observation getCDAType();
+
+	/**
+	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemEntry#getCDAType <em>CDA Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>CDA Type</em>' reference.
+	 * @see #getCDAType()
+	 * @generated
+	 */
+	void setCDAType(Observation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -188,7 +212,7 @@ public interface IProblemEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * APITest Condition Entry SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet 2.16.840.1.113883.3.88.12.3221.7.4 Problem STATIC 1, where its data type is CD.
+	 * APITest Condition Entry SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet 2.16.840.1.113883.3.88.12.3221.7.4 Problem STATIC 1.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -198,11 +222,23 @@ public interface IProblemEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * APITest Condition Entry SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet 2.16.840.1.113883.3.88.12.3221.7.4 Problem STATIC 1, where its data type is CD.
+	 * APITest Condition Entry SHALL contain exactly one [1..1] value, which SHALL be selected from ValueSet 2.16.840.1.113883.3.88.12.3221.7.4 Problem STATIC 1.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	IProblemEntry withProblemCode(CD value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::ageObservation.
+	 * The age of the patient or subject at onset of the condition.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IAgeObservation))->asSequence()->first().oclAsType(domain::IAgeObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IAgeObservation getAgeAtOnset();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,6 +264,17 @@ public interface IProblemEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::severity.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ISeverity))->asSequence()->first().oclAsType(domain::ISeverity)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ISeverity getSeverity();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * APITest Condition Entry MAY contain zero or one [0..1] entryRelationship, such that Contains exactly one [1..1] Severity (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.1).
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -243,6 +290,17 @@ public interface IProblemEntry {
 	 * @generated
 	 */
 	IProblemEntry withSeverity(ISeverity value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::problemStatusObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IProblemStatusObservation))->asSequence()->first().oclAsType(domain::IProblemStatusObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProblemStatusObservation getProblemStatus();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -268,6 +326,17 @@ public interface IProblemEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::healthStatusObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::IHealthStatusObservation))->asSequence()->first().oclAsType(domain::IHealthStatusObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IHealthStatusObservation getHealthStatusObservation();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * APITest Condition Entry MAY contain zero or one [0..1] entryRelationship, such that Contains @typeCode="REFR" REFR (refers to), and Contains exactly one [1..1] Health Status Observation (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.1.2).
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -288,6 +357,17 @@ public interface IProblemEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::comment.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::IComment)).oclAsType(domain::IComment)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IComment> getComments();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * APITest Condition Entry MAY contain zero or more [0..*] entryRelationship, such that Contains @typeCode="SUBJ" SUBJ (has subject), and Contains exactly one [1..1] Comment (templateId: 2.16.840.1.113883.3.88.11.83.11).
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -303,6 +383,18 @@ public interface IProblemEntry {
 	 * @generated
 	 */
 	IProblemEntry addComment(IComment value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * apitest::ConditionEntry::causeOfDeathObservation.
+	 * Indicates that this problem was one of the causes of death for the patient or subject of the condition.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ICauseOfDeathObservation))->asSequence()->first().oclAsType(domain::ICauseOfDeathObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ICauseOfDeathObservation getCauseOfDeath();
 
 	/**
 	 * <!-- begin-user-doc -->

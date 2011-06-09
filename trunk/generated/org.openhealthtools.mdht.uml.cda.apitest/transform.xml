@@ -13,10 +13,10 @@
 	<property name="cdaPluginPath" location="${basedir}/../org.openhealthtools.mdht.uml.cda"/>
 	<property name="modelName" value="apitest"/>
 	
-	<property name="generateDomainInterface" value="true"/>
-	<property name="generateDomainClasses" value="false"/>
+	<property name="generateDomainInterface" value="false"/>
+	<property name="includeInterfaceRealization" value="false"/>
+	<property name="generateDomainClasses" value="true"/>
 	<property name="includeFixedValueGetters" value="false"/>
-	<property name="includeInterfaceRealization" value="true"/>
 	<property name="useBusinessNames" value="true"/>
 	
 	<macrodef name="convertEcorePaths">

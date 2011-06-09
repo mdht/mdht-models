@@ -15,8 +15,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.apitest.domain.IProblemListSection;
  * @see org.openhealthtools.mdht.uml.cda.apitest.APITestPackage#getProblemListSection()
  * @generated
  */
-public interface ProblemListSection extends Section, IProblemListSection {
+public interface ProblemListSection extends Section {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -82,12 +80,11 @@ public interface ProblemListSection extends Section, IProblemListSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * apitest::ProblemListSection::condition.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::ICondition)).oclAsType(domain::ICondition)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(apitest::Condition)).oclAsType(apitest::Condition)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ICondition> getConditions();
+	EList<Condition> getConditions();
 
 	/**
 	 * <!-- begin-user-doc -->
