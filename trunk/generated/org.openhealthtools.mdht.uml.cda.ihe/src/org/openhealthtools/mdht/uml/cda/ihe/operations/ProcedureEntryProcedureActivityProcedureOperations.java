@@ -446,7 +446,7 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Procedur
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('self.classCode')";
+	protected static final String VALIDATE_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('classCode')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureEntryProcedureActivityProcedureClassCode(ProcedureEntryProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Entry Procedure Activity Procedure Class Code</em>}' invariant operation.
@@ -462,7 +462,7 @@ public class ProcedureEntryProcedureActivityProcedureOperations extends Procedur
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('self.classCode')
+	 * isDefined('classCode')
 	 * @param procedureEntryProcedureActivityProcedure The receiving '<em><b>Procedure Entry Procedure Activity Procedure</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
