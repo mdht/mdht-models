@@ -147,7 +147,7 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * @generated
 	 */
 	public ResultOrganizer init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ResultOrganizerImpl

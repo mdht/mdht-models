@@ -120,7 +120,7 @@ public class PurposeSectionImpl extends SectionImpl implements PurposeSection {
 	 * @generated
 	 */
 	public PurposeSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PurposeSectionImpl

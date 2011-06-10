@@ -89,20 +89,18 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_VERIFICATION);
 			try {
 				VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(advanceDirectiveVerification)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveVerification)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ADVANCE_DIRECTIVE_VERIFICATION__ADVANCE_DIRECTIVE_VERIFICATION_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("AdvanceDirectiveVerificationTemplateId"),
-						 new Object [] { advanceDirectiveVerification }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ADVANCE_DIRECTIVE_VERIFICATION__ADVANCE_DIRECTIVE_VERIFICATION_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("AdvanceDirectiveVerificationTemplateId"),
+					new Object[] { advanceDirectiveVerification }));
 			}
 			return false;
 		}
@@ -148,20 +146,18 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_VERIFICATION);
 			try {
 				VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(advanceDirectiveVerification)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveVerification)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ADVANCE_DIRECTIVE_VERIFICATION__ADVANCE_DIRECTIVE_VERIFICATION_TYPE_CODE,
-						 CCDPlugin.INSTANCE.getString("AdvanceDirectiveVerificationTypeCode"),
-						 new Object [] { advanceDirectiveVerification }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ADVANCE_DIRECTIVE_VERIFICATION__ADVANCE_DIRECTIVE_VERIFICATION_TYPE_CODE,
+					CCDPlugin.INSTANCE.getString("AdvanceDirectiveVerificationTypeCode"),
+					new Object[] { advanceDirectiveVerification }));
 			}
 			return false;
 		}
@@ -207,20 +203,18 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_VERIFICATION);
 			try {
 				VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(advanceDirectiveVerification)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveVerification)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ADVANCE_DIRECTIVE_VERIFICATION__ADVANCE_DIRECTIVE_VERIFICATION_TIME,
-						 CCDPlugin.INSTANCE.getString("AdvanceDirectiveVerificationTime"),
-						 new Object [] { advanceDirectiveVerification }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ADVANCE_DIRECTIVE_VERIFICATION__ADVANCE_DIRECTIVE_VERIFICATION_TIME,
+					CCDPlugin.INSTANCE.getString("AdvanceDirectiveVerificationTime"),
+					new Object[] { advanceDirectiveVerification }));
 			}
 			return false;
 		}

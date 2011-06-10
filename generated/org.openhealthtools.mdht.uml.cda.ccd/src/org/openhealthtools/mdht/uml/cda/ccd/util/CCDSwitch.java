@@ -165,13 +165,11 @@ public class CCDSwitch<T> {
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
-		}
-		else {
+		} else {
 			List<EClass> eSuperTypes = theEClass.getESuperTypes();
-			return
-				eSuperTypes.isEmpty() ?
-					defaultCase(theEObject) :
-					doSwitch(eSuperTypes.get(0), theEObject);
+			return eSuperTypes.isEmpty()
+					? defaultCase(theEObject)
+					: doSwitch(eSuperTypes.get(0), theEObject);
 		}
 	}
 
@@ -185,727 +183,1430 @@ public class CCDSwitch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case CCDPackage.MEDICATIONS_SECTION: {
-				MedicationsSection medicationsSection = (MedicationsSection)theEObject;
+				MedicationsSection medicationsSection = (MedicationsSection) theEObject;
 				T result = caseMedicationsSection(medicationsSection);
-				if (result == null) result = caseSection(medicationsSection);
-				if (result == null) result = caseAct(medicationsSection);
-				if (result == null) result = caseInfrastructureRoot(medicationsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(medicationsSection);
+				}
+				if (result == null) {
+					result = caseAct(medicationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.MEDICATION_ACTIVITY: {
-				MedicationActivity medicationActivity = (MedicationActivity)theEObject;
+				MedicationActivity medicationActivity = (MedicationActivity) theEObject;
 				T result = caseMedicationActivity(medicationActivity);
-				if (result == null) result = caseSubstanceAdministration(medicationActivity);
-				if (result == null) result = caseClinicalStatement(medicationActivity);
-				if (result == null) result = caseAct(medicationActivity);
-				if (result == null) result = caseInfrastructureRoot(medicationActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSubstanceAdministration(medicationActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationActivity);
+				}
+				if (result == null) {
+					result = caseAct(medicationActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.MEDICATION_SERIES_NUMBER_OBSERVATION: {
-				MedicationSeriesNumberObservation medicationSeriesNumberObservation = (MedicationSeriesNumberObservation)theEObject;
+				MedicationSeriesNumberObservation medicationSeriesNumberObservation = (MedicationSeriesNumberObservation) theEObject;
 				T result = caseMedicationSeriesNumberObservation(medicationSeriesNumberObservation);
-				if (result == null) result = caseObservation(medicationSeriesNumberObservation);
-				if (result == null) result = caseClinicalStatement(medicationSeriesNumberObservation);
-				if (result == null) result = caseAct(medicationSeriesNumberObservation);
-				if (result == null) result = caseInfrastructureRoot(medicationSeriesNumberObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(medicationSeriesNumberObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationSeriesNumberObservation);
+				}
+				if (result == null) {
+					result = caseAct(medicationSeriesNumberObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationSeriesNumberObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.MEDICATION_STATUS_OBSERVATION: {
-				MedicationStatusObservation medicationStatusObservation = (MedicationStatusObservation)theEObject;
+				MedicationStatusObservation medicationStatusObservation = (MedicationStatusObservation) theEObject;
 				T result = caseMedicationStatusObservation(medicationStatusObservation);
-				if (result == null) result = caseStatusObservation(medicationStatusObservation);
-				if (result == null) result = caseObservation(medicationStatusObservation);
-				if (result == null) result = caseClinicalStatement(medicationStatusObservation);
-				if (result == null) result = caseAct(medicationStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(medicationStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(medicationStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(medicationStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(medicationStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.STATUS_OBSERVATION: {
-				StatusObservation statusObservation = (StatusObservation)theEObject;
+				StatusObservation statusObservation = (StatusObservation) theEObject;
 				T result = caseStatusObservation(statusObservation);
-				if (result == null) result = caseObservation(statusObservation);
-				if (result == null) result = caseClinicalStatement(statusObservation);
-				if (result == null) result = caseAct(statusObservation);
-				if (result == null) result = caseInfrastructureRoot(statusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(statusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(statusObservation);
+				}
+				if (result == null) {
+					result = caseAct(statusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(statusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PATIENT_INSTRUCTION: {
-				PatientInstruction patientInstruction = (PatientInstruction)theEObject;
+				PatientInstruction patientInstruction = (PatientInstruction) theEObject;
 				T result = casePatientInstruction(patientInstruction);
-				if (result == null) result = caseCDA_Act(patientInstruction);
-				if (result == null) result = caseClinicalStatement(patientInstruction);
-				if (result == null) result = caseAct(patientInstruction);
-				if (result == null) result = caseInfrastructureRoot(patientInstruction);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(patientInstruction);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(patientInstruction);
+				}
+				if (result == null) {
+					result = caseAct(patientInstruction);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientInstruction);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.REACTION_OBSERVATION: {
-				ReactionObservation reactionObservation = (ReactionObservation)theEObject;
+				ReactionObservation reactionObservation = (ReactionObservation) theEObject;
 				T result = caseReactionObservation(reactionObservation);
-				if (result == null) result = caseObservation(reactionObservation);
-				if (result == null) result = caseClinicalStatement(reactionObservation);
-				if (result == null) result = caseAct(reactionObservation);
-				if (result == null) result = caseInfrastructureRoot(reactionObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(reactionObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(reactionObservation);
+				}
+				if (result == null) {
+					result = caseAct(reactionObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reactionObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.SEVERITY_OBSERVATION: {
-				SeverityObservation severityObservation = (SeverityObservation)theEObject;
+				SeverityObservation severityObservation = (SeverityObservation) theEObject;
 				T result = caseSeverityObservation(severityObservation);
-				if (result == null) result = caseObservation(severityObservation);
-				if (result == null) result = caseClinicalStatement(severityObservation);
-				if (result == null) result = caseAct(severityObservation);
-				if (result == null) result = caseInfrastructureRoot(severityObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(severityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(severityObservation);
+				}
+				if (result == null) {
+					result = caseAct(severityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(severityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PRODUCT_INSTANCE: {
-				ProductInstance productInstance = (ProductInstance)theEObject;
+				ProductInstance productInstance = (ProductInstance) theEObject;
 				T result = caseProductInstance(productInstance);
-				if (result == null) result = caseParticipantRole(productInstance);
-				if (result == null) result = caseRole(productInstance);
-				if (result == null) result = caseInfrastructureRoot(productInstance);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseParticipantRole(productInstance);
+				}
+				if (result == null) {
+					result = caseRole(productInstance);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(productInstance);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.SUPPLY_ACTIVITY: {
-				SupplyActivity supplyActivity = (SupplyActivity)theEObject;
+				SupplyActivity supplyActivity = (SupplyActivity) theEObject;
 				T result = caseSupplyActivity(supplyActivity);
-				if (result == null) result = caseSupply(supplyActivity);
-				if (result == null) result = caseClinicalStatement(supplyActivity);
-				if (result == null) result = caseAct(supplyActivity);
-				if (result == null) result = caseInfrastructureRoot(supplyActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSupply(supplyActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(supplyActivity);
+				}
+				if (result == null) {
+					result = caseAct(supplyActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(supplyActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.FULFILLMENT_INSTRUCTION: {
-				FulfillmentInstruction fulfillmentInstruction = (FulfillmentInstruction)theEObject;
+				FulfillmentInstruction fulfillmentInstruction = (FulfillmentInstruction) theEObject;
 				T result = caseFulfillmentInstruction(fulfillmentInstruction);
-				if (result == null) result = caseCDA_Act(fulfillmentInstruction);
-				if (result == null) result = caseClinicalStatement(fulfillmentInstruction);
-				if (result == null) result = caseAct(fulfillmentInstruction);
-				if (result == null) result = caseInfrastructureRoot(fulfillmentInstruction);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(fulfillmentInstruction);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(fulfillmentInstruction);
+				}
+				if (result == null) {
+					result = caseAct(fulfillmentInstruction);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(fulfillmentInstruction);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.CONTINUITY_OF_CARE_DOCUMENT: {
-				ContinuityOfCareDocument continuityOfCareDocument = (ContinuityOfCareDocument)theEObject;
+				ContinuityOfCareDocument continuityOfCareDocument = (ContinuityOfCareDocument) theEObject;
 				T result = caseContinuityOfCareDocument(continuityOfCareDocument);
-				if (result == null) result = caseClinicalDocument(continuityOfCareDocument);
-				if (result == null) result = caseAct(continuityOfCareDocument);
-				if (result == null) result = caseInfrastructureRoot(continuityOfCareDocument);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseClinicalDocument(continuityOfCareDocument);
+				}
+				if (result == null) {
+					result = caseAct(continuityOfCareDocument);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(continuityOfCareDocument);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PROBLEM_SECTION: {
-				ProblemSection problemSection = (ProblemSection)theEObject;
+				ProblemSection problemSection = (ProblemSection) theEObject;
 				T result = caseProblemSection(problemSection);
-				if (result == null) result = caseSection(problemSection);
-				if (result == null) result = caseAct(problemSection);
-				if (result == null) result = caseInfrastructureRoot(problemSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(problemSection);
+				}
+				if (result == null) {
+					result = caseAct(problemSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PROBLEM_ACT: {
-				ProblemAct problemAct = (ProblemAct)theEObject;
+				ProblemAct problemAct = (ProblemAct) theEObject;
 				T result = caseProblemAct(problemAct);
-				if (result == null) result = caseCDA_Act(problemAct);
-				if (result == null) result = caseClinicalStatement(problemAct);
-				if (result == null) result = caseAct(problemAct);
-				if (result == null) result = caseInfrastructureRoot(problemAct);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(problemAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemAct);
+				}
+				if (result == null) {
+					result = caseAct(problemAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.EPISODE_OBSERVATION: {
-				EpisodeObservation episodeObservation = (EpisodeObservation)theEObject;
+				EpisodeObservation episodeObservation = (EpisodeObservation) theEObject;
 				T result = caseEpisodeObservation(episodeObservation);
-				if (result == null) result = caseObservation(episodeObservation);
-				if (result == null) result = caseClinicalStatement(episodeObservation);
-				if (result == null) result = caseAct(episodeObservation);
-				if (result == null) result = caseInfrastructureRoot(episodeObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(episodeObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(episodeObservation);
+				}
+				if (result == null) {
+					result = caseAct(episodeObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(episodeObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.FAMILY_HISTORY_SECTION: {
-				FamilyHistorySection familyHistorySection = (FamilyHistorySection)theEObject;
+				FamilyHistorySection familyHistorySection = (FamilyHistorySection) theEObject;
 				T result = caseFamilyHistorySection(familyHistorySection);
-				if (result == null) result = caseSection(familyHistorySection);
-				if (result == null) result = caseAct(familyHistorySection);
-				if (result == null) result = caseInfrastructureRoot(familyHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(familyHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(familyHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.SOCIAL_HISTORY_SECTION: {
-				SocialHistorySection socialHistorySection = (SocialHistorySection)theEObject;
+				SocialHistorySection socialHistorySection = (SocialHistorySection) theEObject;
 				T result = caseSocialHistorySection(socialHistorySection);
-				if (result == null) result = caseSection(socialHistorySection);
-				if (result == null) result = caseAct(socialHistorySection);
-				if (result == null) result = caseInfrastructureRoot(socialHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(socialHistorySection);
+				}
+				if (result == null) {
+					result = caseAct(socialHistorySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(socialHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.ALERTS_SECTION: {
-				AlertsSection alertsSection = (AlertsSection)theEObject;
+				AlertsSection alertsSection = (AlertsSection) theEObject;
 				T result = caseAlertsSection(alertsSection);
-				if (result == null) result = caseSection(alertsSection);
-				if (result == null) result = caseAct(alertsSection);
-				if (result == null) result = caseInfrastructureRoot(alertsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(alertsSection);
+				}
+				if (result == null) {
+					result = caseAct(alertsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(alertsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.RESULTS_SECTION: {
-				ResultsSection resultsSection = (ResultsSection)theEObject;
+				ResultsSection resultsSection = (ResultsSection) theEObject;
 				T result = caseResultsSection(resultsSection);
-				if (result == null) result = caseSection(resultsSection);
-				if (result == null) result = caseAct(resultsSection);
-				if (result == null) result = caseInfrastructureRoot(resultsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(resultsSection);
+				}
+				if (result == null) {
+					result = caseAct(resultsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.RESULT_ORGANIZER: {
-				ResultOrganizer resultOrganizer = (ResultOrganizer)theEObject;
+				ResultOrganizer resultOrganizer = (ResultOrganizer) theEObject;
 				T result = caseResultOrganizer(resultOrganizer);
-				if (result == null) result = caseOrganizer(resultOrganizer);
-				if (result == null) result = caseClinicalStatement(resultOrganizer);
-				if (result == null) result = caseAct(resultOrganizer);
-				if (result == null) result = caseInfrastructureRoot(resultOrganizer);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseOrganizer(resultOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(resultOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(resultOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.RESULT_OBSERVATION: {
-				ResultObservation resultObservation = (ResultObservation)theEObject;
+				ResultObservation resultObservation = (ResultObservation) theEObject;
 				T result = caseResultObservation(resultObservation);
-				if (result == null) result = caseObservation(resultObservation);
-				if (result == null) result = caseClinicalStatement(resultObservation);
-				if (result == null) result = caseAct(resultObservation);
-				if (result == null) result = caseInfrastructureRoot(resultObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(resultObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(resultObservation);
+				}
+				if (result == null) {
+					result = caseAct(resultObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PROCEDURES_SECTION: {
-				ProceduresSection proceduresSection = (ProceduresSection)theEObject;
+				ProceduresSection proceduresSection = (ProceduresSection) theEObject;
 				T result = caseProceduresSection(proceduresSection);
-				if (result == null) result = caseSection(proceduresSection);
-				if (result == null) result = caseAct(proceduresSection);
-				if (result == null) result = caseInfrastructureRoot(proceduresSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(proceduresSection);
+				}
+				if (result == null) {
+					result = caseAct(proceduresSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(proceduresSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.ENCOUNTERS_SECTION: {
-				EncountersSection encountersSection = (EncountersSection)theEObject;
+				EncountersSection encountersSection = (EncountersSection) theEObject;
 				T result = caseEncountersSection(encountersSection);
-				if (result == null) result = caseSection(encountersSection);
-				if (result == null) result = caseAct(encountersSection);
-				if (result == null) result = caseInfrastructureRoot(encountersSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(encountersSection);
+				}
+				if (result == null) {
+					result = caseAct(encountersSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encountersSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PLAN_OF_CARE_SECTION: {
-				PlanOfCareSection planOfCareSection = (PlanOfCareSection)theEObject;
+				PlanOfCareSection planOfCareSection = (PlanOfCareSection) theEObject;
 				T result = casePlanOfCareSection(planOfCareSection);
-				if (result == null) result = caseSection(planOfCareSection);
-				if (result == null) result = caseAct(planOfCareSection);
-				if (result == null) result = caseInfrastructureRoot(planOfCareSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(planOfCareSection);
+				}
+				if (result == null) {
+					result = caseAct(planOfCareSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(planOfCareSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PLAN_OF_CARE_ACTIVITY: {
-				PlanOfCareActivity planOfCareActivity = (PlanOfCareActivity)theEObject;
+				PlanOfCareActivity planOfCareActivity = (PlanOfCareActivity) theEObject;
 				T result = casePlanOfCareActivity(planOfCareActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ACT: {
-				PlanOfCareActivityAct planOfCareActivityAct = (PlanOfCareActivityAct)theEObject;
+				PlanOfCareActivityAct planOfCareActivityAct = (PlanOfCareActivityAct) theEObject;
 				T result = casePlanOfCareActivityAct(planOfCareActivityAct);
-				if (result == null) result = caseCDA_Act(planOfCareActivityAct);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivityAct);
-				if (result == null) result = caseClinicalStatement(planOfCareActivityAct);
-				if (result == null) result = caseAct(planOfCareActivityAct);
-				if (result == null) result = caseInfrastructureRoot(planOfCareActivityAct);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(planOfCareActivityAct);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivityAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(planOfCareActivityAct);
+				}
+				if (result == null) {
+					result = caseAct(planOfCareActivityAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(planOfCareActivityAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER: {
-				PlanOfCareActivityEncounter planOfCareActivityEncounter = (PlanOfCareActivityEncounter)theEObject;
+				PlanOfCareActivityEncounter planOfCareActivityEncounter = (PlanOfCareActivityEncounter) theEObject;
 				T result = casePlanOfCareActivityEncounter(planOfCareActivityEncounter);
-				if (result == null) result = caseEncounter(planOfCareActivityEncounter);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivityEncounter);
-				if (result == null) result = caseClinicalStatement(planOfCareActivityEncounter);
-				if (result == null) result = caseAct(planOfCareActivityEncounter);
-				if (result == null) result = caseInfrastructureRoot(planOfCareActivityEncounter);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseEncounter(planOfCareActivityEncounter);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivityEncounter);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(planOfCareActivityEncounter);
+				}
+				if (result == null) {
+					result = caseAct(planOfCareActivityEncounter);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(planOfCareActivityEncounter);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION: {
-				PlanOfCareActivityObservation planOfCareActivityObservation = (PlanOfCareActivityObservation)theEObject;
+				PlanOfCareActivityObservation planOfCareActivityObservation = (PlanOfCareActivityObservation) theEObject;
 				T result = casePlanOfCareActivityObservation(planOfCareActivityObservation);
-				if (result == null) result = caseObservation(planOfCareActivityObservation);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivityObservation);
-				if (result == null) result = caseClinicalStatement(planOfCareActivityObservation);
-				if (result == null) result = caseAct(planOfCareActivityObservation);
-				if (result == null) result = caseInfrastructureRoot(planOfCareActivityObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(planOfCareActivityObservation);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(planOfCareActivityObservation);
+				}
+				if (result == null) {
+					result = caseAct(planOfCareActivityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(planOfCareActivityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE: {
-				PlanOfCareActivityProcedure planOfCareActivityProcedure = (PlanOfCareActivityProcedure)theEObject;
+				PlanOfCareActivityProcedure planOfCareActivityProcedure = (PlanOfCareActivityProcedure) theEObject;
 				T result = casePlanOfCareActivityProcedure(planOfCareActivityProcedure);
-				if (result == null) result = caseProcedure(planOfCareActivityProcedure);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivityProcedure);
-				if (result == null) result = caseClinicalStatement(planOfCareActivityProcedure);
-				if (result == null) result = caseAct(planOfCareActivityProcedure);
-				if (result == null) result = caseInfrastructureRoot(planOfCareActivityProcedure);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProcedure(planOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(planOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = caseAct(planOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(planOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION: {
-				PlanOfCareActivitySubstanceAdministration planOfCareActivitySubstanceAdministration = (PlanOfCareActivitySubstanceAdministration)theEObject;
+				PlanOfCareActivitySubstanceAdministration planOfCareActivitySubstanceAdministration = (PlanOfCareActivitySubstanceAdministration) theEObject;
 				T result = casePlanOfCareActivitySubstanceAdministration(planOfCareActivitySubstanceAdministration);
-				if (result == null) result = caseSubstanceAdministration(planOfCareActivitySubstanceAdministration);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivitySubstanceAdministration);
-				if (result == null) result = caseClinicalStatement(planOfCareActivitySubstanceAdministration);
-				if (result == null) result = caseAct(planOfCareActivitySubstanceAdministration);
-				if (result == null) result = caseInfrastructureRoot(planOfCareActivitySubstanceAdministration);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSubstanceAdministration(planOfCareActivitySubstanceAdministration);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivitySubstanceAdministration);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(planOfCareActivitySubstanceAdministration);
+				}
+				if (result == null) {
+					result = caseAct(planOfCareActivitySubstanceAdministration);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(planOfCareActivitySubstanceAdministration);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY: {
-				PlanOfCareActivitySupply planOfCareActivitySupply = (PlanOfCareActivitySupply)theEObject;
+				PlanOfCareActivitySupply planOfCareActivitySupply = (PlanOfCareActivitySupply) theEObject;
 				T result = casePlanOfCareActivitySupply(planOfCareActivitySupply);
-				if (result == null) result = caseSupply(planOfCareActivitySupply);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivitySupply);
-				if (result == null) result = caseClinicalStatement(planOfCareActivitySupply);
-				if (result == null) result = caseAct(planOfCareActivitySupply);
-				if (result == null) result = caseInfrastructureRoot(planOfCareActivitySupply);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSupply(planOfCareActivitySupply);
+				}
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivitySupply);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(planOfCareActivitySupply);
+				}
+				if (result == null) {
+					result = caseAct(planOfCareActivitySupply);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(planOfCareActivitySupply);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.IMMUNIZATIONS_SECTION: {
-				ImmunizationsSection immunizationsSection = (ImmunizationsSection)theEObject;
+				ImmunizationsSection immunizationsSection = (ImmunizationsSection) theEObject;
 				T result = caseImmunizationsSection(immunizationsSection);
-				if (result == null) result = caseMedicationsSection(immunizationsSection);
-				if (result == null) result = caseSection(immunizationsSection);
-				if (result == null) result = caseAct(immunizationsSection);
-				if (result == null) result = caseInfrastructureRoot(immunizationsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseMedicationsSection(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseSection(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseAct(immunizationsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(immunizationsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.VITAL_SIGNS_SECTION: {
-				VitalSignsSection vitalSignsSection = (VitalSignsSection)theEObject;
+				VitalSignsSection vitalSignsSection = (VitalSignsSection) theEObject;
 				T result = caseVitalSignsSection(vitalSignsSection);
-				if (result == null) result = caseSection(vitalSignsSection);
-				if (result == null) result = caseAct(vitalSignsSection);
-				if (result == null) result = caseInfrastructureRoot(vitalSignsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.VITAL_SIGNS_ORGANIZER: {
-				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer)theEObject;
+				VitalSignsOrganizer vitalSignsOrganizer = (VitalSignsOrganizer) theEObject;
 				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
-				if (result == null) result = caseResultOrganizer(vitalSignsOrganizer);
-				if (result == null) result = caseOrganizer(vitalSignsOrganizer);
-				if (result == null) result = caseClinicalStatement(vitalSignsOrganizer);
-				if (result == null) result = caseAct(vitalSignsOrganizer);
-				if (result == null) result = caseInfrastructureRoot(vitalSignsOrganizer);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseResultOrganizer(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseOrganizer(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.MEDICAL_EQUIPMENT_SECTION: {
-				MedicalEquipmentSection medicalEquipmentSection = (MedicalEquipmentSection)theEObject;
+				MedicalEquipmentSection medicalEquipmentSection = (MedicalEquipmentSection) theEObject;
 				T result = caseMedicalEquipmentSection(medicalEquipmentSection);
-				if (result == null) result = caseSection(medicalEquipmentSection);
-				if (result == null) result = caseAct(medicalEquipmentSection);
-				if (result == null) result = caseInfrastructureRoot(medicalEquipmentSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(medicalEquipmentSection);
+				}
+				if (result == null) {
+					result = caseAct(medicalEquipmentSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicalEquipmentSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.FUNCTIONAL_STATUS_SECTION: {
-				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection)theEObject;
+				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection) theEObject;
 				T result = caseFunctionalStatusSection(functionalStatusSection);
-				if (result == null) result = caseSection(functionalStatusSection);
-				if (result == null) result = caseAct(functionalStatusSection);
-				if (result == null) result = caseInfrastructureRoot(functionalStatusSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(functionalStatusSection);
+				}
+				if (result == null) {
+					result = caseAct(functionalStatusSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(functionalStatusSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.ADVANCE_DIRECTIVES_SECTION: {
-				AdvanceDirectivesSection advanceDirectivesSection = (AdvanceDirectivesSection)theEObject;
+				AdvanceDirectivesSection advanceDirectivesSection = (AdvanceDirectivesSection) theEObject;
 				T result = caseAdvanceDirectivesSection(advanceDirectivesSection);
-				if (result == null) result = caseSection(advanceDirectivesSection);
-				if (result == null) result = caseAct(advanceDirectivesSection);
-				if (result == null) result = caseInfrastructureRoot(advanceDirectivesSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectivesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.ADVANCE_DIRECTIVE_OBSERVATION: {
-				AdvanceDirectiveObservation advanceDirectiveObservation = (AdvanceDirectiveObservation)theEObject;
+				AdvanceDirectiveObservation advanceDirectiveObservation = (AdvanceDirectiveObservation) theEObject;
 				T result = caseAdvanceDirectiveObservation(advanceDirectiveObservation);
-				if (result == null) result = caseObservation(advanceDirectiveObservation);
-				if (result == null) result = caseClinicalStatement(advanceDirectiveObservation);
-				if (result == null) result = caseAct(advanceDirectiveObservation);
-				if (result == null) result = caseInfrastructureRoot(advanceDirectiveObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(advanceDirectiveObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(advanceDirectiveObservation);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirectiveObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PAYERS_SECTION: {
-				PayersSection payersSection = (PayersSection)theEObject;
+				PayersSection payersSection = (PayersSection) theEObject;
 				T result = casePayersSection(payersSection);
-				if (result == null) result = caseSection(payersSection);
-				if (result == null) result = caseAct(payersSection);
-				if (result == null) result = caseInfrastructureRoot(payersSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(payersSection);
+				}
+				if (result == null) {
+					result = caseAct(payersSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(payersSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.COVERAGE_ACTIVITY: {
-				CoverageActivity coverageActivity = (CoverageActivity)theEObject;
+				CoverageActivity coverageActivity = (CoverageActivity) theEObject;
 				T result = caseCoverageActivity(coverageActivity);
-				if (result == null) result = caseCDA_Act(coverageActivity);
-				if (result == null) result = caseClinicalStatement(coverageActivity);
-				if (result == null) result = caseAct(coverageActivity);
-				if (result == null) result = caseInfrastructureRoot(coverageActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(coverageActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(coverageActivity);
+				}
+				if (result == null) {
+					result = caseAct(coverageActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(coverageActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.POLICY_ACTIVITY: {
-				PolicyActivity policyActivity = (PolicyActivity)theEObject;
+				PolicyActivity policyActivity = (PolicyActivity) theEObject;
 				T result = casePolicyActivity(policyActivity);
-				if (result == null) result = caseCDA_Act(policyActivity);
-				if (result == null) result = caseClinicalStatement(policyActivity);
-				if (result == null) result = caseAct(policyActivity);
-				if (result == null) result = caseInfrastructureRoot(policyActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(policyActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(policyActivity);
+				}
+				if (result == null) {
+					result = caseAct(policyActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(policyActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PURPOSE_SECTION: {
-				PurposeSection purposeSection = (PurposeSection)theEObject;
+				PurposeSection purposeSection = (PurposeSection) theEObject;
 				T result = casePurposeSection(purposeSection);
-				if (result == null) result = caseSection(purposeSection);
-				if (result == null) result = caseAct(purposeSection);
-				if (result == null) result = caseInfrastructureRoot(purposeSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(purposeSection);
+				}
+				if (result == null) {
+					result = caseAct(purposeSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(purposeSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PURPOSE_ACTIVITY: {
-				PurposeActivity purposeActivity = (PurposeActivity)theEObject;
+				PurposeActivity purposeActivity = (PurposeActivity) theEObject;
 				T result = casePurposeActivity(purposeActivity);
-				if (result == null) result = caseCDA_Act(purposeActivity);
-				if (result == null) result = caseClinicalStatement(purposeActivity);
-				if (result == null) result = caseAct(purposeActivity);
-				if (result == null) result = caseInfrastructureRoot(purposeActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(purposeActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(purposeActivity);
+				}
+				if (result == null) {
+					result = caseAct(purposeActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(purposeActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PROBLEM_OBSERVATION: {
-				ProblemObservation problemObservation = (ProblemObservation)theEObject;
+				ProblemObservation problemObservation = (ProblemObservation) theEObject;
 				T result = caseProblemObservation(problemObservation);
-				if (result == null) result = caseObservation(problemObservation);
-				if (result == null) result = caseClinicalStatement(problemObservation);
-				if (result == null) result = caseAct(problemObservation);
-				if (result == null) result = caseInfrastructureRoot(problemObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(problemObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemObservation);
+				}
+				if (result == null) {
+					result = caseAct(problemObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PROBLEM_STATUS_OBSERVATION: {
-				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation)theEObject;
+				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation) theEObject;
 				T result = caseProblemStatusObservation(problemStatusObservation);
-				if (result == null) result = caseStatusObservation(problemStatusObservation);
-				if (result == null) result = caseObservation(problemStatusObservation);
-				if (result == null) result = caseClinicalStatement(problemStatusObservation);
-				if (result == null) result = caseAct(problemStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(problemStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION: {
-				ProblemHealthStatusObservation problemHealthStatusObservation = (ProblemHealthStatusObservation)theEObject;
+				ProblemHealthStatusObservation problemHealthStatusObservation = (ProblemHealthStatusObservation) theEObject;
 				T result = caseProblemHealthStatusObservation(problemHealthStatusObservation);
-				if (result == null) result = caseStatusObservation(problemHealthStatusObservation);
-				if (result == null) result = caseObservation(problemHealthStatusObservation);
-				if (result == null) result = caseClinicalStatement(problemHealthStatusObservation);
-				if (result == null) result = caseAct(problemHealthStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(problemHealthStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(problemHealthStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(problemHealthStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemHealthStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(problemHealthStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemHealthStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.AGE_OBSERVATION: {
-				AgeObservation ageObservation = (AgeObservation)theEObject;
+				AgeObservation ageObservation = (AgeObservation) theEObject;
 				T result = caseAgeObservation(ageObservation);
-				if (result == null) result = caseObservation(ageObservation);
-				if (result == null) result = caseClinicalStatement(ageObservation);
-				if (result == null) result = caseAct(ageObservation);
-				if (result == null) result = caseInfrastructureRoot(ageObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(ageObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(ageObservation);
+				}
+				if (result == null) {
+					result = caseAct(ageObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(ageObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PATIENT_AWARENESS: {
-				PatientAwareness patientAwareness = (PatientAwareness)theEObject;
+				PatientAwareness patientAwareness = (PatientAwareness) theEObject;
 				T result = casePatientAwareness(patientAwareness);
-				if (result == null) result = caseParticipant2(patientAwareness);
-				if (result == null) result = caseParticipation(patientAwareness);
-				if (result == null) result = caseInfrastructureRoot(patientAwareness);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseParticipant2(patientAwareness);
+				}
+				if (result == null) {
+					result = caseParticipation(patientAwareness);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(patientAwareness);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.FAMILY_HISTORY_OBSERVATION: {
-				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation)theEObject;
+				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation) theEObject;
 				T result = caseFamilyHistoryObservation(familyHistoryObservation);
-				if (result == null) result = caseObservation(familyHistoryObservation);
-				if (result == null) result = caseClinicalStatement(familyHistoryObservation);
-				if (result == null) result = caseAct(familyHistoryObservation);
-				if (result == null) result = caseInfrastructureRoot(familyHistoryObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.FAMILY_HISTORY_ORGANIZER: {
-				FamilyHistoryOrganizer familyHistoryOrganizer = (FamilyHistoryOrganizer)theEObject;
+				FamilyHistoryOrganizer familyHistoryOrganizer = (FamilyHistoryOrganizer) theEObject;
 				T result = caseFamilyHistoryOrganizer(familyHistoryOrganizer);
-				if (result == null) result = caseOrganizer(familyHistoryOrganizer);
-				if (result == null) result = caseClinicalStatement(familyHistoryOrganizer);
-				if (result == null) result = caseAct(familyHistoryOrganizer);
-				if (result == null) result = caseInfrastructureRoot(familyHistoryOrganizer);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseOrganizer(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.SOCIAL_HISTORY_OBSERVATION: {
-				SocialHistoryObservation socialHistoryObservation = (SocialHistoryObservation)theEObject;
+				SocialHistoryObservation socialHistoryObservation = (SocialHistoryObservation) theEObject;
 				T result = caseSocialHistoryObservation(socialHistoryObservation);
-				if (result == null) result = caseObservation(socialHistoryObservation);
-				if (result == null) result = caseClinicalStatement(socialHistoryObservation);
-				if (result == null) result = caseAct(socialHistoryObservation);
-				if (result == null) result = caseInfrastructureRoot(socialHistoryObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(socialHistoryObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(socialHistoryObservation);
+				}
+				if (result == null) {
+					result = caseAct(socialHistoryObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(socialHistoryObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.ENCOUNTERS_ACTIVITY: {
-				EncountersActivity encountersActivity = (EncountersActivity)theEObject;
+				EncountersActivity encountersActivity = (EncountersActivity) theEObject;
 				T result = caseEncountersActivity(encountersActivity);
-				if (result == null) result = caseEncounter(encountersActivity);
-				if (result == null) result = caseClinicalStatement(encountersActivity);
-				if (result == null) result = caseAct(encountersActivity);
-				if (result == null) result = caseInfrastructureRoot(encountersActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseEncounter(encountersActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(encountersActivity);
+				}
+				if (result == null) {
+					result = caseAct(encountersActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encountersActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.ALERT_OBSERVATION: {
-				AlertObservation alertObservation = (AlertObservation)theEObject;
+				AlertObservation alertObservation = (AlertObservation) theEObject;
 				T result = caseAlertObservation(alertObservation);
-				if (result == null) result = caseObservation(alertObservation);
-				if (result == null) result = caseClinicalStatement(alertObservation);
-				if (result == null) result = caseAct(alertObservation);
-				if (result == null) result = caseInfrastructureRoot(alertObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(alertObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(alertObservation);
+				}
+				if (result == null) {
+					result = caseAct(alertObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(alertObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.ALERT_STATUS_OBSERVATION: {
-				AlertStatusObservation alertStatusObservation = (AlertStatusObservation)theEObject;
+				AlertStatusObservation alertStatusObservation = (AlertStatusObservation) theEObject;
 				T result = caseAlertStatusObservation(alertStatusObservation);
-				if (result == null) result = caseStatusObservation(alertStatusObservation);
-				if (result == null) result = caseObservation(alertStatusObservation);
-				if (result == null) result = caseClinicalStatement(alertStatusObservation);
-				if (result == null) result = caseAct(alertStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(alertStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(alertStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(alertStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(alertStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(alertStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(alertStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION: {
-				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation)theEObject;
+				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation) theEObject;
 				T result = caseCauseOfDeathObservation(causeOfDeathObservation);
-				if (result == null) result = caseFamilyHistoryObservation(causeOfDeathObservation);
-				if (result == null) result = caseObservation(causeOfDeathObservation);
-				if (result == null) result = caseClinicalStatement(causeOfDeathObservation);
-				if (result == null) result = caseAct(causeOfDeathObservation);
-				if (result == null) result = caseInfrastructureRoot(causeOfDeathObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseFamilyHistoryObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseAct(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.ENCOUNTER_LOCATION: {
-				EncounterLocation encounterLocation = (EncounterLocation)theEObject;
+				EncounterLocation encounterLocation = (EncounterLocation) theEObject;
 				T result = caseEncounterLocation(encounterLocation);
-				if (result == null) result = caseParticipant2(encounterLocation);
-				if (result == null) result = caseParticipation(encounterLocation);
-				if (result == null) result = caseInfrastructureRoot(encounterLocation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseParticipant2(encounterLocation);
+				}
+				if (result == null) {
+					result = caseParticipation(encounterLocation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encounterLocation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PRODUCT: {
-				Product product = (Product)theEObject;
+				Product product = (Product) theEObject;
 				T result = caseProduct(product);
-				if (result == null) result = caseManufacturedProduct(product);
-				if (result == null) result = caseRole(product);
-				if (result == null) result = caseInfrastructureRoot(product);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseManufacturedProduct(product);
+				}
+				if (result == null) {
+					result = caseRole(product);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(product);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: {
-				AdvanceDirectiveStatusObservation advanceDirectiveStatusObservation = (AdvanceDirectiveStatusObservation)theEObject;
+				AdvanceDirectiveStatusObservation advanceDirectiveStatusObservation = (AdvanceDirectiveStatusObservation) theEObject;
 				T result = caseAdvanceDirectiveStatusObservation(advanceDirectiveStatusObservation);
-				if (result == null) result = caseStatusObservation(advanceDirectiveStatusObservation);
-				if (result == null) result = caseObservation(advanceDirectiveStatusObservation);
-				if (result == null) result = caseClinicalStatement(advanceDirectiveStatusObservation);
-				if (result == null) result = caseAct(advanceDirectiveStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(advanceDirectiveStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.ADVANCE_DIRECTIVE_VERIFICATION: {
-				AdvanceDirectiveVerification advanceDirectiveVerification = (AdvanceDirectiveVerification)theEObject;
+				AdvanceDirectiveVerification advanceDirectiveVerification = (AdvanceDirectiveVerification) theEObject;
 				T result = caseAdvanceDirectiveVerification(advanceDirectiveVerification);
-				if (result == null) result = caseParticipant2(advanceDirectiveVerification);
-				if (result == null) result = caseParticipation(advanceDirectiveVerification);
-				if (result == null) result = caseInfrastructureRoot(advanceDirectiveVerification);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseParticipant2(advanceDirectiveVerification);
+				}
+				if (result == null) {
+					result = caseParticipation(advanceDirectiveVerification);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveVerification);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.AUTHORIZATION_ACTIVITY: {
-				AuthorizationActivity authorizationActivity = (AuthorizationActivity)theEObject;
+				AuthorizationActivity authorizationActivity = (AuthorizationActivity) theEObject;
 				T result = caseAuthorizationActivity(authorizationActivity);
-				if (result == null) result = caseCDA_Act(authorizationActivity);
-				if (result == null) result = caseClinicalStatement(authorizationActivity);
-				if (result == null) result = caseAct(authorizationActivity);
-				if (result == null) result = caseInfrastructureRoot(authorizationActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(authorizationActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(authorizationActivity);
+				}
+				if (result == null) {
+					result = caseAct(authorizationActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(authorizationActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PROCEDURE_ACTIVITY: {
-				ProcedureActivity procedureActivity = (ProcedureActivity)theEObject;
+				ProcedureActivity procedureActivity = (ProcedureActivity) theEObject;
 				T result = caseProcedureActivity(procedureActivity);
-				if (result == null) result = caseClinicalStatement(procedureActivity);
-				if (result == null) result = caseAct(procedureActivity);
-				if (result == null) result = caseInfrastructureRoot(procedureActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivity);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.FUNCTIONAL_STATUS_OBSERVATION: {
-				FunctionalStatusObservation functionalStatusObservation = (FunctionalStatusObservation)theEObject;
+				FunctionalStatusObservation functionalStatusObservation = (FunctionalStatusObservation) theEObject;
 				T result = caseFunctionalStatusObservation(functionalStatusObservation);
-				if (result == null) result = caseStatusObservation(functionalStatusObservation);
-				if (result == null) result = caseObservation(functionalStatusObservation);
-				if (result == null) result = caseClinicalStatement(functionalStatusObservation);
-				if (result == null) result = caseAct(functionalStatusObservation);
-				if (result == null) result = caseInfrastructureRoot(functionalStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(functionalStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(functionalStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(functionalStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(functionalStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(functionalStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PROCEDURE_ACTIVITY_ACT: {
-				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct)theEObject;
+				ProcedureActivityAct procedureActivityAct = (ProcedureActivityAct) theEObject;
 				T result = caseProcedureActivityAct(procedureActivityAct);
-				if (result == null) result = caseCDA_Act(procedureActivityAct);
-				if (result == null) result = caseProcedureActivity(procedureActivityAct);
-				if (result == null) result = caseClinicalStatement(procedureActivityAct);
-				if (result == null) result = caseAct(procedureActivityAct);
-				if (result == null) result = caseInfrastructureRoot(procedureActivityAct);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(procedureActivityAct);
+				}
+				if (result == null) {
+					result = caseProcedureActivity(procedureActivityAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivityAct);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivityAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivityAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PROCEDURE_ACTIVITY_OBSERVATION: {
-				ProcedureActivityObservation procedureActivityObservation = (ProcedureActivityObservation)theEObject;
+				ProcedureActivityObservation procedureActivityObservation = (ProcedureActivityObservation) theEObject;
 				T result = caseProcedureActivityObservation(procedureActivityObservation);
-				if (result == null) result = caseObservation(procedureActivityObservation);
-				if (result == null) result = caseProcedureActivity(procedureActivityObservation);
-				if (result == null) result = caseClinicalStatement(procedureActivityObservation);
-				if (result == null) result = caseAct(procedureActivityObservation);
-				if (result == null) result = caseInfrastructureRoot(procedureActivityObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(procedureActivityObservation);
+				}
+				if (result == null) {
+					result = caseProcedureActivity(procedureActivityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivityObservation);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE: {
-				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure)theEObject;
+				ProcedureActivityProcedure procedureActivityProcedure = (ProcedureActivityProcedure) theEObject;
 				T result = caseProcedureActivityProcedure(procedureActivityProcedure);
-				if (result == null) result = caseProcedure(procedureActivityProcedure);
-				if (result == null) result = caseProcedureActivity(procedureActivityProcedure);
-				if (result == null) result = caseClinicalStatement(procedureActivityProcedure);
-				if (result == null) result = caseAct(procedureActivityProcedure);
-				if (result == null) result = caseInfrastructureRoot(procedureActivityProcedure);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProcedure(procedureActivityProcedure);
+				}
+				if (result == null) {
+					result = caseProcedureActivity(procedureActivityProcedure);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivityProcedure);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivityProcedure);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivityProcedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.PAYER_ENTITY: {
-				PayerEntity payerEntity = (PayerEntity)theEObject;
+				PayerEntity payerEntity = (PayerEntity) theEObject;
 				T result = casePayerEntity(payerEntity);
-				if (result == null) result = caseAssignedEntity(payerEntity);
-				if (result == null) result = caseRole(payerEntity);
-				if (result == null) result = caseInfrastructureRoot(payerEntity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseAssignedEntity(payerEntity);
+				}
+				if (result == null) {
+					result = caseRole(payerEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(payerEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.COVERED_PARTY: {
-				CoveredParty coveredParty = (CoveredParty)theEObject;
+				CoveredParty coveredParty = (CoveredParty) theEObject;
 				T result = caseCoveredParty(coveredParty);
-				if (result == null) result = caseParticipantRole(coveredParty);
-				if (result == null) result = caseRole(coveredParty);
-				if (result == null) result = caseInfrastructureRoot(coveredParty);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseParticipantRole(coveredParty);
+				}
+				if (result == null) {
+					result = caseRole(coveredParty);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(coveredParty);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.POLICY_SUBSCRIBER: {
-				PolicySubscriber policySubscriber = (PolicySubscriber)theEObject;
+				PolicySubscriber policySubscriber = (PolicySubscriber) theEObject;
 				T result = casePolicySubscriber(policySubscriber);
-				if (result == null) result = caseParticipantRole(policySubscriber);
-				if (result == null) result = caseRole(policySubscriber);
-				if (result == null) result = caseInfrastructureRoot(policySubscriber);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseParticipantRole(policySubscriber);
+				}
+				if (result == null) {
+					result = caseRole(policySubscriber);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(policySubscriber);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.COVERAGE_PLAN_DESCRIPTION: {
-				CoveragePlanDescription coveragePlanDescription = (CoveragePlanDescription)theEObject;
+				CoveragePlanDescription coveragePlanDescription = (CoveragePlanDescription) theEObject;
 				T result = caseCoveragePlanDescription(coveragePlanDescription);
-				if (result == null) result = caseCDA_Act(coveragePlanDescription);
-				if (result == null) result = caseClinicalStatement(coveragePlanDescription);
-				if (result == null) result = caseAct(coveragePlanDescription);
-				if (result == null) result = caseInfrastructureRoot(coveragePlanDescription);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(coveragePlanDescription);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(coveragePlanDescription);
+				}
+				if (result == null) {
+					result = caseAct(coveragePlanDescription);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(coveragePlanDescription);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.SUPPORT_PARTICIPANT: {
-				SupportParticipant supportParticipant = (SupportParticipant)theEObject;
+				SupportParticipant supportParticipant = (SupportParticipant) theEObject;
 				T result = caseSupportParticipant(supportParticipant);
-				if (result == null) result = caseParticipant1(supportParticipant);
-				if (result == null) result = caseSupport(supportParticipant);
-				if (result == null) result = caseParticipation(supportParticipant);
-				if (result == null) result = caseInfrastructureRoot(supportParticipant);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseParticipant1(supportParticipant);
+				}
+				if (result == null) {
+					result = caseSupport(supportParticipant);
+				}
+				if (result == null) {
+					result = caseParticipation(supportParticipant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(supportParticipant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.SUPPORT: {
-				Support support = (Support)theEObject;
+				Support support = (Support) theEObject;
 				T result = caseSupport(support);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.SUPPORT_GUARDIAN: {
-				SupportGuardian supportGuardian = (SupportGuardian)theEObject;
+				SupportGuardian supportGuardian = (SupportGuardian) theEObject;
 				T result = caseSupportGuardian(supportGuardian);
-				if (result == null) result = caseGuardian(supportGuardian);
-				if (result == null) result = caseSupport(supportGuardian);
-				if (result == null) result = caseRole(supportGuardian);
-				if (result == null) result = caseInfrastructureRoot(supportGuardian);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseGuardian(supportGuardian);
+				}
+				if (result == null) {
+					result = caseSupport(supportGuardian);
+				}
+				if (result == null) {
+					result = caseRole(supportGuardian);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(supportGuardian);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.COMMENT: {
-				Comment comment = (Comment)theEObject;
+				Comment comment = (Comment) theEObject;
 				T result = caseComment(comment);
-				if (result == null) result = caseCDA_Act(comment);
-				if (result == null) result = caseClinicalStatement(comment);
-				if (result == null) result = caseAct(comment);
-				if (result == null) result = caseInfrastructureRoot(comment);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(comment);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(comment);
+				}
+				if (result == null) {
+					result = caseAct(comment);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(comment);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CCDPackage.CCD_REGISTRY_DELEGATE: {
-				CCDRegistryDelegate ccdRegistryDelegate = (CCDRegistryDelegate)theEObject;
+				CCDRegistryDelegate ccdRegistryDelegate = (CCDRegistryDelegate) theEObject;
 				T result = caseCCDRegistryDelegate(ccdRegistryDelegate);
-				if (result == null) result = caseRegistryDelegate(ccdRegistryDelegate);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseRegistryDelegate(ccdRegistryDelegate);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			default: return defaultCase(theEObject);
+			default:
+				return defaultCase(theEObject);
 		}
 	}
 

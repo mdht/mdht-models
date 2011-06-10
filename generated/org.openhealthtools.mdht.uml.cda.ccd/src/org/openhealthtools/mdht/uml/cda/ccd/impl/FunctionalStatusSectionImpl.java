@@ -56,7 +56,8 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionClinicalStatements(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionClinicalStatements(this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionClinicalStatements(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -92,7 +93,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 * @generated
 	 */
 	public FunctionalStatusSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // FunctionalStatusSectionImpl

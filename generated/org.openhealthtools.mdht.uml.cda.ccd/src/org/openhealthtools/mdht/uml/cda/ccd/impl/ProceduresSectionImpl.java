@@ -100,7 +100,7 @@ public class ProceduresSectionImpl extends SectionImpl implements ProceduresSect
 	 * @generated
 	 */
 	public ProceduresSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProceduresSectionImpl

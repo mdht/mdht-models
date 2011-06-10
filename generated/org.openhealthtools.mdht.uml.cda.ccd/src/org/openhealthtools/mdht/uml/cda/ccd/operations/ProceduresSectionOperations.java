@@ -83,26 +83,24 @@ public class ProceduresSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProceduresSectionTitleValue(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProceduresSectionTitleValue(ProceduresSection proceduresSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PROCEDURES_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE_VALUE,
-						 CCDPlugin.INSTANCE.getString("ProceduresSectionTitleValue"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE_VALUE,
+					CCDPlugin.INSTANCE.getString("ProceduresSectionTitleValue"), new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -147,20 +145,17 @@ public class ProceduresSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("ProceduresSectionTemplateId"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("ProceduresSectionTemplateId"), new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -175,9 +170,9 @@ public class ProceduresSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '47519-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_PROCEDURES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '47519-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProceduresSectionCode(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Code</em>}' invariant operation.
@@ -209,20 +204,17 @@ public class ProceduresSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_CODE,
-						 CCDPlugin.INSTANCE.getString("ProceduresSectionCode"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_CODE,
+					CCDPlugin.INSTANCE.getString("ProceduresSectionCode"), new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -267,20 +259,17 @@ public class ProceduresSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE,
-						 CCDPlugin.INSTANCE.getString("ProceduresSectionTitle"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE,
+					CCDPlugin.INSTANCE.getString("ProceduresSectionTitle"), new Object[] { proceduresSection }));
 			}
 			return false;
 		}
@@ -325,20 +314,17 @@ public class ProceduresSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.PROCEDURES_SECTION);
 			try {
 				VALIDATE_PROCEDURES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(proceduresSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			proceduresSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TEXT,
-						 CCDPlugin.INSTANCE.getString("ProceduresSectionText"),
-						 new Object [] { proceduresSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TEXT,
+					CCDPlugin.INSTANCE.getString("ProceduresSectionText"), new Object[] { proceduresSection }));
 			}
 			return false;
 		}

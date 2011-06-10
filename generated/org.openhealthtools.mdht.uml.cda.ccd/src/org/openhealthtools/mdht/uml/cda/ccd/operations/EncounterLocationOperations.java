@@ -86,26 +86,25 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterLocationHasParticipantRole(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateEncounterLocationHasParticipantRole(EncounterLocation encounterLocation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE,
-						 CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRole"),
-						 new Object [] { encounterLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE,
+					CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRole"),
+					new Object[] { encounterLocation }));
 			}
 			return false;
 		}
@@ -143,26 +142,26 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterLocationHasParticipantRoleLocation(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateEncounterLocationHasParticipantRoleLocation(EncounterLocation encounterLocation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION,
-						 CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleLocation"),
-						 new Object [] { encounterLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION,
+					CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleLocation"),
+					new Object[] { encounterLocation }));
 			}
 			return false;
 		}
@@ -200,26 +199,25 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterLocationHasParticipantRoleCode(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateEncounterLocationHasParticipantRoleCode(EncounterLocation encounterLocation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE,
-						 CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleCode"),
-						 new Object [] { encounterLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE,
+					CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleCode"),
+					new Object[] { encounterLocation }));
 			}
 			return false;
 		}
@@ -257,26 +255,26 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterLocationHasParticipantRoleCodeVocab(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateEncounterLocationHasParticipantRoleCodeVocab(EncounterLocation encounterLocation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB,
-						 CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleCodeVocab"),
-						 new Object [] { encounterLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB,
+					CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleCodeVocab"),
+					new Object[] { encounterLocation }));
 			}
 			return false;
 		}
@@ -314,26 +312,25 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterLocationHasPlayingEntity(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateEncounterLocationHasPlayingEntity(EncounterLocation encounterLocation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY,
-						 CCDPlugin.INSTANCE.getString("EncounterLocationHasPlayingEntity"),
-						 new Object [] { encounterLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY,
+					CCDPlugin.INSTANCE.getString("EncounterLocationHasPlayingEntity"),
+					new Object[] { encounterLocation }));
 			}
 			return false;
 		}
@@ -371,26 +368,25 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEncounterLocationHasPlayingEntityPlace(EncounterLocation encounterLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateEncounterLocationHasPlayingEntityPlace(EncounterLocation encounterLocation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE,
-						 CCDPlugin.INSTANCE.getString("EncounterLocationHasPlayingEntityPlace"),
-						 new Object [] { encounterLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE,
+					CCDPlugin.INSTANCE.getString("EncounterLocationHasPlayingEntityPlace"),
+					new Object[] { encounterLocation }));
 			}
 			return false;
 		}
@@ -435,20 +431,17 @@ public class EncounterLocationOperations extends Participant2Operations {
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("EncounterLocationTemplateId"),
-						 new Object [] { encounterLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("EncounterLocationTemplateId"), new Object[] { encounterLocation }));
 			}
 			return false;
 		}
@@ -493,20 +486,17 @@ public class EncounterLocationOperations extends Participant2Operations {
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
 			try {
 				VALIDATE_ENCOUNTER_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterLocation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterLocation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_TYPE_CODE,
-						 CCDPlugin.INSTANCE.getString("EncounterLocationTypeCode"),
-						 new Object [] { encounterLocation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_TYPE_CODE,
+					CCDPlugin.INSTANCE.getString("EncounterLocationTypeCode"), new Object[] { encounterLocation }));
 			}
 			return false;
 		}

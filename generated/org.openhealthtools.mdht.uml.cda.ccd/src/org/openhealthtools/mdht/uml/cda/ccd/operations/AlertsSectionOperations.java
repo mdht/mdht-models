@@ -91,26 +91,24 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAlertsSectionTitleValue(AlertsSection alertsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAlertsSectionTitleValue(AlertsSection alertsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_ALERTS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
 				VALIDATE_ALERTS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(alertsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TITLE_VALUE,
-						 CCDPlugin.INSTANCE.getString("AlertsSectionTitleValue"),
-						 new Object [] { alertsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TITLE_VALUE,
+					CCDPlugin.INSTANCE.getString("AlertsSectionTitleValue"), new Object[] { alertsSection }));
 			}
 			return false;
 		}
@@ -155,20 +153,17 @@ public class AlertsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
 				VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(alertsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("AlertsSectionTemplateId"),
-						 new Object [] { alertsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("AlertsSectionTemplateId"), new Object[] { alertsSection }));
 			}
 			return false;
 		}
@@ -183,9 +178,9 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAlertsSectionCode(AlertsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Alerts Section Code</em>}' invariant operation.
@@ -217,20 +212,15 @@ public class AlertsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
 				VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ALERTS_SECTION__ALERTS_SECTION_CODE,
-						 CCDPlugin.INSTANCE.getString("AlertsSectionCode"),
-						 new Object [] { alertsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.ALERTS_SECTION__ALERTS_SECTION_CODE,
+					CCDPlugin.INSTANCE.getString("AlertsSectionCode"), new Object[] { alertsSection }));
 			}
 			return false;
 		}
@@ -275,20 +265,16 @@ public class AlertsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
 				VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TITLE,
-						 CCDPlugin.INSTANCE.getString("AlertsSectionTitle"),
-						 new Object [] { alertsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TITLE,
+					CCDPlugin.INSTANCE.getString("AlertsSectionTitle"), new Object[] { alertsSection }));
 			}
 			return false;
 		}
@@ -333,20 +319,15 @@ public class AlertsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
 				VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TEXT,
-						 CCDPlugin.INSTANCE.getString("AlertsSectionText"),
-						 new Object [] { alertsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TEXT,
+					CCDPlugin.INSTANCE.getString("AlertsSectionText"), new Object[] { alertsSection }));
 			}
 			return false;
 		}
@@ -391,20 +372,17 @@ public class AlertsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
 				VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(alertsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.ALERTS_SECTION__ALERTS_SECTION_PROBLEM_ACT,
-						 CCDPlugin.INSTANCE.getString("AlertsSectionProblemAct"),
-						 new Object [] { alertsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.ALERTS_SECTION__ALERTS_SECTION_PROBLEM_ACT,
+					CCDPlugin.INSTANCE.getString("AlertsSectionProblemAct"), new Object[] { alertsSection }));
 			}
 			return false;
 		}
@@ -443,11 +421,11 @@ public class AlertsSectionOperations extends SectionOperations {
 	public static EList<ProblemAct> getProblemActs(AlertsSection alertsSection) {
 		if (GET_PROBLEM_ACTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.ALERTS_SECTION, CCDPackage.Literals.ALERTS_SECTION.getEAllOperations().get(61));
+			helper.setOperationContext(
+				CCDPackage.Literals.ALERTS_SECTION, CCDPackage.Literals.ALERTS_SECTION.getEAllOperations().get(61));
 			try {
 				GET_PROBLEM_ACTS__EOCL_QRY = helper.createQuery(GET_PROBLEM_ACTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

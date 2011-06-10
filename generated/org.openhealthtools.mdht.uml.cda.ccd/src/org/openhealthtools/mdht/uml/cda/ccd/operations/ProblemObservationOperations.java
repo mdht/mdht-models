@@ -72,13 +72,13 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_OBSERVATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "+
-"or not self.getSection().informant->isEmpty()"+
-"or not self.getClinicalDocument().informant->isEmpty()"+
-"or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"+
-"or (self.entryRelationship->exists(rel : cda::EntryRelationship | "+
-"   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"+
-"   and rel.observation.code.code = '48766-0'))";
+	protected static final String VALIDATE_PROBLEM_OBSERVATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "
+			+ "or not self.getSection().informant->isEmpty()"
+			+ "or not self.getClinicalDocument().informant->isEmpty()"
+			+ "or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"
+			+ "or (self.entryRelationship->exists(rel : cda::EntryRelationship | "
+			+ "   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"
+			+ "   and rel.observation.code.code = '48766-0'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemObservationInformationSource(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Information Source</em>}' invariant operation.
@@ -114,20 +114,18 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PROBLEM_OBSERVATION);
 			try {
 				VALIDATE_PROBLEM_OBSERVATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_INFORMATION_SOURCE,
-						 CCDPlugin.INSTANCE.getString("ProblemObservationInformationSource"),
-						 new Object [] { problemObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_INFORMATION_SOURCE,
+					CCDPlugin.INSTANCE.getString("ProblemObservationInformationSource"),
+					new Object[] { problemObservation }));
 			}
 			return false;
 		}
@@ -172,20 +170,19 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PROBLEM_OBSERVATION);
 			try {
 				VALIDATE_PROBLEM_OBSERVATION_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CONTAINS_PATIENT_AWARENESS,
-						 CCDPlugin.INSTANCE.getString("ProblemObservationContainsPatientAwareness"),
-						 new Object [] { problemObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CONTAINS_PATIENT_AWARENESS,
+					CCDPlugin.INSTANCE.getString("ProblemObservationContainsPatientAwareness"),
+					new Object[] { problemObservation }));
 			}
 			return false;
 		}
@@ -230,20 +227,17 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PROBLEM_OBSERVATION);
 			try {
 				VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("ProblemObservationTemplateId"),
-						 new Object [] { problemObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("ProblemObservationTemplateId"), new Object[] { problemObservation }));
 			}
 			return false;
 		}
@@ -288,20 +282,17 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PROBLEM_OBSERVATION);
 			try {
 				VALIDATE_PROBLEM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_MOOD_CODE,
-						 CCDPlugin.INSTANCE.getString("ProblemObservationMoodCode"),
-						 new Object [] { problemObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_MOOD_CODE,
+					CCDPlugin.INSTANCE.getString("ProblemObservationMoodCode"), new Object[] { problemObservation }));
 			}
 			return false;
 		}
@@ -316,9 +307,9 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+	protected static final String VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
+			+ "value.code = 'completed'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemObservationStatusCode(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Status Code</em>}' invariant operation.
@@ -350,20 +341,17 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PROBLEM_OBSERVATION);
 			try {
 				VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE,
-						 CCDPlugin.INSTANCE.getString("ProblemObservationStatusCode"),
-						 new Object [] { problemObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE,
+					CCDPlugin.INSTANCE.getString("ProblemObservationStatusCode"), new Object[] { problemObservation }));
 			}
 			return false;
 		}
@@ -408,20 +396,18 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PROBLEM_OBSERVATION);
 			try {
 				VALIDATE_PROBLEM_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_EFFECTIVE_TIME,
-						 CCDPlugin.INSTANCE.getString("ProblemObservationEffectiveTime"),
-						 new Object [] { problemObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_EFFECTIVE_TIME,
+					CCDPlugin.INSTANCE.getString("ProblemObservationEffectiveTime"),
+					new Object[] { problemObservation }));
 			}
 			return false;
 		}
@@ -466,20 +452,18 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PROBLEM_OBSERVATION);
 			try {
 				VALIDATE_PROBLEM_OBSERVATION_PROBLEM_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_PROBLEM_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_PROBLEM_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_PROBLEM_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_PROBLEM_STATUS,
-						 CCDPlugin.INSTANCE.getString("ProblemObservationProblemStatus"),
-						 new Object [] { problemObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_PROBLEM_STATUS,
+					CCDPlugin.INSTANCE.getString("ProblemObservationProblemStatus"),
+					new Object[] { problemObservation }));
 			}
 			return false;
 		}
@@ -524,20 +508,18 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PROBLEM_OBSERVATION);
 			try {
 				VALIDATE_PROBLEM_OBSERVATION_PROBLEM_HEALTH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_PROBLEM_HEALTH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_PROBLEM_HEALTH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_PROBLEM_HEALTH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_PROBLEM_HEALTH_STATUS,
-						 CCDPlugin.INSTANCE.getString("ProblemObservationProblemHealthStatus"),
-						 new Object [] { problemObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_PROBLEM_HEALTH_STATUS,
+					CCDPlugin.INSTANCE.getString("ProblemObservationProblemHealthStatus"),
+					new Object[] { problemObservation }));
 			}
 			return false;
 		}
@@ -582,20 +564,18 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PROBLEM_OBSERVATION);
 			try {
 				VALIDATE_PROBLEM_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			problemObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_AGE_OBSERVATION,
-						 CCDPlugin.INSTANCE.getString("ProblemObservationAgeObservation"),
-						 new Object [] { problemObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_AGE_OBSERVATION,
+					CCDPlugin.INSTANCE.getString("ProblemObservationAgeObservation"),
+					new Object[] { problemObservation }));
 			}
 			return false;
 		}
@@ -634,11 +614,12 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	public static ProblemStatusObservation getProblemStatus(ProblemObservation problemObservation) {
 		if (GET_PROBLEM_STATUS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PROBLEM_OBSERVATION, CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(58));
+			helper.setOperationContext(
+				CCDPackage.Literals.PROBLEM_OBSERVATION,
+				CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_STATUS__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -678,11 +659,12 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	public static ProblemHealthStatusObservation getProblemHealthStatus(ProblemObservation problemObservation) {
 		if (GET_PROBLEM_HEALTH_STATUS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PROBLEM_OBSERVATION, CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(59));
+			helper.setOperationContext(
+				CCDPackage.Literals.PROBLEM_OBSERVATION,
+				CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(59));
 			try {
 				GET_PROBLEM_HEALTH_STATUS__EOCL_QRY = helper.createQuery(GET_PROBLEM_HEALTH_STATUS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -722,11 +704,12 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	public static AgeObservation getAgeObservation(ProblemObservation problemObservation) {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PROBLEM_OBSERVATION, CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(60));
+			helper.setOperationContext(
+				CCDPackage.Literals.PROBLEM_OBSERVATION,
+				CCDPackage.Literals.PROBLEM_OBSERVATION.getEAllOperations().get(60));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

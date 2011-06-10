@@ -73,7 +73,7 @@ public class CoveredPartyImpl extends ParticipantRoleImpl implements CoveredPart
 	 * @generated
 	 */
 	public CoveredParty init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // CoveredPartyImpl

@@ -65,7 +65,7 @@ public class AlertStatusObservationImpl extends StatusObservationImpl implements
 	 */
 	@Override
 	public AlertStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AlertStatusObservationImpl

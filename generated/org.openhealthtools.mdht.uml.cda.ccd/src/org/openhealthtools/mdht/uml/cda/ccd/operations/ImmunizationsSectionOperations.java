@@ -82,26 +82,25 @@ public class ImmunizationsSectionOperations extends MedicationsSectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateImmunizationsSectionTitleValue(ImmunizationsSection immunizationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateImmunizationsSectionTitleValue(ImmunizationsSection immunizationsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_IMMUNIZATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.IMMUNIZATIONS_SECTION);
 			try {
 				VALIDATE_IMMUNIZATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			immunizationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.IMMUNIZATIONS_SECTION__IMMUNIZATIONS_SECTION_TITLE_VALUE,
-						 CCDPlugin.INSTANCE.getString("ImmunizationsSectionTitleValue"),
-						 new Object [] { immunizationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.IMMUNIZATIONS_SECTION__IMMUNIZATIONS_SECTION_TITLE_VALUE,
+					CCDPlugin.INSTANCE.getString("ImmunizationsSectionTitleValue"),
+					new Object[] { immunizationsSection }));
 			}
 			return false;
 		}
@@ -146,20 +145,17 @@ public class ImmunizationsSectionOperations extends MedicationsSectionOperations
 			helper.setContext(CCDPackage.Literals.IMMUNIZATIONS_SECTION);
 			try {
 				VALIDATE_IMMUNIZATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			immunizationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.IMMUNIZATIONS_SECTION__IMMUNIZATIONS_SECTION_TITLE,
-						 CCDPlugin.INSTANCE.getString("ImmunizationsSectionTitle"),
-						 new Object [] { immunizationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.IMMUNIZATIONS_SECTION__IMMUNIZATIONS_SECTION_TITLE,
+					CCDPlugin.INSTANCE.getString("ImmunizationsSectionTitle"), new Object[] { immunizationsSection }));
 			}
 			return false;
 		}
@@ -204,20 +200,17 @@ public class ImmunizationsSectionOperations extends MedicationsSectionOperations
 			helper.setContext(CCDPackage.Literals.IMMUNIZATIONS_SECTION);
 			try {
 				VALIDATE_IMMUNIZATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			immunizationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.IMMUNIZATIONS_SECTION__IMMUNIZATIONS_SECTION_TEXT,
-						 CCDPlugin.INSTANCE.getString("ImmunizationsSectionText"),
-						 new Object [] { immunizationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.IMMUNIZATIONS_SECTION__IMMUNIZATIONS_SECTION_TEXT,
+					CCDPlugin.INSTANCE.getString("ImmunizationsSectionText"), new Object[] { immunizationsSection }));
 			}
 			return false;
 		}
@@ -262,20 +255,22 @@ public class ImmunizationsSectionOperations extends MedicationsSectionOperations
 			helper.setContext(CCDPackage.Literals.IMMUNIZATIONS_SECTION);
 			try {
 				VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			immunizationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.IMMUNIZATIONS_SECTION__MEDICATIONS_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MedicationsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(immunizationsSection, context) }),
-						 new Object [] { immunizationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.IMMUNIZATIONS_SECTION__MEDICATIONS_SECTION_TEMPLATE_ID,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"MedicationsSectionTemplateId",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+									immunizationsSection, context) }), new Object[] { immunizationsSection }));
 			}
 			return false;
 		}
@@ -290,9 +285,9 @@ public class ImmunizationsSectionOperations extends MedicationsSectionOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationsSectionCode(ImmunizationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Code</em>}' invariant operation.
@@ -324,20 +319,17 @@ public class ImmunizationsSectionOperations extends MedicationsSectionOperations
 			helper.setContext(CCDPackage.Literals.IMMUNIZATIONS_SECTION);
 			try {
 				VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			immunizationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.IMMUNIZATIONS_SECTION__MEDICATIONS_SECTION_CODE,
-						 CCDPlugin.INSTANCE.getString("MedicationsSectionCode"),
-						 new Object [] { immunizationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.IMMUNIZATIONS_SECTION__MEDICATIONS_SECTION_CODE,
+					CCDPlugin.INSTANCE.getString("MedicationsSectionCode"), new Object[] { immunizationsSection }));
 			}
 			return false;
 		}

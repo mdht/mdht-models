@@ -72,8 +72,8 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATIONS_SECTION_HAS_MEDICATION_OR_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))"+
-"   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))";
+	protected static final String VALIDATE_MEDICATIONS_SECTION_HAS_MEDICATION_OR_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))"
+			+ "   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationsSectionHasMedicationOrSupplyActivity(MedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Has Medication Or Supply Activity</em>}' invariant operation.
@@ -104,20 +104,19 @@ public class MedicationsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
 			try {
 				VALIDATE_MEDICATIONS_SECTION_HAS_MEDICATION_OR_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_HAS_MEDICATION_OR_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_HAS_MEDICATION_OR_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATIONS_SECTION_HAS_MEDICATION_OR_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_HAS_MEDICATION_OR_SUPPLY_ACTIVITY,
-						 CCDPlugin.INSTANCE.getString("MedicationsSectionHasMedicationOrSupplyActivity"),
-						 new Object [] { medicationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_HAS_MEDICATION_OR_SUPPLY_ACTIVITY,
+					CCDPlugin.INSTANCE.getString("MedicationsSectionHasMedicationOrSupplyActivity"),
+					new Object[] { medicationsSection }));
 			}
 			return false;
 		}
@@ -155,26 +154,24 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateMedicationsSectionTitleValue(MedicationsSection medicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationsSectionTitleValue(MedicationsSection medicationsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
 			try {
 				VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE_VALUE,
-						 CCDPlugin.INSTANCE.getString("MedicationsSectionTitleValue"),
-						 new Object [] { medicationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE_VALUE,
+					CCDPlugin.INSTANCE.getString("MedicationsSectionTitleValue"), new Object[] { medicationsSection }));
 			}
 			return false;
 		}
@@ -219,20 +216,17 @@ public class MedicationsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
 			try {
 				VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("MedicationsSectionTemplateId"),
-						 new Object [] { medicationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("MedicationsSectionTemplateId"), new Object[] { medicationsSection }));
 			}
 			return false;
 		}
@@ -247,9 +241,9 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '10160-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '10160-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationsSectionCode(MedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Code</em>}' invariant operation.
@@ -281,20 +275,17 @@ public class MedicationsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
 			try {
 				VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_CODE,
-						 CCDPlugin.INSTANCE.getString("MedicationsSectionCode"),
-						 new Object [] { medicationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_CODE,
+					CCDPlugin.INSTANCE.getString("MedicationsSectionCode"), new Object[] { medicationsSection }));
 			}
 			return false;
 		}
@@ -339,20 +330,17 @@ public class MedicationsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
 			try {
 				VALIDATE_MEDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE,
-						 CCDPlugin.INSTANCE.getString("MedicationsSectionTitle"),
-						 new Object [] { medicationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE,
+					CCDPlugin.INSTANCE.getString("MedicationsSectionTitle"), new Object[] { medicationsSection }));
 			}
 			return false;
 		}
@@ -397,20 +385,17 @@ public class MedicationsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
 			try {
 				VALIDATE_MEDICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEXT,
-						 CCDPlugin.INSTANCE.getString("MedicationsSectionText"),
-						 new Object [] { medicationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEXT,
+					CCDPlugin.INSTANCE.getString("MedicationsSectionText"), new Object[] { medicationsSection }));
 			}
 			return false;
 		}
@@ -455,20 +440,18 @@ public class MedicationsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
 			try {
 				VALIDATE_MEDICATIONS_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_MEDICATION_ACTIVITY,
-						 CCDPlugin.INSTANCE.getString("MedicationsSectionMedicationActivity"),
-						 new Object [] { medicationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_MEDICATION_ACTIVITY,
+					CCDPlugin.INSTANCE.getString("MedicationsSectionMedicationActivity"),
+					new Object[] { medicationsSection }));
 			}
 			return false;
 		}
@@ -513,20 +496,18 @@ public class MedicationsSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
 			try {
 				VALIDATE_MEDICATIONS_SECTION_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_SUPPLY_ACTIVITY,
-						 CCDPlugin.INSTANCE.getString("MedicationsSectionSupplyActivity"),
-						 new Object [] { medicationsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_SUPPLY_ACTIVITY,
+					CCDPlugin.INSTANCE.getString("MedicationsSectionSupplyActivity"),
+					new Object[] { medicationsSection }));
 			}
 			return false;
 		}
@@ -565,11 +546,12 @@ public class MedicationsSectionOperations extends SectionOperations {
 	public static EList<MedicationActivity> getMedicationActivities(MedicationsSection medicationsSection) {
 		if (GET_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.MEDICATIONS_SECTION, CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(
+				CCDPackage.Literals.MEDICATIONS_SECTION,
+				CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(63));
 			try {
 				GET_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -611,11 +593,12 @@ public class MedicationsSectionOperations extends SectionOperations {
 	public static EList<SupplyActivity> getSupplyActivities(MedicationsSection medicationsSection) {
 		if (GET_SUPPLY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.MEDICATIONS_SECTION, CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(
+				CCDPackage.Literals.MEDICATIONS_SECTION,
+				CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(64));
 			try {
 				GET_SUPPLY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_SUPPLY_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

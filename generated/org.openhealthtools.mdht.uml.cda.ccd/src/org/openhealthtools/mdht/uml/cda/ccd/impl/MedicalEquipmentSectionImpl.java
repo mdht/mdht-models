@@ -82,7 +82,7 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * @generated
 	 */
 	public MedicalEquipmentSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicalEquipmentSectionImpl

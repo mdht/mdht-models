@@ -81,26 +81,24 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProductInstanceHasScopingEntity(ProductInstance productInstance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProductInstanceHasScopingEntity(ProductInstance productInstance,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_PRODUCT_INSTANCE_HAS_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PRODUCT_INSTANCE);
 			try {
 				VALIDATE_PRODUCT_INSTANCE_HAS_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_HAS_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_HAS_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_HAS_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_HAS_SCOPING_ENTITY,
-						 CCDPlugin.INSTANCE.getString("ProductInstanceHasScopingEntity"),
-						 new Object [] { productInstance }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_HAS_SCOPING_ENTITY,
+					CCDPlugin.INSTANCE.getString("ProductInstanceHasScopingEntity"), new Object[] { productInstance }));
 			}
 			return false;
 		}
@@ -145,20 +143,17 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			helper.setContext(CCDPackage.Literals.PRODUCT_INSTANCE);
 			try {
 				VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("ProductInstanceTemplateId"),
-						 new Object [] { productInstance }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("ProductInstanceTemplateId"), new Object[] { productInstance }));
 			}
 			return false;
 		}
@@ -173,7 +168,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.classCode.oclIsUndefined() and self.classCode=vocab::RoleClassRoot::MANU";
+	protected static final String VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('classCode') and self.classCode=vocab::RoleClassRoot::MANU";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProductInstanceClassCode(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Class Code</em>}' invariant operation.
@@ -189,7 +184,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.classCode.oclIsUndefined() and self.classCode=vocab::RoleClassRoot::MANU
+	 * isDefined('classCode') and self.classCode=vocab::RoleClassRoot::MANU
 	 * @param productInstance The receiving '<em><b>Product Instance</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -203,20 +198,17 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			helper.setContext(CCDPackage.Literals.PRODUCT_INSTANCE);
 			try {
 				VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE,
-						 CCDPlugin.INSTANCE.getString("ProductInstanceClassCode"),
-						 new Object [] { productInstance }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE,
+					CCDPlugin.INSTANCE.getString("ProductInstanceClassCode"), new Object[] { productInstance }));
 			}
 			return false;
 		}

@@ -94,20 +94,15 @@ public class ProductOperations extends ManufacturedProductOperations {
 			helper.setContext(CCDPackage.Literals.PRODUCT);
 			try {
 				VALIDATE_PRODUCT_HAS_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_HAS_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_HAS_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(product)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT__PRODUCT_HAS_MATERIAL,
-						 CCDPlugin.INSTANCE.getString("ProductHasMaterial"),
-						 new Object [] { product }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PRODUCT__PRODUCT_HAS_MATERIAL,
+					CCDPlugin.INSTANCE.getString("ProductHasMaterial"), new Object[] { product }));
 			}
 			return false;
 		}
@@ -152,20 +147,15 @@ public class ProductOperations extends ManufacturedProductOperations {
 			helper.setContext(CCDPackage.Literals.PRODUCT);
 			try {
 				VALIDATE_PRODUCT_HAS_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_HAS_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_HAS_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(product)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT__PRODUCT_HAS_MATERIAL_CODE,
-						 CCDPlugin.INSTANCE.getString("ProductHasMaterialCode"),
-						 new Object [] { product }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PRODUCT__PRODUCT_HAS_MATERIAL_CODE,
+					CCDPlugin.INSTANCE.getString("ProductHasMaterialCode"), new Object[] { product }));
 			}
 			return false;
 		}
@@ -203,26 +193,24 @@ public class ProductOperations extends ManufacturedProductOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProductHasMaterialCodeVocab(Product product, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProductHasMaterialCodeVocab(Product product, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PRODUCT_HAS_MATERIAL_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PRODUCT);
 			try {
 				VALIDATE_PRODUCT_HAS_MATERIAL_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_HAS_MATERIAL_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_HAS_MATERIAL_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(product)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_HAS_MATERIAL_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			product)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT__PRODUCT_HAS_MATERIAL_CODE_VOCAB,
-						 CCDPlugin.INSTANCE.getString("ProductHasMaterialCodeVocab"),
-						 new Object [] { product }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PRODUCT__PRODUCT_HAS_MATERIAL_CODE_VOCAB,
+					CCDPlugin.INSTANCE.getString("ProductHasMaterialCodeVocab"), new Object[] { product }));
 			}
 			return false;
 		}
@@ -267,20 +255,17 @@ public class ProductOperations extends ManufacturedProductOperations {
 			helper.setContext(CCDPackage.Literals.PRODUCT);
 			try {
 				VALIDATE_PRODUCT_HAS_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_HAS_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_HAS_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(product)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_HAS_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			product)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT__PRODUCT_HAS_MATERIAL_CODE_ORIGINAL_TEXT,
-						 CCDPlugin.INSTANCE.getString("ProductHasMaterialCodeOriginalText"),
-						 new Object [] { product }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PRODUCT__PRODUCT_HAS_MATERIAL_CODE_ORIGINAL_TEXT,
+					CCDPlugin.INSTANCE.getString("ProductHasMaterialCodeOriginalText"), new Object[] { product }));
 			}
 			return false;
 		}
@@ -325,20 +310,15 @@ public class ProductOperations extends ManufacturedProductOperations {
 			helper.setContext(CCDPackage.Literals.PRODUCT);
 			try {
 				VALIDATE_PRODUCT_HAS_MATERIAL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_HAS_MATERIAL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_HAS_MATERIAL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(product)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT__PRODUCT_HAS_MATERIAL_NAME,
-						 CCDPlugin.INSTANCE.getString("ProductHasMaterialName"),
-						 new Object [] { product }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PRODUCT__PRODUCT_HAS_MATERIAL_NAME,
+					CCDPlugin.INSTANCE.getString("ProductHasMaterialName"), new Object[] { product }));
 			}
 			return false;
 		}
@@ -376,26 +356,24 @@ public class ProductOperations extends ManufacturedProductOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProductMayHaveMaterialManufacturer(Product product, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProductMayHaveMaterialManufacturer(Product product, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PRODUCT_MAY_HAVE_MATERIAL_MANUFACTURER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PRODUCT);
 			try {
 				VALIDATE_PRODUCT_MAY_HAVE_MATERIAL_MANUFACTURER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_MAY_HAVE_MATERIAL_MANUFACTURER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_MAY_HAVE_MATERIAL_MANUFACTURER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(product)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_MAY_HAVE_MATERIAL_MANUFACTURER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			product)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT__PRODUCT_MAY_HAVE_MATERIAL_MANUFACTURER,
-						 CCDPlugin.INSTANCE.getString("ProductMayHaveMaterialManufacturer"),
-						 new Object [] { product }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PRODUCT__PRODUCT_MAY_HAVE_MATERIAL_MANUFACTURER,
+					CCDPlugin.INSTANCE.getString("ProductMayHaveMaterialManufacturer"), new Object[] { product }));
 			}
 			return false;
 		}
@@ -433,26 +411,24 @@ public class ProductOperations extends ManufacturedProductOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateProductShouldHaveMaterialManufacturer(Product product, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProductShouldHaveMaterialManufacturer(Product product, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PRODUCT_SHOULD_HAVE_MATERIAL_MANUFACTURER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PRODUCT);
 			try {
 				VALIDATE_PRODUCT_SHOULD_HAVE_MATERIAL_MANUFACTURER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_SHOULD_HAVE_MATERIAL_MANUFACTURER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_SHOULD_HAVE_MATERIAL_MANUFACTURER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(product)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_SHOULD_HAVE_MATERIAL_MANUFACTURER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			product)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT__PRODUCT_SHOULD_HAVE_MATERIAL_MANUFACTURER,
-						 CCDPlugin.INSTANCE.getString("ProductShouldHaveMaterialManufacturer"),
-						 new Object [] { product }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PRODUCT__PRODUCT_SHOULD_HAVE_MATERIAL_MANUFACTURER,
+					CCDPlugin.INSTANCE.getString("ProductShouldHaveMaterialManufacturer"), new Object[] { product }));
 			}
 			return false;
 		}
@@ -497,20 +473,15 @@ public class ProductOperations extends ManufacturedProductOperations {
 			helper.setContext(CCDPackage.Literals.PRODUCT);
 			try {
 				VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(product)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT__PRODUCT_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("ProductTemplateId"),
-						 new Object [] { product }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PRODUCT__PRODUCT_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("ProductTemplateId"), new Object[] { product }));
 			}
 			return false;
 		}
@@ -554,20 +525,15 @@ public class ProductOperations extends ManufacturedProductOperations {
 			helper.setContext(CCDPackage.Literals.PRODUCT);
 			try {
 				VALIDATE_PRODUCT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(product)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PRODUCT__PRODUCT_ID,
-						 CCDPlugin.INSTANCE.getString("ProductId"),
-						 new Object [] { product }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PRODUCT__PRODUCT_ID,
+					CCDPlugin.INSTANCE.getString("ProductId"), new Object[] { product }));
 			}
 			return false;
 		}

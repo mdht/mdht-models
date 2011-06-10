@@ -120,7 +120,7 @@ public class AlertsSectionImpl extends SectionImpl implements AlertsSection {
 	 * @generated
 	 */
 	public AlertsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AlertsSectionImpl
