@@ -90,7 +90,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_MEDICATION_MEDICATION_STOPPED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime.high->size() = 1";
+	protected static final String VALIDATE_HITSP_MEDICATION_MEDICATION_STOPPED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime->size() = 1";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPMedicationMedicationStopped(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medication Medication Stopped</em>}' invariant operation.
@@ -106,7 +106,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.effectiveTime.high->size() = 1
+	 * self.effectiveTime->size() = 1
 	 * @param medication The receiving '<em><b>Medication</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

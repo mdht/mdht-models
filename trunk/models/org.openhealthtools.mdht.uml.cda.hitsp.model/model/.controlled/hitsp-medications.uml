@@ -6,7 +6,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The time at which the medication was stopped is determined based on the content of the &amp;lt;high> element of the first &amp;lt;effectiveTime> element.</body>
-        <body>self.effectiveTime.high->size() = 1</body>
+        <body>self.effectiveTime->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_R_IusOxaEd-JOaR14t7EwQ" name="administrativeTiming" constrainedElement="_IjIO0DxbEd6JwqSGecoePg">
@@ -671,7 +671,7 @@ not continued past this date for an order instance</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The effectiveTime/high element is present to record the order expiration date and time when supply/@moodcode = INT</body>
-        <body>self.moodCode = 'INT' implies not self.effectiveTime.high.oclIsUndefined()</body>
+        <body>self.moodCode =  vocab::x_DocumentSubstanceMood::INT implies not self.effectiveTime->select(et | et.value.oclIsUndefined())->isEmpty()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_vCrU4E9LEeCYjrG3z1gQrQ" name="quantityOrdered" constrainedElement="_gZ5JkE8qEeCYjrG3z1gQrQ">
@@ -718,7 +718,7 @@ identifier assigned by the pharmacy</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The prescription number SHALL be recorded in the extension attribute of the &lt;id> element within a supply element having a moodCode attribute of EVN</body>
-        <body>self.moodCode = 'EVN' implies self.id.oclIsUndefined()</body>
+        <body>self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="__k3HEE9GEeCYjrG3z1gQrQ" name="assigningAuthority" constrainedElement="_w2-9YE9GEeCYjrG3z1gQrQ">
@@ -729,7 +729,7 @@ identifier assigned by the pharmacy</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The root attribute of the id element SHOULD be the OID of the assigning authority for the identifier.</body>
-        <body>not self.id.root.oclIsUndefined()</body>
+        <body>self.id.root->size() > 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_UqHCgE9HEeCYjrG3z1gQrQ" name="assigningAuthorityGUID" constrainedElement="__k3HEE9GEeCYjrG3z1gQrQ">
@@ -747,7 +747,7 @@ dispense</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The dispense date is recorded in effectiveTime element within a supply element with a moodCode attribute set to EVN</body>
-        <body>self.moodCode = 'EVN' implies not self.effectiveTime.oclIsUndefined()</body>
+        <body>self.moodCode = 'EVN' implies self.effectiveTime->size() > 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_7apEME9YEeCYjrG3z1gQrQ" name="dispensingPharmacyLocation" constrainedElement="_j9XicE9NEeCYjrG3z1gQrQ">
@@ -755,7 +755,7 @@ dispense</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The dispensing pharmacy's location is present in the addr element in performer/assignEntity element inside a supply element with a moodCode attribute set to EVN</body>
-        <body>self.moodCode = 'EVN' implies not self.performer.assignEntity.addr.oclIsUndefined()</body>
+        <body>self.moodCode =  vocab::x_DocumentSubstanceMood::EVN  implies self.performer->select(p | p.assignedEntity.addr->isEmpty())->isEmpty()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_j9XicE9NEeCYjrG3z1gQrQ" name="dispensingPharmacyLocationState" constrainedElement="_uz6LAE9JEeCYjrG3z1gQrQ">
@@ -799,7 +799,7 @@ history entry. The fill number identifies the supply (dispense) event as a disti
         <language>Analysis</language>
         <language>OCL</language>
         <body>The fill number SHOULD be recorded in the sequenceNumber attribute of a entryRelationship element with a typeCode attribute set to COMP</body>
-        <body>self.entryRelationship.typeCode = 'COMP' implies not self.entryRelationship.sequenceNumber.oclIsUndefined()</body>
+        <body>self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.sequenceNumber.oclIsUndefined())->isEmpty()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_vMkQgE8mEeCYjrG3z1gQrQ">

@@ -57,7 +57,7 @@ public class ImmunizationOperations extends org.openhealthtools.mdht.uml.cda.ihe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_IMMUNIZATION_REFUSAL_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, ccd::ProblemAct)->exists(pa : ccd::ProblemAct | not pa.oclIsUndefined() and pa.code.codeSystem = '2.16.840.1.113883.1.11.19717')";
+	protected static final String VALIDATE_HITSP_IMMUNIZATION_REFUSAL_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and (not er.act.oclIsUndefined()) and (not er.act.code.oclIsUndefined() and  not er.act.code.codeSystem.oclIsUndefined() and er.act.code.codeSystem = '2.16.840.1.113883.1.11.19717')  )->isEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPImmunizationRefusalReason(Immunization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Immunization Refusal Reason</em>}' invariant operation.
@@ -73,7 +73,7 @@ public class ImmunizationOperations extends org.openhealthtools.mdht.uml.cda.ihe
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, ccd::ProblemAct)->exists(pa : ccd::ProblemAct | not pa.oclIsUndefined() and pa.code.codeSystem = '2.16.840.1.113883.1.11.19717')
+	 * self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and (not er.act.oclIsUndefined()) and (not er.act.code.oclIsUndefined() and  not er.act.code.codeSystem.oclIsUndefined() and er.act.code.codeSystem = '2.16.840.1.113883.1.11.19717')  )->isEmpty()
 	 * @param immunization The receiving '<em><b>Immunization</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

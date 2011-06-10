@@ -125,7 +125,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_ORDER_EXPIRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = 'INT' implies not self.effectiveTime.high.oclIsUndefined()";
+	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_ORDER_EXPIRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode =  vocab::x_DocumentSubstanceMood::INT implies not self.effectiveTime->select(et | et.value.oclIsUndefined())->isEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationOrderExpiration(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Order Expiration</em>}' invariant operation.
@@ -141,7 +141,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = 'INT' implies not self.effectiveTime.high.oclIsUndefined()
+	 * self.moodCode =  vocab::x_DocumentSubstanceMood::INT implies not self.effectiveTime->select(et | et.value.oclIsUndefined())->isEmpty()
 	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -298,7 +298,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_PRESCRIPTION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = 'EVN' implies self.id.oclIsUndefined()";
+	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_PRESCRIPTION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.id->isEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationPrescriptionNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Prescription Number</em>}' invariant operation.
@@ -314,7 +314,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = 'EVN' implies self.id.oclIsUndefined()
+	 * self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.id->isEmpty()
 	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -356,7 +356,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_ASSIGNING_AUTHORITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.id.root.oclIsUndefined()";
+	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_ASSIGNING_AUTHORITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.id.root->size() > 0";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationAssigningAuthority(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Assigning Authority</em>}' invariant operation.
@@ -372,7 +372,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.id.root.oclIsUndefined()
+	 * self.id.root->size() > 0
 	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -414,7 +414,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSE_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = 'EVN' implies not self.effectiveTime.oclIsUndefined()";
+	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSE_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = 'EVN' implies self.effectiveTime->size() > 0";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationDispenseDate(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispense Date</em>}' invariant operation.
@@ -430,7 +430,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = 'EVN' implies not self.effectiveTime.oclIsUndefined()
+	 * self.moodCode = 'EVN' implies self.effectiveTime->size() > 0
 	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -471,7 +471,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSING_PHARMACY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = 'EVN' implies not self.performer.assignEntity.addr.oclIsUndefined()";
+	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSING_PHARMACY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode =  vocab::x_DocumentSubstanceMood::EVN  implies self.performer->select(p | p.assignedEntity.addr->isEmpty())->isEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationDispensingPharmacyLocation(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispensing Pharmacy Location</em>}' invariant operation.
@@ -487,7 +487,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = 'EVN' implies not self.performer.assignEntity.addr.oclIsUndefined()
+	 * self.moodCode =  vocab::x_DocumentSubstanceMood::EVN  implies self.performer->select(p | p.assignedEntity.addr->isEmpty())->isEmpty()
 	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -588,7 +588,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship.typeCode = 'COMP' implies not self.entryRelationship.sequenceNumber.oclIsUndefined()";
+	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.sequenceNumber.oclIsUndefined())->isEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationHasFillNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Has Fill Number</em>}' invariant operation.
@@ -604,7 +604,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship.typeCode = 'COMP' implies not self.entryRelationship.sequenceNumber.oclIsUndefined()
+	 * self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.sequenceNumber.oclIsUndefined())->isEmpty()
 	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
