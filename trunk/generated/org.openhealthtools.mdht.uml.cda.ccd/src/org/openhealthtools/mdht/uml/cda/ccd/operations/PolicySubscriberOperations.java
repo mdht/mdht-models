@@ -86,20 +86,16 @@ public class PolicySubscriberOperations extends ParticipantRoleOperations {
 			helper.setContext(CCDPackage.Literals.POLICY_SUBSCRIBER);
 			try {
 				VALIDATE_POLICY_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policySubscriber)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.POLICY_SUBSCRIBER__POLICY_SUBSCRIBER_ID,
-						 CCDPlugin.INSTANCE.getString("PolicySubscriberId"),
-						 new Object [] { policySubscriber }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.POLICY_SUBSCRIBER__POLICY_SUBSCRIBER_ID,
+					CCDPlugin.INSTANCE.getString("PolicySubscriberId"), new Object[] { policySubscriber }));
 			}
 			return false;
 		}

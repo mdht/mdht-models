@@ -111,20 +111,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_MOOD_CODE,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityMoodCode"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_MOOD_CODE,
+					CCDPlugin.INSTANCE.getString("SupplyActivityMoodCode"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -169,20 +166,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_HAS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_HAS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_HAS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_HAS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_HAS_AUTHOR,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityHasAuthor"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_HAS_AUTHOR,
+					CCDPlugin.INSTANCE.getString("SupplyActivityHasAuthor"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -227,20 +221,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_HAS_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_HAS_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_HAS_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_HAS_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_HAS_PERFORMER,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityHasPerformer"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_HAS_PERFORMER,
+					CCDPlugin.INSTANCE.getString("SupplyActivityHasPerformer"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -285,20 +276,18 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_HAS_PARTICIPANT_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_HAS_PARTICIPANT_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_HAS_PARTICIPANT_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_HAS_PARTICIPANT_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_HAS_PARTICIPANT_LOCATION,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityHasParticipantLocation"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_HAS_PARTICIPANT_LOCATION,
+					CCDPlugin.INSTANCE.getString("SupplyActivityHasParticipantLocation"),
+					new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -313,13 +302,13 @@ public class SupplyActivityOperations extends SupplyOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SUPPLY_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "+
-"or not self.getSection().informant->isEmpty()"+
-"or not self.getClinicalDocument().informant->isEmpty()"+
-"or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"+
-"or (self.entryRelationship->exists(rel : cda::EntryRelationship | "+
-"   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"+
-"   and rel.observation.code.code = '48766-0'))";
+	protected static final String VALIDATE_SUPPLY_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.informant->isEmpty() "
+			+ "or not self.getSection().informant->isEmpty()"
+			+ "or not self.getClinicalDocument().informant->isEmpty()"
+			+ "or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)"
+			+ "or (self.entryRelationship->exists(rel : cda::EntryRelationship | "
+			+ "   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR"
+			+ "   and rel.observation.code.code = '48766-0'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSupplyActivityInformationSource(SupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Supply Activity Information Source</em>}' invariant operation.
@@ -355,20 +344,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_INFORMATION_SOURCE,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityInformationSource"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_INFORMATION_SOURCE,
+					CCDPlugin.INSTANCE.getString("SupplyActivityInformationSource"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -413,20 +399,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_HAS_PRODUCT,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityHasProduct"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_HAS_PRODUCT,
+					CCDPlugin.INSTANCE.getString("SupplyActivityHasProduct"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -471,20 +454,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityTemplateId"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("SupplyActivityTemplateId"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -529,20 +509,15 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_ID,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityId"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_ID,
+					CCDPlugin.INSTANCE.getString("SupplyActivityId"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -587,20 +562,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_STATUS_CODE,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityStatusCode"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_STATUS_CODE,
+					CCDPlugin.INSTANCE.getString("SupplyActivityStatusCode"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -645,20 +617,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_EFFECTIVE_TIME,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityEffectiveTime"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_EFFECTIVE_TIME,
+					CCDPlugin.INSTANCE.getString("SupplyActivityEffectiveTime"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -703,20 +672,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_QUANTITY,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityQuantity"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_QUANTITY,
+					CCDPlugin.INSTANCE.getString("SupplyActivityQuantity"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -761,20 +727,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_REPEAT_NUMBER,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityRepeatNumber"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_REPEAT_NUMBER,
+					CCDPlugin.INSTANCE.getString("SupplyActivityRepeatNumber"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -819,20 +782,19 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityMedicationStatusObservation"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_MEDICATION_STATUS_OBSERVATION,
+					CCDPlugin.INSTANCE.getString("SupplyActivityMedicationStatusObservation"),
+					new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -877,20 +839,18 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_FULFILLMENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_FULFILLMENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_FULFILLMENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_FULFILLMENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_FULFILLMENT_INSTRUCTION,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityFulfillmentInstruction"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_FULFILLMENT_INSTRUCTION,
+					CCDPlugin.INSTANCE.getString("SupplyActivityFulfillmentInstruction"),
+					new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -935,20 +895,17 @@ public class SupplyActivityOperations extends SupplyOperations {
 			helper.setContext(CCDPackage.Literals.SUPPLY_ACTIVITY);
 			try {
 				VALIDATE_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplyActivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			supplyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_PRODUCT_INSTANCE,
-						 CCDPlugin.INSTANCE.getString("SupplyActivityProductInstance"),
-						 new Object [] { supplyActivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.SUPPLY_ACTIVITY__SUPPLY_ACTIVITY_PRODUCT_INSTANCE,
+					CCDPlugin.INSTANCE.getString("SupplyActivityProductInstance"), new Object[] { supplyActivity }));
 			}
 			return false;
 		}
@@ -987,11 +944,11 @@ public class SupplyActivityOperations extends SupplyOperations {
 	public static MedicationStatusObservation getMedicationStatusObservation(SupplyActivity supplyActivity) {
 		if (GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.SUPPLY_ACTIVITY, CCDPackage.Literals.SUPPLY_ACTIVITY.getEAllOperations().get(65));
+			helper.setOperationContext(
+				CCDPackage.Literals.SUPPLY_ACTIVITY, CCDPackage.Literals.SUPPLY_ACTIVITY.getEAllOperations().get(65));
 			try {
 				GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1031,11 +988,11 @@ public class SupplyActivityOperations extends SupplyOperations {
 	public static EList<FulfillmentInstruction> getFulfillmentInstructions(SupplyActivity supplyActivity) {
 		if (GET_FULFILLMENT_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.SUPPLY_ACTIVITY, CCDPackage.Literals.SUPPLY_ACTIVITY.getEAllOperations().get(66));
+			helper.setOperationContext(
+				CCDPackage.Literals.SUPPLY_ACTIVITY, CCDPackage.Literals.SUPPLY_ACTIVITY.getEAllOperations().get(66));
 			try {
 				GET_FULFILLMENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_FULFILLMENT_INSTRUCTIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1077,11 +1034,11 @@ public class SupplyActivityOperations extends SupplyOperations {
 	public static EList<ProductInstance> getProductInstances(SupplyActivity supplyActivity) {
 		if (GET_PRODUCT_INSTANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.SUPPLY_ACTIVITY, CCDPackage.Literals.SUPPLY_ACTIVITY.getEAllOperations().get(67));
+			helper.setOperationContext(
+				CCDPackage.Literals.SUPPLY_ACTIVITY, CCDPackage.Literals.SUPPLY_ACTIVITY.getEAllOperations().get(67));
 			try {
 				GET_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

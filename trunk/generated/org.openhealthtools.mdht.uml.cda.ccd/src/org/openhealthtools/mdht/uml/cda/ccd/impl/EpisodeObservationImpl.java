@@ -56,7 +56,8 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	 */
 	public boolean validateEpisodeObservationOneEntryRelationshipSUBJ(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EpisodeObservationOperations.validateEpisodeObservationOneEntryRelationshipSUBJ(this, diagnostics, context);
+		return EpisodeObservationOperations.validateEpisodeObservationOneEntryRelationshipSUBJ(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,8 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	 */
 	public boolean validateEpisodeObservationExistsEntryRelationshipSAS(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EpisodeObservationOperations.validateEpisodeObservationExistsEntryRelationshipSAS(this, diagnostics, context);
+		return EpisodeObservationOperations.validateEpisodeObservationExistsEntryRelationshipSAS(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -129,7 +131,7 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	 * @generated
 	 */
 	public EpisodeObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EpisodeObservationImpl

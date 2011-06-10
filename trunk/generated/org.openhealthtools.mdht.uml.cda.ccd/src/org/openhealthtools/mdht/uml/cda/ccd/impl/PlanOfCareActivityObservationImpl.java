@@ -56,7 +56,8 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePlanOfCareActivityObservationMoodCodeValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCodeValue(this, diagnostics, context);
+		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCodeValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,8 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePlanOfCareActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationTemplateId(this, diagnostics, context);
+		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +77,8 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivityObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationId(this, diagnostics, context);
+		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +88,8 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCode(this, diagnostics, context);
+		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,7 +98,7 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public PlanOfCareActivityObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PlanOfCareActivityObservationImpl

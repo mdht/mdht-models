@@ -76,7 +76,8 @@ public interface EncounterLocation extends Participant2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.code.codeSystem = \'2.16.840.1.113883.1.11.17660\''"
 	 * @generated
 	 */
-	boolean validateEncounterLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEncounterLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

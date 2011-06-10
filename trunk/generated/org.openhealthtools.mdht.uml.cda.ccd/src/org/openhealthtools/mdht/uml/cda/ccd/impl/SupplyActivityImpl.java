@@ -222,7 +222,7 @@ public class SupplyActivityImpl extends SupplyImpl implements SupplyActivity {
 	 * @generated
 	 */
 	public SupplyActivity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // SupplyActivityImpl

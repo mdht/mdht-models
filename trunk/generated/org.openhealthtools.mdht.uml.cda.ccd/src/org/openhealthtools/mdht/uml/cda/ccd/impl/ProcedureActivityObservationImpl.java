@@ -56,7 +56,8 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateProcedureActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTemplateId(this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +66,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public ProcedureActivityObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureActivityObservationImpl

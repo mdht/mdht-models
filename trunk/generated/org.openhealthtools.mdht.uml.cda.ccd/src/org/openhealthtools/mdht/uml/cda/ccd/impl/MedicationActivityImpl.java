@@ -71,7 +71,8 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityHasDoseQuantityOrRateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityHasDoseQuantityOrRateQuantity(this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityHasDoseQuantityOrRateQuantity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -99,7 +100,8 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityHasPreconditionCriterion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityHasPreconditionCriterion(this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityHasPreconditionCriterion(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -208,7 +210,8 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityMedicationSeriesNumberObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityMedicationSeriesNumberObservation(this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityMedicationSeriesNumberObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -218,7 +221,8 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityMedicationStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityMedicationStatusObservation(this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityMedicationStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -300,7 +304,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * @generated
 	 */
 	public MedicationActivity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationActivityImpl

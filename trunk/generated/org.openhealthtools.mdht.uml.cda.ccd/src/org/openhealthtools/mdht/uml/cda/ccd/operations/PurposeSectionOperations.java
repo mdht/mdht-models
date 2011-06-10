@@ -91,26 +91,24 @@ public class PurposeSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validatePurposeSectionTitleValue(PurposeSection purposeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePurposeSectionTitleValue(PurposeSection purposeSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PURPOSE_SECTION);
 			try {
 				VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			purposeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_TITLE_VALUE,
-						 CCDPlugin.INSTANCE.getString("PurposeSectionTitleValue"),
-						 new Object [] { purposeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_TITLE_VALUE,
+					CCDPlugin.INSTANCE.getString("PurposeSectionTitleValue"), new Object[] { purposeSection }));
 			}
 			return false;
 		}
@@ -155,20 +153,17 @@ public class PurposeSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.PURPOSE_SECTION);
 			try {
 				VALIDATE_PURPOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			purposeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("PurposeSectionTemplateId"),
-						 new Object [] { purposeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("PurposeSectionTemplateId"), new Object[] { purposeSection }));
 			}
 			return false;
 		}
@@ -183,9 +178,9 @@ public class PurposeSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PURPOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_PURPOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
+			+ "value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePurposeSectionCode(PurposeSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Section Code</em>}' invariant operation.
@@ -217,20 +212,16 @@ public class PurposeSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.PURPOSE_SECTION);
 			try {
 				VALIDATE_PURPOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_CODE,
-						 CCDPlugin.INSTANCE.getString("PurposeSectionCode"),
-						 new Object [] { purposeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_CODE,
+					CCDPlugin.INSTANCE.getString("PurposeSectionCode"), new Object[] { purposeSection }));
 			}
 			return false;
 		}
@@ -275,20 +266,16 @@ public class PurposeSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.PURPOSE_SECTION);
 			try {
 				VALIDATE_PURPOSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_TITLE,
-						 CCDPlugin.INSTANCE.getString("PurposeSectionTitle"),
-						 new Object [] { purposeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_TITLE,
+					CCDPlugin.INSTANCE.getString("PurposeSectionTitle"), new Object[] { purposeSection }));
 			}
 			return false;
 		}
@@ -333,20 +320,16 @@ public class PurposeSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.PURPOSE_SECTION);
 			try {
 				VALIDATE_PURPOSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_TEXT,
-						 CCDPlugin.INSTANCE.getString("PurposeSectionText"),
-						 new Object [] { purposeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_TEXT,
+					CCDPlugin.INSTANCE.getString("PurposeSectionText"), new Object[] { purposeSection }));
 			}
 			return false;
 		}
@@ -391,20 +374,17 @@ public class PurposeSectionOperations extends SectionOperations {
 			helper.setContext(CCDPackage.Literals.PURPOSE_SECTION);
 			try {
 				VALIDATE_PURPOSE_SECTION_PURPOSE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSE_SECTION_PURPOSE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSE_SECTION_PURPOSE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSE_SECTION_PURPOSE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			purposeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_PURPOSE_ACTIVITY,
-						 CCDPlugin.INSTANCE.getString("PurposeSectionPurposeActivity"),
-						 new Object [] { purposeSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PURPOSE_SECTION__PURPOSE_SECTION_PURPOSE_ACTIVITY,
+					CCDPlugin.INSTANCE.getString("PurposeSectionPurposeActivity"), new Object[] { purposeSection }));
 			}
 			return false;
 		}
@@ -443,11 +423,11 @@ public class PurposeSectionOperations extends SectionOperations {
 	public static EList<PurposeActivity> getPurposeActivities(PurposeSection purposeSection) {
 		if (GET_PURPOSE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CCDPackage.Literals.PURPOSE_SECTION, CCDPackage.Literals.PURPOSE_SECTION.getEAllOperations().get(61));
+			helper.setOperationContext(
+				CCDPackage.Literals.PURPOSE_SECTION, CCDPackage.Literals.PURPOSE_SECTION.getEAllOperations().get(61));
 			try {
 				GET_PURPOSE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PURPOSE_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

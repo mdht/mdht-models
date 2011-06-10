@@ -87,20 +87,17 @@ public class PatientInstructionOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PATIENT_INSTRUCTION);
 			try {
 				VALIDATE_PATIENT_INSTRUCTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_INSTRUCTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_INSTRUCTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientInstruction)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_INSTRUCTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientInstruction)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PATIENT_INSTRUCTION__PATIENT_INSTRUCTION_TEMPLATE_ID,
-						 CCDPlugin.INSTANCE.getString("PatientInstructionTemplateId"),
-						 new Object [] { patientInstruction }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PATIENT_INSTRUCTION__PATIENT_INSTRUCTION_TEMPLATE_ID,
+					CCDPlugin.INSTANCE.getString("PatientInstructionTemplateId"), new Object[] { patientInstruction }));
 			}
 			return false;
 		}
@@ -145,20 +142,17 @@ public class PatientInstructionOperations extends ClinicalStatementOperations {
 			helper.setContext(CCDPackage.Literals.PATIENT_INSTRUCTION);
 			try {
 				VALIDATE_PATIENT_INSTRUCTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_INSTRUCTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_INSTRUCTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientInstruction)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_INSTRUCTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientInstruction)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CCDValidator.DIAGNOSTIC_SOURCE,
-						 CCDValidator.PATIENT_INSTRUCTION__PATIENT_INSTRUCTION_MOOD_CODE,
-						 CCDPlugin.INSTANCE.getString("PatientInstructionMoodCode"),
-						 new Object [] { patientInstruction }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+					CCDValidator.PATIENT_INSTRUCTION__PATIENT_INSTRUCTION_MOOD_CODE,
+					CCDPlugin.INSTANCE.getString("PatientInstructionMoodCode"), new Object[] { patientInstruction }));
 			}
 			return false;
 		}

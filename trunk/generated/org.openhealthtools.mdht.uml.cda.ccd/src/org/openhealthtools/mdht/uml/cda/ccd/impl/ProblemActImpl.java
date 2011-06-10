@@ -173,7 +173,7 @@ public class ProblemActImpl extends ActImpl implements ProblemAct {
 	 * @generated
 	 */
 	public ProblemAct init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProblemActImpl

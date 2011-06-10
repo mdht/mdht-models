@@ -73,7 +73,7 @@ public class PatientInstructionImpl extends ActImpl implements PatientInstructio
 	 * @generated
 	 */
 	public PatientInstruction init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PatientInstructionImpl

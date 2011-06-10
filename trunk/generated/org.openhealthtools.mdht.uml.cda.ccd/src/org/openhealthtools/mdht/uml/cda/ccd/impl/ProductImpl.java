@@ -108,7 +108,8 @@ public class ProductImpl extends ManufacturedProductImpl implements Product {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProductShouldHaveMaterialManufacturer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProductShouldHaveMaterialManufacturer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProductOperations.validateProductShouldHaveMaterialManufacturer(this, diagnostics, context);
 	}
 
@@ -136,7 +137,7 @@ public class ProductImpl extends ManufacturedProductImpl implements Product {
 	 * @generated
 	 */
 	public Product init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProductImpl

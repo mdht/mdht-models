@@ -65,7 +65,7 @@ public class FunctionalStatusObservationImpl extends StatusObservationImpl imple
 	 */
 	@Override
 	public FunctionalStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // FunctionalStatusObservationImpl

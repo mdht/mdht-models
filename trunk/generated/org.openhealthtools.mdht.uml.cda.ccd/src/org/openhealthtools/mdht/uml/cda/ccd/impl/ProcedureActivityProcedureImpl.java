@@ -55,7 +55,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureTemplateId(this, diagnostics, context);
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,7 +65,7 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	public ProcedureActivityProcedure init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureActivityProcedureImpl

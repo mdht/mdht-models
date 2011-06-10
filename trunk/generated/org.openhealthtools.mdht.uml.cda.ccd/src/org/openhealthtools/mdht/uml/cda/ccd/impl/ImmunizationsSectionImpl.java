@@ -102,7 +102,7 @@ public class ImmunizationsSectionImpl extends MedicationsSectionImpl implements 
 	 */
 	@Override
 	public ImmunizationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ImmunizationsSectionImpl

@@ -91,7 +91,7 @@ public class CommentImpl extends ActImpl implements Comment {
 	 * @generated
 	 */
 	public Comment init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // CommentImpl
