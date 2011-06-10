@@ -16,6 +16,7 @@
 	<property name="generateDomainInterface" value="false"/>
 	<property name="includeInterfaceRealization" value="false"/>
 	<property name="generateDomainClasses" value="true"/>
+	<property name="generateBuilderClasses" value="false"/>
 	<property name="includeFixedValueGetters" value="false"/>
 	<property name="useBusinessNames" value="true"/>
 	
