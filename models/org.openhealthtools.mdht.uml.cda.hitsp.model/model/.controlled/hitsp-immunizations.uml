@@ -27,7 +27,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The reason for refusal SHALL be coded as specified in HITSP/C80 Section 2.2.3.5.3 No Immunization Reason</body>
-        <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, ccd::ProblemAct)->exists(pa : ccd::ProblemAct | not pa.oclIsUndefined() and pa.code.codeSystem = '2.16.840.1.113883.1.11.19717')</body>
+        <body>self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and (not er.act.oclIsUndefined()) and (not er.act.code.oclIsUndefined() and  not er.act.code.codeSystem.oclIsUndefined() and er.act.code.codeSystem = '2.16.840.1.113883.1.11.19717')  )->isEmpty()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_qkWXUTuJEd-B8KE6Jx0UNQ">
