@@ -4968,6 +4968,10 @@ public class CDTValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(diagnosticFindings, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateResultsSection_validateResultsSectionTitleValue(
+				diagnosticFindings, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateResultsSection_validateResultsSectionTemplateId(
 				diagnosticFindings, diagnostics, context);
 		}
