@@ -167,10 +167,10 @@
     </eOperations>
     <eOperations name="ImmunizationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.moodCode.oclIsUndefined()"/>
+        <details key="body" value="isDefined('self.moodCode')"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="not self.moodCode.oclIsUndefined()"/>
+        <details key="documentation" value="isDefined('self.moodCode')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1848,10 +1848,10 @@
     </eOperations>
     <eOperations name="PatientMedicalInstructionsClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.classCode.oclIsUndefined()"/>
+        <details key="body" value="isDefined('self.classCode')"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="not self.classCode.oclIsUndefined()"/>
+        <details key="documentation" value="isDefined('self.classCode')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4075,10 +4075,10 @@
     </eOperations>
     <eOperations name="ProcedureEntryProcedureActivityProcedureClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.classCode.oclIsUndefined()"/>
+        <details key="body" value="isDefined('self.classCode')"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="not self.classCode.oclIsUndefined()"/>
+        <details key="documentation" value="isDefined('self.classCode')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -6033,10 +6033,10 @@
     </eOperations>
     <eOperations name="PatientContactGuardianClassCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.classCode.oclIsUndefined() and self.classCode=vocab::RoleClass::GUAR"/>
+        <details key="body" value="isDefined('self.classCode') and self.classCode=vocab::RoleClass::GUAR"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="not self.classCode.oclIsUndefined() and self.classCode=vocab::RoleClass::GUAR"/>
+        <details key="documentation" value="isDefined('self.classCode') and self.classCode=vocab::RoleClass::GUAR"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
