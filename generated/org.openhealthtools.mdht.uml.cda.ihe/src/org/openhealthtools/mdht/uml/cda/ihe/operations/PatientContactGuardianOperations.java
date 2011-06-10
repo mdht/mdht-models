@@ -171,7 +171,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_CONTACT_GUARDIAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('self.classCode') and self.classCode=vocab::RoleClass::GUAR";
+	protected static final String VALIDATE_PATIENT_CONTACT_GUARDIAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('classCode') and self.classCode=vocab::RoleClass::GUAR";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientContactGuardianClassCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Class Code</em>}' invariant operation.
@@ -187,7 +187,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('self.classCode') and self.classCode=vocab::RoleClass::GUAR
+	 * isDefined('classCode') and self.classCode=vocab::RoleClass::GUAR
 	 * @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

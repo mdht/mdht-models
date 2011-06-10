@@ -117,7 +117,7 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('self.classCode')";
+	protected static final String VALIDATE_PATIENT_MEDICAL_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('classCode')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientMedicalInstructionsClassCode(PatientMedicalInstructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Medical Instructions Class Code</em>}' invariant operation.
@@ -133,7 +133,7 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('self.classCode')
+	 * isDefined('classCode')
 	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
