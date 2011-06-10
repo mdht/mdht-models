@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_P3GVkMieEd6mWrHPmrIIfQ" name="DiagnosticResultsSection">
+    <ownedComment xmi:id="_YY5XgMieEd6mWrHPmrIIfQ" annotatedElement="_P3GVkMieEd6mWrHPmrIIfQ">
+      <body>The Diagnostic Results Section contains information about the results from diagnostic procedures the patient received.</body>
+    </ownedComment>
+    <generalization xmi:id="_RNzp0MieEd6mWrHPmrIIfQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-codedResults.uml#_-OeSAMidEd6mWrHPmrIIfQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_CHfD8BdkEeCf9aMNaCAtDQ" name="diagnosticProcedure" association="_CHfrARdkEeCf9aMNaCAtDQ">
+      <type xmi:type="uml:Class" href="../hitsp.uml#_KYNNMKDlEd-dVeaMP0XXQw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ECPgcBdkEeCf9aMNaCAtDQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ECPgcRdkEeCf9aMNaCAtDQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FNw4YBdkEeCf9aMNaCAtDQ" name="result" association="_FNxfcBdkEeCf9aMNaCAtDQ">
+      <type xmi:type="uml:Class" href="../hitsp.uml#_oTzNMDIWEd-SYNRf-pkwtw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GIRY0BdkEeCf9aMNaCAtDQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GIR_4BdkEeCf9aMNaCAtDQ" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_CHfrARdkEeCf9aMNaCAtDQ" memberEnd="_CHfD8BdkEeCf9aMNaCAtDQ _CHgSEBdkEeCf9aMNaCAtDQ">
+    <ownedEnd xmi:id="_CHgSEBdkEeCf9aMNaCAtDQ" type="_P3GVkMieEd6mWrHPmrIIfQ" association="_CHfrARdkEeCf9aMNaCAtDQ"/>
+  </uml:Association>
+  <uml:Association xmi:id="_FNxfcBdkEeCf9aMNaCAtDQ" memberEnd="_FNw4YBdkEeCf9aMNaCAtDQ _FNxfcRdkEeCf9aMNaCAtDQ">
+    <ownedEnd xmi:id="_FNxfcRdkEeCf9aMNaCAtDQ" type="_P3GVkMieEd6mWrHPmrIIfQ" association="_FNxfcBdkEeCf9aMNaCAtDQ"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_VbEUcMieEd6mWrHPmrIIfQ" base_Class="_P3GVkMieEd6mWrHPmrIIfQ" templateId="2.16.840.1.113883.3.88.11.83.122" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConformsTo xmi:id="_rGVjsFF6Ed-Lud-5SYZhMw" base_Generalization="_RNzp0MieEd6mWrHPmrIIfQ" requiresParentId="true">
+    <ruleId>C83-[CT-122-1]</ruleId>
+  </CDA:ConformsTo>
+  <CDA:AssociationValidation xmi:id="_MLxMUBdkEeCf9aMNaCAtDQ" base_Association="_CHfrARdkEeCf9aMNaCAtDQ">
+    <ruleId>C83-[CT-122-2]</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_MqnEcBdkEeCf9aMNaCAtDQ" base_Association="_FNxfcBdkEeCf9aMNaCAtDQ">
+    <ruleId>C83-[CT-122-2]</ruleId>
+  </CDA:AssociationValidation>
+</xmi:XMI>

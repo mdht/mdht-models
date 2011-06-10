@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_CEsTsMfwEd6VjLXh4DcWSg" name="DischargeDiagnosisSection">
+    <ownedComment xmi:id="_NRLaQMfwEd6VjLXh4DcWSg" annotatedElement="_CEsTsMfwEd6VjLXh4DcWSg">
+      <body>&lt;p>&#xD;
+    The Discharge Diagnosis Section contains information about the conditions identified during the hospital&#xD;
+    stay that either need to be monitored after discharge from the hospital and/or where resolved during the hospital&#xD;
+    course. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_HTsIIMfwEd6VjLXh4DcWSg">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-dischargeDiagnosis.uml#_3ov5QMfvEd6VjLXh4DcWSg"/>
+    </generalization>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_JyDoAMfwEd6VjLXh4DcWSg" base_Class="_CEsTsMfwEd6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.111" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConformsTo xmi:id="_rGQrMFF6Ed-Lud-5SYZhMw" base_Generalization="_HTsIIMfwEd6VjLXh4DcWSg" requiresParentId="true"/>
+</xmi:XMI>

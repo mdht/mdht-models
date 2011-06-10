@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_f0mKEKRtEd6t_4WfM070fA" name="PurposeSection">
+    <ownedComment xmi:id="_uBK9gKRtEd6t_4WfM070fA" annotatedElement="_f0mKEKRtEd6t_4WfM070fA">
+      <body>&lt;p>&#xD;
+    Represents the specific reason for which the summarization was generated, such as in response to a&#xD;
+    request.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    The general use case does not require a purpose. Purpose should be utilized when the CCD has a specific&#xD;
+    purpose such as a transfer, referral, or patient request.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_gTPjUBg8Ed-PS-Y_2ABBMQ" name="titleValue" constrainedElement="_f0mKEKRtEd6t_4WfM070fA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iZKG8Bg8Ed-PS-Y_2ABBMQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>Contains a case-insensitive language-insensitive string containing 'purpose'.</body>
+        <body>self.title = 'purpose'</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_mrDrkKRtEd6t_4WfM070fA">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_Kfle4aRuEd6t_4WfM070fA" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Kfle4KRuEd6t_4WfM070fA" name="title" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Iul7AKRxEd6t_4WfM070fA" name="purposeActivity" visibility="private" type="_rrtFgKRuEd6t_4WfM070fA" association="_Iui3sKRxEd6t_4WfM070fA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IumiEaRxEd6t_4WfM070fA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IumiEKRxEd6t_4WfM070fA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SD8MABg8Ed-PS-Y_2ABBMQ" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TfWaEBg8Ed-PS-Y_2ABBMQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TfXBIBg8Ed-PS-Y_2ABBMQ" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_rrtFgKRuEd6t_4WfM070fA" name="PurposeActivity">
+    <ownedComment xmi:id="_4IIJ8KRuEd6t_4WfM070fA" annotatedElement="_rrtFgKRuEd6t_4WfM070fA">
+      <body>&lt;p>&#xD;
+    CCD represents the ASTM CCR &amp;lt;Purpose&amp;gt; object as a relationship between two classes -- the source&#xD;
+    represents the act of creating a summary document, the target is the reason for creating the document, and the&#xD;
+    relationship type is &quot;RSON&quot; (has reason). The target act may be an Observation, Procedure, or some other kind of act,&#xD;
+    and it may represent an order, an event, etc.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_a-lZMKR0Ed6t_4WfM070fA" name="hasReason" constrainedElement="_rrtFgKRuEd6t_4WfM070fA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a-mnUKR0Ed6t_4WfM070fA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>Contains exactly one entryRelationship / @typeCode, with a value of 'RSON' 'Has reason' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate the reason or purpose for creating the CCD.</body>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | &#xD;&#xA;  entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_zYt64KR2Ed6t_4WfM070fA" name="reasonType" constrainedElement="_rrtFgKRuEd6t_4WfM070fA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_zZIKkKR2Ed6t_4WfM070fA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>The target of entryRelationship SHALL be an Act, Encounter, Observation, Procedure, SubstanceAdministration, or Supply.</body>
+        <body>self.entryRelationship->forAll(entryRelationship : cda::EntryRelationship |&#xD;&#xA;  entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON implies( &#xD;&#xA;  not (entryRelationship.act.oclIsUndefined() and entryRelationship.encounter.oclIsUndefined()&#xD;&#xA;       and entryRelationship.observation.oclIsUndefined() and entryRelationship.procedure.oclIsUndefined()&#xD;&#xA;       and entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.supply.oclIsUndefined())))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_vrq7AKRuEd6t_4WfM070fA">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_lCjKwqRvEd6t_4WfM070fA" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_lCjKw6RvEd6t_4WfM070fA" name="ACT">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYUDcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_lCjKwKRvEd6t_4WfM070fA" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_lCjKwaRvEd6t_4WfM070fA" name="EVN">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_pQULsaRvEd6t_4WfM070fA" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_pQULsKRvEd6t_4WfM070fA" name="statusCode" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_Iui3sKRxEd6t_4WfM070fA" memberEnd="_Iul7AKRxEd6t_4WfM070fA _IunwMKRxEd6t_4WfM070fA">
+    <ownedEnd xmi:id="_IunwMKRxEd6t_4WfM070fA" name="" visibility="private" type="_f0mKEKRtEd6t_4WfM070fA" association="_Iui3sKRxEd6t_4WfM070fA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IuoXQaRxEd6t_4WfM070fA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IuoXQKRxEd6t_4WfM070fA"/>
+    </ownedEnd>
+  </uml:Association>
+</xmi:XMI>

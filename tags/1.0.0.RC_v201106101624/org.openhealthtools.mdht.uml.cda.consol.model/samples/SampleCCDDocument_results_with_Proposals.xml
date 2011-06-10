@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--The following sample document depicts a fictional character’s health summary. Any resemblance to a real person is coincidental. -->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:hl7-org:v3 http://xreg2.nist.gov:8080/hitspValidation/schema/cdar2c32/infrastructure/cda/C32_CDA.xsd"
+ xmlns="urn:hl7-org:v3"
+ xmlns:voc="urn:hl7-org:v3/voc">
+	<!-- 
+
+********************************************************
+
+CDA Header
+
+********************************************************
+
+-->
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<templateId root="2.16.840.1.113883.10.20.1"/>
+	<!-- CCD v1.0 Templates Root -->
+	<id root="db734647-fc99-424c-a864-7e3cda82e703"/>
+	<code code="34133-9" displayName="Summarization of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+	<title>Good Health Clinic Continuity of Care Document</title>
+	<effectiveTime value="20000407130000+0500"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<languageCode code="en-US"/>
+	<recordTarget>
+		<patientRole>
+			<id extension="996-756-495" root="2.16.840.1.113883.19.5"/>
+			<patient>
+				<name>
+					<given>Henry</given>
+					<family>Levin</family>
+					<suffix>the 7th</suffix>
+				</name>
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+				<birthTime value="19320924"/>
+			</patient>
+			<providerOrganization>
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Health Clinic</name>
+			</providerOrganization>
+		</patientRole>
+	</recordTarget>
+	<author>
+		<time value="20000407130000+0500"/>
+		<assignedAuthor>
+			<id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+			<assignedPerson>
+				<name>
+					<prefix>Dr.</prefix>
+					<given>Robert</given>
+					<family>Dolin</family>
+				</name>
+			</assignedPerson>
+			<representedOrganization>
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Health Clinic</name>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<informant>
+		<assignedEntity>
+			<id nullFlavor="NI"/>
+			<representedOrganization>
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Health Clinic</name>
+			</representedOrganization>
+		</assignedEntity>
+	</informant>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Health Clinic</name>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<legalAuthenticator>
+		<time value="20000407130000+0500"/>
+		<signatureCode code="S"/>
+		<assignedEntity>
+			<id nullFlavor="NI"/>
+			<representedOrganization>
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Health Clinic</name>
+			</representedOrganization>
+		</assignedEntity>
+	</legalAuthenticator>
+	<participant typeCode="IND">
+		<associatedEntity classCode="GUAR">
+			<id root="4ff51570-83a9-47b7-91f2-93ba30373141"/>
+			<addr>
+				<streetAddressLine>17 Daws Rd.</streetAddressLine>
+				<city>Blue Bell</city>
+				<state>MA</state>
+				<postalCode>02368</postalCode>
+			</addr>
+			<telecom value="tel:(888)555-1212"/>
+			<associatedPerson>
+				<name>
+					<given>Kenneth</given>
+					<family>Ross</family>
+				</name>
+			</associatedPerson>
+		</associatedEntity>
+	</participant>
+	<participant typeCode="IND">
+		<associatedEntity classCode="NOK">
+			<id root="4ac71514-6a10-4164-9715-f8d96af48e6d"/>
+			<code code="65656005" displayName="Biological mother" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+			<telecom value="tel:(999)555-1212"/>
+			<associatedPerson>
+				<name>
+					<given>Henrietta</given>
+					<family>Levin</family>
+				</name>
+			</associatedPerson>
+		</associatedEntity>
+	</participant>
+	<documentationOf>
+		<serviceEvent classCode="PCPR">
+			<effectiveTime>
+				<low value="19320924"/>
+				<high value="20000407"/>
+			</effectiveTime>
+			<performer typeCode="PRF">
+				<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+				<time>
+					<low value="19900115"/>
+					<high value="20000407"/>
+				</time>
+				<assignedEntity>
+					<id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+					<assignedPerson>
+						<name>
+							<prefix>Dr.</prefix>
+							<given>Robert</given>
+							<family>Dolin</family>
+						</name>
+					</assignedPerson>
+					<representedOrganization>
+						<id root="2.16.840.1.113883.19.5"/>
+						<name>Good Health Clinic</name>
+					</representedOrganization>
+				</assignedEntity>
+			</performer>
+		</serviceEvent>
+	</documentationOf>
+	<!-- 
+********************************************************
+CDA Body
+********************************************************
+-->
+	<component>
+		<structuredBody>
+			<!-- 
+********************************************************
+Results section
+********************************************************
+			-->
+			<!-- **** Comment patterns			
+<SHALL/SHOULD/MAY>+ <[cardinality]> + <CONF reference>
+example: SHALL [1..1]  per base CDA
+When adding C32, flag conflicts, ambiguities issues with <**>		
+****-->
+			<component>
+				<!--SHOULD [1..1] section/templateId CCD-388-->
+				<section>
+					<!-- NEW CONSOLIDATED TemplateId -->
+					<templateId root="2.16.840.1.113883.10.20.21.2.3.1"/>
+					<!-- SHALL [1..1] /@code=30954-2 CCD -389/390-->
+					<code code="30954-2" displayName="Relevant diagnostic tests &amp;or laboratory data" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<!--SHALL [1..1] title CCD-391-->
+					<!--SHOULD [1..1 title CCD-392, Case-insenstive language-->
+					<title>Results</title>
+					<!--SHALL [1..1] text CCD-388 -->
+					<text>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th> </th>
+									<th>March 23, 2000</th>
+									<th>April 06, 2000</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="3">
+										<content styleCode="BoldItalics">Hematology</content>
+									</td>
+								</tr>
+								<tr>
+									<td>HGB (M 13-18 g/dl; F 12-16 g/dl)</td>
+									<td>13.2</td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td>WBC (4.3-10.8 10+3/ul)</td>
+									<td>6.7</td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td>PLT (135-145 meq/l)</td>
+									<td>123*</td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<content styleCode="BoldItalics">Chemistry</content>
+									</td>
+								</tr>
+								<tr>
+									<td>NA (135-145meq/l)</td>
+									<td> </td>
+									<td>140</td>
+								</tr>
+								<tr>
+									<td>K (3.5-5.0 meq/l)</td>
+									<td> </td>
+									<td>4.0</td>
+								</tr>
+								<tr>
+									<td>CL (98-106 meq/l)</td>
+									<td> </td>
+									<td>102</td>
+								</tr>
+								<tr>
+									<td>HCO3 (18-23 meq/l)</td>
+									<td> </td>
+									<td>35*</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<!-- SHOULD [0..*] CCD-388, ALL ENTRIES ARE SHOULD -->
+					<entry typeCode="DRIV">
+						<!-- SHOULD [0..*] CCD-388, ALL ORGANIZERS ARE SHOULD-->
+						<!-- SHALL [1..1] /@moodCode="EVN" CCD-394-->
+						<!-- SHALL [1..1] /@classCode="BATTERY" or "CLUSTER" -->
+						<organizer classCode="BATTERY" moodCode="EVN">
+							<!--SHALL [1..1]  CCD-393-->
+							<!-- NEW CONSOLIDATED TemplateId -->
+							<templateId root="2.16.840.1.113883.10.20.21.4.1"/>
+													
+							<!-- Result organizer template -->
+							<!-- SHALL [1..*]  CCD-395-->
+							<id root="7d5a02b0-67a4-11db-bd13-0800200c9a66"/>
+							<!-- SHALL [1..1]  CCD-397, code-->
+							<!--SHOULD [1..1] CCD-398, code/@code from LOINC or SNOMED, MAY be selected from CPT-4 or HL7 ResultTypeCode -->
+							<code code="43789009" displayName="CBC WO DIFFERENTIAL" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+							
+							<!-- SHALL [1..1]  code CCD-396-->
+							<!-- SHALL [1..1]  @code="completed" -->
+							<statusCode code="completed"/>
+							
+							<!--SHALL [1..*] CCD-402, component-->
+							<component>
+								<!--SHALL [1..*] CCD-405, observation-->
+								<!--SHALL [1..1] CCD-407, observation-->
+								<!--SHALL [1..1] @classCode=OBS, IHE 6.3.4.20.2-->
+								<!--SHALL [1..1] @moodCode=EVN, IHE 6.3.4.20.2-->
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Result observation template -->
+									<!--SHALL [1..1] CCD-407, templateId-->
+									<!-- NEW CONSOLIDATED TemplateId -->
+									<templateId root="2.16.840.1.113883.10.20.21.4.2"/>
+									
+									<!--SHALL [1..*] id CCD-409-->
+									<!--SHALL [1..*] id HITSP 15.01 -->
+									<!--SHALL [1..*] id IHE 6.3.4.20.4 -->
+									<id root="107c2dc0-67a5-11db-bd13-0800200c9a66"/>
+									
+									<!--SHALL [1..1] code, CCD-412 -->
+									<!--SHALL [1..1] code, HITSP 15.03 -->
+									<!--SHALL [1..1] code, IHE 6.3.4.20.5-->
+									<!--SHOULD [1..1] code/@code from LOINC or SNOMED, MAY be selected from CPT-4, CCD-413-->
+									<!--SHOULD [1..1] code/@code from LOINC or SNOMED,  HITSP C154-[DE-15.03-1]-->
+									<!--SHOULD [1..1] IF Lab results, SHOULD be coded as specified in HITSP/C80 Section 2.2.3.6.1 Laboratory Observations,  HITSP C154-[DE-15.03-2] -->
+									<!-- Proposed Consolidation Constraint: 
+										SHOULD [1..1] code/@code from LOINC or SNOMED--> 
+									<code code="30313-1" displayName="HGB" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									
+									<!-- <**> SHALL [1..1] Text with reference to narrative IHE 6.3.4.20.6-->
+									<!-- Proposed Consolidation Constraint: see comments on wiki -->
+									<text></text>
+									
+									
+									<!--SHALL [1..1] statusCode, CCD-410-->
+									<!--SHALL [1..1] statusCode, HITSP 15.04-->
+									<!--SHALL [1..1] statusCode, HITSP 15.04-->
+									<!--<**>SHALL [1..1] @code=completed, IHE 6.3.4.20.7-->
+									<!-- Proposed Consolidation Constraint: 
+										SHALL [1..1] statusCode
+										SHALL [1..1] @code=completed
+										-->
+									<statusCode code="completed"/>
+									
+									<!--SHOULD [0..1] effectiveTimeCCD-411 -->
+									<!--<**>SHALL [1..1] effectiveTime HITSP 15.02-->
+									<!--<**>SHALL [1..1] effectiveTime and shall record the date and time when the measurement was taken. IHE 6.3.4.20.8-->
+									<!-- Proposed Consolidation Constraint: 
+										SHALL [1..1] effectiveTime
+										-->
+									<effectiveTime value="200003231430"/>
+									
+									<!--SHALL [1..1] CCD-416, value-->
+									<!--SHALL [1..1] CCD-417, value/@xsi:type="PQ"-->
+									<!--  <**> SHALL [1..1] be present when the observation/@moodCode is EVN or GOL, HITSP 15.05
+									SHALL NOT [0..0] be present when observation/@moodCode is INT or PRP, HITSP 15.05 -->	
+									<!--SHALL [1..1] value IHE 6.3.4.20.9-->
+									<!-- Proposed Consolidation Constraint: 
+										SHALL [1..1] be present when the observation/@moodCode is EVN or GOL
+									-->
+									<value xsi:type="PQ" value="13.2" unit="g/dl"/>
+									
+									<!--SHOULD [0..1] CCD-418, interpretationCode-->
+									<!-- MAY [0..1] interpretationCode/@code HITSP 15.06-->
+									<!-- MAY [0..1] interpretationCode IHE 6.3.4.20.10-->
+									<!-- Proposed Consolidation Constraint: 
+										SHOULD [0..1] interpretationCode
+									-->
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									
+									<!-- MAY [0..1] methodCode IHE 6.3.4.20.11-->
+									<!-- Proposed Consolidation Constraint: 
+										MAY [0..1] methodCode
+									-->
+									<methodCode></methodCode>
+									
+									<!-- MAY [0..1] targetSiteCode IHE 6.3.4.20.12-->
+									<!-- Proposed Consolidation Constraint: 
+										MAY [0..1] targetSiteCode
+									-->
+									<targetSiteCode></targetSiteCode>
+									
+									<!-- MAY [0..1] author IHE 6.3.4.20.13-->
+									<!-- Proposed Consolidation Constraint: 
+										MAY [0..1] author
+									-->
+									<author>
+										<time/>
+										<assignedAuthor>
+											<id/>
+										</assignedAuthor>
+									</author>
+									
+									
+									<!--SHOULD [0..*] CCD-419, referenceRange-->
+									<!--MAY [0..*] referenceRange HITSP 15.07-->
+									<!-- Proposed Consolidation Constraint: 
+											SHOULD [0..1] referenceRange
+									-->
+									<referenceRange>
+										<!--SHALL NOT CCD-420, refererenceRange/observationRange/code-->
+										<observationRange>
+											<text>M 13-18 g/dl; F 12-16 g/dl</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<!--SHOULD [0..1] References Entry 1.3.6.1.4.1.19376.1.5.3.1.4.4 IHE PCC TF  -->
+							<!-- Proposed Consolidation Constraint: 
+								SHOULD [0..1] component/act/templateId="1.3.6.1.4.1.19376.1.5.3.1.4.4"
+							-->
+							<component>
+								<!-- SHALL [1..1] act IHE PCC 6.3.4.9.2-->
+								<!-- SHALL [1..1] classCode="ACT" IHE PCC 6.3.4.9.2-->
+								<!-- SHALL [1..1] moodCode="EVN" IHE PCC 6.3.4.9.2-->
+								<act classCode="ACT" moodCode="EVN">
+									<!-- SHALL [1..1] templateId IHE PCC 6.3.4.9.3-->
+									<!-- SHALL [1..1] templateId@root="1.3.6.1.4.1.19376.1.5.3.1.4.4 IHE PCC 6.3.4.9.3'-->
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4" assigningAuthorityName="IHE PCC"/>
+									<!-- SHALL [1..1] id IHE PCC 6.3.4.9.4-->
+									<id/>
+									<!-- SHALL [1..1] code IHE PCC 6.3.4.9.5-->
+									<!-- SHALL [1..1] code@nullFlavor="NA" IHE PCC 6.3.4.9.5-->
+									<code nullFlavor="NA"/>
+									<!-- SHALL [1..1] text IHE PCC 6.3.4.9.6-->
+									<text>
+										<reference value="PointerToTextinSection"/>
+									</text>
+									<!-- SHALL [1..1] referenence IHE PCC 6.3.4.9.7-->
+									<!-- SHALL [1..1] referenence@typeCode="SPRT or REFR" IHE PCC 6.3.4.9.7-->
+									<!-- add guidance text from IHE PCC 6.3.4.97 -->
+									<reference typeCode="REFR">
+										<!-- SHALL [1..1] externalDocument -->
+										<externalDocument classCode="DOC" moodCode="EVN">
+											<!-- SHALL [1..1] id IHE PCC 6.3.4.9.8-->
+											<id root="REGISTRYOID" extension="SOMEID" assigningAuthorityName="NIST Registry"/>
+											<!-- SHALL [1..1] text IHE PCC 6.3.4.9.9-->
+											<text>http://nist.etc</text>
+										</externalDocument>
+									</reference>
+								</act>
+							</component>											
+						</organizer>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

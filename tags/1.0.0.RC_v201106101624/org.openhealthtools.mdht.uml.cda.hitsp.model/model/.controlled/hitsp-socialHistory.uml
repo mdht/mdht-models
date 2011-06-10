@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_-ujjcMihEd6mWrHPmrIIfQ" name="SocialHistorySection">
+    <ownedComment xmi:id="_Gu8hcMiiEd6mWrHPmrIIfQ" annotatedElement="_-ujjcMihEd6mWrHPmrIIfQ">
+      <body>&lt;p>&#xD;
+    The Social History Section contains information about the person's beliefs, home life, community life,&#xD;
+    work life, hobbies, and risky habits. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_BW7T4MiiEd6mWrHPmrIIfQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-socialHistory.uml#_Kv5q4MihEd6mWrHPmrIIfQ"/>
+    </generalization>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_CY01wMiiEd6mWrHPmrIIfQ" base_Class="_-ujjcMihEd6mWrHPmrIIfQ" templateId="2.16.840.1.113883.3.88.11.83.126" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConformsTo xmi:id="_rGXY4FF6Ed-Lud-5SYZhMw" base_Generalization="_BW7T4MiiEd6mWrHPmrIIfQ" requiresParentId="true"/>
+</xmi:XMI>
