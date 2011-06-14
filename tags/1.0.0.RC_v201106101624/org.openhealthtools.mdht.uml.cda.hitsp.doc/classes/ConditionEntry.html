@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Condition Entry"/>
+<meta name="abstract" content="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.5]"/>
+<meta name="description" content="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.5]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Condition Entry</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Condition Entry</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>]</p>
+
+
+<div class="section">
+<p class="p">Condition Entry is not defined as a separate template in HITSP C83, but only as additional constraints on the IHE Problem Entry when embedded in a Condition template. In this model, Condition Entry is defined as a separate class (without a template ID) that restricts the IHE Problem Entry. When these templates are consolidated in the new implementation guide, these Condition Entry constraints will be merged with Problem Entry.</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProblemEntry.html">IHE Problem Entry</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.3.88.12.3221.7.2 Problem Type</tt><strong class="ph b"> STATIC</strong> 1
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.3.88.12.3221.7.4 Problem</tt><strong class="ph b"> STATIC</strong> 1
+</li>
+
+<li class="li">The onset date <strong class="ph b">SHALL</strong> be recorded in the &lt;low&gt; element of the &lt;effectiveTime&gt; element when known. (C83-[DE-7.01-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.effectiveTime.low.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The resolution data <strong class="ph b">SHALL</strong> be recorded in the &lt;high&gt; element of the &lt;effectiveTime&gt; element when known. (C83-[DE-7.01-2])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.effectiveTime.high.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">If the problem is known to be resolved, but the date of resolution is not known, then the &lt;high&gt; element <strong class="ph b">SHALL</strong> be present, and the nullFlavor attribute <strong class="ph b">SHALL</strong> be set to 'UNK'. Therefore, the existence of an &lt;high&gt; element within a problem does indicate that the problem has been resolved. (C83-[DE-7.01-3])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.effectiveTime.high.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Condition Entry example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/&gt;
+  &lt;id root="05647ba2-54eb-45c2-a6fd-bfc76fd9bf0f"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+  &lt;text/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;value xsi:type="CD"/&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+      &lt;id root="63182459-19c8-4a41-bd70-2ef2af47cdcf"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
+      &lt;id root="650cfbab-a9a5-40e1-ab05-5a9286a1389b"/&gt;
+      &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
+      &lt;id root="689b45d6-19f5-4a38-9eb9-525f1e7cbebd"/&gt;
+      &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/&gt;
+      &lt;id root="43392767-7520-4a17-9eda-ce821731aeb5"/&gt;
+      &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+      &lt;text/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CD"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/&gt;
+      &lt;id root="0a357c10-dd68-4315-a7f6-9600f9bd9cee"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/&gt;
+      &lt;id root="3c301c9e-6d76-42cd-aa52-ae5512f1e69b"/&gt;
+      &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+      &lt;text/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.40"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/&gt;
+      &lt;id root="53ec2e9c-5753-43a2-94af-81cfa6f238d8"/&gt;
+      &lt;code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+&lt;/observation&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

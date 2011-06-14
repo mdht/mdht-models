@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Medication"/>
+<meta name="abstract" content="[SubstanceAdministration: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.7]"/>
+<meta name="description" content="[SubstanceAdministration: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.7]"/>
+<meta name="DC.Coverage" content="SubstanceAdministration"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Medication</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Medication</h1>
+
+
+
+<div class="body"><p class="shortdesc">[SubstanceAdministration: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>]</p>
+
+
+<div class="section">
+<p class="p">
+This content module describes the general structure for a medication. All medication administration acts will be derived
+from this content module.
+</p>
+
+<p class="p">
+The &lt;substanceAdministration&gt; element may contain subordinate
+&lt;substanceAdministration&gt; elements in a related component entry to deal with special cases (see
+the section below on Special Cases). These cases include split, tapered, or conditional dosing, or
+combination medications. The use of subordinate &lt;substanceAdministration&gt; elements to deal with these cases is optional. The comment field should always be used in these cases to provide
+the same information as free text in the top level &lt;substanceAdministration&gt; element.
+</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationActivity.html">CCD Medication Activity</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.24</tt>)</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">approachSiteCode</strong></tt>
+<ul class="ul"><li class="li">The site where the medication is administered, usually used with IV or topical drugs. The &lt;approachSiteCode&gt; element describes the site of medication administrion. It may be coded
+to a controlled vocabulary that lists such sites (e.g., SNOMED-CT). In CDA documents, this
+4805 element contains a URI in the value attribute of the &lt;reference&gt; that points to the text in the
+narrative identifying the site. In a message, the &lt;originalText&gt; element shall contain the text
+identifying the site.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">doseQuantity</strong></tt>
+<ul class="ul"><li class="li">The amount of the medication given. This should be in some known and measurable unit, such as grams, milligrams, et cetera. It may be measured in 'administration' units (such as tablets or each), for medications where the strength is relevant. In this case, only the unit count is specified , no units are specified. It may be a range.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">rateQuantity</strong></tt>
+<ul class="ul"><li class="li">The rate is a measurement of how fast the dose is given to the patient over time (e.g., .5 liter / 1 hr), and is often used with IV drugs.</li>
+</ul>
+</li>
+
+<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>
+<ul class="ul"><li class="li">The &lt;code&gt; element is used to supply a code that describes the &lt;substanceAdminstration&gt; act,
+not the medication being administered or prescribed. This may be a procedure code, such as
+those found in CPT-4 (and often used for billing), or may describe the method of medication
+administration, such as by intravenous injection. The type of medication is coded in the
+consumable, do not supply the code for the medication in this element. This element is optional.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF-307)
+<ul class="ul"><li class="li">The status of all 'substanceAdministration' elements must be "completed". The act has either
+occurred, or the request or order has been placed.</li>
+</ul>
+</li>
+
+<li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ul class="ul"><li class="li">Entry may indicate one or more reasons for the use of the
+medication. The extension and root of each observation present must match the identifier of a concern entry
+contained elsewhere within the CDA document.
+A consumer of the Medical Summary is encouraged, but not required to maintain these links on
+import.</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="InternalReference.html" title="[Act: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.4.1]">Internal Reference</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.4.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ul class="ul"><li class="li">At most one instruction may be provided for each &lt;substanceAdministration&gt; entry. The instructions
+shall contain any special case dosing instructions (e.g., split, tapered, or conditional dosing), and
+may contain other information (take with food, et cetera).</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PatientMedicalInstructions.html" title="[Act: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.3]">Patient Medical Instructions</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.3</tt>)</li>
+</ol>
+</li>
+
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SupplyEntry.html" title="[Supply: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.7.3]">Supply Entry</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.7.3</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one dosing template to identify this entry as a particular type of medication event. Possible dosing templates: 1.3.6.1.4.1.19376.1.5.3.1.4.7.1 Normal Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.8, Tapered Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.9 Split Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.10 Conditional Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.11 Combination Dosing.<ul class="ul"><li class="li">There are a variety of special cases for dosing that need to be accounted for. 
+Most of these special cases involve changing the dosage or frequency over time, or based on
+some measurement. When the dosage changes, then additional entries are required for each differing dosage.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: contains one or more related components (&lt;entryRelationship typeCode='COMP'&gt;, either to handle split, tapered or conditional dosing, or to support combination medications.<ul class="ul"><li class="li">n the first three cases, the subordinate components shall specify only the changed &lt;frequency&gt;
+and/or &lt;doseAmount&gt; elements. For conditional dosing, each subordinate component shall have
+a &lt;precondition&gt; element that specifies the &lt;observation&gt; that must be obtained before
+administration of the dose. The value of the &lt;sequenceNumber&gt; shall be an ordinal number,
+starting at 1 for the first component, and increasing by 1 for each subsequent component.
+Components shall be sent in &lt;sequenceNumber&gt; order.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Values from SNOMED CT shall be used in the &lt;code&gt; element to record that a patient is either not on medications, or that medications are not known.<ul class="ul"><li class="li"><p class="p">
+182904002 "Drug Treatment Unknown" (To indicate lack of knowledge about drug therapy)
+</p>
+
+<p class="p">
+182849000 "No Drug Therapy Prescribed" (To indicate the absense of any prescribed medications)
+</p>
+
+<p class="p">
+408350003 "Patient Not On Self-Medications" (To indicate no treatment)
+</p>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The act/@classCode='ACT' and act/@moodCode='EVN' when recording reason for medication in InternalReference Template. (6.3.4.16.22)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains [0..2] effectiveTime elements.<ul class="ul"><li class="li"><p class="p">
+The first &lt;effectiveTime&gt; element encodes the start and stop time of the medication regimen.
+This an interval of time (xsi:type='IVL_TS'), and must be specified as shown. This is an
+additional constraint placed upon CDA Release 2.0 by this profile, and simplifies the exchange
+of start/stop and frequency information between EMR systems.
+</p>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The &lt;consumable&gt; element shall be present, and shall contain a Product Entry template</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The entryRelationship/@inversionInd attribute is 'true' for Patient Medical Instructions relationship</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The name and strength of the medication is recorded in consumable/manufacturedProduct/manufacturedMaterial/code/originalText</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Name of the substance or product is recorded in consumable/manufacturedProduct/manufacturedMaterial/name</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: the preconditions for use of the medication are recorded in the
+&lt;precondition&gt; element. element. The value attribute of the &lt;reference&gt; element is a URL that points to
+the CDA narrative describing those preconditions.</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The entryRelationship/@inversionInd attribute is 'false' for Supply Entry relationship</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: entryRelationship/sequenceNumber element should be present when the embedded 'supply' element has a
+moodCode attribute of EVN.<ul class="ul"><li class="li">The prescription activity may have a &lt;sequenceNumber&gt; element to indicate the fill number. A
+value of 1, 2 or N indicates that it is the first, second, or Nth fill respectively of a specific
+prescription.</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Medication example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/&gt;
+  &lt;id root="dad4329e-75f0-4d65-899d-b0729ee3f53e"/&gt;
+  &lt;statusCode/&gt;
+  &lt;effectiveTime value="20110404"/&gt;
+  &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
+  &lt;approachSiteCode/&gt;
+  &lt;doseQuantity/&gt;
+  &lt;rateQuantity/&gt;
+  &lt;maxDoseQuantity/&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
+      &lt;id root="d1996d24-16c9-4809-8d9a-7db1e7a0779f"/&gt;
+      &lt;code code="30973-2" codeSystemName="" displayName="Dose number"/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="INT"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+      &lt;id root="70804985-e2d3-4683-bc8f-6028d2726b61"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act moodCode="INT"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
+      &lt;id root="755d7a34-9b84-44cd-bf8a-b6e9eecd7af9"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
+      &lt;id root="c2c197ee-0022-4abb-aa29-13871a6f6475"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+          &lt;id root="5123a8f8-7be2-4dc3-aeef-19164e46c7af"/&gt;
+          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+&lt;/substanceadministration&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

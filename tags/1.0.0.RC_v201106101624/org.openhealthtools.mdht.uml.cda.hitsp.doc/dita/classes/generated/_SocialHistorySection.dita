@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Social History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.3.88.11.83.126</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.3.88.11.83.126"/>
+</prolog>
+<body>
+<section id="description">
+<p>
+    The Social History Section contains information about the person's beliefs, home life, community life,
+    work life, hobbies, and risky habits. 
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistorySection.html">IHE Social History Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.16</tt>)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistorySection.html">CCD Social History Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.15</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistorySection.html">IHE Social History Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.16</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.15"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16"/>
+  <templateId root="2.16.840.1.113883.3.88.11.83.126"/>
+  <id root="d17bf969-92ea-429b-8a9a-91e28f03b53b"/>
+  <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
+  <title>Social history</title>
+</section>]]></codeblock>
+</body>
+</topic>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Comment - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.21.4.10</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.21.4.10"/>
+</prolog>
+<body>
+<section id="description">
+<p>Used to contain comments associated with any of the data within the document.</p>
+<p>This entry allows for a comment to be supplied with each entry. For CDA this structure is usually included in the target act using the &lt;entryRelationship> element defined in the CDA Schema, but can also be used in the &lt;component> element when the comment appears within an &lt;organizer>.</p>
+
+<p>Any condition or allergy may be the subject of a comment.</p>
+<p>This module contains a comment to be supplied for any other entry Content Modules.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-504)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-505)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48767-8" </tt><i>Annotation comment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-506, CONF-507)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-CONSOL-547)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-6.3.4.6.8)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF-CONSOL-548), such that
+</li>
+<li>Contains exactly one [1..1] <tt><b>author</b></tt>, such that
+</li>
+<li><b>SHALL</b> satisfy: A related statement is made about another section or entry. In CDA the former shall be recorded inside an &lt;entryRelationship&gt; element occurring at the end of the entry. The containing entry is the subject (typeCode='SUBJ') of this comment, which is the inverse of the normal containment structure, thus inversionInd='true'. (CONF-6.3.4.6.3)</li>
+<li><b>SHALL</b> satisfy: The 'text' element contains a 'reference' element pointing to the narrative text section of the CDA, rather than duplicate text to avoid ambiguity. (CONF-6.3.4.6.7)<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The time of the comment creation is recorded in the 'time' element when the 'author' element is present. (CONF-6.3.4.6.10)<ul><li><codeblock>[OCL]: not self.author-&gt;isEmpty() implies not self.effectiveTime.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The identifier of the author, and their address and telephone number must be present inside the 'id', 'addr' and 'telecom' elements when the 'author' element is present. (CONF-6.3.4.6.11)</li>
+<li><b>SHALL</b> satisfy: The author's and/or the organization's name must be present when the 'author' element is present. (CONF-6.3.4.6.12)</li>
+<li>Data elements defined elsewhere in the specification <b>SHALL NOT</b> be recorded using the Comments Module. (C83-[DE-10-CDA-1])<ul><li>Comments are free text data that cannot otherwise be recorded using data elements already defined by this specification. They are not to be used to record information that can be recorded elsewhere. For example, a free text description of the severity of an allergic reaction would not be recorded in a comment. Instead, it would be recorded using the data element defined in Allergy/Drug Sensitivity.</li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-504)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-505)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48767-8" </tt><i>Annotation comment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-506, CONF-507)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-CONSOL-547)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-6.3.4.6.8)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF-CONSOL-548), such that
+</li>
+<li>Contains exactly one [1..1] <tt><b>author</b></tt>, such that
+</li>
+<li><b>SHALL</b> satisfy: A related statement is made about another section or entry. In CDA the former shall be recorded inside an &lt;entryRelationship&gt; element occurring at the end of the entry. The containing entry is the subject (typeCode='SUBJ') of this comment, which is the inverse of the normal containment structure, thus inversionInd='true'. (CONF-6.3.4.6.3)</li>
+<li><b>SHALL</b> satisfy: The 'text' element contains a 'reference' element pointing to the narrative text section of the CDA, rather than duplicate text to avoid ambiguity. (CONF-6.3.4.6.7)<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The time of the comment creation is recorded in the 'time' element when the 'author' element is present. (CONF-6.3.4.6.10)<ul><li><codeblock>[OCL]: not self.author-&gt;isEmpty() implies not self.effectiveTime.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The identifier of the author, and their address and telephone number must be present inside the 'id', 'addr' and 'telecom' elements when the 'author' element is present. (CONF-6.3.4.6.11)</li>
+<li><b>SHALL</b> satisfy: The author's and/or the organization's name must be present when the 'author' element is present. (CONF-6.3.4.6.12)</li>
+<li>Data elements defined elsewhere in the specification <b>SHALL NOT</b> be recorded using the Comments Module. (C83-[DE-10-CDA-1])<ul><li>Comments are free text data that cannot otherwise be recorded using data elements already defined by this specification. They are not to be used to record information that can be recorded elsewhere. For example, a free text description of the severity of an allergic reaction would not be recorded in a comment. Instead, it would be recorded using the data element defined in Allergy/Drug Sensitivity.</li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+</body>
+</topic>

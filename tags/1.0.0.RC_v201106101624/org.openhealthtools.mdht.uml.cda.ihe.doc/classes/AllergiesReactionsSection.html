@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Allergies Reactions Section"/>
+<meta name="abstract" content="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.3.13]"/>
+<meta name="description" content="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.3.13]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Allergies Reactions Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Allergies Reactions Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.13</tt>]</p>
+
+
+<div class="section">
+<p class="p">The adverse and other adverse reactions section shall contain a narrative description of the substance intolerances and the
+associated adverse reactions suffered by the patient.</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.2</tt>)</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Allergies Reactions Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.2"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13"/&gt;
+  &lt;id root="a0696ec7-4fa2-40a9-bdd7-719cc5add4ca"/&gt;
+  &lt;code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/&gt;
+  &lt;title&gt;Allergies, adverse reactions, alerts&lt;/title&gt;
+  &lt;entry&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.27"/&gt;
+      &lt;id root="70ba0077-f3cb-45e2-980f-b9832568537c"/&gt;
+      &lt;code nullFlavor="NA"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.41"/&gt;
+          &lt;id root="9385591d-2e0c-4904-9bff-52bebf0b5204"/&gt;
+          &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CD"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
+          &lt;id root="2f4a83a1-0ac9-4083-8dc2-3400128c5d47"/&gt;
+          &lt;code/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+              &lt;id root="49d3a3e5-1e4b-4dbf-83d9-8b8519a4644d"/&gt;
+              &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;value xsi:type="CE"/&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
+              &lt;id root="96dbfcfa-e602-47ff-b70a-58ec8cccadec"/&gt;
+              &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;value xsi:type="CE"/&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
+              &lt;id root="13ba093e-66d6-4256-a7f8-ae0f16d4a796"/&gt;
+              &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/act&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

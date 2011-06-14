@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Result - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.21.4.2</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.21.4.2"/>
+</prolog>
+<body>
+<section id="description">
+<p>The simple observation entry is meant to be an abstract representation of many of the observations used in this
+specification. It can be made concrete by the specification of a few additional constraints, namely the vocabulary used for
+codes, and the value representation. A simple observation may also inherit constraints from other specifications (e.g.,
+ASTM/HL7 Continuity of Care Document).</p>
+<p>This module contains current and relevant historical result observations for the patient. The scope of "observations" is broad with the exception of "vital signs" which are contained in the Vital Signs section.</p>
+</section>
+<ol id="conformance">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-408)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-409)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-CONSOL-551)
+<ol>
+<li>Result Type <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) (C154-[DE-15.03-1])</li>
+<li>Result Type for laboratory results <b>SHOULD</b> be coded as specified in HITSP/C80 Section 2.2.3.6.1 Laboratory Observations. (C154-[DE-15.03-2])</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-410)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF-CONSOL-552)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF-CONSOL-553)
+<ul><li>The Result value records the desired result in a goal or recorded event, and will not present when recording an intent, request or proposal to measure a result.</li></ul><ol>
+<li>Result Value <b>SHALL</b> be present when the observation/@moodCode is EVN or GOL, and <b>SHALL NOT</b> be present when observation/@moodCode is INT or PRP. (C83-[DE-15.05-CDA-1])<ul><li><codeblock>[OCL]: (self.moodCode = vocab::x_ActMoodDocumentObservation::EVN or self.moodCode = vocab::x_ActMoodDocumentObservation::EVN)
+    implies (not self.value-&gt;isEmpty()) and
+  (self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP)
+   implies (self.value-&gt;isEmpty())</codeblock></li></ul></li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt> (CONF-418)
+<ul><li>Can be used to provide a rough qualitative interpretation of the observation, such as 'N' (normal), 'L' (low), 'S' (susceptible), etc. Interpretation is generally provided for numeric results where an interpretation range has been defined, or for antimicrobial susceptibility test interpretation.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF-414)
+<ul><li>Included if the method isn't inherent in code or if there is a need to further specialize the method in code.</li></ul></li>
+<li>The value for 'code' <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)</li>
+<li>The methodCode <b>SHALL NOT</b> conflict with the method inherent in code (CONF-415)</li>
+<li>Where value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF-417)</li>
+<li><b>SHOULD</b> satisfy: Contain one or more referenceRange to show the normal range of values for the observation result (CONF-419)<ul><li><codeblock>[OCL]: not self.referenceRange-&gt;isEmpty()</codeblock></li></ul></li>
+<li><b>SHALL NOT</b> contain referenceRange / observationRange / code, as this attribute is not used by the HL7 Clinical Statement or Lab Committee models. (CONF-420)<ul><li><codeblock>[OCL]: self.referenceRange-&gt;forAll(range : cda::ReferenceRange | range.observationRange.code.code.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-421)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
+or not self.getSection().informant-&gt;isEmpty()
+or not self.getClinicalDocument().informant-&gt;isEmpty()
+or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
+or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
+   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
+   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-408)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-409)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-CONSOL-551)
+<ol>
+<li>Result Type <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) (C154-[DE-15.03-1])</li>
+<li>Result Type for laboratory results <b>SHOULD</b> be coded as specified in HITSP/C80 Section 2.2.3.6.1 Laboratory Observations. (C154-[DE-15.03-2])</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-410)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF-CONSOL-552)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF-CONSOL-553)
+<ol>
+<li>Result Value <b>SHALL</b> be present when the observation/@moodCode is EVN or GOL, and <b>SHALL NOT</b> be present when observation/@moodCode is INT or PRP. (C83-[DE-15.05-CDA-1])<ul><li><codeblock>[OCL]: (self.moodCode = vocab::x_ActMoodDocumentObservation::EVN or self.moodCode = vocab::x_ActMoodDocumentObservation::EVN)
+    implies (not self.value-&gt;isEmpty()) and
+  (self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP)
+   implies (self.value-&gt;isEmpty())</codeblock></li></ul></li></ol><ul><li>The Result value records the desired result in a goal or recorded event, and will not present when recording an intent, request or proposal to measure a result.</li></ul></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt> (CONF-418)
+<ul><li>Can be used to provide a rough qualitative interpretation of the observation, such as 'N' (normal), 'L' (low), 'S' (susceptible), etc. Interpretation is generally provided for numeric results where an interpretation range has been defined, or for antimicrobial susceptibility test interpretation.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF-414)
+<ul><li>Included if the method isn't inherent in code or if there is a need to further specialize the method in code.</li></ul></li>
+<li>The value for 'code' <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)</li>
+<li>The methodCode <b>SHALL NOT</b> conflict with the method inherent in code (CONF-415)</li>
+<li>Where value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF-417)</li>
+<li><b>SHOULD</b> satisfy: Contain one or more referenceRange to show the normal range of values for the observation result (CONF-419)<ul><li><codeblock>[OCL]: not self.referenceRange-&gt;isEmpty()</codeblock></li></ul></li>
+<li><b>SHALL NOT</b> contain referenceRange / observationRange / code, as this attribute is not used by the HL7 Clinical Statement or Lab Committee models. (CONF-420)<ul><li><codeblock>[OCL]: self.referenceRange-&gt;forAll(range : cda::ReferenceRange | range.observationRange.code.code.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-421)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
+or not self.getSection().informant-&gt;isEmpty()
+or not self.getClinicalDocument().informant-&gt;isEmpty()
+or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
+or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
+   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
+   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
+<li>Result Type <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) (C154-[DE-15.03-1])</li>
+<li>Result Type for laboratory results <b>SHOULD</b> be coded as specified in HITSP/C80 Section 2.2.3.6.1 Laboratory Observations. (C154-[DE-15.03-2])</li>
+<li>Result Value <b>SHALL</b> be present when the observation/@moodCode is EVN or GOL, and <b>SHALL NOT</b> be present when observation/@moodCode is INT or PRP. (C83-[DE-15.05-CDA-1])<ul><li><codeblock>[OCL]: (self.moodCode = vocab::x_ActMoodDocumentObservation::EVN or self.moodCode = vocab::x_ActMoodDocumentObservation::EVN)
+    implies (not self.value-&gt;isEmpty()) and
+  (self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP)
+   implies (self.value-&gt;isEmpty())</codeblock></li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+</body>
+</topic>
