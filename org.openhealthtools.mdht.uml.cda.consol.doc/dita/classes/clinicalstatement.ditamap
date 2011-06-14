@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Clinical Statement Templates">
+<topicref href="AgeObservation.dita" type="topic" />
+<topicref href="Comment.dita" type="topic" />
+<topicref href="Condition.dita" type="topic" />
+<topicref href="ConditionEntry.dita" type="topic" />
+<topicref href="EpisodeObservation.dita" type="topic" />
+<topicref href="ExternalReference.dita" type="topic" />
+<topicref href="HealthStatusObservation.dita" type="topic" />
+<topicref href="Immunization.dita" type="topic" />
+<topicref href="InternalReference.dita" type="topic" />
+<topicref href="Medication.dita" type="topic" />
+<topicref href="MedicationCombinationMedication.dita" type="topic" />
+<topicref href="MedicationConditionalDose.dita" type="topic" />
+<topicref href="MedicationFullfillmentInstructions.dita" type="topic" />
+<topicref href="MedicationNormalDose.dita" type="topic" />
+<topicref href="MedicationOrderInformation.dita" type="topic" />
+<topicref href="MedicationSeriesNumberObservation.dita" type="topic" />
+<topicref href="MedicationSplitDose.dita" type="topic" />
+<topicref href="MedicationStatusObservation.dita" type="topic" />
+<topicref href="MedicationTaperedDose.dita" type="topic" />
+<topicref href="MedicationType.dita" type="topic" />
+<topicref href="PatientMedicalInstructions.dita" type="topic" />
+<topicref href="ProblemStatusObservation.dita" type="topic" />
+<topicref href="ProcedureActivityAct.dita" type="topic" />
+<topicref href="ProcedureActivityObservation.dita" type="topic" />
+<topicref href="ProcedureActivityProcedure.dita" type="topic" />
+<topicref href="ReactionObservation.dita" type="topic" />
+<topicref href="Result.dita" type="topic" />
+<topicref href="ResultOrganizer.dita" type="topic" />
+<topicref href="Severity.dita" type="topic" />
+<topicref href="StatusObservation.dita" type="topic" />
+<topicref href="VitalSign.dita" type="topic" />
+<topicref href="VitalSignsOrganizer.dita" type="topic" />
+</map>

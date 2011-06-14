@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Immunizations Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.3.88.11.83.117</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.3.88.11.83.117"/>
+</prolog>
+<body>
+<section id="description">
+<p>
+    The Immunizations Section contains information describing the immunizations administered to the
+    patient. 
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ImmunizationsSection.html">IHE Immunizations Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.23</tt>)</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Immunization.dita">Immunization</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.13</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ImmunizationsSection.html">IHE Immunizations Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.23</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11369-6" </tt><i>History of immunizations</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-377)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-379)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-376)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF-298), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SupplyActivity.dita">Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.34</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Immunization.dita">Immunization</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.13</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Clinical statements include one or more Medication Activity and/or one or more Supply Activity. (CONF-298)<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))
+   or self.getSupplies()-&gt;exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The absence of known medications is explicitly asserted. (CONF-299)</li>
+<li><b>SHOULD</b> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.6"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23"/>
+  <templateId root="2.16.840.1.113883.3.88.11.83.117"/>
+  <id root="ec6ede08-e650-4d9f-b061-37dbfab86b22"/>
+  <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+  <title>History of immunizations</title>
+  <entry>
+    <substanceAdministration>
+      <templateId root="2.16.840.1.113883.10.20.1.24"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+      <id root="635c64b5-36ba-41a2-99de-1bb7a038bd47"/>
+      <code/>
+      <statusCode/>
+      <effectiveTime value="20110404"/>
+      <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+      <doseQuantity/>
+      <rateQuantity/>
+      <maxDoseQuantity/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.46"/>
+          <id root="236015ea-bf1f-4316-9b37-3bf592505987"/>
+          <code code="30973-2" codeSystemName="" displayName="Dose number"/>
+          <statusCode/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="INT"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.47"/>
+          <id root="1b87d268-320e-4a69-9eb0-b06656065adb"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CE"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.1.49"/>
+          <id root="c52868cd-134d-400d-aa9a-95b7ae2f3457"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.54"/>
+          <id root="b7021b0b-e483-4e91-b29d-c49082f0170a"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.55"/>
+              <id root="c717d2b6-ca1c-4f4d-9d23-0fbeaaac6108"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </substanceAdministration>
+  </entry>
+  <entry>
+    <substanceAdministration>
+      <templateId root="2.16.840.1.113883.10.20.1.24"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+      <templateId root="2.16.840.1.113883.3.88.11.83.13"/>
+      <id root="0f0207ef-12c2-479a-b6c4-a3479b68c621"/>
+      <effectiveTime value="20110404"/>
+      <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.46"/>
+          <id root="b3034eb7-9462-4583-8544-909551f3e5f1"/>
+          <code code="30973-2" codeSystemName="" displayName="Dose number"/>
+          <statusCode/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="INT"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.47"/>
+          <id root="a03164e3-878c-4e98-beed-3a213e9bdce1"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CE"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.1.49"/>
+          <id root="80f546f8-e7ae-41e3-ade7-241d949b8512"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.54"/>
+          <id root="358a8cff-323e-49d3-acdc-43488a4d6d3d"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.55"/>
+              <id root="09766bb2-9552-4f6e-bda6-3aeed3ecabad"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </substanceAdministration>
+  </entry>
+</section>]]></codeblock>
+</body>
+</topic>

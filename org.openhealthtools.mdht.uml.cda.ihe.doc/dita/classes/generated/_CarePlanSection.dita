@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Care Plan Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.3.31</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.3.31"/>
+</prolog>
+<body>
+<section id="description">
+<p>The care plan section shall contain a narrative description of the expectations for care including proposals, goals, and
+order requests for monitoring, tracking, or improving the condition of the patient.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/PlanOfCareSection.html">CCD Plan Of Care Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/PlanOfCareSection.html">CCD Plan Of Care Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="18776-5" </tt><i>Treatment plan</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityEncounter.dita">Plan Of Care Activity Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityObservation.dita">Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityProcedure.dita">Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivitySubstanceAdministration.dita">Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivitySupply.dita">Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.10"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.31"/>
+  <id root="3a5e282e-bc98-4ebc-8444-d06731e81b74"/>
+  <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+  <title>Treatment plan</title>
+  <entry>
+    <act>
+      <templateId root="2.16.840.1.113883.10.20.1.25"/>
+      <id root="880d1016-753b-40cc-8e7a-a344b33b57fc"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entry>
+  <entry>
+    <encounter>
+      <templateId root="2.16.840.1.113883.10.20.1.25"/>
+      <id root="131b1fd3-745f-462e-8fbd-8d52f94eac09"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </encounter>
+  </entry>
+  <entry>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.1.25"/>
+      <id root="35e03c80-1b92-462a-afc7-6b6db35a9c24"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <procedure>
+      <templateId root="2.16.840.1.113883.10.20.1.25"/>
+      <id root="721ce5c0-be0e-47d6-ab8c-c55494b9c313"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </procedure>
+  </entry>
+  <entry>
+    <substanceAdministration>
+      <templateId root="2.16.840.1.113883.10.20.1.25"/>
+      <id root="f2e9c48c-8b50-47df-ab28-db1612b7605a"/>
+      <effectiveTime value="20110405"/>
+    </substanceAdministration>
+  </entry>
+  <entry>
+    <supply>
+      <templateId root="2.16.840.1.113883.10.20.1.25"/>
+      <id root="7e7b509c-3fd3-4528-a477-e0621b641c7e"/>
+      <effectiveTime value="20110405"/>
+    </supply>
+  </entry>
+</section>]]></codeblock>
+</body>
+</topic>

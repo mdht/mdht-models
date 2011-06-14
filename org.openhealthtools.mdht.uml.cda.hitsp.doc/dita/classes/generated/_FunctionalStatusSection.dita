@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Functional Status Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.3.88.11.83.109</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.3.88.11.83.109"/>
+</prolog>
+<body>
+<section id="description">
+<p>
+    The Functional Status Section provides information about the capability of the patient to perform acts
+    of daily living. 
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FunctionalStatusSection.html">CCD Functional Status Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.5</tt>)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FunctionalStatusSection.html">CCD Functional Status Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.5</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47420-5" </tt><i>Functional status assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+<li><b>SHOULD</b> satisfy: Contains one or more Problem Act and/or Result Organizer (CONF-123)<ul><li><codeblock>[OCL]: self.getEntryTargets(ccd::ProblemAct)-&gt;size() &gt; 0
+  or self.getEntryTargets(ccd::ResultOrganizer)-&gt;size() &gt; 0</codeblock></li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.5"/>
+  <templateId root="2.16.840.1.113883.3.88.11.83.109"/>
+  <id root="7756239b-cb39-4c4b-a7b3-012e8c161d9e"/>
+  <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment"/>
+  <title>Functional status assessment</title>
+</section>]]></codeblock>
+</body>
+</topic>
