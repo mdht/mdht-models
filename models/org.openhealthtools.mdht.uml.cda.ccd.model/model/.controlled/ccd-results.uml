@@ -55,17 +55,7 @@
   </uml:Class>
   <uml:Class xmi:id="_Ht_RsHDAEd6eItyqb1FoWg" name="ResultOrganizer">
     <ownedComment xmi:id="_HwtKgK31Ed6_ioDelDcPPg" annotatedElement="_Ht_RsHDAEd6eItyqb1FoWg">
-      <body>&lt;p>&#xD;
-    The result organizer identifies an observation set, contained with the result organizer&#xD;
-    as a set of result observations. It contains information applicable to all of the contained result&#xD;
-    observations.&#xD;
-&lt;/p>&#xD;
-&lt;p>&#xD;
-    Results in ASTM CCR and CCD are structured similarly to the HL7 Version 2 ORU Observation message, where&#xD;
-    there is an outer result organizer (templateId 2.16.840.1.113883.10.20.1.32), analogous to the HL7 Version 2 OBR&#xD;
-    Observation Result Segment, which contains one or more result observations (templateId 2.16.840.1.113883.10.20.1.31),&#xD;
-    analogous to the HL7 Version 2 OBX Observation/Result Segment.&#xD;
-&lt;/p></body>
+      <body>&lt;p>This clinical statement identifies set of result observations. It contains information applicable to all of the contained result observations. Result type codes categorize a result into one of several commonly accepted values (e.g., &quot;Hematology&quot;, &quot;Chemistry&quot;, &quot;Nuclear Medicine&quot;). These values are often implicit in the &lt;tt>Organizer/code&lt;/tt> (e.g., an &lt;tt>Organizer/code&lt;/tt> of &quot;complete blood count&quot; implies a &lt;tt>ResultTypeCode&lt;/tt> of &quot;Hematology&quot;). This template requires &lt;tt>Organizer/code&lt;/tt> to include a &lt;tt>ResultTypeCode&lt;/tt> either directly or as a translation of a code from some other code system.&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_x4g8MBtCEd-vGNAsDUJvgw" name="codeValue" constrainedElement="_UbVD8K6uEd6_ioDelDcPPg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_4XWn4BtCEd-vGNAsDUJvgw">
