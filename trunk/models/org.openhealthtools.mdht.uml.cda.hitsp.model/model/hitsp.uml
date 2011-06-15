@@ -172,7 +172,7 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/hitsp-problemList.uml#_-HcW8BvhEd-yI6xBTkJSNw"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_oTzNMDIWEd-SYNRf-pkwtw" name="Result">
       <ownedComment xmi:id="_5VrPQBeTEeCf9aMNaCAtDQ">
-        <body>This module contains current and relevant historical result observations for the patient. The scope of &quot;observations&quot; is broad with the exception of &quot;vital signs&quot; which are contained in the Vital Signs section.</body>
+        <body>This clinical statement represents details of a lab, radiology, or other study performed on a patient. The scope of result observations is broad with the exception of &quot;vital signs&quot; which are contained in the Vital Signs section.</body>
       </ownedComment>
       <ownedRule xmi:id="_K7iAwBeWEeCf9aMNaCAtDQ" name="resultTypeCodeSystem" constrainedElement="_ColIkDIXEd-SYNRf-pkwtw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_YH7JkBeWEeCf9aMNaCAtDQ">
@@ -209,6 +209,9 @@
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_H1HqAK6xEd6_ioDelDcPPg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_CuLaQDIXEd-SYNRf-pkwtw" name="effectiveTime" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_3WFCQJeIEeCd9scrQ-M9WA">
+          <body>Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards).</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CuLaQTIXEd-SYNRf-pkwtw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CuLaQjIXEd-SYNRf-pkwtw" value="1"/>
@@ -216,7 +219,7 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_p0cOoBeWEeCf9aMNaCAtDQ" name="value" visibility="private">
         <ownedComment xmi:id="_tCYKQBeWEeCf9aMNaCAtDQ">
-          <body>The Result value records the desired result in a goal or recorded event, and will not present when recording an intent, request or proposal to measure a result.</body>
+          <body>The Result value records the desired result in a goal or recorded event, and will not be present when recording an intent, request or proposal to measure a result.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_gX1x4K6xEd6_ioDelDcPPg"/>
@@ -504,6 +507,27 @@ resolved</body>
       <memberEnd href=".controlled/hitsp-allergiesReactions.uml#_tXt4QFsaEeCBQI4cjwqCWQ"/>
       <memberEnd href="#_tXvGYFsaEeCBQI4cjwqCWQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZPh685bDEeCcyetSDtbszQ">
+      <ownedEnd xmi:id="_ZPh69JbDEeCcyetSDtbszQ" association="_ZPh685bDEeCcyetSDtbszQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-problemList.uml#_c6bN4BvgEd-yI6xBTkJSNw"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-problemList.uml#_ZPh68JbDEeCcyetSDtbszQ"/>
+      <memberEnd href="#_ZPh69JbDEeCcyetSDtbszQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZPh6-JbDEeCcyetSDtbszQ">
+      <ownedEnd xmi:id="_ZPh6-ZbDEeCcyetSDtbszQ" association="_ZPh6-JbDEeCcyetSDtbszQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-problemList.uml#_c6bN4BvgEd-yI6xBTkJSNw"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-problemList.uml#_ZPh69pbDEeCcyetSDtbszQ"/>
+      <memberEnd href="#_ZPh6-ZbDEeCcyetSDtbszQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lKScwpbDEeCcyetSDtbszQ">
+      <ownedEnd xmi:id="_lKScw5bDEeCcyetSDtbszQ" association="_lKScwpbDEeCcyetSDtbszQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-problemList.uml#_c6bN4BvgEd-yI6xBTkJSNw"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-problemList.uml#_lKScwJbDEeCcyetSDtbszQ"/>
+      <memberEnd href="#_lKScw5bDEeCcyetSDtbszQ"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -682,4 +706,9 @@ resolved</body>
     <ruleId>CONF-433</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_umG-AFsaEeCBQI4cjwqCWQ" base_Association="_tXufUVsaEeCBQI4cjwqCWQ"/>
+  <CDA:EntryRelationship xmi:id="_ZPh69ZbDEeCcyetSDtbszQ" severity="INFO" base_Association="_ZPh685bDEeCcyetSDtbszQ" typeCode="SUBJ">
+    <ruleId>CONF-160</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_ZPh6-pbDEeCcyetSDtbszQ" severity="INFO" base_Association="_ZPh6-JbDEeCcyetSDtbszQ" typeCode="REFR"/>
+  <CDA:EntryRelationship xmi:id="_FAtUYJbHEeCcyetSDtbszQ" severity="INFO" base_Association="_lKScwpbDEeCcyetSDtbszQ"/>
 </xmi:XMI>
