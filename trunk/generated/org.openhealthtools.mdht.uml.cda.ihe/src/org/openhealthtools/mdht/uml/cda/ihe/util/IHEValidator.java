@@ -2620,10 +2620,6 @@ public class IHEValidator extends EObjectValidator {
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTitleValue(
-				immunizationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validateImmunizationsSection_validateMedicationsSectionTemplateId(
 				immunizationsSection, diagnostics, context);
 		}
@@ -2645,10 +2641,6 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionSupplyActivity(
-				immunizationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTitleValue(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3350,10 +3342,6 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(activeProblemsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemSection_validateProblemSectionTitleValue(
-				activeProblemsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateProblemSection_validateProblemSectionTemplateId(
@@ -5105,10 +5093,6 @@ public class IHEValidator extends EObjectValidator {
 				medicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTitleValue(
-				medicationsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTemplateId(
 				medicationsSection, diagnostics, context);
 		}
@@ -5687,10 +5671,6 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(allergiesReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateAlertsSection_validateAlertsSectionTitleValue(
-				allergiesReactionsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateAlertsSection_validateAlertsSectionTemplateId(
@@ -6803,10 +6783,6 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(vitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTitleValue(
-				vitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTemplateId(
 				vitalSignsSection, diagnostics, context);
 		}
@@ -6878,10 +6854,6 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(codedVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTitleValue(
-				codedVitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTemplateId(
@@ -7416,10 +7388,6 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(payersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validatePayersSection_validatePayersSectionTitleValue(
-				payersSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validatePayersSection_validatePayersSectionTemplateId(
 				payersSection, diagnostics, context);
 		}
@@ -7859,10 +7827,6 @@ public class IHEValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(surgeriesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProceduresSection_validateProceduresSectionTitleValue(
-				surgeriesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= ccdValidator.validateProceduresSection_validateProceduresSectionTemplateId(
 				surgeriesSection, diagnostics, context);
 		}
@@ -7930,10 +7894,6 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(codedSurgeriesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProceduresSection_validateProceduresSectionTitleValue(
-				codedSurgeriesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateProceduresSection_validateProceduresSectionTemplateId(

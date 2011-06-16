@@ -202,7 +202,7 @@ public class MedicationsSectionOperations extends
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.MEDICATIONS_SECTION,
-				IHEPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(67));
+				IHEPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(66));
 			try {
 				GET_MEDICATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

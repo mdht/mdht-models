@@ -206,7 +206,7 @@ public class AllergiesReactionsSectionOperations extends AlertsSectionOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION,
-				IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION.getEAllOperations().get(64));
+				IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION.getEAllOperations().get(63));
 			try {
 				GET_ALLERGY_INTOLERANCE_CONCERNS__EOCL_QRY = helper.createQuery(GET_ALLERGY_INTOLERANCE_CONCERNS__EOCL_EXP);
 			} catch (ParserException pe) {
