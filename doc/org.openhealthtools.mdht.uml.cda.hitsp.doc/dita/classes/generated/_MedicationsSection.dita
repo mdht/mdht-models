@@ -35,7 +35,7 @@
 <li><b>SHOULD</b> satisfy: Clinical statements include one or more Medication Activity and/or one or more Supply Activity. (CONF-298)<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))
    or self.getSupplies()-&gt;exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The absence of known medications is explicitly asserted. (CONF-299)</li>
-<li><b>SHOULD</b> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
+<li><b>SHOULD</b> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)<ul><li><codeblock>[OCL]: self.title = 'medication'</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Contains one dosing template to identify this as a particular type of medication event. Possible dosing templates: 1.3.6.1.4.1.19376.1.5.3.1.4.7.1 Normal Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.8, Tapered Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.9 Split Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.10 Conditional Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.11 Combination Dosing.<ul><li>There are a variety of special cases for dosing that need to be accounted for. 
 Most of these special cases involve changing the dosage or frequency over time, or based on
 some measurement. When the dosage changes, then additional entries are required for each differing dosage.</li></ul></li>
@@ -51,15 +51,15 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
   <templateId root="2.16.840.1.113883.10.20.1.8"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.19"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.112"/>
-  <id root="f43a6c5d-593a-4d37-a97e-80cd1995029f"/>
+  <id root="b76cb19e-5fce-4d67-bac7-3165129310b2"/>
   <code code="10160-0" codeSystemName="" displayName="History of medication use"/>
   <title>History of medication use</title>
   <entry>
     <substanceAdministration>
       <templateId root="2.16.840.1.113883.10.20.1.24"/>
-      <id root="bf1f02c6-aac2-41a9-bc07-d7d70e6f6f43"/>
+      <id root="bf9d1694-e4d3-46f8-8a5f-44240266ba4d"/>
       <statusCode/>
-      <effectiveTime value="20110404"/>
+      <effectiveTime value="20110616"/>
       <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
       <doseQuantity/>
       <rateQuantity/>
@@ -67,7 +67,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-          <id root="3c5932a5-4eac-452c-8d71-c9e168a2a43e"/>
+          <id root="5968e031-527a-4855-8a5c-2c6f526c658e"/>
           <code code="30973-2" codeSystemName="" displayName="Dose number"/>
           <statusCode/>
           <effectiveTime>
@@ -81,7 +81,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.47"/>
-          <id root="dab30795-ac5f-4626-b51f-e81de1d89225"/>
+          <id root="30163c4b-6bda-4fd1-9cc3-957c9c4baff0"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -94,7 +94,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
       <entryRelationship>
         <act moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.1.49"/>
-          <id root="4731e89d-db90-47db-a0e4-391111e44a28"/>
+          <id root="8fd3c10d-31db-4451-ae15-5edb5d27e1db"/>
           <effectiveTime>
             <low value="2011"/>
             <high value="2011"/>
@@ -104,7 +104,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.54"/>
-          <id root="8389b280-70bb-4dae-82b0-2e4df4a0b865"/>
+          <id root="9e6dfff9-98a1-4ab1-a8be-7f09aaaa0cc0"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2011"/>
@@ -113,7 +113,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.55"/>
-              <id root="86a9c2b3-3735-4317-80ce-4e663914b0fb"/>
+              <id root="e583079a-8f26-42d4-a9fc-71c07c46f3a4"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -129,16 +129,16 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
   <entry>
     <supply>
       <templateId root="2.16.840.1.113883.10.20.1.34"/>
-      <id root="3b4243fd-180f-4832-80ec-449261766a86"/>
+      <id root="1d0eeb24-b760-4c6e-a349-7d4678d0689a"/>
       <statusCode/>
-      <effectiveTime value="20110404"/>
+      <effectiveTime value="20110616"/>
       <repeatNumber/>
       <quantity/>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.47"/>
-          <id root="f1e4a89f-e80f-48ec-a75e-22b430a47b98"/>
+          <id root="19b08dfc-d583-4dd1-9e5d-57fce08e3592"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -151,7 +151,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
       <entryRelationship>
         <act moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.1.43"/>
-          <id root="eeeab647-af2b-4454-a2c9-8f7ef3d73997"/>
+          <id root="b89e030f-800f-4662-83cf-539c8d47c762"/>
           <effectiveTime>
             <low value="2011"/>
             <high value="2011"/>
@@ -164,9 +164,11 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
     <substanceAdministration>
       <templateId root="2.16.840.1.113883.10.20.1.24"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
-      <id root="e8e79fe9-bcbc-4d1f-91a5-0f8f41119ab5"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.11"/>
+      <id root="df82a970-4ddc-45eb-89da-261b5c0b7da2"/>
+      <code/>
       <statusCode/>
-      <effectiveTime value="20110404"/>
+      <effectiveTime value="20110616"/>
       <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
       <approachSiteCode/>
       <doseQuantity/>
@@ -175,7 +177,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-          <id root="10fad36c-b436-4e4d-afe5-3e2ee7d68bd4"/>
+          <id root="bb1aa52c-8fd9-4de3-b981-c04f18117afe"/>
           <code code="30973-2" codeSystemName="" displayName="Dose number"/>
           <statusCode/>
           <effectiveTime>
@@ -189,7 +191,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.47"/>
-          <id root="64274339-befe-4af7-a1c7-6d37dcc6f197"/>
+          <id root="ddf13b4e-3ec9-4c9e-a69c-8376df824d37"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -202,7 +204,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
       <entryRelationship>
         <act moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.1.49"/>
-          <id root="c2068b9d-f620-40f3-b0a2-ebe2f061efef"/>
+          <id root="9426bac0-98cc-4fc6-919b-6cd5f3d93f6d"/>
           <effectiveTime>
             <low value="2011"/>
             <high value="2011"/>
@@ -212,7 +214,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.54"/>
-          <id root="a9fe5ab3-45ae-4a7b-8235-94e517cc2937"/>
+          <id root="d873a2d6-2b8a-4ca3-9157-680bbf251985"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2011"/>
@@ -221,7 +223,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.55"/>
-              <id root="95030800-a9e2-4ccf-920f-0b5c9ab0e0db"/>
+              <id root="b87b58e7-66de-404c-ae75-dba68ba2eb24"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -232,6 +234,80 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
           </entryRelationship>
         </observation>
       </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
+          <id root="2512d67c-4fbf-4304-b0c5-e5a130b08561"/>
+          <code/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.1.49"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+          <id root="5e21eec7-3d1d-4285-bce4-c2b5dae94f12"/>
+          <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+          <text/>
+          <statusCode/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <supply>
+          <templateId root="2.16.840.1.113883.10.20.1.34"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+          <id root="0192a626-e914-4076-9294-53ba4157df56"/>
+          <statusCode/>
+          <effectiveTime value="20110616"/>
+          <repeatNumber/>
+          <quantity/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.47"/>
+              <id root="9ccf5054-89af-49da-9a8b-461b1a0a23e6"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.1.43"/>
+              <id root="5dca28b6-efee-4602-9cb9-726b5dee1e88"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <act moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.1.43"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+              <id root="b1ab65ab-cd69-4834-abfc-b832b02241ce"/>
+              <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+              <text/>
+              <statusCode/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
     </substanceAdministration>
   </entry>
   <entry>
@@ -239,13 +315,13 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
       <templateId root="2.16.840.1.113883.10.20.1.24"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
       <templateId root="2.16.840.1.113883.3.88.11.83.8"/>
-      <id root="c5a33adc-7c51-41c0-baa1-cfad8bc67412"/>
-      <effectiveTime value="20110404"/>
+      <id root="c0de37e9-0969-48d7-b3e5-31548165a2e3"/>
+      <effectiveTime value="20110616"/>
       <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.46"/>
-          <id root="86171751-be07-4381-a3d7-21ee1d55736d"/>
+          <id root="307f49eb-f4f9-4d5d-a33e-2f00ad13fa9c"/>
           <code code="30973-2" codeSystemName="" displayName="Dose number"/>
           <statusCode/>
           <effectiveTime>
@@ -259,7 +335,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.47"/>
-          <id root="2689073d-f15c-4ba4-95ec-4288af0e47d9"/>
+          <id root="72d88d49-b31b-4ee6-8cad-0fcc46cc3ba4"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -272,7 +348,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
       <entryRelationship>
         <act moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.1.49"/>
-          <id root="0247861b-1877-419d-8a88-01c60cd7955b"/>
+          <id root="3caa0935-8d0c-4566-8d10-ed92e27d5c78"/>
           <effectiveTime>
             <low value="2011"/>
             <high value="2011"/>
@@ -282,7 +358,7 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.54"/>
-          <id root="f671ac8b-eb8c-46c9-8c72-a25454e238e0"/>
+          <id root="15ec3baa-a96c-46ca-9dd2-ac3cbcf903eb"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2011"/>
@@ -291,7 +367,165 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.55"/>
-              <id root="63cef313-a341-48fa-ba37-cc8b0672701c"/>
+              <id root="3525c922-d3f4-4cf2-9168-d4df2bc99bd9"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
+          <id root="9f8bc44a-dd3e-40fa-a66d-809822365245"/>
+          <code/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.1.49"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+          <id root="1b38ff09-bde7-4461-a5e9-40beaf32b3f2"/>
+          <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+          <text/>
+          <statusCode/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <supply>
+          <templateId root="2.16.840.1.113883.10.20.1.34"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+          <id root="82ba50ae-2228-4da0-84cf-0064c001e2f9"/>
+          <statusCode/>
+          <effectiveTime value="20110616"/>
+          <repeatNumber/>
+          <quantity/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.47"/>
+              <id root="55df1065-746e-4bff-bde6-0ea12b75ced4"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.1.43"/>
+              <id root="9f049ea9-b207-48fd-96a0-308b420a6b10"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <act moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.1.43"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+              <id root="f92d0a62-8233-4e50-9285-a8d82338cd70"/>
+              <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+              <text/>
+              <statusCode/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.3.88.11.83.8.1"/>
+          <id root="3e4cecad-d9bb-4ca3-9af7-678520433fa9"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <supply>
+          <templateId root="2.16.840.1.113883.10.20.1.34"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+          <templateId root="2.16.840.1.113883.3.88.11.83.8.3"/>
+          <id root="2b3c406c-993a-47db-92d6-557e9f354f3c"/>
+          <statusCode/>
+          <effectiveTime value="20110616"/>
+          <repeatNumber/>
+          <quantity/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.47"/>
+              <id root="4d158195-1b57-4a42-8929-40e12bac0b29"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.1.43"/>
+              <id root="397d7e74-1353-4795-80d3-b4023f9c1868"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <act moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.1.43"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+              <id root="eb692628-a37e-4a6b-ba7a-90298bc57e92"/>
+              <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+              <text/>
+              <statusCode/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.54"/>
+          <id root="78f0fefa-d7c9-4061-ae4e-ab1b893c458e"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.55"/>
+              <id root="5056c894-1349-487f-acc2-0380e62af293"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
               <statusCode code="completed"/>
               <effectiveTime>

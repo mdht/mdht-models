@@ -19,7 +19,7 @@
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <guardian xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="f1ec7268-71a5-46e6-a687-1f40351106ec"/>
+  <id root="c869f83e-ef9b-471f-8a17-f41a2a57464d"/>
 </guardian>]]></codeblock>
 </body>
 </topic>

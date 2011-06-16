@@ -64,7 +64,10 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-33)
 <ol class="ol" type="a">
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.title = 'insurance' or self.title = 'payers'</pre>
+</li>
+</ul>
+</li>
 </ol>
 </li>
 
@@ -89,13 +92,13 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.9"/&gt;
-  &lt;id root="5f2e16fd-0e89-4a3b-b3df-af2ecab621e8"/&gt;
+  &lt;id root="0528e238-4f7a-4e45-853a-1b31cfad7380"/&gt;
   &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/&gt;
   &lt;title&gt;Payment sources&lt;/title&gt;
   &lt;entry&gt;
     &lt;act classCode="ACT" moodCode="DEF"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.20"/&gt;
-      &lt;id root="cb7b5a6a-0251-4bd9-922a-c2d9c3cc78f0"/&gt;
+      &lt;id root="4b494cb5-64a7-4100-b200-038f66994083"/&gt;
       &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -105,7 +108,7 @@
       &lt;entryRelationship&gt;
         &lt;act classCode="ACT" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.1.26"/&gt;
-          &lt;id root="4ef05630-2f1a-471d-8a9d-0767f2b7a4be"/&gt;
+          &lt;id root="c6406819-f865-40c9-a1da-49905fd82148"/&gt;
           &lt;code/&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;

@@ -49,23 +49,38 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: the code/@nullFlavor attribute value is 'NA'</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the code/@nullFlavor attribute value is 'NA'<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.code.oclIsUndefined() implies self.code.nullFlavor = vocab::NullFlavor::NA</pre>
+</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: reference/@typeCode attribute value is either 'SPRT' (supporting documentation) or 'REFR' (reference material)<ul class="ul"><li class="li">External references are listed as either supporting documentation (typeCode='SPRT') or simply
 reference material (typeCode='REFR') for the reader. If this distinction is not supported by the
 source EMR system, the value of typeCode should be REFR.</li>
 </ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.reference-&gt;select(r| r.typeCode &lt;&gt; vocab::x_ActRelationshipExternalReference::REFR and r.typeCode &lt;&gt; vocab::x_ActRelationshipExternalReference::SPRT)-&gt;size() = 0</pre>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: the reference element contains an externalDocument element with @classCode = 'DOC' and @moodCode = 'EVN'.</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the reference element contains an externalDocument element with @classCode = 'DOC' and @moodCode = 'EVN'.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.reference.externalDocument-&gt;select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: the reference/externalDocument/id is present<ul class="ul"><li class="li">A link to the original document may be provided here. This shall be a URL where the referenced
 document can be located. For CDA, the link should also be present in the narrative inside the
 CDA Narrative in a &lt;linkHTML&gt; element.</li>
 </ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.reference-&gt;select(  r | r.externalDocument.id-&gt;isEmpty() )-&gt;size() = 0</pre>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: the reference/externalDocument/text is present to provide a link to the original document</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the reference/externalDocument/text is present to provide a link to the original document<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.reference-&gt;select(  r | r.externalDocument.text.reference.oclIsUndefined()  )-&gt;size() = 0</pre>
+</li>
+</ul>
+</li>
 
 </ol>
 
@@ -79,7 +94,7 @@ CDA Narrative in a &lt;linkHTML&gt; element.</li>
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4"/&gt;
-  &lt;id root="ccea0804-aba2-4458-bb54-4e916c7126de"/&gt;
+  &lt;id root="36e0e3c2-966d-4b89-90ac-77696f4d56f3"/&gt;
   &lt;text/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;

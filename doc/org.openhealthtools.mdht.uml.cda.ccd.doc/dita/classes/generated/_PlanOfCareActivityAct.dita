@@ -40,7 +40,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.25"/>
-  <id root="4ac8cdc9-8e54-4dbf-a95e-6287557a4138"/>
+  <id root="744077f0-aae2-4013-a52c-2a0618d88924"/>
   <effectiveTime>
     <low value="2011"/>
     <high value="2011"/>

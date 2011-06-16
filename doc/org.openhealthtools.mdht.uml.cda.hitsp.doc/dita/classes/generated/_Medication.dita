@@ -12,7 +12,7 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/Medication.html">IHE Medication</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>) (C83-[DE-8-CDA-2])</li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>effectiveTime</b></tt> (CONF-308)
+<li><b>MAY</b> contain at least one [1..*] <tt><b>effectiveTime</b></tt>, where its data type is IVL_TS (CONF-308)
 <ul><li>Indicate Medication Stopped: Used to express a "hard stop," such as the last Sig sequence in a tapering dose, where the last sequence is 'then D/C' or where the therapy/drug is used to treat a condition and that treatment is for a fixed duration with a hard stop, such as antibiotic treatment, etc.</li><li>Administration Timing: defines a specific administration or use time. Can be a text string (Morning, Evening, Before Meals, 1 Hour After Meals, 3 Hours After Meals, Before Bed) or an exact time.</li><li>Frequency: defines how often the medication is to be administered as events per unit of time. Often expressed as the number of times per day (e.g., four times a day), but may also include event-related information (e.g., 1 hour before meals, in the morning, at bedtime). Complimentary to Interval, although equivalent expressions may have different implications (e.g., every 8 hours versus 3 times a day).</li><li>Interval: defines how the product is to be administered as an interval of time. For example, every 8 hours. Complimentary to Frequency, although equivalent expressions may have different implications (e.g., every 8 hours versus 3 times a day).</li><li>Duration: for non-instantaneous administrations, indicates the length of time the administration should be continued. For example, (infuse) over 30 minutes.</li></ul></li>
 <li><b>MAY</b> contain at least one [1..*] <tt><b>routeCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.7 Medication Route FDA</tt><b> STATIC</b> 1 (CONF-309, CONF-310)
 <ul><li>The route is a coded value, and indicates how the medication is received by the patient (by mouth, intravenously, topically, et cetera).</li></ul></li>
@@ -49,12 +49,12 @@ administered/consumed</li></ul></li>
 product. For example: full body rash, nausea, rash
 resolved</li></ul><ol>
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ReactionObservation.html">CCD Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.54</tt>)</li></ol></li>
-<li><b>SHALL</b> satisfy: The time at which the medication was stopped is determined based on the content of the &lt;high&gt; element of the first &lt;effectiveTime&gt; element. (2.2.2.8.3)</li>
+<li><b>SHALL</b> satisfy: The time at which the medication was stopped is determined based on the content of the &lt;high&gt; element of the first &lt;effectiveTime&gt; element. (2.2.2.8.3)<ul><li><codeblock>[OCL]: self.effectiveTime-&gt;size() = 1</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The HL7 data type for PIVL_TS uses the institutionSpecified attribute to indicate whether it is the interval (time between dosing), or frequency (number of doses in a time period) that is important. If instititutionSpecified is not present or is set to false, then the time between dosing is important (every 8 hours). If true, then the frequency of administration is important (e.g., 3 times per day). (2.2.2.8.4)<ul><li>defines a specific administration or
 use time. Can be a text string (Morning, Evening,
 Before Meals, 1 Hour After Meals, 3 Hours After
 Meals, Before Bed) or an exact time</li></ul></li>
-<li>The first &lt;effectiveTime&gt; <b>SHALL</b> use the IVL_TS data type unless for a single administration, in which case, it <b>SHALL</b> use the TS data type. (C83-[DE-8-CDA-3])</li>
+<li>The first &lt;effectiveTime&gt; <b>SHALL</b> use the IVL_TS data type unless for a single administration, in which case, it <b>SHALL</b> use the TS data type. (C83-[DE-8-CDA-3])<ul><li><codeblock>[OCL]: self.effectiveTime-&gt;exists (ef : datatypes::SXCM_TS | not ef.oclIsUndefined())</codeblock></li></ul></li>
 <li>Medications that are administered based on activities of daily living <b>SHALL</b> identify the events that trigger administration in the &lt;event&gt; element beneath the &lt;effectiveTime&gt; element. The &lt;effectiveTime&gt; element <b>SHALL</b> be of type EIVL_TS. (C83-[DE-8.03-CDA-1])</li>
 <li>Medications that are administered at a specified frequency <b>SHALL</b> record the expected interval between doses in the &lt;period&gt; element beneath an &lt;effectiveTime&gt; of type PIVL_TS. The &lt;effectiveTime&gt; element <b>SHALL</b> have an institutionSpecified attribute value of "true". (C83-[DE-8.04-CDA-1])<ul><li>defines how often the medication is
 to be administered as events per unit of time. Often
@@ -69,18 +69,18 @@ administered as an interval of time. For example,
 every 8 hours. Complimentary to Frequency, although
 equivalent expressions may have different
 implications (e.g., every 8 hours versus 3 times a day)</li></ul></li>
-<li>doseQuantity/@unit, Dose Units <b>MAY</b> be present when needed. If present it <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.80.29 Unit of Measure (C154-[DE-8.08-1])</li>
+<li>doseQuantity/@unit, Dose Units <b>MAY</b> be present when needed. If present it <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.80.29 Unit of Measure (C154-[DE-8.08-1])<ul><li><codeblock>[OCL]: self.doseQuantity-&gt;exists(dq : datatypes::IVL_PQ | dq.unit='2.16.840.1.113883.3.88.12.80.29')</codeblock></li></ul></li>
 <li>When the coded product or brand name describes the strength or concentration of the medication, and the dosing is in administration units (e.g., 1 tablet, 2 capsules), units <b>SHOULD</b> contain the preferred name of the presentation units within braces { } using the units of presentation from the NCI Thesaurus (C154-[DE-8.08-2])</li>
-<li>The free text description of the delivery method <b>MAY</b> be included within a &lt;originalText&gt; element beneath the &lt;code&gt; element (C83-[DE-8.12-CDA-2])</li>
-<li><b>SHALL</b> satisfy: Contains one consumable element which contains the Medication Information template. The name and code for the medication are recorded in the &lt;consumable&gt; element.</li>
+<li>The free text description of the delivery method <b>MAY</b> be included within a &lt;originalText&gt; element beneath the &lt;code&gt; element (C83-[DE-8.12-CDA-2])<ul><li><codeblock>[OCL]: not self.code.originalText.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one consumable element which contains the Medication Information template. The name and code for the medication are recorded in the &lt;consumable&gt; element.<ul><li><codeblock>[OCL]: self.consumable.manufacturedProduct-&gt;exists(mp : cda::ManufacturedProduct | mp.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8.2'))</codeblock></li></ul></li>
 <li>The medication status <b>MAY</b> be recorded using the CCD Medication Status observation using the value set defined in the CCD (C154-[DE-8.20-1])<ul><li>If the medication is Active, Discharged, Chronic,
-Acute, etc</li></ul></li>
+Acute, etc</li></ul><ul><li><codeblock>[OCL]: self.hasObservationTemplate('2.16.840.1.113883.10.20.1.47')</codeblock></li></ul></li>
 <li>[0..*] indications <b>SHALL</b> be recorded using the Indication problem observation (templateID 2.16.840.1.113883.10.20.1.28) described in the CCD Implementation Guide. (C83-[DE-8.20-CDA-1])<ul><li>The medical condition or problem
 intended to be addressed by the ordered product. For
 example: for chest pain, for pain, for high blood
-pressure</li></ul></li>
-<li>The indication problem observation <b>SHALL</b> contain a &lt;text&gt; element that includes a &lt;reference&gt; element whose value attribute points to the narrative text that is the indication for the medication (C83-[DE-8.20-CDA-2])</li>
-<li>The indication <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic (C154-[DE-8.20-1])</li>
+pressure</li></ul><ul><li><codeblock>[OCL]: self.hasObservationTemplate('2.16.840.1.113883.10.20.1.28')</codeblock></li></ul></li>
+<li>The indication problem observation <b>SHALL</b> contain a &lt;text&gt; element that includes a &lt;reference&gt; element whose value attribute points to the narrative text that is the indication for the medication (C83-[DE-8.20-CDA-2])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.28') and not po.text.reference.oclIsUndefined())</codeblock></li></ul></li>
+<li>The indication <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic (C154-[DE-8.20-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.28') and po.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4')</codeblock></li></ul></li>
 <li>Patient Instructions <b>SHALL</b> be recorded using the Patient Medication Instructions template (templateID 1.3.6.1.4.1.19376.1.5.3.1.4.3) (C83-[DE-8.22-CDA-1])<ul><li><p>
 Instructions to the patient that are not traditionally part
 of the Sig. For example, "keep in the refrigerator."
@@ -89,20 +89,20 @@ be included
 </p>
 <p>
 External patient educational materials can be referenced with an appropriate URL entry in the text/ reference/value.
-</p></li></ul></li>
+</p></li></ul><ul><li><codeblock>[OCL]: self.hasActTemplate('1.3.6.1.4.1.19376.1.5.3.1.4.3')</codeblock></li></ul></li>
 <li>The vehicle for administering a medication <b>MAY</b> be recorded in a &lt;participantRole&gt; element inside a &lt;participant&gt; element in the &lt;substanceAdministration&gt; element (C83-[DE-8.24-CDA-1])<ul><li>Non-active ingredient(s), or
 substances not of therapeutic interest, in which the
 active ingredients are dispersed. Most often applied to
 liquid products where the major fluid component is
 considered the vehicle. For example: Normal Saline is
 the vehicle in "Ampicillin 150mg in 50ml NS";
-Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul></li>
-<li>The typeCode attribute of the &lt;participant&gt; element <b>SHALL</b> be CSM (C83-[DE-8.24-CDA-2])</li>
-<li>The classCode of the &lt;participantRole&gt; <b>SHALL</b> be MANU (C83-[DE-8.24-CDA-3])</li>
-<li>A &lt;code&gt; element for the &lt;participantRole&gt; <b>SHALL</b> be present and <b>SHALL</b> contain the code 412307009 from the SNOMED CT code system (C83-[DE-8.24-CDA-4])</li>
-<li>The &lt;name&gt; element in the &lt;playingEntity&gt; element <b>SHALL</b> record the name of the drug vehicle (C83-[DE-8.24-CDA-5])</li>
-<li>The &lt;code&gt; element in the &lt;playingEntity&gt; element <b>MAY</b> be used to supply a coded term for the drug vehicle (C83-[DE-8.24-CDA-6])</li>
-<li><b>SHALL</b> satisfy: The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic (C154-[DE-8.24-1])</li>
+Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul><ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant.participantRole-&gt;size() &gt; 0)</codeblock></li></ul></li>
+<li>The typeCode attribute of the &lt;participant&gt; element <b>SHALL</b> be CSM (C83-[DE-8.24-CDA-2])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM'))</codeblock></li></ul></li>
+<li>The classCode of the &lt;participantRole&gt; <b>SHALL</b> be MANU (C83-[DE-8.24-CDA-3])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU')))</codeblock></li></ul></li>
+<li>A &lt;code&gt; element for the &lt;participantRole&gt; <b>SHALL</b> be present and <b>SHALL</b> contain the code 412307009 from the SNOMED CT code system (C83-[DE-8.24-CDA-4])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96')))</codeblock></li></ul></li>
+<li>The &lt;name&gt; element in the &lt;playingEntity&gt; element <b>SHALL</b> record the name of the drug vehicle (C83-[DE-8.24-CDA-5])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.name-&gt;size() &gt; 0)))</codeblock></li></ul></li>
+<li>The &lt;code&gt; element in the &lt;playingEntity&gt; element <b>MAY</b> be used to supply a coded term for the drug vehicle (C83-[DE-8.24-CDA-6])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0)))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic (C154-[DE-8.24-1])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.3.88.12.80.21')))</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationActivity.html">CCD Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li>
@@ -119,7 +119,7 @@ administered/consumed</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-307)
 <ul><li>The status of all 'substanceAdministration' elements must be "completed". The act has either
 occurred, or the request or order has been placed.</li></ul></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>effectiveTime</b></tt> (CONF-308)
+<li><b>MAY</b> contain at least one [1..*] <tt><b>effectiveTime</b></tt>, where its data type is IVL_TS (CONF-308)
 <ul><li>Indicate Medication Stopped: Used to express a "hard stop," such as the last Sig sequence in a tapering dose, where the last sequence is 'then D/C' or where the therapy/drug is used to treat a condition and that treatment is for a fixed duration with a hard stop, such as antibiotic treatment, etc.</li><li>Administration Timing: defines a specific administration or use time. Can be a text string (Morning, Evening, Before Meals, 1 Hour After Meals, 3 Hours After Meals, Before Bed) or an exact time.</li><li>Frequency: defines how often the medication is to be administered as events per unit of time. Often expressed as the number of times per day (e.g., four times a day), but may also include event-related information (e.g., 1 hour before meals, in the morning, at bedtime). Complimentary to Interval, although equivalent expressions may have different implications (e.g., every 8 hours versus 3 times a day).</li><li>Interval: defines how the product is to be administered as an interval of time. For example, every 8 hours. Complimentary to Frequency, although equivalent expressions may have different implications (e.g., every 8 hours versus 3 times a day).</li><li>Duration: for non-instantaneous administrations, indicates the length of time the administration should be continued. For example, (infuse) over 30 minutes.</li></ul></li>
 <li><b>MAY</b> contain at least one [1..*] <tt><b>routeCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.7 Medication Route FDA</tt><b> STATIC</b> 1 (CONF-309, CONF-310)
 <ul><li>The route is a coded value, and indicates how the medication is received by the patient (by mouth, intravenously, topically, et cetera).</li></ul></li>
@@ -204,13 +204,16 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
 <li><b>SHALL</b> satisfy: Contains exactly one consumable, the target of which is a Product template. (CONF-354)<ul><li><codeblock>[OCL]: self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Contains one dosing template to identify this entry as a particular type of medication event. Possible dosing templates: 1.3.6.1.4.1.19376.1.5.3.1.4.7.1 Normal Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.8, Tapered Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.9 Split Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.10 Conditional Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.11 Combination Dosing.<ul><li>There are a variety of special cases for dosing that need to be accounted for. 
 Most of these special cases involve changing the dosage or frequency over time, or based on
-some measurement. When the dosage changes, then additional entries are required for each differing dosage.</li></ul></li>
+some measurement. When the dosage changes, then additional entries are required for each differing dosage.</li></ul><ul><li><codeblock>[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.1') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor self.templateId-&gt;exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.11')</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: contains one or more related components (&lt;entryRelationship typeCode='COMP'&gt;, either to handle split, tapered or conditional dosing, or to support combination medications.<ul><li>n the first three cases, the subordinate components shall specify only the changed &lt;frequency>
 and/or &lt;doseAmount> elements. For conditional dosing, each subordinate component shall have
 a &lt;precondition> element that specifies the &lt;observation> that must be obtained before
 administration of the dose. The value of the &lt;sequenceNumber> shall be an ordinal number,
 starting at 1 for the first component, and increasing by 1 for each subsequent component.
-Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
+Components shall be sent in &lt;sequenceNumber> order.</li></ul><ul><li><codeblock>[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship-&gt;exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Values from SNOMED CT shall be used in the &lt;code&gt; element to record that a patient is either not on medications, or that medications are not known.<ul><li><p>
 182904002 "Drug Treatment Unknown" (To indicate lack of knowledge about drug therapy)
 </p>
@@ -219,32 +222,26 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
 </p>
 <p>
 408350003 "Patient Not On Self-Medications" (To indicate no treatment)
-</p></li></ul></li>
-<li><b>SHALL</b> satisfy: The act/@classCode='ACT' and act/@moodCode='EVN' when recording reason for medication in InternalReference Template. (6.3.4.16.22)</li>
-<li><b>SHALL</b> satisfy: Contains [0..2] effectiveTime elements.<ul><li><p>
-The first &lt;effectiveTime> element encodes the start and stop time of the medication regimen.
-This an interval of time (xsi:type='IVL_TS'), and must be specified as shown. This is an
-additional constraint placed upon CDA Release 2.0 by this profile, and simplifies the exchange
-of start/stop and frequency information between EMR systems.
-</p></li></ul></li>
-<li><b>SHALL</b> satisfy: The &lt;consumable&gt; element shall be present, and shall contain a Product Entry template</li>
-<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'true' for Patient Medical Instructions relationship</li>
-<li><b>SHOULD</b> satisfy: The name and strength of the medication is recorded in consumable/manufacturedProduct/manufacturedMaterial/code/originalText</li>
-<li><b>SHALL</b> satisfy: Name of the substance or product is recorded in consumable/manufacturedProduct/manufacturedMaterial/name</li>
+</p></li></ul><ul><li><codeblock>[OCL]: true</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The act/@classCode='ACT' and act/@moodCode='EVN' when recording reason for medication in InternalReference Template. (6.3.4.16.22)<ul><li>self.internalReference->exists(ir : ihe::InternalReference | ar.classCode &lt;> 'ACT' or ar.moodCode &lt;> 'EVN')</li><li>OCL Issue - What is the internalReference relationship?  unable to get OCL to reference</li></ul><ul><li><codeblock>[OCL]: true</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The &lt;consumable&gt; element shall be present, and shall contain a Product Entry template<ul><li><codeblock>[OCL]: self.consumable.manufacturedProduct.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.2')</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'true' for Patient Medical Instructions relationship<ul><li>OCL Issue - What is the patientInstructions relationship?  unable to get OCL to reference</li></ul><ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists( er : cda::EntryRelationship | er.inversionInd &lt;&gt; true and er.act.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')  )</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: The name and strength of the medication is recorded in consumable/manufacturedProduct/manufacturedMaterial/code/originalText<ul><li><codeblock>[OCL]: not self.consumable.manufacturedProduct.manufacturedMaterial.code.oclIsUndefined() implies not self.consumable.manufacturedProduct.manufacturedMaterial.code.originalText.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Name of the substance or product is recorded in consumable/manufacturedProduct/manufacturedMaterial/name<ul><li><codeblock>[OCL]: not self.consumable.manufacturedProduct.manufacturedMaterial.name.oclIsUndefined()</codeblock></li></ul></li>
 <li><b>MAY</b> satisfy: the preconditions for use of the medication are recorded in the
 &lt;precondition&gt; element. element. The value attribute of the &lt;reference&gt; element is a URL that points to
-the CDA narrative describing those preconditions.</li>
-<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'false' for Supply Entry relationship</li>
+the CDA narrative describing those preconditions.<ul><li><codeblock>[OCL]: not self.precondition.criterion.text-&gt;exists (t | t.reference.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'false' for Supply Entry relationship<ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists(er : cda::EntryRelationship | (not er.supply-&gt;isEmpty()) and er.inversionInd&lt;&gt;false )</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: entryRelationship/sequenceNumber element should be present when the embedded 'supply' element has a
 moodCode attribute of EVN.<ul><li>The prescription activity may have a &lt;sequenceNumber> element to indicate the fill number. A
 value of 1, 2 or N indicates that it is the first, second, or Nth fill respectively of a specific
-prescription.</li></ul></li>
-<li><b>SHALL</b> satisfy: The time at which the medication was stopped is determined based on the content of the &lt;high&gt; element of the first &lt;effectiveTime&gt; element. (2.2.2.8.3)</li>
+prescription.</li></ul><ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists(er| (not er.supply-&gt;isEmpty()) and er.sequenceNumber.value.oclIsUndefined() )</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The time at which the medication was stopped is determined based on the content of the &lt;high&gt; element of the first &lt;effectiveTime&gt; element. (2.2.2.8.3)<ul><li><codeblock>[OCL]: self.effectiveTime-&gt;size() = 1</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The HL7 data type for PIVL_TS uses the institutionSpecified attribute to indicate whether it is the interval (time between dosing), or frequency (number of doses in a time period) that is important. If instititutionSpecified is not present or is set to false, then the time between dosing is important (every 8 hours). If true, then the frequency of administration is important (e.g., 3 times per day). (2.2.2.8.4)<ul><li>defines a specific administration or
 use time. Can be a text string (Morning, Evening,
 Before Meals, 1 Hour After Meals, 3 Hours After
 Meals, Before Bed) or an exact time</li></ul></li>
-<li>The first &lt;effectiveTime&gt; <b>SHALL</b> use the IVL_TS data type unless for a single administration, in which case, it <b>SHALL</b> use the TS data type. (C83-[DE-8-CDA-3])</li>
+<li>The first &lt;effectiveTime&gt; <b>SHALL</b> use the IVL_TS data type unless for a single administration, in which case, it <b>SHALL</b> use the TS data type. (C83-[DE-8-CDA-3])<ul><li><codeblock>[OCL]: self.effectiveTime-&gt;exists (ef : datatypes::SXCM_TS | not ef.oclIsUndefined())</codeblock></li></ul></li>
 <li>Medications that are administered based on activities of daily living <b>SHALL</b> identify the events that trigger administration in the &lt;event&gt; element beneath the &lt;effectiveTime&gt; element. The &lt;effectiveTime&gt; element <b>SHALL</b> be of type EIVL_TS. (C83-[DE-8.03-CDA-1])</li>
 <li>Medications that are administered at a specified frequency <b>SHALL</b> record the expected interval between doses in the &lt;period&gt; element beneath an &lt;effectiveTime&gt; of type PIVL_TS. The &lt;effectiveTime&gt; element <b>SHALL</b> have an institutionSpecified attribute value of "true". (C83-[DE-8.04-CDA-1])<ul><li>defines how often the medication is
 to be administered as events per unit of time. Often
@@ -259,18 +256,18 @@ administered as an interval of time. For example,
 every 8 hours. Complimentary to Frequency, although
 equivalent expressions may have different
 implications (e.g., every 8 hours versus 3 times a day)</li></ul></li>
-<li>doseQuantity/@unit, Dose Units <b>MAY</b> be present when needed. If present it <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.80.29 Unit of Measure (C154-[DE-8.08-1])</li>
+<li>doseQuantity/@unit, Dose Units <b>MAY</b> be present when needed. If present it <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.80.29 Unit of Measure (C154-[DE-8.08-1])<ul><li><codeblock>[OCL]: self.doseQuantity-&gt;exists(dq : datatypes::IVL_PQ | dq.unit='2.16.840.1.113883.3.88.12.80.29')</codeblock></li></ul></li>
 <li>When the coded product or brand name describes the strength or concentration of the medication, and the dosing is in administration units (e.g., 1 tablet, 2 capsules), units <b>SHOULD</b> contain the preferred name of the presentation units within braces { } using the units of presentation from the NCI Thesaurus (C154-[DE-8.08-2])</li>
-<li>The free text description of the delivery method <b>MAY</b> be included within a &lt;originalText&gt; element beneath the &lt;code&gt; element (C83-[DE-8.12-CDA-2])</li>
-<li><b>SHALL</b> satisfy: Contains one consumable element which contains the Medication Information template. The name and code for the medication are recorded in the &lt;consumable&gt; element.</li>
+<li>The free text description of the delivery method <b>MAY</b> be included within a &lt;originalText&gt; element beneath the &lt;code&gt; element (C83-[DE-8.12-CDA-2])<ul><li><codeblock>[OCL]: not self.code.originalText.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one consumable element which contains the Medication Information template. The name and code for the medication are recorded in the &lt;consumable&gt; element.<ul><li><codeblock>[OCL]: self.consumable.manufacturedProduct-&gt;exists(mp : cda::ManufacturedProduct | mp.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8.2'))</codeblock></li></ul></li>
 <li>The medication status <b>MAY</b> be recorded using the CCD Medication Status observation using the value set defined in the CCD (C154-[DE-8.20-1])<ul><li>If the medication is Active, Discharged, Chronic,
-Acute, etc</li></ul></li>
+Acute, etc</li></ul><ul><li><codeblock>[OCL]: self.hasObservationTemplate('2.16.840.1.113883.10.20.1.47')</codeblock></li></ul></li>
 <li>[0..*] indications <b>SHALL</b> be recorded using the Indication problem observation (templateID 2.16.840.1.113883.10.20.1.28) described in the CCD Implementation Guide. (C83-[DE-8.20-CDA-1])<ul><li>The medical condition or problem
 intended to be addressed by the ordered product. For
 example: for chest pain, for pain, for high blood
-pressure</li></ul></li>
-<li>The indication problem observation <b>SHALL</b> contain a &lt;text&gt; element that includes a &lt;reference&gt; element whose value attribute points to the narrative text that is the indication for the medication (C83-[DE-8.20-CDA-2])</li>
-<li>The indication <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic (C154-[DE-8.20-1])</li>
+pressure</li></ul><ul><li><codeblock>[OCL]: self.hasObservationTemplate('2.16.840.1.113883.10.20.1.28')</codeblock></li></ul></li>
+<li>The indication problem observation <b>SHALL</b> contain a &lt;text&gt; element that includes a &lt;reference&gt; element whose value attribute points to the narrative text that is the indication for the medication (C83-[DE-8.20-CDA-2])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.28') and not po.text.reference.oclIsUndefined())</codeblock></li></ul></li>
+<li>The indication <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic (C154-[DE-8.20-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.28') and po.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4')</codeblock></li></ul></li>
 <li>Patient Instructions <b>SHALL</b> be recorded using the Patient Medication Instructions template (templateID 1.3.6.1.4.1.19376.1.5.3.1.4.3) (C83-[DE-8.22-CDA-1])<ul><li><p>
 Instructions to the patient that are not traditionally part
 of the Sig. For example, "keep in the refrigerator."
@@ -279,30 +276,30 @@ be included
 </p>
 <p>
 External patient educational materials can be referenced with an appropriate URL entry in the text/ reference/value.
-</p></li></ul></li>
+</p></li></ul><ul><li><codeblock>[OCL]: self.hasActTemplate('1.3.6.1.4.1.19376.1.5.3.1.4.3')</codeblock></li></ul></li>
 <li>The vehicle for administering a medication <b>MAY</b> be recorded in a &lt;participantRole&gt; element inside a &lt;participant&gt; element in the &lt;substanceAdministration&gt; element (C83-[DE-8.24-CDA-1])<ul><li>Non-active ingredient(s), or
 substances not of therapeutic interest, in which the
 active ingredients are dispersed. Most often applied to
 liquid products where the major fluid component is
 considered the vehicle. For example: Normal Saline is
 the vehicle in "Ampicillin 150mg in 50ml NS";
-Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul></li>
-<li>The typeCode attribute of the &lt;participant&gt; element <b>SHALL</b> be CSM (C83-[DE-8.24-CDA-2])</li>
-<li>The classCode of the &lt;participantRole&gt; <b>SHALL</b> be MANU (C83-[DE-8.24-CDA-3])</li>
-<li>A &lt;code&gt; element for the &lt;participantRole&gt; <b>SHALL</b> be present and <b>SHALL</b> contain the code 412307009 from the SNOMED CT code system (C83-[DE-8.24-CDA-4])</li>
-<li>The &lt;name&gt; element in the &lt;playingEntity&gt; element <b>SHALL</b> record the name of the drug vehicle (C83-[DE-8.24-CDA-5])</li>
-<li>The &lt;code&gt; element in the &lt;playingEntity&gt; element <b>MAY</b> be used to supply a coded term for the drug vehicle (C83-[DE-8.24-CDA-6])</li>
-<li><b>SHALL</b> satisfy: The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic (C154-[DE-8.24-1])</li>
+Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul><ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant.participantRole-&gt;size() &gt; 0)</codeblock></li></ul></li>
+<li>The typeCode attribute of the &lt;participant&gt; element <b>SHALL</b> be CSM (C83-[DE-8.24-CDA-2])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM'))</codeblock></li></ul></li>
+<li>The classCode of the &lt;participantRole&gt; <b>SHALL</b> be MANU (C83-[DE-8.24-CDA-3])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU')))</codeblock></li></ul></li>
+<li>A &lt;code&gt; element for the &lt;participantRole&gt; <b>SHALL</b> be present and <b>SHALL</b> contain the code 412307009 from the SNOMED CT code system (C83-[DE-8.24-CDA-4])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96')))</codeblock></li></ul></li>
+<li>The &lt;name&gt; element in the &lt;playingEntity&gt; element <b>SHALL</b> record the name of the drug vehicle (C83-[DE-8.24-CDA-5])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.name-&gt;size() &gt; 0)))</codeblock></li></ul></li>
+<li>The &lt;code&gt; element in the &lt;playingEntity&gt; element <b>MAY</b> be used to supply a coded term for the drug vehicle (C83-[DE-8.24-CDA-6])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0)))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic (C154-[DE-8.24-1])<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.3.88.12.80.21')))</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.24"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.8"/>
-  <id root="2ee1e41d-4d4e-4830-b188-4e31b403274a"/>
+  <id root="b5d21243-42c7-4e8f-a5fa-a030ac74b2cb"/>
   <code/>
   <statusCode/>
-  <effectiveTime value="20110404"/>
+  <effectiveTime value="20110616"/>
   <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
   <approachSiteCode/>
   <doseQuantity/>
@@ -312,7 +309,7 @@ Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul></li>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.46"/>
-      <id root="9e622afd-8d0c-4f97-8124-dd15fb94bcf5"/>
+      <id root="8f432a1f-5b94-4fad-8492-e37c4f645de1"/>
       <code code="30973-2" codeSystemName="" displayName="Dose number"/>
       <statusCode/>
       <effectiveTime>
@@ -326,7 +323,7 @@ Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul></li>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.47"/>
-      <id root="d17b60bc-5887-46ef-ac1c-5ca452e61dbe"/>
+      <id root="309174a2-a777-497e-bc2b-1a380e1af3f9"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -339,7 +336,7 @@ Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul></li>
   <entryRelationship>
     <act moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.1.49"/>
-      <id root="6da58824-67e7-42de-b673-ff5ca1faae60"/>
+      <id root="f05b31a1-dc11-4607-b280-e582dbb7df10"/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>
@@ -349,7 +346,7 @@ Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul></li>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.54"/>
-      <id root="2600fa2e-d161-468f-a203-f6084221d969"/>
+      <id root="7bdaedff-d425-45c6-af41-4835125e02fe"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2011"/>
@@ -358,7 +355,165 @@ Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul></li>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.55"/>
-          <id root="7ddecf73-de04-41f0-b1fd-7d757f266fea"/>
+          <id root="24495f32-d2ca-4bf2-9710-994155a6c903"/>
+          <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
+      <id root="c3765af2-7820-4ddb-bf05-ad905268d36b"/>
+      <code/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.1.49"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+      <id root="484d402a-cc01-4ab4-9cdf-408409e926ff"/>
+      <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+      <text/>
+      <statusCode/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <supply>
+      <templateId root="2.16.840.1.113883.10.20.1.34"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+      <id root="789b758f-07c8-424e-9078-337bd4867d83"/>
+      <statusCode/>
+      <effectiveTime value="20110616"/>
+      <repeatNumber/>
+      <quantity/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.47"/>
+          <id root="5dbb5855-1d44-4851-8c68-9de5570caf84"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CE"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.1.43"/>
+          <id root="127b4745-85e6-49e8-a46c-7982150b5c1e"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.1.43"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+          <id root="902eb5ac-85fc-4622-8889-04a94f259866"/>
+          <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+          <text/>
+          <statusCode/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </supply>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.3.88.11.83.8.1"/>
+      <id root="7e168f59-b3c1-43aa-a3e0-6257f744b7ee"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <supply>
+      <templateId root="2.16.840.1.113883.10.20.1.34"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+      <templateId root="2.16.840.1.113883.3.88.11.83.8.3"/>
+      <id root="5f701b7a-8409-47f2-9b2a-a98d92249ac3"/>
+      <statusCode/>
+      <effectiveTime value="20110616"/>
+      <repeatNumber/>
+      <quantity/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.47"/>
+          <id root="803229e1-a2a5-4a55-9952-f4ee6ecd1375"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CE"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.1.43"/>
+          <id root="a1a6b405-fa13-4f99-aeac-d5612830679f"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.1.43"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+          <id root="1f70900d-125d-4d45-b342-9371254cfc77"/>
+          <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+          <text/>
+          <statusCode/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </supply>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.54"/>
+      <id root="5e619615-1e9d-4669-a7be-f091cc4f2907"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.55"/>
+          <id root="e97bcb6b-d5d9-4bdf-92e9-cee4e4a67a0e"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
           <statusCode code="completed"/>
           <effectiveTime>

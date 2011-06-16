@@ -38,7 +38,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.25"/>
-  <id root="0411a1d2-56ea-4c48-be6d-d0b38cef14a1"/>
+  <id root="a12d1071-caf5-456f-853b-1fb00191c393"/>
   <effectiveTime>
     <low value="2011"/>
     <high value="2011"/>

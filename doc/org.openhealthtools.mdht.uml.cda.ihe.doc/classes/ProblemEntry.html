@@ -111,7 +111,7 @@
 </ul>
 </li>
 
-<li class="li">If entryRelationship / Comment is present, then entryRelationship <strong class="ph b">SHALL</strong> include inversionInd = 'true'.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd='true')</pre>
+<li class="li">If entryRelationship / Comment is present, then entryRelationship <strong class="ph b">SHALL</strong> include inversionInd = 'true'.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd=true)</pre>
 </li>
 </ul>
 </li>
@@ -129,7 +129,7 @@
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/&gt;
-  &lt;id root="1c6997b4-5d2d-4da8-94a8-ed6c5c9770b5"/&gt;
+  &lt;id root="631f1238-93b9-450b-82d8-175ac88f8bef"/&gt;
   &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
   &lt;text/&gt;
   &lt;statusCode code="completed"/&gt;
@@ -142,7 +142,7 @@
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
-      &lt;id root="bd6d15c9-c941-4ee4-839f-9fceed670942"/&gt;
+      &lt;id root="ecd9f394-487f-4659-9db9-a8a11ccd5b36"/&gt;
       &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -156,7 +156,7 @@
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
-      &lt;id root="3e2eade5-d4f2-42ff-8e2b-d5de451b251c"/&gt;
+      &lt;id root="e2e6f243-e973-4eb8-846b-37511395675c"/&gt;
       &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -169,7 +169,7 @@
   &lt;entryRelationship&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
-      &lt;id root="c0d626f5-1904-4222-bbf8-1cc5969fc69e"/&gt;
+      &lt;id root="e5bb5e01-7e76-435c-b824-08c7b3ac2590"/&gt;
       &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -182,7 +182,7 @@
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
       &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/&gt;
-      &lt;id root="53869b7e-73a8-4958-b0e8-1882800bb35d"/&gt;
+      &lt;id root="2d2a0468-8559-4c2c-b6a0-87cd87ed1eea"/&gt;
       &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
       &lt;text/&gt;
       &lt;statusCode code="completed"/&gt;
@@ -198,7 +198,7 @@
       &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
       &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/&gt;
-      &lt;id root="b39807f2-35cb-4601-acc5-df960a14496c"/&gt;
+      &lt;id root="50cdede4-9ea6-44eb-b1b5-da80c13a9690"/&gt;
       &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -212,7 +212,7 @@
       &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
       &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/&gt;
-      &lt;id root="9edad223-e3db-46c4-9b2f-5981b3a8c0ad"/&gt;
+      &lt;id root="9942cdbc-063a-4abf-a8a9-9b03a4e10a96"/&gt;
       &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
       &lt;text/&gt;
       &lt;statusCode code="completed"/&gt;
@@ -227,7 +227,7 @@
     &lt;act classCode="ACT" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.40"/&gt;
       &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/&gt;
-      &lt;id root="4aad8133-ae18-4467-a69f-b6b62baeb233"/&gt;
+      &lt;id root="875b4a76-985c-4a7e-bb89-e60349add72d"/&gt;
       &lt;code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;

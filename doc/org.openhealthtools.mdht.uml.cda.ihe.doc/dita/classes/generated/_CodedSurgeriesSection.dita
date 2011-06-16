@@ -36,7 +36,7 @@ described in the Entry Content Modules.</p>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProcedureEntryProcedureActivityProcedure.dita">Procedure Entry Procedure Activity Procedure</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)</li>
+<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ul><li><codeblock>[OCL]: self.title = 'procedures'</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure (CONF-422)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
@@ -44,9 +44,57 @@ described in the Entry Content Modules.</p>
   <templateId root="2.16.840.1.113883.10.20.1.12"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12"/>
-  <id root="0b477d15-a57f-4daa-bb2d-d9e9503f6454"/>
+  <id root="0a6ee588-10a0-4c2b-b77f-92283a5175df"/>
   <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
   <title>History of procedures</title>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4"/>
+      <id root="a9de4676-60fa-4d67-b5c2-99a3d57d3dfe"/>
+      <text/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entry>
+  <entry>
+    <procedure classCode="PROC">
+      <templateId root="2.16.840.1.113883.10.20.1.29"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+      <id root="3438c0ac-f205-4576-8e5e-c598cd43e823"/>
+      <code/>
+      <text/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <approachSiteCode/>
+      <entryRelationship>
+        <act>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
+          <id root="65db51ed-6d83-4c4e-b0ec-95b7e3a5a53c"/>
+          <code/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
+          <id root="c973a7d9-6bdf-4063-b51b-291f773f3b9c"/>
+          <code/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </procedure>
+  </entry>
 </section>]]></codeblock>
 </body>
 </topic>

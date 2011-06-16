@@ -22,7 +22,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-422)
 <ol>
-<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ol>
+<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ul><li><codeblock>[OCL]: self.title = 'procedures'</codeblock></li></ul><ol>
 <li><b>SHOULD</b> satisfy: include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure (CONF-422)</li></ol></li></ol></li>
 </ol>
 <ol id="aggregate">
@@ -32,15 +32,15 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-422)
 <ol>
-<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ol>
+<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ul><li><codeblock>[OCL]: self.title = 'procedures'</codeblock></li></ul><ol>
 <li><b>SHOULD</b> satisfy: include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure (CONF-422)</li></ol></li></ol></li>
-<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)</li>
+<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ul><li><codeblock>[OCL]: self.title = 'procedures'</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure (CONF-422)</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.12"/>
-  <id root="61363b66-c198-4b87-9aa8-07c3acac1fb3"/>
+  <id root="64308460-c387-4d60-b0c6-49280de3898c"/>
   <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
   <title>History of procedures</title>
 </section>]]></codeblock>

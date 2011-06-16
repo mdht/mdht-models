@@ -20,7 +20,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-376)
 </li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)<ul><li><codeblock>[OCL]: self.title = 'immunization'</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../MedicationsSection.dita">Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li>
@@ -39,13 +39,13 @@
 <li><b>SHOULD</b> satisfy: Clinical statements include one or more Medication Activity and/or one or more Supply Activity. (CONF-298)<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))
    or self.getSupplies()-&gt;exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The absence of known medications is explicitly asserted. (CONF-299)</li>
-<li><b>SHOULD</b> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)</li>
+<li><b>SHOULD</b> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)<ul><li><codeblock>[OCL]: self.title = 'medication'</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)<ul><li><codeblock>[OCL]: self.title = 'immunization'</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.6"/>
-  <id root="ae3a0c44-d31e-43a1-904b-27fc452d01c1"/>
+  <id root="c84194b9-23f9-462b-b7f6-8b61125d9079"/>
   <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
   <title>History of immunizations</title>
 </section>]]></codeblock>

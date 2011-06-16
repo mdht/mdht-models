@@ -19,15 +19,15 @@
 </li>
 <li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
 </li>
-<li><b>SHALL</b> satisfy: the code/@nullFlavor attribute value is 'NA'</li>
+<li><b>SHALL</b> satisfy: the code/@nullFlavor attribute value is 'NA'<ul><li><codeblock>[OCL]: not self.code.oclIsUndefined() implies self.code.nullFlavor = vocab::NullFlavor::NA</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: reference/@typeCode attribute value is either 'SPRT' (supporting documentation) or 'REFR' (reference material)<ul><li>External references are listed as either supporting documentation (typeCode='SPRT') or simply
 reference material (typeCode='REFR') for the reader. If this distinction is not supported by the
-source EMR system, the value of typeCode should be REFR.</li></ul></li>
-<li><b>SHALL</b> satisfy: the reference element contains an externalDocument element with @classCode = 'DOC' and @moodCode = 'EVN'.</li>
+source EMR system, the value of typeCode should be REFR.</li></ul><ul><li><codeblock>[OCL]: self.reference-&gt;select(r| r.typeCode &lt;&gt; vocab::x_ActRelationshipExternalReference::REFR and r.typeCode &lt;&gt; vocab::x_ActRelationshipExternalReference::SPRT)-&gt;size() = 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the reference element contains an externalDocument element with @classCode = 'DOC' and @moodCode = 'EVN'.<ul><li><codeblock>[OCL]: self.reference.externalDocument-&gt;select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )-&gt;size() = 1</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: the reference/externalDocument/id is present<ul><li>A link to the original document may be provided here. This shall be a URL where the referenced
 document can be located. For CDA, the link should also be present in the narrative inside the
-CDA Narrative in a &lt;linkHTML> element.</li></ul></li>
-<li><b>SHALL</b> satisfy: the reference/externalDocument/text is present to provide a link to the original document</li>
+CDA Narrative in a &lt;linkHTML> element.</li></ul><ul><li><codeblock>[OCL]: self.reference-&gt;select(  r | r.externalDocument.id-&gt;isEmpty() )-&gt;size() = 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the reference/externalDocument/text is present to provide a link to the original document<ul><li><codeblock>[OCL]: self.reference-&gt;select(  r | r.externalDocument.text.reference.oclIsUndefined()  )-&gt;size() = 0</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
@@ -40,20 +40,20 @@ CDA Narrative in a &lt;linkHTML> element.</li></ul></li>
 </li>
 <li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
 </li>
-<li><b>SHALL</b> satisfy: the code/@nullFlavor attribute value is 'NA'</li>
+<li><b>SHALL</b> satisfy: the code/@nullFlavor attribute value is 'NA'<ul><li><codeblock>[OCL]: not self.code.oclIsUndefined() implies self.code.nullFlavor = vocab::NullFlavor::NA</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: reference/@typeCode attribute value is either 'SPRT' (supporting documentation) or 'REFR' (reference material)<ul><li>External references are listed as either supporting documentation (typeCode='SPRT') or simply
 reference material (typeCode='REFR') for the reader. If this distinction is not supported by the
-source EMR system, the value of typeCode should be REFR.</li></ul></li>
-<li><b>SHALL</b> satisfy: the reference element contains an externalDocument element with @classCode = 'DOC' and @moodCode = 'EVN'.</li>
+source EMR system, the value of typeCode should be REFR.</li></ul><ul><li><codeblock>[OCL]: self.reference-&gt;select(r| r.typeCode &lt;&gt; vocab::x_ActRelationshipExternalReference::REFR and r.typeCode &lt;&gt; vocab::x_ActRelationshipExternalReference::SPRT)-&gt;size() = 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the reference element contains an externalDocument element with @classCode = 'DOC' and @moodCode = 'EVN'.<ul><li><codeblock>[OCL]: self.reference.externalDocument-&gt;select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )-&gt;size() = 1</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: the reference/externalDocument/id is present<ul><li>A link to the original document may be provided here. This shall be a URL where the referenced
 document can be located. For CDA, the link should also be present in the narrative inside the
-CDA Narrative in a &lt;linkHTML> element.</li></ul></li>
-<li><b>SHALL</b> satisfy: the reference/externalDocument/text is present to provide a link to the original document</li>
+CDA Narrative in a &lt;linkHTML> element.</li></ul><ul><li><codeblock>[OCL]: self.reference-&gt;select(  r | r.externalDocument.id-&gt;isEmpty() )-&gt;size() = 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the reference/externalDocument/text is present to provide a link to the original document<ul><li><codeblock>[OCL]: self.reference-&gt;select(  r | r.externalDocument.text.reference.oclIsUndefined()  )-&gt;size() = 0</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4"/>
-  <id root="7022c032-fc6a-4cfa-a8b0-a80d4b17d386"/>
+  <id root="36e0e3c2-966d-4b89-90ac-77696f4d56f3"/>
   <text/>
   <effectiveTime>
     <low value="2011"/>

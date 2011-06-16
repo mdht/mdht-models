@@ -14,22 +14,35 @@
 <li><b>SHALL</b> conform to <xref href="../LevelTwoConformance.dita">Level Two Conformance</xref> template (templateId: <tt>2.16.840.1.113883.10.20.20</tt>)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to CDA Clinical Document</li>
 <li><b>SHALL</b> conform to <xref href="../LevelOneConformance.dita">Level One Conformance</xref> template (templateId: <tt>2.16.840.1.113883.10.20.10</tt>)</li>
 <li><b>SHALL</b> conform to <xref href="../LevelTwoConformance.dita">Level Two Conformance</xref> template (templateId: <tt>2.16.840.1.113883.10.20.20</tt>)</li>
-<li>[CDA] Contains [1..1] <tt>id</tt>, where its data type is II</li>
-<li>[CDA] Contains [1..1] <tt>code</tt>, where its data type is CE</li>
-<li>[CDA] Contains [1..1] <tt>effectiveTime</tt>, where its data type is TS</li>
-<li>[CDA] Contains [1..1] <tt>confidentialityCode</tt>, where its data type is CE</li>
-<li>[CDA] Contains [1..*] <tt>author</tt>, where its type is CDA Author</li>
-<li>[CDA] Contains [1..1] <tt>custodian</tt>, where its type is CDA Custodian</li>
-<li>[CDA] Contains [1..1] <tt>component</tt>, where its type is CDA Component2</li>
+<li>Contains exactly one [1..1] <tt><b>typeId</b></tt>, where its data type is InfrastructureRootTypeId
+</li>
+<li>Contains exactly one [1..1] <tt><b>id</b></tt>, where its data type is II
+</li>
+<li>Contains exactly one [1..1] <tt><b>code</b></tt>, where its data type is CE
+</li>
+<li>Contains exactly one [1..1] <tt><b>effectiveTime</b></tt>, where its data type is TS
+</li>
+<li>Contains exactly one [1..1] <tt><b>confidentialityCode</b></tt>, where its data type is CE
+</li>
+<li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, where its type is <xref href="../RecordTarget.dita">Record Target</xref>
+</li>
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is <xref href="../Author.dita">Author</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is <xref href="../Custodian.dita">Custodian</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <templateId root="2.16.840.1.113883.10.20.10" assigningAuthorityName="CDT Level One Conformance"/>
-  <templateId root="2.16.840.1.113883.10.20.20" assigningAuthorityName="CDT Level Two Conformance"/>
-  <templateId root="2.16.840.1.113883.10.20.30" assigningAuthorityName="CDT Level Three Conformance"/>
+  <templateId root="2.16.840.1.113883.10.20.10"/>
+  <templateId root="2.16.840.1.113883.10.20.20"/>
+  <templateId root="2.16.840.1.113883.10.20.30"/>
+  <id root="d306abec-7126-4988-877a-b4b5e8c2daee"/>
+  <title/>
+  <effectiveTime/>
 </ClinicalDocument>]]></codeblock>
 </body>
 </topic>

@@ -64,8 +64,8 @@ historical purposes.
 <li>The effectiveTime 'low' element <b>SHALL</b> be present. The 'high' element <b>SHALL</b> be present for concerns in the completed or aborted state, and <b>SHALL NOT</b> be present otherwise.<ul><li><codeblock>[OCL]: not self.effectiveTime.low.oclIsUndefined()
    and ((self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined())
    and ((self.statusCode.code &lt;&gt; 'completed' and self.statusCode.code &lt;&gt; 'aborted') implies self.effectiveTime.high.oclIsUndefined())</codeblock></li></ul></li>
-<li>This entry <b>SHALL</b> contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances.<ul><li>Each concern is about one or more related problems or allergies. This is how a series of related observations can be grouped as a single concern.</li></ul></li>
-<li>This <b>SHALL</b> be represented using entryRelationship with typeCode = 'SUBJ'</li>
+<li>This entry <b>SHALL</b> contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances.<ul><li>Each concern is about one or more related problems or allergies. This is how a series of related observations can be grouped as a single concern.</li></ul><ul><li><codeblock>[OCL]: self.entryRelationship.observation.templateId-&gt;exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.5') or self.entryRelationship.observation.templateId-&gt;exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.6')</codeblock></li></ul></li>
+<li>This <b>SHALL</b> be represented using entryRelationship with typeCode = 'SUBJ'<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;select(er|er.typeCode &lt;&gt; vocab::x_ActRelationshipEntryRelationship::SUBJ)-&gt;isEmpty()</codeblock></li></ul></li>
 <li>Each concern <b>MAY</b> have 0 or more related references. This <b>MAY</b> be any valid CDA clinical statement, and <b>SHOULD</b> be an IHE entry template.<ul><li>These may be used to represent related statements such related visits.</li></ul></li>
 <li>Related References <b>SHALL</b> be represented using entryRelationship with typeCode = 'REFR'.</li>
 </ol>
@@ -74,7 +74,7 @@ historical purposes.
   <templateId root="2.16.840.1.113883.10.20.1.27"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
-  <id root="c2f70de6-1165-40c2-878f-f735f68ed5c0"/>
+  <id root="d2dc508a-3b09-4a56-b615-5cce8afb7a8a"/>
   <code nullFlavor="NA"/>
   <statusCode/>
   <effectiveTime>
@@ -84,7 +84,7 @@ historical purposes.
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.41"/>
-      <id root="70800fae-dc7b-44b1-8f5e-70cb288b795d"/>
+      <id root="47f29eeb-130d-43a8-b90b-ba84ccbf873c"/>
       <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -97,7 +97,7 @@ historical purposes.
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.28"/>
-      <id root="758ff15d-7df3-43a5-b602-aa60defb911f"/>
+      <id root="e90053b8-0278-4456-9300-b85f9febdedf"/>
       <code/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -108,7 +108,7 @@ historical purposes.
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.50"/>
-          <id root="31523ca8-894b-43e2-a29b-9c784f7e77ee"/>
+          <id root="665a7da0-cbbe-48db-be45-6c197fc591fd"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -122,7 +122,7 @@ historical purposes.
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.51"/>
-          <id root="b6236979-0bfb-42c8-8bba-3478386996db"/>
+          <id root="7fc20f7d-b931-4738-a858-2eec5a59c03f"/>
           <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -135,7 +135,7 @@ historical purposes.
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.38"/>
-          <id root="dd7534c8-7f4e-4412-b2a0-6ff17de7abc6"/>
+          <id root="03c868cc-dc03-43b4-962e-0b041772cbdd"/>
           <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -150,7 +150,7 @@ historical purposes.
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.28"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-      <id root="0b62d55e-3b45-489b-b61a-46bedcc30037"/>
+      <id root="74397323-026f-4154-b1bd-a61f77734148"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <text/>
       <statusCode code="completed"/>
@@ -163,7 +163,7 @@ historical purposes.
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.50"/>
-          <id root="7fd83475-2edf-468b-aa65-096e021eaf31"/>
+          <id root="1c1f7cb7-3a4e-4426-b44d-7a69b5671a6e"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -177,7 +177,7 @@ historical purposes.
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.51"/>
-          <id root="41cd5852-c4a5-4cf2-8ad6-ce30a6053ed6"/>
+          <id root="489da19a-c5fa-40ae-aa2e-d7ec1f5d88c5"/>
           <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -190,7 +190,7 @@ historical purposes.
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.38"/>
-          <id root="ca946325-1258-4d36-b127-c092361f5921"/>
+          <id root="f61fdaf4-1394-4012-a561-d7261f62cdb9"/>
           <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -203,7 +203,7 @@ historical purposes.
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.55"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
-          <id root="508d5be3-9c79-4cf3-8043-a79f3dea81cd"/>
+          <id root="dd753bf3-6541-4caa-8104-586c077c1b98"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
           <text/>
           <statusCode code="completed"/>
@@ -219,7 +219,7 @@ historical purposes.
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.50"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
-          <id root="dfdf6977-dcdb-402e-8e17-ab5cbf9dff1a"/>
+          <id root="c2c05374-7ac3-44ab-aeff-d9aac3ed3272"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -233,7 +233,7 @@ historical purposes.
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.51"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
-          <id root="a6bf3d8d-c667-4cc5-84a6-4c2565fa2f42"/>
+          <id root="316bc072-16ee-46e2-bf7b-b981fab6f8d7"/>
           <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
           <text/>
           <statusCode code="completed"/>
@@ -248,7 +248,7 @@ historical purposes.
         <act classCode="ACT" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.40"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
-          <id root="fc33bd31-bb02-45a0-9a41-ca2bae467b30"/>
+          <id root="dcd1419d-d006-4cab-9226-7dace94e134d"/>
           <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
           <statusCode code="completed"/>
           <effectiveTime>

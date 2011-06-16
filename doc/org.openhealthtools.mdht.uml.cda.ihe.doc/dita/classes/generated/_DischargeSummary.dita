@@ -252,7 +252,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.2"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.4"/>
-  <id root="3a1d8a8e-075c-44d2-9a24-9d28b3859f8e"/>
+  <id root="859e9d40-12d5-4caa-9934-998775321f9e"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <title/>
   <effectiveTime/>
@@ -263,13 +263,13 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.11"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6"/>
-          <id root="b9d42b71-1854-4560-87f0-29b20540faf9"/>
+          <id root="07ccf2ec-f584-421d-840c-8c352f07e1e2"/>
           <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
           <title>Problem list</title>
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.27"/>
-              <id root="f24ad9b6-1cbd-445f-83c1-6f3a5e385e14"/>
+              <id root="643f5c15-8402-4dd6-b2a0-dbc75145bdeb"/>
               <code nullFlavor="NA"/>
               <effectiveTime>
                 <low value="2011"/>
@@ -278,7 +278,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.41"/>
-                  <id root="6ae69acf-6add-4a78-a450-20c7c2b29e61"/>
+                  <id root="d543f4b4-834b-40c5-bda3-526a344e2bc7"/>
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -291,7 +291,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.28"/>
-                  <id root="bace62bd-d601-4050-96af-b73aa4252714"/>
+                  <id root="5937049f-9650-42db-9f62-e1e52c4f7e4e"/>
                   <code/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -302,7 +302,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.50"/>
-                      <id root="06852f6b-15af-494b-9287-6bdcc97c2cff"/>
+                      <id root="77c0f7c1-4565-4cdb-a83f-cf48ff2fba28"/>
                       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -316,7 +316,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.51"/>
-                      <id root="b7fc0fa6-e49e-472e-9f6f-0532ae67694b"/>
+                      <id root="9e09e9bf-13a4-4503-bb7f-2118189ed3fe"/>
                       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -329,7 +329,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                   <entryRelationship>
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.38"/>
-                      <id root="b805db36-83c4-4ff4-8990-7945cabd52b4"/>
+                      <id root="cebeadc8-d71c-40a6-9435-a8b94f5ab36c"/>
                       <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -347,7 +347,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
               <templateId root="2.16.840.1.113883.10.20.1.27"/>
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
-              <id root="751ff58f-2f59-48ce-bfbc-a3f749471ecc"/>
+              <id root="3f157338-525e-4a1b-b43a-39aece49a430"/>
               <code nullFlavor="NA"/>
               <statusCode/>
               <effectiveTime>
@@ -357,7 +357,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.41"/>
-                  <id root="ae6447f1-b73a-40db-89e1-da1bead96c2f"/>
+                  <id root="1b93a9e1-ffb0-403b-b86b-d1dfcd4e9809"/>
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -370,7 +370,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.28"/>
-                  <id root="7c042173-62f7-4df0-9c9f-fbbc9dbaa663"/>
+                  <id root="c5ba4e12-c526-470a-a1ed-429762d37d6e"/>
                   <code/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -381,7 +381,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.50"/>
-                      <id root="8c6eefeb-1aac-4e92-84a9-cc78ac2ccf87"/>
+                      <id root="e3452387-d01a-4b23-ad9a-6d4a84f67753"/>
                       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -395,7 +395,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.51"/>
-                      <id root="abc00b8a-6dc4-47f7-a3ab-eff4b114e08b"/>
+                      <id root="47673bb5-e683-40f8-a190-93d250bd3927"/>
                       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -408,7 +408,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                   <entryRelationship>
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.38"/>
-                      <id root="aeb04a7c-b8ea-4d16-a06d-4aa96d4c1bfa"/>
+                      <id root="1d05c612-eaa4-4728-a139-ccc02da45bf4"/>
                       <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -423,7 +423,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.28"/>
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-                  <id root="9d0b84b3-cd67-4425-ae5f-1cab92da72c6"/>
+                  <id root="3b0449cd-4f9c-4a39-9481-b2f609b635cd"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text/>
                   <statusCode code="completed"/>
@@ -436,7 +436,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.50"/>
-                      <id root="844be8c2-ba2e-4498-9e6c-ee1530c835b8"/>
+                      <id root="32c11b11-fbab-4654-980f-4e7812923930"/>
                       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -450,7 +450,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.51"/>
-                      <id root="2fc09053-46ca-4236-8bf6-cd5c2965a4c6"/>
+                      <id root="db4ce920-ec0b-4723-b477-fda86992df42"/>
                       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -463,7 +463,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                   <entryRelationship>
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.38"/>
-                      <id root="6b02c06b-f059-4f29-ac18-a7dea7b6b4f2"/>
+                      <id root="f3ca9054-a599-448b-a374-c8245fb7f139"/>
                       <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -476,7 +476,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.55"/>
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
-                      <id root="dd4ef2e5-a005-4a0f-a294-cb6b01800129"/>
+                      <id root="977d4b4d-6afd-4538-a1e6-9f3a8718d3c8"/>
                       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
                       <text/>
                       <statusCode code="completed"/>
@@ -492,7 +492,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.50"/>
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
-                      <id root="5fa0c1af-26d5-49f2-ab2c-5509af48f585"/>
+                      <id root="c2883a9f-984c-41cf-ad68-a638d6d869ba"/>
                       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -506,7 +506,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.51"/>
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
-                      <id root="197fe89b-85d7-4dda-86a1-ef0a040b2b81"/>
+                      <id root="f6f4cde0-4e1d-4b37-a6f6-a6c656f26caa"/>
                       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                       <text/>
                       <statusCode code="completed"/>
@@ -521,7 +521,7 @@ least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time
                     <act classCode="ACT" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.40"/>
                       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
-                      <id root="c5273e79-3e6d-485a-8c9a-b36d5d81ce32"/>
+                      <id root="5a4c5e36-b06b-49bf-af8c-31f3b0632a5e"/>
                       <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
                       <statusCode code="completed"/>
                       <effectiveTime>

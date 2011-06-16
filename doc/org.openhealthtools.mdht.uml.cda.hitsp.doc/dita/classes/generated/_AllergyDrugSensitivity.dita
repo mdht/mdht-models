@@ -18,7 +18,7 @@
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AllergyIntoleranceConcern.html">IHE Allergy Intolerance Concern</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.5.3</tt>) (C83-[DE-6-CDA-2])</li>
 <li><b>SHOULD</b> satisfy: the observation/effectiveTime element is present to record event date<ul><li>This is a date that expresses when this particular
 allergy or intolerance was known to be active for the
-patient</li></ul></li>
+patient</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.effectiveTime.oclIsUndefined())</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: the observation/code element shall be present to record the adverse event type<ul><li>Describes the type of product and intolerance suffered
 by the patient. The type of product shall be classified
 with respect to whether the adverse event occurs in
@@ -26,29 +26,48 @@ relationship with a medication, food, or environmental
 or other product. The adverse event should also be
 classified more specifically as an allergy, non-allergy
 intolerance, or just adverse reaction if that level of
-detail is not known</li></ul></li>
-<li><b>SHALL</b> satisfy: the code/@code attribute value is from Allergy/Adverse Event Type Value Set, 2.16.840.1.113883.3.88.12.3221.6.2, version: 20081218, Static (C154-[DE-6.02-1])</li>
-<li><b>SHOULD</b> satisfy: the observation/participant element may be present</li>
-<li><b>SHALL</b> satisfy: the participant/@typecode attribute shall be 'CSM'</li>
-<li><b>SHALL</b> satisfy: the participant/participantRole element may be present</li>
-<li><b>SHALL</b> satisfy: the participant/participantRole/@classcode attribute shall be 'MANU'</li>
-<li><b>SHALL</b> satisfy: The participant/participantRole/PlayingEntity element may be present</li>
-<li><b>SHALL</b> satisfy: the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'</li>
+detail is not known</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.code.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the code/@code attribute value is from Allergy/Adverse Event Type Value Set, 2.16.840.1.113883.3.88.12.3221.6.2, version: 20081218, Static (C154-[DE-6.02-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.2')</codeblock></li></ul></li>
+<li>the observation/participant element <b>SHOULD</b> be present<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined()))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the participant/@typecode attribute shall be 'CSM'<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = 'CSM'))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the participant/participantRole element may be present<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the participant/participantRole/@classcode attribute shall be 'MANU'<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU'))))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The participant/participantRole/PlayingEntity element may be present<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' )))))</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: the participant/participantRole/playingEntity/name element is present<ul><li>This is the name or other description of the product or
-agent that causes the intolerance</li></ul></li>
-<li><b>SHOULD</b> satisfy: participant/participantRole/playingEntity/code element is present<ul><li>This value is a code describing the product</li></ul></li>
-<li>For participant/participantRole/playingEntity/code element, Food and substance allergies <b>SHALL</b> be coded as Ingredient Name Value Set, 2.16.840.1.113883.3.88.12.80.20, Dynamic (C154-[DE-6.04-1])</li>
-<li>For participant/participantRole/playingEntity/code element, Allergies to a class of medication <b>SHALL</b> be coded as Medication Drug Class Value Set, 2.16.840.1.113883.3.88.12.80.17, version: 20081218, Dynamic (C154-[DE-6.04-2])</li>
-<li>For participant/participantRole/playingEntity/code element, Allergies to a specific medication <b>SHALL</b> be coded with Medication Brand Name Value Set, 2.16.840.1.113883.3.88.12.80.16, version: 20081218, Dynamic (C154-[DE-6.04-3])</li>
+agent that causes the intolerance</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.name-&gt;size() = 1)))))</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: participant/participantRole/playingEntity/code element is present<ul><li>This value is a code describing the product</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies( par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code-&gt;size() = 1)))))</codeblock></li></ul></li>
+<li>For participant/participantRole/playingEntity/code element, Food and substance allergies <b>SHALL</b> be coded as Ingredient Name Value Set, 2.16.840.1.113883.3.88.12.80.20, Dynamic (C154-[DE-6.04-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code-&gt;size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</codeblock></li></ul></li>
+<li>For participant/participantRole/playingEntity/code element, Allergies to a class of medication <b>SHALL</b> be coded as Medication Drug Class Value Set, 2.16.840.1.113883.3.88.12.80.17, version: 20081218, Dynamic (C154-[DE-6.04-2])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code-&gt;size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</codeblock></li></ul></li>
+<li>For participant/participantRole/playingEntity/code element, Allergies to a specific medication <b>SHALL</b> be coded with Medication Brand Name Value Set, 2.16.840.1.113883.3.88.12.80.16, version: 20081218, Dynamic (C154-[DE-6.04-3])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code-&gt;size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: the text element is present in the Reaction Observation entry<ul><li>This is the reaction that may be caused by the product
-or agent</li></ul></li>
-<li><b>SHOULD</b> satisfy: the code element is present in the Reaction Observation entry<ul><li>This value is a code describing the reaction</li></ul></li>
-<li><b>SHALL</b> satisfy: the code element is coded as Problem Value Set, 2.16.840.1.113883.3.88.12.3221.7.4, version: 20100125, Dynamic (C154-[DE-6.06-1])</li>
+or agent</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.text.oclIsUndefined()))</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: the code element is present in the Reaction Observation entry<ul><li>This value is a code describing the reaction</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.code.oclIsUndefined()))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the code element is coded as Problem Value Set, 2.16.840.1.113883.3.88.12.3221.7.4, version: 20100125, Dynamic (C154-[DE-6.06-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4'))</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: The text element is present in the Severity Observation template<ul><li>This is a description of the level of severity of the
-allergy or intolerance</li></ul></li>
+allergy or intolerance</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.text.oclIsUndefined()))</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: the code element is present in the Severity Observation entry<ul><li>This value is a code describing the level severity of
-the allergy or intolerance</li></ul></li>
-<li><b>SHALL</b> satisfy: the code element is coded as Problem Severity Value Set, 2.16.840.1.113883.3.88.12.3221.6.8, version: 20081218, Static (C154-[DE-6.08-1])</li>
+the allergy or intolerance</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.code.oclIsUndefined()))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the code element is coded as Problem Severity Value Set, 2.16.840.1.113883.3.88.12.3221.6.8, version: 20081218, Static (C154-[DE-6.08-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.8'))</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemAct.html">CCD Problem Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li>
@@ -81,6 +100,10 @@ historical purposes.
 <li><b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-168), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EpisodeObservation.dita">Episode Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.41</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../AllergyIntolerance.dita">Allergy Intolerance</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.6</tt>)</li></ol></li>
 <li><b>SHALL</b> contain one or more entryRelationship (CONF-151)<ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;isEmpty()</codeblock></li></ul></li>
 <li>A problem act <b>MAY</b> reference a problem observation, alert observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for "Act / entryRelationship / @typeCode" to be "SUBJ" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-152)</li>
 <li>The target of a problem act with Act / entryRelationship / @typeCode="SUBJ" <b>SHOULD</b> be a problem observation (in the Problem section) or alert observation (in the Alert section), but <b>MAY</b> be some other clinical statement. (CONF-153)<ul><li><codeblock>[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)-&gt;forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and 
@@ -93,13 +116,13 @@ historical purposes.
 <li>The effectiveTime 'low' element <b>SHALL</b> be present. The 'high' element <b>SHALL</b> be present for concerns in the completed or aborted state, and <b>SHALL NOT</b> be present otherwise.<ul><li><codeblock>[OCL]: not self.effectiveTime.low.oclIsUndefined()
    and ((self.statusCode.code = 'completed' or self.statusCode.code = 'aborted') implies not self.effectiveTime.high.oclIsUndefined())
    and ((self.statusCode.code &lt;&gt; 'completed' and self.statusCode.code &lt;&gt; 'aborted') implies self.effectiveTime.high.oclIsUndefined())</codeblock></li></ul></li>
-<li>This entry <b>SHALL</b> contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances.<ul><li>Each concern is about one or more related problems or allergies. This is how a series of related observations can be grouped as a single concern.</li></ul></li>
-<li>This <b>SHALL</b> be represented using entryRelationship with typeCode = 'SUBJ'</li>
+<li>This entry <b>SHALL</b> contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances.<ul><li>Each concern is about one or more related problems or allergies. This is how a series of related observations can be grouped as a single concern.</li></ul><ul><li><codeblock>[OCL]: self.entryRelationship.observation.templateId-&gt;exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.5') or self.entryRelationship.observation.templateId-&gt;exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.6')</codeblock></li></ul></li>
+<li>This <b>SHALL</b> be represented using entryRelationship with typeCode = 'SUBJ'<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;select(er|er.typeCode &lt;&gt; vocab::x_ActRelationshipEntryRelationship::SUBJ)-&gt;isEmpty()</codeblock></li></ul></li>
 <li>Each concern <b>MAY</b> have 0 or more related references. This <b>MAY</b> be any valid CDA clinical statement, and <b>SHOULD</b> be an IHE entry template.<ul><li>These may be used to represent related statements such related visits.</li></ul></li>
 <li>Related References <b>SHALL</b> be represented using entryRelationship with typeCode = 'REFR'.</li>
 <li><b>SHOULD</b> satisfy: the observation/effectiveTime element is present to record event date<ul><li>This is a date that expresses when this particular
 allergy or intolerance was known to be active for the
-patient</li></ul></li>
+patient</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.effectiveTime.oclIsUndefined())</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: the observation/code element shall be present to record the adverse event type<ul><li>Describes the type of product and intolerance suffered
 by the patient. The type of product shall be classified
 with respect to whether the adverse event occurs in
@@ -107,29 +130,48 @@ relationship with a medication, food, or environmental
 or other product. The adverse event should also be
 classified more specifically as an allergy, non-allergy
 intolerance, or just adverse reaction if that level of
-detail is not known</li></ul></li>
-<li><b>SHALL</b> satisfy: the code/@code attribute value is from Allergy/Adverse Event Type Value Set, 2.16.840.1.113883.3.88.12.3221.6.2, version: 20081218, Static (C154-[DE-6.02-1])</li>
-<li><b>SHOULD</b> satisfy: the observation/participant element may be present</li>
-<li><b>SHALL</b> satisfy: the participant/@typecode attribute shall be 'CSM'</li>
-<li><b>SHALL</b> satisfy: the participant/participantRole element may be present</li>
-<li><b>SHALL</b> satisfy: the participant/participantRole/@classcode attribute shall be 'MANU'</li>
-<li><b>SHALL</b> satisfy: The participant/participantRole/PlayingEntity element may be present</li>
-<li><b>SHALL</b> satisfy: the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'</li>
+detail is not known</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.code.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the code/@code attribute value is from Allergy/Adverse Event Type Value Set, 2.16.840.1.113883.3.88.12.3221.6.2, version: 20081218, Static (C154-[DE-6.02-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.2')</codeblock></li></ul></li>
+<li>the observation/participant element <b>SHOULD</b> be present<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined()))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the participant/@typecode attribute shall be 'CSM'<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = 'CSM'))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the participant/participantRole element may be present<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the participant/participantRole/@classcode attribute shall be 'MANU'<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU'))))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The participant/participantRole/PlayingEntity element may be present<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' )))))</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: the participant/participantRole/playingEntity/name element is present<ul><li>This is the name or other description of the product or
-agent that causes the intolerance</li></ul></li>
-<li><b>SHOULD</b> satisfy: participant/participantRole/playingEntity/code element is present<ul><li>This value is a code describing the product</li></ul></li>
-<li>For participant/participantRole/playingEntity/code element, Food and substance allergies <b>SHALL</b> be coded as Ingredient Name Value Set, 2.16.840.1.113883.3.88.12.80.20, Dynamic (C154-[DE-6.04-1])</li>
-<li>For participant/participantRole/playingEntity/code element, Allergies to a class of medication <b>SHALL</b> be coded as Medication Drug Class Value Set, 2.16.840.1.113883.3.88.12.80.17, version: 20081218, Dynamic (C154-[DE-6.04-2])</li>
-<li>For participant/participantRole/playingEntity/code element, Allergies to a specific medication <b>SHALL</b> be coded with Medication Brand Name Value Set, 2.16.840.1.113883.3.88.12.80.16, version: 20081218, Dynamic (C154-[DE-6.04-3])</li>
+agent that causes the intolerance</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.name-&gt;size() = 1)))))</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: participant/participantRole/playingEntity/code element is present<ul><li>This value is a code describing the product</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies( par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code-&gt;size() = 1)))))</codeblock></li></ul></li>
+<li>For participant/participantRole/playingEntity/code element, Food and substance allergies <b>SHALL</b> be coded as Ingredient Name Value Set, 2.16.840.1.113883.3.88.12.80.20, Dynamic (C154-[DE-6.04-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code-&gt;size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</codeblock></li></ul></li>
+<li>For participant/participantRole/playingEntity/code element, Allergies to a class of medication <b>SHALL</b> be coded as Medication Drug Class Value Set, 2.16.840.1.113883.3.88.12.80.17, version: 20081218, Dynamic (C154-[DE-6.04-2])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code-&gt;size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</codeblock></li></ul></li>
+<li>For participant/participantRole/playingEntity/code element, Allergies to a specific medication <b>SHALL</b> be coded with Medication Brand Name Value Set, 2.16.840.1.113883.3.88.12.80.16, version: 20081218, Dynamic (C154-[DE-6.04-3])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode='MANU' and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code-&gt;size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: the text element is present in the Reaction Observation entry<ul><li>This is the reaction that may be caused by the product
-or agent</li></ul></li>
-<li><b>SHOULD</b> satisfy: the code element is present in the Reaction Observation entry<ul><li>This value is a code describing the reaction</li></ul></li>
-<li><b>SHALL</b> satisfy: the code element is coded as Problem Value Set, 2.16.840.1.113883.3.88.12.3221.7.4, version: 20100125, Dynamic (C154-[DE-6.06-1])</li>
+or agent</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.text.oclIsUndefined()))</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: the code element is present in the Reaction Observation entry<ul><li>This value is a code describing the reaction</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.code.oclIsUndefined()))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the code element is coded as Problem Value Set, 2.16.840.1.113883.3.88.12.3221.7.4, version: 20100125, Dynamic (C154-[DE-6.06-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4'))</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: The text element is present in the Severity Observation template<ul><li>This is a description of the level of severity of the
-allergy or intolerance</li></ul></li>
+allergy or intolerance</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.text.oclIsUndefined()))</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: the code element is present in the Severity Observation entry<ul><li>This value is a code describing the level severity of
-the allergy or intolerance</li></ul></li>
-<li><b>SHALL</b> satisfy: the code element is coded as Problem Severity Value Set, 2.16.840.1.113883.3.88.12.3221.6.8, version: 20081218, Static (C154-[DE-6.08-1])</li>
+the allergy or intolerance</li></ul><ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.code.oclIsUndefined()))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the code element is coded as Problem Severity Value Set, 2.16.840.1.113883.3.88.12.3221.6.8, version: 20081218, Static (C154-[DE-6.08-1])<ul><li><codeblock>[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | (obs.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()-&gt;exists(o : cda::Observation | o.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.8'))</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
@@ -137,7 +179,7 @@ the allergy or intolerance</li></ul></li>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.6"/>
-  <id root="8ae7d086-cd98-4a18-97ca-25fd64731190"/>
+  <id root="e572cf0e-6658-4596-953e-72a4183cd9a3"/>
   <code nullFlavor="NA"/>
   <statusCode/>
   <effectiveTime>
@@ -147,7 +189,7 @@ the allergy or intolerance</li></ul></li>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.41"/>
-      <id root="a5336773-a85c-4d17-99d7-e6c07d89420b"/>
+      <id root="df326a9d-0307-4edc-aee9-2b369cd5be36"/>
       <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -160,7 +202,7 @@ the allergy or intolerance</li></ul></li>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.28"/>
-      <id root="67bb6e5f-ba8d-408c-90fa-ec0683daa2f4"/>
+      <id root="063621c1-6208-4d39-a858-b9980f12cc8a"/>
       <code/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -171,7 +213,7 @@ the allergy or intolerance</li></ul></li>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.50"/>
-          <id root="86df8f33-8b70-4a15-b160-bea3d4cde421"/>
+          <id root="e74a3826-115a-42c0-84a2-d277eb840877"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -185,7 +227,7 @@ the allergy or intolerance</li></ul></li>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.57"/>
           <templateId root="2.16.840.1.113883.10.20.1.51"/>
-          <id root="d41ed53e-158b-4ae2-bb36-ceba0d952609"/>
+          <id root="6fd928aa-43b4-41dc-bdfc-f04cddd976a6"/>
           <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -198,7 +240,7 @@ the allergy or intolerance</li></ul></li>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.38"/>
-          <id root="274187a9-a80b-434d-a877-0b6adb5b864c"/>
+          <id root="379296df-0ab9-4509-87ee-261d15cb013d"/>
           <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -206,6 +248,287 @@ the allergy or intolerance</li></ul></li>
             <high value="2011"/>
           </effectiveTime>
         </observation>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.28"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+      <id root="4edeb9db-82e6-492d-a08d-ccdc2ce9bc6b"/>
+      <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType"/>
+      <text/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <value xsi:type="CD"/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.50"/>
+          <id root="b43431f9-ddd1-4f39-bd3f-42f7fb105cc9"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CE"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.51"/>
+          <id root="ad23ec17-9cf2-4cef-823e-40448885c662"/>
+          <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CE"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.38"/>
+          <id root="25f09485-97c2-4a43-8eff-429e357bbe9d"/>
+          <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.55"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+          <id root="6e43ee96-3451-4375-b0b5-aa8da41071f3"/>
+          <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+          <text/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CD"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.50"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+          <id root="1430dd31-9b70-4ecc-b523-5f7a4a478fbb"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.51"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+          <id root="3a6c13c8-1a48-4aae-ba4e-83d5ec629283"/>
+          <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+          <text/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CE"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.40"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+          <id root="8fcd00ee-1dca-40c7-8454-c0173331a3cd"/>
+          <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.28"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+          <templateId root="2.16.840.1.113883.10.20.1.54"/>
+          <id root="7c159feb-7761-42c0-9971-49e49de84755"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <id root="d02cf08b-2664-4ba3-968e-5e00321dc9cb"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.51"/>
+              <id root="723d2827-e233-4031-8aa1-491b51e446e8"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.38"/>
+              <id root="e92906ac-d5aa-4272-9746-b9ecc83ea729"/>
+              <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.55"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+              <id root="1478a0c9-04aa-4e4a-958c-79628f9a3f67"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+              <text/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CD"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+              <id root="553ed2ab-72fc-4f5d-bb2a-9e0717d6fd9e"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.51"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+              <id root="8c00af7d-7f45-4fd2-86a0-f8d199b25044"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <text/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.40"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+              <id root="9a89f705-9f64-43c7-979b-0404dac2cb5f"/>
+              <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.55"/>
+              <id root="422b9425-8625-4cd3-8435-510dc9441365"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.55"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+          <id root="8f8eff12-221f-4ed1-bc08-5e291fe3bec4"/>
+          <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+          <text/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CD"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.50"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+          <id root="0a5b0b37-3b3f-4845-9020-4e3a0c64d548"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.40"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+          <id root="91a7d3d7-6922-4dca-8dbd-557c91c44de3"/>
+          <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
       </entryRelationship>
     </observation>
   </entryRelationship>

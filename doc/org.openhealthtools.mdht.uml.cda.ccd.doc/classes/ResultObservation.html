@@ -67,7 +67,10 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> (CONF-416)
 </li>
 
-<li class="li">The value for 'code' <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)</li>
+<li class="li">The value for 'code' <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</pre>
+</li>
+</ul>
+</li>
 
 <li class="li">The methodCode <strong class="ph b">SHALL NOT</strong> conflict with the method inherent in code (CONF-415)</li>
 
@@ -106,7 +109,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.31"/&gt;
-  &lt;id root="8190f074-9e7c-43a5-8832-004ae26e46f6"/&gt;
+  &lt;id root="054a5fbb-ddfd-47ed-a151-34bbc842ae81"/&gt;
   &lt;code/&gt;
   &lt;statusCode/&gt;
   &lt;effectiveTime&gt;

@@ -71,7 +71,7 @@ identifying the site.</li>
 </ul>
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
 <ul class="ul"><li class="li">The &lt;code&gt; element is used to supply a code that describes the &lt;substanceAdminstration&gt; act,
 not the medication being administered or prescribed. This may be a procedure code, such as
 those found in CPT-4 (and often used for billing), or may describe the method of medication
@@ -114,9 +114,15 @@ may contain other information (take with food, et cetera).</li>
 </ol>
 </li>
 
+<li class="li"><strong class="ph b">SHALL</strong> contain  [0..2] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-308)
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one dosing template to identify this entry as a particular type of medication event. Possible dosing templates: 1.3.6.1.4.1.19376.1.5.3.1.4.7.1 Normal Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.8, Tapered Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.9 Split Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.10 Conditional Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.11 Combination Dosing.<ul class="ul"><li class="li">There are a variety of special cases for dosing that need to be accounted for. 
 Most of these special cases involve changing the dosage or frequency over time, or based on
 some measurement. When the dosage changes, then additional entries are required for each differing dosage.</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.1') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor self.templateId-&gt;exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.11')</pre>
+</li>
 </ul>
 </li>
 
@@ -126,6 +132,12 @@ a &lt;precondition&gt; element that specifies the &lt;observation&gt; that must 
 administration of the dose. The value of the &lt;sequenceNumber&gt; shall be an ordinal number,
 starting at 1 for the first component, and increasing by 1 for each subsequent component.
 Components shall be sent in &lt;sequenceNumber&gt; order.</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship-&gt;exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)</pre>
+</li>
 </ul>
 </li>
 
@@ -142,38 +154,60 @@ Components shall be sent in &lt;sequenceNumber&gt; order.</li>
 </p>
 </li>
 </ul>
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The act/@classCode='ACT' and act/@moodCode='EVN' when recording reason for medication in InternalReference Template. (6.3.4.16.22)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains [0..2] effectiveTime elements.<ul class="ul"><li class="li"><p class="p">
-The first &lt;effectiveTime&gt; element encodes the start and stop time of the medication regimen.
-This an interval of time (xsi:type='IVL_TS'), and must be specified as shown. This is an
-additional constraint placed upon CDA Release 2.0 by this profile, and simplifies the exchange
-of start/stop and frequency information between EMR systems.
-</p>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: true</pre>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The &lt;consumable&gt; element shall be present, and shall contain a Product Entry template</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The act/@classCode='ACT' and act/@moodCode='EVN' when recording reason for medication in InternalReference Template. (6.3.4.16.22)<ul class="ul"><li class="li">self.internalReference-&gt;exists(ir : ihe::InternalReference | ar.classCode &lt;&gt; 'ACT' or ar.moodCode &lt;&gt; 'EVN')</li>
+<li class="li">OCL Issue - What is the internalReference relationship?  unable to get OCL to reference</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: true</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The entryRelationship/@inversionInd attribute is 'true' for Patient Medical Instructions relationship</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The &lt;consumable&gt; element shall be present, and shall contain a Product Entry template<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.consumable.manufacturedProduct.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.2')</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The name and strength of the medication is recorded in consumable/manufacturedProduct/manufacturedMaterial/code/originalText</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The entryRelationship/@inversionInd attribute is 'true' for Patient Medical Instructions relationship<ul class="ul"><li class="li">OCL Issue - What is the patientInstructions relationship?  unable to get OCL to reference</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.entryRelationship-&gt;exists( er : cda::EntryRelationship | er.inversionInd &lt;&gt; true and er.act.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')  )</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Name of the substance or product is recorded in consumable/manufacturedProduct/manufacturedMaterial/name</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The name and strength of the medication is recorded in consumable/manufacturedProduct/manufacturedMaterial/code/originalText<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.consumable.manufacturedProduct.manufacturedMaterial.code.oclIsUndefined() implies not self.consumable.manufacturedProduct.manufacturedMaterial.code.originalText.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Name of the substance or product is recorded in consumable/manufacturedProduct/manufacturedMaterial/name<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.consumable.manufacturedProduct.manufacturedMaterial.name.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">MAY</strong> satisfy: the preconditions for use of the medication are recorded in the
 &lt;precondition&gt; element. element. The value attribute of the &lt;reference&gt; element is a URL that points to
-the CDA narrative describing those preconditions.</li>
+the CDA narrative describing those preconditions.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.precondition.criterion.text-&gt;exists (t | t.reference.oclIsUndefined())</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The entryRelationship/@inversionInd attribute is 'false' for Supply Entry relationship</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The entryRelationship/@inversionInd attribute is 'false' for Supply Entry relationship<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.entryRelationship-&gt;exists(er : cda::EntryRelationship | (not er.supply-&gt;isEmpty()) and er.inversionInd&lt;&gt;false )</pre>
+</li>
+</ul>
+</li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> satisfy: entryRelationship/sequenceNumber element should be present when the embedded 'supply' element has a
 moodCode attribute of EVN.<ul class="ul"><li class="li">The prescription activity may have a &lt;sequenceNumber&gt; element to indicate the fill number. A
 value of 1, 2 or N indicates that it is the first, second, or Nth fill respectively of a specific
 prescription.</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.entryRelationship-&gt;exists(er| (not er.supply-&gt;isEmpty()) and er.sequenceNumber.value.oclIsUndefined() )</pre>
+</li>
 </ul>
 </li>
 
@@ -186,79 +220,7 @@ prescription.</li>
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
-  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/&gt;
-  &lt;id root="dad4329e-75f0-4d65-899d-b0729ee3f53e"/&gt;
-  &lt;statusCode/&gt;
-  &lt;effectiveTime value="20110404"/&gt;
-  &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
-  &lt;approachSiteCode/&gt;
-  &lt;doseQuantity/&gt;
-  &lt;rateQuantity/&gt;
-  &lt;maxDoseQuantity/&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
-      &lt;id root="d1996d24-16c9-4809-8d9a-7db1e7a0779f"/&gt;
-      &lt;code code="30973-2" codeSystemName="" displayName="Dose number"/&gt;
-      &lt;statusCode/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="INT"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
-      &lt;id root="70804985-e2d3-4683-bc8f-6028d2726b61"/&gt;
-      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
-      &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="CE"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;act moodCode="INT"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
-      &lt;id root="755d7a34-9b84-44cd-bf8a-b6e9eecd7af9"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/act&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
-      &lt;id root="c2c197ee-0022-4abb-aa29-13871a6f6475"/&gt;
-      &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
-          &lt;id root="5123a8f8-7be2-4dc3-aeef-19164e46c7af"/&gt;
-          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
-          &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-&lt;/substanceadministration&gt;</pre>
+<pre class="pre codeblock"/>
 
 </div>
 

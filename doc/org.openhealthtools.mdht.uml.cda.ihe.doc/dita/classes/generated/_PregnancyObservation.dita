@@ -53,7 +53,7 @@
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"/>
-  <id root="cddcba43-4692-4294-ac44-d6126ad2de13"/>
+  <id root="f6964fad-2ce6-4751-84fe-62089076bf8f"/>
   <code/>
   <statusCode code="completed"/>
   <effectiveTime>

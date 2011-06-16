@@ -29,19 +29,19 @@ guarantor, or some combination.</p>
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CoverageEntry.dita">Coverage Entry</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.17</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)<ul><li><codeblock>[OCL]: self.title = 'insurance' or self.title = 'payers'</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.9"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7"/>
-  <id root="cb78771f-2652-4b4a-a034-fa468fe51111"/>
+  <id root="ccac0185-5839-40cd-b3e8-d6a1e8e46625"/>
   <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
   <title>Payment sources</title>
   <entry>
     <act classCode="ACT" moodCode="DEF">
       <templateId root="2.16.840.1.113883.10.20.1.20"/>
-      <id root="ab0d6feb-52fd-43bd-8e8b-fa09af72d4e6"/>
+      <id root="845cf552-f549-43b9-b140-352d77cf1ec5"/>
       <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -51,7 +51,7 @@ guarantor, or some combination.</p>
       <entryRelationship>
         <act classCode="ACT" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.26"/>
-          <id root="7f5474f1-a7e9-4020-bf6d-b05e302b8839"/>
+          <id root="48e3b915-2bac-4659-9d6b-2456b312b5ff"/>
           <code/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -66,7 +66,7 @@ guarantor, or some combination.</p>
     <act classCode="ACT" moodCode="DEF">
       <templateId root="2.16.840.1.113883.10.20.1.20"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.17"/>
-      <id root="94b0f2ca-4006-4487-bb13-8cc8af8dc377"/>
+      <id root="477adfb4-8b1b-4ee3-9555-4d5651e6dec8"/>
       <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -76,7 +76,7 @@ guarantor, or some combination.</p>
       <entryRelationship>
         <act classCode="ACT" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.26"/>
-          <id root="d9330172-e903-42c4-8fd0-f88f34d2c6f2"/>
+          <id root="221d352b-6664-4aff-a42e-b38aada2b14a"/>
           <code/>
           <statusCode code="completed"/>
           <effectiveTime>

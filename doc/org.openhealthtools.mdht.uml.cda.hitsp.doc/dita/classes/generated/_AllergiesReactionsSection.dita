@@ -17,6 +17,9 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AllergiesReactionsSection.html">IHE Allergies Reactions Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.13</tt>) (C83-[CT-102-2])</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergyDrugSensitivity.dita">Allergy Drug Sensitivity</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.6</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li>
@@ -30,7 +33,10 @@
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-256), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergyDrugSensitivity.dita">Allergy Drug Sensitivity</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.6</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)<ul><li><codeblock>[OCL]: self.title = 'alert' or self.title='allergies and adverse reactions'</codeblock></li></ul></li>
 <li>The absence of known allergies, adverse reactions or alerts <b>SHALL</b> be explicitly asserted.</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
@@ -38,13 +44,13 @@
   <templateId root="2.16.840.1.113883.10.20.1.2"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.102"/>
-  <id root="72b9b757-71d8-4c28-9182-d8c9a312ba2e"/>
+  <id root="5f46434e-7453-482e-911e-cb475a3cd08c"/>
   <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
   <title>Allergies, adverse reactions, alerts</title>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.27"/>
-      <id root="1ec1f990-53e8-4922-abc6-957f3f99f743"/>
+      <id root="2c77c477-59a5-412b-83e0-0d237e8a2f74"/>
       <code nullFlavor="NA"/>
       <effectiveTime>
         <low value="2011"/>
@@ -53,7 +59,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.41"/>
-          <id root="37cda0e5-8720-4ca8-996d-e990e1364660"/>
+          <id root="6a5c6dc5-db3d-47ad-9dc7-53456eee135f"/>
           <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -66,7 +72,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.28"/>
-          <id root="5e2ee598-26cf-4ec5-8c75-9236615e52b4"/>
+          <id root="ed941870-0bfc-40fc-b1fb-5d043017add0"/>
           <code/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -77,7 +83,7 @@
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.57"/>
               <templateId root="2.16.840.1.113883.10.20.1.50"/>
-              <id root="b5e04cd9-615c-4e99-8d01-3bf966a96c02"/>
+              <id root="7bc7eef7-8695-4d9a-82cf-b55968099a20"/>
               <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -91,7 +97,7 @@
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.57"/>
               <templateId root="2.16.840.1.113883.10.20.1.51"/>
-              <id root="e48566aa-e727-44ee-ac77-a5cc62fd84d3"/>
+              <id root="c338f50e-6927-4c92-a61b-8373e3ffbc28"/>
               <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -104,7 +110,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.38"/>
-              <id root="cb26f41a-3c7b-4150-9927-90db6bf9f8ec"/>
+              <id root="85052470-5eaa-4b96-8a48-6f5e9ae5e6ca"/>
               <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -112,6 +118,727 @@
                 <high value="2011"/>
               </effectiveTime>
             </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </act>
+  </entry>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.27"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+      <id root="2f1e53d0-5cf6-433e-979b-0c9d97c52210"/>
+      <code nullFlavor="NA"/>
+      <statusCode/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.41"/>
+          <id root="141f4052-6e3c-4648-a199-4bc9792d5af2"/>
+          <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CD"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.28"/>
+          <id root="e1577610-0e23-492e-ad77-25df212ef556"/>
+          <code/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <id root="926f0981-4815-4594-bbfc-929719c33701"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.51"/>
+              <id root="576bf67c-2f87-4e50-bbc7-9834a06dd0e4"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.38"/>
+              <id root="67ca960d-3f1b-42e3-9623-b1f786bf01a9"/>
+              <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.28"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+          <id root="6edf6346-e1d7-47ce-8ee8-272149819fec"/>
+          <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType"/>
+          <text/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CD"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <id root="ac70d574-130d-4828-aad4-4a89e4bc93c9"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.51"/>
+              <id root="ddfd44b7-d00a-4bbb-8fa0-2c8caa730933"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.38"/>
+              <id root="8182a10f-ef7a-4119-856c-1b4929c2a232"/>
+              <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.55"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+              <id root="25c316c4-04f4-4663-9b8a-815b8c9fde8a"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+              <text/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CD"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+              <id root="fb021baf-39cd-42a4-8b65-bfc2d53699fa"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.51"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+              <id root="69676c79-ed24-4b65-86bc-79e5635cd2a1"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <text/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.40"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+              <id root="fd074ef5-e714-4f17-84e8-c835f9590a2e"/>
+              <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.28"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+              <templateId root="2.16.840.1.113883.10.20.1.54"/>
+              <id root="27af2ded-e644-4b70-b241-be9d04f4df47"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                  <id root="36f444e2-ed3e-4def-bc2f-1322eb8351c0"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                  <id root="57b97270-219d-451d-833a-5774330b7305"/>
+                  <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                  <id root="2f97a59d-4af7-45a3-bacb-3e2b0294025f"/>
+                  <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+                  <id root="635df5f1-20be-46ef-bd66-7e322c22915c"/>
+                  <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                  <text/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+                  <id root="21a888e2-6aef-4b5a-b5ca-4598a05b16f0"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+                  <id root="2505ba6b-6aa4-4a4b-b702-350db80468fe"/>
+                  <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                  <text/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+                  <id root="a3333a76-d177-4060-83e3-b51cb49e8031"/>
+                  <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                  <id root="0054ab3e-28b0-4a6e-9940-61c67697edc9"/>
+                  <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.55"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+              <id root="037965ff-00a4-4ed3-93aa-fa485340f41c"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+              <text/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CD"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+              <id root="2c878907-f264-4476-8644-fe672a8a0f45"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.40"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+              <id root="40f7dd77-60e1-4a12-829b-c8dfa3fe737b"/>
+              <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </act>
+  </entry>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.27"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+      <templateId root="2.16.840.1.113883.3.88.11.83.6"/>
+      <id root="745da687-e582-404e-a8b9-89bbdb0e7591"/>
+      <code nullFlavor="NA"/>
+      <statusCode/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.41"/>
+          <id root="ab73a31f-b0ac-46c1-804f-4c1cbee34ba4"/>
+          <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CD"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.28"/>
+          <id root="086a526f-9b23-4358-bdd0-94bd1b89408e"/>
+          <code/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <id root="0225185e-7f1f-43a4-9b0d-dfce7579ecd9"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.51"/>
+              <id root="ea717bd6-cc90-4b79-a39d-47d0fc5f966c"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.38"/>
+              <id root="e391dbb7-ab9c-4d3c-8a23-f1255bf9e4a7"/>
+              <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.28"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+          <id root="a7741d0d-167e-4bc3-a04d-2d07666d8f43"/>
+          <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType"/>
+          <text/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CD"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <id root="b7406820-cad8-4036-b76f-a02a63d6ea55"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.51"/>
+              <id root="e197f972-10da-433e-999c-70da9b324b9c"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.38"/>
+              <id root="907d66e3-0ba7-4f45-823d-77458f0938fd"/>
+              <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.55"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+              <id root="d4715522-116b-4a0b-9c23-6dad83c6f5da"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+              <text/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CD"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+              <id root="c96b0d7e-dfe0-4424-8bfc-89fda66c9db4"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.51"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+              <id root="5ff7240c-14b4-4b52-a98b-36012a66e585"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <text/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CE"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.40"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+              <id root="e8ce0ff2-e5be-4563-9c7f-fd147ac127e4"/>
+              <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.28"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+              <templateId root="2.16.840.1.113883.10.20.1.54"/>
+              <id root="f5624a0f-461c-45f5-b180-1d7a5b0ebb55"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                  <id root="ba16d4a4-2e1b-4365-84b4-0f09865e9125"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                  <id root="6841706d-2cf0-4b58-8373-232ef3bff96e"/>
+                  <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.38"/>
+                  <id root="a5745940-0142-4d94-a205-5c71cdb6e502"/>
+                  <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+                  <id root="41685ef2-eed6-421c-a936-02a5f3b58fd7"/>
+                  <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                  <text/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+                  <id root="b9845099-04c4-4712-969f-2934bf262db9"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+                  <id root="e3159a71-60c8-41da-8ce8-8809bc3ecd6b"/>
+                  <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                  <text/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                  <value xsi:type="CE"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+                  <id root="053b28c1-c9c7-4708-aac5-90ea92222dc1"/>
+                  <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                  <id root="cdcb0a71-befd-466c-9140-13817d7ee04b"/>
+                  <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2011"/>
+                    <high value="2011"/>
+                  </effectiveTime>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.55"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+              <id root="718c3f3b-6e90-4632-bf93-1b3c62c1adda"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+              <text/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+              <value xsi:type="CD"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.50"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+              <id root="43201a1c-788f-4733-9cef-62198cdfefe0"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.40"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+              <id root="418f2a62-2bf6-4b9a-9f71-ff51e2e5ed07"/>
+              <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
           </entryRelationship>
         </observation>
       </entryRelationship>

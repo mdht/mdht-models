@@ -128,9 +128,9 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.24"/>
-  <id root="8e18600a-ec30-4062-940f-b14f8b71791d"/>
+  <id root="113a77c5-97a0-4a8a-9601-f61f4941fb43"/>
   <statusCode/>
-  <effectiveTime value="20110404"/>
+  <effectiveTime value="20110616"/>
   <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
   <doseQuantity/>
   <rateQuantity/>
@@ -138,7 +138,7 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.46"/>
-      <id root="22907b26-0fc5-4b6e-902e-e15071fe55f8"/>
+      <id root="7b32ed4f-4924-4b8b-9a4a-9a0ef546bd0e"/>
       <code code="30973-2" codeSystemName="" displayName="Dose number"/>
       <statusCode/>
       <effectiveTime>
@@ -152,7 +152,7 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.47"/>
-      <id root="06dabac5-3b64-4adf-93ae-b7392d9597fd"/>
+      <id root="fe81b300-e225-4860-9569-0befeece77f4"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -165,7 +165,7 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
   <entryRelationship>
     <act moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.1.49"/>
-      <id root="9fdfc566-4cef-4f32-8ba9-e184360400b6"/>
+      <id root="89030326-2a74-4e5a-b861-2bc69a5600a1"/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>
@@ -175,7 +175,7 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.54"/>
-      <id root="f3397d4f-f85d-4ecd-8d2d-7c7afb6e3fba"/>
+      <id root="a9c6abfb-e98a-4f6e-8ab5-fdb71d5ea6a9"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2011"/>
@@ -184,7 +184,7 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.55"/>
-          <id root="319b6293-bfdf-41e9-a274-3da7f7d1c1f8"/>
+          <id root="eb73c08d-77de-44a3-8359-1057ef3446ab"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
           <statusCode code="completed"/>
           <effectiveTime>

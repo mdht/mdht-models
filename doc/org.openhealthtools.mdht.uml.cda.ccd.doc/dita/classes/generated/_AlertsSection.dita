@@ -16,7 +16,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-260)
 <ol>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)<ul><li><codeblock>[OCL]: self.title = 'alert' or self.title='allergies and adverse reactions'</codeblock></li></ul></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-256)
 </li>
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-256), such that
@@ -29,25 +29,25 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-260)
 <ol>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)<ul><li><codeblock>[OCL]: self.title = 'alert' or self.title='allergies and adverse reactions'</codeblock></li></ul></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-256)
 </li>
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-256), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)<ul><li><codeblock>[OCL]: self.title = 'alert' or self.title='allergies and adverse reactions'</codeblock></li></ul></li>
 <li>The absence of known allergies, adverse reactions or alerts <b>SHALL</b> be explicitly asserted.</li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.2"/>
-  <id root="c428a773-0266-4451-9aa2-56a505356a3f"/>
+  <id root="94ccc99a-533e-414a-946b-44916447a91b"/>
   <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
   <title>Allergies, adverse reactions, alerts</title>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.27"/>
-      <id root="ac62ab2e-ace0-43cc-8c0f-ac14cae4a369"/>
+      <id root="0f863605-0f72-4cf6-9500-b1cea6697e39"/>
       <code nullFlavor="NA"/>
       <effectiveTime>
         <low value="2011"/>
@@ -56,7 +56,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.41"/>
-          <id root="f7baab7a-727f-4f7b-861c-9538b5f25dde"/>
+          <id root="6b747623-f5e9-422d-918c-7c1279693154"/>
           <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -69,7 +69,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.28"/>
-          <id root="58558115-6f5d-4a04-b483-e36fd95c8489"/>
+          <id root="d2659722-9d1b-4a33-a3b5-6285c619e80e"/>
           <code/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -80,7 +80,7 @@
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.57"/>
               <templateId root="2.16.840.1.113883.10.20.1.50"/>
-              <id root="3bd6f983-5f20-4f75-a22d-82eab7ec811c"/>
+              <id root="55231208-3d7c-4bf3-8eb2-46af3adc2101"/>
               <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -94,7 +94,7 @@
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.57"/>
               <templateId root="2.16.840.1.113883.10.20.1.51"/>
-              <id root="0c4630b2-e7b5-4034-b91b-528ea1fc8e52"/>
+              <id root="d6cf42de-0167-4bc5-9edb-5a79e3fa4f09"/>
               <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -107,7 +107,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.38"/>
-              <id root="40c7e701-e953-419d-b1da-de59174c1065"/>
+              <id root="72844a52-1eed-43ab-92f8-5c0f8cc89a2b"/>
               <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
               <statusCode code="completed"/>
               <effectiveTime>

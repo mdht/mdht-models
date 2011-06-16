@@ -39,7 +39,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.22"/>
-  <id root="e84543dd-482e-4165-870d-7326cfccba51"/>
+  <id root="279d1738-b155-4a44-882c-7a518f14da12"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2011"/>

@@ -24,7 +24,7 @@
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="f1606f8c-0940-40d1-ad0d-a1e4af905931"/>
+  <id root="6993c701-9df2-4df8-bd1b-9748533bab30"/>
   <code/>
 </participantrole>]]></codeblock>
 </body>

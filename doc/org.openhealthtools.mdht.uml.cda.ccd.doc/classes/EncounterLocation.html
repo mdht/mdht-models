@@ -39,12 +39,30 @@
 <ol class="ol">
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="LOC" </tt> (CONF-473)
 <ol class="ol" type="a">
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: contains exactly one participant / participantRole (CONF-474)<ol class="ol" type="i">
-<li class="li">The value for participant/participantRole/@classCode in a location participation <strong class="ph b">SHALL</strong> be "SDLOC" "Service delivery location" 2.16.840.1.113883.5.110 RoleClass. (CONF-475)<ol class="ol">
-<li class="li">Participant / participantRole in a location participation <strong class="ph b">MAY</strong> contain exactly one participant / participantRole / code. (CONF-476)<ol class="ol" type="a">
-<li class="li">The value for participant/participantRole/code in a location participation <strong class="ph b">SHOULD</strong> be selected from ValueSet 2.16.840.1.113883.1.11.17660 ServiceDeliveryLocationRoleType 2.16.840.1.113883.5.111 RoleCode DYNAMIC. (CONF-477)<ol class="ol" type="i">
-<li class="li">Participant / participantRole in a location participation <strong class="ph b">MAY</strong> contain exactly one participant / participantRole / playingEntity (CONF-478)<ol class="ol">
-<li class="li">The value for participant/participantRole/playingEntity/@classCode in a location participation <strong class="ph b">SHALL</strong> be "PLC" "Place" 2.16.840.1.113883.5.41 EntityClass. (CONF-479)</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: contains exactly one participant / participantRole (CONF-474)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole-&gt;size() = 1</pre>
+</li>
+</ul>
+<ol class="ol" type="i">
+<li class="li">The value for participant/participantRole/@classCode in a location participation <strong class="ph b">SHALL</strong> be "SDLOC" "Service delivery location" 2.16.840.1.113883.5.110 RoleClass. (CONF-475)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.classCode = 'SDLOC'</pre>
+</li>
+</ul>
+<ol class="ol">
+<li class="li">Participant / participantRole in a location participation <strong class="ph b">MAY</strong> contain exactly one participant / participantRole / code. (CONF-476)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.code-&gt;size() = 1</pre>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">The value for participant/participantRole/code in a location participation <strong class="ph b">SHOULD</strong> be selected from ValueSet 2.16.840.1.113883.1.11.17660 ServiceDeliveryLocationRoleType 2.16.840.1.113883.5.111 RoleCode DYNAMIC. (CONF-477)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.code.codeSystem = '2.16.840.1.113883.1.11.17660'</pre>
+</li>
+</ul>
+<ol class="ol" type="i">
+<li class="li">Participant / participantRole in a location participation <strong class="ph b">MAY</strong> contain exactly one participant / participantRole / playingEntity (CONF-478)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.playingEntity-&gt;size()&gt;0</pre>
+</li>
+</ul>
+<ol class="ol">
+<li class="li">The value for participant/participantRole/playingEntity/@classCode in a location participation <strong class="ph b">SHALL</strong> be "PLC" "Place" 2.16.840.1.113883.5.41 EntityClass. (CONF-479)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.playingEntity.classCode = 'PLC'</pre>
+</li>
+</ul>
+</li>
 </ol>
 </li>
 </ol>

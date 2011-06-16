@@ -53,7 +53,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.30"/>
-  <id root="5c45fd90-192f-4432-b949-0b9433fa5ec6"/>
+  <id root="a4e66641-676b-4ab0-ac10-c2c73575c139"/>
   <code code="23745001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Documentation procedure"/>
   <statusCode code="completed"/>
   <effectiveTime>

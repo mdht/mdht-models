@@ -44,22 +44,40 @@
 <li class="li">The coded product name <strong class="ph b">SHALL</strong> appear in the @code attribute of the manufacturedMaterial/code element. (C83-[DE-8.13-CDA-1])<ul class="ul"><li class="li">A code describing the product from a controlled
 vocabulary</li>
 </ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.manufacturedMaterial.code.code.oclIsUndefined()</pre>
+</li>
+</ul>
 </li>
 
 <li class="li">If the code for the generic product is unknown, the code and codeSystem attributes <strong class="ph b">MAY</strong> be omitted (C83-[DE-8.13-CDA-2])</li>
 
-<li class="li">The coded product name <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.17, Medication Clinical Drug Name Value Set, version: 20081218, Dynamic (C154-[DE-8.13-1])</li>
+<li class="li">The coded product name <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.17, Medication Clinical Drug Name Value Set, version: 20081218, Dynamic (C154-[DE-8.13-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17'</pre>
+</li>
+</ul>
+</li>
 
-<li class="li">When only the class of the drug is known (e.g., Beta Blocker or Sulfa Drug), it <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.18, Medication Drug Class Value Set, version: 20081218, Dynamic (C154-[DE-8.13-2])</li>
+<li class="li">When only the class of the drug is known (e.g., Beta Blocker or Sulfa Drug), it <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.18, Medication Drug Class Value Set, version: 20081218, Dynamic (C154-[DE-8.13-2])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.18'</pre>
+</li>
+</ul>
+</li>
 
-<li class="li">When only the medication ingredient name is know, the coded product name <strong class="ph b">MAY</strong> be coded as 2.16.840.1.113883.3.88.12.80.20, Ingredient Name Value Set, Dynamic (C154-[DE-8.13-3])</li>
+<li class="li">When only the medication ingredient name is know, the coded product name <strong class="ph b">MAY</strong> be coded as 2.16.840.1.113883.3.88.12.80.20, Ingredient Name Value Set, Dynamic (C154-[DE-8.13-3])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20'</pre>
+</li>
+</ul>
+</li>
 
 <li class="li">The code for the specific brand of product <strong class="ph b">SHALL</strong> appear in a manufacturedMaterial/translation element (C83-[DE-8.14-CDA-1])<ul class="ul"><li class="li">A code describing the product as a branded or
 trademarked entity from a controlled vocabulary</li>
 </ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.translation-&gt;size() &gt; 0</pre>
+</li>
+</ul>
 </li>
 
-<li class="li">The brand name <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.16, Medication Brand Name Value Set, version: 20081218, Dynamic, OR <strong class="ph b">SHALL</strong> be coded as  2.16.840.1.113883.3.88.12.80.19, Medication Packaged Product Value Set, Dynamic (C154-[DE-8.14-1])</li>
+<li class="li">The brand name <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.16, Medication Brand Name Value Set, version: 20081218, Dynamic, OR <strong class="ph b">SHALL</strong> be coded as  2.16.840.1.113883.3.88.12.80.19, Medication Packaged Product Value Set, Dynamic (C154-[DE-8.14-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'</pre>
+</li>
+</ul>
+</li>
 
 <li class="li">The product (generic) name <strong class="ph b">SHALL</strong> appear in the originalText element beneath the manufacturedMaterial/code element (C83-[DE-8.15-CDA-1])<ul class="ul"><li class="li">The name of the substance or product without
 reference to a specific vendor (e.g., generic or other
@@ -67,11 +85,17 @@ non-proprietary name). If a Coded Product Name is
 present, this is the text associated with the coded
 concept</li>
 </ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.manufacturedMaterial.code.originalText.oclIsUndefined()</pre>
+</li>
+</ul>
 </li>
 
 <li class="li">The brand name <strong class="ph b">SHALL</strong> appear in the &lt;name&gt; element of the &lt;manufacturedMaterial&gt; element (C83-[DE-8.14-CDA-2])<ul class="ul"><li class="li">The branded or trademarked name of the substance
 or product. If a Coded Brand Name is present, this is
 the text associated with the coded concept</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.manufacturedMaterial.name.oclIsUndefined()</pre>
+</li>
 </ul>
 </li>
 
@@ -89,7 +113,7 @@ the text associated with the coded concept</li>
   &lt;templateId root="2.16.840.1.113883.10.20.1.53"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/&gt;
   &lt;templateId root="2.16.840.1.113883.3.88.11.83.8.2"/&gt;
-  &lt;id root="10e4cba3-9ea4-4ea4-9cec-2c68054306ee"/&gt;
+  &lt;id root="8ed83cb7-39e0-4c37-933c-834b99a76cbf"/&gt;
 &lt;/manufacturedproduct&gt;</pre>
 
 </div>

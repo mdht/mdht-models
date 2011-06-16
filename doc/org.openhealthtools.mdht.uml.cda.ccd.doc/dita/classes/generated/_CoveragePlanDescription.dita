@@ -30,7 +30,7 @@
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="DEF">
-  <id root="7d0fb399-e61a-4006-ad51-4bcdb23a8f7c"/>
+  <id root="5cb223a0-c861-4ddb-a3c6-b6a2826d2733"/>
   <effectiveTime>
     <low value="2011"/>
     <high value="2011"/>

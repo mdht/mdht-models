@@ -171,7 +171,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1"/>
-  <id root="0887a795-37dc-425b-91d2-ff5e65ba8386"/>
+  <id root="27877e99-0c64-440a-a79a-2f4ac71fb04f"/>
   <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of episode note"/>
   <title/>
   <effectiveTime/>
@@ -181,13 +181,13 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.11"/>
-          <id root="08f27c1f-b883-4c27-a314-e25a0ce46b67"/>
+          <id root="210550c2-9c2e-436a-9fdf-68b280f0fa12"/>
           <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
           <title>Problem list</title>
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.27"/>
-              <id root="b36ca699-c00b-4d3a-b43d-e5e41cedc899"/>
+              <id root="c7ab1c17-beda-4890-87ac-d745e20c8fcc"/>
               <code nullFlavor="NA"/>
               <effectiveTime>
                 <low value="2011"/>
@@ -196,7 +196,7 @@
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.41"/>
-                  <id root="36055d5a-da02-4ccf-854a-0d4edbe3f46d"/>
+                  <id root="e5e73319-50f1-4768-bbdc-c9f84262db84"/>
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -209,7 +209,7 @@
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.28"/>
-                  <id root="cac6c1c3-d822-482d-bb70-8e2a61c5753b"/>
+                  <id root="b16a534b-53e9-4306-bce5-50dfec8585f7"/>
                   <code/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -220,7 +220,7 @@
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.50"/>
-                      <id root="8c0a8365-0601-4205-9be9-b0e7835eb280"/>
+                      <id root="477ce3be-0de4-419b-a565-1889a8708bb4"/>
                       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -234,7 +234,7 @@
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.51"/>
-                      <id root="5d7c5222-f763-498f-a628-577b499e1f26"/>
+                      <id root="acf82a49-b46a-454e-b193-62561409ab13"/>
                       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -247,7 +247,7 @@
                   <entryRelationship>
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.38"/>
-                      <id root="e7607c80-119c-4c95-8936-a7de330b55de"/>
+                      <id root="67a662e8-5a12-4a86-b70f-10590a76e59d"/>
                       <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -265,7 +265,7 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.4"/>
-          <id root="0e31bd7b-1432-44d8-ab80-6998b691de0a"/>
+          <id root="9b5b4e8c-6060-41b3-be41-31581527501c"/>
           <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of family member diseases"/>
           <title>History of family member diseases</title>
         </section>
@@ -273,7 +273,7 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.15"/>
-          <id root="e38866ba-4d09-481b-9793-0c036826fceb"/>
+          <id root="e9cbc31e-9333-4c83-b880-3dce7f153ed2"/>
           <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
           <title>Social history</title>
         </section>
@@ -281,13 +281,13 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.2"/>
-          <id root="6d284350-85da-46e6-b388-dc7579b90908"/>
+          <id root="cfd5b190-84a2-4561-9f09-2ab355a116bb"/>
           <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
           <title>Allergies, adverse reactions, alerts</title>
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.27"/>
-              <id root="4013cac6-5a6e-4a60-b729-a44699dc9ad3"/>
+              <id root="ec91ad11-dd9c-46ed-b186-83e8be79936b"/>
               <code nullFlavor="NA"/>
               <effectiveTime>
                 <low value="2011"/>
@@ -296,7 +296,7 @@
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.41"/>
-                  <id root="d30bf6d3-69d2-413f-b119-8a8dab4d0a5f"/>
+                  <id root="d96f29fe-e0ce-4e51-bf9f-569e285ee4e7"/>
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -309,7 +309,7 @@
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.28"/>
-                  <id root="00a47052-6879-48f7-b3dc-4d42df3817f0"/>
+                  <id root="46612d39-7163-436b-b1ee-934dba4aeec1"/>
                   <code/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -320,7 +320,7 @@
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.50"/>
-                      <id root="9650a019-40b1-4d2c-83f2-354b74d1c55e"/>
+                      <id root="4cb93dd3-737b-41d2-88ff-0d225823addb"/>
                       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -334,7 +334,7 @@
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.57"/>
                       <templateId root="2.16.840.1.113883.10.20.1.51"/>
-                      <id root="8ba11149-11cd-4d4f-8127-3ceeefda7474"/>
+                      <id root="ebc9e42e-8c65-490a-95c2-f02630a52695"/>
                       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -347,7 +347,7 @@
                   <entryRelationship>
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.38"/>
-                      <id root="ae66741d-726e-4deb-bbd7-352efd46968a"/>
+                      <id root="b56bc8c5-abdf-4fe3-9209-7597bacff944"/>
                       <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -365,15 +365,15 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.8"/>
-          <id root="92fb4717-8eef-45f4-8cf2-2d9eac53f21f"/>
+          <id root="9bee379d-8a4f-4a4f-938d-780825228b51"/>
           <code code="10160-0" codeSystemName="" displayName="History of medication use"/>
           <title>History of medication use</title>
           <entry>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.1.24"/>
-              <id root="2f139037-1171-4fd6-90aa-3dd0777ae3ad"/>
+              <id root="87f733fd-fcc6-4513-b38a-ddbfa33bb8a9"/>
               <statusCode/>
-              <effectiveTime value="20110404"/>
+              <effectiveTime value="20110616"/>
               <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
               <doseQuantity/>
               <rateQuantity/>
@@ -381,7 +381,7 @@
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.46"/>
-                  <id root="8c941d93-e359-4be8-9f64-453c8ae35da1"/>
+                  <id root="badb921a-8cb3-415b-a0e8-da0ddcb99833"/>
                   <code code="30973-2" codeSystemName="" displayName="Dose number"/>
                   <statusCode/>
                   <effectiveTime>
@@ -395,7 +395,7 @@
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.57"/>
                   <templateId root="2.16.840.1.113883.10.20.1.47"/>
-                  <id root="772e220e-2812-4ac7-9758-65454bf3ea72"/>
+                  <id root="819fb0c2-b12d-4329-9676-0da8330d1da1"/>
                   <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -408,7 +408,7 @@
               <entryRelationship>
                 <act moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.1.49"/>
-                  <id root="1657c6ac-606c-4d03-8a48-13880d8440e4"/>
+                  <id root="3e985679-3165-4ed0-ad3c-deffeda2e228"/>
                   <effectiveTime>
                     <low value="2011"/>
                     <high value="2011"/>
@@ -418,7 +418,7 @@
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.54"/>
-                  <id root="21fe2dde-41f2-42a3-abe7-0d5be6340151"/>
+                  <id root="58db75c3-b90b-4b66-b611-1c71777e900c"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2011"/>
@@ -427,7 +427,7 @@
                   <entryRelationship>
                     <observation classCode="OBS" moodCode="EVN">
                       <templateId root="2.16.840.1.113883.10.20.1.55"/>
-                      <id root="9a763151-c9b8-44ce-bdc4-15c7f0594ce4"/>
+                      <id root="8bf29144-d98d-47c0-9350-2281624767fd"/>
                       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -443,16 +443,16 @@
           <entry>
             <supply classCode="SPLY">
               <templateId root="2.16.840.1.113883.10.20.1.34"/>
-              <id root="8deccf48-8004-4891-8484-71d9102a51c1"/>
+              <id root="4e34f859-a0fd-4e8c-8f24-b35c2c7f9d1b"/>
               <statusCode/>
-              <effectiveTime value="20110404"/>
+              <effectiveTime value="20110616"/>
               <repeatNumber/>
               <quantity/>
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.57"/>
                   <templateId root="2.16.840.1.113883.10.20.1.47"/>
-                  <id root="4daddc88-87ed-43fc-b254-34ccac5cb36e"/>
+                  <id root="87184fa5-da9a-4824-8f97-3735753c9c66"/>
                   <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -465,7 +465,7 @@
               <entryRelationship>
                 <act moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.1.43"/>
-                  <id root="483299ea-75bc-42f0-903c-149acb948d8a"/>
+                  <id root="3a663b60-6c01-4e62-aefd-2bf57792ea59"/>
                   <effectiveTime>
                     <low value="2011"/>
                     <high value="2011"/>
@@ -479,13 +479,13 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.14"/>
-          <id root="1474c071-a54c-4881-932d-2f79d7770d43"/>
+          <id root="0bfa5db0-1a47-40df-a558-3d4e6d3de6bb"/>
           <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
           <title>Relevant diagnostic tests and/or laboratory data</title>
           <entry>
             <organizer moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.32"/>
-              <id root="eb3c9fe4-f371-4f2c-bd83-b56b378fc7c1"/>
+              <id root="20c1ca47-0939-4e59-9919-aee6e986fc6a"/>
               <code/>
               <statusCode/>
               <effectiveTime>
@@ -495,7 +495,7 @@
               <component>
                 <observation moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
-                  <id root="ea52641b-0ef0-432f-8cf5-fb72beb720d7"/>
+                  <id root="6060ea5f-9298-4669-9117-3813cea5decc"/>
                   <code/>
                   <statusCode/>
                   <effectiveTime>
@@ -513,7 +513,7 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.12"/>
-          <id root="76bda7e3-b631-4e2f-a2da-595277a4c97a"/>
+          <id root="3f86b5bd-d4d1-4536-9024-2fd51be74181"/>
           <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
           <title>History of procedures</title>
         </section>
@@ -521,7 +521,7 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.3"/>
-          <id root="7fcadfd8-7541-44ce-b24b-e8896dd7fe7e"/>
+          <id root="d34ac48a-0690-4bb0-a0ae-261dda08952e"/>
           <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
           <title>History of encounters</title>
         </section>
@@ -529,13 +529,13 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.10"/>
-          <id root="b2b6a8a4-62d6-488f-a832-84af6d878f72"/>
+          <id root="f7cdc843-04ca-4f81-b1bf-7bd832a7512c"/>
           <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
           <title>Treatment plan</title>
           <entry>
             <act>
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="2b5e0498-e81c-4240-bd34-a27aee0aa3ff"/>
+              <id root="f86bf05d-d154-4029-a42e-d3a9ae4978c7"/>
               <effectiveTime>
                 <low value="2011"/>
                 <high value="2011"/>
@@ -545,7 +545,7 @@
           <entry>
             <encounter>
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="a8ffdf36-10a6-4e70-9835-dd61342a56d8"/>
+              <id root="5b4dcc6e-862b-43be-96bf-6ea9160c8d57"/>
               <effectiveTime>
                 <low value="2011"/>
                 <high value="2011"/>
@@ -555,7 +555,7 @@
           <entry>
             <observation>
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="3d044cbe-ab96-43c8-b8a2-df38327ae662"/>
+              <id root="d2397cad-d8cd-4caa-985d-1cc04cfc4ae5"/>
               <effectiveTime>
                 <low value="2011"/>
                 <high value="2011"/>
@@ -565,7 +565,7 @@
           <entry>
             <procedure>
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="60483795-351e-4dba-bcc5-a9fbf7262843"/>
+              <id root="e18296e7-2b90-4910-ab71-90d1f08e6a3d"/>
               <effectiveTime>
                 <low value="2011"/>
                 <high value="2011"/>
@@ -575,15 +575,15 @@
           <entry>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="22f1dd60-26ae-4eb1-822c-e21b5011e6e5"/>
-              <effectiveTime value="20110404"/>
+              <id root="4e062294-3e16-4c1e-820e-3373904ab74d"/>
+              <effectiveTime value="20110616"/>
             </substanceAdministration>
           </entry>
           <entry>
             <supply classCode="SPLY">
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="71b7d56d-83c0-4451-bfb7-60041232edda"/>
-              <effectiveTime value="20110404"/>
+              <id root="a4e4a175-c66d-43f1-908d-5402a0642eb6"/>
+              <effectiveTime value="20110616"/>
             </supply>
           </entry>
         </section>
@@ -591,7 +591,7 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.6"/>
-          <id root="21a232a3-126f-4cdc-9eec-b9e92d67e2e5"/>
+          <id root="fadbf51e-7f50-446e-9ce4-73be77678ff3"/>
           <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
           <title>History of immunizations</title>
         </section>
@@ -599,14 +599,14 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.16"/>
-          <id root="1a668a32-a5bb-4e02-ae0d-df960216af0a"/>
+          <id root="40c2f806-ffec-4206-8dd6-aba2ebe4d11b"/>
           <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
           <title>Vital signs</title>
           <entry>
             <organizer moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.32"/>
               <templateId root="2.16.840.1.113883.10.20.1.35"/>
-              <id root="c998f07f-2f73-4775-b87f-a090370899a9"/>
+              <id root="4df04f0e-f5bc-4570-acde-e690ce30474e"/>
               <code/>
               <statusCode/>
               <effectiveTime>
@@ -616,7 +616,7 @@
               <component>
                 <observation moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
-                  <id root="fe397025-d24b-42ec-9936-8ab2171ccbd0"/>
+                  <id root="b3364e4e-cb68-4ab2-94c4-3ea6f3587ae0"/>
                   <code/>
                   <statusCode/>
                   <effectiveTime>
@@ -634,7 +634,7 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.7"/>
-          <id root="d48f6c02-c408-4e5e-b291-5b23e1d5f2f7"/>
+          <id root="4539ca6b-fb2d-4349-a46f-875b80197ad7"/>
           <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medical device use"/>
           <title>History of medical device use</title>
         </section>
@@ -642,7 +642,7 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.5"/>
-          <id root="3dcfbe7a-731b-4cdc-ae2c-759d0b723617"/>
+          <id root="d0883ea5-bd9e-4207-a280-dd3e9de5a088"/>
           <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment"/>
           <title>Functional status assessment</title>
         </section>
@@ -650,13 +650,13 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.1"/>
-          <id root="d7171aea-c3a5-4e24-bb7a-bfe1c12d9f57"/>
+          <id root="76a1097c-1d50-45c5-ba5c-5438477e01ad"/>
           <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/>
           <title>Advance directives</title>
           <entry>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.17"/>
-              <id root="b8c8c434-6f49-444a-b9f9-8e39778ceebc"/>
+              <id root="007c5eac-fe26-4677-8049-1d673a350662"/>
               <code/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -670,13 +670,13 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.9"/>
-          <id root="57deb099-4b37-4468-92d9-f989bda09781"/>
+          <id root="4e103a9a-a369-4b7b-a8fc-9e27da972c44"/>
           <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
           <title>Payment sources</title>
           <entry>
             <act classCode="ACT" moodCode="DEF">
               <templateId root="2.16.840.1.113883.10.20.1.20"/>
-              <id root="fb6aa866-916d-4b7a-a82d-854da0c84dcb"/>
+              <id root="e165ab30-1916-437b-a989-e10bb3b12510"/>
               <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -686,7 +686,7 @@
               <entryRelationship>
                 <act classCode="ACT" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.1.26"/>
-                  <id root="09945c7e-2894-459f-b8fe-d308c9d6869d"/>
+                  <id root="eb33c282-aef8-4ffe-b4f1-146f4642cce8"/>
                   <code/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -702,13 +702,13 @@
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.1.13"/>
-          <id root="623c71d7-7751-4a39-91d6-c70be8c81d9a"/>
+          <id root="ee490571-36fa-4121-ba5c-12d6fe009693"/>
           <code code="48764-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summary purpose"/>
           <title>Summary purpose</title>
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.30"/>
-              <id root="851aecd7-210e-4358-943c-20b22b6eb9cb"/>
+              <id root="6e474700-4742-4200-b3dd-4086a00c7519"/>
               <code code="23745001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Documentation procedure"/>
               <statusCode code="completed"/>
               <effectiveTime>

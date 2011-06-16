@@ -67,17 +67,19 @@ identifying the site.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Value for moodCode is "EVN" 2.16.840.1.113883.5.1001 ActMood STATIC (6.3.4.17.2)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-308)
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: In a CDA document, the URI given in the value attribute of the &lt;reference&gt; element points to an element in the narrative content that contains the complete text describing the immunization activity.<ul class="ul"><li class="li">In a CDA document, the URI given in the value attribute of the 'reference' element points to an element in the narrative content that contains the complete text describing the immunization activity. In an HL7 message, the content of the text element shall contain the complete text describing the immunization activity.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The effectiveTime element shall be present and should contain a time value that indicates the date of the substance administration. If the date is unkown, this shall be recorded using the nullFlavor attribute, with the reason that the information is unknown being specified. Otherwise, the date shall be recorded, and should have precision of at least the day. (6.3.4.17.8)</li>
-
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: CPT-4 codes may be used for immunization procedures</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: If negationInd is set to TRUE atleast one comment shall exist that provides an explanation for why the immunization did not take place. Other comments may also be present</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: If negationInd is set to TRUE atleast one comment shall exist that provides an explanation for why the immunization did not take place. Other comments may also be present<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.negationInd=true implies not self.entryRelationship.act-&gt;select( act | act.oclIsKindOf(ccd::Comment) )-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
 
 </ol>
 
@@ -89,13 +91,13 @@ identifying the site.</li>
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+&lt;substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/&gt;
-  &lt;id root="6e59ec9a-f2d4-4f0b-ab3e-c09fa39b9991"/&gt;
-  &lt;code/&gt;
+  &lt;id root="f8134a58-b015-4a98-8f89-605f4a2c2f24"/&gt;
+  &lt;code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/&gt;
   &lt;statusCode/&gt;
-  &lt;effectiveTime value="20110404"/&gt;
+  &lt;effectiveTime value="20110616"/&gt;
   &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
   &lt;doseQuantity/&gt;
   &lt;rateQuantity/&gt;
@@ -103,7 +105,7 @@ identifying the site.</li>
   &lt;entryRelationship&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
-      &lt;id root="ca787333-1b8f-4ca1-a4a3-9fdec7a43e42"/&gt;
+      &lt;id root="3dbef9fd-811b-410e-9fa6-241ce3c04327"/&gt;
       &lt;code code="30973-2" codeSystemName="" displayName="Dose number"/&gt;
       &lt;statusCode/&gt;
       &lt;effectiveTime&gt;
@@ -117,7 +119,7 @@ identifying the site.</li>
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
-      &lt;id root="c1894c59-d91a-4dd5-9d57-faa596f8ee54"/&gt;
+      &lt;id root="4d535fc3-910e-47d5-8ec7-c99a0a157732"/&gt;
       &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -130,7 +132,7 @@ identifying the site.</li>
   &lt;entryRelationship&gt;
     &lt;act moodCode="INT"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
-      &lt;id root="5b74f5e3-1fc7-4b5c-a614-9b9ac023f131"/&gt;
+      &lt;id root="075dac09-adef-44f1-9b7c-a668e46e29a3"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2011"/&gt;
         &lt;high value="2011"/&gt;
@@ -140,7 +142,7 @@ identifying the site.</li>
   &lt;entryRelationship&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
-      &lt;id root="1e278a48-b4ae-4c4e-9485-830a6ef62b45"/&gt;
+      &lt;id root="cd193b7e-fd70-4c1f-b3fe-6068a0b9cd00"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2011"/&gt;
@@ -149,7 +151,7 @@ identifying the site.</li>
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
-          &lt;id root="602219ee-6e58-45f9-9010-05394bdeecca"/&gt;
+          &lt;id root="dac9d706-656f-4e14-bb88-6f17e4ae7cd2"/&gt;
           &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;

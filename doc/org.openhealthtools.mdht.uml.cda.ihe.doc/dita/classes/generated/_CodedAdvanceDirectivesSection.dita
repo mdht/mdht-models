@@ -29,13 +29,13 @@
   <templateId root="2.16.840.1.113883.10.20.1.1"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.34"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.35"/>
-  <id root="061a1c2e-b733-4fcc-9a36-fbb06519fa92"/>
+  <id root="38ba116a-3a2a-49ce-8fbf-0735a59cd927"/>
   <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/>
   <title>Advance directives</title>
   <entry>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.17"/>
-      <id root="2af619a2-8f29-4f5f-9d92-13340204b090"/>
+      <id root="013c6c80-ae2e-450a-8ed1-fd393fd6c3df"/>
       <code/>
       <statusCode code="completed"/>
       <effectiveTime>
