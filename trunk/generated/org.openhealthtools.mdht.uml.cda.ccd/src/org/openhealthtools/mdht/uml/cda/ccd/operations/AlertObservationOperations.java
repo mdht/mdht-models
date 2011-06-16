@@ -259,7 +259,7 @@ public class AlertObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ALERT_OBSERVATION_AGENT_REPRESENTATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(entity : cda::Participant2 |"
-			+ "  entity.typeCode = 'CSM')";
+			+ "  entity.typeCode = vocab::ParticipationType::CSM)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAlertObservationAgentRepresentationVocab(AlertObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Alert Observation Agent Representation Vocab</em>}' invariant operation.
@@ -276,7 +276,7 @@ public class AlertObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * self.participant->one(entity : cda::Participant2 |
-	 *   entity.typeCode = 'CSM')
+	 *   entity.typeCode = vocab::ParticipationType::CSM)
 	 * @param alertObservation The receiving '<em><b>Alert Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -317,7 +317,7 @@ public class AlertObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ALERT_OBSERVATION_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant.participantRole->one(entity : cda::ParticipantRole |"
-			+ "  entity.classCode = 'MANU')";
+			+ "  entity.classCode = vocab::RoleClassRoot::MANU)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAlertObservationParticipantRoleClassCode(AlertObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Alert Observation Participant Role Class Code</em>}' invariant operation.
@@ -334,7 +334,7 @@ public class AlertObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * self.participant.participantRole->one(entity : cda::ParticipantRole |
-	 *   entity.classCode = 'MANU')
+	 *   entity.classCode = vocab::RoleClassRoot::MANU)
 	 * @param alertObservation The receiving '<em><b>Alert Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

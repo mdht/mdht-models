@@ -48,23 +48,10 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getResultsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Relevant diagnostic tests and/or laboratory data' templateId.root='2.16.840.1.113883.10.20.1.14' constraints.validation.error='ResultsSectionTemplateId ResultsSectionCode ResultsSectionTitle ResultsSectionText' code.codeSystemName='LOINC' constraints.validation.warning='ResultsSectionTitleValue ResultsSectionResultOrganizer' code.code='30954-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Relevant diagnostic tests and/or laboratory data' templateId.root='2.16.840.1.113883.10.20.1.14' constraints.validation.error='ResultsSectionTemplateId ResultsSectionCode ResultsSectionTitle ResultsSectionText' code.codeSystemName='LOINC' constraints.validation.warning='ResultsSectionResultOrganizer' code.code='30954-2'"
  * @generated
  */
 public interface ResultsSection extends Section {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.title = 'results'
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.title = \'results\''"
-	 * @generated
-	 */
-	boolean validateResultsSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

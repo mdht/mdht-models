@@ -369,7 +369,7 @@ public class SupplyActivityOperations extends SupplyOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SUPPLY_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.product.oclIsUndefined() and self.product.oclIsKindOf(ccd::Product)";
+	protected static final String VALIDATE_SUPPLY_ACTIVITY_HAS_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.product.oclIsUndefined() and self.product.oclIsKindOf(cda::Product)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSupplyActivityHasProduct(SupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Supply Activity Has Product</em>}' invariant operation.
@@ -385,7 +385,7 @@ public class SupplyActivityOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.product.oclIsUndefined() and self.product.oclIsKindOf(ccd::Product)
+	 * not self.product.oclIsUndefined() and self.product.oclIsKindOf(cda::Product)
 	 * @param supplyActivity The receiving '<em><b>Supply Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

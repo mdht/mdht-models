@@ -43,11 +43,11 @@ public interface EncounterLocation extends Participant2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.classCode = 'SDLOC'
+	 * self.participantRole.classCode =  vocab::RoleClassRoot::SDLOC
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.classCode = \'SDLOC\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.classCode =  vocab::RoleClassRoot::SDLOC'"
 	 * @generated
 	 */
 	boolean validateEncounterLocationHasParticipantRoleLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -96,11 +96,11 @@ public interface EncounterLocation extends Participant2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.playingEntity.classCode = 'PLC'
+	 * self.participantRole.playingEntity.classCode = vocab::EntityClassRoot::PLC
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.playingEntity.classCode = \'PLC\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.playingEntity.classCode = vocab::EntityClassRoot::PLC'"
 	 * @generated
 	 */
 	boolean validateEncounterLocationHasPlayingEntityPlace(DiagnosticChain diagnostics, Map<Object, Object> context);

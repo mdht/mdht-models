@@ -56,15 +56,6 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePayersSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PayersSectionOperations.validatePayersSectionTitleValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePayersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PayersSectionOperations.validatePayersSectionTemplateId(this, diagnostics, context);
 	}

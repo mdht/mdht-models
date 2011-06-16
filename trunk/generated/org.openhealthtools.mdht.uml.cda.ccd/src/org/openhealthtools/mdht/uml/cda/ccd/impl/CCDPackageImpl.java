@@ -1673,17 +1673,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			medicationsSectionEClass, ecorePackage.getEBoolean(), "validateMedicationsSectionTitleValue", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
 			medicationsSectionEClass, ecorePackage.getEBoolean(), "validateMedicationsSectionTemplateId", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -2964,17 +2953,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			problemSectionEClass, ecorePackage.getEBoolean(), "validateProblemSectionTitleValue", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
 			problemSectionEClass, ecorePackage.getEBoolean(), "validateProblemSectionTemplateId", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -3334,17 +3312,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			alertsSectionEClass, ecorePackage.getEBoolean(), "validateAlertsSectionTitleValue", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
 			alertsSectionEClass, ecorePackage.getEBoolean(), "validateAlertsSectionTemplateId", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -3401,17 +3368,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		initEClass(
 			resultsSectionEClass, ResultsSection.class, "ResultsSection", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			resultsSectionEClass, ecorePackage.getEBoolean(), "validateResultsSectionTitleValue", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
 			resultsSectionEClass, ecorePackage.getEBoolean(), "validateResultsSectionTemplateId", 0, 1, IS_UNIQUE,
@@ -3724,17 +3680,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		initEClass(
 			proceduresSectionEClass, ProceduresSection.class, "ProceduresSection", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			proceduresSectionEClass, ecorePackage.getEBoolean(), "validateProceduresSectionTitleValue", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
 			proceduresSectionEClass, ecorePackage.getEBoolean(), "validateProceduresSectionTemplateId", 0, 1,
@@ -4256,17 +4201,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			immunizationsSectionEClass, ecorePackage.getEBoolean(), "validateImmunizationsSectionTitleValue", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
 			immunizationsSectionEClass, ecorePackage.getEBoolean(), "validateImmunizationsSectionTitle", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -4291,17 +4225,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		initEClass(
 			vitalSignsSectionEClass, VitalSignsSection.class, "VitalSignsSection", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			vitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateVitalSignsSectionTitleValue", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
 			vitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateVitalSignsSectionTemplateId", 0, 1,
@@ -4587,17 +4510,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		initEClass(
 			payersSectionEClass, PayersSection.class, "PayersSection", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			payersSectionEClass, ecorePackage.getEBoolean(), "validatePayersSectionTitleValue", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
 			payersSectionEClass, ecorePackage.getEBoolean(), "validatePayersSectionTemplateId", 0, 1, IS_UNIQUE,
@@ -4940,17 +4852,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		initEClass(
 			purposeSectionEClass, PurposeSection.class, "PurposeSection", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			purposeSectionEClass, ecorePackage.getEBoolean(), "validatePurposeSectionTitleValue", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
 			purposeSectionEClass, ecorePackage.getEBoolean(), "validatePurposeSectionTemplateId", 0, 1, IS_UNIQUE,
@@ -6192,7 +6093,7 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"code.codeSystemName",
 					"LOINC",
 					"constraints.validation.warning",
-					"MedicationsSectionHasMedicationOrSupplyActivity MedicationsSectionTitleValue MedicationsSectionMedicationActivity MedicationsSectionSupplyActivity",
+					"MedicationsSectionHasMedicationOrSupplyActivity MedicationsSectionMedicationActivity MedicationsSectionSupplyActivity",
 					"code.code", "10160-0" });
 		addAnnotation(
 			medicationActivityEClass,
@@ -6312,8 +6213,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "Problem list", "templateId.root",
 				"2.16.840.1.113883.10.20.1.11", "constraints.validation.error",
 				"ProblemSectionTemplateId ProblemSectionCode ProblemSectionTitle ProblemSectionText",
-				"code.codeSystemName", "LOINC", "constraints.validation.warning",
-				"ProblemSectionTitleValue ProblemSectionProblemAct", "code.code", "11450-4" });
+				"code.codeSystemName", "LOINC", "constraints.validation.warning", "ProblemSectionProblemAct",
+				"code.code", "11450-4" });
 		addAnnotation(
 			problemActEClass,
 			source,
@@ -6361,15 +6262,15 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "Allergies, adverse reactions, alerts",
 				"templateId.root", "2.16.840.1.113883.10.20.1.2", "constraints.validation.error",
 				"AlertsSectionTemplateId AlertsSectionCode AlertsSectionTitle AlertsSectionText",
-				"code.codeSystemName", "LOINC", "constraints.validation.warning",
-				"AlertsSectionTitleValue AlertsSectionProblemAct", "code.code", "48765-2" });
+				"code.codeSystemName", "LOINC", "constraints.validation.warning", "AlertsSectionProblemAct",
+				"code.code", "48765-2" });
 		addAnnotation(resultsSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName",
 				"Relevant diagnostic tests and/or laboratory data", "templateId.root", "2.16.840.1.113883.10.20.1.14",
 				"constraints.validation.error",
 				"ResultsSectionTemplateId ResultsSectionCode ResultsSectionTitle ResultsSectionText",
-				"code.codeSystemName", "LOINC", "constraints.validation.warning",
-				"ResultsSectionTitleValue ResultsSectionResultOrganizer", "code.code", "30954-2" });
+				"code.codeSystemName", "LOINC", "constraints.validation.warning", "ResultsSectionResultOrganizer",
+				"code.code", "30954-2" });
 		addAnnotation(
 			resultOrganizerEClass,
 			source,
@@ -6394,8 +6295,7 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "2.16.840.1.113883.10.20.1.12",
 				"code.displayName", "History of procedures", "constraints.validation.error",
 				"ProceduresSectionTemplateId ProceduresSectionCode ProceduresSectionTitle ProceduresSectionText",
-				"code.codeSystemName", "LOINC", "constraints.validation.warning", "ProceduresSectionTitleValue",
-				"code.code", "47519-4" });
+				"code.codeSystemName", "LOINC", "code.code", "47519-4" });
 		addAnnotation(encountersSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "History of encounters",
 				"templateId.root", "2.16.840.1.113883.10.20.1.3", "constraints.validation.error",
@@ -6491,14 +6391,13 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"History of immunizations",
 					"constraints.validation.error",
 					"ImmunizationsSectionTemplateId MedicationsSectionCode ImmunizationsSectionTitle ImmunizationsSectionText",
-					"code.codeSystemName", "LOINC", "constraints.validation.warning", "ImmunizationsSectionTitleValue",
-					"code.code", "11369-6" });
+					"code.codeSystemName", "LOINC", "code.code", "11369-6" });
 		addAnnotation(vitalSignsSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "Vital signs", "templateId.root",
 				"2.16.840.1.113883.10.20.1.16", "constraints.validation.error",
 				"VitalSignsSectionTemplateId VitalSignsSectionCode VitalSignsSectionTitle VitalSignsSectionText",
 				"code.codeSystemName", "LOINC", "constraints.validation.warning",
-				"VitalSignsSectionTitleValue VitalSignsSectionVitalSignsOrganizer", "code.code", "8716-3" });
+				"VitalSignsSectionVitalSignsOrganizer", "code.code", "8716-3" });
 		addAnnotation(vitalSignsOrganizerEClass, source, new String[] {
 				"templateId.root", "2.16.840.1.113883.10.20.1.35", "constraints.validation.error",
 				"VitalSignsOrganizerTemplateId VitalSignsOrganizerInformationSource" });
@@ -6542,8 +6441,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "Payment sources", "templateId.root",
 				"2.16.840.1.113883.10.20.1.9", "constraints.validation.error",
 				"PayersSectionTemplateId PayersSectionCode PayersSectionTitle PayersSectionText",
-				"code.codeSystemName", "LOINC", "constraints.validation.warning",
-				"PayersSectionTitleValue PayersSectionCoverageActivity", "code.code", "48768-6" });
+				"code.codeSystemName", "LOINC", "constraints.validation.warning", "PayersSectionCoverageActivity",
+				"code.code", "48768-6" });
 		addAnnotation(
 			coverageActivityEClass,
 			source,
@@ -6579,8 +6478,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "Summary purpose", "templateId.root",
 				"2.16.840.1.113883.10.20.1.13", "constraints.validation.error",
 				"PurposeSectionTemplateId PurposeSectionCode PurposeSectionTitle PurposeSectionText",
-				"code.codeSystemName", "LOINC", "constraints.validation.warning",
-				"PurposeSectionTitleValue PurposeSectionPurposeActivity", "code.code", "48764-5" });
+				"code.codeSystemName", "LOINC", "constraints.validation.warning", "PurposeSectionPurposeActivity",
+				"code.code", "48764-5" });
 		addAnnotation(
 			purposeActivityEClass,
 			source,

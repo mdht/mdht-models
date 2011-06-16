@@ -7,9 +7,7 @@
     <ownedRule xmi:id="_AYNOgBK0Ed-6K-YJpbwRmQ" name="titleValue" constrainedElement="_S9W4sIHNEd6Ncrr6L3Ublw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3emMBK0Ed-6K-YJpbwRmQ">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>SHOULD contain a case-insensitive language-insensitive string containing 'problems'.</body>
-        <body>self.title = 'problems'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_xw8ZwGaGEd6Hk_bPOfEjYA">

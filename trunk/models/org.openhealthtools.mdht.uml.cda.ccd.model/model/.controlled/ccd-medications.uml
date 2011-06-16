@@ -29,9 +29,7 @@
       <constrainedElement xmi:type="uml:Property" href="ccd-problem.uml#_S9W4sIHNEd6Ncrr6L3Ublw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_BoaqAeebEd-aaJELhEID-A">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>Valued with a case-insensitive language-insensitive string containing 'medication'.</body>
-        <body>self.title = 'medication'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_rdDU0HfUEd6ZeOKq_2_a9g">
@@ -271,7 +269,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>Contains exactly one product, the target of which is a Product template.</body>
-        <body>not self.product.oclIsUndefined() and self.product.oclIsKindOf(ccd::Product)</body>
+        <body>not self.product.oclIsUndefined() and self.product.oclIsKindOf(cda::Product)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_AzO1gEqjEeCJlNjgFmcEiA" name="hasSameProductInstance" constrainedElement="_s53hACp6EeCuGIaOlnUvyw">

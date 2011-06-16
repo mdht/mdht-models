@@ -11,9 +11,7 @@
     <ownedRule xmi:id="_4lS0EFQAEeCl3PxyJ8BBuQ" name="titleValue" constrainedElement="_1XPjsFQAEeCl3PxyJ8BBuQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_92avcFQAEeCl3PxyJ8BBuQ">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>title is valued with a case-insensitive language-insensitive text string containing &quot;procedures&quot;.</body>
-        <body>self.title = 'procedures'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0FmDsFQCEeCl3PxyJ8BBuQ" name="hasProcedureActivity" constrainedElement="_4lS0EFQAEeCl3PxyJ8BBuQ">
