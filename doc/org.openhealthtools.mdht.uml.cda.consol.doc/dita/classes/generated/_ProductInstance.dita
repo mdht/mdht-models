@@ -21,6 +21,10 @@
 </li>
 <li>If participantRole in a product instance contains participantRole / id, then participantRole <b>SHOULD</b> also contain participantRole / scopingEntity. (CONF-451)</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="MANU">
+  <templateId root="2.16.840.1.113883.10.20.1.52"/>
+  <id root="8e8a333a-bb2e-4076-9bb6-e757f2be16c2"/>
+</participantrole>]]></codeblock>
 </body>
 </topic>

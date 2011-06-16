@@ -8,8 +8,8 @@
 <meta name="DC.rights.owner" content="(C) Copyright 2005"/>
 <meta name="DC.Type" content="topic"/>
 <meta name="DC.Title" content="Problem List Section"/>
-<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.21.2.5.1]"/>
-<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.21.2.5.1]"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.22.2.5.1]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.22.2.5.1]"/>
 <meta name="DC.Coverage" content="Section"/>
 <meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
 <meta name="DC.Format" content="XHTML"/>
@@ -28,7 +28,7 @@
 
 
 
-<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.21.2.5.1</tt>]</p>
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.2.5.1</tt>]</p>
 
 
 <div class="section">
@@ -43,11 +43,11 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProblemListNarrativeSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.21.2.5]">Problem List Narrative Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.21.2.5</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProblemListNarrativeSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.5]">Problem List Narrative Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.5</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-CONSOL-549), such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-CONSOL-549), such that
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="Condition.html" title="[Act: templateId 2.16.840.1.113883.10.20.21.4.3]">Condition</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.21.4.3</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Condition.html" title="[Act: templateId 2.16.840.1.113883.10.20.22.4.3]">Condition</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.3</tt>)</li>
 </ol>
 </li>
 
@@ -62,7 +62,111 @@
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.21.2.5"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.21.2.5.1"/&gt;
+  &lt;id root="1a28e65e-beaf-450d-ba7f-81a5d4f2862f"/&gt;
+  &lt;code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/&gt;
+  &lt;title&gt;Problem list&lt;/title&gt;
+  &lt;entry&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.21.4.3"/&gt;
+      &lt;id root="cf6cc032-5213-4af7-9b97-ec8ed703be7d"/&gt;
+      &lt;code nullFlavor="NA"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.41"/&gt;
+          &lt;id root="76c51ccf-762c-4048-b293-859087133b95"/&gt;
+          &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.21.4.4"/&gt;
+          &lt;id root="9b642752-5263-4673-b5a7-3e71fa3abdd5"/&gt;
+          &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
+              &lt;id root="754d8766-19e5-4379-b104-243b12814b01"/&gt;
+              &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.21.4.8"/&gt;
+              &lt;id root="89a70e05-6f2e-427d-ba81-c8d56b4fdbac"/&gt;
+              &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.21.4.6"/&gt;
+              &lt;id root="2538744a-9bfc-40cf-96d0-557fc72e8e81"/&gt;
+              &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.21.4.5"/&gt;
+              &lt;id root="b2e310e2-dae8-4fb7-acfc-0aa4aa28bd85"/&gt;
+              &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;act classCode="ACT" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.21.4.10"/&gt;
+              &lt;id root="ee1d00c7-6358-4b76-b486-7a7f9ede8549"/&gt;
+              &lt;code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/act&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/act&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

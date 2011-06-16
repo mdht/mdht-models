@@ -204,6 +204,38 @@ measure</li></ul></li>
 <li>The fill number <b>SHOULD</b> be recorded in the sequenceNumber attribute of a entryRelationship element with a typeCode attribute set to COMP (C83-[DE-8.39-CDA-1])<ul><li>The fill number for the
 history entry. The fill number identifies the supply (dispense) event as a distinct activities against the prescription.</li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SPLY">
+  <templateId root="2.16.840.1.113883.3.88.11.83.8.3"/>
+  <id root="08c0c532-a331-4e96-9f90-3f057c4937c6"/>
+  <statusCode/>
+  <effectiveTime value="20110616"/>
+  <repeatNumber/>
+  <quantity/>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+      <templateId root="2.16.840.1.113883.10.20.1.47"/>
+      <id root="e560e66a-6f61-453c-98f7-170dc00efb54"/>
+      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act moodCode="INT">
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+      <id root="d3283802-81d3-4e4f-bac1-dc5f50203edd"/>
+      <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+</supply>]]></codeblock>
 </body>
 </topic>

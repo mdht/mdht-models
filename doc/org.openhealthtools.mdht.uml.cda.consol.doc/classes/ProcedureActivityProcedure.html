@@ -8,8 +8,8 @@
 <meta name="DC.rights.owner" content="(C) Copyright 2005"/>
 <meta name="DC.Type" content="topic"/>
 <meta name="DC.Title" content="Procedure Activity Procedure"/>
-<meta name="abstract" content="[Procedure: templateId 2.16.840.1.113883.10.20.21.4.14]"/>
-<meta name="description" content="[Procedure: templateId 2.16.840.1.113883.10.20.21.4.14]"/>
+<meta name="abstract" content="[Procedure: templateId 2.16.840.1.113883.10.20.22.4.14]"/>
+<meta name="description" content="[Procedure: templateId 2.16.840.1.113883.10.20.22.4.14]"/>
 <meta name="DC.Coverage" content="Procedure"/>
 <meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
 <meta name="DC.Format" content="XHTML"/>
@@ -28,7 +28,7 @@
 
 
 
-<div class="body"><p class="shortdesc">[Procedure: templateId <tt class="ph tt">2.16.840.1.113883.10.20.21.4.14</tt>]</p>
+<div class="body"><p class="shortdesc">[Procedure: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.14</tt>]</p>
 
 
 <div class="section">
@@ -39,7 +39,7 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProcedureActivity.html" title="[ClinicalStatement: templateId 2.16.840.1.113883.10.20.21.4.11]">Procedure Activity</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.21.4.11</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProcedureActivity.html" title="[ClinicalStatement: templateId 2.16.840.1.113883.10.20.22.4.11]">Procedure Activity</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.11</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PROC" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
@@ -132,7 +132,41 @@ organization performed or hosted the Procedure</li>
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="PROC"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.21.4.11"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.21.4.14"/&gt;
+  &lt;id root="40b06b74-843a-4a3d-828e-4d321fee1dd3"/&gt;
+  &lt;code/&gt;
+  &lt;text/&gt;
+  &lt;statusCode/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;approachSiteCode/&gt;
+  &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+  &lt;entryRelationship&gt;
+    &lt;act&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
+      &lt;id root="4f0a053b-baa8-4506-b8b6-01420d40d41f"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
+      &lt;id root="cf0a3ea8-4640-4953-b481-5aff428c0310"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+&lt;/procedure&gt;</pre>
 
 </div>
 

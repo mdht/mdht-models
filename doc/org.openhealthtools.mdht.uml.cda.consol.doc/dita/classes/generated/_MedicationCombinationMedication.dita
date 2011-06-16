@@ -85,7 +85,7 @@ ointment</li></ul></li>
 <li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-348, CONF-349), such that
 <ol>
 <li>Contains <tt><b>@typeCode="</b>CAUS" </tt><i>CAUS (is etiology for)</i></li>
-<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.4.9</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
 <li><b>MAY</b> contain at least one [1..*] <tt><b>participant</b></tt> (CONF-368), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProductInstance.dita">Product Instance</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.52</tt>)</li></ol></li>
@@ -211,6 +211,130 @@ Aquaphor is the vehicle in "10% LCD in Aquaphor"</li></ul></li>
 <li><b>SHALL</b> satisfy: The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic (C154-[DE-8.24-1])</li>
 <li><b>SHALL</b> satisfy: Subordinate &lt;substanceAdminstration&gt; entries are included to record the components of the prepared mixture. If medication is a prepackaged mixture, a single &lt;substanceAdministration&gt; entry is sufficient.</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SBADM">
+  <templateId root="2.16.840.1.113883.3.88.11.83.8"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.11"/>
+  <id root="45aac7ef-fcc8-4c24-9102-fab93dd8051a"/>
+  <code/>
+  <statusCode/>
+  <effectiveTime value="20110616"/>
+  <routeCode/>
+  <approachSiteCode/>
+  <doseQuantity/>
+  <rateQuantity/>
+  <maxDoseQuantity/>
+  <administrationUnitCode/>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.46"/>
+      <id root="6e24828f-d5e0-4607-abe7-cdf22cb7ecbc"/>
+      <code code="30973-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dose number"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+      <templateId root="2.16.840.1.113883.10.20.1.47"/>
+      <id root="6603de9d-5375-49a9-8a63-ea84a8e06d3e"/>
+      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.21.4.9"/>
+      <id root="8e76f66f-ca8a-4fe2-a09d-06a916d6421a"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.21.4.8"/>
+          <id root="1be907a7-dff6-4a7c-8471-02364b9f9d53"/>
+          <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
+      <id root="ebf91715-11d5-49b6-9b8f-a615762b9b2d"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT" moodCode="INT">
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+      <id root="a6b3fe4a-b053-4c64-8c8a-0c50a6908df8"/>
+      <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <templateId root="2.16.840.1.113883.3.88.11.83.8.1"/>
+      <id root="b8b02295-95d6-4f19-9ac7-c290240f5957"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <supply classCode="SPLY">
+      <templateId root="2.16.840.1.113883.3.88.11.83.8.3"/>
+      <id root="47824c41-eeac-47de-976c-1f0f86f8d5a5"/>
+      <effectiveTime value="20110616"/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.47"/>
+          <id root="080af702-084f-4af0-a2d8-64160c72a360"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act moodCode="INT">
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+          <id root="46ae6706-82f5-4c0f-9f98-cac3379914ef"/>
+          <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </supply>
+  </entryRelationship>
+</substanceadministration>]]></codeblock>
 </body>
 </topic>

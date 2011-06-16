@@ -8,8 +8,8 @@
 <meta name="DC.rights.owner" content="(C) Copyright 2005"/>
 <meta name="DC.Type" content="topic"/>
 <meta name="DC.Title" content="Condition"/>
-<meta name="abstract" content="[Act: templateId 2.16.840.1.113883.10.20.21.4.3]"/>
-<meta name="description" content="[Act: templateId 2.16.840.1.113883.10.20.21.4.3]"/>
+<meta name="abstract" content="[Act: templateId 2.16.840.1.113883.10.20.22.4.3]"/>
+<meta name="description" content="[Act: templateId 2.16.840.1.113883.10.20.22.4.3]"/>
 <meta name="DC.Coverage" content="Act"/>
 <meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
 <meta name="DC.Format" content="XHTML"/>
@@ -28,13 +28,11 @@
 
 
 
-<div class="body"><p class="shortdesc">[Act: templateId <tt class="ph tt">2.16.840.1.113883.10.20.21.4.3</tt>]</p>
+<div class="body"><p class="shortdesc">[Act: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.3</tt>]</p>
 
 
 <div class="section">
-<p class="p">A problem is a clinical statement that a clinician is particularly concerned about and wants to track. It has important patient management use cases (e.g. health records often present the problem list as a way of summarizing a patient's medical history).</p>
-
-<p class="p">This entry is a specialization of the Concern Entry, wherein the subject of the concern is focused on a problem.</p>
+<p class="p">A condition is a clinical statement that a clinician is particularly concerned about and wants to track. It has important patient management use cases (e.g. health records often present the problem list as a way of summarizing a patient's medical history).</p>
 
 </div>
 
@@ -53,7 +51,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt">/@nullFlavor</tt> = "NA" <em class="ph i">NA (not applicable)</em> (CONF-149)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> TEMP-OID-PROBLEM-STATUS-CODE ConcernEntryStatus</tt><strong class="ph b"> STATIC</strong> (CONF-CONSOL-525)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.11.20.9.19 ProblemActStatusCode</tt><strong class="ph b"> STATIC</strong> (CONF-CONSOL-525)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-CONSOL-526)
@@ -77,68 +75,22 @@
 </ol>
 </li>
 
-<li class="li">Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt>, such that
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
 <ol class="ol" type="a">
-<li class="li">The treating provider or providers <strong class="ph b">SHALL</strong> be recorded in a &lt;performer&gt; element under the &lt;act&gt; that describes the condition of concern (C83-[DE-7.05-CDA-3])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.performer-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
 
-<li class="li">The identifier of the treating provider <strong class="ph b">SHALL</strong> be present in the &lt;id&gt; element beneath the &lt;assignedEntity&gt;. This identifier <strong class="ph b">SHALL</strong> be the identifier of one of the providers listed in the healthcare providers module. (C83-[DE-7.05-CDA-2])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.performer-&gt;exists(p : cda::Performer2 | p.assignedEntity.id-&gt;size() &gt; 0)</pre>
-</li>
-</ul>
-</li>
-
-<li class="li">The time over which this provider treated the condition <strong class="ph b">MAY</strong> be recorded in the &lt;time&gt; element beneath the &lt;performer&gt; element (C83-[DE-7.05-CDA-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.performer-&gt;exists(p : cda::Performer2 | p.time.oclIsUndefined())</pre>
-</li>
-</ul>
-</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ConditionEntry.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.4]">Condition Entry</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.4</tt>)</li>
 </ol>
 </li>
 
-<li class="li">Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ConditionEntry.html" title="[Observation: templateId 2.16.840.1.113883.10.20.21.4.4]">Condition Entry</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.21.4.4</tt>)</li>
-</ol>
-</li>
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-168), such that
-<ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="EpisodeObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.41]">Episode Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.41</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd = "true"</li>
 </ol>
-</li>
-
-<li class="li">Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
-<ol class="ol" type="a">
-<li class="li">A Condition <strong class="ph b">MAY</strong> reference a Condition Entry, Alert Observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for entryRelationship/@typeCode to be "SUBJ" 2.16.840.1.113883.5.1002 ActRelationshipType. (CONF-152)</li>
-
-<li class="li">The target of a Condition with entryRelationship/@typeCode="SUBJ" <strong class="ph b">SHOULD</strong> be a Condition Entry (in the Problem section) or alert observation (in the Alert section), but <strong class="ph b">MAY</strong> be some other clinical statement. (CONF-153)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)-&gt;forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and 
-  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))</pre>
-</li>
-</ul>
-</li>
-
-<li class="li">In Problem Section, a Condition <strong class="ph b">SHOULD</strong> contain one or more Condition Entries (CONF-140)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()
-   -&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))</pre>
-</li>
-</ul>
-</li>
-
-<li class="li">In Alert Section, a Condition <strong class="ph b">SHOULD</strong> contain one or more Alert Observations. (CONF-256)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()
-   -&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))</pre>
-</li>
-</ul>
-</li>
-
-<li class="li">Each concern is about one or more related problems or allergies. This entry <strong class="ph b">SHALL</strong> contain one or more problem or allergy entries that conform to the specification in section Problem Entry or Allergies and Intolerances. This is how a series of related observations can be grouped as a single concern. This <strong class="ph b">SHALL</strong> be represented using entryRelationship with typeCode = 'SUBJ'. (CONF-CONSOL-523)</li>
-
-<li class="li">Each concern <strong class="ph b">MAY</strong> have 0 or more related references. These <strong class="ph b">MAY</strong> be used to represent related statements such related visits. This <strong class="ph b">MAY</strong> be any valid CDA clinical statement, and <strong class="ph b">SHOULD</strong> be an IHE entry template. This <strong class="ph b">SHALL</strong> be represented using entryRelationship with typeCode = 'REFR'. (CONF-CONSOL-524)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one Patient Awareness template (CONF-179)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</pre>
-</li>
-</ul>
 </li>
 
 </ol>
@@ -150,7 +102,103 @@
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.21.4.3"/&gt;
+  &lt;id root="79df675e-a9b3-4db0-b396-74cf92c67447"/&gt;
+  &lt;code nullFlavor="NA"/&gt;
+  &lt;statusCode/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.41"/&gt;
+      &lt;id root="0720dc7c-cf6a-4a0e-9172-4c8ce608e1e4"/&gt;
+      &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.21.4.4"/&gt;
+      &lt;id root="1817403e-d62f-4871-b24f-a2245cc3c03f"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
+          &lt;id root="825d5f94-1804-4032-87cf-bd2dad1a5877"/&gt;
+          &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.21.4.8"/&gt;
+          &lt;id root="47e1e5b2-c6db-49d8-96d1-3017bb4e9c79"/&gt;
+          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.21.4.6"/&gt;
+          &lt;id root="019cfd8d-32dc-4ec1-80a1-5fce8a875fac"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.21.4.5"/&gt;
+          &lt;id root="45a68537-42de-4757-87c1-a7ebf4532d0d"/&gt;
+          &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act classCode="ACT" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.21.4.10"/&gt;
+          &lt;id root="4382c1a7-8e87-46a4-a541-bd7bdefefa9b"/&gt;
+          &lt;code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+&lt;/act&gt;</pre>
 
 </div>
 

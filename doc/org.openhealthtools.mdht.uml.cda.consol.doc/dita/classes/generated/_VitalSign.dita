@@ -20,7 +20,7 @@ The differentiation between Vital Signs and Results varies by clinical context. 
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref href="../Result.dita">Result</xref> template (templateId: <tt>2.16.840.1.113883.10.20.21.4.2</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../Result.dita">Result</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.62 Vital Sign Result</tt><b> STATIC</b> 1 (C154-[DE-14.03-1])
 </li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt> (6.3.4.22.5)
@@ -34,7 +34,7 @@ The differentiation between Vital Signs and Results varies by clinical context. 
 <li><b>SHALL</b> satisfy: Data Element Definitions for Results [Placeholder] (CONF-CONSOL-557)<ul><li>Vital Signs are a subset of Results Section, but are reported in this section to follow clinical conventions.</li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref href="../Result.dita">Result</xref> template (templateId: <tt>2.16.840.1.113883.10.20.21.4.2</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../Result.dita">Result</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li>
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-408)
@@ -75,6 +75,20 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
    implies (self.value-&gt;isEmpty())</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Data Element Definitions for Results [Placeholder] (CONF-CONSOL-557)<ul><li>Vital Signs are a subset of Results Section, but are reported in this section to follow clinical conventions.</li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.21.4.2"/>
+  <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+  <id root="de196813-9a92-4cd6-84ec-9759ddd4c4f3"/>
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <statusCode/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+  <interpretationCode/>
+  <methodCode/>
+  <targetSiteCode/>
+</observation>]]></codeblock>
 </body>
 </topic>

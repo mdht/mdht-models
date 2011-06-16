@@ -2,16 +2,16 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Procedure Activity Act - conformance rules</title>
-<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.21.4.12</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.12</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Act</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.21.4.12"/>
+<resourceid id="2.16.840.1.113883.10.20.22.4.12"/>
 </prolog>
 <body>
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.21.4.11</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.11</tt>)</li>
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>
 </li>
 <li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>
@@ -20,7 +20,7 @@
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.21.4.11</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.11</tt>)</li>
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>
 </li>
 <li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>
@@ -35,7 +35,7 @@
 <li>Contains exactly one [1..1] <xref href="../PatientMedicalInstructions.dita">Patient Medical Instructions</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.3</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>ageObservation</b></tt>, such that
 <ol>
-<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.31</tt>)</li></ol></li>
 <li>Contains at least one [1..*] <tt><b>medicationActivity</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MedicationNormalDose.dita">Medication Normal Dose</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7.1</tt>)</li></ol></li>
@@ -48,6 +48,17 @@
 <li><b>MAY</b> satisfy: have one or more Act / participant [@typeCode="DEV"], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52) (CONF-448)</li>
 <li>participant / participantRole / id <b>SHOULD</b> be set to equal a Supply / participant / participantRole / id to indicate that the Procedure and the Supply are referring to the same product instance. (CONF-452)</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.21.4.11"/>
+  <templateId root="2.16.840.1.113883.10.20.21.4.12"/>
+  <id root="03e05d8e-5e94-41da-8756-28fd75e45cb6"/>
+  <code/>
+  <statusCode/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+</act>]]></codeblock>
 </body>
 </topic>

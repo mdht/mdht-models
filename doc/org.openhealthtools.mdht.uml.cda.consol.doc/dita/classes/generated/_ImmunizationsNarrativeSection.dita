@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Immunizations Narrative Section - conformance rules</title>
-<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.21.2.2</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.2</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Section</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.21.2.2"/>
+<resourceid id="2.16.840.1.113883.10.20.22.2.2"/>
 </prolog>
 <body>
 <section id="description">
@@ -28,6 +28,12 @@
 </li>
 <li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.21.2.2"/>
+  <id root="41039f51-e05a-41a5-8af4-9c162b01e1b8"/>
+  <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+  <title>History of immunizations</title>
+</section>]]></codeblock>
 </body>
 </topic>

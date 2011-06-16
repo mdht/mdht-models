@@ -42,6 +42,13 @@
 <li>Participant / participantRole in a location participation <b>MAY</b> contain exactly one participant / participantRole / playingEntity (CONF-478)</li>
 <li>The value for participant/participantRole/playingEntity/@classCode in a location participation <b>SHALL</b> be "PLC" "Place" 2.16.840.1.113883.5.41 EntityClass. (CONF-479)</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participant2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" typeCode="LOC">
+  <templateId root="2.16.840.1.113883.10.20.1.45"/>
+  <time>
+    <low value="2011"/>
+    <high value="2011"/>
+  </time>
+</participant2>]]></codeblock>
 </body>
 </topic>

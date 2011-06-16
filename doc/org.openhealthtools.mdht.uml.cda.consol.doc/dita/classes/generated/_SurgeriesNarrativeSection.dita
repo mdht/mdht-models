@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Surgeries Narrative Section - conformance rules</title>
-<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.21.2.7</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.7</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Section</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.21.2.7"/>
+<resourceid id="2.16.840.1.113883.10.20.22.2.7"/>
 </prolog>
 <body>
 <section id="description">
@@ -29,6 +29,12 @@
 <li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)</li></ol></li>
 <li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.21.2.7"/>
+  <id root="3cc08691-13d5-46b4-ab84-b1a318f14a57"/>
+  <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
+  <title>History of procedures</title>
+</section>]]></codeblock>
 </body>
 </topic>

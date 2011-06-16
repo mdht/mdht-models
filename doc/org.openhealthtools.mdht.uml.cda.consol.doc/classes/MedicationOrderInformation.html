@@ -247,7 +247,39 @@ history entry. The fill number identifies the supply (dispense) event as a disti
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SPLY"&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.8.3"/&gt;
+  &lt;id root="08c0c532-a331-4e96-9f90-3f057c4937c6"/&gt;
+  &lt;statusCode/&gt;
+  &lt;effectiveTime value="20110616"/&gt;
+  &lt;repeatNumber/&gt;
+  &lt;quantity/&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+      &lt;id root="e560e66a-6f61-453c-98f7-170dc00efb54"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act moodCode="INT"&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/&gt;
+      &lt;id root="d3283802-81d3-4e4f-bac1-dc5f50203edd"/&gt;
+      &lt;code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+&lt;/supply&gt;</pre>
 
 </div>
 
