@@ -34,6 +34,14 @@
   not id.root.oclIsUndefined())
 -- TODO compare with ClinicalDocument/recordTarget/patientRole/id</codeblock></li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participant2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" typeCode="SBJ">
+  <templateId root="2.16.840.1.113883.10.20.1.48"/>
+  <time>
+    <low value="2011"/>
+    <high value="2011"/>
+  </time>
+  <awarenessCode/>
+</participant2>]]></codeblock>
 </body>
 </topic>

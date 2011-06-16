@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Result Organizer - conformance rules</title>
-<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.10.20.21.4.1</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.10.20.22.4.1</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Organizer</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.21.4.1"/>
+<resourceid id="2.16.840.1.113883.10.20.22.4.1"/>
 </prolog>
 <body>
 <section id="description">
@@ -35,7 +35,7 @@
 </li>
 <li>Contains at least one [1..*] <tt><b>component</b></tt>, such that
 <ol>
-<li>Contains exactly one [1..1] <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.4.2</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li></ol></li>
 <li>Contains at least one [1..*] <tt><b>specimen</b></tt>, such that
 </li>
 <li>The specimen element <b>SHALL NOT</b> conflict with the specimen inherent in code (CONF-400)</li>
@@ -62,7 +62,7 @@ or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActR
 </li>
 <li>Contains at least one [1..*] <tt><b>component</b></tt>, such that
 <ol>
-<li>Contains exactly one [1..1] <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.4.2</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../Result.dita">Result</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li></ol></li>
 <li>Contains at least one [1..*] <tt><b>specimen</b></tt>, such that
 </li>
 <li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
@@ -76,6 +76,26 @@ or not self.getSection().informant-&gt;isEmpty()
 or not self.getClinicalDocument().informant-&gt;isEmpty()
 or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)</codeblock></li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.21.4.1"/>
+  <id root="28e0bc09-e97a-40d7-8714-2cd08da65251"/>
+  <code/>
+  <statusCode/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.21.4.2"/>
+      <id root="d9b65e2f-6ab1-4432-8be3-b3fed77d68df"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
 </body>
 </topic>

@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Comment - conformance rules</title>
-<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.21.4.10</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.10</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Act</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.21.4.10"/>
+<resourceid id="2.16.840.1.113883.10.20.22.4.10"/>
 </prolog>
 <body>
 <section id="description">
@@ -59,6 +59,17 @@
 <li><b>SHALL</b> satisfy: The author's and/or the organization's name must be present when the 'author' element is present. (CONF-6.3.4.6.12)</li>
 <li>Data elements defined elsewhere in the specification <b>SHALL NOT</b> be recorded using the Comments Module. (C83-[DE-10-CDA-1])<ul><li>Comments are free text data that cannot otherwise be recorded using data elements already defined by this specification. They are not to be used to record information that can be recorded elsewhere. For example, a free text description of the severity of an allergic reaction would not be recorded in a comment. Instead, it would be recorded using the data element defined in Allergy/Drug Sensitivity.</li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.21.4.10"/>
+  <id root="bcc3bd80-a993-403a-a46c-1d47d093e7a6"/>
+  <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+  <text/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+</act>]]></codeblock>
 </body>
 </topic>

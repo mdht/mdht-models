@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Medications Section - conformance rules</title>
-<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.21.2.1.1</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Section</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.21.2.1.1"/>
+<resourceid id="2.16.840.1.113883.10.20.22.2.1.1"/>
 </prolog>
 <body>
 <section id="description">
@@ -19,7 +19,7 @@
 <p>Reconciliation of conflicting medication information from various sources is enabled both by indicating the source of information and by indicating whether the source is reporting intended or actual medication use. For instance, a physician may intend for a patient to be on a particular dose, but the patient may actually be taking a different dose; a pharmacy may fill a prescription for a particular dose only to then have the patient's physician lower the dose without notifying the pharmacy. Therefore, medication and supply activities can be expressed in CCD in either the "EVN" (event) mood or the "INT" (intent) mood. Medication activities in "INT" mood are not orders (which are represented in the Plan of Care section), but rather are reflections of what a clinician intends a patient to be taking. Medication activities in "EVN" mood reflect actual use. A pharmacy system will typically report what was actually filled (supply event), along with intended use (substance administration intent). A physician will often report intended use (substance administration and supply intent). A patient or family member will typically report actual use (substance administration event).</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref href="../MedicationsNarrativeSection.dita">Medications Narrative Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.21.2.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../MedicationsNarrativeSection.dita">Medications Narrative Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1</tt>)</li>
 <li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF-298), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MedicationOrderInformation.dita">Medication Order Information</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.8.3</tt>)</li></ol></li>
@@ -40,7 +40,7 @@ starting at 1 for the first component, and increasing by 1 for each subsequent c
 Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref href="../MedicationsNarrativeSection.dita">Medications Narrative Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.21.2.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../MedicationsNarrativeSection.dita">Medications Narrative Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10160-0" </tt><i>History of medication use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-300, CONF-301)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-302)
@@ -67,6 +67,161 @@ administration of the dose. The value of the &lt;sequenceNumber> shall be an ord
 starting at 1 for the first component, and increasing by 1 for each subsequent component.
 Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.21.2.1"/>
+  <templateId root="2.16.840.1.113883.10.20.21.2.1.1"/>
+  <id root="652fe748-eb9b-42e6-8246-88996fc45bea"/>
+  <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+  <title>History of medication use</title>
+  <entry>
+    <supply classCode="SPLY">
+      <templateId root="2.16.840.1.113883.3.88.11.83.8.3"/>
+      <id root="20edae72-2955-4980-9ef1-8ea6acb703fa"/>
+      <effectiveTime value="20110616"/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.47"/>
+          <id root="9f213831-ac4e-47fe-8f2e-072c936d7235"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act moodCode="INT">
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+          <id root="92abda66-4d7d-4f72-832a-cb46c4390e56"/>
+          <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </supply>
+  </entry>
+  <entry>
+    <substanceAdministration classCode="SBADM">
+      <templateId root="2.16.840.1.113883.3.88.11.83.8"/>
+      <id root="2a86b3b6-aebb-445c-ae72-5d65d43af29f"/>
+      <effectiveTime value="20110616"/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.46"/>
+          <id root="b013897e-274e-48e5-850e-5c3c19de687a"/>
+          <code code="30973-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dose number"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.47"/>
+          <id root="561a3151-18c4-487c-94e9-c3e2bce53151"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.21.4.9"/>
+          <id root="14f42979-42d0-4ead-8d7d-bd6815a5da6a"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.21.4.8"/>
+              <id root="36747ceb-1c60-4ded-9554-951dc0543bbb"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
+          <id root="df42c0b3-7989-4224-b4ba-46ac8664662a"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+          <id root="f2be73b6-2882-492d-bfac-4d40a37dc409"/>
+          <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.3.88.11.83.8.1"/>
+          <id root="cd21b630-67ce-4841-a6b4-4ce47c771d46"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <supply classCode="SPLY">
+          <templateId root="2.16.840.1.113883.3.88.11.83.8.3"/>
+          <id root="7bf7a674-13ff-4f53-8a92-1ee62d77d977"/>
+          <effectiveTime value="20110616"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.57"/>
+              <templateId root="2.16.840.1.113883.10.20.1.47"/>
+              <id root="b20078d5-6e4e-4a37-b697-8d6c52cf4f32"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act moodCode="INT">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+              <id root="645207d6-e22b-4247-8906-a431b174e366"/>
+              <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+              <effectiveTime>
+                <low value="2011"/>
+                <high value="2011"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+    </substanceAdministration>
+  </entry>
+</section>]]></codeblock>
 </body>
 </topic>

@@ -49,7 +49,7 @@ The differentiation between Vital Signs and Results varies by clinical context. 
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="Result.html" title="[Observation: templateId 2.16.840.1.113883.10.20.21.4.2]">Result</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.21.4.2</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="Result.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.2]">Result</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.2</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.3.88.12.80.62 Vital Sign Result</tt><strong class="ph b"> STATIC</strong> 1 (C154-[DE-14.03-1])
 </li>
@@ -85,7 +85,21 @@ The differentiation between Vital Signs and Results varies by clinical context. 
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.21.4.2"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.14"/&gt;
+  &lt;id root="de196813-9a92-4cd6-84ec-9759ddd4c4f3"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+  &lt;statusCode/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;interpretationCode/&gt;
+  &lt;methodCode/&gt;
+  &lt;targetSiteCode/&gt;
+&lt;/observation&gt;</pre>
 
 </div>
 

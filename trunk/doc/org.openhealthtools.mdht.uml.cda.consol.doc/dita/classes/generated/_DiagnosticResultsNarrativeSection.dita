@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Diagnostic Results Narrative Section - conformance rules</title>
-<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.21.2.3</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.3</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Section</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.21.2.3"/>
+<resourceid id="2.16.840.1.113883.10.20.22.2.3"/>
 </prolog>
 <body>
 <section id="description">
@@ -20,6 +20,12 @@
 </li>
 <li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'results'. (CONF-392)</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.21.2.3"/>
+  <id root="91b63c7c-3dc5-40f6-aa25-91fe56008e88"/>
+  <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="STUDIES SUMMARY"/>
+  <title>STUDIES SUMMARY</title>
+</section>]]></codeblock>
 </body>
 </topic>
