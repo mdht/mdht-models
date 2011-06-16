@@ -55,11 +55,6 @@ Components shall be sent in &amp;lt;sequenceNumber> order.</body>
 408350003 &quot;Patient Not On Self-Medications&quot; (To indicate no treatment)&#xD;
 &lt;/p></body>
       </ownedComment>
-      <ownedComment xmi:id="_Fi4GAHZJEeCvxvMoSjRGEw">
-        <body>Values from SNOMED CT shall be used in the &lt;code> element to record that a patient is either not on medications, or that medications are not known.
-
-No need for OCL, the net result is that code always  required</body>
-      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GsU0AEqcEeCTurDhhRqwBw">
         <language>Analysis</language>
         <language>OCL</language>
@@ -69,7 +64,7 @@ No need for OCL, the net result is that code always  required</body>
     </ownedRule>
     <ownedRule xmi:id="_0gwT0Es9EeCAK_Z5vqvtzg" name="ReasonClassMood" constrainedElement="_AXxswEqcEeCTurDhhRqwBw">
       <ownedComment xmi:id="_shQtkHZGEeCvxvMoSjRGEw">
-        <body>self.internalReference->exists(ir : ihe::InternalReference | ar.classCode &lt;> 'ACT' or ar.moodCode &lt;> 'EVN')</body>
+        <body>self.internalReference->exists(ir : ihe::InternalReference | ar.classCode &amp;lt;> 'ACT' or ar.moodCode &amp;lt;> 'EVN')</body>
       </ownedComment>
       <ownedComment xmi:id="_auRswHZJEeCvxvMoSjRGEw">
         <body>OCL Issue - What is the internalReference relationship?  unable to get OCL to reference</body>
