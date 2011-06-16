@@ -32,10 +32,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//MedicationsSection/MedicationsSectionHasMedicationOrSupplyActivity/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//MedicationsSection/MedicationsSectionHasMedicationOrSupplyActivity/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//MedicationsSection/MedicationsSectionTitleValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//MedicationsSection/MedicationsSectionTitleValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//MedicationsSection/MedicationsSectionTitleValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//MedicationsSection/MedicationsSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//MedicationsSection/MedicationsSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//MedicationsSection/MedicationsSectionTemplateId/context"/>
@@ -498,10 +494,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//ContinuityOfCareDocument/getPurposeSection"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ccd.ecore#//ProblemSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//ProblemSection/ProblemSectionTitleValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ProblemSection/ProblemSectionTitleValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ProblemSection/ProblemSectionTitleValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//ProblemSection/ProblemSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ProblemSection/ProblemSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ProblemSection/ProblemSectionTemplateId/context"/>
@@ -638,10 +630,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ccd.ecore#//AlertsSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//AlertsSection/AlertsSectionTitleValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//AlertsSection/AlertsSectionTitleValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//AlertsSection/AlertsSectionTitleValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//AlertsSection/AlertsSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//AlertsSection/AlertsSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//AlertsSection/AlertsSectionTemplateId/context"/>
@@ -665,10 +653,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//AlertsSection/getProblemActs"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ccd.ecore#//ResultsSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//ResultsSection/ResultsSectionTitleValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ResultsSection/ResultsSectionTitleValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ResultsSection/ResultsSectionTitleValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//ResultsSection/ResultsSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ResultsSection/ResultsSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ResultsSection/ResultsSectionTemplateId/context"/>
@@ -785,10 +769,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ccd.ecore#//ProceduresSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//ProceduresSection/ProceduresSectionTitleValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ProceduresSection/ProceduresSectionTitleValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ProceduresSection/ProceduresSectionTitleValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//ProceduresSection/ProceduresSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ProceduresSection/ProceduresSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ProceduresSection/ProceduresSectionTemplateId/context"/>
@@ -979,10 +959,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ccd.ecore#//ImmunizationsSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//ImmunizationsSection/ImmunizationsSectionTitleValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ImmunizationsSection/ImmunizationsSectionTitleValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ImmunizationsSection/ImmunizationsSectionTitleValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//ImmunizationsSection/ImmunizationsSectionTitle">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ImmunizationsSection/ImmunizationsSectionTitle/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//ImmunizationsSection/ImmunizationsSectionTitle/context"/>
@@ -993,10 +969,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ccd.ecore#//VitalSignsSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//VitalSignsSection/VitalSignsSectionTitleValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//VitalSignsSection/VitalSignsSectionTitleValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//VitalSignsSection/VitalSignsSectionTitleValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//VitalSignsSection/VitalSignsSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//VitalSignsSection/VitalSignsSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//VitalSignsSection/VitalSignsSectionTemplateId/context"/>
@@ -1103,10 +1075,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ccd.ecore#//PayersSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//PayersSection/PayersSectionTitleValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//PayersSection/PayersSectionTitleValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//PayersSection/PayersSectionTitleValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//PayersSection/PayersSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//PayersSection/PayersSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//PayersSection/PayersSectionTemplateId/context"/>
@@ -1234,10 +1202,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//PolicyActivity/getSubscriber"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ccd.ecore#//PurposeSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//PurposeSection/PurposeSectionTitleValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//PurposeSection/PurposeSectionTitleValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//PurposeSection/PurposeSectionTitleValue/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ccd.ecore#//PurposeSection/PurposeSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//PurposeSection/PurposeSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ccd.ecore#//PurposeSection/PurposeSectionTemplateId/context"/>

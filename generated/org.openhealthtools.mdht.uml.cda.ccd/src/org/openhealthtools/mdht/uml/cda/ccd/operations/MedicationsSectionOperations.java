@@ -40,7 +40,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection#validateMedicationsSectionHasMedicationOrSupplyActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Has Medication Or Supply Activity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection#validateMedicationsSectionTitleValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Title Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection#validateMedicationsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection#validateMedicationsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection#validateMedicationsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Title</em>}</li>
@@ -117,61 +116,6 @@ public class MedicationsSectionOperations extends SectionOperations {
 					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_HAS_MEDICATION_OR_SUPPLY_ACTIVITY,
 					CCDPlugin.INSTANCE.getString("MedicationsSectionHasMedicationOrSupplyActivity"),
 					new Object[] { medicationsSection }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationsSectionTitleValue(MedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Title Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationsSectionTitleValue(MedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.title = 'medication'";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationsSectionTitleValue(MedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Title Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicationsSectionTitleValue(MedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.title = 'medication'
-	 * @param medicationsSection The receiving '<em><b>Medications Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateMedicationsSectionTitleValue(MedicationsSection medicationsSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
-			try {
-				VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATIONS_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationsSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE_VALUE,
-					CCDPlugin.INSTANCE.getString("MedicationsSectionTitleValue"), new Object[] { medicationsSection }));
 			}
 			return false;
 		}
@@ -548,7 +492,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.MEDICATIONS_SECTION,
-				CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(63));
+				CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(62));
 			try {
 				GET_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -595,7 +539,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.MEDICATIONS_SECTION,
-				CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(64));
+				CCDPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(63));
 			try {
 				GET_SUPPLY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_SUPPLY_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {

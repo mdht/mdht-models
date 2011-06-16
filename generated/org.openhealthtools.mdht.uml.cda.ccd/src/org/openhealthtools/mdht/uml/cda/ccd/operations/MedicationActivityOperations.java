@@ -203,8 +203,10 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getClinicalDocument().authorization->exists(auth : cda::Authorization | "
-			+ "   not auth.oclIsUndefined() and not auth.consent.oclIsUndefined())";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.getClinicalDocument().oclIsUndefined()";
+
+	// "self.getClinicalDocument().authorization->exists(auth : cda::Authorization | "+
+	// "   not auth.oclIsUndefined() and not auth.consent.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationActivityHasConsents(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Has Consents</em>}' invariant operation.

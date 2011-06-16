@@ -68,15 +68,6 @@ public class MedicationsSectionImpl extends SectionImpl implements MedicationsSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionTitleValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMedicationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationsSectionOperations.validateMedicationsSectionTemplateId(this, diagnostics, context);
 	}

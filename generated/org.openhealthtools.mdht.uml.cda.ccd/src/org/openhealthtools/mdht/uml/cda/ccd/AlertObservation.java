@@ -77,11 +77,11 @@ public interface AlertObservation extends Observation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * self.participant->one(entity : cda::Participant2 |
-	 *   entity.typeCode = 'CSM')
+	 *   entity.typeCode = vocab::ParticipationType::CSM)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(entity : cda::Participant2 |\r\n  entity.typeCode = \'CSM\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(entity : cda::Participant2 |\r\n  entity.typeCode = vocab::ParticipationType::CSM)'"
 	 * @generated
 	 */
 	boolean validateAlertObservationAgentRepresentationVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -91,11 +91,11 @@ public interface AlertObservation extends Observation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * self.participant.participantRole->one(entity : cda::ParticipantRole |
-	 *   entity.classCode = 'MANU')
+	 *   entity.classCode = vocab::RoleClassRoot::MANU)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole->one(entity : cda::ParticipantRole |\r\n  entity.classCode = \'MANU\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole->one(entity : cda::ParticipantRole |\r\n  entity.classCode = vocab::RoleClassRoot::MANU)'"
 	 * @generated
 	 */
 	boolean validateAlertObservationParticipantRoleClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);

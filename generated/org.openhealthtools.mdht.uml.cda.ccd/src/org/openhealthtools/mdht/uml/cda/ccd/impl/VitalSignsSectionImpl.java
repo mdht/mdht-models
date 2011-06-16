@@ -56,15 +56,6 @@ public class VitalSignsSectionImpl extends SectionImpl implements VitalSignsSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignsSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionTitleValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateVitalSignsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSectionOperations.validateVitalSignsSectionTemplateId(this, diagnostics, context);
 	}

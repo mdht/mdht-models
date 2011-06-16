@@ -68,7 +68,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for participant/participantRole/@classCode in a location participation SHALL be &quot;SDLOC&quot; &quot;Service delivery location&quot; 2.16.840.1.113883.5.110 RoleClass.</body>
-        <body>self.participantRole.classCode = 'SDLOC'</body>
+        <body>self.participantRole.classCode =  vocab::RoleClassRoot::SDLOC</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_9iVr4FS7EeCnnNnsbG2N3Q" name="hasParticipantRoleCode" constrainedElement="_w0p4UFS7EeCnnNnsbG2N3Q">
@@ -100,7 +100,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for participant/participantRole/playingEntity/@classCode in a location participation SHALL be &quot;PLC&quot; &quot;Place&quot; 2.16.840.1.113883.5.41 EntityClass.</body>
-        <body>self.participantRole.playingEntity.classCode = 'PLC'</body>
+        <body>self.participantRole.playingEntity.classCode = vocab::EntityClassRoot::PLC</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_lD-rMIjxEd66cKocspyVOg">

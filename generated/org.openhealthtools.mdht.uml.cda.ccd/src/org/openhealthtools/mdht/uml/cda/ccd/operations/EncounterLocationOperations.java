@@ -119,7 +119,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participantRole.classCode = 'SDLOC'";
+	protected static final String VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participantRole.classCode =  vocab::RoleClassRoot::SDLOC";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncounterLocationHasParticipantRoleLocation(EncounterLocation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Location Has Participant Role Location</em>}' invariant operation.
@@ -135,7 +135,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.classCode = 'SDLOC'
+	 * self.participantRole.classCode =  vocab::RoleClassRoot::SDLOC
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -345,7 +345,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participantRole.playingEntity.classCode = 'PLC'";
+	protected static final String VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participantRole.playingEntity.classCode = vocab::EntityClassRoot::PLC";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncounterLocationHasPlayingEntityPlace(EncounterLocation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Location Has Playing Entity Place</em>}' invariant operation.
@@ -361,7 +361,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.playingEntity.classCode = 'PLC'
+	 * self.participantRole.playingEntity.classCode = vocab::EntityClassRoot::PLC
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

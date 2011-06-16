@@ -22,17 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * <p>
- *     The result organizer identifies an observation set, contained with the result organizer
- *     as a set of result observations. It contains information applicable to all of the contained result
- *     observations.
- * </p>
- * <p>
- *     Results in ASTM CCR and CCD are structured similarly to the HL7 Version 2 ORU Observation message, where
- *     there is an outer result organizer (templateId 2.16.840.1.113883.10.20.1.32), analogous to the HL7 Version 2 OBR
- *     Observation Result Segment, which contains one or more result observations (templateId 2.16.840.1.113883.10.20.1.31),
- *     analogous to the HL7 Version 2 OBX Observation/Result Segment.
- * </p>
+ * <p>This clinical statement identifies set of result observations. It contains information applicable to all of the contained result observations. Result type codes categorize a result into one of several commonly accepted values (e.g., "Hematology", "Chemistry", "Nuclear Medicine"). These values are often implicit in the <tt>Organizer/code</tt> (e.g., an <tt>Organizer/code</tt> of "complete blood count" implies a <tt>ResultTypeCode</tt> of "Hematology"). This template requires <tt>Organizer/code</tt> to include a <tt>ResultTypeCode</tt> either directly or as a translation of a code from some other code system.</p>
  * <!-- end-model-doc -->
  *
  *

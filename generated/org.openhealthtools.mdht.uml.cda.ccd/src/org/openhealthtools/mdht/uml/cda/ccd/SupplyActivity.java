@@ -102,11 +102,11 @@ public interface SupplyActivity extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.product.oclIsUndefined() and self.product.oclIsKindOf(ccd::Product)
+	 * not self.product.oclIsUndefined() and self.product.oclIsKindOf(cda::Product)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.product.oclIsUndefined() and self.product.oclIsKindOf(ccd::Product)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.product.oclIsUndefined() and self.product.oclIsKindOf(cda::Product)'"
 	 * @generated
 	 */
 	boolean validateSupplyActivityHasProduct(DiagnosticChain diagnostics, Map<Object, Object> context);
