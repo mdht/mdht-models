@@ -24,7 +24,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.33"/>
-  <id root="0101a548-7861-4bd9-a920-9666620cd180"/>
+  <id root="b107df4d-f20c-4ec6-b4d4-59a544ef578c"/>
   <effectiveTime>
     <low value="2011"/>
     <high value="2011"/>

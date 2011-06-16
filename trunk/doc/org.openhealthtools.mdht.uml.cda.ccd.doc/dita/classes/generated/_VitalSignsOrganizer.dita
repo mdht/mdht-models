@@ -34,7 +34,7 @@ or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActR
 <li>Contains exactly one [1..1] <xref href="../ResultObservation.dita">Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.31</tt>)</li></ol></li>
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>specimen</b></tt> (CONF-399), such that
 <ul><li>Should be included if the specimen isn't inherent in code value.</li></ul></li>
-<li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
+<li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)<ul><li><codeblock>[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.1.11.20.16'</codeblock></li></ul></li>
 <li>The specimen element <b>SHALL NOT</b> conflict with the specimen inherent in code (CONF-400)</li>
 <li>specimen / specimenRole / id <b>SHOULD</b> be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen. (CONF-401)</li>
 <li><b>SHALL</b> satisfy: Contains one or more component (CONF-402)<ul><li><codeblock>[OCL]: not self.component-&gt;isEmpty()</codeblock></li></ul></li>
@@ -53,7 +53,7 @@ or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActR
 <organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.32"/>
   <templateId root="2.16.840.1.113883.10.20.1.35"/>
-  <id root="aa55f917-999f-4c92-af75-67542e39e227"/>
+  <id root="e8fdf8f4-0940-4679-9317-480efc45e7d8"/>
   <code/>
   <statusCode/>
   <effectiveTime>
@@ -63,7 +63,7 @@ or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActR
   <component>
     <observation moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.31"/>
-      <id root="e935686d-1bbb-4d83-9992-4dfe1a924e25"/>
+      <id root="be824be0-c8d1-463c-b783-ce9f1bd48dc7"/>
       <code/>
       <statusCode/>
       <effectiveTime>

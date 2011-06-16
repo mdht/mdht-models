@@ -77,7 +77,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.28"/>
-  <id root="2f5fd31a-8b86-4036-a75b-c39fe72b3e91"/>
+  <id root="0a4ed217-41a9-4484-883b-d67d9bf12007"/>
   <code/>
   <statusCode code="completed"/>
   <effectiveTime>
@@ -88,7 +88,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.50"/>
-      <id root="25db68c7-58ba-45aa-b1ba-70a77baa40a9"/>
+      <id root="7f0dd3ee-90dc-4baf-8ed6-a243df95a8e0"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -102,7 +102,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.51"/>
-      <id root="f4aa5ba0-1ff9-49a4-ba8b-dceb115bff48"/>
+      <id root="d4774f3c-12d9-4ef5-b7c8-657a635f8808"/>
       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -115,7 +115,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.38"/>
-      <id root="4b2f7b78-9244-45b1-b827-5f959dd100c9"/>
+      <id root="fd96cb9c-3da2-4839-a726-67439aa27f8f"/>
       <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
       <statusCode code="completed"/>
       <effectiveTime>

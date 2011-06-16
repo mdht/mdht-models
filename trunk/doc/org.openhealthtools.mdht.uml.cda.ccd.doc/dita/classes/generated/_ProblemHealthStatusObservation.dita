@@ -29,7 +29,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.20.12 ProblemHealthStatusCode</tt><b> STATIC</b> 20061017 (CONF-167)
 </li>
-<li>Target of an entryRelationship whose value for "entryRelationship / @typeCode" <b>SHALL</b> be "REFR" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-509)</li>
+<li>Target of an entryRelationship whose value for "entryRelationship / @typeCode" <b>SHALL</b> be "REFR" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-509)<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;exists(entry : cda::EntryRelationship | entry.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</codeblock></li></ul></li>
 <li><b>SHALL NOT</b> contain any additional Observation attributes. (CONF-517)</li>
 <li><b>SHALL NOT</b> contain any Observation participants. (CONF-518)<ul><li><codeblock>[OCL]: self.participant-&gt;isEmpty()</codeblock></li></ul></li>
 <li><b>SHALL NOT</b> be the source of any Observation relationships. (CONF-519)</li>
@@ -38,7 +38,7 @@
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.57"/>
   <templateId root="2.16.840.1.113883.10.20.1.51"/>
-  <id root="8e0e8a30-25aa-4731-aca8-3e6d9678c547"/>
+  <id root="9b7575ad-b8e7-4ab1-8b11-4209c4ba3378"/>
   <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
   <statusCode code="completed"/>
   <effectiveTime>

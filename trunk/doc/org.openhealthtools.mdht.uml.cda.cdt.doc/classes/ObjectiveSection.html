@@ -38,13 +38,14 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.doc/classes/Section.html">CDA Section</a></li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="OBJEC-X" </tt><em class="ph i">OBJECTIVE DATA</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-PRGN-25)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">code</tt><tt class="ph tt">/@code</tt> = "OBJEC-X" <em class="ph i">OBJECTIVE DATA</em> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC) (CONF-PRGN-25)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF-PRGN-15)
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">text</tt> (CONF-PRGN-15)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">title</tt> (CONF-PRGN-14)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-PRGN-14)
+</li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains clinical statements. (CONF-PRGN-15)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.entry-&gt;isEmpty()</pre>
 </li>
@@ -53,25 +54,34 @@
 
 </ol>
 
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="OBJEC-X" </tt><em class="ph i">OBJECTIVE DATA</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-PRGN-25)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-PRGN-14)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF-PRGN-15)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains clinical statements. (CONF-PRGN-15)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.entry-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+</ol>
 
 <div class="fig fignone"><span class="figcap">Figure 1. Objective Section example</span>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.21.2.1" assigningAuthorityName="CDT Objective Section"/&gt;
-          &lt;code code="OBJEC-X" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OBJECTIVE DATA"/&gt;
-          &lt;title&gt;OBJECTIVE DATA&lt;/title&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.21.2.1"/&gt;
+  &lt;id root="abd06c31-e259-45f2-8842-340ac0ddb5a9"/&gt;
+  &lt;code code="OBJEC-X" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OBJECTIVE DATA"/&gt;
+  &lt;title&gt;OBJECTIVE DATA&lt;/title&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

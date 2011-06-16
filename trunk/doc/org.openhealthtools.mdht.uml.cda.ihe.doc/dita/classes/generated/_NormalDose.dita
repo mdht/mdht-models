@@ -14,7 +14,7 @@ any special processing.</p>
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref href="../Medication.dita">Medication</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>)</li>
-<li><b>SHALL</b> satisfy: Medications that use this template identifier shall not use subordinate 'substanceAdministation' acts.</li>
+<li><b>SHALL</b> satisfy: Medications that use this template identifier shall not use subordinate 'substanceAdministation' acts.<ul><li><codeblock>[OCL]: self.entryRelationship.substanceAdministration-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationActivity.html">CCD Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li>
@@ -25,7 +25,7 @@ any special processing.</p>
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-306)
 </li>
-<li>Contains zero or one [0..1] <tt><b>code</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
 <ul><li>The &lt;code> element is used to supply a code that describes the &lt;substanceAdminstration> act,
 not the medication being administered or prescribed. This may be a procedure code, such as
 those found in CPT-4 (and often used for billing), or may describe the method of medication
@@ -34,8 +34,8 @@ consumable, do not supply the code for the medication in this element. This elem
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-307)
 <ul><li>The status of all 'substanceAdministration' elements must be "completed". The act has either
 occurred, or the request or order has been placed.</li></ul></li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt><b>effectiveTime</b></tt> (CONF-308)
-<ul><li>Used to indicate the actual or intended start and stop date of a medication, and the frequency of administration.</li></ul></li>
+<li><b>SHALL</b> contain  [0..2] <tt><b>effectiveTime</b></tt> (CONF-308)
+</li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>routeCode</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.112 HL7 RouteOfAdministration</tt>) (CONF-309, CONF-310)
 </li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>approachSiteCode</b></tt>
@@ -102,13 +102,16 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
 <li><b>SHALL</b> satisfy: Contains exactly one consumable, the target of which is a Product template. (CONF-354)<ul><li><codeblock>[OCL]: self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Contains one dosing template to identify this entry as a particular type of medication event. Possible dosing templates: 1.3.6.1.4.1.19376.1.5.3.1.4.7.1 Normal Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.8, Tapered Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.9 Split Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.10 Conditional Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.11 Combination Dosing.<ul><li>There are a variety of special cases for dosing that need to be accounted for. 
 Most of these special cases involve changing the dosage or frequency over time, or based on
-some measurement. When the dosage changes, then additional entries are required for each differing dosage.</li></ul></li>
+some measurement. When the dosage changes, then additional entries are required for each differing dosage.</li></ul><ul><li><codeblock>[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.1') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor self.templateId-&gt;exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.11')</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: contains one or more related components (&lt;entryRelationship typeCode='COMP'&gt;, either to handle split, tapered or conditional dosing, or to support combination medications.<ul><li>n the first three cases, the subordinate components shall specify only the changed &lt;frequency>
 and/or &lt;doseAmount> elements. For conditional dosing, each subordinate component shall have
 a &lt;precondition> element that specifies the &lt;observation> that must be obtained before
 administration of the dose. The value of the &lt;sequenceNumber> shall be an ordinal number,
 starting at 1 for the first component, and increasing by 1 for each subsequent component.
-Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
+Components shall be sent in &lt;sequenceNumber> order.</li></ul><ul><li><codeblock>[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship-&gt;exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Values from SNOMED CT shall be used in the &lt;code&gt; element to record that a patient is either not on medications, or that medications are not known.<ul><li><p>
 182904002 "Drug Treatment Unknown" (To indicate lack of knowledge about drug therapy)
 </p>
@@ -117,36 +120,31 @@ Components shall be sent in &lt;sequenceNumber> order.</li></ul></li>
 </p>
 <p>
 408350003 "Patient Not On Self-Medications" (To indicate no treatment)
-</p></li></ul></li>
-<li><b>SHALL</b> satisfy: The act/@classCode='ACT' and act/@moodCode='EVN' when recording reason for medication in InternalReference Template. (6.3.4.16.22)</li>
-<li><b>SHALL</b> satisfy: Contains [0..2] effectiveTime elements.<ul><li><p>
-The first &lt;effectiveTime> element encodes the start and stop time of the medication regimen.
-This an interval of time (xsi:type='IVL_TS'), and must be specified as shown. This is an
-additional constraint placed upon CDA Release 2.0 by this profile, and simplifies the exchange
-of start/stop and frequency information between EMR systems.
-</p></li></ul></li>
-<li><b>SHALL</b> satisfy: The &lt;consumable&gt; element shall be present, and shall contain a Product Entry template</li>
-<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'true' for Patient Medical Instructions relationship</li>
-<li><b>SHOULD</b> satisfy: The name and strength of the medication is recorded in consumable/manufacturedProduct/manufacturedMaterial/code/originalText</li>
-<li><b>SHALL</b> satisfy: Name of the substance or product is recorded in consumable/manufacturedProduct/manufacturedMaterial/name</li>
+</p></li></ul><ul><li><codeblock>[OCL]: true</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The act/@classCode='ACT' and act/@moodCode='EVN' when recording reason for medication in InternalReference Template. (6.3.4.16.22)<ul><li>self.internalReference->exists(ir : ihe::InternalReference | ar.classCode &lt;> 'ACT' or ar.moodCode &lt;> 'EVN')</li><li>OCL Issue - What is the internalReference relationship?  unable to get OCL to reference</li></ul><ul><li><codeblock>[OCL]: true</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The &lt;consumable&gt; element shall be present, and shall contain a Product Entry template<ul><li><codeblock>[OCL]: self.consumable.manufacturedProduct.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.2')</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'true' for Patient Medical Instructions relationship<ul><li>OCL Issue - What is the patientInstructions relationship?  unable to get OCL to reference</li></ul><ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists( er : cda::EntryRelationship | er.inversionInd &lt;&gt; true and er.act.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')  )</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: The name and strength of the medication is recorded in consumable/manufacturedProduct/manufacturedMaterial/code/originalText<ul><li><codeblock>[OCL]: not self.consumable.manufacturedProduct.manufacturedMaterial.code.oclIsUndefined() implies not self.consumable.manufacturedProduct.manufacturedMaterial.code.originalText.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Name of the substance or product is recorded in consumable/manufacturedProduct/manufacturedMaterial/name<ul><li><codeblock>[OCL]: not self.consumable.manufacturedProduct.manufacturedMaterial.name.oclIsUndefined()</codeblock></li></ul></li>
 <li><b>MAY</b> satisfy: the preconditions for use of the medication are recorded in the
 &lt;precondition&gt; element. element. The value attribute of the &lt;reference&gt; element is a URL that points to
-the CDA narrative describing those preconditions.</li>
-<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'false' for Supply Entry relationship</li>
+the CDA narrative describing those preconditions.<ul><li><codeblock>[OCL]: not self.precondition.criterion.text-&gt;exists (t | t.reference.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'false' for Supply Entry relationship<ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists(er : cda::EntryRelationship | (not er.supply-&gt;isEmpty()) and er.inversionInd&lt;&gt;false )</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: entryRelationship/sequenceNumber element should be present when the embedded 'supply' element has a
 moodCode attribute of EVN.<ul><li>The prescription activity may have a &lt;sequenceNumber> element to indicate the fill number. A
 value of 1, 2 or N indicates that it is the first, second, or Nth fill respectively of a specific
-prescription.</li></ul></li>
-<li><b>SHALL</b> satisfy: Medications that use this template identifier shall not use subordinate 'substanceAdministation' acts.</li>
+prescription.</li></ul><ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists(er| (not er.supply-&gt;isEmpty()) and er.sequenceNumber.value.oclIsUndefined() )</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Medications that use this template identifier shall not use subordinate 'substanceAdministation' acts.<ul><li><codeblock>[OCL]: self.entryRelationship.substanceAdministration-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.24"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
-  <id root="83dfe4aa-c815-428a-b659-3cd9c37b41be"/>
+  <id root="cc49cd4e-fcf4-4153-82aa-98d5ee098157"/>
+  <code/>
   <statusCode/>
-  <effectiveTime value="20110405"/>
+  <effectiveTime value="20110616"/>
   <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
   <approachSiteCode/>
   <doseQuantity/>
@@ -155,7 +153,7 @@ prescription.</li></ul></li>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.46"/>
-      <id root="6f807143-3861-48d5-b595-a316bc45de97"/>
+      <id root="554edb88-f053-4c49-a45e-1428982a1f1b"/>
       <code code="30973-2" codeSystemName="" displayName="Dose number"/>
       <statusCode/>
       <effectiveTime>
@@ -169,7 +167,7 @@ prescription.</li></ul></li>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.47"/>
-      <id root="53dbd809-36cc-46bd-a615-71123171084c"/>
+      <id root="00848578-a8ff-4b38-9b0a-7c54bfc26086"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -182,7 +180,7 @@ prescription.</li></ul></li>
   <entryRelationship>
     <act moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.1.49"/>
-      <id root="56bee897-3543-46a1-9765-f96ba1f845ff"/>
+      <id root="49f7cce9-6cdf-4a4b-aea7-3549bb68e6b8"/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>
@@ -192,7 +190,7 @@ prescription.</li></ul></li>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.54"/>
-      <id root="b258bd17-47e7-4f8e-9774-26c8d4380635"/>
+      <id root="0d3470ef-d16a-4a9c-8c16-95114b673894"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2011"/>
@@ -201,7 +199,7 @@ prescription.</li></ul></li>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.55"/>
-          <id root="43e2af26-d704-4eeb-adbe-22a8e6f807fb"/>
+          <id root="295ece71-b336-4401-91ab-6804419810eb"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -211,6 +209,80 @@ prescription.</li></ul></li>
         </observation>
       </entryRelationship>
     </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
+      <id root="426d2194-b0b0-4163-bf4a-b71a1c7d0063"/>
+      <code/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.1.49"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+      <id root="5fd23f1e-8548-4f6c-81e4-238d170b04ff"/>
+      <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+      <text/>
+      <statusCode/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <supply>
+      <templateId root="2.16.840.1.113883.10.20.1.34"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+      <id root="4c3e51a2-3020-43b1-bc1c-967d63879def"/>
+      <statusCode/>
+      <effectiveTime value="20110616"/>
+      <repeatNumber/>
+      <quantity/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.57"/>
+          <templateId root="2.16.840.1.113883.10.20.1.47"/>
+          <id root="f741b419-4104-4af2-b483-b8dbbd8a2915"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <value xsi:type="CE"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.1.43"/>
+          <id root="531b5736-638d-4093-bcff-f9e3183e2341"/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.1.43"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+          <id root="609369ec-227b-4bfb-8ae3-bcc9ae42cb77"/>
+          <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+          <text/>
+          <statusCode/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </supply>
   </entryRelationship>
 </substanceadministration>]]></codeblock>
 </body>

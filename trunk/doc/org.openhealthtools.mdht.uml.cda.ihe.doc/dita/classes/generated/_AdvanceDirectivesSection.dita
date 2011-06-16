@@ -29,13 +29,13 @@ expectations and requests for care along with the locations of the documents.</p
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.1"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.34"/>
-  <id root="3bfbd683-3db9-49fe-8a1b-1e35cbf9369a"/>
+  <id root="af16eb91-4674-481c-996e-e6c6ebaeab2b"/>
   <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/>
   <title>Advance directives</title>
   <entry>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.17"/>
-      <id root="255a8993-c98f-4ec5-9150-6857df9caa68"/>
+      <id root="7e395dce-89f5-45cd-b7fd-c3eebc4e1d9e"/>
       <code/>
       <statusCode code="completed"/>
       <effectiveTime>

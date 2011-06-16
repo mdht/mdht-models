@@ -43,31 +43,28 @@ denied experiencing.</p>
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.doc/classes/Section.html">CDA Section</a></li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain [1..1] <tt class="ph tt">code</tt><tt class="ph tt">/@code</tt> = "10187-3" <em class="ph i">REVIEW OF SYSTEMS</em> (CodeSystem: 2.16.840.1.113883.6.1 LOINC STATIC) (CONF-CO-41)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10187-3" </tt><em class="ph i">REVIEW OF SYSTEMS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-CO-41)
+</li>
 
 </ol>
 
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10187-3" </tt><em class="ph i">REVIEW OF SYSTEMS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-CO-41)
+</li>
+
+</ol>
 
 <div class="fig fignone"><span class="figcap">Figure 1. Review Of Systems Section example</span>
 
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.4.10" assigningAuthorityName="CDT Review Of Systems Section"/&gt;
-          &lt;code code="10187-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REVIEW OF SYSTEMS"/&gt;
-          &lt;title&gt;REVIEW OF SYSTEMS&lt;/title&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.4.10"/&gt;
+  &lt;id root="67e99eb4-b138-4399-b981-fca62dd925c3"/&gt;
+  &lt;code code="10187-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REVIEW OF SYSTEMS"/&gt;
+  &lt;title&gt;REVIEW OF SYSTEMS&lt;/title&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

@@ -47,7 +47,7 @@ The differentiation between Vital Signs and Results varies by clinical context. 
 <ul><li>The method code element may be present to indicate the method used to obtain the measure. Note that method used is distinct from, but possibly related to the target site.</li></ul></li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (6.3.4.22.7)
 <ul><li>The target site of the measure may be identified in the targetSiteCode element (e.g., Left arm [blood pressure], oral [temperature], et cetera).</li></ul></li>
-<li>The value for 'code' <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)</li>
+<li>The value for 'code' <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)<ul><li><codeblock>[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</codeblock></li></ul></li>
 <li>The methodCode <b>SHALL NOT</b> conflict with the method inherent in code (CONF-415)</li>
 <li>Where value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF-417)</li>
 <li><b>SHOULD</b> satisfy: Contain one or more referenceRange to show the normal range of values for the observation result (CONF-419)<ul><li><codeblock>[OCL]: not self.referenceRange-&gt;isEmpty()</codeblock></li></ul></li>
@@ -67,7 +67,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
-  <id root="4b20dee1-0925-468c-a7c2-b5ca0e1f4190"/>
+  <id root="dc53b16f-cd0b-47ab-a9dd-a33337a0915e"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <statusCode code="completed"/>
   <effectiveTime>

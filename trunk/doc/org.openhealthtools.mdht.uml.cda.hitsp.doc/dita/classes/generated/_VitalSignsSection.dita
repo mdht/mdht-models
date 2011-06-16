@@ -30,7 +30,7 @@
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (6.3.3.4.5), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.1</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: title Contains a case-insensitive language-insensitive string containing 'vital signs'. (CONF-385)</li>
+<li><b>SHOULD</b> satisfy: title Contains a case-insensitive language-insensitive string containing 'vital signs'. (CONF-385)<ul><li><codeblock>[OCL]: self.title = 'vital signs'</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Contains entries conforming to the Vital Sign module. (C83-[CT-119-2])<ul><li><codeblock>[OCL]: self.entry-&gt;exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ihe::VitalSignsOrganizer) and entry.organizer.component.observation-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(hitsp::VitalSign)))</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
@@ -39,14 +39,14 @@
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.25"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.119"/>
-  <id root="9b780d85-4dfb-455c-af6b-7e528481eb17"/>
+  <id root="919f5454-26a4-4015-b27e-0d2b6d7d0221"/>
   <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
   <title>Vital signs</title>
   <entry>
     <organizer moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.32"/>
       <templateId root="2.16.840.1.113883.10.20.1.35"/>
-      <id root="e8551ae2-2a2f-4f29-a627-944f0791fc17"/>
+      <id root="57e36806-6924-46bd-a958-cdff4c77c7ab"/>
       <code/>
       <statusCode/>
       <effectiveTime>
@@ -56,7 +56,7 @@
       <component>
         <observation moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.31"/>
-          <id root="2c2cff8e-4947-49b3-a824-9d61d8bb3f65"/>
+          <id root="a38dede7-9397-43da-8210-fe844331e18a"/>
           <code/>
           <statusCode/>
           <effectiveTime>
@@ -74,7 +74,7 @@
       <templateId root="2.16.840.1.113883.10.20.1.32"/>
       <templateId root="2.16.840.1.113883.10.20.1.35"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
-      <id root="8ff46620-4001-41ff-9af9-a6a5d398c185"/>
+      <id root="c4db3c43-72d8-4112-b6c8-cd32a7d51e16"/>
       <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -84,7 +84,7 @@
       <component>
         <observation moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.31"/>
-          <id root="43fe0360-f3c4-4267-b080-8ae7aa4d97df"/>
+          <id root="3816d731-89d0-4066-819e-d5d79ceec114"/>
           <code/>
           <statusCode/>
           <effectiveTime>
@@ -100,7 +100,7 @@
           <templateId root="2.16.840.1.113883.10.20.1.31"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
-          <id root="56b316dd-4e2b-4b03-9401-cf91ad87e517"/>
+          <id root="972b9c31-6d85-4920-83a4-fb7931e0f03b"/>
           <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <statusCode code="completed"/>
           <effectiveTime>

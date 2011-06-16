@@ -44,7 +44,10 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-260)
 <ol class="ol" type="a">
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.title = 'alert' or self.title='allergies and adverse reactions'</pre>
+</li>
+</ul>
+</li>
 </ol>
 </li>
 
@@ -71,13 +74,13 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.2"/&gt;
-  &lt;id root="c428a773-0266-4451-9aa2-56a505356a3f"/&gt;
+  &lt;id root="94ccc99a-533e-414a-946b-44916447a91b"/&gt;
   &lt;code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/&gt;
   &lt;title&gt;Allergies, adverse reactions, alerts&lt;/title&gt;
   &lt;entry&gt;
     &lt;act classCode="ACT" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.27"/&gt;
-      &lt;id root="ac62ab2e-ace0-43cc-8c0f-ac14cae4a369"/&gt;
+      &lt;id root="0f863605-0f72-4cf6-9500-b1cea6697e39"/&gt;
       &lt;code nullFlavor="NA"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2011"/&gt;
@@ -86,7 +89,7 @@
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.1.41"/&gt;
-          &lt;id root="f7baab7a-727f-4f7b-861c-9538b5f25dde"/&gt;
+          &lt;id root="6b747623-f5e9-422d-918c-7c1279693154"/&gt;
           &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
@@ -99,7 +102,7 @@
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
-          &lt;id root="58558115-6f5d-4a04-b483-e36fd95c8489"/&gt;
+          &lt;id root="d2659722-9d1b-4a33-a3b5-6285c619e80e"/&gt;
           &lt;code/&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
@@ -110,7 +113,7 @@
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
-              &lt;id root="3bd6f983-5f20-4f75-a22d-82eab7ec811c"/&gt;
+              &lt;id root="55231208-3d7c-4bf3-8eb2-46af3adc2101"/&gt;
               &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
               &lt;statusCode code="completed"/&gt;
               &lt;effectiveTime&gt;
@@ -124,7 +127,7 @@
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
-              &lt;id root="0c4630b2-e7b5-4034-b91b-528ea1fc8e52"/&gt;
+              &lt;id root="d6cf42de-0167-4bc5-9edb-5a79e3fa4f09"/&gt;
               &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
               &lt;statusCode code="completed"/&gt;
               &lt;effectiveTime&gt;
@@ -137,7 +140,7 @@
           &lt;entryRelationship&gt;
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
-              &lt;id root="40c7e701-e953-419d-b1da-de59174c1065"/&gt;
+              &lt;id root="72844a52-1eed-43ab-92f8-5c0f8cc89a2b"/&gt;
               &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
               &lt;statusCode code="completed"/&gt;
               &lt;effectiveTime&gt;

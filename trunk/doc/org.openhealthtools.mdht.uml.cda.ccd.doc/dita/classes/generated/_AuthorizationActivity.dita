@@ -34,7 +34,7 @@ Authorizations are represented using an act subordinate to the policy or program
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.19"/>
-  <id root="da41c035-30d7-41aa-b2b6-7a0c0dc662db"/>
+  <id root="d21e9cbb-f460-4d8b-a163-f6d8021b189a"/>
   <effectiveTime>
     <low value="2011"/>
     <high value="2011"/>

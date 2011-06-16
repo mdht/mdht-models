@@ -35,14 +35,15 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
    rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
    and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
 <li>An alert observation <b>SHOULD</b> contain at least one Observation / participant, representing the agent that is the cause of the allergy or adverse reaction. (CONF-273)<ul><li><codeblock>[OCL]: self.participant-&gt;exists(participant : cda::Participant2 | participant.typeCode = vocab::ParticipationType::CSM )</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity. (CONF-274)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |
-  entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())</codeblock></li></ul></li>
-<li>The value for participant / @typeCode in an agent participation <b>SHALL</b> be "CSM" "Consumable" 2.16.840.1.113883.5.90 ParticipationType STATIC. (CONF-275)</li>
-<li>The value for Observation / participant / participantRole / @classCode in an agent participation <b>SHALL</b> be "MANU" "Manufactured" 2.16.840.1.113883.5.110 RoleClass STATIC. (CONF-276)</li>
+<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity. (CONF-274)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li>The value for participant / @typeCode in an agent participation <b>SHALL</b> be "CSM" "Consumable" 2.16.840.1.113883.5.90 ParticipationType STATIC. (CONF-275)<ul><li><codeblock>[OCL]: self.participant-&gt;one(entity : cda::Participant2 |
+  entity.typeCode = 'CSM')</codeblock></li></ul></li>
+<li>The value for Observation / participant / participantRole / @classCode in an agent participation <b>SHALL</b> be "MANU" "Manufactured" 2.16.840.1.113883.5.110 RoleClass STATIC. (CONF-276)<ul><li><codeblock>[OCL]: self.participant.participantRole-&gt;one(entity : cda::ParticipantRole |
+  entity.classCode = 'MANU')</codeblock></li></ul></li>
 <li>The value for participant / participantRole / playingEntity / @classCode in an agent participation <b>SHALL</b> be "MMAT" "Manufactured material" 2.16.840.1.113883.5.41 EntityClass STATIC. (CONF-277)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |
   entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity / code. (CONF-278)</li>
-<li>The value for participant / participantRole / playingEntity / code in an agent participation <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations. (CONF-279)</li>
+<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity / code. (CONF-278)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |  not entity.code.oclIsUndefined())</codeblock></li></ul></li>
+<li>The value for participant / participantRole / playingEntity / code in an agent participation <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations. (CONF-279)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity | not entity.code.oclIsUndefined() and (entity.code.codeSystem='2.16.840.1.113883.6.88' xor entity.code.codeSystem='2.16.840.1.113883.6.59'))</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClassObservation
@@ -73,19 +74,20 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
    rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
    and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
 <li>An alert observation <b>SHOULD</b> contain at least one Observation / participant, representing the agent that is the cause of the allergy or adverse reaction. (CONF-273)<ul><li><codeblock>[OCL]: self.participant-&gt;exists(participant : cda::Participant2 | participant.typeCode = vocab::ParticipationType::CSM )</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity. (CONF-274)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |
-  entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())</codeblock></li></ul></li>
-<li>The value for participant / @typeCode in an agent participation <b>SHALL</b> be "CSM" "Consumable" 2.16.840.1.113883.5.90 ParticipationType STATIC. (CONF-275)</li>
-<li>The value for Observation / participant / participantRole / @classCode in an agent participation <b>SHALL</b> be "MANU" "Manufactured" 2.16.840.1.113883.5.110 RoleClass STATIC. (CONF-276)</li>
+<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity. (CONF-274)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li>The value for participant / @typeCode in an agent participation <b>SHALL</b> be "CSM" "Consumable" 2.16.840.1.113883.5.90 ParticipationType STATIC. (CONF-275)<ul><li><codeblock>[OCL]: self.participant-&gt;one(entity : cda::Participant2 |
+  entity.typeCode = 'CSM')</codeblock></li></ul></li>
+<li>The value for Observation / participant / participantRole / @classCode in an agent participation <b>SHALL</b> be "MANU" "Manufactured" 2.16.840.1.113883.5.110 RoleClass STATIC. (CONF-276)<ul><li><codeblock>[OCL]: self.participant.participantRole-&gt;one(entity : cda::ParticipantRole |
+  entity.classCode = 'MANU')</codeblock></li></ul></li>
 <li>The value for participant / participantRole / playingEntity / @classCode in an agent participation <b>SHALL</b> be "MMAT" "Manufactured material" 2.16.840.1.113883.5.41 EntityClass STATIC. (CONF-277)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |
   entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity / code. (CONF-278)</li>
-<li>The value for participant / participantRole / playingEntity / code in an agent participation <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations. (CONF-279)</li>
+<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity / code. (CONF-278)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |  not entity.code.oclIsUndefined())</codeblock></li></ul></li>
+<li>The value for participant / participantRole / playingEntity / code in an agent participation <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations. (CONF-279)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity | not entity.code.oclIsUndefined() and (entity.code.codeSystem='2.16.840.1.113883.6.88' xor entity.code.codeSystem='2.16.840.1.113883.6.59'))</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.18"/>
-  <id root="7749b547-bb36-4def-bebe-37420eb36816"/>
+  <id root="d84eb128-dcc5-492f-adf2-39692139d3f1"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2011"/>
@@ -96,7 +98,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.39"/>
-      <id root="25253bc8-b447-41da-bd79-b5cdea58a1aa"/>
+      <id root="e6f19f20-7fc6-4978-9fec-4c8e0a900488"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -109,7 +111,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.54"/>
-      <id root="02d388f4-8cf8-4f8a-984c-ecf44a6efc03"/>
+      <id root="edc917c8-921b-459b-b024-818d93aa61da"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2011"/>
@@ -118,7 +120,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.55"/>
-          <id root="2dcd9b13-a14e-475a-96e3-3a07c39d6a2c"/>
+          <id root="2d8151ab-125f-43c6-a106-336ba2f5f48b"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
           <statusCode code="completed"/>
           <effectiveTime>

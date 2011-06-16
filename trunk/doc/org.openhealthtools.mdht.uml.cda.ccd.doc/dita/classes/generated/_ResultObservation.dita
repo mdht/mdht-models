@@ -27,7 +27,7 @@
 <ul><li>Can be used to provide a rough qualitative interpretation of the observation, such as 'N' (normal), 'L' (low), 'S' (susceptible), etc. Interpretation is generally provided for numeric results where an interpretation range has been defined, or for antimicrobial susceptibility test interpretation.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF-416)
 </li>
-<li>The value for 'code' <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)</li>
+<li>The value for 'code' <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)<ul><li><codeblock>[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</codeblock></li></ul></li>
 <li>The methodCode <b>SHALL NOT</b> conflict with the method inherent in code (CONF-415)</li>
 <li>Where value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF-417)</li>
 <li><b>SHOULD</b> satisfy: Contain one or more referenceRange to show the normal range of values for the observation result (CONF-419)<ul><li><codeblock>[OCL]: not self.referenceRange-&gt;isEmpty()</codeblock></li></ul></li>
@@ -59,7 +59,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 <ul><li>Can be used to provide a rough qualitative interpretation of the observation, such as 'N' (normal), 'L' (low), 'S' (susceptible), etc. Interpretation is generally provided for numeric results where an interpretation range has been defined, or for antimicrobial susceptibility test interpretation.</li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF-414)
 <ul><li>Included if the method isn't inherent in code or if there is a need to further specialize the method in code.</li></ul></li>
-<li>The value for 'code' <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)</li>
+<li>The value for 'code' <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)<ul><li><codeblock>[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</codeblock></li></ul></li>
 <li>The methodCode <b>SHALL NOT</b> conflict with the method inherent in code (CONF-415)</li>
 <li>Where value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression. (CONF-417)</li>
 <li><b>SHOULD</b> satisfy: Contain one or more referenceRange to show the normal range of values for the observation result (CONF-419)<ul><li><codeblock>[OCL]: not self.referenceRange-&gt;isEmpty()</codeblock></li></ul></li>
@@ -75,7 +75,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.31"/>
-  <id root="8190f074-9e7c-43a5-8832-004ae26e46f6"/>
+  <id root="054a5fbb-ddfd-47ed-a151-34bbc842ae81"/>
   <code/>
   <statusCode/>
   <effectiveTime>

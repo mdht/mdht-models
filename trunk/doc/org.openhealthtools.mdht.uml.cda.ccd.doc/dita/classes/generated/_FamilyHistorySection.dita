@@ -26,7 +26,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.4"/>
-  <id root="d68c4306-33b4-4295-9add-b49b8d6bdb4a"/>
+  <id root="709df70f-48a2-4430-997a-c82c88c4f50e"/>
   <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of family member diseases"/>
   <title>History of family member diseases</title>
 </section>]]></codeblock>

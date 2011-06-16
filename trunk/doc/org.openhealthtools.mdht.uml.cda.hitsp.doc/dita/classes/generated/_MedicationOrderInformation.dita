@@ -26,34 +26,34 @@ Please note that the number of fills requested is what is recorded in the docume
 <li>The order number, i.e., the identifier from the perspective of the ordering provider, <b>SHOULD</b> be recorded in the id element within the supply element with moodcode = 'INT' (C83-[DE-8.26-CDA-1])<ul><li>The order identifier from the perspective of the
 ordering clinician. Also known as the 'placer number'
 versus the pharmacies prescription number (or 'filler
-number')</li></ul></li>
+number')</li></ul><ul><li><codeblock>[OCL]: self.moodCode = 'INT' implies self.id-&gt;size() &gt; 0</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: The effectiveTime/high element is present to record the order expiration date and time when supply/@moodcode = INT<ul><li>The date, including time if applicable, when the order
 is no longer valid. Dispenses and administrations are
-not continued past this date for an order instance</li></ul></li>
+not continued past this date for an order instance</li></ul><ul><li><codeblock>[OCL]: self.moodCode =  vocab::x_DocumentSubstanceMood::INT implies not self.effectiveTime-&gt;select(et | et.value.oclIsUndefined())-&gt;isEmpty()</codeblock></li></ul></li>
 <li>The quantity ordered <b>SHALL</b> be recorded in the value attribute of quantity element inside a supply element used to record order information (C83-[DE-8.26-CDA-1])<ul><li>The amount of product indicated by the ordering
 provider to be dispensed. For example, number of
 dosage units or volume of a liquid substance. Note:
 this is comprised of both a numeric value and a unit of
-measure</li></ul></li>
-<li><b>SHALL</b> satisfy: the @unit attribute of quantity element is present (C83-[DE-8.26-CDA-2])</li>
+measure</li></ul><ul><li><codeblock>[OCL]: not self.quantity.value.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the @unit attribute of quantity element is present (C83-[DE-8.26-CDA-2])<ul><li><codeblock>[OCL]: not self.quantity.unit.oclIsUndefined()</codeblock></li></ul></li>
 <li>When the quantity ordered or dispensed is in other than administration units (e.g., when the quantity ordered is a volume of liquid or mass of substance) units <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.80.29, Unit of Measure, Dynamic (C83-[DE-8.26-CDA-3], C83-[DE-8.38-CDA-2])</li>
 <li>When the quantity ordered or dispensed is in administration units, the unit attribute <b>SHOULD</b> contain the preferred name of the presentation units within braces { } using the units of presentation as 2.16.840.1.113883.3.88.12.3221.8.11, Medication Product Form Value Set, Dynamic (C83-[DE-8.26-CDA-4], C83-[DE-8.38-CDA-3])</li>
 <li>The prescription number <b>SHALL</b> be recorded in the extension attribute of the &lt;id&gt; element within a supply element having a moodCode attribute of EVN (C83-[DE-8.34-CDA-1])<ul><li>The prescription
-identifier assigned by the pharmacy</li></ul></li>
-<li>The root attribute of the id element <b>SHOULD</b> be the OID of the assigning authority for the identifier. (C83-[DE-8.34-CDA-2])<ul><li>determining the assigning authority is not feasible in all settings.</li></ul></li>
+identifier assigned by the pharmacy</li></ul><ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.id-&gt;isEmpty()</codeblock></li></ul></li>
+<li>The root attribute of the id element <b>SHOULD</b> be the OID of the assigning authority for the identifier. (C83-[DE-8.34-CDA-2])<ul><li>determining the assigning authority is not feasible in all settings.</li></ul><ul><li><codeblock>[OCL]: self.id.root-&gt;size() &gt; 0</codeblock></li></ul></li>
 <li>A GUID <b>MAY</b> be used in place of the OID of the assigning authority (C83-[DE-8.34-CDA-3])</li>
 <li><b>SHALL</b> satisfy: The dispense date is recorded in effectiveTime element within a supply element with a moodCode attribute set to EVN<ul><li>The date of this
-dispense</li></ul></li>
-<li><b>MAY</b> satisfy: The dispensing pharmacy's location is present in the addr element in performer/assignEntity element inside a supply element with a moodCode attribute set to EVN</li>
+dispense</li></ul><ul><li><codeblock>[OCL]: self.moodCode = 'EVN' implies self.effectiveTime-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: The dispensing pharmacy's location is present in the addr element in performer/assignEntity element inside a supply element with a moodCode attribute set to EVN<ul><li><codeblock>[OCL]: self.moodCode =  vocab::x_DocumentSubstanceMood::EVN  implies self.performer-&gt;select(p | p.assignedEntity.addr-&gt;isEmpty())-&gt;isEmpty()</codeblock></li></ul></li>
 <li>The state element of the performer/assignedEntity/addr element in the United States <b>SHALL</b> be recorded using 2.16.840.1.113883.3.88.12.80.1, State Value Set, version: 20081218, Dynamic (C154-[DE-8.36-1])</li>
 <li>The postalCode element of the performer/assignedEntity/addr element in the United States <b>SHALL</b> be recorded using 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, version: 20081218, Dynamic (C154-[DE-8.36-2])</li>
 <li>The country element of the performer/assignedEntity/addr element in the United States <b>SHALL</b> be recorded using 2.16.840.1.113883.3.88.12.80.3, Country Value Set, version: 20081218, Dynamic (C154-[DE-8.36-3])</li>
 <li>The quantity dispensed <b>SHALL</b> be recorded in the value attribute of quantity element inside a supply element with a moodCode attribute set to EVN<ul><li>The actual quantity of
 product supplied in this dispense. Note: This is
 comprised of both a numeric value and a unit of
-measure</li></ul></li>
+measure</li></ul><ul><li><codeblock>[OCL]: self.moodCode = 'EVN' implies not self.quantity.value.oclIsUndefined()</codeblock></li></ul></li>
 <li>The fill number <b>SHOULD</b> be recorded in the sequenceNumber attribute of a entryRelationship element with a typeCode attribute set to COMP (C83-[DE-8.39-CDA-1])<ul><li>The fill number for the
-history entry. The fill number identifies the supply (dispense) event as a distinct activities against the prescription.</li></ul></li>
+history entry. The fill number identifies the supply (dispense) event as a distinct activities against the prescription.</li></ul><ul><li><codeblock>[OCL]: self.entryRelationship-&gt;select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.sequenceNumber.oclIsUndefined())-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupplyActivity.html">CCD Supply Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.34</tt>)</li>
@@ -123,35 +123,83 @@ shall contain a &lt;name&gt; element to identify the prescriber or their organiz
 <li>The order number, i.e., the identifier from the perspective of the ordering provider, <b>SHOULD</b> be recorded in the id element within the supply element with moodcode = 'INT' (C83-[DE-8.26-CDA-1])<ul><li>The order identifier from the perspective of the
 ordering clinician. Also known as the 'placer number'
 versus the pharmacies prescription number (or 'filler
-number')</li></ul></li>
+number')</li></ul><ul><li><codeblock>[OCL]: self.moodCode = 'INT' implies self.id-&gt;size() &gt; 0</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: The effectiveTime/high element is present to record the order expiration date and time when supply/@moodcode = INT<ul><li>The date, including time if applicable, when the order
 is no longer valid. Dispenses and administrations are
-not continued past this date for an order instance</li></ul></li>
+not continued past this date for an order instance</li></ul><ul><li><codeblock>[OCL]: self.moodCode =  vocab::x_DocumentSubstanceMood::INT implies not self.effectiveTime-&gt;select(et | et.value.oclIsUndefined())-&gt;isEmpty()</codeblock></li></ul></li>
 <li>The quantity ordered <b>SHALL</b> be recorded in the value attribute of quantity element inside a supply element used to record order information (C83-[DE-8.26-CDA-1])<ul><li>The amount of product indicated by the ordering
 provider to be dispensed. For example, number of
 dosage units or volume of a liquid substance. Note:
 this is comprised of both a numeric value and a unit of
-measure</li></ul></li>
-<li><b>SHALL</b> satisfy: the @unit attribute of quantity element is present (C83-[DE-8.26-CDA-2])</li>
+measure</li></ul><ul><li><codeblock>[OCL]: not self.quantity.value.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the @unit attribute of quantity element is present (C83-[DE-8.26-CDA-2])<ul><li><codeblock>[OCL]: not self.quantity.unit.oclIsUndefined()</codeblock></li></ul></li>
 <li>When the quantity ordered or dispensed is in other than administration units (e.g., when the quantity ordered is a volume of liquid or mass of substance) units <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.80.29, Unit of Measure, Dynamic (C83-[DE-8.26-CDA-3], C83-[DE-8.38-CDA-2])</li>
 <li>When the quantity ordered or dispensed is in administration units, the unit attribute <b>SHOULD</b> contain the preferred name of the presentation units within braces { } using the units of presentation as 2.16.840.1.113883.3.88.12.3221.8.11, Medication Product Form Value Set, Dynamic (C83-[DE-8.26-CDA-4], C83-[DE-8.38-CDA-3])</li>
 <li>The prescription number <b>SHALL</b> be recorded in the extension attribute of the &lt;id&gt; element within a supply element having a moodCode attribute of EVN (C83-[DE-8.34-CDA-1])<ul><li>The prescription
-identifier assigned by the pharmacy</li></ul></li>
-<li>The root attribute of the id element <b>SHOULD</b> be the OID of the assigning authority for the identifier. (C83-[DE-8.34-CDA-2])<ul><li>determining the assigning authority is not feasible in all settings.</li></ul></li>
+identifier assigned by the pharmacy</li></ul><ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.id-&gt;isEmpty()</codeblock></li></ul></li>
+<li>The root attribute of the id element <b>SHOULD</b> be the OID of the assigning authority for the identifier. (C83-[DE-8.34-CDA-2])<ul><li>determining the assigning authority is not feasible in all settings.</li></ul><ul><li><codeblock>[OCL]: self.id.root-&gt;size() &gt; 0</codeblock></li></ul></li>
 <li>A GUID <b>MAY</b> be used in place of the OID of the assigning authority (C83-[DE-8.34-CDA-3])</li>
 <li><b>SHALL</b> satisfy: The dispense date is recorded in effectiveTime element within a supply element with a moodCode attribute set to EVN<ul><li>The date of this
-dispense</li></ul></li>
-<li><b>MAY</b> satisfy: The dispensing pharmacy's location is present in the addr element in performer/assignEntity element inside a supply element with a moodCode attribute set to EVN</li>
+dispense</li></ul><ul><li><codeblock>[OCL]: self.moodCode = 'EVN' implies self.effectiveTime-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: The dispensing pharmacy's location is present in the addr element in performer/assignEntity element inside a supply element with a moodCode attribute set to EVN<ul><li><codeblock>[OCL]: self.moodCode =  vocab::x_DocumentSubstanceMood::EVN  implies self.performer-&gt;select(p | p.assignedEntity.addr-&gt;isEmpty())-&gt;isEmpty()</codeblock></li></ul></li>
 <li>The state element of the performer/assignedEntity/addr element in the United States <b>SHALL</b> be recorded using 2.16.840.1.113883.3.88.12.80.1, State Value Set, version: 20081218, Dynamic (C154-[DE-8.36-1])</li>
 <li>The postalCode element of the performer/assignedEntity/addr element in the United States <b>SHALL</b> be recorded using 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, version: 20081218, Dynamic (C154-[DE-8.36-2])</li>
 <li>The country element of the performer/assignedEntity/addr element in the United States <b>SHALL</b> be recorded using 2.16.840.1.113883.3.88.12.80.3, Country Value Set, version: 20081218, Dynamic (C154-[DE-8.36-3])</li>
 <li>The quantity dispensed <b>SHALL</b> be recorded in the value attribute of quantity element inside a supply element with a moodCode attribute set to EVN<ul><li>The actual quantity of
 product supplied in this dispense. Note: This is
 comprised of both a numeric value and a unit of
-measure</li></ul></li>
+measure</li></ul><ul><li><codeblock>[OCL]: self.moodCode = 'EVN' implies not self.quantity.value.oclIsUndefined()</codeblock></li></ul></li>
 <li>The fill number <b>SHOULD</b> be recorded in the sequenceNumber attribute of a entryRelationship element with a typeCode attribute set to COMP (C83-[DE-8.39-CDA-1])<ul><li>The fill number for the
-history entry. The fill number identifies the supply (dispense) event as a distinct activities against the prescription.</li></ul></li>
+history entry. The fill number identifies the supply (dispense) event as a distinct activities against the prescription.</li></ul><ul><li><codeblock>[OCL]: self.entryRelationship-&gt;select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.sequenceNumber.oclIsUndefined())-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.34"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
+  <templateId root="2.16.840.1.113883.3.88.11.83.8.3"/>
+  <id root="1d4827c6-429a-4a19-9cc5-672106110493"/>
+  <statusCode/>
+  <effectiveTime value="20110616"/>
+  <repeatNumber/>
+  <quantity/>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+      <templateId root="2.16.840.1.113883.10.20.1.47"/>
+      <id root="4208d489-c2fe-4192-aa8f-02dbeaeca022"/>
+      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <value xsi:type="CE"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.1.43"/>
+      <id root="95bc8e17-82cf-4c4e-b63a-58d4e2216d5a"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <act moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.1.43"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+      <id root="6173b715-7141-4088-96c5-48870b06f359"/>
+      <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+      <text/>
+      <statusCode/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+</supply>]]></codeblock>
 </body>
 </topic>

@@ -82,9 +82,9 @@
 </ol>
 </li>
 
-<li class="li">The value for act/code in a procedure activity <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4). (CONF-434)</li>
+<li class="li">The value for code in a procedure activity <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4). (CONF-434)</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: contain one or more Act / performer, to represent those practioners who performed the procedure. (CONF-438)</li>
+<li class="li"><strong class="ph b">MAY</strong> satisfy: contain one or more performer, to represent those practioners who performed the procedure. (CONF-438)</li>
 
 <li class="li"><strong class="ph b">MAY</strong> satisfy: A procedure activity contains one or more entryRelationship / @typeCode="RSON", the target of which represents the indication or reason for the procedure. (CONF-439)</li>
 
@@ -94,7 +94,7 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: contains one or more sources of information (CONF-447)</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: have one or more Act / participant [@typeCode="DEV"], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52) (CONF-448)</li>
+<li class="li"><strong class="ph b">MAY</strong> satisfy: have one or more participant [@typeCode="DEV"], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52) (CONF-448)</li>
 
 <li class="li">participant / participantRole / id <strong class="ph b">SHOULD</strong> be set to equal a Supply / participant / participantRole / id to indicate that the Procedure and the Supply are referring to the same product instance. (CONF-452)</li>
 

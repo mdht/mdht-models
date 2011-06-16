@@ -44,7 +44,7 @@
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
 <li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.2</tt>)</li></ol></li>
 <li>The problem name <b>SHALL</b> be recorded in the entry by recording a &lt;reference&gt; where the value attribute points to the narrative text containing the name of the problem.<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li>
-<li>If entryRelationship / Comment is present, then entryRelationship <b>SHALL</b> include inversionInd = 'true'.<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd='true')</codeblock></li></ul></li>
+<li>If entryRelationship / Comment is present, then entryRelationship <b>SHALL</b> include inversionInd = 'true'.<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd=true)</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemObservation.html">CCD Problem Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.28</tt>)</li>
@@ -95,13 +95,13 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
    and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
 <li><b>MAY</b> contain exactly one Patient Awareness (CONF-180)<ul><li><codeblock>[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</codeblock></li></ul></li>
 <li>The problem name <b>SHALL</b> be recorded in the entry by recording a &lt;reference&gt; where the value attribute points to the narrative text containing the name of the problem.<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li>
-<li>If entryRelationship / Comment is present, then entryRelationship <b>SHALL</b> include inversionInd = 'true'.<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd='true')</codeblock></li></ul></li>
+<li>If entryRelationship / Comment is present, then entryRelationship <b>SHALL</b> include inversionInd = 'true'.<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd=true)</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.28"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
-  <id root="5288845a-d808-4775-ad25-6b60f4ac47d7"/>
+  <id root="631f1238-93b9-450b-82d8-175ac88f8bef"/>
   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <text/>
   <statusCode code="completed"/>
@@ -114,7 +114,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.50"/>
-      <id root="aecddc6d-fc85-4a21-8f54-f92dfc99fc39"/>
+      <id root="ecd9f394-487f-4659-9db9-a8a11ccd5b36"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -128,7 +128,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.51"/>
-      <id root="fb3fb13c-3d1e-44b9-9979-7e4268ba6d15"/>
+      <id root="e2e6f243-e973-4eb8-846b-37511395675c"/>
       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -141,7 +141,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.38"/>
-      <id root="0e0a2ab0-9c8d-433b-9394-4822088180d0"/>
+      <id root="e5bb5e01-7e76-435c-b824-08c7b3ac2590"/>
       <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -154,7 +154,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.55"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
-      <id root="9d7fcb2f-453e-4939-b92f-311ccbdc6c0d"/>
+      <id root="2d2a0468-8559-4c2c-b6a0-87cd87ed1eea"/>
       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
       <text/>
       <statusCode code="completed"/>
@@ -170,7 +170,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.50"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
-      <id root="1d18b223-0c08-4166-9a31-220f1a88ecfb"/>
+      <id root="50cdede4-9ea6-44eb-b1b5-da80c13a9690"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -184,7 +184,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.51"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
-      <id root="97cda602-306a-49d9-aeb2-f2a0a6854f22"/>
+      <id root="9942cdbc-063a-4abf-a8a9-9b03a4e10a96"/>
       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
       <text/>
       <statusCode code="completed"/>
@@ -199,7 +199,7 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.40"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
-      <id root="276adfea-0707-4a50-bbbf-e006d0438864"/>
+      <id root="875b4a76-985c-4a7e-bb89-e60349add72d"/>
       <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
       <statusCode code="completed"/>
       <effectiveTime>

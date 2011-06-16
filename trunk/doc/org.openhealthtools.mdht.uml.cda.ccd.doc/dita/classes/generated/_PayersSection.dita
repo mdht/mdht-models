@@ -34,7 +34,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-33)
 <ol>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)<ul><li><codeblock>[OCL]: self.title = 'insurance' or self.title = 'payers'</codeblock></li></ul></li></ol></li>
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-30), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CoverageActivity.dita">Coverage Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.20</tt>)</li></ol></li>
@@ -46,24 +46,24 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-33)
 <ol>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)<ul><li><codeblock>[OCL]: self.title = 'insurance' or self.title = 'payers'</codeblock></li></ul></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-30)
 </li>
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-30), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CoverageActivity.dita">Coverage Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.20</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)<ul><li><codeblock>[OCL]: self.title = 'insurance' or self.title = 'payers'</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.9"/>
-  <id root="5f2e16fd-0e89-4a3b-b3df-af2ecab621e8"/>
+  <id root="0528e238-4f7a-4e45-853a-1b31cfad7380"/>
   <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
   <title>Payment sources</title>
   <entry>
     <act classCode="ACT" moodCode="DEF">
       <templateId root="2.16.840.1.113883.10.20.1.20"/>
-      <id root="cb7b5a6a-0251-4bd9-922a-c2d9c3cc78f0"/>
+      <id root="4b494cb5-64a7-4100-b200-038f66994083"/>
       <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -73,7 +73,7 @@
       <entryRelationship>
         <act classCode="ACT" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.26"/>
-          <id root="4ef05630-2f1a-471d-8a9d-0767f2b7a4be"/>
+          <id root="c6406819-f865-40c9-a1da-49905fd82148"/>
           <code/>
           <statusCode code="completed"/>
           <effectiveTime>

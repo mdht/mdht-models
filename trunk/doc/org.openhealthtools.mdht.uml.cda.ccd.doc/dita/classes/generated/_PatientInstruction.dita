@@ -29,7 +29,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="INT">
   <templateId root="2.16.840.1.113883.10.20.1.49"/>
-  <id root="9fd4edd2-3578-4fc4-b8e8-19aedace5256"/>
+  <id root="c13ef32a-5a13-4bd0-8eb7-2adbc69a0ff4"/>
   <effectiveTime>
     <low value="2011"/>
     <high value="2011"/>

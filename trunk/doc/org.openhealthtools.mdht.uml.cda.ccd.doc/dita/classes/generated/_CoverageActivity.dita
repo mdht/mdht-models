@@ -61,7 +61,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="DEF">
   <templateId root="2.16.840.1.113883.10.20.1.20"/>
-  <id root="c91bff4b-5f4d-4090-b4a3-d4acc3499944"/>
+  <id root="89607f15-c27c-40ae-b310-d1e142854a24"/>
   <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
   <statusCode code="completed"/>
   <effectiveTime>
@@ -71,7 +71,7 @@
   <entryRelationship>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.26"/>
-      <id root="90b72dc8-3643-4bff-a95f-b11493249a45"/>
+      <id root="c8b3a7b7-f772-4266-916d-4af122373cd1"/>
       <code/>
       <statusCode code="completed"/>
       <effectiveTime>

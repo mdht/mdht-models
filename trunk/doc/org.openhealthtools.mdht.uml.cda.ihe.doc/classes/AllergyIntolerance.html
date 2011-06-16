@@ -59,6 +59,38 @@ case where a patient experiences an allergic reaction to an unknown substance.</
 </ul>
 </li>
 
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>MFST" </tt><em class="ph i">MFST (is manifestation of)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemEntryReactionObservationContainer.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.5]">Problem Entry Reaction Observation Container</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>REFR" </tt><em class="ph i">REFR (refers to)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Severity.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.1]">Severity</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>REFR" </tt><em class="ph i">REFR (refers to)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemStatusObservation.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.1.1]">Problem Status Observation</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.1.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Comment.html" title="[Act: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.2]">Comment</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.2</tt>)</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">MAY</strong> satisfy: Other vocabularies may be used for code/@code, such as SNOMED-CT or MEDCIN.</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: The code /@code and code/@codeSystem attribute shall be present.</li>
@@ -106,8 +138,8 @@ original text in the narrative where the substance is named.</li>
   &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/&gt;
-  &lt;id root="b2defd10-6177-4029-85d6-472f76e77f30"/&gt;
-  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+  &lt;id root="df3a95d9-6089-40b9-93c6-cd8fcee598e8"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType"/&gt;
   &lt;text/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
@@ -119,7 +151,7 @@ original text in the narrative where the substance is named.</li>
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
-      &lt;id root="77f1cde7-ee92-4fde-8fd6-539901409fa7"/&gt;
+      &lt;id root="6b261f50-c4bb-4480-9165-f2286a5ae843"/&gt;
       &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -133,7 +165,7 @@ original text in the narrative where the substance is named.</li>
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
-      &lt;id root="a067812f-30ff-4e22-bd1b-c1a51885d2f5"/&gt;
+      &lt;id root="1a95eb1b-45fb-4427-bfc9-ce99c3d40602"/&gt;
       &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -146,7 +178,7 @@ original text in the narrative where the substance is named.</li>
   &lt;entryRelationship&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
-      &lt;id root="9d956ded-76a4-41c9-ac66-8fbf650c5aea"/&gt;
+      &lt;id root="1a964ee2-507f-4f22-b0ce-4ab74a098d5c"/&gt;
       &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -159,7 +191,7 @@ original text in the narrative where the substance is named.</li>
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
       &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/&gt;
-      &lt;id root="93eb5d54-8722-4342-92b3-207f5b0aff76"/&gt;
+      &lt;id root="6c711186-cd3b-4c26-be92-76fd5238e0c7"/&gt;
       &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
       &lt;text/&gt;
       &lt;statusCode code="completed"/&gt;
@@ -175,7 +207,7 @@ original text in the narrative where the substance is named.</li>
       &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
       &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/&gt;
-      &lt;id root="96322b0c-1908-4218-8d10-1645818bd1d3"/&gt;
+      &lt;id root="9fcc9052-e22a-41b7-84d0-f7495e4ec0a3"/&gt;
       &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -189,7 +221,7 @@ original text in the narrative where the substance is named.</li>
       &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
       &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/&gt;
-      &lt;id root="83f503bf-8a2c-467f-9a36-4a4f1ca74e38"/&gt;
+      &lt;id root="116445a7-fdc6-424a-b961-3b3734ef4261"/&gt;
       &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
       &lt;text/&gt;
       &lt;statusCode code="completed"/&gt;
@@ -204,7 +236,174 @@ original text in the narrative where the substance is named.</li>
     &lt;act classCode="ACT" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.40"/&gt;
       &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/&gt;
-      &lt;id root="5ea5cd98-03d0-44a2-aa77-4e4a93794065"/&gt;
+      &lt;id root="d5ee5f8c-237a-447f-902c-6d396c6f2c53"/&gt;
+      &lt;code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
+      &lt;id root="cc5065e2-08e5-4cdc-99f3-d0fdbc9fa39b"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;text/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+          &lt;id root="fb50d141-73ce-46c5-ad4d-c34908f6e2f2"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CE"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
+          &lt;id root="61c03632-e777-4136-98db-ffea72f041f6"/&gt;
+          &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CE"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.38"/&gt;
+          &lt;id root="480fe7d8-6341-4c3f-b1d4-077eab8393fe"/&gt;
+          &lt;code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/&gt;
+          &lt;id root="2832bd8c-ee9f-4903-868b-e49c7fed80c6"/&gt;
+          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+          &lt;text/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CD"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/&gt;
+          &lt;id root="9eca1b7b-ec90-44c5-8f30-224350ada2e6"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.51"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/&gt;
+          &lt;id root="4b06cf60-411a-4b04-8058-7c14f6e2eb98"/&gt;
+          &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+          &lt;text/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CE"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act classCode="ACT" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.40"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/&gt;
+          &lt;id root="998f24cd-c823-45a9-9430-d2b93c8f542f"/&gt;
+          &lt;code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+          &lt;id root="4a1128cf-1a58-4365-a77a-50aed25f9273"/&gt;
+          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/&gt;
+      &lt;id root="7c368b68-1638-49c4-bfc9-144868c94197"/&gt;
+      &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+      &lt;text/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CD"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.50"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/&gt;
+      &lt;id root="b5a92105-2834-4622-bba1-2c598d66ef8c"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.40"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/&gt;
+      &lt;id root="da80e955-903e-4d07-9f41-aee61879f1ca"/&gt;
       &lt;code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;

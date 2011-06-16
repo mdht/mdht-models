@@ -78,7 +78,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.26"/>
-  <id root="1d6a7f8c-2430-4409-a391-9271e8700993"/>
+  <id root="76387cd6-47bb-4fcb-98b0-46cde0d4c9ca"/>
   <code/>
   <statusCode code="completed"/>
   <effectiveTime>

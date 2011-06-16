@@ -28,11 +28,11 @@ identifying the site.</li></ul></li>
 <ul><li>The amount of the medication given. This should be in some known and measurable unit, such as grams, milligrams, et cetera. It may be measured in "administration" units (such as tablets or each), for medications where the strength is relevant. In this case, only the unit count is specified , no units are specified. It may be a range.</li></ul></li>
 <li>Contains zero or one [0..1] <tt><b>rateQuantity</b></tt>
 <ul><li>The rate is a measurement of how fast the dose is given to the patient over time (e.g., .5 liter / 1 hr), and is often used with IV drugs.</li></ul></li>
-<li><b>SHALL</b> satisfy: Value for moodCode is "EVN" 2.16.840.1.113883.5.1001 ActMood STATIC (6.3.4.17.2)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF-308)
+</li>
 <li><b>SHALL</b> satisfy: In a CDA document, the URI given in the value attribute of the &lt;reference&gt; element points to an element in the narrative content that contains the complete text describing the immunization activity.<ul><li>In a CDA document, the URI given in the value attribute of the 'reference' element points to an element in the narrative content that contains the complete text describing the immunization activity. In an HL7 message, the content of the text element shall contain the complete text describing the immunization activity.</li></ul></li>
-<li><b>SHALL</b> satisfy: The effectiveTime element shall be present and should contain a time value that indicates the date of the substance administration. If the date is unkown, this shall be recorded using the nullFlavor attribute, with the reason that the information is unknown being specified. Otherwise, the date shall be recorded, and should have precision of at least the day. (6.3.4.17.8)</li>
 <li><b>SHALL</b> satisfy: CPT-4 codes may be used for immunization procedures</li>
-<li><b>SHALL</b> satisfy: If negationInd is set to TRUE atleast one comment shall exist that provides an explanation for why the immunization did not take place. Other comments may also be present</li>
+<li><b>SHALL</b> satisfy: If negationInd is set to TRUE atleast one comment shall exist that provides an explanation for why the immunization did not take place. Other comments may also be present<ul><li><codeblock>[OCL]: self.negationInd=true implies not self.entryRelationship.act-&gt;select( act | act.oclIsKindOf(ccd::Comment) )-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationActivity.html">CCD Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li>
@@ -46,8 +46,8 @@ identifying the site.</li></ul></li>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (6.3.4.17.7)
 </li>
-<li><b>SHOULD</b> contain at least one [1..*] <tt><b>effectiveTime</b></tt> (CONF-308)
-<ul><li>Used to indicate the actual or intended start and stop date of a medication, and the frequency of administration.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF-308)
+</li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>routeCode</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.112 HL7 RouteOfAdministration</tt>) (CONF-309, CONF-310)
 </li>
 <li>Contains zero or more [0..*] <tt><b>approachSiteCode</b></tt>
@@ -101,20 +101,18 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 cda::ClinicalStatement | not target.oclIsUndefined() and 
   (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: Contains exactly one consumable, the target of which is a Product template. (CONF-354)<ul><li><codeblock>[OCL]: self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Value for moodCode is "EVN" 2.16.840.1.113883.5.1001 ActMood STATIC (6.3.4.17.2)</li>
 <li><b>SHALL</b> satisfy: In a CDA document, the URI given in the value attribute of the &lt;reference&gt; element points to an element in the narrative content that contains the complete text describing the immunization activity.<ul><li>In a CDA document, the URI given in the value attribute of the 'reference' element points to an element in the narrative content that contains the complete text describing the immunization activity. In an HL7 message, the content of the text element shall contain the complete text describing the immunization activity.</li></ul></li>
-<li><b>SHALL</b> satisfy: The effectiveTime element shall be present and should contain a time value that indicates the date of the substance administration. If the date is unkown, this shall be recorded using the nullFlavor attribute, with the reason that the information is unknown being specified. Otherwise, the date shall be recorded, and should have precision of at least the day. (6.3.4.17.8)</li>
 <li><b>SHALL</b> satisfy: CPT-4 codes may be used for immunization procedures</li>
-<li><b>SHALL</b> satisfy: If negationInd is set to TRUE atleast one comment shall exist that provides an explanation for why the immunization did not take place. Other comments may also be present</li>
+<li><b>SHALL</b> satisfy: If negationInd is set to TRUE atleast one comment shall exist that provides an explanation for why the immunization did not take place. Other comments may also be present<ul><li><codeblock>[OCL]: self.negationInd=true implies not self.entryRelationship.act-&gt;select( act | act.oclIsKindOf(ccd::Comment) )-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.24"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-  <id root="8948088a-333b-44a7-8f86-50cf743fa120"/>
-  <code/>
+  <id root="f8134a58-b015-4a98-8f89-605f4a2c2f24"/>
+  <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
   <statusCode/>
-  <effectiveTime value="20110405"/>
+  <effectiveTime value="20110616"/>
   <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
   <doseQuantity/>
   <rateQuantity/>
@@ -122,7 +120,7 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.46"/>
-      <id root="8a0ca487-6713-480f-8cc4-e4dec0ef5272"/>
+      <id root="3dbef9fd-811b-410e-9fa6-241ce3c04327"/>
       <code code="30973-2" codeSystemName="" displayName="Dose number"/>
       <statusCode/>
       <effectiveTime>
@@ -136,7 +134,7 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.57"/>
       <templateId root="2.16.840.1.113883.10.20.1.47"/>
-      <id root="a647b259-183a-4d0d-a8c0-446749e2c9c2"/>
+      <id root="4d535fc3-910e-47d5-8ec7-c99a0a157732"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -149,7 +147,7 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
   <entryRelationship>
     <act moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.1.49"/>
-      <id root="ea393b82-9b5f-4a78-9390-e2c1c68a7f3b"/>
+      <id root="075dac09-adef-44f1-9b7c-a668e46e29a3"/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>
@@ -159,7 +157,7 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.54"/>
-      <id root="df24d192-4f11-42b9-85c0-4c32070d7d88"/>
+      <id root="cd193b7e-fd70-4c1f-b3fe-6068a0b9cd00"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2011"/>
@@ -168,7 +166,7 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.1.55"/>
-          <id root="d19a6ad6-7468-4d73-83e4-f7747e3abeed"/>
+          <id root="dac9d706-656f-4e14-bb88-6f17e4ae7cd2"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
           <statusCode code="completed"/>
           <effectiveTime>

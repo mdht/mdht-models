@@ -30,7 +30,7 @@
   <templateId root="2.16.840.1.113883.10.20.1.15"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.126"/>
-  <id root="d17bf969-92ea-429b-8a9a-91e28f03b53b"/>
+  <id root="b0c5d94f-09d0-4766-a4d1-bbf53b7b350c"/>
   <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
   <title>Social history</title>
 </section>]]></codeblock>

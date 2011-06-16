@@ -52,7 +52,10 @@
 </ul>
 </li>
 
-<li class="li">The value for "manufacturedMaterial / code" in a product template <strong class="ph b">SHOULD</strong> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017. (CONF-359)</li>
+<li class="li">The value for "manufacturedMaterial / code" in a product template <strong class="ph b">SHOULD</strong> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017. (CONF-359)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.59' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.1.11.20.8'</pre>
+</li>
+</ul>
+</li>
 
 <li class="li">The value for "manufacturedMaterial / code" in a product template <strong class="ph b">MAY</strong> contain a precoordinated product strength, product form, or product concentration (e.g. "metoprolol 25mg tablet", "amoxicillin 400mg/5mL suspension"). (CONF-360)</li>
 
@@ -70,9 +73,15 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: contains exactly one manufacturedProduct / manufacturerOrganization, which represents the manufacturer of the Material. (CONF-365)</li>
+<li class="li"><strong class="ph b">MAY</strong> satisfy: contains exactly one manufacturedProduct / manufacturerOrganization, which represents the manufacturer of the Material. (CONF-365)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.manufacturerOrganization-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
 
-<li class="li">If ManufacturedProduct in a product template contains manufacturedProduct / id, then ManufacturedProduct <strong class="ph b">SHOULD</strong> also contain manufacturedProduct / manufacturerOrganization. (CONF-367)</li>
+<li class="li">If ManufacturedProduct in a product template contains manufacturedProduct / id, then ManufacturedProduct <strong class="ph b">SHOULD</strong> also contain manufacturedProduct / manufacturerOrganization. (CONF-367)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.id-&gt;size() &gt; 0 implies self.manufacturerOrganization-&gt;size() &gt; 0</pre>
+</li>
+</ul>
+</li>
 
 </ol>
 
@@ -86,7 +95,7 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;manufacturedproduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.53"/&gt;
-  &lt;id root="c2f5c4c5-d3d7-4411-8455-c9c7dda1a410"/&gt;
+  &lt;id root="a7e745f9-1ff4-4792-9403-6e3fe5dc6b96"/&gt;
 &lt;/manufacturedproduct&gt;</pre>
 
 </div>

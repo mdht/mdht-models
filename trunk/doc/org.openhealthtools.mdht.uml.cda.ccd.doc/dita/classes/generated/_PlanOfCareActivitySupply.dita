@@ -35,8 +35,8 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.25"/>
-  <id root="ddaea71b-6f41-4515-826d-a3084be8235b"/>
-  <effectiveTime value="20110404"/>
+  <id root="bf35503d-cd3d-48ad-9365-56ee1d2e34ca"/>
+  <effectiveTime value="20110616"/>
 </supply>]]></codeblock>
 </body>
 </topic>

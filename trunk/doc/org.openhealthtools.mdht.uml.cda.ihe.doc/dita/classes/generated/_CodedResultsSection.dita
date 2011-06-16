@@ -42,13 +42,13 @@ Content Modules.</p>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.28"/>
-  <id root="6d27a441-9cbf-4c5a-8c6b-b4c6e2c103b3"/>
+  <id root="1d8de832-204c-4b07-baed-7d929bd58886"/>
   <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="STUDIES SUMMARY"/>
   <title>STUDIES SUMMARY</title>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4"/>
-      <id root="d578f331-7b35-4ac5-806b-382235b6b8d3"/>
+      <id root="cd74ee3a-85b9-4c25-8960-4679b3cfa7f0"/>
       <text/>
       <effectiveTime>
         <low value="2011"/>
@@ -60,7 +60,7 @@ Content Modules.</p>
     <observation>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"/>
-      <id root="32a0e817-5daf-444b-bac7-70c7082662d3"/>
+      <id root="9dfacb48-9181-4979-a503-12fb6fa2d7c1"/>
       <code/>
       <statusCode code="completed"/>
       <effectiveTime>

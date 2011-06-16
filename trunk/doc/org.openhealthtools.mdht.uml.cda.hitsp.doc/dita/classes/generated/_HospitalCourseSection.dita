@@ -26,7 +26,7 @@
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.5"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.121"/>
-  <id root="5300d0f4-d8f9-4a6d-ac1d-3fcba70a2086"/>
+  <id root="a438c78e-0690-4817-a434-583943ae729b"/>
   <code code="8648-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOSPITAL COURSE"/>
   <title>HOSPITAL COURSE</title>
 </section>]]></codeblock>
