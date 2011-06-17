@@ -204,7 +204,7 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	public static EList<Procedure> getProcedureActivities(SurgeriesSection surgeriesSection) {
 		if (GET_PROCEDURE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.SURGERIES_SECTION, HITSPPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(68));
+			helper.setOperationContext(HITSPPackage.Literals.SURGERIES_SECTION, HITSPPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(67));
 			try {
 				GET_PROCEDURE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITIES__EOCL_EXP);
 			}
