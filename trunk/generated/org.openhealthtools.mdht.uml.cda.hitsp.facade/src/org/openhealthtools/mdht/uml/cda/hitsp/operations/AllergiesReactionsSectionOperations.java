@@ -207,7 +207,7 @@ public class AllergiesReactionsSectionOperations extends
 			AllergiesReactionsSection allergiesReactionsSection) {
 		if (GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION, HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION.getEAllOperations().get(67));
+			helper.setOperationContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION, HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION.getEAllOperations().get(66));
 			try {
 				GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY = helper.createQuery(GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_EXP);
 			}

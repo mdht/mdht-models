@@ -204,7 +204,7 @@ public class ProblemListSectionOperations extends ActiveProblemsSectionOperation
 	public static EList<Condition> getConditions(ProblemListSection problemListSection) {
 		if (GET_CONDITIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PROBLEM_LIST_SECTION, HITSPPackage.Literals.PROBLEM_LIST_SECTION.getEAllOperations().get(67));
+			helper.setOperationContext(HITSPPackage.Literals.PROBLEM_LIST_SECTION, HITSPPackage.Literals.PROBLEM_LIST_SECTION.getEAllOperations().get(66));
 			try {
 				GET_CONDITIONS__EOCL_QRY = helper.createQuery(GET_CONDITIONS__EOCL_EXP);
 			}
