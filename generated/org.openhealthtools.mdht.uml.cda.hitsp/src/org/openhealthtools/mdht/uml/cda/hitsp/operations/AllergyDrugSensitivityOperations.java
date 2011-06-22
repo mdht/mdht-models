@@ -76,7 +76,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.effectiveTime.oclIsUndefined())";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.effectiveTime.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAdvereEventDate(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Advere Event Date</em>}' invariant operation.
@@ -92,7 +92,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.effectiveTime.oclIsUndefined())
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.effectiveTime.oclIsUndefined())
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -132,7 +132,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.code.oclIsUndefined())";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAdvereEventType(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Advere Event Type</em>}' invariant operation.
@@ -148,7 +148,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.code.oclIsUndefined())
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined())
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -188,7 +188,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.2')";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.2')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAdvereEventTypeVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Advere Event Type Vocab</em>}' invariant operation.
@@ -204,7 +204,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.2')
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.2')
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -245,7 +245,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
 			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))";
 
 	/**
@@ -262,7 +262,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
 	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -303,8 +303,8 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
-			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = 'CSM'))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = vocab::ParticipationType::CSM))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAllergyProductTypeCode(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Allergy Product Type Code</em>}' invariant operation.
@@ -320,8 +320,8 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
-	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = 'CSM'))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = vocab::ParticipationType::CSM))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -362,8 +362,8 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
-			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductDetailParticipantRole(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Detail Participant Role</em>}' invariant operation.
@@ -379,8 +379,8 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
-	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -421,9 +421,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
-			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
-			+ "prole.classCode='MANU'))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode=vocab::RoleClassRoot::MANU))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductDetailParticipantRoleClassCode(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Detail Participant Role Class Code</em>}' invariant operation.
@@ -439,9 +439,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
-	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
-	 * prole.classCode='MANU'))))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+	 * prole.classCode=vocab::RoleClassRoot::MANU))))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -483,9 +483,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
-			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
-			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductDetailPlayingEntity(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Detail Playing Entity</em>}' invariant operation.
@@ -501,9 +501,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
-	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
-	 * prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+	 * prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -544,9 +544,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
-			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
-			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' )))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductDetailPlayingEntityClassCode(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Detail Playing Entity Class Code</em>}' invariant operation.
@@ -562,9 +562,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
-	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
-	 * prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' )))))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+	 * prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -606,9 +606,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
-			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
-			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.name->size() = 1)))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.name->size() = 1)))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductDetailName(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Detail Name</em>}' invariant operation.
@@ -624,9 +624,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
-	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
-	 * prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.name->size() = 1)))))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+	 * prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.name->size() = 1)))))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -666,9 +666,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
-			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies( par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
-			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1)))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1)))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductCode(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Code</em>}' invariant operation.
@@ -684,9 +684,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
-	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies( par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
-	 * prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1)))))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+	 * prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1)))))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -726,9 +726,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
-			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
-			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAllergyProductFoodVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Allergy Product Food Vocab</em>}' invariant operation.
@@ -744,9 +744,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
-	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
-	 * prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+	 * prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -787,9 +787,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
-			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
-			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAllergyProductMedClassVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Allergy Product Med Class Vocab</em>}' invariant operation.
@@ -805,9 +805,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
-	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
-	 * prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+	 * prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -848,9 +848,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
-			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
-			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAllergyProductSpecificMedVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Allergy Product Specific Med Vocab</em>}' invariant operation.
@@ -866,9 +866,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and 
-	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
-	 * prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+	 * obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+	 * prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -910,7 +910,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.text.oclIsUndefined()))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.text.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityReactionText(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Reaction Text</em>}' invariant operation.
@@ -926,7 +926,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.text.oclIsUndefined()))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.text.oclIsUndefined()))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -966,7 +966,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.code.oclIsUndefined()))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityReactionCode(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Reaction Code</em>}' invariant operation.
@@ -982,7 +982,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.code.oclIsUndefined()))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined()))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1022,7 +1022,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4'))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityReactionCodeVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Reaction Code Vocab</em>}' invariant operation.
@@ -1038,7 +1038,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.54') and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4'))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4'))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1078,7 +1078,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.text.oclIsUndefined()))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.text.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivitySeverityText(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Severity Text</em>}' invariant operation.
@@ -1094,7 +1094,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.text.oclIsUndefined()))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.text.oclIsUndefined()))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1134,7 +1134,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.code.oclIsUndefined()))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivitySeverityCode(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Severity Code</em>}' invariant operation.
@@ -1150,7 +1150,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.code.oclIsUndefined()))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined()))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1190,7 +1190,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.8'))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.8'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivitySeverityCodeVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Severity Code Vocab</em>}' invariant operation.
@@ -1206,7 +1206,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and obs.getObservations()->exists(o : cda::Observation | o.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.55') and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.8'))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.8'))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

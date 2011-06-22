@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * The Problem List Section contains data on the problems currently being monitored for the patient.
+ * This section lists and describes all relevant clinical problems at the time the document is generated. At a minimum, all pertinent current and historical problems should be listed.
  * <!-- end-model-doc -->
  *
  *

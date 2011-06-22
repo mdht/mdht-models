@@ -202,7 +202,7 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.SURGERIES_SECTION,
-				HITSPPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(67));
+				HITSPPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(68));
 			try {
 				GET_PROCEDURE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {
