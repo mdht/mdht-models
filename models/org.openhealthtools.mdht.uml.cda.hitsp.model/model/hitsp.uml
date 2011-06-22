@@ -379,16 +379,11 @@ organization performed or hosted the Procedure</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QQSI8KDnEd-dVeaMP0XXQw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Ia2NoEriEd6FXKclYGEDCw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_WeiNMFWMEeCrQoPO8cZUSQ" name="code" visibility="private" aggregation="composite">
-        <ownedComment xmi:id="_bDWmwFWNEeCrQoPO8cZUSQ">
-          <body>This is a coded value describing the type of the&#xD;
-Procedure</body>
-        </ownedComment>
+      <ownedAttribute xmi:id="_y4yrgJxSEeCtZqh8o0ACbw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WeiNMVWMEeCrQoPO8cZUSQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WeiNMlWMEeCrQoPO8cZUSQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OJdwJxSEeCtZqh8o0ACbw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OKE0JxSEeCtZqh8o0ACbw" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_okNzQErhEd6FXKclYGEDCw"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-procedures.uml#_nu2ekFQEEeCl3PxyJ8BBuQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" href=".controlled/hitsp-encounters.uml#_x6SxkKsQEd-yFfcbpgNFIA"/>
@@ -702,7 +697,7 @@ resolved</body>
   <CDA:AssociationValidation xmi:id="_dfp-AFV1EeCw2ulF0_tZWA" base_Association="_cuKPoVV1EeCw2ulF0_tZWA">
     <ruleId>C83-[CT-108-2]</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_WeiNM1WMEeCrQoPO8cZUSQ" severity="WARNING" base_Property="_WeiNMFWMEeCrQoPO8cZUSQ">
+  <CDA:PropertyValidation xmi:id="_WeiNM1WMEeCrQoPO8cZUSQ" severity="WARNING">
     <ruleId>CONF-433</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_umG-AFsaEeCBQI4cjwqCWQ" base_Association="_tXufUVsaEeCBQI4cjwqCWQ"/>
@@ -711,4 +706,7 @@ resolved</body>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_ZPh6-pbDEeCcyetSDtbszQ" severity="INFO" base_Association="_ZPh6-JbDEeCcyetSDtbszQ" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_FAtUYJbHEeCcyetSDtbszQ" severity="INFO" base_Association="_lKScwpbDEeCcyetSDtbszQ"/>
+  <CDA:PropertyValidation xmi:id="_zglrUJxSEeCtZqh8o0ACbw" severity="WARNING" base_Property="_y4yrgJxSEeCtZqh8o0ACbw">
+    <ruleId>CONF-433</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
