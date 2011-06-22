@@ -14,9 +14,12 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
+import org.openhealthtools.mdht.uml.cda.ccd.CauseOfDeathObservation;
 import org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.ConditionEntryOperations;
+import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.impl.ProblemEntryImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -84,6 +87,71 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 */
 	public boolean validateConditionEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionEntryOperations.validateConditionEntryText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntryAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionEntryOperations.validateConditionEntryAgeObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntryProblemStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConditionEntryOperations.validateConditionEntryProblemStatusObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntryCauseOfDeathObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConditionEntryOperations.validateConditionEntryCauseOfDeathObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AgeObservation getHITSPAgeObservation() {
+		return ConditionEntryOperations.getHITSPAgeObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemStatusObservation getHITSPProblemStatusObservation() {
+		return ConditionEntryOperations.getHITSPProblemStatusObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CauseOfDeathObservation getCauseOfDeathObservation() {
+		return ConditionEntryOperations.getCauseOfDeathObservation(this);
 	}
 
 	/**

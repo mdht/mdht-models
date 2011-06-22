@@ -68,7 +68,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_ORDER_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = 'INT' implies self.id->size() > 0";
+	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_ORDER_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = vocab::x_DocumentSubstanceMood::INT implies self.id->size() > 0";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationOrderNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Order Number</em>}' invariant operation.
@@ -84,7 +84,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = 'INT' implies self.id->size() > 0
+	 * self.moodCode = vocab::x_DocumentSubstanceMood::INT implies self.id->size() > 0
 	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -414,7 +414,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSE_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = 'EVN' implies self.effectiveTime->size() > 0";
+	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSE_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies self.effectiveTime->size() > 0";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationDispenseDate(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispense Date</em>}' invariant operation.
@@ -430,7 +430,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = 'EVN' implies self.effectiveTime->size() > 0
+	 * self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies self.effectiveTime->size() > 0
 	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -530,7 +530,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_DISPENSED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = 'EVN' implies not self.quantity.value.oclIsUndefined()";
+	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_DISPENSED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.quantity.value.oclIsUndefined()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationQuantityDispensed(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Dispensed</em>}' invariant operation.
@@ -546,7 +546,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = 'EVN' implies not self.quantity.value.oclIsUndefined()
+	 * self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.quantity.value.oclIsUndefined()
 	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

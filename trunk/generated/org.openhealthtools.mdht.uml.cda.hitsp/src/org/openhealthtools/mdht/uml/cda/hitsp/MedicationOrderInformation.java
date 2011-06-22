@@ -30,11 +30,11 @@ public interface MedicationOrderInformation extends SupplyEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = 'INT' implies self.id->size() > 0
+	 * self.moodCode = vocab::x_DocumentSubstanceMood::INT implies self.id->size() > 0
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = \'INT\' implies self.id->size() > 0'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentSubstanceMood::INT implies self.id->size() > 0'"
 	 * @generated
 	 */
 	boolean validateMedicationOrderInformationOrderNumber(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -110,11 +110,11 @@ public interface MedicationOrderInformation extends SupplyEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = 'EVN' implies self.effectiveTime->size() > 0
+	 * self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies self.effectiveTime->size() > 0
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = \'EVN\' implies self.effectiveTime->size() > 0'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies self.effectiveTime->size() > 0'"
 	 * @generated
 	 */
 	boolean validateMedicationOrderInformationDispenseDate(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -137,11 +137,11 @@ public interface MedicationOrderInformation extends SupplyEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = 'EVN' implies not self.quantity.value.oclIsUndefined()
+	 * self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.quantity.value.oclIsUndefined()
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = \'EVN\' implies not self.quantity.value.oclIsUndefined()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.quantity.value.oclIsUndefined()'"
 	 * @generated
 	 */
 	boolean validateMedicationOrderInformationQuantityDispensed(DiagnosticChain diagnostics, Map<Object, Object> context);

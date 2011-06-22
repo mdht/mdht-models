@@ -1524,17 +1524,6 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 			medicationEClass, Medication.class, "Medication", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			medicationEClass, ecorePackage.getEBoolean(), "validateHITSPMedicationMedicationStopped", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
 			medicationEClass, ecorePackage.getEBoolean(), "validateHITSPMedicationFirstEffectiveTimeDatatype", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -2084,6 +2073,61 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			conditionEntryEClass, ecorePackage.getEBoolean(), "validateConditionEntryText", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			conditionEntryEClass, ecorePackage.getEBoolean(), "validateConditionEntryAgeObservation", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			conditionEntryEClass, ecorePackage.getEBoolean(), "validateConditionEntryProblemStatusObservation", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			conditionEntryEClass, ecorePackage.getEBoolean(), "validateConditionEntryCauseOfDeathObservation", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			conditionEntryEClass, theCCDPackage.getAgeObservation(), "getHITSPAgeObservation", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
+
+		addEOperation(
+			conditionEntryEClass, theIHEPackage.getProblemStatusObservation(), "getHITSPProblemStatusObservation", 1,
+			1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			conditionEntryEClass, theCCDPackage.getCauseOfDeathObservation(), "getCauseOfDeathObservation", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
 			patientSummaryEClass, PatientSummary.class, "PatientSummary", !IS_ABSTRACT, !IS_INTERFACE,
@@ -3334,7 +3378,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"templateId.root",
 					"2.16.840.1.113883.3.88.11.83.8",
 					"constraints.validation.error",
-					"HITSPMedicationTemplateId HITSPMedicationMedicationStopped HITSPMedicationFirstEffectiveTimeDatatype HITSPMedicationHasMedicationInformation HITSPMedicationHasIndication HITSPMedicationHasIndicationNarrativeText HITSPMedicationHasIndicationVocab HITSPMedicationHasPatientInstructions HITSPMedicationMedicationVehicleType HITSPMedicationMedicationVehicleClass HITSPMedicationMedicationVehicleCode HITSPMedicationMedicationVehicleName HITSPMedicationMedicationVehicleCodedNameVocab",
+					"HITSPMedicationTemplateId HITSPMedicationFirstEffectiveTimeDatatype HITSPMedicationHasMedicationInformation HITSPMedicationHasIndication HITSPMedicationHasIndicationNarrativeText HITSPMedicationHasIndicationVocab HITSPMedicationHasPatientInstructions HITSPMedicationMedicationVehicleType HITSPMedicationMedicationVehicleClass HITSPMedicationMedicationVehicleCode HITSPMedicationMedicationVehicleName HITSPMedicationMedicationVehicleCodedNameVocab",
 					"constraints.validation.info",
 					"HITSPMedicationDoseUnits HITSPMedicationDeliveryMethodDescription HITSPMedicationHasStatusOfMedication HITSPMedicationHasMedicationVehicle HITSPMedicationMedicationVehicleCodedName HITSPMedicationEffectiveTime HITSPMedicationRouteCode HITSPMedicationDoseQuantity HITSPMedicationAdministrationUnitCode HITSPMedicationMaxDoseQuantity HITSPMedicationApproachSiteCode HITSPMedicationCode" });
 		addAnnotation(medicationTypeEClass, source, new String[] {
@@ -3366,11 +3410,13 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"code.codeSystem",
 					"2.16.840.1.113883.6.96",
 					"constraints.validation.error",
-					"ProblemEntryValue",
+					"ConditionEntryText ProblemEntryValue",
 					"code.codeSystemName",
 					"SNOMEDCT",
 					"constraints.validation.warning",
 					"ConditionEntryHasOnsetDate ConditionEntryHasResolutionDate ConditionEntryHasUnknownResolutionDate ConditionEntryCode",
+					"constraints.validation.info",
+					"ConditionEntryAgeObservation ConditionEntryProblemStatusObservation ConditionEntryCauseOfDeathObservation",
 					"value.codeSystem", "2.16.840.1.113883.6.96" });
 		addAnnotation(
 			patientSummaryEClass,

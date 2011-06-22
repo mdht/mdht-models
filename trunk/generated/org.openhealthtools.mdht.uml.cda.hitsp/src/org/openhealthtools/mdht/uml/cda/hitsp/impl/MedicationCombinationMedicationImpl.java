@@ -59,15 +59,6 @@ public class MedicationCombinationMedicationImpl extends CombinationMedicationIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationMedicationStopped(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOperations.validateHITSPMedicationMedicationStopped(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateHITSPMedicationFirstEffectiveTimeDatatype(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationFirstEffectiveTimeDatatype(this, diagnostics, context);

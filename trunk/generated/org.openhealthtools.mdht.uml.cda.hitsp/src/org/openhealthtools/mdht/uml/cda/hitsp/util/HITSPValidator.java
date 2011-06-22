@@ -273,20 +273,12 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_TEMPLATE_ID = 21;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Medication Stopped' of 'Medication'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_STOPPED = 22;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication First Effective Time Datatype' of 'Medication'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_FIRST_EFFECTIVE_TIME_DATATYPE = 23;
+	public static final int MEDICATION__HITSP_MEDICATION_FIRST_EFFECTIVE_TIME_DATATYPE = 22;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Dose Units' of 'Medication'.
@@ -294,7 +286,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_DOSE_UNITS = 24;
+	public static final int MEDICATION__HITSP_MEDICATION_DOSE_UNITS = 23;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Delivery Method Description' of 'Medication'.
@@ -302,7 +294,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_DELIVERY_METHOD_DESCRIPTION = 25;
+	public static final int MEDICATION__HITSP_MEDICATION_DELIVERY_METHOD_DESCRIPTION = 24;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Has Medication Information' of 'Medication'.
@@ -310,7 +302,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_HAS_MEDICATION_INFORMATION = 26;
+	public static final int MEDICATION__HITSP_MEDICATION_HAS_MEDICATION_INFORMATION = 25;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Has Status Of Medication' of 'Medication'.
@@ -318,7 +310,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_HAS_STATUS_OF_MEDICATION = 27;
+	public static final int MEDICATION__HITSP_MEDICATION_HAS_STATUS_OF_MEDICATION = 26;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Has Indication' of 'Medication'.
@@ -326,7 +318,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_HAS_INDICATION = 28;
+	public static final int MEDICATION__HITSP_MEDICATION_HAS_INDICATION = 27;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Has Indication Narrative Text' of 'Medication'.
@@ -334,7 +326,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_HAS_INDICATION_NARRATIVE_TEXT = 29;
+	public static final int MEDICATION__HITSP_MEDICATION_HAS_INDICATION_NARRATIVE_TEXT = 28;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Has Indication Vocab' of 'Medication'.
@@ -342,7 +334,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_HAS_INDICATION_VOCAB = 30;
+	public static final int MEDICATION__HITSP_MEDICATION_HAS_INDICATION_VOCAB = 29;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Has Patient Instructions' of 'Medication'.
@@ -350,7 +342,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_HAS_PATIENT_INSTRUCTIONS = 31;
+	public static final int MEDICATION__HITSP_MEDICATION_HAS_PATIENT_INSTRUCTIONS = 30;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Has Medication Vehicle' of 'Medication'.
@@ -358,7 +350,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_HAS_MEDICATION_VEHICLE = 32;
+	public static final int MEDICATION__HITSP_MEDICATION_HAS_MEDICATION_VEHICLE = 31;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Medication Vehicle Type' of 'Medication'.
@@ -366,7 +358,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_TYPE = 33;
+	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_TYPE = 32;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Medication Vehicle Class' of 'Medication'.
@@ -374,7 +366,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CLASS = 34;
+	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CLASS = 33;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Medication Vehicle Code' of 'Medication'.
@@ -382,7 +374,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODE = 35;
+	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODE = 34;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Medication Vehicle Name' of 'Medication'.
@@ -390,7 +382,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_NAME = 36;
+	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_NAME = 35;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Medication Vehicle Coded Name' of 'Medication'.
@@ -398,7 +390,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME = 37;
+	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME = 36;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Medication Vehicle Coded Name Vocab' of 'Medication'.
@@ -406,7 +398,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME_VOCAB = 38;
+	public static final int MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME_VOCAB = 37;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Template Id' of 'Medication'.
@@ -414,7 +406,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_TEMPLATE_ID = 39;
+	public static final int MEDICATION__HITSP_MEDICATION_TEMPLATE_ID = 38;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Effective Time' of 'Medication'.
@@ -422,7 +414,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_EFFECTIVE_TIME = 40;
+	public static final int MEDICATION__HITSP_MEDICATION_EFFECTIVE_TIME = 39;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Route Code' of 'Medication'.
@@ -430,7 +422,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_ROUTE_CODE = 41;
+	public static final int MEDICATION__HITSP_MEDICATION_ROUTE_CODE = 40;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Dose Quantity' of 'Medication'.
@@ -438,7 +430,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_DOSE_QUANTITY = 42;
+	public static final int MEDICATION__HITSP_MEDICATION_DOSE_QUANTITY = 41;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Administration Unit Code' of 'Medication'.
@@ -446,7 +438,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE = 43;
+	public static final int MEDICATION__HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE = 42;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Max Dose Quantity' of 'Medication'.
@@ -454,7 +446,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_MAX_DOSE_QUANTITY = 44;
+	public static final int MEDICATION__HITSP_MEDICATION_MAX_DOSE_QUANTITY = 43;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Approach Site Code' of 'Medication'.
@@ -462,7 +454,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_APPROACH_SITE_CODE = 45;
+	public static final int MEDICATION__HITSP_MEDICATION_APPROACH_SITE_CODE = 44;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Code' of 'Medication'.
@@ -470,7 +462,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION__HITSP_MEDICATION_CODE = 46;
+	public static final int MEDICATION__HITSP_MEDICATION_CODE = 45;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Type Template Id' of 'Medication Type'.
@@ -478,7 +470,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_TYPE__MEDICATION_TYPE_TEMPLATE_ID = 47;
+	public static final int MEDICATION_TYPE__MEDICATION_TYPE_TEMPLATE_ID = 46;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Type Code' of 'Medication Type'.
@@ -486,7 +478,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_TYPE__MEDICATION_TYPE_CODE = 48;
+	public static final int MEDICATION_TYPE__MEDICATION_TYPE_CODE = 47;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Order Number' of 'Medication Order Information'.
@@ -494,7 +486,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_ORDER_NUMBER = 49;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_ORDER_NUMBER = 48;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Order Expiration' of 'Medication Order Information'.
@@ -502,7 +494,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_ORDER_EXPIRATION = 50;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_ORDER_EXPIRATION = 49;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Quantity Ordered' of 'Medication Order Information'.
@@ -510,7 +502,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_QUANTITY_ORDERED = 51;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_QUANTITY_ORDERED = 50;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Quantity Unit' of 'Medication Order Information'.
@@ -518,7 +510,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_QUANTITY_UNIT = 52;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_QUANTITY_UNIT = 51;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Prescription Number' of 'Medication Order Information'.
@@ -526,7 +518,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_PRESCRIPTION_NUMBER = 53;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_PRESCRIPTION_NUMBER = 52;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Assigning Authority' of 'Medication Order Information'.
@@ -534,7 +526,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_ASSIGNING_AUTHORITY = 54;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_ASSIGNING_AUTHORITY = 53;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Dispense Date' of 'Medication Order Information'.
@@ -542,7 +534,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_DISPENSE_DATE = 55;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_DISPENSE_DATE = 54;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Dispensing Pharmacy Location' of 'Medication Order Information'.
@@ -550,7 +542,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_DISPENSING_PHARMACY_LOCATION = 56;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_DISPENSING_PHARMACY_LOCATION = 55;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Quantity Dispensed' of 'Medication Order Information'.
@@ -558,7 +550,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_QUANTITY_DISPENSED = 57;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_QUANTITY_DISPENSED = 56;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Has Fill Number' of 'Medication Order Information'.
@@ -566,7 +558,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_HAS_FILL_NUMBER = 58;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_HAS_FILL_NUMBER = 57;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Template Id' of 'Medication Order Information'.
@@ -574,7 +566,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_TEMPLATE_ID = 59;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_TEMPLATE_ID = 58;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Repeat Number' of 'Medication Order Information'.
@@ -582,7 +574,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_REPEAT_NUMBER = 60;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_REPEAT_NUMBER = 59;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Order Information Status Code' of 'Medication Order Information'.
@@ -590,7 +582,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_STATUS_CODE = 61;
+	public static final int MEDICATION_ORDER_INFORMATION__MEDICATION_ORDER_INFORMATION_STATUS_CODE = 60;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Has Treating Provider' of 'Condition'.
@@ -598,7 +590,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_HAS_TREATING_PROVIDER = 62;
+	public static final int CONDITION__CONDITION_HAS_TREATING_PROVIDER = 61;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Has Provider Id' of 'Condition'.
@@ -606,7 +598,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_HAS_PROVIDER_ID = 63;
+	public static final int CONDITION__CONDITION_HAS_PROVIDER_ID = 62;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Has Provider Treatment Time' of 'Condition'.
@@ -614,7 +606,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_HAS_PROVIDER_TREATMENT_TIME = 64;
+	public static final int CONDITION__CONDITION_HAS_PROVIDER_TREATMENT_TIME = 63;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Template Id' of 'Condition'.
@@ -622,7 +614,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_TEMPLATE_ID = 65;
+	public static final int CONDITION__CONDITION_TEMPLATE_ID = 64;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Condition Entry' of 'Condition'.
@@ -630,7 +622,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_CONDITION_ENTRY = 66;
+	public static final int CONDITION__CONDITION_CONDITION_ENTRY = 65;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Has Onset Date' of 'Condition Entry'.
@@ -638,7 +630,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_ONSET_DATE = 67;
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_ONSET_DATE = 66;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Has Resolution Date' of 'Condition Entry'.
@@ -646,7 +638,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_RESOLUTION_DATE = 68;
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_RESOLUTION_DATE = 67;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Has Unknown Resolution Date' of 'Condition Entry'.
@@ -654,7 +646,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE = 69;
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_HAS_UNKNOWN_RESOLUTION_DATE = 68;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Code' of 'Condition Entry'.
@@ -662,7 +654,39 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__CONDITION_ENTRY_CODE = 70;
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_CODE = 69;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Text' of 'Condition Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_TEXT = 70;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Age Observation' of 'Condition Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_AGE_OBSERVATION = 71;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Problem Status Observation' of 'Condition Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_PROBLEM_STATUS_OBSERVATION = 72;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Cause Of Death Observation' of 'Condition Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONDITION_ENTRY__CONDITION_ENTRY_CAUSE_OF_DEATH_OBSERVATION = 73;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Entry Value' of 'Condition Entry'.
@@ -670,7 +694,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION_ENTRY__PROBLEM_ENTRY_VALUE = 71;
+	public static final int CONDITION_ENTRY__PROBLEM_ENTRY_VALUE = 74;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Healthcare Provider' of 'Patient Summary'.
@@ -678,7 +702,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_HEALTHCARE_PROVIDER = 72;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_HEALTHCARE_PROVIDER = 75;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Advance Directives Section' of 'Patient Summary'.
@@ -686,7 +710,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION = 74;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION = 77;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Allergies Reactions Section' of 'Patient Summary'.
@@ -694,7 +718,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION = 75;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION = 78;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Problem List Section' of 'Patient Summary'.
@@ -702,7 +726,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION = 76;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION = 79;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Encounters Section' of 'Patient Summary'.
@@ -710,7 +734,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ENCOUNTERS_SECTION = 77;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_ENCOUNTERS_SECTION = 80;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Immunizations Section' of 'Patient Summary'.
@@ -718,7 +742,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_IMMUNIZATIONS_SECTION = 78;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_IMMUNIZATIONS_SECTION = 81;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Payers Section' of 'Patient Summary'.
@@ -726,7 +750,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PAYERS_SECTION = 79;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PAYERS_SECTION = 82;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Medications Section' of 'Patient Summary'.
@@ -734,7 +758,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_MEDICATIONS_SECTION = 80;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_MEDICATIONS_SECTION = 83;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Surgeries Section' of 'Patient Summary'.
@@ -742,7 +766,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_SURGERIES_SECTION = 81;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_SURGERIES_SECTION = 84;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Plan Of Care Section' of 'Patient Summary'.
@@ -750,7 +774,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PLAN_OF_CARE_SECTION = 82;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PLAN_OF_CARE_SECTION = 85;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Pregnancy History Section' of 'Patient Summary'.
@@ -758,7 +782,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION = 83;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION = 86;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Vital Signs Section' of 'Patient Summary'.
@@ -766,7 +790,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_VITAL_SIGNS_SECTION = 84;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_VITAL_SIGNS_SECTION = 87;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Diagnostic Results Section' of 'Patient Summary'.
@@ -774,7 +798,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION = 85;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION = 88;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem List Section Template Id' of 'Problem List Section'.
@@ -782,7 +806,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID = 86;
+	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID = 89;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Vital Signs Section Template Id' of 'Vital Signs Section'.
@@ -790,7 +814,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID = 112;
+	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID = 115;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Sign Template Id' of 'Vital Sign'.
@@ -798,7 +822,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGN__VITAL_SIGN_TEMPLATE_ID = 123;
+	public static final int VITAL_SIGN__VITAL_SIGN_TEMPLATE_ID = 126;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Vital Sign'.
@@ -806,7 +830,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGN__RESULT_OBSERVATION_CODE = 124;
+	public static final int VITAL_SIGN__RESULT_OBSERVATION_CODE = 127;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Payers Section Template Id' of 'Payers Section'.
@@ -814,7 +838,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PAYERS_SECTION__HITSP_PAYERS_SECTION_TEMPLATE_ID = 102;
+	public static final int PAYERS_SECTION__HITSP_PAYERS_SECTION_TEMPLATE_ID = 105;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Allergies Reactions Section Template Id' of 'Allergies Reactions Section'.
@@ -822,7 +846,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID = 91;
+	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID = 94;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Allergies Reactions Section Allergy Drug Sensitivity' of 'Allergies Reactions Section'.
@@ -830,7 +854,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY = 92;
+	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY = 95;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP History Of Past Illness Section Template Id' of 'History Of Past Illness Section'.
@@ -838,7 +862,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_OF_PAST_ILLNESS_SECTION__HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID = 125;
+	public static final int HISTORY_OF_PAST_ILLNESS_SECTION__HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID = 128;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Chief Complaint Section Template Id' of 'Chief Complaint Section'.
@@ -846,7 +870,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID = 126;
+	public static final int CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID = 129;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Reason For Referral Section Template Id' of 'Reason For Referral Section'.
@@ -854,7 +878,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID = 127;
+	public static final int REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID = 130;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP History Of Present Illness Template Id' of 'History Of Present Illness'.
@@ -862,7 +886,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_OF_PRESENT_ILLNESS__HITSP_HISTORY_OF_PRESENT_ILLNESS_TEMPLATE_ID = 128;
+	public static final int HISTORY_OF_PRESENT_ILLNESS__HITSP_HISTORY_OF_PRESENT_ILLNESS_TEMPLATE_ID = 131;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Surgeries Section Template Id' of 'Surgeries Section'.
@@ -870,7 +894,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_TEMPLATE_ID = 103;
+	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_TEMPLATE_ID = 106;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Surgeries Section Procedure Activity' of 'Surgeries Section'.
@@ -878,7 +902,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY = 104;
+	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY = 107;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Has Code Original Text' of 'Procedure'.
@@ -886,7 +910,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT = 105;
+	public static final int PROCEDURE__HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT = 108;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Performer Assigned Entity' of 'Procedure'.
@@ -894,7 +918,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY = 106;
+	public static final int PROCEDURE__HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY = 109;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Template Id' of 'Procedure'.
@@ -902,7 +926,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_TEMPLATE_ID = 107;
+	public static final int PROCEDURE__HITSP_PROCEDURE_TEMPLATE_ID = 110;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Target Site Code' of 'Procedure'.
@@ -910,7 +934,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_TARGET_SITE_CODE = 108;
+	public static final int PROCEDURE__HITSP_PROCEDURE_TARGET_SITE_CODE = 111;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Code' of 'Procedure'.
@@ -918,7 +942,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_CODE = 109;
+	public static final int PROCEDURE__HITSP_PROCEDURE_CODE = 112;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Functional Status Section Template Id' of 'Functional Status Section'.
@@ -926,7 +950,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__HITSP_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 129;
+	public static final int FUNCTIONAL_STATUS_SECTION__HITSP_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 132;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Admission Diagnosis Section Template Id' of 'Hospital Admission Diagnosis Section'.
@@ -934,7 +958,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID = 130;
+	public static final int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID = 133;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Discharge Diagnosis Section Template Id' of 'Discharge Diagnosis Section'.
@@ -942,7 +966,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_DIAGNOSIS_SECTION__HITSP_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID = 131;
+	public static final int DISCHARGE_DIAGNOSIS_SECTION__HITSP_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID = 134;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Admission Medication History Section Template Id' of 'Admission Medication History Section'.
@@ -950,7 +974,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADMISSION_MEDICATION_HISTORY_SECTION__HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID = 132;
+	public static final int ADMISSION_MEDICATION_HISTORY_SECTION__HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID = 135;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Discharge Medications Section Template Id' of 'Hospital Discharge Medications Section'.
@@ -958,7 +982,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID = 133;
+	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID = 136;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medications Administered Section Template Id' of 'Medications Administered Section'.
@@ -966,7 +990,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_ADMINISTERED_SECTION__HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID = 134;
+	public static final int MEDICATIONS_ADMINISTERED_SECTION__HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID = 137;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Advance Directives Section Template Id' of 'Advance Directives Section'.
@@ -974,7 +998,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVES_SECTION__HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID = 90;
+	public static final int ADVANCE_DIRECTIVES_SECTION__HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID = 93;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunizations Section Template Id' of 'Immunizations Section'.
@@ -982,7 +1006,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_TEMPLATE_ID = 97;
+	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_TEMPLATE_ID = 100;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem List Section Condition' of 'Problem List Section'.
@@ -990,7 +1014,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CONDITION = 87;
+	public static final int PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CONDITION = 90;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medications Section Template Id' of 'Medications Section'.
@@ -998,7 +1022,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_TEMPLATE_ID = 88;
+	public static final int MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_TEMPLATE_ID = 91;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medications Section Medication' of 'Medications Section'.
@@ -1006,7 +1030,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_MEDICATION = 89;
+	public static final int MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_MEDICATION = 92;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunizations Section Immunization' of 'Immunizations Section'.
@@ -1014,7 +1038,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_IMMUNIZATION = 98;
+	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_IMMUNIZATION = 101;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunization Refusal Reason' of 'Immunization'.
@@ -1022,7 +1046,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_REFUSAL_REASON = 99;
+	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_REFUSAL_REASON = 102;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Physical Exam Section Template Id' of 'Physical Exam Section'.
@@ -1030,7 +1054,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHYSICAL_EXAM_SECTION__HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID = 135;
+	public static final int PHYSICAL_EXAM_SECTION__HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID = 138;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Review Of Systems Section Template Id' of 'Review Of Systems Section'.
@@ -1038,7 +1062,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REVIEW_OF_SYSTEMS_SECTION__HITSP_REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID = 136;
+	public static final int REVIEW_OF_SYSTEMS_SECTION__HITSP_REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID = 139;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Course Section Template Id' of 'Hospital Course Section'.
@@ -1046,7 +1070,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_COURSE_SECTION__HITSP_HOSPITAL_COURSE_SECTION_TEMPLATE_ID = 137;
+	public static final int HOSPITAL_COURSE_SECTION__HITSP_HOSPITAL_COURSE_SECTION_TEMPLATE_ID = 140;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Template Id' of 'Diagnostic Results Section'.
@@ -1054,7 +1078,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID = 113;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID = 116;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Diagnostic Procedure' of 'Diagnostic Results Section'.
@@ -1062,7 +1086,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE = 114;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE = 117;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Result' of 'Diagnostic Results Section'.
@@ -1070,7 +1094,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT = 115;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT = 118;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Type Code System' of 'Result'.
@@ -1078,7 +1102,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_TYPE_CODE_SYSTEM = 116;
+	public static final int RESULT__RESULT_TYPE_CODE_SYSTEM = 119;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Laboratory Results Value Set' of 'Result'.
@@ -1086,7 +1110,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_LABORATORY_RESULTS_VALUE_SET = 117;
+	public static final int RESULT__RESULT_LABORATORY_RESULTS_VALUE_SET = 120;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Value Presence' of 'Result'.
@@ -1094,7 +1118,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_VALUE_PRESENCE = 118;
+	public static final int RESULT__RESULT_VALUE_PRESENCE = 121;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Assessment And Plan Section Template Id' of 'Assessment And Plan Section'.
@@ -1102,7 +1126,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 138;
+	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 141;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Plan Of Care Section Template Id' of 'Plan Of Care Section'.
@@ -1110,7 +1134,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 110;
+	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 113;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Vital Signs Section Vital Sign Entry' of 'Vital Signs Section'.
@@ -1118,7 +1142,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY = 111;
+	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY = 114;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Family History Section Template Id' of 'Family History Section'.
@@ -1126,7 +1150,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_SECTION__HITSP_FAMILY_HISTORY_SECTION_TEMPLATE_ID = 139;
+	public static final int FAMILY_HISTORY_SECTION__HITSP_FAMILY_HISTORY_SECTION_TEMPLATE_ID = 142;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Social History Section Template Id' of 'Social History Section'.
@@ -1134,7 +1158,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SOCIAL_HISTORY_SECTION__HITSP_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 140;
+	public static final int SOCIAL_HISTORY_SECTION__HITSP_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 143;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounters Section Template Id' of 'Encounters Section'.
@@ -1142,7 +1166,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID = 93;
+	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID = 96;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounters Section Encounter Entry' of 'Encounters Section'.
@@ -1150,7 +1174,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY = 94;
+	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY = 97;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medical Equipment Section Template Id' of 'Medical Equipment Section'.
@@ -1158,7 +1182,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICAL_EQUIPMENT_SECTION__HITSP_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID = 141;
+	public static final int MEDICAL_EQUIPMENT_SECTION__HITSP_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID = 144;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Template Id' of 'Result'.
@@ -1166,7 +1190,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_TEMPLATE_ID = 119;
+	public static final int RESULT__RESULT_TEMPLATE_ID = 122;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Code' of 'Result'.
@@ -1174,7 +1198,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_CODE = 120;
+	public static final int RESULT__RESULT_CODE = 123;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Effective Time' of 'Result'.
@@ -1182,7 +1206,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_EFFECTIVE_TIME = 121;
+	public static final int RESULT__RESULT_EFFECTIVE_TIME = 124;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Value' of 'Result'.
@@ -1190,7 +1214,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_VALUE = 122;
+	public static final int RESULT__RESULT_VALUE = 125;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Language Spoken No Proficiency Level Code' of 'Language Spoken'.
@@ -1198,7 +1222,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE = 142;
+	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE = 145;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Language Spoken Template Id' of 'Language Spoken'.
@@ -1206,7 +1230,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_TEMPLATE_ID = 143;
+	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_TEMPLATE_ID = 146;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Language Spoken Mode Code' of 'Language Spoken'.
@@ -1214,7 +1238,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_MODE_CODE = 144;
+	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_MODE_CODE = 147;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Template Id' of 'Insurance Provider'.
@@ -1222,7 +1246,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID = 145;
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID = 148;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Healthcare Provider Template Id' of 'Healthcare Provider'.
@@ -1230,7 +1254,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID = 146;
+	public static final int HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID = 149;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunization Template Id' of 'Immunization'.
@@ -1238,7 +1262,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_TEMPLATE_ID = 100;
+	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_TEMPLATE_ID = 103;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Immunization Code' of 'Immunization'.
@@ -1246,7 +1270,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATION__IMMUNIZATION_CODE = 101;
+	public static final int IMMUNIZATION__IMMUNIZATION_CODE = 104;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Comment Template Id' of 'Comment'.
@@ -1254,7 +1278,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT__HITSP_COMMENT_TEMPLATE_ID = 147;
+	public static final int COMMENT__HITSP_COMMENT_TEMPLATE_ID = 150;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Template Id' of 'Medication Tapered Dose'.
@@ -1262,7 +1286,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_TAPERED_DOSE__HITSP_MEDICATION_TEMPLATE_ID = 148;
+	public static final int MEDICATION_TAPERED_DOSE__HITSP_MEDICATION_TEMPLATE_ID = 151;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Support Guardian Template Id' of 'Support Guardian'.
@@ -1270,7 +1294,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUPPORT_GUARDIAN__HITSP_SUPPORT_GUARDIAN_TEMPLATE_ID = 149;
+	public static final int SUPPORT_GUARDIAN__HITSP_SUPPORT_GUARDIAN_TEMPLATE_ID = 152;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Support Participant Template Id' of 'Support Participant'.
@@ -1278,7 +1302,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUPPORT_PARTICIPANT__HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID = 150;
+	public static final int SUPPORT_PARTICIPANT__HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID = 153;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document No Structured Data' of 'Unstructured Document'.
@@ -1286,7 +1310,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA = 151;
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA = 154;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document One Patient Per Document' of 'Unstructured Document'.
@@ -1294,7 +1318,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT = 152;
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT = 155;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Scanned Document Template Id' of 'Unstructured Document'.
@@ -1302,7 +1326,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__SCANNED_DOCUMENT_TEMPLATE_ID = 153;
+	public static final int UNSTRUCTURED_DOCUMENT__SCANNED_DOCUMENT_TEMPLATE_ID = 156;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Product Name' of 'Medication Information'.
@@ -1310,7 +1334,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_NAME = 154;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_NAME = 157;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Product Vocab' of 'Medication Information'.
@@ -1318,7 +1342,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB = 155;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB = 158;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Drug Class Vocab' of 'Medication Information'.
@@ -1326,7 +1350,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB = 156;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB = 159;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Ingredient Vocab' of 'Medication Information'.
@@ -1334,7 +1358,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB = 157;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB = 160;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Brand Name' of 'Medication Information'.
@@ -1342,7 +1366,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME = 158;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME = 161;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Brand Name Vocab' of 'Medication Information'.
@@ -1350,7 +1374,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB = 159;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB = 162;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Free Text Product Name' of 'Medication Information'.
@@ -1358,7 +1382,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME = 160;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME = 163;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Free Text Brand Name' of 'Medication Information'.
@@ -1366,7 +1390,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME = 161;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME = 164;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Template Id' of 'Medication Information'.
@@ -1374,7 +1398,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_TEMPLATE_ID = 162;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_TEMPLATE_ID = 165;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounter Template Id' of 'Encounter'.
@@ -1382,7 +1406,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER__HITSP_ENCOUNTER_TEMPLATE_ID = 95;
+	public static final int ENCOUNTER__HITSP_ENCOUNTER_TEMPLATE_ID = 98;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounter Code' of 'Encounter'.
@@ -1390,7 +1414,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER__HITSP_ENCOUNTER_CODE = 96;
+	public static final int ENCOUNTER__HITSP_ENCOUNTER_CODE = 99;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Template Id' of 'Patient Summary'.
@@ -1398,7 +1422,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_TEMPLATE_ID = 73;
+	public static final int PATIENT_SUMMARY__PATIENT_SUMMARY_TEMPLATE_ID = 76;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -1406,7 +1430,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 162;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 165;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -2205,9 +2229,6 @@ public class HITSPValidator extends EObjectValidator {
 			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationMedicationStopped(medication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationFirstEffectiveTimeDatatype(
 				medication, diagnostics, context);
 		}
@@ -2286,17 +2307,6 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validateMedication_validateHITSPMedicationCode(medication, diagnostics, context);
 		}
 		return result;
-	}
-
-	/**
-	 * Validates the validateHITSPMedicationMedicationStopped constraint of '<em>Medication</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedication_validateHITSPMedicationMedicationStopped(Medication medication,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medication.validateHITSPMedicationMedicationStopped(diagnostics, context);
 	}
 
 	/**
@@ -3650,6 +3660,10 @@ public class HITSPValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(vitalSignsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTitleValue(
+				vitalSignsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateVitalSignsSection_validateVitalSignsSectionTemplateId(
 				vitalSignsSection, diagnostics, context);
 		}
@@ -3889,6 +3903,10 @@ public class HITSPValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(payersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePayersSection_validatePayersSectionTitleValue(
+				payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validatePayersSection_validatePayersSectionTemplateId(
 				payersSection, diagnostics, context);
 		}
@@ -3964,6 +3982,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAlertsSection_validateAlertsSectionTitleValue(
+				allergiesReactionsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateAlertsSection_validateAlertsSectionTemplateId(
@@ -4063,6 +4085,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemSection_validateProblemSectionTitleValue(
+				problemListSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateProblemSection_validateProblemSectionTemplateId(
@@ -4406,6 +4432,10 @@ public class HITSPValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(surgeriesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProceduresSection_validateProceduresSectionTitleValue(
+				surgeriesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateProceduresSection_validateProceduresSectionTemplateId(
 				surgeriesSection, diagnostics, context);
 		}
@@ -4704,6 +4734,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionHasMedicationOrSupplyActivity(
+				medicationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTitleValue(
 				medicationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5086,6 +5120,10 @@ public class HITSPValidator extends EObjectValidator {
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionTitleValue(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateImmunizationsSection_validateMedicationsSectionTemplateId(
 				immunizationsSection, diagnostics, context);
 		}
@@ -5107,6 +5145,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionSupplyActivity(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTitleValue(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -6733,10 +6775,6 @@ public class HITSPValidator extends EObjectValidator {
 				medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationMedicationStopped(
-				medicationNormalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationFirstEffectiveTimeDatatype(
 				medicationNormalDose, diagnostics, context);
 		}
@@ -7027,10 +7065,6 @@ public class HITSPValidator extends EObjectValidator {
 				medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationMedicationStopped(
-				medicationSplitDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationFirstEffectiveTimeDatatype(
 				medicationSplitDose, diagnostics, context);
 		}
@@ -7317,10 +7351,6 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationEffectiveTime(
-				medicationTaperedDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationMedicationStopped(
 				medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -7636,10 +7666,6 @@ public class HITSPValidator extends EObjectValidator {
 				medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationMedicationStopped(
-				medicationConditionalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMedication_validateHITSPMedicationFirstEffectiveTimeDatatype(
 				medicationConditionalDose, diagnostics, context);
 		}
@@ -7933,10 +7959,6 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateCombinationMedication_validateCombinationMedicationTemplateId(
-				medicationCombinationMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedication_validateHITSPMedicationMedicationStopped(
 				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -9107,6 +9129,20 @@ public class HITSPValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= validateConditionEntry_validateConditionEntryCode(conditionEntry, diagnostics, context);
 		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryText(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryAgeObservation(conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryProblemStatusObservation(
+				conditionEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConditionEntry_validateConditionEntryCauseOfDeathObservation(
+				conditionEntry, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -9152,6 +9188,50 @@ public class HITSPValidator extends EObjectValidator {
 	public boolean validateConditionEntry_validateConditionEntryCode(ConditionEntry conditionEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return conditionEntry.validateConditionEntryCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConditionEntryText constraint of '<em>Condition Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntry_validateConditionEntryText(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return conditionEntry.validateConditionEntryText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConditionEntryAgeObservation constraint of '<em>Condition Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntry_validateConditionEntryAgeObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return conditionEntry.validateConditionEntryAgeObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConditionEntryProblemStatusObservation constraint of '<em>Condition Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntry_validateConditionEntryProblemStatusObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return conditionEntry.validateConditionEntryProblemStatusObservation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateConditionEntryCauseOfDeathObservation constraint of '<em>Condition Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConditionEntry_validateConditionEntryCauseOfDeathObservation(ConditionEntry conditionEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return conditionEntry.validateConditionEntryCauseOfDeathObservation(diagnostics, context);
 	}
 
 	/**
