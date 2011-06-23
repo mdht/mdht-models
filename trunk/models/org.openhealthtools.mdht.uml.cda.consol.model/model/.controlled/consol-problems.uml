@@ -560,7 +560,11 @@
         <body>SHOULD contain a case-insensitive language-insensitive string containing 'problems'.</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_VGBIolfdEeCb0LEisK_hTQ" general="_F8SUEFjHEeCbyoEB16CABA"/>
+    <generalization xmi:id="_VGBIolfdEeCb0LEisK_hTQ" general="_F8SUEFjHEeCbyoEB16CABA">
+      <ownedComment xmi:id="_MM_r0J3hEeCFLtoTfk8JuQ">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <substitution xmi:id="_VGBIo1fdEeCb0LEisK_hTQ" client="_VF7CAFfdEeCb0LEisK_hTQ">
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_vjPMEGaGEd6Hk_bPOfEjYA"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_vjPMEGaGEd6Hk_bPOfEjYA"/>
@@ -698,6 +702,9 @@
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_F8SUEFjHEeCbyoEB16CABA" name="ProblemListNarrativeSection">
     <generalization xmi:id="_F8UJQFjHEeCbyoEB16CABA">
+      <ownedComment xmi:id="_LQ8TQJ3hEeCFLtoTfk8JuQ">
+        <body>skip</body>
+      </ownedComment>
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_VF83MFfdEeCb0LEisK_hTQ" name="code" visibility="private">

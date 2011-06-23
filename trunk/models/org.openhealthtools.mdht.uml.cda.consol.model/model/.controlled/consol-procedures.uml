@@ -30,6 +30,9 @@ described in the Entry Content Modules.</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_D_ZdUlr7EeCUOqqxU3d1wQ">
+      <ownedComment xmi:id="_RiE6IJ3hEeCFLtoTfk8JuQ">
+        <body>couple</body>
+      </ownedComment>
       <general xmi:type="uml:Class" href="../consol.uml#_K6qNAFsAEeCP3rMQIKQsIw"/>
     </generalization>
     <substitution xmi:id="_D_ZdU1r7EeCUOqqxU3d1wQ" client="_D-qdgFr7EeCUOqqxU3d1wQ">

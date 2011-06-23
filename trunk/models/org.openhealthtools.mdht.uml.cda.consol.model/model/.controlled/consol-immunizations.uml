@@ -19,7 +19,11 @@ past. It shall include entries for medication administration as described in the
     patient. &#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:id="_DWcrcFmREeCDpOdk1XwpBg" general="_w63kIFmUEeCBjLscJJRYEg"/>
+    <generalization xmi:id="_DWcrcFmREeCDpOdk1XwpBg" general="_w63kIFmUEeCBjLscJJRYEg">
+      <ownedComment xmi:id="_IeR-YJ3hEeCFLtoTfk8JuQ">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <substitution xmi:id="_DWcrcVmREeCDpOdk1XwpBg" client="_DWUvoFmREeCDpOdk1XwpBg">
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
@@ -192,6 +196,9 @@ identifying the site.</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_w67OgFmUEeCBjLscJJRYEg">
+      <ownedComment xmi:id="_HY_KQJ3hEeCFLtoTfk8JuQ">
+        <body>skip</body>
+      </ownedComment>
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_DWXy8FmREeCDpOdk1XwpBg" name="code" visibility="private">

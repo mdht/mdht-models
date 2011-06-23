@@ -57,7 +57,11 @@ Components shall be sent in &amp;lt;sequenceNumber> order.</body>
         <body>contains one or more related components (&lt;entryRelationship typeCode='COMP'>, either to handle split, tapered or conditional dosing, or to support combination medications.</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_yprQUlmJEeCeYrW7M64v2A" general="_ztXWYFmTEeCxj9gXXiOSmQ"/>
+    <generalization xmi:id="_yprQUlmJEeCeYrW7M64v2A" general="_ztXWYFmTEeCxj9gXXiOSmQ">
+      <ownedComment xmi:id="_-E8MAJ3gEeCFLtoTfk8JuQ">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <substitution xmi:id="_yprQU1mJEeCeYrW7M64v2A" client="_ypd08FmJEeCeYrW7M64v2A">
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-medications.uml#_OvmR4HfUEd6ZeOKq_2_a9g"/>
@@ -2175,6 +2179,9 @@ not the act being coded, so it appears in the &amp;lt;text> of the &amp;lt;obser
       </specification>
     </ownedRule>
     <generalization xmi:id="_ztXWYVmTEeCxj9gXXiOSmQ">
+      <ownedComment xmi:id="_8_pX4J3gEeCFLtoTfk8JuQ">
+        <body>skip</body>
+      </ownedComment>
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_ypiGYFmJEeCeYrW7M64v2A" name="code" visibility="private">
