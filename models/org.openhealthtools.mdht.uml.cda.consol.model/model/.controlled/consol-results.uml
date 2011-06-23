@@ -38,7 +38,11 @@ Content Modules.</body>
     <ownedComment xmi:id="__kqqkVfdEeCIIf8CuAH-Kw" annotatedElement="__kqqkFfdEeCIIf8CuAH-Kw">
       <body>The Diagnostic Results Section contains information about the results from diagnostic procedures the patient received.</body>
     </ownedComment>
-    <generalization xmi:id="__ldUwFfdEeCIIf8CuAH-Kw" general="_C-D9gFjJEeCjtJnI04I27A"/>
+    <generalization xmi:id="__ldUwFfdEeCIIf8CuAH-Kw" general="_C-D9gFjJEeCjtJnI04I27A">
+      <ownedComment xmi:id="_cLESEJ3hEeCFLtoTfk8JuQ">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <substitution xmi:id="__ldUwVfdEeCIIf8CuAH-Kw" client="__kqqkFfdEeCIIf8CuAH-Kw">
       <supplier xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
       <contract xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
@@ -443,6 +447,9 @@ ASTM/HL7 Continuity of Care Document).</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_C-EkkFjJEeCjtJnI04I27A">
+      <ownedComment xmi:id="_bKipMJ3hEeCFLtoTfk8JuQ">
+        <body>skip</body>
+      </ownedComment>
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="__kzNcFfdEeCIIf8CuAH-Kw" name="code" visibility="private">
