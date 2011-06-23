@@ -140,6 +140,9 @@
         </specification>
       </ownedRule>
       <generalization xmi:id="_K6uecFsAEeCP3rMQIKQsIw">
+        <ownedComment xmi:id="_VOaQkJzyEeCE25k5c7Pu7g">
+          <body>skip</body>
+        </ownedComment>
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_D-uH4Fr7EeCUOqqxU3d1wQ" name="code" visibility="private">
