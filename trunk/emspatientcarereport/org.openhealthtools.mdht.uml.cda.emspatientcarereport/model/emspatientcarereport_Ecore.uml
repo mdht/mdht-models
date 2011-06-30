@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Default="http:///schemas/Default/1" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="emspatientcarereport">
+    <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8zZJ4GD8Ed6bFO5yxRh3Nw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_AKC0kJqZEd-B4IL9pc6oFQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_S49LUIwJEd6B6JSUB00H7g">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_Zkp_kDITEd-saqiXO4OYhQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packageImport xmi:id="_Ob-UwDAYEeCvC_A6hevElg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_rdzD0JtFEeC-EdD-tpLQeA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.emspatientcarereport.model/model/emergencyrunreport-vocab.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packageImport xmi:id="_Be2gMJtGEeC-EdD-tpLQeA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Er7ToDwkEeCooYadnUD5Pw" name="EMSPatientBodyTemperature"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Po-9cDwsEeCooYadnUD5Pw" name="EMSPatientHeartRate"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NpWLgDwtEeCooYadnUD5Pw" name="EMSPatientSystolicBloodPressure"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kCXb8DwtEeCooYadnUD5Pw" name="EMSPatientDiastolicBloodPressure"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jrqFIDx6EeCooYadnUD5Pw" name="EMSPatientBloodPressureOrganizer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XBXuYDx7EeCooYadnUD5Pw" name="EMSVitalSignsOrganizer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a2voADx8EeCooYadnUD5Pw" name="EMSPatientRespiratoryRate"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_l92z4EDxEeCQmsiMnqNhMA" name="EmergencyRunReport">
+      <ownedRule xmi:id="_7CXC4aJhEeC3pNXXEdcfrw" name="GeneralHeaderConstraintsTemplateId" constrainedElement="_l92z4EDxEeCQmsiMnqNhMA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7CXC4qJhEeC3pNXXEdcfrw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_7CatQKJhEeC3pNXXEdcfrw" name="GeneralHeaderConstraintsCode" constrainedElement="_l92z4EDxEeCQmsiMnqNhMA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7CatQaJhEeC3pNXXEdcfrw">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (&#xA;value.code = 'EMSPCR' and value.codeSystem = '2.16.840.1.113883.6.1'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_7CdJgKJhEeC3pNXXEdcfrw" name="EmergencyRunReportId" constrainedElement="_l92z4EDxEeCQmsiMnqNhMA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7CdJgaJhEeC3pNXXEdcfrw">
+          <language>OCL</language>
+          <body>(self.id.oclIsUndefined() or self.id.isNullFlavorUndefined()) implies (not self.id.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_7CeXoKJhEeC3pNXXEdcfrw" name="EmergencyRunReportTitle" constrainedElement="_l92z4EDxEeCQmsiMnqNhMA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7CeXoaJhEeC3pNXXEdcfrw">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_7CflwKJhEeC3pNXXEdcfrw" name="EmergencyRunReportTypeId" constrainedElement="_l92z4EDxEeCQmsiMnqNhMA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7CflwaJhEeC3pNXXEdcfrw">
+          <language>OCL</language>
+          <body>(self.typeId.oclIsUndefined() or self.typeId.isNullFlavorUndefined()) implies (not self.typeId.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_7Cgz4KJhEeC3pNXXEdcfrw" name="EmergencyRunReportSetId" constrainedElement="_l92z4EDxEeCQmsiMnqNhMA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7Cgz4aJhEeC3pNXXEdcfrw">
+          <language>OCL</language>
+          <body>(self.setId.oclIsUndefined() or self.setId.isNullFlavorUndefined()) implies (not self.setId.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_7CiCAKJhEeC3pNXXEdcfrw" name="EmergencyRunReportVersionNumber" constrainedElement="_l92z4EDxEeCQmsiMnqNhMA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7CiCAaJhEeC3pNXXEdcfrw">
+          <language>OCL</language>
+          <body>(self.versionNumber.oclIsUndefined() or self.versionNumber.isNullFlavorUndefined()) implies (not self.versionNumber.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_7CpWwKJhEeC3pNXXEdcfrw" name="EmergencyRunReportVitalSignsSection" constrainedElement="_l92z4EDxEeCQmsiMnqNhMA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7CpWwaJhEeC3pNXXEdcfrw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::VitalSignsSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_l-QcgEDxEeCQmsiMnqNhMA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
+      </generalization>
+      <ownedOperation xmi:id="_7CrL8KJhEeC3pNXXEdcfrw" name="getVitalSignsSection" isQuery="true" bodyCondition="_7CrL86JhEeC3pNXXEdcfrw">
+        <ownedRule xmi:id="_7CrL86JhEeC3pNXXEdcfrw" name="body" constrainedElement="_7CrL8KJhEeC3pNXXEdcfrw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_7CrL9KJhEeC3pNXXEdcfrw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::VitalSignsSection))->asSequence()->first().oclAsType(ccd::VitalSignsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_7CrL8aJhEeC3pNXXEdcfrw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-vitalSigns.uml#_GKpeMKPaEd6t_4WfM070fA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7CrL8qJhEeC3pNXXEdcfrw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_7CrL9aJhEeC3pNXXEdcfrw" name="getBillingSection" isQuery="true" bodyCondition="_7CrzAaJhEeC3pNXXEdcfrw">
+        <ownedRule xmi:id="_7CrzAaJhEeC3pNXXEdcfrw" name="body" constrainedElement="_7CrL9aJhEeC3pNXXEdcfrw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_7CrzAqJhEeC3pNXXEdcfrw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cda::Section))->asSequence()->first().oclAsType(cda::Section)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_7CrL9qJhEeC3pNXXEdcfrw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7CrzAKJhEeC3pNXXEdcfrw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4LNfcFA3EeCj7vZ7gD1hgg" name="EMSPatient">
+      <ownedRule xmi:id="_7CkeQKJhEeC3pNXXEdcfrw" name="EMSPatientAdministrativeGenderCode" constrainedElement="_4LNfcFA3EeCj7vZ7gD1hgg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7CkeQaJhEeC3pNXXEdcfrw">
+          <language>OCL</language>
+          <body>(self.administrativeGenderCode.oclIsUndefined() or self.administrativeGenderCode.isNullFlavorUndefined()) implies (self.administrativeGenderCode.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.administrativeGenderCode.oclAsType(datatypes::CE) in (&#xA;value.codeSystem = '2.16.840.1.113883.5.1' and (value.code = 'F' or value.code = 'M' or value.code = 'UN')))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_4LNfcVA3EeCj7vZ7gD1hgg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mxsCMEALEd6wZe6nFLrjsw"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_i_dogFA5EeCj7vZ7gD1hgg" name="EMSPatientRole"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8FNy8G9cEeCzjM5n4KBnwA" name="EMSRecordTarget">
+      <generalization xmi:id="_j5CoMJthEeCQA81u_i0FyQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CVzT8EALEd6wZe6nFLrjsw"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_WMUFYG9iEeCXpPPeh_4gIw" name="EMSBilling">
+      <generalization xmi:id="_7tC7cKJdEeC3pNXXEdcfrw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_khiegG9iEeCXpPPeh_4gIw" name="EMSTransport">
+      <generalization xmi:id="_khjFkG9iEeCXpPPeh_4gIw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pw-iYG9jEeCXpPPeh_4gIw" name="EMSBillingEntry">
+      <generalization xmi:id="_pw-iYW9jEeCXpPPeh_4gIw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
+      <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
+      <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7CFWEKJhEeC3pNXXEdcfrw">
+      <eAnnotations xmi:id="_7CFWEaJhEeC3pNXXEdcfrw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CDATemplate xmi:id="_1dDy4JmOEd6T5tg3G_f09Q" templateId="1.2.3.4"/>
+  <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="emspatientcarereport" nsURI="http://www.openhealthtools.org/mdht/uml/cda/emspatientcarereport" packageName="emspatientcarereport" prefix="EMSPatientCareReport" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
+  <CDA:CDATemplate xmi:id="_Uc5uYKX0Ed6JRdOhEffuGA" templateId="1.2.3.4.2"/>
+  <Default:Documentation xmi:id="_Uc5uYaX0Ed6JRdOhEffuGA" base_Comment="_Ucv9YaX0Ed6JRdOhEffuGA"/>
+  <CDA:PropertyValidation xmi:id="_Uc5uZKX0Ed6JRdOhEffuGA"/>
+  <CDA:PropertyValidation xmi:id="_Uc5uZaX0Ed6JRdOhEffuGA" message="EmergencyRunReport My Activity SHALL contain [1..1] @moodCode = &quot;EVN&quot;"/>
+  <CDA:CDATemplate xmi:id="_Uc5uaaX0Ed6JRdOhEffuGA" templateId="1.2.3.4.1"/>
+  <Default:Documentation xmi:id="_Uc5uaqX0Ed6JRdOhEffuGA" base_Comment="_Ucv9bqX0Ed6JRdOhEffuGA"/>
+  <CDA:AssociationValidation xmi:id="_vvhgIKX2Ed6JRdOhEffuGA">
+    <ruleId>CONF-EmergencyRunReport-93</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:Entry xmi:id="_auV_cK0UEd6_kOk8Ilc2Dw">
+    <ruleId>CONF-EmergencyRunReport-99</ruleId>
+  </CDA:Entry>
+  <CDA:TextValue xmi:id="_xJaggK0jEd6_kOk8Ilc2Dw"/>
+  <CDA:CodeSystemConstraint xmi:id="_68FaADOiEd-4N_xqnt9Yew" identifier="2.16.840.1.113883.6.96" code="23745001" displayName="Documentation procedure">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_68JEYDOiEd-4N_xqnt9Yew" code="completed" message="EmergencyRunReport My Activity SHALL contain [1..1] statusCode/@code = &quot;completed&quot;  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus STATIC V3NE08)">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_68K5kDOiEd-4N_xqnt9Yew" code="48764-5" displayName="Summary purpose">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_ULFx0AoHEeCEl6wJQrTI9w">
+    <ruleId>CONF-EmergencyRunReport-101</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_Uq1o4AoHEeCEl6wJQrTI9w">
+    <ruleId>CONF-EmergencyRunReport-100</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_U8W2sAoHEeCEl6wJQrTI9w" identifier="2.16.840.1.11" name="\" code="48764-5" displayName="Summary Purpose">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_tF5pkAoHEeCEl6wJQrTI9w">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.emspatientcarereport.model/model/emergencyrunreport-vocab.uml#_BnCKUAoTEeCYR7evJOaYUg"/>
+    <ruleId>CONF-EmergencyRunReport-95</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_tF7ewwoHEeCEl6wJQrTI9w">
+    <ruleId>CONF-EmergencyRunReport-96</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xPeuEAoHEeCEl6wJQrTI9w">
+    <ruleId>CONF-EmergencyRunReport-94</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_InzGEAoNEeCEl6wJQrTI9w" severity="INFO">
+    <ruleId>CONF-EmergencyRunReport-98</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_8490kBpsEeCACdPiffKedQ" value="emergency run report">
+    <ruleId>CONF-HP-22</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_mCo1sBpvEeCACdPiffKedQ">
+    <ruleId>CONF-EmergencyRunReport-102</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_zTcvABpwEeCACdPiffKedQ">
+    <ruleId>CONF-EmergencyRunReport-97</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_Y-08UCviEeCZv-eSuYxH4Q" code="51848-0" displayName="Assessment">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-HP-91</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_Aq-bEC5MEeCTCIuzQdvD7Q" templateId="temp_OID_001" assigningAuthorityName="me"/>
+  <CDA:CDATemplate xmi:id="_nj6IoC5OEeCTCIuzQdvD7Q" templateId="EMSObservation"/>
+  <CDA:CDATemplate xmi:id="_4rbqQC5OEeCTCIuzQdvD7Q" templateId="EMS blood pressure"/>
+  <CDA:CodeSystemConstraint xmi:id="_UKbWAC5PEeCTCIuzQdvD7Q" code="18684-1" displayName="Blood Pressure">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_xAcfEC5PEeCTCIuzQdvD7Q"/>
+  <CDA:PropertyValidation xmi:id="_tcTZETwoEeCooYadnUD5Pw"/>
+  <CDA:PropertyValidation xmi:id="_RjW_cDwsEeCooYadnUD5Pw"/>
+  <CDA:PropertyValidation xmi:id="_O75YgDwtEeCooYadnUD5Pw" severity="INFO"/>
+  <CDA:ValueSetConstraint xmi:id="_VNG34DwtEeCooYadnUD5Pw" identifier="EMSTEMPVS_015" name="NEMSIS"/>
+  <CDA:CodeSystemConstraint xmi:id="_4EozQDw0EeCooYadnUD5Pw">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_4EsdoDw0EeCooYadnUD5Pw" severity="INFO"/>
+  <CDA:ValueSetConstraint xmi:id="_8ruTIDw0EeCooYadnUD5Pw" identifier="EMSTEMPVS_015" name="NEMSIS"/>
+  <CDA:AssociationValidation xmi:id="_A24r0EDyEeCQmsiMnqNhMA">
+    <ruleId>CONF-EmergencyRunReport-115</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_Ftl8EEDyEeCQmsiMnqNhMA">
+    <ruleId>CONF-EmergencyRunReport-92</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_FtvtEEDyEeCQmsiMnqNhMA">
+    <ruleId>CONF-EmergencyRunReport-103</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_lEnzUE8qEeCoerm1t9OSdw">
+    <ruleId>CONF-HP-21</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_lEpogE8qEeCoerm1t9OSdw">
+    <ruleId>CONF-HP-17</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_lEqPkE8qEeCoerm1t9OSdw" value="EMS Patient Care Report">
+    <ruleId>CONF-HP-22</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_lEq2o08qEeCoerm1t9OSdw">
+    <ruleId>CONF-HP-16</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_Vx0u8E87EeCoerm1t9OSdw"/>
+  <CDA:CodeSystemConstraint xmi:id="_EFZUAE88EeCoerm1t9OSdw" code="EMSLOINCRQ001" displayName="EMS Patient Care Report">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_ImuU8Em8EeC24682E7qDYw" base_Class="_l92z4EDxEeCQmsiMnqNhMA" templateId="2.16.840.1.113883.17.3.10.1" assigningAuthorityName="NEMSIS"/>
+  <CDA:AssociationValidation xmi:id="_p5apIKJaEeC3pNXXEdcfrw">
+    <ruleId>CONF-EMSPatientCareReport-118</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_qaShkKJaEeC3pNXXEdcfrw" severity="WARNING">
+    <ruleId>CONF-EMSPatientCareReport-119</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_4OT1oKJbEeC3pNXXEdcfrw" severity="WARNING"/>
+  <Ecore:EPackage xmi:id="_7CHyUKJhEeC3pNXXEdcfrw" base_Package="_qQyD8jxVEd6JwqSGecoePg" packageName="emspatientcarereport" nsPrefix="emspatientcarereport" nsURI="http://www.openhealthtools.org/mdht/uml/cda/emspatientcarereport" basePackage="org.openhealthtools.mdht.uml.cda" prefix="EMSPatientCareReport"/>
+  <Ecore:EClass xmi:id="_7CK1oKJhEeC3pNXXEdcfrw" base_Class="_Po-9cDwsEeCooYadnUD5Pw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_7CNR4KJhEeC3pNXXEdcfrw" base_Class="_NpWLgDwtEeCooYadnUD5Pw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_7CPuIKJhEeC3pNXXEdcfrw" base_Class="_kCXb8DwtEeCooYadnUD5Pw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_7CSKYKJhEeC3pNXXEdcfrw" base_Class="_jrqFIDx6EeCooYadnUD5Pw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_7CT_kKJhEeC3pNXXEdcfrw" base_Class="_XBXuYDx7EeCooYadnUD5Pw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_7CV0wKJhEeC3pNXXEdcfrw" base_Class="_a2voADx8EeCooYadnUD5Pw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_7CXC4KJhEeC3pNXXEdcfrw" base_Generalization="_l-QcgEDxEeCQmsiMnqNhMA"/>
+  <Ecore:EClass xmi:id="_7CXp8KJhEeC3pNXXEdcfrw" base_Class="_l92z4EDxEeCQmsiMnqNhMA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.17.3.10.1' code.displayName='EMS Patient Care Report' constraints.validation.error='EmergencyRunReportTemplateId GeneralHeaderConstraintsCode EmergencyRunReportId EmergencyRunReportTitle EmergencyRunReportTypeId' code.codeSystemName='LOINC' constraints.validation.warning='EmergencyRunReportSetId EmergencyRunReportVersionNumber EmergencyRunReportVitalSignsSection' code.code='EMSPCR'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_7CjQIKJhEeC3pNXXEdcfrw" base_Class="_4LNfcFA3EeCj7vZ7gD1hgg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation administrativeGenderCode.codeSystemName='AdministrativeGenderCode' constraints.validation.error='EMSPatientAdministrativeGenderCode' administrativeGenderCode.codeSystem='2.16.840.1.113883.5.1'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>
