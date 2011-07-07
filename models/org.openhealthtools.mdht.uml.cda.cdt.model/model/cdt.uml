@@ -1691,6 +1691,73 @@ document may come from sources or contain information that the author cannot val
       </ownedComment>
       <ownedEnd xmi:id="_FYFbgAcdEeC15aCUY_wo_g" type="_MwGRIGeLEd-ilOLYnIx0jA" association="_FYE0cgcdEeC15aCUY_wo_g"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ESDCQKjIEeCFJ-gjhA0rqQ" name="UnstructuredDocument">
+      <ownedComment xmi:id="_sVno4KjIEeCFJ-gjhA0rqQ">
+        <body>This document type is not intended to be a replacement for IHE's XDS-SD (Cross-Transaction Specifications and Content Specifications, Scanned Documents Module) profile. Rather, it serves a more generic use case. XDS-SD is specifically for scanned documents, and limits content to PDF-A or text. This Unstructured Documents implementation guide is applicable not only for scanned documents in non-PDF formats, but also for clinical documents produced through word processing applications, etc.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_JPnSAKjUEeCFJ-gjhA0rqQ" name="patientRoleHasId" constrainedElement="_ESDCQKjIEeCFJ-gjhA0rqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_O47D4KjUEeCFJ-gjhA0rqQ">
+          <language>Analysis</language>
+          <body>A patientRole element contains an id element.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_89Q6IKjUEeCFJ-gjhA0rqQ" name="assignedAuthorHasAddr">
+        <constrainedElement xmi:type="uml:Property" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hhbysUcgEd6besF9iFIJkQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_eWWMcKjaEeCFJ-gjhA0rqQ">
+          <language>Analysis</language>
+          <body>An assignedAuthor element contains an addr element. If addr is unknown it SHALL be represented using the appropriate flavor of null.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_AM--cKjVEeCFJ-gjhA0rqQ" name="assignedAuthorHasTelecom">
+        <constrainedElement xmi:type="uml:Property" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hhbysUcgEd6besF9iFIJkQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_pjn9MKjaEeCFJ-gjhA0rqQ">
+          <language>Analysis</language>
+          <body>An assignedAuthor element contains a telecom element. If telecom is unknown it SHALL be represented using the appropriate flavor of null.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_g_3-AKjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
+      <ownedRule xmi:id="_kC1_wKjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
+      <ownedRule xmi:id="_k07kAKjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
+      <ownedRule xmi:id="_llHq0KjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
+      <ownedRule xmi:id="_mUXWcKjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
+      <ownedRule xmi:id="_oiMf8KjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
+      <generalization xmi:id="_ESGFkKjIEeCFJ-gjhA0rqQ" general="_MwGRIGeLEd-ilOLYnIx0jA"/>
+      <ownedAttribute xmi:id="_N5SCQKjIEeCFJ-gjhA0rqQ" name="confidentialityCode" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_XMAK0KjIEeCFJ-gjhA0rqQ">
+          <body>If the confidentialityCode cannot be determined for an Unstructured Document instance, the HL7 code &quot;N&quot; (normal confidentiality) is recommended.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ccMDcEAKEd6wZe6nFLrjsw"/>
+        <redefinedProperty href="#_pwbIcGkaEd-lxvPE33eETg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_jOnWMKjKEeCFJ-gjhA0rqQ" name="effectiveTime" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_snXOQKjKEeCFJ-gjhA0rqQ">
+          <body>The effectiveTime records the time of creation of the original document. If the referenced document is a scan, the date of scan can be recorded in dataEnterer. If the date of creation of the original document is not known, CDA allows the document effectiveTime to have a  nullFlavor.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JqFEwEAJEd6wZe6nFLrjsw"/>
+        <redefinedProperty href="#_pwvRgGkaEd-lxvPE33eETg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_r_cHEKjUEeCFJ-gjhA0rqQ" name="author" redefinedProperty="_eOLMUAcSEeC15aCUY_wo_g" association="_r_cHE6jUEeCFJ-gjhA0rqQ">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r_cHEajUEeCFJ-gjhA0rqQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r_cHEqjUEeCFJ-gjhA0rqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Qjnm8KjbEeCFJ-gjhA0rqQ" name="custodian" redefinedProperty="_sOWB0AcaEeC15aCUY_wo_g" association="_Qjnm86jbEeCFJ-gjhA0rqQ">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mMYIkEcEEd6besF9iFIJkQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qjnm8ajbEeCFJ-gjhA0rqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qjnm8qjbEeCFJ-gjhA0rqQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r_cHE6jUEeCFJ-gjhA0rqQ" memberEnd="_r_cHEKjUEeCFJ-gjhA0rqQ _r_cHFKjUEeCFJ-gjhA0rqQ">
+      <ownedComment xmi:id="_1HTqgKjUEeCFJ-gjhA0rqQ">
+        <body>The author represents the person who created the original document. If the referenced document is a scan, the person who did the scan must be recorded in dataEnterer. If address and telecom are not known, they can be represented with nullFlavors.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_r_cHFKjUEeCFJ-gjhA0rqQ" type="_ESDCQKjIEeCFJ-gjhA0rqQ" association="_r_cHE6jUEeCFJ-gjhA0rqQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Qjnm86jbEeCFJ-gjhA0rqQ" memberEnd="_Qjnm8KjbEeCFJ-gjhA0rqQ _QjoOAKjbEeCFJ-gjhA0rqQ">
+      <ownedEnd xmi:id="_QjoOAKjbEeCFJ-gjhA0rqQ" type="_ESDCQKjIEeCFJ-gjhA0rqQ" association="_Qjnm86jbEeCFJ-gjhA0rqQ"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -2239,5 +2306,20 @@ document may come from sources or contain information that the author cannot val
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="__QdK8Ax3EeCbT6kkmQhJPQ" severity="WARNING" base_Constraint="_0XI4AAx3EeCbT6kkmQhJPQ">
     <ruleId>CONF-HP-11</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CDATemplate xmi:id="_dkvOgKjIEeCFJ-gjhA0rqQ" base_Class="_ESDCQKjIEeCFJ-gjhA0rqQ" templateId="2.16.840.1.113883.10.20.19.1">
+    <ruleId>CONF-UD-7</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_jOn9QKjKEeCFJ-gjhA0rqQ" base_Property="_jOnWMKjKEeCFJ-gjhA0rqQ">
+    <ruleId>CONF-UD-11</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_PrESgKjUEeCFJ-gjhA0rqQ" base_Constraint="_JPnSAKjUEeCFJ-gjhA0rqQ">
+    <ruleId>CONF-UD-17</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Fh-GIKjVEeCFJ-gjhA0rqQ" base_Constraint="_89Q6IKjUEeCFJ-gjhA0rqQ">
+    <ruleId>CONF-UD-25</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_GsTLQKjVEeCFJ-gjhA0rqQ" base_Constraint="_AM--cKjVEeCFJ-gjhA0rqQ">
+    <ruleId>CONF-UD-26</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>
