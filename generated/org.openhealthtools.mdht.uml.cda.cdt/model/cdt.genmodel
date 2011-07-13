@@ -713,6 +713,56 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//SubjectiveSection/SubjectiveSectionTitle/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="cdt.ecore#//UnstructuredDocument">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentPatientRoleHasId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentPatientRoleHasId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentPatientRoleHasId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentAssignedAuthorHasAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentAssignedAuthorHasAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentAssignedAuthorHasAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentAssignedAuthorHasTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentAssignedAuthorHasTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentAssignedAuthorHasTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasRepresentedCustodianOrganizationAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasNonXMLBodyText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasNonXMLBodyText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasNonXMLBodyText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasTextReferenceOrRepresentation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasTextReferenceOrRepresentation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasTextReferenceOrRepresentation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasTextMediaTypeValueSet">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasTextMediaTypeValueSet/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentHasTextMediaTypeValueSet/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentEffectiveTime/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="cdt.ecore#//CDTRegistryDelegate"/>
   </genPackages>
 </genmodel:GenModel>

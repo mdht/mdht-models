@@ -48,6 +48,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.ReasonForVisitSectionConsult;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSectionIHE;
 import org.openhealthtools.mdht.uml.cda.cdt.SubjectiveSection;
+import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.VitalSignsSection;
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
@@ -638,6 +639,26 @@ public class CDTSwitch<T> {
 				}
 				return result;
 			}
+			case CDTPackage.UNSTRUCTURED_DOCUMENT: {
+				UnstructuredDocument unstructuredDocument = (UnstructuredDocument) theEObject;
+				T result = caseUnstructuredDocument(unstructuredDocument);
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(unstructuredDocument);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(unstructuredDocument);
+				}
+				if (result == null) {
+					result = caseAct(unstructuredDocument);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(unstructuredDocument);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case CDTPackage.CDT_REGISTRY_DELEGATE: {
 				CDTRegistryDelegate cdtRegistryDelegate = (CDTRegistryDelegate) theEObject;
 				T result = caseCDTRegistryDelegate(cdtRegistryDelegate);
@@ -1056,6 +1077,21 @@ public class CDTSwitch<T> {
 	 * @generated
 	 */
 	public T caseSubjectiveSection(SubjectiveSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Unstructured Document</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUnstructuredDocument(UnstructuredDocument object) {
 		return null;
 	}
 

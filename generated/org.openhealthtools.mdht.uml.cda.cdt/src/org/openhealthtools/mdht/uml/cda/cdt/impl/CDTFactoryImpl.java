@@ -46,6 +46,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.ReasonForVisitSectionConsult;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSectionIHE;
 import org.openhealthtools.mdht.uml.cda.cdt.SubjectiveSection;
+import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.VitalSignsSection;
 
 /**
@@ -149,6 +150,8 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 				return createObjectiveSection();
 			case CDTPackage.SUBJECTIVE_SECTION:
 				return createSubjectiveSection();
+			case CDTPackage.UNSTRUCTURED_DOCUMENT:
+				return createUnstructuredDocument();
 			case CDTPackage.CDT_REGISTRY_DELEGATE:
 				return createCDTRegistryDelegate();
 			default:
@@ -304,6 +307,16 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 	public SubjectiveSection createSubjectiveSection() {
 		SubjectiveSectionImpl subjectiveSection = new SubjectiveSectionImpl();
 		return subjectiveSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UnstructuredDocument createUnstructuredDocument() {
+		UnstructuredDocumentImpl unstructuredDocument = new UnstructuredDocumentImpl();
+		return unstructuredDocument;
 	}
 
 	/**

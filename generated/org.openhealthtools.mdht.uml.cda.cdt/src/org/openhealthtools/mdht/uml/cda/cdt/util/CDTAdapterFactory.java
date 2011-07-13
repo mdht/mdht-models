@@ -48,6 +48,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.ReasonForVisitSectionConsult;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSectionIHE;
 import org.openhealthtools.mdht.uml.cda.cdt.SubjectiveSection;
+import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.VitalSignsSection;
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
@@ -250,6 +251,11 @@ public class CDTAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseSubjectiveSection(SubjectiveSection object) {
 			return createSubjectiveSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseUnstructuredDocument(UnstructuredDocument object) {
+			return createUnstructuredDocumentAdapter();
 		}
 
 		@Override
@@ -681,6 +687,20 @@ public class CDTAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSubjectiveSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument <em>Unstructured Document</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument
+	 * @generated
+	 */
+	public Adapter createUnstructuredDocumentAdapter() {
 		return null;
 	}
 

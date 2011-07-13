@@ -165,6 +165,15 @@ public interface CDTFactory extends EFactory {
 	SubjectiveSection createSubjectiveSection();
 
 	/**
+	 * Returns a new object of class '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unstructured Document</em>'.
+	 * @generated
+	 */
+	UnstructuredDocument createUnstructuredDocument();
+
+	/**
 	 * Returns a new object of class '<em>History Of Present Illness</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
