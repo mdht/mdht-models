@@ -48,6 +48,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.ReasonForVisitSectionConsult;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSectionIHE;
 import org.openhealthtools.mdht.uml.cda.cdt.SubjectiveSection;
+import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
 
@@ -1102,6 +1103,110 @@ public class CDTValidator extends EObjectValidator {
 	public static final int SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TITLE = 154;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Patient Role Has Id' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID = 155;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Assigned Author Has Addr' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR = 156;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Assigned Author Has Telecom' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM = 157;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Has Represented Custodian Organization' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION = 158;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Has Represented Custodian Organization Id' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID = 159;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Has Represented Custodian Organization Name' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME = 160;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Has Represented Custodian Organization Telecom' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM = 161;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Has Represented Custodian Organization Addr' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR = 162;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Has Non XML Body Text' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT = 163;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Has Text Reference Or Representation' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION = 164;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Has Text Media Type Value Set' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET = 165;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document Effective Time' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_EFFECTIVE_TIME = 166;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Template Id' of 'Unstructured Document'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 167;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Past Medical History Section Consult Template Id' of 'Past Medical History Section Consult'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1315,7 +1420,7 @@ public class CDTValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 154;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 167;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -1435,6 +1540,8 @@ public class CDTValidator extends EObjectValidator {
 				return validateObjectiveSection((ObjectiveSection) value, diagnostics, context);
 			case CDTPackage.SUBJECTIVE_SECTION:
 				return validateSubjectiveSection((SubjectiveSection) value, diagnostics, context);
+			case CDTPackage.UNSTRUCTURED_DOCUMENT:
+				return validateUnstructuredDocument((UnstructuredDocument) value, diagnostics, context);
 			case CDTPackage.CDT_REGISTRY_DELEGATE:
 				return validateCDTRegistryDelegate((CDTRegistryDelegate) value, diagnostics, context);
 			default:
@@ -4289,6 +4396,389 @@ public class CDTValidator extends EObjectValidator {
 	public boolean validateSubjectiveSection_validateSubjectiveSectionTitle(SubjectiveSection subjectiveSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return subjectiveSection.validateSubjectiveSectionTitle(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument(UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(unstructuredDocument, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(unstructuredDocument, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateGeneralHeaderConstraintsTemplateId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentPatientRoleHasId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentAssignedAuthorHasAddr(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentAssignedAuthorHasTelecom(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentHasRepresentedCustodianOrganization(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentHasRepresentedCustodianOrganizationId(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentHasRepresentedCustodianOrganizationTelecom(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentHasNonXMLBodyText(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentHasTextReferenceOrRepresentation(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentHasTextMediaTypeValueSet(
+				unstructuredDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateUnstructuredDocument_validateUnstructuredDocumentEffectiveTime(
+				unstructuredDocument, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentPatientRoleHasId constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentPatientRoleHasId(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentPatientRoleHasId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentAssignedAuthorHasAddr constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentAssignedAuthorHasAddr(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentAssignedAuthorHasAddr(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentAssignedAuthorHasTelecom constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentAssignedAuthorHasTelecom(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentAssignedAuthorHasTelecom(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentHasRepresentedCustodianOrganization constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentHasRepresentedCustodianOrganization(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentHasRepresentedCustodianOrganization(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentHasRepresentedCustodianOrganizationId constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentHasRepresentedCustodianOrganizationId(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentHasRepresentedCustodianOrganizationId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentHasRepresentedCustodianOrganizationName constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentHasRepresentedCustodianOrganizationTelecom constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentHasRepresentedCustodianOrganizationTelecom(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentHasRepresentedCustodianOrganizationTelecom(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentHasNonXMLBodyText constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentHasNonXMLBodyText(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentHasNonXMLBodyText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentHasTextReferenceOrRepresentation constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentHasTextReferenceOrRepresentation(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentHasTextReferenceOrRepresentation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentHasTextMediaTypeValueSet constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentHasTextMediaTypeValueSet(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentHasTextMediaTypeValueSet(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateUnstructuredDocumentEffectiveTime constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateUnstructuredDocumentEffectiveTime(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateUnstructuredDocumentEffectiveTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateGeneralHeaderConstraintsTemplateId constraint of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnstructuredDocument_validateGeneralHeaderConstraintsTemplateId(
+			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return unstructuredDocument.validateGeneralHeaderConstraintsTemplateId(diagnostics, context);
 	}
 
 	/**

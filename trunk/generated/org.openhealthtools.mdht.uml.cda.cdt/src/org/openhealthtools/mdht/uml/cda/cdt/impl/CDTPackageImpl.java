@@ -49,6 +49,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.ReasonForVisitSectionConsult;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSectionIHE;
 import org.openhealthtools.mdht.uml.cda.cdt.SubjectiveSection;
+import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
 
@@ -163,6 +164,13 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 	 * @generated
 	 */
 	private EClass subjectiveSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass unstructuredDocumentEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -483,6 +491,15 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getUnstructuredDocument() {
+		return unstructuredDocumentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getHistoryOfPresentIllness() {
 		return historyOfPresentIllnessEClass;
 	}
@@ -701,6 +718,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 
 		subjectiveSectionEClass = createEClass(SUBJECTIVE_SECTION);
 
+		unstructuredDocumentEClass = createEClass(UNSTRUCTURED_DOCUMENT);
+
 		cdtRegistryDelegateEClass = createEClass(CDT_REGISTRY_DELEGATE);
 	}
 
@@ -767,6 +786,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		chiefComplaintSectionProcNoteEClass.getESuperTypes().add(theCDAPackage.getSection());
 		objectiveSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		subjectiveSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		unstructuredDocumentEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
 		cdtRegistryDelegateEClass.getESuperTypes().add(theCDAPackage.getRegistryDelegate());
 
 		// Initialize classes and features; add operations and parameters
@@ -2649,6 +2669,142 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
+			unstructuredDocumentEClass, UnstructuredDocument.class, "UnstructuredDocument", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(), "validateUnstructuredDocumentPatientRoleHasId", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(),
+			"validateUnstructuredDocumentAssignedAuthorHasAddr", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(),
+			"validateUnstructuredDocumentAssignedAuthorHasTelecom", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(),
+			"validateUnstructuredDocumentHasRepresentedCustodianOrganization", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(),
+			"validateUnstructuredDocumentHasRepresentedCustodianOrganizationId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(),
+			"validateUnstructuredDocumentHasRepresentedCustodianOrganizationName", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(),
+			"validateUnstructuredDocumentHasRepresentedCustodianOrganizationTelecom", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(),
+			"validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(), "validateUnstructuredDocumentHasNonXMLBodyText", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(),
+			"validateUnstructuredDocumentHasTextReferenceOrRepresentation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(),
+			"validateUnstructuredDocumentHasTextMediaTypeValueSet", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(), "validateUnstructuredDocumentEffectiveTime", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(
 			cdtRegistryDelegateEClass, CDTRegistryDelegate.class, "CDTRegistryDelegate", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
 
@@ -2855,6 +3011,14 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 				"SubjectiveSectionTemplateId SubjectiveSectionCode SubjectiveSectionText SubjectiveSectionTitle",
 				"code.codeSystemName", "LOINC", "constraints.validation.warning",
 				"SubjectiveSectionHasClinicalStatements", "code.code", "SUBJ-X" });
+		addAnnotation(
+			unstructuredDocumentEClass,
+			source,
+			new String[] {
+					"templateId.root",
+					"2.16.840.1.113883.10.20.19.1",
+					"constraints.validation.error",
+					"UnstructuredDocumentTemplateId UnstructuredDocumentPatientRoleHasId UnstructuredDocumentAssignedAuthorHasAddr UnstructuredDocumentAssignedAuthorHasTelecom UnstructuredDocumentHasRepresentedCustodianOrganization UnstructuredDocumentHasRepresentedCustodianOrganizationId UnstructuredDocumentHasRepresentedCustodianOrganizationName UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom UnstructuredDocumentHasRepresentedCustodianOrganizationAddr UnstructuredDocumentHasNonXMLBodyText UnstructuredDocumentHasTextReferenceOrRepresentation UnstructuredDocumentHasTextMediaTypeValueSet UnstructuredDocumentEffectiveTime" });
 	}
 
 	/**
@@ -2870,6 +3034,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addAnnotation(levelTwoConformanceEClass, source, new String[] {});
 		addAnnotation(levelThreeConformanceEClass, source, new String[] {});
 		addAnnotation(progressNoteEClass, source, new String[] {});
+		addAnnotation(unstructuredDocumentEClass, source, new String[] {});
 	}
 
 } // CDTPackageImpl
