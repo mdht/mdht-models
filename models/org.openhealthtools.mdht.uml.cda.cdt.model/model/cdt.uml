@@ -1698,29 +1698,93 @@ document may come from sources or contain information that the author cannot val
       <ownedRule xmi:id="_JPnSAKjUEeCFJ-gjhA0rqQ" name="patientRoleHasId" constrainedElement="_ESDCQKjIEeCFJ-gjhA0rqQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_O47D4KjUEeCFJ-gjhA0rqQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>A patientRole element contains an id element.</body>
+          <body>not recordTarget.patientRole.id->isEmpty()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_89Q6IKjUEeCFJ-gjhA0rqQ" name="assignedAuthorHasAddr">
         <constrainedElement xmi:type="uml:Property" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hhbysUcgEd6besF9iFIJkQ"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_eWWMcKjaEeCFJ-gjhA0rqQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>An assignedAuthor element contains an addr element. If addr is unknown it SHALL be represented using the appropriate flavor of null.</body>
+          <body>not author.assignedAuthor.addr->isEmpty()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_AM--cKjVEeCFJ-gjhA0rqQ" name="assignedAuthorHasTelecom">
         <constrainedElement xmi:type="uml:Property" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hhbysUcgEd6besF9iFIJkQ"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_pjn9MKjaEeCFJ-gjhA0rqQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>An assignedAuthor element contains a telecom element. If telecom is unknown it SHALL be represented using the appropriate flavor of null.</body>
+          <body>not author.assignedAuthor.telecom->isEmpty()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_g_3-AKjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
-      <ownedRule xmi:id="_kC1_wKjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
-      <ownedRule xmi:id="_k07kAKjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
-      <ownedRule xmi:id="_llHq0KjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
-      <ownedRule xmi:id="_mUXWcKjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
-      <ownedRule xmi:id="_oiMf8KjbEeCFJ-gjhA0rqQ" name="custodian" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ"/>
+      <ownedRule xmi:id="_g_3-AKjbEeCFJ-gjhA0rqQ" name="hasRepresentedCustodianOrganization" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_F0nM0KzcEeCOzOGuaGzKFQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The custodian element SHALL contain an assignedCustodian/representedCustodianOrganization element.</body>
+          <body>not custodian.assignedCustodian.representedCustodianOrganization.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_kC1_wKjbEeCFJ-gjhA0rqQ" name="hasRepresentedCustodianOrganizationId" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ly_PwKzcEeCOzOGuaGzKFQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>A representedCustodianOrganization element SHALL contain an id element.</body>
+          <body>not custodian.assignedCustodian.representedCustodianOrganization.id->isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_k07kAKjbEeCFJ-gjhA0rqQ" name="hasRepresentedCustodianOrganizationName" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uGG6sKzcEeCOzOGuaGzKFQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>A representedCustodianOrganization element SHALL contain a name element.</body>
+          <body>not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_llHq0KjbEeCFJ-gjhA0rqQ" name="hasRepresentedCustodianOrganizationTelecom" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_5bSqQKzcEeCOzOGuaGzKFQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>A representedCustodianOrganization element SHALL contain a telecom element.</body>
+          <body>not custodian.assignedCustodian.representedCustodianOrganization.telecom.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_mUXWcKjbEeCFJ-gjhA0rqQ" name="hasRepresentedCustodianOrganizationAddr" constrainedElement="_Qjnm8KjbEeCFJ-gjhA0rqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_-egsgKzcEeCOzOGuaGzKFQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>A representedCustodianOrganization element SHALL contain an addr element.</body>
+          <body>not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_9zQTkKzdEeCOzOGuaGzKFQ" name="hasNonXMLBodyText" constrainedElement="_ESDCQKjIEeCFJ-gjhA0rqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_CIcyMKzeEeCOzOGuaGzKFQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>Contains component/nonXMLBody/text element.</body>
+          <body>not self.component.nonXMLBody.text.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="__gyMYKzdEeCOzOGuaGzKFQ" name="hasTextReferenceOrRepresentation" constrainedElement="_ESDCQKjIEeCFJ-gjhA0rqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TOgUMKzeEeCOzOGuaGzKFQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The text element SHALL either contain a reference element with a value attribute, or have a representation attribute with the value of B64, a mediaType attribute, and contain the media content</body>
+          <body>self.component.nonXMLBody.text.reference.isDefined('value') xor (self.component.nonXMLBody.text.representation = datatypes::BinaryDataEncoding::B64 and self.component.nonXMLBody.text.isDefined('mediaType'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_AC2-sKzeEeCOzOGuaGzKFQ" name="hasTextMediaTypeValueSet" constrainedElement="_ESDCQKjIEeCFJ-gjhA0rqQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_0iHp8KzeEeCOzOGuaGzKFQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The value of @mediaType SHALL be drawn from the value set 2.16.840.1.113883.11.20.7.1 SupportedFileFormats STATIC 20100512</body>
+          <body>self.component.nonXMLBody.text.reference.oclIsUndefined() implies (self.component.nonXMLBody.text.mediaType = 'application/msword' or self.component.nonXMLBody.text.mediaType = 'application/pdf' or self.component.nonXMLBody.text.mediaType = 'text/plain' or self.component.nonXMLBody.text.mediaType = 'text/rtf' or self.component.nonXMLBody.text.mediaType = 'text/html' or self.component.nonXMLBody.text.mediaType = 'image/gif' or self.component.nonXMLBody.text.mediaType = 'image/tiff' or self.component.nonXMLBody.text.mediaType = 'image/jpeg' or self.component.nonXMLBody.text.mediaType = 'image/png')</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_ESGFkKjIEeCFJ-gjhA0rqQ" general="_MwGRIGeLEd-ilOLYnIx0jA"/>
       <ownedAttribute xmi:id="_N5SCQKjIEeCFJ-gjhA0rqQ" name="confidentialityCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_XMAK0KjIEeCFJ-gjhA0rqQ">
@@ -2321,5 +2385,32 @@ document may come from sources or contain information that the author cannot val
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_GsTLQKjVEeCFJ-gjhA0rqQ" base_Constraint="_AM--cKjVEeCFJ-gjhA0rqQ">
     <ruleId>CONF-UD-26</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:AssociationValidation xmi:id="_6tPPwKzbEeCOzOGuaGzKFQ" base_Association="_Qjnm86jbEeCFJ-gjhA0rqQ">
+    <ruleId>CONF-UD-27</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_Gm2iEKzcEeCOzOGuaGzKFQ" base_Constraint="_g_3-AKjbEeCFJ-gjhA0rqQ">
+    <ruleId>CONF-UD-28</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_MOccsKzcEeCOzOGuaGzKFQ" base_Constraint="_kC1_wKjbEeCFJ-gjhA0rqQ">
+    <ruleId>CONF-UD-29</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_ulwrIKzcEeCOzOGuaGzKFQ" base_Constraint="_k07kAKjbEeCFJ-gjhA0rqQ">
+    <ruleId>CONF-UD-30</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_532DYKzcEeCOzOGuaGzKFQ" base_Constraint="_llHq0KjbEeCFJ-gjhA0rqQ">
+    <ruleId>CONF-UD-31</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_-4M-4KzcEeCOzOGuaGzKFQ" base_Constraint="_mUXWcKjbEeCFJ-gjhA0rqQ">
+    <ruleId>CONF-UD-32</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Cm96MKzeEeCOzOGuaGzKFQ" base_Constraint="_9zQTkKzdEeCOzOGuaGzKFQ">
+    <ruleId>CONF-UD-34</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Twe_4KzeEeCOzOGuaGzKFQ" base_Constraint="__gyMYKzdEeCOzOGuaGzKFQ">
+    <ruleId>CONF-UD-35</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_1B7LYKzeEeCOzOGuaGzKFQ" base_Constraint="_AC2-sKzeEeCOzOGuaGzKFQ">
+    <ruleId>CONF-UD-36</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>
