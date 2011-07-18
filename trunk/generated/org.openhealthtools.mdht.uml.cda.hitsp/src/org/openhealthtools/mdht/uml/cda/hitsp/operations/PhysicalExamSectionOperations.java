@@ -86,18 +86,20 @@ public class PhysicalExamSectionOperations extends
 			helper.setContext(HITSPPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.PHYSICAL_EXAM_SECTION__HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPPhysicalExamSectionTemplateId"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.PHYSICAL_EXAM_SECTION__HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
+						 HITSPPlugin.INSTANCE.getString("HITSPPhysicalExamSectionTemplateId"),
+						 new Object [] { physicalExamSection }));
 			}
 			return false;
 		}

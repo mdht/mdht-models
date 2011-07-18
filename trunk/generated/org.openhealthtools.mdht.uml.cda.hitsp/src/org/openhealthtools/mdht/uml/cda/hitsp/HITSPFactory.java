@@ -498,6 +498,15 @@ public interface HITSPFactory extends EFactory {
 	MedicationInformation createMedicationInformation();
 
 	/**
+	 * Returns a new object of class '<em>Unstructured Or Scanned Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unstructured Or Scanned Document</em>'.
+	 * @generated
+	 */
+	UnstructuredOrScannedDocument createUnstructuredOrScannedDocument();
+
+	/**
 	 * Returns a new object of class '<em>Encounter</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

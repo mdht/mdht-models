@@ -313,7 +313,7 @@ public class MedicationCombinationMedicationImpl extends CombinationMedicationIm
 	 */
 	@Override
 	public MedicationCombinationMedication init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationCombinationMedicationImpl

@@ -85,7 +85,7 @@ public class MedicationTaperedDoseImpl extends MedicationImpl implements Medicat
 	 */
 	@Override
 	public MedicationTaperedDose init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationTaperedDoseImpl

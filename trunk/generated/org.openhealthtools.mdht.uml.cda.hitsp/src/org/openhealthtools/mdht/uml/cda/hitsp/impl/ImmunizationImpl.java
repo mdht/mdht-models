@@ -84,7 +84,7 @@ public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.
 	 */
 	@Override
 	public Immunization init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ImmunizationImpl

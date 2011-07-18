@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.openhealthtools.mdht.uml.cda.CDAPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
+import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 
 /**
@@ -11028,6 +11029,295 @@ public interface HITSPPackage extends EPackage {
 	int MEDICATION_INFORMATION_FEATURE_COUNT = IHEPackage.PRODUCT_ENTRY_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredOrScannedDocumentImpl <em>Unstructured Or Scanned Document</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredOrScannedDocumentImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getUnstructuredOrScannedDocument()
+	 * @generated
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 54;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__REALM_CODE = CDTPackage.UNSTRUCTURED_DOCUMENT__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__TYPE_ID = CDTPackage.UNSTRUCTURED_DOCUMENT__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__TEMPLATE_ID = CDTPackage.UNSTRUCTURED_DOCUMENT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__ID = CDTPackage.UNSTRUCTURED_DOCUMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__CODE = CDTPackage.UNSTRUCTURED_DOCUMENT__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__TITLE = CDTPackage.UNSTRUCTURED_DOCUMENT__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__EFFECTIVE_TIME = CDTPackage.UNSTRUCTURED_DOCUMENT__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__CONFIDENTIALITY_CODE = CDTPackage.UNSTRUCTURED_DOCUMENT__CONFIDENTIALITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__LANGUAGE_CODE = CDTPackage.UNSTRUCTURED_DOCUMENT__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Set Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__SET_ID = CDTPackage.UNSTRUCTURED_DOCUMENT__SET_ID;
+
+	/**
+	 * The feature id for the '<em><b>Version Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__VERSION_NUMBER = CDTPackage.UNSTRUCTURED_DOCUMENT__VERSION_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__COPY_TIME = CDTPackage.UNSTRUCTURED_DOCUMENT__COPY_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__RECORD_TARGET = CDTPackage.UNSTRUCTURED_DOCUMENT__RECORD_TARGET;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__AUTHOR = CDTPackage.UNSTRUCTURED_DOCUMENT__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__DATA_ENTERER = CDTPackage.UNSTRUCTURED_DOCUMENT__DATA_ENTERER;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__INFORMANT = CDTPackage.UNSTRUCTURED_DOCUMENT__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Custodian</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__CUSTODIAN = CDTPackage.UNSTRUCTURED_DOCUMENT__CUSTODIAN;
+
+	/**
+	 * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__INFORMATION_RECIPIENT = CDTPackage.UNSTRUCTURED_DOCUMENT__INFORMATION_RECIPIENT;
+
+	/**
+	 * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__LEGAL_AUTHENTICATOR = CDTPackage.UNSTRUCTURED_DOCUMENT__LEGAL_AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__AUTHENTICATOR = CDTPackage.UNSTRUCTURED_DOCUMENT__AUTHENTICATOR;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__PARTICIPANT = CDTPackage.UNSTRUCTURED_DOCUMENT__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__IN_FULFILLMENT_OF = CDTPackage.UNSTRUCTURED_DOCUMENT__IN_FULFILLMENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__DOCUMENTATION_OF = CDTPackage.UNSTRUCTURED_DOCUMENT__DOCUMENTATION_OF;
+
+	/**
+	 * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__RELATED_DOCUMENT = CDTPackage.UNSTRUCTURED_DOCUMENT__RELATED_DOCUMENT;
+
+	/**
+	 * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__AUTHORIZATION = CDTPackage.UNSTRUCTURED_DOCUMENT__AUTHORIZATION;
+
+	/**
+	 * The feature id for the '<em><b>Component Of</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__COMPONENT_OF = CDTPackage.UNSTRUCTURED_DOCUMENT__COMPONENT_OF;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__COMPONENT = CDTPackage.UNSTRUCTURED_DOCUMENT__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__NULL_FLAVOR = CDTPackage.UNSTRUCTURED_DOCUMENT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__CLASS_CODE = CDTPackage.UNSTRUCTURED_DOCUMENT__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__MOOD_CODE = CDTPackage.UNSTRUCTURED_DOCUMENT__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Unstructured Or Scanned Document</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT_FEATURE_COUNT = CDTPackage.UNSTRUCTURED_DOCUMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPRegistryDelegateImpl <em>Registry Delegate</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11035,7 +11325,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getHITSPRegistryDelegate()
 	 * @generated
 	 */
-	int HITSP_REGISTRY_DELEGATE = 54;
+	int HITSP_REGISTRY_DELEGATE = 55;
 
 	/**
 	 * The number of structural features of the '<em>Registry Delegate</em>' class.
@@ -11565,6 +11855,16 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getMedicationInformation();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredOrScannedDocument <em>Unstructured Or Scanned Document</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Unstructured Or Scanned Document</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredOrScannedDocument
+	 * @generated
+	 */
+	EClass getUnstructuredOrScannedDocument();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.Encounter <em>Encounter</em>}'.
@@ -12137,6 +12437,16 @@ public interface HITSPPackage extends EPackage {
 		 * @generated
 		 */
 		EClass MEDICATION_INFORMATION = eINSTANCE.getMedicationInformation();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredOrScannedDocumentImpl <em>Unstructured Or Scanned Document</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredOrScannedDocumentImpl
+		 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getUnstructuredOrScannedDocument()
+		 * @generated
+		 */
+		EClass UNSTRUCTURED_OR_SCANNED_DOCUMENT = eINSTANCE.getUnstructuredOrScannedDocument();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.EncounterImpl <em>Encounter</em>}' class.

@@ -311,7 +311,7 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 */
 	@Override
 	public Medication init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationImpl

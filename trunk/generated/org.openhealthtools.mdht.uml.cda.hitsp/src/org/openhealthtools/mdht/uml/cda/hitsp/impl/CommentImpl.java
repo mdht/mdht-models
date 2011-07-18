@@ -64,7 +64,7 @@ public class CommentImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Comme
 	 */
 	@Override
 	public Comment init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // CommentImpl

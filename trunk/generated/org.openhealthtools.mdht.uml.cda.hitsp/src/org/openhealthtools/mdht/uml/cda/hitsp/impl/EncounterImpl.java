@@ -74,7 +74,7 @@ public class EncounterImpl extends EncounterActivityImpl implements Encounter {
 	 */
 	@Override
 	public Encounter init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // EncounterImpl

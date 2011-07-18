@@ -121,7 +121,7 @@ public class ConditionImpl extends ProblemConcernEntryImpl implements Condition 
 	 */
 	@Override
 	public Condition init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ConditionImpl
