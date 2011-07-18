@@ -83,7 +83,7 @@ public class LanguageSpokenImpl extends LanguageCommunicationImpl implements Lan
 	 */
 	@Override
 	public LanguageSpoken init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // LanguageSpokenImpl

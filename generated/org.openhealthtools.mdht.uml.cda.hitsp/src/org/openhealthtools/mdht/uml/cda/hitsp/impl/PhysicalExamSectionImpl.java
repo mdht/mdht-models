@@ -65,7 +65,7 @@ public class PhysicalExamSectionImpl extends org.openhealthtools.mdht.uml.cda.ih
 	 */
 	@Override
 	public PhysicalExamSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PhysicalExamSectionImpl

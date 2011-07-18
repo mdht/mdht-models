@@ -94,18 +94,20 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 			helper.setContext(HITSPPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_HITSP_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.SURGERIES_SECTION__HITSP_SURGERIES_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPSurgeriesSectionTemplateId"),
-					new Object[] { surgeriesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.SURGERIES_SECTION__HITSP_SURGERIES_SECTION_TEMPLATE_ID,
+						 HITSPPlugin.INSTANCE.getString("HITSPSurgeriesSectionTemplateId"),
+						 new Object [] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -150,18 +152,20 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 			helper.setContext(HITSPPackage.Literals.SURGERIES_SECTION);
 			try {
 				VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgeriesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgeriesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.SURGERIES_SECTION__HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY,
-					HITSPPlugin.INSTANCE.getString("HITSPSurgeriesSectionProcedureActivity"),
-					new Object[] { surgeriesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.SURGERIES_SECTION__HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY,
+						 HITSPPlugin.INSTANCE.getString("HITSPSurgeriesSectionProcedureActivity"),
+						 new Object [] { surgeriesSection }));
 			}
 			return false;
 		}
@@ -200,12 +204,11 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	public static EList<Procedure> getProcedureActivities(SurgeriesSection surgeriesSection) {
 		if (GET_PROCEDURE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				HITSPPackage.Literals.SURGERIES_SECTION,
-				HITSPPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(67));
+			helper.setOperationContext(HITSPPackage.Literals.SURGERIES_SECTION, HITSPPackage.Literals.SURGERIES_SECTION.getEAllOperations().get(67));
 			try {
 				GET_PROCEDURE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITIES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

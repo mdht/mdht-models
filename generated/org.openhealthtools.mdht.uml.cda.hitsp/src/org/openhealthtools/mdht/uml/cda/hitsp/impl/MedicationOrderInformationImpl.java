@@ -56,8 +56,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationOrderNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationOrderNumber(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationOrderNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationOrderExpiration(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationOrderExpiration(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationOrderExpiration(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +76,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationQuantityOrdered(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantityOrdered(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantityOrdered(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +86,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationQuantityUnit(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantityUnit(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantityUnit(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +96,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationPrescriptionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationPrescriptionNumber(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationPrescriptionNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +106,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationAssigningAuthority(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationAssigningAuthority(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationAssigningAuthority(this, diagnostics, context);
 	}
 
 	/**
@@ -122,8 +116,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationDispenseDate(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationDispenseDate(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationDispenseDate(this, diagnostics, context);
 	}
 
 	/**
@@ -133,8 +126,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationDispensingPharmacyLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationDispensingPharmacyLocation(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationDispensingPharmacyLocation(this, diagnostics, context);
 	}
 
 	/**
@@ -144,8 +136,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationQuantityDispensed(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantityDispensed(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantityDispensed(this, diagnostics, context);
 	}
 
 	/**
@@ -155,8 +146,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationHasFillNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasFillNumber(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasFillNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -165,8 +155,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 * @generated
 	 */
 	public boolean validateMedicationOrderInformationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationTemplateId(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -176,8 +165,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	public boolean validateMedicationOrderInformationRepeatNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationRepeatNumber(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationRepeatNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -186,8 +174,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 * @generated
 	 */
 	public boolean validateMedicationOrderInformationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationOrderInformationOperations.validateMedicationOrderInformationStatusCode(
-			this, diagnostics, context);
+		return MedicationOrderInformationOperations.validateMedicationOrderInformationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -197,7 +184,7 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 */
 	@Override
 	public MedicationOrderInformation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationOrderInformationImpl

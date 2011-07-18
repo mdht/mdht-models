@@ -147,7 +147,7 @@ public class ResultImpl extends ResultObservationImpl implements Result {
 	 */
 	@Override
 	public Result init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ResultImpl

@@ -312,7 +312,7 @@ public class MedicationConditionalDoseImpl extends ConditionalDoseImpl implement
 	 */
 	@Override
 	public MedicationConditionalDose init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationConditionalDoseImpl

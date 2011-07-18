@@ -85,7 +85,7 @@ public class ProblemListSectionImpl extends ActiveProblemsSectionImpl implements
 	 */
 	@Override
 	public ProblemListSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProblemListSectionImpl

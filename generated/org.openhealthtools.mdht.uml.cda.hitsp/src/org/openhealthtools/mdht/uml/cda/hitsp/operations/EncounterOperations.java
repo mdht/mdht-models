@@ -87,16 +87,20 @@ public class EncounterOperations extends EncounterActivityOperations {
 			helper.setContext(HITSPPackage.Literals.ENCOUNTER);
 			try {
 				VALIDATE_HITSP_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounter)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.ENCOUNTER__HITSP_ENCOUNTER_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPEncounterTemplateId"), new Object[] { encounter }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.ENCOUNTER__HITSP_ENCOUNTER_TEMPLATE_ID,
+						 HITSPPlugin.INSTANCE.getString("HITSPEncounterTemplateId"),
+						 new Object [] { encounter }));
 			}
 			return false;
 		}
@@ -111,9 +115,9 @@ public class EncounterOperations extends EncounterActivityOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.12' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_HITSP_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
+"value.codeSystem = '2.16.840.1.113883.6.12' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPEncounterCode(Encounter, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounter Code</em>}' invariant operation.
@@ -145,16 +149,20 @@ public class EncounterOperations extends EncounterActivityOperations {
 			helper.setContext(HITSPPackage.Literals.ENCOUNTER);
 			try {
 				VALIDATE_HITSP_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounter)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.ENCOUNTER__HITSP_ENCOUNTER_CODE,
-					HITSPPlugin.INSTANCE.getString("HITSPEncounterCode"), new Object[] { encounter }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.ENCOUNTER__HITSP_ENCOUNTER_CODE,
+						 HITSPPlugin.INSTANCE.getString("HITSPEncounterCode"),
+						 new Object [] { encounter }));
 			}
 			return false;
 		}

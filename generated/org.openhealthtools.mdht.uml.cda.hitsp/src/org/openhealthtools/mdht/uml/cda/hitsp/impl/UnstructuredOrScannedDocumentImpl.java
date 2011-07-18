@@ -1,42 +1,45 @@
-/*******************************************************************************
- * Copyright (c) 2009, 2011 David A Carlson and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EClass;
+
+import org.openhealthtools.mdht.uml.cda.cdt.impl.UnstructuredDocumentImpl;
+
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
-import org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredDocument;
+import org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredOrScannedDocument;
+
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.UnstructuredDocumentOperations;
-import org.openhealthtools.mdht.uml.cda.ihe.impl.MedicalDocumentImpl;
+
+import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicalDocumentOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ScannedDocumentOperations;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Unstructured Document</b></em>'.
+ * An implementation of the model object '<em><b>Unstructured Or Scanned Document</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements UnstructuredDocument {
+public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl implements UnstructuredOrScannedDocument {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected UnstructuredDocumentImpl() {
+	protected UnstructuredOrScannedDocumentImpl() {
 		super();
 	}
 
@@ -47,7 +50,16 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return HITSPPackage.Literals.UNSTRUCTURED_DOCUMENT;
+		return HITSPPackage.Literals.UNSTRUCTURED_OR_SCANNED_DOCUMENT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalDocumentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalDocumentOperations.validateMedicalDocumentTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -154,8 +166,7 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasRepresentedCustodianOrganizationName(this, diagnostics, context);
 	}
 
@@ -164,8 +175,7 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasRepresentedCustodianOrganizationAddr(this, diagnostics, context);
 	}
 
@@ -174,8 +184,7 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateScannedDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentLegalAuthenticatorAssignedEntityId(this, diagnostics, context);
 	}
 
@@ -193,8 +202,7 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyBinaryText(this, diagnostics, context);
 	}
 
@@ -203,8 +211,7 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyTextMediaType(this, diagnostics, context);
 	}
 
@@ -213,8 +220,7 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyTextRepresentation(this, diagnostics, context);
 	}
 
@@ -304,8 +310,7 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentOnePatientPerDocument(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateUnstructuredDocumentOnePatientPerDocument(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentOnePatientPerDocument(this, diagnostics, context);
 	}
 
@@ -314,9 +319,8 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public UnstructuredDocument init() {
+	public UnstructuredOrScannedDocument init() {
     	CDAUtil.init(this);
     	return this;
 	}
-} // UnstructuredDocumentImpl
+} //UnstructuredOrScannedDocumentImpl

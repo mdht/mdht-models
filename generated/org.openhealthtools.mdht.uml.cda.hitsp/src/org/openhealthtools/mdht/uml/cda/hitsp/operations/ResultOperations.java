@@ -92,16 +92,20 @@ public class ResultOperations extends ResultObservationOperations {
 			helper.setContext(HITSPPackage.Literals.RESULT);
 			try {
 				VALIDATE_RESULT_TYPE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_TYPE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_TYPE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(result)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.RESULT__RESULT_TYPE_CODE_SYSTEM,
-					HITSPPlugin.INSTANCE.getString("ResultTypeCodeSystem"), new Object[] { result }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.RESULT__RESULT_TYPE_CODE_SYSTEM,
+						 HITSPPlugin.INSTANCE.getString("ResultTypeCodeSystem"),
+						 new Object [] { result }));
 			}
 			return false;
 		}
@@ -146,17 +150,20 @@ public class ResultOperations extends ResultObservationOperations {
 			helper.setContext(HITSPPackage.Literals.RESULT);
 			try {
 				VALIDATE_RESULT_LABORATORY_RESULTS_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_LABORATORY_RESULTS_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_LABORATORY_RESULTS_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			result)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_LABORATORY_RESULTS_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(result)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.RESULT__RESULT_LABORATORY_RESULTS_VALUE_SET,
-					HITSPPlugin.INSTANCE.getString("ResultLaboratoryResultsValueSet"), new Object[] { result }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.RESULT__RESULT_LABORATORY_RESULTS_VALUE_SET,
+						 HITSPPlugin.INSTANCE.getString("ResultLaboratoryResultsValueSet"),
+						 new Object [] { result }));
 			}
 			return false;
 		}
@@ -171,10 +178,10 @@ public class ResultOperations extends ResultObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESULT_VALUE_PRESENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.moodCode = vocab::x_ActMoodDocumentObservation::EVN or self.moodCode = vocab::x_ActMoodDocumentObservation::EVN)"
-			+ "    implies (not self.value->isEmpty()) and"
-			+ "  (self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP)"
-			+ "   implies (self.value->isEmpty())";
+	protected static final String VALIDATE_RESULT_VALUE_PRESENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.moodCode = vocab::x_ActMoodDocumentObservation::EVN or self.moodCode = vocab::x_ActMoodDocumentObservation::EVN)"+
+"    implies (not self.value->isEmpty()) and"+
+"  (self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP)"+
+"   implies (self.value->isEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResultValuePresence(Result, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Value Presence</em>}' invariant operation.
@@ -207,15 +214,20 @@ public class ResultOperations extends ResultObservationOperations {
 			helper.setContext(HITSPPackage.Literals.RESULT);
 			try {
 				VALIDATE_RESULT_VALUE_PRESENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_VALUE_PRESENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_VALUE_PRESENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(result)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.RESULT__RESULT_VALUE_PRESENCE,
-					HITSPPlugin.INSTANCE.getString("ResultValuePresence"), new Object[] { result }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.RESULT__RESULT_VALUE_PRESENCE,
+						 HITSPPlugin.INSTANCE.getString("ResultValuePresence"),
+						 new Object [] { result }));
 			}
 			return false;
 		}
@@ -260,15 +272,20 @@ public class ResultOperations extends ResultObservationOperations {
 			helper.setContext(HITSPPackage.Literals.RESULT);
 			try {
 				VALIDATE_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(result)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.RESULT__RESULT_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("ResultTemplateId"), new Object[] { result }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.RESULT__RESULT_TEMPLATE_ID,
+						 HITSPPlugin.INSTANCE.getString("ResultTemplateId"),
+						 new Object [] { result }));
 			}
 			return false;
 		}
@@ -312,15 +329,20 @@ public class ResultOperations extends ResultObservationOperations {
 			helper.setContext(HITSPPackage.Literals.RESULT);
 			try {
 				VALIDATE_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(result)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.RESULT__RESULT_CODE,
-					HITSPPlugin.INSTANCE.getString("ResultCode"), new Object[] { result }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.RESULT__RESULT_CODE,
+						 HITSPPlugin.INSTANCE.getString("ResultCode"),
+						 new Object [] { result }));
 			}
 			return false;
 		}
@@ -365,15 +387,20 @@ public class ResultOperations extends ResultObservationOperations {
 			helper.setContext(HITSPPackage.Literals.RESULT);
 			try {
 				VALIDATE_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(result)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.RESULT__RESULT_EFFECTIVE_TIME,
-					HITSPPlugin.INSTANCE.getString("ResultEffectiveTime"), new Object[] { result }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.RESULT__RESULT_EFFECTIVE_TIME,
+						 HITSPPlugin.INSTANCE.getString("ResultEffectiveTime"),
+						 new Object [] { result }));
 			}
 			return false;
 		}
@@ -417,15 +444,20 @@ public class ResultOperations extends ResultObservationOperations {
 			helper.setContext(HITSPPackage.Literals.RESULT);
 			try {
 				VALIDATE_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(result)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.RESULT__RESULT_VALUE,
-					HITSPPlugin.INSTANCE.getString("ResultValue"), new Object[] { result }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.RESULT__RESULT_VALUE,
+						 HITSPPlugin.INSTANCE.getString("ResultValue"),
+						 new Object [] { result }));
 			}
 			return false;
 		}

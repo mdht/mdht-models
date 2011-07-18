@@ -94,17 +94,20 @@ public class ProblemListSectionOperations extends ActiveProblemsSectionOperation
 			helper.setContext(HITSPPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("ProblemListSectionTemplateId"), new Object[] { problemListSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID,
+						 HITSPPlugin.INSTANCE.getString("ProblemListSectionTemplateId"),
+						 new Object [] { problemListSection }));
 			}
 			return false;
 		}
@@ -149,17 +152,20 @@ public class ProblemListSectionOperations extends ActiveProblemsSectionOperation
 			helper.setContext(HITSPPackage.Literals.PROBLEM_LIST_SECTION);
 			try {
 				VALIDATE_PROBLEM_LIST_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_LIST_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemListSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_LIST_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemListSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CONDITION,
-					HITSPPlugin.INSTANCE.getString("ProblemListSectionCondition"), new Object[] { problemListSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 HITSPValidator.DIAGNOSTIC_SOURCE,
+						 HITSPValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CONDITION,
+						 HITSPPlugin.INSTANCE.getString("ProblemListSectionCondition"),
+						 new Object [] { problemListSection }));
 			}
 			return false;
 		}
@@ -198,12 +204,11 @@ public class ProblemListSectionOperations extends ActiveProblemsSectionOperation
 	public static EList<Condition> getConditions(ProblemListSection problemListSection) {
 		if (GET_CONDITIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				HITSPPackage.Literals.PROBLEM_LIST_SECTION,
-				HITSPPackage.Literals.PROBLEM_LIST_SECTION.getEAllOperations().get(66));
+			helper.setOperationContext(HITSPPackage.Literals.PROBLEM_LIST_SECTION, HITSPPackage.Literals.PROBLEM_LIST_SECTION.getEAllOperations().get(66));
 			try {
 				GET_CONDITIONS__EOCL_QRY = helper.createQuery(GET_CONDITIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
