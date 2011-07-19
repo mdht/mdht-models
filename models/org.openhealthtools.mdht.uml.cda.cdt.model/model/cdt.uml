@@ -1774,7 +1774,7 @@ document may come from sources or contain information that the author cannot val
           <language>Analysis</language>
           <language>OCL</language>
           <body>The text element SHALL either contain a reference element with a value attribute, or have a representation attribute with the value of B64, a mediaType attribute, and contain the media content</body>
-          <body>(not self.component.nonXMLBody.text.reference.oclIsUndefined() and self.component.nonXMLBody.text.reference.isDefined('value')) or (self.component.nonXMLBody.text.representation = datatypes::BinaryDataEncoding::B64 and self.component.nonXMLBody.text.isDefined('mediaType'))</body>
+          <body>(not self.component.nonXMLBody.text.reference.oclIsUndefined() and self.component.nonXMLBody.text.reference.isDefined('value')) or (self.component.nonXMLBody.text.representation = datatypes::BinaryDataEncoding::B64 and self.component.nonXMLBody.text.isDefined('mediaType') and self.component.nonXMLBody.text.getText().size() > 0)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_AC2-sKzeEeCOzOGuaGzKFQ" name="hasTextMediaTypeValueSet" constrainedElement="_ESDCQKjIEeCFJ-gjhA0rqQ">
