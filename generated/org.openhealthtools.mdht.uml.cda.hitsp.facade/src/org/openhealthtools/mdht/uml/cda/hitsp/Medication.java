@@ -246,7 +246,8 @@ public interface Medication extends org.openhealthtools.mdht.uml.cda.ihe.Medicat
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = \'CSM\' and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = \'MANU\' and pr.code.code = \'412307009\' and pr.code.codeSystem = \'2.16.840.1.113883.6.96\' and pr.playingEntity.code->size() > 0 and pr.playingEntity.code.codeSystem = \'2.16.840.1.113883.3.88.12.80.21\')))'"
 	 * @generated
 	 */
-	boolean validateHITSPMedicationMedicationVehicleCodedNameVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHITSPMedicationMedicationVehicleCodedNameVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

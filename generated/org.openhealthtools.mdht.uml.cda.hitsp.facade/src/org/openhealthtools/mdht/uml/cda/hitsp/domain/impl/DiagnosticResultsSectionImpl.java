@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import java.util.Collection;
@@ -75,8 +79,8 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -129,11 +133,12 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	public EList<ExternalReference> getExternalReferences() {
 		if (GET_EXTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDiagnosticResultsSection(), IDomainPackage.eINSTANCE.getDiagnosticResultsSection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDiagnosticResultsSection(),
+				IDomainPackage.eINSTANCE.getDiagnosticResultsSection().getEAllOperations().get(0));
 			try {
 				GET_EXTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_EXTERNAL_REFERENCES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -160,7 +165,7 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 			// no init() method
 		}
 		ExternalReference value = (ExternalReference) eObject;
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -203,11 +208,12 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	public EList<IProcedure> getDiagnosticProcedures() {
 		if (GET_DIAGNOSTIC_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDiagnosticResultsSection(), IDomainPackage.eINSTANCE.getDiagnosticResultsSection().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDiagnosticResultsSection(),
+				IDomainPackage.eINSTANCE.getDiagnosticResultsSection().getEAllOperations().get(3));
 			try {
 				GET_DIAGNOSTIC_PROCEDURES__EOCL_QRY = helper.createQuery(GET_DIAGNOSTIC_PROCEDURES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -236,9 +242,9 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Procedure");
-		IProcedure value = (IProcedure)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Procedure)eObject);
-		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure)eObject);
+		IProcedure value = (IProcedure) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
+		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
 		return value;
 	}
 
@@ -281,11 +287,12 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	public EList<IResult> getResults() {
 		if (GET_RESULTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDiagnosticResultsSection(), IDomainPackage.eINSTANCE.getDiagnosticResultsSection().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDiagnosticResultsSection(),
+				IDomainPackage.eINSTANCE.getDiagnosticResultsSection().getEAllOperations().get(6));
 			try {
 				GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -314,9 +321,9 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Result");
-		IResult value = (IResult)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IResult value = (IResult) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -340,7 +347,9 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -355,7 +364,7 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -370,7 +379,7 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -405,7 +414,7 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	 * @generated
 	 */
 	public IDiagnosticResultsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //DiagnosticResultsSectionImpl
+} // DiagnosticResultsSectionImpl

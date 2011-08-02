@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -69,8 +73,8 @@ public class FamilyHistorySectionImpl extends EObjectImpl implements IFamilyHist
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -123,11 +127,12 @@ public class FamilyHistorySectionImpl extends EObjectImpl implements IFamilyHist
 	public ST getTitle() {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getFamilyHistorySection(), IDomainPackage.eINSTANCE.getFamilyHistorySection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getFamilyHistorySection(),
+				IDomainPackage.eINSTANCE.getFamilyHistorySection().getEAllOperations().get(0));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -169,7 +174,9 @@ public class FamilyHistorySectionImpl extends EObjectImpl implements IFamilyHist
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.FAMILY_HISTORY_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -184,7 +191,7 @@ public class FamilyHistorySectionImpl extends EObjectImpl implements IFamilyHist
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.FAMILY_HISTORY_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -199,7 +206,7 @@ public class FamilyHistorySectionImpl extends EObjectImpl implements IFamilyHist
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.FAMILY_HISTORY_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -234,7 +241,7 @@ public class FamilyHistorySectionImpl extends EObjectImpl implements IFamilyHist
 	 * @generated
 	 */
 	public IFamilyHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //FamilyHistorySectionImpl
+} // FamilyHistorySectionImpl

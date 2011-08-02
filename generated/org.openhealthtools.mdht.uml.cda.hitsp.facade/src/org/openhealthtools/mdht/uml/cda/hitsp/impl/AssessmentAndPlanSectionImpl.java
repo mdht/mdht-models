@@ -56,7 +56,8 @@ public class AssessmentAndPlanSectionImpl extends
 	 */
 	public boolean validateHITSPAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateHITSPAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
+		return AssessmentAndPlanSectionOperations.validateHITSPAssessmentAndPlanSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class AssessmentAndPlanSectionImpl extends
 	 */
 	@Override
 	public AssessmentAndPlanSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AssessmentAndPlanSectionImpl

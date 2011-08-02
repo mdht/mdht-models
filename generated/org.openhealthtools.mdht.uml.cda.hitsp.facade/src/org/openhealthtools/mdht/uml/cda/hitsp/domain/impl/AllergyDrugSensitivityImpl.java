@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import java.util.Collection;
@@ -78,8 +82,8 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	 */
 	public Act getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Act)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Act) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -132,11 +136,12 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(), IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(),
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -200,11 +205,12 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(), IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(),
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(3));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -265,11 +271,12 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	public CS getStatusCode() {
 		if (GET_STATUS_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(), IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(),
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(6));
 			try {
 				GET_STATUS_CODE__EOCL_QRY = helper.createQuery(GET_STATUS_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -330,11 +337,12 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	public IVL_TS getEffectiveTime() {
 		if (GET_EFFECTIVE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(), IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(),
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(9));
 			try {
 				GET_EFFECTIVE_TIME__EOCL_QRY = helper.createQuery(GET_EFFECTIVE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -395,11 +403,12 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	public EpisodeObservation getEpisodeObservation() {
 		if (GET_EPISODE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(), IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(12));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(),
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(12));
 			try {
 				GET_EPISODE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_EPISODE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -424,7 +433,7 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 			// no init() method
 		}
 		EpisodeObservation value = (EpisodeObservation) eObject;
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -434,7 +443,7 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	 * @generated
 	 */
 	public IAllergyDrugSensitivity setEpisodeObservation(EpisodeObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation(value);
 		return this;
 	}
 
@@ -466,11 +475,12 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	public EList<AllergyIntolerance> getAllergyIntolerances() {
 		if (GET_ALLERGY_INTOLERANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(), IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(15));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity(),
+				IDomainPackage.eINSTANCE.getAllergyDrugSensitivity().getEAllOperations().get(15));
 			try {
 				GET_ALLERGY_INTOLERANCES__EOCL_QRY = helper.createQuery(GET_ALLERGY_INTOLERANCES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -497,7 +507,7 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 			// no init() method
 		}
 		AllergyIntolerance value = (AllergyIntolerance) eObject;
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -521,7 +531,9 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.ALLERGY_DRUG_SENSITIVITY__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -536,7 +548,7 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.ALLERGY_DRUG_SENSITIVITY__CDA_TYPE:
-				setCDAType((Act)newValue);
+				setCDAType((Act) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -551,7 +563,7 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.ALLERGY_DRUG_SENSITIVITY__CDA_TYPE:
-				setCDAType((Act)null);
+				setCDAType((Act) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -586,7 +598,7 @@ public class AllergyDrugSensitivityImpl extends EObjectImpl implements IAllergyD
 	 * @generated
 	 */
 	public IAllergyDrugSensitivity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AllergyDrugSensitivityImpl
+} // AllergyDrugSensitivityImpl

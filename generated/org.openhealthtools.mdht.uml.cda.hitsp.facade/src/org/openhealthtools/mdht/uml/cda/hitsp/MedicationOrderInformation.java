@@ -89,7 +89,8 @@ public interface MedicationOrderInformation extends SupplyEntry {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.id->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationPrescriptionNumber(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationOrderInformationPrescriptionNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -102,7 +103,8 @@ public interface MedicationOrderInformation extends SupplyEntry {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id.root->size() > 0'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationAssigningAuthority(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationOrderInformationAssigningAuthority(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -128,7 +130,8 @@ public interface MedicationOrderInformation extends SupplyEntry {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode =  vocab::x_DocumentSubstanceMood::EVN  implies self.performer->select(p | p.assignedEntity.addr->isEmpty())->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateMedicationOrderInformationDispensingPharmacyLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationOrderInformationDispensingPharmacyLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

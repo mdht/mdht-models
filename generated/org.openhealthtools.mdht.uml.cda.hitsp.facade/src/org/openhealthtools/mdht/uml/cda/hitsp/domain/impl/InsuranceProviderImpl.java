@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import java.util.Collection;
@@ -74,8 +78,8 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	 */
 	public Act getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Act)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Act) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -128,11 +132,12 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getInsuranceProvider(), IDomainPackage.eINSTANCE.getInsuranceProvider().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getInsuranceProvider(),
+				IDomainPackage.eINSTANCE.getInsuranceProvider().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -196,11 +201,12 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	public EList<PolicyActivity> getPolicyActivities() {
 		if (GET_POLICY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getInsuranceProvider(), IDomainPackage.eINSTANCE.getInsuranceProvider().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getInsuranceProvider(),
+				IDomainPackage.eINSTANCE.getInsuranceProvider().getEAllOperations().get(3));
 			try {
 				GET_POLICY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_POLICY_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -227,7 +233,7 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 			// no init() method
 		}
 		PolicyActivity value = (PolicyActivity) eObject;
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -251,7 +257,9 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.INSURANCE_PROVIDER__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -266,7 +274,7 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.INSURANCE_PROVIDER__CDA_TYPE:
-				setCDAType((Act)newValue);
+				setCDAType((Act) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -281,7 +289,7 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.INSURANCE_PROVIDER__CDA_TYPE:
-				setCDAType((Act)null);
+				setCDAType((Act) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -316,7 +324,7 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	 * @generated
 	 */
 	public IInsuranceProvider init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //InsuranceProviderImpl
+} // InsuranceProviderImpl

@@ -65,7 +65,7 @@ public class HospitalCourseSectionImpl extends org.openhealthtools.mdht.uml.cda.
 	 */
 	@Override
 	public HospitalCourseSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HospitalCourseSectionImpl

@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import java.util.Collection;
@@ -74,8 +78,8 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	@Override
 	public SubstanceAdministration getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (SubstanceAdministration)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (SubstanceAdministration) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -116,6 +120,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose setConsumable(Consumable value) {
 		this.getCDAType().setConsumable(value);
 		return this;
@@ -126,8 +131,9 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose setMedicationSeriesNumberObservation(MedicationSeriesNumberObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation(value);
 		return this;
 	}
 
@@ -136,8 +142,9 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose setMedicationStatusObservation(MedicationStatusObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation(value);
 		return this;
 	}
 
@@ -146,6 +153,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose addPerformer(Performer2 value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -157,6 +165,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose addReactionObservation(ReactionObservation value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -168,6 +177,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose addProductInstance(ProductInstance value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -179,6 +189,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose addInternalReference(InternalReference value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -190,6 +201,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose addPatientMedicalInstructions(PatientMedicalInstructions value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -225,11 +237,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public Consumable getConsumable() {
 		if (GET_CONSUMABLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(27));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(27));
 			try {
 				GET_CONSUMABLE__EOCL_QRY = helper.createQuery(GET_CONSUMABLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -282,11 +295,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public MedicationSeriesNumberObservation getMedicationSeriesNumberObservation() {
 		if (GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(30));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(30));
 			try {
 				GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -312,7 +326,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 			// no init() method
 		}
 		MedicationSeriesNumberObservation value = (MedicationSeriesNumberObservation) eObject;
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -345,11 +359,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public MedicationStatusObservation getMedicationStatusObservation() {
 		if (GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(33));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(33));
 			try {
 				GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -375,7 +390,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 			// no init() method
 		}
 		MedicationStatusObservation value = (MedicationStatusObservation) eObject;
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -408,11 +423,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public EList<Performer2> getPerformers() {
 		if (GET_PERFORMERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(36));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(36));
 			try {
 				GET_PERFORMERS__EOCL_QRY = helper.createQuery(GET_PERFORMERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -467,11 +483,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public EList<ReactionObservation> getReactionObservations() {
 		if (GET_REACTION_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(39));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(39));
 			try {
 				GET_REACTION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_REACTION_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -499,7 +516,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 			// no init() method
 		}
 		ReactionObservation value = (ReactionObservation) eObject;
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -532,11 +549,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public EList<ProductInstance> getProductInstances() {
 		if (GET_PRODUCT_INSTANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(42));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(42));
 			try {
 				GET_PRODUCT_INSTANCES__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -587,11 +605,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public EList<InternalReference> getInternalReferences() {
 		if (GET_INTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(45));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(45));
 			try {
 				GET_INTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -619,7 +638,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 			// no init() method
 		}
 		InternalReference value = (InternalReference) eObject;
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -652,11 +671,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public EList<PatientMedicalInstructions> getPatientMedicalInstructions() {
 		if (GET_PATIENT_MEDICAL_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(48));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(48));
 			try {
 				GET_PATIENT_MEDICAL_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_PATIENT_MEDICAL_INSTRUCTIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -684,7 +704,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 			// no init() method
 		}
 		PatientMedicalInstructions value = (PatientMedicalInstructions) eObject;
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -693,6 +713,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose addId(II value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -704,6 +725,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose setRateQuantity(IVL_PQ value) {
 		this.getCDAType().setRateQuantity(value);
 		return this;
@@ -714,8 +736,9 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose setMedicationType(IMedicationType value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -724,6 +747,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose addMedicationOrderInformation(IMedicationOrderInformation value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -735,8 +759,9 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose setReactionObservation(ReactionObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation(value);
 		return this;
 	}
 
@@ -769,11 +794,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -828,11 +854,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public IVL_PQ getRateQuantity() {
 		if (GET_RATE_QUANTITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(18));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(18));
 			try {
 				GET_RATE_QUANTITY__EOCL_QRY = helper.createQuery(GET_RATE_QUANTITY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -885,11 +912,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public IMedicationType getMedicationType() {
 		if (GET_MEDICATION_TYPE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(51));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(51));
 			try {
 				GET_MEDICATION_TYPE__EOCL_QRY = helper.createQuery(GET_MEDICATION_TYPE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -917,9 +945,9 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("MedicationType");
-		IMedicationType value = (IMedicationType)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IMedicationType value = (IMedicationType) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -952,11 +980,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public EList<IMedicationOrderInformation> getMedicationOrderInformations() {
 		if (GET_MEDICATION_ORDER_INFORMATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(54));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(54));
 			try {
 				GET_MEDICATION_ORDER_INFORMATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATION_ORDER_INFORMATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -986,9 +1015,9 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("MedicationOrderInformation");
-		IMedicationOrderInformation value = (IMedicationOrderInformation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Supply)eObject);
-		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply)eObject);
+		IMedicationOrderInformation value = (IMedicationOrderInformation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Supply) eObject);
+		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply) eObject);
 		return value;
 	}
 
@@ -1021,11 +1050,12 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	public ReactionObservation getReactionObservation() {
 		if (GET_REACTION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationNormalDose(), IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(57));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationNormalDose(),
+				IDomainPackage.eINSTANCE.getMedicationNormalDose().getEAllOperations().get(57));
 			try {
 				GET_REACTION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_REACTION_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1051,7 +1081,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 			// no init() method
 		}
 		ReactionObservation value = (ReactionObservation) eObject;
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -1060,8 +1090,9 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements IMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IMedicationNormalDose init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationNormalDoseImpl
+} // MedicationNormalDoseImpl

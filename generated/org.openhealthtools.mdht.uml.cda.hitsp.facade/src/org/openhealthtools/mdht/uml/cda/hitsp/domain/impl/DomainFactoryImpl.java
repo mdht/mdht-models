@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -83,12 +87,11 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 */
 	public static IDomainFactory init() {
 		try {
-			IDomainFactory theDomainFactory = (IDomainFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/hitsp/domain"); 
+			IDomainFactory theDomainFactory = (IDomainFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/hitsp/domain");
 			if (theDomainFactory != null) {
 				return theDomainFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new DomainFactoryImpl();
@@ -112,60 +115,114 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case IDomainPackage.ALLERGY_DRUG_SENSITIVITY: return (EObject)createAllergyDrugSensitivity();
-			case IDomainPackage.MEDICATION: return (EObject)createMedication();
-			case IDomainPackage.MEDICATION_TYPE: return (EObject)createMedicationType();
-			case IDomainPackage.MEDICATION_ORDER_INFORMATION: return (EObject)createMedicationOrderInformation();
-			case IDomainPackage.CONDITION: return (EObject)createCondition();
-			case IDomainPackage.PROBLEM_ENTRY: return (EObject)createProblemEntry();
-			case IDomainPackage.PATIENT_SUMMARY: return (EObject)createPatientSummary();
-			case IDomainPackage.ADVANCE_DIRECTIVES_SECTION: return (EObject)createAdvanceDirectivesSection();
-			case IDomainPackage.ALLERGIES_REACTIONS_SECTION: return (EObject)createAllergiesReactionsSection();
-			case IDomainPackage.COMMENT: return (EObject)createComment();
-			case IDomainPackage.PROBLEM_LIST_SECTION: return (EObject)createProblemListSection();
-			case IDomainPackage.ENCOUNTERS_SECTION: return (EObject)createEncountersSection();
-			case IDomainPackage.ENCOUNTER: return (EObject)createEncounter();
-			case IDomainPackage.IMMUNIZATIONS_SECTION: return (EObject)createImmunizationsSection();
-			case IDomainPackage.IMMUNIZATION: return (EObject)createImmunization();
-			case IDomainPackage.PAYERS_SECTION: return (EObject)createPayersSection();
-			case IDomainPackage.MEDICATIONS_SECTION: return (EObject)createMedicationsSection();
-			case IDomainPackage.PLAN_OF_CARE_SECTION: return (EObject)createPlanOfCareSection();
-			case IDomainPackage.SURGERIES_SECTION: return (EObject)createSurgeriesSection();
-			case IDomainPackage.PROCEDURE: return (EObject)createProcedure();
-			case IDomainPackage.SUPPORT: return (EObject)createSupport();
-			case IDomainPackage.VITAL_SIGNS_SECTION: return (EObject)createVitalSignsSection();
-			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION: return (EObject)createDiagnosticResultsSection();
-			case IDomainPackage.RESULT: return (EObject)createResult();
-			case IDomainPackage.VITAL_SIGN: return (EObject)createVitalSign();
-			case IDomainPackage.HISTORY_OF_PAST_ILLNESS_SECTION: return (EObject)createHistoryOfPastIllnessSection();
-			case IDomainPackage.CHIEF_COMPLAINT_SECTION: return (EObject)createChiefComplaintSection();
-			case IDomainPackage.REASON_FOR_REFERRAL_SECTION: return (EObject)createReasonForReferralSection();
-			case IDomainPackage.HISTORY_OF_PRESENT_ILLNESS: return (EObject)createHistoryOfPresentIllness();
-			case IDomainPackage.FUNCTIONAL_STATUS_SECTION: return (EObject)createFunctionalStatusSection();
-			case IDomainPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: return (EObject)createHospitalAdmissionDiagnosisSection();
-			case IDomainPackage.DISCHARGE_DIAGNOSIS_SECTION: return (EObject)createDischargeDiagnosisSection();
-			case IDomainPackage.ADMISSION_MEDICATION_HISTORY_SECTION: return (EObject)createAdmissionMedicationHistorySection();
-			case IDomainPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: return (EObject)createHospitalDischargeMedicationsSection();
-			case IDomainPackage.MEDICATIONS_ADMINISTERED_SECTION: return (EObject)createMedicationsAdministeredSection();
-			case IDomainPackage.PHYSICAL_EXAM_SECTION: return (EObject)createPhysicalExamSection();
-			case IDomainPackage.REVIEW_OF_SYSTEMS_SECTION: return (EObject)createReviewOfSystemsSection();
-			case IDomainPackage.HOSPITAL_COURSE_SECTION: return (EObject)createHospitalCourseSection();
-			case IDomainPackage.ASSESSMENT_AND_PLAN_SECTION: return (EObject)createAssessmentAndPlanSection();
-			case IDomainPackage.FAMILY_HISTORY_SECTION: return (EObject)createFamilyHistorySection();
-			case IDomainPackage.SOCIAL_HISTORY_SECTION: return (EObject)createSocialHistorySection();
-			case IDomainPackage.MEDICAL_EQUIPMENT_SECTION: return (EObject)createMedicalEquipmentSection();
-			case IDomainPackage.LANGUAGE_SPOKEN: return (EObject)createLanguageSpoken();
-			case IDomainPackage.INSURANCE_PROVIDER: return (EObject)createInsuranceProvider();
-			case IDomainPackage.HEALTHCARE_PROVIDER: return (EObject)createHealthcareProvider();
-			case IDomainPackage.MEDICATION_NORMAL_DOSE: return (EObject)createMedicationNormalDose();
-			case IDomainPackage.MEDICATION_SPLIT_DOSE: return (EObject)createMedicationSplitDose();
-			case IDomainPackage.MEDICATION_TAPERED_DOSE: return (EObject)createMedicationTaperedDose();
-			case IDomainPackage.MEDICATION_CONDITIONAL_DOSE: return (EObject)createMedicationConditionalDose();
-			case IDomainPackage.MEDICATION_COMBINATION_MEDICATION: return (EObject)createMedicationCombinationMedication();
-			case IDomainPackage.SUPPORT_GUARDIAN: return (EObject)createSupportGuardian();
-			case IDomainPackage.SUPPORT_PARTICIPANT: return (EObject)createSupportParticipant();
-			case IDomainPackage.UNSTRUCTURED_DOCUMENT: return (EObject)createUnstructuredDocument();
-			case IDomainPackage.MEDICATION_INFORMATION: return (EObject)createMedicationInformation();
+			case IDomainPackage.ALLERGY_DRUG_SENSITIVITY:
+				return (EObject) createAllergyDrugSensitivity();
+			case IDomainPackage.MEDICATION:
+				return (EObject) createMedication();
+			case IDomainPackage.MEDICATION_TYPE:
+				return (EObject) createMedicationType();
+			case IDomainPackage.MEDICATION_ORDER_INFORMATION:
+				return (EObject) createMedicationOrderInformation();
+			case IDomainPackage.CONDITION:
+				return (EObject) createCondition();
+			case IDomainPackage.PROBLEM_ENTRY:
+				return (EObject) createProblemEntry();
+			case IDomainPackage.PATIENT_SUMMARY:
+				return (EObject) createPatientSummary();
+			case IDomainPackage.ADVANCE_DIRECTIVES_SECTION:
+				return (EObject) createAdvanceDirectivesSection();
+			case IDomainPackage.ALLERGIES_REACTIONS_SECTION:
+				return (EObject) createAllergiesReactionsSection();
+			case IDomainPackage.COMMENT:
+				return (EObject) createComment();
+			case IDomainPackage.PROBLEM_LIST_SECTION:
+				return (EObject) createProblemListSection();
+			case IDomainPackage.ENCOUNTERS_SECTION:
+				return (EObject) createEncountersSection();
+			case IDomainPackage.ENCOUNTER:
+				return (EObject) createEncounter();
+			case IDomainPackage.IMMUNIZATIONS_SECTION:
+				return (EObject) createImmunizationsSection();
+			case IDomainPackage.IMMUNIZATION:
+				return (EObject) createImmunization();
+			case IDomainPackage.PAYERS_SECTION:
+				return (EObject) createPayersSection();
+			case IDomainPackage.MEDICATIONS_SECTION:
+				return (EObject) createMedicationsSection();
+			case IDomainPackage.PLAN_OF_CARE_SECTION:
+				return (EObject) createPlanOfCareSection();
+			case IDomainPackage.SURGERIES_SECTION:
+				return (EObject) createSurgeriesSection();
+			case IDomainPackage.PROCEDURE:
+				return (EObject) createProcedure();
+			case IDomainPackage.SUPPORT:
+				return (EObject) createSupport();
+			case IDomainPackage.VITAL_SIGNS_SECTION:
+				return (EObject) createVitalSignsSection();
+			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION:
+				return (EObject) createDiagnosticResultsSection();
+			case IDomainPackage.RESULT:
+				return (EObject) createResult();
+			case IDomainPackage.VITAL_SIGN:
+				return (EObject) createVitalSign();
+			case IDomainPackage.HISTORY_OF_PAST_ILLNESS_SECTION:
+				return (EObject) createHistoryOfPastIllnessSection();
+			case IDomainPackage.CHIEF_COMPLAINT_SECTION:
+				return (EObject) createChiefComplaintSection();
+			case IDomainPackage.REASON_FOR_REFERRAL_SECTION:
+				return (EObject) createReasonForReferralSection();
+			case IDomainPackage.HISTORY_OF_PRESENT_ILLNESS:
+				return (EObject) createHistoryOfPresentIllness();
+			case IDomainPackage.FUNCTIONAL_STATUS_SECTION:
+				return (EObject) createFunctionalStatusSection();
+			case IDomainPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
+				return (EObject) createHospitalAdmissionDiagnosisSection();
+			case IDomainPackage.DISCHARGE_DIAGNOSIS_SECTION:
+				return (EObject) createDischargeDiagnosisSection();
+			case IDomainPackage.ADMISSION_MEDICATION_HISTORY_SECTION:
+				return (EObject) createAdmissionMedicationHistorySection();
+			case IDomainPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
+				return (EObject) createHospitalDischargeMedicationsSection();
+			case IDomainPackage.MEDICATIONS_ADMINISTERED_SECTION:
+				return (EObject) createMedicationsAdministeredSection();
+			case IDomainPackage.PHYSICAL_EXAM_SECTION:
+				return (EObject) createPhysicalExamSection();
+			case IDomainPackage.REVIEW_OF_SYSTEMS_SECTION:
+				return (EObject) createReviewOfSystemsSection();
+			case IDomainPackage.HOSPITAL_COURSE_SECTION:
+				return (EObject) createHospitalCourseSection();
+			case IDomainPackage.ASSESSMENT_AND_PLAN_SECTION:
+				return (EObject) createAssessmentAndPlanSection();
+			case IDomainPackage.FAMILY_HISTORY_SECTION:
+				return (EObject) createFamilyHistorySection();
+			case IDomainPackage.SOCIAL_HISTORY_SECTION:
+				return (EObject) createSocialHistorySection();
+			case IDomainPackage.MEDICAL_EQUIPMENT_SECTION:
+				return (EObject) createMedicalEquipmentSection();
+			case IDomainPackage.LANGUAGE_SPOKEN:
+				return (EObject) createLanguageSpoken();
+			case IDomainPackage.INSURANCE_PROVIDER:
+				return (EObject) createInsuranceProvider();
+			case IDomainPackage.HEALTHCARE_PROVIDER:
+				return (EObject) createHealthcareProvider();
+			case IDomainPackage.MEDICATION_NORMAL_DOSE:
+				return (EObject) createMedicationNormalDose();
+			case IDomainPackage.MEDICATION_SPLIT_DOSE:
+				return (EObject) createMedicationSplitDose();
+			case IDomainPackage.MEDICATION_TAPERED_DOSE:
+				return (EObject) createMedicationTaperedDose();
+			case IDomainPackage.MEDICATION_CONDITIONAL_DOSE:
+				return (EObject) createMedicationConditionalDose();
+			case IDomainPackage.MEDICATION_COMBINATION_MEDICATION:
+				return (EObject) createMedicationCombinationMedication();
+			case IDomainPackage.SUPPORT_GUARDIAN:
+				return (EObject) createSupportGuardian();
+			case IDomainPackage.SUPPORT_PARTICIPANT:
+				return (EObject) createSupportParticipant();
+			case IDomainPackage.UNSTRUCTURED_DOCUMENT:
+				return (EObject) createUnstructuredDocument();
+			case IDomainPackage.MEDICATION_INFORMATION:
+				return (EObject) createMedicationInformation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -717,7 +774,7 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * @generated
 	 */
 	public IDomainPackage getDomainPackage() {
-		return (IDomainPackage)getEPackage();
+		return (IDomainPackage) getEPackage();
 	}
 
 	/**
@@ -731,4 +788,4 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 		return IDomainPackage.eINSTANCE;
 	}
 
-} //DomainFactoryImpl
+} // DomainFactoryImpl

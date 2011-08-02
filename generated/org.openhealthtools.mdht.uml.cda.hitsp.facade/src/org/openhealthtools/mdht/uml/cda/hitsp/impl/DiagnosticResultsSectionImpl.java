@@ -68,7 +68,8 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	 */
 	public boolean validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionDiagnosticProcedure(this, diagnostics, context);
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionDiagnosticProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -105,7 +106,7 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	 */
 	@Override
 	public DiagnosticResultsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // DiagnosticResultsSectionImpl
