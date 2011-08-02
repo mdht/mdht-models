@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import java.util.Collection;
@@ -74,8 +78,8 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -128,11 +132,12 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 	public ST getTitle() {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAdvanceDirectivesSection(), IDomainPackage.eINSTANCE.getAdvanceDirectivesSection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAdvanceDirectivesSection(),
+				IDomainPackage.eINSTANCE.getAdvanceDirectivesSection().getEAllOperations().get(0));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -193,11 +198,12 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 	public EList<AdvanceDirectiveObservation> getAdvanceDirectiveObservations() {
 		if (GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAdvanceDirectivesSection(), IDomainPackage.eINSTANCE.getAdvanceDirectivesSection().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAdvanceDirectivesSection(),
+				IDomainPackage.eINSTANCE.getAdvanceDirectivesSection().getEAllOperations().get(3));
 			try {
 				GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -224,7 +230,7 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 			// no init() method
 		}
 		AdvanceDirectiveObservation value = (AdvanceDirectiveObservation) eObject;
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -248,7 +254,9 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.ADVANCE_DIRECTIVES_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -263,7 +271,7 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.ADVANCE_DIRECTIVES_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -278,7 +286,7 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.ADVANCE_DIRECTIVES_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -313,7 +321,7 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 	 * @generated
 	 */
 	public IAdvanceDirectivesSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //AdvanceDirectivesSectionImpl
+} // AdvanceDirectivesSectionImpl

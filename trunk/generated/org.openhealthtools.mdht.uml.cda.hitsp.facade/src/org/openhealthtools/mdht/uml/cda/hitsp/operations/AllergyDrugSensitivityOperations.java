@@ -99,26 +99,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityAdvereEventDate(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityAdvereEventDate(AllergyDrugSensitivity allergyDrugSensitivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_DATE,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAdvereEventDate"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_DATE,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAdvereEventDate"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -156,26 +155,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityAdvereEventType(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityAdvereEventType(AllergyDrugSensitivity allergyDrugSensitivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAdvereEventType"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAdvereEventType"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -213,26 +211,26 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityAdvereEventTypeVocab(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityAdvereEventTypeVocab(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAdvereEventTypeVocab"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAdvereEventTypeVocab"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -247,8 +245,8 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAllergyProduct(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Allergy Product</em>}' invariant operation.
@@ -272,26 +270,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityAllergyProduct(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityAllergyProduct(AllergyDrugSensitivity allergyDrugSensitivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAllergyProduct"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAllergyProduct"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -306,8 +303,8 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = 'CSM'))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = 'CSM'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAllergyProductTypeCode(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Allergy Product Type Code</em>}' invariant operation.
@@ -331,26 +328,26 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityAllergyProductTypeCode(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityAllergyProductTypeCode(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAllergyProductTypeCode"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_TYPE_CODE,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAllergyProductTypeCode"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -365,8 +362,8 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductDetailParticipantRole(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Detail Participant Role</em>}' invariant operation.
@@ -390,26 +387,26 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityProductDetailParticipantRole(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityProductDetailParticipantRole(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductDetailParticipantRole"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductDetailParticipantRole"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -424,9 +421,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode='MANU'))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode='MANU'))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductDetailParticipantRoleClassCode(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Detail Participant Role Class Code</em>}' invariant operation.
@@ -451,26 +448,27 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityProductDetailParticipantRoleClassCode(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityProductDetailParticipantRoleClassCode(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductDetailParticipantRoleClassCode"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PARTICIPANT_ROLE_CLASS_CODE,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductDetailParticipantRoleClassCode"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -485,9 +483,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductDetailPlayingEntity(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Detail Playing Entity</em>}' invariant operation.
@@ -512,26 +510,26 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityProductDetailPlayingEntity(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityProductDetailPlayingEntity(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductDetailPlayingEntity"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductDetailPlayingEntity"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -546,9 +544,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' )))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' )))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductDetailPlayingEntityClassCode(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Detail Playing Entity Class Code</em>}' invariant operation.
@@ -573,26 +571,27 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityProductDetailPlayingEntityClassCode(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityProductDetailPlayingEntityClassCode(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductDetailPlayingEntityClassCode"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_PLAYING_ENTITY_CLASS_CODE,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductDetailPlayingEntityClassCode"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -607,9 +606,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.name->size() = 1)))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.name->size() = 1)))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductDetailName(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Detail Name</em>}' invariant operation.
@@ -634,26 +633,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityProductDetailName(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityProductDetailName(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductDetailName"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_DETAIL_NAME,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductDetailName"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -668,9 +666,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies( par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1)))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies( par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1)))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityProductCode(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Product Code</em>}' invariant operation.
@@ -695,26 +693,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityProductCode(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityProductCode(AllergyDrugSensitivity allergyDrugSensitivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductCode"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_PRODUCT_CODE,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityProductCode"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -729,9 +726,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAllergyProductFoodVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Allergy Product Food Vocab</em>}' invariant operation.
@@ -756,26 +753,26 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityAllergyProductFoodVocab(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityAllergyProductFoodVocab(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAllergyProductFoodVocab"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_FOOD_VOCAB,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAllergyProductFoodVocab"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -790,9 +787,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAllergyProductMedClassVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Allergy Product Med Class Vocab</em>}' invariant operation.
@@ -817,26 +814,26 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityAllergyProductMedClassVocab(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityAllergyProductMedClassVocab(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAllergyProductMedClassVocab"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_MED_CLASS_VOCAB,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAllergyProductMedClassVocab"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -851,9 +848,9 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "+
-"obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "+
-"prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | (obs.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.18')) and "
+			+ "obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = 'CSM' and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and "
+			+ "prole.classCode='MANU' and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = 'MMAT' and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAllergyProductSpecificMedVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Allergy Product Specific Med Vocab</em>}' invariant operation.
@@ -878,26 +875,27 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityAllergyProductSpecificMedVocab(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityAllergyProductSpecificMedVocab(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAllergyProductSpecificMedVocab"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_ALLERGY_PRODUCT_SPECIFIC_MED_VOCAB,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityAllergyProductSpecificMedVocab"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -935,26 +933,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityReactionText(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityReactionText(AllergyDrugSensitivity allergyDrugSensitivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_REACTION_TEXT,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityReactionText"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_REACTION_TEXT,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityReactionText"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -992,26 +989,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityReactionCode(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityReactionCode(AllergyDrugSensitivity allergyDrugSensitivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_REACTION_CODE,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityReactionCode"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_REACTION_CODE,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityReactionCode"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -1049,26 +1045,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivityReactionCodeVocab(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivityReactionCodeVocab(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityReactionCodeVocab"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityReactionCodeVocab"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -1106,26 +1101,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivitySeverityText(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivitySeverityText(AllergyDrugSensitivity allergyDrugSensitivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_SEVERITY_TEXT,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivitySeverityText"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_SEVERITY_TEXT,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivitySeverityText"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -1163,26 +1157,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivitySeverityCode(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivitySeverityCode(AllergyDrugSensitivity allergyDrugSensitivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivitySeverityCode"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivitySeverityCode"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -1220,26 +1213,25 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateAllergyDrugSensitivitySeverityCodeVocab(AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAllergyDrugSensitivitySeverityCodeVocab(
+			AllergyDrugSensitivity allergyDrugSensitivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivitySeverityCodeVocab"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivitySeverityCodeVocab"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}
@@ -1284,20 +1276,18 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 			helper.setContext(HITSPPackage.Literals.ALLERGY_DRUG_SENSITIVITY);
 			try {
 				VALIDATE_ALLERGY_DRUG_SENSITIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_DRUG_SENSITIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergyDrugSensitivity)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_DRUG_SENSITIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyDrugSensitivity)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityTemplateId"),
-						 new Object [] { allergyDrugSensitivity }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGY_DRUG_SENSITIVITY__ALLERGY_DRUG_SENSITIVITY_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("AllergyDrugSensitivityTemplateId"),
+					new Object[] { allergyDrugSensitivity }));
 			}
 			return false;
 		}

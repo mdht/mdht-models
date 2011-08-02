@@ -77,20 +77,18 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 			helper.setContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
 			try {
 				VALIDATE_DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticResultsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diagnosticResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionTemplateId"),
-						 new Object [] { diagnosticResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionTemplateId"),
+					new Object[] { diagnosticResultsSection }));
 			}
 			return false;
 		}
@@ -115,20 +113,19 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 			helper.setContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
 			try {
 				VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticResultsSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diagnosticResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE,
-						 HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionDiagnosticProcedure"),
-						 new Object [] { diagnosticResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE,
+					HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionDiagnosticProcedure"),
+					new Object[] { diagnosticResultsSection }));
 			}
 			return false;
 		}
@@ -153,20 +150,18 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 			helper.setContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
 			try {
 				VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticResultsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			diagnosticResultsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT,
-						 HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionResult"),
-						 new Object [] { diagnosticResultsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT,
+					HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionResult"),
+					new Object[] { diagnosticResultsSection }));
 			}
 			return false;
 		}
@@ -185,11 +180,12 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	public static EList<Procedure> getDiagnosticProcedures(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_DIAGNOSTIC_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION, HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(
+				HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION,
+				HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(64));
 			try {
 				GET_DIAGNOSTIC_PROCEDURES__EOCL_QRY = helper.createQuery(GET_DIAGNOSTIC_PROCEDURES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -311,11 +307,12 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	public static EList<Result> getResults(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_RESULTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION, HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(65));
+			helper.setOperationContext(
+				HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION,
+				HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(65));
 			try {
 				GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

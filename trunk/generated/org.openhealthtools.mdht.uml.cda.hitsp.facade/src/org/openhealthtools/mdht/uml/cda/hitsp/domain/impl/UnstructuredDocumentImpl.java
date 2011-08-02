@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import java.util.Collection;
@@ -88,8 +92,8 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 */
 	public ClinicalDocument getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (ClinicalDocument)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (ClinicalDocument) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -142,11 +146,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public EList<RecordTarget> getRecordTargets() {
 		if (GET_RECORD_TARGETS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(21));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(21));
 			try {
 				GET_RECORD_TARGETS__EOCL_QRY = helper.createQuery(GET_RECORD_TARGETS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -210,11 +215,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public Custodian getCustodian() {
 		if (GET_CUSTODIAN__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(24));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(24));
 			try {
 				GET_CUSTODIAN__EOCL_QRY = helper.createQuery(GET_CUSTODIAN__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -275,11 +281,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public Component2 getComponent() {
 		if (GET_COMPONENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(27));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(27));
 			try {
 				GET_COMPONENT__EOCL_QRY = helper.createQuery(GET_COMPONENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -340,11 +347,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public LegalAuthenticator getLegalAuthenticator() {
 		if (GET_LEGAL_AUTHENTICATOR__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(33));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(33));
 			try {
 				GET_LEGAL_AUTHENTICATOR__EOCL_QRY = helper.createQuery(GET_LEGAL_AUTHENTICATOR__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -405,11 +413,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public InfrastructureRootTypeId getTypeId() {
 		if (GET_TYPE_ID__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(0));
 			try {
 				GET_TYPE_ID__EOCL_QRY = helper.createQuery(GET_TYPE_ID__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -470,11 +479,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public II getId() {
 		if (GET_ID__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(3));
 			try {
 				GET_ID__EOCL_QRY = helper.createQuery(GET_ID__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -535,11 +545,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public CE getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(6));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -600,11 +611,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public ST getTitle() {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(9));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -665,11 +677,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public TS getEffectiveTime() {
 		if (GET_EFFECTIVE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(12));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(12));
 			try {
 				GET_EFFECTIVE_TIME__EOCL_QRY = helper.createQuery(GET_EFFECTIVE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -730,11 +743,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public CE getConfidentialityCode() {
 		if (GET_CONFIDENTIALITY_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(15));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(15));
 			try {
 				GET_CONFIDENTIALITY_CODE__EOCL_QRY = helper.createQuery(GET_CONFIDENTIALITY_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -795,11 +809,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public CS getLanguageCode() {
 		if (GET_LANGUAGE_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(18));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(18));
 			try {
 				GET_LANGUAGE_CODE__EOCL_QRY = helper.createQuery(GET_LANGUAGE_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -860,11 +875,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public EList<InformationRecipient> getInformationRecipients() {
 		if (GET_INFORMATION_RECIPIENTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(30));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(30));
 			try {
 				GET_INFORMATION_RECIPIENTS__EOCL_QRY = helper.createQuery(GET_INFORMATION_RECIPIENTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -928,11 +944,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public EList<Authenticator> getAuthenticators() {
 		if (GET_AUTHENTICATORS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(36));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(36));
 			try {
 				GET_AUTHENTICATORS__EOCL_QRY = helper.createQuery(GET_AUTHENTICATORS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -996,11 +1013,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public EList<ScanOriginalAuthor> getScanOriginalAuthors() {
 		if (GET_SCAN_ORIGINAL_AUTHORS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(39));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(39));
 			try {
 				GET_SCAN_ORIGINAL_AUTHORS__EOCL_QRY = helper.createQuery(GET_SCAN_ORIGINAL_AUTHORS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1060,11 +1078,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public EList<ScanningDevice> getScanningDevices() {
 		if (GET_SCANNING_DEVICES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(42));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(42));
 			try {
 				GET_SCANNING_DEVICES__EOCL_QRY = helper.createQuery(GET_SCANNING_DEVICES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1124,11 +1143,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public ScanDataEnterer getScanDataEnterer() {
 		if (GET_SCAN_DATA_ENTERER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(45));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(45));
 			try {
 				GET_SCAN_DATA_ENTERER__EOCL_QRY = helper.createQuery(GET_SCAN_DATA_ENTERER__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1184,11 +1204,12 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public DocumentationOf getDocumentationOf() {
 		if (GET_DOCUMENTATION_OF__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getUnstructuredDocument(), IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(48));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getUnstructuredDocument(),
+				IDomainPackage.eINSTANCE.getUnstructuredDocument().getEAllOperations().get(48));
 			try {
 				GET_DOCUMENTATION_OF__EOCL_QRY = helper.createQuery(GET_DOCUMENTATION_OF__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1230,7 +1251,9 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.UNSTRUCTURED_DOCUMENT__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -1245,7 +1268,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.UNSTRUCTURED_DOCUMENT__CDA_TYPE:
-				setCDAType((ClinicalDocument)newValue);
+				setCDAType((ClinicalDocument) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -1260,7 +1283,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.UNSTRUCTURED_DOCUMENT__CDA_TYPE:
-				setCDAType((ClinicalDocument)null);
+				setCDAType((ClinicalDocument) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -1295,7 +1318,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * @generated
 	 */
 	public IUnstructuredDocument init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //UnstructuredDocumentImpl
+} // UnstructuredDocumentImpl

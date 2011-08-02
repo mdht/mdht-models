@@ -112,7 +112,8 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryProblemStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryProblemStatusObservation(this, diagnostics, context);
 	}
 
@@ -121,7 +122,8 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionEntryCauseOfDeathObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConditionEntryCauseOfDeathObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateConditionEntryCauseOfDeathObservation(this, diagnostics, context);
 	}
 
@@ -169,7 +171,7 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 */
 	@Override
 	public ConditionEntry init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ConditionEntryImpl

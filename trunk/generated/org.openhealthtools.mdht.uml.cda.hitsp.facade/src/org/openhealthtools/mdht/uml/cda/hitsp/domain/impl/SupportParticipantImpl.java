@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -69,8 +73,8 @@ public class SupportParticipantImpl extends SupportImpl implements ISupportParti
 	 */
 	public Participant1 getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Participant1)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Participant1) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -123,11 +127,12 @@ public class SupportParticipantImpl extends SupportImpl implements ISupportParti
 	public IVL_TS getTime() {
 		if (GET_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSupportParticipant(), IDomainPackage.eINSTANCE.getSupportParticipant().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSupportParticipant(),
+				IDomainPackage.eINSTANCE.getSupportParticipant().getEAllOperations().get(0));
 			try {
 				GET_TIME__EOCL_QRY = helper.createQuery(GET_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -188,11 +193,12 @@ public class SupportParticipantImpl extends SupportImpl implements ISupportParti
 	public AssociatedEntity getAssociatedEntity() {
 		if (GET_ASSOCIATED_ENTITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSupportParticipant(), IDomainPackage.eINSTANCE.getSupportParticipant().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSupportParticipant(),
+				IDomainPackage.eINSTANCE.getSupportParticipant().getEAllOperations().get(3));
 			try {
 				GET_ASSOCIATED_ENTITY__EOCL_QRY = helper.createQuery(GET_ASSOCIATED_ENTITY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -234,7 +240,9 @@ public class SupportParticipantImpl extends SupportImpl implements ISupportParti
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.SUPPORT_PARTICIPANT__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -249,7 +257,7 @@ public class SupportParticipantImpl extends SupportImpl implements ISupportParti
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.SUPPORT_PARTICIPANT__CDA_TYPE:
-				setCDAType((Participant1)newValue);
+				setCDAType((Participant1) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -264,7 +272,7 @@ public class SupportParticipantImpl extends SupportImpl implements ISupportParti
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.SUPPORT_PARTICIPANT__CDA_TYPE:
-				setCDAType((Participant1)null);
+				setCDAType((Participant1) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -298,8 +306,9 @@ public class SupportParticipantImpl extends SupportImpl implements ISupportParti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ISupportParticipant init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //SupportParticipantImpl
+} // SupportParticipantImpl

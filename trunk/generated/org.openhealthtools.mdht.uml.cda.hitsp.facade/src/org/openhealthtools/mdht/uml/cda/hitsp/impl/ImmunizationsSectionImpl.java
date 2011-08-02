@@ -86,7 +86,7 @@ public class ImmunizationsSectionImpl extends org.openhealthtools.mdht.uml.cda.i
 	 */
 	@Override
 	public ImmunizationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ImmunizationsSectionImpl

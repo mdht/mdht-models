@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -69,8 +73,8 @@ public class HealthcareProviderImpl extends EObjectImpl implements IHealthcarePr
 	 */
 	public Performer1 getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Performer1)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Performer1) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -123,11 +127,12 @@ public class HealthcareProviderImpl extends EObjectImpl implements IHealthcarePr
 	public AssignedEntity getAssignedEntity() {
 		if (GET_ASSIGNED_ENTITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getHealthcareProvider(), IDomainPackage.eINSTANCE.getHealthcareProvider().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getHealthcareProvider(),
+				IDomainPackage.eINSTANCE.getHealthcareProvider().getEAllOperations().get(0));
 			try {
 				GET_ASSIGNED_ENTITY__EOCL_QRY = helper.createQuery(GET_ASSIGNED_ENTITY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -169,7 +174,9 @@ public class HealthcareProviderImpl extends EObjectImpl implements IHealthcarePr
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.HEALTHCARE_PROVIDER__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -184,7 +191,7 @@ public class HealthcareProviderImpl extends EObjectImpl implements IHealthcarePr
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.HEALTHCARE_PROVIDER__CDA_TYPE:
-				setCDAType((Performer1)newValue);
+				setCDAType((Performer1) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -199,7 +206,7 @@ public class HealthcareProviderImpl extends EObjectImpl implements IHealthcarePr
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.HEALTHCARE_PROVIDER__CDA_TYPE:
-				setCDAType((Performer1)null);
+				setCDAType((Performer1) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -234,7 +241,7 @@ public class HealthcareProviderImpl extends EObjectImpl implements IHealthcarePr
 	 * @generated
 	 */
 	public IHealthcareProvider init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //HealthcareProviderImpl
+} // HealthcareProviderImpl

@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import java.util.Collection;
@@ -80,8 +84,8 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	 */
 	public Procedure getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Procedure)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Procedure) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -134,11 +138,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(0));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -199,11 +204,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public CS getStatusCode() {
 		if (GET_STATUS_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(3));
 			try {
 				GET_STATUS_CODE__EOCL_QRY = helper.createQuery(GET_STATUS_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -264,11 +270,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public ED getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(6));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -329,11 +336,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public EList<CD> getApproachSiteCodes() {
 		if (GET_APPROACH_SITE_CODES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(9));
 			try {
 				GET_APPROACH_SITE_CODES__EOCL_QRY = helper.createQuery(GET_APPROACH_SITE_CODES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -397,11 +405,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public CD getTargetSiteCode() {
 		if (GET_TARGET_SITE_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(12));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(12));
 			try {
 				GET_TARGET_SITE_CODE__EOCL_QRY = helper.createQuery(GET_TARGET_SITE_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -462,11 +471,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public EList<EncounterLocation> getEncounterLocations() {
 		if (GET_ENCOUNTER_LOCATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(15));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(15));
 			try {
 				GET_ENCOUNTER_LOCATIONS__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_LOCATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -526,11 +536,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public EList<PatientInstruction> getPatientInstructions() {
 		if (GET_PATIENT_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(18));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(18));
 			try {
 				GET_PATIENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_PATIENT_INSTRUCTIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -590,11 +601,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public AgeObservation getAgeObservation() {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(21));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(21));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -650,11 +662,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public EList<MedicationActivity> getMedicationActivities() {
 		if (GET_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(24));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(24));
 			try {
 				GET_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -714,11 +727,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public InternalReference getInternalReference() {
 		if (GET_INTERNAL_REFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(27));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(27));
 			try {
 				GET_INTERNAL_REFERENCE__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -743,7 +757,7 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 			// no init() method
 		}
 		InternalReference value = (InternalReference) eObject;
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -753,7 +767,7 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	 * @generated
 	 */
 	public IProcedure setInternalReference(InternalReference value) {
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)value);
+		this.getCDAType().addAct(value);
 		return this;
 	}
 
@@ -785,11 +799,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public EList<InternalReference> getInternalReferenceReasons() {
 		if (GET_INTERNAL_REFERENCE_REASONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(30));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(30));
 			try {
 				GET_INTERNAL_REFERENCE_REASONS__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCE_REASONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -816,7 +831,7 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 			// no init() method
 		}
 		InternalReference value = (InternalReference) eObject;
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -840,7 +855,9 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.PROCEDURE__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -855,7 +872,7 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.PROCEDURE__CDA_TYPE:
-				setCDAType((Procedure)newValue);
+				setCDAType((Procedure) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -870,7 +887,7 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.PROCEDURE__CDA_TYPE:
-				setCDAType((Procedure)null);
+				setCDAType((Procedure) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -905,7 +922,7 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	 * @generated
 	 */
 	public IProcedure init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ProcedureImpl
+} // ProcedureImpl

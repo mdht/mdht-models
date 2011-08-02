@@ -75,20 +75,19 @@ public class AllergiesReactionsSectionOperations extends
 			helper.setContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION);
 			try {
 				VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesReactionsSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergiesReactionsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("HITSPAllergiesReactionsSectionTemplateId"),
-						 new Object [] { allergiesReactionsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("HITSPAllergiesReactionsSectionTemplateId"),
+					new Object[] { allergiesReactionsSection }));
 			}
 			return false;
 		}
@@ -114,20 +113,20 @@ public class AllergiesReactionsSectionOperations extends
 			helper.setContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION);
 			try {
 				VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesReactionsSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergiesReactionsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY,
-						 HITSPPlugin.INSTANCE.getString("HITSPAllergiesReactionsSectionAllergyDrugSensitivity"),
-						 new Object [] { allergiesReactionsSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY,
+					HITSPPlugin.INSTANCE.getString("HITSPAllergiesReactionsSectionAllergyDrugSensitivity"),
+					new Object[] { allergiesReactionsSection }));
 			}
 			return false;
 		}
@@ -207,11 +206,12 @@ public class AllergiesReactionsSectionOperations extends
 			AllergiesReactionsSection allergiesReactionsSection) {
 		if (GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION, HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION.getEAllOperations().get(66));
+			helper.setOperationContext(
+				HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION,
+				HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION.getEAllOperations().get(66));
 			try {
 				GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_QRY = helper.createQuery(GET_ALLERGY_DRUG_SENSITIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

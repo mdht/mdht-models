@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -76,8 +80,8 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -130,11 +134,12 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public ST getTitle() {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareSection(), IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareSection(),
+				IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(0));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -195,11 +200,12 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public StrucDocText getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareSection(), IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareSection(),
+				IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(3));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -260,11 +266,12 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public PlanOfCareActivityAct getPlanOfCareActivityAct() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareSection(), IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareSection(),
+				IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(6));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -289,7 +296,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			// no init() method
 		}
 		PlanOfCareActivityAct value = (PlanOfCareActivityAct) eObject;
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -299,7 +306,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 */
 	public IPlanOfCareSection setPlanOfCareActivityAct(PlanOfCareActivityAct value) {
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)value);
+		this.getCDAType().addAct(value);
 		return this;
 	}
 
@@ -331,11 +338,12 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public PlanOfCareActivityEncounter getPlanOfCareActivityEncounter() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareSection(), IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareSection(),
+				IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(9));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -360,7 +368,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			// no init() method
 		}
 		PlanOfCareActivityEncounter value = (PlanOfCareActivityEncounter) eObject;
-		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter)eObject);
+		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter) eObject);
 		return value;
 	}
 
@@ -370,7 +378,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 */
 	public IPlanOfCareSection setPlanOfCareActivityEncounter(PlanOfCareActivityEncounter value) {
-		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter)value);
+		this.getCDAType().addEncounter(value);
 		return this;
 	}
 
@@ -402,11 +410,12 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public PlanOfCareActivityObservation getPlanOfCareActivityObservation() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareSection(), IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(12));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareSection(),
+				IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(12));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -431,7 +440,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			// no init() method
 		}
 		PlanOfCareActivityObservation value = (PlanOfCareActivityObservation) eObject;
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -441,7 +450,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 */
 	public IPlanOfCareSection setPlanOfCareActivityObservation(PlanOfCareActivityObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation(value);
 		return this;
 	}
 
@@ -473,11 +482,12 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public PlanOfCareActivityProcedure getPlanOfCareActivityProcedure() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareSection(), IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(15));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareSection(),
+				IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(15));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -502,7 +512,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			// no init() method
 		}
 		PlanOfCareActivityProcedure value = (PlanOfCareActivityProcedure) eObject;
-		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure)eObject);
+		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
 		return value;
 	}
 
@@ -512,7 +522,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 */
 	public IPlanOfCareSection setPlanOfCareActivityProcedure(PlanOfCareActivityProcedure value) {
-		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure)value);
+		this.getCDAType().addProcedure(value);
 		return this;
 	}
 
@@ -544,11 +554,12 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public PlanOfCareActivitySubstanceAdministration getPlanOfCareActivitySubstanceAdministration() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareSection(), IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(18));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareSection(),
+				IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(18));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -573,7 +584,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			// no init() method
 		}
 		PlanOfCareActivitySubstanceAdministration value = (PlanOfCareActivitySubstanceAdministration) eObject;
-		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);
+		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) eObject);
 		return value;
 	}
 
@@ -582,8 +593,9 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPlanOfCareSection setPlanOfCareActivitySubstanceAdministration(PlanOfCareActivitySubstanceAdministration value) {
-		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)value);
+	public IPlanOfCareSection setPlanOfCareActivitySubstanceAdministration(
+			PlanOfCareActivitySubstanceAdministration value) {
+		this.getCDAType().addSubstanceAdministration(value);
 		return this;
 	}
 
@@ -615,11 +627,12 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public PlanOfCareActivitySupply getPlanOfCareActivitySupply() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareSection(), IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(21));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareSection(),
+				IDomainPackage.eINSTANCE.getPlanOfCareSection().getEAllOperations().get(21));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -644,7 +657,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			// no init() method
 		}
 		PlanOfCareActivitySupply value = (PlanOfCareActivitySupply) eObject;
-		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply)eObject);
+		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply) eObject);
 		return value;
 	}
 
@@ -654,7 +667,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 */
 	public IPlanOfCareSection setPlanOfCareActivitySupply(PlanOfCareActivitySupply value) {
-		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply)value);
+		this.getCDAType().addSupply(value);
 		return this;
 	}
 
@@ -667,7 +680,9 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -682,7 +697,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -697,7 +712,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -732,7 +747,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 */
 	public IPlanOfCareSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //PlanOfCareSectionImpl
+} // PlanOfCareSectionImpl

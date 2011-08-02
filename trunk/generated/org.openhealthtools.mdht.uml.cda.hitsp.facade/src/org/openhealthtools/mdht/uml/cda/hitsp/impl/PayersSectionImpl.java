@@ -65,7 +65,7 @@ public class PayersSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl
 	 */
 	@Override
 	public PayersSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PayersSectionImpl

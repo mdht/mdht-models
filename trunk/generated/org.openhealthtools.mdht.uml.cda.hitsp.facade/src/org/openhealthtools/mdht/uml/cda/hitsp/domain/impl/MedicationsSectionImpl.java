@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011 David A Carlson
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     David A Carlson (XMLmodeling.com) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import java.util.Collection;
@@ -76,8 +80,8 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -130,11 +134,12 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 	public ST getTitle() {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationsSection(), IDomainPackage.eINSTANCE.getMedicationsSection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationsSection(),
+				IDomainPackage.eINSTANCE.getMedicationsSection().getEAllOperations().get(0));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -195,11 +200,12 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 	public StrucDocText getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationsSection(), IDomainPackage.eINSTANCE.getMedicationsSection().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationsSection(),
+				IDomainPackage.eINSTANCE.getMedicationsSection().getEAllOperations().get(3));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -260,11 +266,12 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 	public EList<SupplyActivity> getSupplyActivities() {
 		if (GET_SUPPLY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationsSection(), IDomainPackage.eINSTANCE.getMedicationsSection().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationsSection(),
+				IDomainPackage.eINSTANCE.getMedicationsSection().getEAllOperations().get(6));
 			try {
 				GET_SUPPLY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_SUPPLY_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -291,7 +298,7 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 			// no init() method
 		}
 		SupplyActivity value = (SupplyActivity) eObject;
-		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply)eObject);
+		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply) eObject);
 		return value;
 	}
 
@@ -334,11 +341,12 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 	public EList<IMedication> getMedications() {
 		if (GET_MEDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationsSection(), IDomainPackage.eINSTANCE.getMedicationsSection().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationsSection(),
+				IDomainPackage.eINSTANCE.getMedicationsSection().getEAllOperations().get(9));
 			try {
 				GET_MEDICATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -367,9 +375,9 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Medication");
-		IMedication value = (IMedication)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);
-		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);
+		IMedication value = (IMedication) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) eObject);
+		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) eObject);
 		return value;
 	}
 
@@ -393,7 +401,9 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.MEDICATIONS_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -408,7 +418,7 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.MEDICATIONS_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -423,7 +433,7 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.MEDICATIONS_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -458,7 +468,7 @@ public class MedicationsSectionImpl extends EObjectImpl implements IMedicationsS
 	 * @generated
 	 */
 	public IMedicationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //MedicationsSectionImpl
+} // MedicationsSectionImpl
