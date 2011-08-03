@@ -516,6 +516,15 @@ public interface IDomainFactory extends EFactory {
 	IMedicationInformation createMedicationInformation();
 
 	/**
+	 * Returns a new object of class '<em>Unstructured Or Scanned Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unstructured Or Scanned Document</em>'.
+	 * @generated
+	 */
+	IUnstructuredOrScannedDocument createUnstructuredOrScannedDocument();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

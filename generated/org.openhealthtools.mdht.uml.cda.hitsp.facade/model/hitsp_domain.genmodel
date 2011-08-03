@@ -30,7 +30,7 @@
   </genAnnotations>
   <foreignModel>hitsp_domain_Ecore.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="Domain" basePackage="org.openhealthtools.mdht.uml.cda.hitsp"
-      disposableProviderFactory="true" loadInitialization="true" literalsInterface="false"
+      resource="XML" disposableProviderFactory="true" loadInitialization="true" literalsInterface="false"
       ecorePackage="domain.ecore#/">
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//AllergyDrugSensitivity">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
@@ -1468,6 +1468,59 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//MedicationInformation/addId"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//MedicationInformation/addId.1">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//MedicationInformation/addId.1/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//UnstructuredOrScannedDocument">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setTypeId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setTypeId/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setId/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setCode/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setTitle/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setEffectiveTime/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setConfidentialityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setConfidentialityCode/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setLanguageCode/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/addRecordTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/addRecordTarget/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setCustodian/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setComponent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setComponent/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/addInformationRecipient">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/addInformationRecipient/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setLegalAuthenticator">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setLegalAuthenticator/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/addAuthenticator">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/addAuthenticator/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/addScanOriginalAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/addScanOriginalAuthor/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/addScanningDevice">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/addScanningDevice/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setScanDataEnterer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setScanDataEnterer/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//UnstructuredOrScannedDocument/setDocumentationOf">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//UnstructuredOrScannedDocument/setDocumentationOf/value"/>
       </genOperations>
     </genClasses>
   </genPackages>

@@ -9,8 +9,6 @@
       David A Carlson - initial API and implementation
       
   $Id$
---><plugin>
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <package class="org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage" genModel="model/hitsp.genmodel" uri="http://www.openhealthtools.org/mdht/uml/cda/hitsp"/>
-   </extension>
+-->
+<plugin>
 </plugin>
