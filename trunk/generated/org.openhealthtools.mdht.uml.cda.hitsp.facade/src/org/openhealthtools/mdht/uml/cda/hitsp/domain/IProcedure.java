@@ -72,8 +72,6 @@ public interface IProcedure {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * cda::Procedure::code.
-	 * This is a coded value describing the type of the
-	 * Procedure
 	 * self.code.oclAsType(datatypes::CD)
 	 * <!-- end-model-doc -->
 	 * @generated

@@ -67,6 +67,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupportGuardian;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupportParticipant;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISurgeriesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredDocument;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredOrScannedDocument;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSign;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsSection;
 
@@ -393,6 +394,11 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseMedicationInformation(IMedicationInformation object) {
 			return createMedicationInformationAdapter();
+		}
+
+		@Override
+		public Adapter caseUnstructuredOrScannedDocument(IUnstructuredOrScannedDocument object) {
+			return createUnstructuredOrScannedDocumentAdapter();
 		}
 
 		@Override
@@ -1167,6 +1173,20 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMedicationInformationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredOrScannedDocument <em>Unstructured Or Scanned Document</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredOrScannedDocument
+	 * @generated
+	 */
+	public Adapter createUnstructuredOrScannedDocumentAdapter() {
 		return null;
 	}
 

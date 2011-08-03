@@ -1135,7 +1135,7 @@ public interface IPatientSummary {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * HITSP Patient Summary SHOULD contain at least one [1..*] supportHeaders (C32-[CT1-16]), such that Contains exactly one [1..1] Support.
+	 * HITSP Patient Summary SHOULD contain at least one [1..*] supportHeaders (C32-[CT1-16]), such that.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -1145,7 +1145,7 @@ public interface IPatientSummary {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * HITSP Patient Summary SHOULD contain at least one [1..*] supportHeaders (C32-[CT1-16]), such that Contains exactly one [1..1] Support.
+	 * HITSP Patient Summary SHOULD contain at least one [1..*] supportHeaders (C32-[CT1-16]), such that.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */

@@ -69,6 +69,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupportGuardian;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupportParticipant;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISurgeriesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredDocument;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredOrScannedDocument;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSign;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsSection;
 
@@ -223,6 +224,8 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createUnstructuredDocument();
 			case IDomainPackage.MEDICATION_INFORMATION:
 				return (EObject) createMedicationInformation();
+			case IDomainPackage.UNSTRUCTURED_OR_SCANNED_DOCUMENT:
+				return (EObject) createUnstructuredOrScannedDocument();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -766,6 +769,16 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	public IMedicationInformation createMedicationInformation() {
 		MedicationInformationImpl medicationInformation = new MedicationInformationImpl();
 		return medicationInformation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IUnstructuredOrScannedDocument createUnstructuredOrScannedDocument() {
+		UnstructuredOrScannedDocumentImpl unstructuredOrScannedDocument = new UnstructuredOrScannedDocumentImpl();
+		return unstructuredOrScannedDocument;
 	}
 
 	/**

@@ -1565,6 +1565,34 @@ public interface IDomainPackage extends EPackage {
 	int MEDICATION_INFORMATION_FEATURE_COUNT = 1;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.UnstructuredOrScannedDocumentImpl <em>Unstructured Or Scanned Document</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.UnstructuredOrScannedDocumentImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getUnstructuredOrScannedDocument()
+	 * @generated
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 54;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT__CDA_TYPE = UNSTRUCTURED_DOCUMENT__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Unstructured Or Scanned Document</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT_FEATURE_COUNT = UNSTRUCTURED_DOCUMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergyDrugSensitivity <em>Allergy Drug Sensitivity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2631,6 +2659,16 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getMedicationInformation_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredOrScannedDocument <em>Unstructured Or Scanned Document</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Unstructured Or Scanned Document</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredOrScannedDocument
+	 * @generated
+	 */
+	EClass getUnstructuredOrScannedDocument();
 
 	/**
 	 * Returns the factory that creates the instances of the model.

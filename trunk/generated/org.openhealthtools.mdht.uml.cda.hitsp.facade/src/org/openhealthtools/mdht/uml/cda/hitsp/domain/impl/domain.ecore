@@ -2814,4 +2814,368 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
         lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//ManufacturedProduct"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UnstructuredOrScannedDocument" eSuperTypes="#//UnstructuredDocument">
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="getTypeId" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//InfrastructureRootTypeId">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getTypeId"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withTypeId" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//InfrastructureRootTypeId">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withTypeId"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getId" ordered="false" lowerBound="1"
+          eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//II">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getId"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withId" ordered="false" lowerBound="1"
+          eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//II">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withId"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCode" ordered="false" lowerBound="1"
+          eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCode"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCode" ordered="false" lowerBound="1"
+          eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCode"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getTitle" ordered="false" lowerBound="1"
+          eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getTitle"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withTitle" ordered="false" lowerBound="1"
+          eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withTitle"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getEffectiveTime" ordered="false"
+          lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//TS">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getEffectiveTime"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withEffectiveTime" ordered="false"
+          lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//TS">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withEffectiveTime"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getConfidentialityCode" ordered="false"
+          lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getConfidentialityCode"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withConfidentialityCode" ordered="false"
+          lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withConfidentialityCode"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getLanguageCode" ordered="false"
+          lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getLanguageCode"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withLanguageCode" ordered="false"
+          lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withLanguageCode"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getRecordTargets" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getRecordTargets #//UnstructuredDocument/%duplicates%/getRecordTargets"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addRecordTarget" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addRecordTarget #//UnstructuredDocument/%duplicates%/addRecordTarget"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Component2">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getComponent #//UnstructuredDocument/%duplicates%/getComponent"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Component2">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withComponent #//UnstructuredDocument/%duplicates%/withComponent"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setCustodian"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getInformationRecipients" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getInformationRecipients"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addInformationRecipient" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addInformationRecipient"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getLegalAuthenticator #//UnstructuredDocument/%duplicates%/getLegalAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withLegalAuthenticator #//UnstructuredDocument/%duplicates%/withLegalAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getAuthenticators" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass urn:hl7-org:v3#//Authenticator">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getAuthenticators"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Authenticator">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getRecordTargets" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getRecordTargets #//UnstructuredDocument/%duplicates%/getRecordTargets #//UnstructuredOrScannedDocument/%duplicates%/getRecordTargets"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addRecordTarget" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addRecordTarget #//UnstructuredDocument/%duplicates%/addRecordTarget #//UnstructuredOrScannedDocument/%duplicates%/addRecordTarget"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addRecordTarget" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/addRecordTarget"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Component2">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getComponent #//UnstructuredDocument/%duplicates%/getComponent #//UnstructuredOrScannedDocument/%duplicates%/getComponent"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Component2">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withComponent #//UnstructuredDocument/%duplicates%/withComponent #//UnstructuredOrScannedDocument/%duplicates%/withComponent"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setComponent" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setComponent"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Component2"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getScanOriginalAuthors" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ScanOriginalAuthor">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getScanOriginalAuthors"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addScanOriginalAuthor" ordered="false"
+          lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ScanOriginalAuthor">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addScanOriginalAuthor"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getScanningDevices" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ScanningDevice">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getScanningDevices"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addScanningDevice" ordered="false"
+          lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ScanningDevice">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addScanningDevice"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getScanDataEnterer" ordered="false"
+          lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ScanDataEnterer">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getScanDataEnterer"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withScanDataEnterer" ordered="false"
+          lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ScanDataEnterer">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withScanDataEnterer"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getLegalAuthenticator #//UnstructuredDocument/%duplicates%/getLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/getLegalAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withLegalAuthenticator #//UnstructuredDocument/%duplicates%/withLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/withLegalAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setLegalAuthenticator"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getDocumentationOf" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//DocumentationOf">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getDocumentationOf"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withDocumentationOf" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//DocumentationOf">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withDocumentationOf"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getRecordTargets" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getRecordTargets #//UnstructuredDocument/%duplicates%/getRecordTargets #//UnstructuredOrScannedDocument/%duplicates%/getRecordTargets #//UnstructuredOrScannedDocument/%duplicates%/getRecordTargets.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addRecordTarget" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addRecordTarget #//UnstructuredDocument/%duplicates%/addRecordTarget #//UnstructuredOrScannedDocument/%duplicates%/addRecordTarget #//UnstructuredOrScannedDocument/%duplicates%/addRecordTarget.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addRecordTarget" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/addRecordTarget #//UnstructuredOrScannedDocument/%duplicates%/addRecordTarget.2"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.2"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.2"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.1"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Component2">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getComponent #//UnstructuredDocument/%duplicates%/getComponent #//UnstructuredOrScannedDocument/%duplicates%/getComponent #//UnstructuredOrScannedDocument/%duplicates%/getComponent.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Component2">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withComponent #//UnstructuredDocument/%duplicates%/withComponent #//UnstructuredOrScannedDocument/%duplicates%/withComponent #//UnstructuredOrScannedDocument/%duplicates%/withComponent.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setComponent" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setComponent #//UnstructuredOrScannedDocument/%duplicates%/setComponent"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Component2"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.2 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.3"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.2 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.3"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.2"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getInformationRecipients" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getInformationRecipients #//UnstructuredOrScannedDocument/%duplicates%/getInformationRecipients"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addInformationRecipient" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addInformationRecipient #//UnstructuredOrScannedDocument/%duplicates%/addInformationRecipient"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addInformationRecipient" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/addInformationRecipient"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getLegalAuthenticator #//UnstructuredDocument/%duplicates%/getLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/getLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/getLegalAuthenticator.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withLegalAuthenticator #//UnstructuredDocument/%duplicates%/withLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/withLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/withLegalAuthenticator.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/setLegalAuthenticator"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getAuthenticators" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass urn:hl7-org:v3#//Authenticator">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getAuthenticators #//UnstructuredOrScannedDocument/%duplicates%/getAuthenticators"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Authenticator">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/addAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addAuthenticator" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/addAuthenticator"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Authenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.2 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.3 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.4"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.2 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.3 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.4"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.2 #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.3"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+      </contents>
+      <contents xsi:type="ecore:EReference" name="cDAType" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//ClinicalDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/cDAType"/>
+      </contents>
+    </eAnnotations>
+    <eOperations name="setTypeId" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InfrastructureRootTypeId"/>
+    </eOperations>
+    <eOperations name="setId" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//II"/>
+    </eOperations>
+    <eOperations name="setCode" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    </eOperations>
+    <eOperations name="setTitle" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST"/>
+    </eOperations>
+    <eOperations name="setEffectiveTime" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//TS"/>
+    </eOperations>
+    <eOperations name="setConfidentialityCode" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    </eOperations>
+    <eOperations name="setLanguageCode" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS"/>
+    </eOperations>
+    <eOperations name="addRecordTarget" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget"/>
+    </eOperations>
+    <eOperations name="setCustodian" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+    </eOperations>
+    <eOperations name="setComponent" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Component2"/>
+    </eOperations>
+    <eOperations name="addInformationRecipient" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient"/>
+    </eOperations>
+    <eOperations name="setLegalAuthenticator" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator"/>
+    </eOperations>
+    <eOperations name="addAuthenticator" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Authenticator"/>
+    </eOperations>
+    <eOperations name="addScanOriginalAuthor" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ScanOriginalAuthor"/>
+    </eOperations>
+    <eOperations name="addScanningDevice" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ScanningDevice"/>
+    </eOperations>
+    <eOperations name="setScanDataEnterer" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ScanDataEnterer"/>
+    </eOperations>
+    <eOperations name="setDocumentationOf" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//DocumentationOf"/>
+    </eOperations>
+  </eClassifiers>
 </ecore:EPackage>

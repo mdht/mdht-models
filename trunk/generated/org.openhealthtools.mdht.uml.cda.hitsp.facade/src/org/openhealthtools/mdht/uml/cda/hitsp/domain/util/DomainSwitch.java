@@ -67,6 +67,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupportGuardian;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupportParticipant;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISurgeriesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredDocument;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredOrScannedDocument;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSign;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsSection;
 
@@ -590,6 +591,17 @@ public class DomainSwitch<T> {
 			case IDomainPackage.MEDICATION_INFORMATION: {
 				IMedicationInformation medicationInformation = (IMedicationInformation) theEObject;
 				T result = caseMedicationInformation(medicationInformation);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.UNSTRUCTURED_OR_SCANNED_DOCUMENT: {
+				IUnstructuredOrScannedDocument unstructuredOrScannedDocument = (IUnstructuredOrScannedDocument) theEObject;
+				T result = caseUnstructuredOrScannedDocument(unstructuredOrScannedDocument);
+				if (result == null) {
+					result = caseUnstructuredDocument(unstructuredOrScannedDocument);
+				}
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
@@ -1407,6 +1419,21 @@ public class DomainSwitch<T> {
 	 * @generated
 	 */
 	public T caseMedicationInformation(IMedicationInformation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Unstructured Or Scanned Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Unstructured Or Scanned Document</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUnstructuredOrScannedDocument(IUnstructuredOrScannedDocument object) {
 		return null;
 	}
 

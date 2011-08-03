@@ -2056,12 +2056,12 @@
     </eOperations>
     <eOperations name="addSupportHeaders" ordered="false" lowerBound="1" eType="#//Support">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="HITSP Patient Summary SHOULD contain at least one [1..*] supportHeaders (C32-[CT1-16]), such that Contains exactly one [1..1] Support."/>
+        <details key="documentation" value="HITSP Patient Summary SHOULD contain at least one [1..*] supportHeaders (C32-[CT1-16]), such that."/>
       </eAnnotations>
     </eOperations>
     <eOperations name="addSupportHeaders" ordered="false" lowerBound="1" eType="#//PatientSummary">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="HITSP Patient Summary SHOULD contain at least one [1..*] supportHeaders (C32-[CT1-16]), such that Contains exactly one [1..1] Support."/>
+        <details key="documentation" value="HITSP Patient Summary SHOULD contain at least one [1..*] supportHeaders (C32-[CT1-16]), such that."/>
       </eAnnotations>
       <eParameters name="value" ordered="false" lowerBound="1" eType="#//Support"/>
     </eOperations>
@@ -3407,7 +3407,7 @@
     </eAnnotations>
     <eOperations name="getCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="cda::Procedure::code.&#xD;&#xA;This is a coded value describing the type of the&#xD;&#xA;Procedure&#xD;&#xA;self.code.oclAsType(datatypes::CD)"/>
+        <details key="documentation" value="cda::Procedure::code.&#xD;&#xA;self.code.oclAsType(datatypes::CD)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.code.oclAsType(datatypes::CD)"/>
@@ -7788,5 +7788,780 @@
     </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
         lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ManufacturedProduct"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UnstructuredOrScannedDocument" eSuperTypes="#//UnstructuredDocument">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Used for documents that implement both HL7 Unstructured Documents and HITSP C62 based on IHE Scanned Documents.&#xD;&#xA;&lt;p>Refer to full implementation guide &lt;a href=&quot;http://www.cdatools.org/infocenter/index.jsp&quot;/>specification&lt;/a>.&lt;/p>"/>
+    </eAnnotations>
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="getTypeId" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//InfrastructureRootTypeId">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::typeId.&#xD;&#xA;The clinical document type ID identifies the constraints imposed by CDA R2 on the&#xD;&#xA;content, essentially acting as a version identifier.&#xD;&#xA;self.typeId.oclAsType(cda::InfrastructureRootTypeId)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getTypeId"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.typeId.oclAsType(cda::InfrastructureRootTypeId)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withTypeId" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//InfrastructureRootTypeId">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints SHALL contain exactly one [1..1] typeId (CONF-HP-16)."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;InfrastructureRootTypeId&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;InfrastructureRootTypeId value = (InfrastructureRootTypeId) eObject;&#xD;&#xA;this.getCDAType().setTypeId(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withTypeId"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getId" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//II">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::id.&#xD;&#xA;The ClinicalDocument/id element is an instance identifier data type (see HL7 Version 3&#xD;&#xA;Abstract Data in Section 5 REFERENCES). The root attribute is a UUID or OID. The&#xD;&#xA;root uniquely identifies the scope of the extension. The root and extension attributes&#xD;&#xA;uniquely identify the document.&#xD;&#xA;self.id.oclAsType(datatypes::II)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getId"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.id.oclAsType(datatypes::II)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withId" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//II">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints SHALL contain exactly one [1..1] id (CONF-HP-17)."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;II&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;II value = (II) eObject;&#xD;&#xA;this.getCDAType().setId(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withId"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCode" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CE">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::code.&#xD;&#xA;Specifies the type of the clinical document.&#xD;&#xA;self.code.oclAsType(datatypes::CE)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCode"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.code.oclAsType(datatypes::CE)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCode" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CE">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints SHALL contain exactly one [1..1] code (CONF-HP-21)."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;CE&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;CE value = (CE) eObject;&#xD;&#xA;this.getCDAType().setCode(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCode"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getTitle" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//ST">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::title.&#xD;&#xA;Specifies the local name used for the document.&#xD;&#xA;Note that the title does not need to be the same as the display name provided with the&#xD;&#xA;document type code. For example, the display name provided by LOINC&amp;#174; as an aid in&#xD;&#xA;debugging may be &quot;HISTORY AND PHYSICAL.&quot; The title can be localized, as appropriate.&#xD;&#xA;self.title.oclAsType(datatypes::ST)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getTitle"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.title.oclAsType(datatypes::ST)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withTitle" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//ST">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints SHALL contain exactly one [1..1] title (CONF-HP-22)."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;ST&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;ST value = (ST) eObject;&#xD;&#xA;this.getCDAType().setTitle(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withTitle"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getEffectiveTime" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//TS">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::effectiveTime.&#xD;&#xA;The effectiveTime records the time of creation of the original document. If the referenced document is a scan, the date of scan can be recorded in dataEnterer. If the date of creation of the original document is not known, CDA allows the document effectiveTime to have a  nullFlavor.&#xD;&#xA;self.effectiveTime.oclAsType(datatypes::TS)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getEffectiveTime"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.effectiveTime.oclAsType(datatypes::TS)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withEffectiveTime" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//TS">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT Unstructured Document SHALL contain exactly one [1..1] effectiveTime (CONF-UD-11)."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;TS&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;TS value = (TS) eObject;&#xD;&#xA;this.getCDAType().setEffectiveTime(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withEffectiveTime"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getConfidentialityCode" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CE">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::confidentialityCode.&#xD;&#xA;If the confidentialityCode cannot be determined for an Unstructured Document instance, the HL7 code &quot;N&quot; (normal confidentiality) is recommended.&#xD;&#xA;self.confidentialityCode.oclAsType(datatypes::CE)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getConfidentialityCode"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.confidentialityCode.oclAsType(datatypes::CE)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withConfidentialityCode" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CE">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT Unstructured Document Contains exactly one [1..1] confidentialityCode."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;CE&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;CE value = (CE) eObject;&#xD;&#xA;this.getCDAType().setConfidentialityCode(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withConfidentialityCode"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getLanguageCode" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CS">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::languageCode.&#xD;&#xA;self.languageCode.oclAsType(datatypes::CS)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getLanguageCode"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.languageCode.oclAsType(datatypes::CS)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withLanguageCode" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CS">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints SHALL contain exactly one [1..1] languageCode (CONF-HP-24)."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;CS&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;CS value = (CS) eObject;&#xD;&#xA;this.getCDAType().setLanguageCode(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withLanguageCode"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getRecordTargets" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RecordTarget">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::recordTarget.&#xD;&#xA;self.getRecordTargets()->select(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget)).oclAsType(cda::RecordTarget)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getRecordTargets #//UnstructuredDocument/%duplicates%/getRecordTargets"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getRecordTargets()->select(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget)).oclAsType(cda::RecordTarget)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addRecordTarget" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RecordTarget">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains at least one [1..*] recordTarget, where its type is Record Target."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;RecordTarget&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;RecordTarget value = (RecordTarget) eObject;&#xD;&#xA;this.getCDAType().getRecordTargets().add(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addRecordTarget #//UnstructuredDocument/%duplicates%/addRecordTarget"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::custodian.&#xD;&#xA;self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] custodian, where its type is Custodian."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Custodian&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Custodian value = (Custodian) eObject;&#xD;&#xA;this.getCDAType().setCustodian(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Component2">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::component.&#xD;&#xA;self.getComponent2s()->select(component2 : cda::Component2 | not component2.oclIsUndefined() and component2.oclIsKindOf(cda::Component2))->asSequence()->first().oclAsType(cda::Component2)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getComponent #//UnstructuredDocument/%duplicates%/getComponent"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getComponent2s()->select(component2 : cda::Component2 | not component2.oclIsUndefined() and component2.oclIsKindOf(cda::Component2))->asSequence()->first().oclAsType(cda::Component2)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Component2">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] component, where its type is Component2."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Component2&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Component2 value = (Component2) eObject;&#xD;&#xA;this.getCDAType().setComponent(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withComponent #//UnstructuredDocument/%duplicates%/withComponent"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::custodian.&#xD;&#xA;Based on the CDA R2 constraints (Section 4.2.2.3 of the CDA Normative Web Edition.&#xD;&#xA;See Section 5 REFERENCES), the custodian element is required and is the custodian of&#xD;&#xA;the clinical document.&#xD;&#xA;self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains exactly one [1..1] custodian, such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Custodian&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Custodian value = (Custodian) eObject;&#xD;&#xA;this.getCDAType().setCustodian(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains exactly one [1..1] custodian, such that."/>
+          <details key="body" value="this.getCDAType().setCustodian(value);&#xD;&#xA;return this;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setCustodian"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getInformationRecipients" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//InformationRecipient">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::informationRecipient.&#xD;&#xA;informationRecipient, when used in the context of a referral or request for consultation,&#xD;&#xA;this records the intended recipient of the information at the time the document is&#xD;&#xA;created. The intended recipient may also be the health chart of the patient, in which&#xD;&#xA;case the receivedOrganization is the scoping organization of that chart.&#xD;&#xA;self.getInformationRecipients()->select(informationRecipient : cda::InformationRecipient | not informationRecipient.oclIsUndefined() and informationRecipient.oclIsKindOf(cda::InformationRecipient)).oclAsType(cda::InformationRecipient)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getInformationRecipients"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getInformationRecipients()->select(informationRecipient : cda::InformationRecipient | not informationRecipient.oclIsUndefined() and informationRecipient.oclIsKindOf(cda::InformationRecipient)).oclAsType(cda::InformationRecipient)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addInformationRecipient" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//InformationRecipient">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains zero or more [0..*] informationRecipient, such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;InformationRecipient&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;InformationRecipient value = (InformationRecipient) eObject;&#xD;&#xA;this.getCDAType().getInformationRecipients().add(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addInformationRecipient"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//LegalAuthenticator">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::legalAuthenticator.&#xD;&#xA;&lt;p>The legalAuthenticator element identifies the legal authenticator of the document and&#xD;&#xA;must be present if the document has been legally authenticated. Based on local&#xD;&#xA;practice, clinical documents may be released before legal authentication. This implies&#xD;&#xA;that a clinical document that does not contain this element has not been legally&#xD;&#xA;authenticated.&lt;/p>&#xD;&#xA;&lt;p>The act of legal authentication requires a certain privilege be granted to the legal&#xD;&#xA;authenticator depending upon local policy. All clinical documents have the potential for&#xD;&#xA;legal authentication, given the appropriate credentials.&lt;/p>&#xD;&#xA;&lt;p>Local policies may choose to delegate the function of legal authentication to a device or&#xD;&#xA;system that generates the clinical document. In these cases, the legal authenticator is&#xD;&#xA;a person accepting responsibility for the document, not the generating device or system.&lt;/p>&#xD;&#xA;self.getLegalAuthenticators()->select(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined() and legalAuthenticator.oclIsKindOf(cda::LegalAuthenticator))->asSequence()->first().oclAsType(cda::LegalAuthenticator)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getLegalAuthenticator #//UnstructuredDocument/%duplicates%/getLegalAuthenticator"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getLegalAuthenticators()->select(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined() and legalAuthenticator.oclIsKindOf(cda::LegalAuthenticator))->asSequence()->first().oclAsType(cda::LegalAuthenticator)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//LegalAuthenticator">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains zero or one [0..1] legalAuthenticator, such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;LegalAuthenticator&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;LegalAuthenticator value = (LegalAuthenticator) eObject;&#xD;&#xA;this.getCDAType().setLegalAuthenticator(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withLegalAuthenticator #//UnstructuredDocument/%duplicates%/withLegalAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getAuthenticators" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Authenticator">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::authenticator.&#xD;&#xA;&lt;p>The authenticator identifies the participant who attested to the accuracy of the&#xD;&#xA;information in the document.&lt;/p>&#xD;&#xA;&lt;p>Automated systems, such as a PHR, that allow a clinical document to be generated need to give&#xD;&#xA;special consideration to authentication permissions because the information contained in the&#xD;&#xA;document may come from sources or contain information that the author cannot validate.&lt;/p>&#xD;&#xA;self.getAuthenticators()->select(authenticator : cda::Authenticator | not authenticator.oclIsUndefined() and authenticator.oclIsKindOf(cda::Authenticator)).oclAsType(cda::Authenticator)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getAuthenticators"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getAuthenticators()->select(authenticator : cda::Authenticator | not authenticator.oclIsUndefined() and authenticator.oclIsKindOf(cda::Authenticator)).oclAsType(cda::Authenticator)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Authenticator">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains zero or more [0..*] authenticator, such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Authenticator&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Authenticator value = (Authenticator) eObject;&#xD;&#xA;this.getCDAType().getAuthenticators().add(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getRecordTargets" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RecordTarget">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::recordTarget.&#xD;&#xA;self.getRecordTargets()->select(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget)).oclAsType(cda::RecordTarget)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getRecordTargets #//UnstructuredDocument/%duplicates%/getRecordTargets #//UnstructuredOrScannedDocument/%duplicates%/getRecordTargets"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getRecordTargets()->select(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget)).oclAsType(cda::RecordTarget)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addRecordTarget" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RecordTarget">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains at least one [1..*] recordTarget, where its type is Record Target."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;RecordTarget&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;RecordTarget value = (RecordTarget) eObject;&#xD;&#xA;this.getCDAType().getRecordTargets().add(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addRecordTarget #//UnstructuredDocument/%duplicates%/addRecordTarget #//UnstructuredOrScannedDocument/%duplicates%/addRecordTarget"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addRecordTarget" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains at least one [1..*] recordTarget, where its type is Record Target."/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/addRecordTarget"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RecordTarget"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::custodian.&#xD;&#xA;self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.1"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] custodian, where its type is Custodian."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Custodian&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Custodian value = (Custodian) eObject;&#xD;&#xA;this.getCDAType().setCustodian(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] custodian, where its type is Custodian."/>
+          <details key="body" value="this.getCDAType().setCustodian(value);&#xD;&#xA;return this;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Component2">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::component.&#xD;&#xA;self.getComponent2s()->select(component2 : cda::Component2 | not component2.oclIsUndefined() and component2.oclIsKindOf(cda::Component2))->asSequence()->first().oclAsType(cda::Component2)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getComponent #//UnstructuredDocument/%duplicates%/getComponent #//UnstructuredOrScannedDocument/%duplicates%/getComponent"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getComponent2s()->select(component2 : cda::Component2 | not component2.oclIsUndefined() and component2.oclIsKindOf(cda::Component2))->asSequence()->first().oclAsType(cda::Component2)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Component2">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] component, where its type is Component2."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Component2&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Component2 value = (Component2) eObject;&#xD;&#xA;this.getCDAType().setComponent(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withComponent #//UnstructuredDocument/%duplicates%/withComponent #//UnstructuredOrScannedDocument/%duplicates%/withComponent"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setComponent" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] component, where its type is Component2."/>
+          <details key="body" value="this.getCDAType().setComponent(value);&#xD;&#xA;return this;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setComponent"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Component2"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getScanOriginalAuthors" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ScanOriginalAuthor">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="ihe::ScannedDocument::scanOriginalAuthor.&#xD;&#xA;self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanOriginalAuthor)).oclAsType(ihe::ScanOriginalAuthor)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getScanOriginalAuthors"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanOriginalAuthor)).oclAsType(ihe::ScanOriginalAuthor)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addScanOriginalAuthor" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ScanOriginalAuthor">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="IHE Scanned Document SHOULD contain at least one [1..*] scanOriginalAuthor, such that Contains exactly one [1..1] Scan Original Author (templateId: 1.3.6.1.4.1.19376.1.2.20.1)."/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addScanOriginalAuthor"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getScanningDevices" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ScanningDevice">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="ihe::ScannedDocument::scanningDevice.&#xD;&#xA;self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanningDevice)).oclAsType(ihe::ScanningDevice)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getScanningDevices"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanningDevice)).oclAsType(ihe::ScanningDevice)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addScanningDevice" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ScanningDevice">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="IHE Scanned Document SHALL contain at least one [1..*] scanningDevice, such that Contains exactly one [1..1] Scanning Device (templateId: 1.3.6.1.4.1.19376.1.2.20.2)."/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addScanningDevice"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getScanDataEnterer" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ScanDataEnterer">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="ihe::ScannedDocument::scanDataEnterer.&#xD;&#xA;self.getDataEnterers()->select(dataEnterer : cda::DataEnterer | not dataEnterer.oclIsUndefined() and dataEnterer.oclIsKindOf(ihe::ScanDataEnterer))->asSequence()->first().oclAsType(ihe::ScanDataEnterer)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getScanDataEnterer"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getDataEnterers()->select(dataEnterer : cda::DataEnterer | not dataEnterer.oclIsUndefined() and dataEnterer.oclIsKindOf(ihe::ScanDataEnterer))->asSequence()->first().oclAsType(ihe::ScanDataEnterer)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withScanDataEnterer" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ScanDataEnterer">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="IHE Scanned Document SHALL contain exactly one [1..1] scanDataEnterer, such that Contains exactly one [1..1] Scan Data Enterer (templateId: 1.3.6.1.4.1.19376.1.2.20.3)."/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withScanDataEnterer"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//LegalAuthenticator">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::legalAuthenticator.&#xD;&#xA;Context is left up to the scanning facility to refine in accordance with local policies.&#xD;&#xA;self.getLegalAuthenticators()->select(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined() and legalAuthenticator.oclIsKindOf(cda::LegalAuthenticator))->asSequence()->first().oclAsType(cda::LegalAuthenticator)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getLegalAuthenticator #//UnstructuredDocument/%duplicates%/getLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/getLegalAuthenticator"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getLegalAuthenticators()->select(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined() and legalAuthenticator.oclIsKindOf(cda::LegalAuthenticator))->asSequence()->first().oclAsType(cda::LegalAuthenticator)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//LegalAuthenticator">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="IHE Scanned Document MAY contain zero or one [0..1] legalAuthenticator, such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;LegalAuthenticator&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;LegalAuthenticator value = (LegalAuthenticator) eObject;&#xD;&#xA;this.getCDAType().setLegalAuthenticator(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withLegalAuthenticator #//UnstructuredDocument/%duplicates%/withLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/withLegalAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="IHE Scanned Document MAY contain zero or one [0..1] legalAuthenticator, such that."/>
+          <details key="body" value="this.getCDAType().setLegalAuthenticator(value);&#xD;&#xA;return this;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setLegalAuthenticator"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//LegalAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getDocumentationOf" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//DocumentationOf">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::documentationOf.&#xD;&#xA;Used to encode the date/time range of the original content. If the original content is representative of a single point in time then the endpoints of the date/time range shall be the same. Information regarding this date/time range shall be included, if it is known. In many cases this will have to be supplied by the operator.&#xD;&#xA;self.getDocumentationOfs()->select(documentationOf : cda::DocumentationOf | not documentationOf.oclIsUndefined() and documentationOf.oclIsKindOf(cda::DocumentationOf))->asSequence()->first().oclAsType(cda::DocumentationOf)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getDocumentationOf"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getDocumentationOfs()->select(documentationOf : cda::DocumentationOf | not documentationOf.oclIsUndefined() and documentationOf.oclIsKindOf(cda::DocumentationOf))->asSequence()->first().oclAsType(cda::DocumentationOf)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withDocumentationOf" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//DocumentationOf">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="IHE Scanned Document MAY contain zero or one [0..1] documentationOf, such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;DocumentationOf&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;DocumentationOf value = (DocumentationOf) eObject;&#xD;&#xA;this.getCDAType().getDocumentationOfs().add(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withDocumentationOf"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getRecordTargets" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RecordTarget">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::recordTarget.&#xD;&#xA;self.getRecordTargets()->select(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget)).oclAsType(cda::RecordTarget)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getRecordTargets #//UnstructuredDocument/%duplicates%/getRecordTargets #//UnstructuredOrScannedDocument/%duplicates%/getRecordTargets #//UnstructuredOrScannedDocument/%duplicates%/getRecordTargets.1"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getRecordTargets()->select(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget)).oclAsType(cda::RecordTarget)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addRecordTarget" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RecordTarget">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains at least one [1..*] recordTarget, where its type is Record Target."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;RecordTarget&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;RecordTarget value = (RecordTarget) eObject;&#xD;&#xA;this.getCDAType().getRecordTargets().add(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addRecordTarget #//UnstructuredDocument/%duplicates%/addRecordTarget #//UnstructuredOrScannedDocument/%duplicates%/addRecordTarget #//UnstructuredOrScannedDocument/%duplicates%/addRecordTarget.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addRecordTarget" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains at least one [1..*] recordTarget, where its type is Record Target."/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/addRecordTarget #//UnstructuredOrScannedDocument/%duplicates%/addRecordTarget.2"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RecordTarget"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::custodian.&#xD;&#xA;self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.2"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] custodian, where its type is Custodian."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Custodian&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Custodian value = (Custodian) eObject;&#xD;&#xA;this.getCDAType().setCustodian(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.2"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] custodian, where its type is Custodian."/>
+          <details key="body" value="this.getCDAType().setCustodian(value);&#xD;&#xA;return this;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.1"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Component2">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::component.&#xD;&#xA;self.getComponent2s()->select(component2 : cda::Component2 | not component2.oclIsUndefined() and component2.oclIsKindOf(cda::Component2))->asSequence()->first().oclAsType(cda::Component2)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getComponent #//UnstructuredDocument/%duplicates%/getComponent #//UnstructuredOrScannedDocument/%duplicates%/getComponent #//UnstructuredOrScannedDocument/%duplicates%/getComponent.1"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getComponent2s()->select(component2 : cda::Component2 | not component2.oclIsUndefined() and component2.oclIsKindOf(cda::Component2))->asSequence()->first().oclAsType(cda::Component2)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withComponent" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Component2">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] component, where its type is Component2."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Component2&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Component2 value = (Component2) eObject;&#xD;&#xA;this.getCDAType().setComponent(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withComponent #//UnstructuredDocument/%duplicates%/withComponent #//UnstructuredOrScannedDocument/%duplicates%/withComponent #//UnstructuredOrScannedDocument/%duplicates%/withComponent.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setComponent" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] component, where its type is Component2."/>
+          <details key="body" value="this.getCDAType().setComponent(value);&#xD;&#xA;return this;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setComponent #//UnstructuredOrScannedDocument/%duplicates%/setComponent"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Component2"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::custodian.&#xD;&#xA;Based on the CDA R2 constraints (Section 4.2.2.3 of the CDA Normative Web Edition.&#xD;&#xA;See Section 5 REFERENCES), the custodian element is required and is the custodian of&#xD;&#xA;the clinical document.&#xD;&#xA;self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.2 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.3"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains exactly one [1..1] custodian, such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Custodian&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Custodian value = (Custodian) eObject;&#xD;&#xA;this.getCDAType().setCustodian(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.2 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.3"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains exactly one [1..1] custodian, such that."/>
+          <details key="body" value="this.getCDAType().setCustodian(value);&#xD;&#xA;return this;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.2"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getInformationRecipients" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//InformationRecipient">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::informationRecipient.&#xD;&#xA;informationRecipient, when used in the context of a referral or request for consultation,&#xD;&#xA;this records the intended recipient of the information at the time the document is&#xD;&#xA;created. The intended recipient may also be the health chart of the patient, in which&#xD;&#xA;case the receivedOrganization is the scoping organization of that chart.&#xD;&#xA;self.getInformationRecipients()->select(informationRecipient : cda::InformationRecipient | not informationRecipient.oclIsUndefined() and informationRecipient.oclIsKindOf(cda::InformationRecipient)).oclAsType(cda::InformationRecipient)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getInformationRecipients #//UnstructuredOrScannedDocument/%duplicates%/getInformationRecipients"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getInformationRecipients()->select(informationRecipient : cda::InformationRecipient | not informationRecipient.oclIsUndefined() and informationRecipient.oclIsKindOf(cda::InformationRecipient)).oclAsType(cda::InformationRecipient)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addInformationRecipient" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//InformationRecipient">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains zero or more [0..*] informationRecipient, such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;InformationRecipient&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;InformationRecipient value = (InformationRecipient) eObject;&#xD;&#xA;this.getCDAType().getInformationRecipients().add(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addInformationRecipient #//UnstructuredOrScannedDocument/%duplicates%/addInformationRecipient"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addInformationRecipient" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains zero or more [0..*] informationRecipient, such that."/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/addInformationRecipient"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//InformationRecipient"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//LegalAuthenticator">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::legalAuthenticator.&#xD;&#xA;&lt;p>The legalAuthenticator element identifies the legal authenticator of the document and&#xD;&#xA;must be present if the document has been legally authenticated. Based on local&#xD;&#xA;practice, clinical documents may be released before legal authentication. This implies&#xD;&#xA;that a clinical document that does not contain this element has not been legally&#xD;&#xA;authenticated.&lt;/p>&#xD;&#xA;&lt;p>The act of legal authentication requires a certain privilege be granted to the legal&#xD;&#xA;authenticator depending upon local policy. All clinical documents have the potential for&#xD;&#xA;legal authentication, given the appropriate credentials.&lt;/p>&#xD;&#xA;&lt;p>Local policies may choose to delegate the function of legal authentication to a device or&#xD;&#xA;system that generates the clinical document. In these cases, the legal authenticator is&#xD;&#xA;a person accepting responsibility for the document, not the generating device or system.&lt;/p>&#xD;&#xA;self.getLegalAuthenticators()->select(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined() and legalAuthenticator.oclIsKindOf(cda::LegalAuthenticator))->asSequence()->first().oclAsType(cda::LegalAuthenticator)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getLegalAuthenticator #//UnstructuredDocument/%duplicates%/getLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/getLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/getLegalAuthenticator.1"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getLegalAuthenticators()->select(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined() and legalAuthenticator.oclIsKindOf(cda::LegalAuthenticator))->asSequence()->first().oclAsType(cda::LegalAuthenticator)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//LegalAuthenticator">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains zero or one [0..1] legalAuthenticator, such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;LegalAuthenticator&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;LegalAuthenticator value = (LegalAuthenticator) eObject;&#xD;&#xA;this.getCDAType().setLegalAuthenticator(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withLegalAuthenticator #//UnstructuredDocument/%duplicates%/withLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/withLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/withLegalAuthenticator.1"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setLegalAuthenticator" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains zero or one [0..1] legalAuthenticator, such that."/>
+          <details key="body" value="this.getCDAType().setLegalAuthenticator(value);&#xD;&#xA;return this;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setLegalAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/setLegalAuthenticator"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//LegalAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getAuthenticators" ordered="false"
+          lowerBound="1" upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Authenticator">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::authenticator.&#xD;&#xA;&lt;p>The authenticator identifies the participant who attested to the accuracy of the&#xD;&#xA;information in the document.&lt;/p>&#xD;&#xA;&lt;p>Automated systems, such as a PHR, that allow a clinical document to be generated need to give&#xD;&#xA;special consideration to authentication permissions because the information contained in the&#xD;&#xA;document may come from sources or contain information that the author cannot validate.&lt;/p>&#xD;&#xA;self.getAuthenticators()->select(authenticator : cda::Authenticator | not authenticator.oclIsUndefined() and authenticator.oclIsKindOf(cda::Authenticator)).oclAsType(cda::Authenticator)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getAuthenticators #//UnstructuredOrScannedDocument/%duplicates%/getAuthenticators"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getAuthenticators()->select(authenticator : cda::Authenticator | not authenticator.oclIsUndefined() and authenticator.oclIsKindOf(cda::Authenticator)).oclAsType(cda::Authenticator)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addAuthenticator" ordered="false"
+          lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Authenticator">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains zero or more [0..*] authenticator, such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Authenticator&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Authenticator value = (Authenticator) eObject;&#xD;&#xA;this.getCDAType().getAuthenticators().add(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/addAuthenticator #//UnstructuredOrScannedDocument/%duplicates%/addAuthenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addAuthenticator" ordered="false"
+          lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT General Header Constraints Contains zero or more [0..*] authenticator, such that."/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/addAuthenticator"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Authenticator"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="cda::ClinicalDocument::custodian.&#xD;&#xA;self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian #//UnstructuredDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.2 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.3 #//UnstructuredOrScannedDocument/%duplicates%/getCustodian.4"/>
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.getCustodians()->select(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))->asSequence()->first().oclAsType(cda::Custodian)"/>
+        </eAnnotations>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT Unstructured Document SHALL contain exactly one [1..1] custodian (CONF-UD-27), such that."/>
+          <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Custodian&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;Custodian value = (Custodian) eObject;&#xD;&#xA;this.getCDAType().setCustodian(value);&#xD;&#xA;return value;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian #//UnstructuredDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.2 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.3 #//UnstructuredOrScannedDocument/%duplicates%/withCustodian.4"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//UnstructuredOrScannedDocument">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="CDT Unstructured Document SHALL contain exactly one [1..1] custodian (CONF-UD-27), such that."/>
+          <details key="body" value="this.getCDAType().setCustodian(value);&#xD;&#xA;return this;"/>
+        </eAnnotations>
+        <eAnnotations source="redefines" references="#//UnstructuredOrScannedDocument/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.1 #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.2 #//UnstructuredOrScannedDocument/%duplicates%/setCustodian.3"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian"/>
+      </contents>
+      <contents xsi:type="ecore:EReference" name="cDAType" ordered="false" lowerBound="1"
+          eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ClinicalDocument">
+        <eAnnotations source="redefines" references="#//UnstructuredDocument/cDAType"/>
+      </contents>
+    </eAnnotations>
+    <eOperations name="setTypeId" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDT General Header Constraints SHALL contain exactly one [1..1] typeId (CONF-HP-16)."/>
+        <details key="body" value="this.getCDAType().setTypeId(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//InfrastructureRootTypeId"/>
+    </eOperations>
+    <eOperations name="setId" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDT General Header Constraints SHALL contain exactly one [1..1] id (CONF-HP-17)."/>
+        <details key="body" value="this.getCDAType().setId(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//II"/>
+    </eOperations>
+    <eOperations name="setCode" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDT General Header Constraints SHALL contain exactly one [1..1] code (CONF-HP-21)."/>
+        <details key="body" value="this.getCDAType().setCode(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CE"/>
+    </eOperations>
+    <eOperations name="setTitle" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDT General Header Constraints SHALL contain exactly one [1..1] title (CONF-HP-22)."/>
+        <details key="body" value="this.getCDAType().setTitle(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//ST"/>
+    </eOperations>
+    <eOperations name="setEffectiveTime" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDT Unstructured Document SHALL contain exactly one [1..1] effectiveTime (CONF-UD-11)."/>
+        <details key="body" value="this.getCDAType().setEffectiveTime(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//TS"/>
+    </eOperations>
+    <eOperations name="setConfidentialityCode" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDT Unstructured Document Contains exactly one [1..1] confidentialityCode."/>
+        <details key="body" value="this.getCDAType().setConfidentialityCode(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CE"/>
+    </eOperations>
+    <eOperations name="setLanguageCode" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDT General Header Constraints SHALL contain exactly one [1..1] languageCode (CONF-HP-24)."/>
+        <details key="body" value="this.getCDAType().setLanguageCode(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CS"/>
+    </eOperations>
+    <eOperations name="addRecordTarget" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDA Clinical Document Contains at least one [1..*] recordTarget, where its type is Record Target."/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RecordTarget"/>
+    </eOperations>
+    <eOperations name="setCustodian" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] custodian, where its type is Custodian."/>
+        <details key="body" value="this.getCDAType().setCustodian(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Custodian"/>
+    </eOperations>
+    <eOperations name="setComponent" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDA Clinical Document Contains exactly one [1..1] component, where its type is Component2."/>
+        <details key="body" value="this.getCDAType().setComponent(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Component2"/>
+    </eOperations>
+    <eOperations name="addInformationRecipient" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDT General Header Constraints Contains zero or more [0..*] informationRecipient, such that."/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//InformationRecipient"/>
+    </eOperations>
+    <eOperations name="setLegalAuthenticator" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDT General Header Constraints Contains zero or one [0..1] legalAuthenticator, such that."/>
+        <details key="body" value="this.getCDAType().setLegalAuthenticator(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//LegalAuthenticator"/>
+    </eOperations>
+    <eOperations name="addAuthenticator" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CDT General Header Constraints Contains zero or more [0..*] authenticator, such that."/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Authenticator"/>
+    </eOperations>
+    <eOperations name="addScanOriginalAuthor" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="IHE Scanned Document SHOULD contain at least one [1..*] scanOriginalAuthor, such that Contains exactly one [1..1] Scan Original Author (templateId: 1.3.6.1.4.1.19376.1.2.20.1)."/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ScanOriginalAuthor"/>
+    </eOperations>
+    <eOperations name="addScanningDevice" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="IHE Scanned Document SHALL contain at least one [1..*] scanningDevice, such that Contains exactly one [1..1] Scanning Device (templateId: 1.3.6.1.4.1.19376.1.2.20.2)."/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ScanningDevice"/>
+    </eOperations>
+    <eOperations name="setScanDataEnterer" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="IHE Scanned Document SHALL contain exactly one [1..1] scanDataEnterer, such that Contains exactly one [1..1] Scan Data Enterer (templateId: 1.3.6.1.4.1.19376.1.2.20.3)."/>
+        <details key="body" value="return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ScanDataEnterer"/>
+    </eOperations>
+    <eOperations name="setDocumentationOf" ordered="false" lowerBound="1" eType="#//UnstructuredOrScannedDocument">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="IHE Scanned Document MAY contain zero or one [0..1] documentationOf, such that."/>
+        <details key="body" value="this.getCDAType().getDocumentationOfs().add(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//DocumentationOf"/>
+    </eOperations>
   </eClassifiers>
 </ecore:EPackage>

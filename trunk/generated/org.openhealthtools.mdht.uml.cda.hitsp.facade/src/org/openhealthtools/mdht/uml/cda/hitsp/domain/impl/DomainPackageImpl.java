@@ -419,6 +419,13 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	private EClass medicationInformationEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass unstructuredOrScannedDocumentEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -1615,6 +1622,19 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 */
 	public EReference getMedicationInformation_CDAType() {
 		return (EReference) getMedicationInformation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getUnstructuredOrScannedDocument() {
+		if (unstructuredOrScannedDocumentEClass == null) {
+			unstructuredOrScannedDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IDomainPackage.eNS_URI).getEClassifiers().get(54);
+		}
+		return unstructuredOrScannedDocumentEClass;
 	}
 
 	/**
