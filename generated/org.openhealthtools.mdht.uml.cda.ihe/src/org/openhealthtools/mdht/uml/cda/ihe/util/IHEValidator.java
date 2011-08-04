@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ConditionalDose;
 import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet;
 import org.openhealthtools.mdht.uml.cda.ihe.DischargeSummary;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterEntry;
@@ -51,6 +52,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPresentIllness;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalCourseSection;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargeMedicationsSection;
+import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPlugin;
 import org.openhealthtools.mdht.uml.cda.ihe.IHERegistryDelegate;
@@ -2325,12 +2327,76 @@ public class IHEValidator extends EObjectValidator {
 	public static final int SCAN_DATA_ENTERER__SCAN_DATA_ENTERER_TIME = 274;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Diet Template Id' of 'Discharge Diet'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DISCHARGE_DIET__DISCHARGE_DIET_TEMPLATE_ID = 275;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Diet Code' of 'Discharge Diet'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DISCHARGE_DIET__DISCHARGE_DIET_CODE = 276;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Diet Text' of 'Discharge Diet'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DISCHARGE_DIET__DISCHARGE_DIET_TEXT = 277;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Diet Title' of 'Discharge Diet'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int DISCHARGE_DIET__DISCHARGE_DIET_TITLE = 278;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Physical Template Id' of 'Hospital Discharge Physical'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_PHYSICAL__HOSPITAL_DISCHARGE_PHYSICAL_TEMPLATE_ID = 279;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Physical Code' of 'Hospital Discharge Physical'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_PHYSICAL__HOSPITAL_DISCHARGE_PHYSICAL_CODE = 280;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Physical Text' of 'Hospital Discharge Physical'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_PHYSICAL__HOSPITAL_DISCHARGE_PHYSICAL_TEXT = 281;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Physical Title' of 'Hospital Discharge Physical'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_PHYSICAL__HOSPITAL_DISCHARGE_PHYSICAL_TITLE = 282;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 274;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 282;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -2573,6 +2639,10 @@ public class IHEValidator extends EObjectValidator {
 				return validateScanningDevice((ScanningDevice) value, diagnostics, context);
 			case IHEPackage.SCAN_DATA_ENTERER:
 				return validateScanDataEnterer((ScanDataEnterer) value, diagnostics, context);
+			case IHEPackage.DISCHARGE_DIET:
+				return validateDischargeDiet((DischargeDiet) value, diagnostics, context);
+			case IHEPackage.HOSPITAL_DISCHARGE_PHYSICAL:
+				return validateHospitalDischargePhysical((HospitalDischargePhysical) value, diagnostics, context);
 			case IHEPackage.IHE_REGISTRY_DELEGATE:
 				return validateIHERegistryDelegate((IHERegistryDelegate) value, diagnostics, context);
 			default:
@@ -12433,6 +12503,202 @@ public class IHEValidator extends EObjectValidator {
 	public boolean validateScanDataEnterer_validateScanDataEntererTime(ScanDataEnterer scanDataEnterer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return scanDataEnterer.validateScanDataEntererTime(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeDiet(DischargeDiet dischargeDiet, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(dischargeDiet, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(dischargeDiet, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDischargeDiet_validateDischargeDietTemplateId(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDischargeDiet_validateDischargeDietCode(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDischargeDiet_validateDischargeDietText(dischargeDiet, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateDischargeDiet_validateDischargeDietTitle(dischargeDiet, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateDischargeDietTemplateId constraint of '<em>Discharge Diet</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeDiet_validateDischargeDietTemplateId(DischargeDiet dischargeDiet,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return dischargeDiet.validateDischargeDietTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDischargeDietCode constraint of '<em>Discharge Diet</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeDiet_validateDischargeDietCode(DischargeDiet dischargeDiet,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return dischargeDiet.validateDischargeDietCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDischargeDietText constraint of '<em>Discharge Diet</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeDiet_validateDischargeDietText(DischargeDiet dischargeDiet,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return dischargeDiet.validateDischargeDietText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateDischargeDietTitle constraint of '<em>Discharge Diet</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeDiet_validateDischargeDietTitle(DischargeDiet dischargeDiet,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return dischargeDiet.validateDischargeDietTitle(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargePhysical(HospitalDischargePhysical hospitalDischargePhysical,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(hospitalDischargePhysical, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(hospitalDischargePhysical, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHospitalDischargePhysical_validateHospitalDischargePhysicalTemplateId(
+				hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHospitalDischargePhysical_validateHospitalDischargePhysicalCode(
+				hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHospitalDischargePhysical_validateHospitalDischargePhysicalText(
+				hospitalDischargePhysical, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHospitalDischargePhysical_validateHospitalDischargePhysicalTitle(
+				hospitalDischargePhysical, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateHospitalDischargePhysicalTemplateId constraint of '<em>Hospital Discharge Physical</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargePhysical_validateHospitalDischargePhysicalTemplateId(
+			HospitalDischargePhysical hospitalDischargePhysical, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargePhysical.validateHospitalDischargePhysicalTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHospitalDischargePhysicalCode constraint of '<em>Hospital Discharge Physical</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargePhysical_validateHospitalDischargePhysicalCode(
+			HospitalDischargePhysical hospitalDischargePhysical, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargePhysical.validateHospitalDischargePhysicalCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHospitalDischargePhysicalText constraint of '<em>Hospital Discharge Physical</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargePhysical_validateHospitalDischargePhysicalText(
+			HospitalDischargePhysical hospitalDischargePhysical, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargePhysical.validateHospitalDischargePhysicalText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHospitalDischargePhysicalTitle constraint of '<em>Hospital Discharge Physical</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargePhysical_validateHospitalDischargePhysicalTitle(
+			HospitalDischargePhysical hospitalDischargePhysical, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargePhysical.validateHospitalDischargePhysicalTitle(diagnostics, context);
 	}
 
 	/**

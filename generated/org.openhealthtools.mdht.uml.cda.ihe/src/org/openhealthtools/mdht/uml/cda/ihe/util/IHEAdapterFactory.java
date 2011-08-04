@@ -82,6 +82,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ConditionalDose;
 import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet;
 import org.openhealthtools.mdht.uml.cda.ihe.DischargeSummary;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterEntry;
@@ -96,6 +97,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPresentIllness;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalCourseSection;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargeMedicationsSection;
+import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IHERegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.ihe.Immunization;
@@ -621,6 +623,16 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseScanDataEnterer(ScanDataEnterer object) {
 			return createScanDataEntererAdapter();
+		}
+
+		@Override
+		public Adapter caseDischargeDiet(DischargeDiet object) {
+			return createDischargeDietAdapter();
+		}
+
+		@Override
+		public Adapter caseHospitalDischargePhysical(HospitalDischargePhysical object) {
+			return createHospitalDischargePhysicalAdapter();
 		}
 
 		@Override
@@ -2128,6 +2140,34 @@ public class IHEAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createScanDataEntererAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet <em>Discharge Diet</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet
+	 * @generated
+	 */
+	public Adapter createDischargeDietAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical <em>Hospital Discharge Physical</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical
+	 * @generated
+	 */
+	public Adapter createHospitalDischargePhysicalAdapter() {
 		return null;
 	}
 

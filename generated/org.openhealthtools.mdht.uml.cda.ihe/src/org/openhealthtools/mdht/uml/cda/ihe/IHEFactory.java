@@ -741,6 +741,24 @@ public interface IHEFactory extends EFactory {
 	ScanDataEnterer createScanDataEnterer();
 
 	/**
+	 * Returns a new object of class '<em>Discharge Diet</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Discharge Diet</em>'.
+	 * @generated
+	 */
+	DischargeDiet createDischargeDiet();
+
+	/**
+	 * Returns a new object of class '<em>Hospital Discharge Physical</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Physical</em>'.
+	 * @generated
+	 */
+	HospitalDischargePhysical createHospitalDischargePhysical();
+
+	/**
 	 * Returns a new object of class '<em>Registry Delegate</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
