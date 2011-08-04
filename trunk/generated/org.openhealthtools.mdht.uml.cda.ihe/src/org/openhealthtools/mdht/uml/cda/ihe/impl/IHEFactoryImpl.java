@@ -34,6 +34,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ConditionalDose;
 import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet;
 import org.openhealthtools.mdht.uml.cda.ihe.DischargeSummary;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterHistorySection;
@@ -47,6 +48,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPresentIllness;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalCourseSection;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargeMedicationsSection;
+import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEFactory;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IHERegistryDelegate;
@@ -299,6 +301,10 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 				return createScanningDevice();
 			case IHEPackage.SCAN_DATA_ENTERER:
 				return createScanDataEnterer();
+			case IHEPackage.DISCHARGE_DIET:
+				return createDischargeDiet();
+			case IHEPackage.HOSPITAL_DISCHARGE_PHYSICAL:
+				return createHospitalDischargePhysical();
 			case IHEPackage.IHE_REGISTRY_DELEGATE:
 				return createIHERegistryDelegate();
 			default:
@@ -1094,6 +1100,26 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	public ScanDataEnterer createScanDataEnterer() {
 		ScanDataEntererImpl scanDataEnterer = new ScanDataEntererImpl();
 		return scanDataEnterer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DischargeDiet createDischargeDiet() {
+		DischargeDietImpl dischargeDiet = new DischargeDietImpl();
+		return dischargeDiet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargePhysical createHospitalDischargePhysical() {
+		HospitalDischargePhysicalImpl hospitalDischargePhysical = new HospitalDischargePhysicalImpl();
+		return hospitalDischargePhysical;
 	}
 
 	/**

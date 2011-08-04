@@ -82,6 +82,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ConditionalDose;
 import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet;
 import org.openhealthtools.mdht.uml.cda.ihe.DischargeSummary;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterEntry;
@@ -96,6 +97,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPresentIllness;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalCourseSection;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargeMedicationsSection;
+import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IHERegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.ihe.Immunization;
@@ -1993,6 +1995,40 @@ public class IHESwitch<T> {
 				}
 				return result;
 			}
+			case IHEPackage.DISCHARGE_DIET: {
+				DischargeDiet dischargeDiet = (DischargeDiet) theEObject;
+				T result = caseDischargeDiet(dischargeDiet);
+				if (result == null) {
+					result = caseSection(dischargeDiet);
+				}
+				if (result == null) {
+					result = caseAct(dischargeDiet);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dischargeDiet);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.HOSPITAL_DISCHARGE_PHYSICAL: {
+				HospitalDischargePhysical hospitalDischargePhysical = (HospitalDischargePhysical) theEObject;
+				T result = caseHospitalDischargePhysical(hospitalDischargePhysical);
+				if (result == null) {
+					result = caseSection(hospitalDischargePhysical);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargePhysical);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargePhysical);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case IHEPackage.IHE_REGISTRY_DELEGATE: {
 				IHERegistryDelegate iheRegistryDelegate = (IHERegistryDelegate) theEObject;
 				T result = caseIHERegistryDelegate(iheRegistryDelegate);
@@ -3251,6 +3287,36 @@ public class IHESwitch<T> {
 	 * @generated
 	 */
 	public T caseScanDataEnterer(ScanDataEnterer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Discharge Diet</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Discharge Diet</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDischargeDiet(DischargeDiet object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Physical</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Physical</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalDischargePhysical(HospitalDischargePhysical object) {
 		return null;
 	}
 
