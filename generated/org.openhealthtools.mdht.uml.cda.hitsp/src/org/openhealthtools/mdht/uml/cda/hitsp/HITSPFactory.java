@@ -507,6 +507,24 @@ public interface HITSPFactory extends EFactory {
 	UnstructuredOrScannedDocument createUnstructuredOrScannedDocument();
 
 	/**
+	 * Returns a new object of class '<em>Referral Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Referral Summary</em>'.
+	 * @generated
+	 */
+	ReferralSummary createReferralSummary();
+
+	/**
+	 * Returns a new object of class '<em>Discharge Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Discharge Summary</em>'.
+	 * @generated
+	 */
+	DischargeSummary createDischargeSummary();
+
+	/**
 	 * Returns a new object of class '<em>Encounter</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

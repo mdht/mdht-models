@@ -56,7 +56,8 @@ public class ReasonForReferralSectionImpl extends
 	 */
 	public boolean validateHITSPReasonForReferralSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateHITSPReasonForReferralSectionTemplateId(this, diagnostics, context);
+		return ReasonForReferralSectionOperations.validateHITSPReasonForReferralSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class ReasonForReferralSectionImpl extends
 	 */
 	@Override
 	public ReasonForReferralSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ReasonForReferralSectionImpl

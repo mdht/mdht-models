@@ -85,7 +85,7 @@ public class MedicationsSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe
 	 */
 	@Override
 	public MedicationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationsSectionImpl

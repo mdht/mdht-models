@@ -74,7 +74,7 @@ public class MedicationNormalDoseImpl extends MedicationImpl implements Medicati
 	 */
 	@Override
 	public MedicationNormalDose init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationNormalDoseImpl

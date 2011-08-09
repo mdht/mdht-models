@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.eclipse.emf.ecore.EClass;
@@ -1593,6 +1589,62 @@ public interface IDomainPackage extends EPackage {
 	int UNSTRUCTURED_OR_SCANNED_DOCUMENT_FEATURE_COUNT = UNSTRUCTURED_DOCUMENT_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReferralSummaryImpl <em>Referral Summary</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReferralSummaryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getReferralSummary()
+	 * @generated
+	 */
+	int REFERRAL_SUMMARY = 55;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_SUMMARY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Referral Summary</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_SUMMARY_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeSummaryImpl <em>Discharge Summary</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeSummaryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDischargeSummary()
+	 * @generated
+	 */
+	int DISCHARGE_SUMMARY = 56;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Discharge Summary</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY_FEATURE_COUNT = 1;
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergyDrugSensitivity <em>Allergy Drug Sensitivity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2669,6 +2721,48 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getUnstructuredOrScannedDocument();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IReferralSummary <em>Referral Summary</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Referral Summary</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IReferralSummary
+	 * @generated
+	 */
+	EClass getReferralSummary();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IReferralSummary#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IReferralSummary#getCDAType()
+	 * @see #getReferralSummary()
+	 * @generated
+	 */
+	EReference getReferralSummary_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary <em>Discharge Summary</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Discharge Summary</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary
+	 * @generated
+	 */
+	EClass getDischargeSummary();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary#getCDAType()
+	 * @see #getDischargeSummary()
+	 * @generated
+	 */
+	EReference getDischargeSummary_CDAType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.

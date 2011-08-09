@@ -129,20 +129,17 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_HEALTHCARE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_HEALTHCARE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_HEALTHCARE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_HEALTHCARE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_HEALTHCARE_PROVIDER,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryHealthcareProvider"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_HEALTHCARE_PROVIDER,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryHealthcareProvider"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -187,20 +184,17 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryTemplateId"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryTemplateId"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -245,20 +239,18 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryAdvanceDirectivesSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryAdvanceDirectivesSection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -303,20 +295,18 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryAllergiesReactionsSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryAllergiesReactionsSection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -361,20 +351,17 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryProblemListSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryProblemListSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -419,20 +406,17 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ENCOUNTERS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryEncountersSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ENCOUNTERS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryEncountersSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -477,20 +461,18 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_IMMUNIZATIONS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryImmunizationsSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_IMMUNIZATIONS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryImmunizationsSection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -535,20 +517,17 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PAYERS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryPayersSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PAYERS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryPayersSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -593,20 +572,17 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_MEDICATIONS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryMedicationsSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_MEDICATIONS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryMedicationsSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -651,20 +627,17 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_SURGERIES_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummarySurgeriesSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_SURGERIES_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummarySurgeriesSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -709,20 +682,17 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PLAN_OF_CARE_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryPlanOfCareSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PLAN_OF_CARE_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryPlanOfCareSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -767,20 +737,18 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryPregnancyHistorySection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryPregnancyHistorySection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -825,20 +793,17 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_VITAL_SIGNS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryVitalSignsSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_VITAL_SIGNS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryVitalSignsSection"), new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -883,20 +848,18 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
 			try {
 				VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			patientSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION,
-						 HITSPPlugin.INSTANCE.getString("PatientSummaryDiagnosticResultsSection"),
-						 new Object [] { patientSummary }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION,
+					HITSPPlugin.INSTANCE.getString("PatientSummaryDiagnosticResultsSection"),
+					new Object[] { patientSummary }));
 			}
 			return false;
 		}
@@ -961,11 +924,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static AdvanceDirectivesSection getHITSPAdvanceDirectivesSection(PatientSummary patientSummary) {
 		if (GET_HITSP_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(126));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(126));
 			try {
 				GET_HITSP_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1005,11 +969,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static AllergiesReactionsSection getAllergiesReactionsSection(PatientSummary patientSummary) {
 		if (GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(127));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(127));
 			try {
 				GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1049,11 +1014,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static ProblemListSection getProblemListSection(PatientSummary patientSummary) {
 		if (GET_PROBLEM_LIST_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(128));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(128));
 			try {
 				GET_PROBLEM_LIST_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_LIST_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1093,11 +1059,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static EncountersSection getHITSPEncountersSection(PatientSummary patientSummary) {
 		if (GET_HITSP_ENCOUNTERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(129));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(129));
 			try {
 				GET_HITSP_ENCOUNTERS_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_ENCOUNTERS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1137,11 +1104,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static ImmunizationsSection getHITSPImmunizationsSection(PatientSummary patientSummary) {
 		if (GET_HITSP_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(130));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(130));
 			try {
 				GET_HITSP_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_IMMUNIZATIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1181,11 +1149,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static PayersSection getHITSPPayersSection(PatientSummary patientSummary) {
 		if (GET_HITSP_PAYERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(131));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(131));
 			try {
 				GET_HITSP_PAYERS_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_PAYERS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1225,11 +1194,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static MedicationsSection getHITSPMedicationsSection(PatientSummary patientSummary) {
 		if (GET_HITSP_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(132));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(132));
 			try {
 				GET_HITSP_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_MEDICATIONS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1269,11 +1239,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static SurgeriesSection getSurgeriesSection(PatientSummary patientSummary) {
 		if (GET_SURGERIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(133));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(133));
 			try {
 				GET_SURGERIES_SECTION__EOCL_QRY = helper.createQuery(GET_SURGERIES_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1313,11 +1284,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static PlanOfCareSection getHITSPPlanOfCareSection(PatientSummary patientSummary) {
 		if (GET_HITSP_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(134));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(134));
 			try {
 				GET_HITSP_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_PLAN_OF_CARE_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1357,11 +1329,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static PregnancyHistorySection getPregnancyHistorySection(PatientSummary patientSummary) {
 		if (GET_PREGNANCY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(135));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(135));
 			try {
 				GET_PREGNANCY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_PREGNANCY_HISTORY_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1401,11 +1374,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static VitalSignsSection getHITSPVitalSignsSection(PatientSummary patientSummary) {
 		if (GET_HITSP_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(136));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(136));
 			try {
 				GET_HITSP_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_HITSP_VITAL_SIGNS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1445,11 +1419,12 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	public static DiagnosticResultsSection getDiagnosticResultsSection(PatientSummary patientSummary) {
 		if (GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.PATIENT_SUMMARY, HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(137));
+			helper.setOperationContext(
+				HITSPPackage.Literals.PATIENT_SUMMARY,
+				HITSPPackage.Literals.PATIENT_SUMMARY.getEAllOperations().get(137));
 			try {
 				GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

@@ -86,7 +86,7 @@ public class SurgeriesSectionImpl extends CodedSurgeriesSectionImpl implements S
 	 */
 	@Override
 	public SurgeriesSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // SurgeriesSectionImpl

@@ -65,7 +65,7 @@ public class FamilyHistorySectionImpl extends FamilyMedicalHistorySectionImpl im
 	 */
 	@Override
 	public FamilyHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // FamilyHistorySectionImpl

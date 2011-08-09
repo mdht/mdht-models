@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -25,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IComment;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ICondition;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainFactory;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounter;
@@ -61,6 +58,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReasonForReferralSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResult;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistorySection;
@@ -226,6 +224,10 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createMedicationInformation();
 			case IDomainPackage.UNSTRUCTURED_OR_SCANNED_DOCUMENT:
 				return (EObject) createUnstructuredOrScannedDocument();
+			case IDomainPackage.REFERRAL_SUMMARY:
+				return (EObject) createReferralSummary();
+			case IDomainPackage.DISCHARGE_SUMMARY:
+				return (EObject) createDischargeSummary();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -779,6 +781,26 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	public IUnstructuredOrScannedDocument createUnstructuredOrScannedDocument() {
 		UnstructuredOrScannedDocumentImpl unstructuredOrScannedDocument = new UnstructuredOrScannedDocumentImpl();
 		return unstructuredOrScannedDocument;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IReferralSummary createReferralSummary() {
+		ReferralSummaryImpl referralSummary = new ReferralSummaryImpl();
+		return referralSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IDischargeSummary createDischargeSummary() {
+		DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
+		return dischargeSummary;
 	}
 
 	/**

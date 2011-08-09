@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.util;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -24,6 +20,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IComment;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ICondition;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounter;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersSection;
@@ -59,6 +56,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReasonForReferralSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResult;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistorySection;
@@ -399,6 +397,16 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseUnstructuredOrScannedDocument(IUnstructuredOrScannedDocument object) {
 			return createUnstructuredOrScannedDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseReferralSummary(IReferralSummary object) {
+			return createReferralSummaryAdapter();
+		}
+
+		@Override
+		public Adapter caseDischargeSummary(IDischargeSummary object) {
+			return createDischargeSummaryAdapter();
 		}
 
 		@Override
@@ -1187,6 +1195,34 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createUnstructuredOrScannedDocumentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IReferralSummary <em>Referral Summary</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IReferralSummary
+	 * @generated
+	 */
+	public Adapter createReferralSummaryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary <em>Discharge Summary</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary
+	 * @generated
+	 */
+	public Adapter createDischargeSummaryAdapter() {
 		return null;
 	}
 

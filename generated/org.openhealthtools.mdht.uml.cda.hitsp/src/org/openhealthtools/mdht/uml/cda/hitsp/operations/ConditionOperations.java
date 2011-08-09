@@ -102,20 +102,17 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 			helper.setContext(HITSPPackage.Literals.CONDITION);
 			try {
 				VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(condition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			condition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.CONDITION__CONDITION_HAS_TREATING_PROVIDER,
-						 HITSPPlugin.INSTANCE.getString("ConditionHasTreatingProvider"),
-						 new Object [] { condition }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.CONDITION__CONDITION_HAS_TREATING_PROVIDER,
+					HITSPPlugin.INSTANCE.getString("ConditionHasTreatingProvider"), new Object[] { condition }));
 			}
 			return false;
 		}
@@ -160,20 +157,16 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 			helper.setContext(HITSPPackage.Literals.CONDITION);
 			try {
 				VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(condition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.CONDITION__CONDITION_HAS_PROVIDER_ID,
-						 HITSPPlugin.INSTANCE.getString("ConditionHasProviderId"),
-						 new Object [] { condition }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.CONDITION__CONDITION_HAS_PROVIDER_ID,
+					HITSPPlugin.INSTANCE.getString("ConditionHasProviderId"), new Object[] { condition }));
 			}
 			return false;
 		}
@@ -218,20 +211,17 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 			helper.setContext(HITSPPackage.Literals.CONDITION);
 			try {
 				VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(condition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			condition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.CONDITION__CONDITION_HAS_PROVIDER_TREATMENT_TIME,
-						 HITSPPlugin.INSTANCE.getString("ConditionHasProviderTreatmentTime"),
-						 new Object [] { condition }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.CONDITION__CONDITION_HAS_PROVIDER_TREATMENT_TIME,
+					HITSPPlugin.INSTANCE.getString("ConditionHasProviderTreatmentTime"), new Object[] { condition }));
 			}
 			return false;
 		}
@@ -276,20 +266,16 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 			helper.setContext(HITSPPackage.Literals.CONDITION);
 			try {
 				VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(condition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.CONDITION__CONDITION_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("ConditionTemplateId"),
-						 new Object [] { condition }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.CONDITION__CONDITION_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("ConditionTemplateId"), new Object[] { condition }));
 			}
 			return false;
 		}
@@ -334,20 +320,16 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 			helper.setContext(HITSPPackage.Literals.CONDITION);
 			try {
 				VALIDATE_CONDITION_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(condition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.CONDITION__CONDITION_CONDITION_ENTRY,
-						 HITSPPlugin.INSTANCE.getString("ConditionConditionEntry"),
-						 new Object [] { condition }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.CONDITION__CONDITION_CONDITION_ENTRY,
+					HITSPPlugin.INSTANCE.getString("ConditionConditionEntry"), new Object[] { condition }));
 			}
 			return false;
 		}
@@ -401,11 +383,11 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	public static EList<ConditionEntry> getConditionEntries(Condition condition) {
 		if (GET_CONDITION_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.CONDITION, HITSPPackage.Literals.CONDITION.getEAllOperations().get(76));
+			helper.setOperationContext(
+				HITSPPackage.Literals.CONDITION, HITSPPackage.Literals.CONDITION.getEAllOperations().get(76));
 			try {
 				GET_CONDITION_ENTRIES__EOCL_QRY = helper.createQuery(GET_CONDITION_ENTRIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

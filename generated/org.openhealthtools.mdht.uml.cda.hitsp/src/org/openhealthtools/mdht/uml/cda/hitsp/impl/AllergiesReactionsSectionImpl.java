@@ -58,7 +58,8 @@ public class AllergiesReactionsSectionImpl extends
 	 */
 	public boolean validateHITSPAllergiesReactionsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesReactionsSectionOperations.validateHITSPAllergiesReactionsSectionTemplateId(this, diagnostics, context);
+		return AllergiesReactionsSectionOperations.validateHITSPAllergiesReactionsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +69,8 @@ public class AllergiesReactionsSectionImpl extends
 	 */
 	public boolean validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesReactionsSectionOperations.validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(this, diagnostics, context);
+		return AllergiesReactionsSectionOperations.validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,7 +89,7 @@ public class AllergiesReactionsSectionImpl extends
 	 */
 	@Override
 	public AllergiesReactionsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AllergiesReactionsSectionImpl

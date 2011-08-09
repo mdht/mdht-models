@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.util.BasicValidationHandler;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
-public class TestDomainInterface {
+public class TestPatientSummary {
 
 	/**
 	 * @param args

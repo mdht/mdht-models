@@ -9,19 +9,13 @@ package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.cdt.impl.UnstructuredDocumentImpl;
-
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredOrScannedDocument;
-
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.UnstructuredDocumentOperations;
-
 import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicalDocumentOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ScannedDocumentOperations;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -33,7 +27,8 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl implements UnstructuredOrScannedDocument {
+public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl implements
+		UnstructuredOrScannedDocument {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -166,8 +161,10 @@ public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScannedDocumentOperations.validateScannedDocumentHasRepresentedCustodianOrganizationName(this, diagnostics, context);
+	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentHasRepresentedCustodianOrganizationName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -175,8 +172,10 @@ public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScannedDocumentOperations.validateScannedDocumentHasRepresentedCustodianOrganizationAddr(this, diagnostics, context);
+	public boolean validateScannedDocumentHasRepresentedCustodianOrganizationAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentHasRepresentedCustodianOrganizationAddr(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -184,8 +183,10 @@ public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScannedDocumentOperations.validateScannedDocumentLegalAuthenticatorAssignedEntityId(this, diagnostics, context);
+	public boolean validateScannedDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentLegalAuthenticatorAssignedEntityId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -202,7 +203,8 @@ public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasNonXMLBodyBinaryText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyBinaryText(this, diagnostics, context);
 	}
 
@@ -211,7 +213,8 @@ public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasNonXMLBodyTextMediaType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyTextMediaType(this, diagnostics, context);
 	}
 
@@ -220,8 +223,10 @@ public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyTextRepresentation(this, diagnostics, context);
+	public boolean validateScannedDocumentHasNonXMLBodyTextRepresentation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ScannedDocumentOperations.validateScannedDocumentHasNonXMLBodyTextRepresentation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -310,8 +315,10 @@ public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentOnePatientPerDocument(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentOnePatientPerDocument(this, diagnostics, context);
+	public boolean validateUnstructuredDocumentOnePatientPerDocument(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentOnePatientPerDocument(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -319,8 +326,9 @@ public class UnstructuredOrScannedDocumentImpl extends UnstructuredDocumentImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UnstructuredOrScannedDocument init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //UnstructuredOrScannedDocumentImpl
+} // UnstructuredOrScannedDocumentImpl
