@@ -14,7 +14,18 @@ import java.util.Date;
 import java.util.UUID;
 
 import org.eclipse.emf.common.util.Diagnostic;
+import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
+import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
+import org.openhealthtools.mdht.uml.cda.Author;
+import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
+import org.openhealthtools.mdht.uml.cda.Custodian;
+import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
+import org.openhealthtools.mdht.uml.cda.Organization;
+import org.openhealthtools.mdht.uml.cda.Patient;
+import org.openhealthtools.mdht.uml.cda.PatientRole;
+import org.openhealthtools.mdht.uml.cda.Person;
+import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.hitsp.DischargeSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPFactory;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergiesReactionsSection;
@@ -22,13 +33,23 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.ICondition;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainFactory;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHistoryOfPastIllnessSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHospitalCourseSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHospitalDischargeMedicationsSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.util.BasicValidationHandler;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
+import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ADXP;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
+import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.datatypes.II;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ON;
+import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
+import org.openhealthtools.mdht.uml.hl7.vocab.AddressPartType;
 
 public class TestDischargeSummary {
 
@@ -40,18 +61,113 @@ public class TestDischargeSummary {
 		IDischargeSummary dischargeSummary = IDomainFactory.eINSTANCE.createDischargeSummary();
 		dischargeSummary.setCDAType(dischargeSummaryImpl);
 
+		createHeader(dischargeSummary);
+
 		createActiveProblems(dischargeSummary);
 		createAllergies(dischargeSummary);
+		createResolvedProblems(dischargeSummary);
 		createAdmittingDiagnosis(dischargeSummary);
 		createDischargeDiagnosis(dischargeSummary);
 		createDischargeMeds(dischargeSummary);
 		createHospitalCourse(dischargeSummary);
+		createPlanOfCare(dischargeSummary);
 
+		System.out.println();
 		save(dischargeSummary.getCDAType());
 
 		System.out.println();
+		System.out.println();
 		validate(dischargeSummary.getCDAType());
 
+	}
+
+	public static void createHeader(IDischargeSummary doc) {
+		doc.withId().setRoot("2.16.840.1.113883.3.72");
+
+		II typeId = doc.withTypeId();
+		typeId.setRoot("2.16.840.1.113883.1.3");
+		typeId.setExtension("POCD_HD000040");
+
+		doc.withEffectiveTime().setValue("20110804103022-0500");
+
+		doc.withLanguageCode().setCode("en-US");
+
+		doc.withTitle().addText("Test Instance of C48 Discharge Summary");
+
+		CE confCode = DatatypesFactory.eINSTANCE.createCE("N", "2.16.840.1.113883.5.25");
+		doc.setConfidentialityCode(confCode);
+
+		CE code = DatatypesFactory.eINSTANCE.createCE(
+			"34133-9", "2.16.840.1.113883.6.1", "LOINC", "Summarization of episode note (CCD/CONF-1)");
+		doc.setCode(code);
+
+		addPatient(doc);
+		addOriginalAuthor(doc);
+		addDocumentCustodian(doc);
+	}
+
+	public static void addPatient(IDischargeSummary doc) {
+		RecordTarget target = doc.addRecordTarget();
+
+		PatientRole patientRole = CDAFactory.eINSTANCE.createPatientRole();
+		Patient patient = CDAFactory.eINSTANCE.createPatient();
+		target.setPatientRole(patientRole);
+		patientRole.setPatient(patient);
+
+		II id = DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString());
+		patientRole.getIds().add(id);
+
+		AD addr = DatatypesFactory.eINSTANCE.createAD();
+		ADXP country = DatatypesFactory.eINSTANCE.createADXP(AddressPartType.CNT, "US");
+		addr.getCountries().add(country);
+		patientRole.getAddrs().add(addr);
+	}
+
+	public static void addOriginalAuthor(IDischargeSummary doc) {
+		Author author = doc.addAuthor();
+
+		author.setTime(DatatypesFactory.eINSTANCE.createTS("20070916130000"));
+		// assignedAuthor
+		AssignedAuthor assignedAuthor = CDAFactory.eINSTANCE.createAssignedAuthor();
+		author.setAssignedAuthor(assignedAuthor);
+		assignedAuthor.getIds().add(DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString()));
+		// assignedPerson
+		Person person = CDAFactory.eINSTANCE.createPerson();
+		assignedAuthor.setAssignedPerson(person);
+		PN pn = DatatypesFactory.eINSTANCE.createPN();
+		pn.addGiven("John").addFamily("Doe");
+		person.getNames().add(pn);
+
+		// representedOrganization
+		Organization organization = CDAFactory.eINSTANCE.createOrganization();
+		assignedAuthor.setRepresentedOrganization(organization);
+		II orgId = DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString());
+		organization.getIds().add(orgId);
+		ON on = DatatypesFactory.eINSTANCE.createON();
+		on.addText("Happy Valley Hospital");
+		organization.getNames().add(on);
+		organization.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL("+1-800-555-1212"));
+	}
+
+	public static void addDocumentCustodian(IDischargeSummary doc) {
+		Custodian custodian = doc.withCustodian();
+
+		AssignedCustodian assignedCustodian = CDAFactory.eINSTANCE.createAssignedCustodian();
+		custodian.setAssignedCustodian(assignedCustodian);
+		// representedOrganization
+		CustodianOrganization custodianOrganization = CDAFactory.eINSTANCE.createCustodianOrganization();
+		assignedCustodian.setRepresentedCustodianOrganization(custodianOrganization);
+		II custodianId = DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString());
+		custodianOrganization.getIds().add(custodianId);
+		ON custodianName = DatatypesFactory.eINSTANCE.createON();
+		custodianName.addText("ONC ToC Team");
+		custodianOrganization.setName(custodianName);
+		custodianOrganization.setTelecom(DatatypesFactory.eINSTANCE.createTEL("+1-800-555-1212"));
+
+		AD addr = DatatypesFactory.eINSTANCE.createAD();
+		ADXP country = DatatypesFactory.eINSTANCE.createADXP(AddressPartType.CNT, "US");
+		addr.getCountries().add(country);
+		custodianOrganization.setAddr(addr);
 	}
 
 	public static IProblemListSection createActiveProblems(IDischargeSummary dischargeSummary) {
@@ -80,7 +196,6 @@ public class TestDischargeSummary {
 
 		// test toCDAType()
 		System.out.println();
-		System.out.println();
 		System.out.println("ProblemSection code = " + problemListSection.getCDAType().getCode());
 		System.out.println("ProblemEntry classCode = " + problemEntry.getCDAType().getClassCode());
 		System.out.println("ProblemEntry statusCode = " + problemEntry.getCDAType().getStatusCode().getCode());
@@ -93,6 +208,12 @@ public class TestDischargeSummary {
 		allergiesSection.addAllergyDrugSensitivity();
 
 		return allergiesSection;
+	}
+
+	public static IHistoryOfPastIllnessSection createResolvedProblems(IDischargeSummary dischargeSummary) {
+		IHistoryOfPastIllnessSection resolvedProblems = dischargeSummary.withResolvedProblems();
+
+		return resolvedProblems;
 	}
 
 	public static IHospitalAdmissionDiagnosisSection createAdmittingDiagnosis(IDischargeSummary dischargeSummary) {
@@ -117,6 +238,12 @@ public class TestDischargeSummary {
 		IHospitalCourseSection hospitalCourse = dischargeSummary.withHospitalCourse();
 
 		return hospitalCourse;
+	}
+
+	public static IPlanOfCareSection createPlanOfCare(IDischargeSummary dischargeSummary) {
+		IPlanOfCareSection planOfCare = dischargeSummary.withPlanOfCare();
+
+		return planOfCare;
 	}
 
 	public static void save(ClinicalDocument clinicalDocument) throws Exception {
