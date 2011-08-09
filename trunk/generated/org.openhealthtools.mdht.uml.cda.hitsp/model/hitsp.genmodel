@@ -804,6 +804,104 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//UnstructuredOrScannedDocument"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//ReferralSummary"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//DischargeSummary">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryProblemListSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryProblemListSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryProblemListSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryAdmissionMedicationHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryAdmissionMedicationHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryAdmissionMedicationHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryHospitalAdmissionDiagnosisSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryHospitalAdmissionDiagnosisSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryHospitalAdmissionDiagnosisSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryAdvanceDirectivesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryAdvanceDirectivesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryAdvanceDirectivesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryAllergiesReactionsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryAllergiesReactionsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryAllergiesReactionsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryDischargeDiagnosisSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryDischargeDiagnosisSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryDischargeDiagnosisSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryDischargeDiet">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryDischargeDiet/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryDischargeDiet/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryHospitalDischargeMedicationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryHospitalDischargeMedicationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryHospitalDischargeMedicationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryDiagnosticResultsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryDiagnosticResultsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryDiagnosticResultsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryFunctionalStatusSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryFunctionalStatusSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryFunctionalStatusSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryHistoryOfPresentIllness">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryHistoryOfPresentIllness/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryHistoryOfPresentIllness/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryHospitalCourseSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryHospitalCourseSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryHospitalCourseSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryMedicalEquipmentSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryMedicalEquipmentSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryMedicalEquipmentSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryPhysicalExamSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryPhysicalExamSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryPhysicalExamSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryPlanOfCareSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryPlanOfCareSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryPlanOfCareSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryHistoryOfPastIllnessSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryHistoryOfPastIllnessSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryHistoryOfPastIllnessSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryReviewOfSystemsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryReviewOfSystemsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryReviewOfSystemsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryMedicationsAdministeredSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryMedicationsAdministeredSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryMedicationsAdministeredSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/DischargeSummaryVitalSignsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryVitalSignsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeSummary/DischargeSummaryVitalSignsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getProblemListSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getAdmissionMedicationHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getHospitalAdmissionDiagnosisSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getAdvanceDirectivesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getAllergiesReactionsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getDischargeDiagnosisSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getDischargeDiet"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getHospitalDischargeMedicationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getDiagnosticResultsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getFunctionalStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getHistoryOfPresentIllness"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getHospitalCourseSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getMedicalEquipmentSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getPhysicalExamSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getPlanOfCareSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getHistoryOfPastIllnessSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getReviewOfSystemsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getMedicationsAdministeredSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeSummary/getVitalSignsSection"/>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//HITSPRegistryDelegate"/>
   </genPackages>
 </genmodel:GenModel>

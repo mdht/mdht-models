@@ -56,7 +56,8 @@ public class MedicalEquipmentSectionImpl extends MedicalDevicesSectionImpl imple
 	 */
 	public boolean validateHITSPMedicalEquipmentSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentSectionOperations.validateHITSPMedicalEquipmentSectionTemplateId(this, diagnostics, context);
+		return MedicalEquipmentSectionOperations.validateHITSPMedicalEquipmentSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class MedicalEquipmentSectionImpl extends MedicalDevicesSectionImpl imple
 	 */
 	@Override
 	public MedicalEquipmentSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicalEquipmentSectionImpl

@@ -66,7 +66,8 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 */
 	public boolean validateMedicationInformationCodedProductVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationCodedProductVocab(this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationCodedProductVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +77,8 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 */
 	public boolean validateMedicationInformationCodedDrugClassVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationCodedDrugClassVocab(this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationCodedDrugClassVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +88,8 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 */
 	public boolean validateMedicationInformationCodedIngredientVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationCodedIngredientVocab(this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationCodedIngredientVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -105,7 +108,8 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 */
 	public boolean validateMedicationInformationCodedBrandNameVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationCodedBrandNameVocab(this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationCodedBrandNameVocab(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -115,7 +119,8 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 */
 	public boolean validateMedicationInformationFreeTextProductName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationFreeTextProductName(this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationFreeTextProductName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -125,7 +130,8 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 */
 	public boolean validateMedicationInformationFreeTextBrandName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationFreeTextBrandName(this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationFreeTextBrandName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -144,7 +150,7 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 */
 	@Override
 	public MedicationInformation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationInformationImpl

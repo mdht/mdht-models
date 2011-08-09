@@ -57,7 +57,8 @@ public class HistoryOfPastIllnessSectionImpl extends
 	 */
 	public boolean validateHITSPHistoryOfPastIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHITSPHistoryOfPastIllnessSectionTemplateId(this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHITSPHistoryOfPastIllnessSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,7 @@ public class HistoryOfPastIllnessSectionImpl extends
 	 */
 	@Override
 	public HistoryOfPastIllnessSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HistoryOfPastIllnessSectionImpl

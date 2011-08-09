@@ -3178,4 +3178,330 @@
       <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//DocumentationOf"/>
     </eOperations>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReferralSummary">
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="getAuthors" ordered="false" lowerBound="1"
+          upperBound="-1" eType="ecore:EClass urn:hl7-org:v3#//Author">
+        <eAnnotations source="redefines" references="#//ReferralSummary/getAuthors"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addAuthor" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Author">
+        <eAnnotations source="redefines" references="#//ReferralSummary/addAuthor"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addAuthor" ordered="false" lowerBound="1"
+          eType="#//ReferralSummary">
+        <eAnnotations source="redefines" references="#//ReferralSummary/addAuthor.1"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Author"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//ReferralSummary/getCustodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//ReferralSummary/withCustodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//ReferralSummary">
+        <eAnnotations source="redefines" references="#//ReferralSummary/setCustodian"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+      </contents>
+    </eAnnotations>
+    <eOperations name="getTypeId" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InfrastructureRootTypeId"/>
+    <eOperations name="withTypeId" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InfrastructureRootTypeId"/>
+    <eOperations name="setTypeId" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InfrastructureRootTypeId"/>
+    </eOperations>
+    <eOperations name="getId" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//II"/>
+    <eOperations name="withId" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//II"/>
+    <eOperations name="setId" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//II"/>
+    </eOperations>
+    <eOperations name="getCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    <eOperations name="withCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    <eOperations name="setCode" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    </eOperations>
+    <eOperations name="getTitle" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST"/>
+    <eOperations name="withTitle" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST"/>
+    <eOperations name="setTitle" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST"/>
+    </eOperations>
+    <eOperations name="getEffectiveTime" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//TS"/>
+    <eOperations name="withEffectiveTime" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//TS"/>
+    <eOperations name="setEffectiveTime" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//TS"/>
+    </eOperations>
+    <eOperations name="getConfidentialityCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    <eOperations name="withConfidentialityCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    <eOperations name="setConfidentialityCode" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    </eOperations>
+    <eOperations name="getLanguageCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS"/>
+    <eOperations name="withLanguageCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS"/>
+    <eOperations name="setLanguageCode" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS"/>
+    </eOperations>
+    <eOperations name="getRecordTargets" ordered="false" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass urn:hl7-org:v3#//RecordTarget"/>
+    <eOperations name="addRecordTarget" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget"/>
+    <eOperations name="addRecordTarget" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget"/>
+    </eOperations>
+    <eOperations name="getAuthors" ordered="false" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass urn:hl7-org:v3#//Author"/>
+    <eOperations name="addAuthor" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Author"/>
+    <eOperations name="addAuthor" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Author"/>
+    </eOperations>
+    <eOperations name="getCustodian" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+    <eOperations name="withCustodian" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+    <eOperations name="setCustodian" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+    </eOperations>
+    <eOperations name="getComponent" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Component2"/>
+    <eOperations name="withComponent" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Component2"/>
+    <eOperations name="setComponent" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Component2"/>
+    </eOperations>
+    <eOperations name="getDataEnterer" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//DataEnterer"/>
+    <eOperations name="withDataEnterer" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//DataEnterer"/>
+    <eOperations name="setDataEnterer" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//DataEnterer"/>
+    </eOperations>
+    <eOperations name="getInformationRecipients" ordered="false" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient"/>
+    <eOperations name="addInformationRecipient" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient"/>
+    <eOperations name="addInformationRecipient" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient"/>
+    </eOperations>
+    <eOperations name="getLegalAuthenticator" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator"/>
+    <eOperations name="withLegalAuthenticator" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator"/>
+    <eOperations name="setLegalAuthenticator" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator"/>
+    </eOperations>
+    <eOperations name="getAuthenticators" ordered="false" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass urn:hl7-org:v3#//Authenticator"/>
+    <eOperations name="addAuthenticator" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Authenticator"/>
+    <eOperations name="addAuthenticator" ordered="false" lowerBound="1" eType="#//ReferralSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Authenticator"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
+        lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//ClinicalDocument"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DischargeSummary">
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="getAuthors" ordered="false" lowerBound="1"
+          upperBound="-1" eType="ecore:EClass urn:hl7-org:v3#//Author">
+        <eAnnotations source="redefines" references="#//DischargeSummary/getAuthors"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addAuthor" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Author">
+        <eAnnotations source="redefines" references="#//DischargeSummary/addAuthor"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="addAuthor" ordered="false" lowerBound="1"
+          eType="#//DischargeSummary">
+        <eAnnotations source="redefines" references="#//DischargeSummary/addAuthor.1"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Author"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="getCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//DischargeSummary/getCustodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="withCustodian" ordered="false" lowerBound="1"
+          eType="ecore:EClass urn:hl7-org:v3#//Custodian">
+        <eAnnotations source="redefines" references="#//DischargeSummary/withCustodian"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" name="setCustodian" ordered="false" lowerBound="1"
+          eType="#//DischargeSummary">
+        <eAnnotations source="redefines" references="#//DischargeSummary/setCustodian"/>
+        <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+      </contents>
+    </eAnnotations>
+    <eOperations name="getTypeId" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InfrastructureRootTypeId"/>
+    <eOperations name="withTypeId" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InfrastructureRootTypeId"/>
+    <eOperations name="setTypeId" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InfrastructureRootTypeId"/>
+    </eOperations>
+    <eOperations name="getId" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//II"/>
+    <eOperations name="withId" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//II"/>
+    <eOperations name="setId" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//II"/>
+    </eOperations>
+    <eOperations name="getCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    <eOperations name="withCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    <eOperations name="setCode" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    </eOperations>
+    <eOperations name="getTitle" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST"/>
+    <eOperations name="withTitle" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST"/>
+    <eOperations name="setTitle" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST"/>
+    </eOperations>
+    <eOperations name="getEffectiveTime" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//TS"/>
+    <eOperations name="withEffectiveTime" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//TS"/>
+    <eOperations name="setEffectiveTime" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//TS"/>
+    </eOperations>
+    <eOperations name="getConfidentialityCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    <eOperations name="withConfidentialityCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    <eOperations name="setConfidentialityCode" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
+    </eOperations>
+    <eOperations name="getLanguageCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS"/>
+    <eOperations name="withLanguageCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS"/>
+    <eOperations name="setLanguageCode" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS"/>
+    </eOperations>
+    <eOperations name="getRecordTargets" ordered="false" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass urn:hl7-org:v3#//RecordTarget"/>
+    <eOperations name="addRecordTarget" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget"/>
+    <eOperations name="addRecordTarget" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//RecordTarget"/>
+    </eOperations>
+    <eOperations name="getAuthors" ordered="false" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass urn:hl7-org:v3#//Author"/>
+    <eOperations name="addAuthor" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Author"/>
+    <eOperations name="addAuthor" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Author"/>
+    </eOperations>
+    <eOperations name="getCustodian" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+    <eOperations name="withCustodian" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+    <eOperations name="setCustodian" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Custodian"/>
+    </eOperations>
+    <eOperations name="getComponent" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Component2"/>
+    <eOperations name="withComponent" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Component2"/>
+    <eOperations name="setComponent" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Component2"/>
+    </eOperations>
+    <eOperations name="getDataEnterer" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//DataEnterer"/>
+    <eOperations name="withDataEnterer" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//DataEnterer"/>
+    <eOperations name="setDataEnterer" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//DataEnterer"/>
+    </eOperations>
+    <eOperations name="getInformationRecipients" ordered="false" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient"/>
+    <eOperations name="addInformationRecipient" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient"/>
+    <eOperations name="addInformationRecipient" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//InformationRecipient"/>
+    </eOperations>
+    <eOperations name="getLegalAuthenticator" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator"/>
+    <eOperations name="withLegalAuthenticator" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator"/>
+    <eOperations name="setLegalAuthenticator" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//LegalAuthenticator"/>
+    </eOperations>
+    <eOperations name="getAuthenticators" ordered="false" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass urn:hl7-org:v3#//Authenticator"/>
+    <eOperations name="addAuthenticator" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Authenticator"/>
+    <eOperations name="addAuthenticator" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Authenticator"/>
+    </eOperations>
+    <eOperations name="getActiveProblems" ordered="false" lowerBound="1" eType="#//ProblemListSection"/>
+    <eOperations name="withActiveProblems" ordered="false" lowerBound="1" eType="#//ProblemListSection"/>
+    <eOperations name="setActiveProblems" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//ProblemListSection"/>
+    </eOperations>
+    <eOperations name="getAdmissionMedications" ordered="false" lowerBound="1" eType="#//AdmissionMedicationHistorySection"/>
+    <eOperations name="withAdmissionMedications" ordered="false" lowerBound="1" eType="#//AdmissionMedicationHistorySection"/>
+    <eOperations name="setAdmissionMedications" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//AdmissionMedicationHistorySection"/>
+    </eOperations>
+    <eOperations name="getAdmittingDiagnosis" ordered="false" lowerBound="1" eType="#//HospitalAdmissionDiagnosisSection"/>
+    <eOperations name="withAdmittingDiagnosis" ordered="false" lowerBound="1" eType="#//HospitalAdmissionDiagnosisSection"/>
+    <eOperations name="setAdmittingDiagnosis" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//HospitalAdmissionDiagnosisSection"/>
+    </eOperations>
+    <eOperations name="getAdvanceDirectives" ordered="false" lowerBound="1" eType="#//AdvanceDirectivesSection"/>
+    <eOperations name="withAdvanceDirectives" ordered="false" lowerBound="1" eType="#//AdvanceDirectivesSection"/>
+    <eOperations name="setAdvanceDirectives" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//AdvanceDirectivesSection"/>
+    </eOperations>
+    <eOperations name="getAllergies" ordered="false" lowerBound="1" eType="#//AllergiesReactionsSection"/>
+    <eOperations name="withAllergies" ordered="false" lowerBound="1" eType="#//AllergiesReactionsSection"/>
+    <eOperations name="setAllergies" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//AllergiesReactionsSection"/>
+    </eOperations>
+    <eOperations name="getDischargeDiagnosis" ordered="false" lowerBound="1" eType="#//DischargeDiagnosisSection"/>
+    <eOperations name="withDischargeDiagnosis" ordered="false" lowerBound="1" eType="#//DischargeDiagnosisSection"/>
+    <eOperations name="setDischargeDiagnosis" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//DischargeDiagnosisSection"/>
+    </eOperations>
+    <eOperations name="getDischargeDiet" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//DischargeDiet"/>
+    <eOperations name="withDischargeDiet" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//DischargeDiet"/>
+    <eOperations name="setDischargeDiet" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//DischargeDiet"/>
+    </eOperations>
+    <eOperations name="getDischargeMeds" ordered="false" lowerBound="1" eType="#//HospitalDischargeMedicationsSection"/>
+    <eOperations name="withDischargeMeds" ordered="false" lowerBound="1" eType="#//HospitalDischargeMedicationsSection"/>
+    <eOperations name="setDischargeMeds" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//HospitalDischargeMedicationsSection"/>
+    </eOperations>
+    <eOperations name="getDischargeProceduresTestsAndReports" ordered="false" lowerBound="1"
+        eType="#//DiagnosticResultsSection"/>
+    <eOperations name="withDischargeProceduresTestsAndReports" ordered="false" lowerBound="1"
+        eType="#//DiagnosticResultsSection"/>
+    <eOperations name="setDischargeProceduresTestsAndReports" ordered="false" lowerBound="1"
+        eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//DiagnosticResultsSection"/>
+    </eOperations>
+    <eOperations name="getFunctionalStatus" ordered="false" lowerBound="1" eType="#//FunctionalStatusSection"/>
+    <eOperations name="withFunctionalStatus" ordered="false" lowerBound="1" eType="#//FunctionalStatusSection"/>
+    <eOperations name="setFunctionalStatus" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//FunctionalStatusSection"/>
+    </eOperations>
+    <eOperations name="getHistoryOfPresentIllness" ordered="false" lowerBound="1"
+        eType="#//HistoryOfPresentIllness"/>
+    <eOperations name="withHistoryOfPresentIllness" ordered="false" lowerBound="1"
+        eType="#//HistoryOfPresentIllness"/>
+    <eOperations name="setHistoryOfPresentIllness" ordered="false" lowerBound="1"
+        eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//HistoryOfPresentIllness"/>
+    </eOperations>
+    <eOperations name="getHospitalCourse" ordered="false" lowerBound="1" eType="#//HospitalCourseSection"/>
+    <eOperations name="withHospitalCourse" ordered="false" lowerBound="1" eType="#//HospitalCourseSection"/>
+    <eOperations name="setHospitalCourse" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//HospitalCourseSection"/>
+    </eOperations>
+    <eOperations name="getMedicalEquipment" ordered="false" lowerBound="1" eType="#//MedicalEquipmentSection"/>
+    <eOperations name="withMedicalEquipment" ordered="false" lowerBound="1" eType="#//MedicalEquipmentSection"/>
+    <eOperations name="setMedicalEquipment" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//MedicalEquipmentSection"/>
+    </eOperations>
+    <eOperations name="getPhysicalExamination" ordered="false" lowerBound="1" eType="#//PhysicalExamSection"/>
+    <eOperations name="withPhysicalExamination" ordered="false" lowerBound="1" eType="#//PhysicalExamSection"/>
+    <eOperations name="setPhysicalExamination" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//PhysicalExamSection"/>
+    </eOperations>
+    <eOperations name="getPlanOfCare" ordered="false" lowerBound="1" eType="#//PlanOfCareSection"/>
+    <eOperations name="withPlanOfCare" ordered="false" lowerBound="1" eType="#//PlanOfCareSection"/>
+    <eOperations name="setPlanOfCare" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//PlanOfCareSection"/>
+    </eOperations>
+    <eOperations name="getResolvedProblems" ordered="false" lowerBound="1" eType="#//HistoryOfPastIllnessSection"/>
+    <eOperations name="withResolvedProblems" ordered="false" lowerBound="1" eType="#//HistoryOfPastIllnessSection"/>
+    <eOperations name="setResolvedProblems" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//HistoryOfPastIllnessSection"/>
+    </eOperations>
+    <eOperations name="getReviewOfSystems" ordered="false" lowerBound="1" eType="#//ReviewOfSystemsSection"/>
+    <eOperations name="withReviewOfSystems" ordered="false" lowerBound="1" eType="#//ReviewOfSystemsSection"/>
+    <eOperations name="setReviewOfSystems" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//ReviewOfSystemsSection"/>
+    </eOperations>
+    <eOperations name="getSelectedMedicationsAdministered" ordered="false" lowerBound="1"
+        eType="#//MedicationsAdministeredSection"/>
+    <eOperations name="withSelectedMedicationsAdministered" ordered="false" lowerBound="1"
+        eType="#//MedicationsAdministeredSection"/>
+    <eOperations name="setSelectedMedicationsAdministered" ordered="false" lowerBound="1"
+        eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//MedicationsAdministeredSection"/>
+    </eOperations>
+    <eOperations name="getVitalSigns" ordered="false" lowerBound="1" eType="#//VitalSignsSection"/>
+    <eOperations name="withVitalSigns" ordered="false" lowerBound="1" eType="#//VitalSignsSection"/>
+    <eOperations name="setVitalSigns" ordered="false" lowerBound="1" eType="#//DischargeSummary">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//VitalSignsSection"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
+        lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//ClinicalDocument"/>
+  </eClassifiers>
 </ecore:EPackage>

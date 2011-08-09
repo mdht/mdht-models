@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.util;
 
 import java.util.List;
@@ -24,6 +20,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IComment;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ICondition;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounter;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersSection;
@@ -59,6 +56,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReasonForReferralSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResult;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistorySection;
@@ -602,6 +600,22 @@ public class DomainSwitch<T> {
 				if (result == null) {
 					result = caseUnstructuredDocument(unstructuredOrScannedDocument);
 				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.REFERRAL_SUMMARY: {
+				IReferralSummary referralSummary = (IReferralSummary) theEObject;
+				T result = caseReferralSummary(referralSummary);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.DISCHARGE_SUMMARY: {
+				IDischargeSummary dischargeSummary = (IDischargeSummary) theEObject;
+				T result = caseDischargeSummary(dischargeSummary);
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
@@ -1434,6 +1448,36 @@ public class DomainSwitch<T> {
 	 * @generated
 	 */
 	public T caseUnstructuredOrScannedDocument(IUnstructuredOrScannedDocument object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Referral Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Referral Summary</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReferralSummary(IReferralSummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Discharge Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Discharge Summary</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDischargeSummary(IDischargeSummary object) {
 		return null;
 	}
 

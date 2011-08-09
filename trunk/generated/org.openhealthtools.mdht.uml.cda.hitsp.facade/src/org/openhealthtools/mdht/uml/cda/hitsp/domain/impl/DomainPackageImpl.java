@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2011 David A Carlson
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     David A Carlson (XMLmodeling.com) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
 import java.io.IOException;
@@ -424,6 +420,20 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * @generated
 	 */
 	private EClass unstructuredOrScannedDocumentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass referralSummaryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dischargeSummaryEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -1635,6 +1645,50 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 				IDomainPackage.eNS_URI).getEClassifiers().get(54);
 		}
 		return unstructuredOrScannedDocumentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getReferralSummary() {
+		if (referralSummaryEClass == null) {
+			referralSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				55);
+		}
+		return referralSummaryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getReferralSummary_CDAType() {
+		return (EReference) getReferralSummary().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDischargeSummary() {
+		if (dischargeSummaryEClass == null) {
+			dischargeSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				56);
+		}
+		return dischargeSummaryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDischargeSummary_CDAType() {
+		return (EReference) getDischargeSummary().getEStructuralFeatures().get(0);
 	}
 
 	/**

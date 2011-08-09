@@ -119,20 +119,18 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_FIRST_EFFECTIVE_TIME_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_FIRST_EFFECTIVE_TIME_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_FIRST_EFFECTIVE_TIME_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HITSP_MEDICATION_FIRST_EFFECTIVE_TIME_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_FIRST_EFFECTIVE_TIME_DATATYPE,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationFirstEffectiveTimeDatatype"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_FIRST_EFFECTIVE_TIME_DATATYPE,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationFirstEffectiveTimeDatatype"),
+					new Object[] { medication }));
 			}
 			return false;
 		}
@@ -177,20 +175,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_DOSE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_DOSE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_DOSE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_DOSE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_DOSE_UNITS,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationDoseUnits"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_DOSE_UNITS,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationDoseUnits"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -235,20 +230,18 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_DELIVERY_METHOD_DESCRIPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_DELIVERY_METHOD_DESCRIPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_DELIVERY_METHOD_DESCRIPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_DELIVERY_METHOD_DESCRIPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_DELIVERY_METHOD_DESCRIPTION,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationDeliveryMethodDescription"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_DELIVERY_METHOD_DESCRIPTION,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationDeliveryMethodDescription"),
+					new Object[] { medication }));
 			}
 			return false;
 		}
@@ -293,20 +286,18 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_HAS_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_HAS_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_MEDICATION_INFORMATION,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationHasMedicationInformation"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_MEDICATION_INFORMATION,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasMedicationInformation"),
+					new Object[] { medication }));
 			}
 			return false;
 		}
@@ -351,20 +342,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_HAS_STATUS_OF_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_HAS_STATUS_OF_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_STATUS_OF_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_STATUS_OF_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_STATUS_OF_MEDICATION,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationHasStatusOfMedication"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_STATUS_OF_MEDICATION,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasStatusOfMedication"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -409,20 +397,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_HAS_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_HAS_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_INDICATION,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationHasIndication"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_INDICATION,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasIndication"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -467,20 +452,18 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_HAS_INDICATION_NARRATIVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_HAS_INDICATION_NARRATIVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_INDICATION_NARRATIVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HITSP_MEDICATION_HAS_INDICATION_NARRATIVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_INDICATION_NARRATIVE_TEXT,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationHasIndicationNarrativeText"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_INDICATION_NARRATIVE_TEXT,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasIndicationNarrativeText"),
+					new Object[] { medication }));
 			}
 			return false;
 		}
@@ -525,20 +508,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_HAS_INDICATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_HAS_INDICATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_INDICATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_INDICATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_INDICATION_VOCAB,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationHasIndicationVocab"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_INDICATION_VOCAB,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasIndicationVocab"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -583,20 +563,18 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_HAS_PATIENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_HAS_PATIENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_PATIENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_PATIENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_PATIENT_INSTRUCTIONS,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationHasPatientInstructions"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_PATIENT_INSTRUCTIONS,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasPatientInstructions"),
+					new Object[] { medication }));
 			}
 			return false;
 		}
@@ -641,20 +619,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_HAS_MEDICATION_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_HAS_MEDICATION_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_MEDICATION_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_HAS_MEDICATION_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_MEDICATION_VEHICLE,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationHasMedicationVehicle"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_MEDICATION_VEHICLE,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasMedicationVehicle"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -699,20 +674,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_TYPE,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleType"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_TYPE,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleType"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -757,20 +729,18 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CLASS,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleClass"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CLASS,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleClass"),
+					new Object[] { medication }));
 			}
 			return false;
 		}
@@ -815,20 +785,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODE,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleCode"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODE,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleCode"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -873,20 +840,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_NAME,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleName"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_NAME,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleName"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -931,20 +895,18 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleCodedName"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleCodedName"),
+					new Object[] { medication }));
 			}
 			return false;
 		}
@@ -989,20 +951,19 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME_VOCAB,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleCodedNameVocab"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME_VOCAB,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleCodedNameVocab"),
+					new Object[] { medication }));
 			}
 			return false;
 		}
@@ -1047,20 +1008,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_TEMPLATE_ID,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationTemplateId"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationTemplateId"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -1105,20 +1063,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_EFFECTIVE_TIME,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationEffectiveTime"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_EFFECTIVE_TIME,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationEffectiveTime"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -1133,9 +1088,9 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("+
-"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_HITSP_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("
+			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPMedicationRouteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medication Route Code</em>}' invariant operation.
@@ -1167,20 +1122,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_ROUTE_CODE,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationRouteCode"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_ROUTE_CODE,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationRouteCode"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -1225,20 +1177,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_DOSE_QUANTITY,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationDoseQuantity"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_DOSE_QUANTITY,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationDoseQuantity"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -1253,9 +1202,9 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in ("+
-"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in ("
+			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPMedicationAdministrationUnitCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medication Administration Unit Code</em>}' invariant operation.
@@ -1287,20 +1236,18 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationAdministrationUnitCode"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationAdministrationUnitCode"),
+					new Object[] { medication }));
 			}
 			return false;
 		}
@@ -1345,20 +1292,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_MAX_DOSE_QUANTITY,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationMaxDoseQuantity"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_MAX_DOSE_QUANTITY,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationMaxDoseQuantity"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -1373,9 +1317,9 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_HITSP_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPMedicationApproachSiteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medication Approach Site Code</em>}' invariant operation.
@@ -1407,20 +1351,17 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_APPROACH_SITE_CODE,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationApproachSiteCode"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_APPROACH_SITE_CODE,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationApproachSiteCode"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -1465,20 +1406,16 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
 			try {
 				VALIDATE_HITSP_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medication)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 HITSPValidator.DIAGNOSTIC_SOURCE,
-						 HITSPValidator.MEDICATION__HITSP_MEDICATION_CODE,
-						 HITSPPlugin.INSTANCE.getString("HITSPMedicationCode"),
-						 new Object [] { medication }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__HITSP_MEDICATION_CODE,
+					HITSPPlugin.INSTANCE.getString("HITSPMedicationCode"), new Object[] { medication }));
 			}
 			return false;
 		}
@@ -1517,11 +1454,11 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	public static MedicationType getMedicationType(Medication medication) {
 		if (GET_MEDICATION_TYPE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(121));
+			helper.setOperationContext(
+				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(121));
 			try {
 				GET_MEDICATION_TYPE__EOCL_QRY = helper.createQuery(GET_MEDICATION_TYPE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1561,11 +1498,11 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	public static EList<MedicationOrderInformation> getMedicationOrderInformations(Medication medication) {
 		if (GET_MEDICATION_ORDER_INFORMATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(122));
+			helper.setOperationContext(
+				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(122));
 			try {
 				GET_MEDICATION_ORDER_INFORMATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATION_ORDER_INFORMATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1607,11 +1544,11 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	public static ReactionObservation getHITSPReactionObservation(Medication medication) {
 		if (GET_HITSP_REACTION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(123));
+			helper.setOperationContext(
+				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(123));
 			try {
 				GET_HITSP_REACTION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HITSP_REACTION_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

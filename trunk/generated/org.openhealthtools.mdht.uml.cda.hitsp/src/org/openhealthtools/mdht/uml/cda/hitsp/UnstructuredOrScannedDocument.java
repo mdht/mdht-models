@@ -18,7 +18,8 @@ import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
  * @model
  * @generated
  */
-public interface UnstructuredOrScannedDocument extends UnstructuredDocument, org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredDocument {
+public interface UnstructuredOrScannedDocument extends UnstructuredDocument,
+		org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredDocument {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

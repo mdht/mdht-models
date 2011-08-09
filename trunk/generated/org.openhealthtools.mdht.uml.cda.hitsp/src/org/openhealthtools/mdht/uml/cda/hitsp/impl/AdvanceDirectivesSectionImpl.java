@@ -56,7 +56,8 @@ public class AdvanceDirectivesSectionImpl extends CodedAdvanceDirectivesSectionI
 	 */
 	public boolean validateHITSPAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateHITSPAdvanceDirectivesSectionTemplateId(this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateHITSPAdvanceDirectivesSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,7 @@ public class AdvanceDirectivesSectionImpl extends CodedAdvanceDirectivesSectionI
 	 */
 	@Override
 	public AdvanceDirectivesSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AdvanceDirectivesSectionImpl

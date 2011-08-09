@@ -15,7 +15,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.openhealthtools.mdht.uml.cda.hitsp.*;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AllergiesReactionsSection;
@@ -27,6 +26,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
 import org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.DischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.DischargeSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.Encounter;
 import org.openhealthtools.mdht.uml.cda.hitsp.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistorySection;
@@ -63,6 +63,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.PlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.ProblemListSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReasonForReferralSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.ReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.Result;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistorySection;
@@ -71,6 +72,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.SupportGuardian;
 import org.openhealthtools.mdht.uml.cda.hitsp.SupportParticipant;
 import org.openhealthtools.mdht.uml.cda.hitsp.SurgeriesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredDocument;
+import org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredOrScannedDocument;
 import org.openhealthtools.mdht.uml.cda.hitsp.VitalSign;
 import org.openhealthtools.mdht.uml.cda.hitsp.VitalSignsSection;
 
@@ -89,12 +91,11 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	 */
 	public static HITSPFactory init() {
 		try {
-			HITSPFactory theHITSPFactory = (HITSPFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/hitsp"); 
+			HITSPFactory theHITSPFactory = (HITSPFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/hitsp");
 			if (theHITSPFactory != null) {
 				return theHITSPFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new HITSPFactoryImpl();
@@ -118,62 +119,122 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case HITSPPackage.ALLERGY_DRUG_SENSITIVITY: return createAllergyDrugSensitivity();
-			case HITSPPackage.MEDICATION: return createMedication();
-			case HITSPPackage.MEDICATION_TYPE: return createMedicationType();
-			case HITSPPackage.MEDICATION_ORDER_INFORMATION: return createMedicationOrderInformation();
-			case HITSPPackage.CONDITION: return createCondition();
-			case HITSPPackage.CONDITION_ENTRY: return createConditionEntry();
-			case HITSPPackage.PATIENT_SUMMARY: return createPatientSummary();
-			case HITSPPackage.PROBLEM_LIST_SECTION: return createProblemListSection();
-			case HITSPPackage.MEDICATIONS_SECTION: return createMedicationsSection();
-			case HITSPPackage.ADVANCE_DIRECTIVES_SECTION: return createAdvanceDirectivesSection();
-			case HITSPPackage.ALLERGIES_REACTIONS_SECTION: return createAllergiesReactionsSection();
-			case HITSPPackage.ENCOUNTERS_SECTION: return createEncountersSection();
-			case HITSPPackage.ENCOUNTER: return createEncounter();
-			case HITSPPackage.IMMUNIZATIONS_SECTION: return createImmunizationsSection();
-			case HITSPPackage.IMMUNIZATION: return createImmunization();
-			case HITSPPackage.PAYERS_SECTION: return createPayersSection();
-			case HITSPPackage.SURGERIES_SECTION: return createSurgeriesSection();
-			case HITSPPackage.PROCEDURE: return createProcedure();
-			case HITSPPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
-			case HITSPPackage.VITAL_SIGNS_SECTION: return createVitalSignsSection();
-			case HITSPPackage.DIAGNOSTIC_RESULTS_SECTION: return createDiagnosticResultsSection();
-			case HITSPPackage.RESULT: return createResult();
-			case HITSPPackage.VITAL_SIGN: return createVitalSign();
-			case HITSPPackage.HISTORY_OF_PAST_ILLNESS_SECTION: return createHistoryOfPastIllnessSection();
-			case HITSPPackage.CHIEF_COMPLAINT_SECTION: return createChiefComplaintSection();
-			case HITSPPackage.REASON_FOR_REFERRAL_SECTION: return createReasonForReferralSection();
-			case HITSPPackage.HISTORY_OF_PRESENT_ILLNESS: return createHistoryOfPresentIllness();
-			case HITSPPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
-			case HITSPPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION: return createHospitalAdmissionDiagnosisSection();
-			case HITSPPackage.DISCHARGE_DIAGNOSIS_SECTION: return createDischargeDiagnosisSection();
-			case HITSPPackage.ADMISSION_MEDICATION_HISTORY_SECTION: return createAdmissionMedicationHistorySection();
-			case HITSPPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: return createHospitalDischargeMedicationsSection();
-			case HITSPPackage.MEDICATIONS_ADMINISTERED_SECTION: return createMedicationsAdministeredSection();
-			case HITSPPackage.PHYSICAL_EXAM_SECTION: return createPhysicalExamSection();
-			case HITSPPackage.REVIEW_OF_SYSTEMS_SECTION: return createReviewOfSystemsSection();
-			case HITSPPackage.HOSPITAL_COURSE_SECTION: return createHospitalCourseSection();
-			case HITSPPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
-			case HITSPPackage.FAMILY_HISTORY_SECTION: return createFamilyHistorySection();
-			case HITSPPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
-			case HITSPPackage.MEDICAL_EQUIPMENT_SECTION: return createMedicalEquipmentSection();
-			case HITSPPackage.LANGUAGE_SPOKEN: return createLanguageSpoken();
-			case HITSPPackage.INSURANCE_PROVIDER: return createInsuranceProvider();
-			case HITSPPackage.HEALTHCARE_PROVIDER: return createHealthcareProvider();
-			case HITSPPackage.COMMENT: return createComment();
-			case HITSPPackage.MEDICATION_NORMAL_DOSE: return createMedicationNormalDose();
-			case HITSPPackage.MEDICATION_SPLIT_DOSE: return createMedicationSplitDose();
-			case HITSPPackage.MEDICATION_TAPERED_DOSE: return createMedicationTaperedDose();
-			case HITSPPackage.MEDICATION_CONDITIONAL_DOSE: return createMedicationConditionalDose();
-			case HITSPPackage.MEDICATION_COMBINATION_MEDICATION: return createMedicationCombinationMedication();
-			case HITSPPackage.SUPPORT: return createSupport();
-			case HITSPPackage.SUPPORT_GUARDIAN: return createSupportGuardian();
-			case HITSPPackage.SUPPORT_PARTICIPANT: return createSupportParticipant();
-			case HITSPPackage.UNSTRUCTURED_DOCUMENT: return createUnstructuredDocument();
-			case HITSPPackage.MEDICATION_INFORMATION: return createMedicationInformation();
-			case HITSPPackage.UNSTRUCTURED_OR_SCANNED_DOCUMENT: return createUnstructuredOrScannedDocument();
-			case HITSPPackage.HITSP_REGISTRY_DELEGATE: return createHITSPRegistryDelegate();
+			case HITSPPackage.ALLERGY_DRUG_SENSITIVITY:
+				return createAllergyDrugSensitivity();
+			case HITSPPackage.MEDICATION:
+				return createMedication();
+			case HITSPPackage.MEDICATION_TYPE:
+				return createMedicationType();
+			case HITSPPackage.MEDICATION_ORDER_INFORMATION:
+				return createMedicationOrderInformation();
+			case HITSPPackage.CONDITION:
+				return createCondition();
+			case HITSPPackage.CONDITION_ENTRY:
+				return createConditionEntry();
+			case HITSPPackage.PATIENT_SUMMARY:
+				return createPatientSummary();
+			case HITSPPackage.PROBLEM_LIST_SECTION:
+				return createProblemListSection();
+			case HITSPPackage.MEDICATIONS_SECTION:
+				return createMedicationsSection();
+			case HITSPPackage.ADVANCE_DIRECTIVES_SECTION:
+				return createAdvanceDirectivesSection();
+			case HITSPPackage.ALLERGIES_REACTIONS_SECTION:
+				return createAllergiesReactionsSection();
+			case HITSPPackage.ENCOUNTERS_SECTION:
+				return createEncountersSection();
+			case HITSPPackage.ENCOUNTER:
+				return createEncounter();
+			case HITSPPackage.IMMUNIZATIONS_SECTION:
+				return createImmunizationsSection();
+			case HITSPPackage.IMMUNIZATION:
+				return createImmunization();
+			case HITSPPackage.PAYERS_SECTION:
+				return createPayersSection();
+			case HITSPPackage.SURGERIES_SECTION:
+				return createSurgeriesSection();
+			case HITSPPackage.PROCEDURE:
+				return createProcedure();
+			case HITSPPackage.PLAN_OF_CARE_SECTION:
+				return createPlanOfCareSection();
+			case HITSPPackage.VITAL_SIGNS_SECTION:
+				return createVitalSignsSection();
+			case HITSPPackage.DIAGNOSTIC_RESULTS_SECTION:
+				return createDiagnosticResultsSection();
+			case HITSPPackage.RESULT:
+				return createResult();
+			case HITSPPackage.VITAL_SIGN:
+				return createVitalSign();
+			case HITSPPackage.HISTORY_OF_PAST_ILLNESS_SECTION:
+				return createHistoryOfPastIllnessSection();
+			case HITSPPackage.CHIEF_COMPLAINT_SECTION:
+				return createChiefComplaintSection();
+			case HITSPPackage.REASON_FOR_REFERRAL_SECTION:
+				return createReasonForReferralSection();
+			case HITSPPackage.HISTORY_OF_PRESENT_ILLNESS:
+				return createHistoryOfPresentIllness();
+			case HITSPPackage.FUNCTIONAL_STATUS_SECTION:
+				return createFunctionalStatusSection();
+			case HITSPPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
+				return createHospitalAdmissionDiagnosisSection();
+			case HITSPPackage.DISCHARGE_DIAGNOSIS_SECTION:
+				return createDischargeDiagnosisSection();
+			case HITSPPackage.ADMISSION_MEDICATION_HISTORY_SECTION:
+				return createAdmissionMedicationHistorySection();
+			case HITSPPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
+				return createHospitalDischargeMedicationsSection();
+			case HITSPPackage.MEDICATIONS_ADMINISTERED_SECTION:
+				return createMedicationsAdministeredSection();
+			case HITSPPackage.PHYSICAL_EXAM_SECTION:
+				return createPhysicalExamSection();
+			case HITSPPackage.REVIEW_OF_SYSTEMS_SECTION:
+				return createReviewOfSystemsSection();
+			case HITSPPackage.HOSPITAL_COURSE_SECTION:
+				return createHospitalCourseSection();
+			case HITSPPackage.ASSESSMENT_AND_PLAN_SECTION:
+				return createAssessmentAndPlanSection();
+			case HITSPPackage.FAMILY_HISTORY_SECTION:
+				return createFamilyHistorySection();
+			case HITSPPackage.SOCIAL_HISTORY_SECTION:
+				return createSocialHistorySection();
+			case HITSPPackage.MEDICAL_EQUIPMENT_SECTION:
+				return createMedicalEquipmentSection();
+			case HITSPPackage.LANGUAGE_SPOKEN:
+				return createLanguageSpoken();
+			case HITSPPackage.INSURANCE_PROVIDER:
+				return createInsuranceProvider();
+			case HITSPPackage.HEALTHCARE_PROVIDER:
+				return createHealthcareProvider();
+			case HITSPPackage.COMMENT:
+				return createComment();
+			case HITSPPackage.MEDICATION_NORMAL_DOSE:
+				return createMedicationNormalDose();
+			case HITSPPackage.MEDICATION_SPLIT_DOSE:
+				return createMedicationSplitDose();
+			case HITSPPackage.MEDICATION_TAPERED_DOSE:
+				return createMedicationTaperedDose();
+			case HITSPPackage.MEDICATION_CONDITIONAL_DOSE:
+				return createMedicationConditionalDose();
+			case HITSPPackage.MEDICATION_COMBINATION_MEDICATION:
+				return createMedicationCombinationMedication();
+			case HITSPPackage.SUPPORT:
+				return createSupport();
+			case HITSPPackage.SUPPORT_GUARDIAN:
+				return createSupportGuardian();
+			case HITSPPackage.SUPPORT_PARTICIPANT:
+				return createSupportParticipant();
+			case HITSPPackage.UNSTRUCTURED_DOCUMENT:
+				return createUnstructuredDocument();
+			case HITSPPackage.MEDICATION_INFORMATION:
+				return createMedicationInformation();
+			case HITSPPackage.UNSTRUCTURED_OR_SCANNED_DOCUMENT:
+				return createUnstructuredOrScannedDocument();
+			case HITSPPackage.REFERRAL_SUMMARY:
+				return createReferralSummary();
+			case HITSPPackage.DISCHARGE_SUMMARY:
+				return createDischargeSummary();
+			case HITSPPackage.HITSP_REGISTRY_DELEGATE:
+				return createHITSPRegistryDelegate();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -714,6 +775,26 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ReferralSummary createReferralSummary() {
+		ReferralSummaryImpl referralSummary = new ReferralSummaryImpl();
+		return referralSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DischargeSummary createDischargeSummary() {
+		DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
+		return dischargeSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Encounter createEncounter() {
 		EncounterImpl encounter = new EncounterImpl();
 		return encounter;
@@ -745,7 +826,7 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	 * @generated
 	 */
 	public HITSPPackage getHITSPPackage() {
-		return (HITSPPackage)getEPackage();
+		return (HITSPPackage) getEPackage();
 	}
 
 	/**
