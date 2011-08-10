@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPlugin;
 import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
-import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryProcedureActivityProcedureOperations;
+import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +42,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryProcedureAc
  *
  * @generated
  */
-public class ProcedureOperations extends ProcedureEntryProcedureActivityProcedureOperations {
+public class ProcedureOperations extends ProcedureEntryOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

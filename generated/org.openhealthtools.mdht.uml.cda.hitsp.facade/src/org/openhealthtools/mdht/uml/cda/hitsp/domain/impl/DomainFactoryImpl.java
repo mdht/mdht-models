@@ -150,10 +150,10 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createMedicationsSection();
 			case IDomainPackage.PLAN_OF_CARE_SECTION:
 				return (EObject) createPlanOfCareSection();
-			case IDomainPackage.SURGERIES_SECTION:
-				return (EObject) createSurgeriesSection();
 			case IDomainPackage.PROCEDURE:
 				return (EObject) createProcedure();
+			case IDomainPackage.SURGERIES_SECTION:
+				return (EObject) createSurgeriesSection();
 			case IDomainPackage.SUPPORT:
 				return (EObject) createSupport();
 			case IDomainPackage.VITAL_SIGNS_SECTION:

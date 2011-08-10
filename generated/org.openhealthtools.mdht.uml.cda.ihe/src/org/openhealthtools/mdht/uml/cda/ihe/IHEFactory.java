@@ -543,15 +543,6 @@ public interface IHEFactory extends EFactory {
 	ProductEntry createProductEntry();
 
 	/**
-	 * Returns a new object of class '<em>Procedure Entry</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Entry</em>'.
-	 * @generated
-	 */
-	ProcedureEntry createProcedureEntry();
-
-	/**
 	 * Returns a new object of class '<em>Procedure Entry Procedure Activity Procedure</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

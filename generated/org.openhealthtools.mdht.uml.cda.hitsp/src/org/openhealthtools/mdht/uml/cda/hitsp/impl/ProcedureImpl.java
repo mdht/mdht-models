@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.ProcedureOperations;
-import org.openhealthtools.mdht.uml.cda.ihe.impl.ProcedureEntryProcedureActivityProcedureImpl;
+import org.openhealthtools.mdht.uml.cda.ihe.impl.ProcedureEntryImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ProcedureImpl extends ProcedureEntryProcedureActivityProcedureImpl implements Procedure {
+public class ProcedureImpl extends ProcedureEntryImpl implements Procedure {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

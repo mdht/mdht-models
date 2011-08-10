@@ -10,8 +10,8 @@ import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Encounter;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -74,7 +74,7 @@ public interface IEncounter {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Encounters Activity SHALL contain at least one [1..*] id.
+	 * IHE Encounter Entry SHALL contain at least one [1..*] id.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -84,7 +84,7 @@ public interface IEncounter {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Encounters Activity SHALL contain at least one [1..*] id.
+	 * IHE Encounter Entry SHALL contain at least one [1..*] id.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -125,32 +125,32 @@ public interface IEncounter {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * cda::Encounter::effectiveTime.
-	 * self.effectiveTime.oclAsType(datatypes::IVL_TS)
+	 * cda::Encounter::text.
+	 * self.text.oclAsType(datatypes::ED)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IVL_TS getEffectiveTime();
+	ED getText();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Encounters Activity MAY contain zero or one [0..1] effectiveTime.
+	 * IHE Encounter Entry SHALL contain exactly one [1..1] text.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IVL_TS withEffectiveTime();
+	ED withText();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Encounters Activity MAY contain zero or one [0..1] effectiveTime.
+	 * IHE Encounter Entry SHALL contain exactly one [1..1] text.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IEncounter setEffectiveTime(IVL_TS value);
+	IEncounter setText(ED value);
 
 	/**
 	 * <!-- begin-user-doc -->

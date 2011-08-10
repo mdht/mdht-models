@@ -10,10 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
+import java.util.Map;
+
+import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
+import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryOperations;
+import org.openhealthtools.mdht.uml.cda.impl.ProcedureImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -25,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class ProcedureEntryImpl extends EObjectImpl implements ProcedureEntry {
+public abstract class ProcedureEntryImpl extends ProcedureImpl implements ProcedureEntry {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,6 +47,15 @@ public class ProcedureEntryImpl extends EObjectImpl implements ProcedureEntry {
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.PROCEDURE_ENTRY;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryTemplateId(this, diagnostics, context);
 	}
 
 	/**

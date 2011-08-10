@@ -53,7 +53,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.PatientAwareness;
 import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
 import org.openhealthtools.mdht.uml.cda.ccd.PayerEntity;
 import org.openhealthtools.mdht.uml.cda.ccd.PayersSection;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityEncounter;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityObservation;
@@ -179,10 +178,12 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createProceduresSection();
 			case CCDPackage.ENCOUNTERS_SECTION:
 				return createEncountersSection();
+			case CCDPackage.ENCOUNTERS_ACTIVITY:
+				return createEncountersActivity();
+			case CCDPackage.AGE_OBSERVATION:
+				return createAgeObservation();
 			case CCDPackage.PLAN_OF_CARE_SECTION:
 				return createPlanOfCareSection();
-			case CCDPackage.PLAN_OF_CARE_ACTIVITY:
-				return createPlanOfCareActivity();
 			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ACT:
 				return createPlanOfCareActivityAct();
 			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER:
@@ -225,8 +226,6 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createProblemStatusObservation();
 			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION:
 				return createProblemHealthStatusObservation();
-			case CCDPackage.AGE_OBSERVATION:
-				return createAgeObservation();
 			case CCDPackage.PATIENT_AWARENESS:
 				return createPatientAwareness();
 			case CCDPackage.FAMILY_HISTORY_OBSERVATION:
@@ -235,8 +234,6 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createFamilyHistoryOrganizer();
 			case CCDPackage.SOCIAL_HISTORY_OBSERVATION:
 				return createSocialHistoryObservation();
-			case CCDPackage.ENCOUNTERS_ACTIVITY:
-				return createEncountersActivity();
 			case CCDPackage.ALERT_OBSERVATION:
 				return createAlertObservation();
 			case CCDPackage.ALERT_STATUS_OBSERVATION:
@@ -610,16 +607,6 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 	public PlanOfCareSection createPlanOfCareSection() {
 		PlanOfCareSectionImpl planOfCareSection = new PlanOfCareSectionImpl();
 		return planOfCareSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PlanOfCareActivity createPlanOfCareActivity() {
-		PlanOfCareActivityImpl planOfCareActivity = new PlanOfCareActivityImpl();
-		return planOfCareActivity;
 	}
 
 	/**

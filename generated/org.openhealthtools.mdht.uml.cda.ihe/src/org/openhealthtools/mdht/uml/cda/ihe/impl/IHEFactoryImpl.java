@@ -80,7 +80,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ihe.ProductEntry;
@@ -223,8 +222,6 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 				return createExternalReference();
 			case IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE:
 				return createProcedureEntryProcedureActivityProcedure();
-			case IHEPackage.PROCEDURE_ENTRY:
-				return createProcedureEntry();
 			case IHEPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
 				return createHospitalAdmissionDiagnosisSection();
 			case IHEPackage.DISCHARGE_DIAGNOSIS_SECTION:
@@ -880,16 +877,6 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	public ProductEntry createProductEntry() {
 		ProductEntryImpl productEntry = new ProductEntryImpl();
 		return productEntry;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureEntry createProcedureEntry() {
-		ProcedureEntryImpl procedureEntry = new ProcedureEntryImpl();
-		return procedureEntry;
 	}
 
 	/**

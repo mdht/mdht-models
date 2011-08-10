@@ -281,6 +281,16 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseEncountersActivity(EncountersActivity object) {
+			return createEncountersActivityAdapter();
+		}
+
+		@Override
+		public Adapter caseAgeObservation(AgeObservation object) {
+			return createAgeObservationAdapter();
+		}
+
+		@Override
 		public Adapter casePlanOfCareSection(PlanOfCareSection object) {
 			return createPlanOfCareSectionAdapter();
 		}
@@ -396,11 +406,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAgeObservation(AgeObservation object) {
-			return createAgeObservationAdapter();
-		}
-
-		@Override
 		public Adapter casePatientAwareness(PatientAwareness object) {
 			return createPatientAwarenessAdapter();
 		}
@@ -418,11 +423,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseSocialHistoryObservation(SocialHistoryObservation object) {
 			return createSocialHistoryObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseEncountersActivity(EncountersActivity object) {
-			return createEncountersActivityAdapter();
 		}
 
 		@Override

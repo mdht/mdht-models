@@ -615,6 +615,46 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
+			case CCDPackage.ENCOUNTERS_ACTIVITY: {
+				EncountersActivity encountersActivity = (EncountersActivity) theEObject;
+				T result = caseEncountersActivity(encountersActivity);
+				if (result == null) {
+					result = caseEncounter(encountersActivity);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(encountersActivity);
+				}
+				if (result == null) {
+					result = caseAct(encountersActivity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(encountersActivity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.AGE_OBSERVATION: {
+				AgeObservation ageObservation = (AgeObservation) theEObject;
+				T result = caseAgeObservation(ageObservation);
+				if (result == null) {
+					result = caseObservation(ageObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(ageObservation);
+				}
+				if (result == null) {
+					result = caseAct(ageObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(ageObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case CCDPackage.PLAN_OF_CARE_SECTION: {
 				PlanOfCareSection planOfCareSection = (PlanOfCareSection) theEObject;
 				T result = casePlanOfCareSection(planOfCareSection);
@@ -1069,26 +1109,6 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
-			case CCDPackage.AGE_OBSERVATION: {
-				AgeObservation ageObservation = (AgeObservation) theEObject;
-				T result = caseAgeObservation(ageObservation);
-				if (result == null) {
-					result = caseObservation(ageObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(ageObservation);
-				}
-				if (result == null) {
-					result = caseAct(ageObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(ageObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case CCDPackage.PATIENT_AWARENESS: {
 				PatientAwareness patientAwareness = (PatientAwareness) theEObject;
 				T result = casePatientAwareness(patientAwareness);
@@ -1160,26 +1180,6 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(socialHistoryObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.ENCOUNTERS_ACTIVITY: {
-				EncountersActivity encountersActivity = (EncountersActivity) theEObject;
-				T result = caseEncountersActivity(encountersActivity);
-				if (result == null) {
-					result = caseEncounter(encountersActivity);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(encountersActivity);
-				}
-				if (result == null) {
-					result = caseAct(encountersActivity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(encountersActivity);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

@@ -10,6 +10,7 @@ import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
+import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -149,6 +150,37 @@ public interface ISurgeriesSection {
 	 * @generated
 	 */
 	ISurgeriesSection setExternalReference(ExternalReference value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * ihe::CodedSurgeriesSection::procedureEntryProcedureActivityProcedure.
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure)).oclAsType(ihe::ProcedureEntryProcedureActivityProcedure)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<ProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * IHE Coded Surgeries Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Procedure Entry Procedure Activity Procedure (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.19).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ProcedureEntryProcedureActivityProcedure addProcedureEntryProcedureActivityProcedure();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * IHE Coded Surgeries Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Procedure Entry Procedure Activity Procedure (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.19).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ISurgeriesSection addProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure value);
 
 	/**
 	 * <!-- begin-user-doc -->

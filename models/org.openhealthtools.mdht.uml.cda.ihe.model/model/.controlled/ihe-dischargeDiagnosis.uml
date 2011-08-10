@@ -12,6 +12,12 @@ conditions as described in the Entry Content Module.</body>
     <ownedAttribute xmi:id="_7bQp4MilEd6NKIaf5H7MFg" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_GKP78MHgEeCSK-pDGcrZ1w" name="problemConcernEntry">
+      <type xmi:type="uml:Class" href="ihe-activeProblems.uml#_wSnPAGaQEd6Hk_bPOfEjYA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HKX8MMHgEeCSK-pDGcrZ1w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HKX8McHgEeCSK-pDGcrZ1w" value="1"/>
+      <association href="../ihe.uml#_GKP78sHgEeCSK-pDGcrZ1w"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_8dy8oMfvEd6VjLXh4DcWSg" base_Class="_3ov5QMfvEd6VjLXh4DcWSg" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.7" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_N0GpcCfdEd-4R4ealYN1gQ" code="11535-2" displayName="HOSPITAL DISCHARGE DX" base_Property="_7bQp4MilEd6NKIaf5H7MFg">

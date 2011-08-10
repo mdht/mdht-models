@@ -3209,7 +3209,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__REALM_CODE = IHEPackage.ENCOUNTER_ACTIVITY__REALM_CODE;
+	int ENCOUNTER__REALM_CODE = IHEPackage.ENCOUNTER_ENTRY__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -3218,7 +3218,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__TYPE_ID = IHEPackage.ENCOUNTER_ACTIVITY__TYPE_ID;
+	int ENCOUNTER__TYPE_ID = IHEPackage.ENCOUNTER_ENTRY__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -3227,7 +3227,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__TEMPLATE_ID = IHEPackage.ENCOUNTER_ACTIVITY__TEMPLATE_ID;
+	int ENCOUNTER__TEMPLATE_ID = IHEPackage.ENCOUNTER_ENTRY__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -3236,7 +3236,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__ID = IHEPackage.ENCOUNTER_ACTIVITY__ID;
+	int ENCOUNTER__ID = IHEPackage.ENCOUNTER_ENTRY__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -3245,7 +3245,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__CODE = IHEPackage.ENCOUNTER_ACTIVITY__CODE;
+	int ENCOUNTER__CODE = IHEPackage.ENCOUNTER_ENTRY__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -3254,7 +3254,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__TEXT = IHEPackage.ENCOUNTER_ACTIVITY__TEXT;
+	int ENCOUNTER__TEXT = IHEPackage.ENCOUNTER_ENTRY__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -3263,7 +3263,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__STATUS_CODE = IHEPackage.ENCOUNTER_ACTIVITY__STATUS_CODE;
+	int ENCOUNTER__STATUS_CODE = IHEPackage.ENCOUNTER_ENTRY__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -3272,7 +3272,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__EFFECTIVE_TIME = IHEPackage.ENCOUNTER_ACTIVITY__EFFECTIVE_TIME;
+	int ENCOUNTER__EFFECTIVE_TIME = IHEPackage.ENCOUNTER_ENTRY__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -3281,7 +3281,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__PRIORITY_CODE = IHEPackage.ENCOUNTER_ACTIVITY__PRIORITY_CODE;
+	int ENCOUNTER__PRIORITY_CODE = IHEPackage.ENCOUNTER_ENTRY__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -3290,7 +3290,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__SUBJECT = IHEPackage.ENCOUNTER_ACTIVITY__SUBJECT;
+	int ENCOUNTER__SUBJECT = IHEPackage.ENCOUNTER_ENTRY__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -3299,7 +3299,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__SPECIMEN = IHEPackage.ENCOUNTER_ACTIVITY__SPECIMEN;
+	int ENCOUNTER__SPECIMEN = IHEPackage.ENCOUNTER_ENTRY__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -3308,7 +3308,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__PERFORMER = IHEPackage.ENCOUNTER_ACTIVITY__PERFORMER;
+	int ENCOUNTER__PERFORMER = IHEPackage.ENCOUNTER_ENTRY__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -3317,7 +3317,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__AUTHOR = IHEPackage.ENCOUNTER_ACTIVITY__AUTHOR;
+	int ENCOUNTER__AUTHOR = IHEPackage.ENCOUNTER_ENTRY__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -3326,7 +3326,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__INFORMANT = IHEPackage.ENCOUNTER_ACTIVITY__INFORMANT;
+	int ENCOUNTER__INFORMANT = IHEPackage.ENCOUNTER_ENTRY__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -3335,7 +3335,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__PARTICIPANT = IHEPackage.ENCOUNTER_ACTIVITY__PARTICIPANT;
+	int ENCOUNTER__PARTICIPANT = IHEPackage.ENCOUNTER_ENTRY__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -3344,7 +3344,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__ENTRY_RELATIONSHIP = IHEPackage.ENCOUNTER_ACTIVITY__ENTRY_RELATIONSHIP;
+	int ENCOUNTER__ENTRY_RELATIONSHIP = IHEPackage.ENCOUNTER_ENTRY__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -3353,7 +3353,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__REFERENCE = IHEPackage.ENCOUNTER_ACTIVITY__REFERENCE;
+	int ENCOUNTER__REFERENCE = IHEPackage.ENCOUNTER_ENTRY__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -3362,7 +3362,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__PRECONDITION = IHEPackage.ENCOUNTER_ACTIVITY__PRECONDITION;
+	int ENCOUNTER__PRECONDITION = IHEPackage.ENCOUNTER_ENTRY__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -3371,7 +3371,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__NULL_FLAVOR = IHEPackage.ENCOUNTER_ACTIVITY__NULL_FLAVOR;
+	int ENCOUNTER__NULL_FLAVOR = IHEPackage.ENCOUNTER_ENTRY__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -3380,7 +3380,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__CLASS_CODE = IHEPackage.ENCOUNTER_ACTIVITY__CLASS_CODE;
+	int ENCOUNTER__CLASS_CODE = IHEPackage.ENCOUNTER_ENTRY__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -3389,7 +3389,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER__MOOD_CODE = IHEPackage.ENCOUNTER_ACTIVITY__MOOD_CODE;
+	int ENCOUNTER__MOOD_CODE = IHEPackage.ENCOUNTER_ENTRY__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Encounter</em>' class.
@@ -3398,7 +3398,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENCOUNTER_FEATURE_COUNT = IHEPackage.ENCOUNTER_ACTIVITY_FEATURE_COUNT + 0;
+	int ENCOUNTER_FEATURE_COUNT = IHEPackage.ENCOUNTER_ENTRY_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4199,7 +4199,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__REALM_CODE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__REALM_CODE;
+	int PROCEDURE__REALM_CODE = IHEPackage.PROCEDURE_ENTRY__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -4208,7 +4208,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__TYPE_ID = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TYPE_ID;
+	int PROCEDURE__TYPE_ID = IHEPackage.PROCEDURE_ENTRY__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -4217,7 +4217,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__TEMPLATE_ID = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TEMPLATE_ID;
+	int PROCEDURE__TEMPLATE_ID = IHEPackage.PROCEDURE_ENTRY__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -4226,7 +4226,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__ID = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__ID;
+	int PROCEDURE__ID = IHEPackage.PROCEDURE_ENTRY__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -4235,7 +4235,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__CODE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__CODE;
+	int PROCEDURE__CODE = IHEPackage.PROCEDURE_ENTRY__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -4244,7 +4244,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__TEXT = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TEXT;
+	int PROCEDURE__TEXT = IHEPackage.PROCEDURE_ENTRY__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -4253,7 +4253,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__STATUS_CODE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__STATUS_CODE;
+	int PROCEDURE__STATUS_CODE = IHEPackage.PROCEDURE_ENTRY__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -4262,7 +4262,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__EFFECTIVE_TIME = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__EFFECTIVE_TIME;
+	int PROCEDURE__EFFECTIVE_TIME = IHEPackage.PROCEDURE_ENTRY__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -4271,7 +4271,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__PRIORITY_CODE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PRIORITY_CODE;
+	int PROCEDURE__PRIORITY_CODE = IHEPackage.PROCEDURE_ENTRY__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -4280,7 +4280,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__LANGUAGE_CODE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__LANGUAGE_CODE;
+	int PROCEDURE__LANGUAGE_CODE = IHEPackage.PROCEDURE_ENTRY__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -4289,7 +4289,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__METHOD_CODE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__METHOD_CODE;
+	int PROCEDURE__METHOD_CODE = IHEPackage.PROCEDURE_ENTRY__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Approach Site Code</b></em>' containment reference list.
@@ -4298,7 +4298,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__APPROACH_SITE_CODE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__APPROACH_SITE_CODE;
+	int PROCEDURE__APPROACH_SITE_CODE = IHEPackage.PROCEDURE_ENTRY__APPROACH_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -4307,7 +4307,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__TARGET_SITE_CODE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__TARGET_SITE_CODE;
+	int PROCEDURE__TARGET_SITE_CODE = IHEPackage.PROCEDURE_ENTRY__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -4316,7 +4316,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__SUBJECT = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__SUBJECT;
+	int PROCEDURE__SUBJECT = IHEPackage.PROCEDURE_ENTRY__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -4325,7 +4325,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__SPECIMEN = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__SPECIMEN;
+	int PROCEDURE__SPECIMEN = IHEPackage.PROCEDURE_ENTRY__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -4334,7 +4334,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__PERFORMER = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PERFORMER;
+	int PROCEDURE__PERFORMER = IHEPackage.PROCEDURE_ENTRY__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -4343,7 +4343,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__AUTHOR = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__AUTHOR;
+	int PROCEDURE__AUTHOR = IHEPackage.PROCEDURE_ENTRY__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -4352,7 +4352,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__INFORMANT = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__INFORMANT;
+	int PROCEDURE__INFORMANT = IHEPackage.PROCEDURE_ENTRY__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -4361,7 +4361,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__PARTICIPANT = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PARTICIPANT;
+	int PROCEDURE__PARTICIPANT = IHEPackage.PROCEDURE_ENTRY__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -4370,7 +4370,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__ENTRY_RELATIONSHIP = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__ENTRY_RELATIONSHIP;
+	int PROCEDURE__ENTRY_RELATIONSHIP = IHEPackage.PROCEDURE_ENTRY__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -4379,7 +4379,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__REFERENCE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__REFERENCE;
+	int PROCEDURE__REFERENCE = IHEPackage.PROCEDURE_ENTRY__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -4388,7 +4388,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__PRECONDITION = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION;
+	int PROCEDURE__PRECONDITION = IHEPackage.PROCEDURE_ENTRY__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -4397,7 +4397,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__NULL_FLAVOR = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__NULL_FLAVOR;
+	int PROCEDURE__NULL_FLAVOR = IHEPackage.PROCEDURE_ENTRY__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -4406,7 +4406,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__CLASS_CODE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__CLASS_CODE;
+	int PROCEDURE__CLASS_CODE = IHEPackage.PROCEDURE_ENTRY__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -4415,7 +4415,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__MOOD_CODE = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__MOOD_CODE;
+	int PROCEDURE__MOOD_CODE = IHEPackage.PROCEDURE_ENTRY__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -4424,7 +4424,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE__NEGATION_IND = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__NEGATION_IND;
+	int PROCEDURE__NEGATION_IND = IHEPackage.PROCEDURE_ENTRY__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Procedure</em>' class.
@@ -4433,7 +4433,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE_FEATURE_COUNT = IHEPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT + 0;
+	int PROCEDURE_FEATURE_COUNT = IHEPackage.PROCEDURE_ENTRY_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4442,7 +4442,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__REALM_CODE = IHEPackage.CARE_PLAN_SECTION__REALM_CODE;
+	int PLAN_OF_CARE_SECTION__REALM_CODE = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -4451,7 +4451,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__TYPE_ID = IHEPackage.CARE_PLAN_SECTION__TYPE_ID;
+	int PLAN_OF_CARE_SECTION__TYPE_ID = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -4460,7 +4460,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__TEMPLATE_ID = IHEPackage.CARE_PLAN_SECTION__TEMPLATE_ID;
+	int PLAN_OF_CARE_SECTION__TEMPLATE_ID = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -4469,7 +4469,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__ID = IHEPackage.CARE_PLAN_SECTION__ID;
+	int PLAN_OF_CARE_SECTION__ID = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -4478,7 +4478,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__CODE = IHEPackage.CARE_PLAN_SECTION__CODE;
+	int PLAN_OF_CARE_SECTION__CODE = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -4487,7 +4487,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__TITLE = IHEPackage.CARE_PLAN_SECTION__TITLE;
+	int PLAN_OF_CARE_SECTION__TITLE = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -4496,7 +4496,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__TEXT = IHEPackage.CARE_PLAN_SECTION__TEXT;
+	int PLAN_OF_CARE_SECTION__TEXT = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -4505,7 +4505,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__CONFIDENTIALITY_CODE = IHEPackage.CARE_PLAN_SECTION__CONFIDENTIALITY_CODE;
+	int PLAN_OF_CARE_SECTION__CONFIDENTIALITY_CODE = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -4514,7 +4514,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__LANGUAGE_CODE = IHEPackage.CARE_PLAN_SECTION__LANGUAGE_CODE;
+	int PLAN_OF_CARE_SECTION__LANGUAGE_CODE = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -4523,7 +4523,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__SUBJECT = IHEPackage.CARE_PLAN_SECTION__SUBJECT;
+	int PLAN_OF_CARE_SECTION__SUBJECT = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -4532,7 +4532,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__AUTHOR = IHEPackage.CARE_PLAN_SECTION__AUTHOR;
+	int PLAN_OF_CARE_SECTION__AUTHOR = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -4541,7 +4541,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__INFORMANT = IHEPackage.CARE_PLAN_SECTION__INFORMANT;
+	int PLAN_OF_CARE_SECTION__INFORMANT = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -4550,7 +4550,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__ENTRY = IHEPackage.CARE_PLAN_SECTION__ENTRY;
+	int PLAN_OF_CARE_SECTION__ENTRY = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -4559,7 +4559,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__COMPONENT = IHEPackage.CARE_PLAN_SECTION__COMPONENT;
+	int PLAN_OF_CARE_SECTION__COMPONENT = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -4568,7 +4568,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__SECTION_ID = IHEPackage.CARE_PLAN_SECTION__SECTION_ID;
+	int PLAN_OF_CARE_SECTION__SECTION_ID = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -4577,7 +4577,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__NULL_FLAVOR = IHEPackage.CARE_PLAN_SECTION__NULL_FLAVOR;
+	int PLAN_OF_CARE_SECTION__NULL_FLAVOR = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -4586,7 +4586,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__CLASS_CODE = IHEPackage.CARE_PLAN_SECTION__CLASS_CODE;
+	int PLAN_OF_CARE_SECTION__CLASS_CODE = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -4595,7 +4595,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__MOOD_CODE = IHEPackage.CARE_PLAN_SECTION__MOOD_CODE;
+	int PLAN_OF_CARE_SECTION__MOOD_CODE = CDTPackage.ASSESSMENT_AND_PLAN_SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Plan Of Care Section</em>' class.
@@ -4604,7 +4604,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION_FEATURE_COUNT = IHEPackage.CARE_PLAN_SECTION_FEATURE_COUNT + 0;
+	int PLAN_OF_CARE_SECTION_FEATURE_COUNT = CDTPackage.ASSESSMENT_AND_PLAN_SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.

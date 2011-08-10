@@ -327,15 +327,6 @@ public interface CCDFactory extends EFactory {
 	PlanOfCareSection createPlanOfCareSection();
 
 	/**
-	 * Returns a new object of class '<em>Plan Of Care Activity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Plan Of Care Activity</em>'.
-	 * @generated
-	 */
-	PlanOfCareActivity createPlanOfCareActivity();
-
-	/**
 	 * Returns a new object of class '<em>Vital Signs Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

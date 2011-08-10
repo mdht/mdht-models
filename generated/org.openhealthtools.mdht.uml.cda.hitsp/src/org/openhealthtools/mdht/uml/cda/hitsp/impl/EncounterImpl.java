@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.hitsp.Encounter;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.EncounterOperations;
-import org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterActivityImpl;
+import org.openhealthtools.mdht.uml.cda.ihe.impl.EncounterEntryImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EncounterImpl extends EncounterActivityImpl implements Encounter {
+public class EncounterImpl extends EncounterEntryImpl implements Encounter {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

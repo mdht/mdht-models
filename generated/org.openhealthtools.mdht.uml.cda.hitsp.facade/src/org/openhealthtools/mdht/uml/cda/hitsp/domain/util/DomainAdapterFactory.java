@@ -215,13 +215,13 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseSurgeriesSection(ISurgeriesSection object) {
-			return createSurgeriesSectionAdapter();
+		public Adapter caseProcedure(IProcedure object) {
+			return createProcedureAdapter();
 		}
 
 		@Override
-		public Adapter caseProcedure(IProcedure object) {
-			return createProcedureAdapter();
+		public Adapter caseSurgeriesSection(ISurgeriesSection object) {
+			return createSurgeriesSectionAdapter();
 		}
 
 		@Override

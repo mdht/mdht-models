@@ -367,8 +367,8 @@ organization performed or hosted the Procedure</body>
           <body>self.performer->forAll(perf : cda::Performer2 | not perf.oclIsUndefined() and perf.assignedEntity->size() > 0)</body>
         </specification>
       </ownedRule>
-      <generalization xmi:id="_KYObUKDlEd-dVeaMP0XXQw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_6yfdEDuNEd-B8KE6Jx0UNQ"/>
+      <generalization xmi:id="_1wnE0MNwEeCZQPUDKP01pg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_uP4tkDuMEd-B8KE6Jx0UNQ"/>
       </generalization>
       <ownedAttribute xmi:id="_LYNmwKDnEd-dVeaMP0XXQw" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_c5JqwFWNEeCrQoPO8cZUSQ">
@@ -687,6 +687,48 @@ resolved</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_wS8vIMH4EeC8rcpLzgYlNw" memberEnd="_wS8IEMH4EeC8rcpLzgYlNw _wS8vIcH4EeC8rcpLzgYlNw">
       <ownedEnd xmi:id="_wS8vIcH4EeC8rcpLzgYlNw" type="_iSKW8MHiEeC8rcpLzgYlNw" association="_wS8vIMH4EeC8rcpLzgYlNw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lRIaoMNwEeCZQPUDKP01pg">
+      <ownedEnd xmi:id="_lRJBsMNwEeCZQPUDKP01pg" association="_lRIaoMNwEeCZQPUDKP01pg">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-dischargeDiagnosis.uml#_CEsTsMfwEd6VjLXh4DcWSg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-dischargeDiagnosis.uml#_lRBs8MNwEeCZQPUDKP01pg"/>
+      <memberEnd href="#_lRJBsMNwEeCZQPUDKP01pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-rCpMMNwEeCZQPUDKP01pg">
+      <ownedEnd xmi:id="_-rCpMcNwEeCZQPUDKP01pg" association="_-rCpMMNwEeCZQPUDKP01pg">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-hospitalDischargeMedications.uml#_OORpwMfyEd6VjLXh4DcWSg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-hospitalDischargeMedications.uml#_-rBbEMNwEeCZQPUDKP01pg"/>
+      <memberEnd href="#_-rCpMcNwEeCZQPUDKP01pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MqXDwMNxEeCZQPUDKP01pg">
+      <ownedEnd xmi:id="_MqXq0MNxEeCZQPUDKP01pg" association="_MqXDwMNxEeCZQPUDKP01pg">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-planOfCare.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-planOfCare.uml#_MqWcsMNxEeCZQPUDKP01pg"/>
+      <memberEnd href="#_MqXq0MNxEeCZQPUDKP01pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_N3LcMMNxEeCZQPUDKP01pg">
+      <ownedEnd xmi:id="_N3LcMcNxEeCZQPUDKP01pg" association="_N3LcMMNxEeCZQPUDKP01pg">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-planOfCare.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-planOfCare.uml#_N3K1IMNxEeCZQPUDKP01pg"/>
+      <memberEnd href="#_N3LcMcNxEeCZQPUDKP01pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QcTEUMNxEeCZQPUDKP01pg">
+      <ownedEnd xmi:id="_QcTrYMNxEeCZQPUDKP01pg" association="_QcTEUMNxEeCZQPUDKP01pg">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-planOfCare.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-planOfCare.uml#_QcR2MMNxEeCZQPUDKP01pg"/>
+      <memberEnd href="#_QcTrYMNxEeCZQPUDKP01pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UB_YocNxEeCZQPUDKP01pg">
+      <ownedEnd xmi:id="_UB__sMNxEeCZQPUDKP01pg" association="_UB_YocNxEeCZQPUDKP01pg">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-planOfCare.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-planOfCare.uml#_UB-xkMNxEeCZQPUDKP01pg"/>
+      <memberEnd href="#_UB__sMNxEeCZQPUDKP01pg"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -786,7 +828,7 @@ resolved</body>
   <CDA:CDATemplate xmi:id="_PFSnYKDlEd-dVeaMP0XXQw" base_Class="_KYNNMKDlEd-dVeaMP0XXQw" templateId="2.16.840.1.113883.3.88.11.83.17">
     <ruleId>C83-[DE-17-CDA-1]</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_gkawsKDlEd-dVeaMP0XXQw" base_Generalization="_KYObUKDlEd-dVeaMP0XXQw" requiresParentId="true">
+  <CDA:ConformsTo xmi:id="_gkawsKDlEd-dVeaMP0XXQw" requiresParentId="true">
     <ruleId>C83-[DE-17-CDA-2]</ruleId>
   </CDA:ConformsTo>
   <CDA:ValueSetConstraint xmi:id="_AE8l8KDrEd-dVeaMP0XXQw" name="" base_Property="_LYNmwKDnEd-dVeaMP0XXQw" severity="WARNING">
@@ -935,4 +977,11 @@ resolved</body>
   <CDA:ConformsTo xmi:id="_UmSVoMIKEeCisoL14TrR_Q" base_Generalization="_iSKW8cHiEeC8rcpLzgYlNw">
     <ruleId>C48-[CT3-1]</ruleId>
   </CDA:ConformsTo>
+  <CDA:AssociationValidation xmi:id="_nZkt0MNwEeCZQPUDKP01pg" base_Association="_lRIaoMNwEeCZQPUDKP01pg"/>
+  <CDA:AssociationValidation xmi:id="__zs6YMNwEeCZQPUDKP01pg" base_Association="_-rCpMMNwEeCZQPUDKP01pg"/>
+  <CDA:AssociationValidation xmi:id="_VKc1gMNxEeCZQPUDKP01pg" severity="INFO" base_Association="_QcTEUMNxEeCZQPUDKP01pg"/>
+  <CDA:AssociationValidation xmi:id="_VkRqwMNxEeCZQPUDKP01pg" severity="INFO" base_Association="_MqXDwMNxEeCZQPUDKP01pg"/>
+  <CDA:AssociationValidation xmi:id="_WAuWMMNxEeCZQPUDKP01pg" severity="INFO" base_Association="_N3LcMMNxEeCZQPUDKP01pg"/>
+  <CDA:AssociationValidation xmi:id="_WiaG8MNxEeCZQPUDKP01pg" severity="INFO" base_Association="_UB_YocNxEeCZQPUDKP01pg"/>
+  <CDA:ConformsTo xmi:id="_oNawIMNxEeCZQPUDKP01pg" base_Generalization="_1wnE0MNwEeCZQPUDKP01pg" requiresParentId="true"/>
 </xmi:XMI>

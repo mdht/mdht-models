@@ -904,7 +904,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getSurgeriesSection() {
 		if (surgeriesSectionEClass == null) {
 			surgeriesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				18);
+				19);
 		}
 		return surgeriesSectionEClass;
 	}
@@ -926,7 +926,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getProcedure() {
 		if (procedureEClass == null) {
 			procedureEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				19);
+				18);
 		}
 		return procedureEClass;
 	}

@@ -13,7 +13,7 @@ package org.openhealthtools.mdht.uml.cda.hitsp;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
+import org.openhealthtools.mdht.uml.cda.ihe.EncounterEntry;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.12' templateId.root='2.16.840.1.113883.3.88.11.83.16' constraints.validation.error='HITSPEncounterTemplateId' code.codeSystemName='CPT-4' constraints.validation.warning='HITSPEncounterCode'"
  * @generated
  */
-public interface Encounter extends EncounterActivity {
+public interface Encounter extends EncounterEntry {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

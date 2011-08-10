@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.Encounter;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPlugin;
 import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
-import org.openhealthtools.mdht.uml.cda.ihe.operations.EncounterActivityOperations;
+import org.openhealthtools.mdht.uml.cda.ihe.operations.EncounterEntryOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +39,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.EncounterActivityOperatio
  *
  * @generated
  */
-public class EncounterOperations extends EncounterActivityOperations {
+public class EncounterOperations extends EncounterEntryOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

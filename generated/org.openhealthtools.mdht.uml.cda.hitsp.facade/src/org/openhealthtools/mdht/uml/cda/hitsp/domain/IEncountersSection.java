@@ -8,6 +8,8 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.StrucDocText;
+import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -89,6 +91,68 @@ public interface IEncountersSection {
 	 * @generated
 	 */
 	IEncountersSection setTitle(ST value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Section::text.
+	 * self.text.oclAsType(cda::StrucDocText)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	StrucDocText getText();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Encounters Section SHALL contain exactly one [1..1] text.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	StrucDocText withText();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Encounters Section SHALL contain exactly one [1..1] text.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IEncountersSection setText(StrucDocText value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * ccd::EncountersSection::encountersActivity.
+	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(ccd::EncountersActivity)).oclAsType(ccd::EncountersActivity)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<EncountersActivity> getEncountersActivities();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Encounters Section SHOULD contain at least one [1..*] entry, such that Contains exactly one [1..1] Encounters Activity (templateId: 2.16.840.1.113883.10.20.1.21).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EncountersActivity addEncountersActivity();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Encounters Section SHOULD contain at least one [1..*] entry, such that Contains exactly one [1..1] Encounters Activity (templateId: 2.16.840.1.113883.10.20.1.21).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IEncountersSection addEncountersActivity(EncountersActivity value);
 
 	/**
 	 * <!-- begin-user-doc -->

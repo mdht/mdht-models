@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
+import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedResultsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
@@ -75,6 +76,15 @@ public class CodedResultsSectionImpl extends SectionImpl implements CodedResults
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCodedResultsSectionProcedureEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CodedResultsSectionOperations.validateCodedResultsSectionProcedureEntry(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCodedResultsSectionExternalReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodedResultsSectionOperations.validateCodedResultsSectionExternalReference(this, diagnostics, context);
 	}
@@ -86,6 +96,15 @@ public class CodedResultsSectionImpl extends SectionImpl implements CodedResults
 	 */
 	public boolean validateCodedResultsSectionSimpleObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodedResultsSectionOperations.validateCodedResultsSectionSimpleObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProcedureEntry> getProcedureEntries() {
+		return CodedResultsSectionOperations.getProcedureEntries(this);
 	}
 
 	/**

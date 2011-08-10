@@ -285,17 +285,17 @@ public class DomainSwitch<T> {
 				}
 				return result;
 			}
-			case IDomainPackage.SURGERIES_SECTION: {
-				ISurgeriesSection surgeriesSection = (ISurgeriesSection) theEObject;
-				T result = caseSurgeriesSection(surgeriesSection);
+			case IDomainPackage.PROCEDURE: {
+				IProcedure procedure = (IProcedure) theEObject;
+				T result = caseProcedure(procedure);
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
 			}
-			case IDomainPackage.PROCEDURE: {
-				IProcedure procedure = (IProcedure) theEObject;
-				T result = caseProcedure(procedure);
+			case IDomainPackage.SURGERIES_SECTION: {
+				ISurgeriesSection surgeriesSection = (ISurgeriesSection) theEObject;
+				T result = caseSurgeriesSection(surgeriesSection);
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}

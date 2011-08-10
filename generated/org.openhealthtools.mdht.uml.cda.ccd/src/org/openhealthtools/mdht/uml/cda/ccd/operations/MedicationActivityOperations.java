@@ -203,7 +203,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.getClinicalDocument().oclIsUndefined()";
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_HAS_CONSENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getClinicalDocument().authorization->exists(auth : cda::Authorization | "
+			+ "   not auth.oclIsUndefined() and not auth.consent.oclIsUndefined())";
 
 	// "self.getClinicalDocument().authorization->exists(auth : cda::Authorization | "+
 	// "   not auth.oclIsUndefined() and not auth.consent.oclIsUndefined())";

@@ -23,8 +23,8 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounter;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -238,44 +238,44 @@ public class EncounterImpl extends EObjectImpl implements IEncounter {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getEffectiveTime() <em>Get Effective Time</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getText() <em>Get Text</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEffectiveTime()
+	 * @see #getText()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_EFFECTIVE_TIME__EOCL_EXP = "self.effectiveTime.oclAsType(datatypes::IVL_TS)";
+	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(datatypes::ED)";
 
 	/**
-	 * The cached OCL query for the '{@link #getEffectiveTime() <em>Get Effective Time</em>}' query operation.
+	 * The cached OCL query for the '{@link #getText() <em>Get Text</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEffectiveTime()
+	 * @see #getText()
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_EFFECTIVE_TIME__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_TEXT__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IVL_TS getEffectiveTime() {
-		if (GET_EFFECTIVE_TIME__EOCL_QRY == null) {
+	public ED getText() {
+		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IDomainPackage.eINSTANCE.getEncounter(),
 				IDomainPackage.eINSTANCE.getEncounter().getEAllOperations().get(6));
 			try {
-				GET_EFFECTIVE_TIME__EOCL_QRY = helper.createQuery(GET_EFFECTIVE_TIME__EOCL_EXP);
+				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EFFECTIVE_TIME__EOCL_QRY);
-		return (IVL_TS) query.evaluate(this);
+		OCL.Query query = EOCL_ENV.createQuery(GET_TEXT__EOCL_QRY);
+		return (ED) query.evaluate(this);
 	}
 
 	/**
@@ -283,13 +283,13 @@ public class EncounterImpl extends EObjectImpl implements IEncounter {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IVL_TS withEffectiveTime() {
+	public ED withText() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
 		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("IVL_TS");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
-		IVL_TS value = (IVL_TS) eObject;
-		this.getCDAType().setEffectiveTime(value);
+		ED value = (ED) eObject;
+		this.getCDAType().setText(value);
 		return value;
 	}
 
@@ -298,8 +298,8 @@ public class EncounterImpl extends EObjectImpl implements IEncounter {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IEncounter setEffectiveTime(IVL_TS value) {
-		this.getCDAType().setEffectiveTime(value);
+	public IEncounter setText(ED value) {
+		this.getCDAType().setText(value);
 		return this;
 	}
 

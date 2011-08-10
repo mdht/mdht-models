@@ -710,6 +710,17 @@
     <eOperations name="setTitle" ordered="false" lowerBound="1" eType="#//EncountersSection">
       <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST"/>
     </eOperations>
+    <eOperations name="getText" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//StrucDocText"/>
+    <eOperations name="withText" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//StrucDocText"/>
+    <eOperations name="setText" ordered="false" lowerBound="1" eType="#//EncountersSection">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//StrucDocText"/>
+    </eOperations>
+    <eOperations name="getEncountersActivities" ordered="false" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//EncountersActivity"/>
+    <eOperations name="addEncountersActivity" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//EncountersActivity"/>
+    <eOperations name="addEncountersActivity" ordered="false" lowerBound="1" eType="#//EncountersSection">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//EncountersActivity"/>
+    </eOperations>
     <eOperations name="getEncounterEntries" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//Encounter"/>
     <eOperations name="addEncounterEntry" ordered="false" lowerBound="1" eType="#//Encounter"/>
@@ -730,10 +741,10 @@
     <eOperations name="setCode" ordered="false" lowerBound="1" eType="#//Encounter">
       <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
     </eOperations>
-    <eOperations name="getEffectiveTime" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//IVL_TS"/>
-    <eOperations name="withEffectiveTime" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//IVL_TS"/>
-    <eOperations name="setEffectiveTime" ordered="false" lowerBound="1" eType="#//Encounter">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//IVL_TS"/>
+    <eOperations name="getText" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ED"/>
+    <eOperations name="withText" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ED"/>
+    <eOperations name="setText" ordered="false" lowerBound="1" eType="#//Encounter">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ED"/>
     </eOperations>
     <eOperations name="getPriorityCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
     <eOperations name="withPriorityCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"/>
@@ -966,8 +977,42 @@
         eType="#//PlanOfCareSection">
       <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//PlanOfCareActivitySupply"/>
     </eOperations>
+    <eOperations name="getMedication" ordered="false" lowerBound="1" eType="#//Medication"/>
+    <eOperations name="withMedication" ordered="false" lowerBound="1" eType="#//Medication"/>
+    <eOperations name="setMedication" ordered="false" lowerBound="1" eType="#//PlanOfCareSection">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Medication"/>
+    </eOperations>
+    <eOperations name="getImmunization" ordered="false" lowerBound="1" eType="#//Immunization"/>
+    <eOperations name="withImmunization" ordered="false" lowerBound="1" eType="#//Immunization"/>
+    <eOperations name="setImmunization" ordered="false" lowerBound="1" eType="#//PlanOfCareSection">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Immunization"/>
+    </eOperations>
+    <eOperations name="getEncounter" ordered="false" lowerBound="1" eType="#//Encounter"/>
+    <eOperations name="withEncounter" ordered="false" lowerBound="1" eType="#//Encounter"/>
+    <eOperations name="setEncounter" ordered="false" lowerBound="1" eType="#//PlanOfCareSection">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Encounter"/>
+    </eOperations>
+    <eOperations name="getProcedure" ordered="false" lowerBound="1" eType="#//Procedure"/>
+    <eOperations name="withProcedure" ordered="false" lowerBound="1" eType="#//Procedure"/>
+    <eOperations name="setProcedure" ordered="false" lowerBound="1" eType="#//PlanOfCareSection">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Procedure"/>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
         lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Section"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Procedure">
+    <eOperations name="getCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
+    <eOperations name="withCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
+    <eOperations name="setCode" ordered="false" lowerBound="1" eType="#//Procedure">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
+    </eOperations>
+    <eOperations name="getTargetSiteCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
+    <eOperations name="withTargetSiteCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
+    <eOperations name="setTargetSiteCode" ordered="false" lowerBound="1" eType="#//Procedure">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
+        lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Procedure"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SurgeriesSection">
     <eOperations name="getTitle" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ST"/>
@@ -985,6 +1030,14 @@
     <eOperations name="setExternalReference" ordered="false" lowerBound="1" eType="#//SurgeriesSection">
       <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ExternalReference"/>
     </eOperations>
+    <eOperations name="getProcedureEntryProcedureActivityProcedures" ordered="false"
+        lowerBound="1" upperBound="-1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ProcedureEntryProcedureActivityProcedure"/>
+    <eOperations name="addProcedureEntryProcedureActivityProcedure" ordered="false"
+        lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ProcedureEntryProcedureActivityProcedure"/>
+    <eOperations name="addProcedureEntryProcedureActivityProcedure" ordered="false"
+        lowerBound="1" eType="#//SurgeriesSection">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//ProcedureEntryProcedureActivityProcedure"/>
+    </eOperations>
     <eOperations name="getProcedureActivities" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//Procedure"/>
     <eOperations name="addProcedureActivity" ordered="false" lowerBound="1" eType="#//Procedure"/>
@@ -993,72 +1046,6 @@
     </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
         lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Section"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Procedure">
-    <eOperations name="getCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
-    <eOperations name="withCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
-    <eOperations name="setCode" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
-    </eOperations>
-    <eOperations name="getStatusCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS"/>
-    <eOperations name="withStatusCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS"/>
-    <eOperations name="setStatusCode" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CS"/>
-    </eOperations>
-    <eOperations name="getText" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ED"/>
-    <eOperations name="withText" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ED"/>
-    <eOperations name="setText" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//ED"/>
-    </eOperations>
-    <eOperations name="getApproachSiteCodes" ordered="false" lowerBound="1" upperBound="-1"
-        eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
-    <eOperations name="addApproachSiteCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
-    <eOperations name="addApproachSiteCode" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
-    </eOperations>
-    <eOperations name="getTargetSiteCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
-    <eOperations name="withTargetSiteCode" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
-    <eOperations name="setTargetSiteCode" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CD"/>
-    </eOperations>
-    <eOperations name="getEncounterLocations" ordered="false" lowerBound="1" upperBound="-1"
-        eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//EncounterLocation"/>
-    <eOperations name="addEncounterLocation" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//EncounterLocation"/>
-    <eOperations name="addEncounterLocation" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//EncounterLocation"/>
-    </eOperations>
-    <eOperations name="getPatientInstructions" ordered="false" lowerBound="1" upperBound="-1"
-        eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//PatientInstruction"/>
-    <eOperations name="addPatientInstruction" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//PatientInstruction"/>
-    <eOperations name="addPatientInstruction" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//PatientInstruction"/>
-    </eOperations>
-    <eOperations name="getAgeObservation" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//AgeObservation"/>
-    <eOperations name="withAgeObservation" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//AgeObservation"/>
-    <eOperations name="setAgeObservation" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//AgeObservation"/>
-    </eOperations>
-    <eOperations name="getMedicationActivities" ordered="false" lowerBound="1" upperBound="-1"
-        eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//MedicationActivity"/>
-    <eOperations name="addMedicationActivity" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//MedicationActivity"/>
-    <eOperations name="addMedicationActivity" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ccd#//MedicationActivity"/>
-    </eOperations>
-    <eOperations name="getInternalReference" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//InternalReference"/>
-    <eOperations name="withInternalReference" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//InternalReference"/>
-    <eOperations name="setInternalReference" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//InternalReference"/>
-    </eOperations>
-    <eOperations name="getInternalReferenceReasons" ordered="false" lowerBound="1"
-        upperBound="-1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//InternalReference"/>
-    <eOperations name="addInternalReferenceReason" ordered="false" lowerBound="1"
-        eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//InternalReference"/>
-    <eOperations name="addInternalReferenceReason" ordered="false" lowerBound="1"
-        eType="#//Procedure">
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/cda/ihe#//InternalReference"/>
-    </eOperations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
-        lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Procedure"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Support"/>
   <eClassifiers xsi:type="ecore:EClass" name="VitalSignsSection">
@@ -1219,6 +1206,11 @@
         lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Section"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DischargeDiagnosisSection">
+    <eOperations name="getCondition" ordered="false" lowerBound="1" eType="#//Condition"/>
+    <eOperations name="withCondition" ordered="false" lowerBound="1" eType="#//Condition"/>
+    <eOperations name="setCondition" ordered="false" lowerBound="1" eType="#//DischargeDiagnosisSection">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Condition"/>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
         lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Section"/>
   </eClassifiers>
@@ -1227,6 +1219,11 @@
         lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Section"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeMedicationsSection">
+    <eOperations name="getMedication" ordered="false" lowerBound="1" eType="#//Medication"/>
+    <eOperations name="withMedication" ordered="false" lowerBound="1" eType="#//Medication"/>
+    <eOperations name="setMedication" ordered="false" lowerBound="1" eType="#//HospitalDischargeMedicationsSection">
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Medication"/>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
         lowerBound="1" eType="ecore:EClass urn:hl7-org:v3#//Section"/>
   </eClassifiers>
