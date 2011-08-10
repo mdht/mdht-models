@@ -19,6 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.impl.ProcedureActivityProcedureImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
+import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryProcedureActivityProcedureOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -50,6 +51,15 @@ public class ProcedureEntryProcedureActivityProcedureImpl extends ProcedureActiv
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryTemplateId(this, diagnostics, context);
 	}
 
 	/**

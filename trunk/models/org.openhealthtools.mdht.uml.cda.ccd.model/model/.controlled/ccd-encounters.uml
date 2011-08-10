@@ -12,6 +12,12 @@
     summarized, but should include notable encounters.&#xD;
 &lt;/p></body>
     </ownedComment>
+    <ownedRule xmi:id="_iTvPwMKcEeCl2eGe9IRxKw" name="titleValue" constrainedElement="_rJDcIHDAEd6eItyqb1FoWg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mUOCoMKcEeCl2eGe9IRxKw">
+        <language>Analysis</language>
+        <body>SHOULD be valued with a case-insensitive language-insensitive text string containing 'encounters'.</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_wbv8cHDOEd6eItyqb1FoWg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
@@ -21,8 +27,43 @@
     <ownedAttribute xmi:id="_qATQsIjwEd66cKocspyVOg" name="title" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_3E4DwMKZEeCl2eGe9IRxKw" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5Do2gMKZEeCl2eGe9IRxKw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5Do2gcKZEeCl2eGe9IRxKw" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7EeF0MKZEeCl2eGe9IRxKw" name="encountersActivity" type="_mO8KEHJWEd6cacuAk5qrhg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8cZiEMKZEeCl2eGe9IRxKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8cZiEcKZEeCl2eGe9IRxKw" value="1"/>
+      <association href="../ccd.uml#_7EeF0sKZEeCl2eGe9IRxKw"/>
+    </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_mO8KEHJWEd6cacuAk5qrhg" name="EncountersActivity">
+    <ownedRule xmi:id="_OCVlkMK8EeCl2eGe9IRxKw" name="hasIndications" constrainedElement="_mO8KEHJWEd6cacuAk5qrhg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bI0ToMK8EeCl2eGe9IRxKw">
+        <language>Analysis</language>
+        <body>MAY contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_efzdkMK8EeCl2eGe9IRxKw" name="hasPractitioners" constrainedElement="_OCVlkMK8EeCl2eGe9IRxKw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jPmNgMK8EeCl2eGe9IRxKw">
+        <language>Analysis</language>
+        <body>MAY contain zero or more [0..*] performer, used to define the practioners involved in an encounter</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_lNKGYMK8EeCl2eGe9IRxKw" name="practitionerRole" constrainedElement="_efzdkMK8EeCl2eGe9IRxKw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qSF_4MK8EeCl2eGe9IRxKw">
+        <language>Analysis</language>
+        <body>MAY contain one [0..1] performer / assignedEntity / code, to define the role of the practioner</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_JSRTYMK9EeCl2eGe9IRxKw" name="hasInformation" constrainedElement="_lNKGYMK8EeCl2eGe9IRxKw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_L0AQUMK9EeCl2eGe9IRxKw">
+        <language>Analysis</language>
+        <body>SHALL contain one or more sources of information</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_vuapUHJjEd6cacuAk5qrhg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AAXtEEbvEd6besF9iFIJkQ"/>
     </generalization>
@@ -52,6 +93,22 @@
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D4_loYj0Ed66cKocspyVOg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D4_looj0Ed66cKocspyVOg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_VlsMK8EeCl2eGe9IRxKw" name="patientInstruction">
+      <type xmi:type="uml:Class" href="ccd-medications.uml#_F9_RAMKAEd6-XpBv2uxYrQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2b4cMMK8EeCl2eGe9IRxKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2b4cMcK8EeCl2eGe9IRxKw"/>
+      <association href="../ccd.uml#_0_VlssK8EeCl2eGe9IRxKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_D5HdYMK9EeCl2eGe9IRxKw" name="ageObservation">
+      <type xmi:type="uml:Class" href="../ccd.uml#_S7rEABZ1Ed-i6Lz80y5G5g"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D5HdYcK9EeCl2eGe9IRxKw"/>
+      <association href="../ccd.uml#_D5ROYMK9EeCl2eGe9IRxKw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Tp0WAMK9EeCl2eGe9IRxKw" name="encounterLocation" type="_2QJRIIiBEd66cKocspyVOg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UqZpQMK9EeCl2eGe9IRxKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UqZpQcK9EeCl2eGe9IRxKw"/>
+      <association href="../ccd.uml#_Tp0WAsK9EeCl2eGe9IRxKw"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_2QJRIIiBEd66cKocspyVOg" name="EncounterLocation">
@@ -150,4 +207,10 @@
   <CDA:ConformsTo xmi:id="_VlvlEFS9EeCnnNnsbG2N3Q" base_Generalization="_lD-rMIjxEd66cKocspyVOg">
     <ruleId>CONF-472</ruleId>
   </CDA:ConformsTo>
+  <CDA:PropertyValidation xmi:id="_34pqEMKZEeCl2eGe9IRxKw" base_Property="_3E4DwMKZEeCl2eGe9IRxKw"/>
+  <CDA:ConstraintValidation xmi:id="_mf-msMKcEeCl2eGe9IRxKw" severity="WARNING" base_Constraint="_iTvPwMKcEeCl2eGe9IRxKw"/>
+  <CDA:ConstraintValidation xmi:id="_SOIQkMK8EeCl2eGe9IRxKw" severity="INFO" base_Constraint="_OCVlkMK8EeCl2eGe9IRxKw"/>
+  <CDA:ConstraintValidation xmi:id="_yINAgMK8EeCl2eGe9IRxKw" severity="INFO" base_Constraint="_efzdkMK8EeCl2eGe9IRxKw"/>
+  <CDA:ConstraintValidation xmi:id="_ye96sMK8EeCl2eGe9IRxKw" severity="INFO" base_Constraint="_lNKGYMK8EeCl2eGe9IRxKw"/>
+  <CDA:ConstraintValidation xmi:id="_MMQYQMK9EeCl2eGe9IRxKw" base_Constraint="_JSRTYMK9EeCl2eGe9IRxKw"/>
 </xmi:XMI>

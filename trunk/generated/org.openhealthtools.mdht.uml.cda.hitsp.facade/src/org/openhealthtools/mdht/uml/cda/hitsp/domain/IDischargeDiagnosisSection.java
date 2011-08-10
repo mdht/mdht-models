@@ -61,6 +61,37 @@ public interface IDischargeDiagnosisSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::DischargeDiagnosisSection::condition.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::Condition))->asSequence()->first().oclAsType(domain::Condition)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ICondition getCondition();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Discharge Diagnosis Section SHALL contain exactly one [1..1] entry, such that Contains exactly one [1..1] Condition (templateId: 2.16.840.1.113883.3.88.11.83.7).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ICondition withCondition();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Discharge Diagnosis Section SHALL contain exactly one [1..1] entry, such that Contains exactly one [1..1] Condition (templateId: 2.16.840.1.113883.3.88.11.83.7).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IDischargeDiagnosisSection setCondition(ICondition value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public IDischargeDiagnosisSection init();

@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class PlanOfCareActivityImpl extends EObjectImpl implements PlanOfCareActivity {
+public abstract class PlanOfCareActivityImpl extends EObjectImpl implements PlanOfCareActivity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

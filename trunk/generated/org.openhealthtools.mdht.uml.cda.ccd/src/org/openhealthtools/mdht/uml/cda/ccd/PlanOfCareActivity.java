@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getPlanOfCareActivity()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface PlanOfCareActivity extends EObject {

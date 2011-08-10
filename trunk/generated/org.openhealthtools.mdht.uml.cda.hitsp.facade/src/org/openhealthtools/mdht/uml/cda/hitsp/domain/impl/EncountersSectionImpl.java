@@ -18,6 +18,8 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.StrucDocText;
+import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounter;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersSection;
@@ -167,6 +169,147 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #getText() <em>Get Text</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getText()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(cda::StrucDocText)";
+
+	/**
+	 * The cached OCL query for the '{@link #getText() <em>Get Text</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getText()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_TEXT__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StrucDocText getText() {
+		if (GET_TEXT__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersSection(),
+				IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(3));
+			try {
+				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_TEXT__EOCL_QRY);
+		return (StrucDocText) query.evaluate(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StrucDocText withText() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("StrucDocText");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		StrucDocText value = (StrucDocText) eObject;
+		this.getCDAType().setText(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEncountersSection setText(StrucDocText value) {
+		this.getCDAType().setText(value);
+		return this;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getEncountersActivities() <em>Get Encounters Activities</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEncountersActivities()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_ENCOUNTERS_ACTIVITIES__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(ccd::EncountersActivity)).oclAsType(ccd::EncountersActivity)";
+
+	/**
+	 * The cached OCL query for the '{@link #getEncountersActivities() <em>Get Encounters Activities</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEncountersActivities()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_ENCOUNTERS_ACTIVITIES__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<EncountersActivity> getEncountersActivities() {
+		if (GET_ENCOUNTERS_ACTIVITIES__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersSection(),
+				IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(6));
+			try {
+				GET_ENCOUNTERS_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS_ACTIVITIES__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_ENCOUNTERS_ACTIVITIES__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<EncountersActivity> result = (Collection<EncountersActivity>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<EncountersActivity>(result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncountersActivity addEncountersActivity() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("EncountersActivity");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		try {
+			java.lang.reflect.Method initMethod = eObject.getClass().getMethod("init", new java.lang.Class[0]);
+			initMethod.invoke(eObject, new Object[0]);
+		} catch (Exception e) {
+			// no init() method
+		}
+		EncountersActivity value = (EncountersActivity) eObject;
+		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter) eObject);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEncountersSection addEncountersActivity(EncountersActivity value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getEncounterEntries() <em>Get Encounter Entries</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -196,7 +339,7 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IDomainPackage.eINSTANCE.getEncountersSection(),
-				IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(3));
+				IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(9));
 			try {
 				GET_ENCOUNTER_ENTRIES__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_ENTRIES__EOCL_EXP);
 			} catch (ParserException pe) {

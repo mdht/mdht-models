@@ -29,13 +29,10 @@ import org.openhealthtools.mdht.uml.cda.Supply;
 import org.openhealthtools.mdht.uml.cda.ccd.AlertsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument;
 import org.openhealthtools.mdht.uml.cda.ccd.CoverageActivity;
-import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemAct;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemSection;
-import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivity;
-import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultObservation;
@@ -111,7 +108,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.CombinationMedication;
 import org.openhealthtools.mdht.uml.cda.ihe.ConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ConditionalDose;
 import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.FamilyMedicalHistorySection;
@@ -127,7 +123,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ihe.ProductEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
@@ -516,13 +511,7 @@ public class HITSPSwitch<T> {
 				Encounter encounter = (Encounter) theEObject;
 				T result = caseEncounter(encounter);
 				if (result == null) {
-					result = caseEncounterActivity(encounter);
-				}
-				if (result == null) {
 					result = caseEncounterEntry(encounter);
-				}
-				if (result == null) {
-					result = caseEncountersActivity(encounter);
 				}
 				if (result == null) {
 					result = caseCDA_Encounter(encounter);
@@ -646,19 +635,10 @@ public class HITSPSwitch<T> {
 				Procedure procedure = (Procedure) theEObject;
 				T result = caseProcedure(procedure);
 				if (result == null) {
-					result = caseProcedureEntryProcedureActivityProcedure(procedure);
-				}
-				if (result == null) {
-					result = caseProcedureActivityProcedure(procedure);
-				}
-				if (result == null) {
 					result = caseProcedureEntry(procedure);
 				}
 				if (result == null) {
 					result = caseCDA_Procedure(procedure);
-				}
-				if (result == null) {
-					result = caseProcedureActivity(procedure);
 				}
 				if (result == null) {
 					result = caseClinicalStatement(procedure);
@@ -677,6 +657,9 @@ public class HITSPSwitch<T> {
 			case HITSPPackage.PLAN_OF_CARE_SECTION: {
 				PlanOfCareSection planOfCareSection = (PlanOfCareSection) theEObject;
 				T result = casePlanOfCareSection(planOfCareSection);
+				if (result == null) {
+					result = caseCDT_AssessmentAndPlanSection(planOfCareSection);
+				}
 				if (result == null) {
 					result = caseCarePlanSection(planOfCareSection);
 				}
@@ -3019,36 +3002,6 @@ public class HITSPSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Encounters Activity</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Encounters Activity</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEncountersActivity(EncountersActivity object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Encounter Activity</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Encounter Activity</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEncounterActivity(EncounterActivity object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Immunizations Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3180,36 +3133,6 @@ public class HITSPSwitch<T> {
 	 * @generated
 	 */
 	public T caseCDA_Procedure(org.openhealthtools.mdht.uml.cda.Procedure object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseProcedureActivity(ProcedureActivity object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
 		return null;
 	}
 
@@ -3893,17 +3816,17 @@ public class HITSPSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Procedure Entry Procedure Activity Procedure</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Assessment And Plan Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Procedure Entry Procedure Activity Procedure</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Assessment And Plan Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure object) {
+	public T caseCDT_AssessmentAndPlanSection(org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSection object) {
 		return null;
 	}
 

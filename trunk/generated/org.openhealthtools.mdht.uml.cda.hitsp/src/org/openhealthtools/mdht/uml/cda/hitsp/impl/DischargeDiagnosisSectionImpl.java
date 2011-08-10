@@ -14,6 +14,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
 import org.openhealthtools.mdht.uml.cda.hitsp.DischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.DischargeDiagnosisSectionOperations;
@@ -58,6 +59,26 @@ public class DischargeDiagnosisSectionImpl extends
 			Map<Object, Object> context) {
 		return DischargeDiagnosisSectionOperations.validateHITSPDischargeDiagnosisSectionTemplateId(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPDischargeDiagnosisSectionCondition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeDiagnosisSectionOperations.validateHITSPDischargeDiagnosisSectionCondition(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Condition getCondition() {
+		return DischargeDiagnosisSectionOperations.getCondition(this);
 	}
 
 	/**

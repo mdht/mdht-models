@@ -13,7 +13,10 @@ package org.openhealthtools.mdht.uml.cda.ihe.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
+import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.EncountersActivityOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
@@ -92,6 +95,42 @@ public class EncounterActivityImpl extends EncounterEntryImpl implements Encount
 	 */
 	public boolean validateEncountersActivityEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersActivityOperations.validateEncountersActivityEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncountersActivityPatientInstruction(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersActivityOperations.validateEncountersActivityPatientInstruction(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncountersActivityAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersActivityOperations.validateEncountersActivityAgeObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PatientInstruction> getPatientInstructions() {
+		return EncountersActivityOperations.getPatientInstructions(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AgeObservation getAgeObservation() {
+		return EncountersActivityOperations.getAgeObservation(this);
 	}
 
 	/**

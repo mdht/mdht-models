@@ -800,6 +800,34 @@
       <memberEnd href=".controlled/ccd-procedures.uml#_Yse4IFZgEeCvPvJeMYeitg"/>
       <memberEnd href="#_Yse4I1ZgEeCvPvJeMYeitg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7EeF0sKZEeCl2eGe9IRxKw">
+      <ownedEnd xmi:id="_7EeF08KZEeCl2eGe9IRxKw" association="_7EeF0sKZEeCl2eGe9IRxKw">
+        <type xmi:type="uml:Class" href=".controlled/ccd-encounters.uml#_rJDcIHDAEd6eItyqb1FoWg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-encounters.uml#_7EeF0MKZEeCl2eGe9IRxKw"/>
+      <memberEnd href="#_7EeF08KZEeCl2eGe9IRxKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0_VlssK8EeCl2eGe9IRxKw">
+      <ownedEnd xmi:id="_0_Vls8K8EeCl2eGe9IRxKw" association="_0_VlssK8EeCl2eGe9IRxKw">
+        <type xmi:type="uml:Class" href=".controlled/ccd-encounters.uml#_mO8KEHJWEd6cacuAk5qrhg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-encounters.uml#_0_VlsMK8EeCl2eGe9IRxKw"/>
+      <memberEnd href="#_0_Vls8K8EeCl2eGe9IRxKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_D5ROYMK9EeCl2eGe9IRxKw">
+      <ownedEnd xmi:id="_D5ROYcK9EeCl2eGe9IRxKw" association="_D5ROYMK9EeCl2eGe9IRxKw">
+        <type xmi:type="uml:Class" href=".controlled/ccd-encounters.uml#_mO8KEHJWEd6cacuAk5qrhg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-encounters.uml#_D5HdYMK9EeCl2eGe9IRxKw"/>
+      <memberEnd href="#_D5ROYcK9EeCl2eGe9IRxKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Tp0WAsK9EeCl2eGe9IRxKw">
+      <ownedEnd xmi:id="_Tp0WA8K9EeCl2eGe9IRxKw" association="_Tp0WAsK9EeCl2eGe9IRxKw">
+        <type xmi:type="uml:Class" href=".controlled/ccd-encounters.uml#_mO8KEHJWEd6cacuAk5qrhg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-encounters.uml#_Tp0WAMK9EeCl2eGe9IRxKw"/>
+      <memberEnd href="#_Tp0WA8K9EeCl2eGe9IRxKw"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -1211,4 +1239,8 @@
   <CDA:EntryRelationship xmi:id="_plKsgFZgEeCvPvJeMYeitg" message="" severity="INFO" base_Association="_Yse4IlZgEeCvPvJeMYeitg" typeCode="COMP">
     <ruleId>CONF-446</ruleId>
   </CDA:EntryRelationship>
+  <CDA:AssociationValidation xmi:id="_8nZ4MMKZEeCl2eGe9IRxKw" severity="WARNING" base_Association="_7EeF0sKZEeCl2eGe9IRxKw"/>
+  <CDA:AssociationValidation xmi:id="_2tlQMMK8EeCl2eGe9IRxKw" severity="INFO" base_Association="_0_VlssK8EeCl2eGe9IRxKw"/>
+  <CDA:EntryRelationship xmi:id="_EdadQMK9EeCl2eGe9IRxKw" severity="INFO" base_Association="_D5ROYMK9EeCl2eGe9IRxKw" typeCode="SUBJ"/>
+  <CDA:AssociationValidation xmi:id="_U6KjkMK9EeCl2eGe9IRxKw" severity="INFO" base_Association="_Tp0WAsK9EeCl2eGe9IRxKw"/>
 </xmi:XMI>

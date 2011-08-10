@@ -2407,6 +2407,48 @@
       </eAnnotations>
       <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//ST"/>
     </eOperations>
+    <eOperations name="getText" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//StrucDocText">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="cda::Section::text.&#xD;&#xA;self.text.oclAsType(cda::StrucDocText)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.text.oclAsType(cda::StrucDocText)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="withText" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//StrucDocText">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CCD Encounters Section SHALL contain exactly one [1..1] text."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;StrucDocText&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;StrucDocText value = (StrucDocText) eObject;&#xD;&#xA;this.getCDAType().setText(value);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setText" ordered="false" lowerBound="1" eType="#//EncountersSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CCD Encounters Section SHALL contain exactly one [1..1] text."/>
+        <details key="body" value="this.getCDAType().setText(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//StrucDocText"/>
+    </eOperations>
+    <eOperations name="getEncountersActivities" ordered="false" lowerBound="1" upperBound="-1"
+        eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//EncountersActivity">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="ccd::EncountersSection::encountersActivity.&#xD;&#xA;self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(ccd::EncountersActivity)).oclAsType(ccd::EncountersActivity)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(ccd::EncountersActivity)).oclAsType(ccd::EncountersActivity)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="addEncountersActivity" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//EncountersActivity">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CCD Encounters Section SHOULD contain at least one [1..*] entry, such that Contains exactly one [1..1] Encounters Activity (templateId: 2.16.840.1.113883.10.20.1.21)."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage(&quot;http://www.openhealthtools.org/mdht/uml/cda/ccd&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory(&quot;http://www.openhealthtools.org/mdht/uml/cda/ccd&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;EncountersActivity&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;try {&#xD;&#xA;&#x9;java.lang.reflect.Method initMethod = eObject.getClass().getMethod(&quot;init&quot;, new java.lang.Class[0]);&#xD;&#xA;&#x9;initMethod.invoke(eObject, new Object[0]);&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;&#x9;// no init() method&#xD;&#xA;}&#xD;&#xA;EncountersActivity value = (EncountersActivity) eObject;&#xD;&#xA;this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter)eObject);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="addEncountersActivity" ordered="false" lowerBound="1" eType="#//EncountersSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="CCD Encounters Section SHOULD contain at least one [1..*] entry, such that Contains exactly one [1..1] Encounters Activity (templateId: 2.16.840.1.113883.10.20.1.21)."/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//EncountersActivity"/>
+    </eOperations>
     <eOperations name="getEncounterEntries" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//Encounter">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2445,13 +2487,13 @@
     </eOperations>
     <eOperations name="addId" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//II">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Encounters Activity SHALL contain at least one [1..*] id."/>
+        <details key="documentation" value="IHE Encounter Entry SHALL contain at least one [1..*] id."/>
         <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;II&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;II value = (II) eObject;&#xD;&#xA;this.getCDAType().getIds().add(value);&#xD;&#xA;return value;"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="addId" ordered="false" lowerBound="1" eType="#//Encounter">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Encounters Activity SHALL contain at least one [1..*] id."/>
+        <details key="documentation" value="IHE Encounter Entry SHALL contain at least one [1..*] id."/>
       </eAnnotations>
       <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//II"/>
     </eOperations>
@@ -2476,26 +2518,26 @@
       </eAnnotations>
       <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD"/>
     </eOperations>
-    <eOperations name="getEffectiveTime" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//IVL_TS">
+    <eOperations name="getText" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//ED">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="cda::Encounter::effectiveTime.&#xD;&#xA;self.effectiveTime.oclAsType(datatypes::IVL_TS)"/>
+        <details key="documentation" value="cda::Encounter::text.&#xD;&#xA;self.text.oclAsType(datatypes::ED)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.effectiveTime.oclAsType(datatypes::IVL_TS)"/>
+        <details key="body" value="self.text.oclAsType(datatypes::ED)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="withEffectiveTime" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//IVL_TS">
+    <eOperations name="withText" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//ED">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Encounters Activity MAY contain zero or one [0..1] effectiveTime."/>
-        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;IVL_TS&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;IVL_TS value = (IVL_TS) eObject;&#xD;&#xA;this.getCDAType().setEffectiveTime(value);&#xD;&#xA;return value;"/>
+        <details key="documentation" value="IHE Encounter Entry SHALL contain exactly one [1..1] text."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;ED&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;ED value = (ED) eObject;&#xD;&#xA;this.getCDAType().setText(value);&#xD;&#xA;return value;"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="setEffectiveTime" ordered="false" lowerBound="1" eType="#//Encounter">
+    <eOperations name="setText" ordered="false" lowerBound="1" eType="#//Encounter">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Encounters Activity MAY contain zero or one [0..1] effectiveTime."/>
-        <details key="body" value="this.getCDAType().setEffectiveTime(value);&#xD;&#xA;return this;"/>
+        <details key="documentation" value="IHE Encounter Entry SHALL contain exactly one [1..1] text."/>
+        <details key="body" value="this.getCDAType().setText(value);&#xD;&#xA;return this;"/>
       </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//IVL_TS"/>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//ED"/>
     </eOperations>
     <eOperations name="getPriorityCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3307,8 +3349,141 @@
       </eAnnotations>
       <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//PlanOfCareActivitySupply"/>
     </eOperations>
+    <eOperations name="getMedication" ordered="false" lowerBound="1" eType="#//Medication">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="hitsp::PlanOfCareSection::medication.&#xD;&#xA;self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Medication))->asSequence()->first().oclAsType(domain::Medication)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Medication))->asSequence()->first().oclAsType(domain::Medication)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="withMedication" ordered="false" lowerBound="1" eType="#//Medication">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Medication (templateId: 2.16.840.1.113883.3.88.11.83.8)."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Medication&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;try {&#xD;&#xA;&#x9;java.lang.reflect.Method initMethod = eObject.getClass().getMethod(&quot;init&quot;, new java.lang.Class[0]);&#xD;&#xA;&#x9;initMethod.invoke(eObject, new Object[0]);&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;&#x9;// no init() method&#xD;&#xA;}&#xD;&#xA;org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();&#xD;&#xA;org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();&#xD;&#xA;org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier(&quot;Medication&quot;);&#xD;&#xA;IMedication value = (IMedication)domainFactory.create(domainEClass);&#xD;&#xA;value.setCDAType((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);&#xD;&#xA;this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setMedication" ordered="false" lowerBound="1" eType="#//PlanOfCareSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Medication (templateId: 2.16.840.1.113883.3.88.11.83.8)."/>
+        <details key="body" value="this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Medication"/>
+    </eOperations>
+    <eOperations name="getImmunization" ordered="false" lowerBound="1" eType="#//Immunization">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="hitsp::PlanOfCareSection::immunization.&#xD;&#xA;self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Immunization))->asSequence()->first().oclAsType(domain::Immunization)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Immunization))->asSequence()->first().oclAsType(domain::Immunization)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="withImmunization" ordered="false" lowerBound="1" eType="#//Immunization">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Immunization (templateId: 2.16.840.1.113883.3.88.11.83.13)."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Immunization&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;try {&#xD;&#xA;&#x9;java.lang.reflect.Method initMethod = eObject.getClass().getMethod(&quot;init&quot;, new java.lang.Class[0]);&#xD;&#xA;&#x9;initMethod.invoke(eObject, new Object[0]);&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;&#x9;// no init() method&#xD;&#xA;}&#xD;&#xA;org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();&#xD;&#xA;org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();&#xD;&#xA;org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier(&quot;Immunization&quot;);&#xD;&#xA;IImmunization value = (IImmunization)domainFactory.create(domainEClass);&#xD;&#xA;value.setCDAType((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);&#xD;&#xA;this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setImmunization" ordered="false" lowerBound="1" eType="#//PlanOfCareSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Immunization (templateId: 2.16.840.1.113883.3.88.11.83.13)."/>
+        <details key="body" value="this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Immunization"/>
+    </eOperations>
+    <eOperations name="getEncounter" ordered="false" lowerBound="1" eType="#//Encounter">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="hitsp::PlanOfCareSection::encounter.&#xD;&#xA;self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(domain::Encounter))->asSequence()->first().oclAsType(domain::Encounter)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(domain::Encounter))->asSequence()->first().oclAsType(domain::Encounter)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="withEncounter" ordered="false" lowerBound="1" eType="#//Encounter">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Encounter (templateId: 2.16.840.1.113883.3.88.11.83.16)."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Encounter&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;try {&#xD;&#xA;&#x9;java.lang.reflect.Method initMethod = eObject.getClass().getMethod(&quot;init&quot;, new java.lang.Class[0]);&#xD;&#xA;&#x9;initMethod.invoke(eObject, new Object[0]);&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;&#x9;// no init() method&#xD;&#xA;}&#xD;&#xA;org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();&#xD;&#xA;org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();&#xD;&#xA;org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier(&quot;Encounter&quot;);&#xD;&#xA;IEncounter value = (IEncounter)domainFactory.create(domainEClass);&#xD;&#xA;value.setCDAType((org.openhealthtools.mdht.uml.cda.Encounter)eObject);&#xD;&#xA;this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter)eObject);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setEncounter" ordered="false" lowerBound="1" eType="#//PlanOfCareSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Encounter (templateId: 2.16.840.1.113883.3.88.11.83.16)."/>
+        <details key="body" value="this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter)value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Encounter"/>
+    </eOperations>
+    <eOperations name="getProcedure" ordered="false" lowerBound="1" eType="#//Procedure">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="hitsp::PlanOfCareSection::procedure.&#xD;&#xA;self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(domain::Procedure))->asSequence()->first().oclAsType(domain::Procedure)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(domain::Procedure))->asSequence()->first().oclAsType(domain::Procedure)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="withProcedure" ordered="false" lowerBound="1" eType="#//Procedure">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Procedure (templateId: 2.16.840.1.113883.3.88.11.83.17)."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Procedure&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;try {&#xD;&#xA;&#x9;java.lang.reflect.Method initMethod = eObject.getClass().getMethod(&quot;init&quot;, new java.lang.Class[0]);&#xD;&#xA;&#x9;initMethod.invoke(eObject, new Object[0]);&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;&#x9;// no init() method&#xD;&#xA;}&#xD;&#xA;org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();&#xD;&#xA;org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();&#xD;&#xA;org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier(&quot;Procedure&quot;);&#xD;&#xA;IProcedure value = (IProcedure)domainFactory.create(domainEClass);&#xD;&#xA;value.setCDAType((org.openhealthtools.mdht.uml.cda.Procedure)eObject);&#xD;&#xA;this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure)eObject);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setProcedure" ordered="false" lowerBound="1" eType="#//PlanOfCareSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Procedure (templateId: 2.16.840.1.113883.3.88.11.83.17)."/>
+        <details key="body" value="this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure)value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Procedure"/>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
         lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Procedure">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines a coded entry describing a procedure performed on a patient.&#xD;&#xA;&lt;p>Refer to full implementation guide &lt;a href=&quot;http://www.cdatools.org/infocenter/index.jsp&quot;/>specification&lt;/a>.&lt;/p>"/>
+    </eAnnotations>
+    <eOperations name="getCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="cda::Procedure::code.&#xD;&#xA;self.code.oclAsType(datatypes::CD)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.code.oclAsType(datatypes::CD)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="withCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Procedure SHOULD contain exactly one [1..1] code (CONF-433)."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;CD&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;CD value = (CD) eObject;&#xD;&#xA;this.getCDAType().setCode(value);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setCode" ordered="false" lowerBound="1" eType="#//Procedure">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Procedure SHOULD contain exactly one [1..1] code (CONF-433)."/>
+        <details key="body" value="this.getCDAType().setCode(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD"/>
+    </eOperations>
+    <eOperations name="getTargetSiteCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="cda::Procedure::targetSiteCode.&#xD;&#xA;The anatomical site where a procedure is performed&#xD;&#xA;self.targetSiteCode.oclAsType(datatypes::CD)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.targetSiteCode.oclAsType(datatypes::CD)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="withTargetSiteCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Procedure SHOULD contain exactly one [1..1] targetSiteCode, which SHOULD be selected from ValueSet 2.16.840.1.113883.3.88.12.3221.8.9 Body Site STATIC 2 (C83-[DE-17-CDA-3])."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;CD&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;CD value = (CD) eObject;&#xD;&#xA;this.getCDAType().getTargetSiteCodes().add(value);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setTargetSiteCode" ordered="false" lowerBound="1" eType="#//Procedure">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Procedure SHOULD contain exactly one [1..1] targetSiteCode, which SHOULD be selected from ValueSet 2.16.840.1.113883.3.88.12.3221.8.9 Body Site STATIC 2 (C83-[DE-17-CDA-3])."/>
+        <details key="body" value="this.getCDAType().getTargetSiteCodes().add(value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
+        lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Procedure"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SurgeriesSection">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3377,6 +3552,29 @@
       </eAnnotations>
       <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ExternalReference"/>
     </eOperations>
+    <eOperations name="getProcedureEntryProcedureActivityProcedures" ordered="false"
+        lowerBound="1" upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ProcedureEntryProcedureActivityProcedure">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="ihe::CodedSurgeriesSection::procedureEntryProcedureActivityProcedure.&#xD;&#xA;self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure)).oclAsType(ihe::ProcedureEntryProcedureActivityProcedure)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure)).oclAsType(ihe::ProcedureEntryProcedureActivityProcedure)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="addProcedureEntryProcedureActivityProcedure" ordered="false"
+        lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ProcedureEntryProcedureActivityProcedure">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="IHE Coded Surgeries Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Procedure Entry Procedure Activity Procedure (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.19)."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage(&quot;http://www.openhealthtools.org/mdht/uml/cda/ihe&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory(&quot;http://www.openhealthtools.org/mdht/uml/cda/ihe&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;ProcedureEntryProcedureActivityProcedure&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;try {&#xD;&#xA;&#x9;java.lang.reflect.Method initMethod = eObject.getClass().getMethod(&quot;init&quot;, new java.lang.Class[0]);&#xD;&#xA;&#x9;initMethod.invoke(eObject, new Object[0]);&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;&#x9;// no init() method&#xD;&#xA;}&#xD;&#xA;ProcedureEntryProcedureActivityProcedure value = (ProcedureEntryProcedureActivityProcedure) eObject;&#xD;&#xA;this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure)eObject);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="addProcedureEntryProcedureActivityProcedure" ordered="false"
+        lowerBound="1" eType="#//SurgeriesSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="IHE Coded Surgeries Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Procedure Entry Procedure Activity Procedure (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.19)."/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ProcedureEntryProcedureActivityProcedure"/>
+    </eOperations>
     <eOperations name="getProcedureActivities" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//Procedure">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -3400,242 +3598,6 @@
     </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
         lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Procedure">
-    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="Defines a coded entry describing a procedure performed on a patient.&#xD;&#xA;&lt;p>Refer to full implementation guide &lt;a href=&quot;http://www.cdatools.org/infocenter/index.jsp&quot;/>specification&lt;/a>.&lt;/p>"/>
-    </eAnnotations>
-    <eOperations name="getCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="cda::Procedure::code.&#xD;&#xA;self.code.oclAsType(datatypes::CD)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.code.oclAsType(datatypes::CD)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="withCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="HITSP Procedure SHOULD contain exactly one [1..1] code (CONF-433)."/>
-        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;CD&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;CD value = (CD) eObject;&#xD;&#xA;this.getCDAType().setCode(value);&#xD;&#xA;return value;"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="setCode" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="HITSP Procedure SHOULD contain exactly one [1..1] code (CONF-433)."/>
-        <details key="body" value="this.getCDAType().setCode(value);&#xD;&#xA;return this;"/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD"/>
-    </eOperations>
-    <eOperations name="getStatusCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CS">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="cda::Procedure::statusCode.&#xD;&#xA;The &amp;lt;statusCode> element shall be present when used to describe a procedure event. It shall have the value 'completed' for procedures that have been completed, and 'active' for procedures that are still in progress. Procedures that were stopped prior to completion shall use the value 'aborted', and procedures that were cancelled before being started shall use the value 'cancelled'.&#xD;&#xA;self.statusCode.oclAsType(datatypes::CS)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.statusCode.oclAsType(datatypes::CS)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="withStatusCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CS">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="IHE Procedure Entry Procedure Activity Procedure SHALL contain exactly one [1..1] statusCode, which SHALL be selected from ValueSet 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode STATIC 20061017 (CONF-430, CONF-431)."/>
-        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;CS&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;CS value = (CS) eObject;&#xD;&#xA;this.getCDAType().setStatusCode(value);&#xD;&#xA;return value;"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="setStatusCode" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="IHE Procedure Entry Procedure Activity Procedure SHALL contain exactly one [1..1] statusCode, which SHALL be selected from ValueSet 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode STATIC 20061017 (CONF-430, CONF-431)."/>
-        <details key="body" value="this.getCDAType().setStatusCode(value);&#xD;&#xA;return this;"/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CS"/>
-    </eOperations>
-    <eOperations name="getText" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//ED">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="cda::Procedure::text.&#xD;&#xA;self.text.oclAsType(datatypes::ED)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.text.oclAsType(datatypes::ED)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="withText" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//ED">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="IHE Procedure Entry Procedure Activity Procedure SHALL contain exactly one [1..1] text."/>
-        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;ED&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;ED value = (ED) eObject;&#xD;&#xA;this.getCDAType().setText(value);&#xD;&#xA;return value;"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="setText" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="IHE Procedure Entry Procedure Activity Procedure SHALL contain exactly one [1..1] text."/>
-        <details key="body" value="this.getCDAType().setText(value);&#xD;&#xA;return this;"/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//ED"/>
-    </eOperations>
-    <eOperations name="getApproachSiteCodes" ordered="false" lowerBound="1" upperBound="-1"
-        eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="cda::Procedure::approachSiteCode.&#xD;&#xA;This element may be present to indicate the procedure approach.&#xD;&#xA;self.approachSiteCode.oclAsType(datatypes::CD)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.approachSiteCode.oclAsType(datatypes::CD)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="addApproachSiteCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="IHE Procedure Entry Procedure Activity Procedure MAY contain zero or more [0..*] approachSiteCode."/>
-        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;CD&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;CD value = (CD) eObject;&#xD;&#xA;this.getCDAType().getApproachSiteCodes().add(value);&#xD;&#xA;return value;"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="addApproachSiteCode" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="IHE Procedure Entry Procedure Activity Procedure MAY contain zero or more [0..*] approachSiteCode."/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD"/>
-    </eOperations>
-    <eOperations name="getTargetSiteCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="cda::Procedure::targetSiteCode.&#xD;&#xA;The anatomical site where a procedure is performed&#xD;&#xA;self.targetSiteCode.oclAsType(datatypes::CD)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.targetSiteCode.oclAsType(datatypes::CD)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="withTargetSiteCode" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="HITSP Procedure SHOULD contain exactly one [1..1] targetSiteCode, which SHOULD be selected from ValueSet 2.16.840.1.113883.3.88.12.3221.8.9 Body Site STATIC 2 (C83-[DE-17-CDA-3])."/>
-        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;CD&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;CD value = (CD) eObject;&#xD;&#xA;this.getCDAType().getTargetSiteCodes().add(value);&#xD;&#xA;return value;"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="setTargetSiteCode" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="HITSP Procedure SHOULD contain exactly one [1..1] targetSiteCode, which SHOULD be selected from ValueSet 2.16.840.1.113883.3.88.12.3221.8.9 Body Site STATIC 2 (C83-[DE-17-CDA-3])."/>
-        <details key="body" value="this.getCDAType().getTargetSiteCodes().add(value);&#xD;&#xA;return this;"/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.ecore#//CD"/>
-    </eOperations>
-    <eOperations name="getEncounterLocations" ordered="false" lowerBound="1" upperBound="-1"
-        eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//EncounterLocation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="ccd::ProcedureActivity::encounterLocation.&#xD;&#xA;self.getParticipant2s()->select(participant2 : cda::Participant2 | not participant2.oclIsUndefined() and participant2.oclIsKindOf(ccd::EncounterLocation)).oclAsType(ccd::EncounterLocation)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getParticipant2s()->select(participant2 : cda::Participant2 | not participant2.oclIsUndefined() and participant2.oclIsKindOf(ccd::EncounterLocation)).oclAsType(ccd::EncounterLocation)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="addEncounterLocation" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//EncounterLocation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Procedure Activity MAY contain at least one [1..*] encounterLocation, where its type is Encounter Location (CONF-437)."/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="addEncounterLocation" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Procedure Activity MAY contain at least one [1..*] encounterLocation, where its type is Encounter Location (CONF-437)."/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//EncounterLocation"/>
-    </eOperations>
-    <eOperations name="getPatientInstructions" ordered="false" lowerBound="1" upperBound="-1"
-        eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//PatientInstruction">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="ccd::ProcedureActivity::patientInstruction.&#xD;&#xA;self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ccd::PatientInstruction)).oclAsType(ccd::PatientInstruction)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ccd::PatientInstruction)).oclAsType(ccd::PatientInstruction)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="addPatientInstruction" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//PatientInstruction">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Procedure Activity MAY contain at least one [1..*] patientInstruction, where its type is Patient Instruction (CONF-441, CONF-333)."/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="addPatientInstruction" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Procedure Activity MAY contain at least one [1..*] patientInstruction, where its type is Patient Instruction (CONF-441, CONF-333)."/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//PatientInstruction"/>
-    </eOperations>
-    <eOperations name="getAgeObservation" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//AgeObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="ccd::ProcedureActivity::ageObservation.&#xD;&#xA;self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::AgeObservation))->asSequence()->first().oclAsType(ccd::AgeObservation)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::AgeObservation))->asSequence()->first().oclAsType(ccd::AgeObservation)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="withAgeObservation" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//AgeObservation">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Procedure Activity MAY contain zero or one [0..1] ageObservation, where its type is Age Observation (CONF-445)."/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="setAgeObservation" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Procedure Activity MAY contain zero or one [0..1] ageObservation, where its type is Age Observation (CONF-445)."/>
-        <details key="body" value="return this;"/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//AgeObservation"/>
-    </eOperations>
-    <eOperations name="getMedicationActivities" ordered="false" lowerBound="1" upperBound="-1"
-        eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//MedicationActivity">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="ccd::ProcedureActivity::medicationActivity.&#xD;&#xA;self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(ccd::MedicationActivity)).oclAsType(ccd::MedicationActivity)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(ccd::MedicationActivity)).oclAsType(ccd::MedicationActivity)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="addMedicationActivity" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//MedicationActivity">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Procedure Activity MAY contain at least one [1..*] medicationActivity, where its type is Medication Activity (CONF-446)."/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="addMedicationActivity" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="CCD Procedure Activity MAY contain at least one [1..*] medicationActivity, where its type is Medication Activity (CONF-446)."/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//MedicationActivity"/>
-    </eOperations>
-    <eOperations name="getInternalReference" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//InternalReference">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="ihe::ProcedureEntryProcedureActivityProcedure::internalReference.&#xD;&#xA;This element may be present to point the encounter in which the procedure was performed, and shall contain an internal reference to the encounter.&#xD;&#xA;self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::InternalReference))->asSequence()->first().oclAsType(ihe::InternalReference)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::InternalReference))->asSequence()->first().oclAsType(ihe::InternalReference)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="withInternalReference" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//InternalReference">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="IHE Procedure Entry Procedure Activity Procedure MAY contain zero or one [0..1] entryRelationship, such that Contains @typeCode=&quot;COMP&quot; COMP (has component), and Contains exactly one [1..1] Internal Reference (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.4.1)."/>
-        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage(&quot;http://www.openhealthtools.org/mdht/uml/cda/ihe&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory(&quot;http://www.openhealthtools.org/mdht/uml/cda/ihe&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;InternalReference&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;try {&#xD;&#xA;&#x9;java.lang.reflect.Method initMethod = eObject.getClass().getMethod(&quot;init&quot;, new java.lang.Class[0]);&#xD;&#xA;&#x9;initMethod.invoke(eObject, new Object[0]);&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;&#x9;// no init() method&#xD;&#xA;}&#xD;&#xA;InternalReference value = (InternalReference) eObject;&#xD;&#xA;this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);&#xD;&#xA;return value;"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="setInternalReference" ordered="false" lowerBound="1" eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="IHE Procedure Entry Procedure Activity Procedure MAY contain zero or one [0..1] entryRelationship, such that Contains @typeCode=&quot;COMP&quot; COMP (has component), and Contains exactly one [1..1] Internal Reference (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.4.1)."/>
-        <details key="body" value="this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)value);&#xD;&#xA;return this;"/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//InternalReference"/>
-    </eOperations>
-    <eOperations name="getInternalReferenceReasons" ordered="false" lowerBound="1"
-        upperBound="-1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//InternalReference">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="ihe::ProcedureEntryProcedureActivityProcedure::internalReferenceReason.&#xD;&#xA;A &amp;lt;procedure> act may indicate one or more reasons for the procedure. These reasons identify the concern that was the reason for use via the Internal Reference entry content module. The extension and root of each observation present must match the identifier of a concern entry contained elsewhere within the CDA document.&#xD;&#xA;self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::InternalReference)).oclAsType(ihe::InternalReference)"/>
-      </eAnnotations>
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::InternalReference)).oclAsType(ihe::InternalReference)"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="addInternalReferenceReason" ordered="false" lowerBound="1"
-        eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//InternalReference">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="IHE Procedure Entry Procedure Activity Procedure MAY contain at least one [1..*] entryRelationship, such that Contains @typeCode=&quot;RSON&quot; RSON (has reason), and Contains exactly one [1..1] Internal Reference (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.4.1)."/>
-        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage(&quot;http://www.openhealthtools.org/mdht/uml/cda/ihe&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory(&quot;http://www.openhealthtools.org/mdht/uml/cda/ihe&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;InternalReference&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;try {&#xD;&#xA;&#x9;java.lang.reflect.Method initMethod = eObject.getClass().getMethod(&quot;init&quot;, new java.lang.Class[0]);&#xD;&#xA;&#x9;initMethod.invoke(eObject, new Object[0]);&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;&#x9;// no init() method&#xD;&#xA;}&#xD;&#xA;InternalReference value = (InternalReference) eObject;&#xD;&#xA;this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);&#xD;&#xA;return value;"/>
-      </eAnnotations>
-    </eOperations>
-    <eOperations name="addInternalReferenceReason" ordered="false" lowerBound="1"
-        eType="#//Procedure">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="IHE Procedure Entry Procedure Activity Procedure MAY contain at least one [1..*] entryRelationship, such that Contains @typeCode=&quot;RSON&quot; RSON (has reason), and Contains exactly one [1..1] Internal Reference (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.4.1)."/>
-      </eAnnotations>
-      <eParameters name="value" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//InternalReference"/>
-    </eOperations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
-        lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Procedure"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Support">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -4176,6 +4138,27 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xD;&#xA;    The Discharge Diagnosis Section contains information about the conditions identified during the hospital&#xD;&#xA;    stay that either need to be monitored after discharge from the hospital and/or where resolved during the hospital&#xD;&#xA;    course. &#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>Refer to full implementation guide &lt;a href=&quot;http://www.cdatools.org/infocenter/index.jsp&quot;/>specification&lt;/a>.&lt;/p>"/>
     </eAnnotations>
+    <eOperations name="getCondition" ordered="false" lowerBound="1" eType="#//Condition">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="hitsp::DischargeDiagnosisSection::condition.&#xD;&#xA;self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::Condition))->asSequence()->first().oclAsType(domain::Condition)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::Condition))->asSequence()->first().oclAsType(domain::Condition)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="withCondition" ordered="false" lowerBound="1" eType="#//Condition">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Discharge Diagnosis Section SHALL contain exactly one [1..1] entry, such that Contains exactly one [1..1] Condition (templateId: 2.16.840.1.113883.3.88.11.83.7)."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Condition&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;try {&#xD;&#xA;&#x9;java.lang.reflect.Method initMethod = eObject.getClass().getMethod(&quot;init&quot;, new java.lang.Class[0]);&#xD;&#xA;&#x9;initMethod.invoke(eObject, new Object[0]);&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;&#x9;// no init() method&#xD;&#xA;}&#xD;&#xA;org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();&#xD;&#xA;org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();&#xD;&#xA;org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier(&quot;Condition&quot;);&#xD;&#xA;ICondition value = (ICondition)domainFactory.create(domainEClass);&#xD;&#xA;value.setCDAType((org.openhealthtools.mdht.uml.cda.Act)eObject);&#xD;&#xA;this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setCondition" ordered="false" lowerBound="1" eType="#//DischargeDiagnosisSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Discharge Diagnosis Section SHALL contain exactly one [1..1] entry, such that Contains exactly one [1..1] Condition (templateId: 2.16.840.1.113883.3.88.11.83.7)."/>
+        <details key="body" value="this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Condition"/>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
         lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section"/>
   </eClassifiers>
@@ -4190,6 +4173,27 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xD;&#xA;    The Hospital Discharge Medications Section contains information about the relevant medications of the&#xD;&#xA;    medications ordered for the patient for use after discharge from the hospital. &#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>Refer to full implementation guide &lt;a href=&quot;http://www.cdatools.org/infocenter/index.jsp&quot;/>specification&lt;/a>.&lt;/p>"/>
     </eAnnotations>
+    <eOperations name="getMedication" ordered="false" lowerBound="1" eType="#//Medication">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="hitsp::HospitalDischargeMedicationsSection::medication.&#xD;&#xA;self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Medication))->asSequence()->first().oclAsType(domain::Medication)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Medication))->asSequence()->first().oclAsType(domain::Medication)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="withMedication" ordered="false" lowerBound="1" eType="#//Medication">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Hospital Discharge Medications Section SHALL contain exactly one [1..1] entry, such that Contains exactly one [1..1] Medication (templateId: 2.16.840.1.113883.3.88.11.83.8)."/>
+        <details key="body" value="org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory(&quot;http://www.openhealthtools.org/mdht/uml/cda/hitsp&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier(&quot;Medication&quot;);&#xD;&#xA;org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);&#xD;&#xA;try {&#xD;&#xA;&#x9;java.lang.reflect.Method initMethod = eObject.getClass().getMethod(&quot;init&quot;, new java.lang.Class[0]);&#xD;&#xA;&#x9;initMethod.invoke(eObject, new Object[0]);&#xD;&#xA;} catch (Exception e) {&#xD;&#xA;&#x9;// no init() method&#xD;&#xA;}&#xD;&#xA;org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();&#xD;&#xA;org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();&#xD;&#xA;org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier(&quot;Medication&quot;);&#xD;&#xA;IMedication value = (IMedication)domainFactory.create(domainEClass);&#xD;&#xA;value.setCDAType((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);&#xD;&#xA;this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);&#xD;&#xA;return value;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setMedication" ordered="false" lowerBound="1" eType="#//HospitalDischargeMedicationsSection">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="HITSP Hospital Discharge Medications Section SHALL contain exactly one [1..1] entry, such that Contains exactly one [1..1] Medication (templateId: 2.16.840.1.113883.3.88.11.83.8)."/>
+        <details key="body" value="this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)value);&#xD;&#xA;return this;"/>
+      </eAnnotations>
+      <eParameters name="value" ordered="false" lowerBound="1" eType="#//Medication"/>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cDAType" ordered="false"
         lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section"/>
   </eClassifiers>

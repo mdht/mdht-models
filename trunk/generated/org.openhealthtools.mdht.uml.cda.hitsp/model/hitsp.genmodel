@@ -540,6 +540,26 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionMedication">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionMedication/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionMedication/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionImmunization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionImmunization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionImmunization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionEncounter">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionEncounter/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionEncounter/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionProcedure">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionProcedure/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//PlanOfCareSection/HITSPPlanOfCareSectionProcedure/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//PlanOfCareSection/getMedication"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//PlanOfCareSection/getImmunization"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//PlanOfCareSection/getEncounter"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//PlanOfCareSection/getProcedure"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//VitalSignsSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//VitalSignsSection/HITSPVitalSignsSectionVitalSignEntry">
@@ -644,6 +664,11 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeDiagnosisSection/HITSPDischargeDiagnosisSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeDiagnosisSection/HITSPDischargeDiagnosisSectionTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeDiagnosisSection/HITSPDischargeDiagnosisSectionCondition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeDiagnosisSection/HITSPDischargeDiagnosisSectionCondition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//DischargeDiagnosisSection/HITSPDischargeDiagnosisSectionCondition/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//DischargeDiagnosisSection/getCondition"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//AdmissionMedicationHistorySection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdmissionMedicationHistorySection/HITSPAdmissionMedicationHistorySectionTemplateId">
@@ -656,6 +681,11 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//HospitalDischargeMedicationsSection/HITSPHospitalDischargeMedicationsSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//HospitalDischargeMedicationsSection/HITSPHospitalDischargeMedicationsSectionTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//HospitalDischargeMedicationsSection/HITSPHospitalDischargeMedicationsSectionMedication">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//HospitalDischargeMedicationsSection/HITSPHospitalDischargeMedicationsSectionMedication/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//HospitalDischargeMedicationsSection/HITSPHospitalDischargeMedicationsSectionMedication/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//HospitalDischargeMedicationsSection/getHITSPMedication"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//MedicationsAdministeredSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//MedicationsAdministeredSection/HITSPMedicationsAdministeredSectionTemplateId">

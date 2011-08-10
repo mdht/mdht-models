@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.PlanOfCareActivityProcedureImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
+import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryPlanOfCareActivityProcedureOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -48,6 +49,15 @@ public class ProcedureEntryPlanOfCareActivityProcedureImpl extends PlanOfCareAct
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureEntryOperations.validateProcedureEntryTemplateId(this, diagnostics, context);
 	}
 
 	/**

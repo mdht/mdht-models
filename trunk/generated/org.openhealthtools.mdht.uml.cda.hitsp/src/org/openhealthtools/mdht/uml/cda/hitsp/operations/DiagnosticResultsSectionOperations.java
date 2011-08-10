@@ -262,7 +262,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION,
-				HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(64));
+				HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(66));
 			try {
 				GET_DIAGNOSTIC_PROCEDURES__EOCL_QRY = helper.createQuery(GET_DIAGNOSTIC_PROCEDURES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -309,7 +309,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION,
-				HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(65));
+				HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION.getEAllOperations().get(67));
 			try {
 				GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
 			} catch (ParserException pe) {

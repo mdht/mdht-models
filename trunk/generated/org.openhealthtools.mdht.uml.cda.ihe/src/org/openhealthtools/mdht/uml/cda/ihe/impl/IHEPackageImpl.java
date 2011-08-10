@@ -1850,6 +1850,7 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		procedureEntryProcedureActivityProcedureEClass.getESuperTypes().add(
 			theCCDPackage.getProcedureActivityProcedure());
 		procedureEntryProcedureActivityProcedureEClass.getESuperTypes().add(this.getProcedureEntry());
+		procedureEntryEClass.getESuperTypes().add(theCDAPackage.getProcedure());
 		hospitalAdmissionDiagnosisSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		dischargeDiagnosisSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		admissionMedicationHistorySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
@@ -3813,8 +3814,19 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 			1, -1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
-			procedureEntryEClass, ProcedureEntry.class, "ProcedureEntry", !IS_ABSTRACT, !IS_INTERFACE,
+			procedureEntryEClass, ProcedureEntry.class, "ProcedureEntry", IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			procedureEntryEClass, ecorePackage.getEBoolean(), "validateProcedureEntryTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
 			hospitalAdmissionDiagnosisSectionEClass, HospitalAdmissionDiagnosisSection.class,
@@ -3868,6 +3880,21 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(
+			dischargeDiagnosisSectionEClass, ecorePackage.getEBoolean(),
+			"validateDischargeDiagnosisSectionProblemConcernEntry", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			dischargeDiagnosisSectionEClass, this.getProblemConcernEntry(), "getProblemConcernEntry", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
+
 		initEClass(
 			admissionMedicationHistorySectionEClass, AdmissionMedicationHistorySection.class,
 			"AdmissionMedicationHistorySection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -3919,6 +3946,21 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			hospitalDischargeMedicationsSectionEClass, ecorePackage.getEBoolean(),
+			"validateHospitalDischargeMedicationsSectionMedication", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			hospitalDischargeMedicationsSectionEClass, this.getMedication(), "getMedication", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
 		initEClass(
 			codedAdvanceDirectivesSectionEClass, CodedAdvanceDirectivesSection.class, "CodedAdvanceDirectivesSection",
@@ -4070,6 +4112,17 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
+			codedResultsSectionEClass, ecorePackage.getEBoolean(), "validateCodedResultsSectionProcedureEntry", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
 			codedResultsSectionEClass, ecorePackage.getEBoolean(), "validateCodedResultsSectionExternalReference", 0,
 			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -4090,6 +4143,9 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			codedResultsSectionEClass, this.getProcedureEntry(), "getProcedureEntries", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
 			codedResultsSectionEClass, this.getExternalReference(), "getExternalReferences", 1, -1, IS_UNIQUE,
@@ -5527,26 +5583,45 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 					"PROC",
 					"constraints.validation.info",
 					"ProcedureEntryProcedureActivityProcedureApproachSiteCode ProcedureEntryProcedureActivityProcedureInternalReference ProcedureEntryProcedureActivityProcedureInternalReferenceReason" });
+		addAnnotation(procedureEntryEClass, source, new String[] {
+				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.4.19", "constraints.validation.error",
+				"ProcedureEntryTemplateId" });
 		addAnnotation(hospitalAdmissionDiagnosisSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.3",
 				"code.displayName", "HOSPITAL ADMISSION DX", "constraints.validation.error",
 				"HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode",
 				"code.codeSystemName", "LOINC", "code.code", "46241-6" });
-		addAnnotation(dischargeDiagnosisSectionEClass, source, new String[] {
-				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.7",
-				"code.displayName", "HOSPITAL DISCHARGE DX", "constraints.validation.error",
-				"DischargeDiagnosisSectionTemplateId DischargeDiagnosisSectionCode", "code.codeSystemName", "LOINC",
-				"code.code", "11535-2" });
+		addAnnotation(
+			dischargeDiagnosisSectionEClass,
+			source,
+			new String[] {
+					"code.codeSystem",
+					"2.16.840.1.113883.6.1",
+					"code.displayName",
+					"HOSPITAL DISCHARGE DX",
+					"templateId.root",
+					"1.3.6.1.4.1.19376.1.5.3.1.3.7",
+					"constraints.validation.error",
+					"DischargeDiagnosisSectionTemplateId DischargeDiagnosisSectionCode DischargeDiagnosisSectionProblemConcernEntry",
+					"code.codeSystemName", "LOINC", "code.code", "11535-2" });
 		addAnnotation(admissionMedicationHistorySectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.20",
 				"code.displayName", "MEDICATIONS ON ADMISSION", "constraints.validation.error",
 				"AdmissionMedicationHistorySectionTemplateId AdmissionMedicationHistorySectionCode",
 				"code.codeSystemName", "LOINC", "code.code", "42346-7" });
-		addAnnotation(hospitalDischargeMedicationsSectionEClass, source, new String[] {
-				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.22",
-				"code.displayName", "HOSPITAL DISCHARGE MEDICATIONS", "constraints.validation.error",
-				"HospitalDischargeMedicationsSectionTemplateId HospitalDischargeMedicationsSectionCode",
-				"code.codeSystemName", "LOINC", "code.code", "10183-2" });
+		addAnnotation(
+			hospitalDischargeMedicationsSectionEClass,
+			source,
+			new String[] {
+					"code.codeSystem",
+					"2.16.840.1.113883.6.1",
+					"code.displayName",
+					"HOSPITAL DISCHARGE MEDICATIONS",
+					"templateId.root",
+					"1.3.6.1.4.1.19376.1.5.3.1.3.22",
+					"constraints.validation.error",
+					"HospitalDischargeMedicationsSectionTemplateId HospitalDischargeMedicationsSectionCode HospitalDischargeMedicationsSectionMedication",
+					"code.codeSystemName", "LOINC", "code.code", "10183-2" });
 		addAnnotation(codedAdvanceDirectivesSectionEClass, source, new String[] {
 				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.35", "constraints.validation.error",
 				"CodedAdvanceDirectivesSectionTemplateId" });
@@ -5572,11 +5647,12 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 				"HospitalCourseSectionTemplateId HospitalCourseSectionCode", "code.codeSystemName", "LOINC",
 				"code.code", "8648-8" });
 		addAnnotation(codedResultsSectionEClass, source, new String[] {
-				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.28",
-				"code.displayName", "STUDIES SUMMARY", "constraints.validation.error",
-				"CodedResultsSectionTemplateId CodedResultsSectionCode", "code.codeSystemName", "LOINC",
-				"constraints.validation.warning", "CodedResultsSectionExternalReference", "code.code", "30954-2",
-				"constraints.validation.info", "CodedResultsSectionSimpleObservation" });
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "STUDIES SUMMARY", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.3.28", "constraints.validation.error",
+				"CodedResultsSectionTemplateId CodedResultsSectionCode CodedResultsSectionProcedureEntry",
+				"code.codeSystemName", "LOINC", "constraints.validation.warning",
+				"CodedResultsSectionExternalReference", "code.code", "30954-2", "constraints.validation.info",
+				"CodedResultsSectionSimpleObservation" });
 		addAnnotation(assessmentAndPlanSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.13.2.5",
 				"code.displayName", "ASSESSMENT AND PLAN", "constraints.validation.error",

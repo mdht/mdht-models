@@ -320,6 +320,130 @@ public interface IPlanOfCareSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::PlanOfCareSection::medication.
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Medication))->asSequence()->first().oclAsType(domain::Medication)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IMedication getMedication();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Medication (templateId: 2.16.840.1.113883.3.88.11.83.8).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IMedication withMedication();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Medication (templateId: 2.16.840.1.113883.3.88.11.83.8).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IPlanOfCareSection setMedication(IMedication value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::PlanOfCareSection::immunization.
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Immunization))->asSequence()->first().oclAsType(domain::Immunization)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IImmunization getImmunization();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Immunization (templateId: 2.16.840.1.113883.3.88.11.83.13).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IImmunization withImmunization();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Immunization (templateId: 2.16.840.1.113883.3.88.11.83.13).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IPlanOfCareSection setImmunization(IImmunization value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::PlanOfCareSection::encounter.
+	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(domain::Encounter))->asSequence()->first().oclAsType(domain::Encounter)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IEncounter getEncounter();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Encounter (templateId: 2.16.840.1.113883.3.88.11.83.16).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IEncounter withEncounter();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Encounter (templateId: 2.16.840.1.113883.3.88.11.83.16).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IPlanOfCareSection setEncounter(IEncounter value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::PlanOfCareSection::procedure.
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(domain::Procedure))->asSequence()->first().oclAsType(domain::Procedure)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProcedure getProcedure();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Procedure (templateId: 2.16.840.1.113883.3.88.11.83.17).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProcedure withProcedure();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Plan Of Care Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Procedure (templateId: 2.16.840.1.113883.3.88.11.83.17).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IPlanOfCareSection setProcedure(IProcedure value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public IPlanOfCareSection init();

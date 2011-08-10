@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISurgeriesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
+import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
@@ -307,6 +308,82 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #getProcedureEntryProcedureActivityProcedures() <em>Get Procedure Entry Procedure Activity Procedures</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProcedureEntryProcedureActivityProcedures()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure)).oclAsType(ihe::ProcedureEntryProcedureActivityProcedure)";
+
+	/**
+	 * The cached OCL query for the '{@link #getProcedureEntryProcedureActivityProcedures() <em>Get Procedure Entry Procedure Activity Procedures</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProcedureEntryProcedureActivityProcedures()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures() {
+		if (GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSurgeriesSection(),
+				IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(9));
+			try {
+				GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ProcedureEntryProcedureActivityProcedure> result = (Collection<ProcedureEntryProcedureActivityProcedure>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<ProcedureEntryProcedureActivityProcedure>(
+			result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureEntryProcedureActivityProcedure addProcedureEntryProcedureActivityProcedure() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProcedureEntryProcedureActivityProcedure");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		try {
+			java.lang.reflect.Method initMethod = eObject.getClass().getMethod("init", new java.lang.Class[0]);
+			initMethod.invoke(eObject, new Object[0]);
+		} catch (Exception e) {
+			// no init() method
+		}
+		ProcedureEntryProcedureActivityProcedure value = (ProcedureEntryProcedureActivityProcedure) eObject;
+		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISurgeriesSection addProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getProcedureActivities() <em>Get Procedure Activities</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -336,7 +413,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IDomainPackage.eINSTANCE.getSurgeriesSection(),
-				IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(9));
+				IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(12));
 			try {
 				GET_PROCEDURE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -1185,6 +1185,18 @@ public class IHESwitch<T> {
 				ProcedureEntry procedureEntry = (ProcedureEntry) theEObject;
 				T result = caseProcedureEntry(procedureEntry);
 				if (result == null) {
+					result = caseProcedure(procedureEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureEntry);
+				}
+				if (result == null) {
+					result = caseAct(procedureEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureEntry);
+				}
+				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;

@@ -60,6 +60,37 @@ public interface IHospitalDischargeMedicationsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::HospitalDischargeMedicationsSection::medication.
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Medication))->asSequence()->first().oclAsType(domain::Medication)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IMedication getMedication();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Hospital Discharge Medications Section SHALL contain exactly one [1..1] entry, such that Contains exactly one [1..1] Medication (templateId: 2.16.840.1.113883.3.88.11.83.8).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IMedication withMedication();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Hospital Discharge Medications Section SHALL contain exactly one [1..1] entry, such that Contains exactly one [1..1] Medication (templateId: 2.16.840.1.113883.3.88.11.83.8).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IHospitalDischargeMedicationsSection setMedication(IMedication value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public IHospitalDischargeMedicationsSection init();

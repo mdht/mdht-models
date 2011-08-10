@@ -755,7 +755,12 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ProcedureEntryProcedureActivityProcedure/getInternalReference"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ProcedureEntryProcedureActivityProcedure/getInternalReferenceReasons"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//ProcedureEntry"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//ProcedureEntry">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ProcedureEntry/ProcedureEntryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ProcedureEntry/ProcedureEntryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ProcedureEntry/ProcedureEntryTemplateId/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//HospitalAdmissionDiagnosisSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HospitalAdmissionDiagnosisSection/HospitalAdmissionDiagnosisSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HospitalAdmissionDiagnosisSection/HospitalAdmissionDiagnosisSectionTemplateId/diagnostics"/>
@@ -775,6 +780,11 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//DischargeDiagnosisSection/DischargeDiagnosisSectionCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//DischargeDiagnosisSection/DischargeDiagnosisSectionCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//DischargeDiagnosisSection/DischargeDiagnosisSectionProblemConcernEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//DischargeDiagnosisSection/DischargeDiagnosisSectionProblemConcernEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//DischargeDiagnosisSection/DischargeDiagnosisSectionProblemConcernEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//DischargeDiagnosisSection/getProblemConcernEntry"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//AdmissionMedicationHistorySection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AdmissionMedicationHistorySection/AdmissionMedicationHistorySectionTemplateId">
@@ -795,6 +805,11 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionMedication">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionMedication/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HospitalDischargeMedicationsSection/HospitalDischargeMedicationsSectionMedication/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HospitalDischargeMedicationsSection/getMedication"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//CodedAdvanceDirectivesSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedAdvanceDirectivesSection/CodedAdvanceDirectivesSectionTemplateId">
@@ -853,6 +868,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedResultsSection/CodedResultsSectionCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedResultsSection/CodedResultsSectionCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedResultsSection/CodedResultsSectionProcedureEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedResultsSection/CodedResultsSectionProcedureEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedResultsSection/CodedResultsSectionProcedureEntry/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedResultsSection/CodedResultsSectionExternalReference">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedResultsSection/CodedResultsSectionExternalReference/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedResultsSection/CodedResultsSectionExternalReference/context"/>
@@ -861,6 +880,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedResultsSection/CodedResultsSectionSimpleObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedResultsSection/CodedResultsSectionSimpleObservation/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedResultsSection/getProcedureEntries"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedResultsSection/getExternalReferences"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedResultsSection/getSimpleObservations"/>
     </genClasses>

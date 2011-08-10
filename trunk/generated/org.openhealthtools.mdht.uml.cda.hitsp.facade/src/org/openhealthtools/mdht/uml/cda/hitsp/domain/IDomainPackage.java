@@ -569,25 +569,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSurgeriesSection()
 	 * @generated
 	 */
-	int SURGERIES_SECTION = 18;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SURGERIES_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Surgeries Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SURGERIES_SECTION_FEATURE_COUNT = 1;
+	int SURGERIES_SECTION = 19;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProcedureImpl <em>Procedure</em>}' class.
@@ -597,7 +579,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProcedure()
 	 * @generated
 	 */
-	int PROCEDURE = 19;
+	int PROCEDURE = 18;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -616,6 +598,24 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCEDURE_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SURGERIES_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Surgeries Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SURGERIES_SECTION_FEATURE_COUNT = 1;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportImpl <em>Support</em>}' class.

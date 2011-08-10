@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPlugin;
+import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
 import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
@@ -41,8 +42,10 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection#validateCodedResultsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Results Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection#validateCodedResultsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Results Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection#validateCodedResultsSectionProcedureEntry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Results Section Procedure Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection#validateCodedResultsSectionExternalReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Results Section External Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection#validateCodedResultsSectionSimpleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Results Section Simple Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection#getProcedureEntries() <em>Get Procedure Entries</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection#getExternalReferences() <em>Get External References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection#getSimpleObservations() <em>Get Simple Observations</em>}</li>
  * </ul>
@@ -175,6 +178,62 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateCodedResultsSectionProcedureEntry(CodedResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Results Section Procedure Entry</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCodedResultsSectionProcedureEntry(CodedResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CODED_RESULTS_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(ihe::ProcedureEntry))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCodedResultsSectionProcedureEntry(CodedResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Results Section Procedure Entry</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCodedResultsSectionProcedureEntry(CodedResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_CODED_RESULTS_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(ihe::ProcedureEntry))
+	 * @param codedResultsSection The receiving '<em><b>Coded Results Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static boolean validateCodedResultsSectionProcedureEntry(CodedResultsSection codedResultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_CODED_RESULTS_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(IHEPackage.Literals.CODED_RESULTS_SECTION);
+			try {
+				VALIDATE_CODED_RESULTS_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CODED_RESULTS_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_CODED_RESULTS_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			codedResultsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.CODED_RESULTS_SECTION__CODED_RESULTS_SECTION_PROCEDURE_ENTRY,
+					IHEPlugin.INSTANCE.getString("CodedResultsSectionProcedureEntry"),
+					new Object[] { codedResultsSection }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateCodedResultsSectionExternalReference(CodedResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Results Section External Reference</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -287,6 +346,53 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #getProcedureEntries(CodedResultsSection) <em>Get Procedure Entries</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProcedureEntries(CodedResultsSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PROCEDURE_ENTRIES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntry)).oclAsType(ihe::ProcedureEntry)";
+
+	/**
+	 * The cached OCL query for the '{@link #getProcedureEntries(CodedResultsSection) <em>Get Procedure Entries</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProcedureEntries(CodedResultsSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PROCEDURE_ENTRIES__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntry)).oclAsType(ihe::ProcedureEntry)
+	 * @param codedResultsSection The receiving '<em><b>Coded Results Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static EList<ProcedureEntry> getProcedureEntries(CodedResultsSection codedResultsSection) {
+		if (GET_PROCEDURE_ENTRIES__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IHEPackage.Literals.CODED_RESULTS_SECTION,
+				IHEPackage.Literals.CODED_RESULTS_SECTION.getEAllOperations().get(60));
+			try {
+				GET_PROCEDURE_ENTRIES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ENTRIES__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ENTRIES__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ProcedureEntry> result = (Collection<ProcedureEntry>) query.evaluate(codedResultsSection);
+		return new BasicEList.UnmodifiableEList<ProcedureEntry>(result.size(), result.toArray());
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getExternalReferences(CodedResultsSection) <em>Get External References</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -320,7 +426,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.CODED_RESULTS_SECTION,
-				IHEPackage.Literals.CODED_RESULTS_SECTION.getEAllOperations().get(59));
+				IHEPackage.Literals.CODED_RESULTS_SECTION.getEAllOperations().get(61));
 			try {
 				GET_EXTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_EXTERNAL_REFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -367,7 +473,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.CODED_RESULTS_SECTION,
-				IHEPackage.Literals.CODED_RESULTS_SECTION.getEAllOperations().get(60));
+				IHEPackage.Literals.CODED_RESULTS_SECTION.getEAllOperations().get(62));
 			try {
 				GET_SIMPLE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SIMPLE_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

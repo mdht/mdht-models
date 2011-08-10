@@ -202,7 +202,7 @@ public class EncounterHistorySectionOperations extends EncountersSectionOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.ENCOUNTER_HISTORY_SECTION,
-				IHEPackage.Literals.ENCOUNTER_HISTORY_SECTION.getEAllOperations().get(60));
+				IHEPackage.Literals.ENCOUNTER_HISTORY_SECTION.getEAllOperations().get(63));
 			try {
 				GET_ENCOUNTER_ENTRIES__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_ENTRIES__EOCL_EXP);
 			} catch (ParserException pe) {

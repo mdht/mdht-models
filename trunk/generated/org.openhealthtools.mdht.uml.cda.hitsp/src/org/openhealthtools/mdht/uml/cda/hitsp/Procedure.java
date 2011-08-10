@@ -13,7 +13,7 @@ package org.openhealthtools.mdht.uml.cda.hitsp;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
+import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProce
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.17' constraints.validation.error='HITSPProcedureTemplateId HITSPProcedureHasCodeOriginalText' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='HITSPProcedurePerformerAssignedEntity HITSPProcedureTargetSiteCode HITSPProcedureCode' targetSiteCode.codeSystemName='SNOMEDCT'"
  * @generated
  */
-public interface Procedure extends ProcedureEntryProcedureActivityProcedure {
+public interface Procedure extends ProcedureEntry {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
