@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Vital Signs Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.2.4</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.2.4"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Vital Signs section contains measured vital signs at the time of the examination.
+Measurements may include some or all of the following: blood pressure, heart rate,
+respiratory rate, body temperature, and pulse oximetry. Comments on relative trends
+may be appropriate, but not required. This section can be a first-level section or nested
+under Physical Exam.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>VITAL SIGNS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-HP-87)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF-HP-87), such that
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains clinical statements. (CONF-HP-87)<ul><li><codeblock>[OCL]: not self.entry-&gt;isEmpty()</codeblock></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>VITAL SIGNS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-HP-87)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF-HP-87), such that
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains clinical statements. (CONF-HP-87)<ul><li><codeblock>[OCL]: not self.entry-&gt;isEmpty()</codeblock></li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.2.4"/>
+  <id root="2f82d6e2-fa20-49b0-a084-a1472a6deb98"/>
+  <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="VITAL SIGNS"/>
+  <title>VITAL SIGNS</title>
+  <entry>
+    <organizer moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.32"/>
+      <templateId root="2.16.840.1.113883.10.20.1.35"/>
+      <id root="6ad254e4-ca73-42f6-9731-6ce9ed944d40"/>
+      <code/>
+      <statusCode/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.31"/>
+          <id root="7f908962-a640-42b3-933e-8b2f86c91665"/>
+          <code/>
+          <statusCode/>
+          <effectiveTime>
+            <low value="2011"/>
+            <high value="2011"/>
+          </effectiveTime>
+          <interpretationCode/>
+          <methodCode/>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
+</body>
+</topic>

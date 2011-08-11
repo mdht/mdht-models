@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Medication Conditional Dose"/>
+<meta name="abstract" content="[SubstanceAdministration: templateId 2.16.840.1.113883.3.88.11.83.8]"/>
+<meta name="description" content="[SubstanceAdministration: templateId 2.16.840.1.113883.3.88.11.83.8]"/>
+<meta name="DC.Coverage" content="SubstanceAdministration"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Medication Conditional Dose</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Medication Conditional Dose</h1>
+
+
+
+<div class="body"><p class="shortdesc">[SubstanceAdministration: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.8</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="Medication.html" title="[SubstanceAdministration: templateId 2.16.840.1.113883.3.88.11.83.8]">Medication</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.8</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ConditionalDose.html">IHE Conditional Dose</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.10</tt>)</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Medication Conditional Dose example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.10"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.8"/&gt;
+  &lt;id root="84ad22dc-c8ca-4a25-b21a-b136821e4767"/&gt;
+  &lt;code/&gt;
+  &lt;statusCode/&gt;
+  &lt;effectiveTime value="20110616"/&gt;
+  &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
+  &lt;approachSiteCode/&gt;
+  &lt;doseQuantity/&gt;
+  &lt;rateQuantity/&gt;
+  &lt;maxDoseQuantity/&gt;
+  &lt;administrationUnitCode/&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
+      &lt;id root="80039e07-d564-4427-ac6f-83ee1de1012d"/&gt;
+      &lt;code code="30973-2" codeSystemName="" displayName="Dose number"/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="INT"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+      &lt;id root="88446f40-d51f-4eb7-9234-d80588a9a1e8"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act moodCode="INT"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
+      &lt;id root="ffb4eab3-baba-49e3-8375-0f5dd36c060e"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
+      &lt;id root="4f4be429-fd88-423d-938f-404e650c2e6b"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+          &lt;id root="97849bf4-86d8-4e28-973d-44bd0cfbda4a"/&gt;
+          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
+      &lt;id root="006fc640-2eb6-4934-b396-dbb9c2e5754a"/&gt;
+      &lt;code/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act classCode="ACT" moodCode="INT"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/&gt;
+      &lt;id root="d0bd69df-59ef-431c-978b-96a576521932"/&gt;
+      &lt;code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
+      &lt;text/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;supply&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.34"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/&gt;
+      &lt;id root="316b9a0a-b066-4bdb-a0b1-cbfbfff37271"/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime value="20110616"/&gt;
+      &lt;repeatNumber/&gt;
+      &lt;quantity/&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+          &lt;id root="58044ca5-8669-4758-bc09-ec62782a7ad2"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CE"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act moodCode="INT"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
+          &lt;id root="2baeb35e-3aa8-4eea-9d98-25081814f27f"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act moodCode="INT"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/&gt;
+          &lt;id root="fcab336a-3937-44d5-b837-2bdf612fa588"/&gt;
+          &lt;code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
+          &lt;text/&gt;
+          &lt;statusCode/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/supply&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation&gt;
+      &lt;templateId root="2.16.840.1.113883.3.88.11.83.8.1"/&gt;
+      &lt;id root="0f00fc46-30fb-4ac4-96b0-c9ba6d051a12"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;supply&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.34"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/&gt;
+      &lt;templateId root="2.16.840.1.113883.3.88.11.83.8.3"/&gt;
+      &lt;id root="27236359-6536-47fd-964d-7c62870bb9db"/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime value="20110616"/&gt;
+      &lt;repeatNumber/&gt;
+      &lt;quantity/&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+          &lt;id root="5c835e63-e943-4b30-83c6-c0db433a5713"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CE"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act moodCode="INT"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
+          &lt;id root="cd5a6a9b-a970-4e4e-a293-7ef21cbfed07"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act moodCode="INT"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/&gt;
+          &lt;id root="09fefb07-95d5-4bd2-9d55-4dc8ded45ece"/&gt;
+          &lt;code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
+          &lt;text/&gt;
+          &lt;statusCode/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/supply&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
+      &lt;id root="1fdb6d4d-40da-4374-9b69-43d61eb2f846"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+          &lt;id root="4198e9f6-2e7d-4bfc-a8b6-765b918ab866"/&gt;
+          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+&lt;/substanceadministration&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

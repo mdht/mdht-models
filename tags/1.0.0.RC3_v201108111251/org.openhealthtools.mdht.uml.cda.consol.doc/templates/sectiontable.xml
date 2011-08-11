@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+	<title><ph
+					conref="generated/_CLASSNAME.dita#classId/classformalname" /> Table</title>
+	<body>
+		<section conref="generated/_CLASSNAME.dita#classId/tableconformance" />
+
+	</body>
+</topic>

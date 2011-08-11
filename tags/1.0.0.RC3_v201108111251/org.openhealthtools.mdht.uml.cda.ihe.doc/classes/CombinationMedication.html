@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Combination Medication"/>
+<meta name="abstract" content="[SubstanceAdministration: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.11]"/>
+<meta name="description" content="[SubstanceAdministration: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.11]"/>
+<meta name="DC.Coverage" content="SubstanceAdministration"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Combination Medication</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Combination Medication</h1>
+
+
+
+<div class="body"><p class="shortdesc">[SubstanceAdministration: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.11</tt>]</p>
+
+
+<div class="section">
+<p class="p">
+This template identifier is used to identify medication administration events that require special
+processing to handle combination medications. The parent template is
+1.3.6.1.4.1.19376.1.5.3.1.4.7. A combination medication is made up of two or more other
+medications. These may be prepackaged, such as Percocet, which is a combination of
+Acetaminophen and oxycodone in predefined ratios, or prepared by a pharmacist, such as a GI
+cocktail.
+</p>
+
+<p class="p">
+In the case of the prepackaged combination, it is sufficient to supply the name of the
+combination drug product, and its strength designation in a single &lt;substanceAdministation&gt;
+entry. The dosing information should then be recorded as simply a count of administration units.
+In the latter case of a prepared mixture, the description of the mixture should be provided as the
+product name (e.g., "GI Cocktail") , in the &lt;substanceAdministration&gt; entry. That entry may, but
+is not required, to have subordinate &lt;substanceAdministration&gt; entries included beneath it to record the components of the mixture.
+</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="Medication.html" title="[SubstanceAdministration: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.7]">Medication</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Subordinate &lt;substanceAdminstration&gt; entries are included to record the components of the prepared mixture. If medication is a prepackaged mixture, a single &lt;substanceAdministration&gt; entry is sufficient.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.entryRelationship.substanceAdministration-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Combination Medication example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.11"/&gt;
+  &lt;id root="5ef6ad22-14be-4b0b-af65-5ab52462abd6"/&gt;
+  &lt;code/&gt;
+  &lt;statusCode/&gt;
+  &lt;effectiveTime value="20110616"/&gt;
+  &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
+  &lt;approachSiteCode/&gt;
+  &lt;doseQuantity/&gt;
+  &lt;rateQuantity/&gt;
+  &lt;maxDoseQuantity/&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
+      &lt;id root="1059aacd-f985-4359-82ef-c65d11777572"/&gt;
+      &lt;code code="30973-2" codeSystemName="" displayName="Dose number"/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="INT"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+      &lt;id root="56f46526-1ff0-47c3-b8e4-b826853231a2"/&gt;
+      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CE"/&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act moodCode="INT"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
+      &lt;id root="1877d614-0fb4-4d4e-972e-775b3fd7ea63"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
+      &lt;id root="a78cee98-0263-4b36-8466-3570720da76a"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
+          &lt;id root="f4ed885a-6c86-4616-a743-f6ef902f4622"/&gt;
+          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
+      &lt;id root="91b13bee-0430-4893-a843-a26faf66e2e5"/&gt;
+      &lt;code/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act classCode="ACT" moodCode="INT"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/&gt;
+      &lt;id root="e29cc90f-ef41-42bd-867e-edf3b2ab03ef"/&gt;
+      &lt;code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
+      &lt;text/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;supply&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.34"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/&gt;
+      &lt;id root="a96eba38-d7c9-4b24-adfe-effb461064fb"/&gt;
+      &lt;statusCode/&gt;
+      &lt;effectiveTime value="20110616"/&gt;
+      &lt;repeatNumber/&gt;
+      &lt;quantity/&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+          &lt;id root="2ad63438-ab24-43b7-8d7e-404476311f3d"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CE"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act moodCode="INT"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
+          &lt;id root="6560d1fc-9bfd-40cc-9344-56481aa29368"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act moodCode="INT"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/&gt;
+          &lt;id root="530a6bb4-4d22-4caf-a7da-9d43e2baa60f"/&gt;
+          &lt;code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
+          &lt;text/&gt;
+          &lt;statusCode/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/supply&gt;
+  &lt;/entryRelationship&gt;
+&lt;/substanceadministration&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Immunizations Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.22.2.2.1]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.22.2.2.1]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Immunizations Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Immunizations Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.2.2.1</tt>]</p>
+
+
+<div class="section">
+<p class="p">The Immunizations section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</p>
+
+<p class="p">This section is optional, however it is strongly recommended that it be present in cases of pediatric care and in other cases when such information is available.</p>
+
+<p class="p">The immunizations section shall contain a narrative description of the immunizations administered to the patient in the
+past. It shall include entries for medication administration as described in the Entry Content Modules.</p>
+
+<p class="p">
+    The Immunizations Section contains information describing the immunizations administered to the
+    patient. 
+</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ImmunizationsNarrativeSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.2]">Immunizations Narrative Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.2</tt>)</li>
+
+<li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Immunization.html" title="[SubstanceAdministration: templateId 2.16.840.1.113883.3.88.11.83.13]">Immunization</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.13</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Immunizations Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.21.2.2"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.21.2.2.1"/&gt;
+  &lt;id root="0913a853-1d3b-4836-acd9-6715f94acbba"/&gt;
+  &lt;code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/&gt;
+  &lt;title&gt;History of immunizations&lt;/title&gt;
+  &lt;entry&gt;
+    &lt;substanceAdministration classCode="SBADM" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.3.88.11.83.8"/&gt;
+      &lt;templateId root="2.16.840.1.113883.3.88.11.83.13"/&gt;
+      &lt;id root="f9928622-003c-4361-b509-68e0430d52d2"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.12.292" codeSystemName="Vaccines administered (CVX)"/&gt;
+      &lt;effectiveTime value="20110616"/&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
+          &lt;id root="6b0f5c49-e4b2-4180-b301-16f4dfdb6aa5"/&gt;
+          &lt;code code="30973-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dose number"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+          &lt;id root="8c8ba5d8-a521-4ff6-b866-b28c211643da"/&gt;
+          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.21.4.9"/&gt;
+          &lt;id root="e2540a7b-f895-4b0b-a42a-6d613de5921c"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.21.4.8"/&gt;
+              &lt;id root="ea23fa9b-21fb-40d9-94fd-967d547cb0a3"/&gt;
+              &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
+          &lt;id root="6fa6ef3e-5e52-4a18-b363-fe69bbc0f280"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act classCode="ACT" moodCode="INT"&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/&gt;
+          &lt;id root="a1260017-9a1c-4acf-bb2b-327fe22de84b"/&gt;
+          &lt;code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.8.1"/&gt;
+          &lt;id root="02f1bd3c-9952-45e2-91d9-b3ed73590223"/&gt;
+          &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;supply classCode="SPLY"&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.8.3"/&gt;
+          &lt;id root="07f3fd8f-fede-44b6-a58f-91176c584bd0"/&gt;
+          &lt;effectiveTime value="20110616"/&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
+              &lt;id root="092abd0c-bd74-4cc5-a7c2-2d5165a28852"/&gt;
+              &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;act moodCode="INT"&gt;
+              &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/&gt;
+              &lt;id root="a861810c-421b-40a4-a7ee-696322dbd1b4"/&gt;
+              &lt;code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2011"/&gt;
+                &lt;high value="2011"/&gt;
+              &lt;/effectiveTime&gt;
+            &lt;/act&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/supply&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/substanceAdministration&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

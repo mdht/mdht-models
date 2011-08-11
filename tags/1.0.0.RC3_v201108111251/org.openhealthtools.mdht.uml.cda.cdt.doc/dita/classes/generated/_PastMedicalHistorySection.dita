@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Past Medical History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.2.9</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.2.9"/>
+</prolog>
+<body>
+<section id="description">
+<p>This section describes the past medical history for the patient. It may contain
+information about past procedures or other illnesses that might have a bearing on the
+patient's current illness. Since past medical history can include past surgical history
+and other procedures, the Procedure History section may be included under the Past
+Medical History section or it may stand alone as its own section. By the same token,
+problems can be recorded in a standalone Problems section or in a nested Problems
+section. Wherever used, procedures and problems should conform to the CCD template
+for CDA entries cited in the respective sections.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11348-0" </tt><i>HISTORY OF PAST ILLNESS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-HP-78)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHOULD</b> satisfy: Contains clinical statements.<ul><li><codeblock>[OCL]: not self.entry-&gt;isEmpty()</codeblock></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11348-0" </tt><i>HISTORY OF PAST ILLNESS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-HP-78)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHOULD</b> satisfy: Contains clinical statements.<ul><li><codeblock>[OCL]: not self.entry-&gt;isEmpty()</codeblock></li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.2.9"/>
+  <id root="3fb21428-7b6f-4c20-8736-ebc5409103a5"/>
+  <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PAST ILLNESS"/>
+  <title>HISTORY OF PAST ILLNESS</title>
+</section>]]></codeblock>
+</body>
+</topic>

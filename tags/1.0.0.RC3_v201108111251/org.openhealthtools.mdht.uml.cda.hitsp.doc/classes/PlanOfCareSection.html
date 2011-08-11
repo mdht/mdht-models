@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Plan Of Care Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.3.88.11.83.124]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.3.88.11.83.124]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Plan Of Care Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Plan Of Care Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.124</tt>]</p>
+
+
+<div class="section">
+<p class="p">
+    The Plan of Care Section contains information about the expectations for care to be provided including
+    proposed interventions and goals for improving the condition of the patient. 
+</p>
+
+<p class="p">
+    A plan of care section varies from the assessment and plan section defined above in that it does not
+    include a physician assessment of the patient condition. 
+</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CarePlanSection.html">IHE Care Plan Section</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.31</tt>)</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Plan Of Care Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.10"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.31"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.124"/&gt;
+  &lt;id root="c9269d02-2410-4267-9fa4-61c2fee6f10d"/&gt;
+  &lt;code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/&gt;
+  &lt;title&gt;Treatment plan&lt;/title&gt;
+  &lt;entry&gt;
+    &lt;act&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
+      &lt;id root="563d98e2-89a0-4cb3-b843-9d55279e2bf1"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;encounter&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
+      &lt;id root="e96c73bc-ad1a-4da9-806e-6fb316ef8fcc"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/encounter&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
+      &lt;id root="ef88d772-4fe6-42b9-9167-bb1209fbc5ab"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;procedure&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
+      &lt;id root="b97a1d3a-abae-40f1-a81f-0dec46ddc040"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/procedure&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;substanceAdministration&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
+      &lt;id root="7b3aea69-3cbd-4038-943b-6f4302ba4531"/&gt;
+      &lt;effectiveTime value="20110616"/&gt;
+    &lt;/substanceAdministration&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;supply&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
+      &lt;id root="d7f1c0ac-d191-4a2a-b1c6-b684b7602a1c"/&gt;
+      &lt;effectiveTime value="20110616"/&gt;
+    &lt;/supply&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

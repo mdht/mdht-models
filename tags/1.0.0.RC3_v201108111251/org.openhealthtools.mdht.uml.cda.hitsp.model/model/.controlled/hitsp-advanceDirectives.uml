@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_uIr7cMfzEd6VjLXh4DcWSg" name="AdvanceDirectivesSection">
+    <ownedComment xmi:id="_5aSLgMfzEd6VjLXh4DcWSg" annotatedElement="_uIr7cMfzEd6VjLXh4DcWSg">
+      <body>&lt;p>&#xD;
+    The Advance Directives Section contains information that defines the patient's expectations and requests&#xD;
+    for care along with the locations of the documents. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_wzIIcMfzEd6VjLXh4DcWSg">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-codedAdvanceDirectives.uml#_bSHeEMfzEd6VjLXh4DcWSg"/>
+    </generalization>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_x0oowMfzEd6VjLXh4DcWSg" base_Class="_uIr7cMfzEd6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.116" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConformsTo xmi:id="_rGTHcFF6Ed-Lud-5SYZhMw" base_Generalization="_wzIIcMfzEd6VjLXh4DcWSg" requiresParentId="true"/>
+</xmi:XMI>

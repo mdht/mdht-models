@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Social History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.1.15</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.15"/>
+</prolog>
+<body>
+<section id="description">
+<p>
+    This section contains data defining the patient's occupational, personal (e.g. lifestyle), social, and
+    environmental history and health risk factors, as well as administrative data such as marital status, race, ethnicity
+    and religious affiliation. Social history can have significant influence on a patient's physical, psychological and
+    emotional health and wellbeing so should be considered in the development of a complete record.
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.15"/>
+  <id root="35d20026-ecb4-452a-a655-93e7c8e62539"/>
+  <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
+  <title>Social history</title>
+</section>]]></codeblock>
+</body>
+</topic>

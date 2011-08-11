@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Covered Party - conformance rules</title>
+<shortdesc id="shortdesc">[ParticipantRole: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ParticipantRole</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-59)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-60)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-59)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-60)
+</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="6993c701-9df2-4df8-bd1b-9748533bab30"/>
+  <code/>
+</participantrole>]]></codeblock>
+</body>
+</topic>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_gHDXQMf0Ed6VjLXh4DcWSg" name="ImmunizationsSection">
+    <ownedComment xmi:id="_m9ylkMf0Ed6VjLXh4DcWSg" annotatedElement="_gHDXQMf0Ed6VjLXh4DcWSg">
+      <body>&lt;p>&#xD;
+    The Immunizations Section contains information describing the immunizations administered to the&#xD;
+    patient. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_iBayMMf0Ed6VjLXh4DcWSg">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_ZEjk4Mf0Ed6VjLXh4DcWSg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_y3IF0DuJEd-B8KE6Jx0UNQ" name="immunization" type="_qkWXUDuJEd-B8KE6Jx0UNQ" association="_y3IF0TuJEd-B8KE6Jx0UNQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0OAZMDuJEd-B8KE6Jx0UNQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0OAZMTuJEd-B8KE6Jx0UNQ" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_y3IF0TuJEd-B8KE6Jx0UNQ" memberEnd="_y3IF0DuJEd-B8KE6Jx0UNQ _y3IF0juJEd-B8KE6Jx0UNQ">
+    <ownedEnd xmi:id="_y3IF0juJEd-B8KE6Jx0UNQ" type="_gHDXQMf0Ed6VjLXh4DcWSg" association="_y3IF0TuJEd-B8KE6Jx0UNQ"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_johS4Mf0Ed6VjLXh4DcWSg" base_Class="_gHDXQMf0Ed6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.117" assigningAuthorityName="HITSP C83"/>
+  <CDA:AssociationValidation xmi:id="_0qncsDuJEd-B8KE6Jx0UNQ" base_Association="_y3IF0TuJEd-B8KE6Jx0UNQ"/>
+  <CDA:ConformsTo xmi:id="_rGTugFF6Ed-Lud-5SYZhMw" base_Generalization="_iBayMMf0Ed6VjLXh4DcWSg" requiresParentId="true"/>
+  <uml:Class xmi:id="_qkWXUDuJEd-B8KE6Jx0UNQ" name="Immunization">
+    <ownedRule xmi:id="_qvCv8FazEeCddY1UIvGtQg" name="refusalReason" constrainedElement="_qkWXUDuJEd-B8KE6Jx0UNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_uYm3oFazEeCddY1UIvGtQg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>The reason for refusal SHALL be coded as specified in HITSP/C80 Section 2.2.3.5.3 No Immunization Reason</body>
+        <body>self.entryRelationship->select(er |   er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and er.act.code.codeSystem &lt;> '2.16.840.1.113883.1.11.19717' )->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_qkWXUTuJEd-B8KE6Jx0UNQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-immunizations.uml#_aFDTUDuJEd-B8KE6Jx0UNQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_szV_cFayEeCddY1UIvGtQg" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_szV_cVayEeCddY1UIvGtQg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_szV_clayEeCddY1UIvGtQg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_s4UlEDuJEd-B8KE6Jx0UNQ" base_Class="_qkWXUDuJEd-B8KE6Jx0UNQ" templateId="2.16.840.1.113883.3.88.11.83.13" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConstraintValidation xmi:id="_r-nhcFazEeCddY1UIvGtQg" base_Constraint="_qvCv8FazEeCddY1UIvGtQg"/>
+  <CDA:ConformsTo xmi:id="_rGbqUFF6Ed-Lud-5SYZhMw" base_Generalization="_qkWXUTuJEd-B8KE6Jx0UNQ" requiresParentId="true"/>
+  <CDA:ValueSetConstraint xmi:id="_KFeygGxZEeCVhdosyN0o1A" base_Property="_szV_cFayEeCddY1UIvGtQg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dkykkaDqEd-dVeaMP0XXQw"/>
+  </CDA:ValueSetConstraint>
+</xmi:XMI>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_OCM5cMfuEd6VjLXh4DcWSg" name="SurgeriesSection">
+    <generalization xmi:id="_UcKsMMfuEd6VjLXh4DcWSg">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-codedSurgeries.uml#_9fsJYMftEd6VjLXh4DcWSg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_cuJokFV1EeCw2ulF0_tZWA" name="procedureActivity">
+      <type xmi:type="uml:Class" href="../hitsp.uml#_KYNNMKDlEd-dVeaMP0XXQw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kxxgwFV1EeCw2ulF0_tZWA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kxyH0FV1EeCw2ulF0_tZWA" value="1"/>
+      <association href="../hitsp.uml#_cuKPoVV1EeCw2ulF0_tZWA"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_AMET4KDmEd-dVeaMP0XXQw"/>
+  <CDA:CDATemplate xmi:id="_VedPoMfuEd6VjLXh4DcWSg" base_Class="_OCM5cMfuEd6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.108" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConformsTo xmi:id="_rGPdEFF6Ed-Lud-5SYZhMw" base_Generalization="_UcKsMMfuEd6VjLXh4DcWSg" requiresParentId="true">
+    <ruleId>C83-[CT-108-1]</ruleId>
+  </CDA:ConformsTo>
+  <CDA:AssociationValidation xmi:id="_BsF8MKDmEd-dVeaMP0XXQw" base_Association="_AMET4KDmEd-dVeaMP0XXQw">
+    <ruleId>C83-[CT-108-2]</ruleId>
+  </CDA:AssociationValidation>
+</xmi:XMI>

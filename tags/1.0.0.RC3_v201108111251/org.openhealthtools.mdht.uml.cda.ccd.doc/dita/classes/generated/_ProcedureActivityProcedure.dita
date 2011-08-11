@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedure Activity Procedure - conformance rules</title>
+<shortdesc id="shortdesc">[Procedure: templateId <tt>2.16.840.1.113883.10.20.1.29</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Procedure</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.29"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref></li>
+<li>contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode <b>SHALL NOT</b> conflict with the method inherent in Procedure / code. (CONF-435)</li>
+<li>contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode <b>SHALL NOT</b> conflict with the site inherent in Procedure / code (CONF-436)</li>
+<li><b>MAY</b> satisfy: has one or more Procedure / specimen, reflecting specimens that were obtained as part of the procedure. (CONF-443)</li>
+<li>specimen / specimenRole / id <b>SHOULD</b> be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen. (CONF-444)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref></li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClass
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_DocumentProcedureMood
+</li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>encounterLocation</b></tt>, where its type is <xref href="../EncounterLocation.dita">Encounter Location</xref> (CONF-437)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>patientInstruction</b></tt>, where its type is <xref href="../PatientInstruction.dita">Patient Instruction</xref> (CONF-441, CONF-333)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>ageObservation</b></tt>, where its type is <xref href="../AgeObservation.dita">Age Observation</xref> (CONF-445)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>medicationActivity</b></tt>, where its type is <xref href="../MedicationActivity.dita">Medication Activity</xref> (CONF-446)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li></ol></li>
+<li>The value for code in a procedure activity <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4). (CONF-434)</li>
+<li><b>MAY</b> satisfy: contain one or more performer, to represent those practioners who performed the procedure. (CONF-438)</li>
+<li><b>MAY</b> satisfy: A procedure activity contains one or more entryRelationship / @typeCode="RSON", the target of which represents the indication or reason for the procedure. (CONF-439)</li>
+<li>entryRelationship / @typeCode="RSON" in a procedure activity <b>SHALL</b> have a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement. (CONF-440)</li>
+<li><b>MAY</b> satisfy: have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent (CONF-442)</li>
+<li><b>SHALL</b> satisfy: contains one or more sources of information (CONF-447)</li>
+<li><b>MAY</b> satisfy: have one or more participant [@typeCode="DEV"], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52) (CONF-448)</li>
+<li>participant / participantRole / id <b>SHOULD</b> be set to equal a Supply / participant / participantRole / id to indicate that the Procedure and the Supply are referring to the same product instance. (CONF-452)</li>
+<li>contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode <b>SHALL NOT</b> conflict with the method inherent in Procedure / code. (CONF-435)</li>
+<li>contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode <b>SHALL NOT</b> conflict with the site inherent in Procedure / code (CONF-436)</li>
+<li><b>MAY</b> satisfy: has one or more Procedure / specimen, reflecting specimens that were obtained as part of the procedure. (CONF-443)</li>
+<li>specimen / specimenRole / id <b>SHOULD</b> be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen. (CONF-444)</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.29"/>
+  <id root="1a8d4d9b-a128-4397-8351-1f60e3bafb20"/>
+  <code/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+</procedure>]]></codeblock>
+</body>
+</topic>

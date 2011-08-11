@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Patient Contact Guardian - conformance rules</title>
+<shortdesc id="shortdesc">[Guardian: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.2.4</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Guardian</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupportGuardian.html">CCD Support Guardian</xref></li>
+<li><b>SHALL</b> conform to <xref href="../PatientContact.dita">Patient Contact</xref></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="GUAR" </tt>
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>telecom</b></tt>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../PatientContact.dita">Patient Contact</xref></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Support.html">CCD Support</xref></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupportGuardian.html">CCD Support Guardian</xref></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="GUAR" </tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>telecom</b></tt>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<guardian xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="GUAR">
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
+  <id root="439086da-29c7-4c2c-9a7f-b58e207c6846"/>
+  <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+  <addr/>
+  <telecom/>
+</guardian>]]></codeblock>
+</body>
+</topic>

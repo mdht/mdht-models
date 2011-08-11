@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Condition Entry - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+</prolog>
+<body>
+<section id="description">
+<p>This section makes use of the linking, severity, clinical status and comment content specifications defined elsewhere in the technical framework. In HL7 RIM parlance, observations about a problem, complaint, symptom, finding, diagnosis, or functional limitation of a patient is the event (moodCode='EVN') of observing (&lt;observation classCode='OBS'>) that problem. The &lt;value> of the observation comes from a controlled vocabulary representing such things. The &lt;code> contained within the &lt;observation> describes the method of determination from yet another controlled vocabulary.</p>
+
+<p>The basic pattern for reporting a problem uses the CDA &lt;observation> element, setting the classCode='OBS' to represent that this is an observation of a problem, and the moodCode='EVN', to represent that this is an observation that has in fact taken place. The negationInd attribute, if true, specifies that the problem indicated was observed to not have occurred (which is subtly but importantly different from having not been observed). The value of negationInd should not normally be set to true. Instead, to record that there is "no prior history of chicken pox", one would use a coded value indicated exactly that. However, it is not always possible to record problems in this manner, especially if using a controlled vocabulary that does not supply pre-coordinated negations , or which do not allow the negation to be recorded with post-coordinated coded terminology.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProblemEntry.html">IHE Problem Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.2 Problem Type</tt><b> STATIC</b> 1
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<ul><li>The &lt;text> element is required and points to the text describing the problem being recorded; including any dates, comments, et cetera. The &lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.4 Problem</tt><b> STATIC</b> 1
+<ul><li><p>The &lt;value> is the condition that was found. This element is required. While the value may be a coded or an un-coded string, the type is always a coded value (xsi:type='CD'). If coded, the code and codeSystem attributes shall be present. The codeSystem should reference a controlled vocabulary describing problems, complaints, symptoms, findings, diagnoses, or functional limitations, e.g., ICD-9, SNOMED-CT or MEDCIN, or others.</p>
+<p>It is recommended that the codeSystemName associated with the codeSystem, and the displayName for the code also be provided for diagnostic and human readability purposes, but this is not required by this profile.</p>
+<p>If uncoded, all attributes other than xsi:type='CD' must be absent.</p>
+<p>The &lt;value> contains a &lt;reference> to the &lt;originalText> in order to link the coded value to the problem narrative text (minus any dates, comments, et cetera). The &lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.</p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-160), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AgeObservation.html">CCD Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>CAUS" </tt><i>CAUS (is etiology for)</i></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/CauseOfDeathObservation.html">CCD Cause Of Death Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.42</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProblemStatusObservation.html">IHE Problem Status Observation</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.1.1</tt>)</li></ol></li>
+<li>The onset date <b>SHALL</b> be recorded in the &lt;low&gt; element of the &lt;effectiveTime&gt; element when known. (C83-[DE-7.01-1])<ul><li><codeblock>[OCL]: not self.effectiveTime.low.oclIsUndefined()</codeblock></li></ul></li>
+<li>The resolution data <b>SHALL</b> be recorded in the &lt;high&gt; element of the &lt;effectiveTime&gt; element when known. (C83-[DE-7.01-2])<ul><li><codeblock>[OCL]: not self.effectiveTime.high.oclIsUndefined()</codeblock></li></ul></li>
+<li>If the problem is known to be resolved, but the date of resolution is not known, then the &lt;high&gt; element <b>SHALL</b> be present, and the nullFlavor attribute <b>SHALL</b> be set to 'UNK'. Therefore, the existence of an &lt;high&gt; element within a problem does indicate that the problem has been resolved. (C83-[DE-7.01-3])<ul><li><codeblock>[OCL]: not self.effectiveTime.high.oclIsUndefined()</codeblock></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemObservation.html">CCD Problem Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.28</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProblemEntry.html">IHE Problem Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-155)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+<ul><li>The specific observation being recorded must have an identifier (&lt;id>) that shall be provided for tracking purposes. If the source EMR does not or cannot supply an intrinsic identifier, then a GUID shall be provided as the root, with no extension (e.g., &lt;id root='CE1215CD-69EC-4C7B-805F-569233C5E159'/>). At least one identifier must be present, more than one may appear.</li></ul></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.2 Problem Type</tt><b> STATIC</b> 1
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<ul><li>The &lt;text> element is required and points to the text describing the problem being recorded; including any dates, comments, et cetera. The &lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-156, CONF-157)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The &lt;effectiveTime> of this &lt;observation> is the time interval over which the &lt;observation> is known to be true. The &lt;low> and &lt;high> values should be no more precise than known, but as precise as possible. While CDA allows for multiple mechanisms to record this time interval (e.g., by low and high values, low and width, high and width, or center point and width), we are constraining Medical summaries to use only the low/high form. The &lt;low> value is the earliest point for which the condition is known to have existed. The &lt;high> value, when present, indicates the time at which the observation was no longer known to be true. Thus, the implication is made that if the &lt;high> value is specified, that the observation was no longer seen after this time, and it thus represents the date of resolution of the problem. Similarly, the &lt;low> value may seem to represent onset of the problem. Neither of these statements is necessarily precise, as the &lt;low> and &lt;high> values may represent only an approximation of the true onset and resolution (respectively) times. For example, it may be the case that onset occurred prior to the &lt;low> value, but no observation may have been possible before that time to discern whether the condition existed prior to that time. The &lt;low> value should normally be present. There are exceptions, such as for the case where the patient may be able to report that they had chicken pox, but are unsure when. In this case, the &lt;effectiveTime> element shall have a &lt;low> element with a nullFlavor attribute set to 'UNK'. The &lt;high> value need not be present when the observation is about a state of the patient that is unlikely to change (e.g., the diagnosis of an incurable disease).</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.4 Problem</tt><b> STATIC</b> 1
+<ul><li><p>The &lt;value> is the condition that was found. This element is required. While the value may be a coded or an un-coded string, the type is always a coded value (xsi:type='CD'). If coded, the code and codeSystem attributes shall be present. The codeSystem should reference a controlled vocabulary describing problems, complaints, symptoms, findings, diagnoses, or functional limitations, e.g., ICD-9, SNOMED-CT or MEDCIN, or others.</p>
+<p>It is recommended that the codeSystemName associated with the codeSystem, and the displayName for the code also be provided for diagnostic and human readability purposes, but this is not required by this profile.</p>
+<p>If uncoded, all attributes other than xsi:type='CD' must be absent.</p>
+<p>The &lt;value> contains a &lt;reference> to the &lt;originalText> in order to link the coded value to the problem narrative text (minus any dates, comments, et cetera). The &lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.</p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-160), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Severity.dita">Severity</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.1</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemStatusObservation.dita">Problem Status Observation</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.1.1</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains exactly one [1..1] <xref href="../HealthStatusObservation.dita">Health Status Observation</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.1.2</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.2</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-160), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AgeObservation.html">CCD Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>CAUS" </tt><i>CAUS (is etiology for)</i></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/CauseOfDeathObservation.html">CCD Cause Of Death Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.42</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProblemStatusObservation.html">IHE Problem Status Observation</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.1.1</tt>)</li></ol></li>
+<li><b>SHALL</b> contain one or more sources of information. (CONF-161)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
+or not self.getSection().informant-&gt;isEmpty()
+or not self.getClinicalDocument().informant-&gt;isEmpty()
+or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
+or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
+   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
+   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
+<li><b>MAY</b> contain exactly one Patient Awareness (CONF-180)<ul><li><codeblock>[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</codeblock></li></ul></li>
+<li>The problem name <b>SHALL</b> be recorded in the entry by recording a &lt;reference&gt; where the value attribute points to the narrative text containing the name of the problem.<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li>
+<li>If entryRelationship / Comment is present, then entryRelationship <b>SHALL</b> include inversionInd = 'true'.<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | (not rel.act.oclIsUndefined() and rel.act.oclIsKindOf(ihe::Comment)) implies rel.inversionInd=true)</codeblock></li></ul></li>
+<li>The onset date <b>SHALL</b> be recorded in the &lt;low&gt; element of the &lt;effectiveTime&gt; element when known. (C83-[DE-7.01-1])<ul><li><codeblock>[OCL]: not self.effectiveTime.low.oclIsUndefined()</codeblock></li></ul></li>
+<li>The resolution data <b>SHALL</b> be recorded in the &lt;high&gt; element of the &lt;effectiveTime&gt; element when known. (C83-[DE-7.01-2])<ul><li><codeblock>[OCL]: not self.effectiveTime.high.oclIsUndefined()</codeblock></li></ul></li>
+<li>If the problem is known to be resolved, but the date of resolution is not known, then the &lt;high&gt; element <b>SHALL</b> be present, and the nullFlavor attribute <b>SHALL</b> be set to 'UNK'. Therefore, the existence of an &lt;high&gt; element within a problem does indicate that the problem has been resolved. (C83-[DE-7.01-3])<ul><li><codeblock>[OCL]: not self.effectiveTime.high.oclIsUndefined()</codeblock></li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+  <id root="3c908423-935a-4baa-bc83-59c78061f83c"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <text/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+  <value xsi:type="CD"/>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+      <id root="5eab9c88-5acf-4307-b6f4-abc77478aa52"/>
+      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <value xsi:type="CE"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+      <id root="a4331b53-b7b6-495a-a814-2c5bf7208026"/>
+      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <value xsi:type="CE"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.38"/>
+      <id root="adf3d546-1053-4b5e-b812-3f61c42ea054"/>
+      <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+      <id root="04785848-dc2e-4edd-bf75-e2ee47803bdc"/>
+      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
+      <text/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <value xsi:type="CD"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+      <id root="31717cf5-0a0d-4e07-910d-bc691e59d757"/>
+      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+      <id root="137ff849-5209-4327-9284-d5d4536f9cc0"/>
+      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+      <text/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <value xsi:type="CE"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.40"/>
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+      <id root="ec2cb43d-478f-4439-b172-249e988846d5"/>
+      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+</observation>]]></codeblock>
+</body>
+</topic>

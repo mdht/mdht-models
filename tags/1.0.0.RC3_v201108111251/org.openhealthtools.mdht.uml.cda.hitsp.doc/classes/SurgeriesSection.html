@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Surgeries Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.3.88.11.83.108]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.3.88.11.83.108]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Surgeries Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Surgeries Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.108</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CodedSurgeriesSection.html">IHE Coded Surgeries Section</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.12</tt>) (C83-[CT-108-1])</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (C83-[CT-108-2]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Procedure.html" title="[Procedure: templateId 2.16.840.1.113883.3.88.11.83.17]">Procedure</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.17</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Surgeries Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.12"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.108"/&gt;
+  &lt;id root="16056ed3-ee5d-441b-9235-843a85e0df0b"/&gt;
+  &lt;code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/&gt;
+  &lt;title&gt;History of procedures&lt;/title&gt;
+  &lt;entry&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4"/&gt;
+      &lt;id root="958ca461-989e-4730-bdfb-4348df7b9cfc"/&gt;
+      &lt;text/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;procedure classCode="PROC"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.29"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/&gt;
+      &lt;id root="75e9b1f7-0ac1-437d-b81c-02d7b0b609b9"/&gt;
+      &lt;code/&gt;
+      &lt;text/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;approachSiteCode/&gt;
+      &lt;entryRelationship&gt;
+        &lt;act&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
+          &lt;id root="40038107-a89a-4e80-b76f-bc530e202928"/&gt;
+          &lt;code/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
+          &lt;id root="e99962ab-3819-4cab-a13f-49f63904ff5e"/&gt;
+          &lt;code/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/procedure&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;procedure classCode="PROC"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.29"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/&gt;
+      &lt;templateId root="2.16.840.1.113883.3.88.11.83.17"/&gt;
+      &lt;id root="49367ccb-9610-4e4f-acdb-f01f69dafe55"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;entryRelationship&gt;
+        &lt;act&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
+          &lt;id root="b8830873-d910-467f-845f-21e735b53bc4"/&gt;
+          &lt;code/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
+          &lt;id root="e87c47b8-5e51-4e65-8718-1cc1e49d8c9b"/&gt;
+          &lt;code/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2011"/&gt;
+            &lt;high value="2011"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/procedure&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

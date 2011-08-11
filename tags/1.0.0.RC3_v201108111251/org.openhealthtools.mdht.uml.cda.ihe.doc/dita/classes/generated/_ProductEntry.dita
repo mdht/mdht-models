@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Product Entry - conformance rules</title>
+<shortdesc id="shortdesc">[ManufacturedProduct: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7.2</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ManufacturedProduct</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+</prolog>
+<body>
+<section id="description">
+<p>
+The product entry describes a medication or immunization used in a 'substanceAdministration'
+or 'supply' act
+</p>
+<p>
+In a CDA document, the name and strength of the medication are specified in the elements under
+the 'manufacturedMaterial' element.
+</p>
+<p>
+The 'code' element of the 'manufacturedMaterial' describes the medication. This may be
+coded using a controlled vocabulary, such as RxNorm, First Databank, or other vocabulary
+system for medications, and should be the code that represents the generic medication name and
+strength (e.g., acetaminophen and oxycodone -5/325), or just the generic medication name alone
+if strength is not relevant (Acetaminophen).
+In a CDA document, the &lt;originalText> shall contain a 'reference' whose URI value points to
+the generic name and strength of the medication, or just the generic name alone if strength is not
+relevant.
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Product.html">CCD Product</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.53</tt>)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Product.html">CCD Product</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.53</tt>)</li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-366)
+<ul><li>uniquely represents a particular kind of product</li></ul></li>
+<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial. (CONF-357)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial / code. (CONF-358)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.oclIsUndefined()</codeblock></li></ul></li>
+<li>The value for "manufacturedMaterial / code" in a product template <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017. (CONF-359)<ul><li><codeblock>[OCL]: self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.59' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.1.11.20.8'</codeblock></li></ul></li>
+<li>The value for "manufacturedMaterial / code" in a product template <b>MAY</b> contain a precoordinated product strength, product form, or product concentration (e.g. "metoprolol 25mg tablet", "amoxicillin 400mg/5mL suspension"). (CONF-360)</li>
+<li>If manufacturedMaterial / code contains a precoordinated unit dose (e.g. "metoprolol 25mg tablet"), then SubstanceAdministration / doseQuantity <b>SHALL</b> be a unitless number that indicates the number of products given per administration. (CONF-361)</li>
+<li>If manufacturedMaterial / code does not contain a precoordinated unit dose (e.g. "metoprolol product"), then SubstanceAdministration / doseQuantity <b>SHALL</b> be a physical quantity that indicates the amount of product given per administration. (CONF-362)</li>
+<li><b>SHALL</b> satisfy: A manufacturedMaterial in a product template contains exactly one code / originalText, which represents the generic name of the product. (CONF-363)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.originalText.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: A manufacturedMaterial in a product template contains exactly one name, which represents the brand name of the product. (CONF-364)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.name.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: contains exactly one manufacturedProduct / manufacturerOrganization, which represents the manufacturer of the Material. (CONF-365)<ul><li><codeblock>[OCL]: self.manufacturerOrganization-&gt;size() = 1</codeblock></li></ul></li>
+<li>If ManufacturedProduct in a product template contains manufacturedProduct / id, then ManufacturedProduct <b>SHOULD</b> also contain manufacturedProduct / manufacturerOrganization. (CONF-367)<ul><li><codeblock>[OCL]: self.id-&gt;size() &gt; 0 implies self.manufacturerOrganization-&gt;size() &gt; 0</codeblock></li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<manufacturedproduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+  <id root="fe03649e-a61e-4112-9c37-3be950262e7c"/>
+</manufacturedproduct>]]></codeblock>
+</body>
+</topic>
