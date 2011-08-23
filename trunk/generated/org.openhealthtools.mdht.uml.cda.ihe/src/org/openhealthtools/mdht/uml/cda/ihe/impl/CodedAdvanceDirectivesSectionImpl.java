@@ -13,7 +13,9 @@ package org.openhealthtools.mdht.uml.cda.ihe.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedAdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedAdvanceDirectivesSectionOperations;
@@ -58,6 +60,26 @@ public class CodedAdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionI
 			Map<Object, Object> context) {
 		return CodedAdvanceDirectivesSectionOperations.validateCodedAdvanceDirectivesSectionTemplateId(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCodedAdvanceDirectivesSectionAdvanceDirectivesObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CodedAdvanceDirectivesSectionOperations.validateCodedAdvanceDirectivesSectionAdvanceDirectivesObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AdvanceDirectiveObservation> getAdvanceDirectivesObservations() {
+		return CodedAdvanceDirectivesSectionOperations.getAdvanceDirectivesObservations(this);
 	}
 
 	/**

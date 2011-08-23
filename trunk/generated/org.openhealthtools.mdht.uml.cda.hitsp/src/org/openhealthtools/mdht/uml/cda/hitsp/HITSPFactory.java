@@ -246,6 +246,15 @@ public interface HITSPFactory extends EFactory {
 	AdvanceDirectivesSection createAdvanceDirectivesSection();
 
 	/**
+	 * Returns a new object of class '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive</em>'.
+	 * @generated
+	 */
+	AdvanceDirective createAdvanceDirective();
+
+	/**
 	 * Returns a new object of class '<em>Immunizations Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -325,6 +334,15 @@ public interface HITSPFactory extends EFactory {
 	 * @generated
 	 */
 	SocialHistorySection createSocialHistorySection();
+
+	/**
+	 * Returns a new object of class '<em>Social History</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History</em>'.
+	 * @generated
+	 */
+	SocialHistory createSocialHistory();
 
 	/**
 	 * Returns a new object of class '<em>Encounters Section</em>'.
@@ -523,6 +541,15 @@ public interface HITSPFactory extends EFactory {
 	 * @generated
 	 */
 	DischargeSummary createDischargeSummary();
+
+	/**
+	 * Returns a new object of class '<em>Family History</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History</em>'.
+	 * @generated
+	 */
+	FamilyHistory createFamilyHistory();
 
 	/**
 	 * Returns a new object of class '<em>Encounter</em>'.

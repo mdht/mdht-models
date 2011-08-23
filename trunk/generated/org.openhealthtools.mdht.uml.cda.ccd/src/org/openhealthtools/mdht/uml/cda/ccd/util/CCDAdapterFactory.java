@@ -18,6 +18,7 @@ import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Encounter;
+import org.openhealthtools.mdht.uml.cda.ExternalDocument;
 import org.openhealthtools.mdht.uml.cda.Guardian;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Observation;
@@ -31,6 +32,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.Supply;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
+import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveVerification;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectivesSection;
@@ -98,6 +100,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
+import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.StatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.Support;
@@ -251,6 +254,16 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSocialHistoryObservation(SocialHistoryObservation object) {
+			return createSocialHistoryObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSocialHistoryStatusObservation(SocialHistoryStatusObservation object) {
+			return createSocialHistoryStatusObservationAdapter();
+		}
+
+		@Override
 		public Adapter caseAlertsSection(AlertsSection object) {
 			return createAlertsSectionAdapter();
 		}
@@ -366,6 +379,11 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseAdvanceDirectiveStatusObservation(AdvanceDirectiveStatusObservation object) {
+			return createAdvanceDirectiveStatusObservationAdapter();
+		}
+
+		@Override
 		public Adapter casePayersSection(PayersSection object) {
 			return createPayersSectionAdapter();
 		}
@@ -416,13 +434,13 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseFamilyHistoryOrganizer(FamilyHistoryOrganizer object) {
-			return createFamilyHistoryOrganizerAdapter();
+		public Adapter caseCauseOfDeathObservation(CauseOfDeathObservation object) {
+			return createCauseOfDeathObservationAdapter();
 		}
 
 		@Override
-		public Adapter caseSocialHistoryObservation(SocialHistoryObservation object) {
-			return createSocialHistoryObservationAdapter();
+		public Adapter caseFamilyHistoryOrganizer(FamilyHistoryOrganizer object) {
+			return createFamilyHistoryOrganizerAdapter();
 		}
 
 		@Override
@@ -436,11 +454,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseCauseOfDeathObservation(CauseOfDeathObservation object) {
-			return createCauseOfDeathObservationAdapter();
-		}
-
-		@Override
 		public Adapter caseEncounterLocation(EncounterLocation object) {
 			return createEncounterLocationAdapter();
 		}
@@ -448,11 +461,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseProduct(Product object) {
 			return createProductAdapter();
-		}
-
-		@Override
-		public Adapter caseAdvanceDirectiveStatusObservation(AdvanceDirectiveStatusObservation object) {
-			return createAdvanceDirectiveStatusObservationAdapter();
 		}
 
 		@Override
@@ -528,6 +536,11 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseComment(Comment object) {
 			return createCommentAdapter();
+		}
+
+		@Override
+		public Adapter caseAdvanceDirectiveReference(AdvanceDirectiveReference object) {
+			return createAdvanceDirectiveReferenceAdapter();
 		}
 
 		@Override
@@ -633,6 +646,11 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseGuardian(Guardian object) {
 			return createGuardianAdapter();
+		}
+
+		@Override
+		public Adapter caseExternalDocument(ExternalDocument object) {
+			return createExternalDocumentAdapter();
 		}
 
 		@Override
@@ -1248,6 +1266,20 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryStatusObservation <em>Social History Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryStatusObservation
+	 * @generated
+	 */
+	public Adapter createSocialHistoryStatusObservationAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity <em>Encounters Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1682,6 +1714,20 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference <em>Advance Directive Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference
+	 * @generated
+	 */
+	public Adapter createAdvanceDirectiveReferenceAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.CCDRegistryDelegate <em>Registry Delegate</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1972,6 +2018,20 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGuardianAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ExternalDocument <em>External Document</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ExternalDocument
+	 * @generated
+	 */
+	public Adapter createExternalDocumentAdapter() {
 		return null;
 	}
 

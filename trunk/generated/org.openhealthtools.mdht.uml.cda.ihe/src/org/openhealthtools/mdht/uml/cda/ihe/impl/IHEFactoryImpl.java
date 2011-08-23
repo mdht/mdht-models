@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection;
+import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergiesReactionsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance;
@@ -25,6 +26,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CarePlanSection;
 import org.openhealthtools.mdht.uml.cda.ihe.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedAdvanceDirectivesSection;
+import org.openhealthtools.mdht.uml.cda.ihe.CodedFamilyMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedSurgeriesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedVitalSignsSection;
@@ -40,6 +42,8 @@ import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterPlanOfCare;
 import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
+import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryObservation;
+import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.ihe.FamilyMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.HealthcareProvidersPharmacies;
@@ -90,6 +94,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ScanOriginalAuthor;
 import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.ScanningDevice;
 import org.openhealthtools.mdht.uml.cda.ihe.Severity;
+import org.openhealthtools.mdht.uml.cda.ihe.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
 import org.openhealthtools.mdht.uml.cda.ihe.SupplyEntry;
@@ -234,6 +239,8 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 				return createCodedAdvanceDirectivesSection();
 			case IHEPackage.ADVANCE_DIRECTIVES_SECTION:
 				return createAdvanceDirectivesSection();
+			case IHEPackage.ADVANCE_DIRECTIVE_OBSERVATION:
+				return createAdvanceDirectiveObservation();
 			case IHEPackage.PHYSICAL_EXAM_NARRATIVE_SECTION:
 				return createPhysicalExamNarrativeSection();
 			case IHEPackage.PHYSICAL_EXAM_SECTION:
@@ -302,6 +309,14 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 				return createDischargeDiet();
 			case IHEPackage.HOSPITAL_DISCHARGE_PHYSICAL:
 				return createHospitalDischargePhysical();
+			case IHEPackage.CODED_FAMILY_MEDICAL_HISTORY_SECTION:
+				return createCodedFamilyMedicalHistorySection();
+			case IHEPackage.FAMILY_HISTORY_ORGANIZER:
+				return createFamilyHistoryOrganizer();
+			case IHEPackage.FAMILY_HISTORY_OBSERVATION:
+				return createFamilyHistoryObservation();
+			case IHEPackage.SOCIAL_HISTORY_OBSERVATION:
+				return createSocialHistoryObservation();
 			case IHEPackage.IHE_REGISTRY_DELEGATE:
 				return createIHERegistryDelegate();
 			default:
@@ -677,6 +692,16 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	public AdvanceDirectivesSection createAdvanceDirectivesSection() {
 		AdvanceDirectivesSectionImpl advanceDirectivesSection = new AdvanceDirectivesSectionImpl();
 		return advanceDirectivesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveObservation createAdvanceDirectiveObservation() {
+		AdvanceDirectiveObservationImpl advanceDirectiveObservation = new AdvanceDirectiveObservationImpl();
+		return advanceDirectiveObservation;
 	}
 
 	/**
@@ -1107,6 +1132,46 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	public HospitalDischargePhysical createHospitalDischargePhysical() {
 		HospitalDischargePhysicalImpl hospitalDischargePhysical = new HospitalDischargePhysicalImpl();
 		return hospitalDischargePhysical;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CodedFamilyMedicalHistorySection createCodedFamilyMedicalHistorySection() {
+		CodedFamilyMedicalHistorySectionImpl codedFamilyMedicalHistorySection = new CodedFamilyMedicalHistorySectionImpl();
+		return codedFamilyMedicalHistorySection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistoryOrganizer createFamilyHistoryOrganizer() {
+		FamilyHistoryOrganizerImpl familyHistoryOrganizer = new FamilyHistoryOrganizerImpl();
+		return familyHistoryOrganizer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistoryObservation createFamilyHistoryObservation() {
+		FamilyHistoryObservationImpl familyHistoryObservation = new FamilyHistoryObservationImpl();
+		return familyHistoryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistoryObservation createSocialHistoryObservation() {
+		SocialHistoryObservationImpl socialHistoryObservation = new SocialHistoryObservationImpl();
+		return socialHistoryObservation;
 	}
 
 	/**

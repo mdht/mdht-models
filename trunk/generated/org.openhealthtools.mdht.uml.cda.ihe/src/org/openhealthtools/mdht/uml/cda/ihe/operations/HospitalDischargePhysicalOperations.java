@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical#validateHospitalDischargePhysicalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Physical Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical#validateHospitalDischargePhysicalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Physical Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical#validateHospitalDischargePhysicalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Physical Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical#validateHospitalDischargePhysicalTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Physical Title</em>}</li>
  * </ul>
  * </p>
  *
@@ -112,7 +110,7 @@ public class HospitalDischargePhysicalOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "
+	protected static final String VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
 			+ "value.code = '10184-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
 
@@ -130,7 +128,7 @@ public class HospitalDischargePhysicalOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and 
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
 	 * value.code = '10184-0' and value.codeSystem = '2.16.840.1.113883.6.1'))
 	 * @param hospitalDischargePhysical The receiving '<em><b>Hospital Discharge Physical</b></em>' model object.
@@ -157,118 +155,6 @@ public class HospitalDischargePhysicalOperations extends SectionOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
 					IHEValidator.HOSPITAL_DISCHARGE_PHYSICAL__HOSPITAL_DISCHARGE_PHYSICAL_CODE,
 					IHEPlugin.INSTANCE.getString("HospitalDischargePhysicalCode"),
-					new Object[] { hospitalDischargePhysical }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateHospitalDischargePhysicalText(HospitalDischargePhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Physical Text</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateHospitalDischargePhysicalText(HospitalDischargePhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateHospitalDischargePhysicalText(HospitalDischargePhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Physical Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateHospitalDischargePhysicalText(HospitalDischargePhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
-	 * @param hospitalDischargePhysical The receiving '<em><b>Hospital Discharge Physical</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateHospitalDischargePhysicalText(HospitalDischargePhysical hospitalDischargePhysical,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(IHEPackage.Literals.HOSPITAL_DISCHARGE_PHYSICAL);
-			try {
-				VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalDischargePhysical)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.HOSPITAL_DISCHARGE_PHYSICAL__HOSPITAL_DISCHARGE_PHYSICAL_TEXT,
-					IHEPlugin.INSTANCE.getString("HospitalDischargePhysicalText"),
-					new Object[] { hospitalDischargePhysical }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateHospitalDischargePhysicalTitle(HospitalDischargePhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Physical Title</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateHospitalDischargePhysicalTitle(HospitalDischargePhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateHospitalDischargePhysicalTitle(HospitalDischargePhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Physical Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateHospitalDischargePhysicalTitle(HospitalDischargePhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
-	 * @param hospitalDischargePhysical The receiving '<em><b>Hospital Discharge Physical</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateHospitalDischargePhysicalTitle(HospitalDischargePhysical hospitalDischargePhysical,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(IHEPackage.Literals.HOSPITAL_DISCHARGE_PHYSICAL);
-			try {
-				VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalDischargePhysical)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.HOSPITAL_DISCHARGE_PHYSICAL__HOSPITAL_DISCHARGE_PHYSICAL_TITLE,
-					IHEPlugin.INSTANCE.getString("HospitalDischargePhysicalTitle"),
 					new Object[] { hospitalDischargePhysical }));
 			}
 			return false;

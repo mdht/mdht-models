@@ -11,6 +11,12 @@ hospital facility. It shall include entries for observations as described in the
     <ownedAttribute xmi:id="_6XxMkMilEd6NKIaf5H7MFg" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_BjZAEMg3EeCHk-lvWGDTdA" name="problemConcernEntry">
+      <type xmi:type="uml:Class" href="ihe-activeProblems.uml#_wSnPAGaQEd6Hk_bPOfEjYA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C3fsQMg3EeCHk-lvWGDTdA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C3fsQcg3EeCHk-lvWGDTdA" value="1"/>
+      <association href="../ihe.uml#_BjZnIcg3EeCHk-lvWGDTdA"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_Yo-1cMfvEd6VjLXh4DcWSg" base_Class="_MvxLwMfvEd6VjLXh4DcWSg" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.3" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_N0E0QCfdEd-4R4ealYN1gQ" code="46241-6" displayName="HOSPITAL ADMISSION DX" base_Property="_6XxMkMilEd6NKIaf5H7MFg">

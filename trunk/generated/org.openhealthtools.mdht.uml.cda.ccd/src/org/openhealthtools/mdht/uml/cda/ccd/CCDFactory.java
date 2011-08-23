@@ -165,6 +165,15 @@ public interface CCDFactory extends EFactory {
 	SocialHistoryObservation createSocialHistoryObservation();
 
 	/**
+	 * Returns a new object of class '<em>Social History Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Status Observation</em>'.
+	 * @generated
+	 */
+	SocialHistoryStatusObservation createSocialHistoryStatusObservation();
+
+	/**
 	 * Returns a new object of class '<em>Encounters Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -640,6 +649,15 @@ public interface CCDFactory extends EFactory {
 	 * @generated
 	 */
 	Comment createComment();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directive Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Reference</em>'.
+	 * @generated
+	 */
+	AdvanceDirectiveReference createAdvanceDirectiveReference();
 
 	/**
 	 * Returns a new object of class '<em>Registry Delegate</em>'.

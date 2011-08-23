@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
+import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveVerification;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectivesSection;
@@ -82,6 +83,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
+import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.StatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.SupportGuardian;
@@ -166,6 +168,10 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createFamilyHistorySection();
 			case CCDPackage.SOCIAL_HISTORY_SECTION:
 				return createSocialHistorySection();
+			case CCDPackage.SOCIAL_HISTORY_OBSERVATION:
+				return createSocialHistoryObservation();
+			case CCDPackage.SOCIAL_HISTORY_STATUS_OBSERVATION:
+				return createSocialHistoryStatusObservation();
 			case CCDPackage.ALERTS_SECTION:
 				return createAlertsSection();
 			case CCDPackage.RESULTS_SECTION:
@@ -210,6 +216,8 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createAdvanceDirectivesSection();
 			case CCDPackage.ADVANCE_DIRECTIVE_OBSERVATION:
 				return createAdvanceDirectiveObservation();
+			case CCDPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
+				return createAdvanceDirectiveStatusObservation();
 			case CCDPackage.PAYERS_SECTION:
 				return createPayersSection();
 			case CCDPackage.COVERAGE_ACTIVITY:
@@ -230,22 +238,18 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createPatientAwareness();
 			case CCDPackage.FAMILY_HISTORY_OBSERVATION:
 				return createFamilyHistoryObservation();
+			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION:
+				return createCauseOfDeathObservation();
 			case CCDPackage.FAMILY_HISTORY_ORGANIZER:
 				return createFamilyHistoryOrganizer();
-			case CCDPackage.SOCIAL_HISTORY_OBSERVATION:
-				return createSocialHistoryObservation();
 			case CCDPackage.ALERT_OBSERVATION:
 				return createAlertObservation();
 			case CCDPackage.ALERT_STATUS_OBSERVATION:
 				return createAlertStatusObservation();
-			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION:
-				return createCauseOfDeathObservation();
 			case CCDPackage.ENCOUNTER_LOCATION:
 				return createEncounterLocation();
 			case CCDPackage.PRODUCT:
 				return createProduct();
-			case CCDPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
-				return createAdvanceDirectiveStatusObservation();
 			case CCDPackage.ADVANCE_DIRECTIVE_VERIFICATION:
 				return createAdvanceDirectiveVerification();
 			case CCDPackage.AUTHORIZATION_ACTIVITY:
@@ -272,6 +276,8 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createSupportGuardian();
 			case CCDPackage.COMMENT:
 				return createComment();
+			case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE:
+				return createAdvanceDirectiveReference();
 			case CCDPackage.CCD_REGISTRY_DELEGATE:
 				return createCCDRegistryDelegate();
 			default:
@@ -427,6 +433,16 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 	public SocialHistoryObservation createSocialHistoryObservation() {
 		SocialHistoryObservationImpl socialHistoryObservation = new SocialHistoryObservationImpl();
 		return socialHistoryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistoryStatusObservation createSocialHistoryStatusObservation() {
+		SocialHistoryStatusObservationImpl socialHistoryStatusObservation = new SocialHistoryStatusObservationImpl();
+		return socialHistoryStatusObservation;
 	}
 
 	/**
@@ -957,6 +973,16 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 	public Comment createComment() {
 		CommentImpl comment = new CommentImpl();
 		return comment;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AdvanceDirectiveReference createAdvanceDirectiveReference() {
+		AdvanceDirectiveReferenceImpl advanceDirectiveReference = new AdvanceDirectiveReferenceImpl();
+		return advanceDirectiveReference;
 	}
 
 	/**
