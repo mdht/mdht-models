@@ -10,6 +10,9 @@
     <generalization xmi:id="_H4oHUMiXEd6mWrHPmrIIfQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-reviewOfSystems.uml#_6fSusMiWEd6mWrHPmrIIfQ"/>
     </generalization>
+    <generalization xmi:id="_c9mScMg3EeCHk-lvWGDTdA">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_fo5sMGjVEd-tUpkWYQgJlQ"/>
+    </generalization>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_Mkc9QMiXEd6mWrHPmrIIfQ" base_Class="_GuZI0MiXEd6mWrHPmrIIfQ" templateId="2.16.840.1.113883.3.88.11.83.120" assigningAuthorityName="HITSP C83"/>
   <CDA:ConformsTo xmi:id="_rGUVkFF6Ed-Lud-5SYZhMw" base_Generalization="_H4oHUMiXEd6mWrHPmrIIfQ" requiresParentId="true"/>

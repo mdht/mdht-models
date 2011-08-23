@@ -14,9 +14,10 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.cdt.operations.ChiefComplaintSectionOperations;
 import org.openhealthtools.mdht.uml.cda.hitsp.ChiefComplaintSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
-import org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -54,8 +55,48 @@ public class ChiefComplaintSectionImpl extends org.openhealthtools.mdht.uml.cda.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public boolean validateChiefComplaintSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ChiefComplaintSectionOperations.validateChiefComplaintSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateChiefComplaintSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ChiefComplaintSectionOperations.validateChiefComplaintSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateHITSPChiefComplaintSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChiefComplaintSectionOperations.validateHITSPChiefComplaintSectionTemplateId(this, diagnostics, context);
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.validateHITSPChiefComplaintSectionTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPChiefComplaintSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.validateHITSPChiefComplaintSectionCondition(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Condition getCondition() {
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.getCondition(this);
 	}
 
 	/**

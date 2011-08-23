@@ -13,8 +13,10 @@ package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.SocialHistorySectionOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -56,6 +58,25 @@ public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.i
 	 */
 	public boolean validateHITSPSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistorySectionOperations.validateHITSPSocialHistorySectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPSocialHistorySectionSocialHistory(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateHITSPSocialHistorySectionSocialHistory(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SocialHistory> getSocialHistories() {
+		return SocialHistorySectionOperations.getSocialHistories(this);
 	}
 
 	/**

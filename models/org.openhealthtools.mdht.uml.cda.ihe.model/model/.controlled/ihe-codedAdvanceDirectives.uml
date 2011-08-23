@@ -4,6 +4,12 @@
     <generalization xmi:id="_pXLUQMfzEd6VjLXh4DcWSg">
       <general xmi:type="uml:Class" href="ihe-advanceDirectives.uml#_fc6DgMfzEd6VjLXh4DcWSg"/>
     </generalization>
+    <ownedAttribute xmi:id="_S5QSwMzkEeCvbrjDQpuvkw" name="advanceDirectivesObservation">
+      <type xmi:type="uml:Class" href="../ihe.uml#_JkYOEMzkEeCvbrjDQpuvkw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dzJ0gMzkEeCvbrjDQpuvkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dzJ0gczkEeCvbrjDQpuvkw"/>
+      <association href="../ihe.uml#_S5QSwszkEeCvbrjDQpuvkw"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_qXzq0MfzEd6VjLXh4DcWSg" base_Class="_bSHeEMfzEd6VjLXh4DcWSg" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.35" assigningAuthorityName="IHE PCC"/>
   <CDA:ConformsTo xmi:id="_6wo5YFF6Ed-Lud-5SYZhMw" base_Generalization="_pXLUQMfzEd6VjLXh4DcWSg" requiresParentId="true"/>

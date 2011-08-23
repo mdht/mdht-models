@@ -9,7 +9,16 @@
     <generalization xmi:id="__87QkMfcEd6VjLXh4DcWSg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-chiefComplaint.uml#_iVB-oMfcEd6VjLXh4DcWSg"/>
     </generalization>
+    <generalization xmi:id="_bHAmQMghEeCHk-lvWGDTdA">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_o-ulkGj1Ed-tUpkWYQgJlQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_gFiVwMghEeCHk-lvWGDTdA" name="condition">
+      <type xmi:type="uml:Class" href="hitsp-problemList.uml#_GgvgUDxbEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gFiVwcghEeCHk-lvWGDTdA"/>
+      <association href="../hitsp.uml#_gFrfsMghEeCHk-lvWGDTdA"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_AxgIIMfdEd6VjLXh4DcWSg" base_Class="_9ugRMMfcEd6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.105" assigningAuthorityName="HITSP C83"/>
   <CDA:ConformsTo xmi:id="_rGNn4FF6Ed-Lud-5SYZhMw" base_Generalization="__87QkMfcEd6VjLXh4DcWSg" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_hpBnIMg0EeCHk-lvWGDTdA" base_Generalization="_bHAmQMghEeCHk-lvWGDTdA" requiresParentId="true"/>
 </xmi:XMI>

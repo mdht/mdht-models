@@ -81,6 +81,15 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistorySectionOperations.validateFamilyHistorySectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public FamilyHistorySection init() {
 		CDAUtil.init(this);
 		return this;

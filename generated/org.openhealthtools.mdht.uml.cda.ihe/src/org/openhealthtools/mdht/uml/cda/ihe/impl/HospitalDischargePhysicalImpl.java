@@ -69,24 +69,6 @@ public class HospitalDischargePhysicalImpl extends SectionImpl implements Hospit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalDischargePhysicalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalDischargePhysicalOperations.validateHospitalDischargePhysicalText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHospitalDischargePhysicalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalDischargePhysicalOperations.validateHospitalDischargePhysicalTitle(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public HospitalDischargePhysical init() {
 		CDAUtil.init(this);
 		return this;

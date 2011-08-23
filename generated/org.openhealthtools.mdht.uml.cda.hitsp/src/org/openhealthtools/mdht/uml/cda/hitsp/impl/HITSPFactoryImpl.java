@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
+import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AllergiesReactionsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AllergyDrugSensitivity;
@@ -29,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.DischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.DischargeSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.Encounter;
 import org.openhealthtools.mdht.uml.cda.hitsp.EncountersSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPFactory;
@@ -66,6 +68,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.ReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.Result;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReviewOfSystemsSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.Support;
 import org.openhealthtools.mdht.uml.cda.hitsp.SupportGuardian;
@@ -139,6 +142,8 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 				return createMedicationsSection();
 			case HITSPPackage.ADVANCE_DIRECTIVES_SECTION:
 				return createAdvanceDirectivesSection();
+			case HITSPPackage.ADVANCE_DIRECTIVE:
+				return createAdvanceDirective();
 			case HITSPPackage.ALLERGIES_REACTIONS_SECTION:
 				return createAllergiesReactionsSection();
 			case HITSPPackage.ENCOUNTERS_SECTION:
@@ -197,6 +202,8 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 				return createFamilyHistorySection();
 			case HITSPPackage.SOCIAL_HISTORY_SECTION:
 				return createSocialHistorySection();
+			case HITSPPackage.SOCIAL_HISTORY:
+				return createSocialHistory();
 			case HITSPPackage.MEDICAL_EQUIPMENT_SECTION:
 				return createMedicalEquipmentSection();
 			case HITSPPackage.LANGUAGE_SPOKEN:
@@ -233,6 +240,8 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 				return createReferralSummary();
 			case HITSPPackage.DISCHARGE_SUMMARY:
 				return createDischargeSummary();
+			case HITSPPackage.FAMILY_HISTORY:
+				return createFamilyHistory();
 			case HITSPPackage.HITSP_REGISTRY_DELEGATE:
 				return createHITSPRegistryDelegate();
 			default:
@@ -485,6 +494,16 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public AdvanceDirective createAdvanceDirective() {
+		AdvanceDirectiveImpl advanceDirective = new AdvanceDirectiveImpl();
+		return advanceDirective;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ImmunizationsSection createImmunizationsSection() {
 		ImmunizationsSectionImpl immunizationsSection = new ImmunizationsSectionImpl();
 		return immunizationsSection;
@@ -568,6 +587,16 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	public SocialHistorySection createSocialHistorySection() {
 		SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
 		return socialHistorySection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistory createSocialHistory() {
+		SocialHistoryImpl socialHistory = new SocialHistoryImpl();
+		return socialHistory;
 	}
 
 	/**
@@ -788,6 +817,16 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	public DischargeSummary createDischargeSummary() {
 		DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
 		return dischargeSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FamilyHistory createFamilyHistory() {
+		FamilyHistoryImpl familyHistory = new FamilyHistoryImpl();
+		return familyHistory;
 	}
 
 	/**

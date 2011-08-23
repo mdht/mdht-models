@@ -31,7 +31,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.120' constraints.validation.error='HITSPReviewOfSystemsSectionTemplateId'"
  * @generated
  */
-public interface ReviewOfSystemsSection extends org.openhealthtools.mdht.uml.cda.ihe.ReviewOfSystemsSection {
+public interface ReviewOfSystemsSection extends org.openhealthtools.mdht.uml.cda.ihe.ReviewOfSystemsSection,
+		org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

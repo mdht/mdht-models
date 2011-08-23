@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection;
+import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergiesReactionsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance;
@@ -29,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CarePlanSection;
 import org.openhealthtools.mdht.uml.cda.ihe.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedAdvanceDirectivesSection;
+import org.openhealthtools.mdht.uml.cda.ihe.CodedFamilyMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedSurgeriesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedVitalSignsSection;
@@ -45,6 +47,8 @@ import org.openhealthtools.mdht.uml.cda.ihe.EncounterEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterPlanOfCare;
 import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
+import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryObservation;
+import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.ihe.FamilyMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.HealthcareProvidersPharmacies;
@@ -99,6 +103,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
 import org.openhealthtools.mdht.uml.cda.ihe.ScanningDevice;
 import org.openhealthtools.mdht.uml.cda.ihe.Severity;
 import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
+import org.openhealthtools.mdht.uml.cda.ihe.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
 import org.openhealthtools.mdht.uml.cda.ihe.SupplyEntry;
@@ -408,6 +413,13 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass advanceDirectiveObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass physicalExamNarrativeSectionEClass = null;
 
 	/**
@@ -710,6 +722,34 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * @generated
 	 */
 	private EClass hospitalDischargePhysicalEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass codedFamilyMedicalHistorySectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass familyHistoryOrganizerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass familyHistoryObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass socialHistoryObservationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1166,6 +1206,15 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getAdvanceDirectiveObservation() {
+		return advanceDirectiveObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPhysicalExamNarrativeSection() {
 		return physicalExamNarrativeSectionEClass;
 	}
@@ -1562,6 +1611,42 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getCodedFamilyMedicalHistorySection() {
+		return codedFamilyMedicalHistorySectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFamilyHistoryOrganizer() {
+		return familyHistoryOrganizerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFamilyHistoryObservation() {
+		return familyHistoryObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSocialHistoryObservation() {
+		return socialHistoryObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getIHERegistryDelegate() {
 		return iheRegistryDelegateEClass;
 	}
@@ -1694,6 +1779,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 
 		advanceDirectivesSectionEClass = createEClass(ADVANCE_DIRECTIVES_SECTION);
 
+		advanceDirectiveObservationEClass = createEClass(ADVANCE_DIRECTIVE_OBSERVATION);
+
 		physicalExamNarrativeSectionEClass = createEClass(PHYSICAL_EXAM_NARRATIVE_SECTION);
 
 		physicalExamSectionEClass = createEClass(PHYSICAL_EXAM_SECTION);
@@ -1765,6 +1852,14 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		dischargeDietEClass = createEClass(DISCHARGE_DIET);
 
 		hospitalDischargePhysicalEClass = createEClass(HOSPITAL_DISCHARGE_PHYSICAL);
+
+		codedFamilyMedicalHistorySectionEClass = createEClass(CODED_FAMILY_MEDICAL_HISTORY_SECTION);
+
+		familyHistoryOrganizerEClass = createEClass(FAMILY_HISTORY_ORGANIZER);
+
+		familyHistoryObservationEClass = createEClass(FAMILY_HISTORY_OBSERVATION);
+
+		socialHistoryObservationEClass = createEClass(SOCIAL_HISTORY_OBSERVATION);
 
 		iheRegistryDelegateEClass = createEClass(IHE_REGISTRY_DELEGATE);
 	}
@@ -1857,6 +1952,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		hospitalDischargeMedicationsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		codedAdvanceDirectivesSectionEClass.getESuperTypes().add(this.getAdvanceDirectivesSection());
 		advanceDirectivesSectionEClass.getESuperTypes().add(theCCDPackage.getAdvanceDirectivesSection());
+		advanceDirectiveObservationEClass.getESuperTypes().add(theCCDPackage.getAdvanceDirectiveObservation());
+		advanceDirectiveObservationEClass.getESuperTypes().add(this.getSimpleObservation());
 		physicalExamNarrativeSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		physicalExamSectionEClass.getESuperTypes().add(this.getPhysicalExamNarrativeSection());
 		reviewOfSystemsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
@@ -1899,6 +1996,12 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		scanDataEntererEClass.getESuperTypes().add(theCDAPackage.getDataEnterer());
 		dischargeDietEClass.getESuperTypes().add(theCDAPackage.getSection());
 		hospitalDischargePhysicalEClass.getESuperTypes().add(theCDAPackage.getSection());
+		codedFamilyMedicalHistorySectionEClass.getESuperTypes().add(this.getFamilyMedicalHistorySection());
+		familyHistoryOrganizerEClass.getESuperTypes().add(theCCDPackage.getFamilyHistoryOrganizer());
+		familyHistoryObservationEClass.getESuperTypes().add(theCCDPackage.getFamilyHistoryObservation());
+		familyHistoryObservationEClass.getESuperTypes().add(this.getSimpleObservation());
+		socialHistoryObservationEClass.getESuperTypes().add(this.getSimpleObservation());
+		socialHistoryObservationEClass.getESuperTypes().add(theCCDPackage.getSocialHistoryObservation());
 		iheRegistryDelegateEClass.getESuperTypes().add(theCDAPackage.getRegistryDelegate());
 
 		// Initialize classes and features; add operations and parameters
@@ -3854,6 +3957,21 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(
+			hospitalAdmissionDiagnosisSectionEClass, ecorePackage.getEBoolean(),
+			"validateHospitalAdmissionDiagnosisSectionProblemConcernEntry", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			hospitalAdmissionDiagnosisSectionEClass, this.getProblemConcernEntry(), "getProblemConcernEntry", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(
 			dischargeDiagnosisSectionEClass, DischargeDiagnosisSection.class, "DischargeDiagnosisSection",
 			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -3977,6 +4095,21 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(
+			codedAdvanceDirectivesSectionEClass, ecorePackage.getEBoolean(),
+			"validateCodedAdvanceDirectivesSectionAdvanceDirectivesObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			codedAdvanceDirectivesSectionEClass, this.getAdvanceDirectiveObservation(),
+			"getAdvanceDirectivesObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(
 			advanceDirectivesSectionEClass, AdvanceDirectivesSection.class, "AdvanceDirectivesSection", !IS_ABSTRACT,
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -3984,6 +4117,21 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		op = addEOperation(
 			advanceDirectivesSectionEClass, ecorePackage.getEBoolean(),
 			"validateIHEAdvanceDirectivesSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(
+			advanceDirectiveObservationEClass, AdvanceDirectiveObservation.class, "AdvanceDirectiveObservation",
+			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			advanceDirectiveObservationEClass, ecorePackage.getEBoolean(),
+			"validateIHEAdvanceDirectiveObservationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5234,26 +5382,6 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			dischargeDietEClass, ecorePackage.getEBoolean(), "validateDischargeDietText", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			dischargeDietEClass, ecorePackage.getEBoolean(), "validateDischargeDietTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(
 			hospitalDischargePhysicalEClass, HospitalDischargePhysical.class, "HospitalDischargePhysical",
 			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -5280,8 +5408,53 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		initEClass(
+			codedFamilyMedicalHistorySectionEClass, CodedFamilyMedicalHistorySection.class,
+			"CodedFamilyMedicalHistorySection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
 		op = addEOperation(
-			hospitalDischargePhysicalEClass, ecorePackage.getEBoolean(), "validateHospitalDischargePhysicalText", 0, 1,
+			codedFamilyMedicalHistorySectionEClass, ecorePackage.getEBoolean(),
+			"validateCodedFamilyMedicalHistorySectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			codedFamilyMedicalHistorySectionEClass, ecorePackage.getEBoolean(),
+			"validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			codedFamilyMedicalHistorySectionEClass, this.getFamilyHistoryOrganizer(), "getFamilyHistoryOrganizer", 1,
+			1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			familyHistoryOrganizerEClass, FamilyHistoryOrganizer.class, "FamilyHistoryOrganizer", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(), "validateIHEFamilyHistoryOrganizerTemplateId", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(), "validateIHEFamilyHistoryOrganizerCode", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -5292,7 +5465,63 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			hospitalDischargePhysicalEClass, ecorePackage.getEBoolean(), "validateHospitalDischargePhysicalTitle", 0,
+			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(),
+			"validateIHEFamilyHistoryOrganizerFamilyHistoryObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			familyHistoryOrganizerEClass, this.getFamilyHistoryObservation(), "getFamilyHistoryObservations", 1, -1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			familyHistoryObservationEClass, FamilyHistoryObservation.class, "FamilyHistoryObservation", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateIHEFamilyHistoryObservationCode", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateIHEFamilyHistoryObservationValue", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(
+			socialHistoryObservationEClass, SocialHistoryObservation.class, "SocialHistoryObservation", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			socialHistoryObservationEClass, ecorePackage.getEBoolean(),
+			"validateIHESocialHistoryObservationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			socialHistoryObservationEClass, ecorePackage.getEBoolean(), "validateIHESocialHistoryObservationValue", 0,
 			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -5586,11 +5815,19 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addAnnotation(procedureEntryEClass, source, new String[] {
 				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.4.19", "constraints.validation.error",
 				"ProcedureEntryTemplateId" });
-		addAnnotation(hospitalAdmissionDiagnosisSectionEClass, source, new String[] {
-				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.3",
-				"code.displayName", "HOSPITAL ADMISSION DX", "constraints.validation.error",
-				"HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode",
-				"code.codeSystemName", "LOINC", "code.code", "46241-6" });
+		addAnnotation(
+			hospitalAdmissionDiagnosisSectionEClass,
+			source,
+			new String[] {
+					"code.codeSystem",
+					"2.16.840.1.113883.6.1",
+					"code.displayName",
+					"HOSPITAL ADMISSION DX",
+					"templateId.root",
+					"1.3.6.1.4.1.19376.1.5.3.1.3.3",
+					"constraints.validation.error",
+					"HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode HospitalAdmissionDiagnosisSectionProblemConcernEntry",
+					"code.codeSystemName", "LOINC", "code.code", "46241-6" });
 		addAnnotation(
 			dischargeDiagnosisSectionEClass,
 			source,
@@ -5624,10 +5861,16 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 					"code.codeSystemName", "LOINC", "code.code", "10183-2" });
 		addAnnotation(codedAdvanceDirectivesSectionEClass, source, new String[] {
 				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.35", "constraints.validation.error",
-				"CodedAdvanceDirectivesSectionTemplateId" });
+				"CodedAdvanceDirectivesSectionTemplateId", "constraints.validation.warning",
+				"CodedAdvanceDirectivesSectionAdvanceDirectivesObservation" });
 		addAnnotation(advanceDirectivesSectionEClass, source, new String[] {
 				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.34", "constraints.validation.error",
 				"IHEAdvanceDirectivesSectionTemplateId" });
+		addAnnotation(advanceDirectiveObservationEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.96", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.4.13.7",
+				"constraints.validation.error",
+				"IHEAdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationCode", "code.codeSystemName",
+				"SNOMEDCT" });
 		addAnnotation(physicalExamNarrativeSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.24",
 				"code.displayName", "PHYSICAL EXAMINATION", "constraints.validation.error",
@@ -5792,21 +6035,41 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addAnnotation(dischargeDietEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.33",
 				"code.displayName", "Discharge Diet", "constraints.validation.error",
-				"DischargeDietTemplateId DischargeDietCode DischargeDietText DischargeDietTitle",
-				"code.codeSystemName", "LOINC", "code.code", "42344-2" });
+				"DischargeDietTemplateId DischargeDietCode", "code.codeSystemName", "LOINC", "code.code", "42344-2" });
+		addAnnotation(hospitalDischargePhysicalEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.26",
+				"code.displayName", "Hospital Discharge Physical", "constraints.validation.error",
+				"HospitalDischargePhysicalTemplateId HospitalDischargePhysicalCode", "code.codeSystemName", "LOINC",
+				"code.code", "10184-0" });
+		addAnnotation(codedFamilyMedicalHistorySectionEClass, source, new String[] {
+				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.15", "constraints.validation.error",
+				"CodedFamilyMedicalHistorySectionTemplateId CodedFamilyMedicalHistorySectionFamilyHistoryOrganizer" });
 		addAnnotation(
-			hospitalDischargePhysicalEClass,
+			familyHistoryOrganizerEClass,
 			source,
 			new String[] {
 					"code.codeSystem",
-					"2.16.840.1.113883.6.1",
+					"2.16.840.1.113883.5.111",
 					"templateId.root",
-					"1.3.6.1.4.1.19376.1.5.3.1.3.26",
-					"code.displayName",
-					"Hospital Discharge Physical",
+					"1.3.6.1.4.1.19376.1.5.3.1.4.15",
 					"constraints.validation.error",
-					"HospitalDischargePhysicalTemplateId HospitalDischargePhysicalCode HospitalDischargePhysicalText HospitalDischargePhysicalTitle",
-					"code.codeSystemName", "LOINC", "code.code", "10184-0" });
+					"IHEFamilyHistoryOrganizerTemplateId IHEFamilyHistoryOrganizerCode IHEFamilyHistoryOrganizerFamilyHistoryObservation",
+					"code.codeSystemName", "RoleCode" });
+		addAnnotation(
+			familyHistoryObservationEClass,
+			source,
+			new String[] {
+					"code.codeSystem",
+					"2.16.840.1.113883.6.96",
+					"templateId.root",
+					"1.3.6.1.4.1.19376.1.5.3.1.4.13.3",
+					"constraints.validation.error",
+					"IHEFamilyHistoryObservationTemplateId IHEFamilyHistoryObservationCode IHEFamilyHistoryObservationValue",
+					"code.codeSystemName", "SNOMEDCT" });
+		addAnnotation(socialHistoryObservationEClass, source, new String[] {
+				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.4.13.4", "constraints.validation.error",
+				"IHESocialHistoryObservationTemplateId", "constraints.validation.info",
+				"IHESocialHistoryObservationValue" });
 	}
 
 	/**
@@ -5840,12 +6103,14 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addAnnotation(allergyIntoleranceEClass, source, new String[] {});
 		addAnnotation(vitalSignsOrganizerEClass, source, new String[] {});
 		addAnnotation(vitalSignObservationEClass, source, new String[] {});
+		addAnnotation(advanceDirectiveObservationEClass, source, new String[] {});
 		addAnnotation(medicalSummaryEClass, source, new String[] {});
 		addAnnotation(dischargeSummaryEClass, source, new String[] {});
 		addAnnotation(payerEntryEClass, source, new String[] {});
 		addAnnotation(encounterActivityEClass, source, new String[] {});
 		addAnnotation(encounterPlanOfCareEClass, source, new String[] {});
 		addAnnotation(pregnancyObservationEClass, source, new String[] {});
+		addAnnotation(familyHistoryObservationEClass, source, new String[] {});
 	}
 
 } // IHEPackageImpl

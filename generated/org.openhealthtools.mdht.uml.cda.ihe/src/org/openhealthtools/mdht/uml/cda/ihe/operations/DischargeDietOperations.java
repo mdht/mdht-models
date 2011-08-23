@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet#validateDischargeDietTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diet Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet#validateDischargeDietCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diet Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet#validateDischargeDietText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diet Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet#validateDischargeDietTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diet Title</em>}</li>
  * </ul>
  * </p>
  *
@@ -153,113 +151,6 @@ public class DischargeDietOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.DISCHARGE_DIET__DISCHARGE_DIET_CODE,
 					IHEPlugin.INSTANCE.getString("DischargeDietCode"), new Object[] { dischargeDiet }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateDischargeDietText(DischargeDiet, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diet Text</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDischargeDietText(DischargeDiet, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_DISCHARGE_DIET_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateDischargeDietText(DischargeDiet, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diet Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDischargeDietText(DischargeDiet, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_DISCHARGE_DIET_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
-	 * @param dischargeDiet The receiving '<em><b>Discharge Diet</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateDischargeDietText(DischargeDiet dischargeDiet, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_DISCHARGE_DIET_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(IHEPackage.Literals.DISCHARGE_DIET);
-			try {
-				VALIDATE_DISCHARGE_DIET_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_DIET_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_DIET_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeDiet)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.DISCHARGE_DIET__DISCHARGE_DIET_TEXT,
-					IHEPlugin.INSTANCE.getString("DischargeDietText"), new Object[] { dischargeDiet }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateDischargeDietTitle(DischargeDiet, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diet Title</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDischargeDietTitle(DischargeDiet, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_DISCHARGE_DIET_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateDischargeDietTitle(DischargeDiet, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diet Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDischargeDietTitle(DischargeDiet, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_DISCHARGE_DIET_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
-	 * @param dischargeDiet The receiving '<em><b>Discharge Diet</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateDischargeDietTitle(DischargeDiet dischargeDiet, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_DISCHARGE_DIET_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(IHEPackage.Literals.DISCHARGE_DIET);
-			try {
-				VALIDATE_DISCHARGE_DIET_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_DIET_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_DIET_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeDiet)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.DISCHARGE_DIET__DISCHARGE_DIET_TITLE,
-					IHEPlugin.INSTANCE.getString("DischargeDietTitle"), new Object[] { dischargeDiet }));
 			}
 			return false;
 		}

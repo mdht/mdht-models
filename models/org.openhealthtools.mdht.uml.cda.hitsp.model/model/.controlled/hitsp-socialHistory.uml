@@ -10,6 +10,12 @@
     <generalization xmi:id="_BW7T4MiiEd6mWrHPmrIIfQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-socialHistory.uml#_Kv5q4MihEd6mWrHPmrIIfQ"/>
     </generalization>
+    <ownedAttribute xmi:id="_pJXG4MhGEeCHk-lvWGDTdA" name="socialHistory">
+      <type xmi:type="uml:Class" href="../hitsp.uml#_I06IEMhGEeCHk-lvWGDTdA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tUhfwMhGEeCHk-lvWGDTdA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tUhfwchGEeCHk-lvWGDTdA"/>
+      <association href="../hitsp.uml#_pJXt8chGEeCHk-lvWGDTdA"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_CY01wMiiEd6mWrHPmrIIfQ" base_Class="_-ujjcMihEd6mWrHPmrIIfQ" templateId="2.16.840.1.113883.3.88.11.83.126" assigningAuthorityName="HITSP C83"/>
   <CDA:ConformsTo xmi:id="_rGXY4FF6Ed-Lud-5SYZhMw" base_Generalization="_BW7T4MiiEd6mWrHPmrIIfQ" requiresParentId="true"/>

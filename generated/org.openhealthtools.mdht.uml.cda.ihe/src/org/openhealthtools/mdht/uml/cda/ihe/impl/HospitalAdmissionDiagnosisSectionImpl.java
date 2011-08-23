@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ihe.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
+import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.HospitalAdmissionDiagnosisSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -69,6 +70,26 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 			Map<Object, Object> context) {
 		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionCode(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalAdmissionDiagnosisSectionProblemConcernEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionProblemConcernEntry(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemConcernEntry getProblemConcernEntry() {
+		return HospitalAdmissionDiagnosisSectionOperations.getProblemConcernEntry(this);
 	}
 
 	/**

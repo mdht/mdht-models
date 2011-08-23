@@ -363,6 +363,15 @@ public interface IHEFactory extends EFactory {
 	AdvanceDirectivesSection createAdvanceDirectivesSection();
 
 	/**
+	 * Returns a new object of class '<em>Advance Directive Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Observation</em>'.
+	 * @generated
+	 */
+	AdvanceDirectiveObservation createAdvanceDirectiveObservation();
+
+	/**
 	 * Returns a new object of class '<em>Physical Exam Narrative Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -748,6 +757,42 @@ public interface IHEFactory extends EFactory {
 	 * @generated
 	 */
 	HospitalDischargePhysical createHospitalDischargePhysical();
+
+	/**
+	 * Returns a new object of class '<em>Coded Family Medical History Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coded Family Medical History Section</em>'.
+	 * @generated
+	 */
+	CodedFamilyMedicalHistorySection createCodedFamilyMedicalHistorySection();
+
+	/**
+	 * Returns a new object of class '<em>Family History Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Organizer</em>'.
+	 * @generated
+	 */
+	FamilyHistoryOrganizer createFamilyHistoryOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Family History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Observation</em>'.
+	 * @generated
+	 */
+	FamilyHistoryObservation createFamilyHistoryObservation();
+
+	/**
+	 * Returns a new object of class '<em>Social History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Observation</em>'.
+	 * @generated
+	 */
+	SocialHistoryObservation createSocialHistoryObservation();
 
 	/**
 	 * Returns a new object of class '<em>Registry Delegate</em>'.

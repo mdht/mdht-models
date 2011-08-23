@@ -14,9 +14,9 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.cdt.operations.ReviewOfSystemsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReviewOfSystemsSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.operations.ReviewOfSystemsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -54,9 +54,29 @@ public class ReviewOfSystemsSectionImpl extends org.openhealthtools.mdht.uml.cda
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public boolean validateReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateReviewOfSystemsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateHITSPReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReviewOfSystemsSectionOperations.validateHITSPReviewOfSystemsSectionTemplateId(
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReviewOfSystemsSectionOperations.validateHITSPReviewOfSystemsSectionTemplateId(
 			this, diagnostics, context);
 	}
 

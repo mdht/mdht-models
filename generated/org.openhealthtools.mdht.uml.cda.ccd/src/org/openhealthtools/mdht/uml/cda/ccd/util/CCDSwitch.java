@@ -18,6 +18,7 @@ import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Encounter;
+import org.openhealthtools.mdht.uml.cda.ExternalDocument;
 import org.openhealthtools.mdht.uml.cda.Guardian;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Observation;
@@ -31,6 +32,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.Supply;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
+import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveVerification;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectivesSection;
@@ -98,6 +100,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
+import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.StatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.Support;
@@ -501,6 +504,49 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(socialHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.SOCIAL_HISTORY_OBSERVATION: {
+				SocialHistoryObservation socialHistoryObservation = (SocialHistoryObservation) theEObject;
+				T result = caseSocialHistoryObservation(socialHistoryObservation);
+				if (result == null) {
+					result = caseObservation(socialHistoryObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(socialHistoryObservation);
+				}
+				if (result == null) {
+					result = caseAct(socialHistoryObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(socialHistoryObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.SOCIAL_HISTORY_STATUS_OBSERVATION: {
+				SocialHistoryStatusObservation socialHistoryStatusObservation = (SocialHistoryStatusObservation) theEObject;
+				T result = caseSocialHistoryStatusObservation(socialHistoryStatusObservation);
+				if (result == null) {
+					result = caseStatusObservation(socialHistoryStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(socialHistoryStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(socialHistoryStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(socialHistoryStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(socialHistoryStatusObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -949,6 +995,29 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
+			case CCDPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: {
+				AdvanceDirectiveStatusObservation advanceDirectiveStatusObservation = (AdvanceDirectiveStatusObservation) theEObject;
+				T result = caseAdvanceDirectiveStatusObservation(advanceDirectiveStatusObservation);
+				if (result == null) {
+					result = caseStatusObservation(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case CCDPackage.PAYERS_SECTION: {
 				PayersSection payersSection = (PayersSection) theEObject;
 				T result = casePayersSection(payersSection);
@@ -1146,6 +1215,29 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
+			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION: {
+				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation) theEObject;
+				T result = caseCauseOfDeathObservation(causeOfDeathObservation);
+				if (result == null) {
+					result = caseFamilyHistoryObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseAct(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case CCDPackage.FAMILY_HISTORY_ORGANIZER: {
 				FamilyHistoryOrganizer familyHistoryOrganizer = (FamilyHistoryOrganizer) theEObject;
 				T result = caseFamilyHistoryOrganizer(familyHistoryOrganizer);
@@ -1160,26 +1252,6 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.SOCIAL_HISTORY_OBSERVATION: {
-				SocialHistoryObservation socialHistoryObservation = (SocialHistoryObservation) theEObject;
-				T result = caseSocialHistoryObservation(socialHistoryObservation);
-				if (result == null) {
-					result = caseObservation(socialHistoryObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(socialHistoryObservation);
-				}
-				if (result == null) {
-					result = caseAct(socialHistoryObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(socialHistoryObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1229,29 +1301,6 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
-			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION: {
-				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation) theEObject;
-				T result = caseCauseOfDeathObservation(causeOfDeathObservation);
-				if (result == null) {
-					result = caseFamilyHistoryObservation(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseObservation(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseAct(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case CCDPackage.ENCOUNTER_LOCATION: {
 				EncounterLocation encounterLocation = (EncounterLocation) theEObject;
 				T result = caseEncounterLocation(encounterLocation);
@@ -1280,29 +1329,6 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(product);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: {
-				AdvanceDirectiveStatusObservation advanceDirectiveStatusObservation = (AdvanceDirectiveStatusObservation) theEObject;
-				T result = caseAdvanceDirectiveStatusObservation(advanceDirectiveStatusObservation);
-				if (result == null) {
-					result = caseStatusObservation(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = caseObservation(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(advanceDirectiveStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveStatusObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1588,6 +1614,23 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(comment);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE: {
+				AdvanceDirectiveReference advanceDirectiveReference = (AdvanceDirectiveReference) theEObject;
+				T result = caseAdvanceDirectiveReference(advanceDirectiveReference);
+				if (result == null) {
+					result = caseExternalDocument(advanceDirectiveReference);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirectiveReference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveReference);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2241,6 +2284,21 @@ public class CCDSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Status Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSocialHistoryStatusObservation(SocialHistoryStatusObservation object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Encounters Activity</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2706,6 +2764,21 @@ public class CCDSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Reference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdvanceDirectiveReference(AdvanceDirectiveReference object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Registry Delegate</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3017,6 +3090,21 @@ public class CCDSwitch<T> {
 	 * @generated
 	 */
 	public T caseGuardian(Guardian object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>External Document</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>External Document</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExternalDocument(ExternalDocument object) {
 		return null;
 	}
 

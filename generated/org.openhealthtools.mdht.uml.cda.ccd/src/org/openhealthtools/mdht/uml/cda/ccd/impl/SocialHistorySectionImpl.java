@@ -13,8 +13,10 @@ package org.openhealthtools.mdht.uml.cda.ccd.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
+import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.SocialHistorySectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
@@ -74,6 +76,35 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 */
 	public boolean validateSocialHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistorySectionOperations.validateSocialHistorySectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSocialHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSocialHistorySectionSocialHistoryObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionSocialHistoryObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SocialHistoryObservation> getSocialHistoryObservations() {
+		return SocialHistorySectionOperations.getSocialHistoryObservations(this);
 	}
 
 	/**

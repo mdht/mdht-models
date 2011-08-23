@@ -20,15 +20,18 @@ import org.openhealthtools.mdht.uml.cda.Guardian;
 import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Observation;
+import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Participant1;
 import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.Supply;
+import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.AlertsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument;
 import org.openhealthtools.mdht.uml.cda.ccd.CoverageActivity;
+import org.openhealthtools.mdht.uml.cda.ccd.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemAct;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
@@ -36,9 +39,12 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultObservation;
+import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.cdt.PastMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
+import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AllergiesReactionsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AllergyDrugSensitivity;
@@ -52,6 +58,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.DischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.DischargeSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.Encounter;
 import org.openhealthtools.mdht.uml.cda.hitsp.EncountersSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
@@ -88,6 +95,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.ReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.Result;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReviewOfSystemsSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.Support;
 import org.openhealthtools.mdht.uml.cda.hitsp.SupportGuardian;
@@ -461,6 +469,35 @@ public class HITSPSwitch<T> {
 				}
 				return result;
 			}
+			case HITSPPackage.ADVANCE_DIRECTIVE: {
+				AdvanceDirective advanceDirective = (AdvanceDirective) theEObject;
+				T result = caseAdvanceDirective(advanceDirective);
+				if (result == null) {
+					result = caseIHE_AdvanceDirectiveObservation(advanceDirective);
+				}
+				if (result == null) {
+					result = caseAdvanceDirectiveObservation(advanceDirective);
+				}
+				if (result == null) {
+					result = caseSimpleObservation(advanceDirective);
+				}
+				if (result == null) {
+					result = caseObservation(advanceDirective);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(advanceDirective);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirective);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirective);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case HITSPPackage.ALLERGIES_REACTIONS_SECTION: {
 				AllergiesReactionsSection allergiesReactionsSection = (AllergiesReactionsSection) theEObject;
 				T result = caseAllergiesReactionsSection(allergiesReactionsSection);
@@ -788,6 +825,9 @@ public class HITSPSwitch<T> {
 					result = caseIHE_HistoryOfPastIllnessSection(historyOfPastIllnessSection);
 				}
 				if (result == null) {
+					result = casePastMedicalHistorySection(historyOfPastIllnessSection);
+				}
+				if (result == null) {
 					result = caseSection(historyOfPastIllnessSection);
 				}
 				if (result == null) {
@@ -806,6 +846,9 @@ public class HITSPSwitch<T> {
 				T result = caseChiefComplaintSection(chiefComplaintSection);
 				if (result == null) {
 					result = caseIHE_ChiefComplaintSection(chiefComplaintSection);
+				}
+				if (result == null) {
+					result = caseCDT_ChiefComplaintSection(chiefComplaintSection);
 				}
 				if (result == null) {
 					result = caseSection(chiefComplaintSection);
@@ -1011,6 +1054,9 @@ public class HITSPSwitch<T> {
 					result = caseIHE_ReviewOfSystemsSection(reviewOfSystemsSection);
 				}
 				if (result == null) {
+					result = caseCDT_ReviewOfSystemsSection(reviewOfSystemsSection);
+				}
+				if (result == null) {
 					result = caseSection(reviewOfSystemsSection);
 				}
 				if (result == null) {
@@ -1104,6 +1150,35 @@ public class HITSPSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(socialHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case HITSPPackage.SOCIAL_HISTORY: {
+				SocialHistory socialHistory = (SocialHistory) theEObject;
+				T result = caseSocialHistory(socialHistory);
+				if (result == null) {
+					result = caseIHE_SocialHistoryObservation(socialHistory);
+				}
+				if (result == null) {
+					result = caseSimpleObservation(socialHistory);
+				}
+				if (result == null) {
+					result = caseSocialHistoryObservation(socialHistory);
+				}
+				if (result == null) {
+					result = caseObservation(socialHistory);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(socialHistory);
+				}
+				if (result == null) {
+					result = caseAct(socialHistory);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(socialHistory);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1590,6 +1665,32 @@ public class HITSPSwitch<T> {
 				}
 				return result;
 			}
+			case HITSPPackage.FAMILY_HISTORY: {
+				FamilyHistory familyHistory = (FamilyHistory) theEObject;
+				T result = caseFamilyHistory(familyHistory);
+				if (result == null) {
+					result = caseIHE_FamilyHistoryOrganizer(familyHistory);
+				}
+				if (result == null) {
+					result = caseFamilyHistoryOrganizer(familyHistory);
+				}
+				if (result == null) {
+					result = caseOrganizer(familyHistory);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistory);
+				}
+				if (result == null) {
+					result = caseAct(familyHistory);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistory);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case HITSPPackage.HITSP_REGISTRY_DELEGATE: {
 				HITSPRegistryDelegate hitspRegistryDelegate = (HITSPRegistryDelegate) theEObject;
 				T result = caseHITSPRegistryDelegate(hitspRegistryDelegate);
@@ -1753,6 +1854,21 @@ public class HITSPSwitch<T> {
 	 * @generated
 	 */
 	public T caseAdvanceDirectivesSection(AdvanceDirectivesSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Advance Directive</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdvanceDirective(AdvanceDirective object) {
 		return null;
 	}
 
@@ -2162,6 +2278,21 @@ public class HITSPSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Social History</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSocialHistory(SocialHistory object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Medical Equipment Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2458,6 +2589,21 @@ public class HITSPSwitch<T> {
 	 * @generated
 	 */
 	public T caseDischargeSummary(DischargeSummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Family History</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Family History</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFamilyHistory(FamilyHistory object) {
 		return null;
 	}
 
@@ -2912,6 +3058,21 @@ public class HITSPSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAdvanceDirectiveObservation(AdvanceDirectiveObservation object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Alerts Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3257,6 +3418,21 @@ public class HITSPSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Advance Directive Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Advance Directive Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIHE_AdvanceDirectiveObservation(org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Vital Sign Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3287,6 +3463,21 @@ public class HITSPSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Past Medical History Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Past Medical History Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePastMedicalHistorySection(PastMedicalHistorySection object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Chief Complaint Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3298,6 +3489,21 @@ public class HITSPSwitch<T> {
 	 * @generated
 	 */
 	public T caseIHE_ChiefComplaintSection(org.openhealthtools.mdht.uml.cda.ihe.ChiefComplaintSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Chief Complaint Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Chief Complaint Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCDT_ChiefComplaintSection(org.openhealthtools.mdht.uml.cda.cdt.ChiefComplaintSection object) {
 		return null;
 	}
 
@@ -3471,6 +3677,21 @@ public class HITSPSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Review Of Systems Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Review Of Systems Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCDT_ReviewOfSystemsSection(org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSection object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Hospital Course Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3557,6 +3778,36 @@ public class HITSPSwitch<T> {
 	 * @generated
 	 */
 	public T caseIHE_SocialHistorySection(org.openhealthtools.mdht.uml.cda.ihe.SocialHistorySection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSocialHistoryObservation(SocialHistoryObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIHE_SocialHistoryObservation(org.openhealthtools.mdht.uml.cda.ihe.SocialHistoryObservation object) {
 		return null;
 	}
 
@@ -4052,6 +4303,51 @@ public class HITSPSwitch<T> {
 	 * @generated
 	 */
 	public T caseMedicalSummary(MedicalSummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOrganizer(Organizer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Family History Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Family History Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFamilyHistoryOrganizer(FamilyHistoryOrganizer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Family History Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Family History Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIHE_FamilyHistoryOrganizer(org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer object) {
 		return null;
 	}
 

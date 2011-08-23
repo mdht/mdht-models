@@ -596,38 +596,6 @@
       <ownedComment xmi:id="_mW2qUBZ1Ed-i6Lz80y5G5g">
         <body>A common scenario is that a patient will know the age of a relative when they had a certain condition or when they died, but will not know the actual year (e.g. &quot;grandpa died of a heart attack at the age of 50&quot;). Often times, neither precise dates nor ages are known (e.g. &quot;cousin died of congenital heart disease as an infant&quot;). In all cases, dates and times and ages can be expressed in narrative.</body>
       </ownedComment>
-      <ownedRule xmi:id="_heDAcEjjEeCOWNbpDoETQw" name="relatedSubjectBirthTime" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oC8Q0EjjEeCOWNbpDoETQw">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>subject/relatedSubject/subject contains exactly one birthTime</body>
-          <body>not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_LG47wEjkEeCOWNbpDoETQw" name="relatedSubjectDeceasedInd" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_LG47wUjkEeCOWNbpDoETQw">
-          <language>Analysis</language>
-          <body>subject/relatedSubject/subject contains exactly one sdtc:deceasedInd</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_bHf4oEjkEeCOWNbpDoETQw" name="relatedSubjectDeceasedTime" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bHf4oUjkEeCOWNbpDoETQw">
-          <language>Analysis</language>
-          <body>subject/relatedSubject/subject contains exactly one sdtc:deceasedTime</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_rRzkEEjkEeCOWNbpDoETQw" name="ageOfRelativeAtObservationTime" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4wn5oEjkEeCOWNbpDoETQw">
-          <language>Analysis</language>
-          <body>The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with effectiveTime</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_BgP8MEjlEeCOWNbpDoETQw" name="ageOfRelativeAtDeath" constrainedElement="_S7rEABZ1Ed-i6Lz80y5G5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_RgEO4EjlEeCOWNbpDoETQw">
-          <language>Analysis</language>
-          <body>The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_S72qMBZ1Ed-i6Lz80y5G5g">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -827,6 +795,116 @@
       </ownedEnd>
       <memberEnd href=".controlled/ccd-encounters.uml#_Tp0WAMK9EeCl2eGe9IRxKw"/>
       <memberEnd href="#_Tp0WA8K9EeCl2eGe9IRxKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mqdKkMg9EeCHk-lvWGDTdA">
+      <ownedEnd xmi:id="_mqdKkcg9EeCHk-lvWGDTdA" association="_mqdKkMg9EeCHk-lvWGDTdA">
+        <type xmi:type="uml:Class" href=".controlled/ccd-socialHistory.uml#_UOVM0HDAEd6eItyqb1FoWg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-socialHistory.uml#_mqb8cMg9EeCHk-lvWGDTdA"/>
+      <memberEnd href="#_mqdKkcg9EeCHk-lvWGDTdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mRUKcMhAEeCHk-lvWGDTdA" name="SocialHistoryStatusObservation">
+      <generalization xmi:id="_mRUKcchAEeCHk-lvWGDTdA" general="_V3Jy4HrTEd68l9lQ-TLEBQ"/>
+      <ownedAttribute xmi:id="_no2lIMhAEeCHk-lvWGDTdA" name="value" visibility="private" redefinedProperty="_2XdYUHvDEd6jfbAJq2V82w">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nZp2EMhBEeCHk-lvWGDTdA">
+      <ownedEnd xmi:id="_nZp2EchBEeCHk-lvWGDTdA" association="_nZp2EMhBEeCHk-lvWGDTdA">
+        <type xmi:type="uml:Class" href=".controlled/ccd-socialHistory.uml#_Wa2uwHDAEd6eItyqb1FoWg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-socialHistory.uml#_nZpPAMhBEeCHk-lvWGDTdA"/>
+      <memberEnd href="#_nZp2EchBEeCHk-lvWGDTdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qWgowchBEeCHk-lvWGDTdA">
+      <ownedEnd xmi:id="_qWjFAMhBEeCHk-lvWGDTdA" association="_qWgowchBEeCHk-lvWGDTdA">
+        <type xmi:type="uml:Class" href=".controlled/ccd-socialHistory.uml#_Wa2uwHDAEd6eItyqb1FoWg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-socialHistory.uml#_qWgBsMhBEeCHk-lvWGDTdA"/>
+      <memberEnd href="#_qWjFAMhBEeCHk-lvWGDTdA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AOwXEMj1EeChgrgmBsw26A">
+      <ownedEnd xmi:id="_AOwXEcj1EeChgrgmBsw26A" association="_AOwXEMj1EeChgrgmBsw26A">
+        <type xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_7tlrAGwWEd6q29qQGU-SBA"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-familyHistory.uml#_AOvI8Mj1EeChgrgmBsw26A"/>
+      <memberEnd href="#_AOwXEcj1EeChgrgmBsw26A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_9HXNosnLEeCDOYZyQPaRHg">
+      <ownedEnd xmi:id="_9HXNo8nLEeCDOYZyQPaRHg" association="_9HXNosnLEeCDOYZyQPaRHg">
+        <type xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_7tlrAGwWEd6q29qQGU-SBA"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-familyHistory.uml#_9HXNoMnLEeCDOYZyQPaRHg"/>
+      <memberEnd href="#_9HXNo8nLEeCDOYZyQPaRHg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2Mg1IsqsEeC8XvPcqnB3eA">
+      <ownedEnd xmi:id="_2Mg1I8qsEeC8XvPcqnB3eA" association="_2Mg1IsqsEeC8XvPcqnB3eA">
+        <type xmi:type="uml:Class" href=".controlled/ccd-medicalEquipment.uml#_5hfTYKPbEd6t_4WfM070fA"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-medicalEquipment.uml#_2Mg1IMqsEeC8XvPcqnB3eA"/>
+      <memberEnd href="#_2Mg1I8qsEeC8XvPcqnB3eA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_4888csqsEeC8XvPcqnB3eA">
+      <ownedEnd xmi:id="_4888c8qsEeC8XvPcqnB3eA" association="_4888csqsEeC8XvPcqnB3eA">
+        <type xmi:type="uml:Class" href=".controlled/ccd-medicalEquipment.uml#_5hfTYKPbEd6t_4WfM070fA"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-medicalEquipment.uml#_4888cMqsEeC8XvPcqnB3eA"/>
+      <memberEnd href="#_4888c8qsEeC8XvPcqnB3eA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Bzf9osziEeCvbrjDQpuvkw">
+      <ownedEnd xmi:id="_Bzf9o8ziEeCvbrjDQpuvkw" association="_Bzf9osziEeCvbrjDQpuvkw">
+        <type xmi:type="uml:Class" href=".controlled/ccd-advanceDirectives.uml#_mEuuUMJcEd6-XpBv2uxYrQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-advanceDirectives.uml#_Bzf9oMziEeCvbrjDQpuvkw"/>
+      <memberEnd href="#_Bzf9o8ziEeCvbrjDQpuvkw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RzqOkMziEeCvbrjDQpuvkw" name="AdvanceDirectiveReference">
+      <ownedRule xmi:id="_50OkgMziEeCvbrjDQpuvkw" name="hasConformanceTo" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_9itocMziEeCvbrjDQpuvkw">
+          <language>Analysis</language>
+          <body>An advance directive reference (templateId 2.16.840.1.113883.10.20.1.36) SHALL be represented with Observation / reference / ExternalDocument</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_T6zr0MzjEeCvbrjDQpuvkw" name="hasReference" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_athVwMzjEeCvbrjDQpuvkw">
+          <language>Analysis</language>
+          <body>The value for Observation / reference / @typeCode in an advance directive reference SHALL be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_hgF1wMzjEeCvbrjDQpuvkw" name="hasURL" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_li9OQMzjEeCvbrjDQpuvkw">
+          <language>Analysis</language>
+          <body>The URL of a referenced advance directive document MAY be present, and SHALL be represented in Observation / reference / ExternalDocument / text / reference. A &lt;linkHTML> element containing the same URL SHOULD be present in the associated CDA Narrative Block</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oc7FAMzjEeCvbrjDQpuvkw" name="hasMIMEType" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_rdbooMzjEeCvbrjDQpuvkw">
+          <language>Analysis</language>
+          <body>The MIME type of a referenced advance directive document MAY be present, and SHALL be represented in Observation / reference / ExternalDocument / text / @mediaType</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_wJ9CIMzjEeCvbrjDQpuvkw" name="exchangePackage" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_0MaK8MzjEeCvbrjDQpuvkw">
+          <language>Analysis</language>
+          <body>Where the value of Observation / reference / seperatableInd is &quot;false&quot;, the referenced advance directive document SHOULD be included in the CCD exchange package. The exchange mechanism SHOULD be based on Internet standard RFC 2557 &quot;MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)&quot; (http://www.ietf.org/rfc/rfc2557.txt)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_BmK20MzjEeCvbrjDQpuvkw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_gRO4cEcHEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_cYC94MzjEeCvbrjDQpuvkw" name="id" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dP-rcMzjEeCvbrjDQpuvkw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dP-rcczjEeCvbrjDQpuvkw" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_efn_kEo2Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_F7fRQszjEeCvbrjDQpuvkw">
+      <ownedEnd xmi:id="_F7fRQ8zjEeCvbrjDQpuvkw" association="_F7fRQszjEeCvbrjDQpuvkw">
+        <type xmi:type="uml:Class" href=".controlled/ccd-advanceDirectives.uml#_mEuuUMJcEd6-XpBv2uxYrQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-advanceDirectives.uml#_F7fRQMzjEeCvbrjDQpuvkw"/>
+      <memberEnd href="#_F7fRQ8zjEeCvbrjDQpuvkw"/>
     </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1165,19 +1243,20 @@
   <CDA:ConformsTo xmi:id="_oZwq0EjiEeCOWNbpDoETQw" base_Generalization="_S72qMBZ1Ed-i6Lz80y5G5g">
     <ruleId>CONF-225</ruleId>
   </CDA:ConformsTo>
-  <CDA:ConstraintValidation xmi:id="_oiMYoEjjEeCOWNbpDoETQw" severity="WARNING" base_Constraint="_heDAcEjjEeCOWNbpDoETQw">
+  <CDA:ConstraintValidation xmi:id="_oiMYoEjjEeCOWNbpDoETQw" severity="WARNING">
     <ruleId>CONF-219</ruleId>
+    <base_Constraint href=".controlled/ccd-familyHistory.uml#_heDAcEjjEeCOWNbpDoETQw"/>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_URxW8EjkEeCOWNbpDoETQw" severity="INFO" base_Constraint="_LG47wEjkEeCOWNbpDoETQw">
+  <CDA:ConstraintValidation xmi:id="_URxW8EjkEeCOWNbpDoETQw" severity="INFO">
     <ruleId>CONF-220</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_fBK44EjkEeCOWNbpDoETQw" severity="INFO" base_Constraint="_bHf4oEjkEeCOWNbpDoETQw">
+  <CDA:ConstraintValidation xmi:id="_fBK44EjkEeCOWNbpDoETQw" severity="INFO">
     <ruleId>CONF-221</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_swUwgEjkEeCOWNbpDoETQw" severity="WARNING" base_Constraint="_rRzkEEjkEeCOWNbpDoETQw">
+  <CDA:ConstraintValidation xmi:id="_swUwgEjkEeCOWNbpDoETQw" severity="WARNING">
     <ruleId>CONF-222</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_CkDikEjlEeCOWNbpDoETQw" severity="INFO" base_Constraint="_BgP8MEjlEeCOWNbpDoETQw">
+  <CDA:ConstraintValidation xmi:id="_CkDikEjlEeCOWNbpDoETQw" severity="INFO">
     <ruleId>CONF-223</ruleId>
   </CDA:ConstraintValidation>
   <CDA:EntryRelationship xmi:id="_q8dJsEjlEeCOWNbpDoETQw" severity="INFO" base_Association="_pz8pgEjlEeCOWNbpDoETQw" typeCode="SUBJ">
@@ -1243,4 +1322,33 @@
   <CDA:AssociationValidation xmi:id="_2tlQMMK8EeCl2eGe9IRxKw" severity="INFO" base_Association="_0_VlssK8EeCl2eGe9IRxKw"/>
   <CDA:EntryRelationship xmi:id="_EdadQMK9EeCl2eGe9IRxKw" severity="INFO" base_Association="_D5ROYMK9EeCl2eGe9IRxKw" typeCode="SUBJ"/>
   <CDA:AssociationValidation xmi:id="_U6KjkMK9EeCl2eGe9IRxKw" severity="INFO" base_Association="_Tp0WAsK9EeCl2eGe9IRxKw"/>
+  <CDA:AssociationValidation xmi:id="_n9vXYMg9EeCHk-lvWGDTdA" severity="WARNING" base_Association="_mqdKkMg9EeCHk-lvWGDTdA"/>
+  <CDA:PropertyValidation xmi:id="_no3MMMhAEeCHk-lvWGDTdA" base_Property="_no2lIMhAEeCHk-lvWGDTdA">
+    <ruleId>CONF-516</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_8WkxYMhAEeCHk-lvWGDTdA" identifier="2.16.840.1.113883.1.11.20.17" name="SocialHistoryStatusCode" version="20061017" base_Property="_no2lIMhAEeCHk-lvWGDTdA"/>
+  <CDA:CDATemplate xmi:id="_bf4ywMhBEeCHk-lvWGDTdA" base_Class="_mRUKcMhAEeCHk-lvWGDTdA" templateId="2.16.840.1.113883.10.20.1.56" assigningAuthorityName="HL7"/>
+  <CDA:AssociationValidation xmi:id="_oO9tcMhBEeCHk-lvWGDTdA" severity="INFO" base_Association="_nZp2EMhBEeCHk-lvWGDTdA"/>
+  <CDA:AssociationValidation xmi:id="_qvRuEMhBEeCHk-lvWGDTdA" severity="INFO" base_Association="_qWgowchBEeCHk-lvWGDTdA"/>
+  <CDA:AssociationValidation xmi:id="_19EQYMjqEeChgrgmBsw26A" severity="WARNING"/>
+  <CDA:CDATemplate xmi:id="_TKaM8MjuEeChgrgmBsw26A" templateId="2.16.840.1.113883.10.20.1.42" assigningAuthorityName="HL7"/>
+  <CDA:EntryRelationship xmi:id="_30pDwMjvEeChgrgmBsw26A"/>
+  <CDA:ConstraintValidation xmi:id="_i25CAMjwEeChgrgmBsw26A">
+    <base_Constraint href=".controlled/ccd-familyHistory.uml#_fKN78MjwEeChgrgmBsw26A"/>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_8KxhEMjwEeChgrgmBsw26A"/>
+  <CDA:ConstraintValidation xmi:id="_8mP8IMjwEeChgrgmBsw26A"/>
+  <CDA:AssociationValidation xmi:id="_A6jGEMj1EeChgrgmBsw26A" severity="INFO" base_Association="_AOwXEMj1EeChgrgmBsw26A"/>
+  <CDA:EntryRelationship xmi:id="_-g7BkMnLEeCDOYZyQPaRHg" base_Association="_9HXNosnLEeCDOYZyQPaRHg"/>
+  <CDA:AssociationValidation xmi:id="_3e7fQMqsEeC8XvPcqnB3eA" severity="WARNING" base_Association="_2Mg1IsqsEeC8XvPcqnB3eA"/>
+  <CDA:AssociationValidation xmi:id="_6KUHcMqsEeC8XvPcqnB3eA" severity="INFO" base_Association="_4888csqsEeC8XvPcqnB3eA"/>
+  <CDA:AssociationValidation xmi:id="_D4zdQMziEeCvbrjDQpuvkw" base_Association="_Bzf9osziEeCvbrjDQpuvkw"/>
+  <CDA:CDATemplate xmi:id="_qB57QMziEeCvbrjDQpuvkw" base_Class="_RzqOkMziEeCvbrjDQpuvkw" templateId="2.16.840.1.113883.10.20.1.36"/>
+  <CDA:AssociationValidation xmi:id="_GmVlEMzjEeCvbrjDQpuvkw" severity="INFO" base_Association="_F7fRQszjEeCvbrjDQpuvkw"/>
+  <CDA:PropertyValidation xmi:id="_dd-EIMzjEeCvbrjDQpuvkw" base_Property="_cYC94MzjEeCvbrjDQpuvkw"/>
+  <CDA:ConstraintValidation xmi:id="_l8ZB8MzjEeCvbrjDQpuvkw" severity="INFO" base_Constraint="_hgF1wMzjEeCvbrjDQpuvkw"/>
+  <CDA:ConstraintValidation xmi:id="_1c47YMzjEeCvbrjDQpuvkw" severity="WARNING" base_Constraint="_wJ9CIMzjEeCvbrjDQpuvkw"/>
+  <CDA:ConstraintValidation xmi:id="_2cRUwMzjEeCvbrjDQpuvkw" severity="INFO" base_Constraint="_oc7FAMzjEeCvbrjDQpuvkw"/>
+  <CDA:ConstraintValidation xmi:id="_37MJ0MzjEeCvbrjDQpuvkw" base_Constraint="_T6zr0MzjEeCvbrjDQpuvkw"/>
+  <CDA:ConstraintValidation xmi:id="_4jNMEMzjEeCvbrjDQpuvkw" base_Constraint="_50OkgMziEeCvbrjDQpuvkw"/>
 </xmi:XMI>

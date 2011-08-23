@@ -13,7 +13,9 @@ package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.AdvanceDirectivesSectionOperations;
@@ -58,6 +60,26 @@ public class AdvanceDirectivesSectionImpl extends CodedAdvanceDirectivesSectionI
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionOperations.validateHITSPAdvanceDirectivesSectionTemplateId(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPAdvanceDirectivesSectionAdvanceDirective(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectivesSectionOperations.validateHITSPAdvanceDirectivesSectionAdvanceDirective(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AdvanceDirective> getAdvanceDirectives() {
+		return AdvanceDirectivesSectionOperations.getAdvanceDirectives(this);
 	}
 
 	/**
