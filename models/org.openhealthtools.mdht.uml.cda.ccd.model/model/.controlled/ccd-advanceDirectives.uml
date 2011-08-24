@@ -120,9 +120,9 @@
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_b9g60MJpEd6-XpBv2uxYrQ" name="time" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w5_UwcJpEd6-XpBv2uxYrQ" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w5_UwMJpEd6-XpBv2uxYrQ"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CKIjwM6JEeCLMK9g5sspBQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CKIjwc6JEeCLMK9g5sspBQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_aBcFIMJoEd6-XpBv2uxYrQ" memberEnd="_aBd6UMJoEd6-XpBv2uxYrQ _aBgWkMJoEd6-XpBv2uxYrQ">
