@@ -18,14 +18,14 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.CauseOfDeathObservation;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAgeObservation;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.ICauseOfDeathObservation;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IComment;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.Comment;
-import org.openhealthtools.mdht.uml.cda.ihe.HealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.Severity;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemStatusObservation;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISeverity;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
@@ -109,6 +109,15 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isSetCDAType() {
+		return cDAType != null;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getIds() <em>Get Ids</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -178,26 +187,6 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProblemType() <em>Get Problem Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProblemType()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PROBLEM_TYPE__EOCL_EXP = "self.code.oclAsType(datatypes::CD)";
-
-	/**
-	 * The cached OCL query for the '{@link #getProblemType() <em>Get Problem Type</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProblemType()
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_PROBLEM_TYPE__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -242,26 +231,6 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 		this.getCDAType().setCode(value);
 		return this;
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getProblemName() <em>Get Problem Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProblemName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PROBLEM_NAME__EOCL_EXP = "self.text.oclAsType(datatypes::ED)";
-
-	/**
-	 * The cached OCL query for the '{@link #getProblemName() <em>Get Problem Name</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProblemName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_PROBLEM_NAME__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -376,26 +345,6 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProblemCode() <em>Get Problem Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProblemCode()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PROBLEM_CODE__EOCL_EXP = "self.value.oclAsType(datatypes::CD)";
-
-	/**
-	 * The cached OCL query for the '{@link #getProblemCode() <em>Get Problem Code</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProblemCode()
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_PROBLEM_CODE__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -449,7 +398,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::AgeObservation))->asSequence()->first().oclAsType(ccd::AgeObservation)";
+	protected static final String GET_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::AgeObservation))->asSequence()->first().oclAsType(domain::AgeObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAgeObservation() <em>Get Age Observation</em>}' query operation.
@@ -466,7 +415,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AgeObservation getAgeObservation() {
+	public IAgeObservation getAgeObservation() {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -479,7 +428,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_AGE_OBSERVATION__EOCL_QRY);
-		return (AgeObservation) query.evaluate(this);
+		return (IAgeObservation) query.evaluate(this);
 	}
 
 	/**
@@ -487,7 +436,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AgeObservation withAgeObservation() {
+	public IAgeObservation withAgeObservation() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
@@ -498,7 +447,11 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 		} catch (Exception e) {
 			// no init() method
 		}
-		AgeObservation value = (AgeObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("AgeObservation");
+		IAgeObservation value = (IAgeObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -508,8 +461,8 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IProblemEntry setAgeObservation(AgeObservation value) {
-		this.getCDAType().addObservation(value);
+	public IProblemEntry setAgeObservation(IAgeObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -521,7 +474,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SEVERITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::Severity))->asSequence()->first().oclAsType(ihe::Severity)";
+	protected static final String GET_SEVERITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::Severity))->asSequence()->first().oclAsType(domain::Severity)";
 
 	/**
 	 * The cached OCL query for the '{@link #getSeverity() <em>Get Severity</em>}' query operation.
@@ -538,7 +491,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Severity getSeverity() {
+	public ISeverity getSeverity() {
 		if (GET_SEVERITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -551,7 +504,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SEVERITY__EOCL_QRY);
-		return (Severity) query.evaluate(this);
+		return (ISeverity) query.evaluate(this);
 	}
 
 	/**
@@ -559,7 +512,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Severity withSeverity() {
+	public ISeverity withSeverity() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Severity");
@@ -570,7 +523,11 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 		} catch (Exception e) {
 			// no init() method
 		}
-		Severity value = (Severity) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Severity");
+		ISeverity value = (ISeverity) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -580,8 +537,8 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IProblemEntry setSeverity(Severity value) {
-		this.getCDAType().addObservation(value);
+	public IProblemEntry setSeverity(ISeverity value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -593,7 +550,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemStatusObservation))->asSequence()->first().oclAsType(ihe::ProblemStatusObservation)";
+	protected static final String GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ProblemStatusObservation))->asSequence()->first().oclAsType(domain::ProblemStatusObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProblemStatusObservation() <em>Get Problem Status Observation</em>}' query operation.
@@ -610,7 +567,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemStatusObservation getProblemStatusObservation() {
+	public IProblemStatusObservation getProblemStatusObservation() {
 		if (GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -623,7 +580,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY);
-		return (ProblemStatusObservation) query.evaluate(this);
+		return (IProblemStatusObservation) query.evaluate(this);
 	}
 
 	/**
@@ -631,7 +588,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemStatusObservation withProblemStatusObservation() {
+	public IProblemStatusObservation withProblemStatusObservation() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemStatusObservation");
@@ -642,7 +599,11 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 		} catch (Exception e) {
 			// no init() method
 		}
-		ProblemStatusObservation value = (ProblemStatusObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ProblemStatusObservation");
+		IProblemStatusObservation value = (IProblemStatusObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -652,8 +613,8 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IProblemEntry setProblemStatusObservation(ProblemStatusObservation value) {
-		this.getCDAType().addObservation(value);
+	public IProblemEntry setProblemStatusObservation(IProblemStatusObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -665,7 +626,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::HealthStatusObservation))->asSequence()->first().oclAsType(ihe::HealthStatusObservation)";
+	protected static final String GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::HealthStatusObservation))->asSequence()->first().oclAsType(domain::HealthStatusObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHealthStatusObservation() <em>Get Health Status Observation</em>}' query operation.
@@ -682,7 +643,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HealthStatusObservation getHealthStatusObservation() {
+	public IHealthStatusObservation getHealthStatusObservation() {
 		if (GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -695,7 +656,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY);
-		return (HealthStatusObservation) query.evaluate(this);
+		return (IHealthStatusObservation) query.evaluate(this);
 	}
 
 	/**
@@ -703,7 +664,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HealthStatusObservation withHealthStatusObservation() {
+	public IHealthStatusObservation withHealthStatusObservation() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("HealthStatusObservation");
@@ -714,7 +675,11 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 		} catch (Exception e) {
 			// no init() method
 		}
-		HealthStatusObservation value = (HealthStatusObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("HealthStatusObservation");
+		IHealthStatusObservation value = (IHealthStatusObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -724,8 +689,8 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IProblemEntry setHealthStatusObservation(HealthStatusObservation value) {
-		this.getCDAType().addObservation(value);
+	public IProblemEntry setHealthStatusObservation(IHealthStatusObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -737,7 +702,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_COMMENTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::Comment)).oclAsType(ihe::Comment)";
+	protected static final String GET_COMMENTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::Comment)).oclAsType(domain::Comment)";
 
 	/**
 	 * The cached OCL query for the '{@link #getComments() <em>Get Comments</em>}' query operation.
@@ -750,11 +715,71 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	protected static OCLExpression<EClassifier> GET_COMMENTS__EOCL_QRY;
 
 	/**
+	 * The cached OCL expression body for the '{@link #getProblemType() <em>Get Problem Type</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProblemType()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PROBLEM_TYPE__EOCL_EXP = "self.code.oclAsType(datatypes::CD)";
+
+	/**
+	 * The cached OCL query for the '{@link #getProblemType() <em>Get Problem Type</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProblemType()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PROBLEM_TYPE__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getProblemName() <em>Get Problem Name</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProblemName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PROBLEM_NAME__EOCL_EXP = "self.text.oclAsType(datatypes::ED)";
+
+	/**
+	 * The cached OCL query for the '{@link #getProblemName() <em>Get Problem Name</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProblemName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PROBLEM_NAME__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getProblemCode() <em>Get Problem Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProblemCode()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PROBLEM_CODE__EOCL_EXP = "self.value.oclAsType(datatypes::CD)";
+
+	/**
+	 * The cached OCL query for the '{@link #getProblemCode() <em>Get Problem Code</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProblemCode()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PROBLEM_CODE__EOCL_QRY;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Comment> getComments() {
+	public EList<IComment> getComments() {
 		if (GET_COMMENTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -768,8 +793,8 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<Comment> result = (Collection<Comment>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
+		Collection<IComment> result = (Collection<IComment>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IComment>(result.size(), result.toArray());
 	}
 
 	/**
@@ -777,7 +802,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Comment addComment() {
+	public IComment addComment() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Comment");
@@ -788,7 +813,11 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 		} catch (Exception e) {
 			// no init() method
 		}
-		Comment value = (Comment) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Comment");
+		IComment value = (IComment) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
@@ -798,7 +827,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IProblemEntry addComment(Comment value) {
+	public IProblemEntry addComment(IComment value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -812,7 +841,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_AGE_AT_ONSET__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::AgeObservation))->asSequence()->first().oclAsType(ccd::AgeObservation)";
+	protected static final String GET_AGE_AT_ONSET__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::AgeObservation))->asSequence()->first().oclAsType(domain::AgeObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAgeAtOnset() <em>Get Age At Onset</em>}' query operation.
@@ -829,7 +858,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AgeObservation getAgeAtOnset() {
+	public IAgeObservation getAgeAtOnset() {
 		if (GET_AGE_AT_ONSET__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -842,7 +871,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_AGE_AT_ONSET__EOCL_QRY);
-		return (AgeObservation) query.evaluate(this);
+		return (IAgeObservation) query.evaluate(this);
 	}
 
 	/**
@@ -850,7 +879,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AgeObservation withAgeAtOnset() {
+	public IAgeObservation withAgeAtOnset() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AgeObservation");
@@ -861,7 +890,11 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 		} catch (Exception e) {
 			// no init() method
 		}
-		AgeObservation value = (AgeObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("AgeObservation");
+		IAgeObservation value = (IAgeObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -871,8 +904,8 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IProblemEntry setAgeAtOnset(AgeObservation value) {
-		this.getCDAType().addObservation(value);
+	public IProblemEntry setAgeAtOnset(IAgeObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -884,7 +917,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CAUSE_OF_DEATH__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::CauseOfDeathObservation))->asSequence()->first().oclAsType(ccd::CauseOfDeathObservation)";
+	protected static final String GET_CAUSE_OF_DEATH__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::CauseOfDeathObservation))->asSequence()->first().oclAsType(domain::CauseOfDeathObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getCauseOfDeath() <em>Get Cause Of Death</em>}' query operation.
@@ -901,7 +934,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CauseOfDeathObservation getCauseOfDeath() {
+	public ICauseOfDeathObservation getCauseOfDeath() {
 		if (GET_CAUSE_OF_DEATH__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -914,7 +947,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CAUSE_OF_DEATH__EOCL_QRY);
-		return (CauseOfDeathObservation) query.evaluate(this);
+		return (ICauseOfDeathObservation) query.evaluate(this);
 	}
 
 	/**
@@ -922,7 +955,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CauseOfDeathObservation withCauseOfDeath() {
+	public ICauseOfDeathObservation withCauseOfDeath() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CauseOfDeathObservation");
@@ -933,7 +966,11 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 		} catch (Exception e) {
 			// no init() method
 		}
-		CauseOfDeathObservation value = (CauseOfDeathObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("CauseOfDeathObservation");
+		ICauseOfDeathObservation value = (ICauseOfDeathObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -943,8 +980,8 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IProblemEntry setCauseOfDeath(CauseOfDeathObservation value) {
-		this.getCDAType().addObservation(value);
+	public IProblemEntry setCauseOfDeath(ICauseOfDeathObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -956,7 +993,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROBLEM_STATUS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemStatusObservation))->asSequence()->first().oclAsType(ihe::ProblemStatusObservation)";
+	protected static final String GET_PROBLEM_STATUS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ProblemStatusObservation))->asSequence()->first().oclAsType(domain::ProblemStatusObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProblemStatus() <em>Get Problem Status</em>}' query operation.
@@ -973,7 +1010,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemStatusObservation getProblemStatus() {
+	public IProblemStatusObservation getProblemStatus() {
 		if (GET_PROBLEM_STATUS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -986,7 +1023,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_STATUS__EOCL_QRY);
-		return (ProblemStatusObservation) query.evaluate(this);
+		return (IProblemStatusObservation) query.evaluate(this);
 	}
 
 	/**
@@ -994,7 +1031,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemStatusObservation withProblemStatus() {
+	public IProblemStatusObservation withProblemStatus() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProblemStatusObservation");
@@ -1005,7 +1042,11 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 		} catch (Exception e) {
 			// no init() method
 		}
-		ProblemStatusObservation value = (ProblemStatusObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ProblemStatusObservation");
+		IProblemStatusObservation value = (IProblemStatusObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -1015,8 +1056,206 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IProblemEntry setProblemStatus(ProblemStatusObservation value) {
-		this.getCDAType().addObservation(value);
+	public IProblemEntry setProblemStatus(IProblemStatusObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
+		return this;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getCode() <em>Get Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCode()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CODE__EOCL_EXP = "self.code.oclAsType(datatypes::CD)";
+
+	/**
+	 * The cached OCL query for the '{@link #getCode() <em>Get Code</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCode()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CODE__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CD getCode() {
+		if (GET_CODE__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProblemEntry(),
+				IDomainPackage.eINSTANCE.getProblemEntry().getEAllOperations().get(39));
+			try {
+				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_CODE__EOCL_QRY);
+		return (CD) query.evaluate(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CD withCode() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		CD value = (CD) eObject;
+		this.getCDAType().setCode(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntry setCode(CD value) {
+		this.getCDAType().setCode(value);
+		return this;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getText() <em>Get Text</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getText()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(datatypes::ED)";
+
+	/**
+	 * The cached OCL query for the '{@link #getText() <em>Get Text</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getText()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_TEXT__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ED getText() {
+		if (GET_TEXT__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProblemEntry(),
+				IDomainPackage.eINSTANCE.getProblemEntry().getEAllOperations().get(42));
+			try {
+				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_TEXT__EOCL_QRY);
+		return (ED) query.evaluate(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ED withText() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ED");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		ED value = (ED) eObject;
+		this.getCDAType().setText(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntry setText(ED value) {
+		this.getCDAType().setText(value);
+		return this;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getValue() <em>Get Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_VALUE__EOCL_EXP = "self.value.oclAsType(datatypes::CD)";
+
+	/**
+	 * The cached OCL query for the '{@link #getValue() <em>Get Value</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_VALUE__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CD getValue() {
+		if (GET_VALUE__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProblemEntry(),
+				IDomainPackage.eINSTANCE.getProblemEntry().getEAllOperations().get(45));
+			try {
+				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_VALUE__EOCL_QRY);
+		return (CD) query.evaluate(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CD withValue() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CD");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		CD value = (CD) eObject;
+		this.getCDAType().getValues().add(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntry setValue(CD value) {
+		this.getCDAType().getValues().add(value);
 		return this;
 	}
 
@@ -1076,7 +1315,7 @@ public class ProblemEntryImpl extends EObjectImpl implements IProblemEntry {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.PROBLEM_ENTRY__CDA_TYPE:
-				return cDAType != null;
+				return isSetCDAType();
 		}
 		return super.eIsSet(featureID);
 	}

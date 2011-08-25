@@ -9,7 +9,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -128,11 +127,11 @@ public interface IImmunizationsSection {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::MedicationsSection::supplyActivity.
-	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(ccd::SupplyActivity)).oclAsType(ccd::SupplyActivity)
+	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(domain::SupplyActivity)).oclAsType(domain::SupplyActivity)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<SupplyActivity> getSupplyActivities();
+	EList<ISupplyActivity> getSupplyActivities();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,7 +141,7 @@ public interface IImmunizationsSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	SupplyActivity addSupplyActivity();
+	ISupplyActivity addSupplyActivity();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,7 +151,7 @@ public interface IImmunizationsSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IImmunizationsSection addSupplyActivity(SupplyActivity value);
+	IImmunizationsSection addSupplyActivity(ISupplyActivity value);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -17,7 +17,6 @@ import org.openhealthtools.mdht.uml.cda.InformationRecipient;
 import org.openhealthtools.mdht.uml.cda.InfrastructureRootTypeId;
 import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -772,11 +771,11 @@ public interface IDischargeSummary {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * hitsp::DischargeSummary::dischargeDiet.
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))->asSequence()->first().oclAsType(ihe::DischargeDiet)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::DischargeDiet))->asSequence()->first().oclAsType(domain::DischargeDiet)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	DischargeDiet getDischargeDiet();
+	IDischargeDiet getDischargeDiet();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -786,7 +785,7 @@ public interface IDischargeSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	DischargeDiet withDischargeDiet();
+	IDischargeDiet withDischargeDiet();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -796,7 +795,7 @@ public interface IDischargeSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IDischargeSummary setDischargeDiet(DischargeDiet value);
+	IDischargeSummary setDischargeDiet(IDischargeDiet value);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -27,28 +27,28 @@ import org.openhealthtools.mdht.uml.cda.InformationRecipient;
 import org.openhealthtools.mdht.uml.cda.InfrastructureRootTypeId;
 import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
-import org.openhealthtools.mdht.uml.cda.ccd.FamilyHistorySection;
-import org.openhealthtools.mdht.uml.cda.ccd.FunctionalStatusSection;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicalEquipmentSection;
-import org.openhealthtools.mdht.uml.cda.ccd.PurposeSection;
-import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
-import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergiesReactionsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IComment;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistorySection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IFunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IImmunizationsSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicalEquipmentSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayersSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPregnancyHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemListSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPurposeSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultsSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupport;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISurgeriesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
@@ -872,7 +872,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_FAMILY_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FamilyHistorySection))->asSequence()->first().oclAsType(ccd::FamilyHistorySection)";
+	protected static final String GET_FAMILY_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::FamilyHistorySection))->asSequence()->first().oclAsType(domain::FamilyHistorySection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getFamilyHistorySection() <em>Get Family History Section</em>}' query operation.
@@ -889,7 +889,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FamilyHistorySection getFamilyHistorySection() {
+	public IFamilyHistorySection getFamilyHistorySection() {
 		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -902,7 +902,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_QRY);
-		return (FamilyHistorySection) query.evaluate(this);
+		return (IFamilyHistorySection) query.evaluate(this);
 	}
 
 	/**
@@ -910,7 +910,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FamilyHistorySection withFamilyHistorySection() {
+	public IFamilyHistorySection withFamilyHistorySection() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("FamilyHistorySection");
@@ -921,7 +921,11 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 		} catch (Exception e) {
 			// no init() method
 		}
-		FamilyHistorySection value = (FamilyHistorySection) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("FamilyHistorySection");
+		IFamilyHistorySection value = (IFamilyHistorySection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
@@ -931,7 +935,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPatientSummary setFamilyHistorySection(FamilyHistorySection value) {
+	public IPatientSummary setFamilyHistorySection(IFamilyHistorySection value) {
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
@@ -944,7 +948,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::SocialHistorySection))->asSequence()->first().oclAsType(ccd::SocialHistorySection)";
+	protected static final String GET_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::SocialHistorySection))->asSequence()->first().oclAsType(domain::SocialHistorySection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getSocialHistorySection() <em>Get Social History Section</em>}' query operation.
@@ -961,7 +965,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SocialHistorySection getSocialHistorySection() {
+	public ISocialHistorySection getSocialHistorySection() {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -974,7 +978,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_QRY);
-		return (SocialHistorySection) query.evaluate(this);
+		return (ISocialHistorySection) query.evaluate(this);
 	}
 
 	/**
@@ -982,7 +986,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SocialHistorySection withSocialHistorySection() {
+	public ISocialHistorySection withSocialHistorySection() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("SocialHistorySection");
@@ -993,7 +997,11 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 		} catch (Exception e) {
 			// no init() method
 		}
-		SocialHistorySection value = (SocialHistorySection) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("SocialHistorySection");
+		ISocialHistorySection value = (ISocialHistorySection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
@@ -1003,7 +1011,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPatientSummary setSocialHistorySection(SocialHistorySection value) {
+	public IPatientSummary setSocialHistorySection(ISocialHistorySection value) {
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
@@ -1016,7 +1024,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_RESULTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ResultsSection))->asSequence()->first().oclAsType(ccd::ResultsSection)";
+	protected static final String GET_RESULTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::ResultsSection))->asSequence()->first().oclAsType(domain::ResultsSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getResultsSection() <em>Get Results Section</em>}' query operation.
@@ -1033,7 +1041,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResultsSection getResultsSection() {
+	public IResultsSection getResultsSection() {
 		if (GET_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1046,7 +1054,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS_SECTION__EOCL_QRY);
-		return (ResultsSection) query.evaluate(this);
+		return (IResultsSection) query.evaluate(this);
 	}
 
 	/**
@@ -1054,7 +1062,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResultsSection withResultsSection() {
+	public IResultsSection withResultsSection() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ResultsSection");
@@ -1065,7 +1073,11 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 		} catch (Exception e) {
 			// no init() method
 		}
-		ResultsSection value = (ResultsSection) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ResultsSection");
+		IResultsSection value = (IResultsSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
@@ -1075,7 +1087,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPatientSummary setResultsSection(ResultsSection value) {
+	public IPatientSummary setResultsSection(IResultsSection value) {
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
@@ -1088,7 +1100,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::MedicalEquipmentSection))->asSequence()->first().oclAsType(ccd::MedicalEquipmentSection)";
+	protected static final String GET_MEDICAL_EQUIPMENT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::MedicalEquipmentSection))->asSequence()->first().oclAsType(domain::MedicalEquipmentSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMedicalEquipmentSection() <em>Get Medical Equipment Section</em>}' query operation.
@@ -1105,7 +1117,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicalEquipmentSection getMedicalEquipmentSection() {
+	public IMedicalEquipmentSection getMedicalEquipmentSection() {
 		if (GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1118,7 +1130,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICAL_EQUIPMENT_SECTION__EOCL_QRY);
-		return (MedicalEquipmentSection) query.evaluate(this);
+		return (IMedicalEquipmentSection) query.evaluate(this);
 	}
 
 	/**
@@ -1126,7 +1138,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicalEquipmentSection withMedicalEquipmentSection() {
+	public IMedicalEquipmentSection withMedicalEquipmentSection() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("MedicalEquipmentSection");
@@ -1137,7 +1149,11 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 		} catch (Exception e) {
 			// no init() method
 		}
-		MedicalEquipmentSection value = (MedicalEquipmentSection) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("MedicalEquipmentSection");
+		IMedicalEquipmentSection value = (IMedicalEquipmentSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
@@ -1147,7 +1163,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPatientSummary setMedicalEquipmentSection(MedicalEquipmentSection value) {
+	public IPatientSummary setMedicalEquipmentSection(IMedicalEquipmentSection value) {
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
@@ -1160,7 +1176,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FunctionalStatusSection))->asSequence()->first().oclAsType(ccd::FunctionalStatusSection)";
+	protected static final String GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::FunctionalStatusSection))->asSequence()->first().oclAsType(domain::FunctionalStatusSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getFunctionalStatusSection() <em>Get Functional Status Section</em>}' query operation.
@@ -1177,7 +1193,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FunctionalStatusSection getFunctionalStatusSection() {
+	public IFunctionalStatusSection getFunctionalStatusSection() {
 		if (GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1190,7 +1206,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY);
-		return (FunctionalStatusSection) query.evaluate(this);
+		return (IFunctionalStatusSection) query.evaluate(this);
 	}
 
 	/**
@@ -1198,7 +1214,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FunctionalStatusSection withFunctionalStatusSection() {
+	public IFunctionalStatusSection withFunctionalStatusSection() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("FunctionalStatusSection");
@@ -1209,7 +1225,11 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 		} catch (Exception e) {
 			// no init() method
 		}
-		FunctionalStatusSection value = (FunctionalStatusSection) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("FunctionalStatusSection");
+		IFunctionalStatusSection value = (IFunctionalStatusSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
@@ -1219,7 +1239,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPatientSummary setFunctionalStatusSection(FunctionalStatusSection value) {
+	public IPatientSummary setFunctionalStatusSection(IFunctionalStatusSection value) {
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
@@ -1232,7 +1252,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PURPOSE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PurposeSection))->asSequence()->first().oclAsType(ccd::PurposeSection)";
+	protected static final String GET_PURPOSE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::PurposeSection))->asSequence()->first().oclAsType(domain::PurposeSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPurposeSection() <em>Get Purpose Section</em>}' query operation.
@@ -1249,7 +1269,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PurposeSection getPurposeSection() {
+	public IPurposeSection getPurposeSection() {
 		if (GET_PURPOSE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1262,7 +1282,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PURPOSE_SECTION__EOCL_QRY);
-		return (PurposeSection) query.evaluate(this);
+		return (IPurposeSection) query.evaluate(this);
 	}
 
 	/**
@@ -1270,7 +1290,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PurposeSection withPurposeSection() {
+	public IPurposeSection withPurposeSection() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PurposeSection");
@@ -1281,7 +1301,11 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 		} catch (Exception e) {
 			// no init() method
 		}
-		PurposeSection value = (PurposeSection) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PurposeSection");
+		IPurposeSection value = (IPurposeSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
@@ -1291,7 +1315,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPatientSummary setPurposeSection(PurposeSection value) {
+	public IPatientSummary setPurposeSection(IPurposeSection value) {
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
@@ -2247,7 +2271,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PREGNANCY_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::PregnancyHistorySection))->asSequence()->first().oclAsType(ihe::PregnancyHistorySection)";
+	protected static final String GET_PREGNANCY_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::PregnancyHistorySection))->asSequence()->first().oclAsType(domain::PregnancyHistorySection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPregnancyHistorySection() <em>Get Pregnancy History Section</em>}' query operation.
@@ -2264,7 +2288,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PregnancyHistorySection getPregnancyHistorySection() {
+	public IPregnancyHistorySection getPregnancyHistorySection() {
 		if (GET_PREGNANCY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2277,7 +2301,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PREGNANCY_HISTORY_SECTION__EOCL_QRY);
-		return (PregnancyHistorySection) query.evaluate(this);
+		return (IPregnancyHistorySection) query.evaluate(this);
 	}
 
 	/**
@@ -2285,7 +2309,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PregnancyHistorySection withPregnancyHistorySection() {
+	public IPregnancyHistorySection withPregnancyHistorySection() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PregnancyHistorySection");
@@ -2296,7 +2320,11 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 		} catch (Exception e) {
 			// no init() method
 		}
-		PregnancyHistorySection value = (PregnancyHistorySection) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PregnancyHistorySection");
+		IPregnancyHistorySection value = (IPregnancyHistorySection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
@@ -2306,7 +2334,7 @@ public class PatientSummaryImpl extends EObjectImpl implements IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPatientSummary setPregnancyHistorySection(PregnancyHistorySection value) {
+	public IPatientSummary setPregnancyHistorySection(IPregnancyHistorySection value) {
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}

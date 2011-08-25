@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.ICondition;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainFactory;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHistoryOfPastIllnessSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHospitalCourseSection;
@@ -179,20 +180,18 @@ public class TestDischargeSummary {
 		IProblemEntry problemEntry = condition.addProblemEntry();
 		problemEntry.addId().setRoot(UUID.randomUUID().toString());
 
-		problemEntry.withProblemStatusObservation();
-		// problemEntry.withProblemStatus().withValue().setCode("123123-7");
-		// problemEntry.addComment().withAuthor();
+		problemEntry.withProblemStatus().withValue().setCode("123123-7");
+		problemEntry.addComment().withAuthor();
 
-		problemEntry.withHealthStatusObservation();
-		// problemEntry.withHealthStatusObservation().withValue().setCode("435345-9");
+		problemEntry.withHealthStatusObservation().withValue().setCode("435345-9");
 
 		problemEntry.withAgeObservation();
 		// problemEntry.withCauseOfDeath().withTimeOfDeath().setValue(new Date().toString());
+		problemEntry.withCauseOfDeath();
 
-		condition.withEpisodeObservation();
-		// IEpisodeObservation episodeObservation = condition.withEpisodeObservation();
-		// episodeObservation.withCode().setCode("9999-2");
-		// episodeObservation.withValue().setCode("7623487");
+		IEpisodeObservation episodeObservation = condition.withEpisodeObservation();
+		episodeObservation.withCode().setCode("9999-2");
+		episodeObservation.withValue().setCode("7623487");
 
 		// test toCDAType()
 		System.out.println();

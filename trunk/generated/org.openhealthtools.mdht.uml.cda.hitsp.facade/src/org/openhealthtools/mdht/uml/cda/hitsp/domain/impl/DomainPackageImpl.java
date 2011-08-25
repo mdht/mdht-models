@@ -18,9 +18,9 @@ import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
+import org.openhealthtools.mdht.uml.cda.CDAPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainFactory;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
-import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,7 +48,70 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass episodeObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass allergyIntoleranceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass medicationSeriesNumberObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass medicationStatusObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass reactionObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass severityObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass productInstanceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass internalReferenceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass patientMedicalInstructionsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -69,6 +132,13 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass medicationFullfillmentInstructionsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass conditionEClass = null;
 
 	/**
@@ -77,6 +147,41 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * @generated
 	 */
 	private EClass problemEntryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ageObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass severityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass problemStatusObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass statusObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass healthStatusObservationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,6 +202,34 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass advanceDirectiveEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass advanceDirectiveVerificationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass advanceDirectiveStatusObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass advanceDirectiveReferenceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass allergiesReactionsSectionEClass = null;
 
 	/**
@@ -111,6 +244,34 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass causeOfDeathObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass familyHistoryObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass simpleObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass problemEntryReactionObservationContainerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass problemListSectionEClass = null;
 
 	/**
@@ -119,6 +280,20 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * @generated
 	 */
 	private EClass encountersSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass encountersActivityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass encounterLocationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -153,6 +328,41 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass coverageEntryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass policyActivityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass payerEntityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coveredPartyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass policySubscriberEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationsSectionEClass = null;
 
 	/**
@@ -167,6 +377,55 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass planOfCareActivityActEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass planOfCareActivityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass planOfCareActivityEncounterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass planOfCareActivityObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass planOfCareActivityProcedureEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass planOfCareActivitySubstanceAdministrationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass planOfCareActivitySupplyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass surgeriesSectionEClass = null;
 
 	/**
@@ -174,7 +433,42 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass externalReferenceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass procedureEntryProcedureActivityProcedureEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass procedureEntryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass procedureEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pregnancyHistorySectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pregnancyObservationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -189,6 +483,20 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * @generated
 	 */
 	private EClass vitalSignsSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass vitalSignsOrganizerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass vitalSignObservationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -245,6 +553,20 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * @generated
 	 */
 	private EClass functionalStatusSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass purposeSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass purposeActivityEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -328,7 +650,77 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass socialHistoryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass socialHistoryStatusObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass socialHistoryObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass resultsSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass resultOrganizerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass resultObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicalEquipmentSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass supplyActivityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass fulfillmentInstructionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass medicationActivityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass patientInstructionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -412,6 +804,27 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass scanOriginalAuthorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass scanningDeviceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass scanDataEntererEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass medicationInformationEClass = null;
 
 	/**
@@ -434,6 +847,20 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * @generated
 	 */
 	private EClass dischargeSummaryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dischargeDietEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass familyHistoryEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -484,7 +911,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 		isInited = true;
 
 		// Initialize simple dependencies
-		IHEPackage.eINSTANCE.eClass();
+		CDAPackage.eINSTANCE.eClass();
 
 		// Load packages
 		theDomainPackage.loadPackage();
@@ -527,10 +954,45 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getEpisodeObservation() {
+		if (episodeObservationEClass == null) {
+			episodeObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				1);
+		}
+		return episodeObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEpisodeObservation_CDAType() {
+		return (EReference) getEpisodeObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAllergyIntolerance() {
+		if (allergyIntoleranceEClass == null) {
+			allergyIntoleranceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				2);
+		}
+		return allergyIntoleranceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getMedication() {
 		if (medicationEClass == null) {
 			medicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				1);
+				14);
 		}
 		return medicationEClass;
 	}
@@ -549,10 +1011,155 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getMedicationSeriesNumberObservation() {
+		if (medicationSeriesNumberObservationEClass == null) {
+			medicationSeriesNumberObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IDomainPackage.eNS_URI).getEClassifiers().get(15);
+		}
+		return medicationSeriesNumberObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMedicationSeriesNumberObservation_CDAType() {
+		return (EReference) getMedicationSeriesNumberObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMedicationStatusObservation() {
+		if (medicationStatusObservationEClass == null) {
+			medicationStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				16);
+		}
+		return medicationStatusObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getReactionObservation() {
+		if (reactionObservationEClass == null) {
+			reactionObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				17);
+		}
+		return reactionObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getReactionObservation_CDAType() {
+		return (EReference) getReactionObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSeverityObservation() {
+		if (severityObservationEClass == null) {
+			severityObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				18);
+		}
+		return severityObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSeverityObservation_CDAType() {
+		return (EReference) getSeverityObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProductInstance() {
+		if (productInstanceEClass == null) {
+			productInstanceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				19);
+		}
+		return productInstanceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductInstance_CDAType() {
+		return (EReference) getProductInstance().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getInternalReference() {
+		if (internalReferenceEClass == null) {
+			internalReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				20);
+		}
+		return internalReferenceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getInternalReference_CDAType() {
+		return (EReference) getInternalReference().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPatientMedicalInstructions() {
+		if (patientMedicalInstructionsEClass == null) {
+			patientMedicalInstructionsEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				21);
+		}
+		return patientMedicalInstructionsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPatientMedicalInstructions_CDAType() {
+		return (EReference) getPatientMedicalInstructions().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getMedicationType() {
 		if (medicationTypeEClass == null) {
 			medicationTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				2);
+				22);
 		}
 		return medicationTypeEClass;
 	}
@@ -574,7 +1181,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationOrderInformation() {
 		if (medicationOrderInformationEClass == null) {
 			medicationOrderInformationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				3);
+				23);
 		}
 		return medicationOrderInformationEClass;
 	}
@@ -593,10 +1200,32 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getMedicationFullfillmentInstructions() {
+		if (medicationFullfillmentInstructionsEClass == null) {
+			medicationFullfillmentInstructionsEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IDomainPackage.eNS_URI).getEClassifiers().get(24);
+		}
+		return medicationFullfillmentInstructionsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMedicationFullfillmentInstructions_CDAType() {
+		return (EReference) getMedicationFullfillmentInstructions().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getCondition() {
 		if (conditionEClass == null) {
 			conditionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				4);
+				25);
 		}
 		return conditionEClass;
 	}
@@ -618,7 +1247,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getProblemEntry() {
 		if (problemEntryEClass == null) {
 			problemEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				5);
+				3);
 		}
 		return problemEntryEClass;
 	}
@@ -637,10 +1266,111 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getAgeObservation() {
+		if (ageObservationEClass == null) {
+			ageObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				4);
+		}
+		return ageObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAgeObservation_CDAType() {
+		return (EReference) getAgeObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSeverity() {
+		if (severityEClass == null) {
+			severityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				5);
+		}
+		return severityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSeverity_CDAType() {
+		return (EReference) getSeverity().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProblemStatusObservation() {
+		if (problemStatusObservationEClass == null) {
+			problemStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				6);
+		}
+		return problemStatusObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getStatusObservation() {
+		if (statusObservationEClass == null) {
+			statusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				7);
+		}
+		return statusObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getStatusObservation_CDAType() {
+		return (EReference) getStatusObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHealthStatusObservation() {
+		if (healthStatusObservationEClass == null) {
+			healthStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				8);
+		}
+		return healthStatusObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHealthStatusObservation_CDAType() {
+		return (EReference) getHealthStatusObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPatientSummary() {
 		if (patientSummaryEClass == null) {
 			patientSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				6);
+				26);
 		}
 		return patientSummaryEClass;
 	}
@@ -662,7 +1392,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getAdvanceDirectivesSection() {
 		if (advanceDirectivesSectionEClass == null) {
 			advanceDirectivesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				7);
+				43);
 		}
 		return advanceDirectivesSectionEClass;
 	}
@@ -681,10 +1411,89 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getAdvanceDirective() {
+		if (advanceDirectiveEClass == null) {
+			advanceDirectiveEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				44);
+		}
+		return advanceDirectiveEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAdvanceDirective_CDAType() {
+		return (EReference) getAdvanceDirective().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAdvanceDirectiveVerification() {
+		if (advanceDirectiveVerificationEClass == null) {
+			advanceDirectiveVerificationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				45);
+		}
+		return advanceDirectiveVerificationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAdvanceDirectiveVerification_CDAType() {
+		return (EReference) getAdvanceDirectiveVerification().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAdvanceDirectiveStatusObservation() {
+		if (advanceDirectiveStatusObservationEClass == null) {
+			advanceDirectiveStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IDomainPackage.eNS_URI).getEClassifiers().get(46);
+		}
+		return advanceDirectiveStatusObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAdvanceDirectiveReference() {
+		if (advanceDirectiveReferenceEClass == null) {
+			advanceDirectiveReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				47);
+		}
+		return advanceDirectiveReferenceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAdvanceDirectiveReference_CDAType() {
+		return (EReference) getAdvanceDirectiveReference().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAllergiesReactionsSection() {
 		if (allergiesReactionsSectionEClass == null) {
 			allergiesReactionsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				8);
+				48);
 		}
 		return allergiesReactionsSectionEClass;
 	}
@@ -725,10 +1534,71 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getCauseOfDeathObservation() {
+		if (causeOfDeathObservationEClass == null) {
+			causeOfDeathObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				10);
+		}
+		return causeOfDeathObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFamilyHistoryObservation() {
+		if (familyHistoryObservationEClass == null) {
+			familyHistoryObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				11);
+		}
+		return familyHistoryObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSimpleObservation() {
+		if (simpleObservationEClass == null) {
+			simpleObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				12);
+		}
+		return simpleObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSimpleObservation_CDAType() {
+		return (EReference) getSimpleObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProblemEntryReactionObservationContainer() {
+		if (problemEntryReactionObservationContainerEClass == null) {
+			problemEntryReactionObservationContainerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IDomainPackage.eNS_URI).getEClassifiers().get(13);
+		}
+		return problemEntryReactionObservationContainerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getProblemListSection() {
 		if (problemListSectionEClass == null) {
 			problemListSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				10);
+				49);
 		}
 		return problemListSectionEClass;
 	}
@@ -750,7 +1620,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getEncountersSection() {
 		if (encountersSectionEClass == null) {
 			encountersSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				11);
+				50);
 		}
 		return encountersSectionEClass;
 	}
@@ -769,10 +1639,54 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getEncountersActivity() {
+		if (encountersActivityEClass == null) {
+			encountersActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				51);
+		}
+		return encountersActivityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEncountersActivity_CDAType() {
+		return (EReference) getEncountersActivity().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEncounterLocation() {
+		if (encounterLocationEClass == null) {
+			encounterLocationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				52);
+		}
+		return encounterLocationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEncounterLocation_CDAType() {
+		return (EReference) getEncounterLocation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getEncounter() {
 		if (encounterEClass == null) {
 			encounterEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				12);
+				53);
 		}
 		return encounterEClass;
 	}
@@ -794,7 +1708,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getImmunizationsSection() {
 		if (immunizationsSectionEClass == null) {
 			immunizationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				13);
+				54);
 		}
 		return immunizationsSectionEClass;
 	}
@@ -816,7 +1730,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getImmunization() {
 		if (immunizationEClass == null) {
 			immunizationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				14);
+				55);
 		}
 		return immunizationEClass;
 	}
@@ -838,7 +1752,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getPayersSection() {
 		if (payersSectionEClass == null) {
 			payersSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				15);
+				56);
 		}
 		return payersSectionEClass;
 	}
@@ -857,10 +1771,120 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getCoverageEntry() {
+		if (coverageEntryEClass == null) {
+			coverageEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				57);
+		}
+		return coverageEntryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getCoverageEntry_CDAType() {
+		return (EReference) getCoverageEntry().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPolicyActivity() {
+		if (policyActivityEClass == null) {
+			policyActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				58);
+		}
+		return policyActivityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPolicyActivity_CDAType() {
+		return (EReference) getPolicyActivity().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPayerEntity() {
+		if (payerEntityEClass == null) {
+			payerEntityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				59);
+		}
+		return payerEntityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPayerEntity_CDAType() {
+		return (EReference) getPayerEntity().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCoveredParty() {
+		if (coveredPartyEClass == null) {
+			coveredPartyEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				60);
+		}
+		return coveredPartyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getCoveredParty_CDAType() {
+		return (EReference) getCoveredParty().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPolicySubscriber() {
+		if (policySubscriberEClass == null) {
+			policySubscriberEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				61);
+		}
+		return policySubscriberEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPolicySubscriber_CDAType() {
+		return (EReference) getPolicySubscriber().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getMedicationsSection() {
 		if (medicationsSectionEClass == null) {
 			medicationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				16);
+				62);
 		}
 		return medicationsSectionEClass;
 	}
@@ -882,7 +1906,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getPlanOfCareSection() {
 		if (planOfCareSectionEClass == null) {
 			planOfCareSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				17);
+				63);
 		}
 		return planOfCareSectionEClass;
 	}
@@ -901,10 +1925,155 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getPlanOfCareActivityAct() {
+		if (planOfCareActivityActEClass == null) {
+			planOfCareActivityActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				64);
+		}
+		return planOfCareActivityActEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPlanOfCareActivityAct_CDAType() {
+		return (EReference) getPlanOfCareActivityAct().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPlanOfCareActivity() {
+		if (planOfCareActivityEClass == null) {
+			planOfCareActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				65);
+		}
+		return planOfCareActivityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPlanOfCareActivityEncounter() {
+		if (planOfCareActivityEncounterEClass == null) {
+			planOfCareActivityEncounterEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				66);
+		}
+		return planOfCareActivityEncounterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPlanOfCareActivityEncounter_CDAType() {
+		return (EReference) getPlanOfCareActivityEncounter().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPlanOfCareActivityObservation() {
+		if (planOfCareActivityObservationEClass == null) {
+			planOfCareActivityObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IDomainPackage.eNS_URI).getEClassifiers().get(67);
+		}
+		return planOfCareActivityObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPlanOfCareActivityObservation_CDAType() {
+		return (EReference) getPlanOfCareActivityObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPlanOfCareActivityProcedure() {
+		if (planOfCareActivityProcedureEClass == null) {
+			planOfCareActivityProcedureEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				68);
+		}
+		return planOfCareActivityProcedureEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPlanOfCareActivityProcedure_CDAType() {
+		return (EReference) getPlanOfCareActivityProcedure().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPlanOfCareActivitySubstanceAdministration() {
+		if (planOfCareActivitySubstanceAdministrationEClass == null) {
+			planOfCareActivitySubstanceAdministrationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IDomainPackage.eNS_URI).getEClassifiers().get(69);
+		}
+		return planOfCareActivitySubstanceAdministrationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPlanOfCareActivitySubstanceAdministration_CDAType() {
+		return (EReference) getPlanOfCareActivitySubstanceAdministration().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPlanOfCareActivitySupply() {
+		if (planOfCareActivitySupplyEClass == null) {
+			planOfCareActivitySupplyEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				70);
+		}
+		return planOfCareActivitySupplyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPlanOfCareActivitySupply_CDAType() {
+		return (EReference) getPlanOfCareActivitySupply().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getSurgeriesSection() {
 		if (surgeriesSectionEClass == null) {
 			surgeriesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				19);
+				74);
 		}
 		return surgeriesSectionEClass;
 	}
@@ -923,10 +2092,67 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getExternalReference() {
+		if (externalReferenceEClass == null) {
+			externalReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				75);
+		}
+		return externalReferenceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getExternalReference_CDAType() {
+		return (EReference) getExternalReference().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProcedureEntryProcedureActivityProcedure() {
+		if (procedureEntryProcedureActivityProcedureEClass == null) {
+			procedureEntryProcedureActivityProcedureEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IDomainPackage.eNS_URI).getEClassifiers().get(76);
+		}
+		return procedureEntryProcedureActivityProcedureEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProcedureEntry() {
+		if (procedureEntryEClass == null) {
+			procedureEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				77);
+		}
+		return procedureEntryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProcedureEntry_CDAType() {
+		return (EReference) getProcedureEntry().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getProcedure() {
 		if (procedureEClass == null) {
 			procedureEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				18);
+				71);
 		}
 		return procedureEClass;
 	}
@@ -945,10 +2171,45 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getPregnancyHistorySection() {
+		if (pregnancyHistorySectionEClass == null) {
+			pregnancyHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				72);
+		}
+		return pregnancyHistorySectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPregnancyHistorySection_CDAType() {
+		return (EReference) getPregnancyHistorySection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPregnancyObservation() {
+		if (pregnancyObservationEClass == null) {
+			pregnancyObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				73);
+		}
+		return pregnancyObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getSupport() {
 		if (supportEClass == null) {
 			supportEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				20);
+				78);
 		}
 		return supportEClass;
 	}
@@ -961,7 +2222,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getVitalSignsSection() {
 		if (vitalSignsSectionEClass == null) {
 			vitalSignsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				21);
+				79);
 		}
 		return vitalSignsSectionEClass;
 	}
@@ -980,10 +2241,45 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getVitalSignsOrganizer() {
+		if (vitalSignsOrganizerEClass == null) {
+			vitalSignsOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				80);
+		}
+		return vitalSignsOrganizerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getVitalSignsOrganizer_CDAType() {
+		return (EReference) getVitalSignsOrganizer().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVitalSignObservation() {
+		if (vitalSignObservationEClass == null) {
+			vitalSignObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				81);
+		}
+		return vitalSignObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getDiagnosticResultsSection() {
 		if (diagnosticResultsSectionEClass == null) {
 			diagnosticResultsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				22);
+				82);
 		}
 		return diagnosticResultsSectionEClass;
 	}
@@ -1005,7 +2301,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getResult() {
 		if (resultEClass == null) {
 			resultEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				23);
+				83);
 		}
 		return resultEClass;
 	}
@@ -1027,7 +2323,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getVitalSign() {
 		if (vitalSignEClass == null) {
 			vitalSignEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				24);
+				84);
 		}
 		return vitalSignEClass;
 	}
@@ -1049,7 +2345,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getHistoryOfPastIllnessSection() {
 		if (historyOfPastIllnessSectionEClass == null) {
 			historyOfPastIllnessSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				25);
+				85);
 		}
 		return historyOfPastIllnessSectionEClass;
 	}
@@ -1071,7 +2367,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getChiefComplaintSection() {
 		if (chiefComplaintSectionEClass == null) {
 			chiefComplaintSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				26);
+				86);
 		}
 		return chiefComplaintSectionEClass;
 	}
@@ -1093,7 +2389,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getReasonForReferralSection() {
 		if (reasonForReferralSectionEClass == null) {
 			reasonForReferralSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				27);
+				87);
 		}
 		return reasonForReferralSectionEClass;
 	}
@@ -1115,7 +2411,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getHistoryOfPresentIllness() {
 		if (historyOfPresentIllnessEClass == null) {
 			historyOfPresentIllnessEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				28);
+				88);
 		}
 		return historyOfPresentIllnessEClass;
 	}
@@ -1137,7 +2433,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getFunctionalStatusSection() {
 		if (functionalStatusSectionEClass == null) {
 			functionalStatusSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				29);
+				40);
 		}
 		return functionalStatusSectionEClass;
 	}
@@ -1156,10 +2452,54 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getPurposeSection() {
+		if (purposeSectionEClass == null) {
+			purposeSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				41);
+		}
+		return purposeSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPurposeSection_CDAType() {
+		return (EReference) getPurposeSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPurposeActivity() {
+		if (purposeActivityEClass == null) {
+			purposeActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				42);
+		}
+		return purposeActivityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPurposeActivity_CDAType() {
+		return (EReference) getPurposeActivity().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getHospitalAdmissionDiagnosisSection() {
 		if (hospitalAdmissionDiagnosisSectionEClass == null) {
 			hospitalAdmissionDiagnosisSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				IDomainPackage.eNS_URI).getEClassifiers().get(30);
+				IDomainPackage.eNS_URI).getEClassifiers().get(89);
 		}
 		return hospitalAdmissionDiagnosisSectionEClass;
 	}
@@ -1181,7 +2521,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getDischargeDiagnosisSection() {
 		if (dischargeDiagnosisSectionEClass == null) {
 			dischargeDiagnosisSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				31);
+				90);
 		}
 		return dischargeDiagnosisSectionEClass;
 	}
@@ -1203,7 +2543,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getAdmissionMedicationHistorySection() {
 		if (admissionMedicationHistorySectionEClass == null) {
 			admissionMedicationHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				IDomainPackage.eNS_URI).getEClassifiers().get(32);
+				IDomainPackage.eNS_URI).getEClassifiers().get(91);
 		}
 		return admissionMedicationHistorySectionEClass;
 	}
@@ -1225,7 +2565,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getHospitalDischargeMedicationsSection() {
 		if (hospitalDischargeMedicationsSectionEClass == null) {
 			hospitalDischargeMedicationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				IDomainPackage.eNS_URI).getEClassifiers().get(33);
+				IDomainPackage.eNS_URI).getEClassifiers().get(92);
 		}
 		return hospitalDischargeMedicationsSectionEClass;
 	}
@@ -1247,7 +2587,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationsAdministeredSection() {
 		if (medicationsAdministeredSectionEClass == null) {
 			medicationsAdministeredSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				IDomainPackage.eNS_URI).getEClassifiers().get(34);
+				IDomainPackage.eNS_URI).getEClassifiers().get(93);
 		}
 		return medicationsAdministeredSectionEClass;
 	}
@@ -1269,7 +2609,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getPhysicalExamSection() {
 		if (physicalExamSectionEClass == null) {
 			physicalExamSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				35);
+				94);
 		}
 		return physicalExamSectionEClass;
 	}
@@ -1291,7 +2631,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getReviewOfSystemsSection() {
 		if (reviewOfSystemsSectionEClass == null) {
 			reviewOfSystemsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				36);
+				95);
 		}
 		return reviewOfSystemsSectionEClass;
 	}
@@ -1313,7 +2653,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getHospitalCourseSection() {
 		if (hospitalCourseSectionEClass == null) {
 			hospitalCourseSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				37);
+				96);
 		}
 		return hospitalCourseSectionEClass;
 	}
@@ -1335,7 +2675,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getAssessmentAndPlanSection() {
 		if (assessmentAndPlanSectionEClass == null) {
 			assessmentAndPlanSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				38);
+				97);
 		}
 		return assessmentAndPlanSectionEClass;
 	}
@@ -1357,7 +2697,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getFamilyHistorySection() {
 		if (familyHistorySectionEClass == null) {
 			familyHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				39);
+				27);
 		}
 		return familyHistorySectionEClass;
 	}
@@ -1379,7 +2719,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getSocialHistorySection() {
 		if (socialHistorySectionEClass == null) {
 			socialHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				40);
+				28);
 		}
 		return socialHistorySectionEClass;
 	}
@@ -1398,10 +2738,133 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getSocialHistory() {
+		if (socialHistoryEClass == null) {
+			socialHistoryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				29);
+		}
+		return socialHistoryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSocialHistory_CDAType() {
+		return (EReference) getSocialHistory().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSocialHistoryStatusObservation() {
+		if (socialHistoryStatusObservationEClass == null) {
+			socialHistoryStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IDomainPackage.eNS_URI).getEClassifiers().get(30);
+		}
+		return socialHistoryStatusObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSocialHistoryObservation() {
+		if (socialHistoryObservationEClass == null) {
+			socialHistoryObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				31);
+		}
+		return socialHistoryObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSocialHistoryObservation_CDAType() {
+		return (EReference) getSocialHistoryObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getResultsSection() {
+		if (resultsSectionEClass == null) {
+			resultsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				32);
+		}
+		return resultsSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getResultsSection_CDAType() {
+		return (EReference) getResultsSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getResultOrganizer() {
+		if (resultOrganizerEClass == null) {
+			resultOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				33);
+		}
+		return resultOrganizerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getResultOrganizer_CDAType() {
+		return (EReference) getResultOrganizer().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getResultObservation() {
+		if (resultObservationEClass == null) {
+			resultObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				34);
+		}
+		return resultObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getResultObservation_CDAType() {
+		return (EReference) getResultObservation().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getMedicalEquipmentSection() {
 		if (medicalEquipmentSectionEClass == null) {
 			medicalEquipmentSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				41);
+				35);
 		}
 		return medicalEquipmentSectionEClass;
 	}
@@ -1420,10 +2883,98 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getSupplyActivity() {
+		if (supplyActivityEClass == null) {
+			supplyActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				36);
+		}
+		return supplyActivityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSupplyActivity_CDAType() {
+		return (EReference) getSupplyActivity().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFulfillmentInstruction() {
+		if (fulfillmentInstructionEClass == null) {
+			fulfillmentInstructionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				37);
+		}
+		return fulfillmentInstructionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFulfillmentInstruction_CDAType() {
+		return (EReference) getFulfillmentInstruction().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMedicationActivity() {
+		if (medicationActivityEClass == null) {
+			medicationActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				38);
+		}
+		return medicationActivityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMedicationActivity_CDAType() {
+		return (EReference) getMedicationActivity().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPatientInstruction() {
+		if (patientInstructionEClass == null) {
+			patientInstructionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				39);
+		}
+		return patientInstructionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPatientInstruction_CDAType() {
+		return (EReference) getPatientInstruction().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getLanguageSpoken() {
 		if (languageSpokenEClass == null) {
 			languageSpokenEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				42);
+				98);
 		}
 		return languageSpokenEClass;
 	}
@@ -1445,7 +2996,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getInsuranceProvider() {
 		if (insuranceProviderEClass == null) {
 			insuranceProviderEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				43);
+				99);
 		}
 		return insuranceProviderEClass;
 	}
@@ -1467,7 +3018,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getHealthcareProvider() {
 		if (healthcareProviderEClass == null) {
 			healthcareProviderEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				44);
+				100);
 		}
 		return healthcareProviderEClass;
 	}
@@ -1489,7 +3040,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationNormalDose() {
 		if (medicationNormalDoseEClass == null) {
 			medicationNormalDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				45);
+				101);
 		}
 		return medicationNormalDoseEClass;
 	}
@@ -1502,7 +3053,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationSplitDose() {
 		if (medicationSplitDoseEClass == null) {
 			medicationSplitDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				46);
+				102);
 		}
 		return medicationSplitDoseEClass;
 	}
@@ -1515,7 +3066,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationTaperedDose() {
 		if (medicationTaperedDoseEClass == null) {
 			medicationTaperedDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				47);
+				103);
 		}
 		return medicationTaperedDoseEClass;
 	}
@@ -1528,7 +3079,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationConditionalDose() {
 		if (medicationConditionalDoseEClass == null) {
 			medicationConditionalDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				48);
+				104);
 		}
 		return medicationConditionalDoseEClass;
 	}
@@ -1541,7 +3092,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationCombinationMedication() {
 		if (medicationCombinationMedicationEClass == null) {
 			medicationCombinationMedicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				IDomainPackage.eNS_URI).getEClassifiers().get(49);
+				IDomainPackage.eNS_URI).getEClassifiers().get(105);
 		}
 		return medicationCombinationMedicationEClass;
 	}
@@ -1554,7 +3105,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getSupportGuardian() {
 		if (supportGuardianEClass == null) {
 			supportGuardianEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				50);
+				106);
 		}
 		return supportGuardianEClass;
 	}
@@ -1576,7 +3127,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getSupportParticipant() {
 		if (supportParticipantEClass == null) {
 			supportParticipantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				51);
+				107);
 		}
 		return supportParticipantEClass;
 	}
@@ -1598,7 +3149,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getUnstructuredDocument() {
 		if (unstructuredDocumentEClass == null) {
 			unstructuredDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				52);
+				108);
 		}
 		return unstructuredDocumentEClass;
 	}
@@ -1617,10 +3168,76 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getScanOriginalAuthor() {
+		if (scanOriginalAuthorEClass == null) {
+			scanOriginalAuthorEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				109);
+		}
+		return scanOriginalAuthorEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getScanOriginalAuthor_CDAType() {
+		return (EReference) getScanOriginalAuthor().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getScanningDevice() {
+		if (scanningDeviceEClass == null) {
+			scanningDeviceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				110);
+		}
+		return scanningDeviceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getScanningDevice_CDAType() {
+		return (EReference) getScanningDevice().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getScanDataEnterer() {
+		if (scanDataEntererEClass == null) {
+			scanDataEntererEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				111);
+		}
+		return scanDataEntererEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getScanDataEnterer_CDAType() {
+		return (EReference) getScanDataEnterer().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getMedicationInformation() {
 		if (medicationInformationEClass == null) {
 			medicationInformationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				53);
+				112);
 		}
 		return medicationInformationEClass;
 	}
@@ -1642,7 +3259,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getUnstructuredOrScannedDocument() {
 		if (unstructuredOrScannedDocumentEClass == null) {
 			unstructuredOrScannedDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				IDomainPackage.eNS_URI).getEClassifiers().get(54);
+				IDomainPackage.eNS_URI).getEClassifiers().get(113);
 		}
 		return unstructuredOrScannedDocumentEClass;
 	}
@@ -1655,7 +3272,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getReferralSummary() {
 		if (referralSummaryEClass == null) {
 			referralSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				55);
+				114);
 		}
 		return referralSummaryEClass;
 	}
@@ -1677,7 +3294,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getDischargeSummary() {
 		if (dischargeSummaryEClass == null) {
 			dischargeSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				56);
+				115);
 		}
 		return dischargeSummaryEClass;
 	}
@@ -1689,6 +3306,50 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 */
 	public EReference getDischargeSummary_CDAType() {
 		return (EReference) getDischargeSummary().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDischargeDiet() {
+		if (dischargeDietEClass == null) {
+			dischargeDietEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				116);
+		}
+		return dischargeDietEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDischargeDiet_CDAType() {
+		return (EReference) getDischargeDiet().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFamilyHistory() {
+		if (familyHistoryEClass == null) {
+			familyHistoryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				117);
+		}
+		return familyHistoryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFamilyHistory_CDAType() {
+		return (EReference) getFamilyHistory().getEStructuralFeatures().get(0);
 	}
 
 	/**

@@ -8,9 +8,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Supply;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_INT;
@@ -237,11 +234,11 @@ public interface IMedicationOrderInformation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::SupplyActivity::medicationStatusObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::MedicationStatusObservation))->asSequence()->first().oclAsType(ccd::MedicationStatusObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::MedicationStatusObservation))->asSequence()->first().oclAsType(domain::MedicationStatusObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationStatusObservation getMedicationStatusObservation();
+	IMedicationStatusObservation getMedicationStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -251,7 +248,7 @@ public interface IMedicationOrderInformation {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationStatusObservation withMedicationStatusObservation();
+	IMedicationStatusObservation withMedicationStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -261,18 +258,18 @@ public interface IMedicationOrderInformation {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationOrderInformation setMedicationStatusObservation(MedicationStatusObservation value);
+	IMedicationOrderInformation setMedicationStatusObservation(IMedicationStatusObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::SupplyActivity::productInstance.
-	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(ccd::ProductInstance)).oclAsType(ccd::ProductInstance)
+	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(domain::ProductInstance)).oclAsType(domain::ProductInstance)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ProductInstance> getProductInstances();
+	EList<IProductInstance> getProductInstances();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,7 +279,7 @@ public interface IMedicationOrderInformation {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ProductInstance addProductInstance();
+	IProductInstance addProductInstance();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -292,18 +289,18 @@ public interface IMedicationOrderInformation {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationOrderInformation addProductInstance(ProductInstance value);
+	IMedicationOrderInformation addProductInstance(IProductInstance value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::SupplyEntry::medicationFullfillmentInstructions.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::MedicationFullfillmentInstructions))->asSequence()->first().oclAsType(ihe::MedicationFullfillmentInstructions)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::MedicationFullfillmentInstructions))->asSequence()->first().oclAsType(domain::MedicationFullfillmentInstructions)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationFullfillmentInstructions getMedicationFullfillmentInstructions();
+	IMedicationFullfillmentInstructions getMedicationFullfillmentInstructions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -313,7 +310,7 @@ public interface IMedicationOrderInformation {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationFullfillmentInstructions withMedicationFullfillmentInstructions();
+	IMedicationFullfillmentInstructions withMedicationFullfillmentInstructions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -323,7 +320,7 @@ public interface IMedicationOrderInformation {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationOrderInformation setMedicationFullfillmentInstructions(MedicationFullfillmentInstructions value);
+	IMedicationOrderInformation setMedicationFullfillmentInstructions(IMedicationFullfillmentInstructions value);
 
 	/**
 	 * <!-- begin-user-doc -->

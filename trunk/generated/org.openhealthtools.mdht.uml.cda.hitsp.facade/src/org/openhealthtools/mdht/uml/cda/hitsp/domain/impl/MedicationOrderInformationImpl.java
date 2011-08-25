@@ -18,11 +18,11 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Supply;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationFullfillmentInstructions;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationOrderInformation;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationStatusObservation;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProductInstance;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -447,7 +447,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::MedicationStatusObservation))->asSequence()->first().oclAsType(ccd::MedicationStatusObservation)";
+	protected static final String GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::MedicationStatusObservation))->asSequence()->first().oclAsType(domain::MedicationStatusObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMedicationStatusObservation() <em>Get Medication Status Observation</em>}' query operation.
@@ -464,7 +464,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationStatusObservation getMedicationStatusObservation() {
+	public IMedicationStatusObservation getMedicationStatusObservation() {
 		if (GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -477,7 +477,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY);
-		return (MedicationStatusObservation) query.evaluate(this);
+		return (IMedicationStatusObservation) query.evaluate(this);
 	}
 
 	/**
@@ -485,7 +485,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationStatusObservation withMedicationStatusObservation() {
+	public IMedicationStatusObservation withMedicationStatusObservation() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("MedicationStatusObservation");
@@ -496,7 +496,11 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 		} catch (Exception e) {
 			// no init() method
 		}
-		MedicationStatusObservation value = (MedicationStatusObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("MedicationStatusObservation");
+		IMedicationStatusObservation value = (IMedicationStatusObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -506,8 +510,8 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IMedicationOrderInformation setMedicationStatusObservation(MedicationStatusObservation value) {
-		this.getCDAType().addObservation(value);
+	public IMedicationOrderInformation setMedicationStatusObservation(IMedicationStatusObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -519,7 +523,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PRODUCT_INSTANCES__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(ccd::ProductInstance)).oclAsType(ccd::ProductInstance)";
+	protected static final String GET_PRODUCT_INSTANCES__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(domain::ProductInstance)).oclAsType(domain::ProductInstance)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProductInstances() <em>Get Product Instances</em>}' query operation.
@@ -536,7 +540,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProductInstance> getProductInstances() {
+	public EList<IProductInstance> getProductInstances() {
 		if (GET_PRODUCT_INSTANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -550,8 +554,8 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PRODUCT_INSTANCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProductInstance> result = (Collection<ProductInstance>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<ProductInstance>(result.size(), result.toArray());
+		Collection<IProductInstance> result = (Collection<IProductInstance>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IProductInstance>(result.size(), result.toArray());
 	}
 
 	/**
@@ -559,7 +563,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProductInstance addProductInstance() {
+	public IProductInstance addProductInstance() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -570,7 +574,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IMedicationOrderInformation addProductInstance(ProductInstance value) {
+	public IMedicationOrderInformation addProductInstance(IProductInstance value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -584,7 +588,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::MedicationFullfillmentInstructions))->asSequence()->first().oclAsType(ihe::MedicationFullfillmentInstructions)";
+	protected static final String GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::MedicationFullfillmentInstructions))->asSequence()->first().oclAsType(domain::MedicationFullfillmentInstructions)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMedicationFullfillmentInstructions() <em>Get Medication Fullfillment Instructions</em>}' query operation.
@@ -601,7 +605,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationFullfillmentInstructions getMedicationFullfillmentInstructions() {
+	public IMedicationFullfillmentInstructions getMedicationFullfillmentInstructions() {
 		if (GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -614,7 +618,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_FULLFILLMENT_INSTRUCTIONS__EOCL_QRY);
-		return (MedicationFullfillmentInstructions) query.evaluate(this);
+		return (IMedicationFullfillmentInstructions) query.evaluate(this);
 	}
 
 	/**
@@ -622,7 +626,7 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationFullfillmentInstructions withMedicationFullfillmentInstructions() {
+	public IMedicationFullfillmentInstructions withMedicationFullfillmentInstructions() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("MedicationFullfillmentInstructions");
@@ -633,7 +637,11 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 		} catch (Exception e) {
 			// no init() method
 		}
-		MedicationFullfillmentInstructions value = (MedicationFullfillmentInstructions) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("MedicationFullfillmentInstructions");
+		IMedicationFullfillmentInstructions value = (IMedicationFullfillmentInstructions) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
@@ -643,8 +651,8 @@ public class MedicationOrderInformationImpl extends EObjectImpl implements IMedi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IMedicationOrderInformation setMedicationFullfillmentInstructions(MedicationFullfillmentInstructions value) {
-		this.getCDAType().addAct(value);
+	public IMedicationOrderInformation setMedicationFullfillmentInstructions(IMedicationFullfillmentInstructions value) {
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) value);
 		return this;
 	}
 

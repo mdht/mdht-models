@@ -8,7 +8,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.ccd.PolicyActivity;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
@@ -92,11 +91,11 @@ public interface IInsuranceProvider {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::CoverageActivity::policyActivity.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ccd::PolicyActivity)).oclAsType(ccd::PolicyActivity)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PolicyActivity)).oclAsType(domain::PolicyActivity)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<PolicyActivity> getPolicyActivities();
+	EList<IPolicyActivity> getPolicyActivities();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,7 +105,7 @@ public interface IInsuranceProvider {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PolicyActivity addPolicyActivity();
+	IPolicyActivity addPolicyActivity();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -116,7 +115,7 @@ public interface IInsuranceProvider {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IInsuranceProvider addPolicyActivity(PolicyActivity value);
+	IInsuranceProvider addPolicyActivity(IPolicyActivity value);
 
 	/**
 	 * <!-- begin-user-doc -->

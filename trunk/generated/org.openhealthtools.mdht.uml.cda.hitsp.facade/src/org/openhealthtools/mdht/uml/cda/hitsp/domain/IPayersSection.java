@@ -9,7 +9,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -130,11 +129,11 @@ public interface IPayersSection {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::PayersSection::coverageEntry.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::CoverageEntry)).oclAsType(ihe::CoverageEntry)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::CoverageEntry)).oclAsType(domain::CoverageEntry)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<CoverageEntry> getCoverageEntries();
+	EList<ICoverageEntry> getCoverageEntries();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,7 +143,7 @@ public interface IPayersSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	CoverageEntry addCoverageEntry();
+	ICoverageEntry addCoverageEntry();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,7 +153,7 @@ public interface IPayersSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPayersSection addCoverageEntry(CoverageEntry value);
+	IPayersSection addCoverageEntry(ICoverageEntry value);
 
 	/**
 	 * <!-- begin-user-doc -->

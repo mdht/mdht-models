@@ -15,16 +15,16 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityAct;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityEncounter;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivitySubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivitySupply;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounter;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IImmunization;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedication;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityAct;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityEncounter;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityObservation;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityProcedure;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivitySubstanceAdministration;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivitySupply;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedure;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -246,7 +246,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ccd::PlanOfCareActivityAct))->asSequence()->first().oclAsType(ccd::PlanOfCareActivityAct)";
+	protected static final String GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PlanOfCareActivityAct))->asSequence()->first().oclAsType(domain::PlanOfCareActivityAct)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPlanOfCareActivityAct() <em>Get Plan Of Care Activity Act</em>}' query operation.
@@ -263,7 +263,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityAct getPlanOfCareActivityAct() {
+	public IPlanOfCareActivityAct getPlanOfCareActivityAct() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -276,7 +276,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_QRY);
-		return (PlanOfCareActivityAct) query.evaluate(this);
+		return (IPlanOfCareActivityAct) query.evaluate(this);
 	}
 
 	/**
@@ -284,7 +284,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityAct withPlanOfCareActivityAct() {
+	public IPlanOfCareActivityAct withPlanOfCareActivityAct() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PlanOfCareActivityAct");
@@ -295,7 +295,11 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 		} catch (Exception e) {
 			// no init() method
 		}
-		PlanOfCareActivityAct value = (PlanOfCareActivityAct) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PlanOfCareActivityAct");
+		IPlanOfCareActivityAct value = (IPlanOfCareActivityAct) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
@@ -305,8 +309,8 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPlanOfCareSection setPlanOfCareActivityAct(PlanOfCareActivityAct value) {
-		this.getCDAType().addAct(value);
+	public IPlanOfCareSection setPlanOfCareActivityAct(IPlanOfCareActivityAct value) {
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) value);
 		return this;
 	}
 
@@ -318,7 +322,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(ccd::PlanOfCareActivityEncounter))->asSequence()->first().oclAsType(ccd::PlanOfCareActivityEncounter)";
+	protected static final String GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(domain::PlanOfCareActivityEncounter))->asSequence()->first().oclAsType(domain::PlanOfCareActivityEncounter)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPlanOfCareActivityEncounter() <em>Get Plan Of Care Activity Encounter</em>}' query operation.
@@ -335,7 +339,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityEncounter getPlanOfCareActivityEncounter() {
+	public IPlanOfCareActivityEncounter getPlanOfCareActivityEncounter() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -348,7 +352,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_QRY);
-		return (PlanOfCareActivityEncounter) query.evaluate(this);
+		return (IPlanOfCareActivityEncounter) query.evaluate(this);
 	}
 
 	/**
@@ -356,7 +360,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityEncounter withPlanOfCareActivityEncounter() {
+	public IPlanOfCareActivityEncounter withPlanOfCareActivityEncounter() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PlanOfCareActivityEncounter");
@@ -367,7 +371,11 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 		} catch (Exception e) {
 			// no init() method
 		}
-		PlanOfCareActivityEncounter value = (PlanOfCareActivityEncounter) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PlanOfCareActivityEncounter");
+		IPlanOfCareActivityEncounter value = (IPlanOfCareActivityEncounter) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Encounter) eObject);
 		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter) eObject);
 		return value;
 	}
@@ -377,8 +385,8 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPlanOfCareSection setPlanOfCareActivityEncounter(PlanOfCareActivityEncounter value) {
-		this.getCDAType().addEncounter(value);
+	public IPlanOfCareSection setPlanOfCareActivityEncounter(IPlanOfCareActivityEncounter value) {
+		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter) value);
 		return this;
 	}
 
@@ -390,7 +398,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::PlanOfCareActivityObservation))->asSequence()->first().oclAsType(ccd::PlanOfCareActivityObservation)";
+	protected static final String GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::PlanOfCareActivityObservation))->asSequence()->first().oclAsType(domain::PlanOfCareActivityObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPlanOfCareActivityObservation() <em>Get Plan Of Care Activity Observation</em>}' query operation.
@@ -407,7 +415,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityObservation getPlanOfCareActivityObservation() {
+	public IPlanOfCareActivityObservation getPlanOfCareActivityObservation() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -420,7 +428,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_QRY);
-		return (PlanOfCareActivityObservation) query.evaluate(this);
+		return (IPlanOfCareActivityObservation) query.evaluate(this);
 	}
 
 	/**
@@ -428,7 +436,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityObservation withPlanOfCareActivityObservation() {
+	public IPlanOfCareActivityObservation withPlanOfCareActivityObservation() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PlanOfCareActivityObservation");
@@ -439,7 +447,11 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 		} catch (Exception e) {
 			// no init() method
 		}
-		PlanOfCareActivityObservation value = (PlanOfCareActivityObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PlanOfCareActivityObservation");
+		IPlanOfCareActivityObservation value = (IPlanOfCareActivityObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -449,8 +461,8 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPlanOfCareSection setPlanOfCareActivityObservation(PlanOfCareActivityObservation value) {
-		this.getCDAType().addObservation(value);
+	public IPlanOfCareSection setPlanOfCareActivityObservation(IPlanOfCareActivityObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -462,7 +474,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ccd::PlanOfCareActivityProcedure))->asSequence()->first().oclAsType(ccd::PlanOfCareActivityProcedure)";
+	protected static final String GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(domain::PlanOfCareActivityProcedure))->asSequence()->first().oclAsType(domain::PlanOfCareActivityProcedure)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPlanOfCareActivityProcedure() <em>Get Plan Of Care Activity Procedure</em>}' query operation.
@@ -479,7 +491,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityProcedure getPlanOfCareActivityProcedure() {
+	public IPlanOfCareActivityProcedure getPlanOfCareActivityProcedure() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -492,7 +504,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY);
-		return (PlanOfCareActivityProcedure) query.evaluate(this);
+		return (IPlanOfCareActivityProcedure) query.evaluate(this);
 	}
 
 	/**
@@ -500,7 +512,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivityProcedure withPlanOfCareActivityProcedure() {
+	public IPlanOfCareActivityProcedure withPlanOfCareActivityProcedure() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PlanOfCareActivityProcedure");
@@ -511,7 +523,11 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 		} catch (Exception e) {
 			// no init() method
 		}
-		PlanOfCareActivityProcedure value = (PlanOfCareActivityProcedure) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PlanOfCareActivityProcedure");
+		IPlanOfCareActivityProcedure value = (IPlanOfCareActivityProcedure) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
 		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
 		return value;
 	}
@@ -521,8 +537,8 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPlanOfCareSection setPlanOfCareActivityProcedure(PlanOfCareActivityProcedure value) {
-		this.getCDAType().addProcedure(value);
+	public IPlanOfCareSection setPlanOfCareActivityProcedure(IPlanOfCareActivityProcedure value) {
+		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure) value);
 		return this;
 	}
 
@@ -534,7 +550,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(ccd::PlanOfCareActivitySubstanceAdministration))->asSequence()->first().oclAsType(ccd::PlanOfCareActivitySubstanceAdministration)";
+	protected static final String GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::PlanOfCareActivitySubstanceAdministration))->asSequence()->first().oclAsType(domain::PlanOfCareActivitySubstanceAdministration)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPlanOfCareActivitySubstanceAdministration() <em>Get Plan Of Care Activity Substance Administration</em>}' query operation.
@@ -551,7 +567,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivitySubstanceAdministration getPlanOfCareActivitySubstanceAdministration() {
+	public IPlanOfCareActivitySubstanceAdministration getPlanOfCareActivitySubstanceAdministration() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -564,7 +580,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY);
-		return (PlanOfCareActivitySubstanceAdministration) query.evaluate(this);
+		return (IPlanOfCareActivitySubstanceAdministration) query.evaluate(this);
 	}
 
 	/**
@@ -572,7 +588,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivitySubstanceAdministration withPlanOfCareActivitySubstanceAdministration() {
+	public IPlanOfCareActivitySubstanceAdministration withPlanOfCareActivitySubstanceAdministration() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PlanOfCareActivitySubstanceAdministration");
@@ -583,7 +599,11 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 		} catch (Exception e) {
 			// no init() method
 		}
-		PlanOfCareActivitySubstanceAdministration value = (PlanOfCareActivitySubstanceAdministration) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PlanOfCareActivitySubstanceAdministration");
+		IPlanOfCareActivitySubstanceAdministration value = (IPlanOfCareActivitySubstanceAdministration) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) eObject);
 		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) eObject);
 		return value;
 	}
@@ -594,8 +614,8 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 */
 	public IPlanOfCareSection setPlanOfCareActivitySubstanceAdministration(
-			PlanOfCareActivitySubstanceAdministration value) {
-		this.getCDAType().addSubstanceAdministration(value);
+			IPlanOfCareActivitySubstanceAdministration value) {
+		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) value);
 		return this;
 	}
 
@@ -607,7 +627,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(ccd::PlanOfCareActivitySupply))->asSequence()->first().oclAsType(ccd::PlanOfCareActivitySupply)";
+	protected static final String GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(domain::PlanOfCareActivitySupply))->asSequence()->first().oclAsType(domain::PlanOfCareActivitySupply)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPlanOfCareActivitySupply() <em>Get Plan Of Care Activity Supply</em>}' query operation.
@@ -624,7 +644,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivitySupply getPlanOfCareActivitySupply() {
+	public IPlanOfCareActivitySupply getPlanOfCareActivitySupply() {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -637,7 +657,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY);
-		return (PlanOfCareActivitySupply) query.evaluate(this);
+		return (IPlanOfCareActivitySupply) query.evaluate(this);
 	}
 
 	/**
@@ -645,7 +665,7 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareActivitySupply withPlanOfCareActivitySupply() {
+	public IPlanOfCareActivitySupply withPlanOfCareActivitySupply() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PlanOfCareActivitySupply");
@@ -656,7 +676,11 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 		} catch (Exception e) {
 			// no init() method
 		}
-		PlanOfCareActivitySupply value = (PlanOfCareActivitySupply) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PlanOfCareActivitySupply");
+		IPlanOfCareActivitySupply value = (IPlanOfCareActivitySupply) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Supply) eObject);
 		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply) eObject);
 		return value;
 	}
@@ -666,8 +690,8 @@ public class PlanOfCareSectionImpl extends EObjectImpl implements IPlanOfCareSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPlanOfCareSection setPlanOfCareActivitySupply(PlanOfCareActivitySupply value) {
-		this.getCDAType().addSupply(value);
+	public IPlanOfCareSection setPlanOfCareActivitySupply(IPlanOfCareActivitySupply value) {
+		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply) value);
 		return this;
 	}
 

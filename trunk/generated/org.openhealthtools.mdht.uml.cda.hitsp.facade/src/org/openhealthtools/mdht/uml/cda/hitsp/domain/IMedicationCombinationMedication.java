@@ -8,12 +8,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.openhealthtools.mdht.uml.cda.Consumable;
 import org.openhealthtools.mdht.uml.cda.Performer2;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationSeriesNumberObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
-import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_PQ;
 
@@ -69,7 +63,7 @@ public interface IMedicationCombinationMedication extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationCombinationMedication setMedicationSeriesNumberObservation(MedicationSeriesNumberObservation value);
+	IMedicationCombinationMedication setMedicationSeriesNumberObservation(IMedicationSeriesNumberObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,7 +73,7 @@ public interface IMedicationCombinationMedication extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationCombinationMedication setMedicationStatusObservation(MedicationStatusObservation value);
+	IMedicationCombinationMedication setMedicationStatusObservation(IMedicationStatusObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,7 +93,7 @@ public interface IMedicationCombinationMedication extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationCombinationMedication addReactionObservation(ReactionObservation value);
+	IMedicationCombinationMedication addReactionObservation(IReactionObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -109,7 +103,7 @@ public interface IMedicationCombinationMedication extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationCombinationMedication addProductInstance(ProductInstance value);
+	IMedicationCombinationMedication addProductInstance(IProductInstance value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -119,7 +113,7 @@ public interface IMedicationCombinationMedication extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationCombinationMedication addInternalReference(InternalReference value);
+	IMedicationCombinationMedication addInternalReference(IInternalReference value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -129,7 +123,7 @@ public interface IMedicationCombinationMedication extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationCombinationMedication addPatientMedicalInstructions(PatientMedicalInstructions value);
+	IMedicationCombinationMedication addPatientMedicalInstructions(IPatientMedicalInstructions value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,7 +153,7 @@ public interface IMedicationCombinationMedication extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationCombinationMedication setReactionObservation(ReactionObservation value);
+	IMedicationCombinationMedication setReactionObservation(IReactionObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->

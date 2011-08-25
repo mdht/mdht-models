@@ -20,10 +20,10 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IExternalReference;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedure;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
@@ -243,7 +243,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_EXTERNAL_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ExternalReference))->asSequence()->first().oclAsType(ihe::ExternalReference)";
+	protected static final String GET_EXTERNAL_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::ExternalReference))->asSequence()->first().oclAsType(domain::ExternalReference)";
 
 	/**
 	 * The cached OCL query for the '{@link #getExternalReference() <em>Get External Reference</em>}' query operation.
@@ -260,7 +260,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExternalReference getExternalReference() {
+	public IExternalReference getExternalReference() {
 		if (GET_EXTERNAL_REFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -273,7 +273,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_EXTERNAL_REFERENCE__EOCL_QRY);
-		return (ExternalReference) query.evaluate(this);
+		return (IExternalReference) query.evaluate(this);
 	}
 
 	/**
@@ -281,7 +281,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExternalReference withExternalReference() {
+	public IExternalReference withExternalReference() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ExternalReference");
@@ -292,7 +292,11 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 		} catch (Exception e) {
 			// no init() method
 		}
-		ExternalReference value = (ExternalReference) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ExternalReference");
+		IExternalReference value = (IExternalReference) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
@@ -302,8 +306,8 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ISurgeriesSection setExternalReference(ExternalReference value) {
-		this.getCDAType().addAct(value);
+	public ISurgeriesSection setExternalReference(IExternalReference value) {
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) value);
 		return this;
 	}
 
@@ -315,7 +319,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure)).oclAsType(ihe::ProcedureEntryProcedureActivityProcedure)";
+	protected static final String GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(domain::ProcedureEntryProcedureActivityProcedure)).oclAsType(domain::ProcedureEntryProcedureActivityProcedure)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProcedureEntryProcedureActivityProcedures() <em>Get Procedure Entry Procedure Activity Procedures</em>}' query operation.
@@ -332,7 +336,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures() {
+	public EList<IProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures() {
 		if (GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -346,8 +350,8 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProcedureEntryProcedureActivityProcedure> result = (Collection<ProcedureEntryProcedureActivityProcedure>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<ProcedureEntryProcedureActivityProcedure>(
+		Collection<IProcedureEntryProcedureActivityProcedure> result = (Collection<IProcedureEntryProcedureActivityProcedure>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IProcedureEntryProcedureActivityProcedure>(
 			result.size(), result.toArray());
 	}
 
@@ -356,7 +360,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureEntryProcedureActivityProcedure addProcedureEntryProcedureActivityProcedure() {
+	public IProcedureEntryProcedureActivityProcedure addProcedureEntryProcedureActivityProcedure() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ProcedureEntryProcedureActivityProcedure");
@@ -367,7 +371,11 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 		} catch (Exception e) {
 			// no init() method
 		}
-		ProcedureEntryProcedureActivityProcedure value = (ProcedureEntryProcedureActivityProcedure) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ProcedureEntryProcedureActivityProcedure");
+		IProcedureEntryProcedureActivityProcedure value = (IProcedureEntryProcedureActivityProcedure) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
 		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
 		return value;
 	}
@@ -377,7 +385,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ISurgeriesSection addProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure value) {
+	public ISurgeriesSection addProcedureEntryProcedureActivityProcedure(IProcedureEntryProcedureActivityProcedure value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();

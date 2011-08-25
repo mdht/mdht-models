@@ -8,7 +8,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
 
 /**
  * <!-- begin-user-doc -->
@@ -67,11 +66,11 @@ public interface IDiagnosticResultsSection {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::CodedResultsSection::externalReference.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ExternalReference)).oclAsType(ihe::ExternalReference)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::ExternalReference)).oclAsType(domain::ExternalReference)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ExternalReference> getExternalReferences();
+	EList<IExternalReference> getExternalReferences();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,7 +80,7 @@ public interface IDiagnosticResultsSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ExternalReference addExternalReference();
+	IExternalReference addExternalReference();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,7 +90,7 @@ public interface IDiagnosticResultsSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IDiagnosticResultsSection addExternalReference(ExternalReference value);
+	IDiagnosticResultsSection addExternalReference(IExternalReference value);
 
 	/**
 	 * <!-- begin-user-doc -->

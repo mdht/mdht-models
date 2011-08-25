@@ -18,7 +18,8 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
+import org.openhealthtools.mdht.uml.cda.StrucDocText;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -167,46 +168,44 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAdvanceDirectiveObservations() <em>Get Advance Directive Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getText() <em>Get Text</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectiveObservations()
+	 * @see #getText()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::AdvanceDirectiveObservation)).oclAsType(ccd::AdvanceDirectiveObservation)";
+	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(cda::StrucDocText)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAdvanceDirectiveObservations() <em>Get Advance Directive Observations</em>}' query operation.
+	 * The cached OCL query for the '{@link #getText() <em>Get Text</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectiveObservations()
+	 * @see #getText()
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_TEXT__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AdvanceDirectiveObservation> getAdvanceDirectiveObservations() {
-		if (GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY == null) {
+	public StrucDocText getText() {
+		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IDomainPackage.eINSTANCE.getAdvanceDirectivesSection(),
 				IDomainPackage.eINSTANCE.getAdvanceDirectivesSection().getEAllOperations().get(3));
 			try {
-				GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP);
+				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<AdvanceDirectiveObservation> result = (Collection<AdvanceDirectiveObservation>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<AdvanceDirectiveObservation>(result.size(), result.toArray());
+		OCL.Query query = EOCL_ENV.createQuery(GET_TEXT__EOCL_QRY);
+		return (StrucDocText) query.evaluate(this);
 	}
 
 	/**
@@ -214,10 +213,78 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdvanceDirectiveObservation addAdvanceDirectiveObservation() {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AdvanceDirectiveObservation");
+	public StrucDocText withText() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("StrucDocText");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		StrucDocText value = (StrucDocText) eObject;
+		this.getCDAType().setText(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAdvanceDirectivesSection setText(StrucDocText value) {
+		this.getCDAType().setText(value);
+		return this;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getAdvanceDirectives() <em>Get Advance Directives</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAdvanceDirectives()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_ADVANCE_DIRECTIVES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::AdvanceDirective)).oclAsType(domain::AdvanceDirective)";
+
+	/**
+	 * The cached OCL query for the '{@link #getAdvanceDirectives() <em>Get Advance Directives</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAdvanceDirectives()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVES__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<IAdvanceDirective> getAdvanceDirectives() {
+		if (GET_ADVANCE_DIRECTIVES__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAdvanceDirectivesSection(),
+				IDomainPackage.eINSTANCE.getAdvanceDirectivesSection().getEAllOperations().get(6));
+			try {
+				GET_ADVANCE_DIRECTIVES__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_ADVANCE_DIRECTIVES__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<IAdvanceDirective> result = (Collection<IAdvanceDirective>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IAdvanceDirective>(result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAdvanceDirective addAdvanceDirective() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/hitsp");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/hitsp");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("AdvanceDirective");
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
 		try {
 			java.lang.reflect.Method initMethod = eObject.getClass().getMethod("init", new java.lang.Class[0]);
@@ -225,7 +292,11 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 		} catch (Exception e) {
 			// no init() method
 		}
-		AdvanceDirectiveObservation value = (AdvanceDirectiveObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("AdvanceDirective");
+		IAdvanceDirective value = (IAdvanceDirective) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -235,7 +306,7 @@ public class AdvanceDirectivesSectionImpl extends EObjectImpl implements IAdvanc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IAdvanceDirectivesSection addAdvanceDirectiveObservation(AdvanceDirectiveObservation value) {
+	public IAdvanceDirectivesSection addAdvanceDirective(IAdvanceDirective value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();

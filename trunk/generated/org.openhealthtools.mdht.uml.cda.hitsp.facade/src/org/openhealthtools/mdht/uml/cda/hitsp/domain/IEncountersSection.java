@@ -9,7 +9,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -128,11 +127,11 @@ public interface IEncountersSection {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::EncountersSection::encountersActivity.
-	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(ccd::EncountersActivity)).oclAsType(ccd::EncountersActivity)
+	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(domain::EncountersActivity)).oclAsType(domain::EncountersActivity)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<EncountersActivity> getEncountersActivities();
+	EList<IEncountersActivity> getEncountersActivities();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,7 +141,7 @@ public interface IEncountersSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EncountersActivity addEncountersActivity();
+	IEncountersActivity addEncountersActivity();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,7 +151,7 @@ public interface IEncountersSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IEncountersSection addEncountersActivity(EncountersActivity value);
+	IEncountersSection addEncountersActivity(IEncountersActivity value);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -97,24 +97,13 @@ public class CommentImpl extends EObjectImpl implements IComment {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAuthor() <em>Get Author</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAuthor()
 	 * @generated
-	 * @ordered
 	 */
-	protected static final String GET_AUTHOR__EOCL_EXP = "self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))->asSequence()->first().oclAsType(cda::Author)";
-
-	/**
-	 * The cached OCL query for the '{@link #getAuthor() <em>Get Author</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAuthor()
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_AUTHOR__EOCL_QRY;
+	public boolean isSetCDAType() {
+		return cDAType != null;
+	}
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -180,6 +169,26 @@ public class CommentImpl extends EObjectImpl implements IComment {
 	 * @ordered
 	 */
 	protected static OCLExpression<EClassifier> GET_TEXT__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getAuthor() <em>Get Author</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAuthor()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_AUTHOR__EOCL_EXP = "self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))->asSequence()->first().oclAsType(cda::Author)";
+
+	/**
+	 * The cached OCL query for the '{@link #getAuthor() <em>Get Author</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAuthor()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_AUTHOR__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,7 +291,7 @@ public class CommentImpl extends EObjectImpl implements IComment {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.COMMENT__CDA_TYPE:
-				return cDAType != null;
+				return isSetCDAType();
 		}
 		return super.eIsSet(featureID);
 	}

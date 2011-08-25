@@ -7,6 +7,7 @@
 package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -19,6 +20,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *     The Family History Section contains information about the genetic family members, to the extent that
  *     they are known, the diseases they suffered from, their ages at death, and other relevant genetic information. 
  * </p>
+ * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
+ * This section contains data defining the patient's genetic relatives in terms of possible or relevant health risk factors that have a potential impact on the patient's healthcare risk profile.
  * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <!-- end-model-doc -->
  *
@@ -88,6 +91,37 @@ public interface IFamilyHistorySection {
 	 * @generated
 	 */
 	IFamilyHistorySection setTitle(ST value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Section::text.
+	 * self.text.oclAsType(cda::StrucDocText)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	StrucDocText getText();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Family History Section SHALL contain exactly one [1..1] text.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	StrucDocText withText();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Family History Section SHALL contain exactly one [1..1] text.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IFamilyHistorySection setText(StrucDocText value);
 
 	/**
 	 * <!-- begin-user-doc -->

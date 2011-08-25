@@ -8,7 +8,7 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
+import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -95,32 +95,63 @@ public interface IAdvanceDirectivesSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * ccd::AdvanceDirectivesSection::advanceDirectiveObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::AdvanceDirectiveObservation)).oclAsType(ccd::AdvanceDirectiveObservation)
+	 * cda::Section::text.
+	 * self.text.oclAsType(cda::StrucDocText)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<AdvanceDirectiveObservation> getAdvanceDirectiveObservations();
+	StrucDocText getText();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Advance Directives Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Advance Directive Observation (templateId: 2.16.840.1.113883.10.20.1.17).
+	 * CCD Advance Directives Section SHALL contain exactly one [1..1] text.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	AdvanceDirectiveObservation addAdvanceDirectiveObservation();
+	StrucDocText withText();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Advance Directives Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Advance Directive Observation (templateId: 2.16.840.1.113883.10.20.1.17).
+	 * CCD Advance Directives Section SHALL contain exactly one [1..1] text.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IAdvanceDirectivesSection addAdvanceDirectiveObservation(AdvanceDirectiveObservation value);
+	IAdvanceDirectivesSection setText(StrucDocText value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::AdvanceDirectivesSection::advanceDirective.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::AdvanceDirective)).oclAsType(domain::AdvanceDirective)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IAdvanceDirective> getAdvanceDirectives();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Advance Directives Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Advance Directive (templateId: 2.16.840.1.113883.3.88.11.83.12).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IAdvanceDirective addAdvanceDirective();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Advance Directives Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Advance Directive (templateId: 2.16.840.1.113883.3.88.11.83.12).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IAdvanceDirectivesSection addAdvanceDirective(IAdvanceDirective value);
 
 	/**
 	 * <!-- begin-user-doc -->

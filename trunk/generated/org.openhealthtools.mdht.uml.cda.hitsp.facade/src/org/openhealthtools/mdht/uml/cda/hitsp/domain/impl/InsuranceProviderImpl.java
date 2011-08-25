@@ -18,9 +18,9 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.ccd.PolicyActivity;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IInsuranceProvider;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicyActivity;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
@@ -177,7 +177,7 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_POLICY_ACTIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ccd::PolicyActivity)).oclAsType(ccd::PolicyActivity)";
+	protected static final String GET_POLICY_ACTIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PolicyActivity)).oclAsType(domain::PolicyActivity)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPolicyActivities() <em>Get Policy Activities</em>}' query operation.
@@ -194,7 +194,7 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PolicyActivity> getPolicyActivities() {
+	public EList<IPolicyActivity> getPolicyActivities() {
 		if (GET_POLICY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -208,8 +208,8 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_POLICY_ACTIVITIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PolicyActivity> result = (Collection<PolicyActivity>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<PolicyActivity>(result.size(), result.toArray());
+		Collection<IPolicyActivity> result = (Collection<IPolicyActivity>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IPolicyActivity>(result.size(), result.toArray());
 	}
 
 	/**
@@ -217,7 +217,7 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PolicyActivity addPolicyActivity() {
+	public IPolicyActivity addPolicyActivity() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PolicyActivity");
@@ -228,7 +228,11 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 		} catch (Exception e) {
 			// no init() method
 		}
-		PolicyActivity value = (PolicyActivity) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PolicyActivity");
+		IPolicyActivity value = (IPolicyActivity) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
@@ -238,7 +242,7 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IInsuranceProvider addPolicyActivity(PolicyActivity value) {
+	public IInsuranceProvider addPolicyActivity(IPolicyActivity value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();

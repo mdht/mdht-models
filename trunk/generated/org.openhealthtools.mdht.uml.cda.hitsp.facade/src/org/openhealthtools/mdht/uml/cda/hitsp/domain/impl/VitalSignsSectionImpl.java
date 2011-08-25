@@ -20,8 +20,8 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
@@ -241,7 +241,7 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_VITAL_SIGNS_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(ihe::VitalSignsOrganizer)).oclAsType(ihe::VitalSignsOrganizer)";
+	protected static final String GET_VITAL_SIGNS_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(domain::VitalSignsOrganizer)).oclAsType(domain::VitalSignsOrganizer)";
 
 	/**
 	 * The cached OCL query for the '{@link #getVitalSignsOrganizers() <em>Get Vital Signs Organizers</em>}' query operation.
@@ -258,7 +258,7 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<VitalSignsOrganizer> getVitalSignsOrganizers() {
+	public EList<IVitalSignsOrganizer> getVitalSignsOrganizers() {
 		if (GET_VITAL_SIGNS_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -272,8 +272,8 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_VITAL_SIGNS_ORGANIZERS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<VitalSignsOrganizer> result = (Collection<VitalSignsOrganizer>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<VitalSignsOrganizer>(result.size(), result.toArray());
+		Collection<IVitalSignsOrganizer> result = (Collection<IVitalSignsOrganizer>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IVitalSignsOrganizer>(result.size(), result.toArray());
 	}
 
 	/**
@@ -281,7 +281,7 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VitalSignsOrganizer addVitalSignsOrganizer() {
+	public IVitalSignsOrganizer addVitalSignsOrganizer() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("VitalSignsOrganizer");
@@ -292,7 +292,11 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 		} catch (Exception e) {
 			// no init() method
 		}
-		VitalSignsOrganizer value = (VitalSignsOrganizer) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("VitalSignsOrganizer");
+		IVitalSignsOrganizer value = (IVitalSignsOrganizer) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Organizer) eObject);
 		this.getCDAType().addOrganizer((org.openhealthtools.mdht.uml.cda.Organizer) eObject);
 		return value;
 	}
@@ -302,7 +306,7 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IVitalSignsSection addVitalSignsOrganizer(VitalSignsOrganizer value) {
+	public IVitalSignsSection addVitalSignsOrganizer(IVitalSignsOrganizer value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();

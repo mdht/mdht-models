@@ -8,7 +8,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.ccd.EpisodeObservation;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -203,11 +202,11 @@ public interface ICondition {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::ProblemAct::episodeObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::EpisodeObservation))->asSequence()->first().oclAsType(ccd::EpisodeObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::EpisodeObservation))->asSequence()->first().oclAsType(domain::EpisodeObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EpisodeObservation getEpisodeObservation();
+	IEpisodeObservation getEpisodeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,7 +216,7 @@ public interface ICondition {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EpisodeObservation withEpisodeObservation();
+	IEpisodeObservation withEpisodeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -227,7 +226,7 @@ public interface ICondition {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ICondition setEpisodeObservation(EpisodeObservation value);
+	ICondition setEpisodeObservation(IEpisodeObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->

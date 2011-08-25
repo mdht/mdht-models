@@ -59,6 +59,37 @@ public interface IChiefComplaintSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::ChiefComplaintSection::condition.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::Condition))->asSequence()->first().oclAsType(domain::Condition)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ICondition getCondition();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Chief Complaint Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Condition (templateId: 2.16.840.1.113883.3.88.11.83.7).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ICondition withCondition();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Chief Complaint Section MAY contain zero or one [0..1] entry, such that Contains exactly one [1..1] Condition (templateId: 2.16.840.1.113883.3.88.11.83.7).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IChiefComplaintSection setCondition(ICondition value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public IChiefComplaintSection init();

@@ -18,6 +18,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * <!-- begin-model-doc -->
  * This module contains a comment to be supplied for any other entry Content Modules.
  * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
+ * <p>This entry allows for a comment to be supplied with each entry. For CDA this structure is usually included in the target act using the &lt;entryRelationship> element defined in the CDA Schema, but can also be used in the &lt;component> element when the comment appears within an &lt;organizer>.</p>
+ * 
+ * <p>Any condition or allergy may be the subject of a comment.</p>
+ * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <!-- end-model-doc -->
  *
  * <p>

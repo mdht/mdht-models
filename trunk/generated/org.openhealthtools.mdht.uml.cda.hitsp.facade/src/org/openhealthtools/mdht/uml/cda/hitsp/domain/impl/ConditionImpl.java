@@ -18,9 +18,9 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.ccd.EpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ICondition;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemEntry;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
@@ -379,7 +379,7 @@ public class ConditionImpl extends EObjectImpl implements ICondition {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_EPISODE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::EpisodeObservation))->asSequence()->first().oclAsType(ccd::EpisodeObservation)";
+	protected static final String GET_EPISODE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::EpisodeObservation))->asSequence()->first().oclAsType(domain::EpisodeObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEpisodeObservation() <em>Get Episode Observation</em>}' query operation.
@@ -396,7 +396,7 @@ public class ConditionImpl extends EObjectImpl implements ICondition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EpisodeObservation getEpisodeObservation() {
+	public IEpisodeObservation getEpisodeObservation() {
 		if (GET_EPISODE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -409,7 +409,7 @@ public class ConditionImpl extends EObjectImpl implements ICondition {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_EPISODE_OBSERVATION__EOCL_QRY);
-		return (EpisodeObservation) query.evaluate(this);
+		return (IEpisodeObservation) query.evaluate(this);
 	}
 
 	/**
@@ -417,7 +417,7 @@ public class ConditionImpl extends EObjectImpl implements ICondition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EpisodeObservation withEpisodeObservation() {
+	public IEpisodeObservation withEpisodeObservation() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("EpisodeObservation");
@@ -428,7 +428,11 @@ public class ConditionImpl extends EObjectImpl implements ICondition {
 		} catch (Exception e) {
 			// no init() method
 		}
-		EpisodeObservation value = (EpisodeObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("EpisodeObservation");
+		IEpisodeObservation value = (IEpisodeObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -438,8 +442,8 @@ public class ConditionImpl extends EObjectImpl implements ICondition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ICondition setEpisodeObservation(EpisodeObservation value) {
-		this.getCDAType().addObservation(value);
+	public ICondition setEpisodeObservation(IEpisodeObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 

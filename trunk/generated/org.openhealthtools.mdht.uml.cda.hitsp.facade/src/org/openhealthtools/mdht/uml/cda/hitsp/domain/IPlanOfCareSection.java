@@ -8,12 +8,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityAct;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityEncounter;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivitySubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivitySupply;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -136,11 +130,11 @@ public interface IPlanOfCareSection {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::PlanOfCareSection::planOfCareActivityAct.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ccd::PlanOfCareActivityAct))->asSequence()->first().oclAsType(ccd::PlanOfCareActivityAct)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PlanOfCareActivityAct))->asSequence()->first().oclAsType(domain::PlanOfCareActivityAct)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivityAct getPlanOfCareActivityAct();
+	IPlanOfCareActivityAct getPlanOfCareActivityAct();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,7 +144,7 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivityAct withPlanOfCareActivityAct();
+	IPlanOfCareActivityAct withPlanOfCareActivityAct();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,18 +154,18 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPlanOfCareSection setPlanOfCareActivityAct(PlanOfCareActivityAct value);
+	IPlanOfCareSection setPlanOfCareActivityAct(IPlanOfCareActivityAct value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::PlanOfCareSection::planOfCareActivityEncounter.
-	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(ccd::PlanOfCareActivityEncounter))->asSequence()->first().oclAsType(ccd::PlanOfCareActivityEncounter)
+	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(domain::PlanOfCareActivityEncounter))->asSequence()->first().oclAsType(domain::PlanOfCareActivityEncounter)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivityEncounter getPlanOfCareActivityEncounter();
+	IPlanOfCareActivityEncounter getPlanOfCareActivityEncounter();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -181,7 +175,7 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivityEncounter withPlanOfCareActivityEncounter();
+	IPlanOfCareActivityEncounter withPlanOfCareActivityEncounter();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,18 +185,18 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPlanOfCareSection setPlanOfCareActivityEncounter(PlanOfCareActivityEncounter value);
+	IPlanOfCareSection setPlanOfCareActivityEncounter(IPlanOfCareActivityEncounter value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::PlanOfCareSection::planOfCareActivityObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::PlanOfCareActivityObservation))->asSequence()->first().oclAsType(ccd::PlanOfCareActivityObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::PlanOfCareActivityObservation))->asSequence()->first().oclAsType(domain::PlanOfCareActivityObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivityObservation getPlanOfCareActivityObservation();
+	IPlanOfCareActivityObservation getPlanOfCareActivityObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -212,7 +206,7 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivityObservation withPlanOfCareActivityObservation();
+	IPlanOfCareActivityObservation withPlanOfCareActivityObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -222,18 +216,18 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPlanOfCareSection setPlanOfCareActivityObservation(PlanOfCareActivityObservation value);
+	IPlanOfCareSection setPlanOfCareActivityObservation(IPlanOfCareActivityObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::PlanOfCareSection::planOfCareActivityProcedure.
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ccd::PlanOfCareActivityProcedure))->asSequence()->first().oclAsType(ccd::PlanOfCareActivityProcedure)
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(domain::PlanOfCareActivityProcedure))->asSequence()->first().oclAsType(domain::PlanOfCareActivityProcedure)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivityProcedure getPlanOfCareActivityProcedure();
+	IPlanOfCareActivityProcedure getPlanOfCareActivityProcedure();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -243,7 +237,7 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivityProcedure withPlanOfCareActivityProcedure();
+	IPlanOfCareActivityProcedure withPlanOfCareActivityProcedure();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -253,18 +247,18 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPlanOfCareSection setPlanOfCareActivityProcedure(PlanOfCareActivityProcedure value);
+	IPlanOfCareSection setPlanOfCareActivityProcedure(IPlanOfCareActivityProcedure value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::PlanOfCareSection::planOfCareActivitySubstanceAdministration.
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(ccd::PlanOfCareActivitySubstanceAdministration))->asSequence()->first().oclAsType(ccd::PlanOfCareActivitySubstanceAdministration)
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::PlanOfCareActivitySubstanceAdministration))->asSequence()->first().oclAsType(domain::PlanOfCareActivitySubstanceAdministration)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivitySubstanceAdministration getPlanOfCareActivitySubstanceAdministration();
+	IPlanOfCareActivitySubstanceAdministration getPlanOfCareActivitySubstanceAdministration();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,7 +268,7 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivitySubstanceAdministration withPlanOfCareActivitySubstanceAdministration();
+	IPlanOfCareActivitySubstanceAdministration withPlanOfCareActivitySubstanceAdministration();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,18 +278,18 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPlanOfCareSection setPlanOfCareActivitySubstanceAdministration(PlanOfCareActivitySubstanceAdministration value);
+	IPlanOfCareSection setPlanOfCareActivitySubstanceAdministration(IPlanOfCareActivitySubstanceAdministration value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::PlanOfCareSection::planOfCareActivitySupply.
-	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(ccd::PlanOfCareActivitySupply))->asSequence()->first().oclAsType(ccd::PlanOfCareActivitySupply)
+	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(domain::PlanOfCareActivitySupply))->asSequence()->first().oclAsType(domain::PlanOfCareActivitySupply)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivitySupply getPlanOfCareActivitySupply();
+	IPlanOfCareActivitySupply getPlanOfCareActivitySupply();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -305,7 +299,7 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PlanOfCareActivitySupply withPlanOfCareActivitySupply();
+	IPlanOfCareActivitySupply withPlanOfCareActivitySupply();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -315,7 +309,7 @@ public interface IPlanOfCareSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPlanOfCareSection setPlanOfCareActivitySupply(PlanOfCareActivitySupply value);
+	IPlanOfCareSection setPlanOfCareActivitySupply(IPlanOfCareActivitySupply value);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -8,12 +8,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.CauseOfDeathObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.Comment;
-import org.openhealthtools.mdht.uml.cda.ihe.HealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.Severity;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -25,6 +19,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
+ * <p>This section makes use of the linking, severity, clinical status and comment content specifications defined elsewhere in the technical framework. In HL7 RIM parlance, observations about a problem, complaint, symptom, finding, diagnosis, or functional limitation of a patient is the event (moodCode='EVN') of observing (&lt;observation classCode='OBS'>) that problem. The &lt;value> of the observation comes from a controlled vocabulary representing such things. The &lt;code> contained within the &lt;observation> describes the method of determination from yet another controlled vocabulary.</p>
+ * 
+ * <p>The basic pattern for reporting a problem uses the CDA &lt;observation> element, setting the classCode='OBS' to represent that this is an observation of a problem, and the moodCode='EVN', to represent that this is an observation that has in fact taken place. The negationInd attribute, if true, specifies that the problem indicated was observed to not have occurred (which is subtly but importantly different from having not been observed). The value of negationInd should not normally be set to true. Instead, to record that there is "no prior history of chicken pox", one would use a coded value indicated exactly that. However, it is not always possible to record problems in this manner, especially if using a controlled vocabulary that does not supply pre-coordinated negations , or which do not allow the negation to be recorded with post-coordinated coded terminology.</p>
+ * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <p>This section makes use of the linking, severity, clinical status and comment content specifications defined elsewhere in the technical framework. In HL7 RIM parlance, observations about a problem, complaint, symptom, finding, diagnosis, or functional limitation of a patient is the event (moodCode='EVN') of observing (&lt;observation classCode='OBS'>) that problem. The &lt;value> of the observation comes from a controlled vocabulary representing such things. The &lt;code> contained within the &lt;observation> describes the method of determination from yet another controlled vocabulary.</p>
  * 
  * <p>The basic pattern for reporting a problem uses the CDA &lt;observation> element, setting the classCode='OBS' to represent that this is an observation of a problem, and the moodCode='EVN', to represent that this is an observation that has in fact taken place. The negationInd attribute, if true, specifies that the problem indicated was observed to not have occurred (which is subtly but importantly different from having not been observed). The value of negationInd should not normally be set to true. Instead, to record that there is "no prior history of chicken pox", one would use a coded value indicated exactly that. However, it is not always possible to record problems in this manner, especially if using a controlled vocabulary that does not supply pre-coordinated negations , or which do not allow the negation to be recorded with post-coordinated coded terminology.</p>
@@ -234,11 +232,11 @@ public interface IProblemEntry {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::ProblemObservation::ageObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::AgeObservation))->asSequence()->first().oclAsType(ccd::AgeObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::AgeObservation))->asSequence()->first().oclAsType(domain::AgeObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	AgeObservation getAgeObservation();
+	IAgeObservation getAgeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,7 +246,7 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	AgeObservation withAgeObservation();
+	IAgeObservation withAgeObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -258,18 +256,18 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IProblemEntry setAgeObservation(AgeObservation value);
+	IProblemEntry setAgeObservation(IAgeObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::ProblemEntry::severity.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::Severity))->asSequence()->first().oclAsType(ihe::Severity)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::Severity))->asSequence()->first().oclAsType(domain::Severity)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	Severity getSeverity();
+	ISeverity getSeverity();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,7 +277,7 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	Severity withSeverity();
+	ISeverity withSeverity();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -289,18 +287,18 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IProblemEntry setSeverity(Severity value);
+	IProblemEntry setSeverity(ISeverity value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::ProblemEntry::problemStatusObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemStatusObservation))->asSequence()->first().oclAsType(ihe::ProblemStatusObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ProblemStatusObservation))->asSequence()->first().oclAsType(domain::ProblemStatusObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ProblemStatusObservation getProblemStatusObservation();
+	IProblemStatusObservation getProblemStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -310,7 +308,7 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ProblemStatusObservation withProblemStatusObservation();
+	IProblemStatusObservation withProblemStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -320,18 +318,18 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IProblemEntry setProblemStatusObservation(ProblemStatusObservation value);
+	IProblemEntry setProblemStatusObservation(IProblemStatusObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::ProblemEntry::healthStatusObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::HealthStatusObservation))->asSequence()->first().oclAsType(ihe::HealthStatusObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::HealthStatusObservation))->asSequence()->first().oclAsType(domain::HealthStatusObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	HealthStatusObservation getHealthStatusObservation();
+	IHealthStatusObservation getHealthStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,7 +339,7 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	HealthStatusObservation withHealthStatusObservation();
+	IHealthStatusObservation withHealthStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -351,18 +349,18 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IProblemEntry setHealthStatusObservation(HealthStatusObservation value);
+	IProblemEntry setHealthStatusObservation(IHealthStatusObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::ProblemEntry::comment.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::Comment)).oclAsType(ihe::Comment)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::Comment)).oclAsType(domain::Comment)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<Comment> getComments();
+	EList<IComment> getComments();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -372,7 +370,7 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	Comment addComment();
+	IComment addComment();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -382,18 +380,18 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IProblemEntry addComment(Comment value);
+	IProblemEntry addComment(IComment value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * hitsp::ConditionEntry::ageObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::AgeObservation))->asSequence()->first().oclAsType(ccd::AgeObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::AgeObservation))->asSequence()->first().oclAsType(domain::AgeObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	AgeObservation getAgeAtOnset();
+	IAgeObservation getAgeAtOnset();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -403,7 +401,7 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	AgeObservation withAgeAtOnset();
+	IAgeObservation withAgeAtOnset();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -413,18 +411,18 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IProblemEntry setAgeAtOnset(AgeObservation value);
+	IProblemEntry setAgeAtOnset(IAgeObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * hitsp::ConditionEntry::causeOfDeathObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::CauseOfDeathObservation))->asSequence()->first().oclAsType(ccd::CauseOfDeathObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::CauseOfDeathObservation))->asSequence()->first().oclAsType(domain::CauseOfDeathObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	CauseOfDeathObservation getCauseOfDeath();
+	ICauseOfDeathObservation getCauseOfDeath();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -434,7 +432,7 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	CauseOfDeathObservation withCauseOfDeath();
+	ICauseOfDeathObservation withCauseOfDeath();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -444,18 +442,18 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IProblemEntry setCauseOfDeath(CauseOfDeathObservation value);
+	IProblemEntry setCauseOfDeath(ICauseOfDeathObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * hitsp::ConditionEntry::problemStatusObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemStatusObservation))->asSequence()->first().oclAsType(ihe::ProblemStatusObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ProblemStatusObservation))->asSequence()->first().oclAsType(domain::ProblemStatusObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ProblemStatusObservation getProblemStatus();
+	IProblemStatusObservation getProblemStatus();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -465,7 +463,7 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ProblemStatusObservation withProblemStatus();
+	IProblemStatusObservation withProblemStatus();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -475,7 +473,106 @@ public interface IProblemEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IProblemEntry setProblemStatus(ProblemStatusObservation value);
+	IProblemEntry setProblemStatus(IProblemStatusObservation value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::code.
+	 * The &lt;code> describes the process of establishing a problem. The code element should be used, as the process of determining the value is important to clinicians (e.g., a diagnosis is a more advanced statement than a symptom). When a physical exam observation is being recorded the code used should be "Finding." When a review of systems observation is being recorded the code used should be "Symptom." The recommended vocabulary for describing problems is specified as a value set. Subclasses of this content module may specify other vocabularies.
+	 * self.code.oclAsType(datatypes::CD)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	CD getCode();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * IHE Problem Entry SHOULD contain exactly one [1..1] code, which SHOULD be selected from ValueSet 2.16.840.1.113883.3.88.12.3221.7.2 Problem Type STATIC 1.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	CD withCode();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * IHE Problem Entry SHOULD contain exactly one [1..1] code, which SHOULD be selected from ValueSet 2.16.840.1.113883.3.88.12.3221.7.2 Problem Type STATIC 1.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProblemEntry setCode(CD value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::text.
+	 * The &lt;text> element is required and points to the text describing the problem being recorded; including any dates, comments, et cetera. The &lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.
+	 * self.text.oclAsType(datatypes::ED)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ED getText();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * IHE Problem Entry SHALL contain exactly one [1..1] text.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ED withText();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * IHE Problem Entry SHALL contain exactly one [1..1] text.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProblemEntry setText(ED value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Observation::value.
+	 * <p>The &lt;value> is the condition that was found. This element is required. While the value may be a coded or an un-coded string, the type is always a coded value (xsi:type='CD'). If coded, the code and codeSystem attributes shall be present. The codeSystem should reference a controlled vocabulary describing problems, complaints, symptoms, findings, diagnoses, or functional limitations, e.g., ICD-9, SNOMED-CT or MEDCIN, or others.</p>
+	 * <p>It is recommended that the codeSystemName associated with the codeSystem, and the displayName for the code also be provided for diagnostic and human readability purposes, but this is not required by this profile.</p>
+	 * <p>If uncoded, all attributes other than xsi:type='CD' must be absent.</p>
+	 * <p>The &lt;value> contains a &lt;reference> to the &lt;originalText> in order to link the coded value to the problem narrative text (minus any dates, comments, et cetera). The &lt;reference> contains a URI in value attribute. This URI points to the free text description of the problem in the document that is being described.</p>
+	 * self.value.oclAsType(datatypes::CD)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	CD getValue();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * IHE Problem Entry SHALL contain exactly one [1..1] value, where its data type is CD.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	CD withValue();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * IHE Problem Entry SHALL contain exactly one [1..1] value, where its data type is CD.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProblemEntry setValue(CD value);
 
 	/**
 	 * <!-- begin-user-doc -->

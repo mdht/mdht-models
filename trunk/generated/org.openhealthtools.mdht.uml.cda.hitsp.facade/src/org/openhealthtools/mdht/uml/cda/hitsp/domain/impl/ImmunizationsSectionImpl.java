@@ -19,10 +19,10 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IImmunization;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IImmunizationsSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupplyActivity;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
@@ -242,7 +242,7 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SUPPLY_ACTIVITIES__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(ccd::SupplyActivity)).oclAsType(ccd::SupplyActivity)";
+	protected static final String GET_SUPPLY_ACTIVITIES__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(domain::SupplyActivity)).oclAsType(domain::SupplyActivity)";
 
 	/**
 	 * The cached OCL query for the '{@link #getSupplyActivities() <em>Get Supply Activities</em>}' query operation.
@@ -259,7 +259,7 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SupplyActivity> getSupplyActivities() {
+	public EList<ISupplyActivity> getSupplyActivities() {
 		if (GET_SUPPLY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -273,8 +273,8 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLY_ACTIVITIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<SupplyActivity> result = (Collection<SupplyActivity>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<SupplyActivity>(result.size(), result.toArray());
+		Collection<ISupplyActivity> result = (Collection<ISupplyActivity>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<ISupplyActivity>(result.size(), result.toArray());
 	}
 
 	/**
@@ -282,7 +282,7 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SupplyActivity addSupplyActivity() {
+	public ISupplyActivity addSupplyActivity() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("SupplyActivity");
@@ -293,7 +293,11 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 		} catch (Exception e) {
 			// no init() method
 		}
-		SupplyActivity value = (SupplyActivity) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("SupplyActivity");
+		ISupplyActivity value = (ISupplyActivity) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Supply) eObject);
 		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply) eObject);
 		return value;
 	}
@@ -303,7 +307,7 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IImmunizationsSection addSupplyActivity(SupplyActivity value) {
+	public IImmunizationsSection addSupplyActivity(ISupplyActivity value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
