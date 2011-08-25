@@ -11,65 +11,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdmissionMedicationHistorySection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergiesReactionsSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergyDrugSensitivity;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAssessmentAndPlanSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IChiefComplaintSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IComment;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDiagnosticResultsSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainFactory;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounter;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistorySection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IFunctionalStatusSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHealthcareProvider;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHistoryOfPresentIllness;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHospitalAdmissionDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHospitalCourseSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IHospitalDischargeMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IImmunization;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IImmunizationsSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IInsuranceProvider;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.ILanguageSpoken;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicalEquipmentSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedication;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationCombinationMedication;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationConditionalDose;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationInformation;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationNormalDose;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationOrderInformation;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationSplitDose;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationTaperedDose;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationType;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationsAdministeredSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientSummary;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayersSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPhysicalExamSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemEntry;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemListSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedure;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReasonForReferralSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReferralSummary;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResult;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReviewOfSystemsSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupport;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupportGuardian;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupportParticipant;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredDocument;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredOrScannedDocument;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSign;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -116,28 +58,110 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 		switch (eClass.getClassifierID()) {
 			case IDomainPackage.ALLERGY_DRUG_SENSITIVITY:
 				return (EObject) createAllergyDrugSensitivity();
+			case IDomainPackage.EPISODE_OBSERVATION:
+				return (EObject) createEpisodeObservation();
+			case IDomainPackage.ALLERGY_INTOLERANCE:
+				return (EObject) createAllergyIntolerance();
+			case IDomainPackage.PROBLEM_ENTRY:
+				return (EObject) createProblemEntry();
+			case IDomainPackage.AGE_OBSERVATION:
+				return (EObject) createAgeObservation();
+			case IDomainPackage.SEVERITY:
+				return (EObject) createSeverity();
+			case IDomainPackage.PROBLEM_STATUS_OBSERVATION:
+				return (EObject) createProblemStatusObservation();
+			case IDomainPackage.STATUS_OBSERVATION:
+				return (EObject) createStatusObservation();
+			case IDomainPackage.HEALTH_STATUS_OBSERVATION:
+				return (EObject) createHealthStatusObservation();
+			case IDomainPackage.COMMENT:
+				return (EObject) createComment();
+			case IDomainPackage.CAUSE_OF_DEATH_OBSERVATION:
+				return (EObject) createCauseOfDeathObservation();
+			case IDomainPackage.FAMILY_HISTORY_OBSERVATION:
+				return (EObject) createFamilyHistoryObservation();
+			case IDomainPackage.SIMPLE_OBSERVATION:
+				return (EObject) createSimpleObservation();
+			case IDomainPackage.PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER:
+				return (EObject) createProblemEntryReactionObservationContainer();
 			case IDomainPackage.MEDICATION:
 				return (EObject) createMedication();
+			case IDomainPackage.MEDICATION_SERIES_NUMBER_OBSERVATION:
+				return (EObject) createMedicationSeriesNumberObservation();
+			case IDomainPackage.MEDICATION_STATUS_OBSERVATION:
+				return (EObject) createMedicationStatusObservation();
+			case IDomainPackage.REACTION_OBSERVATION:
+				return (EObject) createReactionObservation();
+			case IDomainPackage.SEVERITY_OBSERVATION:
+				return (EObject) createSeverityObservation();
+			case IDomainPackage.PRODUCT_INSTANCE:
+				return (EObject) createProductInstance();
+			case IDomainPackage.INTERNAL_REFERENCE:
+				return (EObject) createInternalReference();
+			case IDomainPackage.PATIENT_MEDICAL_INSTRUCTIONS:
+				return (EObject) createPatientMedicalInstructions();
 			case IDomainPackage.MEDICATION_TYPE:
 				return (EObject) createMedicationType();
 			case IDomainPackage.MEDICATION_ORDER_INFORMATION:
 				return (EObject) createMedicationOrderInformation();
+			case IDomainPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS:
+				return (EObject) createMedicationFullfillmentInstructions();
 			case IDomainPackage.CONDITION:
 				return (EObject) createCondition();
-			case IDomainPackage.PROBLEM_ENTRY:
-				return (EObject) createProblemEntry();
 			case IDomainPackage.PATIENT_SUMMARY:
 				return (EObject) createPatientSummary();
+			case IDomainPackage.FAMILY_HISTORY_SECTION:
+				return (EObject) createFamilyHistorySection();
+			case IDomainPackage.SOCIAL_HISTORY_SECTION:
+				return (EObject) createSocialHistorySection();
+			case IDomainPackage.SOCIAL_HISTORY:
+				return (EObject) createSocialHistory();
+			case IDomainPackage.SOCIAL_HISTORY_STATUS_OBSERVATION:
+				return (EObject) createSocialHistoryStatusObservation();
+			case IDomainPackage.SOCIAL_HISTORY_OBSERVATION:
+				return (EObject) createSocialHistoryObservation();
+			case IDomainPackage.RESULTS_SECTION:
+				return (EObject) createResultsSection();
+			case IDomainPackage.RESULT_ORGANIZER:
+				return (EObject) createResultOrganizer();
+			case IDomainPackage.RESULT_OBSERVATION:
+				return (EObject) createResultObservation();
+			case IDomainPackage.MEDICAL_EQUIPMENT_SECTION:
+				return (EObject) createMedicalEquipmentSection();
+			case IDomainPackage.SUPPLY_ACTIVITY:
+				return (EObject) createSupplyActivity();
+			case IDomainPackage.FULFILLMENT_INSTRUCTION:
+				return (EObject) createFulfillmentInstruction();
+			case IDomainPackage.MEDICATION_ACTIVITY:
+				return (EObject) createMedicationActivity();
+			case IDomainPackage.PATIENT_INSTRUCTION:
+				return (EObject) createPatientInstruction();
+			case IDomainPackage.FUNCTIONAL_STATUS_SECTION:
+				return (EObject) createFunctionalStatusSection();
+			case IDomainPackage.PURPOSE_SECTION:
+				return (EObject) createPurposeSection();
+			case IDomainPackage.PURPOSE_ACTIVITY:
+				return (EObject) createPurposeActivity();
 			case IDomainPackage.ADVANCE_DIRECTIVES_SECTION:
 				return (EObject) createAdvanceDirectivesSection();
+			case IDomainPackage.ADVANCE_DIRECTIVE:
+				return (EObject) createAdvanceDirective();
+			case IDomainPackage.ADVANCE_DIRECTIVE_VERIFICATION:
+				return (EObject) createAdvanceDirectiveVerification();
+			case IDomainPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
+				return (EObject) createAdvanceDirectiveStatusObservation();
+			case IDomainPackage.ADVANCE_DIRECTIVE_REFERENCE:
+				return (EObject) createAdvanceDirectiveReference();
 			case IDomainPackage.ALLERGIES_REACTIONS_SECTION:
 				return (EObject) createAllergiesReactionsSection();
-			case IDomainPackage.COMMENT:
-				return (EObject) createComment();
 			case IDomainPackage.PROBLEM_LIST_SECTION:
 				return (EObject) createProblemListSection();
 			case IDomainPackage.ENCOUNTERS_SECTION:
 				return (EObject) createEncountersSection();
+			case IDomainPackage.ENCOUNTERS_ACTIVITY:
+				return (EObject) createEncountersActivity();
+			case IDomainPackage.ENCOUNTER_LOCATION:
+				return (EObject) createEncounterLocation();
 			case IDomainPackage.ENCOUNTER:
 				return (EObject) createEncounter();
 			case IDomainPackage.IMMUNIZATIONS_SECTION:
@@ -146,18 +170,56 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createImmunization();
 			case IDomainPackage.PAYERS_SECTION:
 				return (EObject) createPayersSection();
+			case IDomainPackage.COVERAGE_ENTRY:
+				return (EObject) createCoverageEntry();
+			case IDomainPackage.POLICY_ACTIVITY:
+				return (EObject) createPolicyActivity();
+			case IDomainPackage.PAYER_ENTITY:
+				return (EObject) createPayerEntity();
+			case IDomainPackage.COVERED_PARTY:
+				return (EObject) createCoveredParty();
+			case IDomainPackage.POLICY_SUBSCRIBER:
+				return (EObject) createPolicySubscriber();
 			case IDomainPackage.MEDICATIONS_SECTION:
 				return (EObject) createMedicationsSection();
 			case IDomainPackage.PLAN_OF_CARE_SECTION:
 				return (EObject) createPlanOfCareSection();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ACT:
+				return (EObject) createPlanOfCareActivityAct();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY:
+				return (EObject) createPlanOfCareActivity();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER:
+				return (EObject) createPlanOfCareActivityEncounter();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION:
+				return (EObject) createPlanOfCareActivityObservation();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE:
+				return (EObject) createPlanOfCareActivityProcedure();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION:
+				return (EObject) createPlanOfCareActivitySubstanceAdministration();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY:
+				return (EObject) createPlanOfCareActivitySupply();
 			case IDomainPackage.PROCEDURE:
 				return (EObject) createProcedure();
+			case IDomainPackage.PREGNANCY_HISTORY_SECTION:
+				return (EObject) createPregnancyHistorySection();
+			case IDomainPackage.PREGNANCY_OBSERVATION:
+				return (EObject) createPregnancyObservation();
 			case IDomainPackage.SURGERIES_SECTION:
 				return (EObject) createSurgeriesSection();
+			case IDomainPackage.EXTERNAL_REFERENCE:
+				return (EObject) createExternalReference();
+			case IDomainPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE:
+				return (EObject) createProcedureEntryProcedureActivityProcedure();
+			case IDomainPackage.PROCEDURE_ENTRY:
+				return (EObject) createProcedureEntry();
 			case IDomainPackage.SUPPORT:
 				return (EObject) createSupport();
 			case IDomainPackage.VITAL_SIGNS_SECTION:
 				return (EObject) createVitalSignsSection();
+			case IDomainPackage.VITAL_SIGNS_ORGANIZER:
+				return (EObject) createVitalSignsOrganizer();
+			case IDomainPackage.VITAL_SIGN_OBSERVATION:
+				return (EObject) createVitalSignObservation();
 			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION:
 				return (EObject) createDiagnosticResultsSection();
 			case IDomainPackage.RESULT:
@@ -172,8 +234,6 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createReasonForReferralSection();
 			case IDomainPackage.HISTORY_OF_PRESENT_ILLNESS:
 				return (EObject) createHistoryOfPresentIllness();
-			case IDomainPackage.FUNCTIONAL_STATUS_SECTION:
-				return (EObject) createFunctionalStatusSection();
 			case IDomainPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
 				return (EObject) createHospitalAdmissionDiagnosisSection();
 			case IDomainPackage.DISCHARGE_DIAGNOSIS_SECTION:
@@ -192,12 +252,6 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createHospitalCourseSection();
 			case IDomainPackage.ASSESSMENT_AND_PLAN_SECTION:
 				return (EObject) createAssessmentAndPlanSection();
-			case IDomainPackage.FAMILY_HISTORY_SECTION:
-				return (EObject) createFamilyHistorySection();
-			case IDomainPackage.SOCIAL_HISTORY_SECTION:
-				return (EObject) createSocialHistorySection();
-			case IDomainPackage.MEDICAL_EQUIPMENT_SECTION:
-				return (EObject) createMedicalEquipmentSection();
 			case IDomainPackage.LANGUAGE_SPOKEN:
 				return (EObject) createLanguageSpoken();
 			case IDomainPackage.INSURANCE_PROVIDER:
@@ -220,6 +274,12 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createSupportParticipant();
 			case IDomainPackage.UNSTRUCTURED_DOCUMENT:
 				return (EObject) createUnstructuredDocument();
+			case IDomainPackage.SCAN_ORIGINAL_AUTHOR:
+				return (EObject) createScanOriginalAuthor();
+			case IDomainPackage.SCANNING_DEVICE:
+				return (EObject) createScanningDevice();
+			case IDomainPackage.SCAN_DATA_ENTERER:
+				return (EObject) createScanDataEnterer();
 			case IDomainPackage.MEDICATION_INFORMATION:
 				return (EObject) createMedicationInformation();
 			case IDomainPackage.UNSTRUCTURED_OR_SCANNED_DOCUMENT:
@@ -228,6 +288,10 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createReferralSummary();
 			case IDomainPackage.DISCHARGE_SUMMARY:
 				return (EObject) createDischargeSummary();
+			case IDomainPackage.DISCHARGE_DIET:
+				return (EObject) createDischargeDiet();
+			case IDomainPackage.FAMILY_HISTORY:
+				return (EObject) createFamilyHistory();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -248,9 +312,99 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public IEpisodeObservation createEpisodeObservation() {
+		EpisodeObservationImpl episodeObservation = new EpisodeObservationImpl();
+		return episodeObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAllergyIntolerance createAllergyIntolerance() {
+		AllergyIntoleranceImpl allergyIntolerance = new AllergyIntoleranceImpl();
+		return allergyIntolerance;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public IMedication createMedication() {
 		MedicationImpl medication = new MedicationImpl();
 		return medication;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IMedicationSeriesNumberObservation createMedicationSeriesNumberObservation() {
+		MedicationSeriesNumberObservationImpl medicationSeriesNumberObservation = new MedicationSeriesNumberObservationImpl();
+		return medicationSeriesNumberObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IMedicationStatusObservation createMedicationStatusObservation() {
+		MedicationStatusObservationImpl medicationStatusObservation = new MedicationStatusObservationImpl();
+		return medicationStatusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IReactionObservation createReactionObservation() {
+		ReactionObservationImpl reactionObservation = new ReactionObservationImpl();
+		return reactionObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISeverityObservation createSeverityObservation() {
+		SeverityObservationImpl severityObservation = new SeverityObservationImpl();
+		return severityObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProductInstance createProductInstance() {
+		ProductInstanceImpl productInstance = new ProductInstanceImpl();
+		return productInstance;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IInternalReference createInternalReference() {
+		InternalReferenceImpl internalReference = new InternalReferenceImpl();
+		return internalReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPatientMedicalInstructions createPatientMedicalInstructions() {
+		PatientMedicalInstructionsImpl patientMedicalInstructions = new PatientMedicalInstructionsImpl();
+		return patientMedicalInstructions;
 	}
 
 	/**
@@ -278,6 +432,16 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public IMedicationFullfillmentInstructions createMedicationFullfillmentInstructions() {
+		MedicationFullfillmentInstructionsImpl medicationFullfillmentInstructions = new MedicationFullfillmentInstructionsImpl();
+		return medicationFullfillmentInstructions;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ICondition createCondition() {
 		ConditionImpl condition = new ConditionImpl();
 		return condition;
@@ -291,6 +455,56 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	public IProblemEntry createProblemEntry() {
 		ProblemEntryImpl problemEntry = new ProblemEntryImpl();
 		return problemEntry;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAgeObservation createAgeObservation() {
+		AgeObservationImpl ageObservation = new AgeObservationImpl();
+		return ageObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISeverity createSeverity() {
+		SeverityImpl severity = new SeverityImpl();
+		return severity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemStatusObservation createProblemStatusObservation() {
+		ProblemStatusObservationImpl problemStatusObservation = new ProblemStatusObservationImpl();
+		return problemStatusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IStatusObservation createStatusObservation() {
+		StatusObservationImpl statusObservation = new StatusObservationImpl();
+		return statusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IHealthStatusObservation createHealthStatusObservation() {
+		HealthStatusObservationImpl healthStatusObservation = new HealthStatusObservationImpl();
+		return healthStatusObservation;
 	}
 
 	/**
@@ -318,6 +532,46 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public IAdvanceDirective createAdvanceDirective() {
+		AdvanceDirectiveImpl advanceDirective = new AdvanceDirectiveImpl();
+		return advanceDirective;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAdvanceDirectiveVerification createAdvanceDirectiveVerification() {
+		AdvanceDirectiveVerificationImpl advanceDirectiveVerification = new AdvanceDirectiveVerificationImpl();
+		return advanceDirectiveVerification;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAdvanceDirectiveStatusObservation createAdvanceDirectiveStatusObservation() {
+		AdvanceDirectiveStatusObservationImpl advanceDirectiveStatusObservation = new AdvanceDirectiveStatusObservationImpl();
+		return advanceDirectiveStatusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAdvanceDirectiveReference createAdvanceDirectiveReference() {
+		AdvanceDirectiveReferenceImpl advanceDirectiveReference = new AdvanceDirectiveReferenceImpl();
+		return advanceDirectiveReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public IAllergiesReactionsSection createAllergiesReactionsSection() {
 		AllergiesReactionsSectionImpl allergiesReactionsSection = new AllergiesReactionsSectionImpl();
 		return allergiesReactionsSection;
@@ -338,6 +592,46 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ICauseOfDeathObservation createCauseOfDeathObservation() {
+		CauseOfDeathObservationImpl causeOfDeathObservation = new CauseOfDeathObservationImpl();
+		return causeOfDeathObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IFamilyHistoryObservation createFamilyHistoryObservation() {
+		FamilyHistoryObservationImpl familyHistoryObservation = new FamilyHistoryObservationImpl();
+		return familyHistoryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISimpleObservation createSimpleObservation() {
+		SimpleObservationImpl simpleObservation = new SimpleObservationImpl();
+		return simpleObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProblemEntryReactionObservationContainer createProblemEntryReactionObservationContainer() {
+		ProblemEntryReactionObservationContainerImpl problemEntryReactionObservationContainer = new ProblemEntryReactionObservationContainerImpl();
+		return problemEntryReactionObservationContainer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public IProblemListSection createProblemListSection() {
 		ProblemListSectionImpl problemListSection = new ProblemListSectionImpl();
 		return problemListSection;
@@ -351,6 +645,26 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	public IEncountersSection createEncountersSection() {
 		EncountersSectionImpl encountersSection = new EncountersSectionImpl();
 		return encountersSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEncountersActivity createEncountersActivity() {
+		EncountersActivityImpl encountersActivity = new EncountersActivityImpl();
+		return encountersActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEncounterLocation createEncounterLocation() {
+		EncounterLocationImpl encounterLocation = new EncounterLocationImpl();
+		return encounterLocation;
 	}
 
 	/**
@@ -398,6 +712,56 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ICoverageEntry createCoverageEntry() {
+		CoverageEntryImpl coverageEntry = new CoverageEntryImpl();
+		return coverageEntry;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPolicyActivity createPolicyActivity() {
+		PolicyActivityImpl policyActivity = new PolicyActivityImpl();
+		return policyActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPayerEntity createPayerEntity() {
+		PayerEntityImpl payerEntity = new PayerEntityImpl();
+		return payerEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ICoveredParty createCoveredParty() {
+		CoveredPartyImpl coveredParty = new CoveredPartyImpl();
+		return coveredParty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPolicySubscriber createPolicySubscriber() {
+		PolicySubscriberImpl policySubscriber = new PolicySubscriberImpl();
+		return policySubscriber;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public IMedicationsSection createMedicationsSection() {
 		MedicationsSectionImpl medicationsSection = new MedicationsSectionImpl();
 		return medicationsSection;
@@ -418,6 +782,76 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public IPlanOfCareActivityAct createPlanOfCareActivityAct() {
+		PlanOfCareActivityActImpl planOfCareActivityAct = new PlanOfCareActivityActImpl();
+		return planOfCareActivityAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPlanOfCareActivity createPlanOfCareActivity() {
+		PlanOfCareActivityImpl planOfCareActivity = new PlanOfCareActivityImpl();
+		return planOfCareActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPlanOfCareActivityEncounter createPlanOfCareActivityEncounter() {
+		PlanOfCareActivityEncounterImpl planOfCareActivityEncounter = new PlanOfCareActivityEncounterImpl();
+		return planOfCareActivityEncounter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPlanOfCareActivityObservation createPlanOfCareActivityObservation() {
+		PlanOfCareActivityObservationImpl planOfCareActivityObservation = new PlanOfCareActivityObservationImpl();
+		return planOfCareActivityObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPlanOfCareActivityProcedure createPlanOfCareActivityProcedure() {
+		PlanOfCareActivityProcedureImpl planOfCareActivityProcedure = new PlanOfCareActivityProcedureImpl();
+		return planOfCareActivityProcedure;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPlanOfCareActivitySubstanceAdministration createPlanOfCareActivitySubstanceAdministration() {
+		PlanOfCareActivitySubstanceAdministrationImpl planOfCareActivitySubstanceAdministration = new PlanOfCareActivitySubstanceAdministrationImpl();
+		return planOfCareActivitySubstanceAdministration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPlanOfCareActivitySupply createPlanOfCareActivitySupply() {
+		PlanOfCareActivitySupplyImpl planOfCareActivitySupply = new PlanOfCareActivitySupplyImpl();
+		return planOfCareActivitySupply;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ISurgeriesSection createSurgeriesSection() {
 		SurgeriesSectionImpl surgeriesSection = new SurgeriesSectionImpl();
 		return surgeriesSection;
@@ -428,9 +862,59 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public IExternalReference createExternalReference() {
+		ExternalReferenceImpl externalReference = new ExternalReferenceImpl();
+		return externalReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProcedureEntryProcedureActivityProcedure createProcedureEntryProcedureActivityProcedure() {
+		ProcedureEntryProcedureActivityProcedureImpl procedureEntryProcedureActivityProcedure = new ProcedureEntryProcedureActivityProcedureImpl();
+		return procedureEntryProcedureActivityProcedure;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IProcedureEntry createProcedureEntry() {
+		ProcedureEntryImpl procedureEntry = new ProcedureEntryImpl();
+		return procedureEntry;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public IProcedure createProcedure() {
 		ProcedureImpl procedure = new ProcedureImpl();
 		return procedure;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPregnancyHistorySection createPregnancyHistorySection() {
+		PregnancyHistorySectionImpl pregnancyHistorySection = new PregnancyHistorySectionImpl();
+		return pregnancyHistorySection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPregnancyObservation createPregnancyObservation() {
+		PregnancyObservationImpl pregnancyObservation = new PregnancyObservationImpl();
+		return pregnancyObservation;
 	}
 
 	/**
@@ -451,6 +935,26 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	public IVitalSignsSection createVitalSignsSection() {
 		VitalSignsSectionImpl vitalSignsSection = new VitalSignsSectionImpl();
 		return vitalSignsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IVitalSignsOrganizer createVitalSignsOrganizer() {
+		VitalSignsOrganizerImpl vitalSignsOrganizer = new VitalSignsOrganizerImpl();
+		return vitalSignsOrganizer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IVitalSignObservation createVitalSignObservation() {
+		VitalSignObservationImpl vitalSignObservation = new VitalSignObservationImpl();
+		return vitalSignObservation;
 	}
 
 	/**
@@ -531,6 +1035,26 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	public IFunctionalStatusSection createFunctionalStatusSection() {
 		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
 		return functionalStatusSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPurposeSection createPurposeSection() {
+		PurposeSectionImpl purposeSection = new PurposeSectionImpl();
+		return purposeSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPurposeActivity createPurposeActivity() {
+		PurposeActivityImpl purposeActivity = new PurposeActivityImpl();
+		return purposeActivity;
 	}
 
 	/**
@@ -648,9 +1172,109 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ISocialHistory createSocialHistory() {
+		SocialHistoryImpl socialHistory = new SocialHistoryImpl();
+		return socialHistory;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISocialHistoryStatusObservation createSocialHistoryStatusObservation() {
+		SocialHistoryStatusObservationImpl socialHistoryStatusObservation = new SocialHistoryStatusObservationImpl();
+		return socialHistoryStatusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISocialHistoryObservation createSocialHistoryObservation() {
+		SocialHistoryObservationImpl socialHistoryObservation = new SocialHistoryObservationImpl();
+		return socialHistoryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IResultsSection createResultsSection() {
+		ResultsSectionImpl resultsSection = new ResultsSectionImpl();
+		return resultsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IResultOrganizer createResultOrganizer() {
+		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
+		return resultOrganizer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IResultObservation createResultObservation() {
+		ResultObservationImpl resultObservation = new ResultObservationImpl();
+		return resultObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public IMedicalEquipmentSection createMedicalEquipmentSection() {
 		MedicalEquipmentSectionImpl medicalEquipmentSection = new MedicalEquipmentSectionImpl();
 		return medicalEquipmentSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISupplyActivity createSupplyActivity() {
+		SupplyActivityImpl supplyActivity = new SupplyActivityImpl();
+		return supplyActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IFulfillmentInstruction createFulfillmentInstruction() {
+		FulfillmentInstructionImpl fulfillmentInstruction = new FulfillmentInstructionImpl();
+		return fulfillmentInstruction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IMedicationActivity createMedicationActivity() {
+		MedicationActivityImpl medicationActivity = new MedicationActivityImpl();
+		return medicationActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPatientInstruction createPatientInstruction() {
+		PatientInstructionImpl patientInstruction = new PatientInstructionImpl();
+		return patientInstruction;
 	}
 
 	/**
@@ -768,6 +1392,36 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public IScanOriginalAuthor createScanOriginalAuthor() {
+		ScanOriginalAuthorImpl scanOriginalAuthor = new ScanOriginalAuthorImpl();
+		return scanOriginalAuthor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IScanningDevice createScanningDevice() {
+		ScanningDeviceImpl scanningDevice = new ScanningDeviceImpl();
+		return scanningDevice;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IScanDataEnterer createScanDataEnterer() {
+		ScanDataEntererImpl scanDataEnterer = new ScanDataEntererImpl();
+		return scanDataEnterer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public IMedicationInformation createMedicationInformation() {
 		MedicationInformationImpl medicationInformation = new MedicationInformationImpl();
 		return medicationInformation;
@@ -801,6 +1455,26 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	public IDischargeSummary createDischargeSummary() {
 		DischargeSummaryImpl dischargeSummary = new DischargeSummaryImpl();
 		return dischargeSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IDischargeDiet createDischargeDiet() {
+		DischargeDietImpl dischargeDiet = new DischargeDietImpl();
+		return dischargeDiet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IFamilyHistory createFamilyHistory() {
+		FamilyHistoryImpl familyHistory = new FamilyHistoryImpl();
+		return familyHistory;
 	}
 
 	/**

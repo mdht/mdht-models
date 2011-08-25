@@ -35,6 +35,24 @@ public interface IDomainFactory extends EFactory {
 	IAllergyDrugSensitivity createAllergyDrugSensitivity();
 
 	/**
+	 * Returns a new object of class '<em>Episode Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Episode Observation</em>'.
+	 * @generated
+	 */
+	IEpisodeObservation createEpisodeObservation();
+
+	/**
+	 * Returns a new object of class '<em>Allergy Intolerance</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Allergy Intolerance</em>'.
+	 * @generated
+	 */
+	IAllergyIntolerance createAllergyIntolerance();
+
+	/**
 	 * Returns a new object of class '<em>Medication</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -42,6 +60,69 @@ public interface IDomainFactory extends EFactory {
 	 * @generated
 	 */
 	IMedication createMedication();
+
+	/**
+	 * Returns a new object of class '<em>Medication Series Number Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Series Number Observation</em>'.
+	 * @generated
+	 */
+	IMedicationSeriesNumberObservation createMedicationSeriesNumberObservation();
+
+	/**
+	 * Returns a new object of class '<em>Medication Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Status Observation</em>'.
+	 * @generated
+	 */
+	IMedicationStatusObservation createMedicationStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Reaction Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reaction Observation</em>'.
+	 * @generated
+	 */
+	IReactionObservation createReactionObservation();
+
+	/**
+	 * Returns a new object of class '<em>Severity Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Severity Observation</em>'.
+	 * @generated
+	 */
+	ISeverityObservation createSeverityObservation();
+
+	/**
+	 * Returns a new object of class '<em>Product Instance</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Product Instance</em>'.
+	 * @generated
+	 */
+	IProductInstance createProductInstance();
+
+	/**
+	 * Returns a new object of class '<em>Internal Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Internal Reference</em>'.
+	 * @generated
+	 */
+	IInternalReference createInternalReference();
+
+	/**
+	 * Returns a new object of class '<em>Patient Medical Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Medical Instructions</em>'.
+	 * @generated
+	 */
+	IPatientMedicalInstructions createPatientMedicalInstructions();
 
 	/**
 	 * Returns a new object of class '<em>Medication Type</em>'.
@@ -62,6 +143,15 @@ public interface IDomainFactory extends EFactory {
 	IMedicationOrderInformation createMedicationOrderInformation();
 
 	/**
+	 * Returns a new object of class '<em>Medication Fullfillment Instructions</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Fullfillment Instructions</em>'.
+	 * @generated
+	 */
+	IMedicationFullfillmentInstructions createMedicationFullfillmentInstructions();
+
+	/**
 	 * Returns a new object of class '<em>Condition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -78,6 +168,51 @@ public interface IDomainFactory extends EFactory {
 	 * @generated
 	 */
 	IProblemEntry createProblemEntry();
+
+	/**
+	 * Returns a new object of class '<em>Age Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Age Observation</em>'.
+	 * @generated
+	 */
+	IAgeObservation createAgeObservation();
+
+	/**
+	 * Returns a new object of class '<em>Severity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Severity</em>'.
+	 * @generated
+	 */
+	ISeverity createSeverity();
+
+	/**
+	 * Returns a new object of class '<em>Problem Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Status Observation</em>'.
+	 * @generated
+	 */
+	IProblemStatusObservation createProblemStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Status Observation</em>'.
+	 * @generated
+	 */
+	IStatusObservation createStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Health Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Health Status Observation</em>'.
+	 * @generated
+	 */
+	IHealthStatusObservation createHealthStatusObservation();
 
 	/**
 	 * Returns a new object of class '<em>Patient Summary</em>'.
@@ -98,6 +233,42 @@ public interface IDomainFactory extends EFactory {
 	IAdvanceDirectivesSection createAdvanceDirectivesSection();
 
 	/**
+	 * Returns a new object of class '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive</em>'.
+	 * @generated
+	 */
+	IAdvanceDirective createAdvanceDirective();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directive Verification</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Verification</em>'.
+	 * @generated
+	 */
+	IAdvanceDirectiveVerification createAdvanceDirectiveVerification();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directive Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Status Observation</em>'.
+	 * @generated
+	 */
+	IAdvanceDirectiveStatusObservation createAdvanceDirectiveStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Advance Directive Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Advance Directive Reference</em>'.
+	 * @generated
+	 */
+	IAdvanceDirectiveReference createAdvanceDirectiveReference();
+
+	/**
 	 * Returns a new object of class '<em>Allergies Reactions Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -116,6 +287,42 @@ public interface IDomainFactory extends EFactory {
 	IComment createComment();
 
 	/**
+	 * Returns a new object of class '<em>Cause Of Death Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cause Of Death Observation</em>'.
+	 * @generated
+	 */
+	ICauseOfDeathObservation createCauseOfDeathObservation();
+
+	/**
+	 * Returns a new object of class '<em>Family History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Observation</em>'.
+	 * @generated
+	 */
+	IFamilyHistoryObservation createFamilyHistoryObservation();
+
+	/**
+	 * Returns a new object of class '<em>Simple Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Simple Observation</em>'.
+	 * @generated
+	 */
+	ISimpleObservation createSimpleObservation();
+
+	/**
+	 * Returns a new object of class '<em>Problem Entry Reaction Observation Container</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Entry Reaction Observation Container</em>'.
+	 * @generated
+	 */
+	IProblemEntryReactionObservationContainer createProblemEntryReactionObservationContainer();
+
+	/**
 	 * Returns a new object of class '<em>Problem List Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -132,6 +339,24 @@ public interface IDomainFactory extends EFactory {
 	 * @generated
 	 */
 	IEncountersSection createEncountersSection();
+
+	/**
+	 * Returns a new object of class '<em>Encounters Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounters Activity</em>'.
+	 * @generated
+	 */
+	IEncountersActivity createEncountersActivity();
+
+	/**
+	 * Returns a new object of class '<em>Encounter Location</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Encounter Location</em>'.
+	 * @generated
+	 */
+	IEncounterLocation createEncounterLocation();
 
 	/**
 	 * Returns a new object of class '<em>Encounter</em>'.
@@ -170,6 +395,51 @@ public interface IDomainFactory extends EFactory {
 	IPayersSection createPayersSection();
 
 	/**
+	 * Returns a new object of class '<em>Coverage Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coverage Entry</em>'.
+	 * @generated
+	 */
+	ICoverageEntry createCoverageEntry();
+
+	/**
+	 * Returns a new object of class '<em>Policy Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Activity</em>'.
+	 * @generated
+	 */
+	IPolicyActivity createPolicyActivity();
+
+	/**
+	 * Returns a new object of class '<em>Payer Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Payer Entity</em>'.
+	 * @generated
+	 */
+	IPayerEntity createPayerEntity();
+
+	/**
+	 * Returns a new object of class '<em>Covered Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Covered Party</em>'.
+	 * @generated
+	 */
+	ICoveredParty createCoveredParty();
+
+	/**
+	 * Returns a new object of class '<em>Policy Subscriber</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Subscriber</em>'.
+	 * @generated
+	 */
+	IPolicySubscriber createPolicySubscriber();
+
+	/**
 	 * Returns a new object of class '<em>Medications Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -188,6 +458,69 @@ public interface IDomainFactory extends EFactory {
 	IPlanOfCareSection createPlanOfCareSection();
 
 	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Act</em>'.
+	 * @generated
+	 */
+	IPlanOfCareActivityAct createPlanOfCareActivityAct();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity</em>'.
+	 * @generated
+	 */
+	IPlanOfCareActivity createPlanOfCareActivity();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Encounter</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Encounter</em>'.
+	 * @generated
+	 */
+	IPlanOfCareActivityEncounter createPlanOfCareActivityEncounter();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Observation</em>'.
+	 * @generated
+	 */
+	IPlanOfCareActivityObservation createPlanOfCareActivityObservation();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Procedure</em>'.
+	 * @generated
+	 */
+	IPlanOfCareActivityProcedure createPlanOfCareActivityProcedure();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Substance Administration</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Substance Administration</em>'.
+	 * @generated
+	 */
+	IPlanOfCareActivitySubstanceAdministration createPlanOfCareActivitySubstanceAdministration();
+
+	/**
+	 * Returns a new object of class '<em>Plan Of Care Activity Supply</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Plan Of Care Activity Supply</em>'.
+	 * @generated
+	 */
+	IPlanOfCareActivitySupply createPlanOfCareActivitySupply();
+
+	/**
 	 * Returns a new object of class '<em>Surgeries Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -197,6 +530,33 @@ public interface IDomainFactory extends EFactory {
 	ISurgeriesSection createSurgeriesSection();
 
 	/**
+	 * Returns a new object of class '<em>External Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>External Reference</em>'.
+	 * @generated
+	 */
+	IExternalReference createExternalReference();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Entry Procedure Activity Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Entry Procedure Activity Procedure</em>'.
+	 * @generated
+	 */
+	IProcedureEntryProcedureActivityProcedure createProcedureEntryProcedureActivityProcedure();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Entry</em>'.
+	 * @generated
+	 */
+	IProcedureEntry createProcedureEntry();
+
+	/**
 	 * Returns a new object of class '<em>Procedure</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -204,6 +564,24 @@ public interface IDomainFactory extends EFactory {
 	 * @generated
 	 */
 	IProcedure createProcedure();
+
+	/**
+	 * Returns a new object of class '<em>Pregnancy History Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Pregnancy History Section</em>'.
+	 * @generated
+	 */
+	IPregnancyHistorySection createPregnancyHistorySection();
+
+	/**
+	 * Returns a new object of class '<em>Pregnancy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Pregnancy Observation</em>'.
+	 * @generated
+	 */
+	IPregnancyObservation createPregnancyObservation();
 
 	/**
 	 * Returns a new object of class '<em>Support</em>'.
@@ -222,6 +600,24 @@ public interface IDomainFactory extends EFactory {
 	 * @generated
 	 */
 	IVitalSignsSection createVitalSignsSection();
+
+	/**
+	 * Returns a new object of class '<em>Vital Signs Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vital Signs Organizer</em>'.
+	 * @generated
+	 */
+	IVitalSignsOrganizer createVitalSignsOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Vital Sign Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vital Sign Observation</em>'.
+	 * @generated
+	 */
+	IVitalSignObservation createVitalSignObservation();
 
 	/**
 	 * Returns a new object of class '<em>Diagnostic Results Section</em>'.
@@ -294,6 +690,24 @@ public interface IDomainFactory extends EFactory {
 	 * @generated
 	 */
 	IFunctionalStatusSection createFunctionalStatusSection();
+
+	/**
+	 * Returns a new object of class '<em>Purpose Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Purpose Section</em>'.
+	 * @generated
+	 */
+	IPurposeSection createPurposeSection();
+
+	/**
+	 * Returns a new object of class '<em>Purpose Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Purpose Activity</em>'.
+	 * @generated
+	 */
+	IPurposeActivity createPurposeActivity();
 
 	/**
 	 * Returns a new object of class '<em>Hospital Admission Diagnosis Section</em>'.
@@ -395,6 +809,60 @@ public interface IDomainFactory extends EFactory {
 	ISocialHistorySection createSocialHistorySection();
 
 	/**
+	 * Returns a new object of class '<em>Social History</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History</em>'.
+	 * @generated
+	 */
+	ISocialHistory createSocialHistory();
+
+	/**
+	 * Returns a new object of class '<em>Social History Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Status Observation</em>'.
+	 * @generated
+	 */
+	ISocialHistoryStatusObservation createSocialHistoryStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Social History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Observation</em>'.
+	 * @generated
+	 */
+	ISocialHistoryObservation createSocialHistoryObservation();
+
+	/**
+	 * Returns a new object of class '<em>Results Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Results Section</em>'.
+	 * @generated
+	 */
+	IResultsSection createResultsSection();
+
+	/**
+	 * Returns a new object of class '<em>Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Organizer</em>'.
+	 * @generated
+	 */
+	IResultOrganizer createResultOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Observation</em>'.
+	 * @generated
+	 */
+	IResultObservation createResultObservation();
+
+	/**
 	 * Returns a new object of class '<em>Medical Equipment Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -402,6 +870,42 @@ public interface IDomainFactory extends EFactory {
 	 * @generated
 	 */
 	IMedicalEquipmentSection createMedicalEquipmentSection();
+
+	/**
+	 * Returns a new object of class '<em>Supply Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Supply Activity</em>'.
+	 * @generated
+	 */
+	ISupplyActivity createSupplyActivity();
+
+	/**
+	 * Returns a new object of class '<em>Fulfillment Instruction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Fulfillment Instruction</em>'.
+	 * @generated
+	 */
+	IFulfillmentInstruction createFulfillmentInstruction();
+
+	/**
+	 * Returns a new object of class '<em>Medication Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Activity</em>'.
+	 * @generated
+	 */
+	IMedicationActivity createMedicationActivity();
+
+	/**
+	 * Returns a new object of class '<em>Patient Instruction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Patient Instruction</em>'.
+	 * @generated
+	 */
+	IPatientInstruction createPatientInstruction();
 
 	/**
 	 * Returns a new object of class '<em>Language Spoken</em>'.
@@ -503,6 +1007,33 @@ public interface IDomainFactory extends EFactory {
 	IUnstructuredDocument createUnstructuredDocument();
 
 	/**
+	 * Returns a new object of class '<em>Scan Original Author</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scan Original Author</em>'.
+	 * @generated
+	 */
+	IScanOriginalAuthor createScanOriginalAuthor();
+
+	/**
+	 * Returns a new object of class '<em>Scanning Device</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scanning Device</em>'.
+	 * @generated
+	 */
+	IScanningDevice createScanningDevice();
+
+	/**
+	 * Returns a new object of class '<em>Scan Data Enterer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scan Data Enterer</em>'.
+	 * @generated
+	 */
+	IScanDataEnterer createScanDataEnterer();
+
+	/**
 	 * Returns a new object of class '<em>Medication Information</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -537,6 +1068,24 @@ public interface IDomainFactory extends EFactory {
 	 * @generated
 	 */
 	IDischargeSummary createDischargeSummary();
+
+	/**
+	 * Returns a new object of class '<em>Discharge Diet</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Discharge Diet</em>'.
+	 * @generated
+	 */
+	IDischargeDiet createDischargeDiet();
+
+	/**
+	 * Returns a new object of class '<em>Family History</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History</em>'.
+	 * @generated
+	 */
+	IFamilyHistory createFamilyHistory();
 
 	/**
 	 * Returns the package supported by this factory.

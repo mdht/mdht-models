@@ -8,12 +8,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.openhealthtools.mdht.uml.cda.Consumable;
 import org.openhealthtools.mdht.uml.cda.Performer2;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationSeriesNumberObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
-import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_PQ;
 
@@ -69,7 +63,7 @@ public interface IMedicationConditionalDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationConditionalDose setMedicationSeriesNumberObservation(MedicationSeriesNumberObservation value);
+	IMedicationConditionalDose setMedicationSeriesNumberObservation(IMedicationSeriesNumberObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,7 +73,7 @@ public interface IMedicationConditionalDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationConditionalDose setMedicationStatusObservation(MedicationStatusObservation value);
+	IMedicationConditionalDose setMedicationStatusObservation(IMedicationStatusObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,7 +93,7 @@ public interface IMedicationConditionalDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationConditionalDose addReactionObservation(ReactionObservation value);
+	IMedicationConditionalDose addReactionObservation(IReactionObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -109,7 +103,7 @@ public interface IMedicationConditionalDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationConditionalDose addProductInstance(ProductInstance value);
+	IMedicationConditionalDose addProductInstance(IProductInstance value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -119,7 +113,7 @@ public interface IMedicationConditionalDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationConditionalDose addInternalReference(InternalReference value);
+	IMedicationConditionalDose addInternalReference(IInternalReference value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -129,7 +123,7 @@ public interface IMedicationConditionalDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationConditionalDose addPatientMedicalInstructions(PatientMedicalInstructions value);
+	IMedicationConditionalDose addPatientMedicalInstructions(IPatientMedicalInstructions value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,7 +153,7 @@ public interface IMedicationConditionalDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationConditionalDose setReactionObservation(ReactionObservation value);
+	IMedicationConditionalDose setReactionObservation(IReactionObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->

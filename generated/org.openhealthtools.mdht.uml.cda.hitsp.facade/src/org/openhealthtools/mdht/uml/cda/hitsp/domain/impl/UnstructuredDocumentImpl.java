@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.InfrastructureRootTypeId;
 import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanDataEnterer;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanOriginalAuthor;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanningDevice;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IUnstructuredDocument;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanDataEnterer;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanOriginalAuthor;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanningDevice;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
@@ -989,7 +989,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SCAN_ORIGINAL_AUTHORS__EOCL_EXP = "self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanOriginalAuthor)).oclAsType(ihe::ScanOriginalAuthor)";
+	protected static final String GET_SCAN_ORIGINAL_AUTHORS__EOCL_EXP = "self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(domain::ScanOriginalAuthor)).oclAsType(domain::ScanOriginalAuthor)";
 
 	/**
 	 * The cached OCL query for the '{@link #getScanOriginalAuthors() <em>Get Scan Original Authors</em>}' query operation.
@@ -1006,7 +1006,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ScanOriginalAuthor> getScanOriginalAuthors() {
+	public EList<IScanOriginalAuthor> getScanOriginalAuthors() {
 		if (GET_SCAN_ORIGINAL_AUTHORS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1020,8 +1020,8 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SCAN_ORIGINAL_AUTHORS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ScanOriginalAuthor> result = (Collection<ScanOriginalAuthor>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<ScanOriginalAuthor>(result.size(), result.toArray());
+		Collection<IScanOriginalAuthor> result = (Collection<IScanOriginalAuthor>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IScanOriginalAuthor>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1029,7 +1029,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ScanOriginalAuthor addScanOriginalAuthor() {
+	public IScanOriginalAuthor addScanOriginalAuthor() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -1040,7 +1040,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IUnstructuredDocument addScanOriginalAuthor(ScanOriginalAuthor value) {
+	public IUnstructuredDocument addScanOriginalAuthor(IScanOriginalAuthor value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -1054,7 +1054,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SCANNING_DEVICES__EOCL_EXP = "self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanningDevice)).oclAsType(ihe::ScanningDevice)";
+	protected static final String GET_SCANNING_DEVICES__EOCL_EXP = "self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(domain::ScanningDevice)).oclAsType(domain::ScanningDevice)";
 
 	/**
 	 * The cached OCL query for the '{@link #getScanningDevices() <em>Get Scanning Devices</em>}' query operation.
@@ -1071,7 +1071,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ScanningDevice> getScanningDevices() {
+	public EList<IScanningDevice> getScanningDevices() {
 		if (GET_SCANNING_DEVICES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1085,8 +1085,8 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SCANNING_DEVICES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ScanningDevice> result = (Collection<ScanningDevice>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<ScanningDevice>(result.size(), result.toArray());
+		Collection<IScanningDevice> result = (Collection<IScanningDevice>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IScanningDevice>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1094,7 +1094,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ScanningDevice addScanningDevice() {
+	public IScanningDevice addScanningDevice() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -1105,7 +1105,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IUnstructuredDocument addScanningDevice(ScanningDevice value) {
+	public IUnstructuredDocument addScanningDevice(IScanningDevice value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -1119,7 +1119,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SCAN_DATA_ENTERER__EOCL_EXP = "self.getDataEnterers()->select(dataEnterer : cda::DataEnterer | not dataEnterer.oclIsUndefined() and dataEnterer.oclIsKindOf(ihe::ScanDataEnterer))->asSequence()->first().oclAsType(ihe::ScanDataEnterer)";
+	protected static final String GET_SCAN_DATA_ENTERER__EOCL_EXP = "self.getDataEnterers()->select(dataEnterer : cda::DataEnterer | not dataEnterer.oclIsUndefined() and dataEnterer.oclIsKindOf(domain::ScanDataEnterer))->asSequence()->first().oclAsType(domain::ScanDataEnterer)";
 
 	/**
 	 * The cached OCL query for the '{@link #getScanDataEnterer() <em>Get Scan Data Enterer</em>}' query operation.
@@ -1136,7 +1136,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ScanDataEnterer getScanDataEnterer() {
+	public IScanDataEnterer getScanDataEnterer() {
 		if (GET_SCAN_DATA_ENTERER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1149,7 +1149,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SCAN_DATA_ENTERER__EOCL_QRY);
-		return (ScanDataEnterer) query.evaluate(this);
+		return (IScanDataEnterer) query.evaluate(this);
 	}
 
 	/**
@@ -1157,7 +1157,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ScanDataEnterer withScanDataEnterer() {
+	public IScanDataEnterer withScanDataEnterer() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -1168,7 +1168,7 @@ public class UnstructuredDocumentImpl extends EObjectImpl implements IUnstructur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IUnstructuredDocument setScanDataEnterer(ScanDataEnterer value) {
+	public IUnstructuredDocument setScanDataEnterer(IScanDataEnterer value) {
 		return this;
 	}
 

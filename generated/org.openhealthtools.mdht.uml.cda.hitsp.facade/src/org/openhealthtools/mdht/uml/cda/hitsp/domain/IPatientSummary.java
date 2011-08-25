@@ -17,13 +17,6 @@ import org.openhealthtools.mdht.uml.cda.InformationRecipient;
 import org.openhealthtools.mdht.uml.cda.InfrastructureRootTypeId;
 import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
-import org.openhealthtools.mdht.uml.cda.ccd.FamilyHistorySection;
-import org.openhealthtools.mdht.uml.cda.ccd.FunctionalStatusSection;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicalEquipmentSection;
-import org.openhealthtools.mdht.uml.cda.ccd.PurposeSection;
-import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
-import org.openhealthtools.mdht.uml.cda.ccd.SocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -441,11 +434,11 @@ public interface IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::ContinuityOfCareDocument::familyHistorySection.
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FamilyHistorySection))->asSequence()->first().oclAsType(ccd::FamilyHistorySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::FamilyHistorySection))->asSequence()->first().oclAsType(domain::FamilyHistorySection)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	FamilyHistorySection getFamilyHistorySection();
+	IFamilyHistorySection getFamilyHistorySection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -455,7 +448,7 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	FamilyHistorySection withFamilyHistorySection();
+	IFamilyHistorySection withFamilyHistorySection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -465,18 +458,18 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPatientSummary setFamilyHistorySection(FamilyHistorySection value);
+	IPatientSummary setFamilyHistorySection(IFamilyHistorySection value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::ContinuityOfCareDocument::socialHistorySection.
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::SocialHistorySection))->asSequence()->first().oclAsType(ccd::SocialHistorySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::SocialHistorySection))->asSequence()->first().oclAsType(domain::SocialHistorySection)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	SocialHistorySection getSocialHistorySection();
+	ISocialHistorySection getSocialHistorySection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -486,7 +479,7 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	SocialHistorySection withSocialHistorySection();
+	ISocialHistorySection withSocialHistorySection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -496,18 +489,18 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPatientSummary setSocialHistorySection(SocialHistorySection value);
+	IPatientSummary setSocialHistorySection(ISocialHistorySection value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::ContinuityOfCareDocument::resultsSection.
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::ResultsSection))->asSequence()->first().oclAsType(ccd::ResultsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::ResultsSection))->asSequence()->first().oclAsType(domain::ResultsSection)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ResultsSection getResultsSection();
+	IResultsSection getResultsSection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -517,7 +510,7 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ResultsSection withResultsSection();
+	IResultsSection withResultsSection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -527,18 +520,18 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPatientSummary setResultsSection(ResultsSection value);
+	IPatientSummary setResultsSection(IResultsSection value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::ContinuityOfCareDocument::medicalEquipmentSection.
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::MedicalEquipmentSection))->asSequence()->first().oclAsType(ccd::MedicalEquipmentSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::MedicalEquipmentSection))->asSequence()->first().oclAsType(domain::MedicalEquipmentSection)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicalEquipmentSection getMedicalEquipmentSection();
+	IMedicalEquipmentSection getMedicalEquipmentSection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -548,7 +541,7 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicalEquipmentSection withMedicalEquipmentSection();
+	IMedicalEquipmentSection withMedicalEquipmentSection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -558,18 +551,18 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPatientSummary setMedicalEquipmentSection(MedicalEquipmentSection value);
+	IPatientSummary setMedicalEquipmentSection(IMedicalEquipmentSection value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::ContinuityOfCareDocument::functionalStatusSection.
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::FunctionalStatusSection))->asSequence()->first().oclAsType(ccd::FunctionalStatusSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::FunctionalStatusSection))->asSequence()->first().oclAsType(domain::FunctionalStatusSection)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	FunctionalStatusSection getFunctionalStatusSection();
+	IFunctionalStatusSection getFunctionalStatusSection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -579,7 +572,7 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	FunctionalStatusSection withFunctionalStatusSection();
+	IFunctionalStatusSection withFunctionalStatusSection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -589,18 +582,18 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPatientSummary setFunctionalStatusSection(FunctionalStatusSection value);
+	IPatientSummary setFunctionalStatusSection(IFunctionalStatusSection value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::ContinuityOfCareDocument::purposeSection.
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PurposeSection))->asSequence()->first().oclAsType(ccd::PurposeSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::PurposeSection))->asSequence()->first().oclAsType(domain::PurposeSection)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PurposeSection getPurposeSection();
+	IPurposeSection getPurposeSection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -610,7 +603,7 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PurposeSection withPurposeSection();
+	IPurposeSection withPurposeSection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -620,7 +613,7 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPatientSummary setPurposeSection(PurposeSection value);
+	IPatientSummary setPurposeSection(IPurposeSection value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1059,11 +1052,11 @@ public interface IPatientSummary {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * hitsp::PatientSummary::pregnancyHistorySection.
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::PregnancyHistorySection))->asSequence()->first().oclAsType(ihe::PregnancyHistorySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::PregnancyHistorySection))->asSequence()->first().oclAsType(domain::PregnancyHistorySection)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PregnancyHistorySection getPregnancyHistorySection();
+	IPregnancyHistorySection getPregnancyHistorySection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1073,7 +1066,7 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PregnancyHistorySection withPregnancyHistorySection();
+	IPregnancyHistorySection withPregnancyHistorySection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1083,7 +1076,7 @@ public interface IPatientSummary {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPatientSummary setPregnancyHistorySection(PregnancyHistorySection value);
+	IPatientSummary setPregnancyHistorySection(IPregnancyHistorySection value);
 
 	/**
 	 * <!-- begin-user-doc -->

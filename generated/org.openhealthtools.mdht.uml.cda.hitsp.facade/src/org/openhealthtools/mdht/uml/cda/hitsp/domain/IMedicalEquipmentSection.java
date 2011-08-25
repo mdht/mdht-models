@@ -6,7 +6,9 @@
  */
 package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -18,6 +20,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  *     The Medical Equipment section contains information describing a patient's implanted and external medical
  *     devices and equipment that their health status depends on, as well as any pertinent equipment or device history. 
+ * </p>
+ * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
+ * <p>
+ *     The Medical Equipment section defines a patient's implanted and external medical devices and equipment
+ *     that their health status depends on, as well as any pertinent equipment or device history. This section is also used to
+ *     itemize any pertinent current or historical durable medical equipment (DME) used to help maintain the patient's health
+ *     status. All pertinent equipment relevant to the diagnosis, care, and treatment of a patient should be included.
  * </p>
  * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <!-- end-model-doc -->
@@ -73,7 +82,7 @@ public interface IMedicalEquipmentSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Medical Equipment Section SHALL contain exactly one [1..1] title.
+	 * CCD Medical Equipment Section SHALL contain exactly one [1..1] title (CONF-CCD-521).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -83,11 +92,104 @@ public interface IMedicalEquipmentSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Medical Equipment Section SHALL contain exactly one [1..1] title.
+	 * CCD Medical Equipment Section SHALL contain exactly one [1..1] title (CONF-CCD-521).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	IMedicalEquipmentSection setTitle(ST value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * cda::Section::text.
+	 * self.text.oclAsType(cda::StrucDocText)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	StrucDocText getText();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Medical Equipment Section SHALL contain exactly one [1..1] text.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	StrucDocText withText();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Medical Equipment Section SHALL contain exactly one [1..1] text.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IMedicalEquipmentSection setText(StrucDocText value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * ccd::MedicalEquipmentSection::supplyActivity.
+	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(domain::SupplyActivity)).oclAsType(domain::SupplyActivity)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<ISupplyActivity> getSupplyActivities();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Medical Equipment Section SHOULD contain zero or more [0..*] entry, such that Contains exactly one [1..1] Supply Activity (templateId: 2.16.840.1.113883.10.20.1.34).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	ISupplyActivity addSupplyActivity();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Medical Equipment Section SHOULD contain zero or more [0..*] entry, such that Contains exactly one [1..1] Supply Activity (templateId: 2.16.840.1.113883.10.20.1.34).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IMedicalEquipmentSection addSupplyActivity(ISupplyActivity value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * ccd::MedicalEquipmentSection::medicationActivity.
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::MedicationActivity)).oclAsType(domain::MedicationActivity)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IMedicationActivity> getMedicationActivities();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Medical Equipment Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Medication Activity (templateId: 2.16.840.1.113883.10.20.1.24).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IMedicationActivity addMedicationActivity();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Medical Equipment Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Medication Activity (templateId: 2.16.840.1.113883.10.20.1.24).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IMedicalEquipmentSection addMedicationActivity(IMedicationActivity value);
 
 	/**
 	 * <!-- begin-user-doc -->

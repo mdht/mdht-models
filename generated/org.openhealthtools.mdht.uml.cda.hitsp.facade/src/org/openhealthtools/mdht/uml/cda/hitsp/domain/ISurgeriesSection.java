@@ -9,8 +9,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -125,11 +123,11 @@ public interface ISurgeriesSection {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::CodedSurgeriesSection::externalReference.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ExternalReference))->asSequence()->first().oclAsType(ihe::ExternalReference)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::ExternalReference))->asSequence()->first().oclAsType(domain::ExternalReference)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ExternalReference getExternalReference();
+	IExternalReference getExternalReference();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -139,7 +137,7 @@ public interface ISurgeriesSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ExternalReference withExternalReference();
+	IExternalReference withExternalReference();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,18 +147,18 @@ public interface ISurgeriesSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ISurgeriesSection setExternalReference(ExternalReference value);
+	ISurgeriesSection setExternalReference(IExternalReference value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::CodedSurgeriesSection::procedureEntryProcedureActivityProcedure.
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure)).oclAsType(ihe::ProcedureEntryProcedureActivityProcedure)
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(domain::ProcedureEntryProcedureActivityProcedure)).oclAsType(domain::ProcedureEntryProcedureActivityProcedure)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures();
+	EList<IProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,7 +168,7 @@ public interface ISurgeriesSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ProcedureEntryProcedureActivityProcedure addProcedureEntryProcedureActivityProcedure();
+	IProcedureEntryProcedureActivityProcedure addProcedureEntryProcedureActivityProcedure();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -180,7 +178,7 @@ public interface ISurgeriesSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ISurgeriesSection addProcedureEntryProcedureActivityProcedure(ProcedureEntryProcedureActivityProcedure value);
+	ISurgeriesSection addProcedureEntryProcedureActivityProcedure(IProcedureEntryProcedureActivityProcedure value);
 
 	/**
 	 * <!-- begin-user-doc -->

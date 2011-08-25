@@ -10,12 +10,6 @@ import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Consumable;
 import org.openhealthtools.mdht.uml.cda.Performer2;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationSeriesNumberObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
-import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -407,11 +401,11 @@ public interface IMedication {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::MedicationActivity::medicationSeriesNumberObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::MedicationSeriesNumberObservation))->asSequence()->first().oclAsType(ccd::MedicationSeriesNumberObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::MedicationSeriesNumberObservation))->asSequence()->first().oclAsType(domain::MedicationSeriesNumberObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationSeriesNumberObservation getMedicationSeriesNumberObservation();
+	IMedicationSeriesNumberObservation getMedicationSeriesNumberObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -421,7 +415,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationSeriesNumberObservation withMedicationSeriesNumberObservation();
+	IMedicationSeriesNumberObservation withMedicationSeriesNumberObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -431,18 +425,18 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedication setMedicationSeriesNumberObservation(MedicationSeriesNumberObservation value);
+	IMedication setMedicationSeriesNumberObservation(IMedicationSeriesNumberObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::MedicationActivity::medicationStatusObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::MedicationStatusObservation))->asSequence()->first().oclAsType(ccd::MedicationStatusObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::MedicationStatusObservation))->asSequence()->first().oclAsType(domain::MedicationStatusObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationStatusObservation getMedicationStatusObservation();
+	IMedicationStatusObservation getMedicationStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -452,7 +446,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationStatusObservation withMedicationStatusObservation();
+	IMedicationStatusObservation withMedicationStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -462,7 +456,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedication setMedicationStatusObservation(MedicationStatusObservation value);
+	IMedication setMedicationStatusObservation(IMedicationStatusObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -501,11 +495,11 @@ public interface IMedication {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::MedicationActivity::reactionObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ReactionObservation)).oclAsType(ccd::ReactionObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ReactionObservation)).oclAsType(domain::ReactionObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ReactionObservation> getReactionObservations();
+	EList<IReactionObservation> getReactionObservations();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -515,7 +509,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ReactionObservation addReactionObservation();
+	IReactionObservation addReactionObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -525,18 +519,18 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedication addReactionObservation(ReactionObservation value);
+	IMedication addReactionObservation(IReactionObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::MedicationActivity::productInstance.
-	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(ccd::ProductInstance)).oclAsType(ccd::ProductInstance)
+	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(domain::ProductInstance)).oclAsType(domain::ProductInstance)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ProductInstance> getProductInstances();
+	EList<IProductInstance> getProductInstances();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -546,7 +540,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ProductInstance addProductInstance();
+	IProductInstance addProductInstance();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -556,7 +550,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedication addProductInstance(ProductInstance value);
+	IMedication addProductInstance(IProductInstance value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -568,11 +562,11 @@ public interface IMedication {
 	 * contained elsewhere within the CDA document.
 	 * A consumer of the Medical Summary is encouraged, but not required to maintain these links on
 	 * import.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::InternalReference)).oclAsType(ihe::InternalReference)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::InternalReference)).oclAsType(domain::InternalReference)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<InternalReference> getInternalReferences();
+	EList<IInternalReference> getInternalReferences();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -582,7 +576,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	InternalReference addInternalReference();
+	IInternalReference addInternalReference();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -592,7 +586,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedication addInternalReference(InternalReference value);
+	IMedication addInternalReference(IInternalReference value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -602,11 +596,11 @@ public interface IMedication {
 	 * At most one instruction may be provided for each &lt;substanceAdministration> entry. The instructions
 	 * shall contain any special case dosing instructions (e.g., split, tapered, or conditional dosing), and
 	 * may contain other information (take with food, et cetera).
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::PatientMedicalInstructions)).oclAsType(ihe::PatientMedicalInstructions)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PatientMedicalInstructions)).oclAsType(domain::PatientMedicalInstructions)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<PatientMedicalInstructions> getPatientMedicalInstructions();
+	EList<IPatientMedicalInstructions> getPatientMedicalInstructions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -616,7 +610,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PatientMedicalInstructions addPatientMedicalInstructions();
+	IPatientMedicalInstructions addPatientMedicalInstructions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -626,7 +620,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedication addPatientMedicalInstructions(PatientMedicalInstructions value);
+	IMedication addPatientMedicalInstructions(IPatientMedicalInstructions value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -698,11 +692,11 @@ public interface IMedication {
 	 * Any noted intended or unintended effects of the
 	 * product. For example: full body rash, nausea, rash
 	 * resolved
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ReactionObservation))->asSequence()->first().oclAsType(ccd::ReactionObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ReactionObservation))->asSequence()->first().oclAsType(domain::ReactionObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ReactionObservation getReactionObservation();
+	IReactionObservation getReactionObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -712,7 +706,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ReactionObservation withReactionObservation();
+	IReactionObservation withReactionObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -722,7 +716,7 @@ public interface IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedication setReactionObservation(ReactionObservation value);
+	IMedication setReactionObservation(IReactionObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->

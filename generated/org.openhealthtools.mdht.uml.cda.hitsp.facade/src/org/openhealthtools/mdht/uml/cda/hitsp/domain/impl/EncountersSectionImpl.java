@@ -19,9 +19,9 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounter;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersActivity;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersSection;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
@@ -242,7 +242,7 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENCOUNTERS_ACTIVITIES__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(ccd::EncountersActivity)).oclAsType(ccd::EncountersActivity)";
+	protected static final String GET_ENCOUNTERS_ACTIVITIES__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(domain::EncountersActivity)).oclAsType(domain::EncountersActivity)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEncountersActivities() <em>Get Encounters Activities</em>}' query operation.
@@ -259,7 +259,7 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EncountersActivity> getEncountersActivities() {
+	public EList<IEncountersActivity> getEncountersActivities() {
 		if (GET_ENCOUNTERS_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -273,8 +273,8 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ENCOUNTERS_ACTIVITIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<EncountersActivity> result = (Collection<EncountersActivity>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<EncountersActivity>(result.size(), result.toArray());
+		Collection<IEncountersActivity> result = (Collection<IEncountersActivity>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IEncountersActivity>(result.size(), result.toArray());
 	}
 
 	/**
@@ -282,7 +282,7 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EncountersActivity addEncountersActivity() {
+	public IEncountersActivity addEncountersActivity() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("EncountersActivity");
@@ -293,7 +293,11 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 		} catch (Exception e) {
 			// no init() method
 		}
-		EncountersActivity value = (EncountersActivity) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("EncountersActivity");
+		IEncountersActivity value = (IEncountersActivity) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Encounter) eObject);
 		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter) eObject);
 		return value;
 	}
@@ -303,7 +307,7 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IEncountersSection addEncountersActivity(EncountersActivity value) {
+	public IEncountersSection addEncountersActivity(IEncountersActivity value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();

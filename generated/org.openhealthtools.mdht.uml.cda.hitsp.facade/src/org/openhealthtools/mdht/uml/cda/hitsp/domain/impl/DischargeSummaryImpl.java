@@ -32,6 +32,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergiesReactionsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiet;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IFunctionalStatusSection;
@@ -47,7 +48,6 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemListSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
@@ -1597,7 +1597,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_DISCHARGE_DIET__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))->asSequence()->first().oclAsType(ihe::DischargeDiet)";
+	protected static final String GET_DISCHARGE_DIET__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(domain::DischargeDiet))->asSequence()->first().oclAsType(domain::DischargeDiet)";
 
 	/**
 	 * The cached OCL query for the '{@link #getDischargeDiet() <em>Get Discharge Diet</em>}' query operation.
@@ -1614,7 +1614,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DischargeDiet getDischargeDiet() {
+	public IDischargeDiet getDischargeDiet() {
 		if (GET_DISCHARGE_DIET__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1627,7 +1627,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_DISCHARGE_DIET__EOCL_QRY);
-		return (DischargeDiet) query.evaluate(this);
+		return (IDischargeDiet) query.evaluate(this);
 	}
 
 	/**
@@ -1635,7 +1635,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DischargeDiet withDischargeDiet() {
+	public IDischargeDiet withDischargeDiet() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("DischargeDiet");
@@ -1646,7 +1646,11 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		} catch (Exception e) {
 			// no init() method
 		}
-		DischargeDiet value = (DischargeDiet) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("DischargeDiet");
+		IDischargeDiet value = (IDischargeDiet) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
@@ -1656,7 +1660,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IDischargeSummary setDischargeDiet(DischargeDiet value) {
+	public IDischargeSummary setDischargeDiet(IDischargeDiet value) {
 		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}

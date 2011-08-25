@@ -9,7 +9,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -127,11 +126,11 @@ public interface IVitalSignsSection {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::CodedVitalSignsSection::vitalSignsOrganizer.
-	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(ihe::VitalSignsOrganizer)).oclAsType(ihe::VitalSignsOrganizer)
+	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(domain::VitalSignsOrganizer)).oclAsType(domain::VitalSignsOrganizer)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<VitalSignsOrganizer> getVitalSignsOrganizers();
+	EList<IVitalSignsOrganizer> getVitalSignsOrganizers();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,7 +140,7 @@ public interface IVitalSignsSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	VitalSignsOrganizer addVitalSignsOrganizer();
+	IVitalSignsOrganizer addVitalSignsOrganizer();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,7 +150,7 @@ public interface IVitalSignsSection {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IVitalSignsSection addVitalSignsOrganizer(VitalSignsOrganizer value);
+	IVitalSignsSection addVitalSignsOrganizer(IVitalSignsOrganizer value);
 
 	/**
 	 * <!-- begin-user-doc -->

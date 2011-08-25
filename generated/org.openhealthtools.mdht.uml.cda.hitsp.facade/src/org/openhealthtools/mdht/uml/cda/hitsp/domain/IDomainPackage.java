@@ -86,14 +86,14 @@ public interface IDomainPackage extends EPackage {
 	int ALLERGY_DRUG_SENSITIVITY_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationImpl <em>Medication</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EpisodeObservationImpl <em>Episode Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedication()
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EpisodeObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getEpisodeObservation()
 	 * @generated
 	 */
-	int MEDICATION = 1;
+	int EPISODE_OBSERVATION = 1;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -102,16 +102,96 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION__CDA_TYPE = 0;
+	int EPISODE_OBSERVATION__CDA_TYPE = 0;
 
 	/**
-	 * The number of structural features of the '<em>Medication</em>' class.
+	 * The number of structural features of the '<em>Episode Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_FEATURE_COUNT = 1;
+	int EPISODE_OBSERVATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationImpl <em>Medication</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedication()
+	 * @generated
+	 */
+	int MEDICATION = 14;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationSeriesNumberObservationImpl <em>Medication Series Number Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationSeriesNumberObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationSeriesNumberObservation()
+	 * @generated
+	 */
+	int MEDICATION_SERIES_NUMBER_OBSERVATION = 15;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationStatusObservationImpl <em>Medication Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationStatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationStatusObservation()
+	 * @generated
+	 */
+	int MEDICATION_STATUS_OBSERVATION = 16;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReactionObservationImpl <em>Reaction Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReactionObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getReactionObservation()
+	 * @generated
+	 */
+	int REACTION_OBSERVATION = 17;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SeverityObservationImpl <em>Severity Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SeverityObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSeverityObservation()
+	 * @generated
+	 */
+	int SEVERITY_OBSERVATION = 18;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProductInstanceImpl <em>Product Instance</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProductInstanceImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProductInstance()
+	 * @generated
+	 */
+	int PRODUCT_INSTANCE = 19;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.InternalReferenceImpl <em>Internal Reference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.InternalReferenceImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getInternalReference()
+	 * @generated
+	 */
+	int INTERNAL_REFERENCE = 20;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientMedicalInstructionsImpl <em>Patient Medical Instructions</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientMedicalInstructionsImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPatientMedicalInstructions()
+	 * @generated
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS = 21;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationTypeImpl <em>Medication Type</em>}' class.
@@ -121,25 +201,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationType()
 	 * @generated
 	 */
-	int MEDICATION_TYPE = 2;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_TYPE__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Medication Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_TYPE_FEATURE_COUNT = 1;
+	int MEDICATION_TYPE = 22;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationOrderInformationImpl <em>Medication Order Information</em>}' class.
@@ -149,25 +211,17 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationOrderInformation()
 	 * @generated
 	 */
-	int MEDICATION_ORDER_INFORMATION = 3;
+	int MEDICATION_ORDER_INFORMATION = 23;
 
 	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationFullfillmentInstructionsImpl <em>Medication Fullfillment Instructions</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationFullfillmentInstructionsImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationFullfillmentInstructions()
 	 * @generated
-	 * @ordered
 	 */
-	int MEDICATION_ORDER_INFORMATION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Medication Order Information</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATION_ORDER_INFORMATION_FEATURE_COUNT = 1;
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS = 24;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ConditionImpl <em>Condition</em>}' class.
@@ -177,25 +231,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getCondition()
 	 * @generated
 	 */
-	int CONDITION = 4;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Condition</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITION_FEATURE_COUNT = 1;
+	int CONDITION = 25;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProblemEntryImpl <em>Problem Entry</em>}' class.
@@ -205,7 +241,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProblemEntry()
 	 * @generated
 	 */
-	int PROBLEM_ENTRY = 5;
+	int PROBLEM_ENTRY = 3;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -226,14 +262,14 @@ public interface IDomainPackage extends EPackage {
 	int PROBLEM_ENTRY_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientSummaryImpl <em>Patient Summary</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AllergyIntoleranceImpl <em>Allergy Intolerance</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientSummaryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPatientSummary()
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AllergyIntoleranceImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAllergyIntolerance()
 	 * @generated
 	 */
-	int PATIENT_SUMMARY = 6;
+	int ALLERGY_INTOLERANCE = 2;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -242,16 +278,166 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PATIENT_SUMMARY__CDA_TYPE = 0;
+	int ALLERGY_INTOLERANCE__CDA_TYPE = PROBLEM_ENTRY__CDA_TYPE;
 
 	/**
-	 * The number of structural features of the '<em>Patient Summary</em>' class.
+	 * The number of structural features of the '<em>Allergy Intolerance</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PATIENT_SUMMARY_FEATURE_COUNT = 1;
+	int ALLERGY_INTOLERANCE_FEATURE_COUNT = PROBLEM_ENTRY_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AgeObservationImpl <em>Age Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AgeObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAgeObservation()
+	 * @generated
+	 */
+	int AGE_OBSERVATION = 4;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AGE_OBSERVATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Age Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AGE_OBSERVATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SeverityImpl <em>Severity</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SeverityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSeverity()
+	 * @generated
+	 */
+	int SEVERITY = 5;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Severity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.StatusObservationImpl <em>Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.StatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getStatusObservation()
+	 * @generated
+	 */
+	int STATUS_OBSERVATION = 7;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATUS_OBSERVATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Status Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATUS_OBSERVATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProblemStatusObservationImpl <em>Problem Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProblemStatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProblemStatusObservation()
+	 * @generated
+	 */
+	int PROBLEM_STATUS_OBSERVATION = 6;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_STATUS_OBSERVATION__CDA_TYPE = STATUS_OBSERVATION__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Problem Status Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_STATUS_OBSERVATION_FEATURE_COUNT = STATUS_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HealthStatusObservationImpl <em>Health Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HealthStatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHealthStatusObservation()
+	 * @generated
+	 */
+	int HEALTH_STATUS_OBSERVATION = 8;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEALTH_STATUS_OBSERVATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Health Status Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEALTH_STATUS_OBSERVATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientSummaryImpl <em>Patient Summary</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientSummaryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPatientSummary()
+	 * @generated
+	 */
+	int PATIENT_SUMMARY = 26;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectivesSectionImpl <em>Advance Directives Section</em>}' class.
@@ -261,25 +447,47 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdvanceDirectivesSection()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVES_SECTION = 7;
+	int ADVANCE_DIRECTIVES_SECTION = 43;
 
 	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveImpl <em>Advance Directive</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdvanceDirective()
 	 * @generated
-	 * @ordered
 	 */
-	int ADVANCE_DIRECTIVES_SECTION__CDA_TYPE = 0;
+	int ADVANCE_DIRECTIVE = 44;
 
 	/**
-	 * The number of structural features of the '<em>Advance Directives Section</em>' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveVerificationImpl <em>Advance Directive Verification</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveVerificationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdvanceDirectiveVerification()
 	 * @generated
-	 * @ordered
 	 */
-	int ADVANCE_DIRECTIVES_SECTION_FEATURE_COUNT = 1;
+	int ADVANCE_DIRECTIVE_VERIFICATION = 45;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveStatusObservationImpl <em>Advance Directive Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveStatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdvanceDirectiveStatusObservation()
+	 * @generated
+	 */
+	int ADVANCE_DIRECTIVE_STATUS_OBSERVATION = 46;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveReferenceImpl <em>Advance Directive Reference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveReferenceImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdvanceDirectiveReference()
+	 * @generated
+	 */
+	int ADVANCE_DIRECTIVE_REFERENCE = 47;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AllergiesReactionsSectionImpl <em>Allergies Reactions Section</em>}' class.
@@ -289,25 +497,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAllergiesReactionsSection()
 	 * @generated
 	 */
-	int ALLERGIES_REACTIONS_SECTION = 8;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ALLERGIES_REACTIONS_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Allergies Reactions Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ALLERGIES_REACTIONS_SECTION_FEATURE_COUNT = 1;
+	int ALLERGIES_REACTIONS_SECTION = 48;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.CommentImpl <em>Comment</em>}' class.
@@ -338,14 +528,14 @@ public interface IDomainPackage extends EPackage {
 	int COMMENT_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProblemListSectionImpl <em>Problem List Section</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SimpleObservationImpl <em>Simple Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProblemListSectionImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProblemListSection()
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SimpleObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSimpleObservation()
 	 * @generated
 	 */
-	int PROBLEM_LIST_SECTION = 10;
+	int SIMPLE_OBSERVATION = 12;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -354,16 +544,344 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROBLEM_LIST_SECTION__CDA_TYPE = 0;
+	int SIMPLE_OBSERVATION__CDA_TYPE = 0;
 
 	/**
-	 * The number of structural features of the '<em>Problem List Section</em>' class.
+	 * The number of structural features of the '<em>Simple Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROBLEM_LIST_SECTION_FEATURE_COUNT = 1;
+	int SIMPLE_OBSERVATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistoryObservationImpl <em>Family History Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistoryObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFamilyHistoryObservation()
+	 * @generated
+	 */
+	int FAMILY_HISTORY_OBSERVATION = 11;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_OBSERVATION__CDA_TYPE = SIMPLE_OBSERVATION__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Family History Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_OBSERVATION_FEATURE_COUNT = SIMPLE_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.CauseOfDeathObservationImpl <em>Cause Of Death Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.CauseOfDeathObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getCauseOfDeathObservation()
+	 * @generated
+	 */
+	int CAUSE_OF_DEATH_OBSERVATION = 10;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAUSE_OF_DEATH_OBSERVATION__CDA_TYPE = FAMILY_HISTORY_OBSERVATION__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Cause Of Death Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAUSE_OF_DEATH_OBSERVATION_FEATURE_COUNT = FAMILY_HISTORY_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProblemEntryReactionObservationContainerImpl <em>Problem Entry Reaction Observation Container</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProblemEntryReactionObservationContainerImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProblemEntryReactionObservationContainer()
+	 * @generated
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER = 13;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__CDA_TYPE = PROBLEM_ENTRY__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Problem Entry Reaction Observation Container</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER_FEATURE_COUNT = PROBLEM_ENTRY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Medication</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_SERIES_NUMBER_OBSERVATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Medication Series Number Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_SERIES_NUMBER_OBSERVATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION__CDA_TYPE = STATUS_OBSERVATION__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Medication Status Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_STATUS_OBSERVATION_FEATURE_COUNT = STATUS_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Reaction Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Severity Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_INSTANCE__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Product Instance</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_INSTANCE_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Internal Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REFERENCE_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Patient Medical Instructions</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_MEDICAL_INSTRUCTIONS_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_TYPE__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Medication Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_TYPE_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_ORDER_INFORMATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Medication Order Information</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_ORDER_INFORMATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Medication Fullfillment Instructions</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FULLFILLMENT_INSTRUCTIONS_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Condition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_SUMMARY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Patient Summary</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_SUMMARY_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProblemListSectionImpl <em>Problem List Section</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProblemListSectionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProblemListSection()
+	 * @generated
+	 */
+	int PROBLEM_LIST_SECTION = 49;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EncountersSectionImpl <em>Encounters Section</em>}' class.
@@ -373,25 +891,27 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getEncountersSection()
 	 * @generated
 	 */
-	int ENCOUNTERS_SECTION = 11;
+	int ENCOUNTERS_SECTION = 50;
 
 	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EncountersActivityImpl <em>Encounters Activity</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EncountersActivityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getEncountersActivity()
 	 * @generated
-	 * @ordered
 	 */
-	int ENCOUNTERS_SECTION__CDA_TYPE = 0;
+	int ENCOUNTERS_ACTIVITY = 51;
 
 	/**
-	 * The number of structural features of the '<em>Encounters Section</em>' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EncounterLocationImpl <em>Encounter Location</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EncounterLocationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getEncounterLocation()
 	 * @generated
-	 * @ordered
 	 */
-	int ENCOUNTERS_SECTION_FEATURE_COUNT = 1;
+	int ENCOUNTER_LOCATION = 52;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EncounterImpl <em>Encounter</em>}' class.
@@ -401,25 +921,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getEncounter()
 	 * @generated
 	 */
-	int ENCOUNTER = 12;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTER__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Encounter</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTER_FEATURE_COUNT = 1;
+	int ENCOUNTER = 53;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ImmunizationsSectionImpl <em>Immunizations Section</em>}' class.
@@ -429,25 +931,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getImmunizationsSection()
 	 * @generated
 	 */
-	int IMMUNIZATIONS_SECTION = 13;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMUNIZATIONS_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Immunizations Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMUNIZATIONS_SECTION_FEATURE_COUNT = 1;
+	int IMMUNIZATIONS_SECTION = 54;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ImmunizationImpl <em>Immunization</em>}' class.
@@ -457,25 +941,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getImmunization()
 	 * @generated
 	 */
-	int IMMUNIZATION = 14;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMUNIZATION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Immunization</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMUNIZATION_FEATURE_COUNT = 1;
+	int IMMUNIZATION = 55;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PayersSectionImpl <em>Payers Section</em>}' class.
@@ -485,25 +951,57 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPayersSection()
 	 * @generated
 	 */
-	int PAYERS_SECTION = 15;
+	int PAYERS_SECTION = 56;
 
 	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.CoverageEntryImpl <em>Coverage Entry</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.CoverageEntryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getCoverageEntry()
 	 * @generated
-	 * @ordered
 	 */
-	int PAYERS_SECTION__CDA_TYPE = 0;
+	int COVERAGE_ENTRY = 57;
 
 	/**
-	 * The number of structural features of the '<em>Payers Section</em>' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PolicyActivityImpl <em>Policy Activity</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PolicyActivityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPolicyActivity()
 	 * @generated
-	 * @ordered
 	 */
-	int PAYERS_SECTION_FEATURE_COUNT = 1;
+	int POLICY_ACTIVITY = 58;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PayerEntityImpl <em>Payer Entity</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PayerEntityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPayerEntity()
+	 * @generated
+	 */
+	int PAYER_ENTITY = 59;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.CoveredPartyImpl <em>Covered Party</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.CoveredPartyImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getCoveredParty()
+	 * @generated
+	 */
+	int COVERED_PARTY = 60;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PolicySubscriberImpl <em>Policy Subscriber</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PolicySubscriberImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPolicySubscriber()
+	 * @generated
+	 */
+	int POLICY_SUBSCRIBER = 61;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationsSectionImpl <em>Medications Section</em>}' class.
@@ -513,25 +1011,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationsSection()
 	 * @generated
 	 */
-	int MEDICATIONS_SECTION = 16;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATIONS_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Medications Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATIONS_SECTION_FEATURE_COUNT = 1;
+	int MEDICATIONS_SECTION = 62;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareSectionImpl <em>Plan Of Care Section</em>}' class.
@@ -541,25 +1021,77 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareSection()
 	 * @generated
 	 */
-	int PLAN_OF_CARE_SECTION = 17;
+	int PLAN_OF_CARE_SECTION = 63;
 
 	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityImpl <em>Plan Of Care Activity</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivity()
 	 * @generated
-	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION__CDA_TYPE = 0;
+	int PLAN_OF_CARE_ACTIVITY = 65;
 
 	/**
-	 * The number of structural features of the '<em>Plan Of Care Section</em>' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityActImpl <em>Plan Of Care Activity Act</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityActImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivityAct()
 	 * @generated
-	 * @ordered
 	 */
-	int PLAN_OF_CARE_SECTION_FEATURE_COUNT = 1;
+	int PLAN_OF_CARE_ACTIVITY_ACT = 64;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityEncounterImpl <em>Plan Of Care Activity Encounter</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityEncounterImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivityEncounter()
+	 * @generated
+	 */
+	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER = 66;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityObservationImpl <em>Plan Of Care Activity Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivityObservation()
+	 * @generated
+	 */
+	int PLAN_OF_CARE_ACTIVITY_OBSERVATION = 67;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityProcedureImpl <em>Plan Of Care Activity Procedure</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityProcedureImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivityProcedure()
+	 * @generated
+	 */
+	int PLAN_OF_CARE_ACTIVITY_PROCEDURE = 68;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivitySubstanceAdministrationImpl <em>Plan Of Care Activity Substance Administration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivitySubstanceAdministrationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivitySubstanceAdministration()
+	 * @generated
+	 */
+	int PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION = 69;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivitySupplyImpl <em>Plan Of Care Activity Supply</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivitySupplyImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivitySupply()
+	 * @generated
+	 */
+	int PLAN_OF_CARE_ACTIVITY_SUPPLY = 70;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SurgeriesSectionImpl <em>Surgeries Section</em>}' class.
@@ -569,7 +1101,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSurgeriesSection()
 	 * @generated
 	 */
-	int SURGERIES_SECTION = 19;
+	int SURGERIES_SECTION = 74;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProcedureImpl <em>Procedure</em>}' class.
@@ -579,43 +1111,57 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProcedure()
 	 * @generated
 	 */
-	int PROCEDURE = 18;
+	int PROCEDURE = 71;
 
 	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PregnancyHistorySectionImpl <em>Pregnancy History Section</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PregnancyHistorySectionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPregnancyHistorySection()
 	 * @generated
-	 * @ordered
 	 */
-	int PROCEDURE__CDA_TYPE = 0;
+	int PREGNANCY_HISTORY_SECTION = 72;
 
 	/**
-	 * The number of structural features of the '<em>Procedure</em>' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PregnancyObservationImpl <em>Pregnancy Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PregnancyObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPregnancyObservation()
 	 * @generated
-	 * @ordered
 	 */
-	int PROCEDURE_FEATURE_COUNT = 1;
+	int PREGNANCY_OBSERVATION = 73;
 
 	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ExternalReferenceImpl <em>External Reference</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ExternalReferenceImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getExternalReference()
 	 * @generated
-	 * @ordered
 	 */
-	int SURGERIES_SECTION__CDA_TYPE = 0;
+	int EXTERNAL_REFERENCE = 75;
 
 	/**
-	 * The number of structural features of the '<em>Surgeries Section</em>' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProcedureEntryImpl <em>Procedure Entry</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProcedureEntryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProcedureEntry()
 	 * @generated
-	 * @ordered
 	 */
-	int SURGERIES_SECTION_FEATURE_COUNT = 1;
+	int PROCEDURE_ENTRY = 77;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProcedureEntryProcedureActivityProcedureImpl <em>Procedure Entry Procedure Activity Procedure</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProcedureEntryProcedureActivityProcedureImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProcedureEntryProcedureActivityProcedure()
+	 * @generated
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE = 76;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportImpl <em>Support</em>}' class.
@@ -625,16 +1171,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupport()
 	 * @generated
 	 */
-	int SUPPORT = 20;
-
-	/**
-	 * The number of structural features of the '<em>Support</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPPORT_FEATURE_COUNT = 0;
+	int SUPPORT = 78;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.VitalSignsSectionImpl <em>Vital Signs Section</em>}' class.
@@ -644,25 +1181,27 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getVitalSignsSection()
 	 * @generated
 	 */
-	int VITAL_SIGNS_SECTION = 21;
+	int VITAL_SIGNS_SECTION = 79;
 
 	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.VitalSignsOrganizerImpl <em>Vital Signs Organizer</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.VitalSignsOrganizerImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getVitalSignsOrganizer()
 	 * @generated
-	 * @ordered
 	 */
-	int VITAL_SIGNS_SECTION__CDA_TYPE = 0;
+	int VITAL_SIGNS_ORGANIZER = 80;
 
 	/**
-	 * The number of structural features of the '<em>Vital Signs Section</em>' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.VitalSignObservationImpl <em>Vital Sign Observation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.VitalSignObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getVitalSignObservation()
 	 * @generated
-	 * @ordered
 	 */
-	int VITAL_SIGNS_SECTION_FEATURE_COUNT = 1;
+	int VITAL_SIGN_OBSERVATION = 81;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DiagnosticResultsSectionImpl <em>Diagnostic Results Section</em>}' class.
@@ -672,25 +1211,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDiagnosticResultsSection()
 	 * @generated
 	 */
-	int DIAGNOSTIC_RESULTS_SECTION = 22;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_RESULTS_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Diagnostic Results Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DIAGNOSTIC_RESULTS_SECTION_FEATURE_COUNT = 1;
+	int DIAGNOSTIC_RESULTS_SECTION = 82;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultImpl <em>Result</em>}' class.
@@ -700,25 +1221,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResult()
 	 * @generated
 	 */
-	int RESULT = 23;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Result</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT_FEATURE_COUNT = 1;
+	int RESULT = 83;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.VitalSignImpl <em>Vital Sign</em>}' class.
@@ -728,25 +1231,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getVitalSign()
 	 * @generated
 	 */
-	int VITAL_SIGN = 24;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VITAL_SIGN__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Vital Sign</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VITAL_SIGN_FEATURE_COUNT = 1;
+	int VITAL_SIGN = 84;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HistoryOfPastIllnessSectionImpl <em>History Of Past Illness Section</em>}' class.
@@ -756,25 +1241,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHistoryOfPastIllnessSection()
 	 * @generated
 	 */
-	int HISTORY_OF_PAST_ILLNESS_SECTION = 25;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PAST_ILLNESS_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>History Of Past Illness Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PAST_ILLNESS_SECTION_FEATURE_COUNT = 1;
+	int HISTORY_OF_PAST_ILLNESS_SECTION = 85;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ChiefComplaintSectionImpl <em>Chief Complaint Section</em>}' class.
@@ -784,25 +1251,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getChiefComplaintSection()
 	 * @generated
 	 */
-	int CHIEF_COMPLAINT_SECTION = 26;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHIEF_COMPLAINT_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Chief Complaint Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHIEF_COMPLAINT_SECTION_FEATURE_COUNT = 1;
+	int CHIEF_COMPLAINT_SECTION = 86;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReasonForReferralSectionImpl <em>Reason For Referral Section</em>}' class.
@@ -812,25 +1261,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getReasonForReferralSection()
 	 * @generated
 	 */
-	int REASON_FOR_REFERRAL_SECTION = 27;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REASON_FOR_REFERRAL_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Reason For Referral Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REASON_FOR_REFERRAL_SECTION_FEATURE_COUNT = 1;
+	int REASON_FOR_REFERRAL_SECTION = 87;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HistoryOfPresentIllnessImpl <em>History Of Present Illness</em>}' class.
@@ -840,25 +1271,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHistoryOfPresentIllness()
 	 * @generated
 	 */
-	int HISTORY_OF_PRESENT_ILLNESS = 28;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PRESENT_ILLNESS__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>History Of Present Illness</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PRESENT_ILLNESS_FEATURE_COUNT = 1;
+	int HISTORY_OF_PRESENT_ILLNESS = 88;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FunctionalStatusSectionImpl <em>Functional Status Section</em>}' class.
@@ -868,25 +1281,27 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFunctionalStatusSection()
 	 * @generated
 	 */
-	int FUNCTIONAL_STATUS_SECTION = 29;
+	int FUNCTIONAL_STATUS_SECTION = 40;
 
 	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PurposeSectionImpl <em>Purpose Section</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PurposeSectionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPurposeSection()
 	 * @generated
-	 * @ordered
 	 */
-	int FUNCTIONAL_STATUS_SECTION__CDA_TYPE = 0;
+	int PURPOSE_SECTION = 41;
 
 	/**
-	 * The number of structural features of the '<em>Functional Status Section</em>' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PurposeActivityImpl <em>Purpose Activity</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PurposeActivityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPurposeActivity()
 	 * @generated
-	 * @ordered
 	 */
-	int FUNCTIONAL_STATUS_SECTION_FEATURE_COUNT = 1;
+	int PURPOSE_ACTIVITY = 42;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HospitalAdmissionDiagnosisSectionImpl <em>Hospital Admission Diagnosis Section</em>}' class.
@@ -896,25 +1311,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHospitalAdmissionDiagnosisSection()
 	 * @generated
 	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 30;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Hospital Admission Diagnosis Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_FEATURE_COUNT = 1;
+	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 89;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeDiagnosisSectionImpl <em>Discharge Diagnosis Section</em>}' class.
@@ -924,25 +1321,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDischargeDiagnosisSection()
 	 * @generated
 	 */
-	int DISCHARGE_DIAGNOSIS_SECTION = 31;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DISCHARGE_DIAGNOSIS_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Discharge Diagnosis Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DISCHARGE_DIAGNOSIS_SECTION_FEATURE_COUNT = 1;
+	int DISCHARGE_DIAGNOSIS_SECTION = 90;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdmissionMedicationHistorySectionImpl <em>Admission Medication History Section</em>}' class.
@@ -952,25 +1331,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdmissionMedicationHistorySection()
 	 * @generated
 	 */
-	int ADMISSION_MEDICATION_HISTORY_SECTION = 32;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADMISSION_MEDICATION_HISTORY_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Admission Medication History Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADMISSION_MEDICATION_HISTORY_SECTION_FEATURE_COUNT = 1;
+	int ADMISSION_MEDICATION_HISTORY_SECTION = 91;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HospitalDischargeMedicationsSectionImpl <em>Hospital Discharge Medications Section</em>}' class.
@@ -980,25 +1341,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHospitalDischargeMedicationsSection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 33;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Hospital Discharge Medications Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_FEATURE_COUNT = 1;
+	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 92;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
@@ -1008,25 +1351,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationsAdministeredSection()
 	 * @generated
 	 */
-	int MEDICATIONS_ADMINISTERED_SECTION = 34;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATIONS_ADMINISTERED_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Medications Administered Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MEDICATIONS_ADMINISTERED_SECTION_FEATURE_COUNT = 1;
+	int MEDICATIONS_ADMINISTERED_SECTION = 93;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PhysicalExamSectionImpl <em>Physical Exam Section</em>}' class.
@@ -1036,25 +1361,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPhysicalExamSection()
 	 * @generated
 	 */
-	int PHYSICAL_EXAM_SECTION = 35;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PHYSICAL_EXAM_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Physical Exam Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PHYSICAL_EXAM_SECTION_FEATURE_COUNT = 1;
+	int PHYSICAL_EXAM_SECTION = 94;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReviewOfSystemsSectionImpl <em>Review Of Systems Section</em>}' class.
@@ -1064,25 +1371,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getReviewOfSystemsSection()
 	 * @generated
 	 */
-	int REVIEW_OF_SYSTEMS_SECTION = 36;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REVIEW_OF_SYSTEMS_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Review Of Systems Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REVIEW_OF_SYSTEMS_SECTION_FEATURE_COUNT = 1;
+	int REVIEW_OF_SYSTEMS_SECTION = 95;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HospitalCourseSectionImpl <em>Hospital Course Section</em>}' class.
@@ -1092,25 +1381,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHospitalCourseSection()
 	 * @generated
 	 */
-	int HOSPITAL_COURSE_SECTION = 37;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_COURSE_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Hospital Course Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSPITAL_COURSE_SECTION_FEATURE_COUNT = 1;
+	int HOSPITAL_COURSE_SECTION = 96;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AssessmentAndPlanSectionImpl <em>Assessment And Plan Section</em>}' class.
@@ -1120,25 +1391,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAssessmentAndPlanSection()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_SECTION = 38;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_AND_PLAN_SECTION__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Assessment And Plan Section</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_AND_PLAN_SECTION_FEATURE_COUNT = 1;
+	int ASSESSMENT_AND_PLAN_SECTION = 97;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistorySectionImpl <em>Family History Section</em>}' class.
@@ -1148,7 +1401,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFamilyHistorySection()
 	 * @generated
 	 */
-	int FAMILY_HISTORY_SECTION = 39;
+	int FAMILY_HISTORY_SECTION = 27;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1176,7 +1429,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistorySection()
 	 * @generated
 	 */
-	int SOCIAL_HISTORY_SECTION = 40;
+	int SOCIAL_HISTORY_SECTION = 28;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1197,6 +1450,174 @@ public interface IDomainPackage extends EPackage {
 	int SOCIAL_HISTORY_SECTION_FEATURE_COUNT = 1;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryImpl <em>Social History</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistory()
+	 * @generated
+	 */
+	int SOCIAL_HISTORY = 29;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Social History</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryStatusObservationImpl <em>Social History Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryStatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistoryStatusObservation()
+	 * @generated
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION = 30;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION__CDA_TYPE = STATUS_OBSERVATION__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Social History Status Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION_FEATURE_COUNT = STATUS_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryObservationImpl <em>Social History Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistoryObservation()
+	 * @generated
+	 */
+	int SOCIAL_HISTORY_OBSERVATION = 31;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Social History Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultsSectionImpl <em>Results Section</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultsSectionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResultsSection()
+	 * @generated
+	 */
+	int RESULTS_SECTION = 32;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULTS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Results Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULTS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultOrganizerImpl <em>Result Organizer</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultOrganizerImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResultOrganizer()
+	 * @generated
+	 */
+	int RESULT_ORGANIZER = 33;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Result Organizer</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultObservationImpl <em>Result Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResultObservation()
+	 * @generated
+	 */
+	int RESULT_OBSERVATION = 34;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Result Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION_FEATURE_COUNT = 1;
+
+	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicalEquipmentSectionImpl <em>Medical Equipment Section</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1204,7 +1625,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicalEquipmentSection()
 	 * @generated
 	 */
-	int MEDICAL_EQUIPMENT_SECTION = 41;
+	int MEDICAL_EQUIPMENT_SECTION = 35;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1225,6 +1646,1144 @@ public interface IDomainPackage extends EPackage {
 	int MEDICAL_EQUIPMENT_SECTION_FEATURE_COUNT = 1;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupplyActivityImpl <em>Supply Activity</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupplyActivityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupplyActivity()
+	 * @generated
+	 */
+	int SUPPLY_ACTIVITY = 36;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ACTIVITY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Supply Activity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLY_ACTIVITY_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FulfillmentInstructionImpl <em>Fulfillment Instruction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FulfillmentInstructionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFulfillmentInstruction()
+	 * @generated
+	 */
+	int FULFILLMENT_INSTRUCTION = 37;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FULFILLMENT_INSTRUCTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Fulfillment Instruction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FULFILLMENT_INSTRUCTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationActivityImpl <em>Medication Activity</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationActivityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationActivity()
+	 * @generated
+	 */
+	int MEDICATION_ACTIVITY = 38;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_ACTIVITY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Medication Activity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_ACTIVITY_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientInstructionImpl <em>Patient Instruction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientInstructionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPatientInstruction()
+	 * @generated
+	 */
+	int PATIENT_INSTRUCTION = 39;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_INSTRUCTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Patient Instruction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_INSTRUCTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTIONAL_STATUS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Functional Status Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTIONAL_STATUS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PURPOSE_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Purpose Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PURPOSE_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PURPOSE_ACTIVITY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Purpose Activity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PURPOSE_ACTIVITY_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVES_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Advance Directives Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVES_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Advance Directive</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Advance Directive Verification</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_VERIFICATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_STATUS_OBSERVATION__CDA_TYPE = STATUS_OBSERVATION__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Advance Directive Status Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_STATUS_OBSERVATION_FEATURE_COUNT = STATUS_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_REFERENCE__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Advance Directive Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_REFERENCE_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALLERGIES_REACTIONS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Allergies Reactions Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALLERGIES_REACTIONS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Problem List Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_LIST_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Encounters Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_ACTIVITY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Encounters Activity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_ACTIVITY_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_LOCATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Encounter Location</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_LOCATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Encounter</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMUNIZATIONS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Immunizations Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMUNIZATIONS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMUNIZATION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Immunization</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMUNIZATION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAYERS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Payers Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAYERS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COVERAGE_ENTRY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Coverage Entry</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COVERAGE_ENTRY_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Policy Activity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAYER_ENTITY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Payer Entity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAYER_ENTITY_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COVERED_PARTY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Covered Party</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COVERED_PARTY_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_SUBSCRIBER__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Policy Subscriber</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_SUBSCRIBER_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATIONS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Medications Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATIONS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Plan Of Care Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of structural features of the '<em>Plan Of Care Activity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_ACT__CDA_TYPE = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Plan Of Care Activity Act</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_ACT_FEATURE_COUNT = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER__CDA_TYPE = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Plan Of Care Activity Encounter</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER_FEATURE_COUNT = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_OBSERVATION__CDA_TYPE = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Plan Of Care Activity Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_OBSERVATION_FEATURE_COUNT = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_PROCEDURE__CDA_TYPE = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Plan Of Care Activity Procedure</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_PROCEDURE_FEATURE_COUNT = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__CDA_TYPE = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Plan Of Care Activity Substance Administration</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_FEATURE_COUNT = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_SUPPLY__CDA_TYPE = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Plan Of Care Activity Supply</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_SUPPLY_FEATURE_COUNT = PLAN_OF_CARE_ACTIVITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Procedure</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREGNANCY_HISTORY_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Pregnancy History Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREGNANCY_HISTORY_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREGNANCY_OBSERVATION__CDA_TYPE = SIMPLE_OBSERVATION__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Pregnancy Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREGNANCY_OBSERVATION_FEATURE_COUNT = SIMPLE_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SURGERIES_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Surgeries Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SURGERIES_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>External Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Procedure Entry</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__CDA_TYPE = PROCEDURE_ENTRY__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Procedure Entry Procedure Activity Procedure</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT = PROCEDURE_ENTRY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Support</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPORT_FEATURE_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Vital Signs Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Vital Signs Organizer</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION__CDA_TYPE = SIMPLE_OBSERVATION__CDA_TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Vital Sign Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION_FEATURE_COUNT = SIMPLE_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_RESULTS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Diagnostic Results Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_RESULTS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Result</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Vital Sign</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_OF_PAST_ILLNESS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>History Of Past Illness Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_OF_PAST_ILLNESS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHIEF_COMPLAINT_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Chief Complaint Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHIEF_COMPLAINT_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REASON_FOR_REFERRAL_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Reason For Referral Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REASON_FOR_REFERRAL_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_OF_PRESENT_ILLNESS__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>History Of Present Illness</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_OF_PRESENT_ILLNESS_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Hospital Admission Diagnosis Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_DIAGNOSIS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Discharge Diagnosis Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_DIAGNOSIS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION_HISTORY_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Admission Medication History Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION_HISTORY_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Hospital Discharge Medications Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATIONS_ADMINISTERED_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Medications Administered Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATIONS_ADMINISTERED_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PHYSICAL_EXAM_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Physical Exam Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PHYSICAL_EXAM_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REVIEW_OF_SYSTEMS_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Review Of Systems Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REVIEW_OF_SYSTEMS_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_COURSE_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Hospital Course Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_COURSE_SECTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_AND_PLAN_SECTION__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Assessment And Plan Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_AND_PLAN_SECTION_FEATURE_COUNT = 1;
+
+	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.LanguageSpokenImpl <em>Language Spoken</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1232,7 +2791,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getLanguageSpoken()
 	 * @generated
 	 */
-	int LANGUAGE_SPOKEN = 42;
+	int LANGUAGE_SPOKEN = 98;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1260,7 +2819,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getInsuranceProvider()
 	 * @generated
 	 */
-	int INSURANCE_PROVIDER = 43;
+	int INSURANCE_PROVIDER = 99;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1288,7 +2847,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHealthcareProvider()
 	 * @generated
 	 */
-	int HEALTHCARE_PROVIDER = 44;
+	int HEALTHCARE_PROVIDER = 100;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1316,7 +2875,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationNormalDose()
 	 * @generated
 	 */
-	int MEDICATION_NORMAL_DOSE = 45;
+	int MEDICATION_NORMAL_DOSE = 101;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1344,7 +2903,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationSplitDose()
 	 * @generated
 	 */
-	int MEDICATION_SPLIT_DOSE = 46;
+	int MEDICATION_SPLIT_DOSE = 102;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1372,7 +2931,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationTaperedDose()
 	 * @generated
 	 */
-	int MEDICATION_TAPERED_DOSE = 47;
+	int MEDICATION_TAPERED_DOSE = 103;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1400,7 +2959,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationConditionalDose()
 	 * @generated
 	 */
-	int MEDICATION_CONDITIONAL_DOSE = 48;
+	int MEDICATION_CONDITIONAL_DOSE = 104;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1428,7 +2987,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationCombinationMedication()
 	 * @generated
 	 */
-	int MEDICATION_COMBINATION_MEDICATION = 49;
+	int MEDICATION_COMBINATION_MEDICATION = 105;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1456,7 +3015,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupportGuardian()
 	 * @generated
 	 */
-	int SUPPORT_GUARDIAN = 50;
+	int SUPPORT_GUARDIAN = 106;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1484,7 +3043,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupportParticipant()
 	 * @generated
 	 */
-	int SUPPORT_PARTICIPANT = 51;
+	int SUPPORT_PARTICIPANT = 107;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1512,7 +3071,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getUnstructuredDocument()
 	 * @generated
 	 */
-	int UNSTRUCTURED_DOCUMENT = 52;
+	int UNSTRUCTURED_DOCUMENT = 108;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1533,6 +3092,90 @@ public interface IDomainPackage extends EPackage {
 	int UNSTRUCTURED_DOCUMENT_FEATURE_COUNT = 1;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanOriginalAuthorImpl <em>Scan Original Author</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanOriginalAuthorImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getScanOriginalAuthor()
+	 * @generated
+	 */
+	int SCAN_ORIGINAL_AUTHOR = 109;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCAN_ORIGINAL_AUTHOR__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Scan Original Author</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCAN_ORIGINAL_AUTHOR_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanningDeviceImpl <em>Scanning Device</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanningDeviceImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getScanningDevice()
+	 * @generated
+	 */
+	int SCANNING_DEVICE = 110;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCANNING_DEVICE__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Scanning Device</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCANNING_DEVICE_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanDataEntererImpl <em>Scan Data Enterer</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanDataEntererImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getScanDataEnterer()
+	 * @generated
+	 */
+	int SCAN_DATA_ENTERER = 111;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCAN_DATA_ENTERER__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Scan Data Enterer</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCAN_DATA_ENTERER_FEATURE_COUNT = 1;
+
+	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationInformationImpl <em>Medication Information</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1540,7 +3183,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationInformation()
 	 * @generated
 	 */
-	int MEDICATION_INFORMATION = 53;
+	int MEDICATION_INFORMATION = 112;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1568,7 +3211,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getUnstructuredOrScannedDocument()
 	 * @generated
 	 */
-	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 54;
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 113;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1596,7 +3239,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getReferralSummary()
 	 * @generated
 	 */
-	int REFERRAL_SUMMARY = 55;
+	int REFERRAL_SUMMARY = 114;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1624,7 +3267,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDischargeSummary()
 	 * @generated
 	 */
-	int DISCHARGE_SUMMARY = 56;
+	int DISCHARGE_SUMMARY = 115;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1643,6 +3286,62 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int DISCHARGE_SUMMARY_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeDietImpl <em>Discharge Diet</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeDietImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDischargeDiet()
+	 * @generated
+	 */
+	int DISCHARGE_DIET = 116;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_DIET__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Discharge Diet</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_DIET_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistoryImpl <em>Family History</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistoryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFamilyHistory()
+	 * @generated
+	 */
+	int FAMILY_HISTORY = 117;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Family History</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_FEATURE_COUNT = 1;
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergyDrugSensitivity <em>Allergy Drug Sensitivity</em>}'.
@@ -1666,6 +3365,37 @@ public interface IDomainPackage extends EPackage {
 	EReference getAllergyDrugSensitivity_CDAType();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEpisodeObservation <em>Episode Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Episode Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IEpisodeObservation
+	 * @generated
+	 */
+	EClass getEpisodeObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEpisodeObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IEpisodeObservation#getCDAType()
+	 * @see #getEpisodeObservation()
+	 * @generated
+	 */
+	EReference getEpisodeObservation_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergyIntolerance <em>Allergy Intolerance</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Allergy Intolerance</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergyIntolerance
+	 * @generated
+	 */
+	EClass getAllergyIntolerance();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedication <em>Medication</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1685,6 +3415,142 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getMedication_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationSeriesNumberObservation <em>Medication Series Number Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Medication Series Number Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationSeriesNumberObservation
+	 * @generated
+	 */
+	EClass getMedicationSeriesNumberObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationSeriesNumberObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationSeriesNumberObservation#getCDAType()
+	 * @see #getMedicationSeriesNumberObservation()
+	 * @generated
+	 */
+	EReference getMedicationSeriesNumberObservation_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationStatusObservation <em>Medication Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Medication Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationStatusObservation
+	 * @generated
+	 */
+	EClass getMedicationStatusObservation();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IReactionObservation <em>Reaction Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Reaction Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IReactionObservation
+	 * @generated
+	 */
+	EClass getReactionObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IReactionObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IReactionObservation#getCDAType()
+	 * @see #getReactionObservation()
+	 * @generated
+	 */
+	EReference getReactionObservation_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISeverityObservation <em>Severity Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Severity Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISeverityObservation
+	 * @generated
+	 */
+	EClass getSeverityObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISeverityObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISeverityObservation#getCDAType()
+	 * @see #getSeverityObservation()
+	 * @generated
+	 */
+	EReference getSeverityObservation_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IProductInstance <em>Product Instance</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Product Instance</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IProductInstance
+	 * @generated
+	 */
+	EClass getProductInstance();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IProductInstance#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IProductInstance#getCDAType()
+	 * @see #getProductInstance()
+	 * @generated
+	 */
+	EReference getProductInstance_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IInternalReference <em>Internal Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Internal Reference</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IInternalReference
+	 * @generated
+	 */
+	EClass getInternalReference();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IInternalReference#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IInternalReference#getCDAType()
+	 * @see #getInternalReference()
+	 * @generated
+	 */
+	EReference getInternalReference_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientMedicalInstructions <em>Patient Medical Instructions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Patient Medical Instructions</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientMedicalInstructions
+	 * @generated
+	 */
+	EClass getPatientMedicalInstructions();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientMedicalInstructions#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientMedicalInstructions#getCDAType()
+	 * @see #getPatientMedicalInstructions()
+	 * @generated
+	 */
+	EReference getPatientMedicalInstructions_CDAType();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationType <em>Medication Type</em>}'.
@@ -1729,6 +3595,27 @@ public interface IDomainPackage extends EPackage {
 	EReference getMedicationOrderInformation_CDAType();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationFullfillmentInstructions <em>Medication Fullfillment Instructions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Medication Fullfillment Instructions</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationFullfillmentInstructions
+	 * @generated
+	 */
+	EClass getMedicationFullfillmentInstructions();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationFullfillmentInstructions#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationFullfillmentInstructions#getCDAType()
+	 * @see #getMedicationFullfillmentInstructions()
+	 * @generated
+	 */
+	EReference getMedicationFullfillmentInstructions_CDAType();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ICondition <em>Condition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1769,6 +3656,100 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProblemEntry_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAgeObservation <em>Age Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Age Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAgeObservation
+	 * @generated
+	 */
+	EClass getAgeObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAgeObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAgeObservation#getCDAType()
+	 * @see #getAgeObservation()
+	 * @generated
+	 */
+	EReference getAgeObservation_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISeverity <em>Severity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Severity</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISeverity
+	 * @generated
+	 */
+	EClass getSeverity();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISeverity#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISeverity#getCDAType()
+	 * @see #getSeverity()
+	 * @generated
+	 */
+	EReference getSeverity_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemStatusObservation <em>Problem Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Problem Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemStatusObservation
+	 * @generated
+	 */
+	EClass getProblemStatusObservation();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IStatusObservation <em>Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IStatusObservation
+	 * @generated
+	 */
+	EClass getStatusObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IStatusObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IStatusObservation#getCDAType()
+	 * @see #getStatusObservation()
+	 * @generated
+	 */
+	EReference getStatusObservation_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IHealthStatusObservation <em>Health Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Health Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IHealthStatusObservation
+	 * @generated
+	 */
+	EClass getHealthStatusObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IHealthStatusObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IHealthStatusObservation#getCDAType()
+	 * @see #getHealthStatusObservation()
+	 * @generated
+	 */
+	EReference getHealthStatusObservation_CDAType();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientSummary <em>Patient Summary</em>}'.
@@ -1813,6 +3794,79 @@ public interface IDomainPackage extends EPackage {
 	EReference getAdvanceDirectivesSection_CDAType();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirective <em>Advance Directive</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Advance Directive</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirective
+	 * @generated
+	 */
+	EClass getAdvanceDirective();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirective#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirective#getCDAType()
+	 * @see #getAdvanceDirective()
+	 * @generated
+	 */
+	EReference getAdvanceDirective_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectiveVerification <em>Advance Directive Verification</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Advance Directive Verification</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectiveVerification
+	 * @generated
+	 */
+	EClass getAdvanceDirectiveVerification();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectiveVerification#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectiveVerification#getCDAType()
+	 * @see #getAdvanceDirectiveVerification()
+	 * @generated
+	 */
+	EReference getAdvanceDirectiveVerification_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectiveStatusObservation <em>Advance Directive Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Advance Directive Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectiveStatusObservation
+	 * @generated
+	 */
+	EClass getAdvanceDirectiveStatusObservation();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectiveReference <em>Advance Directive Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Advance Directive Reference</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectiveReference
+	 * @generated
+	 */
+	EClass getAdvanceDirectiveReference();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectiveReference#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAdvanceDirectiveReference#getCDAType()
+	 * @see #getAdvanceDirectiveReference()
+	 * @generated
+	 */
+	EReference getAdvanceDirectiveReference_CDAType();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergiesReactionsSection <em>Allergies Reactions Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1855,6 +3909,57 @@ public interface IDomainPackage extends EPackage {
 	EReference getComment_CDAType();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ICauseOfDeathObservation <em>Cause Of Death Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Cause Of Death Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ICauseOfDeathObservation
+	 * @generated
+	 */
+	EClass getCauseOfDeathObservation();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistoryObservation <em>Family History Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Family History Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistoryObservation
+	 * @generated
+	 */
+	EClass getFamilyHistoryObservation();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISimpleObservation <em>Simple Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Simple Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISimpleObservation
+	 * @generated
+	 */
+	EClass getSimpleObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISimpleObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISimpleObservation#getCDAType()
+	 * @see #getSimpleObservation()
+	 * @generated
+	 */
+	EReference getSimpleObservation_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemEntryReactionObservationContainer <em>Problem Entry Reaction Observation Container</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Problem Entry Reaction Observation Container</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemEntryReactionObservationContainer
+	 * @generated
+	 */
+	EClass getProblemEntryReactionObservationContainer();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IProblemListSection <em>Problem List Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1895,6 +4000,48 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getEncountersSection_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersActivity <em>Encounters Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Encounters Activity</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersActivity
+	 * @generated
+	 */
+	EClass getEncountersActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersActivity#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncountersActivity#getCDAType()
+	 * @see #getEncountersActivity()
+	 * @generated
+	 */
+	EReference getEncountersActivity_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounterLocation <em>Encounter Location</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Encounter Location</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounterLocation
+	 * @generated
+	 */
+	EClass getEncounterLocation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounterLocation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounterLocation#getCDAType()
+	 * @see #getEncounterLocation()
+	 * @generated
+	 */
+	EReference getEncounterLocation_CDAType();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEncounter <em>Encounter</em>}'.
@@ -1981,6 +4128,111 @@ public interface IDomainPackage extends EPackage {
 	EReference getPayersSection_CDAType();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoverageEntry <em>Coverage Entry</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Coverage Entry</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoverageEntry
+	 * @generated
+	 */
+	EClass getCoverageEntry();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoverageEntry#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoverageEntry#getCDAType()
+	 * @see #getCoverageEntry()
+	 * @generated
+	 */
+	EReference getCoverageEntry_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicyActivity <em>Policy Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Policy Activity</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicyActivity
+	 * @generated
+	 */
+	EClass getPolicyActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicyActivity#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicyActivity#getCDAType()
+	 * @see #getPolicyActivity()
+	 * @generated
+	 */
+	EReference getPolicyActivity_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayerEntity <em>Payer Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Payer Entity</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayerEntity
+	 * @generated
+	 */
+	EClass getPayerEntity();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayerEntity#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayerEntity#getCDAType()
+	 * @see #getPayerEntity()
+	 * @generated
+	 */
+	EReference getPayerEntity_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoveredParty <em>Covered Party</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Covered Party</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoveredParty
+	 * @generated
+	 */
+	EClass getCoveredParty();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoveredParty#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoveredParty#getCDAType()
+	 * @see #getCoveredParty()
+	 * @generated
+	 */
+	EReference getCoveredParty_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicySubscriber <em>Policy Subscriber</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Policy Subscriber</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicySubscriber
+	 * @generated
+	 */
+	EClass getPolicySubscriber();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicySubscriber#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicySubscriber#getCDAType()
+	 * @see #getPolicySubscriber()
+	 * @generated
+	 */
+	EReference getPolicySubscriber_CDAType();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationsSection <em>Medications Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2023,6 +4275,142 @@ public interface IDomainPackage extends EPackage {
 	EReference getPlanOfCareSection_CDAType();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityAct <em>Plan Of Care Activity Act</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Plan Of Care Activity Act</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityAct
+	 * @generated
+	 */
+	EClass getPlanOfCareActivityAct();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityAct#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityAct#getCDAType()
+	 * @see #getPlanOfCareActivityAct()
+	 * @generated
+	 */
+	EReference getPlanOfCareActivityAct_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivity <em>Plan Of Care Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Plan Of Care Activity</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivity
+	 * @generated
+	 */
+	EClass getPlanOfCareActivity();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityEncounter <em>Plan Of Care Activity Encounter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Plan Of Care Activity Encounter</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityEncounter
+	 * @generated
+	 */
+	EClass getPlanOfCareActivityEncounter();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityEncounter#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityEncounter#getCDAType()
+	 * @see #getPlanOfCareActivityEncounter()
+	 * @generated
+	 */
+	EReference getPlanOfCareActivityEncounter_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityObservation <em>Plan Of Care Activity Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Plan Of Care Activity Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityObservation
+	 * @generated
+	 */
+	EClass getPlanOfCareActivityObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityObservation#getCDAType()
+	 * @see #getPlanOfCareActivityObservation()
+	 * @generated
+	 */
+	EReference getPlanOfCareActivityObservation_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityProcedure <em>Plan Of Care Activity Procedure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Plan Of Care Activity Procedure</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityProcedure
+	 * @generated
+	 */
+	EClass getPlanOfCareActivityProcedure();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityProcedure#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivityProcedure#getCDAType()
+	 * @see #getPlanOfCareActivityProcedure()
+	 * @generated
+	 */
+	EReference getPlanOfCareActivityProcedure_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivitySubstanceAdministration <em>Plan Of Care Activity Substance Administration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Plan Of Care Activity Substance Administration</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivitySubstanceAdministration
+	 * @generated
+	 */
+	EClass getPlanOfCareActivitySubstanceAdministration();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivitySubstanceAdministration#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivitySubstanceAdministration#getCDAType()
+	 * @see #getPlanOfCareActivitySubstanceAdministration()
+	 * @generated
+	 */
+	EReference getPlanOfCareActivitySubstanceAdministration_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivitySupply <em>Plan Of Care Activity Supply</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Plan Of Care Activity Supply</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivitySupply
+	 * @generated
+	 */
+	EClass getPlanOfCareActivitySupply();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivitySupply#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPlanOfCareActivitySupply#getCDAType()
+	 * @see #getPlanOfCareActivitySupply()
+	 * @generated
+	 */
+	EReference getPlanOfCareActivitySupply_CDAType();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISurgeriesSection <em>Surgeries Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2044,6 +4432,58 @@ public interface IDomainPackage extends EPackage {
 	EReference getSurgeriesSection_CDAType();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IExternalReference <em>External Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>External Reference</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IExternalReference
+	 * @generated
+	 */
+	EClass getExternalReference();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IExternalReference#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IExternalReference#getCDAType()
+	 * @see #getExternalReference()
+	 * @generated
+	 */
+	EReference getExternalReference_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedureEntryProcedureActivityProcedure <em>Procedure Entry Procedure Activity Procedure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Procedure Entry Procedure Activity Procedure</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedureEntryProcedureActivityProcedure
+	 * @generated
+	 */
+	EClass getProcedureEntryProcedureActivityProcedure();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedureEntry <em>Procedure Entry</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Procedure Entry</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedureEntry
+	 * @generated
+	 */
+	EClass getProcedureEntry();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedureEntry#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedureEntry#getCDAType()
+	 * @see #getProcedureEntry()
+	 * @generated
+	 */
+	EReference getProcedureEntry_CDAType();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedure <em>Procedure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2063,6 +4503,37 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProcedure_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPregnancyHistorySection <em>Pregnancy History Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Pregnancy History Section</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPregnancyHistorySection
+	 * @generated
+	 */
+	EClass getPregnancyHistorySection();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPregnancyHistorySection#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPregnancyHistorySection#getCDAType()
+	 * @see #getPregnancyHistorySection()
+	 * @generated
+	 */
+	EReference getPregnancyHistorySection_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPregnancyObservation <em>Pregnancy Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Pregnancy Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPregnancyObservation
+	 * @generated
+	 */
+	EClass getPregnancyObservation();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupport <em>Support</em>}'.
@@ -2094,6 +4565,37 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getVitalSignsSection_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsOrganizer <em>Vital Signs Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Vital Signs Organizer</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsOrganizer
+	 * @generated
+	 */
+	EClass getVitalSignsOrganizer();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsOrganizer#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignsOrganizer#getCDAType()
+	 * @see #getVitalSignsOrganizer()
+	 * @generated
+	 */
+	EReference getVitalSignsOrganizer_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignObservation <em>Vital Sign Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Vital Sign Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IVitalSignObservation
+	 * @generated
+	 */
+	EClass getVitalSignObservation();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IDiagnosticResultsSection <em>Diagnostic Results Section</em>}'.
@@ -2262,6 +4764,48 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getFunctionalStatusSection_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPurposeSection <em>Purpose Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Purpose Section</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPurposeSection
+	 * @generated
+	 */
+	EClass getPurposeSection();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPurposeSection#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPurposeSection#getCDAType()
+	 * @see #getPurposeSection()
+	 * @generated
+	 */
+	EReference getPurposeSection_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPurposeActivity <em>Purpose Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Purpose Activity</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPurposeActivity
+	 * @generated
+	 */
+	EClass getPurposeActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPurposeActivity#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPurposeActivity#getCDAType()
+	 * @see #getPurposeActivity()
+	 * @generated
+	 */
+	EReference getPurposeActivity_CDAType();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IHospitalAdmissionDiagnosisSection <em>Hospital Admission Diagnosis Section</em>}'.
@@ -2495,6 +5039,121 @@ public interface IDomainPackage extends EPackage {
 	EReference getSocialHistorySection_CDAType();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistory <em>Social History</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Social History</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistory
+	 * @generated
+	 */
+	EClass getSocialHistory();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistory#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistory#getCDAType()
+	 * @see #getSocialHistory()
+	 * @generated
+	 */
+	EReference getSocialHistory_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistoryStatusObservation <em>Social History Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Social History Status Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistoryStatusObservation
+	 * @generated
+	 */
+	EClass getSocialHistoryStatusObservation();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistoryObservation <em>Social History Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Social History Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistoryObservation
+	 * @generated
+	 */
+	EClass getSocialHistoryObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistoryObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistoryObservation#getCDAType()
+	 * @see #getSocialHistoryObservation()
+	 * @generated
+	 */
+	EReference getSocialHistoryObservation_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultsSection <em>Results Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Results Section</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultsSection
+	 * @generated
+	 */
+	EClass getResultsSection();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultsSection#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultsSection#getCDAType()
+	 * @see #getResultsSection()
+	 * @generated
+	 */
+	EReference getResultsSection_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultOrganizer <em>Result Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Result Organizer</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultOrganizer
+	 * @generated
+	 */
+	EClass getResultOrganizer();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultOrganizer#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultOrganizer#getCDAType()
+	 * @see #getResultOrganizer()
+	 * @generated
+	 */
+	EReference getResultOrganizer_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultObservation <em>Result Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Result Observation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultObservation
+	 * @generated
+	 */
+	EClass getResultObservation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultObservation#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultObservation#getCDAType()
+	 * @see #getResultObservation()
+	 * @generated
+	 */
+	EReference getResultObservation_CDAType();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicalEquipmentSection <em>Medical Equipment Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2514,6 +5173,90 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getMedicalEquipmentSection_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupplyActivity <em>Supply Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Supply Activity</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupplyActivity
+	 * @generated
+	 */
+	EClass getSupplyActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupplyActivity#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ISupplyActivity#getCDAType()
+	 * @see #getSupplyActivity()
+	 * @generated
+	 */
+	EReference getSupplyActivity_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IFulfillmentInstruction <em>Fulfillment Instruction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Fulfillment Instruction</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IFulfillmentInstruction
+	 * @generated
+	 */
+	EClass getFulfillmentInstruction();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IFulfillmentInstruction#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IFulfillmentInstruction#getCDAType()
+	 * @see #getFulfillmentInstruction()
+	 * @generated
+	 */
+	EReference getFulfillmentInstruction_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationActivity <em>Medication Activity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Medication Activity</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationActivity
+	 * @generated
+	 */
+	EClass getMedicationActivity();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationActivity#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationActivity#getCDAType()
+	 * @see #getMedicationActivity()
+	 * @generated
+	 */
+	EReference getMedicationActivity_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientInstruction <em>Patient Instruction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Patient Instruction</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientInstruction
+	 * @generated
+	 */
+	EClass getPatientInstruction();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientInstruction#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientInstruction#getCDAType()
+	 * @see #getPatientInstruction()
+	 * @generated
+	 */
+	EReference getPatientInstruction_CDAType();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ILanguageSpoken <em>Language Spoken</em>}'.
@@ -2692,6 +5435,69 @@ public interface IDomainPackage extends EPackage {
 	EReference getUnstructuredDocument_CDAType();
 
 	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanOriginalAuthor <em>Scan Original Author</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Scan Original Author</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanOriginalAuthor
+	 * @generated
+	 */
+	EClass getScanOriginalAuthor();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanOriginalAuthor#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanOriginalAuthor#getCDAType()
+	 * @see #getScanOriginalAuthor()
+	 * @generated
+	 */
+	EReference getScanOriginalAuthor_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanningDevice <em>Scanning Device</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Scanning Device</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanningDevice
+	 * @generated
+	 */
+	EClass getScanningDevice();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanningDevice#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanningDevice#getCDAType()
+	 * @see #getScanningDevice()
+	 * @generated
+	 */
+	EReference getScanningDevice_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanDataEnterer <em>Scan Data Enterer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Scan Data Enterer</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanDataEnterer
+	 * @generated
+	 */
+	EClass getScanDataEnterer();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanDataEnterer#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IScanDataEnterer#getCDAType()
+	 * @see #getScanDataEnterer()
+	 * @generated
+	 */
+	EReference getScanDataEnterer_CDAType();
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationInformation <em>Medication Information</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2763,6 +5569,48 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDischargeSummary_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiet <em>Discharge Diet</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Discharge Diet</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiet
+	 * @generated
+	 */
+	EClass getDischargeDiet();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiet#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IDischargeDiet#getCDAType()
+	 * @see #getDischargeDiet()
+	 * @generated
+	 */
+	EReference getDischargeDiet_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistory <em>Family History</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Family History</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistory
+	 * @generated
+	 */
+	EClass getFamilyHistory();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistory#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistory#getCDAType()
+	 * @see #getFamilyHistory()
+	 * @generated
+	 */
+	EReference getFamilyHistory_CDAType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.

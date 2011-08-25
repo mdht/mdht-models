@@ -8,12 +8,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
 import org.openhealthtools.mdht.uml.cda.Consumable;
 import org.openhealthtools.mdht.uml.cda.Performer2;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationSeriesNumberObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
-import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_PQ;
 
@@ -69,7 +63,7 @@ public interface IMedicationSplitDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationSplitDose setMedicationSeriesNumberObservation(MedicationSeriesNumberObservation value);
+	IMedicationSplitDose setMedicationSeriesNumberObservation(IMedicationSeriesNumberObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,7 +73,7 @@ public interface IMedicationSplitDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationSplitDose setMedicationStatusObservation(MedicationStatusObservation value);
+	IMedicationSplitDose setMedicationStatusObservation(IMedicationStatusObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,7 +93,7 @@ public interface IMedicationSplitDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationSplitDose addReactionObservation(ReactionObservation value);
+	IMedicationSplitDose addReactionObservation(IReactionObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -109,7 +103,7 @@ public interface IMedicationSplitDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationSplitDose addProductInstance(ProductInstance value);
+	IMedicationSplitDose addProductInstance(IProductInstance value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -119,7 +113,7 @@ public interface IMedicationSplitDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationSplitDose addInternalReference(InternalReference value);
+	IMedicationSplitDose addInternalReference(IInternalReference value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -129,7 +123,7 @@ public interface IMedicationSplitDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationSplitDose addPatientMedicalInstructions(PatientMedicalInstructions value);
+	IMedicationSplitDose addPatientMedicalInstructions(IPatientMedicalInstructions value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,7 +153,7 @@ public interface IMedicationSplitDose extends IMedication {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IMedicationSplitDose setReactionObservation(ReactionObservation value);
+	IMedicationSplitDose setReactionObservation(IReactionObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->

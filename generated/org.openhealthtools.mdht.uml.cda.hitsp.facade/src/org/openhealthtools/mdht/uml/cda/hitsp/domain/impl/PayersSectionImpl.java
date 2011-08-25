@@ -19,9 +19,9 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoverageEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayersSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
@@ -241,7 +241,7 @@ public class PayersSectionImpl extends EObjectImpl implements IPayersSection {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_COVERAGE_ENTRIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::CoverageEntry)).oclAsType(ihe::CoverageEntry)";
+	protected static final String GET_COVERAGE_ENTRIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::CoverageEntry)).oclAsType(domain::CoverageEntry)";
 
 	/**
 	 * The cached OCL query for the '{@link #getCoverageEntries() <em>Get Coverage Entries</em>}' query operation.
@@ -258,7 +258,7 @@ public class PayersSectionImpl extends EObjectImpl implements IPayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CoverageEntry> getCoverageEntries() {
+	public EList<ICoverageEntry> getCoverageEntries() {
 		if (GET_COVERAGE_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -272,8 +272,8 @@ public class PayersSectionImpl extends EObjectImpl implements IPayersSection {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_COVERAGE_ENTRIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CoverageEntry> result = (Collection<CoverageEntry>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<CoverageEntry>(result.size(), result.toArray());
+		Collection<ICoverageEntry> result = (Collection<ICoverageEntry>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<ICoverageEntry>(result.size(), result.toArray());
 	}
 
 	/**
@@ -281,7 +281,7 @@ public class PayersSectionImpl extends EObjectImpl implements IPayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CoverageEntry addCoverageEntry() {
+	public ICoverageEntry addCoverageEntry() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("CoverageEntry");
@@ -292,7 +292,11 @@ public class PayersSectionImpl extends EObjectImpl implements IPayersSection {
 		} catch (Exception e) {
 			// no init() method
 		}
-		CoverageEntry value = (CoverageEntry) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("CoverageEntry");
+		ICoverageEntry value = (ICoverageEntry) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
@@ -302,7 +306,7 @@ public class PayersSectionImpl extends EObjectImpl implements IPayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPayersSection addCoverageEntry(CoverageEntry value) {
+	public IPayersSection addCoverageEntry(ICoverageEntry value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();

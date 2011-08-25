@@ -14,9 +14,6 @@ import org.openhealthtools.mdht.uml.cda.InformationRecipient;
 import org.openhealthtools.mdht.uml.cda.InfrastructureRootTypeId;
 import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanDataEnterer;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanOriginalAuthor;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanningDevice;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -176,7 +173,7 @@ public interface IUnstructuredOrScannedDocument extends IUnstructuredDocument {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IUnstructuredOrScannedDocument addScanOriginalAuthor(ScanOriginalAuthor value);
+	IUnstructuredOrScannedDocument addScanOriginalAuthor(IScanOriginalAuthor value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,7 +183,7 @@ public interface IUnstructuredOrScannedDocument extends IUnstructuredDocument {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IUnstructuredOrScannedDocument addScanningDevice(ScanningDevice value);
+	IUnstructuredOrScannedDocument addScanningDevice(IScanningDevice value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -196,7 +193,7 @@ public interface IUnstructuredOrScannedDocument extends IUnstructuredDocument {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IUnstructuredOrScannedDocument setScanDataEnterer(ScanDataEnterer value);
+	IUnstructuredOrScannedDocument setScanDataEnterer(IScanDataEnterer value);
 
 	/**
 	 * <!-- begin-user-doc -->

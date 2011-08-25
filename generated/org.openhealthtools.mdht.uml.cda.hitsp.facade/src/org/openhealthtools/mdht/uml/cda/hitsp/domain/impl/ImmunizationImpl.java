@@ -20,13 +20,13 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Consumable;
 import org.openhealthtools.mdht.uml.cda.Performer2;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationSeriesNumberObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
-import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
-import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IImmunization;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationSeriesNumberObservation;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IMedicationStatusObservation;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPatientInstruction;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProductInstance;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IReactionObservation;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
@@ -786,7 +786,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::MedicationSeriesNumberObservation))->asSequence()->first().oclAsType(ccd::MedicationSeriesNumberObservation)";
+	protected static final String GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::MedicationSeriesNumberObservation))->asSequence()->first().oclAsType(domain::MedicationSeriesNumberObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMedicationSeriesNumberObservation() <em>Get Medication Series Number Observation</em>}' query operation.
@@ -803,7 +803,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationSeriesNumberObservation getMedicationSeriesNumberObservation() {
+	public IMedicationSeriesNumberObservation getMedicationSeriesNumberObservation() {
 		if (GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -816,7 +816,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_SERIES_NUMBER_OBSERVATION__EOCL_QRY);
-		return (MedicationSeriesNumberObservation) query.evaluate(this);
+		return (IMedicationSeriesNumberObservation) query.evaluate(this);
 	}
 
 	/**
@@ -824,7 +824,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationSeriesNumberObservation withMedicationSeriesNumberObservation() {
+	public IMedicationSeriesNumberObservation withMedicationSeriesNumberObservation() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("MedicationSeriesNumberObservation");
@@ -835,7 +835,11 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 		} catch (Exception e) {
 			// no init() method
 		}
-		MedicationSeriesNumberObservation value = (MedicationSeriesNumberObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("MedicationSeriesNumberObservation");
+		IMedicationSeriesNumberObservation value = (IMedicationSeriesNumberObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -845,8 +849,8 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IImmunization setMedicationSeriesNumberObservation(MedicationSeriesNumberObservation value) {
-		this.getCDAType().addObservation(value);
+	public IImmunization setMedicationSeriesNumberObservation(IMedicationSeriesNumberObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -858,7 +862,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::MedicationStatusObservation))->asSequence()->first().oclAsType(ccd::MedicationStatusObservation)";
+	protected static final String GET_MEDICATION_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::MedicationStatusObservation))->asSequence()->first().oclAsType(domain::MedicationStatusObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMedicationStatusObservation() <em>Get Medication Status Observation</em>}' query operation.
@@ -875,7 +879,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationStatusObservation getMedicationStatusObservation() {
+	public IMedicationStatusObservation getMedicationStatusObservation() {
 		if (GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -888,7 +892,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_STATUS_OBSERVATION__EOCL_QRY);
-		return (MedicationStatusObservation) query.evaluate(this);
+		return (IMedicationStatusObservation) query.evaluate(this);
 	}
 
 	/**
@@ -896,7 +900,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationStatusObservation withMedicationStatusObservation() {
+	public IMedicationStatusObservation withMedicationStatusObservation() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("MedicationStatusObservation");
@@ -907,7 +911,11 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 		} catch (Exception e) {
 			// no init() method
 		}
-		MedicationStatusObservation value = (MedicationStatusObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("MedicationStatusObservation");
+		IMedicationStatusObservation value = (IMedicationStatusObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -917,8 +925,8 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IImmunization setMedicationStatusObservation(MedicationStatusObservation value) {
-		this.getCDAType().addObservation(value);
+	public IImmunization setMedicationStatusObservation(IMedicationStatusObservation value) {
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -930,7 +938,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PATIENT_INSTRUCTIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ccd::PatientInstruction)).oclAsType(ccd::PatientInstruction)";
+	protected static final String GET_PATIENT_INSTRUCTIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PatientInstruction)).oclAsType(domain::PatientInstruction)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPatientInstructions() <em>Get Patient Instructions</em>}' query operation.
@@ -947,7 +955,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PatientInstruction> getPatientInstructions() {
+	public EList<IPatientInstruction> getPatientInstructions() {
 		if (GET_PATIENT_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -961,8 +969,8 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PATIENT_INSTRUCTIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PatientInstruction> result = (Collection<PatientInstruction>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<PatientInstruction>(result.size(), result.toArray());
+		Collection<IPatientInstruction> result = (Collection<IPatientInstruction>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IPatientInstruction>(result.size(), result.toArray());
 	}
 
 	/**
@@ -970,7 +978,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientInstruction addPatientInstruction() {
+	public IPatientInstruction addPatientInstruction() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PatientInstruction");
@@ -981,7 +989,11 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 		} catch (Exception e) {
 			// no init() method
 		}
-		PatientInstruction value = (PatientInstruction) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PatientInstruction");
+		IPatientInstruction value = (IPatientInstruction) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
@@ -991,7 +1003,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IImmunization addPatientInstruction(PatientInstruction value) {
+	public IImmunization addPatientInstruction(IPatientInstruction value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -1074,7 +1086,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_REACTION_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ReactionObservation)).oclAsType(ccd::ReactionObservation)";
+	protected static final String GET_REACTION_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ReactionObservation)).oclAsType(domain::ReactionObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getReactionObservations() <em>Get Reaction Observations</em>}' query operation.
@@ -1091,7 +1103,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ReactionObservation> getReactionObservations() {
+	public EList<IReactionObservation> getReactionObservations() {
 		if (GET_REACTION_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1105,8 +1117,8 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_REACTION_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ReactionObservation> result = (Collection<ReactionObservation>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<ReactionObservation>(result.size(), result.toArray());
+		Collection<IReactionObservation> result = (Collection<IReactionObservation>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IReactionObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1114,7 +1126,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReactionObservation addReactionObservation() {
+	public IReactionObservation addReactionObservation() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ReactionObservation");
@@ -1125,7 +1137,11 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 		} catch (Exception e) {
 			// no init() method
 		}
-		ReactionObservation value = (ReactionObservation) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ReactionObservation");
+		IReactionObservation value = (IReactionObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
@@ -1135,7 +1151,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IImmunization addReactionObservation(ReactionObservation value) {
+	public IImmunization addReactionObservation(IReactionObservation value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -1149,7 +1165,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PRODUCT_INSTANCES__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(ccd::ProductInstance)).oclAsType(ccd::ProductInstance)";
+	protected static final String GET_PRODUCT_INSTANCES__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(domain::ProductInstance)).oclAsType(domain::ProductInstance)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProductInstances() <em>Get Product Instances</em>}' query operation.
@@ -1166,7 +1182,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProductInstance> getProductInstances() {
+	public EList<IProductInstance> getProductInstances() {
 		if (GET_PRODUCT_INSTANCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -1180,8 +1196,8 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PRODUCT_INSTANCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProductInstance> result = (Collection<ProductInstance>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<ProductInstance>(result.size(), result.toArray());
+		Collection<IProductInstance> result = (Collection<IProductInstance>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IProductInstance>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1189,7 +1205,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProductInstance addProductInstance() {
+	public IProductInstance addProductInstance() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -1200,7 +1216,7 @@ public class ImmunizationImpl extends EObjectImpl implements IImmunization {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IImmunization addProductInstance(ProductInstance value) {
+	public IImmunization addProductInstance(IProductInstance value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();

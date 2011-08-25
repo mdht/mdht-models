@@ -14,6 +14,7 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -96,6 +97,15 @@ public class FamilyHistorySectionImpl extends EObjectImpl implements IFamilyHist
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isSetCDAType() {
+		return cDAType != null;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getTitle() <em>Get Title</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -162,6 +172,72 @@ public class FamilyHistorySectionImpl extends EObjectImpl implements IFamilyHist
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #getText() <em>Get Text</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getText()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(cda::StrucDocText)";
+
+	/**
+	 * The cached OCL query for the '{@link #getText() <em>Get Text</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getText()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_TEXT__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StrucDocText getText() {
+		if (GET_TEXT__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getFamilyHistorySection(),
+				IDomainPackage.eINSTANCE.getFamilyHistorySection().getEAllOperations().get(3));
+			try {
+				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_TEXT__EOCL_QRY);
+		return (StrucDocText) query.evaluate(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StrucDocText withText() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("StrucDocText");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		StrucDocText value = (StrucDocText) eObject;
+		this.getCDAType().setText(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IFamilyHistorySection setText(StrucDocText value) {
+		this.getCDAType().setText(value);
+		return this;
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -217,7 +293,7 @@ public class FamilyHistorySectionImpl extends EObjectImpl implements IFamilyHist
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.FAMILY_HISTORY_SECTION__CDA_TYPE:
-				return cDAType != null;
+				return isSetCDAType();
 		}
 		return super.eIsSet(featureID);
 	}

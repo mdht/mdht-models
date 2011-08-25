@@ -6,6 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.hitsp.domain.impl;
 
+import java.util.Collection;
+
+import org.eclipse.emf.common.util.BasicEList;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -14,7 +18,10 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
+import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistory;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.ISocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
@@ -96,6 +103,15 @@ public class SocialHistorySectionImpl extends EObjectImpl implements ISocialHist
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isSetCDAType() {
+		return cDAType != null;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getTitle() <em>Get Title</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -162,6 +178,230 @@ public class SocialHistorySectionImpl extends EObjectImpl implements ISocialHist
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #getText() <em>Get Text</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getText()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_TEXT__EOCL_EXP = "self.text.oclAsType(cda::StrucDocText)";
+
+	/**
+	 * The cached OCL query for the '{@link #getText() <em>Get Text</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getText()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_TEXT__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StrucDocText getText() {
+		if (GET_TEXT__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSocialHistorySection(),
+				IDomainPackage.eINSTANCE.getSocialHistorySection().getEAllOperations().get(3));
+			try {
+				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_TEXT__EOCL_QRY);
+		return (StrucDocText) query.evaluate(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StrucDocText withText() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.openhealthtools.mdht.uml.cda.CDAPackage.eINSTANCE;
+		org.eclipse.emf.ecore.EFactory eFactory = org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE;
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("StrucDocText");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		StrucDocText value = (StrucDocText) eObject;
+		this.getCDAType().setText(value);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISocialHistorySection setText(StrucDocText value) {
+		this.getCDAType().setText(value);
+		return this;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getSocialHistories() <em>Get Social Histories</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSocialHistories()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_SOCIAL_HISTORIES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::SocialHistory)).oclAsType(domain::SocialHistory)";
+
+	/**
+	 * The cached OCL query for the '{@link #getSocialHistories() <em>Get Social Histories</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSocialHistories()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_SOCIAL_HISTORIES__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ISocialHistory> getSocialHistories() {
+		if (GET_SOCIAL_HISTORIES__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSocialHistorySection(),
+				IDomainPackage.eINSTANCE.getSocialHistorySection().getEAllOperations().get(6));
+			try {
+				GET_SOCIAL_HISTORIES__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORIES__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_SOCIAL_HISTORIES__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ISocialHistory> result = (Collection<ISocialHistory>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<ISocialHistory>(result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISocialHistory addSocialHistory() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/hitsp");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/hitsp");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("SocialHistory");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		try {
+			java.lang.reflect.Method initMethod = eObject.getClass().getMethod("init", new java.lang.Class[0]);
+			initMethod.invoke(eObject, new Object[0]);
+		} catch (Exception e) {
+			// no init() method
+		}
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("SocialHistory");
+		ISocialHistory value = (ISocialHistory) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISocialHistorySection addSocialHistory(ISocialHistory value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getSocialHistoryObservations() <em>Get Social History Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSocialHistoryObservations()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_SOCIAL_HISTORY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::SocialHistoryObservation)).oclAsType(domain::SocialHistoryObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getSocialHistoryObservations() <em>Get Social History Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSocialHistoryObservations()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_SOCIAL_HISTORY_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ISocialHistoryObservation> getSocialHistoryObservations() {
+		if (GET_SOCIAL_HISTORY_OBSERVATIONS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSocialHistorySection(),
+				IDomainPackage.eINSTANCE.getSocialHistorySection().getEAllOperations().get(9));
+			try {
+				GET_SOCIAL_HISTORY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_SOCIAL_HISTORY_OBSERVATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ISocialHistoryObservation> result = (Collection<ISocialHistoryObservation>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<ISocialHistoryObservation>(result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISocialHistoryObservation addSocialHistoryObservation() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("SocialHistoryObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		try {
+			java.lang.reflect.Method initMethod = eObject.getClass().getMethod("init", new java.lang.Class[0]);
+			initMethod.invoke(eObject, new Object[0]);
+		} catch (Exception e) {
+			// no init() method
+		}
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("SocialHistoryObservation");
+		ISocialHistoryObservation value = (ISocialHistoryObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISocialHistorySection addSocialHistoryObservation(ISocialHistoryObservation value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -217,7 +457,7 @@ public class SocialHistorySectionImpl extends EObjectImpl implements ISocialHist
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.SOCIAL_HISTORY_SECTION__CDA_TYPE:
-				return cDAType != null;
+				return isSetCDAType();
 		}
 		return super.eIsSet(featureID);
 	}

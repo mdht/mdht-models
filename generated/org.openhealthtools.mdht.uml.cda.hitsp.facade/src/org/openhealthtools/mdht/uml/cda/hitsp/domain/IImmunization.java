@@ -10,11 +10,6 @@ import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Consumable;
 import org.openhealthtools.mdht.uml.cda.Performer2;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationSeriesNumberObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.MedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
-import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
-import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
@@ -391,11 +386,11 @@ public interface IImmunization {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::MedicationActivity::medicationSeriesNumberObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::MedicationSeriesNumberObservation))->asSequence()->first().oclAsType(ccd::MedicationSeriesNumberObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::MedicationSeriesNumberObservation))->asSequence()->first().oclAsType(domain::MedicationSeriesNumberObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationSeriesNumberObservation getMedicationSeriesNumberObservation();
+	IMedicationSeriesNumberObservation getMedicationSeriesNumberObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -405,7 +400,7 @@ public interface IImmunization {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationSeriesNumberObservation withMedicationSeriesNumberObservation();
+	IMedicationSeriesNumberObservation withMedicationSeriesNumberObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -415,18 +410,18 @@ public interface IImmunization {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IImmunization setMedicationSeriesNumberObservation(MedicationSeriesNumberObservation value);
+	IImmunization setMedicationSeriesNumberObservation(IMedicationSeriesNumberObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::MedicationActivity::medicationStatusObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::MedicationStatusObservation))->asSequence()->first().oclAsType(ccd::MedicationStatusObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::MedicationStatusObservation))->asSequence()->first().oclAsType(domain::MedicationStatusObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationStatusObservation getMedicationStatusObservation();
+	IMedicationStatusObservation getMedicationStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -436,7 +431,7 @@ public interface IImmunization {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	MedicationStatusObservation withMedicationStatusObservation();
+	IMedicationStatusObservation withMedicationStatusObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -446,18 +441,18 @@ public interface IImmunization {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IImmunization setMedicationStatusObservation(MedicationStatusObservation value);
+	IImmunization setMedicationStatusObservation(IMedicationStatusObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::MedicationActivity::patientInstruction.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ccd::PatientInstruction)).oclAsType(ccd::PatientInstruction)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PatientInstruction)).oclAsType(domain::PatientInstruction)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<PatientInstruction> getPatientInstructions();
+	EList<IPatientInstruction> getPatientInstructions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -467,7 +462,7 @@ public interface IImmunization {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	PatientInstruction addPatientInstruction();
+	IPatientInstruction addPatientInstruction();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -477,7 +472,7 @@ public interface IImmunization {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IImmunization addPatientInstruction(PatientInstruction value);
+	IImmunization addPatientInstruction(IPatientInstruction value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -516,11 +511,11 @@ public interface IImmunization {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::MedicationActivity::reactionObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ReactionObservation)).oclAsType(ccd::ReactionObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ReactionObservation)).oclAsType(domain::ReactionObservation)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ReactionObservation> getReactionObservations();
+	EList<IReactionObservation> getReactionObservations();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -530,7 +525,7 @@ public interface IImmunization {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ReactionObservation addReactionObservation();
+	IReactionObservation addReactionObservation();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -540,18 +535,18 @@ public interface IImmunization {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IImmunization addReactionObservation(ReactionObservation value);
+	IImmunization addReactionObservation(IReactionObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ccd::MedicationActivity::productInstance.
-	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(ccd::ProductInstance)).oclAsType(ccd::ProductInstance)
+	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(domain::ProductInstance)).oclAsType(domain::ProductInstance)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ProductInstance> getProductInstances();
+	EList<IProductInstance> getProductInstances();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -561,7 +556,7 @@ public interface IImmunization {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ProductInstance addProductInstance();
+	IProductInstance addProductInstance();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -571,7 +566,7 @@ public interface IImmunization {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IImmunization addProductInstance(ProductInstance value);
+	IImmunization addProductInstance(IProductInstance value);
 
 	/**
 	 * <!-- begin-user-doc -->

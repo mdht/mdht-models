@@ -16,9 +16,6 @@ import org.openhealthtools.mdht.uml.cda.InformationRecipient;
 import org.openhealthtools.mdht.uml.cda.InfrastructureRootTypeId;
 import org.openhealthtools.mdht.uml.cda.LegalAuthenticator;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanDataEnterer;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanOriginalAuthor;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanningDevice;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -505,11 +502,11 @@ public interface IUnstructuredDocument {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::ScannedDocument::scanOriginalAuthor.
-	 * self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanOriginalAuthor)).oclAsType(ihe::ScanOriginalAuthor)
+	 * self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(domain::ScanOriginalAuthor)).oclAsType(domain::ScanOriginalAuthor)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ScanOriginalAuthor> getScanOriginalAuthors();
+	EList<IScanOriginalAuthor> getScanOriginalAuthors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -519,7 +516,7 @@ public interface IUnstructuredDocument {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ScanOriginalAuthor addScanOriginalAuthor();
+	IScanOriginalAuthor addScanOriginalAuthor();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -529,18 +526,18 @@ public interface IUnstructuredDocument {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IUnstructuredDocument addScanOriginalAuthor(ScanOriginalAuthor value);
+	IUnstructuredDocument addScanOriginalAuthor(IScanOriginalAuthor value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::ScannedDocument::scanningDevice.
-	 * self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(ihe::ScanningDevice)).oclAsType(ihe::ScanningDevice)
+	 * self.getAuthors()->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(domain::ScanningDevice)).oclAsType(domain::ScanningDevice)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ScanningDevice> getScanningDevices();
+	EList<IScanningDevice> getScanningDevices();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -550,7 +547,7 @@ public interface IUnstructuredDocument {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ScanningDevice addScanningDevice();
+	IScanningDevice addScanningDevice();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -560,18 +557,18 @@ public interface IUnstructuredDocument {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IUnstructuredDocument addScanningDevice(ScanningDevice value);
+	IUnstructuredDocument addScanningDevice(IScanningDevice value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * ihe::ScannedDocument::scanDataEnterer.
-	 * self.getDataEnterers()->select(dataEnterer : cda::DataEnterer | not dataEnterer.oclIsUndefined() and dataEnterer.oclIsKindOf(ihe::ScanDataEnterer))->asSequence()->first().oclAsType(ihe::ScanDataEnterer)
+	 * self.getDataEnterers()->select(dataEnterer : cda::DataEnterer | not dataEnterer.oclIsUndefined() and dataEnterer.oclIsKindOf(domain::ScanDataEnterer))->asSequence()->first().oclAsType(domain::ScanDataEnterer)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ScanDataEnterer getScanDataEnterer();
+	IScanDataEnterer getScanDataEnterer();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -581,7 +578,7 @@ public interface IUnstructuredDocument {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ScanDataEnterer withScanDataEnterer();
+	IScanDataEnterer withScanDataEnterer();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -591,7 +588,7 @@ public interface IUnstructuredDocument {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IUnstructuredDocument setScanDataEnterer(ScanDataEnterer value);
+	IUnstructuredDocument setScanDataEnterer(IScanDataEnterer value);
 
 	/**
 	 * <!-- begin-user-doc -->

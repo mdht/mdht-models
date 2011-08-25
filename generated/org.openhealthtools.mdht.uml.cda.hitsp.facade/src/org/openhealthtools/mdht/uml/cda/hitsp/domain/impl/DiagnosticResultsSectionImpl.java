@@ -20,9 +20,9 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IExternalReference;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResult;
-import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -109,7 +109,7 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_EXTERNAL_REFERENCES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ExternalReference)).oclAsType(ihe::ExternalReference)";
+	protected static final String GET_EXTERNAL_REFERENCES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::ExternalReference)).oclAsType(domain::ExternalReference)";
 
 	/**
 	 * The cached OCL query for the '{@link #getExternalReferences() <em>Get External References</em>}' query operation.
@@ -126,7 +126,7 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ExternalReference> getExternalReferences() {
+	public EList<IExternalReference> getExternalReferences() {
 		if (GET_EXTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -140,8 +140,8 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_EXTERNAL_REFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ExternalReference> result = (Collection<ExternalReference>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<ExternalReference>(result.size(), result.toArray());
+		Collection<IExternalReference> result = (Collection<IExternalReference>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IExternalReference>(result.size(), result.toArray());
 	}
 
 	/**
@@ -149,7 +149,7 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExternalReference addExternalReference() {
+	public IExternalReference addExternalReference() {
 		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ExternalReference");
@@ -160,7 +160,11 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 		} catch (Exception e) {
 			// no init() method
 		}
-		ExternalReference value = (ExternalReference) eObject;
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ExternalReference");
+		IExternalReference value = (IExternalReference) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
@@ -170,7 +174,7 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IDiagnosticResultsSection addExternalReference(ExternalReference value) {
+	public IDiagnosticResultsSection addExternalReference(IExternalReference value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
