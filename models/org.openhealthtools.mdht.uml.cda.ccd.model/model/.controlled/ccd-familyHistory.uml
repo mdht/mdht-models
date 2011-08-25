@@ -54,7 +54,7 @@
     <ownedRule xmi:id="_FKetYMj5EeChgrgmBsw26A" name="hasAffectedRelative" constrainedElement="_6mWAQMj4EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_IYGf8Mj5EeChgrgmBsw26A">
         <language>Analysis</language>
-        <body>Where the subject of an observation is not explicit in a family history observation code (e.g. SNOMED CT concept 44054006 â€œDiabetes Mellitus type 2â€?), the subject participant SHALL be used to assert the affected relative</body>
+        <body>Where the subject of an observation is not explicit in a family history observation code (e.g. SNOMED CT concept 44054006 &quot;Diabetes Mellitus type 2&quot;), the subject participant SHALL be used to assert the affected relative</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_LVZ-kMj5EeChgrgmBsw26A" name="hasSubjectPatientRelationship" constrainedElement="_FKetYMj5EeChgrgmBsw26A">
