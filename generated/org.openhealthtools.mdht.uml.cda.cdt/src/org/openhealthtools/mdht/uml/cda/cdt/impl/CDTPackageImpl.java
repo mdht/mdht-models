@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryOfPresentIllness;
+import org.openhealthtools.mdht.uml.cda.cdt.HospitalDischargeStudiesSummarySection;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelOneConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelThreeConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelTwoConformance;
@@ -171,6 +172,13 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 	 * @generated
 	 */
 	private EClass unstructuredDocumentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass hospitalDischargeStudiesSummarySectionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -500,6 +508,15 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getHospitalDischargeStudiesSummarySection() {
+		return hospitalDischargeStudiesSummarySectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getHistoryOfPresentIllness() {
 		return historyOfPresentIllnessEClass;
 	}
@@ -720,6 +737,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 
 		unstructuredDocumentEClass = createEClass(UNSTRUCTURED_DOCUMENT);
 
+		hospitalDischargeStudiesSummarySectionEClass = createEClass(HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION);
+
 		cdtRegistryDelegateEClass = createEClass(CDT_REGISTRY_DELEGATE);
 	}
 
@@ -787,6 +806,7 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		objectiveSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		subjectiveSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		unstructuredDocumentEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
+		hospitalDischargeStudiesSummarySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		cdtRegistryDelegateEClass.getESuperTypes().add(theCDAPackage.getRegistryDelegate());
 
 		// Initialize classes and features; add operations and parameters
@@ -2805,6 +2825,43 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
+			hospitalDischargeStudiesSummarySectionEClass, HospitalDischargeStudiesSummarySection.class,
+			"HospitalDischargeStudiesSummarySection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			hospitalDischargeStudiesSummarySectionEClass, ecorePackage.getEBoolean(),
+			"validateHospitalDischargeStudiesSummarySectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			hospitalDischargeStudiesSummarySectionEClass, ecorePackage.getEBoolean(),
+			"validateHospitalDischargeStudiesSummarySectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			hospitalDischargeStudiesSummarySectionEClass, ecorePackage.getEBoolean(),
+			"validateHospitalDischargeStudiesSummarySectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(
 			cdtRegistryDelegateEClass, CDTRegistryDelegate.class, "CDTRegistryDelegate", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
 
@@ -3019,6 +3076,21 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 					"2.16.840.1.113883.10.20.19.1",
 					"constraints.validation.error",
 					"UnstructuredDocumentTemplateId UnstructuredDocumentPatientRoleHasId UnstructuredDocumentAssignedAuthorHasAddr UnstructuredDocumentAssignedAuthorHasTelecom UnstructuredDocumentHasRepresentedCustodianOrganization UnstructuredDocumentHasRepresentedCustodianOrganizationId UnstructuredDocumentHasRepresentedCustodianOrganizationName UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom UnstructuredDocumentHasRepresentedCustodianOrganizationAddr UnstructuredDocumentHasNonXMLBodyText UnstructuredDocumentHasTextReferenceOrRepresentation UnstructuredDocumentHasTextMediaTypeValueSet UnstructuredDocumentEffectiveTime" });
+		addAnnotation(
+			hospitalDischargeStudiesSummarySectionEClass,
+			source,
+			new String[] {
+					"title.mixed",
+					"HOSPITAL DISCHARGE STUDIES SUMMARY",
+					"code.codeSystem",
+					"2.16.840.1.113883.6.1",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.16.2.3",
+					"code.displayName",
+					"Hospital Discharge Studies Summary",
+					"constraints.validation.error",
+					"HospitalDischargeStudiesSummarySectionTemplateId HospitalDischargeStudiesSummarySectionCode HospitalDischargeStudiesSummarySectionTitle",
+					"code.codeSystemName", "LOINC", "code.code", "11493-4" });
 	}
 
 	/**

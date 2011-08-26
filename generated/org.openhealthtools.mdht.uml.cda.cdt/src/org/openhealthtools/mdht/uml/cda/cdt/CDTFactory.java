@@ -174,6 +174,15 @@ public interface CDTFactory extends EFactory {
 	UnstructuredDocument createUnstructuredDocument();
 
 	/**
+	 * Returns a new object of class '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * @generated
+	 */
+	HospitalDischargeStudiesSummarySection createHospitalDischargeStudiesSummarySection();
+
+	/**
 	 * Returns a new object of class '<em>History Of Present Illness</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

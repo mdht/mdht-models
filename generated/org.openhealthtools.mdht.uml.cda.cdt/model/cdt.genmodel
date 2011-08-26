@@ -763,6 +763,20 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentEffectiveTime/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="cdt.ecore#//HospitalDischargeStudiesSummarySection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionTitle/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="cdt.ecore#//CDTRegistryDelegate"/>
   </genPackages>
 </genmodel:GenModel>

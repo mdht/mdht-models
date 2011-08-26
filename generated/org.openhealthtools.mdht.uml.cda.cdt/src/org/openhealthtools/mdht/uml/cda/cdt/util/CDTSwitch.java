@@ -32,6 +32,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryOfPresentIllness;
+import org.openhealthtools.mdht.uml.cda.cdt.HospitalDischargeStudiesSummarySection;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelOneConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelThreeConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelTwoConformance;
@@ -659,6 +660,23 @@ public class CDTSwitch<T> {
 				}
 				return result;
 			}
+			case CDTPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION: {
+				HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection = (HospitalDischargeStudiesSummarySection) theEObject;
+				T result = caseHospitalDischargeStudiesSummarySection(hospitalDischargeStudiesSummarySection);
+				if (result == null) {
+					result = caseSection(hospitalDischargeStudiesSummarySection);
+				}
+				if (result == null) {
+					result = caseAct(hospitalDischargeStudiesSummarySection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(hospitalDischargeStudiesSummarySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case CDTPackage.CDT_REGISTRY_DELEGATE: {
 				CDTRegistryDelegate cdtRegistryDelegate = (CDTRegistryDelegate) theEObject;
 				T result = caseCDTRegistryDelegate(cdtRegistryDelegate);
@@ -1092,6 +1110,21 @@ public class CDTSwitch<T> {
 	 * @generated
 	 */
 	public T caseUnstructuredDocument(UnstructuredDocument object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHospitalDischargeStudiesSummarySection(HospitalDischargeStudiesSummarySection object) {
 		return null;
 	}
 

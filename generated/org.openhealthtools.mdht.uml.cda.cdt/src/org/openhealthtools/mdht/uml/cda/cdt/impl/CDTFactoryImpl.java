@@ -30,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryOfPresentIllness;
+import org.openhealthtools.mdht.uml.cda.cdt.HospitalDischargeStudiesSummarySection;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelOneConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelThreeConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelTwoConformance;
@@ -152,6 +153,8 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 				return createSubjectiveSection();
 			case CDTPackage.UNSTRUCTURED_DOCUMENT:
 				return createUnstructuredDocument();
+			case CDTPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION:
+				return createHospitalDischargeStudiesSummarySection();
 			case CDTPackage.CDT_REGISTRY_DELEGATE:
 				return createCDTRegistryDelegate();
 			default:
@@ -317,6 +320,16 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 	public UnstructuredDocument createUnstructuredDocument() {
 		UnstructuredDocumentImpl unstructuredDocument = new UnstructuredDocumentImpl();
 		return unstructuredDocument;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeStudiesSummarySection createHospitalDischargeStudiesSummarySection() {
+		HospitalDischargeStudiesSummarySectionImpl hospitalDischargeStudiesSummarySection = new HospitalDischargeStudiesSummarySectionImpl();
+		return hospitalDischargeStudiesSummarySection;
 	}
 
 	/**

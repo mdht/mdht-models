@@ -32,6 +32,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryOfPresentIllness;
+import org.openhealthtools.mdht.uml.cda.cdt.HospitalDischargeStudiesSummarySection;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelOneConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelThreeConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelTwoConformance;
@@ -256,6 +257,11 @@ public class CDTAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseUnstructuredDocument(UnstructuredDocument object) {
 			return createUnstructuredDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseHospitalDischargeStudiesSummarySection(HospitalDischargeStudiesSummarySection object) {
+			return createHospitalDischargeStudiesSummarySectionAdapter();
 		}
 
 		@Override
@@ -701,6 +707,20 @@ public class CDTAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createUnstructuredDocumentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.cdt.HospitalDischargeStudiesSummarySection <em>Hospital Discharge Studies Summary Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.cdt.HospitalDischargeStudiesSummarySection
+	 * @generated
+	 */
+	public Adapter createHospitalDischargeStudiesSummarySectionAdapter() {
 		return null;
 	}
 
