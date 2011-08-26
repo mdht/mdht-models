@@ -32,6 +32,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryAndPhysical;
 import org.openhealthtools.mdht.uml.cda.cdt.HistoryOfPresentIllness;
+import org.openhealthtools.mdht.uml.cda.cdt.HospitalDischargeStudiesSummarySection;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelOneConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelThreeConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelTwoConformance;
@@ -1207,6 +1208,30 @@ public class CDTValidator extends EObjectValidator {
 	public static final int UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 167;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Studies Summary Section Template Id' of 'Hospital Discharge Studies Summary Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEMPLATE_ID = 168;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Studies Summary Section Code' of 'Hospital Discharge Studies Summary Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE = 169;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Hospital Discharge Studies Summary Section Title' of 'Hospital Discharge Studies Summary Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TITLE = 170;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Past Medical History Section Consult Template Id' of 'Past Medical History Section Consult'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1420,7 +1445,7 @@ public class CDTValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 167;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 170;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -1542,6 +1567,9 @@ public class CDTValidator extends EObjectValidator {
 				return validateSubjectiveSection((SubjectiveSection) value, diagnostics, context);
 			case CDTPackage.UNSTRUCTURED_DOCUMENT:
 				return validateUnstructuredDocument((UnstructuredDocument) value, diagnostics, context);
+			case CDTPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION:
+				return validateHospitalDischargeStudiesSummarySection(
+					(HospitalDischargeStudiesSummarySection) value, diagnostics, context);
 			case CDTPackage.CDT_REGISTRY_DELEGATE:
 				return validateCDTRegistryDelegate((CDTRegistryDelegate) value, diagnostics, context);
 			default:
@@ -4779,6 +4807,99 @@ public class CDTValidator extends EObjectValidator {
 	public boolean validateUnstructuredDocument_validateGeneralHeaderConstraintsTemplateId(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return unstructuredDocument.validateGeneralHeaderConstraintsTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargeStudiesSummarySection(
+			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(hospitalDischargeStudiesSummarySection, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(
+			hospitalDischargeStudiesSummarySection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(
+				hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(
+				hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHospitalDischargeStudiesSummarySection_validateHospitalDischargeStudiesSummarySectionTemplateId(
+				hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHospitalDischargeStudiesSummarySection_validateHospitalDischargeStudiesSummarySectionCode(
+				hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateHospitalDischargeStudiesSummarySection_validateHospitalDischargeStudiesSummarySectionTitle(
+				hospitalDischargeStudiesSummarySection, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateHospitalDischargeStudiesSummarySectionTemplateId constraint of '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargeStudiesSummarySection_validateHospitalDischargeStudiesSummarySectionTemplateId(
+			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargeStudiesSummarySection.validateHospitalDischargeStudiesSummarySectionTemplateId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHospitalDischargeStudiesSummarySectionCode constraint of '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargeStudiesSummarySection_validateHospitalDischargeStudiesSummarySectionCode(
+			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargeStudiesSummarySection.validateHospitalDischargeStudiesSummarySectionCode(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateHospitalDischargeStudiesSummarySectionTitle constraint of '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalDischargeStudiesSummarySection_validateHospitalDischargeStudiesSummarySectionTitle(
+			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return hospitalDischargeStudiesSummarySection.validateHospitalDischargeStudiesSummarySectionTitle(
+			diagnostics, context);
 	}
 
 	/**

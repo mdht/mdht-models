@@ -1822,6 +1822,23 @@ document may come from sources or contain information that the author cannot val
     <packagedElement xmi:type="uml:Association" xmi:id="_Qjnm86jbEeCFJ-gjhA0rqQ" memberEnd="_Qjnm8KjbEeCFJ-gjhA0rqQ _QjoOAKjbEeCFJ-gjhA0rqQ">
       <ownedEnd xmi:id="_QjoOAKjbEeCFJ-gjhA0rqQ" type="_ESDCQKjIEeCFJ-gjhA0rqQ" association="_Qjnm86jbEeCFJ-gjhA0rqQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Kp2O0M_5EeCiuL16epi04A" name="HospitalDischargeStudiesSummarySection">
+      <generalization xmi:id="_Kp7uYM_5EeCiuL16epi04A">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_QFL2IM_5EeCiuL16epi04A" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pXF_QM_5EeCiuL16epi04A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pXF_Qc_5EeCiuL16epi04A" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QFMdMM_5EeCiuL16epi04A" name="title" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r53eAM_5EeCiuL16epi04A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r53eAc_5EeCiuL16epi04A" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -2413,4 +2430,12 @@ document may come from sources or contain information that the author cannot val
   <CDA:ConstraintValidation xmi:id="_1B7LYKzeEeCOzOGuaGzKFQ" base_Constraint="_AC2-sKzeEeCOzOGuaGzKFQ">
     <ruleId>CONF-UD-36</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:CDATemplate xmi:id="_RI-OYM_5EeCiuL16epi04A" base_Class="_Kp2O0M_5EeCiuL16epi04A" templateId="2.16.840.1.113883.10.20.16.2.3">
+    <ruleId>CONF-DS-44</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_anc7AM_5EeCiuL16epi04A" code="11493-4" displayName="Hospital Discharge Studies Summary" base_Property="_QFL2IM_5EeCiuL16epi04A">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-DS-45</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_t4JIkM_5EeCiuL16epi04A" base_Property="_QFMdMM_5EeCiuL16epi04A" value="HOSPITAL DISCHARGE STUDIES SUMMARY"/>
 </xmi:XMI>
