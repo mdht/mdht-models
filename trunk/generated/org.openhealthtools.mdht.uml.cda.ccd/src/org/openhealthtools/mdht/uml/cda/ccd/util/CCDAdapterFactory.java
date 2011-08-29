@@ -249,6 +249,31 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseFamilyHistoryOrganizer(FamilyHistoryOrganizer object) {
+			return createFamilyHistoryOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryObservation(FamilyHistoryObservation object) {
+			return createFamilyHistoryObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseAgeObservation(AgeObservation object) {
+			return createAgeObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemStatusObservation(ProblemStatusObservation object) {
+			return createProblemStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseCauseOfDeathObservation(CauseOfDeathObservation object) {
+			return createCauseOfDeathObservationAdapter();
+		}
+
+		@Override
 		public Adapter caseSocialHistorySection(SocialHistorySection object) {
 			return createSocialHistorySectionAdapter();
 		}
@@ -296,11 +321,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseEncountersActivity(EncountersActivity object) {
 			return createEncountersActivityAdapter();
-		}
-
-		@Override
-		public Adapter caseAgeObservation(AgeObservation object) {
-			return createAgeObservationAdapter();
 		}
 
 		@Override
@@ -414,11 +434,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseProblemStatusObservation(ProblemStatusObservation object) {
-			return createProblemStatusObservationAdapter();
-		}
-
-		@Override
 		public Adapter caseProblemHealthStatusObservation(ProblemHealthStatusObservation object) {
 			return createProblemHealthStatusObservationAdapter();
 		}
@@ -426,21 +441,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePatientAwareness(PatientAwareness object) {
 			return createPatientAwarenessAdapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryObservation(FamilyHistoryObservation object) {
-			return createFamilyHistoryObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseCauseOfDeathObservation(CauseOfDeathObservation object) {
-			return createCauseOfDeathObservationAdapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryOrganizer(FamilyHistoryOrganizer object) {
-			return createFamilyHistoryOrganizerAdapter();
 		}
 
 		@Override

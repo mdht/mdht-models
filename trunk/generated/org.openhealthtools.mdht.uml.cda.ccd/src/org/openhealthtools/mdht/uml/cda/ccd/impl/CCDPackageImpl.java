@@ -1456,6 +1456,16 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 
 		familyHistorySectionEClass = createEClass(FAMILY_HISTORY_SECTION);
 
+		familyHistoryOrganizerEClass = createEClass(FAMILY_HISTORY_ORGANIZER);
+
+		familyHistoryObservationEClass = createEClass(FAMILY_HISTORY_OBSERVATION);
+
+		ageObservationEClass = createEClass(AGE_OBSERVATION);
+
+		problemStatusObservationEClass = createEClass(PROBLEM_STATUS_OBSERVATION);
+
+		causeOfDeathObservationEClass = createEClass(CAUSE_OF_DEATH_OBSERVATION);
+
 		socialHistorySectionEClass = createEClass(SOCIAL_HISTORY_SECTION);
 
 		socialHistoryObservationEClass = createEClass(SOCIAL_HISTORY_OBSERVATION);
@@ -1475,8 +1485,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		encountersSectionEClass = createEClass(ENCOUNTERS_SECTION);
 
 		encountersActivityEClass = createEClass(ENCOUNTERS_ACTIVITY);
-
-		ageObservationEClass = createEClass(AGE_OBSERVATION);
 
 		planOfCareSectionEClass = createEClass(PLAN_OF_CARE_SECTION);
 
@@ -1522,17 +1530,9 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 
 		problemObservationEClass = createEClass(PROBLEM_OBSERVATION);
 
-		problemStatusObservationEClass = createEClass(PROBLEM_STATUS_OBSERVATION);
-
 		problemHealthStatusObservationEClass = createEClass(PROBLEM_HEALTH_STATUS_OBSERVATION);
 
 		patientAwarenessEClass = createEClass(PATIENT_AWARENESS);
-
-		familyHistoryObservationEClass = createEClass(FAMILY_HISTORY_OBSERVATION);
-
-		causeOfDeathObservationEClass = createEClass(CAUSE_OF_DEATH_OBSERVATION);
-
-		familyHistoryOrganizerEClass = createEClass(FAMILY_HISTORY_ORGANIZER);
 
 		alertObservationEClass = createEClass(ALERT_OBSERVATION);
 
@@ -1626,6 +1626,11 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		problemActEClass.getESuperTypes().add(theCDAPackage.getAct());
 		episodeObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		familyHistorySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		familyHistoryOrganizerEClass.getESuperTypes().add(theCDAPackage.getOrganizer());
+		familyHistoryObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
+		ageObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
+		problemStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
+		causeOfDeathObservationEClass.getESuperTypes().add(this.getFamilyHistoryObservation());
 		socialHistorySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		socialHistoryObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		socialHistoryStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
@@ -1636,7 +1641,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		proceduresSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		encountersSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		encountersActivityEClass.getESuperTypes().add(theCDAPackage.getEncounter());
-		ageObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		planOfCareSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		planOfCareActivityActEClass.getESuperTypes().add(theCDAPackage.getAct());
 		planOfCareActivityActEClass.getESuperTypes().add(this.getPlanOfCareActivity());
@@ -1664,12 +1668,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		purposeSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		purposeActivityEClass.getESuperTypes().add(theCDAPackage.getAct());
 		problemObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
-		problemStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
 		problemHealthStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
 		patientAwarenessEClass.getESuperTypes().add(theCDAPackage.getParticipant2());
-		familyHistoryObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
-		causeOfDeathObservationEClass.getESuperTypes().add(this.getFamilyHistoryObservation());
-		familyHistoryOrganizerEClass.getESuperTypes().add(theCDAPackage.getOrganizer());
 		alertObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		alertStatusObservationEClass.getESuperTypes().add(this.getStatusObservation());
 		encounterLocationEClass.getESuperTypes().add(theCDAPackage.getParticipant2());
@@ -3321,6 +3321,286 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(
+			familyHistorySectionEClass, ecorePackage.getEBoolean(),
+			"validateFamilyHistorySectionFamilyHistoryOrganizer", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			familyHistorySectionEClass, this.getFamilyHistoryOrganizer(), "getFamilyHistoryOrganizers", 1, -1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			familyHistoryOrganizerEClass, FamilyHistoryOrganizer.class, "FamilyHistoryOrganizer", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(),
+			"validateFamilyHistoryOrganizerRelatedSubjectBirthTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryOrganizerTemplateId", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryOrganizerStatusCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryOrganizerClassCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryOrganizerMoodCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(),
+			"validateFamilyHistoryOrganizerFamilyHistoryObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			familyHistoryOrganizerEClass, this.getFamilyHistoryObservation(), "getFamilyHistoryObservations", 1, -1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			familyHistoryObservationEClass, FamilyHistoryObservation.class, "FamilyHistoryObservation", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
+			"validateFamilyHistoryObservationRelatedSubjectBirthTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryObservationTemplateId",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryObservationId", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryObservationStatusCode",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
+			"validateFamilyHistoryObservationEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryObservationMoodCode", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
+			"validateFamilyHistoryObservationAgeObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
+			"validateFamilyHistoryObservationProblemStatusObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
+			"validateFamilyHistoryObservationCauseOfDeathObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			familyHistoryObservationEClass, this.getAgeObservation(), "getAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			familyHistoryObservationEClass, this.getProblemStatusObservation(), "getProblemStatusObservation", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			familyHistoryObservationEClass, this.getCauseOfDeathObservation(), "getCauseOfDeathObservations", 1, -1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			ageObservationEClass, AgeObservation.class, "AgeObservation", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationClassCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationMoodCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationStatusCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationValue", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(
+			problemStatusObservationEClass, ProblemStatusObservation.class, "ProblemStatusObservation", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(
+			causeOfDeathObservationEClass, CauseOfDeathObservation.class, "CauseOfDeathObservation", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
 		initEClass(
 			socialHistorySectionEClass, SocialHistorySection.class, "SocialHistorySection", !IS_ABSTRACT,
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -4045,75 +4325,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 
 		addEOperation(
 			encountersActivityEClass, this.getAgeObservation(), "getAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-		initEClass(
-			ageObservationEClass, AgeObservation.class, "AgeObservation", !IS_ABSTRACT, !IS_INTERFACE,
-			IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationTemplateId", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationClassCode", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationMoodCode", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationStatusCode", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			ageObservationEClass, ecorePackage.getEBoolean(), "validateAgeObservationValue", 0, 1, IS_UNIQUE,
-			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
 			planOfCareSectionEClass, PlanOfCareSection.class, "PlanOfCareSection", !IS_ABSTRACT, !IS_INTERFACE,
@@ -5551,10 +5762,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 			problemObservationEClass, this.getAgeObservation(), "getAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
-			problemStatusObservationEClass, ProblemStatusObservation.class, "ProblemStatusObservation", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(
 			problemHealthStatusObservationEClass, ProblemHealthStatusObservation.class,
 			"ProblemHealthStatusObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -5597,183 +5804,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 
 		op = addEOperation(
 			patientAwarenessEClass, ecorePackage.getEBoolean(), "validatePatientAwarenessAwarenessCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		initEClass(
-			familyHistoryObservationEClass, FamilyHistoryObservation.class, "FamilyHistoryObservation", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
-			"validateFamilyHistoryObservationRelatedSubjectBirthTime", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryObservationTemplateId",
-			0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryObservationId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryObservationStatusCode",
-			0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
-			"validateFamilyHistoryObservationEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryObservationEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryObservationMoodCode", 0,
-			1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
-			"validateFamilyHistoryObservationAgeObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
-			"validateFamilyHistoryObservationProblemStatusObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryObservationEClass, ecorePackage.getEBoolean(),
-			"validateFamilyHistoryObservationCauseOfDeathObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		addEOperation(
-			familyHistoryObservationEClass, this.getAgeObservation(), "getAgeObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-		addEOperation(
-			familyHistoryObservationEClass, this.getProblemStatusObservation(), "getProblemStatusObservation", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
-
-		addEOperation(
-			familyHistoryObservationEClass, this.getCauseOfDeathObservation(), "getCauseOfDeathObservations", 1, -1,
-			IS_UNIQUE, !IS_ORDERED);
-
-		initEClass(
-			causeOfDeathObservationEClass, CauseOfDeathObservation.class, "CauseOfDeathObservation", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(
-			familyHistoryOrganizerEClass, FamilyHistoryOrganizer.class, "FamilyHistoryOrganizer", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(
-			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(),
-			"validateFamilyHistoryOrganizerRelatedSubjectBirthTime", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryOrganizerTemplateId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryOrganizerStatusCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryOrganizerClassCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			familyHistoryOrganizerEClass, ecorePackage.getEBoolean(), "validateFamilyHistoryOrganizerMoodCode", 0, 1,
 			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -6469,13 +6499,13 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	protected void createDuplicatesAnnotations() {
 		String source = "duplicates";
 		addAnnotation(medicationStatusObservationEClass, source, new String[] {});
+		addAnnotation(problemStatusObservationEClass, source, new String[] {});
+		addAnnotation(causeOfDeathObservationEClass, source, new String[] {});
 		addAnnotation(socialHistoryStatusObservationEClass, source, new String[] {});
 		addAnnotation(immunizationsSectionEClass, source, new String[] {});
 		addAnnotation(vitalSignsOrganizerEClass, source, new String[] {});
 		addAnnotation(advanceDirectiveStatusObservationEClass, source, new String[] {});
-		addAnnotation(problemStatusObservationEClass, source, new String[] {});
 		addAnnotation(problemHealthStatusObservationEClass, source, new String[] {});
-		addAnnotation(causeOfDeathObservationEClass, source, new String[] {});
 		addAnnotation(alertStatusObservationEClass, source, new String[] {});
 		addAnnotation(functionalStatusObservationEClass, source, new String[] {});
 	}
@@ -6665,13 +6695,63 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 			new String[] {
 					"code.codeSystem",
 					"2.16.840.1.113883.6.1",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.1.4",
 					"code.displayName",
 					"History of family member diseases",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.1.4",
 					"constraints.validation.error",
 					"FamilyHistorySectionTemplateId FamilyHistorySectionCode FamilyHistorySectionTitle FamilyHistorySectionText",
-					"code.codeSystemName", "LOINC", "code.code", "10157-6" });
+					"code.codeSystemName", "LOINC", "code.code", "10157-6", "constraints.validation.info",
+					"FamilyHistorySectionFamilyHistoryOrganizer" });
+		addAnnotation(
+			familyHistoryOrganizerEClass,
+			source,
+			new String[] {
+					"statusCode.code",
+					"completed",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.1.23",
+					"constraints.validation.error",
+					"FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizerStatusCode FamilyHistoryOrganizerClassCode FamilyHistoryOrganizerMoodCode",
+					"classCode", "CLUSTER", "constraints.validation.warning",
+					"FamilyHistoryOrganizerRelatedSubjectBirthTime FamilyHistoryOrganizerFamilyHistoryObservation",
+					"moodCode", "EVN" });
+		addAnnotation(
+			familyHistoryObservationEClass,
+			source,
+			new String[] {
+					"statusCode.code",
+					"completed",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.1.22",
+					"constraints.validation.error",
+					"FamilyHistoryObservationTemplateId FamilyHistoryObservationId FamilyHistoryObservationStatusCode FamilyHistoryObservationMoodCode FamilyHistoryObservationCauseOfDeathObservation",
+					"constraints.validation.warning",
+					"FamilyHistoryObservationRelatedSubjectBirthTime FamilyHistoryObservationEffectiveTime",
+					"constraints.validation.info",
+					"FamilyHistoryObservationAgeObservation FamilyHistoryObservationProblemStatusObservation",
+					"moodCode", "EVN" });
+		addAnnotation(
+			ageObservationEClass,
+			source,
+			new String[] {
+					"statusCode.code",
+					"completed",
+					"code.codeSystem",
+					"2.16.840.1.113883.6.96",
+					"code.displayName",
+					"Age",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.1.38",
+					"constraints.validation.error",
+					"AgeObservationTemplateId AgeObservationClassCode AgeObservationMoodCode AgeObservationCode AgeObservationStatusCode AgeObservationValue",
+					"code.codeSystemName", "SNOMEDCT", "classCode", "OBS", "code.code", "397659008", "moodCode", "EVN" });
+		addAnnotation(problemStatusObservationEClass, source, new String[] {
+				"templateId.root", "2.16.840.1.113883.10.20.1.50", "constraints.validation.error",
+				"ProblemStatusObservationTemplateId" });
+		addAnnotation(causeOfDeathObservationEClass, source, new String[] {
+				"templateId.root", "2.16.840.1.113883.10.20.1.42", "constraints.validation.error",
+				"CauseOfDeathObservationTemplateId" });
 		addAnnotation(
 			socialHistorySectionEClass,
 			source,
@@ -6734,7 +6814,7 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"ResultObservationTemplateId ResultObservationNoObservationRangeCode ResultObservationInformationSource ResultObservationMoodCode ResultObservationId ResultObservationStatusCode ResultObservationCode ResultObservationValue",
 					"constraints.validation.warning",
 					"ResultObservationCodeValue ResultObservationReferenceRangeRequired ResultObservationEffectiveTime ResultObservationInterpretationCode",
-					"constraints.validation.info", "ResultObservationMethodCode", "moodCode", "EVN" });
+					"classCode", "OBS", "constraints.validation.info", "ResultObservationMethodCode", "moodCode", "EVN" });
 		addAnnotation(proceduresSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "2.16.840.1.113883.10.20.1.12",
 				"code.displayName", "History of procedures", "constraints.validation.error",
@@ -6759,21 +6839,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"constraints.validation.info",
 					"EncountersActivityEffectiveTime EncountersActivityPatientInstruction EncountersActivityAgeObservation",
 					"moodCode", "EVN" });
-		addAnnotation(
-			ageObservationEClass,
-			source,
-			new String[] {
-					"statusCode.code",
-					"completed",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.96",
-					"code.displayName",
-					"Age",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.1.38",
-					"constraints.validation.error",
-					"AgeObservationTemplateId AgeObservationClassCode AgeObservationMoodCode AgeObservationCode AgeObservationStatusCode AgeObservationValue",
-					"code.codeSystemName", "SNOMEDCT", "classCode", "OBS", "code.code", "397659008", "moodCode", "EVN" });
 		addAnnotation(
 			planOfCareSectionEClass,
 			source,
@@ -7006,9 +7071,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"constraints.validation.info",
 					"ProblemObservationContainsPatientAwareness ProblemObservationProblemStatus ProblemObservationProblemHealthStatus ProblemObservationAgeObservation",
 					"moodCode", "EVN" });
-		addAnnotation(problemStatusObservationEClass, source, new String[] {
-				"templateId.root", "2.16.840.1.113883.10.20.1.50", "constraints.validation.error",
-				"ProblemStatusObservationTemplateId" });
 		addAnnotation(problemHealthStatusObservationEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "2.16.840.1.113883.10.20.1.51",
 				"code.displayName", "Health status", "constraints.validation.error",
@@ -7023,36 +7085,6 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 					"constraints.validation.error",
 					"PatientAwarenessTemplateId PatientAwarenessParticipantRoleId PatientAwarenessTypeCode PatientAwarenessAwarenessCode",
 					"typeCode", "SBJ" });
-		addAnnotation(
-			familyHistoryObservationEClass,
-			source,
-			new String[] {
-					"statusCode.code",
-					"completed",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.1.22",
-					"constraints.validation.error",
-					"FamilyHistoryObservationTemplateId FamilyHistoryObservationId FamilyHistoryObservationStatusCode FamilyHistoryObservationMoodCode FamilyHistoryObservationCauseOfDeathObservation",
-					"constraints.validation.warning",
-					"FamilyHistoryObservationRelatedSubjectBirthTime FamilyHistoryObservationEffectiveTime",
-					"constraints.validation.info",
-					"FamilyHistoryObservationAgeObservation FamilyHistoryObservationProblemStatusObservation",
-					"moodCode", "EVN" });
-		addAnnotation(causeOfDeathObservationEClass, source, new String[] {
-				"templateId.root", "2.16.840.1.113883.10.20.1.42", "constraints.validation.error",
-				"CauseOfDeathObservationTemplateId" });
-		addAnnotation(
-			familyHistoryOrganizerEClass,
-			source,
-			new String[] {
-					"statusCode.code",
-					"completed",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.1.23",
-					"constraints.validation.error",
-					"FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizerStatusCode FamilyHistoryOrganizerClassCode FamilyHistoryOrganizerMoodCode",
-					"constraints.validation.warning", "FamilyHistoryOrganizerRelatedSubjectBirthTime", "classCode",
-					"CLUSTER", "moodCode", "EVN" });
 		addAnnotation(
 			alertObservationEClass,
 			source,
