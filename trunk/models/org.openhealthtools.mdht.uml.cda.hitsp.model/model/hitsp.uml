@@ -1018,6 +1018,35 @@ resolved</body>
       <memberEnd href=".controlled/hitsp-advanceDirectives.uml#_LFByYMztEeCvbrjDQpuvkw"/>
       <memberEnd href="#_LFDAgMztEeCvbrjDQpuvkw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Fp1MMdJXEeCZxdqWGSM1Gw">
+      <ownedEnd xmi:id="_Fp1MMtJXEeCZxdqWGSM1Gw" association="_Fp1MMdJXEeCZxdqWGSM1Gw">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-diagnosticResults.uml#_P3GVkMieEd6mWrHPmrIIfQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-diagnosticResults.uml#_FpvFkNJXEeCZxdqWGSM1Gw"/>
+      <memberEnd href="#_Fp1MMtJXEeCZxdqWGSM1Gw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5pxr8NJcEeCJq4tpS2QhbQ">
+      <ownedEnd xmi:id="_5pxr8dJcEeCJq4tpS2QhbQ" association="_5pxr8NJcEeCJq4tpS2QhbQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-familyHistory.uml#_4Mh2UMigEd6mWrHPmrIIfQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-familyHistory.uml#_5puooNJcEeCJq4tpS2QhbQ"/>
+      <memberEnd href="#_5pxr8dJcEeCJq4tpS2QhbQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_WwjwsNJkEeCJq4tpS2QhbQ" name="ResultOrganizer">
+      <ownedComment xmi:id="_jvqEYNJkEeCJq4tpS2QhbQ">
+        <body>Non-template subclasss of CCD ResultOrganizer that requires entires to be HITSP Result.</body>
+      </ownedComment>
+      <generalization xmi:id="_WwkXwNJkEeCJq4tpS2QhbQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_Ht_RsHDAEd6eItyqb1FoWg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_YvgwsNJkEeCJq4tpS2QhbQ" name="result" type="_oTzNMDIWEd-SYNRf-pkwtw" association="_YvgwstJkEeCJq4tpS2QhbQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bzNLMNJkEeCJq4tpS2QhbQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bzNLMdJkEeCJq4tpS2QhbQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YvgwstJkEeCJq4tpS2QhbQ" memberEnd="_YvgwsNJkEeCJq4tpS2QhbQ _YvhXwNJkEeCJq4tpS2QhbQ">
+      <ownedEnd xmi:id="_YvhXwNJkEeCJq4tpS2QhbQ" type="_WwjwsNJkEeCJq4tpS2QhbQ" association="_YvgwstJkEeCJq4tpS2QhbQ"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -1330,4 +1359,7 @@ resolved</body>
   <CDA:ConstraintValidation xmi:id="_84y9MMzsEeCvbrjDQpuvkw" base_Constraint="_5MYV0MzsEeCvbrjDQpuvkw"/>
   <CDA:ConstraintValidation xmi:id="_GXnoEMztEeCvbrjDQpuvkw" base_Constraint="_AA1sMMztEeCvbrjDQpuvkw"/>
   <CDA:AssociationValidation xmi:id="_Odj0cMztEeCvbrjDQpuvkw" base_Association="_LFCZccztEeCvbrjDQpuvkw"/>
+  <CDA:AssociationValidation xmi:id="_LSI4gNJXEeCZxdqWGSM1Gw" severity="INFO" base_Association="_Fp1MMdJXEeCZxdqWGSM1Gw"/>
+  <CDA:AssociationValidation xmi:id="_8LtdMNJcEeCJq4tpS2QhbQ" base_Association="_5pxr8NJcEeCJq4tpS2QhbQ"/>
+  <CDA:AssociationValidation xmi:id="_aRVIwNJkEeCJq4tpS2QhbQ" base_Association="_YvgwstJkEeCJq4tpS2QhbQ"/>
 </xmi:XMI>

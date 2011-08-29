@@ -1377,7 +1377,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getVitalSign()
 	 * @generated
 	 */
-	int VITAL_SIGN = 23;
+	int VITAL_SIGN = 24;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.PayersSectionImpl <em>Payers Section</em>}' class.
@@ -1417,7 +1417,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getHistoryOfPastIllnessSection()
 	 * @generated
 	 */
-	int HISTORY_OF_PAST_ILLNESS_SECTION = 24;
+	int HISTORY_OF_PAST_ILLNESS_SECTION = 25;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ChiefComplaintSectionImpl <em>Chief Complaint Section</em>}' class.
@@ -1427,7 +1427,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getChiefComplaintSection()
 	 * @generated
 	 */
-	int CHIEF_COMPLAINT_SECTION = 25;
+	int CHIEF_COMPLAINT_SECTION = 26;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ReasonForReferralSectionImpl <em>Reason For Referral Section</em>}' class.
@@ -1437,7 +1437,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getReasonForReferralSection()
 	 * @generated
 	 */
-	int REASON_FOR_REFERRAL_SECTION = 26;
+	int REASON_FOR_REFERRAL_SECTION = 27;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.HistoryOfPresentIllnessImpl <em>History Of Present Illness</em>}' class.
@@ -1447,7 +1447,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getHistoryOfPresentIllness()
 	 * @generated
 	 */
-	int HISTORY_OF_PRESENT_ILLNESS = 27;
+	int HISTORY_OF_PRESENT_ILLNESS = 28;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.SurgeriesSectionImpl <em>Surgeries Section</em>}' class.
@@ -1467,7 +1467,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getFunctionalStatusSection()
 	 * @generated
 	 */
-	int FUNCTIONAL_STATUS_SECTION = 28;
+	int FUNCTIONAL_STATUS_SECTION = 29;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.HospitalAdmissionDiagnosisSectionImpl <em>Hospital Admission Diagnosis Section</em>}' class.
@@ -1477,7 +1477,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getHospitalAdmissionDiagnosisSection()
 	 * @generated
 	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 29;
+	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 30;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.DischargeDiagnosisSectionImpl <em>Discharge Diagnosis Section</em>}' class.
@@ -1487,7 +1487,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getDischargeDiagnosisSection()
 	 * @generated
 	 */
-	int DISCHARGE_DIAGNOSIS_SECTION = 30;
+	int DISCHARGE_DIAGNOSIS_SECTION = 31;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationsSectionImpl <em>Medications Section</em>}' class.
@@ -1507,7 +1507,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getAdmissionMedicationHistorySection()
 	 * @generated
 	 */
-	int ADMISSION_MEDICATION_HISTORY_SECTION = 31;
+	int ADMISSION_MEDICATION_HISTORY_SECTION = 32;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.HospitalDischargeMedicationsSectionImpl <em>Hospital Discharge Medications Section</em>}' class.
@@ -1517,7 +1517,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getHospitalDischargeMedicationsSection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 32;
+	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 33;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
@@ -1527,7 +1527,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getMedicationsAdministeredSection()
 	 * @generated
 	 */
-	int MEDICATIONS_ADMINISTERED_SECTION = 33;
+	int MEDICATIONS_ADMINISTERED_SECTION = 34;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.AdvanceDirectivesSectionImpl <em>Advance Directives Section</em>}' class.
@@ -1557,7 +1557,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getPhysicalExamSection()
 	 * @generated
 	 */
-	int PHYSICAL_EXAM_SECTION = 34;
+	int PHYSICAL_EXAM_SECTION = 35;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ReviewOfSystemsSectionImpl <em>Review Of Systems Section</em>}' class.
@@ -1567,7 +1567,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getReviewOfSystemsSection()
 	 * @generated
 	 */
-	int REVIEW_OF_SYSTEMS_SECTION = 35;
+	int REVIEW_OF_SYSTEMS_SECTION = 36;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.HospitalCourseSectionImpl <em>Hospital Course Section</em>}' class.
@@ -1577,7 +1577,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getHospitalCourseSection()
 	 * @generated
 	 */
-	int HOSPITAL_COURSE_SECTION = 36;
+	int HOSPITAL_COURSE_SECTION = 37;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.DiagnosticResultsSectionImpl <em>Diagnostic Results Section</em>}' class.
@@ -1597,7 +1597,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getAssessmentAndPlanSection()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_SECTION = 37;
+	int ASSESSMENT_AND_PLAN_SECTION = 38;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.PlanOfCareSectionImpl <em>Plan Of Care Section</em>}' class.
@@ -1617,7 +1617,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getFamilyHistorySection()
 	 * @generated
 	 */
-	int FAMILY_HISTORY_SECTION = 38;
+	int FAMILY_HISTORY_SECTION = 39;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.SocialHistorySectionImpl <em>Social History Section</em>}' class.
@@ -1627,7 +1627,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getSocialHistorySection()
 	 * @generated
 	 */
-	int SOCIAL_HISTORY_SECTION = 39;
+	int SOCIAL_HISTORY_SECTION = 41;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.EncountersSectionImpl <em>Encounters Section</em>}' class.
@@ -1647,7 +1647,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getMedicalEquipmentSection()
 	 * @generated
 	 */
-	int MEDICAL_EQUIPMENT_SECTION = 41;
+	int MEDICAL_EQUIPMENT_SECTION = 43;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ConditionEntryImpl <em>Condition Entry</em>}' class.
@@ -3379,7 +3379,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getLanguageSpoken()
 	 * @generated
 	 */
-	int LANGUAGE_SPOKEN = 42;
+	int LANGUAGE_SPOKEN = 44;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.InsuranceProviderImpl <em>Insurance Provider</em>}' class.
@@ -3389,7 +3389,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getInsuranceProvider()
 	 * @generated
 	 */
-	int INSURANCE_PROVIDER = 43;
+	int INSURANCE_PROVIDER = 45;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.HealthcareProviderImpl <em>Healthcare Provider</em>}' class.
@@ -3399,7 +3399,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getHealthcareProvider()
 	 * @generated
 	 */
-	int HEALTHCARE_PROVIDER = 44;
+	int HEALTHCARE_PROVIDER = 46;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ImmunizationImpl <em>Immunization</em>}' class.
@@ -3419,7 +3419,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getComment()
 	 * @generated
 	 */
-	int COMMENT = 45;
+	int COMMENT = 47;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationNormalDoseImpl <em>Medication Normal Dose</em>}' class.
@@ -3429,7 +3429,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getMedicationNormalDose()
 	 * @generated
 	 */
-	int MEDICATION_NORMAL_DOSE = 46;
+	int MEDICATION_NORMAL_DOSE = 48;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationSplitDoseImpl <em>Medication Split Dose</em>}' class.
@@ -3439,7 +3439,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getMedicationSplitDose()
 	 * @generated
 	 */
-	int MEDICATION_SPLIT_DOSE = 47;
+	int MEDICATION_SPLIT_DOSE = 49;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationTaperedDoseImpl <em>Medication Tapered Dose</em>}' class.
@@ -3449,7 +3449,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getMedicationTaperedDose()
 	 * @generated
 	 */
-	int MEDICATION_TAPERED_DOSE = 48;
+	int MEDICATION_TAPERED_DOSE = 50;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationConditionalDoseImpl <em>Medication Conditional Dose</em>}' class.
@@ -3459,7 +3459,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getMedicationConditionalDose()
 	 * @generated
 	 */
-	int MEDICATION_CONDITIONAL_DOSE = 49;
+	int MEDICATION_CONDITIONAL_DOSE = 51;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationCombinationMedicationImpl <em>Medication Combination Medication</em>}' class.
@@ -3469,7 +3469,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getMedicationCombinationMedication()
 	 * @generated
 	 */
-	int MEDICATION_COMBINATION_MEDICATION = 50;
+	int MEDICATION_COMBINATION_MEDICATION = 52;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ProcedureImpl <em>Procedure</em>}' class.
@@ -5515,6 +5515,196 @@ public interface HITSPPackage extends EPackage {
 	 * @ordered
 	 */
 	int RESULT_FEATURE_COUNT = CCDPackage.RESULT_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ResultOrganizerImpl <em>Result Organizer</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.ResultOrganizerImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getResultOrganizer()
+	 * @generated
+	 */
+	int RESULT_ORGANIZER = 23;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__REALM_CODE = CCDPackage.RESULT_ORGANIZER__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__TYPE_ID = CCDPackage.RESULT_ORGANIZER__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__TEMPLATE_ID = CCDPackage.RESULT_ORGANIZER__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__ID = CCDPackage.RESULT_ORGANIZER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__CODE = CCDPackage.RESULT_ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__STATUS_CODE = CCDPackage.RESULT_ORGANIZER__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__EFFECTIVE_TIME = CCDPackage.RESULT_ORGANIZER__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__SUBJECT = CCDPackage.RESULT_ORGANIZER__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__SPECIMEN = CCDPackage.RESULT_ORGANIZER__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__PERFORMER = CCDPackage.RESULT_ORGANIZER__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__AUTHOR = CCDPackage.RESULT_ORGANIZER__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__INFORMANT = CCDPackage.RESULT_ORGANIZER__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__PARTICIPANT = CCDPackage.RESULT_ORGANIZER__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__REFERENCE = CCDPackage.RESULT_ORGANIZER__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__PRECONDITION = CCDPackage.RESULT_ORGANIZER__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__COMPONENT = CCDPackage.RESULT_ORGANIZER__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__NULL_FLAVOR = CCDPackage.RESULT_ORGANIZER__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__CLASS_CODE = CCDPackage.RESULT_ORGANIZER__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__MOOD_CODE = CCDPackage.RESULT_ORGANIZER__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Result Organizer</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER_FEATURE_COUNT = CCDPackage.RESULT_ORGANIZER_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -8361,6 +8551,286 @@ public interface HITSPPackage extends EPackage {
 	int FAMILY_HISTORY_SECTION_FEATURE_COUNT = IHEPackage.FAMILY_MEDICAL_HISTORY_SECTION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.SocialHistoryImpl <em>Social History</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.SocialHistoryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getSocialHistory()
+	 * @generated
+	 */
+	int SOCIAL_HISTORY = 42;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportImpl <em>Support</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getSupport()
+	 * @generated
+	 */
+	int SUPPORT = 53;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportGuardianImpl <em>Support Guardian</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportGuardianImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getSupportGuardian()
+	 * @generated
+	 */
+	int SUPPORT_GUARDIAN = 54;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportParticipantImpl <em>Support Participant</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportParticipantImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getSupportParticipant()
+	 * @generated
+	 */
+	int SUPPORT_PARTICIPANT = 55;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredDocumentImpl <em>Unstructured Document</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredDocumentImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getUnstructuredDocument()
+	 * @generated
+	 */
+	int UNSTRUCTURED_DOCUMENT = 56;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationInformationImpl <em>Medication Information</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationInformationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getMedicationInformation()
+	 * @generated
+	 */
+	int MEDICATION_INFORMATION = 57;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredOrScannedDocumentImpl <em>Unstructured Or Scanned Document</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredOrScannedDocumentImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getUnstructuredOrScannedDocument()
+	 * @generated
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 58;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ReferralSummaryImpl <em>Referral Summary</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.ReferralSummaryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getReferralSummary()
+	 * @generated
+	 */
+	int REFERRAL_SUMMARY = 59;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.DischargeSummaryImpl <em>Discharge Summary</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.DischargeSummaryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getDischargeSummary()
+	 * @generated
+	 */
+	int DISCHARGE_SUMMARY = 60;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.FamilyHistoryImpl <em>Family History</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.FamilyHistoryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getFamilyHistory()
+	 * @generated
+	 */
+	int FAMILY_HISTORY = 40;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__REALM_CODE = IHEPackage.FAMILY_HISTORY_ORGANIZER__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__TYPE_ID = IHEPackage.FAMILY_HISTORY_ORGANIZER__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__TEMPLATE_ID = IHEPackage.FAMILY_HISTORY_ORGANIZER__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__ID = IHEPackage.FAMILY_HISTORY_ORGANIZER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__CODE = IHEPackage.FAMILY_HISTORY_ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__STATUS_CODE = IHEPackage.FAMILY_HISTORY_ORGANIZER__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__EFFECTIVE_TIME = IHEPackage.FAMILY_HISTORY_ORGANIZER__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__SUBJECT = IHEPackage.FAMILY_HISTORY_ORGANIZER__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__SPECIMEN = IHEPackage.FAMILY_HISTORY_ORGANIZER__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__PERFORMER = IHEPackage.FAMILY_HISTORY_ORGANIZER__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__AUTHOR = IHEPackage.FAMILY_HISTORY_ORGANIZER__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__INFORMANT = IHEPackage.FAMILY_HISTORY_ORGANIZER__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__PARTICIPANT = IHEPackage.FAMILY_HISTORY_ORGANIZER__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__REFERENCE = IHEPackage.FAMILY_HISTORY_ORGANIZER__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__PRECONDITION = IHEPackage.FAMILY_HISTORY_ORGANIZER__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__COMPONENT = IHEPackage.FAMILY_HISTORY_ORGANIZER__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__NULL_FLAVOR = IHEPackage.FAMILY_HISTORY_ORGANIZER__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__CLASS_CODE = IHEPackage.FAMILY_HISTORY_ORGANIZER__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__MOOD_CODE = IHEPackage.FAMILY_HISTORY_ORGANIZER__MOOD_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Family History</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_FEATURE_COUNT = IHEPackage.FAMILY_HISTORY_ORGANIZER_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8530,16 +9000,6 @@ public interface HITSPPackage extends EPackage {
 	 * @ordered
 	 */
 	int SOCIAL_HISTORY_SECTION_FEATURE_COUNT = IHEPackage.SOCIAL_HISTORY_SECTION_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.SocialHistoryImpl <em>Social History</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.SocialHistoryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getSocialHistory()
-	 * @generated
-	 */
-	int SOCIAL_HISTORY = 40;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -10981,16 +11441,6 @@ public interface HITSPPackage extends EPackage {
 	int MEDICATION_COMBINATION_MEDICATION_FEATURE_COUNT = IHEPackage.COMBINATION_MEDICATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportImpl <em>Support</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getSupport()
-	 * @generated
-	 */
-	int SUPPORT = 51;
-
-	/**
 	 * The number of structural features of the '<em>Support</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10998,16 +11448,6 @@ public interface HITSPPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUPPORT_FEATURE_COUNT = IHEPackage.PATIENT_CONTACT_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportGuardianImpl <em>Support Guardian</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportGuardianImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getSupportGuardian()
-	 * @generated
-	 */
-	int SUPPORT_GUARDIAN = 52;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -11118,16 +11558,6 @@ public interface HITSPPackage extends EPackage {
 	int SUPPORT_GUARDIAN_FEATURE_COUNT = IHEPackage.PATIENT_CONTACT_GUARDIAN_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportParticipantImpl <em>Support Participant</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.SupportParticipantImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getSupportParticipant()
-	 * @generated
-	 */
-	int SUPPORT_PARTICIPANT = 53;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11216,16 +11646,6 @@ public interface HITSPPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUPPORT_PARTICIPANT_FEATURE_COUNT = IHEPackage.PATIENT_CONTACT_PARTICIPANT_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredDocumentImpl <em>Unstructured Document</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredDocumentImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getUnstructuredDocument()
-	 * @generated
-	 */
-	int UNSTRUCTURED_DOCUMENT = 54;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -11507,16 +11927,6 @@ public interface HITSPPackage extends EPackage {
 	int UNSTRUCTURED_DOCUMENT_FEATURE_COUNT = IHEPackage.MEDICAL_DOCUMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationInformationImpl <em>Medication Information</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationInformationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getMedicationInformation()
-	 * @generated
-	 */
-	int MEDICATION_INFORMATION = 55;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11605,16 +12015,6 @@ public interface HITSPPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION_INFORMATION_FEATURE_COUNT = IHEPackage.PRODUCT_ENTRY_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredOrScannedDocumentImpl <em>Unstructured Or Scanned Document</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.UnstructuredOrScannedDocumentImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getUnstructuredOrScannedDocument()
-	 * @generated
-	 */
-	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 56;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -11896,16 +12296,6 @@ public interface HITSPPackage extends EPackage {
 	int UNSTRUCTURED_OR_SCANNED_DOCUMENT_FEATURE_COUNT = CDTPackage.UNSTRUCTURED_DOCUMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ReferralSummaryImpl <em>Referral Summary</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.ReferralSummaryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getReferralSummary()
-	 * @generated
-	 */
-	int REFERRAL_SUMMARY = 57;
-
-	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12183,16 +12573,6 @@ public interface HITSPPackage extends EPackage {
 	 * @ordered
 	 */
 	int REFERRAL_SUMMARY_FEATURE_COUNT = IHEPackage.MEDICAL_SUMMARY_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.DischargeSummaryImpl <em>Discharge Summary</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.DischargeSummaryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getDischargeSummary()
-	 * @generated
-	 */
-	int DISCHARGE_SUMMARY = 58;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12474,196 +12854,6 @@ public interface HITSPPackage extends EPackage {
 	int DISCHARGE_SUMMARY_FEATURE_COUNT = IHEPackage.MEDICAL_SUMMARY_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.FamilyHistoryImpl <em>Family History</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.FamilyHistoryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getFamilyHistory()
-	 * @generated
-	 */
-	int FAMILY_HISTORY = 59;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__REALM_CODE = IHEPackage.FAMILY_HISTORY_ORGANIZER__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__TYPE_ID = IHEPackage.FAMILY_HISTORY_ORGANIZER__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__TEMPLATE_ID = IHEPackage.FAMILY_HISTORY_ORGANIZER__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__ID = IHEPackage.FAMILY_HISTORY_ORGANIZER__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__CODE = IHEPackage.FAMILY_HISTORY_ORGANIZER__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__STATUS_CODE = IHEPackage.FAMILY_HISTORY_ORGANIZER__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__EFFECTIVE_TIME = IHEPackage.FAMILY_HISTORY_ORGANIZER__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__SUBJECT = IHEPackage.FAMILY_HISTORY_ORGANIZER__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__SPECIMEN = IHEPackage.FAMILY_HISTORY_ORGANIZER__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__PERFORMER = IHEPackage.FAMILY_HISTORY_ORGANIZER__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__AUTHOR = IHEPackage.FAMILY_HISTORY_ORGANIZER__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__INFORMANT = IHEPackage.FAMILY_HISTORY_ORGANIZER__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__PARTICIPANT = IHEPackage.FAMILY_HISTORY_ORGANIZER__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__REFERENCE = IHEPackage.FAMILY_HISTORY_ORGANIZER__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__PRECONDITION = IHEPackage.FAMILY_HISTORY_ORGANIZER__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__COMPONENT = IHEPackage.FAMILY_HISTORY_ORGANIZER__COMPONENT;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__NULL_FLAVOR = IHEPackage.FAMILY_HISTORY_ORGANIZER__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__CLASS_CODE = IHEPackage.FAMILY_HISTORY_ORGANIZER__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__MOOD_CODE = IHEPackage.FAMILY_HISTORY_ORGANIZER__MOOD_CODE;
-
-	/**
-	 * The number of structural features of the '<em>Family History</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY_FEATURE_COUNT = IHEPackage.FAMILY_HISTORY_ORGANIZER_FEATURE_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPRegistryDelegateImpl <em>Registry Delegate</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12671,7 +12861,7 @@ public interface HITSPPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getHITSPRegistryDelegate()
 	 * @generated
 	 */
-	int HITSP_REGISTRY_DELEGATE = 60;
+	int HITSP_REGISTRY_DELEGATE = 61;
 
 	/**
 	 * The number of structural features of the '<em>Registry Delegate</em>' class.
@@ -13061,6 +13251,16 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getResult();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.ResultOrganizer <em>Result Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Result Organizer</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.ResultOrganizer
+	 * @generated
+	 */
+	EClass getResultOrganizer();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.LanguageSpoken <em>Language Spoken</em>}'.
@@ -13693,6 +13893,16 @@ public interface HITSPPackage extends EPackage {
 		 * @generated
 		 */
 		EClass RESULT = eINSTANCE.getResult();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.ResultOrganizerImpl <em>Result Organizer</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.ResultOrganizerImpl
+		 * @see org.openhealthtools.mdht.uml.cda.hitsp.impl.HITSPPackageImpl#getResultOrganizer()
+		 * @generated
+		 */
+		EClass RESULT_ORGANIZER = eINSTANCE.getResultOrganizer();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.LanguageSpokenImpl <em>Language Spoken</em>}' class.

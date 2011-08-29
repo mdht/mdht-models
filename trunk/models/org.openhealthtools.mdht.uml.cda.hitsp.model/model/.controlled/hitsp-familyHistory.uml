@@ -22,6 +22,12 @@
     <generalization xmi:id="_7ThccMigEd6mWrHPmrIIfQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-familyMedicalHistory.uml#_kKnAIMigEd6mWrHPmrIIfQ"/>
     </generalization>
+    <ownedAttribute xmi:id="_5puooNJcEeCJq4tpS2QhbQ" name="familyHistory">
+      <type xmi:type="uml:Class" href="../hitsp.uml#_kce00Mm2EeCDOYZyQPaRHg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7pvYkNJcEeCJq4tpS2QhbQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7pvYkdJcEeCJq4tpS2QhbQ" value="1"/>
+      <association href="../hitsp.uml#_5pxr8NJcEeCJq4tpS2QhbQ"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_8IgjsMigEd6mWrHPmrIIfQ" base_Class="_4Mh2UMigEd6mWrHPmrIIfQ" templateId="2.16.840.1.113883.3.88.11.83.125" assigningAuthorityName="HITSP C83"/>
   <CDA:ConformsTo xmi:id="_rGWx0FF6Ed-Lud-5SYZhMw" base_Generalization="_7ThccMigEd6mWrHPmrIIfQ" requiresParentId="true"/>

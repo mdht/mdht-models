@@ -19,6 +19,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.Result;
+import org.openhealthtools.mdht.uml.cda.hitsp.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.DiagnosticResultsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.impl.CodedResultsSectionImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -57,6 +58,15 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDiagnosticResultsSectionHasResult(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionHasResult(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateDiagnosticResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionTemplateId(this, diagnostics, context);
 	}
@@ -86,6 +96,17 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDiagnosticResultsSectionResultOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionResultOrganizer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<Procedure> getDiagnosticProcedures() {
 		return DiagnosticResultsSectionOperations.getDiagnosticProcedures(this);
 	}
@@ -97,6 +118,15 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	 */
 	public EList<Result> getResults() {
 		return DiagnosticResultsSectionOperations.getResults(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ResultOrganizer> getResultOrganizers() {
+		return DiagnosticResultsSectionOperations.getResultOrganizers(this);
 	}
 
 	/**

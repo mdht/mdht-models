@@ -94,6 +94,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.Result;
+import org.openhealthtools.mdht.uml.cda.hitsp.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistorySection;
@@ -789,6 +790,29 @@ public class HITSPSwitch<T> {
 				}
 				return theResult;
 			}
+			case HITSPPackage.RESULT_ORGANIZER: {
+				ResultOrganizer resultOrganizer = (ResultOrganizer) theEObject;
+				T result = caseResultOrganizer(resultOrganizer);
+				if (result == null) {
+					result = caseCCD_ResultOrganizer(resultOrganizer);
+				}
+				if (result == null) {
+					result = caseOrganizer(resultOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(resultOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(resultOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case HITSPPackage.VITAL_SIGN: {
 				VitalSign vitalSign = (VitalSign) theEObject;
 				T result = caseVitalSign(vitalSign);
@@ -1127,6 +1151,32 @@ public class HITSPSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(familyHistorySection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case HITSPPackage.FAMILY_HISTORY: {
+				FamilyHistory familyHistory = (FamilyHistory) theEObject;
+				T result = caseFamilyHistory(familyHistory);
+				if (result == null) {
+					result = caseIHE_FamilyHistoryOrganizer(familyHistory);
+				}
+				if (result == null) {
+					result = caseFamilyHistoryOrganizer(familyHistory);
+				}
+				if (result == null) {
+					result = caseOrganizer(familyHistory);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistory);
+				}
+				if (result == null) {
+					result = caseAct(familyHistory);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistory);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1659,32 +1709,6 @@ public class HITSPSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(dischargeSummary);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case HITSPPackage.FAMILY_HISTORY: {
-				FamilyHistory familyHistory = (FamilyHistory) theEObject;
-				T result = caseFamilyHistory(familyHistory);
-				if (result == null) {
-					result = caseIHE_FamilyHistoryOrganizer(familyHistory);
-				}
-				if (result == null) {
-					result = caseFamilyHistoryOrganizer(familyHistory);
-				}
-				if (result == null) {
-					result = caseOrganizer(familyHistory);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistory);
-				}
-				if (result == null) {
-					result = caseAct(familyHistory);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistory);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2319,6 +2343,21 @@ public class HITSPSwitch<T> {
 	 * @generated
 	 */
 	public T caseResult(Result object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResultOrganizer(ResultOrganizer object) {
 		return null;
 	}
 
@@ -4318,6 +4357,21 @@ public class HITSPSwitch<T> {
 	 * @generated
 	 */
 	public T caseOrganizer(Organizer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCCD_ResultOrganizer(org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer object) {
 		return null;
 	}
 

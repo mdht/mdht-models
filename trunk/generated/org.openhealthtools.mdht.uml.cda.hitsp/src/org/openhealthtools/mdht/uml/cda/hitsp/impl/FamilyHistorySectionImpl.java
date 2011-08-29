@@ -13,7 +13,9 @@ package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.FamilyHistorySectionOperations;
@@ -56,6 +58,25 @@ public class FamilyHistorySectionImpl extends FamilyMedicalHistorySectionImpl im
 	 */
 	public boolean validateHITSPFamilyHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistorySectionOperations.validateHITSPFamilyHistorySectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHITSPFamilyHistorySectionFamilyHistory(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistorySectionOperations.validateHITSPFamilyHistorySectionFamilyHistory(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<FamilyHistory> getFamilyHistories() {
+		return FamilyHistorySectionOperations.getFamilyHistories(this);
 	}
 
 	/**

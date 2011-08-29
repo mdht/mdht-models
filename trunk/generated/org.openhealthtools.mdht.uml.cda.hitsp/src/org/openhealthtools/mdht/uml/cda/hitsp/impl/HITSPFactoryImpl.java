@@ -67,6 +67,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.Result;
+import org.openhealthtools.mdht.uml.cda.hitsp.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistorySection;
@@ -168,6 +169,8 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 				return createDiagnosticResultsSection();
 			case HITSPPackage.RESULT:
 				return createResult();
+			case HITSPPackage.RESULT_ORGANIZER:
+				return createResultOrganizer();
 			case HITSPPackage.VITAL_SIGN:
 				return createVitalSign();
 			case HITSPPackage.HISTORY_OF_PAST_ILLNESS_SECTION:
@@ -200,6 +203,8 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 				return createAssessmentAndPlanSection();
 			case HITSPPackage.FAMILY_HISTORY_SECTION:
 				return createFamilyHistorySection();
+			case HITSPPackage.FAMILY_HISTORY:
+				return createFamilyHistory();
 			case HITSPPackage.SOCIAL_HISTORY_SECTION:
 				return createSocialHistorySection();
 			case HITSPPackage.SOCIAL_HISTORY:
@@ -240,8 +245,6 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 				return createReferralSummary();
 			case HITSPPackage.DISCHARGE_SUMMARY:
 				return createDischargeSummary();
-			case HITSPPackage.FAMILY_HISTORY:
-				return createFamilyHistory();
 			case HITSPPackage.HITSP_REGISTRY_DELEGATE:
 				return createHITSPRegistryDelegate();
 			default:
@@ -627,6 +630,16 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 	public Result createResult() {
 		ResultImpl result = new ResultImpl();
 		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultOrganizer createResultOrganizer() {
+		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
+		return resultOrganizer;
 	}
 
 	/**

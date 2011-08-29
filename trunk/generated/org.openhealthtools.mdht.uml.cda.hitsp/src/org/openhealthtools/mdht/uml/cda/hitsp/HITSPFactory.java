@@ -372,6 +372,15 @@ public interface HITSPFactory extends EFactory {
 	Result createResult();
 
 	/**
+	 * Returns a new object of class '<em>Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Organizer</em>'.
+	 * @generated
+	 */
+	ResultOrganizer createResultOrganizer();
+
+	/**
 	 * Returns a new object of class '<em>Language Spoken</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
