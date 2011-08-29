@@ -138,7 +138,7 @@ public interface IDiagnosticResultsSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * HITSP Diagnostic Results Section SHALL contain at least one [1..*] entry (C83-[CT-122-2]), such that Contains exactly one [1..1] Result (templateId: 2.16.840.1.113883.3.88.11.83.15).
+	 * HITSP Diagnostic Results Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Result (templateId: 2.16.840.1.113883.3.88.11.83.15).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
@@ -148,11 +148,42 @@ public interface IDiagnosticResultsSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * HITSP Diagnostic Results Section SHALL contain at least one [1..*] entry (C83-[CT-122-2]), such that Contains exactly one [1..1] Result (templateId: 2.16.840.1.113883.3.88.11.83.15).
+	 * HITSP Diagnostic Results Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Result (templateId: 2.16.840.1.113883.3.88.11.83.15).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	IDiagnosticResultsSection addResult(IResult value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::DiagnosticResultsSection::resultOrganizer.
+	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(domain::ResultOrganizer)).oclAsType(domain::ResultOrganizer)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IResultOrganizer> getResultOrganizers();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Diagnostic Results Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Result Organizer (templateId: 2.16.840.1.113883.10.20.1.32).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IResultOrganizer addResultOrganizer();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Diagnostic Results Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Result Organizer (templateId: 2.16.840.1.113883.10.20.1.32).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IDiagnosticResultsSection addResultOrganizer(IResultOrganizer value);
 
 	/**
 	 * <!-- begin-user-doc -->

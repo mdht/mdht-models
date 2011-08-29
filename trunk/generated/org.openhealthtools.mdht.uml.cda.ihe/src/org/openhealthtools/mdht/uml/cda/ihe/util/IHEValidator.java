@@ -9807,6 +9807,10 @@ public class IHEValidator extends EObjectValidator {
 				familyMedicalHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionFamilyHistoryOrganizer(
+				familyMedicalHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateFamilyMedicalHistorySection_validateFamilyMedicalHistorySectionTemplateId(
 				familyMedicalHistorySection, diagnostics, context);
 		}
@@ -13102,6 +13106,10 @@ public class IHEValidator extends EObjectValidator {
 				codedFamilyMedicalHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionFamilyHistoryOrganizer(
+				codedFamilyMedicalHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateFamilyMedicalHistorySection_validateFamilyMedicalHistorySectionTemplateId(
 				codedFamilyMedicalHistorySection, diagnostics, context);
 		}
@@ -13188,6 +13196,10 @@ public class IHEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerMoodCode(
+				familyHistoryOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerFamilyHistoryObservation(
 				familyHistoryOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {

@@ -112,6 +112,10 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createPatientSummary();
 			case IDomainPackage.FAMILY_HISTORY_SECTION:
 				return (EObject) createFamilyHistorySection();
+			case IDomainPackage.FAMILY_HISTORY:
+				return (EObject) createFamilyHistory();
+			case IDomainPackage.FAMILY_HISTORY_ORGANIZER:
+				return (EObject) createFamilyHistoryOrganizer();
 			case IDomainPackage.SOCIAL_HISTORY_SECTION:
 				return (EObject) createSocialHistorySection();
 			case IDomainPackage.SOCIAL_HISTORY:
@@ -124,6 +128,8 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createResultsSection();
 			case IDomainPackage.RESULT_ORGANIZER:
 				return (EObject) createResultOrganizer();
+			case IDomainPackage.RESULT:
+				return (EObject) createResult();
 			case IDomainPackage.RESULT_OBSERVATION:
 				return (EObject) createResultObservation();
 			case IDomainPackage.MEDICAL_EQUIPMENT_SECTION:
@@ -222,8 +228,6 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createVitalSignObservation();
 			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION:
 				return (EObject) createDiagnosticResultsSection();
-			case IDomainPackage.RESULT:
-				return (EObject) createResult();
 			case IDomainPackage.VITAL_SIGN:
 				return (EObject) createVitalSign();
 			case IDomainPackage.HISTORY_OF_PAST_ILLNESS_SECTION:
@@ -290,8 +294,6 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createDischargeSummary();
 			case IDomainPackage.DISCHARGE_DIET:
 				return (EObject) createDischargeDiet();
-			case IDomainPackage.FAMILY_HISTORY:
-				return (EObject) createFamilyHistory();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -1475,6 +1477,16 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	public IFamilyHistory createFamilyHistory() {
 		FamilyHistoryImpl familyHistory = new FamilyHistoryImpl();
 		return familyHistory;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IFamilyHistoryOrganizer createFamilyHistoryOrganizer() {
+		FamilyHistoryOrganizerImpl familyHistoryOrganizer = new FamilyHistoryOrganizerImpl();
+		return familyHistoryOrganizer;
 	}
 
 	/**

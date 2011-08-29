@@ -19,6 +19,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
+ * Non-template subclasss of CCD ResultOrganizer that requires entires to be HITSP Result.
+ * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <p>This clinical statement identifies set of result observations. It contains information applicable to all of the contained result observations. Result type codes categorize a result into one of several commonly accepted values (e.g., "Hematology", "Chemistry", "Nuclear Medicine"). These values are often implicit in the <tt>Organizer/code</tt> (e.g., an <tt>Organizer/code</tt> of "complete blood count" implies a <tt>ResultTypeCode</tt> of "Hematology"). This template requires <tt>Organizer/code</tt> to include a <tt>ResultTypeCode</tt> either directly or as a translation of a code from some other code system.</p>
  * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <!-- end-model-doc -->
@@ -156,37 +158,6 @@ public interface IResultOrganizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * ccd::ResultOrganizer::resultObservation.
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ResultObservation)).oclAsType(domain::ResultObservation)
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	EList<IResultObservation> getResultObservations();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * CCD Result Organizer SHALL contain at least one [1..*] component (CONF-405), such that Contains exactly one [1..1] Result Observation (templateId: 2.16.840.1.113883.10.20.1.31).
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	IResultObservation addResultObservation();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * CCD Result Organizer SHALL contain at least one [1..*] component (CONF-405), such that Contains exactly one [1..1] Result Observation (templateId: 2.16.840.1.113883.10.20.1.31).
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	IResultOrganizer addResultObservation(IResultObservation value);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * cda::Organizer::specimen.
 	 * Should be included if the specimen isn't inherent in code value.
 	 * self.getSpecimens()->select(specimen : cda::Specimen | not specimen.oclIsUndefined() and specimen.oclIsKindOf(cda::Specimen)).oclAsType(cda::Specimen)
@@ -214,6 +185,68 @@ public interface IResultOrganizer {
 	 * @generated
 	 */
 	IResultOrganizer addSpecimen(Specimen value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::ResultOrganizer::result.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::Result)).oclAsType(domain::Result)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IResult> getResults();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Result Organizer SHALL contain at least one [1..*] component, such that Contains exactly one [1..1] Result (templateId: 2.16.840.1.113883.3.88.11.83.15).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IResult addResult();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Result Organizer SHALL contain at least one [1..*] component, such that Contains exactly one [1..1] Result (templateId: 2.16.840.1.113883.3.88.11.83.15).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IResultOrganizer addResult(IResult value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * ccd::ResultOrganizer::resultObservation.
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ResultObservation)).oclAsType(domain::ResultObservation)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IResultObservation> getResultObservations();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Result Organizer SHALL contain at least one [1..*] component (CONF-405), such that Contains exactly one [1..1] Result Observation (templateId: 2.16.840.1.113883.10.20.1.31).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IResultObservation addResultObservation();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Result Organizer SHALL contain at least one [1..*] component (CONF-405), such that Contains exactly one [1..1] Result Observation (templateId: 2.16.840.1.113883.10.20.1.31).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IResultOrganizer addResultObservation(IResultObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->

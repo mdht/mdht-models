@@ -329,6 +329,22 @@ public class DomainSwitch<T> {
 				}
 				return result;
 			}
+			case IDomainPackage.FAMILY_HISTORY: {
+				IFamilyHistory familyHistory = (IFamilyHistory) theEObject;
+				T result = caseFamilyHistory(familyHistory);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.FAMILY_HISTORY_ORGANIZER: {
+				IFamilyHistoryOrganizer familyHistoryOrganizer = (IFamilyHistoryOrganizer) theEObject;
+				T result = caseFamilyHistoryOrganizer(familyHistoryOrganizer);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case IDomainPackage.SOCIAL_HISTORY_SECTION: {
 				ISocialHistorySection socialHistorySection = (ISocialHistorySection) theEObject;
 				T result = caseSocialHistorySection(socialHistorySection);
@@ -379,6 +395,14 @@ public class DomainSwitch<T> {
 					result = defaultCase(theEObject);
 				}
 				return result;
+			}
+			case IDomainPackage.RESULT: {
+				IResult result = (IResult) theEObject;
+				T theResult = caseResult(result);
+				if (theResult == null) {
+					theResult = defaultCase(theEObject);
+				}
+				return theResult;
 			}
 			case IDomainPackage.RESULT_OBSERVATION: {
 				IResultObservation resultObservation = (IResultObservation) theEObject;
@@ -802,14 +826,6 @@ public class DomainSwitch<T> {
 				}
 				return result;
 			}
-			case IDomainPackage.RESULT: {
-				IResult result = (IResult) theEObject;
-				T theResult = caseResult(result);
-				if (theResult == null) {
-					theResult = defaultCase(theEObject);
-				}
-				return theResult;
-			}
 			case IDomainPackage.VITAL_SIGN: {
 				IVitalSign vitalSign = (IVitalSign) theEObject;
 				T result = caseVitalSign(vitalSign);
@@ -1093,14 +1109,6 @@ public class DomainSwitch<T> {
 			case IDomainPackage.DISCHARGE_DIET: {
 				IDischargeDiet dischargeDiet = (IDischargeDiet) theEObject;
 				T result = caseDischargeDiet(dischargeDiet);
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case IDomainPackage.FAMILY_HISTORY: {
-				IFamilyHistory familyHistory = (IFamilyHistory) theEObject;
-				T result = caseFamilyHistory(familyHistory);
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
@@ -2878,6 +2886,21 @@ public class DomainSwitch<T> {
 	 * @generated
 	 */
 	public T caseFamilyHistory(IFamilyHistory object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Family History Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Family History Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFamilyHistoryOrganizer(IFamilyHistoryOrganizer object) {
 		return null;
 	}
 

@@ -58,7 +58,7 @@ public interface CodedFamilyMedicalHistorySection extends FamilyMedicalHistorySe
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(ihe::FamilyHistoryOrganizer))->asSequence()->first().oclAsType(ihe::FamilyHistoryOrganizer)'"
 	 * @generated
 	 */
-	FamilyHistoryOrganizer getFamilyHistoryOrganizer();
+	FamilyHistoryOrganizer getIHEFamilyHistoryOrganizer();
 
 	/**
 	 * <!-- begin-user-doc -->

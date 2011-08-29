@@ -5435,8 +5435,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(
-			codedFamilyMedicalHistorySectionEClass, this.getFamilyHistoryOrganizer(), "getFamilyHistoryOrganizer", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+			codedFamilyMedicalHistorySectionEClass, this.getFamilyHistoryOrganizer(), "getIHEFamilyHistoryOrganizer",
+			1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
 			familyHistoryOrganizerEClass, FamilyHistoryOrganizer.class, "FamilyHistoryOrganizer", !IS_ABSTRACT,
@@ -5476,7 +5476,7 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(
-			familyHistoryOrganizerEClass, this.getFamilyHistoryObservation(), "getFamilyHistoryObservations", 1, -1,
+			familyHistoryOrganizerEClass, this.getFamilyHistoryObservation(), "getIHEFamilyHistoryObservations", 1, -1,
 			IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(

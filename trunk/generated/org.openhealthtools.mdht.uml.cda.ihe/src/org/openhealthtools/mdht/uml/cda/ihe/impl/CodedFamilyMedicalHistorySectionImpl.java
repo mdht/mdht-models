@@ -73,8 +73,8 @@ public class CodedFamilyMedicalHistorySectionImpl extends FamilyMedicalHistorySe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FamilyHistoryOrganizer getFamilyHistoryOrganizer() {
-		return CodedFamilyMedicalHistorySectionOperations.getFamilyHistoryOrganizer(this);
+	public FamilyHistoryOrganizer getIHEFamilyHistoryOrganizer() {
+		return CodedFamilyMedicalHistorySectionOperations.getIHEFamilyHistoryOrganizer(this);
 	}
 
 	/**
