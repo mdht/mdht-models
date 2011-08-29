@@ -94,6 +94,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReferralSummary;
 import org.openhealthtools.mdht.uml.cda.hitsp.Result;
+import org.openhealthtools.mdht.uml.cda.hitsp.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.SocialHistorySection;
@@ -314,6 +315,11 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseResultOrganizer(ResultOrganizer object) {
+			return createResultOrganizerAdapter();
+		}
+
+		@Override
 		public Adapter caseVitalSign(VitalSign object) {
 			return createVitalSignAdapter();
 		}
@@ -391,6 +397,11 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseFamilyHistorySection(FamilyHistorySection object) {
 			return createFamilyHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistory(FamilyHistory object) {
+			return createFamilyHistoryAdapter();
 		}
 
 		@Override
@@ -491,11 +502,6 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseDischargeSummary(DischargeSummary object) {
 			return createDischargeSummaryAdapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistory(FamilyHistory object) {
-			return createFamilyHistoryAdapter();
 		}
 
 		@Override
@@ -789,6 +795,16 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseOrganizer(Organizer object) {
+			return createOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseCCD_ResultOrganizer(org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer object) {
+			return createCCD_ResultOrganizerAdapter();
+		}
+
+		@Override
 		public Adapter caseVitalSignObservation(VitalSignObservation object) {
 			return createVitalSignObservationAdapter();
 		}
@@ -901,6 +917,16 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseFamilyMedicalHistorySection(FamilyMedicalHistorySection object) {
 			return createFamilyMedicalHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryOrganizer(FamilyHistoryOrganizer object) {
+			return createFamilyHistoryOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseIHE_FamilyHistoryOrganizer(org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer object) {
+			return createIHE_FamilyHistoryOrganizerAdapter();
 		}
 
 		@Override
@@ -1078,21 +1104,6 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseMedicalSummary(MedicalSummary object) {
 			return createMedicalSummaryAdapter();
-		}
-
-		@Override
-		public Adapter caseOrganizer(Organizer object) {
-			return createOrganizerAdapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistoryOrganizer(FamilyHistoryOrganizer object) {
-			return createFamilyHistoryOrganizerAdapter();
-		}
-
-		@Override
-		public Adapter caseIHE_FamilyHistoryOrganizer(org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer object) {
-			return createIHE_FamilyHistoryOrganizerAdapter();
 		}
 
 		@Override
@@ -1690,6 +1701,20 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createResultAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.ResultOrganizer <em>Result Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.ResultOrganizer
+	 * @generated
+	 */
+	public Adapter createResultOrganizerAdapter() {
 		return null;
 	}
 
@@ -3552,6 +3577,20 @@ public class HITSPAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createOrganizerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer <em>Result Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer
+	 * @generated
+	 */
+	public Adapter createCCD_ResultOrganizerAdapter() {
 		return null;
 	}
 
