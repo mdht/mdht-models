@@ -493,6 +493,112 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
+			case CCDPackage.FAMILY_HISTORY_ORGANIZER: {
+				FamilyHistoryOrganizer familyHistoryOrganizer = (FamilyHistoryOrganizer) theEObject;
+				T result = caseFamilyHistoryOrganizer(familyHistoryOrganizer);
+				if (result == null) {
+					result = caseOrganizer(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.FAMILY_HISTORY_OBSERVATION: {
+				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation) theEObject;
+				T result = caseFamilyHistoryObservation(familyHistoryObservation);
+				if (result == null) {
+					result = caseObservation(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseAct(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.AGE_OBSERVATION: {
+				AgeObservation ageObservation = (AgeObservation) theEObject;
+				T result = caseAgeObservation(ageObservation);
+				if (result == null) {
+					result = caseObservation(ageObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(ageObservation);
+				}
+				if (result == null) {
+					result = caseAct(ageObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(ageObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.PROBLEM_STATUS_OBSERVATION: {
+				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation) theEObject;
+				T result = caseProblemStatusObservation(problemStatusObservation);
+				if (result == null) {
+					result = caseStatusObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(problemStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION: {
+				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation) theEObject;
+				T result = caseCauseOfDeathObservation(causeOfDeathObservation);
+				if (result == null) {
+					result = caseFamilyHistoryObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseAct(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case CCDPackage.SOCIAL_HISTORY_SECTION: {
 				SocialHistorySection socialHistorySection = (SocialHistorySection) theEObject;
 				T result = caseSocialHistorySection(socialHistorySection);
@@ -675,26 +781,6 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(encountersActivity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.AGE_OBSERVATION: {
-				AgeObservation ageObservation = (AgeObservation) theEObject;
-				T result = caseAgeObservation(ageObservation);
-				if (result == null) {
-					result = caseObservation(ageObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(ageObservation);
-				}
-				if (result == null) {
-					result = caseAct(ageObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(ageObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -1132,29 +1218,6 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
-			case CCDPackage.PROBLEM_STATUS_OBSERVATION: {
-				ProblemStatusObservation problemStatusObservation = (ProblemStatusObservation) theEObject;
-				T result = caseProblemStatusObservation(problemStatusObservation);
-				if (result == null) {
-					result = caseStatusObservation(problemStatusObservation);
-				}
-				if (result == null) {
-					result = caseObservation(problemStatusObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(problemStatusObservation);
-				}
-				if (result == null) {
-					result = caseAct(problemStatusObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(problemStatusObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION: {
 				ProblemHealthStatusObservation problemHealthStatusObservation = (ProblemHealthStatusObservation) theEObject;
 				T result = caseProblemHealthStatusObservation(problemHealthStatusObservation);
@@ -1189,69 +1252,6 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(patientAwareness);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.FAMILY_HISTORY_OBSERVATION: {
-				FamilyHistoryObservation familyHistoryObservation = (FamilyHistoryObservation) theEObject;
-				T result = caseFamilyHistoryObservation(familyHistoryObservation);
-				if (result == null) {
-					result = caseObservation(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION: {
-				CauseOfDeathObservation causeOfDeathObservation = (CauseOfDeathObservation) theEObject;
-				T result = caseCauseOfDeathObservation(causeOfDeathObservation);
-				if (result == null) {
-					result = caseFamilyHistoryObservation(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseObservation(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseAct(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(causeOfDeathObservation);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.FAMILY_HISTORY_ORGANIZER: {
-				FamilyHistoryOrganizer familyHistoryOrganizer = (FamilyHistoryOrganizer) theEObject;
-				T result = caseFamilyHistoryOrganizer(familyHistoryOrganizer);
-				if (result == null) {
-					result = caseOrganizer(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = caseAct(familyHistoryOrganizer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(familyHistoryOrganizer);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

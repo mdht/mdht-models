@@ -37,6 +37,11 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q6mWkcjsEeChgrgmBsw26A" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_zvi7cNJXEeCZxdqWGSM1Gw" name="familyHistoryOrganizer" type="_9QFYgGwWEd6q29qQGU-SBA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2todMNJXEeCZxdqWGSM1Gw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2todMdJXEeCZxdqWGSM1Gw" value="1"/>
+      <association href="../ccd.uml#_zvjigdJXEeCZxdqWGSM1Gw"/>
+    </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_7tlrAGwWEd6q29qQGU-SBA" name="FamilyHistoryObservation">
     <ownedRule xmi:id="_Fb8_QMj2EeChgrgmBsw26A" name="hasSubject" constrainedElement="_7tlrAGwWEd6q29qQGU-SBA">
@@ -301,6 +306,11 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smsII8jwEeChgrgmBsw26A" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z5I4MErcEd6FXKclYGEDCw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_ILlyIMjyEeChgrgmBsw26A" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_CqdbkNJYEeCZxdqWGSM1Gw" name="familyHistoryObservation" type="_7tlrAGwWEd6q29qQGU-SBA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EvbkANJYEeCZxdqWGSM1Gw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EvbkAdJYEeCZxdqWGSM1Gw" value="1"/>
+      <association href="../ccd.uml#_CqeCoNJYEeCZxdqWGSM1Gw"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Class xmi:id="_joG2YIHbEd6Ncrr6L3Ublw" name="CauseOfDeathObservation">

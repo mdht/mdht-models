@@ -906,6 +906,20 @@
       <memberEnd href=".controlled/ccd-advanceDirectives.uml#_F7fRQMzjEeCvbrjDQpuvkw"/>
       <memberEnd href="#_F7fRQ8zjEeCvbrjDQpuvkw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zvjigdJXEeCZxdqWGSM1Gw">
+      <ownedEnd xmi:id="_zvjigtJXEeCZxdqWGSM1Gw" association="_zvjigdJXEeCZxdqWGSM1Gw">
+        <type xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_5ET7oGwWEd6q29qQGU-SBA"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-familyHistory.uml#_zvi7cNJXEeCZxdqWGSM1Gw"/>
+      <memberEnd href="#_zvjigtJXEeCZxdqWGSM1Gw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CqeCoNJYEeCZxdqWGSM1Gw">
+      <ownedEnd xmi:id="_CqeCodJYEeCZxdqWGSM1Gw" association="_CqeCoNJYEeCZxdqWGSM1Gw">
+        <type xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_9QFYgGwWEd6q29qQGU-SBA"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/ccd-familyHistory.uml#_CqdbkNJYEeCZxdqWGSM1Gw"/>
+      <memberEnd href="#_CqeCodJYEeCZxdqWGSM1Gw"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -1351,4 +1365,6 @@
   <CDA:ConstraintValidation xmi:id="_2cRUwMzjEeCvbrjDQpuvkw" severity="INFO" base_Constraint="_oc7FAMzjEeCvbrjDQpuvkw"/>
   <CDA:ConstraintValidation xmi:id="_37MJ0MzjEeCvbrjDQpuvkw" base_Constraint="_T6zr0MzjEeCvbrjDQpuvkw"/>
   <CDA:ConstraintValidation xmi:id="_4jNMEMzjEeCvbrjDQpuvkw" base_Constraint="_50OkgMziEeCvbrjDQpuvkw"/>
+  <CDA:AssociationValidation xmi:id="_1LO2UNJXEeCZxdqWGSM1Gw" severity="INFO" base_Association="_zvjigdJXEeCZxdqWGSM1Gw"/>
+  <CDA:AssociationValidation xmi:id="_FP6a4NJYEeCZxdqWGSM1Gw" severity="WARNING" base_Association="_CqeCoNJYEeCZxdqWGSM1Gw"/>
 </xmi:XMI>

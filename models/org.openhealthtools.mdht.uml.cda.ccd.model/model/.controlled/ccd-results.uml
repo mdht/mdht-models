@@ -182,6 +182,11 @@
     <generalization xmi:id="_eOylIHDAEd6eItyqb1FoWg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
+    <ownedAttribute xmi:id="_NMS5QNJxEeC41uAULQUMQw" name="classCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_PfGpYNJxEeC41uAULQUMQw" value="OBS"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_G2B90K6sEd6_ioDelDcPPg" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_G2B90a6sEd6_ioDelDcPPg" name="EVN">

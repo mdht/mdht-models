@@ -166,6 +166,16 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createEpisodeObservation();
 			case CCDPackage.FAMILY_HISTORY_SECTION:
 				return createFamilyHistorySection();
+			case CCDPackage.FAMILY_HISTORY_ORGANIZER:
+				return createFamilyHistoryOrganizer();
+			case CCDPackage.FAMILY_HISTORY_OBSERVATION:
+				return createFamilyHistoryObservation();
+			case CCDPackage.AGE_OBSERVATION:
+				return createAgeObservation();
+			case CCDPackage.PROBLEM_STATUS_OBSERVATION:
+				return createProblemStatusObservation();
+			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION:
+				return createCauseOfDeathObservation();
 			case CCDPackage.SOCIAL_HISTORY_SECTION:
 				return createSocialHistorySection();
 			case CCDPackage.SOCIAL_HISTORY_OBSERVATION:
@@ -186,8 +196,6 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createEncountersSection();
 			case CCDPackage.ENCOUNTERS_ACTIVITY:
 				return createEncountersActivity();
-			case CCDPackage.AGE_OBSERVATION:
-				return createAgeObservation();
 			case CCDPackage.PLAN_OF_CARE_SECTION:
 				return createPlanOfCareSection();
 			case CCDPackage.PLAN_OF_CARE_ACTIVITY_ACT:
@@ -230,18 +238,10 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createPurposeActivity();
 			case CCDPackage.PROBLEM_OBSERVATION:
 				return createProblemObservation();
-			case CCDPackage.PROBLEM_STATUS_OBSERVATION:
-				return createProblemStatusObservation();
 			case CCDPackage.PROBLEM_HEALTH_STATUS_OBSERVATION:
 				return createProblemHealthStatusObservation();
 			case CCDPackage.PATIENT_AWARENESS:
 				return createPatientAwareness();
-			case CCDPackage.FAMILY_HISTORY_OBSERVATION:
-				return createFamilyHistoryObservation();
-			case CCDPackage.CAUSE_OF_DEATH_OBSERVATION:
-				return createCauseOfDeathObservation();
-			case CCDPackage.FAMILY_HISTORY_ORGANIZER:
-				return createFamilyHistoryOrganizer();
 			case CCDPackage.ALERT_OBSERVATION:
 				return createAlertObservation();
 			case CCDPackage.ALERT_STATUS_OBSERVATION:
