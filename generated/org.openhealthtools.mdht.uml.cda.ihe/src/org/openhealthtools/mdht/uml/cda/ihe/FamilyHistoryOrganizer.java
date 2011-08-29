@@ -74,7 +74,7 @@ public interface FamilyHistoryOrganizer extends org.openhealthtools.mdht.uml.cda
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::FamilyHistoryObservation)).oclAsType(ihe::FamilyHistoryObservation)'"
 	 * @generated
 	 */
-	EList<FamilyHistoryObservation> getFamilyHistoryObservations();
+	EList<FamilyHistoryObservation> getIHEFamilyHistoryObservations();
 
 	/**
 	 * <!-- begin-user-doc -->

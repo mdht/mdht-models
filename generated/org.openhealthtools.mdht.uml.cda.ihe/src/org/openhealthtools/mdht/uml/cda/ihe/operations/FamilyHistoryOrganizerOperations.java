@@ -36,7 +36,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer#validateIHEFamilyHistoryOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IHE Family History Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer#validateIHEFamilyHistoryOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IHE Family History Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer#validateIHEFamilyHistoryOrganizerFamilyHistoryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IHE Family History Organizer Family History Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer#getFamilyHistoryObservations() <em>Get Family History Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer#getIHEFamilyHistoryObservations() <em>Get IHE Family History Observations</em>}</li>
  * </ul>
  * </p>
  *
@@ -227,24 +227,24 @@ public class FamilyHistoryOrganizerOperations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getFamilyHistoryObservations(FamilyHistoryOrganizer) <em>Get Family History Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getIHEFamilyHistoryObservations(FamilyHistoryOrganizer) <em>Get IHE Family History Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFamilyHistoryObservations(FamilyHistoryOrganizer)
+	 * @see #getIHEFamilyHistoryObservations(FamilyHistoryOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_FAMILY_HISTORY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::FamilyHistoryObservation)).oclAsType(ihe::FamilyHistoryObservation)";
+	protected static final String GET_IHE_FAMILY_HISTORY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::FamilyHistoryObservation)).oclAsType(ihe::FamilyHistoryObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getFamilyHistoryObservations(FamilyHistoryOrganizer) <em>Get Family History Observations</em>}' query operation.
+	 * The cached OCL query for the '{@link #getIHEFamilyHistoryObservations(FamilyHistoryOrganizer) <em>Get IHE Family History Observations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFamilyHistoryObservations(FamilyHistoryOrganizer)
+	 * @see #getIHEFamilyHistoryObservations(FamilyHistoryOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_FAMILY_HISTORY_OBSERVATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_IHE_FAMILY_HISTORY_OBSERVATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -255,20 +255,20 @@ public class FamilyHistoryOrganizerOperations extends
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static EList<FamilyHistoryObservation> getFamilyHistoryObservations(
+	public static EList<FamilyHistoryObservation> getIHEFamilyHistoryObservations(
 			FamilyHistoryOrganizer familyHistoryOrganizer) {
-		if (GET_FAMILY_HISTORY_OBSERVATIONS__EOCL_QRY == null) {
+		if (GET_IHE_FAMILY_HISTORY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER,
-				IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER.getEAllOperations().get(58));
+				IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER.getEAllOperations().get(60));
 			try {
-				GET_FAMILY_HISTORY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_OBSERVATIONS__EOCL_EXP);
+				GET_IHE_FAMILY_HISTORY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_IHE_FAMILY_HISTORY_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FAMILY_HISTORY_OBSERVATIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_IHE_FAMILY_HISTORY_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FamilyHistoryObservation> result = (Collection<FamilyHistoryObservation>) query.evaluate(familyHistoryOrganizer);
 		return new BasicEList.UnmodifiableEList<FamilyHistoryObservation>(result.size(), result.toArray());

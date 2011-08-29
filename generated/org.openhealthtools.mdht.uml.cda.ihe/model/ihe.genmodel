@@ -1327,7 +1327,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedFamilyMedicalHistorySection/CodedFamilyMedicalHistorySectionFamilyHistoryOrganizer/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedFamilyMedicalHistorySection/CodedFamilyMedicalHistorySectionFamilyHistoryOrganizer/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedFamilyMedicalHistorySection/getFamilyHistoryOrganizer"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedFamilyMedicalHistorySection/getIHEFamilyHistoryOrganizer"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//FamilyHistoryOrganizer">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerTemplateId">
@@ -1342,7 +1342,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerFamilyHistoryObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerFamilyHistoryObservation/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//FamilyHistoryOrganizer/getFamilyHistoryObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//FamilyHistoryOrganizer/getIHEFamilyHistoryObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//FamilyHistoryObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//FamilyHistoryObservation/IHEFamilyHistoryObservationCode">

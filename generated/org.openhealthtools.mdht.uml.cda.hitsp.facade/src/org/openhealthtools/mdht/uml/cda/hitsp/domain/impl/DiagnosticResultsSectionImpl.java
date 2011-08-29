@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IExternalReference;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IProcedure;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResult;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -333,6 +334,85 @@ public class DiagnosticResultsSectionImpl extends EObjectImpl implements IDiagno
 	 * @generated
 	 */
 	public IDiagnosticResultsSection addResult(IResult value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getResultOrganizers() <em>Get Result Organizers</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResultOrganizers()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(domain::ResultOrganizer)).oclAsType(domain::ResultOrganizer)";
+
+	/**
+	 * The cached OCL query for the '{@link #getResultOrganizers() <em>Get Result Organizers</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResultOrganizers()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_RESULT_ORGANIZERS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<IResultOrganizer> getResultOrganizers() {
+		if (GET_RESULT_ORGANIZERS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDiagnosticResultsSection(),
+				IDomainPackage.eINSTANCE.getDiagnosticResultsSection().getEAllOperations().get(9));
+			try {
+				GET_RESULT_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_RESULT_ORGANIZERS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_RESULT_ORGANIZERS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<IResultOrganizer> result = (Collection<IResultOrganizer>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IResultOrganizer>(result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IResultOrganizer addResultOrganizer() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/hitsp");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/hitsp");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ResultOrganizer");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		try {
+			java.lang.reflect.Method initMethod = eObject.getClass().getMethod("init", new java.lang.Class[0]);
+			initMethod.invoke(eObject, new Object[0]);
+		} catch (Exception e) {
+			// no init() method
+		}
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ResultOrganizer");
+		IResultOrganizer value = (IResultOrganizer) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Organizer) eObject);
+		this.getCDAType().addOrganizer((org.openhealthtools.mdht.uml.cda.Organizer) eObject);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IDiagnosticResultsSection addResultOrganizer(IResultOrganizer value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();

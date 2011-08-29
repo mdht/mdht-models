@@ -1088,6 +1088,15 @@ public interface IDomainFactory extends EFactory {
 	IFamilyHistory createFamilyHistory();
 
 	/**
+	 * Returns a new object of class '<em>Family History Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Family History Organizer</em>'.
+	 * @generated
+	 */
+	IFamilyHistoryOrganizer createFamilyHistoryOrganizer();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

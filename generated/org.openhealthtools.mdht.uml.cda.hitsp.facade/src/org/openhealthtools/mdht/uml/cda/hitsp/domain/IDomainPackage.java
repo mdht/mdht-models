@@ -447,7 +447,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdvanceDirectivesSection()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVES_SECTION = 43;
+	int ADVANCE_DIRECTIVES_SECTION = 46;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveImpl <em>Advance Directive</em>}' class.
@@ -457,7 +457,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdvanceDirective()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVE = 44;
+	int ADVANCE_DIRECTIVE = 47;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveVerificationImpl <em>Advance Directive Verification</em>}' class.
@@ -467,7 +467,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdvanceDirectiveVerification()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION = 45;
+	int ADVANCE_DIRECTIVE_VERIFICATION = 48;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveStatusObservationImpl <em>Advance Directive Status Observation</em>}' class.
@@ -477,7 +477,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdvanceDirectiveStatusObservation()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVE_STATUS_OBSERVATION = 46;
+	int ADVANCE_DIRECTIVE_STATUS_OBSERVATION = 49;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdvanceDirectiveReferenceImpl <em>Advance Directive Reference</em>}' class.
@@ -487,7 +487,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdvanceDirectiveReference()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVE_REFERENCE = 47;
+	int ADVANCE_DIRECTIVE_REFERENCE = 50;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AllergiesReactionsSectionImpl <em>Allergies Reactions Section</em>}' class.
@@ -497,7 +497,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAllergiesReactionsSection()
 	 * @generated
 	 */
-	int ALLERGIES_REACTIONS_SECTION = 48;
+	int ALLERGIES_REACTIONS_SECTION = 51;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.CommentImpl <em>Comment</em>}' class.
@@ -881,7 +881,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProblemListSection()
 	 * @generated
 	 */
-	int PROBLEM_LIST_SECTION = 49;
+	int PROBLEM_LIST_SECTION = 52;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EncountersSectionImpl <em>Encounters Section</em>}' class.
@@ -891,7 +891,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getEncountersSection()
 	 * @generated
 	 */
-	int ENCOUNTERS_SECTION = 50;
+	int ENCOUNTERS_SECTION = 53;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EncountersActivityImpl <em>Encounters Activity</em>}' class.
@@ -901,7 +901,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getEncountersActivity()
 	 * @generated
 	 */
-	int ENCOUNTERS_ACTIVITY = 51;
+	int ENCOUNTERS_ACTIVITY = 54;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EncounterLocationImpl <em>Encounter Location</em>}' class.
@@ -911,7 +911,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getEncounterLocation()
 	 * @generated
 	 */
-	int ENCOUNTER_LOCATION = 52;
+	int ENCOUNTER_LOCATION = 55;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.EncounterImpl <em>Encounter</em>}' class.
@@ -921,7 +921,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getEncounter()
 	 * @generated
 	 */
-	int ENCOUNTER = 53;
+	int ENCOUNTER = 56;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ImmunizationsSectionImpl <em>Immunizations Section</em>}' class.
@@ -931,7 +931,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getImmunizationsSection()
 	 * @generated
 	 */
-	int IMMUNIZATIONS_SECTION = 54;
+	int IMMUNIZATIONS_SECTION = 57;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ImmunizationImpl <em>Immunization</em>}' class.
@@ -941,7 +941,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getImmunization()
 	 * @generated
 	 */
-	int IMMUNIZATION = 55;
+	int IMMUNIZATION = 58;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PayersSectionImpl <em>Payers Section</em>}' class.
@@ -951,7 +951,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPayersSection()
 	 * @generated
 	 */
-	int PAYERS_SECTION = 56;
+	int PAYERS_SECTION = 59;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.CoverageEntryImpl <em>Coverage Entry</em>}' class.
@@ -961,7 +961,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getCoverageEntry()
 	 * @generated
 	 */
-	int COVERAGE_ENTRY = 57;
+	int COVERAGE_ENTRY = 60;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PolicyActivityImpl <em>Policy Activity</em>}' class.
@@ -971,7 +971,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPolicyActivity()
 	 * @generated
 	 */
-	int POLICY_ACTIVITY = 58;
+	int POLICY_ACTIVITY = 61;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PayerEntityImpl <em>Payer Entity</em>}' class.
@@ -981,7 +981,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPayerEntity()
 	 * @generated
 	 */
-	int PAYER_ENTITY = 59;
+	int PAYER_ENTITY = 62;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.CoveredPartyImpl <em>Covered Party</em>}' class.
@@ -991,7 +991,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getCoveredParty()
 	 * @generated
 	 */
-	int COVERED_PARTY = 60;
+	int COVERED_PARTY = 63;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PolicySubscriberImpl <em>Policy Subscriber</em>}' class.
@@ -1001,7 +1001,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPolicySubscriber()
 	 * @generated
 	 */
-	int POLICY_SUBSCRIBER = 61;
+	int POLICY_SUBSCRIBER = 64;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationsSectionImpl <em>Medications Section</em>}' class.
@@ -1011,7 +1011,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationsSection()
 	 * @generated
 	 */
-	int MEDICATIONS_SECTION = 62;
+	int MEDICATIONS_SECTION = 65;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareSectionImpl <em>Plan Of Care Section</em>}' class.
@@ -1021,7 +1021,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareSection()
 	 * @generated
 	 */
-	int PLAN_OF_CARE_SECTION = 63;
+	int PLAN_OF_CARE_SECTION = 66;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityImpl <em>Plan Of Care Activity</em>}' class.
@@ -1031,7 +1031,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivity()
 	 * @generated
 	 */
-	int PLAN_OF_CARE_ACTIVITY = 65;
+	int PLAN_OF_CARE_ACTIVITY = 68;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityActImpl <em>Plan Of Care Activity Act</em>}' class.
@@ -1041,7 +1041,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivityAct()
 	 * @generated
 	 */
-	int PLAN_OF_CARE_ACTIVITY_ACT = 64;
+	int PLAN_OF_CARE_ACTIVITY_ACT = 67;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityEncounterImpl <em>Plan Of Care Activity Encounter</em>}' class.
@@ -1051,7 +1051,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivityEncounter()
 	 * @generated
 	 */
-	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER = 66;
+	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER = 69;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityObservationImpl <em>Plan Of Care Activity Observation</em>}' class.
@@ -1061,7 +1061,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivityObservation()
 	 * @generated
 	 */
-	int PLAN_OF_CARE_ACTIVITY_OBSERVATION = 67;
+	int PLAN_OF_CARE_ACTIVITY_OBSERVATION = 70;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivityProcedureImpl <em>Plan Of Care Activity Procedure</em>}' class.
@@ -1071,7 +1071,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivityProcedure()
 	 * @generated
 	 */
-	int PLAN_OF_CARE_ACTIVITY_PROCEDURE = 68;
+	int PLAN_OF_CARE_ACTIVITY_PROCEDURE = 71;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivitySubstanceAdministrationImpl <em>Plan Of Care Activity Substance Administration</em>}' class.
@@ -1081,7 +1081,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivitySubstanceAdministration()
 	 * @generated
 	 */
-	int PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION = 69;
+	int PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION = 72;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PlanOfCareActivitySupplyImpl <em>Plan Of Care Activity Supply</em>}' class.
@@ -1091,7 +1091,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPlanOfCareActivitySupply()
 	 * @generated
 	 */
-	int PLAN_OF_CARE_ACTIVITY_SUPPLY = 70;
+	int PLAN_OF_CARE_ACTIVITY_SUPPLY = 73;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SurgeriesSectionImpl <em>Surgeries Section</em>}' class.
@@ -1101,7 +1101,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSurgeriesSection()
 	 * @generated
 	 */
-	int SURGERIES_SECTION = 74;
+	int SURGERIES_SECTION = 77;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProcedureImpl <em>Procedure</em>}' class.
@@ -1111,7 +1111,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProcedure()
 	 * @generated
 	 */
-	int PROCEDURE = 71;
+	int PROCEDURE = 74;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PregnancyHistorySectionImpl <em>Pregnancy History Section</em>}' class.
@@ -1121,7 +1121,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPregnancyHistorySection()
 	 * @generated
 	 */
-	int PREGNANCY_HISTORY_SECTION = 72;
+	int PREGNANCY_HISTORY_SECTION = 75;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PregnancyObservationImpl <em>Pregnancy Observation</em>}' class.
@@ -1131,7 +1131,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPregnancyObservation()
 	 * @generated
 	 */
-	int PREGNANCY_OBSERVATION = 73;
+	int PREGNANCY_OBSERVATION = 76;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ExternalReferenceImpl <em>External Reference</em>}' class.
@@ -1141,7 +1141,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getExternalReference()
 	 * @generated
 	 */
-	int EXTERNAL_REFERENCE = 75;
+	int EXTERNAL_REFERENCE = 78;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProcedureEntryImpl <em>Procedure Entry</em>}' class.
@@ -1151,7 +1151,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProcedureEntry()
 	 * @generated
 	 */
-	int PROCEDURE_ENTRY = 77;
+	int PROCEDURE_ENTRY = 80;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ProcedureEntryProcedureActivityProcedureImpl <em>Procedure Entry Procedure Activity Procedure</em>}' class.
@@ -1161,7 +1161,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getProcedureEntryProcedureActivityProcedure()
 	 * @generated
 	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE = 76;
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE = 79;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportImpl <em>Support</em>}' class.
@@ -1171,7 +1171,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupport()
 	 * @generated
 	 */
-	int SUPPORT = 78;
+	int SUPPORT = 81;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.VitalSignsSectionImpl <em>Vital Signs Section</em>}' class.
@@ -1181,7 +1181,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getVitalSignsSection()
 	 * @generated
 	 */
-	int VITAL_SIGNS_SECTION = 79;
+	int VITAL_SIGNS_SECTION = 82;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.VitalSignsOrganizerImpl <em>Vital Signs Organizer</em>}' class.
@@ -1191,7 +1191,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getVitalSignsOrganizer()
 	 * @generated
 	 */
-	int VITAL_SIGNS_ORGANIZER = 80;
+	int VITAL_SIGNS_ORGANIZER = 83;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.VitalSignObservationImpl <em>Vital Sign Observation</em>}' class.
@@ -1201,7 +1201,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getVitalSignObservation()
 	 * @generated
 	 */
-	int VITAL_SIGN_OBSERVATION = 81;
+	int VITAL_SIGN_OBSERVATION = 84;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DiagnosticResultsSectionImpl <em>Diagnostic Results Section</em>}' class.
@@ -1211,7 +1211,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDiagnosticResultsSection()
 	 * @generated
 	 */
-	int DIAGNOSTIC_RESULTS_SECTION = 82;
+	int DIAGNOSTIC_RESULTS_SECTION = 85;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultImpl <em>Result</em>}' class.
@@ -1221,7 +1221,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResult()
 	 * @generated
 	 */
-	int RESULT = 83;
+	int RESULT = 36;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.VitalSignImpl <em>Vital Sign</em>}' class.
@@ -1231,7 +1231,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getVitalSign()
 	 * @generated
 	 */
-	int VITAL_SIGN = 84;
+	int VITAL_SIGN = 86;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HistoryOfPastIllnessSectionImpl <em>History Of Past Illness Section</em>}' class.
@@ -1241,7 +1241,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHistoryOfPastIllnessSection()
 	 * @generated
 	 */
-	int HISTORY_OF_PAST_ILLNESS_SECTION = 85;
+	int HISTORY_OF_PAST_ILLNESS_SECTION = 87;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ChiefComplaintSectionImpl <em>Chief Complaint Section</em>}' class.
@@ -1251,7 +1251,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getChiefComplaintSection()
 	 * @generated
 	 */
-	int CHIEF_COMPLAINT_SECTION = 86;
+	int CHIEF_COMPLAINT_SECTION = 88;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReasonForReferralSectionImpl <em>Reason For Referral Section</em>}' class.
@@ -1261,7 +1261,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getReasonForReferralSection()
 	 * @generated
 	 */
-	int REASON_FOR_REFERRAL_SECTION = 87;
+	int REASON_FOR_REFERRAL_SECTION = 89;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HistoryOfPresentIllnessImpl <em>History Of Present Illness</em>}' class.
@@ -1271,7 +1271,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHistoryOfPresentIllness()
 	 * @generated
 	 */
-	int HISTORY_OF_PRESENT_ILLNESS = 88;
+	int HISTORY_OF_PRESENT_ILLNESS = 90;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FunctionalStatusSectionImpl <em>Functional Status Section</em>}' class.
@@ -1281,7 +1281,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFunctionalStatusSection()
 	 * @generated
 	 */
-	int FUNCTIONAL_STATUS_SECTION = 40;
+	int FUNCTIONAL_STATUS_SECTION = 43;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PurposeSectionImpl <em>Purpose Section</em>}' class.
@@ -1291,7 +1291,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPurposeSection()
 	 * @generated
 	 */
-	int PURPOSE_SECTION = 41;
+	int PURPOSE_SECTION = 44;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PurposeActivityImpl <em>Purpose Activity</em>}' class.
@@ -1301,7 +1301,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPurposeActivity()
 	 * @generated
 	 */
-	int PURPOSE_ACTIVITY = 42;
+	int PURPOSE_ACTIVITY = 45;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HospitalAdmissionDiagnosisSectionImpl <em>Hospital Admission Diagnosis Section</em>}' class.
@@ -1311,7 +1311,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHospitalAdmissionDiagnosisSection()
 	 * @generated
 	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 89;
+	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 91;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeDiagnosisSectionImpl <em>Discharge Diagnosis Section</em>}' class.
@@ -1321,7 +1321,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDischargeDiagnosisSection()
 	 * @generated
 	 */
-	int DISCHARGE_DIAGNOSIS_SECTION = 90;
+	int DISCHARGE_DIAGNOSIS_SECTION = 92;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AdmissionMedicationHistorySectionImpl <em>Admission Medication History Section</em>}' class.
@@ -1331,7 +1331,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAdmissionMedicationHistorySection()
 	 * @generated
 	 */
-	int ADMISSION_MEDICATION_HISTORY_SECTION = 91;
+	int ADMISSION_MEDICATION_HISTORY_SECTION = 93;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HospitalDischargeMedicationsSectionImpl <em>Hospital Discharge Medications Section</em>}' class.
@@ -1341,7 +1341,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHospitalDischargeMedicationsSection()
 	 * @generated
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 92;
+	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 94;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
@@ -1351,7 +1351,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationsAdministeredSection()
 	 * @generated
 	 */
-	int MEDICATIONS_ADMINISTERED_SECTION = 93;
+	int MEDICATIONS_ADMINISTERED_SECTION = 95;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PhysicalExamSectionImpl <em>Physical Exam Section</em>}' class.
@@ -1361,7 +1361,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPhysicalExamSection()
 	 * @generated
 	 */
-	int PHYSICAL_EXAM_SECTION = 94;
+	int PHYSICAL_EXAM_SECTION = 96;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReviewOfSystemsSectionImpl <em>Review Of Systems Section</em>}' class.
@@ -1371,7 +1371,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getReviewOfSystemsSection()
 	 * @generated
 	 */
-	int REVIEW_OF_SYSTEMS_SECTION = 95;
+	int REVIEW_OF_SYSTEMS_SECTION = 97;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HospitalCourseSectionImpl <em>Hospital Course Section</em>}' class.
@@ -1381,7 +1381,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHospitalCourseSection()
 	 * @generated
 	 */
-	int HOSPITAL_COURSE_SECTION = 96;
+	int HOSPITAL_COURSE_SECTION = 98;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.AssessmentAndPlanSectionImpl <em>Assessment And Plan Section</em>}' class.
@@ -1391,7 +1391,7 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getAssessmentAndPlanSection()
 	 * @generated
 	 */
-	int ASSESSMENT_AND_PLAN_SECTION = 97;
+	int ASSESSMENT_AND_PLAN_SECTION = 99;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistorySectionImpl <em>Family History Section</em>}' class.
@@ -1429,7 +1429,363 @@ public interface IDomainPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistorySection()
 	 * @generated
 	 */
-	int SOCIAL_HISTORY_SECTION = 28;
+	int SOCIAL_HISTORY_SECTION = 30;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryImpl <em>Social History</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistory()
+	 * @generated
+	 */
+	int SOCIAL_HISTORY = 31;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryStatusObservationImpl <em>Social History Status Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryStatusObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistoryStatusObservation()
+	 * @generated
+	 */
+	int SOCIAL_HISTORY_STATUS_OBSERVATION = 32;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryObservationImpl <em>Social History Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistoryObservation()
+	 * @generated
+	 */
+	int SOCIAL_HISTORY_OBSERVATION = 33;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultsSectionImpl <em>Results Section</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultsSectionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResultsSection()
+	 * @generated
+	 */
+	int RESULTS_SECTION = 34;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultOrganizerImpl <em>Result Organizer</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultOrganizerImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResultOrganizer()
+	 * @generated
+	 */
+	int RESULT_ORGANIZER = 35;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultObservationImpl <em>Result Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultObservationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResultObservation()
+	 * @generated
+	 */
+	int RESULT_OBSERVATION = 37;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicalEquipmentSectionImpl <em>Medical Equipment Section</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicalEquipmentSectionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicalEquipmentSection()
+	 * @generated
+	 */
+	int MEDICAL_EQUIPMENT_SECTION = 38;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupplyActivityImpl <em>Supply Activity</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupplyActivityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupplyActivity()
+	 * @generated
+	 */
+	int SUPPLY_ACTIVITY = 39;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FulfillmentInstructionImpl <em>Fulfillment Instruction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FulfillmentInstructionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFulfillmentInstruction()
+	 * @generated
+	 */
+	int FULFILLMENT_INSTRUCTION = 40;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationActivityImpl <em>Medication Activity</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationActivityImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationActivity()
+	 * @generated
+	 */
+	int MEDICATION_ACTIVITY = 41;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientInstructionImpl <em>Patient Instruction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientInstructionImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPatientInstruction()
+	 * @generated
+	 */
+	int PATIENT_INSTRUCTION = 42;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.LanguageSpokenImpl <em>Language Spoken</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.LanguageSpokenImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getLanguageSpoken()
+	 * @generated
+	 */
+	int LANGUAGE_SPOKEN = 100;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.InsuranceProviderImpl <em>Insurance Provider</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.InsuranceProviderImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getInsuranceProvider()
+	 * @generated
+	 */
+	int INSURANCE_PROVIDER = 101;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HealthcareProviderImpl <em>Healthcare Provider</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HealthcareProviderImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHealthcareProvider()
+	 * @generated
+	 */
+	int HEALTHCARE_PROVIDER = 102;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationNormalDoseImpl <em>Medication Normal Dose</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationNormalDoseImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationNormalDose()
+	 * @generated
+	 */
+	int MEDICATION_NORMAL_DOSE = 103;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationSplitDoseImpl <em>Medication Split Dose</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationSplitDoseImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationSplitDose()
+	 * @generated
+	 */
+	int MEDICATION_SPLIT_DOSE = 104;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationTaperedDoseImpl <em>Medication Tapered Dose</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationTaperedDoseImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationTaperedDose()
+	 * @generated
+	 */
+	int MEDICATION_TAPERED_DOSE = 105;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationConditionalDoseImpl <em>Medication Conditional Dose</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationConditionalDoseImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationConditionalDose()
+	 * @generated
+	 */
+	int MEDICATION_CONDITIONAL_DOSE = 106;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationCombinationMedicationImpl <em>Medication Combination Medication</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationCombinationMedicationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationCombinationMedication()
+	 * @generated
+	 */
+	int MEDICATION_COMBINATION_MEDICATION = 107;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportGuardianImpl <em>Support Guardian</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportGuardianImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupportGuardian()
+	 * @generated
+	 */
+	int SUPPORT_GUARDIAN = 108;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportParticipantImpl <em>Support Participant</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportParticipantImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupportParticipant()
+	 * @generated
+	 */
+	int SUPPORT_PARTICIPANT = 109;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.UnstructuredDocumentImpl <em>Unstructured Document</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.UnstructuredDocumentImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getUnstructuredDocument()
+	 * @generated
+	 */
+	int UNSTRUCTURED_DOCUMENT = 110;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanOriginalAuthorImpl <em>Scan Original Author</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanOriginalAuthorImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getScanOriginalAuthor()
+	 * @generated
+	 */
+	int SCAN_ORIGINAL_AUTHOR = 111;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanningDeviceImpl <em>Scanning Device</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanningDeviceImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getScanningDevice()
+	 * @generated
+	 */
+	int SCANNING_DEVICE = 112;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanDataEntererImpl <em>Scan Data Enterer</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanDataEntererImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getScanDataEnterer()
+	 * @generated
+	 */
+	int SCAN_DATA_ENTERER = 113;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationInformationImpl <em>Medication Information</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationInformationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationInformation()
+	 * @generated
+	 */
+	int MEDICATION_INFORMATION = 114;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.UnstructuredOrScannedDocumentImpl <em>Unstructured Or Scanned Document</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.UnstructuredOrScannedDocumentImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getUnstructuredOrScannedDocument()
+	 * @generated
+	 */
+	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 115;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReferralSummaryImpl <em>Referral Summary</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReferralSummaryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getReferralSummary()
+	 * @generated
+	 */
+	int REFERRAL_SUMMARY = 116;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeSummaryImpl <em>Discharge Summary</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeSummaryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDischargeSummary()
+	 * @generated
+	 */
+	int DISCHARGE_SUMMARY = 117;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeDietImpl <em>Discharge Diet</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeDietImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDischargeDiet()
+	 * @generated
+	 */
+	int DISCHARGE_DIET = 118;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistoryImpl <em>Family History</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistoryImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFamilyHistory()
+	 * @generated
+	 */
+	int FAMILY_HISTORY = 28;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Family History</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistoryOrganizerImpl <em>Family History Organizer</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistoryOrganizerImpl
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFamilyHistoryOrganizer()
+	 * @generated
+	 */
+	int FAMILY_HISTORY_ORGANIZER = 29;
+
+	/**
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_ORGANIZER__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Family History Organizer</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_ORGANIZER_FEATURE_COUNT = 1;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1450,16 +1806,6 @@ public interface IDomainPackage extends EPackage {
 	int SOCIAL_HISTORY_SECTION_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryImpl <em>Social History</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistory()
-	 * @generated
-	 */
-	int SOCIAL_HISTORY = 29;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1476,16 +1822,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int SOCIAL_HISTORY_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryStatusObservationImpl <em>Social History Status Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryStatusObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistoryStatusObservation()
-	 * @generated
-	 */
-	int SOCIAL_HISTORY_STATUS_OBSERVATION = 30;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1506,16 +1842,6 @@ public interface IDomainPackage extends EPackage {
 	int SOCIAL_HISTORY_STATUS_OBSERVATION_FEATURE_COUNT = STATUS_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryObservationImpl <em>Social History Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SocialHistoryObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSocialHistoryObservation()
-	 * @generated
-	 */
-	int SOCIAL_HISTORY_OBSERVATION = 31;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1532,16 +1858,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int SOCIAL_HISTORY_OBSERVATION_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultsSectionImpl <em>Results Section</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultsSectionImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResultsSection()
-	 * @generated
-	 */
-	int RESULTS_SECTION = 32;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1562,16 +1878,6 @@ public interface IDomainPackage extends EPackage {
 	int RESULTS_SECTION_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultOrganizerImpl <em>Result Organizer</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultOrganizerImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResultOrganizer()
-	 * @generated
-	 */
-	int RESULT_ORGANIZER = 33;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1590,14 +1896,22 @@ public interface IDomainPackage extends EPackage {
 	int RESULT_ORGANIZER_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultObservationImpl <em>Result Observation</em>}' class.
+	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ResultObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getResultObservation()
 	 * @generated
+	 * @ordered
 	 */
-	int RESULT_OBSERVATION = 34;
+	int RESULT__CDA_TYPE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Result</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_FEATURE_COUNT = 1;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1618,16 +1932,6 @@ public interface IDomainPackage extends EPackage {
 	int RESULT_OBSERVATION_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicalEquipmentSectionImpl <em>Medical Equipment Section</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicalEquipmentSectionImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicalEquipmentSection()
-	 * @generated
-	 */
-	int MEDICAL_EQUIPMENT_SECTION = 35;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1644,16 +1948,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICAL_EQUIPMENT_SECTION_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupplyActivityImpl <em>Supply Activity</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupplyActivityImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupplyActivity()
-	 * @generated
-	 */
-	int SUPPLY_ACTIVITY = 36;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -1674,16 +1968,6 @@ public interface IDomainPackage extends EPackage {
 	int SUPPLY_ACTIVITY_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FulfillmentInstructionImpl <em>Fulfillment Instruction</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FulfillmentInstructionImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFulfillmentInstruction()
-	 * @generated
-	 */
-	int FULFILLMENT_INSTRUCTION = 37;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1702,16 +1986,6 @@ public interface IDomainPackage extends EPackage {
 	int FULFILLMENT_INSTRUCTION_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationActivityImpl <em>Medication Activity</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationActivityImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationActivity()
-	 * @generated
-	 */
-	int MEDICATION_ACTIVITY = 38;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1728,16 +2002,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION_ACTIVITY_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientInstructionImpl <em>Patient Instruction</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.PatientInstructionImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getPatientInstruction()
-	 * @generated
-	 */
-	int PATIENT_INSTRUCTION = 39;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -2520,24 +2784,6 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Result</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESULT_FEATURE_COUNT = 1;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
 	int VITAL_SIGN__CDA_TYPE = 0;
 
 	/**
@@ -2784,16 +3030,6 @@ public interface IDomainPackage extends EPackage {
 	int ASSESSMENT_AND_PLAN_SECTION_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.LanguageSpokenImpl <em>Language Spoken</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.LanguageSpokenImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getLanguageSpoken()
-	 * @generated
-	 */
-	int LANGUAGE_SPOKEN = 98;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2810,16 +3046,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int LANGUAGE_SPOKEN_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.InsuranceProviderImpl <em>Insurance Provider</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.InsuranceProviderImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getInsuranceProvider()
-	 * @generated
-	 */
-	int INSURANCE_PROVIDER = 99;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -2840,16 +3066,6 @@ public interface IDomainPackage extends EPackage {
 	int INSURANCE_PROVIDER_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HealthcareProviderImpl <em>Healthcare Provider</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.HealthcareProviderImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getHealthcareProvider()
-	 * @generated
-	 */
-	int HEALTHCARE_PROVIDER = 100;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2866,16 +3082,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int HEALTHCARE_PROVIDER_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationNormalDoseImpl <em>Medication Normal Dose</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationNormalDoseImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationNormalDose()
-	 * @generated
-	 */
-	int MEDICATION_NORMAL_DOSE = 101;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -2896,16 +3102,6 @@ public interface IDomainPackage extends EPackage {
 	int MEDICATION_NORMAL_DOSE_FEATURE_COUNT = MEDICATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationSplitDoseImpl <em>Medication Split Dose</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationSplitDoseImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationSplitDose()
-	 * @generated
-	 */
-	int MEDICATION_SPLIT_DOSE = 102;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2922,16 +3118,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION_SPLIT_DOSE_FEATURE_COUNT = MEDICATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationTaperedDoseImpl <em>Medication Tapered Dose</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationTaperedDoseImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationTaperedDose()
-	 * @generated
-	 */
-	int MEDICATION_TAPERED_DOSE = 103;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -2952,16 +3138,6 @@ public interface IDomainPackage extends EPackage {
 	int MEDICATION_TAPERED_DOSE_FEATURE_COUNT = MEDICATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationConditionalDoseImpl <em>Medication Conditional Dose</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationConditionalDoseImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationConditionalDose()
-	 * @generated
-	 */
-	int MEDICATION_CONDITIONAL_DOSE = 104;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2978,16 +3154,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION_CONDITIONAL_DOSE_FEATURE_COUNT = MEDICATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationCombinationMedicationImpl <em>Medication Combination Medication</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationCombinationMedicationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationCombinationMedication()
-	 * @generated
-	 */
-	int MEDICATION_COMBINATION_MEDICATION = 105;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -3008,16 +3174,6 @@ public interface IDomainPackage extends EPackage {
 	int MEDICATION_COMBINATION_MEDICATION_FEATURE_COUNT = MEDICATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportGuardianImpl <em>Support Guardian</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportGuardianImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupportGuardian()
-	 * @generated
-	 */
-	int SUPPORT_GUARDIAN = 106;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3034,16 +3190,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUPPORT_GUARDIAN_FEATURE_COUNT = SUPPORT_FEATURE_COUNT + 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportParticipantImpl <em>Support Participant</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.SupportParticipantImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getSupportParticipant()
-	 * @generated
-	 */
-	int SUPPORT_PARTICIPANT = 107;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -3064,16 +3210,6 @@ public interface IDomainPackage extends EPackage {
 	int SUPPORT_PARTICIPANT_FEATURE_COUNT = SUPPORT_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.UnstructuredDocumentImpl <em>Unstructured Document</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.UnstructuredDocumentImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getUnstructuredDocument()
-	 * @generated
-	 */
-	int UNSTRUCTURED_DOCUMENT = 108;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3090,16 +3226,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int UNSTRUCTURED_DOCUMENT_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanOriginalAuthorImpl <em>Scan Original Author</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanOriginalAuthorImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getScanOriginalAuthor()
-	 * @generated
-	 */
-	int SCAN_ORIGINAL_AUTHOR = 109;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -3120,16 +3246,6 @@ public interface IDomainPackage extends EPackage {
 	int SCAN_ORIGINAL_AUTHOR_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanningDeviceImpl <em>Scanning Device</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanningDeviceImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getScanningDevice()
-	 * @generated
-	 */
-	int SCANNING_DEVICE = 110;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3146,16 +3262,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int SCANNING_DEVICE_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanDataEntererImpl <em>Scan Data Enterer</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ScanDataEntererImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getScanDataEnterer()
-	 * @generated
-	 */
-	int SCAN_DATA_ENTERER = 111;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -3176,16 +3282,6 @@ public interface IDomainPackage extends EPackage {
 	int SCAN_DATA_ENTERER_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationInformationImpl <em>Medication Information</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.MedicationInformationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getMedicationInformation()
-	 * @generated
-	 */
-	int MEDICATION_INFORMATION = 112;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3202,16 +3298,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION_INFORMATION_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.UnstructuredOrScannedDocumentImpl <em>Unstructured Or Scanned Document</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.UnstructuredOrScannedDocumentImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getUnstructuredOrScannedDocument()
-	 * @generated
-	 */
-	int UNSTRUCTURED_OR_SCANNED_DOCUMENT = 113;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -3232,16 +3318,6 @@ public interface IDomainPackage extends EPackage {
 	int UNSTRUCTURED_OR_SCANNED_DOCUMENT_FEATURE_COUNT = UNSTRUCTURED_DOCUMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReferralSummaryImpl <em>Referral Summary</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.ReferralSummaryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getReferralSummary()
-	 * @generated
-	 */
-	int REFERRAL_SUMMARY = 114;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3258,16 +3334,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int REFERRAL_SUMMARY_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeSummaryImpl <em>Discharge Summary</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeSummaryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDischargeSummary()
-	 * @generated
-	 */
-	int DISCHARGE_SUMMARY = 115;
 
 	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
@@ -3288,16 +3354,6 @@ public interface IDomainPackage extends EPackage {
 	int DISCHARGE_SUMMARY_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeDietImpl <em>Discharge Diet</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DischargeDietImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getDischargeDiet()
-	 * @generated
-	 */
-	int DISCHARGE_DIET = 116;
-
-	/**
 	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3314,34 +3370,6 @@ public interface IDomainPackage extends EPackage {
 	 * @ordered
 	 */
 	int DISCHARGE_DIET_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistoryImpl <em>Family History</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.FamilyHistoryImpl
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.impl.DomainPackageImpl#getFamilyHistory()
-	 * @generated
-	 */
-	int FAMILY_HISTORY = 117;
-
-	/**
-	 * The feature id for the '<em><b>CDA Type</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY__CDA_TYPE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Family History</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAMILY_HISTORY_FEATURE_COUNT = 1;
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAllergyDrugSensitivity <em>Allergy Drug Sensitivity</em>}'.
@@ -5611,6 +5639,27 @@ public interface IDomainPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getFamilyHistory_CDAType();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistoryOrganizer <em>Family History Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Family History Organizer</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistoryOrganizer
+	 * @generated
+	 */
+	EClass getFamilyHistoryOrganizer();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistoryOrganizer#getCDAType <em>CDA Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>CDA Type</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistoryOrganizer#getCDAType()
+	 * @see #getFamilyHistoryOrganizer()
+	 * @generated
+	 */
+	EReference getFamilyHistoryOrganizer_CDAType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.

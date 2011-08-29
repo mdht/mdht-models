@@ -81,8 +81,8 @@ public class FamilyHistoryOrganizerImpl extends org.openhealthtools.mdht.uml.cda
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FamilyHistoryObservation> getFamilyHistoryObservations() {
-		return FamilyHistoryOrganizerOperations.getFamilyHistoryObservations(this);
+	public EList<FamilyHistoryObservation> getIHEFamilyHistoryObservations() {
+		return FamilyHistoryOrganizerOperations.getIHEFamilyHistoryObservations(this);
 	}
 
 	/**

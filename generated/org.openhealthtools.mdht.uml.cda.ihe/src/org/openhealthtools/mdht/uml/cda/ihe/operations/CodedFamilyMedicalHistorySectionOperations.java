@@ -32,7 +32,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedFamilyMedicalHistorySection#validateCodedFamilyMedicalHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Family Medical History Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedFamilyMedicalHistorySection#validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Family Medical History Section Family History Organizer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedFamilyMedicalHistorySection#getFamilyHistoryOrganizer() <em>Get Family History Organizer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.CodedFamilyMedicalHistorySection#getIHEFamilyHistoryOrganizer() <em>Get IHE Family History Organizer</em>}</li>
  * </ul>
  * </p>
  *
@@ -167,24 +167,24 @@ public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHis
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection) <em>Get Family History Organizer</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection) <em>Get IHE Family History Organizer</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection)
+	 * @see #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_FAMILY_HISTORY_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(ihe::FamilyHistoryOrganizer))->asSequence()->first().oclAsType(ihe::FamilyHistoryOrganizer)";
+	protected static final String GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(ihe::FamilyHistoryOrganizer))->asSequence()->first().oclAsType(ihe::FamilyHistoryOrganizer)";
 
 	/**
-	 * The cached OCL query for the '{@link #getFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection) <em>Get Family History Organizer</em>}' query operation.
+	 * The cached OCL query for the '{@link #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection) <em>Get IHE Family History Organizer</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection)
+	 * @see #getIHEFamilyHistoryOrganizer(CodedFamilyMedicalHistorySection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_FAMILY_HISTORY_ORGANIZER__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,20 +195,20 @@ public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHis
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static FamilyHistoryOrganizer getFamilyHistoryOrganizer(
+	public static FamilyHistoryOrganizer getIHEFamilyHistoryOrganizer(
 			CodedFamilyMedicalHistorySection codedFamilyMedicalHistorySection) {
-		if (GET_FAMILY_HISTORY_ORGANIZER__EOCL_QRY == null) {
+		if (GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION,
-				IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION.getEAllOperations().get(62));
+				IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION.getEAllOperations().get(64));
 			try {
-				GET_FAMILY_HISTORY_ORGANIZER__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_ORGANIZER__EOCL_EXP);
+				GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY = helper.createQuery(GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FAMILY_HISTORY_ORGANIZER__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_IHE_FAMILY_HISTORY_ORGANIZER__EOCL_QRY);
 		return (FamilyHistoryOrganizer) query.evaluate(codedFamilyMedicalHistorySection);
 	}
 

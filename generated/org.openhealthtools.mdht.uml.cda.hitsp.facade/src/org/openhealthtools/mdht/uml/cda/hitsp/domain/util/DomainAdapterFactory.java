@@ -208,6 +208,16 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseFamilyHistory(IFamilyHistory object) {
+			return createFamilyHistoryAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryOrganizer(IFamilyHistoryOrganizer object) {
+			return createFamilyHistoryOrganizerAdapter();
+		}
+
+		@Override
 		public Adapter caseSocialHistorySection(ISocialHistorySection object) {
 			return createSocialHistorySectionAdapter();
 		}
@@ -235,6 +245,11 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseResultOrganizer(IResultOrganizer object) {
 			return createResultOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseResult(IResult object) {
+			return createResultAdapter();
 		}
 
 		@Override
@@ -483,11 +498,6 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseResult(IResult object) {
-			return createResultAdapter();
-		}
-
-		@Override
 		public Adapter caseVitalSign(IVitalSign object) {
 			return createVitalSignAdapter();
 		}
@@ -650,11 +660,6 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseDischargeDiet(IDischargeDiet object) {
 			return createDischargeDietAdapter();
-		}
-
-		@Override
-		public Adapter caseFamilyHistory(IFamilyHistory object) {
-			return createFamilyHistoryAdapter();
 		}
 
 		@Override
@@ -2325,6 +2330,20 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFamilyHistoryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistoryOrganizer <em>Family History Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IFamilyHistoryOrganizer
+	 * @generated
+	 */
+	public Adapter createFamilyHistoryOrganizerAdapter() {
 		return null;
 	}
 

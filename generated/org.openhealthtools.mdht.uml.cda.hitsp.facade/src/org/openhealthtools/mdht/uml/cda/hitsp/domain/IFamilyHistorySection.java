@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
@@ -122,6 +123,68 @@ public interface IFamilyHistorySection {
 	 * @generated
 	 */
 	IFamilyHistorySection setText(StrucDocText value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::FamilyHistorySection::familyHistory.
+	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(domain::FamilyHistory)).oclAsType(domain::FamilyHistory)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IFamilyHistory> getFamilyHistories();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Family History Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Family History (templateId: 2.16.840.1.113883.3.88.11.83.18).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IFamilyHistory addFamilyHistory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Family History Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Family History (templateId: 2.16.840.1.113883.3.88.11.83.18).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IFamilyHistorySection addFamilyHistory(IFamilyHistory value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * ccd::FamilyHistorySection::familyHistoryOrganizer.
+	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(domain::FamilyHistoryOrganizer)).oclAsType(domain::FamilyHistoryOrganizer)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IFamilyHistoryOrganizer> getFamilyHistoryOrganizers();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Family History Section MAY contain at least one [1..*] entry, such that Contains exactly one [1..1] Family History Organizer (templateId: 2.16.840.1.113883.10.20.1.23).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IFamilyHistoryOrganizer addFamilyHistoryOrganizer();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Family History Section MAY contain at least one [1..*] entry, such that Contains exactly one [1..1] Family History Organizer (templateId: 2.16.840.1.113883.10.20.1.23).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IFamilyHistorySection addFamilyHistoryOrganizer(IFamilyHistoryOrganizer value);
 
 	/**
 	 * <!-- begin-user-doc -->

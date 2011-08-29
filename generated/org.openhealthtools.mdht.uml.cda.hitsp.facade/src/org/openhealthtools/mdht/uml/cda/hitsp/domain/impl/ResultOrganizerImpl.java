@@ -20,6 +20,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Specimen;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResult;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultObservation;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
@@ -101,6 +102,15 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	 */
 	public void setCDAType(Organizer newCDAType) {
 		cDAType = newCDAType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isSetCDAType() {
+		return cDAType != null;
 	}
 
 	/**
@@ -305,26 +315,6 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getResultObservations() <em>Get Result Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getResultObservations()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ResultObservation)).oclAsType(domain::ResultObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getResultObservations() <em>Get Result Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getResultObservations()
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_RESULT_OBSERVATIONS__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -334,7 +324,7 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IDomainPackage.eINSTANCE.getResultOrganizer(),
-				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(9));
+				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(15));
 			try {
 				GET_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_RESULT_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -413,7 +403,7 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IDomainPackage.eINSTANCE.getResultOrganizer(),
-				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(12));
+				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(9));
 			try {
 				GET_SPECIMENS__EOCL_QRY = helper.createQuery(GET_SPECIMENS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -447,6 +437,105 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	 * @generated
 	 */
 	public IResultOrganizer addSpecimen(Specimen value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getResults() <em>Get Results</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResults()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_RESULTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::Result)).oclAsType(domain::Result)";
+
+	/**
+	 * The cached OCL query for the '{@link #getResults() <em>Get Results</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResults()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_RESULTS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getResultObservations() <em>Get Result Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResultObservations()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ResultObservation)).oclAsType(domain::ResultObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getResultObservations() <em>Get Result Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResultObservations()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_RESULT_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<IResult> getResults() {
+		if (GET_RESULTS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getResultOrganizer(),
+				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(12));
+			try {
+				GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<IResult> result = (Collection<IResult>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IResult>(result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IResult addResult() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/hitsp");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/hitsp");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("Result");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		try {
+			java.lang.reflect.Method initMethod = eObject.getClass().getMethod("init", new java.lang.Class[0]);
+			initMethod.invoke(eObject, new Object[0]);
+		} catch (Exception e) {
+			// no init() method
+		}
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Result");
+		IResult value = (IResult) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IResultOrganizer addResult(IResult value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -508,7 +597,7 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.RESULT_ORGANIZER__CDA_TYPE:
-				return cDAType != null;
+				return isSetCDAType();
 		}
 		return super.eIsSet(featureID);
 	}
