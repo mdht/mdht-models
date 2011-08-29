@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_NtY7BcqHEeC8XvPcqnB3eA" name="toc">
+    <packageImport xmi:id="_NwqRMMqHEeC8XvPcqnB3eA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_NwqRMcqHEeC8XvPcqnB3eA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_N_7fAM_nEeCsgagmvl1sKA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_4V3w4M_nEeCsgagmvl1sKA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NvnvYcqHEeC8XvPcqnB3eA" name="DischargeSummary">
+      <ownedRule xmi:id="_jAoMcdJqEeC41uAULQUMQw" name="GeneralHeaderConstraintsTemplateId" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jAoMctJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '1.2.3.4.5.100')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jDnPANJqEeC41uAULQUMQw" name="DischargeSummaryAllergiesReactionsSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDnPAdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jDprQNJqEeC41uAULQUMQw" name="DischargeSummaryProblemListSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDprQdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jDsHgNJqEeC41uAULQUMQw" name="DischargeSummaryHospitalCourseSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDsHgdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jDujwNJqEeC41uAULQUMQw" name="DischargeSummaryHospitalDischargeMedicationsSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDujwdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jDxAANJqEeC41uAULQUMQw" name="DischargeSummaryDischargeDiagnosisSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDxAAdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jDzcQNJqEeC41uAULQUMQw" name="DischargeSummaryPlanOfCareSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDzcQdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jD14gdJqEeC41uAULQUMQw" name="DischargeSummaryChiefComplaintSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jD14gtJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jD4UwNJqEeC41uAULQUMQw" name="DischargeSummaryDischargeDiet" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jD4UwdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jD6xA9JqEeC41uAULQUMQw" name="DischargeSummaryFamilyHistorySection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jD6xBNJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jD9NRNJqEeC41uAULQUMQw" name="DischargeSummaryFunctionalStatusSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jD90UNJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jD_pg9JqEeC41uAULQUMQw" name="DischargeSummaryHistoryOfPresentIllness" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEAQkNJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jECs0NJqEeC41uAULQUMQw" name="DischargeSummaryHospitalDischargePhysical" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jECs0dJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HospitalDischargePhysical))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEFJENJqEeC41uAULQUMQw" name="DischargeSummaryHospitalDischargeStudiesSummarySection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEFJEdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::HospitalDischargeStudiesSummarySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEHlUNJqEeC41uAULQUMQw" name="DischargeSummaryImmunizationsSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEHlUdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEKBkNJqEeC41uAULQUMQw" name="DischargeSummarySurgeriesSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEKBkdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEMd0tJqEeC41uAULQUMQw" name="DischargeSummaryReviewOfSystemsSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEMd09JqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEO6EdJqEeC41uAULQUMQw" name="DischargeSummarySocialHistorySection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEO6EtJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jERWUNJqEeC41uAULQUMQw" name="DischargeSummaryVitalSignsSection" constrainedElement="_NvnvYcqHEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jERWUdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_NvnvY8qHEeC8XvPcqnB3eA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
+      </generalization>
+      <ownedOperation xmi:id="_jDpEMNJqEeC41uAULQUMQw" name="getAllergiesReactionsSection" isQuery="true" bodyCondition="_jDpEM9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jDpEM9JqEeC41uAULQUMQw" name="body" constrainedElement="_jDpEMNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDpENNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jDpEMdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_VGnj8MfZEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jDpEMtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jDrgcNJqEeC41uAULQUMQw" name="getProblemListSection" isQuery="true" bodyCondition="_jDrgc9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jDrgc9JqEeC41uAULQUMQw" name="body" constrainedElement="_jDrgcNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDrgdNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jDrgcdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_cPtREMfaEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jDrgctJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jDt8sNJqEeC41uAULQUMQw" name="getHospitalCourseSection" isQuery="true" bodyCondition="_jDt8s9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jDt8s9JqEeC41uAULQUMQw" name="body" constrainedElement="_jDt8sNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDt8tNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))->asSequence()->first().oclAsType(hitsp::HospitalCourseSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jDt8sdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_J1pl8MidEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jDt8stJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jDwY8NJqEeC41uAULQUMQw" name="getHospitalDischargeMedicationsSection" isQuery="true" bodyCondition="_jDwY89JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jDwY89JqEeC41uAULQUMQw" name="body" constrainedElement="_jDwY8NJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDwY9NJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))->asSequence()->first().oclAsType(hitsp::HospitalDischargeMedicationsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jDwY8dJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_OORpwMfyEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jDwY8tJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jDy1MNJqEeC41uAULQUMQw" name="getDischargeDiagnosisSection" isQuery="true" bodyCondition="_jDy1M9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jDy1M9JqEeC41uAULQUMQw" name="body" constrainedElement="_jDy1MNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDy1NNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))->asSequence()->first().oclAsType(hitsp::DischargeDiagnosisSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jDy1MdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_CEsTsMfwEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jDy1MtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jD1RcNJqEeC41uAULQUMQw" name="getPlanOfCareSection" isQuery="true" bodyCondition="_jD1Rc9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jD1Rc9JqEeC41uAULQUMQw" name="body" constrainedElement="_jD1RcNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jD14gNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jD1RcdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jD1RctJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jD3tsNJqEeC41uAULQUMQw" name="getChiefComplaintSection" isQuery="true" bodyCondition="_jD3ts9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jD3ts9JqEeC41uAULQUMQw" name="body" constrainedElement="_jD3tsNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jD3ttNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))->asSequence()->first().oclAsType(hitsp::ChiefComplaintSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jD3tsdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_9ugRMMfcEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jD3tstJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jD6J8NJqEeC41uAULQUMQw" name="getDischargeDiet" isQuery="true" bodyCondition="_jD6xAdJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jD6xAdJqEeC41uAULQUMQw" name="body" constrainedElement="_jD6J8NJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jD6xAtJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))->asSequence()->first().oclAsType(ihe::DischargeDiet)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jD6J8dJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_nwrzcL4kEeCPGaGuS9U6tg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jD6xANJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jD8mMNJqEeC41uAULQUMQw" name="getFamilyHistorySection" isQuery="true" bodyCondition="_jD9NQtJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jD9NQtJqEeC41uAULQUMQw" name="body" constrainedElement="_jD8mMNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jD9NQ9JqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jD9NQNJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_4Mh2UMigEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jD9NQdJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jD_CcNJqEeC41uAULQUMQw" name="getFunctionalStatusSection" isQuery="true" bodyCondition="_jD_pgdJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jD_pgdJqEeC41uAULQUMQw" name="body" constrainedElement="_jD_CcNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jD_pgtJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jD_CcdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_m5tlkMfuEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jD_pgNJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jECFwNJqEeC41uAULQUMQw" name="getHistoryOfPresentIllness" isQuery="true" bodyCondition="_jECFw9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jECFw9JqEeC41uAULQUMQw" name="body" constrainedElement="_jECFwNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jECFxNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))->asSequence()->first().oclAsType(hitsp::HistoryOfPresentIllness)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jECFwdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_w51SkMfhEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jECFwtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEEiANJqEeC41uAULQUMQw" name="getHospitalDischargePhysical" isQuery="true" bodyCondition="_jEEiA9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEEiA9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEEiANJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEEiBNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HospitalDischargePhysical))->asSequence()->first().oclAsType(ihe::HospitalDischargePhysical)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEEiAdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_dw0bkL4lEeCPGaGuS9U6tg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEEiAtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEG-QNJqEeC41uAULQUMQw" name="getHospitalDischargeStudiesSummarySection" isQuery="true" bodyCondition="_jEG-Q9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEG-Q9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEG-QNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEG-RNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::HospitalDischargeStudiesSummarySection))->asSequence()->first().oclAsType(cdt::HospitalDischargeStudiesSummarySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEG-QdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_Kp2O0M_5EeCiuL16epi04A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEG-QtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEJagNJqEeC41uAULQUMQw" name="getImmunizationsSection" isQuery="true" bodyCondition="_jEJag9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEJag9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEJagNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEJahNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEJagdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_gHDXQMf0Ed6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEJagtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEL2wNJqEeC41uAULQUMQw" name="getSurgeriesSection" isQuery="true" bodyCondition="_jEMd0NJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEMd0NJqEeC41uAULQUMQw" name="body" constrainedElement="_jEL2wNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEMd0dJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEL2wdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_OCM5cMfuEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEL2wtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEOTANJqEeC41uAULQUMQw" name="getReviewOfSystemsSection" isQuery="true" bodyCondition="_jEOTA9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEOTA9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEOTANJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEO6ENJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))->asSequence()->first().oclAsType(hitsp::ReviewOfSystemsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEOTAdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_GuZI0MiXEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEOTAtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEQvQNJqEeC41uAULQUMQw" name="getSocialHistorySection" isQuery="true" bodyCondition="_jEQvQ9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEQvQ9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEQvQNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEQvRNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEQvQdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_-ujjcMihEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEQvQtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jETLgNJqEeC41uAULQUMQw" name="getVitalSignsSection" isQuery="true" bodyCondition="_jETLg9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jETLg9JqEeC41uAULQUMQw" name="body" constrainedElement="_jETLgNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jETLhNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jETLgdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_L9yGgK7HEd6_ioDelDcPPg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jETLgtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zYJIgMqKEeC8XvPcqnB3eA" name="DischargeInstructions">
+      <ownedRule xmi:id="_jBUwANJqEeC41uAULQUMQw" name="GeneralHeaderConstraintsTemplateId" constrainedElement="_zYJIgMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jBUwAdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '1.2.3.4.5.101')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jETykNJqEeC41uAULQUMQw" name="DischargeInstructionsPlanOfCareSection" constrainedElement="_zYJIgMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jETykdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEWO0dJqEeC41uAULQUMQw" name="DischargeInstructionsAllergiesReactionsSection" constrainedElement="_zYJIgMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEWO0tJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEYrENJqEeC41uAULQUMQw" name="DischargeInstructionsProblemListSection" constrainedElement="_zYJIgMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEYrEdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEbHUdJqEeC41uAULQUMQw" name="DischargeInstructionsDischargeDiagnosisSection" constrainedElement="_zYJIgMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEbHUtJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEdjkdJqEeC41uAULQUMQw" name="DischargeInstructionsAdvanceDirectivesSection" constrainedElement="_zYJIgMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEdjktJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEf_0tJqEeC41uAULQUMQw" name="DischargeInstructionsImmunizationsSection" constrainedElement="_zYJIgMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEf_09JqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEicENJqEeC41uAULQUMQw" name="DischargeInstructionsMedicalEquipmentSection" constrainedElement="_zYJIgMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEicEdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_zYJIgcqKEeC8XvPcqnB3eA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
+      </generalization>
+      <ownedOperation xmi:id="_jEVnwNJqEeC41uAULQUMQw" name="getPlanOfCareSection" isQuery="true" bodyCondition="_jEVnw9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEVnw9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEVnwNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEWO0NJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEVnwdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEVnwtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEYEANJqEeC41uAULQUMQw" name="getAllergiesReactionsSection" isQuery="true" bodyCondition="_jEYEA9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEYEA9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEYEANJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEYEBNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEYEAdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_VGnj8MfZEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEYEAtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEagQNJqEeC41uAULQUMQw" name="getProblemListSection" isQuery="true" bodyCondition="_jEagQ9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEagQ9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEagQNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEbHUNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEagQdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_cPtREMfaEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEagQtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEc8gNJqEeC41uAULQUMQw" name="getDischargeDiagnosisSection" isQuery="true" bodyCondition="_jEc8g9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEc8g9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEc8gNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEdjkNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))->asSequence()->first().oclAsType(hitsp::DischargeDiagnosisSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEc8gdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_CEsTsMfwEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEc8gtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEfYwNJqEeC41uAULQUMQw" name="getAdvanceDirectivesSection" isQuery="true" bodyCondition="_jEf_0NJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEf_0NJqEeC41uAULQUMQw" name="body" constrainedElement="_jEfYwNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEf_0dJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEfYwdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_uIr7cMfzEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEfYwtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEh1ANJqEeC41uAULQUMQw" name="getImmunizationsSection" isQuery="true" bodyCondition="_jEh1A9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEh1A9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEh1ANJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEh1BNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEh1AdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_gHDXQMf0Ed6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEh1AtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEkRQNJqEeC41uAULQUMQw" name="getMedicalEquipmentSection" isQuery="true" bodyCondition="_jEkRQ9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEkRQ9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEkRQNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEkRRNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEkRQdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_d9cy8MijEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEkRQtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-FsQUMqKEeC8XvPcqnB3eA" name="ConsultationSummary">
+      <ownedRule xmi:id="_jCUOgdJqEeC41uAULQUMQw" name="GeneralHeaderConstraintsTemplateId" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jCUOgtJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '1.2.3.4.5.102')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEk4UNJqEeC41uAULQUMQw" name="ConsultationSummaryAllergiesReactionsSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEk4UdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEnUkNJqEeC41uAULQUMQw" name="ConsultationSummaryMedicationsSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEnUkdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEpw0NJqEeC41uAULQUMQw" name="ConsultationSummaryProblemListSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEpw0dJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEsNENJqEeC41uAULQUMQw" name="ConsultationSummarySurgeriesSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEsNEdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEupUNJqEeC41uAULQUMQw" name="ConsultationSummaryDiagnosticResultsSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEupUdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jExFkNJqEeC41uAULQUMQw" name="ConsultationSummaryAdvanceDirectivesSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jExFkdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jEzh0NJqEeC41uAULQUMQw" name="ConsultationSummaryEncountersSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEzh0dJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jE1XBdJqEeC41uAULQUMQw" name="ConsultationSummaryFamilyHistorySection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jE1-ENJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jE3zQtJqEeC41uAULQUMQw" name="ConsultationSummaryFunctionalStatusSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jE3zQ9JqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jE6PgNJqEeC41uAULQUMQw" name="ConsultationSummaryImmunizationsSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jE6PgdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jE8rwNJqEeC41uAULQUMQw" name="ConsultationSummaryMedicalEquipmentSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jE8rwdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jE_IANJqEeC41uAULQUMQw" name="ConsultationSummaryPayersSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jE_IAdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFBkQNJqEeC41uAULQUMQw" name="ConsultationSummaryPlanOfCareSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFBkQdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFDZdNJqEeC41uAULQUMQw" name="ConsultationSummarySocialHistorySection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFDZddJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFF1tNJqEeC41uAULQUMQw" name="ConsultationSummaryVitalSignsSection" constrainedElement="_-FsQUMqKEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFGcwNJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_-FsQUcqKEeC8XvPcqnB3eA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
+      </generalization>
+      <ownedOperation xmi:id="_jEmtgNJqEeC41uAULQUMQw" name="getAllergiesReactionsSection" isQuery="true" bodyCondition="_jEmtg9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEmtg9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEmtgNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEmthNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEmtgdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_VGnj8MfZEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEmtgtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEpJwNJqEeC41uAULQUMQw" name="getMedicationsSection" isQuery="true" bodyCondition="_jEpJw9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEpJw9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEpJwNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEpJxNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->first().oclAsType(hitsp::MedicationsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEpJwdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_WI3zsMfwEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEpJwtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jErmANJqEeC41uAULQUMQw" name="getProblemListSection" isQuery="true" bodyCondition="_jErmA9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jErmA9JqEeC41uAULQUMQw" name="body" constrainedElement="_jErmANJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jErmBNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jErmAdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_cPtREMfaEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jErmAtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEuCQNJqEeC41uAULQUMQw" name="getSurgeriesSection" isQuery="true" bodyCondition="_jEuCQ9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEuCQ9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEuCQNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEuCRNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEuCQdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_OCM5cMfuEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEuCQtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEwegNJqEeC41uAULQUMQw" name="getDiagnosticResultsSection" isQuery="true" bodyCondition="_jEweg9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEweg9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEwegNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEwehNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->first().oclAsType(hitsp::DiagnosticResultsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEwegdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_P3GVkMieEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEwegtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jEy6wNJqEeC41uAULQUMQw" name="getAdvanceDirectivesSection" isQuery="true" bodyCondition="_jEy6w9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jEy6w9JqEeC41uAULQUMQw" name="body" constrainedElement="_jEy6wNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEy6xNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jEy6wdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_uIr7cMfzEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jEy6wtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jE1XANJqEeC41uAULQUMQw" name="getEncountersSection" isQuery="true" bodyCondition="_jE1XA9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jE1XA9JqEeC41uAULQUMQw" name="body" constrainedElement="_jE1XANJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jE1XBNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->first().oclAsType(hitsp::EncountersSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jE1XAdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_F4b6wMijEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jE1XAtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jE3MMNJqEeC41uAULQUMQw" name="getFamilyHistorySection" isQuery="true" bodyCondition="_jE3zQNJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jE3zQNJqEeC41uAULQUMQw" name="body" constrainedElement="_jE3MMNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jE3zQdJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jE3MMdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_4Mh2UMigEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jE3MMtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jE5ocNJqEeC41uAULQUMQw" name="getFunctionalStatusSection" isQuery="true" bodyCondition="_jE5oc9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jE5oc9JqEeC41uAULQUMQw" name="body" constrainedElement="_jE5ocNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jE5odNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jE5ocdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_m5tlkMfuEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jE5octJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jE8EsNJqEeC41uAULQUMQw" name="getImmunizationsSection" isQuery="true" bodyCondition="_jE8Es9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jE8Es9JqEeC41uAULQUMQw" name="body" constrainedElement="_jE8EsNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jE8EtNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jE8EsdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_gHDXQMf0Ed6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jE8EstJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jE-g8NJqEeC41uAULQUMQw" name="getMedicalEquipmentSection" isQuery="true" bodyCondition="_jE-g89JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jE-g89JqEeC41uAULQUMQw" name="body" constrainedElement="_jE-g8NJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jE-g9NJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jE-g8dJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_d9cy8MijEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jE-g8tJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFA9MNJqEeC41uAULQUMQw" name="getPayersSection" isQuery="true" bodyCondition="_jFA9M9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFA9M9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFA9MNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFA9NNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->first().oclAsType(hitsp::PayersSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFA9MdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_DH404MfWEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFA9MtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFCyYNJqEeC41uAULQUMQw" name="getPlanOfCareSection" isQuery="true" bodyCondition="_jFDZctJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFDZctJqEeC41uAULQUMQw" name="body" constrainedElement="_jFCyYNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFDZc9JqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFDZcNJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFDZcdJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFFOoNJqEeC41uAULQUMQw" name="getSocialHistorySection" isQuery="true" bodyCondition="_jFF1stJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFF1stJqEeC41uAULQUMQw" name="body" constrainedElement="_jFFOoNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFF1s9JqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFF1sNJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_-ujjcMihEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFF1sdJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFHq4NJqEeC41uAULQUMQw" name="getVitalSignsSection" isQuery="true" bodyCondition="_jFIR8dJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFIR8dJqEeC41uAULQUMQw" name="body" constrainedElement="_jFHq4NJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFIR8tJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFHq4dJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_L9yGgK7HEd6_ioDelDcPPg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFIR8NJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BF55AMqLEeC8XvPcqnB3eA" name="ConsultationRequest">
+      <ownedRule xmi:id="_jDjkoNJqEeC41uAULQUMQw" name="GeneralHeaderConstraintsTemplateId" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jDjkodJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '1.2.3.4.5.103')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFIR89JqEeC41uAULQUMQw" name="ConsultationRequestAllergiesReactionsSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFIR9NJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFKuMNJqEeC41uAULQUMQw" name="ConsultationRequestMedicationsSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFKuMdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFNKcNJqEeC41uAULQUMQw" name="ConsultationRequestProblemListSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFNKcdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFO_o9JqEeC41uAULQUMQw" name="ConsultationRequestSurgeriesSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFO_pNJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFRb4NJqEeC41uAULQUMQw" name="ConsultationRequestDiagnosticResultsSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFRb4dJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFT4INJqEeC41uAULQUMQw" name="ConsultationRequestAdvanceDirectivesSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFT4IdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFVtVdJqEeC41uAULQUMQw" name="ConsultationRequestAssessmentAndPlanSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFWUYNJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AssessmentAndPlanSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFYJkdJqEeC41uAULQUMQw" name="ConsultationRequestHistoryOfPresentIllness" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFYJktJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFal0NJqEeC41uAULQUMQw" name="ConsultationRequestPhysicalExamSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFal0dJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFdCENJqEeC41uAULQUMQw" name="ConsultationRequestReasonForReferralSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFdCEdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReasonForReferralSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFfeUNJqEeC41uAULQUMQw" name="ConsultationRequestEncountersSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFfeUdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFhThNJqEeC41uAULQUMQw" name="ConsultationRequestFamilyHistorySection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFhThdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFjvw9JqEeC41uAULQUMQw" name="ConsultationRequestFunctionalStatusSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFjvxNJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFmMANJqEeC41uAULQUMQw" name="ConsultationRequestImmunizationsSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFmMAdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFooQNJqEeC41uAULQUMQw" name="ConsultationRequestMedicalEquipmentSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFooQdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFrEgNJqEeC41uAULQUMQw" name="ConsultationRequestPlanOfCareSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFrEgdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFtgwNJqEeC41uAULQUMQw" name="ConsultationRequestSocialHistorySection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFtgwdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFv9ANJqEeC41uAULQUMQw" name="ConsultationRequestVitalSignsSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFv9AdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jFyZQNJqEeC41uAULQUMQw" name="ConsultationRequestChiefComplaintSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFyZQdJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jF0OdNJqEeC41uAULQUMQw" name="ConsultationRequestGeneralStatusSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jF0OddJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::GeneralStatusSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jF2qstJqEeC41uAULQUMQw" name="ConsultationRequestHistoryOfPastIllnessSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jF2qs9JqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jF5G8NJqEeC41uAULQUMQw" name="ConsultationRequestPayersSection" constrainedElement="_BF55AMqLEeC8XvPcqnB3eA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jF5G8dJqEeC41uAULQUMQw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_BF55AcqLEeC8XvPcqnB3eA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_MwGRIGeLEd-ilOLYnIx0jA"/>
+      </generalization>
+      <ownedOperation xmi:id="_jFKHINJqEeC41uAULQUMQw" name="getAllergiesReactionsSection" isQuery="true" bodyCondition="_jFKHI9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFKHI9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFKHINJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFKHJNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->first().oclAsType(hitsp::AllergiesReactionsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFKHIdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_VGnj8MfZEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFKHItJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFMjYNJqEeC41uAULQUMQw" name="getMedicationsSection" isQuery="true" bodyCondition="_jFMjY9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFMjY9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFMjYNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFMjZNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->first().oclAsType(hitsp::MedicationsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFMjYdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_WI3zsMfwEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFMjYtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFOYkNJqEeC41uAULQUMQw" name="getProblemListSection" isQuery="true" bodyCondition="_jFO_odJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFO_odJqEeC41uAULQUMQw" name="body" constrainedElement="_jFOYkNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFO_otJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->first().oclAsType(hitsp::ProblemListSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFOYkdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_cPtREMfaEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFO_oNJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFQ00NJqEeC41uAULQUMQw" name="getSurgeriesSection" isQuery="true" bodyCondition="_jFQ009JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFQ009JqEeC41uAULQUMQw" name="body" constrainedElement="_jFQ00NJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFQ01NJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->first().oclAsType(hitsp::SurgeriesSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFQ00dJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_OCM5cMfuEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFQ00tJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFTRENJqEeC41uAULQUMQw" name="getDiagnosticResultsSection" isQuery="true" bodyCondition="_jFTRE9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFTRE9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFTRENJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFTRFNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->first().oclAsType(hitsp::DiagnosticResultsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFTREdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_P3GVkMieEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFTREtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFVtUNJqEeC41uAULQUMQw" name="getAdvanceDirectivesSection" isQuery="true" bodyCondition="_jFVtU9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFVtU9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFVtUNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFVtVNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->first().oclAsType(hitsp::AdvanceDirectivesSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFVtUdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_uIr7cMfzEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFVtUtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFXigNJqEeC41uAULQUMQw" name="getAssessmentAndPlanSection" isQuery="true" bodyCondition="_jFXig9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFXig9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFXigNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFYJkNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AssessmentAndPlanSection))->asSequence()->first().oclAsType(hitsp::AssessmentAndPlanSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFXigdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_ml82oMifEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFXigtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFZ-wNJqEeC41uAULQUMQw" name="getHistoryOfPresentIllness" isQuery="true" bodyCondition="_jFZ-w9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFZ-w9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFZ-wNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFZ-xNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))->asSequence()->first().oclAsType(hitsp::HistoryOfPresentIllness)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFZ-wdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_w51SkMfhEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFZ-wtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFcbANJqEeC41uAULQUMQw" name="getPhysicalExamSection" isQuery="true" bodyCondition="_jFcbA9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFcbA9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFcbANJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFcbBNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))->asSequence()->first().oclAsType(hitsp::PhysicalExamSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFcbAdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_XaZ6wMf1Ed6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFcbAtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFe3QNJqEeC41uAULQUMQw" name="getReasonForReferralSection" isQuery="true" bodyCondition="_jFe3Q9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFe3Q9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFe3QNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFe3RNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReasonForReferralSection))->asSequence()->first().oclAsType(hitsp::ReasonForReferralSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFe3QdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_bX2UoMfdEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFe3QtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFgscNJqEeC41uAULQUMQw" name="getEncountersSection" isQuery="true" bodyCondition="_jFhTgtJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFhTgtJqEeC41uAULQUMQw" name="body" constrainedElement="_jFgscNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFhTg9JqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->first().oclAsType(hitsp::EncountersSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFhTgNJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_F4b6wMijEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFhTgdJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFjIsNJqEeC41uAULQUMQw" name="getFamilyHistorySection" isQuery="true" bodyCondition="_jFjvwdJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFjvwdJqEeC41uAULQUMQw" name="body" constrainedElement="_jFjIsNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFjvwtJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FamilyHistorySection))->asSequence()->first().oclAsType(hitsp::FamilyHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFjIsdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_4Mh2UMigEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFjvwNJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFlk8NJqEeC41uAULQUMQw" name="getFunctionalStatusSection" isQuery="true" bodyCondition="_jFlk89JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFlk89JqEeC41uAULQUMQw" name="body" constrainedElement="_jFlk8NJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFlk9NJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->first().oclAsType(hitsp::FunctionalStatusSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFlk8dJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_m5tlkMfuEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFlk8tJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFoBMNJqEeC41uAULQUMQw" name="getImmunizationsSection" isQuery="true" bodyCondition="_jFoBM9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFoBM9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFoBMNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFoBNNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->first().oclAsType(hitsp::ImmunizationsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFoBMdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_gHDXQMf0Ed6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFoBMtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFqdcNJqEeC41uAULQUMQw" name="getMedicalEquipmentSection" isQuery="true" bodyCondition="_jFqdc9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFqdc9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFqdcNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFqddNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->first().oclAsType(hitsp::MedicalEquipmentSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFqdcdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_d9cy8MijEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFqdctJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFs5sNJqEeC41uAULQUMQw" name="getPlanOfCareSection" isQuery="true" bodyCondition="_jFs5s9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFs5s9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFs5sNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFs5tNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->first().oclAsType(hitsp::PlanOfCareSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFs5sdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_SydBgMigEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFs5stJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFvV8NJqEeC41uAULQUMQw" name="getSocialHistorySection" isQuery="true" bodyCondition="_jFvV89JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFvV89JqEeC41uAULQUMQw" name="body" constrainedElement="_jFvV8NJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFvV9NJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SocialHistorySection))->asSequence()->first().oclAsType(hitsp::SocialHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFvV8dJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_-ujjcMihEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFvV8tJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFxyMNJqEeC41uAULQUMQw" name="getVitalSignsSection" isQuery="true" bodyCondition="_jFxyM9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jFxyM9JqEeC41uAULQUMQw" name="body" constrainedElement="_jFxyMNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFxyNNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->first().oclAsType(hitsp::VitalSignsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jFxyMdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_L9yGgK7HEd6_ioDelDcPPg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFxyMtJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jFznYNJqEeC41uAULQUMQw" name="getChiefComplaintSection" isQuery="true" bodyCondition="_jF0OctJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jF0OctJqEeC41uAULQUMQw" name="body" constrainedElement="_jFznYNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jF0Oc9JqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ChiefComplaintSection))->asSequence()->first().oclAsType(hitsp::ChiefComplaintSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jF0OcNJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_9ugRMMfcEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jF0OcdJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jF2DoNJqEeC41uAULQUMQw" name="getGeneralStatusSection" isQuery="true" bodyCondition="_jF2qsNJqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jF2qsNJqEeC41uAULQUMQw" name="body" constrainedElement="_jF2DoNJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jF2qsdJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::GeneralStatusSection))->asSequence()->first().oclAsType(cdt::GeneralStatusSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jF2DodJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_Y_l8QGjdEd-tUpkWYQgJlQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jF2DotJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jF4f4NJqEeC41uAULQUMQw" name="getHistoryOfPastIllnessSection" isQuery="true" bodyCondition="_jF4f49JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jF4f49JqEeC41uAULQUMQw" name="body" constrainedElement="_jF4f4NJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jF4f5NJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))->asSequence()->first().oclAsType(hitsp::HistoryOfPastIllnessSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jF4f4dJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_lSC-0MfbEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jF4f4tJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jF68INJqEeC41uAULQUMQw" name="getPayersSection" isQuery="true" bodyCondition="_jF68I9JqEeC41uAULQUMQw">
+        <ownedRule xmi:id="_jF68I9JqEeC41uAULQUMQw" name="body" constrainedElement="_jF68INJqEeC41uAULQUMQw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jF68JNJqEeC41uAULQUMQw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->first().oclAsType(hitsp::PayersSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_jF68IdJqEeC41uAULQUMQw" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp_Ecore.uml#_DH404MfWEd6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jF68ItJqEeC41uAULQUMQw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_NtY7DsqHEeC8XvPcqnB3eA">
+      <eAnnotations xmi:id="_NtY7D8qHEeC8XvPcqnB3eA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_NtY7EMqHEeC8XvPcqnB3eA">
+      <eAnnotations xmi:id="_NtY7EcqHEeC8XvPcqnB3eA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_i_e88NJqEeC41uAULQUMQw">
+      <eAnnotations xmi:id="_i_e88dJqEeC41uAULQUMQw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_NvnvYMqHEeC8XvPcqnB3eA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="toc" nsURI="http://www.openhealthtools.org/mdht/uml/cda/toc" packageName="toc" prefix="ToC" base_Namespace="_NtY7BcqHEeC8XvPcqnB3eA"/>
+  <CDA:CDATemplate xmi:id="_NvnvYsqHEeC8XvPcqnB3eA" base_Class="_NvnvYcqHEeC8XvPcqnB3eA" templateId="1.2.3.4.5.100" assigningAuthorityName=""/>
+  <CDA:CDATemplate xmi:id="_QWTg8MqLEeC8XvPcqnB3eA" base_Class="_zYJIgMqKEeC8XvPcqnB3eA" templateId="1.2.3.4.5.101"/>
+  <CDA:CDATemplate xmi:id="_Rwm7wMqLEeC8XvPcqnB3eA" base_Class="_-FsQUMqKEeC8XvPcqnB3eA" templateId="1.2.3.4.5.102"/>
+  <CDA:CDATemplate xmi:id="_Td9OYMqLEeC8XvPcqnB3eA" base_Class="_BF55AMqLEeC8XvPcqnB3eA" templateId="1.2.3.4.5.103"/>
+  <Ecore:EPackage xmi:id="_i_inUNJqEeC41uAULQUMQw" base_Package="_NtY7BcqHEeC8XvPcqnB3eA" packageName="toc" nsPrefix="toc" nsURI="http://www.openhealthtools.org/mdht/uml/cda/toc" basePackage="org.openhealthtools.mdht.uml.cda" prefix="ToC"/>
+  <CDA:ConformsTo xmi:id="_jAoMcNJqEeC41uAULQUMQw" base_Generalization="_NvnvY8qHEeC8XvPcqnB3eA"/>
+  <Ecore:EClass xmi:id="_jApakNJqEeC41uAULQUMQw" base_Class="_NvnvYcqHEeC8XvPcqnB3eA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.2.3.4.5.100' constraints.validation.error='DischargeSummaryTemplateId DischargeSummaryAllergiesReactionsSection DischargeSummaryProblemListSection DischargeSummaryHospitalCourseSection DischargeSummaryHospitalDischargeMedicationsSection DischargeSummaryDischargeDiagnosisSection DischargeSummaryPlanOfCareSection' constraints.validation.warning='DischargeSummaryChiefComplaintSection DischargeSummaryDischargeDiet DischargeSummaryFamilyHistorySection DischargeSummaryFunctionalStatusSection DischargeSummaryHistoryOfPresentIllness DischargeSummaryHospitalDischargePhysical DischargeSummaryHospitalDischargeStudiesSummarySection DischargeSummaryImmunizationsSection DischargeSummarySurgeriesSection DischargeSummaryReviewOfSystemsSection DischargeSummarySocialHistorySection DischargeSummaryVitalSignsSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_jBUI8tJqEeC41uAULQUMQw" base_Generalization="_zYJIgcqKEeC8XvPcqnB3eA"/>
+  <Ecore:EClass xmi:id="_jBVXENJqEeC41uAULQUMQw" base_Class="_zYJIgMqKEeC8XvPcqnB3eA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.2.3.4.5.101' constraints.validation.error='DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesReactionsSection DischargeInstructionsProblemListSection DischargeInstructionsDischargeDiagnosisSection DischargeInstructionsAdvanceDirectivesSection DischargeInstructionsImmunizationsSection DischargeInstructionsMedicalEquipmentSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_jCUOgNJqEeC41uAULQUMQw" base_Generalization="_-FsQUcqKEeC8XvPcqnB3eA"/>
+  <Ecore:EClass xmi:id="_jCVcoNJqEeC41uAULQUMQw" base_Class="_-FsQUMqKEeC8XvPcqnB3eA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.2.3.4.5.102' constraints.validation.error='ConsultationSummaryTemplateId ConsultationSummaryAllergiesReactionsSection ConsultationSummaryMedicationsSection ConsultationSummaryProblemListSection ConsultationSummarySurgeriesSection ConsultationSummaryDiagnosticResultsSection' constraints.validation.warning='ConsultationSummaryAdvanceDirectivesSection ConsultationSummaryEncountersSection ConsultationSummaryFamilyHistorySection ConsultationSummaryFunctionalStatusSection ConsultationSummaryImmunizationsSection ConsultationSummaryMedicalEquipmentSection ConsultationSummaryPayersSection ConsultationSummaryPlanOfCareSection ConsultationSummarySocialHistorySection ConsultationSummaryVitalSignsSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_jDi9kNJqEeC41uAULQUMQw" base_Generalization="_BF55AcqLEeC8XvPcqnB3eA"/>
+  <Ecore:EClass xmi:id="_jDkLsNJqEeC41uAULQUMQw" base_Class="_BF55AMqLEeC8XvPcqnB3eA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.2.3.4.5.103' constraints.validation.error='ConsultationRequestTemplateId ConsultationRequestAllergiesReactionsSection ConsultationRequestMedicationsSection ConsultationRequestProblemListSection ConsultationRequestSurgeriesSection ConsultationRequestDiagnosticResultsSection ConsultationRequestAdvanceDirectivesSection' constraints.validation.warning='ConsultationRequestAssessmentAndPlanSection ConsultationRequestHistoryOfPresentIllness ConsultationRequestPhysicalExamSection ConsultationRequestReasonForReferralSection ConsultationRequestEncountersSection ConsultationRequestFamilyHistorySection ConsultationRequestFunctionalStatusSection ConsultationRequestImmunizationsSection ConsultationRequestMedicalEquipmentSection ConsultationRequestPlanOfCareSection ConsultationRequestSocialHistorySection ConsultationRequestVitalSignsSection ConsultationRequestChiefComplaintSection ConsultationRequestGeneralStatusSection ConsultationRequestHistoryOfPastIllnessSection ConsultationRequestPayersSection'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>
