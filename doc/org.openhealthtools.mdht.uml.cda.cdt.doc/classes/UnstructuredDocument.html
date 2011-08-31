@@ -7,16 +7,16 @@
 <meta name="copyright" content="(C) Copyright 2005"/>
 <meta name="DC.rights.owner" content="(C) Copyright 2005"/>
 <meta name="DC.Type" content="topic"/>
-<meta name="DC.Title" content="Consultation Note"/>
-<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.4]"/>
-<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.4]"/>
+<meta name="DC.Title" content="Unstructured Document"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.19.1]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.19.1]"/>
 <meta name="DC.Coverage" content="ClinicalDocument"/>
 <meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
 <meta name="DC.Format" content="XHTML"/>
 <meta name="DC.Identifier" content="classId"/>
 <meta name="DC.Language" content="en-us"/>
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
-<title>Consultation Note</title>
+<title>Unstructured Document</title>
 </head>
 <body id="classId"><a name="classId"><!-- --></a>
 <div>
@@ -24,122 +24,94 @@
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
-<h1 class="title topictitle1">Consultation Note</h1>
+<h1 class="title topictitle1">Unstructured Document</h1>
 
 
 
-<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.10.20.4</tt>]</p>
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.10.20.19.1</tt>]</p>
 
 
 <div class="section">
+<p class="p">This document type is not intended to be a replacement for IHE's XDS-SD (Cross-Transaction Specifications and Content Specifications, Scanned Documents Module) profile. Rather, it serves a more generic use case. XDS-SD is specifically for scanned documents, and limits content to PDF-A or text. This Unstructured Documents implementation guide is applicable not only for scanned documents in non-PDF formats, but also for clinical documents produced through word processing applications, etc.</p>
+
 </div>
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="GeneralHeaderConstraints.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.3]">General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.3</tt>) (CONF-CO-1)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="GeneralHeaderConstraints.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.3]">General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.3</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ConsultDocumentTypeCodes.html">ConsultDocumentTypeCodes</a></tt><strong class="ph b"> DYNAMIC</strong> (CONF-CO-2)
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">confidentialityCode</strong></tt>
+<ul class="ul"><li class="li">If the confidentialityCode cannot be determined for an Unstructured Document instance, the HL7 code "N" (normal confidentiality) is recommended.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-UD-11)
+<ul class="ul"><li class="li">The effectiveTime records the time of creation of the original document. If the referenced document is a scan, the date of scan can be recorded in dataEnterer. If the date of creation of the original document is not known, CDA allows the document effectiveTime to have a  nullFlavor.</li>
+</ul>
+</li>
+
+<li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt>, such that
+<ul class="ul"><li class="li">The author represents the person who created the original document. If the referenced document is a scan, the person who did the scan must be recorded in dataEnterer. If address and telecom are not known, they can be represented with nullFlavors.</li>
+</ul>
 <ol class="ol" type="a">
-<li class="li">Implementations <strong class="ph b">MAY</strong> use local codes in translation elements to specify
-a local code that is equivalent to the document type. An example of this is shown
-below. (CONF-CO-3)</li>
+<li class="li">An assignedAuthor element contains an addr element. If addr is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-25)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.addr-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">An assignedAuthor element contains a telecom element. If telecom is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-26)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.telecom-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-27), such that
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt> (CONF-UD-27), such that
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfPresentIllness.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.3.4]">History Of Present Illness</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.4</tt>)</li>
+<li class="li">The custodian element <strong class="ph b">SHALL</strong> contain an assignedCustodian/representedCustodianOrganization element. (CONF-UD-28)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an id element. (CONF-UD-29)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.id-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a name element. (CONF-UD-30)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a telecom element. (CONF-UD-31)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.telecom.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an addr element. (CONF-UD-32)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-28), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PhysicalExaminationSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.2.10]">Physical Examination Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.2.10</tt>)</li>
-</ol>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: A patientRole element contains an id element. (CONF-UD-17)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not recordTarget.patientRole.id-&gt;isEmpty()</pre>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-32), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemSection.html">CCD Problem Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.11</tt>)</li>
-</ol>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains component/nonXMLBody/text element. (CONF-UD-34)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.component.nonXMLBody.text.oclIsUndefined()</pre>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-33), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProceduresSection.html">CCD Procedures Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.12</tt>)</li>
-</ol>
+<li class="li">The text element <strong class="ph b">SHALL</strong> either contain a reference element with a value attribute, or have a representation attribute with the value of B64, a mediaType attribute, and contain the media content (CONF-UD-35)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: (not self.component.nonXMLBody.text.reference.oclIsUndefined() and self.component.nonXMLBody.text.reference.isDefined('value')) or (self.component.nonXMLBody.text.representation = datatypes::BinaryDataEncoding::B64 and self.component.nonXMLBody.text.isDefined('mediaType') and self.component.nonXMLBody.text.getText().size() &gt; 0)</pre>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-34), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PastMedicalHistorySectionConsult.html" title="[Section: templateId 2.16.840.1.113883.10.20.4.9]">Past Medical History Section Consult</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.4.9</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-35), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.6</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-36), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.8</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-37), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.2</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-38), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistorySection.html">CCD Social History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.15</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-39), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FamilyHistorySection.html">CCD Family History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.4</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ReviewOfSystemsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.4.10]">Review Of Systems Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.4.10</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-42), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsSection.html">CCD Vital Signs Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.16</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-43), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="GeneralStatusSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.2.5]">General Status Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.2.5</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-44), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="DiagnosticFindings.html" title="[Section: templateId 2.16.840.1.113883.10.20.1.14]">Diagnostic Findings</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.14</tt>)</li>
-</ol>
-</li>
-
-<li class="li">If pre-coordinated document type codes are used, values used in the
-assignedAuthor/code and assignedAuthor/author/functionCode elements <strong class="ph b">SHALL NOT</strong>
-conflict with ClinicalDocument/code. (CONF-CO-4)</li>
-
-<li class="li">If pre-coordinated document type codes are used, values used in
-encompassingEncounter/location/healthCareFacility/code <strong class="ph b">SHALL NOT</strong> conflict with
-ClinicalDocument/code. (CONF-CO-5)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: A Consultation Note contains either ReasonForReferral or ReasonForVisit, but not both. (CONF-CO-26)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSections()-&gt;exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForReferralSection))
-   xor self.getSections()-&gt;exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSectionConsult))</pre>
+<li class="li">The value of @mediaType <strong class="ph b">SHALL</strong> be drawn from the value set 2.16.840.1.113883.11.20.7.1 SupportedFileFormats STATIC 20100512 (CONF-UD-36)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.component.nonXMLBody.text.isDefined('mediaType') implies (self.component.nonXMLBody.text.mediaType = 'application/msword' or self.component.nonXMLBody.text.mediaType = 'application/pdf' or self.component.nonXMLBody.text.mediaType = 'text/plain' or self.component.nonXMLBody.text.mediaType = 'text/rtf' or self.component.nonXMLBody.text.mediaType = 'text/html' or self.component.nonXMLBody.text.mediaType = 'image/gif' or self.component.nonXMLBody.text.mediaType = 'image/tiff' or self.component.nonXMLBody.text.mediaType = 'image/jpeg' or self.component.nonXMLBody.text.mediaType = 'image/png')</pre>
 </li>
 </ul>
 </li>
@@ -166,12 +138,9 @@ uniquely identify the document.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ConsultDocumentTypeCodes.html">ConsultDocumentTypeCodes</a></tt><strong class="ph b"> DYNAMIC</strong> (CONF-CO-2)
-<ol class="ol" type="a">
-<li class="li">Implementations <strong class="ph b">MAY</strong> use local codes in translation elements to specify
-a local code that is equivalent to the document type. An example of this is shown
-below. (CONF-CO-3)</li>
-</ol>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF-HP-21)
+<ul class="ul"><li class="li">Specifies the type of the clinical document.</li>
+</ul>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-HP-22)
@@ -182,19 +151,13 @@ debugging may be "HISTORY AND PHYSICAL." The title can be localized, as appropri
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-HP-23)
-<ul class="ul"><li class="li">Specifies the creation time of the document. All documents
-authored by direct input to a computer system should record an effectiveTime that is
-precise to the second. When authored in other ways, for example, by filling out a
-paper form that is then transferred into an EHR system, the precision of
-effectiveTime may be less than to the second.</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-UD-11)
+<ul class="ul"><li class="li">The effectiveTime records the time of creation of the original document. If the referenced document is a scan, the date of scan can be recorded in dataEnterer. If the date of creation of the original document is not known, CDA allows the document effectiveTime to have a  nullFlavor.</li>
 </ul>
 </li>
 
 <li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">confidentialityCode</strong></tt>
-<ul class="ul"><li class="li">Specifies the confidentiality assigned to the document. This specification provides no further guidance beyond CDA R2
-on documents with respect to the vocabulary used for confidentialityCode, nor
-treatment or implementation of confidentiality.</li>
+<ul class="ul"><li class="li">If the confidentialityCode cannot be determined for an Unstructured Document instance, the HL7 code "N" (normal confidentiality) is recommended.</li>
 </ul>
 </li>
 
@@ -205,15 +168,63 @@ treatment or implementation of confidentiality.</li>
 </li>
 
 <li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt>, where its type is <a class="xref" href="generated/../Author.html">Author</a>
+<ol class="ol" type="a">
+<li class="li">An assignedAuthor element contains an addr element. If addr is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-25)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.addr-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">An assignedAuthor element contains a telecom element. If telecom is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-26)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.telecom-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+</ol>
 </li>
 
 <li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt>, where its type is <a class="xref" href="generated/../Custodian.html">Custodian</a>
+<ol class="ol" type="a">
+<li class="li">The custodian element <strong class="ph b">SHALL</strong> contain an assignedCustodian/representedCustodianOrganization element. (CONF-UD-28)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an id element. (CONF-UD-29)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.id-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a name element. (CONF-UD-30)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a telecom element. (CONF-UD-31)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.telecom.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an addr element. (CONF-UD-32)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+</ol>
 </li>
 
 <li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, where its type is <a class="xref" href="generated/../Component2.html">Component2</a>
 </li>
 
 <li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">An assignedAuthor element contains an addr element. If addr is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-25)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.addr-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">An assignedAuthor element contains a telecom element. If telecom is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-26)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.telecom-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+</ol>
 <ul class="ul"><li class="li">The author element represents the creator of the clinical document. If the role of the
 actor is the entry of information from his or her own knowledge or application of skills,
 that actor is the author. If one actor provides information to another actor who filters,
@@ -240,6 +251,32 @@ a dataEnterer.</p>
 </li>
 
 <li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">The custodian element <strong class="ph b">SHALL</strong> contain an assignedCustodian/representedCustodianOrganization element. (CONF-UD-28)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an id element. (CONF-UD-29)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.id-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a name element. (CONF-UD-30)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a telecom element. (CONF-UD-31)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.telecom.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an addr element. (CONF-UD-32)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+</ol>
 <ul class="ul"><li class="li">Based on the CDA R2 constraints (Section 4.2.2.3 of the CDA Normative Web Edition.
 See Section 5 REFERENCES), the custodian element is required and is the custodian of
 the clinical document.</li>
@@ -283,81 +320,48 @@ document may come from sources or contain information that the author cannot val
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-27), such that
+<li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt>, such that
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfPresentIllness.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.5.3.1.3.4]">History Of Present Illness</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.4</tt>)</li>
-</ol>
+<li class="li">An assignedAuthor element contains an addr element. If addr is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-25)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.addr-&gt;isEmpty()</pre>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-28), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PhysicalExaminationSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.2.10]">Physical Examination Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.2.10</tt>)</li>
+<li class="li">An assignedAuthor element contains a telecom element. If telecom is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-26)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.telecom-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
 </ol>
+<ul class="ul"><li class="li">The author represents the person who created the original document. If the referenced document is a scan, the person who did the scan must be recorded in dataEnterer. If address and telecom are not known, they can be represented with nullFlavors.</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-32), such that
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt> (CONF-UD-27), such that
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemSection.html">CCD Problem Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.11</tt>)</li>
-</ol>
+<li class="li">The custodian element <strong class="ph b">SHALL</strong> contain an assignedCustodian/representedCustodianOrganization element. (CONF-UD-28)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.oclIsUndefined()</pre>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-33), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProceduresSection.html">CCD Procedures Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.12</tt>)</li>
-</ol>
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an id element. (CONF-UD-29)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.id-&gt;isEmpty()</pre>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-34), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PastMedicalHistorySectionConsult.html" title="[Section: templateId 2.16.840.1.113883.10.20.4.9]">Past Medical History Section Consult</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.4.9</tt>)</li>
-</ol>
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a name element. (CONF-UD-30)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()</pre>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-35), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.6</tt>)</li>
-</ol>
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a telecom element. (CONF-UD-31)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.telecom.oclIsUndefined()</pre>
+</li>
+</ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-37), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.2</tt>)</li>
-</ol>
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an addr element. (CONF-UD-32)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()</pre>
 </li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-38), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistorySection.html">CCD Social History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.15</tt>)</li>
-</ol>
+</ul>
 </li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-39), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FamilyHistorySection.html">CCD Family History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.4</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ReviewOfSystemsSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.4.10]">Review Of Systems Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.4.10</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-42), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsSection.html">CCD Vital Signs Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.16</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-43), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="GeneralStatusSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.2.5]">General Status Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.2.5</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-CO-44), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="DiagnosticFindings.html" title="[Section: templateId 2.16.840.1.113883.10.20.1.14]">Diagnostic Findings</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.14</tt>)</li>
 </ol>
 </li>
 
@@ -681,102 +685,75 @@ least to the year, <strong class="ph b">SHOULD</strong> be precise to the day, a
 </ul>
 </li>
 
-<li class="li">Implementations <strong class="ph b">MAY</strong> use local codes in translation elements to specify
-a local code that is equivalent to the document type. An example of this is shown
-below. (CONF-CO-3)</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: A patientRole element contains an id element. (CONF-UD-17)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not recordTarget.patientRole.id-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
 
-<li class="li">If pre-coordinated document type codes are used, values used in the
-assignedAuthor/code and assignedAuthor/author/functionCode elements <strong class="ph b">SHALL NOT</strong>
-conflict with ClinicalDocument/code. (CONF-CO-4)</li>
+<li class="li">An assignedAuthor element contains an addr element. If addr is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-25)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.addr-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
 
-<li class="li">If pre-coordinated document type codes are used, values used in
-encompassingEncounter/location/healthCareFacility/code <strong class="ph b">SHALL NOT</strong> conflict with
-ClinicalDocument/code. (CONF-CO-5)</li>
+<li class="li">An assignedAuthor element contains a telecom element. If telecom is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-26)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.telecom-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: A Consultation Note contains either ReasonForReferral or ReasonForVisit, but not both. (CONF-CO-26)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSections()-&gt;exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForReferralSection))
-   xor self.getSections()-&gt;exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSectionConsult))</pre>
+<li class="li">The custodian element <strong class="ph b">SHALL</strong> contain an assignedCustodian/representedCustodianOrganization element. (CONF-UD-28)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an id element. (CONF-UD-29)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.id-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a name element. (CONF-UD-30)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a telecom element. (CONF-UD-31)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.telecom.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an addr element. (CONF-UD-32)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains component/nonXMLBody/text element. (CONF-UD-34)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.component.nonXMLBody.text.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The text element <strong class="ph b">SHALL</strong> either contain a reference element with a value attribute, or have a representation attribute with the value of B64, a mediaType attribute, and contain the media content (CONF-UD-35)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: (not self.component.nonXMLBody.text.reference.oclIsUndefined() and self.component.nonXMLBody.text.reference.isDefined('value')) or (self.component.nonXMLBody.text.representation = datatypes::BinaryDataEncoding::B64 and self.component.nonXMLBody.text.isDefined('mediaType') and self.component.nonXMLBody.text.getText().size() &gt; 0)</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The value of @mediaType <strong class="ph b">SHALL</strong> be drawn from the value set 2.16.840.1.113883.11.20.7.1 SupportedFileFormats STATIC 20100512 (CONF-UD-36)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.component.nonXMLBody.text.isDefined('mediaType') implies (self.component.nonXMLBody.text.mediaType = 'application/msword' or self.component.nonXMLBody.text.mediaType = 'application/pdf' or self.component.nonXMLBody.text.mediaType = 'text/plain' or self.component.nonXMLBody.text.mediaType = 'text/rtf' or self.component.nonXMLBody.text.mediaType = 'text/html' or self.component.nonXMLBody.text.mediaType = 'image/gif' or self.component.nonXMLBody.text.mediaType = 'image/tiff' or self.component.nonXMLBody.text.mediaType = 'image/jpeg' or self.component.nonXMLBody.text.mediaType = 'image/png')</pre>
 </li>
 </ul>
 </li>
 
 </ol>
 
-<div class="fig fignone"><span class="figcap">Figure 1. Consultation Note example</span>
+<p class="p"> </p>
+
+
+<p class="p"> </p>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Unstructured Document example</strong></p>
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;realmCode code="US"/&gt;
-  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.3"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.4"/&gt;
-  &lt;id root="1424489820"/&gt;
-  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
-  &lt;title/&gt;
-  &lt;effectiveTime/&gt;
-  &lt;confidentialityCode code="Value"/&gt;
-  &lt;languageCode/&gt;
-  &lt;recordTarget/&gt;
-  &lt;author/&gt;
-  &lt;custodian/&gt;
-  &lt;component&gt;
-    &lt;structuredBody&gt;
-      &lt;component&gt;
-        &lt;section&gt;
-          &lt;realmCode/&gt;
-          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4"/&gt;
-          &lt;id root="1529805918"/&gt;
-          &lt;code code="10164-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PRESENT ILLNESS"/&gt;
-          &lt;title/&gt;
-          &lt;languageCode/&gt;
-        &lt;/section&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-      &lt;component&gt;
-        &lt;section/&gt;
-      &lt;/component&gt;
-    &lt;/structuredBody&gt;
-  &lt;/component&gt;
-&lt;/ClinicalDocument&gt;</pre>
-
-</div>
+<pre class="pre codeblock"/>
 
 </div>
 
