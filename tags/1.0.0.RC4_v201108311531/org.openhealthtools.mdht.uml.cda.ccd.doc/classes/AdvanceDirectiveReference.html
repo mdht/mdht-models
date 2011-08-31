@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Advance Directive Reference"/>
+<meta name="abstract" content="[ExternalDocument: templateId 2.16.840.1.113883.10.20.1.36]"/>
+<meta name="description" content="[ExternalDocument: templateId 2.16.840.1.113883.10.20.1.36]"/>
+<meta name="DC.Coverage" content="ExternalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/OtherClasses.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Advance Directive Reference</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Advance Directive Reference</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ExternalDocument: templateId <tt class="ph tt">2.16.840.1.113883.10.20.1.36</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+</li>
+
+<li class="li">An advance directive reference (templateId 2.16.840.1.113883.10.20.1.36) <strong class="ph b">SHALL</strong> be represented with Observation / reference / ExternalDocument</li>
+
+<li class="li">The value for Observation / reference / @typeCode in an advance directive reference <strong class="ph b">SHALL</strong> be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</li>
+
+<li class="li">The URL of a referenced advance directive document <strong class="ph b">MAY</strong> be present, and <strong class="ph b">SHALL</strong> be represented in Observation / reference / ExternalDocument / text / reference. A &lt;linkHTML&gt; element containing the same URL <strong class="ph b">SHOULD</strong> be present in the associated CDA Narrative Block</li>
+
+<li class="li">The MIME type of a referenced advance directive document <strong class="ph b">MAY</strong> be present, and <strong class="ph b">SHALL</strong> be represented in Observation / reference / ExternalDocument / text / @mediaType</li>
+
+<li class="li">Where the value of Observation / reference / seperatableInd is "false", the referenced advance directive document <strong class="ph b">SHOULD</strong> be included in the CCD exchange package. The exchange mechanism <strong class="ph b">SHOULD</strong> be based on Internet standard RFC 2557 "MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)" (http://www.ietf.org/rfc/rfc2557.txt)</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+
+<p class="p"> </p>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Advance Directive Reference example</strong></p>
+
+
+
+<pre class="pre codeblock"/>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/OtherClasses.html">OTHER CLASSES</a></div>
+</div>
+</div>
+
+</body>
+</html>

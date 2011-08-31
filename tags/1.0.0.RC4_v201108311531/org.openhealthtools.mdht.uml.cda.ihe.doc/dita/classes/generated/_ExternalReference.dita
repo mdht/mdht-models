@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>External Reference - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.4</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.4.4"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>id</b></tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> satisfy: the code/@nullFlavor attribute value is 'NA'<ul><li><codeblock>[OCL]: not self.code.oclIsUndefined() implies self.code.nullFlavor = vocab::NullFlavor::NA</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: reference/@typeCode attribute value is either 'SPRT' (supporting documentation) or 'REFR' (reference material)<ul><li>External references are listed as either supporting documentation (typeCode='SPRT') or simply
+reference material (typeCode='REFR') for the reader. If this distinction is not supported by the
+source EMR system, the value of typeCode should be REFR.</li></ul><ul><li><codeblock>[OCL]: self.reference-&gt;select(r| r.typeCode &lt;&gt; vocab::x_ActRelationshipExternalReference::REFR and r.typeCode &lt;&gt; vocab::x_ActRelationshipExternalReference::SPRT)-&gt;size() = 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the reference element contains an externalDocument element with @classCode = 'DOC' and @moodCode = 'EVN'.<ul><li><codeblock>[OCL]: self.reference.externalDocument-&gt;select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the reference/externalDocument/id is present<ul><li>A link to the original document may be provided here. This shall be a URL where the referenced
+document can be located. For CDA, the link should also be present in the narrative inside the
+CDA Narrative in a &lt;linkHTML> element.</li></ul><ul><li><codeblock>[OCL]: self.reference-&gt;select(  r | r.externalDocument.id-&gt;isEmpty() )-&gt;size() = 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the reference/externalDocument/text is present to provide a link to the original document<ul><li><codeblock>[OCL]: self.reference-&gt;select(  r | r.externalDocument.text.reference.oclIsUndefined()  )-&gt;size() = 0</codeblock></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>id</b></tt>
+</li>
+<li>Contains exactly one [1..1] <tt><b>code</b></tt>, where its data type is CD
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> satisfy: the code/@nullFlavor attribute value is 'NA'<ul><li><codeblock>[OCL]: not self.code.oclIsUndefined() implies self.code.nullFlavor = vocab::NullFlavor::NA</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: reference/@typeCode attribute value is either 'SPRT' (supporting documentation) or 'REFR' (reference material)<ul><li>External references are listed as either supporting documentation (typeCode='SPRT') or simply
+reference material (typeCode='REFR') for the reader. If this distinction is not supported by the
+source EMR system, the value of typeCode should be REFR.</li></ul><ul><li><codeblock>[OCL]: self.reference-&gt;select(r| r.typeCode &lt;&gt; vocab::x_ActRelationshipExternalReference::REFR and r.typeCode &lt;&gt; vocab::x_ActRelationshipExternalReference::SPRT)-&gt;size() = 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the reference element contains an externalDocument element with @classCode = 'DOC' and @moodCode = 'EVN'.<ul><li><codeblock>[OCL]: self.reference.externalDocument-&gt;select(ed | ed.classCode =  vocab::ActClassDocument::DOC and ed.moodCode =  vocab::ActMood::EVN )-&gt;size() = 1</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the reference/externalDocument/id is present<ul><li>A link to the original document may be provided here. This shall be a URL where the referenced
+document can be located. For CDA, the link should also be present in the narrative inside the
+CDA Narrative in a &lt;linkHTML> element.</li></ul><ul><li><codeblock>[OCL]: self.reference-&gt;select(  r | r.externalDocument.id-&gt;isEmpty() )-&gt;size() = 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: the reference/externalDocument/text is present to provide a link to the original document<ul><li><codeblock>[OCL]: self.reference-&gt;select(  r | r.externalDocument.text.reference.oclIsUndefined()  )-&gt;size() = 0</codeblock></li></ul></li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">External Reference</ph></p>
+<p id="shortdesc">[Act: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.4</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Vital Sign Result</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.3.88.12.80.62"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Vital Sign Result - 2.16.840.1.113883.3.88.12.80.62</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Source</entry><entry>HITSP</entry></row>
+<row><entry>Definition</entry><entry>This identifies the vital sign result type</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>8310-5</entry><entry>Body temperature:Temp:Pt:^Patient:Qn:</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>8462-4</entry><entry>Intravascular diastolic:Pres:Pt:Arterial system:Qn:</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>8480-6</entry><entry>Intravascular systolic:Pres:Pt:Arterial system:Qn:</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>8287-5</entry><entry>Circumference.occipital-frontal:Len:Pt:Head:Qn:Tape measure</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>8867-4</entry><entry>Heart beat:NRat:Pt:XXX:Qn:</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>8302-2</entry><entry>Body height:Len:Pt:^Patient:Qn:</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>8306-3</entry><entry>Body height^lying:Len:Pt:^Patient:Qn:</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>2710-2</entry><entry>Oxygen saturation:SFr:Pt:BldC:Qn:Oximetry</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>9279-1</entry><entry>Breaths:NRat:Pt:Respiratory system:Qn:</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>3141-9</entry><entry>Body weight:Mass:Pt:^Patient:Qn:Measured</entry><entry>LOINC</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

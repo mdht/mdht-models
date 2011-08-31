@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Advance Directive Reference - conformance rules</title>
+<shortdesc id="shortdesc">[ExternalDocument: templateId <tt>2.16.840.1.113883.10.20.1.36</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ExternalDocument</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.36"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li>An advance directive reference (templateId 2.16.840.1.113883.10.20.1.36) <b>SHALL</b> be represented with Observation / reference / ExternalDocument</li>
+<li>The value for Observation / reference / @typeCode in an advance directive reference <b>SHALL</b> be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</li>
+<li>The URL of a referenced advance directive document <b>MAY</b> be present, and <b>SHALL</b> be represented in Observation / reference / ExternalDocument / text / reference. A &lt;linkHTML&gt; element containing the same URL <b>SHOULD</b> be present in the associated CDA Narrative Block</li>
+<li>The MIME type of a referenced advance directive document <b>MAY</b> be present, and <b>SHALL</b> be represented in Observation / reference / ExternalDocument / text / @mediaType</li>
+<li>Where the value of Observation / reference / seperatableInd is "false", the referenced advance directive document <b>SHOULD</b> be included in the CCD exchange package. The exchange mechanism <b>SHOULD</b> be based on Internet standard RFC 2557 "MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)" (http://www.ietf.org/rfc/rfc2557.txt)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li>An advance directive reference (templateId 2.16.840.1.113883.10.20.1.36) <b>SHALL</b> be represented with Observation / reference / ExternalDocument</li>
+<li>The value for Observation / reference / @typeCode in an advance directive reference <b>SHALL</b> be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</li>
+<li>The URL of a referenced advance directive document <b>MAY</b> be present, and <b>SHALL</b> be represented in Observation / reference / ExternalDocument / text / reference. A &lt;linkHTML&gt; element containing the same URL <b>SHOULD</b> be present in the associated CDA Narrative Block</li>
+<li>The MIME type of a referenced advance directive document <b>MAY</b> be present, and <b>SHALL</b> be represented in Observation / reference / ExternalDocument / text / @mediaType</li>
+<li>Where the value of Observation / reference / seperatableInd is "false", the referenced advance directive document <b>SHOULD</b> be included in the CCD exchange package. The exchange mechanism <b>SHOULD</b> be based on Internet standard RFC 2557 "MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)" (http://www.ietf.org/rfc/rfc2557.txt)</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Advance Directive Reference</ph></p>
+<p id="shortdesc">[ExternalDocument: templateId <tt>2.16.840.1.113883.10.20.1.36</tt>]</p>
+</body>
+</topic>

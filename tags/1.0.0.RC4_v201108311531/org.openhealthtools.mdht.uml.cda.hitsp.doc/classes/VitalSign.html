@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Vital Sign"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.3.88.11.83.14]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.113883.3.88.11.83.14]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Vital Sign</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Vital Sign</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.14</tt>]</p>
+
+
+<div class="section">
+<p class="p">
+These entries are used to record current and relevant historical vital signs for the patient. Vital Signs are a subset of <strong class="ph b"><em class="ph i">Results Section</em></strong>, but are reported in this section to follow clinical conventions.
+</p>
+
+
+<p class="p">
+The differentiation between Vital Signs and Results varies by clinical context. Common examples of vital signs include temperature, height, weight, blood pressure, etc. However, some clinical contexts may alter these common vitals, for example in neonatology "height" may be replaced by "crown-to-rump" measurement.
+</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/VitalSignObservation.html">IHE Vital Sign Observation</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.13.2</tt>) (C83-[DE-14-CDA-2])</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.3.88.12.80.62 Vital Sign Result</tt><strong class="ph b"> STATIC</strong> 1 (C154-[DE-14.03-1])
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Data Element Definitions for Results [Placeholder]<ul class="ul"><li class="li">Vital Signs are a subset of Results Section, but are reported in this section to follow clinical conventions.</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Vital Sign example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.31"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.14"/&gt;
+  &lt;id root="521796036"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;interpretationCode code="Value"/&gt;
+  &lt;methodCode code="Value"/&gt;
+  &lt;targetSiteCode code="568878188"/&gt;
+&lt;/observation&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

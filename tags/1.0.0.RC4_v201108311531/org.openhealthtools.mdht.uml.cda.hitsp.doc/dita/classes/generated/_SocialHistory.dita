@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Social History - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.33</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.33"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistoryObservation.html">IHE Social History Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.4</tt>)</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.60 Social History Type</tt><b> STATIC</b> 1
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistoryObservation.html">CCD Social History Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SimpleObservation.html">IHE Simple Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistoryObservation.html">IHE Social History Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.4</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClassObservation
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_ActMoodDocumentObservation
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.60 Social History Type</tt><b> STATIC</b> 1
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt>
+<ul><li><p>
+The data type to use for each observation should be drawn from the table below.
+Observations in the table above using the PQ data type have a unit in the form {xxx}/d,
+{xxx}/wk or {xxx}/a represent the number of items per day, week or year respectively. The value attribute indicates the number of times of the act performed, and the units represent the
+frequency.
+</p>
+
+<p>
+229819007 Smoking  PQ  {pack}/d or {pack}/wk or {pack}/a
+256235009 Exercise PQ {times}/wk
+160573003 ETOH (Alcohol) Use PQ {drink}/d or {drink}/wk
+364393001 Diet  CD  N/A
+364703007 Employment CD  N/A
+425400000 Toxic Exposure CD  N/A
+363908000 Drug Use CD  N/A
+228272008 Other Social History ANY N/A
+</p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SocialHistoryStatusObservation.dita">Social History Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.56</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EpisodeObservation.dita">Episode Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.41</tt>)</li></ol></li>
+<li>The value for Observation / code in a social history observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017</li>
+<li>Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information</li>
+<li><b>SHOULD</b> satisfy: The &lt;repeatNumber&gt; element should not be used in a social history observation</li>
+<li><b>SHOULD</b> satisfy: The &lt;interpretationCode&gt; element should not be used in
+a social history observation</li>
+<li><b>SHOULD</b> satisfy: The &lt;methodCode&gt; element should not be used in
+a social history observation</li>
+<li><b>SHOULD</b> satisfy: The &lt;targetSiteCode&gt; element should not be used in
+a social history observation</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Social History</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.33</tt>]</p>
+</body>
+</topic>
