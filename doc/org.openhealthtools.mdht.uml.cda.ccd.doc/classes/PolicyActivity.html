@@ -55,21 +55,12 @@
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF-56), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PayerEntity.html" title="[AssignedEntity: templateId null]">Payer Entity</a></li>
-</ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-58), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="CoveredParty.html" title="[ParticipantRole: templateId null]">Covered Party</a></li>
-</ol>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-63), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PolicySubscriber.html" title="[ParticipantRole: templateId null]">Policy Subscriber</a></li>
-</ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: A policy activity contains exactly one performer [@typeCode='PRF'], representing the payer. (CONF-56)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.performer-&gt;one(perf : cda::Performer2 | perf.typeCode = vocab::ParticipationPhysicalPerformer::PRF)</pre>
@@ -124,8 +115,8 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.26"/&gt;
-  &lt;id root="76387cd6-47bb-4fcb-98b0-46cde0d4c9ca"/&gt;
-  &lt;code/&gt;
+  &lt;id root="1224284175"/&gt;
+  &lt;code code="2084076660"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;

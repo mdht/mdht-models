@@ -17,7 +17,7 @@
 <li><b>SHALL</b> conform to <xref href="../FamilyHistoryObservation.dita">Family History Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.22</tt>)</li>
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClassObservation
 </li>
-<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_ActMoodDocumentObservation
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
 </li>
@@ -25,21 +25,86 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>)
 </li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+</li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-224), such that
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
 <li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemStatusObservation.dita">Problem Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.50</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>CAUS" </tt><i>CAUS (is etiology for)</i></li>
+<li>Contains exactly one [1..1] <xref href="../CauseOfDeathObservation.dita">Cause Of Death Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.42</tt>)</li></ol></li>
+<li>A family history observation not contained within a family history organizer <b>SHALL</b> contain exactly one subject participant, representing the family member who is the subject of the observation</li>
+<li>Where the subject of an observation is explicit in a family history observation code (e.g. SNOMED CT concept 417001009 "Family history of tuberous sclerosis"), the subject participant <b>SHALL</b> be equivalent to or further specialize the code</li>
+<li>Where the subject of an observation is not explicit in a family history observation code (e.g. SNOMED CT concept 44054006 "Diabetes Mellitus type 2"), the subject participant <b>SHALL</b> be used to assert the affected relative</li>
+<li>A subject participant <b>SHALL</b> contain exactly one RelatedSubject, representing the relationship of the subject to the patient</li>
+<li>The value for RelatedSubject / @classCode <b>SHALL</b> be "PRS" "Personal relationship" 2.16.840.1.113883.5.110 RoleClass STATIC</li>
+<li>RelatedSubject <b>SHALL</b> contain exactly one RelatedSubject / code</li>
+<li>The value for "RelatedSubject / code" <b>SHOULD</b> be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode DYNAMIC</li>
+<li>Representation of a pedigree graph <b>SHALL</b> be done using RelatedSubject / code values (e.g. "great grandfather") to designate a hierarchical family tree.</li>
+<li>RelatedSubject <b>SHOULD</b> contain exactly one RelatedSubject / subject</li>
+<li>RelatedSubject / subject <b>SHOULD</b> contain exactly one RelatedSubject / subject / administrativeGenderCode.</li>
+<li><b>SHOULD</b> satisfy: subject/relatedSubject/subject contains exactly one birthTime<ul><li><codeblock>[OCL]: not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedInd</li>
+<li><b>MAY</b> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedTime</li>
+<li><b>SHOULD</b> satisfy: The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with Observation/effectiveTime</li>
+<li><b>MAY</b> satisfy: The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information</li>
+<li>A family history cause of death observation <b>SHALL</b> contain one or more entryRelationship / @typeCode</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::CauseOfDeathObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.1.42]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry></entry><entry>HL7ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.1.42</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ANY</entry><entry></entry><entry> </entry></row> 
+<row><entry>ageObservation</entry><entry>ageObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AgeObservation</entry><entry>CONF-224</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>causeOfDeathObservation</entry><entry>causeOfDeathObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>CauseOfDeathObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>problemStatusObservation</entry><entry>problemStatusObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProblemStatusObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.22"/>
   <templateId root="2.16.840.1.113883.10.20.1.42"/>
-  <id root="732a0eb8-1939-4d36-8d3c-4d004e5d17ab"/>
+  <id root="1228559340"/>
+  <code code="1158919620"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2011"/>
     <high value="2011"/>
   </effectiveTime>
 </observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Cause Of Death Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.42</tt>]</p>
 </body>
 </topic>

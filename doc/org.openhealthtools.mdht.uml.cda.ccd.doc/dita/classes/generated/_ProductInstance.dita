@@ -21,10 +21,27 @@
 </li>
 <li>If participantRole in a product instance contains participantRole / id, then participantRole <b>SHOULD</b> also contain participantRole / scopingEntity. (CONF-451)<ul><li><codeblock>[OCL]: self.id-&gt;size() &gt; 0 implies self.scopingEntity-&gt;size() &gt; 0</codeblock></li></ul></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::ProductInstance</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::participantrole[cda:templateId/@root = 2.16.840.1.113883.10.20.1.52]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>RoleClass</entry><entry></entry><entry> ROL</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>addr</entry><entry>addr</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>AD</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>telecom</entry><entry>telecom</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>TEL</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.1.52</entry></row> 
+<row><entry>playingDevice</entry><entry>playingDevice</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Device</entry><entry></entry><entry> </entry></row> 
+<row><entry>playingEntity</entry><entry>playingEntity</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>PlayingEntity</entry><entry></entry><entry> </entry></row> 
+<row><entry>scopingEntity</entry><entry>scopingEntity</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Entity</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="MANU">
   <templateId root="2.16.840.1.113883.10.20.1.52"/>
-  <id root="666b3d06-18eb-412e-907b-f4ed9a5cd886"/>
+  <id root="842680767"/>
 </participantrole>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Product Instance</ph></p>
+<p id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.1.52</tt>]</p>
 </body>
 </topic>

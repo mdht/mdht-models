@@ -12,117 +12,60 @@
 <p>Defines a coded entry describing a procedure performed on a patient.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntryProcedureActivityProcedure.html">IHE Procedure Entry Procedure Activity Procedure</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>) (C83-[DE-17-CDA-2])</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntry.html">IHE Procedure Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.9 Body Site</tt><b> STATIC</b> 2 (C83-[DE-17-CDA-3])
 <ul><li>The anatomical site where a procedure is performed</li></ul></li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-433)
-<ul><li>This is a coded value describing the type of the
-Procedure</li></ul></li>
+</li>
 <li><b>SHALL</b> satisfy: The code/originalText/reference/@value is present.<ul><li>Free text describing the Procedure</li></ul><ul><li><codeblock>[OCL]: not self.code.originalText.reference.value.oclIsUndefined()</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: Contains the procedure provider in performer / assignedEntity.<ul><li>Name and other information for the person or
 organization performed or hosted the Procedure</li></ul><ul><li><codeblock>[OCL]: self.performer-&gt;forAll(perf : cda::Performer2 | not perf.oclIsUndefined() and perf.assignedEntity-&gt;size() &gt; 0)</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntry.html">IHE Procedure Entry</xref></li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProcedureActivity.html">CCD Procedure Activity</xref></li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProcedureActivityProcedure.html">CCD Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.29</tt>)</li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntryProcedureActivityProcedure.html">IHE Procedure Entry Procedure Activity Procedure</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntry.html">IHE Procedure Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClass
 </li>
 <li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_DocumentProcedureMood
 </li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-433)
-<ul><li>This is a coded value describing the type of the
-Procedure</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode</tt><b> STATIC</b> 20061017 (CONF-430, CONF-431)
-<ul><li>The &lt;statusCode> element shall be present when used to describe a procedure event. It shall have the value 'completed' for procedures that have been completed, and 'active' for procedures that are still in progress. Procedures that were stopped prior to completion shall use the value 'aborted', and procedures that were cancelled before being started shall use the value 'cancelled'.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>approachSiteCode</b></tt>
-<ul><li>This element may be present to indicate the procedure approach.</li></ul></li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.9 Body Site</tt><b> STATIC</b> 2 (C83-[DE-17-CDA-3])
 <ul><li>The anatomical site where a procedure is performed</li></ul></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>encounterLocation</b></tt>, where its type is <xref href="../EncounterLocation.dita">Encounter Location</xref> (CONF-437)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>patientInstruction</b></tt>, where its type is <xref href="../PatientInstruction.dita">Patient Instruction</xref> (CONF-441, CONF-333)
-<ol>
-<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
-<li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>ageObservation</b></tt>, where its type is <xref href="../AgeObservation.dita">Age Observation</xref> (CONF-445)
-<ol>
-<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
-<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>medicationActivity</b></tt>, where its type is <xref href="../MedicationActivity.dita">Medication Activity</xref> (CONF-446)
-<ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
-<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, such that
-<ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
-<li>Contains exactly one [1..1] <xref href="../InternalReference.dita">Internal Reference</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.4.1</tt>)</li></ol><ul><li>This element may be present to point the encounter in which the procedure was performed, and shall contain an internal reference to the encounter.</li></ul></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt>, such that
-<ol>
-<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON (has reason)</i></li>
-<li>Contains exactly one [1..1] <xref href="../InternalReference.dita">Internal Reference</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.4.1</tt>)</li></ol><ul><li>A &lt;procedure> act may indicate one or more reasons for the procedure. These reasons identify the concern that was the reason for use via the Internal Reference entry content module. The extension and root of each observation present must match the identifier of a concern entry contained elsewhere within the CDA document.</li></ul></li>
-<li>The value for code in a procedure activity <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4). (CONF-434)</li>
-<li><b>MAY</b> satisfy: contain one or more performer, to represent those practioners who performed the procedure. (CONF-438)</li>
-<li><b>MAY</b> satisfy: A procedure activity contains one or more entryRelationship / @typeCode="RSON", the target of which represents the indication or reason for the procedure. (CONF-439)</li>
-<li>entryRelationship / @typeCode="RSON" in a procedure activity <b>SHALL</b> have a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement. (CONF-440)</li>
-<li><b>MAY</b> satisfy: have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent (CONF-442)</li>
-<li><b>SHALL</b> satisfy: contains one or more sources of information (CONF-447)</li>
-<li><b>MAY</b> satisfy: have one or more participant [@typeCode="DEV"], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52) (CONF-448)</li>
-<li>participant / participantRole / id <b>SHOULD</b> be set to equal a Supply / participant / participantRole / id to indicate that the Procedure and the Supply are referring to the same product instance. (CONF-452)</li>
-<li>contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode <b>SHALL NOT</b> conflict with the method inherent in Procedure / code. (CONF-435)</li>
-<li>contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode <b>SHALL NOT</b> conflict with the site inherent in Procedure / code (CONF-436)</li>
-<li><b>MAY</b> satisfy: has one or more Procedure / specimen, reflecting specimens that were obtained as part of the procedure. (CONF-443)</li>
-<li>specimen / specimenRole / id <b>SHOULD</b> be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen. (CONF-444)</li>
-<li><b>SHALL</b> satisfy: Value for moodCode is 'INT' to indicate a planned procedure or 'EVN' to describe a procedure that has already occured.<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentProcedureMood::EVN or self.moodCode = vocab::x_DocumentProcedureMood::INT</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: The &lt;text&gt; element shall contain a reference to the narrative text describing the procedure.<ul><li><codeblock>[OCL]: not self.text.reference.oclIsUndefined()</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: When the procedure is in event mood (moodCode='EVN'), this entry conforms to the CCD template 2.16.840.1.113883.10.20.1.29, and when in intent mood, this entry conforms to the CCD template 2.16.840.1.113883.10.20.1.25</li>
-<li>&lt;priorityCode&gt; <b>SHALL</b> be present in INT mood when effectiveTime is not provided, it <b>MAY</b> be present in other moods<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentProcedureMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'true' for the reference to encounter (typecode=COMP)<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.inversionInd &lt;&gt; true)-&gt;isEmpty()</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The code/originalText/reference/@value is present.<ul><li>Free text describing the Procedure</li></ul><ul><li><codeblock>[OCL]: not self.code.originalText.reference.value.oclIsUndefined()</codeblock></li></ul></li>
 <li><b>SHOULD</b> satisfy: Contains the procedure provider in performer / assignedEntity.<ul><li>Name and other information for the person or
 organization performed or hosted the Procedure</li></ul><ul><li><codeblock>[OCL]: self.performer-&gt;forAll(perf : cda::Performer2 | not perf.oclIsUndefined() and perf.assignedEntity-&gt;size() &gt; 0)</codeblock></li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="PROC">
-  <templateId root="2.16.840.1.113883.10.20.1.29"/>
-  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
-  <templateId root="2.16.840.1.113883.3.88.11.83.17"/>
-  <id root="92ab89ee-1112-4228-8d7a-b6f83e0b3de6"/>
-  <code/>
-  <text/>
-  <statusCode code="completed"/>
-  <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
-  </effectiveTime>
-  <approachSiteCode/>
-  <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-  <entryRelationship>
-    <act>
-      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-      <id root="0fbc6295-55db-4f15-8b86-b33c41671a8b"/>
-      <code/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </act>
-  </entryRelationship>
-  <entryRelationship>
-    <act>
-      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-      <id root="4b6131d6-3ffc-4188-9a94-d830dd6b5727"/>
-      <code/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </act>
-  </entryRelationship>
-</procedure>]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::Procedure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>approachSiteCode</entry><entry>approachSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF-433</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>C83-[DE-17-CDA-3]</entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>classCode</entry><entry>classCode</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>ActClass</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>moodCode</entry><entry>moodCode</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>x_DocumentProcedureMood</entry><entry></entry><entry> </entry></row> 
+<row><entry>negationInd</entry><entry>negationInd</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>nullFlavor</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>NullFlavor</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[Unable to create XML Snippet]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure</ph></p>
+<p id="shortdesc">[Procedure: templateId <tt>2.16.840.1.113883.3.88.11.83.17</tt>]</p>
 </body>
 </topic>

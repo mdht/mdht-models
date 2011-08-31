@@ -36,90 +36,54 @@ past. It shall include entries for medication administration as described in the
 <li><b>SHOULD</b> satisfy: Clinical statements include one or more Medication Activity and/or one or more Supply Activity. (CONF-298)<ul><li><codeblock>[OCL]: self.getSubstanceAdministrations()-&gt;exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))
    or self.getSupplies()-&gt;exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The absence of known medications is explicitly asserted. (CONF-299)</li>
-<li><b>SHOULD</b> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)<ul><li><codeblock>[OCL]: self.title = 'medication'</codeblock></li></ul></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)<ul><li><codeblock>[OCL]: self.title = 'immunization'</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ihe::ImmunizationsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 1.3.6.1.4.1.19376.1.5.3.1.3.23]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF-377</entry><entry>LOINC 2.16.840.1.113883.6.1LOINC 2.16.840.1.113883.6.1 11369-6</entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 1.3.6.1.4.1.19376.1.5.3.1.3.23</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF-379</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
+<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> </entry></row> 
+<row><entry>immunization</entry><entry>cda:entry/cda:substanceAdministration[cda:templateId/@root = 1.3.6.1.4.1.19376.1.5.3.1.4.12]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Immunization</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>medicationActivity</entry><entry>cda:entry/cda:substanceAdministration[cda:templateId/@root = 2.16.840.1.113883.10.20.1.24]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>MedicationActivity</entry><entry>CONF-298</entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>supplyActivity</entry><entry>cda:entry/cda:supply[cda:templateId/@root = 2.16.840.1.113883.10.20.1.34]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>SupplyActivity</entry><entry>CONF-298</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF-376</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.6"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23"/>
-  <id root="81c75ff3-c245-4214-a13f-c0dd04ef40c0"/>
+  <id root="1674569173"/>
   <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
-  <title>History of immunizations</title>
+  <title/>
+  <text/>
   <entry>
-    <substanceAdministration moodCode="EVN">
+    <substanceAdministration>
       <templateId root="2.16.840.1.113883.10.20.1.24"/>
       <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
-      <id root="4228f575-7ee6-4306-8144-07ac90420ef0"/>
-      <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
-      <statusCode/>
-      <effectiveTime value="20110616"/>
-      <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
-      <doseQuantity/>
-      <rateQuantity/>
-      <maxDoseQuantity/>
-      <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.1.46"/>
-          <id root="c86fdb51-721f-4efb-bef6-213d2811a1ee"/>
-          <code code="30973-2" codeSystemName="" displayName="Dose number"/>
-          <statusCode/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-          <value xsi:type="INT"/>
-        </observation>
-      </entryRelationship>
-      <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.1.57"/>
-          <templateId root="2.16.840.1.113883.10.20.1.47"/>
-          <id root="8dcac154-f110-48a7-9614-950907415b65"/>
-          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
-          <statusCode code="completed"/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-          <value xsi:type="CE"/>
-        </observation>
-      </entryRelationship>
-      <entryRelationship>
-        <act moodCode="INT">
-          <templateId root="2.16.840.1.113883.10.20.1.49"/>
-          <id root="f4a07f7a-ff83-4f8b-948d-efe89a6e2304"/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-        </act>
-      </entryRelationship>
-      <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.1.54"/>
-          <id root="2b22a311-54c9-4d39-9545-f167fe910dc4"/>
-          <statusCode code="completed"/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-          <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.1.55"/>
-              <id root="b99d93c3-4927-4df4-806c-9a7d40e3f7c6"/>
-              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/>
-              <statusCode code="completed"/>
-              <effectiveTime>
-                <low value="2011"/>
-                <high value="2011"/>
-              </effectiveTime>
-            </observation>
-          </entryRelationship>
-        </observation>
-      </entryRelationship>
+      <id root="456401743"/>
+      <code code="941141251"/>
+      <text/>
+      <effectiveTime value="20110830"/>
+      <consumable/>
     </substanceAdministration>
   </entry>
 </section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Immunizations Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.3.23</tt>]</p>
 </body>
 </topic>

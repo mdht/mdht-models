@@ -39,7 +39,7 @@
 <ol class="ol">
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProcedureActivityProcedure.html">CCD Procedure Activity Procedure</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.29</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProcedureEntry.html">Procedure Entry</a></li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProcedureEntry.html" title="[Procedure: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.19]">Procedure Entry</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PROC" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
@@ -109,40 +109,18 @@
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="PROC"&gt;
+&lt;procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.29"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/&gt;
-  &lt;id root="82983ab1-e4f0-43b2-91dc-4c83851bacda"/&gt;
-  &lt;code/&gt;
+  &lt;id root="270284483"/&gt;
+  &lt;code code="1548596338"/&gt;
   &lt;text/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;
     &lt;high value="2011"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;approachSiteCode/&gt;
-  &lt;entryRelationship&gt;
-    &lt;act&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
-      &lt;id root="65bcfcfd-1ced-44b3-be46-98bf8799c029"/&gt;
-      &lt;code/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/act&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;act&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
-      &lt;id root="4c2cc12e-c849-4023-b8bf-301fcb63cb6d"/&gt;
-      &lt;code/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/act&gt;
-  &lt;/entryRelationship&gt;
+  &lt;approachSiteCode code="1635002020"/&gt;
 &lt;/procedure&gt;</pre>
 
 </div>

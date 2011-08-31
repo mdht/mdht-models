@@ -43,7 +43,7 @@
 </li>
 </ul>
 <ol class="ol" type="i">
-<li class="li">The value for participant/participantRole/@classCode in a location participation <strong class="ph b">SHALL</strong> be "SDLOC" "Service delivery location" 2.16.840.1.113883.5.110 RoleClass. (CONF-475)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.classCode = 'SDLOC'</pre>
+<li class="li">The value for participant/participantRole/@classCode in a location participation <strong class="ph b">SHALL</strong> be "SDLOC" "Service delivery location" 2.16.840.1.113883.5.110 RoleClass. (CONF-475)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.classCode =  vocab::RoleClassRoot::SDLOC</pre>
 </li>
 </ul>
 <ol class="ol">
@@ -59,7 +59,7 @@
 </li>
 </ul>
 <ol class="ol">
-<li class="li">The value for participant/participantRole/playingEntity/@classCode in a location participation <strong class="ph b">SHALL</strong> be "PLC" "Place" 2.16.840.1.113883.5.41 EntityClass. (CONF-479)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.playingEntity.classCode = 'PLC'</pre>
+<li class="li">The value for participant/participantRole/playingEntity/@classCode in a location participation <strong class="ph b">SHALL</strong> be "PLC" "Place" 2.16.840.1.113883.5.41 EntityClass. (CONF-479)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participantRole.playingEntity.classCode = vocab::EntityClassRoot::PLC</pre>
 </li>
 </ul>
 </li>
@@ -92,6 +92,7 @@
     &lt;low value="2011"/&gt;
     &lt;high value="2011"/&gt;
   &lt;/time&gt;
+  &lt;participantRole/&gt;
 &lt;/participant2&gt;</pre>
 
 </div>

@@ -52,7 +52,7 @@
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.20.2 AdvanceDirectiveTypeCode</tt><strong class="ph b"> STATIC</strong> 20061017
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">advanceDirectiveVerification</strong></tt>, such that
@@ -60,6 +60,24 @@
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectiveVerification.html" title="[Participant2: templateId 2.16.840.1.113883.10.20.1.58]">Advance Directive Verification</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.58</tt>)</li>
 </ol>
 </li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectiveStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.37]">Advance Directive Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.37</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">advanceDirectiveReference</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectiveReference.html" title="[ExternalDocument: templateId 2.16.840.1.113883.10.20.1.36]">Advance Directive Reference</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.36</tt>)</li>
+</ol>
+</li>
+
+<li class="li">The value for Observation / code in an advance directive observation <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.2 AdvanceDirectiveTypeCode STATIC 20061017.</li>
+
+<li class="li">There <strong class="ph b">SHOULD</strong> be an advance directive observation whose value for Observation / code is '304251008' 'Resuscitation status' 2.16.840.1.113883.6.96 SNOMED CT STATIC</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information</li>
 
 </ol>
 
@@ -73,8 +91,8 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.17"/&gt;
-  &lt;id root="a0e8e121-1051-421f-93c7-f64ff342b5ed"/&gt;
-  &lt;code/&gt;
+  &lt;id root="1169380925"/&gt;
+  &lt;code code="1265130169"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;

@@ -29,105 +29,51 @@
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ExternalReference.dita">External Reference</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.4</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureEntryProcedureActivityProcedure.dita">Procedure Entry Procedure Activity Procedure</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li></ol></li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (C83-[CT-108-2]), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Procedure.dita">Procedure</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.17</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)<ul><li><codeblock>[OCL]: self.title = 'procedures'</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: title is valued with a case-insensitive language-insensitive text string containing "procedures". (CONF-426)</li>
 <li><b>SHOULD</b> satisfy: include one or more of the following: ProcedureActivityAct, ProcedureActivityObservation, ProcedureActivityProcedure (CONF-422)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::SurgeriesSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.3.88.11.83.108]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF-423CONF-424</entry><entry>LOINC 2.16.840.1.113883.6.1 47519-4</entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.3.88.11.83.108</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF-425</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
+<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> </entry></row> 
+<row><entry>externalReference</entry><entry>externalReference</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ExternalReference</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>procedureActivity</entry><entry>procedureActivity</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Procedure</entry><entry>C83-[CT-108-2]</entry><entry> </entry></row> 
+<row><entry>procedureEntryProcedureActivityProcedure</entry><entry>cda:entry/cda:procedure[cda:templateId/@root = 1.3.6.1.4.1.19376.1.5.3.1.4.19]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureEntryProcedureActivityProcedure</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF-422</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.12"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.108"/>
-  <id root="16056ed3-ee5d-441b-9235-843a85e0df0b"/>
+  <id root="222110367"/>
   <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
-  <title>History of procedures</title>
-  <entry>
-    <act classCode="ACT" moodCode="EVN">
-      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4"/>
-      <id root="958ca461-989e-4730-bdfb-4348df7b9cfc"/>
-      <text/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </act>
-  </entry>
-  <entry>
-    <procedure classCode="PROC">
-      <templateId root="2.16.840.1.113883.10.20.1.29"/>
-      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
-      <id root="75e9b1f7-0ac1-437d-b81c-02d7b0b609b9"/>
-      <code/>
-      <text/>
-      <statusCode code="completed"/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-      <approachSiteCode/>
-      <entryRelationship>
-        <act>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-          <id root="40038107-a89a-4e80-b76f-bc530e202928"/>
-          <code/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-        </act>
-      </entryRelationship>
-      <entryRelationship>
-        <act>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-          <id root="e99962ab-3819-4cab-a13f-49f63904ff5e"/>
-          <code/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-        </act>
-      </entryRelationship>
-    </procedure>
-  </entry>
-  <entry>
-    <procedure classCode="PROC">
-      <templateId root="2.16.840.1.113883.10.20.1.29"/>
-      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
-      <templateId root="2.16.840.1.113883.3.88.11.83.17"/>
-      <id root="49367ccb-9610-4e4f-acdb-f01f69dafe55"/>
-      <statusCode code="completed"/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-      <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-      <entryRelationship>
-        <act>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-          <id root="b8830873-d910-467f-845f-21e735b53bc4"/>
-          <code/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-        </act>
-      </entryRelationship>
-      <entryRelationship>
-        <act>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-          <id root="e87c47b8-5e51-4e65-8718-1cc1e49d8c9b"/>
-          <code/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-        </act>
-      </entryRelationship>
-    </procedure>
-  </entry>
+  <title/>
+  <text/>
 </section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Surgeries Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.3.88.11.83.108</tt>]</p>
 </body>
 </topic>

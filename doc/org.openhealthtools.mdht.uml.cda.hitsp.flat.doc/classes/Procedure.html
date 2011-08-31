@@ -40,137 +40,19 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntry.html">IHE Procedure Entry</a></li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntry.html">IHE Procedure Entry</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProcedureActivity.html">CCD Procedure Activity</a></li>
-
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProcedureActivityProcedure.html">CCD Procedure Activity Procedure</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.29</tt>)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntryProcedureActivityProcedure.html">IHE Procedure Entry Procedure Activity Procedure</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PROC" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt>, where its data type is ActClass
 </li>
 
 <li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, where its data type is x_DocumentProcedureMood
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF-433)
-<ul class="ul"><li class="li">This is a coded value describing the type of the
-Procedure</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode</tt><strong class="ph b"> STATIC</strong> 20061017 (CONF-430, CONF-431)
-<ul class="ul"><li class="li">The &lt;statusCode&gt; element shall be present when used to describe a procedure event. It shall have the value 'completed' for procedures that have been completed, and 'active' for procedures that are still in progress. Procedures that were stopped prior to completion shall use the value 'aborted', and procedures that were cancelled before being started shall use the value 'cancelled'.</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">approachSiteCode</strong></tt>
-<ul class="ul"><li class="li">This element may be present to indicate the procedure approach.</li>
-</ul>
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.3.88.12.3221.8.9 Body Site</tt><strong class="ph b"> STATIC</strong> 2 (C83-[DE-17-CDA-3])
 <ul class="ul"><li class="li">The anatomical site where a procedure is performed</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">encounterLocation</strong></tt>, where its type is <a class="xref" href="generated/../EncounterLocation.html">Encounter Location</a> (CONF-437)
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../EncounterLocation.html">Encounter Location</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.45</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">patientInstruction</strong></tt>, where its type is <a class="xref" href="generated/../PatientInstruction.html">Patient Instruction</a> (CONF-441, CONF-333)
-<ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
-
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../PatientInstruction.html">Patient Instruction</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.49</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">ageObservation</strong></tt>, where its type is <a class="xref" href="generated/../AgeObservation.html">Age Observation</a> (CONF-445)
-<ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
-
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../AgeObservation.html">Age Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.38</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">medicationActivity</strong></tt>, where its type is <a class="xref" href="generated/../MedicationActivity.html">Medication Activity</a> (CONF-446)
-<ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP (has component)</em></li>
-
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../MedicationActivity.html">Medication Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.24</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
-<ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP (has component)</em></li>
-
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../InternalReference.html">Internal Reference</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.4.1</tt>)</li>
-</ol>
-<ul class="ul"><li class="li">This element may be present to point the encounter in which the procedure was performed, and shall contain an internal reference to the encounter.</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
-<ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>RSON" </tt><em class="ph i">RSON (has reason)</em></li>
-
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../InternalReference.html">Internal Reference</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.4.1</tt>)</li>
-</ol>
-<ul class="ul"><li class="li">A &lt;procedure&gt; act may indicate one or more reasons for the procedure. These reasons identify the concern that was the reason for use via the Internal Reference entry content module. The extension and root of each observation present must match the identifier of a concern entry contained elsewhere within the CDA document.</li>
-</ul>
-</li>
-
-<li class="li">The value for code in a procedure activity <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4). (CONF-434)</li>
-
-<li class="li"><strong class="ph b">MAY</strong> satisfy: contain one or more performer, to represent those practioners who performed the procedure. (CONF-438)</li>
-
-<li class="li"><strong class="ph b">MAY</strong> satisfy: A procedure activity contains one or more entryRelationship / @typeCode="RSON", the target of which represents the indication or reason for the procedure. (CONF-439)</li>
-
-<li class="li">entryRelationship / @typeCode="RSON" in a procedure activity <strong class="ph b">SHALL</strong> have a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement. (CONF-440)</li>
-
-<li class="li"><strong class="ph b">MAY</strong> satisfy: have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent (CONF-442)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: contains one or more sources of information (CONF-447)</li>
-
-<li class="li"><strong class="ph b">MAY</strong> satisfy: have one or more participant [@typeCode="DEV"], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52) (CONF-448)</li>
-
-<li class="li">participant / participantRole / id <strong class="ph b">SHOULD</strong> be set to equal a Supply / participant / participantRole / id to indicate that the Procedure and the Supply are referring to the same product instance. (CONF-452)</li>
-
-<li class="li">contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode <strong class="ph b">SHALL NOT</strong> conflict with the method inherent in Procedure / code. (CONF-435)</li>
-
-<li class="li">contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode <strong class="ph b">SHALL NOT</strong> conflict with the site inherent in Procedure / code (CONF-436)</li>
-
-<li class="li"><strong class="ph b">MAY</strong> satisfy: has one or more Procedure / specimen, reflecting specimens that were obtained as part of the procedure. (CONF-443)</li>
-
-<li class="li">specimen / specimenRole / id <strong class="ph b">SHOULD</strong> be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen. (CONF-444)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Value for moodCode is 'INT' to indicate a planned procedure or 'EVN' to describe a procedure that has already occured.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.moodCode = vocab::x_DocumentProcedureMood::EVN or self.moodCode = vocab::x_DocumentProcedureMood::INT</pre>
-</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The &lt;text&gt; element shall contain a reference to the narrative text describing the procedure.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.text.reference.oclIsUndefined()</pre>
-</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: When the procedure is in event mood (moodCode='EVN'), this entry conforms to the CCD template 2.16.840.1.113883.10.20.1.29, and when in intent mood, this entry conforms to the CCD template 2.16.840.1.113883.10.20.1.25</li>
-
-<li class="li">&lt;priorityCode&gt; <strong class="ph b">SHALL</strong> be present in INT mood when effectiveTime is not provided, it <strong class="ph b">MAY</strong> be present in other moods<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.moodCode = vocab::x_DocumentProcedureMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()</pre>
-</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The entryRelationship/@inversionInd attribute is 'true' for the reference to encounter (typecode=COMP)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.inversionInd &lt;&gt; true)-&gt;isEmpty()</pre>
-</li>
 </ul>
 </li>
 
@@ -197,44 +79,7 @@ organization performed or hosted the Procedure</li>
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="PROC"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.29"/&gt;
-  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/&gt;
-  &lt;templateId root="2.16.840.1.113883.3.88.11.83.17"/&gt;
-  &lt;id root="92ab89ee-1112-4228-8d7a-b6f83e0b3de6"/&gt;
-  &lt;code/&gt;
-  &lt;text/&gt;
-  &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime&gt;
-    &lt;low value="2011"/&gt;
-    &lt;high value="2011"/&gt;
-  &lt;/effectiveTime&gt;
-  &lt;approachSiteCode/&gt;
-  &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-  &lt;entryRelationship&gt;
-    &lt;act&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
-      &lt;id root="0fbc6295-55db-4f15-8b86-b33c41671a8b"/&gt;
-      &lt;code/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/act&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;act&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
-      &lt;id root="4b6131d6-3ffc-4188-9a94-d830dd6b5727"/&gt;
-      &lt;code/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/act&gt;
-  &lt;/entryRelationship&gt;
-&lt;/procedure&gt;</pre>
+<pre class="pre codeblock">Unable to create XML Snippet</pre>
 
 </div>
 

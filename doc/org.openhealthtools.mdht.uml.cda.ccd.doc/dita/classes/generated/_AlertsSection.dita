@@ -16,7 +16,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-260)
 <ol>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)<ul><li><codeblock>[OCL]: self.title = 'alert' or self.title='allergies and adverse reactions'</codeblock></li></ul></li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-256)
 </li>
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-256), such that
@@ -29,97 +29,61 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-260)
 <ol>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)<ul><li><codeblock>[OCL]: self.title = 'alert' or self.title='allergies and adverse reactions'</codeblock></li></ul></li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-256)
 </li>
 <li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-256), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
-<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)<ul><li><codeblock>[OCL]: self.title = 'alert' or self.title='allergies and adverse reactions'</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing "alert" and/or "allergies and adverse reactions". (CONF-261)</li>
 <li>The absence of known allergies, adverse reactions or alerts <b>SHALL</b> be explicitly asserted.</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::AlertsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.1.2]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF-258CONF-259</entry><entry>LOINC 2.16.840.1.113883.6.1 48765-2</entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.1.2</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF-260</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
+<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>problemAct</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.1.27]</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ProblemAct</entry><entry>CONF-256</entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF-256</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.2"/>
-  <id root="94ccc99a-533e-414a-946b-44916447a91b"/>
+  <id root="1382775424"/>
   <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
-  <title>Allergies, adverse reactions, alerts</title>
+  <title/>
+  <text/>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.27"/>
-      <id root="0f863605-0f72-4cf6-9500-b1cea6697e39"/>
+      <id root="1945624370"/>
       <code nullFlavor="NA"/>
+      <text/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>
       </effectiveTime>
       <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.1.41"/>
-          <id root="6b747623-f5e9-422d-918c-7c1279693154"/>
-          <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
-          <statusCode code="completed"/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-          <value xsi:type="CD"/>
-        </observation>
-      </entryRelationship>
-      <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.1.28"/>
-          <id root="d2659722-9d1b-4a33-a3b5-6285c619e80e"/>
-          <code/>
-          <statusCode code="completed"/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-          <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.1.57"/>
-              <templateId root="2.16.840.1.113883.10.20.1.50"/>
-              <id root="55231208-3d7c-4bf3-8eb2-46af3adc2101"/>
-              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
-              <statusCode code="completed"/>
-              <effectiveTime>
-                <low value="2011"/>
-                <high value="2011"/>
-              </effectiveTime>
-              <value xsi:type="CE"/>
-            </observation>
-          </entryRelationship>
-          <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.1.57"/>
-              <templateId root="2.16.840.1.113883.10.20.1.51"/>
-              <id root="d6cf42de-0167-4bc5-9edb-5a79e3fa4f09"/>
-              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
-              <statusCode code="completed"/>
-              <effectiveTime>
-                <low value="2011"/>
-                <high value="2011"/>
-              </effectiveTime>
-              <value xsi:type="CE"/>
-            </observation>
-          </entryRelationship>
-          <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.1.38"/>
-              <id root="72844a52-1eed-43ab-92f8-5c0f8cc89a2b"/>
-              <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
-              <statusCode code="completed"/>
-              <effectiveTime>
-                <low value="2011"/>
-                <high value="2011"/>
-              </effectiveTime>
-            </observation>
-          </entryRelationship>
-        </observation>
+        <observation/>
       </entryRelationship>
     </act>
   </entry>
 </section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Alerts Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.1.2</tt>]</p>
 </body>
 </topic>

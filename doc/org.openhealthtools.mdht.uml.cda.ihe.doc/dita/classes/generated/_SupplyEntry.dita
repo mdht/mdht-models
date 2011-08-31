@@ -84,7 +84,7 @@ or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActR
 or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
    rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
    and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
-<li><b>MAY</b> satisfy: Contains exactly one product, the target of which is a Product template. (CONF-355)<ul><li><codeblock>[OCL]: not self.product.oclIsUndefined() and self.product.oclIsKindOf(ccd::Product)</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains exactly one product, the target of which is a Product template. (CONF-355)<ul><li><codeblock>[OCL]: not self.product.oclIsUndefined() and self.product.oclIsKindOf(cda::Product)</codeblock></li></ul></li>
 <li>Supply / participant / participantRole / id <b>SHOULD</b> be set to equal a [Act | Observation | Procedure] / participant / participantRole / id  to indicate that the Supply and the Procedure are referring to the same product instance.</li>
 <li><b>MAY</b> satisfy: A supply entry that describes an intent (&lt;supply classCode='SPLY' moodCode='INT'&gt;) may include an &lt;author&gt; element to identify the prescribing provider.</li>
 <li><b>SHALL</b> satisfy: The &lt;time&gt; element must be present to indicate when the author created the prescription. If this
@@ -103,53 +103,11 @@ shall contain a &lt;name&gt; element to identify the prescriber or their organiz
 <li><b>SHOULD</b> satisfy: One or more &lt;id&gt; elements should be present. These identify the performer.</li>
 <li><b>SHALL</b> satisfy: An &lt;assignedPerson&gt; and/or &lt;representedOriganization&gt; element shall be present. This element shall contain a &lt;name&gt; element to identify the filler or their organization.</li>
 </ol>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <templateId root="2.16.840.1.113883.10.20.1.34"/>
-  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/>
-  <id root="dc6d03b7-2f43-4968-8bd2-abb369e0a7b8"/>
-  <statusCode/>
-  <effectiveTime value="20110616"/>
-  <repeatNumber/>
-  <quantity/>
-  <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.1.57"/>
-      <templateId root="2.16.840.1.113883.10.20.1.47"/>
-      <id root="ef7a17b1-f12c-4875-b6d6-ece4e9add600"/>
-      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
-      <statusCode code="completed"/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-      <value xsi:type="CE"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <act moodCode="INT">
-      <templateId root="2.16.840.1.113883.10.20.1.43"/>
-      <id root="0e0a6787-8799-4207-85d1-c007cc83af0e"/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </act>
-  </entryRelationship>
-  <entryRelationship>
-    <act moodCode="INT">
-      <templateId root="2.16.840.1.113883.10.20.1.43"/>
-      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
-      <id root="4d947e55-debf-4d0a-a26b-f4d96dea0a4c"/>
-      <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
-      <text/>
-      <statusCode/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </act>
-  </entryRelationship>
-</supply>]]></codeblock>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Supply Entry</ph></p>
+<p id="shortdesc">[Supply: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7.3</tt>]</p>
 </body>
 </topic>

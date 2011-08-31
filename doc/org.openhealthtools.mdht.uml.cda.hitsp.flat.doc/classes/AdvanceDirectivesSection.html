@@ -55,11 +55,16 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
 </li>
 
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>, such that
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../AdvanceDirectiveObservation.html">Advance Directive Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.17</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirective.html">Advance Directive</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.12</tt>)</li>
 </ol>
 </li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive text string containing 'advance directives'.</li>
 
 </ol>
 
@@ -75,21 +80,10 @@
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.34"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.35"/&gt;
   &lt;templateId root="2.16.840.1.113883.3.88.11.83.116"/&gt;
-  &lt;id root="1a3c5148-aee5-450f-9320-e4720074424b"/&gt;
+  &lt;id root="379762213"/&gt;
   &lt;code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/&gt;
-  &lt;title&gt;Advance directives&lt;/title&gt;
-  &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.17"/&gt;
-      &lt;id root="5c20bb8a-988e-4d6a-891c-a130a5a561e8"/&gt;
-      &lt;code/&gt;
-      &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entry&gt;
+  &lt;title/&gt;
+  &lt;text/&gt;
 &lt;/section&gt;</pre>
 
 </div>

@@ -350,10 +350,7 @@ prescription.</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The time at which the medication was stopped is determined based on the content of the &lt;high&gt; element of the first &lt;effectiveTime&gt; element. (2.2.2.8.3)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.effectiveTime-&gt;size() = 1</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The time at which the medication was stopped is determined based on the content of the &lt;high&gt; element of the first &lt;effectiveTime&gt; element. (2.2.2.8.3)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: The HL7 data type for PIVL_TS uses the institutionSpecified attribute to indicate whether it is the interval (time between dosing), or frequency (number of doses in a time period) that is important. If instititutionSpecified is not present or is set to false, then the time between dosing is important (every 8 hours). If true, then the frequency of administration is important (e.g., 3 times per day). (2.2.2.8.4)<ul class="ul"><li class="li">defines a specific administration or
 use time. Can be a text string (Morning, Evening,
@@ -400,7 +397,7 @@ implications (e.g., every 8 hours versus 3 times a day)</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one consumable element which contains the Medication Information template. The name and code for the medication are recorded in the &lt;consumable&gt; element.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.consumable.manufacturedProduct-&gt;exists(mp : cda::ManufacturedProduct | mp.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8.2'))</pre>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one consumable element which contains the Medication Information template. The name and code for the medication are recorded in the &lt;consumable&gt; element.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.consumable.manufacturedProduct-&gt;exists(mp : cda::ManufacturedProduct | mp.oclIsKindOf(hitsp::MedicationInformation))</pre>
 </li>
 </ul>
 </li>
@@ -408,7 +405,7 @@ implications (e.g., every 8 hours versus 3 times a day)</li>
 <li class="li">The medication status <strong class="ph b">MAY</strong> be recorded using the CCD Medication Status observation using the value set defined in the CCD (C154-[DE-8.20-1])<ul class="ul"><li class="li">If the medication is Active, Discharged, Chronic,
 Acute, etc</li>
 </ul>
-<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.hasObservationTemplate('2.16.840.1.113883.10.20.1.47')</pre>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(po : cda::Observation |  po.oclIsKindOf(ccd::MedicationStatusObservation))</pre>
 </li>
 </ul>
 </li>
@@ -418,17 +415,17 @@ intended to be addressed by the ordered product. For
 example: for chest pain, for pain, for high blood
 pressure</li>
 </ul>
-<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.hasObservationTemplate('2.16.840.1.113883.10.20.1.28')</pre>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation))</pre>
 </li>
 </ul>
 </li>
 
-<li class="li">The indication problem observation <strong class="ph b">SHALL</strong> contain a &lt;text&gt; element that includes a &lt;reference&gt; element whose value attribute points to the narrative text that is the indication for the medication (C83-[DE-8.20-CDA-2])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.28') and not po.text.reference.oclIsUndefined())</pre>
+<li class="li">The indication problem observation <strong class="ph b">SHALL</strong> contain a &lt;text&gt; element that includes a &lt;reference&gt; element whose value attribute points to the narrative text that is the indication for the medication (C83-[DE-8.20-CDA-2])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation) and not po.text.reference.oclIsUndefined())</pre>
 </li>
 </ul>
 </li>
 
-<li class="li">The indication <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic (C154-[DE-8.20-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.28') and po.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4')</pre>
+<li class="li">The indication <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic (C154-[DE-8.20-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation) and po.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4')</pre>
 </li>
 </ul>
 </li>
@@ -445,7 +442,7 @@ External patient educational materials can be referenced with an appropriate URL
 </p>
 </li>
 </ul>
-<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.hasActTemplate('1.3.6.1.4.1.19376.1.5.3.1.4.3')</pre>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getActs()-&gt;exists(po : cda::Act | po.oclIsKindOf(ihe::PatientMedicalInstructions))</pre>
 </li>
 </ul>
 </li>
@@ -463,32 +460,32 @@ Aquaphor is the vehicle in "10% LCD in Aquaphor"</li>
 </ul>
 </li>
 
-<li class="li">The typeCode attribute of the &lt;participant&gt; element <strong class="ph b">SHALL</strong> be CSM (C83-[DE-8.24-CDA-2])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM'))</pre>
+<li class="li">The typeCode attribute of the &lt;participant&gt; element <strong class="ph b">SHALL</strong> be CSM (C83-[DE-8.24-CDA-2])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM))</pre>
 </li>
 </ul>
 </li>
 
-<li class="li">The classCode of the &lt;participantRole&gt; <strong class="ph b">SHALL</strong> be MANU (C83-[DE-8.24-CDA-3])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU')))</pre>
+<li class="li">The classCode of the &lt;participantRole&gt; <strong class="ph b">SHALL</strong> be MANU (C83-[DE-8.24-CDA-3])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU)))</pre>
 </li>
 </ul>
 </li>
 
-<li class="li">A &lt;code&gt; element for the &lt;participantRole&gt; <strong class="ph b">SHALL</strong> be present and <strong class="ph b">SHALL</strong> contain the code 412307009 from the SNOMED CT code system (C83-[DE-8.24-CDA-4])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96')))</pre>
+<li class="li">A &lt;code&gt; element for the &lt;participantRole&gt; <strong class="ph b">SHALL</strong> be present and <strong class="ph b">SHALL</strong> contain the code 412307009 from the SNOMED CT code system (C83-[DE-8.24-CDA-4])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96')))</pre>
 </li>
 </ul>
 </li>
 
-<li class="li">The &lt;name&gt; element in the &lt;playingEntity&gt; element <strong class="ph b">SHALL</strong> record the name of the drug vehicle (C83-[DE-8.24-CDA-5])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.name-&gt;size() &gt; 0)))</pre>
+<li class="li">The &lt;name&gt; element in the &lt;playingEntity&gt; element <strong class="ph b">SHALL</strong> record the name of the drug vehicle (C83-[DE-8.24-CDA-5])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.name-&gt;size() &gt; 0)))</pre>
 </li>
 </ul>
 </li>
 
-<li class="li">The &lt;code&gt; element in the &lt;playingEntity&gt; element <strong class="ph b">MAY</strong> be used to supply a coded term for the drug vehicle (C83-[DE-8.24-CDA-6])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0)))</pre>
+<li class="li">The &lt;code&gt; element in the &lt;playingEntity&gt; element <strong class="ph b">MAY</strong> be used to supply a coded term for the drug vehicle (C83-[DE-8.24-CDA-6])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode =vocab::ParticipationType::CSM and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0)))</pre>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic (C154-[DE-8.24-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = 'CSM' and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = 'MANU' and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.3.88.12.80.21')))</pre>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic (C154-[DE-8.24-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(sa : cda::SubstanceAdministration | sa.participant-&gt;exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code-&gt;size() &gt; 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.3.88.12.80.21')))</pre>
 </li>
 </ul>
 </li>
@@ -508,234 +505,17 @@ Aquaphor is the vehicle in "10% LCD in Aquaphor"</li>
   &lt;templateId root="2.16.840.1.113883.3.88.11.83.8"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.8"/&gt;
   &lt;templateId root="null"/&gt;
-  &lt;id root="587351c7-7ef4-41b6-acec-30a7a2935c37"/&gt;
-  &lt;code/&gt;
-  &lt;statusCode/&gt;
-  &lt;effectiveTime value="20110616"/&gt;
-  &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
-  &lt;approachSiteCode/&gt;
+  &lt;id root="603234973"/&gt;
+  &lt;code code="1635865673"/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime value="20110830"/&gt;
+  &lt;routeCode code="Value"/&gt;
+  &lt;approachSiteCode code="496887056"/&gt;
   &lt;doseQuantity/&gt;
   &lt;rateQuantity/&gt;
   &lt;maxDoseQuantity/&gt;
-  &lt;administrationUnitCode/&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
-      &lt;id root="dfda15c6-f8c1-4d50-a593-4a7dd0a6b074"/&gt;
-      &lt;code code="30973-2" codeSystemName="" displayName="Dose number"/&gt;
-      &lt;statusCode/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="INT"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
-      &lt;id root="58f26c70-19f2-4419-8478-32643f2e5734"/&gt;
-      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
-      &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;value xsi:type="CE"/&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;act moodCode="INT"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
-      &lt;id root="6e77b5bf-26bb-4d6a-a36e-cc8604bf1c9a"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/act&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
-      &lt;id root="c5143401-14d7-43b6-8e9f-70ca58b827b4"/&gt;
-      &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
-          &lt;id root="092ead55-0819-4309-97e8-98b6e86cf671"/&gt;
-          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
-          &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;act&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/&gt;
-      &lt;id root="cfabcf97-af5b-4439-9ec5-ba0cf1c81565"/&gt;
-      &lt;code/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/act&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;act classCode="ACT" moodCode="INT"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/&gt;
-      &lt;id root="d3be65f6-243d-4e75-9728-3b3cea5ebdc4"/&gt;
-      &lt;code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
-      &lt;text/&gt;
-      &lt;statusCode/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/act&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;supply&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.34"/&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/&gt;
-      &lt;id root="19c50c1b-40b4-41d8-b450-c3d3b20b5979"/&gt;
-      &lt;statusCode/&gt;
-      &lt;effectiveTime value="20110616"/&gt;
-      &lt;repeatNumber/&gt;
-      &lt;quantity/&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
-          &lt;id root="f3e2d9e1-af0c-438d-b953-fd7840d8207e"/&gt;
-          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
-          &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-          &lt;value xsi:type="CE"/&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;act moodCode="INT"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
-          &lt;id root="e2f94f6c-525a-4c6b-b5b5-4aba7faf8a04"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/act&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;act moodCode="INT"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
-          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/&gt;
-          &lt;id root="ebc333d3-72ea-4d1a-9240-d3f9bd9953c5"/&gt;
-          &lt;code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
-          &lt;text/&gt;
-          &lt;statusCode/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/act&gt;
-      &lt;/entryRelationship&gt;
-    &lt;/supply&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation&gt;
-      &lt;templateId root="2.16.840.1.113883.3.88.11.83.8.1"/&gt;
-      &lt;id root="e8e80c5b-fb95-4806-b24f-076d8f075db0"/&gt;
-      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;supply&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.34"/&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.3"/&gt;
-      &lt;templateId root="2.16.840.1.113883.3.88.11.83.8.3"/&gt;
-      &lt;id root="363c971c-4726-4735-89ee-a11b8e26049f"/&gt;
-      &lt;statusCode/&gt;
-      &lt;effectiveTime value="20110616"/&gt;
-      &lt;repeatNumber/&gt;
-      &lt;quantity/&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
-          &lt;id root="81ef8f18-be48-4f85-b6f4-c15d03b94127"/&gt;
-          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
-          &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-          &lt;value xsi:type="CE"/&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;act moodCode="INT"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
-          &lt;id root="ddbb3739-24aa-414c-a4ce-bbd7d1abc8ae"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/act&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;act moodCode="INT"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
-          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/&gt;
-          &lt;id root="28d8d160-7499-42cb-9c09-9e139558829a"/&gt;
-          &lt;code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/&gt;
-          &lt;text/&gt;
-          &lt;statusCode/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/act&gt;
-      &lt;/entryRelationship&gt;
-    &lt;/supply&gt;
-  &lt;/entryRelationship&gt;
-  &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
-      &lt;id root="1ef447ab-4eed-455b-adfd-2f3ce8258a4a"/&gt;
-      &lt;statusCode code="completed"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
-          &lt;id root="30ce8639-3d5c-4566-ac75-2e1f12449e1e"/&gt;
-          &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
-          &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
-    &lt;/observation&gt;
-  &lt;/entryRelationship&gt;
+  &lt;administrationUnitCode code="Value"/&gt;
+  &lt;consumable/&gt;
 &lt;/substanceadministration&gt;</pre>
 
 </div>
