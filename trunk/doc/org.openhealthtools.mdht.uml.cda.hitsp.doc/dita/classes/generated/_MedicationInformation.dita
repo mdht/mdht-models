@@ -64,12 +64,11 @@ concept</li></ul><ul><li><codeblock>[OCL]: not self.manufacturedMaterial.code.or
 or product. If a Coded Brand Name is present, this is
 the text associated with the coded concept</li></ul><ul><li><codeblock>[OCL]: not self.manufacturedMaterial.name.oclIsUndefined()</codeblock></li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<manufacturedproduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <templateId root="2.16.840.1.113883.10.20.1.53"/>
-  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
-  <templateId root="2.16.840.1.113883.3.88.11.83.8.2"/>
-  <id root="8ed83cb7-39e0-4c37-933c-834b99a76cbf"/>
-</manufacturedproduct>]]></codeblock>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medication Information</ph></p>
+<p id="shortdesc">[ManufacturedProduct: templateId <tt>2.16.840.1.113883.3.88.11.83.8.2</tt>]</p>
 </body>
 </topic>

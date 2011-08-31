@@ -78,15 +78,9 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: The absence of known medications is explicitly asserted. (CONF-299)</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.title = 'medication'</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.title = 'immunization'</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)</li>
 
 </ol>
 
@@ -101,152 +95,20 @@
   &lt;templateId root="2.16.840.1.113883.10.20.1.6"/&gt;
   &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23"/&gt;
   &lt;templateId root="2.16.840.1.113883.3.88.11.83.117"/&gt;
-  &lt;id root="bf84a1b3-5d38-4e45-a352-07cd18315f16"/&gt;
+  &lt;id root="1065880968"/&gt;
   &lt;code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/&gt;
-  &lt;title&gt;History of immunizations&lt;/title&gt;
+  &lt;title/&gt;
+  &lt;text/&gt;
   &lt;entry&gt;
-    &lt;substanceAdministration moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/&gt;
-      &lt;id root="caeccc33-8e20-40f2-a13a-5f96a964ea75"/&gt;
-      &lt;code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/&gt;
-      &lt;statusCode/&gt;
-      &lt;effectiveTime value="20110616"/&gt;
-      &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
-      &lt;doseQuantity/&gt;
-      &lt;rateQuantity/&gt;
-      &lt;maxDoseQuantity/&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
-          &lt;id root="026beffd-f626-45ad-a765-5602a0a80c22"/&gt;
-          &lt;code code="30973-2" codeSystemName="" displayName="Dose number"/&gt;
-          &lt;statusCode/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-          &lt;value xsi:type="INT"/&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
-          &lt;id root="fa9dd20c-d700-4718-aa8b-b70dad0378ea"/&gt;
-          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
-          &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-          &lt;value xsi:type="CE"/&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;act moodCode="INT"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
-          &lt;id root="a8135999-a51b-45c4-bdb0-2d04a511b3f8"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/act&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
-          &lt;id root="8ac188e3-0d63-41f7-9971-7d6347f06d51"/&gt;
-          &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-          &lt;entryRelationship&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
-              &lt;id root="37c82e3f-8cc4-4ad1-ab63-519395295d2b"/&gt;
-              &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
-              &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2011"/&gt;
-                &lt;high value="2011"/&gt;
-              &lt;/effectiveTime&gt;
-            &lt;/observation&gt;
-          &lt;/entryRelationship&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
-    &lt;/substanceAdministration&gt;
-  &lt;/entry&gt;
-  &lt;entry&gt;
-    &lt;substanceAdministration moodCode="EVN"&gt;
+    &lt;substanceAdministration&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
       &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/&gt;
       &lt;templateId root="2.16.840.1.113883.3.88.11.83.13"/&gt;
-      &lt;id root="4159581a-53ae-4a61-964e-d9962de4ca0a"/&gt;
-      &lt;code code="IMMUNIZ" codeSystem="2.16.840.1.113883.12.292" codeSystemName="Vaccines administered (CVX)"/&gt;
-      &lt;effectiveTime value="20110616"/&gt;
-      &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
-          &lt;id root="6d9fb8b9-de81-49a5-aec7-0fa19c77ea45"/&gt;
-          &lt;code code="30973-2" codeSystemName="" displayName="Dose number"/&gt;
-          &lt;statusCode/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-          &lt;value xsi:type="INT"/&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.47"/&gt;
-          &lt;id root="72cd06a0-b55e-4684-b90b-5ad5eab44e46"/&gt;
-          &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
-          &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-          &lt;value xsi:type="CE"/&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;act moodCode="INT"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
-          &lt;id root="86b127f3-8926-4f7d-aa07-cc02197c9d47"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-        &lt;/act&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
-          &lt;id root="33ecb2a1-b355-4844-8573-d2e969dc60c0"/&gt;
-          &lt;statusCode code="completed"/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-          &lt;entryRelationship&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
-              &lt;id root="e56dd96d-8cff-4622-9c74-32860454f2f7"/&gt;
-              &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity observation"/&gt;
-              &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2011"/&gt;
-                &lt;high value="2011"/&gt;
-              &lt;/effectiveTime&gt;
-            &lt;/observation&gt;
-          &lt;/entryRelationship&gt;
-        &lt;/observation&gt;
-      &lt;/entryRelationship&gt;
+      &lt;id root="1668014118"/&gt;
+      &lt;code code="535669514"/&gt;
+      &lt;text/&gt;
+      &lt;effectiveTime value="20110830"/&gt;
+      &lt;consumable/&gt;
     &lt;/substanceAdministration&gt;
   &lt;/entry&gt;
 &lt;/section&gt;</pre>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Social History"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.1.33]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.1.33]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Social History</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Social History</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.1.33</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistoryObservation.html">CCD Social History Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.33</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SimpleObservation.html">IHE Simple Observation</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.13</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistoryObservation.html">IHE Social History Observation</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.13.4</tt>)</li>
+
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt>, where its data type is ActClassObservation
+</li>
+
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt>, where its data type is x_ActMoodDocumentObservation
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.3.88.12.80.60 Social History Type</tt><strong class="ph b"> STATIC</strong> 1
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt>
+<ul class="ul"><li class="li"><p class="p">
+The data type to use for each observation should be drawn from the table below.
+Observations in the table above using the PQ data type have a unit in the form {xxx}/d,
+{xxx}/wk or {xxx}/a represent the number of items per day, week or year respectively. The value attribute indicates the number of times of the act performed, and the units represent the
+frequency.
+</p>
+
+
+<p class="p">
+229819007 Smoking  PQ  {pack}/d or {pack}/wk or {pack}/a
+256235009 Exercise PQ {times}/wk
+160573003 ETOH (Alcohol) Use PQ {drink}/d or {drink}/wk
+364393001 Diet  CD  N/A
+364703007 Employment CD  N/A
+425400000 Toxic Exposure CD  N/A
+363908000 Drug Use CD  N/A
+228272008 Other Social History ANY N/A
+</p>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../SocialHistoryStatusObservation.html">Social History Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.56</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../EpisodeObservation.html">Episode Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.41</tt>)</li>
+</ol>
+</li>
+
+<li class="li">The value for Observation / code in a social history observation <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017</li>
+
+<li class="li">Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <strong class="ph b">SHALL</strong> be expressed using a valid Unified Code for Units of Measure (UCUM) expression</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The &lt;repeatNumber&gt; element should not be used in a social history observation</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The &lt;interpretationCode&gt; element should not be used in
+a social history observation</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The &lt;methodCode&gt; element should not be used in
+a social history observation</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The &lt;targetSiteCode&gt; element should not be used in
+a social history observation</li>
+
+</ol>
+
+<p class="p"> </p>
+
+
+<p class="p"> </p>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Social History example</strong></p>
+
+
+
+<pre class="pre codeblock"/>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

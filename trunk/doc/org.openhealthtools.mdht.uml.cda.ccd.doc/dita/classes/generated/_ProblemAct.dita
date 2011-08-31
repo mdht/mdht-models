@@ -59,10 +59,35 @@
    -&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))</codeblock></li></ul></li>
 <li><b>MAY</b> contain exactly one Patient Awareness (CONF-179)<ul><li><codeblock>[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</codeblock></li></ul></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::ProblemAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.1.27]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF-146</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF-147</entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF-149</entry><entry> null</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF-150</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF-148</entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.1.27</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>episodeObservation</entry><entry>episodeObservation</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>EpisodeObservation</entry><entry>CONF-168</entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.1.27"/>
-  <id root="df571af3-d155-4e3b-82e7-6e027a944b4d"/>
+  <id root="1563494891"/>
   <code nullFlavor="NA"/>
   <effectiveTime>
     <low value="2011"/>
@@ -71,68 +96,19 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.1.41"/>
-      <id root="aacd7e77-dc1c-49cf-b4dd-c1c11af65c89"/>
+      <id root="529811835"/>
       <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2011"/>
         <high value="2011"/>
       </effectiveTime>
-      <value xsi:type="CD"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.1.28"/>
-      <id root="de130ef9-46bd-4e61-a315-48725048cad3"/>
-      <code/>
-      <statusCode code="completed"/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-      <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.1.57"/>
-          <templateId root="2.16.840.1.113883.10.20.1.50"/>
-          <id root="4f70a4b5-1662-430a-a537-737ee29d6e3c"/>
-          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
-          <statusCode code="completed"/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-          <value xsi:type="CE"/>
-        </observation>
-      </entryRelationship>
-      <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.1.57"/>
-          <templateId root="2.16.840.1.113883.10.20.1.51"/>
-          <id root="f490ebfb-1f54-4f02-8244-125778f5fe7c"/>
-          <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
-          <statusCode code="completed"/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-          <value xsi:type="CE"/>
-        </observation>
-      </entryRelationship>
-      <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.1.38"/>
-          <id root="e7beb493-a256-4a5b-aead-550e3e92ec50"/>
-          <code code="397659008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age"/>
-          <statusCode code="completed"/>
-          <effectiveTime>
-            <low value="2011"/>
-            <high value="2011"/>
-          </effectiveTime>
-        </observation>
-      </entryRelationship>
     </observation>
   </entryRelationship>
 </act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Problem Act</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.1.27</tt>]</p>
 </body>
 </topic>

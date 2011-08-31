@@ -52,6 +52,34 @@
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
 </li>
 
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PatientInstruction.html" title="[Act: templateId 2.16.840.1.113883.10.20.1.49]">Patient Instruction</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.49</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AgeObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.38]">Age Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.38</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">encounterLocation</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EncounterLocation.html" title="[Participant2: templateId 2.16.840.1.113883.10.20.1.45]">Encounter Location</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.45</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] performer, used to define the practioners involved in an encounter</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain one [0..1] performer / assignedEntity / code, to define the role of the practioner</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain one or more sources of information</li>
+
 </ol>
 
 
@@ -64,8 +92,8 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.21"/&gt;
-  &lt;id root="d2a686e3-1c21-4ab0-928c-0b8f1f0b295d"/&gt;
-  &lt;code/&gt;
+  &lt;id root="12691828"/&gt;
+  &lt;code code="1756286772"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2011"/&gt;
     &lt;high value="2011"/&gt;

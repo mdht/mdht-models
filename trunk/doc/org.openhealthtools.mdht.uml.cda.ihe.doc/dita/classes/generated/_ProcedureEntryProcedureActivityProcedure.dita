@@ -12,7 +12,7 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProcedureActivityProcedure.html">CCD Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.29</tt>)</li>
-<li><b>SHALL</b> conform to <xref href="../ProcedureEntry.dita">Procedure Entry</xref></li>
+<li><b>SHALL</b> conform to <xref href="../ProcedureEntry.dita">Procedure Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
@@ -36,7 +36,7 @@
 <li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'true' for the reference to encounter (typecode=COMP)<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.inversionInd &lt;&gt; true)-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref href="../ProcedureEntry.dita">Procedure Entry</xref></li>
+<li><b>SHALL</b> conform to <xref href="../ProcedureEntry.dita">Procedure Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li>
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProcedureActivity.html">CCD Procedure Activity</xref></li>
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProcedureActivityProcedure.html">CCD Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.29</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
@@ -90,41 +90,56 @@
 <li>&lt;priorityCode&gt; <b>SHALL</b> be present in INT mood when effectiveTime is not provided, it <b>MAY</b> be present in other moods<ul><li><codeblock>[OCL]: self.moodCode = vocab::x_DocumentProcedureMood::INT and self.effectiveTime.oclIsUndefined() implies not self.priorityCode.oclIsUndefined()</codeblock></li></ul></li>
 <li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'true' for the reference to encounter (typecode=COMP)<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.inversionInd &lt;&gt; true)-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ihe::ProcedureEntryProcedureActivityProcedure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure[cda:templateId/@root = 1.3.6.1.4.1.19376.1.5.3.1.4.19]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>x_DocumentProcedureMood</entry><entry></entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>approachSiteCode</entry><entry>approachSiteCode</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-430CONF-431</entry><entry> completed</entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 1.3.6.1.4.1.19376.1.5.3.1.4.19</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>ageObservation</entry><entry>ageObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AgeObservation</entry><entry>CONF-445</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>encounterLocation</entry><entry>encounterLocation</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>EncounterLocation</entry><entry>CONF-437</entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>internalReference</entry><entry>internalReference</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>InternalReference</entry><entry></entry><entry> </entry></row> 
+<row><entry>internalReferenceReason</entry><entry>internalReferenceReason</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>InternalReference</entry><entry></entry><entry> </entry></row> 
+<row><entry>medicationActivity</entry><entry>medicationActivity</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationActivity</entry><entry>CONF-446</entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>patientInstruction</entry><entry>patientInstruction</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>PatientInstruction</entry><entry>CONF-441CONF-333</entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="PROC">
+<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.29"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
-  <id root="82983ab1-e4f0-43b2-91dc-4c83851bacda"/>
-  <code/>
+  <id root="270284483"/>
+  <code code="1548596338"/>
   <text/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2011"/>
     <high value="2011"/>
   </effectiveTime>
-  <approachSiteCode/>
-  <entryRelationship>
-    <act>
-      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-      <id root="65bcfcfd-1ced-44b3-be46-98bf8799c029"/>
-      <code/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </act>
-  </entryRelationship>
-  <entryRelationship>
-    <act>
-      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4.1"/>
-      <id root="4c2cc12e-c849-4023-b8bf-301fcb63cb6d"/>
-      <code/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </act>
-  </entryRelationship>
+  <approachSiteCode code="1635002020"/>
 </procedure>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Entry Procedure Activity Procedure</ph></p>
+<p id="shortdesc">[Procedure: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>]</p>
 </body>
 </topic>

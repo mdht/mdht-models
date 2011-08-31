@@ -14,6 +14,10 @@
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PatientContact.html">IHE Patient Contact</xref></li>
 <li></li>
 </ol>
-<codeblock id="example"><![CDATA[Unable to create XML Snippet]]></codeblock>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Support</ph></p>
 </body>
 </topic>

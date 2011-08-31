@@ -30,14 +30,11 @@
 <li><b>SHOULD</b> contain zero or more [0..*] <tt><b>telecom</b></tt>
 </li>
 </ol>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<guardian xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="GUAR">
-  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
-  <templateId root="2.16.840.1.113883.3.88.11.83.3"/>
-  <id root="1689c499-705a-42da-a204-3a02476bf5c0"/>
-  <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
-  <addr/>
-  <telecom/>
-</guardian>]]></codeblock>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Support Guardian</ph></p>
+<p id="shortdesc">[Guardian: templateId <tt>2.16.840.1.113883.3.88.11.83.3</tt>]</p>
 </body>
 </topic>

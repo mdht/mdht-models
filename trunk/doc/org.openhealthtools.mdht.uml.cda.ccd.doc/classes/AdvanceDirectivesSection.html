@@ -49,6 +49,11 @@
 </ol>
 </li>
 
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive text string containing 'advance directives'.</li>
+
 </ol>
 
 
@@ -61,14 +66,16 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.1"/&gt;
-  &lt;id root="f76b4dc0-f020-44c0-b584-b2e9641ee6dc"/&gt;
+  &lt;id root="753009024"/&gt;
   &lt;code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/&gt;
-  &lt;title&gt;Advance directives&lt;/title&gt;
+  &lt;title/&gt;
+  &lt;text/&gt;
   &lt;entry&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.17"/&gt;
-      &lt;id root="278da920-ad4d-4163-be9e-ff957034806b"/&gt;
-      &lt;code/&gt;
+      &lt;id root="1717697110"/&gt;
+      &lt;code code="520371600"/&gt;
+      &lt;text/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2011"/&gt;

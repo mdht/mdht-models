@@ -80,6 +80,11 @@
 <li><b>MAY</b> satisfy: have one or more participant [@typeCode="DEV"], the target of which is a product instance template (templateID: 2.16.840.1.113883.10.20.1.52) (CONF-448)</li>
 <li>participant / participantRole / id <b>SHOULD</b> be set to equal a Supply / participant / participantRole / id to indicate that the Procedure and the Supply are referring to the same product instance. (CONF-452)</li>
 </ol>
+
 <codeblock id="example"><![CDATA[Unable to create XML Snippet]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Activity</ph></p>
+<p id="shortdesc">[ClinicalStatement: templateId <tt>null</tt>]</p>
 </body>
 </topic>

@@ -97,10 +97,9 @@
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">planOfCareActivity</strong></tt>, such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PlanOfCareActivity.html">Plan Of Care Activity</a></li>
-</ol>
 </li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain a case-insensitive language-insensitive text string containing 'plan'.</li>
 
 </ol>
 
@@ -114,13 +113,16 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.10"/&gt;
-  &lt;id root="d063cc2f-8258-44a7-9929-4241b6eeddcc"/&gt;
+  &lt;id root="269094429"/&gt;
   &lt;code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/&gt;
-  &lt;title&gt;Treatment plan&lt;/title&gt;
+  &lt;title/&gt;
+  &lt;text/&gt;
   &lt;entry&gt;
     &lt;act&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
-      &lt;id root="c7fc8069-f5f3-4ee8-9f8e-396ffe8ca9fb"/&gt;
+      &lt;id root="1004577796"/&gt;
+      &lt;code code="1497290539"/&gt;
+      &lt;text/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2011"/&gt;
         &lt;high value="2011"/&gt;
@@ -128,48 +130,19 @@
     &lt;/act&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;encounter&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
-      &lt;id root="4498a5df-a429-449c-8b5f-3e070aa0d779"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/encounter&gt;
+    &lt;encounter/&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;observation&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
-      &lt;id root="c66c2bbd-1bb0-4d0f-a0b6-a4e2dc408159"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/observation&gt;
+    &lt;observation/&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;procedure&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
-      &lt;id root="71624a0e-00f3-4128-a5f7-bc24b06ec633"/&gt;
-      &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
-      &lt;/effectiveTime&gt;
-    &lt;/procedure&gt;
+    &lt;procedure/&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;substanceAdministration&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
-      &lt;id root="6b7a5a9f-725e-432c-b927-cf38f5380339"/&gt;
-      &lt;effectiveTime value="20110616"/&gt;
-    &lt;/substanceAdministration&gt;
+    &lt;substanceAdministration/&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;supply&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
-      &lt;id root="4f674937-ae57-4297-8b27-8d677a888a9a"/&gt;
-      &lt;effectiveTime value="20110616"/&gt;
-    &lt;/supply&gt;
+    &lt;supply/&gt;
   &lt;/entry&gt;
 &lt;/section&gt;</pre>
 

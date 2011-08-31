@@ -65,10 +65,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF-381)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: title Contains a case-insensitive language-insensitive string containing 'vital signs'. (CONF-385)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.title = 'vital signs'</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: title Contains a case-insensitive language-insensitive string containing 'vital signs'. (CONF-385)</li>
 
 </ol>
 
@@ -82,34 +79,21 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.16"/&gt;
-  &lt;id root="d0e0a5a8-44b9-4c1c-963e-051420ac2ae3"/&gt;
+  &lt;id root="1353337750"/&gt;
   &lt;code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/&gt;
-  &lt;title&gt;Vital signs&lt;/title&gt;
+  &lt;title/&gt;
+  &lt;text/&gt;
   &lt;entry&gt;
     &lt;organizer moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.32"/&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.1.35"/&gt;
-      &lt;id root="3f5a3765-6a9d-4c7b-abdf-ad8d59afd044"/&gt;
-      &lt;code/&gt;
-      &lt;statusCode/&gt;
+      &lt;id root="1488529829"/&gt;
+      &lt;code code="1707425451"/&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2011"/&gt;
         &lt;high value="2011"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;component&gt;
-        &lt;observation moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.1.31"/&gt;
-          &lt;id root="b8dcb59d-71b1-4d08-853a-1459be4ad6b8"/&gt;
-          &lt;code/&gt;
-          &lt;statusCode/&gt;
-          &lt;effectiveTime&gt;
-            &lt;low value="2011"/&gt;
-            &lt;high value="2011"/&gt;
-          &lt;/effectiveTime&gt;
-          &lt;interpretationCode/&gt;
-          &lt;methodCode/&gt;
-        &lt;/observation&gt;
-      &lt;/component&gt;
     &lt;/organizer&gt;
   &lt;/entry&gt;
 &lt;/section&gt;</pre>

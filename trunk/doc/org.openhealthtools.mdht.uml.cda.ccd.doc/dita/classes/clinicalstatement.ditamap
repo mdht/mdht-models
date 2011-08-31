@@ -41,6 +41,7 @@
 <topicref href="ResultOrganizer.dita" type="topic" />
 <topicref href="SeverityObservation.dita" type="topic" />
 <topicref href="SocialHistoryObservation.dita" type="topic" />
+<topicref href="SocialHistoryStatusObservation.dita" type="topic" />
 <topicref href="StatusObservation.dita" type="topic" />
 <topicref href="SupplyActivity.dita" type="topic" />
 <topicref href="VitalSignsOrganizer.dita" type="topic" />

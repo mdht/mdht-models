@@ -20,8 +20,22 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CarePlanSection.html">IHE Care Plan Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.31</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.cdt.doc/classes/AssessmentAndPlanSection.html">CDT Assessment And Plan Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.2.7</tt>)</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Medication.dita">Medication</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.8</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Immunization.dita">Immunization</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.13</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Encounter.dita">Encounter</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.16</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Procedure.dita">Procedure</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.17</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.cdt.doc/classes/AssessmentAndPlanSection.html">CDT Assessment And Plan Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.2.7</tt>)</li>
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/PlanOfCareSection.html">CCD Plan Of Care Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li>
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CarePlanSection.html">IHE Care Plan Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.31</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="18776-5" </tt><i>Treatment plan</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
@@ -48,69 +62,63 @@
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PlanOfCareActivitySupply.dita">Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Medication.dita">Medication</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.8</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Immunization.dita">Immunization</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.13</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Encounter.dita">Encounter</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.16</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Procedure.dita">Procedure</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.17</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain a case-insensitive language-insensitive text string containing 'plan'.</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::PlanOfCareSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.3.88.11.83.124]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 18776-5</entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.3.88.11.83.124</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
+<row><entry>encounter</entry><entry>cda:entry/cda:encounter[cda:templateId/@root = 2.16.840.1.113883.3.88.11.83.16]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Encounter</entry><entry></entry><entry> </entry></row> 
+<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>immunization</entry><entry>cda:entry/cda:substanceAdministration[cda:templateId/@root = 2.16.840.1.113883.3.88.11.83.13]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Immunization</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>medication</entry><entry>cda:entry/cda:substanceAdministration[cda:templateId/@root = 2.16.840.1.113883.3.88.11.83.8]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Medication</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareActivity</entry><entry>planOfCareActivity</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PlanOfCareActivity</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareActivityAct</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.1.25]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityAct</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareActivityEncounter</entry><entry>cda:entry/cda:encounter[cda:templateId/@root = 2.16.840.1.113883.10.20.1.25]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityEncounter</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareActivityObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.1.25]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareActivityProcedure</entry><entry>cda:entry/cda:procedure[cda:templateId/@root = 2.16.840.1.113883.10.20.1.25]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityProcedure</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareActivitySubstanceAdministration</entry><entry>cda:entry/cda:substanceAdministration[cda:templateId/@root = 2.16.840.1.113883.10.20.1.25]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivitySubstanceAdministration</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareActivitySupply</entry><entry>cda:entry/cda:supply[cda:templateId/@root = 2.16.840.1.113883.10.20.1.25]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivitySupply</entry><entry></entry><entry> </entry></row> 
+<row><entry>procedure</entry><entry>procedure</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Procedure</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.1.10"/>
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.31"/>
   <templateId root="2.16.840.1.113883.3.88.11.83.124"/>
-  <id root="c9269d02-2410-4267-9fa4-61c2fee6f10d"/>
+  <id root="72879230"/>
   <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
-  <title>Treatment plan</title>
-  <entry>
-    <act>
-      <templateId root="2.16.840.1.113883.10.20.1.25"/>
-      <id root="563d98e2-89a0-4cb3-b843-9d55279e2bf1"/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </act>
-  </entry>
-  <entry>
-    <encounter>
-      <templateId root="2.16.840.1.113883.10.20.1.25"/>
-      <id root="e96c73bc-ad1a-4da9-806e-6fb316ef8fcc"/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </encounter>
-  </entry>
-  <entry>
-    <observation>
-      <templateId root="2.16.840.1.113883.10.20.1.25"/>
-      <id root="ef88d772-4fe6-42b9-9167-bb1209fbc5ab"/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </observation>
-  </entry>
-  <entry>
-    <procedure>
-      <templateId root="2.16.840.1.113883.10.20.1.25"/>
-      <id root="b97a1d3a-abae-40f1-a81f-0dec46ddc040"/>
-      <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
-      </effectiveTime>
-    </procedure>
-  </entry>
-  <entry>
-    <substanceAdministration>
-      <templateId root="2.16.840.1.113883.10.20.1.25"/>
-      <id root="7b3aea69-3cbd-4038-943b-6f4302ba4531"/>
-      <effectiveTime value="20110616"/>
-    </substanceAdministration>
-  </entry>
-  <entry>
-    <supply>
-      <templateId root="2.16.840.1.113883.10.20.1.25"/>
-      <id root="d7f1c0ac-d191-4a2a-b1c6-b684b7602a1c"/>
-      <effectiveTime value="20110616"/>
-    </supply>
-  </entry>
+  <title/>
+  <text/>
 </section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Plan Of Care Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.3.88.11.83.124</tt>]</p>
 </body>
 </topic>
