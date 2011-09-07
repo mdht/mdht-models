@@ -59,8 +59,8 @@ public class MedicationStatusObservationImpl extends StatusObservationImpl imple
 	@Override
 	public Observation getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Observation)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Observation) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -136,11 +136,12 @@ public class MedicationStatusObservationImpl extends StatusObservationImpl imple
 	public CE getValue() {
 		if (GET_VALUE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getMedicationStatusObservation(), IDomainPackage.eINSTANCE.getMedicationStatusObservation().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getMedicationStatusObservation(),
+				IDomainPackage.eINSTANCE.getMedicationStatusObservation().getEAllOperations().get(0));
 			try {
 				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -171,7 +172,7 @@ public class MedicationStatusObservationImpl extends StatusObservationImpl imple
 	 */
 	@Override
 	public IMedicationStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationStatusObservationImpl

@@ -77,8 +77,8 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -131,11 +131,12 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	public ST getTitle() {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSurgeriesSection(), IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSurgeriesSection(),
+				IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(0));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -196,11 +197,12 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	public StrucDocText getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSurgeriesSection(), IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSurgeriesSection(),
+				IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(3));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -261,11 +263,12 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	public IExternalReference getExternalReference() {
 		if (GET_EXTERNAL_REFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSurgeriesSection(), IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSurgeriesSection(),
+				IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(6));
 			try {
 				GET_EXTERNAL_REFERENCE__EOCL_QRY = helper.createQuery(GET_EXTERNAL_REFERENCE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -292,9 +295,9 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ExternalReference");
-		IExternalReference value = (IExternalReference)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act)eObject);
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		IExternalReference value = (IExternalReference) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -304,7 +307,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 * @generated
 	 */
 	public ISurgeriesSection setExternalReference(IExternalReference value) {
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)value);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) value);
 		return this;
 	}
 
@@ -336,18 +339,20 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	public EList<IProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures() {
 		if (GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSurgeriesSection(), IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSurgeriesSection(),
+				IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(9));
 			try {
 				GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<IProcedureEntryProcedureActivityProcedure> result = (Collection<IProcedureEntryProcedureActivityProcedure>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<IProcedureEntryProcedureActivityProcedure>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<IProcedureEntryProcedureActivityProcedure>(
+			result.size(), result.toArray());
 	}
 
 	/**
@@ -369,9 +374,9 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ProcedureEntryProcedureActivityProcedure");
-		IProcedureEntryProcedureActivityProcedure value = (IProcedureEntryProcedureActivityProcedure)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Procedure)eObject);
-		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure)eObject);
+		IProcedureEntryProcedureActivityProcedure value = (IProcedureEntryProcedureActivityProcedure) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
+		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
 		return value;
 	}
 
@@ -414,11 +419,12 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	public EList<IProcedure> getProcedureActivities() {
 		if (GET_PROCEDURE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSurgeriesSection(), IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(12));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSurgeriesSection(),
+				IDomainPackage.eINSTANCE.getSurgeriesSection().getEAllOperations().get(12));
 			try {
 				GET_PROCEDURE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -447,9 +453,9 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Procedure");
-		IProcedure value = (IProcedure)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Procedure)eObject);
-		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure)eObject);
+		IProcedure value = (IProcedure) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
+		this.getCDAType().addProcedure((org.openhealthtools.mdht.uml.cda.Procedure) eObject);
 		return value;
 	}
 
@@ -473,7 +479,9 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.SURGERIES_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -488,7 +496,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.SURGERIES_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -503,7 +511,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.SURGERIES_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -538,7 +546,7 @@ public class SurgeriesSectionImpl extends EObjectImpl implements ISurgeriesSecti
 	 * @generated
 	 */
 	public ISurgeriesSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // SurgeriesSectionImpl

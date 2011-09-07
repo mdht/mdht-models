@@ -76,8 +76,8 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -130,11 +130,12 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	public ST getTitle() {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getImmunizationsSection(), IDomainPackage.eINSTANCE.getImmunizationsSection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getImmunizationsSection(),
+				IDomainPackage.eINSTANCE.getImmunizationsSection().getEAllOperations().get(0));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -195,11 +196,12 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	public StrucDocText getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getImmunizationsSection(), IDomainPackage.eINSTANCE.getImmunizationsSection().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getImmunizationsSection(),
+				IDomainPackage.eINSTANCE.getImmunizationsSection().getEAllOperations().get(3));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -260,11 +262,12 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	public EList<ISupplyActivity> getSupplyActivities() {
 		if (GET_SUPPLY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getImmunizationsSection(), IDomainPackage.eINSTANCE.getImmunizationsSection().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getImmunizationsSection(),
+				IDomainPackage.eINSTANCE.getImmunizationsSection().getEAllOperations().get(6));
 			try {
 				GET_SUPPLY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_SUPPLY_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -293,9 +296,9 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("SupplyActivity");
-		ISupplyActivity value = (ISupplyActivity)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Supply)eObject);
-		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply)eObject);
+		ISupplyActivity value = (ISupplyActivity) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Supply) eObject);
+		this.getCDAType().addSupply((org.openhealthtools.mdht.uml.cda.Supply) eObject);
 		return value;
 	}
 
@@ -338,11 +341,12 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	public EList<IImmunization> getImmunizations() {
 		if (GET_IMMUNIZATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getImmunizationsSection(), IDomainPackage.eINSTANCE.getImmunizationsSection().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getImmunizationsSection(),
+				IDomainPackage.eINSTANCE.getImmunizationsSection().getEAllOperations().get(9));
 			try {
 				GET_IMMUNIZATIONS__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -371,9 +375,9 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Immunization");
-		IImmunization value = (IImmunization)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);
-		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);
+		IImmunization value = (IImmunization) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) eObject);
+		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) eObject);
 		return value;
 	}
 
@@ -397,7 +401,9 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.IMMUNIZATIONS_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -412,7 +418,7 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.IMMUNIZATIONS_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -427,7 +433,7 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.IMMUNIZATIONS_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -462,7 +468,7 @@ public class ImmunizationsSectionImpl extends EObjectImpl implements IImmunizati
 	 * @generated
 	 */
 	public IImmunizationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ImmunizationsSectionImpl

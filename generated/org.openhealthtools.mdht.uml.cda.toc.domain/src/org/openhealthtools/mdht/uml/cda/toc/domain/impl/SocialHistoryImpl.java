@@ -79,8 +79,8 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	 */
 	public Observation getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Observation)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Observation) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -133,11 +133,12 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSocialHistory(), IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSocialHistory(),
+				IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -201,11 +202,12 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	public EList<CD> getCodes() {
 		if (GET_CODES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSocialHistory(), IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSocialHistory(),
+				IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(3));
 			try {
 				GET_CODES__EOCL_QRY = helper.createQuery(GET_CODES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -269,11 +271,12 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	public ED getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSocialHistory(), IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSocialHistory(),
+				IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(6));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -334,11 +337,12 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	public IVL_TS getEffectiveTime() {
 		if (GET_EFFECTIVE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSocialHistory(), IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSocialHistory(),
+				IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(9));
 			try {
 				GET_EFFECTIVE_TIME__EOCL_QRY = helper.createQuery(GET_EFFECTIVE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -399,11 +403,12 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	public EList<ANY> getValues() {
 		if (GET_VALUES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSocialHistory(), IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(12));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSocialHistory(),
+				IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(12));
 			try {
 				GET_VALUES__EOCL_QRY = helper.createQuery(GET_VALUES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -467,11 +472,12 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	public ISocialHistoryStatusObservation getSocialHistoryStatusObservation() {
 		if (GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSocialHistory(), IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(15));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSocialHistory(),
+				IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(15));
 			try {
 				GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -498,9 +504,9 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("SocialHistoryStatusObservation");
-		ISocialHistoryStatusObservation value = (ISocialHistoryStatusObservation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		ISocialHistoryStatusObservation value = (ISocialHistoryStatusObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -510,7 +516,7 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	 * @generated
 	 */
 	public ISocialHistory setSocialHistoryStatusObservation(ISocialHistoryStatusObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -542,11 +548,12 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	public IEpisodeObservation getEpisodeObservation() {
 		if (GET_EPISODE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSocialHistory(), IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(18));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSocialHistory(),
+				IDomainPackage.eINSTANCE.getSocialHistory().getEAllOperations().get(18));
 			try {
 				GET_EPISODE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_EPISODE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -573,9 +580,9 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("EpisodeObservation");
-		IEpisodeObservation value = (IEpisodeObservation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IEpisodeObservation value = (IEpisodeObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -585,7 +592,7 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	 * @generated
 	 */
 	public ISocialHistory setEpisodeObservation(IEpisodeObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -598,7 +605,9 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.SOCIAL_HISTORY__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -613,7 +622,7 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.SOCIAL_HISTORY__CDA_TYPE:
-				setCDAType((Observation)newValue);
+				setCDAType((Observation) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -628,7 +637,7 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.SOCIAL_HISTORY__CDA_TYPE:
-				setCDAType((Observation)null);
+				setCDAType((Observation) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -663,7 +672,7 @@ public class SocialHistoryImpl extends EObjectImpl implements ISocialHistory {
 	 * @generated
 	 */
 	public ISocialHistory init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // SocialHistoryImpl

@@ -72,8 +72,8 @@ public class PlanOfCareActivityProcedureImpl extends PlanOfCareActivityImpl impl
 	 */
 	public Procedure getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Procedure)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Procedure) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -126,11 +126,12 @@ public class PlanOfCareActivityProcedureImpl extends PlanOfCareActivityImpl impl
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareActivityProcedure(), IDomainPackage.eINSTANCE.getPlanOfCareActivityProcedure().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareActivityProcedure(),
+				IDomainPackage.eINSTANCE.getPlanOfCareActivityProcedure().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -175,7 +176,9 @@ public class PlanOfCareActivityProcedureImpl extends PlanOfCareActivityImpl impl
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -190,7 +193,7 @@ public class PlanOfCareActivityProcedureImpl extends PlanOfCareActivityImpl impl
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE__CDA_TYPE:
-				setCDAType((Procedure)newValue);
+				setCDAType((Procedure) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -205,7 +208,7 @@ public class PlanOfCareActivityProcedureImpl extends PlanOfCareActivityImpl impl
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE__CDA_TYPE:
-				setCDAType((Procedure)null);
+				setCDAType((Procedure) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -241,7 +244,7 @@ public class PlanOfCareActivityProcedureImpl extends PlanOfCareActivityImpl impl
 	 */
 	@Override
 	public IPlanOfCareActivityProcedure init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PlanOfCareActivityProcedureImpl

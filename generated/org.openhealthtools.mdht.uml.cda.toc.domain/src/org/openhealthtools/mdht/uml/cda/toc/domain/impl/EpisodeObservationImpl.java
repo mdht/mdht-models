@@ -69,8 +69,8 @@ public class EpisodeObservationImpl extends EObjectImpl implements IEpisodeObser
 	 */
 	public Observation getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Observation)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Observation) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -123,11 +123,12 @@ public class EpisodeObservationImpl extends EObjectImpl implements IEpisodeObser
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEpisodeObservation(), IDomainPackage.eINSTANCE.getEpisodeObservation().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEpisodeObservation(),
+				IDomainPackage.eINSTANCE.getEpisodeObservation().getEAllOperations().get(0));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -188,11 +189,12 @@ public class EpisodeObservationImpl extends EObjectImpl implements IEpisodeObser
 	public CD getValue() {
 		if (GET_VALUE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEpisodeObservation(), IDomainPackage.eINSTANCE.getEpisodeObservation().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEpisodeObservation(),
+				IDomainPackage.eINSTANCE.getEpisodeObservation().getEAllOperations().get(3));
 			try {
 				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -234,7 +236,9 @@ public class EpisodeObservationImpl extends EObjectImpl implements IEpisodeObser
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.EPISODE_OBSERVATION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -249,7 +253,7 @@ public class EpisodeObservationImpl extends EObjectImpl implements IEpisodeObser
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.EPISODE_OBSERVATION__CDA_TYPE:
-				setCDAType((Observation)newValue);
+				setCDAType((Observation) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -264,7 +268,7 @@ public class EpisodeObservationImpl extends EObjectImpl implements IEpisodeObser
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.EPISODE_OBSERVATION__CDA_TYPE:
-				setCDAType((Observation)null);
+				setCDAType((Observation) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -299,7 +303,7 @@ public class EpisodeObservationImpl extends EObjectImpl implements IEpisodeObser
 	 * @generated
 	 */
 	public IEpisodeObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EpisodeObservationImpl

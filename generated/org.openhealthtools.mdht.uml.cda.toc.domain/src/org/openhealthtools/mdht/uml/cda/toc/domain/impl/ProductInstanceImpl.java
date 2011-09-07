@@ -64,8 +64,8 @@ public class ProductInstanceImpl extends EObjectImpl implements IProductInstance
 	 */
 	public ParticipantRole getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (ParticipantRole)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (ParticipantRole) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -99,7 +99,9 @@ public class ProductInstanceImpl extends EObjectImpl implements IProductInstance
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.PRODUCT_INSTANCE__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -114,7 +116,7 @@ public class ProductInstanceImpl extends EObjectImpl implements IProductInstance
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.PRODUCT_INSTANCE__CDA_TYPE:
-				setCDAType((ParticipantRole)newValue);
+				setCDAType((ParticipantRole) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -129,7 +131,7 @@ public class ProductInstanceImpl extends EObjectImpl implements IProductInstance
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.PRODUCT_INSTANCE__CDA_TYPE:
-				setCDAType((ParticipantRole)null);
+				setCDAType((ParticipantRole) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -155,7 +157,7 @@ public class ProductInstanceImpl extends EObjectImpl implements IProductInstance
 	 * @generated
 	 */
 	public IProductInstance init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProductInstanceImpl

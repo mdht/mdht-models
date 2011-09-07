@@ -67,8 +67,8 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	@Override
 	public Observation getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Observation)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Observation) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -146,7 +146,7 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	 */
 	@Override
 	public ICauseOfDeathObservation setAgeObservation(IAgeObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -157,7 +157,7 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	 */
 	@Override
 	public ICauseOfDeathObservation setProblemStatusObservation(IProblemStatusObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -202,11 +202,12 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getCauseOfDeathObservation(), IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation(),
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -261,11 +262,12 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getCauseOfDeathObservation(), IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation(),
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(3));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -318,11 +320,12 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	public IVL_TS getEffectiveTime() {
 		if (GET_EFFECTIVE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getCauseOfDeathObservation(), IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(20));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation(),
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(20));
 			try {
 				GET_EFFECTIVE_TIME__EOCL_QRY = helper.createQuery(GET_EFFECTIVE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -375,11 +378,12 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	public IAgeObservation getAgeObservation() {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getCauseOfDeathObservation(), IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(11));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation(),
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(11));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -407,9 +411,9 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("AgeObservation");
-		IAgeObservation value = (IAgeObservation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IAgeObservation value = (IAgeObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -442,11 +446,12 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	public IProblemStatusObservation getProblemStatusObservation() {
 		if (GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getCauseOfDeathObservation(), IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(14));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation(),
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(14));
 			try {
 				GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -474,9 +479,9 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ProblemStatusObservation");
-		IProblemStatusObservation value = (IProblemStatusObservation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IProblemStatusObservation value = (IProblemStatusObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -509,11 +514,12 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	public EList<ICauseOfDeathObservation> getCauseOfDeathObservations() {
 		if (GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getCauseOfDeathObservation(), IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(17));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation(),
+				IDomainPackage.eINSTANCE.getCauseOfDeathObservation().getEAllOperations().get(17));
 			try {
 				GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -543,9 +549,9 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("CauseOfDeathObservation");
-		ICauseOfDeathObservation value = (ICauseOfDeathObservation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		ICauseOfDeathObservation value = (ICauseOfDeathObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -556,7 +562,7 @@ public class CauseOfDeathObservationImpl extends FamilyHistoryObservationImpl im
 	 */
 	@Override
 	public ICauseOfDeathObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // CauseOfDeathObservationImpl

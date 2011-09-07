@@ -70,8 +70,8 @@ public class HospitalDischargeMedicationsSectionImpl extends EObjectImpl impleme
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -124,11 +124,12 @@ public class HospitalDischargeMedicationsSectionImpl extends EObjectImpl impleme
 	public IMedication getMedication() {
 		if (GET_MEDICATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getHospitalDischargeMedicationsSection(), IDomainPackage.eINSTANCE.getHospitalDischargeMedicationsSection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getHospitalDischargeMedicationsSection(),
+				IDomainPackage.eINSTANCE.getHospitalDischargeMedicationsSection().getEAllOperations().get(0));
 			try {
 				GET_MEDICATION__EOCL_QRY = helper.createQuery(GET_MEDICATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -155,9 +156,9 @@ public class HospitalDischargeMedicationsSectionImpl extends EObjectImpl impleme
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Medication");
-		IMedication value = (IMedication)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);
-		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)eObject);
+		IMedication value = (IMedication) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) eObject);
+		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) eObject);
 		return value;
 	}
 
@@ -167,7 +168,7 @@ public class HospitalDischargeMedicationsSectionImpl extends EObjectImpl impleme
 	 * @generated
 	 */
 	public IHospitalDischargeMedicationsSection setMedication(IMedication value) {
-		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration)value);
+		this.getCDAType().addSubstanceAdministration((org.openhealthtools.mdht.uml.cda.SubstanceAdministration) value);
 		return this;
 	}
 
@@ -180,7 +181,9 @@ public class HospitalDischargeMedicationsSectionImpl extends EObjectImpl impleme
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -195,7 +198,7 @@ public class HospitalDischargeMedicationsSectionImpl extends EObjectImpl impleme
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -210,7 +213,7 @@ public class HospitalDischargeMedicationsSectionImpl extends EObjectImpl impleme
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -245,7 +248,7 @@ public class HospitalDischargeMedicationsSectionImpl extends EObjectImpl impleme
 	 * @generated
 	 */
 	public IHospitalDischargeMedicationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HospitalDischargeMedicationsSectionImpl

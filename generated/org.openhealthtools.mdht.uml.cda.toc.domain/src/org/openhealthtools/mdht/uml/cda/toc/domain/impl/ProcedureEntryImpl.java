@@ -64,8 +64,8 @@ public class ProcedureEntryImpl extends EObjectImpl implements IProcedureEntry {
 	 */
 	public Procedure getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Procedure)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Procedure) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -99,7 +99,9 @@ public class ProcedureEntryImpl extends EObjectImpl implements IProcedureEntry {
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.PROCEDURE_ENTRY__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -114,7 +116,7 @@ public class ProcedureEntryImpl extends EObjectImpl implements IProcedureEntry {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.PROCEDURE_ENTRY__CDA_TYPE:
-				setCDAType((Procedure)newValue);
+				setCDAType((Procedure) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -129,7 +131,7 @@ public class ProcedureEntryImpl extends EObjectImpl implements IProcedureEntry {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.PROCEDURE_ENTRY__CDA_TYPE:
-				setCDAType((Procedure)null);
+				setCDAType((Procedure) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -155,7 +157,7 @@ public class ProcedureEntryImpl extends EObjectImpl implements IProcedureEntry {
 	 * @generated
 	 */
 	public IProcedureEntry init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureEntryImpl

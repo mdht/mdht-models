@@ -78,8 +78,8 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	 */
 	public Encounter getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Encounter)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Encounter) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -132,11 +132,12 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncountersActivity(), IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersActivity(),
+				IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -200,11 +201,12 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncountersActivity(), IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersActivity(),
+				IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(3));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -265,11 +267,12 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	public IVL_TS getEffectiveTime() {
 		if (GET_EFFECTIVE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncountersActivity(), IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersActivity(),
+				IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(6));
 			try {
 				GET_EFFECTIVE_TIME__EOCL_QRY = helper.createQuery(GET_EFFECTIVE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -330,11 +333,12 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	public EList<IPatientInstruction> getPatientInstructions() {
 		if (GET_PATIENT_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncountersActivity(), IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersActivity(),
+				IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(9));
 			try {
 				GET_PATIENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_PATIENT_INSTRUCTIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -363,9 +367,9 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PatientInstruction");
-		IPatientInstruction value = (IPatientInstruction)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act)eObject);
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		IPatientInstruction value = (IPatientInstruction) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -408,11 +412,12 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	public IAgeObservation getAgeObservation() {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncountersActivity(), IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(12));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersActivity(),
+				IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(12));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -439,9 +444,9 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("AgeObservation");
-		IAgeObservation value = (IAgeObservation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IAgeObservation value = (IAgeObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -451,7 +456,7 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	 * @generated
 	 */
 	public IEncountersActivity setAgeObservation(IAgeObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -483,11 +488,12 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	public EList<IEncounterLocation> getEncounterLocations() {
 		if (GET_ENCOUNTER_LOCATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncountersActivity(), IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(15));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersActivity(),
+				IDomainPackage.eINSTANCE.getEncountersActivity().getEAllOperations().get(15));
 			try {
 				GET_ENCOUNTER_LOCATIONS__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_LOCATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -528,7 +534,9 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.ENCOUNTERS_ACTIVITY__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -543,7 +551,7 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.ENCOUNTERS_ACTIVITY__CDA_TYPE:
-				setCDAType((Encounter)newValue);
+				setCDAType((Encounter) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -558,7 +566,7 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.ENCOUNTERS_ACTIVITY__CDA_TYPE:
-				setCDAType((Encounter)null);
+				setCDAType((Encounter) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -593,7 +601,7 @@ public class EncountersActivityImpl extends EObjectImpl implements IEncountersAc
 	 * @generated
 	 */
 	public IEncountersActivity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncountersActivityImpl

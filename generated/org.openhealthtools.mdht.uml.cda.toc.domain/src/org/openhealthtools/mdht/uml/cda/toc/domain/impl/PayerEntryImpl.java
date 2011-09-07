@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
 import org.openhealthtools.mdht.uml.cda.toc.domain.ICoveredParty;
 import org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.toc.domain.IPayerEntity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPolicyActivity;
+import org.openhealthtools.mdht.uml.cda.toc.domain.IPayerEntry;
 import org.openhealthtools.mdht.uml.cda.toc.domain.IPolicySubscriber;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
@@ -29,18 +29,18 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Policy Activity</b></em>'.
+ * An implementation of the model object '<em><b>Payer Entry</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.toc.domain.impl.PolicyActivityImpl#getCDAType <em>CDA Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.toc.domain.impl.PayerEntryImpl#getCDAType <em>CDA Type</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
+public class PayerEntryImpl extends EObjectImpl implements IPayerEntry {
 	/**
 	 * The cached value of the '{@link #getCDAType() <em>CDA Type</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -56,7 +56,7 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PolicyActivityImpl() {
+	protected PayerEntryImpl() {
 		super();
 	}
 
@@ -67,7 +67,7 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IDomainPackage.eINSTANCE.getPolicyActivity();
+		return IDomainPackage.eINSTANCE.getPayerEntry();
 	}
 
 	/**
@@ -77,8 +77,8 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	 */
 	public Act getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Act)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Act) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -131,11 +131,12 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPolicyActivity(), IDomainPackage.eINSTANCE.getPolicyActivity().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPayerEntry(),
+				IDomainPackage.eINSTANCE.getPayerEntry().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -165,7 +166,7 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPolicyActivity addId(II value) {
+	public IPayerEntry addId(II value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -199,11 +200,12 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPolicyActivity(), IDomainPackage.eINSTANCE.getPolicyActivity().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPayerEntry(),
+				IDomainPackage.eINSTANCE.getPayerEntry().getEAllOperations().get(3));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -231,7 +233,7 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPolicyActivity setCode(CD value) {
+	public IPayerEntry setCode(CD value) {
 		this.getCDAType().setCode(value);
 		return this;
 	}
@@ -264,11 +266,12 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	public IPayerEntity getPayerEntity() {
 		if (GET_PAYER_ENTITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPolicyActivity(), IDomainPackage.eINSTANCE.getPolicyActivity().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPayerEntry(),
+				IDomainPackage.eINSTANCE.getPayerEntry().getEAllOperations().get(6));
 			try {
 				GET_PAYER_ENTITY__EOCL_QRY = helper.createQuery(GET_PAYER_ENTITY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -292,7 +295,7 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPolicyActivity setPayerEntity(IPayerEntity value) {
+	public IPayerEntry setPayerEntity(IPayerEntity value) {
 		return this;
 	}
 
@@ -324,11 +327,12 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	public ICoveredParty getCoveredParty() {
 		if (GET_COVERED_PARTY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPolicyActivity(), IDomainPackage.eINSTANCE.getPolicyActivity().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPayerEntry(),
+				IDomainPackage.eINSTANCE.getPayerEntry().getEAllOperations().get(9));
 			try {
 				GET_COVERED_PARTY__EOCL_QRY = helper.createQuery(GET_COVERED_PARTY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -352,7 +356,7 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPolicyActivity setCoveredParty(ICoveredParty value) {
+	public IPayerEntry setCoveredParty(ICoveredParty value) {
 		return this;
 	}
 
@@ -384,11 +388,12 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	public IPolicySubscriber getSubscriber() {
 		if (GET_SUBSCRIBER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPolicyActivity(), IDomainPackage.eINSTANCE.getPolicyActivity().getEAllOperations().get(12));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPayerEntry(),
+				IDomainPackage.eINSTANCE.getPayerEntry().getEAllOperations().get(12));
 			try {
 				GET_SUBSCRIBER__EOCL_QRY = helper.createQuery(GET_SUBSCRIBER__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -412,7 +417,7 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPolicyActivity setSubscriber(IPolicySubscriber value) {
+	public IPayerEntry setSubscriber(IPolicySubscriber value) {
 		return this;
 	}
 
@@ -424,8 +429,10 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IDomainPackage.POLICY_ACTIVITY__CDA_TYPE:
-				if (resolve) return getCDAType();
+			case IDomainPackage.PAYER_ENTRY__CDA_TYPE:
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -439,8 +446,8 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IDomainPackage.POLICY_ACTIVITY__CDA_TYPE:
-				setCDAType((Act)newValue);
+			case IDomainPackage.PAYER_ENTRY__CDA_TYPE:
+				setCDAType((Act) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -454,8 +461,8 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IDomainPackage.POLICY_ACTIVITY__CDA_TYPE:
-				setCDAType((Act)null);
+			case IDomainPackage.PAYER_ENTRY__CDA_TYPE:
+				setCDAType((Act) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -469,7 +476,7 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IDomainPackage.POLICY_ACTIVITY__CDA_TYPE:
+			case IDomainPackage.PAYER_ENTRY__CDA_TYPE:
 				return cDAType != null;
 		}
 		return super.eIsSet(featureID);
@@ -489,8 +496,8 @@ public class PolicyActivityImpl extends EObjectImpl implements IPolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPolicyActivity init() {
-    	CDAUtil.init(this);
-    	return this;
+	public IPayerEntry init() {
+		CDAUtil.init(this);
+		return this;
 	}
-} // PolicyActivityImpl
+} // PayerEntryImpl

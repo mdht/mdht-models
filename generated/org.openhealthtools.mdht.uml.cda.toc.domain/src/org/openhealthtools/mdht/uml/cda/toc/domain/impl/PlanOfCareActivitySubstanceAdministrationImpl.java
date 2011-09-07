@@ -74,8 +74,8 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends PlanOfCareAct
 	 */
 	public SubstanceAdministration getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (SubstanceAdministration)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (SubstanceAdministration) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -128,11 +128,12 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends PlanOfCareAct
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareActivitySubstanceAdministration(), IDomainPackage.eINSTANCE.getPlanOfCareActivitySubstanceAdministration().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareActivitySubstanceAdministration(),
+				IDomainPackage.eINSTANCE.getPlanOfCareActivitySubstanceAdministration().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -196,11 +197,12 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends PlanOfCareAct
 	public Consumable getConsumable() {
 		if (GET_CONSUMABLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareActivitySubstanceAdministration(), IDomainPackage.eINSTANCE.getPlanOfCareActivitySubstanceAdministration().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareActivitySubstanceAdministration(),
+				IDomainPackage.eINSTANCE.getPlanOfCareActivitySubstanceAdministration().getEAllOperations().get(3));
 			try {
 				GET_CONSUMABLE__EOCL_QRY = helper.createQuery(GET_CONSUMABLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -242,7 +244,9 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends PlanOfCareAct
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -257,7 +261,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends PlanOfCareAct
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__CDA_TYPE:
-				setCDAType((SubstanceAdministration)newValue);
+				setCDAType((SubstanceAdministration) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -272,7 +276,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends PlanOfCareAct
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__CDA_TYPE:
-				setCDAType((SubstanceAdministration)null);
+				setCDAType((SubstanceAdministration) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -308,7 +312,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends PlanOfCareAct
 	 */
 	@Override
 	public IPlanOfCareActivitySubstanceAdministration init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PlanOfCareActivitySubstanceAdministrationImpl

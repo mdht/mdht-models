@@ -75,8 +75,8 @@ public class ExternalReferenceImpl extends EObjectImpl implements IExternalRefer
 	 */
 	public Act getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Act)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Act) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -129,11 +129,12 @@ public class ExternalReferenceImpl extends EObjectImpl implements IExternalRefer
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getExternalReference(), IDomainPackage.eINSTANCE.getExternalReference().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getExternalReference(),
+				IDomainPackage.eINSTANCE.getExternalReference().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -197,11 +198,12 @@ public class ExternalReferenceImpl extends EObjectImpl implements IExternalRefer
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getExternalReference(), IDomainPackage.eINSTANCE.getExternalReference().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getExternalReference(),
+				IDomainPackage.eINSTANCE.getExternalReference().getEAllOperations().get(3));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -262,11 +264,12 @@ public class ExternalReferenceImpl extends EObjectImpl implements IExternalRefer
 	public ED getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getExternalReference(), IDomainPackage.eINSTANCE.getExternalReference().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getExternalReference(),
+				IDomainPackage.eINSTANCE.getExternalReference().getEAllOperations().get(6));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -308,7 +311,9 @@ public class ExternalReferenceImpl extends EObjectImpl implements IExternalRefer
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.EXTERNAL_REFERENCE__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -323,7 +328,7 @@ public class ExternalReferenceImpl extends EObjectImpl implements IExternalRefer
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.EXTERNAL_REFERENCE__CDA_TYPE:
-				setCDAType((Act)newValue);
+				setCDAType((Act) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -338,7 +343,7 @@ public class ExternalReferenceImpl extends EObjectImpl implements IExternalRefer
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.EXTERNAL_REFERENCE__CDA_TYPE:
-				setCDAType((Act)null);
+				setCDAType((Act) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -373,7 +378,7 @@ public class ExternalReferenceImpl extends EObjectImpl implements IExternalRefer
 	 * @generated
 	 */
 	public IExternalReference init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ExternalReferenceImpl

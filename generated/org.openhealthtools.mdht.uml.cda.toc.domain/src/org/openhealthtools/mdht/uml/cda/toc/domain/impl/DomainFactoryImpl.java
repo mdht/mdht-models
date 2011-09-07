@@ -11,102 +11,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirective;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectiveReference;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectiveStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectiveVerification;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAgeObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAllergiesReactionsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAllergyDrugSensitivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAllergyIntolerance;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAssessmentAndPlanSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICauseOfDeathObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IChiefComplaintSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IComment;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IConsultationRequest;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IConsultationSummary;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICoverageEntry;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICoveredParty;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDiagnosticResultsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeDiet;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeInstructions;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeSummary;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDomainFactory;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncounter;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncounterLocation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncountersActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncountersSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEpisodeObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IExternalReference;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFamilyHistory;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFamilyHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFamilyHistorySection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFulfillmentInstruction;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFunctionalStatusSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IGeneralStatusSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHistoryOfPresentIllness;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalCourseSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalDischargeMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalDischargePhysical;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalDischargeStudiesSummarySection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IImmunization;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IImmunizationsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IInternalReference;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicalEquipmentSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedication;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationFullfillmentInstructions;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationOrderInformation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationSeriesNumberObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationType;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPatientInstruction;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPatientMedicalInstructions;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPayerEntity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPayersSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPhysicalExamSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityAct;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityEncounter;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivitySubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivitySupply;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPolicyActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPolicySubscriber;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemEntry;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemEntryReactionObservationContainer;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemListSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProcedure;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProcedureEntry;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProcedureEntryProcedureActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProductInstance;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IReactionObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IReasonForReferralSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IResult;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IResultOrganizer;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IReviewOfSystemsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISeverity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISeverityObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISimpleObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISocialHistory;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISocialHistoryStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISupplyActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignsOrganizer;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignsSection;
+import org.openhealthtools.mdht.uml.cda.toc.domain.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -123,12 +28,11 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 */
 	public static IDomainFactory init() {
 		try {
-			IDomainFactory theDomainFactory = (IDomainFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/toc/domain"); 
+			IDomainFactory theDomainFactory = (IDomainFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/toc/domain");
 			if (theDomainFactory != null) {
 				return theDomainFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new DomainFactoryImpl();
@@ -152,100 +56,244 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case IDomainPackage.DISCHARGE_SUMMARY: return (EObject)createDischargeSummary();
-			case IDomainPackage.ALLERGIES_REACTIONS_SECTION: return (EObject)createAllergiesReactionsSection();
-			case IDomainPackage.ALLERGY_DRUG_SENSITIVITY: return (EObject)createAllergyDrugSensitivity();
-			case IDomainPackage.EPISODE_OBSERVATION: return (EObject)createEpisodeObservation();
-			case IDomainPackage.ALLERGY_INTOLERANCE: return (EObject)createAllergyIntolerance();
-			case IDomainPackage.PROBLEM_ENTRY: return (EObject)createProblemEntry();
-			case IDomainPackage.AGE_OBSERVATION: return (EObject)createAgeObservation();
-			case IDomainPackage.SEVERITY: return (EObject)createSeverity();
-			case IDomainPackage.PROBLEM_STATUS_OBSERVATION: return (EObject)createProblemStatusObservation();
-			case IDomainPackage.STATUS_OBSERVATION: return (EObject)createStatusObservation();
-			case IDomainPackage.HEALTH_STATUS_OBSERVATION: return (EObject)createHealthStatusObservation();
-			case IDomainPackage.COMMENT: return (EObject)createComment();
-			case IDomainPackage.CAUSE_OF_DEATH_OBSERVATION: return (EObject)createCauseOfDeathObservation();
-			case IDomainPackage.FAMILY_HISTORY_OBSERVATION: return (EObject)createFamilyHistoryObservation();
-			case IDomainPackage.SIMPLE_OBSERVATION: return (EObject)createSimpleObservation();
-			case IDomainPackage.PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER: return (EObject)createProblemEntryReactionObservationContainer();
-			case IDomainPackage.PROBLEM_LIST_SECTION: return (EObject)createProblemListSection();
-			case IDomainPackage.CONDITION: return (EObject)createCondition();
-			case IDomainPackage.HOSPITAL_COURSE_SECTION: return (EObject)createHospitalCourseSection();
-			case IDomainPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: return (EObject)createHospitalDischargeMedicationsSection();
-			case IDomainPackage.MEDICATION: return (EObject)createMedication();
-			case IDomainPackage.MEDICATION_SERIES_NUMBER_OBSERVATION: return (EObject)createMedicationSeriesNumberObservation();
-			case IDomainPackage.MEDICATION_STATUS_OBSERVATION: return (EObject)createMedicationStatusObservation();
-			case IDomainPackage.REACTION_OBSERVATION: return (EObject)createReactionObservation();
-			case IDomainPackage.SEVERITY_OBSERVATION: return (EObject)createSeverityObservation();
-			case IDomainPackage.PRODUCT_INSTANCE: return (EObject)createProductInstance();
-			case IDomainPackage.INTERNAL_REFERENCE: return (EObject)createInternalReference();
-			case IDomainPackage.PATIENT_MEDICAL_INSTRUCTIONS: return (EObject)createPatientMedicalInstructions();
-			case IDomainPackage.MEDICATION_TYPE: return (EObject)createMedicationType();
-			case IDomainPackage.MEDICATION_ORDER_INFORMATION: return (EObject)createMedicationOrderInformation();
-			case IDomainPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: return (EObject)createMedicationFullfillmentInstructions();
-			case IDomainPackage.DISCHARGE_DIAGNOSIS_SECTION: return (EObject)createDischargeDiagnosisSection();
-			case IDomainPackage.PLAN_OF_CARE_SECTION: return (EObject)createPlanOfCareSection();
-			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ACT: return (EObject)createPlanOfCareActivityAct();
-			case IDomainPackage.PLAN_OF_CARE_ACTIVITY: return (EObject)createPlanOfCareActivity();
-			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER: return (EObject)createPlanOfCareActivityEncounter();
-			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION: return (EObject)createPlanOfCareActivityObservation();
-			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE: return (EObject)createPlanOfCareActivityProcedure();
-			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION: return (EObject)createPlanOfCareActivitySubstanceAdministration();
-			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY: return (EObject)createPlanOfCareActivitySupply();
-			case IDomainPackage.IMMUNIZATION: return (EObject)createImmunization();
-			case IDomainPackage.PATIENT_INSTRUCTION: return (EObject)createPatientInstruction();
-			case IDomainPackage.ENCOUNTER: return (EObject)createEncounter();
-			case IDomainPackage.PROCEDURE: return (EObject)createProcedure();
-			case IDomainPackage.SURGERIES_SECTION: return (EObject)createSurgeriesSection();
-			case IDomainPackage.EXTERNAL_REFERENCE: return (EObject)createExternalReference();
-			case IDomainPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: return (EObject)createProcedureEntryProcedureActivityProcedure();
-			case IDomainPackage.PROCEDURE_ENTRY: return (EObject)createProcedureEntry();
-			case IDomainPackage.ENCOUNTER_LOCATION: return (EObject)createEncounterLocation();
-			case IDomainPackage.MEDICATION_ACTIVITY: return (EObject)createMedicationActivity();
-			case IDomainPackage.CHIEF_COMPLAINT_SECTION: return (EObject)createChiefComplaintSection();
-			case IDomainPackage.DISCHARGE_DIET: return (EObject)createDischargeDiet();
-			case IDomainPackage.FAMILY_HISTORY_SECTION: return (EObject)createFamilyHistorySection();
-			case IDomainPackage.FAMILY_HISTORY: return (EObject)createFamilyHistory();
-			case IDomainPackage.FUNCTIONAL_STATUS_SECTION: return (EObject)createFunctionalStatusSection();
-			case IDomainPackage.HISTORY_OF_PRESENT_ILLNESS: return (EObject)createHistoryOfPresentIllness();
-			case IDomainPackage.HOSPITAL_DISCHARGE_PHYSICAL: return (EObject)createHospitalDischargePhysical();
-			case IDomainPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION: return (EObject)createHospitalDischargeStudiesSummarySection();
-			case IDomainPackage.IMMUNIZATIONS_SECTION: return (EObject)createImmunizationsSection();
-			case IDomainPackage.SUPPLY_ACTIVITY: return (EObject)createSupplyActivity();
-			case IDomainPackage.FULFILLMENT_INSTRUCTION: return (EObject)createFulfillmentInstruction();
-			case IDomainPackage.REVIEW_OF_SYSTEMS_SECTION: return (EObject)createReviewOfSystemsSection();
-			case IDomainPackage.SOCIAL_HISTORY_SECTION: return (EObject)createSocialHistorySection();
-			case IDomainPackage.SOCIAL_HISTORY: return (EObject)createSocialHistory();
-			case IDomainPackage.SOCIAL_HISTORY_STATUS_OBSERVATION: return (EObject)createSocialHistoryStatusObservation();
-			case IDomainPackage.VITAL_SIGNS_SECTION: return (EObject)createVitalSignsSection();
-			case IDomainPackage.VITAL_SIGNS_ORGANIZER: return (EObject)createVitalSignsOrganizer();
-			case IDomainPackage.VITAL_SIGN_OBSERVATION: return (EObject)createVitalSignObservation();
-			case IDomainPackage.DISCHARGE_INSTRUCTIONS: return (EObject)createDischargeInstructions();
-			case IDomainPackage.ADVANCE_DIRECTIVES_SECTION: return (EObject)createAdvanceDirectivesSection();
-			case IDomainPackage.ADVANCE_DIRECTIVE: return (EObject)createAdvanceDirective();
-			case IDomainPackage.ADVANCE_DIRECTIVE_VERIFICATION: return (EObject)createAdvanceDirectiveVerification();
-			case IDomainPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: return (EObject)createAdvanceDirectiveStatusObservation();
-			case IDomainPackage.ADVANCE_DIRECTIVE_REFERENCE: return (EObject)createAdvanceDirectiveReference();
-			case IDomainPackage.MEDICAL_EQUIPMENT_SECTION: return (EObject)createMedicalEquipmentSection();
-			case IDomainPackage.CONSULTATION_SUMMARY: return (EObject)createConsultationSummary();
-			case IDomainPackage.MEDICATIONS_SECTION: return (EObject)createMedicationsSection();
-			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION: return (EObject)createDiagnosticResultsSection();
-			case IDomainPackage.RESULT: return (EObject)createResult();
-			case IDomainPackage.RESULT_ORGANIZER: return (EObject)createResultOrganizer();
-			case IDomainPackage.ENCOUNTERS_SECTION: return (EObject)createEncountersSection();
-			case IDomainPackage.ENCOUNTERS_ACTIVITY: return (EObject)createEncountersActivity();
-			case IDomainPackage.PAYERS_SECTION: return (EObject)createPayersSection();
-			case IDomainPackage.COVERAGE_ENTRY: return (EObject)createCoverageEntry();
-			case IDomainPackage.POLICY_ACTIVITY: return (EObject)createPolicyActivity();
-			case IDomainPackage.PAYER_ENTITY: return (EObject)createPayerEntity();
-			case IDomainPackage.COVERED_PARTY: return (EObject)createCoveredParty();
-			case IDomainPackage.POLICY_SUBSCRIBER: return (EObject)createPolicySubscriber();
-			case IDomainPackage.CONSULTATION_REQUEST: return (EObject)createConsultationRequest();
-			case IDomainPackage.ASSESSMENT_AND_PLAN_SECTION: return (EObject)createAssessmentAndPlanSection();
-			case IDomainPackage.PHYSICAL_EXAM_SECTION: return (EObject)createPhysicalExamSection();
-			case IDomainPackage.REASON_FOR_REFERRAL_SECTION: return (EObject)createReasonForReferralSection();
-			case IDomainPackage.GENERAL_STATUS_SECTION: return (EObject)createGeneralStatusSection();
-			case IDomainPackage.HISTORY_OF_PAST_ILLNESS_SECTION: return (EObject)createHistoryOfPastIllnessSection();
+			case IDomainPackage.DISCHARGE_SUMMARY:
+				return (EObject) createDischargeSummary();
+			case IDomainPackage.ALLERGIES_REACTIONS_SECTION:
+				return (EObject) createAllergiesReactionsSection();
+			case IDomainPackage.ALLERGY_DRUG_SENSITIVITY:
+				return (EObject) createAllergyDrugSensitivity();
+			case IDomainPackage.EPISODE_OBSERVATION:
+				return (EObject) createEpisodeObservation();
+			case IDomainPackage.ALLERGY_INTOLERANCE:
+				return (EObject) createAllergyIntolerance();
+			case IDomainPackage.PROBLEM_ENTRY:
+				return (EObject) createProblemEntry();
+			case IDomainPackage.AGE_OBSERVATION:
+				return (EObject) createAgeObservation();
+			case IDomainPackage.SEVERITY:
+				return (EObject) createSeverity();
+			case IDomainPackage.PROBLEM_STATUS_OBSERVATION:
+				return (EObject) createProblemStatusObservation();
+			case IDomainPackage.STATUS_OBSERVATION:
+				return (EObject) createStatusObservation();
+			case IDomainPackage.HEALTH_STATUS_OBSERVATION:
+				return (EObject) createHealthStatusObservation();
+			case IDomainPackage.COMMENT:
+				return (EObject) createComment();
+			case IDomainPackage.CAUSE_OF_DEATH_OBSERVATION:
+				return (EObject) createCauseOfDeathObservation();
+			case IDomainPackage.FAMILY_HISTORY_OBSERVATION:
+				return (EObject) createFamilyHistoryObservation();
+			case IDomainPackage.SIMPLE_OBSERVATION:
+				return (EObject) createSimpleObservation();
+			case IDomainPackage.PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER:
+				return (EObject) createProblemEntryReactionObservationContainer();
+			case IDomainPackage.PROBLEM_LIST_SECTION:
+				return (EObject) createProblemListSection();
+			case IDomainPackage.CONDITION:
+				return (EObject) createCondition();
+			case IDomainPackage.HOSPITAL_COURSE_SECTION:
+				return (EObject) createHospitalCourseSection();
+			case IDomainPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
+				return (EObject) createHospitalDischargeMedicationsSection();
+			case IDomainPackage.MEDICATION:
+				return (EObject) createMedication();
+			case IDomainPackage.MEDICATION_SERIES_NUMBER_OBSERVATION:
+				return (EObject) createMedicationSeriesNumberObservation();
+			case IDomainPackage.MEDICATION_STATUS_OBSERVATION:
+				return (EObject) createMedicationStatusObservation();
+			case IDomainPackage.REACTION_OBSERVATION:
+				return (EObject) createReactionObservation();
+			case IDomainPackage.SEVERITY_OBSERVATION:
+				return (EObject) createSeverityObservation();
+			case IDomainPackage.PRODUCT_INSTANCE:
+				return (EObject) createProductInstance();
+			case IDomainPackage.INTERNAL_REFERENCE:
+				return (EObject) createInternalReference();
+			case IDomainPackage.PATIENT_MEDICAL_INSTRUCTIONS:
+				return (EObject) createPatientMedicalInstructions();
+			case IDomainPackage.MEDICATION_TYPE:
+				return (EObject) createMedicationType();
+			case IDomainPackage.MEDICATION_ORDER_INFORMATION:
+				return (EObject) createMedicationOrderInformation();
+			case IDomainPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS:
+				return (EObject) createMedicationFullfillmentInstructions();
+			case IDomainPackage.DISCHARGE_DIAGNOSIS_SECTION:
+				return (EObject) createDischargeDiagnosisSection();
+			case IDomainPackage.PLAN_OF_CARE_SECTION:
+				return (EObject) createPlanOfCareSection();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ACT:
+				return (EObject) createPlanOfCareActivityAct();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY:
+				return (EObject) createPlanOfCareActivity();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER:
+				return (EObject) createPlanOfCareActivityEncounter();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION:
+				return (EObject) createPlanOfCareActivityObservation();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE:
+				return (EObject) createPlanOfCareActivityProcedure();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION:
+				return (EObject) createPlanOfCareActivitySubstanceAdministration();
+			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY:
+				return (EObject) createPlanOfCareActivitySupply();
+			case IDomainPackage.IMMUNIZATION:
+				return (EObject) createImmunization();
+			case IDomainPackage.PATIENT_INSTRUCTION:
+				return (EObject) createPatientInstruction();
+			case IDomainPackage.ENCOUNTER:
+				return (EObject) createEncounter();
+			case IDomainPackage.PROCEDURE:
+				return (EObject) createProcedure();
+			case IDomainPackage.SURGERIES_SECTION:
+				return (EObject) createSurgeriesSection();
+			case IDomainPackage.EXTERNAL_REFERENCE:
+				return (EObject) createExternalReference();
+			case IDomainPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE:
+				return (EObject) createProcedureEntryProcedureActivityProcedure();
+			case IDomainPackage.PROCEDURE_ENTRY:
+				return (EObject) createProcedureEntry();
+			case IDomainPackage.ENCOUNTER_LOCATION:
+				return (EObject) createEncounterLocation();
+			case IDomainPackage.MEDICATION_ACTIVITY:
+				return (EObject) createMedicationActivity();
+			case IDomainPackage.CHIEF_COMPLAINT_SECTION:
+				return (EObject) createChiefComplaintSection();
+			case IDomainPackage.DISCHARGE_DIET:
+				return (EObject) createDischargeDiet();
+			case IDomainPackage.FAMILY_HISTORY_SECTION:
+				return (EObject) createFamilyHistorySection();
+			case IDomainPackage.FAMILY_HISTORY:
+				return (EObject) createFamilyHistory();
+			case IDomainPackage.FUNCTIONAL_STATUS_SECTION:
+				return (EObject) createFunctionalStatusSection();
+			case IDomainPackage.HISTORY_OF_PRESENT_ILLNESS:
+				return (EObject) createHistoryOfPresentIllness();
+			case IDomainPackage.HOSPITAL_DISCHARGE_PHYSICAL:
+				return (EObject) createHospitalDischargePhysical();
+			case IDomainPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION:
+				return (EObject) createHospitalDischargeStudiesSummarySection();
+			case IDomainPackage.IMMUNIZATIONS_SECTION:
+				return (EObject) createImmunizationsSection();
+			case IDomainPackage.SUPPLY_ACTIVITY:
+				return (EObject) createSupplyActivity();
+			case IDomainPackage.FULFILLMENT_INSTRUCTION:
+				return (EObject) createFulfillmentInstruction();
+			case IDomainPackage.REVIEW_OF_SYSTEMS_SECTION:
+				return (EObject) createReviewOfSystemsSection();
+			case IDomainPackage.SOCIAL_HISTORY_SECTION:
+				return (EObject) createSocialHistorySection();
+			case IDomainPackage.SOCIAL_HISTORY:
+				return (EObject) createSocialHistory();
+			case IDomainPackage.SOCIAL_HISTORY_STATUS_OBSERVATION:
+				return (EObject) createSocialHistoryStatusObservation();
+			case IDomainPackage.VITAL_SIGNS_SECTION:
+				return (EObject) createVitalSignsSection();
+			case IDomainPackage.VITAL_SIGNS_ORGANIZER:
+				return (EObject) createVitalSignsOrganizer();
+			case IDomainPackage.RESULT_ORGANIZER:
+				return (EObject) createResultOrganizer();
+			case IDomainPackage.RESULT:
+				return (EObject) createResult();
+			case IDomainPackage.RESULT_OBSERVATION:
+				return (EObject) createResultObservation();
+			case IDomainPackage.VITAL_SIGN_OBSERVATION:
+				return (EObject) createVitalSignObservation();
+			case IDomainPackage.DISCHARGE_INSTRUCTIONS:
+				return (EObject) createDischargeInstructions();
+			case IDomainPackage.ADVANCE_DIRECTIVES_SECTION:
+				return (EObject) createAdvanceDirectivesSection();
+			case IDomainPackage.ADVANCE_DIRECTIVE:
+				return (EObject) createAdvanceDirective();
+			case IDomainPackage.ADVANCE_DIRECTIVE_VERIFICATION:
+				return (EObject) createAdvanceDirectiveVerification();
+			case IDomainPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
+				return (EObject) createAdvanceDirectiveStatusObservation();
+			case IDomainPackage.ADVANCE_DIRECTIVE_REFERENCE:
+				return (EObject) createAdvanceDirectiveReference();
+			case IDomainPackage.MEDICAL_EQUIPMENT_SECTION:
+				return (EObject) createMedicalEquipmentSection();
+			case IDomainPackage.CONSULTATION_SUMMARY:
+				return (EObject) createConsultationSummary();
+			case IDomainPackage.MEDICATIONS_SECTION:
+				return (EObject) createMedicationsSection();
+			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION:
+				return (EObject) createDiagnosticResultsSection();
+			case IDomainPackage.ENCOUNTERS_SECTION:
+				return (EObject) createEncountersSection();
+			case IDomainPackage.ENCOUNTERS_ACTIVITY:
+				return (EObject) createEncountersActivity();
+			case IDomainPackage.PAYERS_SECTION:
+				return (EObject) createPayersSection();
+			case IDomainPackage.INSURANCE_PROVIDER:
+				return (EObject) createInsuranceProvider();
+			case IDomainPackage.PAYER_ENTRY:
+				return (EObject) createPayerEntry();
+			case IDomainPackage.PAYER_ENTITY:
+				return (EObject) createPayerEntity();
+			case IDomainPackage.COVERED_PARTY:
+				return (EObject) createCoveredParty();
+			case IDomainPackage.POLICY_SUBSCRIBER:
+				return (EObject) createPolicySubscriber();
+			case IDomainPackage.CONSULTATION_REQUEST:
+				return (EObject) createConsultationRequest();
+			case IDomainPackage.ASSESSMENT_AND_PLAN_SECTION:
+				return (EObject) createAssessmentAndPlanSection();
+			case IDomainPackage.PHYSICAL_EXAM_SECTION:
+				return (EObject) createPhysicalExamSection();
+			case IDomainPackage.GENERAL_APPEARANCE_SECTION:
+				return (EObject) createGeneralAppearanceSection();
+			case IDomainPackage.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION:
+				return (EObject) createVisibleImplantedMedicalDevicesSection();
+			case IDomainPackage.INTEGUMENTARY_SYSTEM_SECTION:
+				return (EObject) createIntegumentarySystemSection();
+			case IDomainPackage.HEAD_SECTION:
+				return (EObject) createHeadSection();
+			case IDomainPackage.EYES_SECTION:
+				return (EObject) createEyesSection();
+			case IDomainPackage.EARS_NOSE_MOUTH_THROAT_SECTION:
+				return (EObject) createEarsNoseMouthThroatSection();
+			case IDomainPackage.EARS_SECTION:
+				return (EObject) createEarsSection();
+			case IDomainPackage.NOSE_SECTION:
+				return (EObject) createNoseSection();
+			case IDomainPackage.MOUTH_THROAT_TEETH_SECTION:
+				return (EObject) createMouthThroatTeethSection();
+			case IDomainPackage.NECK_SECTION:
+				return (EObject) createNeckSection();
+			case IDomainPackage.ENDOCRINE_SYSTEM_SECTION:
+				return (EObject) createEndocrineSystemSection();
+			case IDomainPackage.THORAX_LUNGS_SECTION:
+				return (EObject) createThoraxLungsSection();
+			case IDomainPackage.CHEST_WALL_SECTION:
+				return (EObject) createChestWallSection();
+			case IDomainPackage.BREAST_SECTION:
+				return (EObject) createBreastSection();
+			case IDomainPackage.HEART_SECTION:
+				return (EObject) createHeartSection();
+			case IDomainPackage.RESPIRATORY_SYSTEM_SECTION:
+				return (EObject) createRespiratorySystemSection();
+			case IDomainPackage.ABDOMEN_SECTION:
+				return (EObject) createAbdomenSection();
+			case IDomainPackage.LYMPHATIC_SECTION:
+				return (EObject) createLymphaticSection();
+			case IDomainPackage.VESSELS_SECTION:
+				return (EObject) createVesselsSection();
+			case IDomainPackage.MUSCULOSKELETAL_SYSTEM_SECTION:
+				return (EObject) createMusculoskeletalSystemSection();
+			case IDomainPackage.NEUROLOGIC_SYSTEM_SECTION:
+				return (EObject) createNeurologicSystemSection();
+			case IDomainPackage.GENITALIA_SECTION:
+				return (EObject) createGenitaliaSection();
+			case IDomainPackage.RECTUM_SECTION:
+				return (EObject) createRectumSection();
+			case IDomainPackage.EXTREMITIES_SECTION:
+				return (EObject) createExtremitiesSection();
+			case IDomainPackage.REASON_FOR_REFERRAL_SECTION:
+				return (EObject) createReasonForReferralSection();
+			case IDomainPackage.GENERAL_STATUS_SECTION:
+				return (EObject) createGeneralStatusSection();
+			case IDomainPackage.HISTORY_OF_PAST_ILLNESS_SECTION:
+				return (EObject) createHistoryOfPastIllnessSection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -389,6 +437,16 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	public IFamilyHistoryObservation createFamilyHistoryObservation() {
 		FamilyHistoryObservationImpl familyHistoryObservation = new FamilyHistoryObservationImpl();
 		return familyHistoryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ISimpleObservation createSimpleObservation() {
+		SimpleObservationImpl simpleObservation = new SimpleObservationImpl();
+		return simpleObservation;
 	}
 
 	/**
@@ -916,9 +974,9 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IVitalSignObservation createVitalSignObservation() {
-		VitalSignObservationImpl vitalSignObservation = new VitalSignObservationImpl();
-		return vitalSignObservation;
+	public IResultOrganizer createResultOrganizer() {
+		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
+		return resultOrganizer;
 	}
 
 	/**
@@ -926,9 +984,29 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ISimpleObservation createSimpleObservation() {
-		SimpleObservationImpl simpleObservation = new SimpleObservationImpl();
-		return simpleObservation;
+	public IResult createResult() {
+		ResultImpl result = new ResultImpl();
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IResultObservation createResultObservation() {
+		ResultObservationImpl resultObservation = new ResultObservationImpl();
+		return resultObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IVitalSignObservation createVitalSignObservation() {
+		VitalSignObservationImpl vitalSignObservation = new VitalSignObservationImpl();
+		return vitalSignObservation;
 	}
 
 	/**
@@ -1036,26 +1114,6 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IResult createResult() {
-		ResultImpl result = new ResultImpl();
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IResultOrganizer createResultOrganizer() {
-		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
-		return resultOrganizer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public IEncountersSection createEncountersSection() {
 		EncountersSectionImpl encountersSection = new EncountersSectionImpl();
 		return encountersSection;
@@ -1086,9 +1144,9 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ICoverageEntry createCoverageEntry() {
-		CoverageEntryImpl coverageEntry = new CoverageEntryImpl();
-		return coverageEntry;
+	public IInsuranceProvider createInsuranceProvider() {
+		InsuranceProviderImpl insuranceProvider = new InsuranceProviderImpl();
+		return insuranceProvider;
 	}
 
 	/**
@@ -1096,9 +1154,9 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPolicyActivity createPolicyActivity() {
-		PolicyActivityImpl policyActivity = new PolicyActivityImpl();
-		return policyActivity;
+	public IPayerEntry createPayerEntry() {
+		PayerEntryImpl payerEntry = new PayerEntryImpl();
+		return payerEntry;
 	}
 
 	/**
@@ -1166,6 +1224,246 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public IGeneralAppearanceSection createGeneralAppearanceSection() {
+		GeneralAppearanceSectionImpl generalAppearanceSection = new GeneralAppearanceSectionImpl();
+		return generalAppearanceSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IVisibleImplantedMedicalDevicesSection createVisibleImplantedMedicalDevicesSection() {
+		VisibleImplantedMedicalDevicesSectionImpl visibleImplantedMedicalDevicesSection = new VisibleImplantedMedicalDevicesSectionImpl();
+		return visibleImplantedMedicalDevicesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IIntegumentarySystemSection createIntegumentarySystemSection() {
+		IntegumentarySystemSectionImpl integumentarySystemSection = new IntegumentarySystemSectionImpl();
+		return integumentarySystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IHeadSection createHeadSection() {
+		HeadSectionImpl headSection = new HeadSectionImpl();
+		return headSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEyesSection createEyesSection() {
+		EyesSectionImpl eyesSection = new EyesSectionImpl();
+		return eyesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEarsNoseMouthThroatSection createEarsNoseMouthThroatSection() {
+		EarsNoseMouthThroatSectionImpl earsNoseMouthThroatSection = new EarsNoseMouthThroatSectionImpl();
+		return earsNoseMouthThroatSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEarsSection createEarsSection() {
+		EarsSectionImpl earsSection = new EarsSectionImpl();
+		return earsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public INoseSection createNoseSection() {
+		NoseSectionImpl noseSection = new NoseSectionImpl();
+		return noseSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IMouthThroatTeethSection createMouthThroatTeethSection() {
+		MouthThroatTeethSectionImpl mouthThroatTeethSection = new MouthThroatTeethSectionImpl();
+		return mouthThroatTeethSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public INeckSection createNeckSection() {
+		NeckSectionImpl neckSection = new NeckSectionImpl();
+		return neckSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEndocrineSystemSection createEndocrineSystemSection() {
+		EndocrineSystemSectionImpl endocrineSystemSection = new EndocrineSystemSectionImpl();
+		return endocrineSystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IThoraxLungsSection createThoraxLungsSection() {
+		ThoraxLungsSectionImpl thoraxLungsSection = new ThoraxLungsSectionImpl();
+		return thoraxLungsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IChestWallSection createChestWallSection() {
+		ChestWallSectionImpl chestWallSection = new ChestWallSectionImpl();
+		return chestWallSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IBreastSection createBreastSection() {
+		BreastSectionImpl breastSection = new BreastSectionImpl();
+		return breastSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IHeartSection createHeartSection() {
+		HeartSectionImpl heartSection = new HeartSectionImpl();
+		return heartSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IRespiratorySystemSection createRespiratorySystemSection() {
+		RespiratorySystemSectionImpl respiratorySystemSection = new RespiratorySystemSectionImpl();
+		return respiratorySystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAbdomenSection createAbdomenSection() {
+		AbdomenSectionImpl abdomenSection = new AbdomenSectionImpl();
+		return abdomenSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ILymphaticSection createLymphaticSection() {
+		LymphaticSectionImpl lymphaticSection = new LymphaticSectionImpl();
+		return lymphaticSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IVesselsSection createVesselsSection() {
+		VesselsSectionImpl vesselsSection = new VesselsSectionImpl();
+		return vesselsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IMusculoskeletalSystemSection createMusculoskeletalSystemSection() {
+		MusculoskeletalSystemSectionImpl musculoskeletalSystemSection = new MusculoskeletalSystemSectionImpl();
+		return musculoskeletalSystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public INeurologicSystemSection createNeurologicSystemSection() {
+		NeurologicSystemSectionImpl neurologicSystemSection = new NeurologicSystemSectionImpl();
+		return neurologicSystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IGenitaliaSection createGenitaliaSection() {
+		GenitaliaSectionImpl genitaliaSection = new GenitaliaSectionImpl();
+		return genitaliaSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IRectumSection createRectumSection() {
+		RectumSectionImpl rectumSection = new RectumSectionImpl();
+		return rectumSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IExtremitiesSection createExtremitiesSection() {
+		ExtremitiesSectionImpl extremitiesSection = new ExtremitiesSectionImpl();
+		return extremitiesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public IReasonForReferralSection createReasonForReferralSection() {
 		ReasonForReferralSectionImpl reasonForReferralSection = new ReasonForReferralSectionImpl();
 		return reasonForReferralSection;
@@ -1197,7 +1495,7 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * @generated
 	 */
 	public IDomainPackage getDomainPackage() {
-		return (IDomainPackage)getEPackage();
+		return (IDomainPackage) getEPackage();
 	}
 
 	/**

@@ -10,101 +10,7 @@ import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirective;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectiveReference;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectiveStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectiveVerification;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAgeObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAllergiesReactionsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAllergyDrugSensitivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAllergyIntolerance;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAssessmentAndPlanSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICauseOfDeathObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IChiefComplaintSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IComment;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IConsultationRequest;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IConsultationSummary;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICoverageEntry;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICoveredParty;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDiagnosticResultsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeDiet;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeInstructions;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeSummary;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncounter;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncounterLocation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncountersActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncountersSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEpisodeObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IExternalReference;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFamilyHistory;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFamilyHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFamilyHistorySection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFulfillmentInstruction;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFunctionalStatusSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IGeneralStatusSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHistoryOfPresentIllness;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalCourseSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalDischargeMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalDischargePhysical;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalDischargeStudiesSummarySection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IImmunization;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IImmunizationsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IInternalReference;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicalEquipmentSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedication;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationFullfillmentInstructions;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationOrderInformation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationSeriesNumberObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationType;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPatientInstruction;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPatientMedicalInstructions;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPayerEntity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPayersSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPhysicalExamSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityAct;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityEncounter;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivitySubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivitySupply;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPolicyActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPolicySubscriber;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemEntry;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemEntryReactionObservationContainer;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemListSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProcedure;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProcedureEntry;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProcedureEntryProcedureActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProductInstance;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IReactionObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IReasonForReferralSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IResult;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IResultOrganizer;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IReviewOfSystemsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISeverity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISeverityObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISimpleObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISocialHistory;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISocialHistoryStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISupplyActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignsOrganizer;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignsSection;
+import org.openhealthtools.mdht.uml.cda.toc.domain.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -149,7 +55,7 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 			return true;
 		}
 		if (object instanceof EObject) {
-			return ((EObject)object).eClass().getEPackage() == modelPackage;
+			return ((EObject) object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
 	}
@@ -161,387 +67,606 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	protected DomainSwitch<Adapter> modelSwitch = new DomainSwitch<Adapter>() {
-			@Override
-			public Adapter caseDischargeSummary(IDischargeSummary object) {
-				return createDischargeSummaryAdapter();
-			}
-			@Override
-			public Adapter caseAllergiesReactionsSection(IAllergiesReactionsSection object) {
-				return createAllergiesReactionsSectionAdapter();
-			}
-			@Override
-			public Adapter caseAllergyDrugSensitivity(IAllergyDrugSensitivity object) {
-				return createAllergyDrugSensitivityAdapter();
-			}
-			@Override
-			public Adapter caseEpisodeObservation(IEpisodeObservation object) {
-				return createEpisodeObservationAdapter();
-			}
-			@Override
-			public Adapter caseAllergyIntolerance(IAllergyIntolerance object) {
-				return createAllergyIntoleranceAdapter();
-			}
-			@Override
-			public Adapter caseProblemEntry(IProblemEntry object) {
-				return createProblemEntryAdapter();
-			}
-			@Override
-			public Adapter caseAgeObservation(IAgeObservation object) {
-				return createAgeObservationAdapter();
-			}
-			@Override
-			public Adapter caseSeverity(ISeverity object) {
-				return createSeverityAdapter();
-			}
-			@Override
-			public Adapter caseProblemStatusObservation(IProblemStatusObservation object) {
-				return createProblemStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseStatusObservation(IStatusObservation object) {
-				return createStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseHealthStatusObservation(IHealthStatusObservation object) {
-				return createHealthStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseComment(IComment object) {
-				return createCommentAdapter();
-			}
-			@Override
-			public Adapter caseCauseOfDeathObservation(ICauseOfDeathObservation object) {
-				return createCauseOfDeathObservationAdapter();
-			}
-			@Override
-			public Adapter caseFamilyHistoryObservation(IFamilyHistoryObservation object) {
-				return createFamilyHistoryObservationAdapter();
-			}
-			@Override
-			public Adapter caseSimpleObservation(ISimpleObservation object) {
-				return createSimpleObservationAdapter();
-			}
-			@Override
-			public Adapter caseProblemEntryReactionObservationContainer(IProblemEntryReactionObservationContainer object) {
-				return createProblemEntryReactionObservationContainerAdapter();
-			}
-			@Override
-			public Adapter caseProblemListSection(IProblemListSection object) {
-				return createProblemListSectionAdapter();
-			}
-			@Override
-			public Adapter caseCondition(ICondition object) {
-				return createConditionAdapter();
-			}
-			@Override
-			public Adapter caseHospitalCourseSection(IHospitalCourseSection object) {
-				return createHospitalCourseSectionAdapter();
-			}
-			@Override
-			public Adapter caseHospitalDischargeMedicationsSection(IHospitalDischargeMedicationsSection object) {
-				return createHospitalDischargeMedicationsSectionAdapter();
-			}
-			@Override
-			public Adapter caseMedication(IMedication object) {
-				return createMedicationAdapter();
-			}
-			@Override
-			public Adapter caseMedicationSeriesNumberObservation(IMedicationSeriesNumberObservation object) {
-				return createMedicationSeriesNumberObservationAdapter();
-			}
-			@Override
-			public Adapter caseMedicationStatusObservation(IMedicationStatusObservation object) {
-				return createMedicationStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseReactionObservation(IReactionObservation object) {
-				return createReactionObservationAdapter();
-			}
-			@Override
-			public Adapter caseSeverityObservation(ISeverityObservation object) {
-				return createSeverityObservationAdapter();
-			}
-			@Override
-			public Adapter caseProductInstance(IProductInstance object) {
-				return createProductInstanceAdapter();
-			}
-			@Override
-			public Adapter caseInternalReference(IInternalReference object) {
-				return createInternalReferenceAdapter();
-			}
-			@Override
-			public Adapter casePatientMedicalInstructions(IPatientMedicalInstructions object) {
-				return createPatientMedicalInstructionsAdapter();
-			}
-			@Override
-			public Adapter caseMedicationType(IMedicationType object) {
-				return createMedicationTypeAdapter();
-			}
-			@Override
-			public Adapter caseMedicationOrderInformation(IMedicationOrderInformation object) {
-				return createMedicationOrderInformationAdapter();
-			}
-			@Override
-			public Adapter caseMedicationFullfillmentInstructions(IMedicationFullfillmentInstructions object) {
-				return createMedicationFullfillmentInstructionsAdapter();
-			}
-			@Override
-			public Adapter caseDischargeDiagnosisSection(IDischargeDiagnosisSection object) {
-				return createDischargeDiagnosisSectionAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareSection(IPlanOfCareSection object) {
-				return createPlanOfCareSectionAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivityAct(IPlanOfCareActivityAct object) {
-				return createPlanOfCareActivityActAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivity(IPlanOfCareActivity object) {
-				return createPlanOfCareActivityAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivityEncounter(IPlanOfCareActivityEncounter object) {
-				return createPlanOfCareActivityEncounterAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivityObservation(IPlanOfCareActivityObservation object) {
-				return createPlanOfCareActivityObservationAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivityProcedure(IPlanOfCareActivityProcedure object) {
-				return createPlanOfCareActivityProcedureAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivitySubstanceAdministration(IPlanOfCareActivitySubstanceAdministration object) {
-				return createPlanOfCareActivitySubstanceAdministrationAdapter();
-			}
-			@Override
-			public Adapter casePlanOfCareActivitySupply(IPlanOfCareActivitySupply object) {
-				return createPlanOfCareActivitySupplyAdapter();
-			}
-			@Override
-			public Adapter caseImmunization(IImmunization object) {
-				return createImmunizationAdapter();
-			}
-			@Override
-			public Adapter casePatientInstruction(IPatientInstruction object) {
-				return createPatientInstructionAdapter();
-			}
-			@Override
-			public Adapter caseEncounter(IEncounter object) {
-				return createEncounterAdapter();
-			}
-			@Override
-			public Adapter caseProcedure(IProcedure object) {
-				return createProcedureAdapter();
-			}
-			@Override
-			public Adapter caseSurgeriesSection(ISurgeriesSection object) {
-				return createSurgeriesSectionAdapter();
-			}
-			@Override
-			public Adapter caseExternalReference(IExternalReference object) {
-				return createExternalReferenceAdapter();
-			}
-			@Override
-			public Adapter caseProcedureEntryProcedureActivityProcedure(IProcedureEntryProcedureActivityProcedure object) {
-				return createProcedureEntryProcedureActivityProcedureAdapter();
-			}
-			@Override
-			public Adapter caseProcedureEntry(IProcedureEntry object) {
-				return createProcedureEntryAdapter();
-			}
-			@Override
-			public Adapter caseEncounterLocation(IEncounterLocation object) {
-				return createEncounterLocationAdapter();
-			}
-			@Override
-			public Adapter caseMedicationActivity(IMedicationActivity object) {
-				return createMedicationActivityAdapter();
-			}
-			@Override
-			public Adapter caseChiefComplaintSection(IChiefComplaintSection object) {
-				return createChiefComplaintSectionAdapter();
-			}
-			@Override
-			public Adapter caseDischargeDiet(IDischargeDiet object) {
-				return createDischargeDietAdapter();
-			}
-			@Override
-			public Adapter caseFamilyHistorySection(IFamilyHistorySection object) {
-				return createFamilyHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseFamilyHistory(IFamilyHistory object) {
-				return createFamilyHistoryAdapter();
-			}
-			@Override
-			public Adapter caseFunctionalStatusSection(IFunctionalStatusSection object) {
-				return createFunctionalStatusSectionAdapter();
-			}
-			@Override
-			public Adapter caseHistoryOfPresentIllness(IHistoryOfPresentIllness object) {
-				return createHistoryOfPresentIllnessAdapter();
-			}
-			@Override
-			public Adapter caseHospitalDischargePhysical(IHospitalDischargePhysical object) {
-				return createHospitalDischargePhysicalAdapter();
-			}
-			@Override
-			public Adapter caseHospitalDischargeStudiesSummarySection(IHospitalDischargeStudiesSummarySection object) {
-				return createHospitalDischargeStudiesSummarySectionAdapter();
-			}
-			@Override
-			public Adapter caseImmunizationsSection(IImmunizationsSection object) {
-				return createImmunizationsSectionAdapter();
-			}
-			@Override
-			public Adapter caseSupplyActivity(ISupplyActivity object) {
-				return createSupplyActivityAdapter();
-			}
-			@Override
-			public Adapter caseFulfillmentInstruction(IFulfillmentInstruction object) {
-				return createFulfillmentInstructionAdapter();
-			}
-			@Override
-			public Adapter caseReviewOfSystemsSection(IReviewOfSystemsSection object) {
-				return createReviewOfSystemsSectionAdapter();
-			}
-			@Override
-			public Adapter caseSocialHistorySection(ISocialHistorySection object) {
-				return createSocialHistorySectionAdapter();
-			}
-			@Override
-			public Adapter caseSocialHistory(ISocialHistory object) {
-				return createSocialHistoryAdapter();
-			}
-			@Override
-			public Adapter caseSocialHistoryStatusObservation(ISocialHistoryStatusObservation object) {
-				return createSocialHistoryStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseVitalSignsSection(IVitalSignsSection object) {
-				return createVitalSignsSectionAdapter();
-			}
-			@Override
-			public Adapter caseVitalSignsOrganizer(IVitalSignsOrganizer object) {
-				return createVitalSignsOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseVitalSignObservation(IVitalSignObservation object) {
-				return createVitalSignObservationAdapter();
-			}
-			@Override
-			public Adapter caseDischargeInstructions(IDischargeInstructions object) {
-				return createDischargeInstructionsAdapter();
-			}
-			@Override
-			public Adapter caseAdvanceDirectivesSection(IAdvanceDirectivesSection object) {
-				return createAdvanceDirectivesSectionAdapter();
-			}
-			@Override
-			public Adapter caseAdvanceDirective(IAdvanceDirective object) {
-				return createAdvanceDirectiveAdapter();
-			}
-			@Override
-			public Adapter caseAdvanceDirectiveVerification(IAdvanceDirectiveVerification object) {
-				return createAdvanceDirectiveVerificationAdapter();
-			}
-			@Override
-			public Adapter caseAdvanceDirectiveStatusObservation(IAdvanceDirectiveStatusObservation object) {
-				return createAdvanceDirectiveStatusObservationAdapter();
-			}
-			@Override
-			public Adapter caseAdvanceDirectiveReference(IAdvanceDirectiveReference object) {
-				return createAdvanceDirectiveReferenceAdapter();
-			}
-			@Override
-			public Adapter caseMedicalEquipmentSection(IMedicalEquipmentSection object) {
-				return createMedicalEquipmentSectionAdapter();
-			}
-			@Override
-			public Adapter caseConsultationSummary(IConsultationSummary object) {
-				return createConsultationSummaryAdapter();
-			}
-			@Override
-			public Adapter caseMedicationsSection(IMedicationsSection object) {
-				return createMedicationsSectionAdapter();
-			}
-			@Override
-			public Adapter caseDiagnosticResultsSection(IDiagnosticResultsSection object) {
-				return createDiagnosticResultsSectionAdapter();
-			}
-			@Override
-			public Adapter caseResult(IResult object) {
-				return createResultAdapter();
-			}
-			@Override
-			public Adapter caseResultOrganizer(IResultOrganizer object) {
-				return createResultOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseEncountersSection(IEncountersSection object) {
-				return createEncountersSectionAdapter();
-			}
-			@Override
-			public Adapter caseEncountersActivity(IEncountersActivity object) {
-				return createEncountersActivityAdapter();
-			}
-			@Override
-			public Adapter casePayersSection(IPayersSection object) {
-				return createPayersSectionAdapter();
-			}
-			@Override
-			public Adapter caseCoverageEntry(ICoverageEntry object) {
-				return createCoverageEntryAdapter();
-			}
-			@Override
-			public Adapter casePolicyActivity(IPolicyActivity object) {
-				return createPolicyActivityAdapter();
-			}
-			@Override
-			public Adapter casePayerEntity(IPayerEntity object) {
-				return createPayerEntityAdapter();
-			}
-			@Override
-			public Adapter caseCoveredParty(ICoveredParty object) {
-				return createCoveredPartyAdapter();
-			}
-			@Override
-			public Adapter casePolicySubscriber(IPolicySubscriber object) {
-				return createPolicySubscriberAdapter();
-			}
-			@Override
-			public Adapter caseConsultationRequest(IConsultationRequest object) {
-				return createConsultationRequestAdapter();
-			}
-			@Override
-			public Adapter caseAssessmentAndPlanSection(IAssessmentAndPlanSection object) {
-				return createAssessmentAndPlanSectionAdapter();
-			}
-			@Override
-			public Adapter casePhysicalExamSection(IPhysicalExamSection object) {
-				return createPhysicalExamSectionAdapter();
-			}
-			@Override
-			public Adapter caseReasonForReferralSection(IReasonForReferralSection object) {
-				return createReasonForReferralSectionAdapter();
-			}
-			@Override
-			public Adapter caseGeneralStatusSection(IGeneralStatusSection object) {
-				return createGeneralStatusSectionAdapter();
-			}
-			@Override
-			public Adapter caseHistoryOfPastIllnessSection(IHistoryOfPastIllnessSection object) {
-				return createHistoryOfPastIllnessSectionAdapter();
-			}
-			@Override
-			public Adapter defaultCase(EObject object) {
-				return createEObjectAdapter();
-			}
-		};
+		@Override
+		public Adapter caseDischargeSummary(IDischargeSummary object) {
+			return createDischargeSummaryAdapter();
+		}
+
+		@Override
+		public Adapter caseAllergiesReactionsSection(IAllergiesReactionsSection object) {
+			return createAllergiesReactionsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseAllergyDrugSensitivity(IAllergyDrugSensitivity object) {
+			return createAllergyDrugSensitivityAdapter();
+		}
+
+		@Override
+		public Adapter caseEpisodeObservation(IEpisodeObservation object) {
+			return createEpisodeObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseAllergyIntolerance(IAllergyIntolerance object) {
+			return createAllergyIntoleranceAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemEntry(IProblemEntry object) {
+			return createProblemEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseAgeObservation(IAgeObservation object) {
+			return createAgeObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSeverity(ISeverity object) {
+			return createSeverityAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemStatusObservation(IProblemStatusObservation object) {
+			return createProblemStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseStatusObservation(IStatusObservation object) {
+			return createStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseHealthStatusObservation(IHealthStatusObservation object) {
+			return createHealthStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseComment(IComment object) {
+			return createCommentAdapter();
+		}
+
+		@Override
+		public Adapter caseCauseOfDeathObservation(ICauseOfDeathObservation object) {
+			return createCauseOfDeathObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistoryObservation(IFamilyHistoryObservation object) {
+			return createFamilyHistoryObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSimpleObservation(ISimpleObservation object) {
+			return createSimpleObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemEntryReactionObservationContainer(IProblemEntryReactionObservationContainer object) {
+			return createProblemEntryReactionObservationContainerAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemListSection(IProblemListSection object) {
+			return createProblemListSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseCondition(ICondition object) {
+			return createConditionAdapter();
+		}
+
+		@Override
+		public Adapter caseHospitalCourseSection(IHospitalCourseSection object) {
+			return createHospitalCourseSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHospitalDischargeMedicationsSection(IHospitalDischargeMedicationsSection object) {
+			return createHospitalDischargeMedicationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseMedication(IMedication object) {
+			return createMedicationAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationSeriesNumberObservation(IMedicationSeriesNumberObservation object) {
+			return createMedicationSeriesNumberObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationStatusObservation(IMedicationStatusObservation object) {
+			return createMedicationStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseReactionObservation(IReactionObservation object) {
+			return createReactionObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSeverityObservation(ISeverityObservation object) {
+			return createSeverityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProductInstance(IProductInstance object) {
+			return createProductInstanceAdapter();
+		}
+
+		@Override
+		public Adapter caseInternalReference(IInternalReference object) {
+			return createInternalReferenceAdapter();
+		}
+
+		@Override
+		public Adapter casePatientMedicalInstructions(IPatientMedicalInstructions object) {
+			return createPatientMedicalInstructionsAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationType(IMedicationType object) {
+			return createMedicationTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationOrderInformation(IMedicationOrderInformation object) {
+			return createMedicationOrderInformationAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationFullfillmentInstructions(IMedicationFullfillmentInstructions object) {
+			return createMedicationFullfillmentInstructionsAdapter();
+		}
+
+		@Override
+		public Adapter caseDischargeDiagnosisSection(IDischargeDiagnosisSection object) {
+			return createDischargeDiagnosisSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareSection(IPlanOfCareSection object) {
+			return createPlanOfCareSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivityAct(IPlanOfCareActivityAct object) {
+			return createPlanOfCareActivityActAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivity(IPlanOfCareActivity object) {
+			return createPlanOfCareActivityAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivityEncounter(IPlanOfCareActivityEncounter object) {
+			return createPlanOfCareActivityEncounterAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivityObservation(IPlanOfCareActivityObservation object) {
+			return createPlanOfCareActivityObservationAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivityProcedure(IPlanOfCareActivityProcedure object) {
+			return createPlanOfCareActivityProcedureAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivitySubstanceAdministration(IPlanOfCareActivitySubstanceAdministration object) {
+			return createPlanOfCareActivitySubstanceAdministrationAdapter();
+		}
+
+		@Override
+		public Adapter casePlanOfCareActivitySupply(IPlanOfCareActivitySupply object) {
+			return createPlanOfCareActivitySupplyAdapter();
+		}
+
+		@Override
+		public Adapter caseImmunization(IImmunization object) {
+			return createImmunizationAdapter();
+		}
+
+		@Override
+		public Adapter casePatientInstruction(IPatientInstruction object) {
+			return createPatientInstructionAdapter();
+		}
+
+		@Override
+		public Adapter caseEncounter(IEncounter object) {
+			return createEncounterAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedure(IProcedure object) {
+			return createProcedureAdapter();
+		}
+
+		@Override
+		public Adapter caseSurgeriesSection(ISurgeriesSection object) {
+			return createSurgeriesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseExternalReference(IExternalReference object) {
+			return createExternalReferenceAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureEntryProcedureActivityProcedure(IProcedureEntryProcedureActivityProcedure object) {
+			return createProcedureEntryProcedureActivityProcedureAdapter();
+		}
+
+		@Override
+		public Adapter caseProcedureEntry(IProcedureEntry object) {
+			return createProcedureEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseEncounterLocation(IEncounterLocation object) {
+			return createEncounterLocationAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationActivity(IMedicationActivity object) {
+			return createMedicationActivityAdapter();
+		}
+
+		@Override
+		public Adapter caseChiefComplaintSection(IChiefComplaintSection object) {
+			return createChiefComplaintSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseDischargeDiet(IDischargeDiet object) {
+			return createDischargeDietAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistorySection(IFamilyHistorySection object) {
+			return createFamilyHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseFamilyHistory(IFamilyHistory object) {
+			return createFamilyHistoryAdapter();
+		}
+
+		@Override
+		public Adapter caseFunctionalStatusSection(IFunctionalStatusSection object) {
+			return createFunctionalStatusSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHistoryOfPresentIllness(IHistoryOfPresentIllness object) {
+			return createHistoryOfPresentIllnessAdapter();
+		}
+
+		@Override
+		public Adapter caseHospitalDischargePhysical(IHospitalDischargePhysical object) {
+			return createHospitalDischargePhysicalAdapter();
+		}
+
+		@Override
+		public Adapter caseHospitalDischargeStudiesSummarySection(IHospitalDischargeStudiesSummarySection object) {
+			return createHospitalDischargeStudiesSummarySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseImmunizationsSection(IImmunizationsSection object) {
+			return createImmunizationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseSupplyActivity(ISupplyActivity object) {
+			return createSupplyActivityAdapter();
+		}
+
+		@Override
+		public Adapter caseFulfillmentInstruction(IFulfillmentInstruction object) {
+			return createFulfillmentInstructionAdapter();
+		}
+
+		@Override
+		public Adapter caseReviewOfSystemsSection(IReviewOfSystemsSection object) {
+			return createReviewOfSystemsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseSocialHistorySection(ISocialHistorySection object) {
+			return createSocialHistorySectionAdapter();
+		}
+
+		@Override
+		public Adapter caseSocialHistory(ISocialHistory object) {
+			return createSocialHistoryAdapter();
+		}
+
+		@Override
+		public Adapter caseSocialHistoryStatusObservation(ISocialHistoryStatusObservation object) {
+			return createSocialHistoryStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseVitalSignsSection(IVitalSignsSection object) {
+			return createVitalSignsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseVitalSignsOrganizer(IVitalSignsOrganizer object) {
+			return createVitalSignsOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseResultOrganizer(IResultOrganizer object) {
+			return createResultOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseResult(IResult object) {
+			return createResultAdapter();
+		}
+
+		@Override
+		public Adapter caseResultObservation(IResultObservation object) {
+			return createResultObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseVitalSignObservation(IVitalSignObservation object) {
+			return createVitalSignObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseDischargeInstructions(IDischargeInstructions object) {
+			return createDischargeInstructionsAdapter();
+		}
+
+		@Override
+		public Adapter caseAdvanceDirectivesSection(IAdvanceDirectivesSection object) {
+			return createAdvanceDirectivesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseAdvanceDirective(IAdvanceDirective object) {
+			return createAdvanceDirectiveAdapter();
+		}
+
+		@Override
+		public Adapter caseAdvanceDirectiveVerification(IAdvanceDirectiveVerification object) {
+			return createAdvanceDirectiveVerificationAdapter();
+		}
+
+		@Override
+		public Adapter caseAdvanceDirectiveStatusObservation(IAdvanceDirectiveStatusObservation object) {
+			return createAdvanceDirectiveStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseAdvanceDirectiveReference(IAdvanceDirectiveReference object) {
+			return createAdvanceDirectiveReferenceAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicalEquipmentSection(IMedicalEquipmentSection object) {
+			return createMedicalEquipmentSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseConsultationSummary(IConsultationSummary object) {
+			return createConsultationSummaryAdapter();
+		}
+
+		@Override
+		public Adapter caseMedicationsSection(IMedicationsSection object) {
+			return createMedicationsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseDiagnosticResultsSection(IDiagnosticResultsSection object) {
+			return createDiagnosticResultsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEncountersSection(IEncountersSection object) {
+			return createEncountersSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEncountersActivity(IEncountersActivity object) {
+			return createEncountersActivityAdapter();
+		}
+
+		@Override
+		public Adapter casePayersSection(IPayersSection object) {
+			return createPayersSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseInsuranceProvider(IInsuranceProvider object) {
+			return createInsuranceProviderAdapter();
+		}
+
+		@Override
+		public Adapter casePayerEntry(IPayerEntry object) {
+			return createPayerEntryAdapter();
+		}
+
+		@Override
+		public Adapter casePayerEntity(IPayerEntity object) {
+			return createPayerEntityAdapter();
+		}
+
+		@Override
+		public Adapter caseCoveredParty(ICoveredParty object) {
+			return createCoveredPartyAdapter();
+		}
+
+		@Override
+		public Adapter casePolicySubscriber(IPolicySubscriber object) {
+			return createPolicySubscriberAdapter();
+		}
+
+		@Override
+		public Adapter caseConsultationRequest(IConsultationRequest object) {
+			return createConsultationRequestAdapter();
+		}
+
+		@Override
+		public Adapter caseAssessmentAndPlanSection(IAssessmentAndPlanSection object) {
+			return createAssessmentAndPlanSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePhysicalExamSection(IPhysicalExamSection object) {
+			return createPhysicalExamSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseGeneralAppearanceSection(IGeneralAppearanceSection object) {
+			return createGeneralAppearanceSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseVisibleImplantedMedicalDevicesSection(IVisibleImplantedMedicalDevicesSection object) {
+			return createVisibleImplantedMedicalDevicesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseIntegumentarySystemSection(IIntegumentarySystemSection object) {
+			return createIntegumentarySystemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHeadSection(IHeadSection object) {
+			return createHeadSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEyesSection(IEyesSection object) {
+			return createEyesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEarsNoseMouthThroatSection(IEarsNoseMouthThroatSection object) {
+			return createEarsNoseMouthThroatSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEarsSection(IEarsSection object) {
+			return createEarsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseNoseSection(INoseSection object) {
+			return createNoseSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseMouthThroatTeethSection(IMouthThroatTeethSection object) {
+			return createMouthThroatTeethSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseNeckSection(INeckSection object) {
+			return createNeckSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEndocrineSystemSection(IEndocrineSystemSection object) {
+			return createEndocrineSystemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseThoraxLungsSection(IThoraxLungsSection object) {
+			return createThoraxLungsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseChestWallSection(IChestWallSection object) {
+			return createChestWallSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseBreastSection(IBreastSection object) {
+			return createBreastSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHeartSection(IHeartSection object) {
+			return createHeartSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseRespiratorySystemSection(IRespiratorySystemSection object) {
+			return createRespiratorySystemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseAbdomenSection(IAbdomenSection object) {
+			return createAbdomenSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseLymphaticSection(ILymphaticSection object) {
+			return createLymphaticSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseVesselsSection(IVesselsSection object) {
+			return createVesselsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseMusculoskeletalSystemSection(IMusculoskeletalSystemSection object) {
+			return createMusculoskeletalSystemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseNeurologicSystemSection(INeurologicSystemSection object) {
+			return createNeurologicSystemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseGenitaliaSection(IGenitaliaSection object) {
+			return createGenitaliaSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseRectumSection(IRectumSection object) {
+			return createRectumSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseExtremitiesSection(IExtremitiesSection object) {
+			return createExtremitiesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseReasonForReferralSection(IReasonForReferralSection object) {
+			return createReasonForReferralSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseGeneralStatusSection(IGeneralStatusSection object) {
+			return createGeneralStatusSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHistoryOfPastIllnessSection(IHistoryOfPastIllnessSection object) {
+			return createHistoryOfPastIllnessSectionAdapter();
+		}
+
+		@Override
+		public Adapter defaultCase(EObject object) {
+			return createEObjectAdapter();
+		}
+	};
 
 	/**
 	 * Creates an adapter for the <code>target</code>.
@@ -553,7 +678,7 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 */
 	@Override
 	public Adapter createAdapter(Notifier target) {
-		return modelSwitch.doSwitch((EObject)target);
+		return modelSwitch.doSwitch((EObject) target);
 	}
 
 	/**
@@ -749,6 +874,20 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFamilyHistoryObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.ISimpleObservation <em>Simple Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.ISimpleObservation
+	 * @generated
+	 */
+	public Adapter createSimpleObservationAdapter() {
 		return null;
 	}
 
@@ -1481,6 +1620,48 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IResultOrganizer <em>Result Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IResultOrganizer
+	 * @generated
+	 */
+	public Adapter createResultOrganizerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IResult <em>Result</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IResult
+	 * @generated
+	 */
+	public Adapter createResultAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IResultObservation <em>Result Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IResultObservation
+	 * @generated
+	 */
+	public Adapter createResultObservationAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignObservation <em>Vital Sign Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1491,20 +1672,6 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createVitalSignObservationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.ISimpleObservation <em>Simple Observation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.ISimpleObservation
-	 * @generated
-	 */
-	public Adapter createSimpleObservationAdapter() {
 		return null;
 	}
 
@@ -1649,34 +1816,6 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IResult <em>Result</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IResult
-	 * @generated
-	 */
-	public Adapter createResultAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IResultOrganizer <em>Result Organizer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IResultOrganizer
-	 * @generated
-	 */
-	public Adapter createResultOrganizerAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IEncountersSection <em>Encounters Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1719,30 +1858,30 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.ICoverageEntry <em>Coverage Entry</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IInsuranceProvider <em>Insurance Provider</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.ICoverageEntry
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IInsuranceProvider
 	 * @generated
 	 */
-	public Adapter createCoverageEntryAdapter() {
+	public Adapter createInsuranceProviderAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IPolicyActivity <em>Policy Activity</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IPayerEntry <em>Payer Entry</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IPolicyActivity
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IPayerEntry
 	 * @generated
 	 */
-	public Adapter createPolicyActivityAdapter() {
+	public Adapter createPayerEntryAdapter() {
 		return null;
 	}
 
@@ -1827,6 +1966,342 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPhysicalExamSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IGeneralAppearanceSection <em>General Appearance Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IGeneralAppearanceSection
+	 * @generated
+	 */
+	public Adapter createGeneralAppearanceSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IVisibleImplantedMedicalDevicesSection <em>Visible Implanted Medical Devices Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IVisibleImplantedMedicalDevicesSection
+	 * @generated
+	 */
+	public Adapter createVisibleImplantedMedicalDevicesSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IIntegumentarySystemSection <em>Integumentary System Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IIntegumentarySystemSection
+	 * @generated
+	 */
+	public Adapter createIntegumentarySystemSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IHeadSection <em>Head Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IHeadSection
+	 * @generated
+	 */
+	public Adapter createHeadSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IEyesSection <em>Eyes Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IEyesSection
+	 * @generated
+	 */
+	public Adapter createEyesSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IEarsNoseMouthThroatSection <em>Ears Nose Mouth Throat Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IEarsNoseMouthThroatSection
+	 * @generated
+	 */
+	public Adapter createEarsNoseMouthThroatSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IEarsSection <em>Ears Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IEarsSection
+	 * @generated
+	 */
+	public Adapter createEarsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.INoseSection <em>Nose Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.INoseSection
+	 * @generated
+	 */
+	public Adapter createNoseSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IMouthThroatTeethSection <em>Mouth Throat Teeth Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IMouthThroatTeethSection
+	 * @generated
+	 */
+	public Adapter createMouthThroatTeethSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.INeckSection <em>Neck Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.INeckSection
+	 * @generated
+	 */
+	public Adapter createNeckSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IEndocrineSystemSection <em>Endocrine System Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IEndocrineSystemSection
+	 * @generated
+	 */
+	public Adapter createEndocrineSystemSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IThoraxLungsSection <em>Thorax Lungs Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IThoraxLungsSection
+	 * @generated
+	 */
+	public Adapter createThoraxLungsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IChestWallSection <em>Chest Wall Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IChestWallSection
+	 * @generated
+	 */
+	public Adapter createChestWallSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IBreastSection <em>Breast Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IBreastSection
+	 * @generated
+	 */
+	public Adapter createBreastSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IHeartSection <em>Heart Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IHeartSection
+	 * @generated
+	 */
+	public Adapter createHeartSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IRespiratorySystemSection <em>Respiratory System Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IRespiratorySystemSection
+	 * @generated
+	 */
+	public Adapter createRespiratorySystemSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IAbdomenSection <em>Abdomen Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IAbdomenSection
+	 * @generated
+	 */
+	public Adapter createAbdomenSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.ILymphaticSection <em>Lymphatic Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.ILymphaticSection
+	 * @generated
+	 */
+	public Adapter createLymphaticSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IVesselsSection <em>Vessels Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IVesselsSection
+	 * @generated
+	 */
+	public Adapter createVesselsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IMusculoskeletalSystemSection <em>Musculoskeletal System Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IMusculoskeletalSystemSection
+	 * @generated
+	 */
+	public Adapter createMusculoskeletalSystemSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.INeurologicSystemSection <em>Neurologic System Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.INeurologicSystemSection
+	 * @generated
+	 */
+	public Adapter createNeurologicSystemSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IGenitaliaSection <em>Genitalia Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IGenitaliaSection
+	 * @generated
+	 */
+	public Adapter createGenitaliaSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IRectumSection <em>Rectum Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IRectumSection
+	 * @generated
+	 */
+	public Adapter createRectumSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IExtremitiesSection <em>Extremities Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IExtremitiesSection
+	 * @generated
+	 */
+	public Adapter createExtremitiesSectionAdapter() {
 		return null;
 	}
 

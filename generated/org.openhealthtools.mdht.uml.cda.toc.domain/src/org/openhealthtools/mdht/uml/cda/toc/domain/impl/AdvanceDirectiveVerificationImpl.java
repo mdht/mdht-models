@@ -70,8 +70,8 @@ public class AdvanceDirectiveVerificationImpl extends EObjectImpl implements IAd
 	 */
 	public Participant2 getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Participant2)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Participant2) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -124,11 +124,12 @@ public class AdvanceDirectiveVerificationImpl extends EObjectImpl implements IAd
 	public IVL_TS getTime() {
 		if (GET_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAdvanceDirectiveVerification(), IDomainPackage.eINSTANCE.getAdvanceDirectiveVerification().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAdvanceDirectiveVerification(),
+				IDomainPackage.eINSTANCE.getAdvanceDirectiveVerification().getEAllOperations().get(0));
 			try {
 				GET_TIME__EOCL_QRY = helper.createQuery(GET_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -189,11 +190,12 @@ public class AdvanceDirectiveVerificationImpl extends EObjectImpl implements IAd
 	public ParticipantRole getParticipantRole() {
 		if (GET_PARTICIPANT_ROLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAdvanceDirectiveVerification(), IDomainPackage.eINSTANCE.getAdvanceDirectiveVerification().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAdvanceDirectiveVerification(),
+				IDomainPackage.eINSTANCE.getAdvanceDirectiveVerification().getEAllOperations().get(3));
 			try {
 				GET_PARTICIPANT_ROLE__EOCL_QRY = helper.createQuery(GET_PARTICIPANT_ROLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -235,7 +237,9 @@ public class AdvanceDirectiveVerificationImpl extends EObjectImpl implements IAd
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.ADVANCE_DIRECTIVE_VERIFICATION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -250,7 +254,7 @@ public class AdvanceDirectiveVerificationImpl extends EObjectImpl implements IAd
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.ADVANCE_DIRECTIVE_VERIFICATION__CDA_TYPE:
-				setCDAType((Participant2)newValue);
+				setCDAType((Participant2) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -265,7 +269,7 @@ public class AdvanceDirectiveVerificationImpl extends EObjectImpl implements IAd
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.ADVANCE_DIRECTIVE_VERIFICATION__CDA_TYPE:
-				setCDAType((Participant2)null);
+				setCDAType((Participant2) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -300,7 +304,7 @@ public class AdvanceDirectiveVerificationImpl extends EObjectImpl implements IAd
 	 * @generated
 	 */
 	public IAdvanceDirectiveVerification init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AdvanceDirectiveVerificationImpl

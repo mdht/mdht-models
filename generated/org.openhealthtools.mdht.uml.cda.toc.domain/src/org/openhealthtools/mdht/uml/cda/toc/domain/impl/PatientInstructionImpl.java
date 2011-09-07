@@ -69,8 +69,8 @@ public class PatientInstructionImpl extends EObjectImpl implements IPatientInstr
 	 */
 	public Act getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Act)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Act) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -123,11 +123,12 @@ public class PatientInstructionImpl extends EObjectImpl implements IPatientInstr
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPatientInstruction(), IDomainPackage.eINSTANCE.getPatientInstruction().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPatientInstruction(),
+				IDomainPackage.eINSTANCE.getPatientInstruction().getEAllOperations().get(0));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -169,7 +170,9 @@ public class PatientInstructionImpl extends EObjectImpl implements IPatientInstr
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.PATIENT_INSTRUCTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -184,7 +187,7 @@ public class PatientInstructionImpl extends EObjectImpl implements IPatientInstr
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.PATIENT_INSTRUCTION__CDA_TYPE:
-				setCDAType((Act)newValue);
+				setCDAType((Act) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -199,7 +202,7 @@ public class PatientInstructionImpl extends EObjectImpl implements IPatientInstr
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.PATIENT_INSTRUCTION__CDA_TYPE:
-				setCDAType((Act)null);
+				setCDAType((Act) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -234,7 +237,7 @@ public class PatientInstructionImpl extends EObjectImpl implements IPatientInstr
 	 * @generated
 	 */
 	public IPatientInstruction init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PatientInstructionImpl

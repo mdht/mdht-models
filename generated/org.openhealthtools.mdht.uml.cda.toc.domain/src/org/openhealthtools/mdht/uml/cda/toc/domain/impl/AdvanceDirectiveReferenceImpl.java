@@ -73,8 +73,8 @@ public class AdvanceDirectiveReferenceImpl extends EObjectImpl implements IAdvan
 	 */
 	public ExternalDocument getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (ExternalDocument)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (ExternalDocument) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -127,11 +127,12 @@ public class AdvanceDirectiveReferenceImpl extends EObjectImpl implements IAdvan
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAdvanceDirectiveReference(), IDomainPackage.eINSTANCE.getAdvanceDirectiveReference().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAdvanceDirectiveReference(),
+				IDomainPackage.eINSTANCE.getAdvanceDirectiveReference().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -176,7 +177,9 @@ public class AdvanceDirectiveReferenceImpl extends EObjectImpl implements IAdvan
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.ADVANCE_DIRECTIVE_REFERENCE__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -191,7 +194,7 @@ public class AdvanceDirectiveReferenceImpl extends EObjectImpl implements IAdvan
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.ADVANCE_DIRECTIVE_REFERENCE__CDA_TYPE:
-				setCDAType((ExternalDocument)newValue);
+				setCDAType((ExternalDocument) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -206,7 +209,7 @@ public class AdvanceDirectiveReferenceImpl extends EObjectImpl implements IAdvan
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.ADVANCE_DIRECTIVE_REFERENCE__CDA_TYPE:
-				setCDAType((ExternalDocument)null);
+				setCDAType((ExternalDocument) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -241,7 +244,7 @@ public class AdvanceDirectiveReferenceImpl extends EObjectImpl implements IAdvan
 	 * @generated
 	 */
 	public IAdvanceDirectiveReference init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AdvanceDirectiveReferenceImpl

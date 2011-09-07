@@ -13,25 +13,24 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Policy Activity</b></em>'.
+ * A representation of the model object '<em><b>Payer Entry</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * A policy activity represents the policy or program providing the coverage. The person for whom payment is being provided (i.e. the patient) is the covered party. The subscriber of the policy or program is represented as a participant that is the holder the coverage. The payer is represented as the performer of the policy activity.
  * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <!-- end-model-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.toc.domain.IPolicyActivity#getCDAType <em>CDA Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.toc.domain.IPayerEntry#getCDAType <em>CDA Type</em>}</li>
  * </ul>
  * </p>
  *
- * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getPolicyActivity()
+ * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getPayerEntry()
  * @generated
  */
-public interface IPolicyActivity {
+public interface IPayerEntry {
 	/**
 	 * Returns the value of the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -42,13 +41,13 @@ public interface IPolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CDA Type</em>' reference.
 	 * @see #setCDAType(Act)
-	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getPolicyActivity_CDAType()
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getPayerEntry_CDAType()
 	 * @generated
 	 */
 	Act getCDAType();
 
 	/**
-	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IPolicyActivity#getCDAType <em>CDA Type</em>}' reference.
+	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IPayerEntry#getCDAType <em>CDA Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>CDA Type</em>' reference.
@@ -86,7 +85,7 @@ public interface IPolicyActivity {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPolicyActivity addId(II value);
+	IPayerEntry addId(II value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -117,7 +116,7 @@ public interface IPolicyActivity {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPolicyActivity setCode(CD value);
+	IPayerEntry setCode(CD value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,7 +147,7 @@ public interface IPolicyActivity {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPolicyActivity setPayerEntity(IPayerEntity value);
+	IPayerEntry setPayerEntity(IPayerEntity value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -179,7 +178,7 @@ public interface IPolicyActivity {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPolicyActivity setCoveredParty(ICoveredParty value);
+	IPayerEntry setCoveredParty(ICoveredParty value);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,12 +209,12 @@ public interface IPolicyActivity {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPolicyActivity setSubscriber(IPolicySubscriber value);
+	IPayerEntry setSubscriber(IPolicySubscriber value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPolicyActivity init();
-} // IPolicyActivity
+	public IPayerEntry init();
+} // IPayerEntry

@@ -18,26 +18,26 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICoverageEntry;
 import org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPolicyActivity;
+import org.openhealthtools.mdht.uml.cda.toc.domain.IInsuranceProvider;
+import org.openhealthtools.mdht.uml.cda.toc.domain.IPayerEntry;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Coverage Entry</b></em>'.
+ * An implementation of the model object '<em><b>Insurance Provider</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.toc.domain.impl.CoverageEntryImpl#getCDAType <em>CDA Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.toc.domain.impl.InsuranceProviderImpl#getCDAType <em>CDA Type</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
+public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProvider {
 	/**
 	 * The cached value of the '{@link #getCDAType() <em>CDA Type</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -53,7 +53,7 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CoverageEntryImpl() {
+	protected InsuranceProviderImpl() {
 		super();
 	}
 
@@ -64,7 +64,7 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return IDomainPackage.eINSTANCE.getCoverageEntry();
+		return IDomainPackage.eINSTANCE.getInsuranceProvider();
 	}
 
 	/**
@@ -74,8 +74,8 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	 */
 	public Act getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Act)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Act) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -128,11 +128,12 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getCoverageEntry(), IDomainPackage.eINSTANCE.getCoverageEntry().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getInsuranceProvider(),
+				IDomainPackage.eINSTANCE.getInsuranceProvider().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -162,52 +163,53 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ICoverageEntry addId(II value) {
+	public IInsuranceProvider addId(II value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPolicyActivities() <em>Get Policy Activities</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getPayerEntries() <em>Get Payer Entries</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPolicyActivities()
+	 * @see #getPayerEntries()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_POLICY_ACTIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PolicyActivity)).oclAsType(domain::PolicyActivity)";
+	protected static final String GET_PAYER_ENTRIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PayerEntry)).oclAsType(domain::PayerEntry)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPolicyActivities() <em>Get Policy Activities</em>}' query operation.
+	 * The cached OCL query for the '{@link #getPayerEntries() <em>Get Payer Entries</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPolicyActivities()
+	 * @see #getPayerEntries()
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_POLICY_ACTIVITIES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PAYER_ENTRIES__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<IPolicyActivity> getPolicyActivities() {
-		if (GET_POLICY_ACTIVITIES__EOCL_QRY == null) {
+	public EList<IPayerEntry> getPayerEntries() {
+		if (GET_PAYER_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getCoverageEntry(), IDomainPackage.eINSTANCE.getCoverageEntry().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getInsuranceProvider(),
+				IDomainPackage.eINSTANCE.getInsuranceProvider().getEAllOperations().get(3));
 			try {
-				GET_POLICY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_POLICY_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PAYER_ENTRIES__EOCL_QRY = helper.createQuery(GET_PAYER_ENTRIES__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_POLICY_ACTIVITIES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PAYER_ENTRIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<IPolicyActivity> result = (Collection<IPolicyActivity>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<IPolicyActivity>(result.size(), result.toArray());
+		Collection<IPayerEntry> result = (Collection<IPayerEntry>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IPayerEntry>(result.size(), result.toArray());
 	}
 
 	/**
@@ -215,10 +217,10 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPolicyActivity addPolicyActivity() {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PolicyActivity");
+	public IPayerEntry addPayerEntry() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PayerEntry");
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
 		try {
 			java.lang.reflect.Method initMethod = eObject.getClass().getMethod("init", new java.lang.Class[0]);
@@ -228,10 +230,10 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 		}
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
-		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PolicyActivity");
-		IPolicyActivity value = (IPolicyActivity)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act)eObject);
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PayerEntry");
+		IPayerEntry value = (IPayerEntry) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -240,7 +242,7 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ICoverageEntry addPolicyActivity(IPolicyActivity value) {
+	public IInsuranceProvider addPayerEntry(IPayerEntry value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -254,8 +256,10 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case IDomainPackage.COVERAGE_ENTRY__CDA_TYPE:
-				if (resolve) return getCDAType();
+			case IDomainPackage.INSURANCE_PROVIDER__CDA_TYPE:
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -269,8 +273,8 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case IDomainPackage.COVERAGE_ENTRY__CDA_TYPE:
-				setCDAType((Act)newValue);
+			case IDomainPackage.INSURANCE_PROVIDER__CDA_TYPE:
+				setCDAType((Act) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -284,8 +288,8 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case IDomainPackage.COVERAGE_ENTRY__CDA_TYPE:
-				setCDAType((Act)null);
+			case IDomainPackage.INSURANCE_PROVIDER__CDA_TYPE:
+				setCDAType((Act) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -299,7 +303,7 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case IDomainPackage.COVERAGE_ENTRY__CDA_TYPE:
+			case IDomainPackage.INSURANCE_PROVIDER__CDA_TYPE:
 				return cDAType != null;
 		}
 		return super.eIsSet(featureID);
@@ -319,8 +323,8 @@ public class CoverageEntryImpl extends EObjectImpl implements ICoverageEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ICoverageEntry init() {
-    	CDAUtil.init(this);
-    	return this;
+	public IInsuranceProvider init() {
+		CDAUtil.init(this);
+		return this;
 	}
-} // CoverageEntryImpl
+} // InsuranceProviderImpl

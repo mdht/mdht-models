@@ -60,8 +60,8 @@ public class ProblemStatusObservationImpl extends StatusObservationImpl implemen
 	@Override
 	public Observation getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Observation)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Observation) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -137,11 +137,12 @@ public class ProblemStatusObservationImpl extends StatusObservationImpl implemen
 	public CE getValue() {
 		if (GET_VALUE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProblemStatusObservation(), IDomainPackage.eINSTANCE.getProblemStatusObservation().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProblemStatusObservation(),
+				IDomainPackage.eINSTANCE.getProblemStatusObservation().getEAllOperations().get(0));
 			try {
 				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -193,11 +194,12 @@ public class ProblemStatusObservationImpl extends StatusObservationImpl implemen
 	public ED getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProblemStatusObservation(), IDomainPackage.eINSTANCE.getProblemStatusObservation().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProblemStatusObservation(),
+				IDomainPackage.eINSTANCE.getProblemStatusObservation().getEAllOperations().get(3));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -237,7 +239,7 @@ public class ProblemStatusObservationImpl extends StatusObservationImpl implemen
 	 */
 	@Override
 	public IProblemStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProblemStatusObservationImpl

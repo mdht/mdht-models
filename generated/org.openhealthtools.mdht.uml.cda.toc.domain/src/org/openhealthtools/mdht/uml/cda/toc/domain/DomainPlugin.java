@@ -39,7 +39,7 @@ public final class DomainPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public DomainPlugin() {
-		super(new ResourceLocator [] {});
+		super(new ResourceLocator[] {});
 	}
 
 	/**

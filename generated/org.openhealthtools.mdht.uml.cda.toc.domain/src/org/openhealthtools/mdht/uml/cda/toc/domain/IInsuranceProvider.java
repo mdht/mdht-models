@@ -12,7 +12,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Coverage Entry</b></em>'.
+ * A representation of the model object '<em><b>Insurance Provider</b></em>'.
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
@@ -22,14 +22,14 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.toc.domain.ICoverageEntry#getCDAType <em>CDA Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.toc.domain.IInsuranceProvider#getCDAType <em>CDA Type</em>}</li>
  * </ul>
  * </p>
  *
- * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getCoverageEntry()
+ * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getInsuranceProvider()
  * @generated
  */
-public interface ICoverageEntry {
+public interface IInsuranceProvider {
 	/**
 	 * Returns the value of the '<em><b>CDA Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -40,13 +40,13 @@ public interface ICoverageEntry {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CDA Type</em>' reference.
 	 * @see #setCDAType(Act)
-	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getCoverageEntry_CDAType()
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getInsuranceProvider_CDAType()
 	 * @generated
 	 */
 	Act getCDAType();
 
 	/**
-	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.toc.domain.ICoverageEntry#getCDAType <em>CDA Type</em>}' reference.
+	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.toc.domain.IInsuranceProvider#getCDAType <em>CDA Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>CDA Type</em>' reference.
@@ -84,43 +84,43 @@ public interface ICoverageEntry {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ICoverageEntry addId(II value);
+	IInsuranceProvider addId(II value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * ccd::CoverageActivity::policyActivity.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PolicyActivity)).oclAsType(domain::PolicyActivity)
+	 * ihe::CoverageEntry::payerEntry.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PayerEntry)).oclAsType(domain::PayerEntry)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<IPolicyActivity> getPolicyActivities();
+	EList<IPayerEntry> getPayerEntries();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Coverage Activity SHALL contain at least one [1..*] entryRelationship (CONF-43, CONF-45, CONF-46), such that Contains @typeCode="COMP" COMP (has component), and Contains exactly one [1..1] Policy Activity (templateId: 2.16.840.1.113883.10.20.1.26).
+	 * IHE Coverage Entry SHALL contain at least one [1..*] entryRelationship, such that Contains @typeCode="COMP" COMP (has component), and Contains exactly one [1..1] Payer Entry (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.18).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPolicyActivity addPolicyActivity();
+	IPayerEntry addPayerEntry();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Coverage Activity SHALL contain at least one [1..*] entryRelationship (CONF-43, CONF-45, CONF-46), such that Contains @typeCode="COMP" COMP (has component), and Contains exactly one [1..1] Policy Activity (templateId: 2.16.840.1.113883.10.20.1.26).
+	 * IHE Coverage Entry SHALL contain at least one [1..*] entryRelationship, such that Contains @typeCode="COMP" COMP (has component), and Contains exactly one [1..1] Payer Entry (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.18).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ICoverageEntry addPolicyActivity(IPolicyActivity value);
+	IInsuranceProvider addPayerEntry(IPayerEntry value);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ICoverageEntry init();
-} // ICoverageEntry
+	public IInsuranceProvider init();
+} // IInsuranceProvider
