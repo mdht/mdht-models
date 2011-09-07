@@ -15,94 +15,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.AllergiesReactionsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance;
-import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceConcern;
-import org.openhealthtools.mdht.uml.cda.ihe.AssessmentAndPlanSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CarePlanSection;
-import org.openhealthtools.mdht.uml.cda.ihe.ChiefComplaintSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedAdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedFamilyMedicalHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedSurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedVitalSignsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CombinationMedication;
-import org.openhealthtools.mdht.uml.cda.ihe.Comment;
-import org.openhealthtools.mdht.uml.cda.ihe.ConcernEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ConditionalDose;
-import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeSummary;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterPlanOfCare;
-import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer;
-import org.openhealthtools.mdht.uml.cda.ihe.FamilyMedicalHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.HealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.HealthcareProvidersPharmacies;
-import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPresentIllness;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalAdmissionDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalCourseSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargeMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical;
-import org.openhealthtools.mdht.uml.cda.ihe.IHEFactory;
-import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
-import org.openhealthtools.mdht.uml.cda.ihe.IHERegistryDelegate;
-import org.openhealthtools.mdht.uml.cda.ihe.Immunization;
-import org.openhealthtools.mdht.uml.cda.ihe.ImmunizationsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.IntakeOutputSection;
-import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.LanguageCommunication;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicalDevicesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.NormalDose;
-import org.openhealthtools.mdht.uml.cda.ihe.ObservationRequestEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.PHRExtract;
-import org.openhealthtools.mdht.uml.cda.ihe.PHRUpdate;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientContactGuardian;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientContactParticipant;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
-import org.openhealthtools.mdht.uml.cda.ihe.PayerEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.PayersSection;
-import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamNarrativeSection;
-import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamSection;
-import org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.PregnancyObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.ihe.ProductEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ReasonForReferralSection;
-import org.openhealthtools.mdht.uml.cda.ihe.ReviewOfSystemsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanDataEnterer;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanOriginalAuthor;
-import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanningDevice;
-import org.openhealthtools.mdht.uml.cda.ihe.Severity;
-import org.openhealthtools.mdht.uml.cda.ihe.SocialHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.SocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
-import org.openhealthtools.mdht.uml.cda.ihe.SupplyEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.SurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsSection;
+import org.openhealthtools.mdht.uml.cda.ihe.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -211,6 +124,8 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 				return createPayersSection();
 			case IHEPackage.COVERAGE_ENTRY:
 				return createCoverageEntry();
+			case IHEPackage.PAYER_ENTRY:
+				return createPayerEntry();
 			case IHEPackage.HISTORY_OF_PAST_ILLNESS_SECTION:
 				return createHistoryOfPastIllnessSection();
 			case IHEPackage.CHIEF_COMPLAINT_SECTION:
@@ -245,6 +160,54 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 				return createPhysicalExamNarrativeSection();
 			case IHEPackage.PHYSICAL_EXAM_SECTION:
 				return createPhysicalExamSection();
+			case IHEPackage.GENERAL_APPEARANCE_SECTION:
+				return createGeneralAppearanceSection();
+			case IHEPackage.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION:
+				return createVisibleImplantedMedicalDevicesSection();
+			case IHEPackage.INTEGUMENTARY_SYSTEM_SECTION:
+				return createIntegumentarySystemSection();
+			case IHEPackage.HEAD_SECTION:
+				return createHeadSection();
+			case IHEPackage.EYES_SECTION:
+				return createEyesSection();
+			case IHEPackage.EARS_NOSE_MOUTH_THROAT_SECTION:
+				return createEarsNoseMouthThroatSection();
+			case IHEPackage.EARS_SECTION:
+				return createEarsSection();
+			case IHEPackage.NOSE_SECTION:
+				return createNoseSection();
+			case IHEPackage.MOUTH_THROAT_TEETH_SECTION:
+				return createMouthThroatTeethSection();
+			case IHEPackage.NECK_SECTION:
+				return createNeckSection();
+			case IHEPackage.ENDOCRINE_SYSTEM_SECTION:
+				return createEndocrineSystemSection();
+			case IHEPackage.THORAX_LUNGS_SECTION:
+				return createThoraxLungsSection();
+			case IHEPackage.CHEST_WALL_SECTION:
+				return createChestWallSection();
+			case IHEPackage.BREAST_SECTION:
+				return createBreastSection();
+			case IHEPackage.HEART_SECTION:
+				return createHeartSection();
+			case IHEPackage.RESPIRATORY_SYSTEM_SECTION:
+				return createRespiratorySystemSection();
+			case IHEPackage.ABDOMEN_SECTION:
+				return createAbdomenSection();
+			case IHEPackage.LYMPHATIC_SECTION:
+				return createLymphaticSection();
+			case IHEPackage.VESSELS_SECTION:
+				return createVesselsSection();
+			case IHEPackage.MUSCULOSKELETAL_SYSTEM_SECTION:
+				return createMusculoskeletalSystemSection();
+			case IHEPackage.NEUROLOGIC_SYSTEM_SECTION:
+				return createNeurologicSystemSection();
+			case IHEPackage.GENITALIA_SECTION:
+				return createGenitaliaSection();
+			case IHEPackage.RECTUM_SECTION:
+				return createRectumSection();
+			case IHEPackage.EXTREMITIES_SECTION:
+				return createExtremitiesSection();
 			case IHEPackage.REVIEW_OF_SYSTEMS_SECTION:
 				return createReviewOfSystemsSection();
 			case IHEPackage.HOSPITAL_COURSE_SECTION:
@@ -277,8 +240,6 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 				return createProductEntry();
 			case IHEPackage.PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE:
 				return createProcedureEntryPlanOfCareActivityProcedure();
-			case IHEPackage.PAYER_ENTRY:
-				return createPayerEntry();
 			case IHEPackage.PHR_EXTRACT:
 				return createPHRExtract();
 			case IHEPackage.PHR_UPDATE:
@@ -317,6 +278,8 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 				return createFamilyHistoryObservation();
 			case IHEPackage.SOCIAL_HISTORY_OBSERVATION:
 				return createSocialHistoryObservation();
+			case IHEPackage.CODED_REASON_FOR_REFERRAL_SECTION:
+				return createCodedReasonForReferralSection();
 			case IHEPackage.IHE_REGISTRY_DELEGATE:
 				return createIHERegistryDelegate();
 			default:
@@ -722,6 +685,246 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	public PhysicalExamSection createPhysicalExamSection() {
 		PhysicalExamSectionImpl physicalExamSection = new PhysicalExamSectionImpl();
 		return physicalExamSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeneralAppearanceSection createGeneralAppearanceSection() {
+		GeneralAppearanceSectionImpl generalAppearanceSection = new GeneralAppearanceSectionImpl();
+		return generalAppearanceSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VisibleImplantedMedicalDevicesSection createVisibleImplantedMedicalDevicesSection() {
+		VisibleImplantedMedicalDevicesSectionImpl visibleImplantedMedicalDevicesSection = new VisibleImplantedMedicalDevicesSectionImpl();
+		return visibleImplantedMedicalDevicesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IntegumentarySystemSection createIntegumentarySystemSection() {
+		IntegumentarySystemSectionImpl integumentarySystemSection = new IntegumentarySystemSectionImpl();
+		return integumentarySystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HeadSection createHeadSection() {
+		HeadSectionImpl headSection = new HeadSectionImpl();
+		return headSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EyesSection createEyesSection() {
+		EyesSectionImpl eyesSection = new EyesSectionImpl();
+		return eyesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EarsNoseMouthThroatSection createEarsNoseMouthThroatSection() {
+		EarsNoseMouthThroatSectionImpl earsNoseMouthThroatSection = new EarsNoseMouthThroatSectionImpl();
+		return earsNoseMouthThroatSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EarsSection createEarsSection() {
+		EarsSectionImpl earsSection = new EarsSectionImpl();
+		return earsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NoseSection createNoseSection() {
+		NoseSectionImpl noseSection = new NoseSectionImpl();
+		return noseSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MouthThroatTeethSection createMouthThroatTeethSection() {
+		MouthThroatTeethSectionImpl mouthThroatTeethSection = new MouthThroatTeethSectionImpl();
+		return mouthThroatTeethSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NeckSection createNeckSection() {
+		NeckSectionImpl neckSection = new NeckSectionImpl();
+		return neckSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EndocrineSystemSection createEndocrineSystemSection() {
+		EndocrineSystemSectionImpl endocrineSystemSection = new EndocrineSystemSectionImpl();
+		return endocrineSystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ThoraxLungsSection createThoraxLungsSection() {
+		ThoraxLungsSectionImpl thoraxLungsSection = new ThoraxLungsSectionImpl();
+		return thoraxLungsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChestWallSection createChestWallSection() {
+		ChestWallSectionImpl chestWallSection = new ChestWallSectionImpl();
+		return chestWallSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BreastSection createBreastSection() {
+		BreastSectionImpl breastSection = new BreastSectionImpl();
+		return breastSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HeartSection createHeartSection() {
+		HeartSectionImpl heartSection = new HeartSectionImpl();
+		return heartSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RespiratorySystemSection createRespiratorySystemSection() {
+		RespiratorySystemSectionImpl respiratorySystemSection = new RespiratorySystemSectionImpl();
+		return respiratorySystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AbdomenSection createAbdomenSection() {
+		AbdomenSectionImpl abdomenSection = new AbdomenSectionImpl();
+		return abdomenSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LymphaticSection createLymphaticSection() {
+		LymphaticSectionImpl lymphaticSection = new LymphaticSectionImpl();
+		return lymphaticSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VesselsSection createVesselsSection() {
+		VesselsSectionImpl vesselsSection = new VesselsSectionImpl();
+		return vesselsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MusculoskeletalSystemSection createMusculoskeletalSystemSection() {
+		MusculoskeletalSystemSectionImpl musculoskeletalSystemSection = new MusculoskeletalSystemSectionImpl();
+		return musculoskeletalSystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NeurologicSystemSection createNeurologicSystemSection() {
+		NeurologicSystemSectionImpl neurologicSystemSection = new NeurologicSystemSectionImpl();
+		return neurologicSystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GenitaliaSection createGenitaliaSection() {
+		GenitaliaSectionImpl genitaliaSection = new GenitaliaSectionImpl();
+		return genitaliaSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RectumSection createRectumSection() {
+		RectumSectionImpl rectumSection = new RectumSectionImpl();
+		return rectumSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExtremitiesSection createExtremitiesSection() {
+		ExtremitiesSectionImpl extremitiesSection = new ExtremitiesSectionImpl();
+		return extremitiesSection;
 	}
 
 	/**
@@ -1172,6 +1375,16 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	public SocialHistoryObservation createSocialHistoryObservation() {
 		SocialHistoryObservationImpl socialHistoryObservation = new SocialHistoryObservationImpl();
 		return socialHistoryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CodedReasonForReferralSection createCodedReasonForReferralSection() {
+		CodedReasonForReferralSectionImpl codedReasonForReferralSection = new CodedReasonForReferralSectionImpl();
+		return codedReasonForReferralSection;
 	}
 
 	/**

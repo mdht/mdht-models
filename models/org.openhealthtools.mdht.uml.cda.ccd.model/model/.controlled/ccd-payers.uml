@@ -215,6 +215,30 @@
 &#xD;
 Authorizations are represented using an act subordinate to the policy or program that provided it. The policy or program is referred to by the authorization. Authorized treatments can be grouped into an Organizer class, where common properties, such as the reason for the authorization, can be expressed. Subordinate acts represent what was authorized.</body>
     </ownedComment>
+    <ownedRule xmi:id="_Oc3JUM88EeCn2rsjYxSTZw" name="entryRelationship" constrainedElement="_8LwHcMJqEd6-XpBv2uxYrQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XvEUgM88EeCn2rsjYxSTZw">
+        <language>Analysis</language>
+        <body>An authorization activity SHALL contain one or more Act / entryRelationship</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_X--_0M88EeCn2rsjYxSTZw" name="entryRelationshipTypeCode" constrainedElement="_Oc3JUM88EeCn2rsjYxSTZw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cbSMAM88EeCn2rsjYxSTZw">
+        <language>Analysis</language>
+        <body>The value for Act / entryRelationship / @typeCode in an authorization activity SHALL be &quot;SUBJ&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_fvu_UM88EeCn2rsjYxSTZw" name="entryRelationshipTarget" constrainedElement="_X--_0M88EeCn2rsjYxSTZw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jAwrMM88EeCn2rsjYxSTZw">
+        <language>Analysis</language>
+        <body>The target of an authorization activity with Act / entryRelationship / @typeCode=&quot;SUBJ&quot; SHALL be a clinical statement with moodCode = &quot;PRMS&quot; (Promise)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_lE34AM88EeCn2rsjYxSTZw" name="hasProviders" constrainedElement="_fvu_UM88EeCn2rsjYxSTZw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mNxZwM88EeCn2rsjYxSTZw">
+        <language>Analysis</language>
+        <body>The target of an authorization activity MAY contain one or more performer, to indicate the providers that have been authorized to provide treatment</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_-zlsYMJqEd6-XpBv2uxYrQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -415,4 +439,8 @@ Authorizations are represented using an act subordinate to the policy or program
   <CDA:ConstraintValidation xmi:id="_AbDtgHpXEd-OuuwcsTsBUQ" base_Constraint="_3qtSMHpWEd-OuuwcsTsBUQ">
     <ruleId>CONF-67</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_ms3wkM88EeCn2rsjYxSTZw" base_Constraint="_Oc3JUM88EeCn2rsjYxSTZw"/>
+  <CDA:ConstraintValidation xmi:id="_nPrisM88EeCn2rsjYxSTZw" base_Constraint="_X--_0M88EeCn2rsjYxSTZw"/>
+  <CDA:ConstraintValidation xmi:id="_nvqqUM88EeCn2rsjYxSTZw" base_Constraint="_fvu_UM88EeCn2rsjYxSTZw"/>
+  <CDA:ConstraintValidation xmi:id="_oIXeMM88EeCn2rsjYxSTZw" severity="INFO" base_Constraint="_lE34AM88EeCn2rsjYxSTZw"/>
 </xmi:XMI>

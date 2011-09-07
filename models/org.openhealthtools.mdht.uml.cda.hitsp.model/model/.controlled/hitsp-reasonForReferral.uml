@@ -7,10 +7,26 @@
     referred. &#xD;
 &lt;/p></body>
     </ownedComment>
-    <generalization xmi:id="_eIhFcMfdEd6VjLXh4DcWSg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-reasonForReferral.uml#_XicJUMfdEd6VjLXh4DcWSg"/>
+    <generalization xmi:id="_K4z18M9LEeCBIMy4xFlonQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_b0JLIM9KEeCBIMy4xFlonQ"/>
     </generalization>
+    <generalization xmi:id="_QREUEM9LEeCBIMy4xFlonQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_A0ab0GhHEd-ilOLYnIx0jA"/>
+    </generalization>
+    <ownedAttribute xmi:id="_aWmZoM9LEeCBIMy4xFlonQ" name="condition">
+      <type xmi:type="uml:Class" href="hitsp-problemList.uml#_GgvgUDxbEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c_mcMM9LEeCBIMy4xFlonQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c_mcMc9LEeCBIMy4xFlonQ"/>
+      <association href="../hitsp.uml#_aWmZos9LEeCBIMy4xFlonQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fcac4M9LEeCBIMy4xFlonQ" name="result">
+      <type xmi:type="uml:Class" href="../hitsp.uml#_oTzNMDIWEd-SYNRf-pkwtw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gY9ksM9LEeCBIMy4xFlonQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gY9ksc9LEeCBIMy4xFlonQ"/>
+      <association href="../hitsp.uml#_fcac4s9LEeCBIMy4xFlonQ"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_xMUGgMfdEd6VjLXh4DcWSg" base_Class="_bX2UoMfdEd6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.106" assigningAuthorityName="HITSP C83"/>
-  <CDA:ConformsTo xmi:id="_rGOO8FF6Ed-Lud-5SYZhMw" base_Generalization="_eIhFcMfdEd6VjLXh4DcWSg" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_rGOO8FF6Ed-Lud-5SYZhMw" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_HTW8wM9MEeCBIMy4xFlonQ" base_Generalization="_QREUEM9LEeCBIMy4xFlonQ" requiresParentId="true"/>
 </xmi:XMI>

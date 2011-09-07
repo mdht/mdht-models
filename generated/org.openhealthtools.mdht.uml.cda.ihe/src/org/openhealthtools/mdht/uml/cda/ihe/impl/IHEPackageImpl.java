@@ -19,99 +19,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.openhealthtools.mdht.uml.cda.CDAPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
-import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.AllergiesReactionsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance;
-import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceConcern;
-import org.openhealthtools.mdht.uml.cda.ihe.AssessmentAndPlanSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CarePlanSection;
-import org.openhealthtools.mdht.uml.cda.ihe.ChiefComplaintSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedAdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedFamilyMedicalHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedSurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedVitalSignsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CombinationMedication;
-import org.openhealthtools.mdht.uml.cda.ihe.Comment;
-import org.openhealthtools.mdht.uml.cda.ihe.ConcernEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ConditionalDose;
-import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeSummary;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterPlanOfCare;
-import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer;
-import org.openhealthtools.mdht.uml.cda.ihe.FamilyMedicalHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.HealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.HealthcareProvidersPharmacies;
-import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPresentIllness;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalAdmissionDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalCourseSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargeMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical;
-import org.openhealthtools.mdht.uml.cda.ihe.IHEFactory;
-import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
-import org.openhealthtools.mdht.uml.cda.ihe.IHERegistryDelegate;
-import org.openhealthtools.mdht.uml.cda.ihe.Immunization;
-import org.openhealthtools.mdht.uml.cda.ihe.ImmunizationsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.IntakeOutputSection;
-import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.LanguageCommunication;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicalDevicesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
-import org.openhealthtools.mdht.uml.cda.ihe.Medication;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.NormalDose;
-import org.openhealthtools.mdht.uml.cda.ihe.ObservationRequestEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.PHRExtract;
-import org.openhealthtools.mdht.uml.cda.ihe.PHRUpdate;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientContact;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientContactGuardian;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientContactParticipant;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
-import org.openhealthtools.mdht.uml.cda.ihe.PayerEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.PayersSection;
-import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamNarrativeSection;
-import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamSection;
-import org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.PregnancyObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.ihe.ProductEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ReasonForReferralSection;
-import org.openhealthtools.mdht.uml.cda.ihe.ReviewOfSystemsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanDataEnterer;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanOriginalAuthor;
-import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanningDevice;
-import org.openhealthtools.mdht.uml.cda.ihe.Severity;
-import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.SocialHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.SocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
-import org.openhealthtools.mdht.uml.cda.ihe.SupplyEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.SurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsSection;
+import org.openhealthtools.mdht.uml.cda.ihe.*;
 import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
 
 /**
@@ -434,6 +342,174 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass generalAppearanceSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass visibleImplantedMedicalDevicesSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass integumentarySystemSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass headSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass eyesSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass earsNoseMouthThroatSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass earsSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass noseSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mouthThroatTeethSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass neckSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass endocrineSystemSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass thoraxLungsSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass chestWallSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass breastSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass heartSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass respiratorySystemSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass abdomenSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass lymphaticSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass vesselsSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass musculoskeletalSystemSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass neurologicSystemSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass genitaliaSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass rectumSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass extremitiesSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass reviewOfSystemsSectionEClass = null;
 
 	/**
@@ -750,6 +826,13 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * @generated
 	 */
 	private EClass socialHistoryObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass codedReasonForReferralSectionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1233,6 +1316,222 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getGeneralAppearanceSection() {
+		return generalAppearanceSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVisibleImplantedMedicalDevicesSection() {
+		return visibleImplantedMedicalDevicesSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getIntegumentarySystemSection() {
+		return integumentarySystemSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHeadSection() {
+		return headSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEyesSection() {
+		return eyesSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEarsNoseMouthThroatSection() {
+		return earsNoseMouthThroatSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEarsSection() {
+		return earsSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNoseSection() {
+		return noseSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMouthThroatTeethSection() {
+		return mouthThroatTeethSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNeckSection() {
+		return neckSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEndocrineSystemSection() {
+		return endocrineSystemSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getThoraxLungsSection() {
+		return thoraxLungsSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getChestWallSection() {
+		return chestWallSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getBreastSection() {
+		return breastSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHeartSection() {
+		return heartSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getRespiratorySystemSection() {
+		return respiratorySystemSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAbdomenSection() {
+		return abdomenSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getLymphaticSection() {
+		return lymphaticSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVesselsSection() {
+		return vesselsSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMusculoskeletalSystemSection() {
+		return musculoskeletalSystemSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNeurologicSystemSection() {
+		return neurologicSystemSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGenitaliaSection() {
+		return genitaliaSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getRectumSection() {
+		return rectumSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getExtremitiesSection() {
+		return extremitiesSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getReviewOfSystemsSection() {
 		return reviewOfSystemsSectionEClass;
 	}
@@ -1647,6 +1946,15 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getCodedReasonForReferralSection() {
+		return codedReasonForReferralSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getIHERegistryDelegate() {
 		return iheRegistryDelegateEClass;
 	}
@@ -1749,6 +2057,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 
 		coverageEntryEClass = createEClass(COVERAGE_ENTRY);
 
+		payerEntryEClass = createEClass(PAYER_ENTRY);
+
 		historyOfPastIllnessSectionEClass = createEClass(HISTORY_OF_PAST_ILLNESS_SECTION);
 
 		chiefComplaintSectionEClass = createEClass(CHIEF_COMPLAINT_SECTION);
@@ -1785,6 +2095,54 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 
 		physicalExamSectionEClass = createEClass(PHYSICAL_EXAM_SECTION);
 
+		generalAppearanceSectionEClass = createEClass(GENERAL_APPEARANCE_SECTION);
+
+		visibleImplantedMedicalDevicesSectionEClass = createEClass(VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION);
+
+		integumentarySystemSectionEClass = createEClass(INTEGUMENTARY_SYSTEM_SECTION);
+
+		headSectionEClass = createEClass(HEAD_SECTION);
+
+		eyesSectionEClass = createEClass(EYES_SECTION);
+
+		earsNoseMouthThroatSectionEClass = createEClass(EARS_NOSE_MOUTH_THROAT_SECTION);
+
+		earsSectionEClass = createEClass(EARS_SECTION);
+
+		noseSectionEClass = createEClass(NOSE_SECTION);
+
+		mouthThroatTeethSectionEClass = createEClass(MOUTH_THROAT_TEETH_SECTION);
+
+		neckSectionEClass = createEClass(NECK_SECTION);
+
+		endocrineSystemSectionEClass = createEClass(ENDOCRINE_SYSTEM_SECTION);
+
+		thoraxLungsSectionEClass = createEClass(THORAX_LUNGS_SECTION);
+
+		chestWallSectionEClass = createEClass(CHEST_WALL_SECTION);
+
+		breastSectionEClass = createEClass(BREAST_SECTION);
+
+		heartSectionEClass = createEClass(HEART_SECTION);
+
+		respiratorySystemSectionEClass = createEClass(RESPIRATORY_SYSTEM_SECTION);
+
+		abdomenSectionEClass = createEClass(ABDOMEN_SECTION);
+
+		lymphaticSectionEClass = createEClass(LYMPHATIC_SECTION);
+
+		vesselsSectionEClass = createEClass(VESSELS_SECTION);
+
+		musculoskeletalSystemSectionEClass = createEClass(MUSCULOSKELETAL_SYSTEM_SECTION);
+
+		neurologicSystemSectionEClass = createEClass(NEUROLOGIC_SYSTEM_SECTION);
+
+		genitaliaSectionEClass = createEClass(GENITALIA_SECTION);
+
+		rectumSectionEClass = createEClass(RECTUM_SECTION);
+
+		extremitiesSectionEClass = createEClass(EXTREMITIES_SECTION);
+
 		reviewOfSystemsSectionEClass = createEClass(REVIEW_OF_SYSTEMS_SECTION);
 
 		hospitalCourseSectionEClass = createEClass(HOSPITAL_COURSE_SECTION);
@@ -1818,8 +2176,6 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		productEntryEClass = createEClass(PRODUCT_ENTRY);
 
 		procedureEntryPlanOfCareActivityProcedureEClass = createEClass(PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE);
-
-		payerEntryEClass = createEClass(PAYER_ENTRY);
 
 		phrExtractEClass = createEClass(PHR_EXTRACT);
 
@@ -1860,6 +2216,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		familyHistoryObservationEClass = createEClass(FAMILY_HISTORY_OBSERVATION);
 
 		socialHistoryObservationEClass = createEClass(SOCIAL_HISTORY_OBSERVATION);
+
+		codedReasonForReferralSectionEClass = createEClass(CODED_REASON_FOR_REFERRAL_SECTION);
 
 		iheRegistryDelegateEClass = createEClass(IHE_REGISTRY_DELEGATE);
 	}
@@ -1935,6 +2293,7 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		simpleObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		payersSectionEClass.getESuperTypes().add(theCCDPackage.getPayersSection());
 		coverageEntryEClass.getESuperTypes().add(theCCDPackage.getCoverageActivity());
+		payerEntryEClass.getESuperTypes().add(theCCDPackage.getPolicyActivity());
 		historyOfPastIllnessSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		chiefComplaintSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		reasonForReferralSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
@@ -1956,6 +2315,30 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		advanceDirectiveObservationEClass.getESuperTypes().add(this.getSimpleObservation());
 		physicalExamNarrativeSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		physicalExamSectionEClass.getESuperTypes().add(this.getPhysicalExamNarrativeSection());
+		generalAppearanceSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		visibleImplantedMedicalDevicesSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		integumentarySystemSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		headSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		eyesSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		earsNoseMouthThroatSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		earsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		noseSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		mouthThroatTeethSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		neckSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		endocrineSystemSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		thoraxLungsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		chestWallSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		breastSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		heartSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		respiratorySystemSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		abdomenSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		lymphaticSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		vesselsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		musculoskeletalSystemSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		neurologicSystemSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		genitaliaSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		rectumSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+		extremitiesSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		reviewOfSystemsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		hospitalCourseSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		codedResultsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
@@ -1975,7 +2358,6 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		procedureEntryPlanOfCareActivityProcedureEClass.getESuperTypes().add(
 			theCCDPackage.getPlanOfCareActivityProcedure());
 		procedureEntryPlanOfCareActivityProcedureEClass.getESuperTypes().add(this.getProcedureEntry());
-		payerEntryEClass.getESuperTypes().add(theCCDPackage.getPolicyActivity());
 		phrExtractEClass.getESuperTypes().add(this.getMedicalSummary());
 		phrUpdateEClass.getESuperTypes().add(this.getMedicalSummary());
 		encounterActivityEClass.getESuperTypes().add(this.getEncounterEntry());
@@ -2002,6 +2384,7 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		familyHistoryObservationEClass.getESuperTypes().add(this.getSimpleObservation());
 		socialHistoryObservationEClass.getESuperTypes().add(this.getSimpleObservation());
 		socialHistoryObservationEClass.getESuperTypes().add(theCCDPackage.getSocialHistoryObservation());
+		codedReasonForReferralSectionEClass.getESuperTypes().add(this.getReasonForReferralSection());
 		iheRegistryDelegateEClass.getESuperTypes().add(theCDAPackage.getRegistryDelegate());
 
 		// Initialize classes and features; add operations and parameters
@@ -3516,6 +3899,22 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(
+			coverageEntryEClass, ecorePackage.getEBoolean(), "validateCoverageEntryPayerEntry", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(coverageEntryEClass, this.getPayerEntry(), "getPayerEntries", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			payerEntryEClass, PayerEntry.class, "PayerEntry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
 		initEClass(
 			historyOfPastIllnessSectionEClass, HistoryOfPastIllnessSection.class, "HistoryOfPastIllnessSection",
 			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -4181,6 +4580,1281 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionVitalSignsSection", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(),
+			"validatePhysicalExamSectionGeneralAppearanceSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(),
+			"validatePhysicalExamSectionVisibleImplantedMedicalDevicesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(),
+			"validatePhysicalExamSectionIntegumentarySystemSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionHeadSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionEyesSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(),
+			"validatePhysicalExamSectionEarsNoseMouthThroatSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionEarsSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionNoseSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(),
+			"validatePhysicalExamSectionMouthThroatTeethSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionNeckSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionEndocrineSystemSection",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionThoraxLungsSection", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionChestWallSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionBreastSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionHeartSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(),
+			"validatePhysicalExamSectionRespiratorySystemSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionAbdomenSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionLymphaticSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionVesselsSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(),
+			"validatePhysicalExamSectionMusculoskeletalSystemSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(),
+			"validatePhysicalExamSectionNeurologicSystemSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionGenitaliaSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionRectumSection", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			physicalExamSectionEClass, ecorePackage.getEBoolean(), "validatePhysicalExamSectionExtremitiesSection", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getGeneralAppearanceSection(), "getGeneralAppearanceSection", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getVisibleImplantedMedicalDevicesSection(),
+			"getVisibleImplantedMedicalDevicesSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getIntegumentarySystemSection(), "getIntegumentarySystemSection", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(physicalExamSectionEClass, this.getHeadSection(), "getHeadSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(physicalExamSectionEClass, this.getEyesSection(), "getEyesSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getEarsNoseMouthThroatSection(), "getEarsNoseMouthThroatSection", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(physicalExamSectionEClass, this.getEarsSection(), "getEarsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(physicalExamSectionEClass, this.getNoseSection(), "getNoseSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getMouthThroatTeethSection(), "getMouthThroatTeethSection", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(physicalExamSectionEClass, this.getNeckSection(), "getNeckSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getEndocrineSystemSection(), "getEndocrineSystemSection", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getThoraxLungsSection(), "getThoraxLungsSection", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getChestWallSection(), "getChestWallSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getBreastSection(), "getBreastSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getHeartSection(), "getHeartSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getRespiratorySystemSection(), "getRespiratorySystemSection", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getAbdomenSection(), "getAbdomenSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getLymphaticSection(), "getLymphaticSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getVesselsSection(), "getVesselsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getMusculoskeletalSystemSection(), "getMusculoskeletalSystemSection", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getNeurologicSystemSection(), "getNeurologicSystemSection", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getGenitaliaSection(), "getGenitaliaSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getRectumSection(), "getRectumSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			physicalExamSectionEClass, this.getExtremitiesSection(), "getExtremitiesSection", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
+
+		initEClass(
+			generalAppearanceSectionEClass, GeneralAppearanceSection.class, "GeneralAppearanceSection", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			generalAppearanceSectionEClass, ecorePackage.getEBoolean(), "validateGeneralAppearanceSectionTemplateId",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			generalAppearanceSectionEClass, ecorePackage.getEBoolean(), "validateGeneralAppearanceSectionCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			generalAppearanceSectionEClass, ecorePackage.getEBoolean(), "validateGeneralAppearanceSectionProblemEntry",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			generalAppearanceSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			visibleImplantedMedicalDevicesSectionEClass, VisibleImplantedMedicalDevicesSection.class,
+			"VisibleImplantedMedicalDevicesSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			visibleImplantedMedicalDevicesSectionEClass, ecorePackage.getEBoolean(),
+			"validateVisibleImplantedMedicalDevicesSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			visibleImplantedMedicalDevicesSectionEClass, ecorePackage.getEBoolean(),
+			"validateVisibleImplantedMedicalDevicesSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			visibleImplantedMedicalDevicesSectionEClass, ecorePackage.getEBoolean(),
+			"validateVisibleImplantedMedicalDevicesSectionProblemEntry", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			visibleImplantedMedicalDevicesSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
+
+		initEClass(
+			integumentarySystemSectionEClass, IntegumentarySystemSection.class, "IntegumentarySystemSection",
+			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			integumentarySystemSectionEClass, ecorePackage.getEBoolean(),
+			"validateIntegumentarySystemSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			integumentarySystemSectionEClass, ecorePackage.getEBoolean(), "validateIntegumentarySystemSectionCode", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			integumentarySystemSectionEClass, ecorePackage.getEBoolean(),
+			"validateIntegumentarySystemSectionProblemEntry", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			integumentarySystemSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			headSectionEClass, HeadSection.class, "HeadSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			headSectionEClass, ecorePackage.getEBoolean(), "validateHeadSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			headSectionEClass, ecorePackage.getEBoolean(), "validateHeadSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			headSectionEClass, ecorePackage.getEBoolean(), "validateHeadSectionProblemEntry", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(headSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			eyesSectionEClass, EyesSection.class, "EyesSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			eyesSectionEClass, ecorePackage.getEBoolean(), "validateEyesSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			eyesSectionEClass, ecorePackage.getEBoolean(), "validateEyesSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			eyesSectionEClass, ecorePackage.getEBoolean(), "validateEyesSectionProblemEntry", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(eyesSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			earsNoseMouthThroatSectionEClass, EarsNoseMouthThroatSection.class, "EarsNoseMouthThroatSection",
+			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			earsNoseMouthThroatSectionEClass, ecorePackage.getEBoolean(),
+			"validateEarsNoseMouthThroatSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			earsNoseMouthThroatSectionEClass, ecorePackage.getEBoolean(), "validateEarsNoseMouthThroatSectionCode", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			earsNoseMouthThroatSectionEClass, ecorePackage.getEBoolean(),
+			"validateEarsNoseMouthThroatSectionProblemEntry", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			earsNoseMouthThroatSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			earsSectionEClass, EarsSection.class, "EarsSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			earsSectionEClass, ecorePackage.getEBoolean(), "validateEarsSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			earsSectionEClass, ecorePackage.getEBoolean(), "validateEarsSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			earsSectionEClass, ecorePackage.getEBoolean(), "validateEarsSectionProblemEntry", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(earsSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			noseSectionEClass, NoseSection.class, "NoseSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			noseSectionEClass, ecorePackage.getEBoolean(), "validateNoseSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			noseSectionEClass, ecorePackage.getEBoolean(), "validateNoseSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			noseSectionEClass, ecorePackage.getEBoolean(), "validateNoseSectionProblemEntry", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(noseSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			mouthThroatTeethSectionEClass, MouthThroatTeethSection.class, "MouthThroatTeethSection", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			mouthThroatTeethSectionEClass, ecorePackage.getEBoolean(), "validateMouthThroatTeethSectionTemplateId", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			mouthThroatTeethSectionEClass, ecorePackage.getEBoolean(), "validateMouthThroatTeethSectionCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			mouthThroatTeethSectionEClass, ecorePackage.getEBoolean(), "validateMouthThroatTeethSectionProblemEntry",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			mouthThroatTeethSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			neckSectionEClass, NeckSection.class, "NeckSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			neckSectionEClass, ecorePackage.getEBoolean(), "validateNeckSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			neckSectionEClass, ecorePackage.getEBoolean(), "validateNeckSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			neckSectionEClass, ecorePackage.getEBoolean(), "validateNeckSectionProblemEntry", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(neckSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			endocrineSystemSectionEClass, EndocrineSystemSection.class, "EndocrineSystemSection", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			endocrineSystemSectionEClass, ecorePackage.getEBoolean(), "validateEndocrineSystemSectionTemplateId", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			endocrineSystemSectionEClass, ecorePackage.getEBoolean(), "validateEndocrineSystemSectionCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			endocrineSystemSectionEClass, ecorePackage.getEBoolean(), "validateEndocrineSystemSectionProblemEntry", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			endocrineSystemSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			thoraxLungsSectionEClass, ThoraxLungsSection.class, "ThoraxLungsSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			thoraxLungsSectionEClass, ecorePackage.getEBoolean(), "validateThoraxLungsSectionTemplateId", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			thoraxLungsSectionEClass, ecorePackage.getEBoolean(), "validateThoraxLungsSectionCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			thoraxLungsSectionEClass, ecorePackage.getEBoolean(), "validateThoraxLungsSectionProblemEntry", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(thoraxLungsSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			chestWallSectionEClass, ChestWallSection.class, "ChestWallSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			chestWallSectionEClass, ecorePackage.getEBoolean(), "validateChestWallSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			chestWallSectionEClass, ecorePackage.getEBoolean(), "validateChestWallSectionCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			chestWallSectionEClass, ecorePackage.getEBoolean(), "validateChestWallSectionProblemEntry", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(chestWallSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			breastSectionEClass, BreastSection.class, "BreastSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			breastSectionEClass, ecorePackage.getEBoolean(), "validateBreastSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			breastSectionEClass, ecorePackage.getEBoolean(), "validateBreastSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(
+			heartSectionEClass, HeartSection.class, "HeartSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			heartSectionEClass, ecorePackage.getEBoolean(), "validateHeartSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			heartSectionEClass, ecorePackage.getEBoolean(), "validateHeartSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			heartSectionEClass, ecorePackage.getEBoolean(), "validateHeartSectionProblemEntry", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(heartSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			respiratorySystemSectionEClass, RespiratorySystemSection.class, "RespiratorySystemSection", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			respiratorySystemSectionEClass, ecorePackage.getEBoolean(), "validateRespiratorySystemSectionTemplateId",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			respiratorySystemSectionEClass, ecorePackage.getEBoolean(), "validateRespiratorySystemSectionCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			respiratorySystemSectionEClass, ecorePackage.getEBoolean(), "validateRespiratorySystemSectionProblemEntry",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			respiratorySystemSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			abdomenSectionEClass, AbdomenSection.class, "AbdomenSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			abdomenSectionEClass, ecorePackage.getEBoolean(), "validateAbdomenSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			abdomenSectionEClass, ecorePackage.getEBoolean(), "validateAbdomenSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			abdomenSectionEClass, ecorePackage.getEBoolean(), "validateAbdomenSectionProblemEntry", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(abdomenSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			lymphaticSectionEClass, LymphaticSection.class, "LymphaticSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			lymphaticSectionEClass, ecorePackage.getEBoolean(), "validateLymphaticSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			lymphaticSectionEClass, ecorePackage.getEBoolean(), "validateLymphaticSectionCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			lymphaticSectionEClass, ecorePackage.getEBoolean(), "validateLymphaticSectionProblemEntry", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(lymphaticSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			vesselsSectionEClass, VesselsSection.class, "VesselsSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			vesselsSectionEClass, ecorePackage.getEBoolean(), "validateVesselsSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			vesselsSectionEClass, ecorePackage.getEBoolean(), "validateVesselsSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			vesselsSectionEClass, ecorePackage.getEBoolean(), "validateVesselsSectionProblemEntry", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(vesselsSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			musculoskeletalSystemSectionEClass, MusculoskeletalSystemSection.class, "MusculoskeletalSystemSection",
+			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			musculoskeletalSystemSectionEClass, ecorePackage.getEBoolean(),
+			"validateMusculoskeletalSystemSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			musculoskeletalSystemSectionEClass, ecorePackage.getEBoolean(), "validateMusculoskeletalSystemSectionCode",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			musculoskeletalSystemSectionEClass, ecorePackage.getEBoolean(),
+			"validateMusculoskeletalSystemSectionProblemEntry", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			musculoskeletalSystemSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			neurologicSystemSectionEClass, NeurologicSystemSection.class, "NeurologicSystemSection", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			neurologicSystemSectionEClass, ecorePackage.getEBoolean(), "validateNeurologicSystemSectionTemplateId", 0,
+			1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			neurologicSystemSectionEClass, ecorePackage.getEBoolean(), "validateNeurologicSystemSectionCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			neurologicSystemSectionEClass, ecorePackage.getEBoolean(), "validateNeurologicSystemSectionProblemEntry",
+			0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			neurologicSystemSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			genitaliaSectionEClass, GenitaliaSection.class, "GenitaliaSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			genitaliaSectionEClass, ecorePackage.getEBoolean(), "validateGenitaliaSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			genitaliaSectionEClass, ecorePackage.getEBoolean(), "validateGenitaliaSectionCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			genitaliaSectionEClass, ecorePackage.getEBoolean(), "validateGenitaliaSectionProblemEntry", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(genitaliaSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			rectumSectionEClass, RectumSection.class, "RectumSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			rectumSectionEClass, ecorePackage.getEBoolean(), "validateRectumSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			rectumSectionEClass, ecorePackage.getEBoolean(), "validateRectumSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			rectumSectionEClass, ecorePackage.getEBoolean(), "validateRectumSectionProblemEntry", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(rectumSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(
+			extremitiesSectionEClass, ExtremitiesSection.class, "ExtremitiesSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			extremitiesSectionEClass, ecorePackage.getEBoolean(), "validateExtremitiesSectionTemplateId", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			extremitiesSectionEClass, ecorePackage.getEBoolean(), "validateExtremitiesSectionCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			extremitiesSectionEClass, ecorePackage.getEBoolean(), "validateExtremitiesSectionProblemEntry", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(extremitiesSectionEClass, this.getProblemEntry(), "getProblemEntry", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(
 			reviewOfSystemsSectionEClass, ReviewOfSystemsSection.class, "ReviewOfSystemsSection", !IS_ABSTRACT,
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -4627,9 +6301,6 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		initEClass(
-			payerEntryEClass, PayerEntry.class, "PayerEntry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(
 			phrExtractEClass, PHRExtract.class, "PHRExtract", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -5532,6 +7203,51 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
+			codedReasonForReferralSectionEClass, CodedReasonForReferralSection.class, "CodedReasonForReferralSection",
+			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(
+			codedReasonForReferralSectionEClass, ecorePackage.getEBoolean(),
+			"validateCodedReasonForReferralSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			codedReasonForReferralSectionEClass, ecorePackage.getEBoolean(),
+			"validateCodedReasonForReferralSectionSimpleObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			codedReasonForReferralSectionEClass, ecorePackage.getEBoolean(),
+			"validateCodedReasonForReferralSectionProblemEntry", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(
+			codedReasonForReferralSectionEClass, this.getSimpleObservation(), "getSimpleObservations", 1, -1,
+			IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(
+			codedReasonForReferralSectionEClass, this.getProblemEntry(), "getProblemEntries", 1, -1, IS_UNIQUE,
+			!IS_ORDERED);
+
+		initEClass(
 			iheRegistryDelegateEClass, IHERegistryDelegate.class, "IHERegistryDelegate", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
 
@@ -5761,7 +7477,10 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 				"IHEPayersSectionTemplateId", "constraints.validation.warning", "IHEPayersSectionCoverageEntry" });
 		addAnnotation(coverageEntryEClass, source, new String[] {
 				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.4.17", "constraints.validation.error",
-				"CoverageEntryTemplateId" });
+				"CoverageEntryTemplateId CoverageEntryPayerEntry" });
+		addAnnotation(payerEntryEClass, source, new String[] {
+				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.4.18", "constraints.validation.error",
+				"PayerEntryTemplateId" });
 		addAnnotation(historyOfPastIllnessSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.8",
 				"code.displayName", "HISTORY OF PAST ILLNESS", "constraints.validation.error",
@@ -5876,9 +7595,138 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 				"code.displayName", "PHYSICAL EXAMINATION", "constraints.validation.error",
 				"PhysicalExamNarrativeSectionTemplateId PhysicalExamNarrativeSectionCode", "code.codeSystemName",
 				"LOINC", "code.code", "29545-1" });
-		addAnnotation(physicalExamSectionEClass, source, new String[] {
-				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.9.15", "constraints.validation.error",
-				"PhysicalExamSectionTemplateId" });
+		addAnnotation(
+			physicalExamSectionEClass,
+			source,
+			new String[] {
+					"templateId.root",
+					"1.3.6.1.4.1.19376.1.5.3.1.1.9.15",
+					"constraints.validation.error",
+					"PhysicalExamSectionTemplateId",
+					"constraints.validation.info",
+					"PhysicalExamSectionVitalSignsSection PhysicalExamSectionGeneralAppearanceSection PhysicalExamSectionVisibleImplantedMedicalDevicesSection PhysicalExamSectionIntegumentarySystemSection PhysicalExamSectionHeadSection PhysicalExamSectionEyesSection PhysicalExamSectionEarsNoseMouthThroatSection PhysicalExamSectionEarsSection PhysicalExamSectionNoseSection PhysicalExamSectionMouthThroatTeethSection PhysicalExamSectionNeckSection PhysicalExamSectionEndocrineSystemSection PhysicalExamSectionThoraxLungsSection PhysicalExamSectionChestWallSection PhysicalExamSectionBreastSection PhysicalExamSectionHeartSection PhysicalExamSectionRespiratorySystemSection PhysicalExamSectionAbdomenSection PhysicalExamSectionLymphaticSection PhysicalExamSectionVesselsSection PhysicalExamSectionMusculoskeletalSystemSection PhysicalExamSectionNeurologicSystemSection PhysicalExamSectionGenitaliaSection PhysicalExamSectionRectumSection PhysicalExamSectionExtremitiesSection" });
+		addAnnotation(generalAppearanceSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "GENERAL STATUS", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.16", "constraints.validation.error",
+				"GeneralAppearanceSectionTemplateId GeneralAppearanceSectionCode", "code.codeSystemName", "LOINC",
+				"code.code", "10210-3", "constraints.validation.info", "GeneralAppearanceSectionProblemEntry" });
+		addAnnotation(visibleImplantedMedicalDevicesSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "Visible implanted medical devices",
+				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.9.48", "constraints.validation.error",
+				"VisibleImplantedMedicalDevicesSectionTemplateId VisibleImplantedMedicalDevicesSectionCode",
+				"code.codeSystemName", "LOINC", "code.code", "XX-VisibleImplantedDevices",
+				"constraints.validation.info", "VisibleImplantedMedicalDevicesSectionProblemEntry" });
+		addAnnotation(integumentarySystemSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "INTEGUMENTARY SYSTEM",
+				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.9.17", "constraints.validation.error",
+				"IntegumentarySystemSectionTemplateId IntegumentarySystemSectionCode", "code.codeSystemName", "LOINC",
+				"code.code", "29302-7", "constraints.validation.info", "IntegumentarySystemSectionProblemEntry" });
+		addAnnotation(headSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "HEAD", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.18", "constraints.validation.error",
+				"HeadSectionTemplateId HeadSectionCode", "code.codeSystemName", "LOINC", "code.code", "10199-8",
+				"constraints.validation.info", "HeadSectionProblemEntry" });
+		addAnnotation(eyesSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "EYE", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.19", "constraints.validation.error",
+				"EyesSectionTemplateId EyesSectionCode", "code.codeSystemName", "LOINC", "code.code", "10197-2",
+				"constraints.validation.info", "EyesSectionProblemEntry" });
+		addAnnotation(earsNoseMouthThroatSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "EARS and NOSE and MOUTH and THROAT",
+				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.9.20", "constraints.validation.error",
+				"EarsNoseMouthThroatSectionTemplateId EarsNoseMouthThroatSectionCode", "code.codeSystemName", "LOINC",
+				"code.code", "11393-6", "constraints.validation.info", "EarsNoseMouthThroatSectionProblemEntry" });
+		addAnnotation(earsSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "EAR", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.21", "constraints.validation.error",
+				"EarsSectionTemplateId EarsSectionCode", "code.codeSystemName", "LOINC", "code.code", "10195-6",
+				"constraints.validation.info", "EarsSectionProblemEntry" });
+		addAnnotation(noseSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "NOSE", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.22", "constraints.validation.error",
+				"NoseSectionTemplateId NoseSectionCode", "code.codeSystemName", "LOINC", "code.code", "10203-8",
+				"constraints.validation.info", "NoseSectionProblemEntry" });
+		addAnnotation(mouthThroatTeethSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "MOUTH and THROAT and TEETH",
+				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.9.23", "constraints.validation.error",
+				"MouthThroatTeethSectionTemplateId MouthThroatTeethSectionCode", "code.codeSystemName", "LOINC",
+				"code.code", "10201-2", "constraints.validation.info", "MouthThroatTeethSectionProblemEntry" });
+		addAnnotation(neckSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "NECK", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.24", "constraints.validation.error",
+				"NeckSectionTemplateId NeckSectionCode", "code.codeSystemName", "LOINC", "code.code", "11411-6",
+				"constraints.validation.info", "NeckSectionProblemEntry" });
+		addAnnotation(endocrineSystemSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "ENDOCRINE SYSTEM", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.25", "constraints.validation.error",
+				"EndocrineSystemSectionTemplateId EndocrineSystemSectionCode", "code.codeSystemName", "LOINC",
+				"code.code", "29307-6", "constraints.validation.info", "EndocrineSystemSectionProblemEntry" });
+		addAnnotation(thoraxLungsSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "THORAX+LUNGS", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.26", "constraints.validation.error",
+				"ThoraxLungsSectionTemplateId ThoraxLungsSectionCode", "code.codeSystemName", "LOINC", "code.code",
+				"10207-9", "constraints.validation.info", "ThoraxLungsSectionProblemEntry" });
+		addAnnotation(chestWallSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "CHEST WALL", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.27", "constraints.validation.error",
+				"ChestWallSectionTemplateId ChestWallSectionCode", "code.codeSystemName", "LOINC", "code.code",
+				"11392-8", "constraints.validation.info", "ChestWallSectionProblemEntry" });
+		addAnnotation(breastSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.9.28",
+				"code.displayName", "BREASTS", "constraints.validation.error",
+				"BreastSectionTemplateId BreastSectionCode", "code.codeSystemName", "LOINC", "code.code", "10193-1" });
+		addAnnotation(heartSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "HEART", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.29", "constraints.validation.error",
+				"HeartSectionTemplateId HeartSectionCode", "code.codeSystemName", "LOINC", "code.code", "10200-4",
+				"constraints.validation.info", "HeartSectionProblemEntry" });
+		addAnnotation(respiratorySystemSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "RESPIRATORY SYSTEM",
+				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.9.30", "constraints.validation.error",
+				"RespiratorySystemSectionTemplateId RespiratorySystemSectionCode", "code.codeSystemName", "LOINC",
+				"code.code", "11412-4", "constraints.validation.info", "RespiratorySystemSectionProblemEntry" });
+		addAnnotation(abdomenSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "ABDOMEN", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.31", "constraints.validation.error",
+				"AbdomenSectionTemplateId AbdomenSectionCode", "code.codeSystemName", "LOINC", "code.code", "10191-5",
+				"constraints.validation.info", "AbdomenSectionProblemEntry" });
+		addAnnotation(lymphaticSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName",
+				"HEMATOLOGIC+LYMPHATIC+IMMUNOLOGIC SYSTEM", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.9.32",
+				"constraints.validation.error", "LymphaticSectionTemplateId LymphaticSectionCode",
+				"code.codeSystemName", "LOINC", "code.code", "11447-0", "constraints.validation.info",
+				"LymphaticSectionProblemEntry" });
+		addAnnotation(vesselsSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "VESSELS", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.33", "constraints.validation.error",
+				"VesselsSectionTemplateId VesselsSectionCode", "code.codeSystemName", "LOINC", "code.code", "10208-7",
+				"constraints.validation.info", "VesselsSectionProblemEntry" });
+		addAnnotation(musculoskeletalSystemSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "MUSCULOSKELETAL SYSTEM",
+				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.9.34", "constraints.validation.error",
+				"MusculoskeletalSystemSectionTemplateId MusculoskeletalSystemSectionCode", "code.codeSystemName",
+				"LOINC", "code.code", "11410-8", "constraints.validation.info",
+				"MusculoskeletalSystemSectionProblemEntry" });
+		addAnnotation(neurologicSystemSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "NEUROLOGIC SYSTEM", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.35", "constraints.validation.error",
+				"NeurologicSystemSectionTemplateId NeurologicSystemSectionCode", "code.codeSystemName", "LOINC",
+				"code.code", "10202-0", "constraints.validation.info", "NeurologicSystemSectionProblemEntry" });
+		addAnnotation(genitaliaSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "GENITALIA", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.36", "constraints.validation.error",
+				"GenitaliaSectionTemplateId GenitaliaSectionCode", "code.codeSystemName", "LOINC", "code.code",
+				"11400-9", "constraints.validation.info", "GenitaliaSectionProblemEntry" });
+		addAnnotation(rectumSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "RECTUM", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.9.37", "constraints.validation.error",
+				"RectumSectionTemplateId RectumSectionCode", "code.codeSystemName", "LOINC", "code.code", "10205-3",
+				"constraints.validation.info", "RectumSectionProblemEntry" });
+		addAnnotation(extremitiesSectionEClass, source, new String[] {
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.displayName", "EXTREMITIES", "templateId.root",
+				"1.3.6.1.4.1.19376.1.5.3.1.1.16.2.1", "constraints.validation.error",
+				"ExtremitiesSectionTemplateId ExtremitiesSectionCode", "code.codeSystemName", "LOINC", "code.code",
+				"10196-4", "constraints.validation.info", "ExtremitiesSectionProblemEntry" });
 		addAnnotation(reviewOfSystemsSectionEClass, source, new String[] {
 				"code.codeSystem", "2.16.840.1.113883.6.1", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.18",
 				"code.displayName", "REVIEW OF SYSTEMS", "constraints.validation.error",
@@ -5953,9 +7801,6 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addAnnotation(procedureEntryPlanOfCareActivityProcedureEClass, source, new String[] {
 				"contextDependent", "true", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.4.19",
 				"constraints.validation.error", "ProcedureEntryPlanOfCareActivityProcedureTemplateId" });
-		addAnnotation(payerEntryEClass, source, new String[] {
-				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.4.18", "constraints.validation.error",
-				"PayerEntryTemplateId" });
 		addAnnotation(phrExtractEClass, source, new String[] {
 				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.1.5", "constraints.validation.error",
 				"PHRExtractTemplateId" });
@@ -6070,6 +7915,14 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.4.13.4", "constraints.validation.error",
 				"IHESocialHistoryObservationTemplateId", "constraints.validation.info",
 				"IHESocialHistoryObservationValue" });
+		addAnnotation(
+			codedReasonForReferralSectionEClass,
+			source,
+			new String[] {
+					"templateId.root",
+					"1.3.6.1.4.1.19376.1.5.3.1.3.2",
+					"constraints.validation.error",
+					"CodedReasonForReferralSectionTemplateId CodedReasonForReferralSectionSimpleObservation CodedReasonForReferralSectionProblemEntry" });
 	}
 
 	/**
@@ -6103,10 +7956,10 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		addAnnotation(allergyIntoleranceEClass, source, new String[] {});
 		addAnnotation(vitalSignsOrganizerEClass, source, new String[] {});
 		addAnnotation(vitalSignObservationEClass, source, new String[] {});
+		addAnnotation(payerEntryEClass, source, new String[] {});
 		addAnnotation(advanceDirectiveObservationEClass, source, new String[] {});
 		addAnnotation(medicalSummaryEClass, source, new String[] {});
 		addAnnotation(dischargeSummaryEClass, source, new String[] {});
-		addAnnotation(payerEntryEClass, source, new String[] {});
 		addAnnotation(encounterActivityEClass, source, new String[] {});
 		addAnnotation(encounterPlanOfCareEClass, source, new String[] {});
 		addAnnotation(pregnancyObservationEClass, source, new String[] {});

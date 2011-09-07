@@ -12,6 +12,12 @@
     <generalization xmi:id="_1sbqcMfXEd6VjLXh4DcWSg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-payers.uml#_ynU6sMfXEd6VjLXh4DcWSg"/>
     </generalization>
+    <ownedAttribute xmi:id="_Cf2R0M9JEeCBIMy4xFlonQ" name="insuranceProvider">
+      <type xmi:type="uml:Class" href="../hitsp.uml#_ZNaLkDuHEd-B8KE6Jx0UNQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FABIgM9JEeCBIMy4xFlonQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FABIgc9JEeCBIMy4xFlonQ" value="1"/>
+      <association href="../hitsp.uml#_Cf2R0s9JEeCBIMy4xFlonQ"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_8Urw0MfXEd6VjLXh4DcWSg" base_Class="_DH404MfWEd6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.101" assigningAuthorityName="HITSP C83"/>
   <CDA:ConformsTo xmi:id="_rGLysFF6Ed-Lud-5SYZhMw" base_Generalization="_1sbqcMfXEd6VjLXh4DcWSg" requiresParentId="true"/>

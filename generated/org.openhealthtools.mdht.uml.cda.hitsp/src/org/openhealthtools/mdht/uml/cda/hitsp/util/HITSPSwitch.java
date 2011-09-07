@@ -43,6 +43,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.SupplyActivity;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.cdt.PastMedicalHistorySection;
+import org.openhealthtools.mdht.uml.cda.cdt.PhysicalExaminationSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
@@ -110,6 +111,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceConcern;
 import org.openhealthtools.mdht.uml.cda.ihe.CarePlanSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedAdvanceDirectivesSection;
+import org.openhealthtools.mdht.uml.cda.ihe.CodedReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedSurgeriesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedVitalSignsSection;
@@ -643,6 +645,32 @@ public class HITSPSwitch<T> {
 				}
 				return result;
 			}
+			case HITSPPackage.INSURANCE_PROVIDER: {
+				InsuranceProvider insuranceProvider = (InsuranceProvider) theEObject;
+				T result = caseInsuranceProvider(insuranceProvider);
+				if (result == null) {
+					result = caseCoverageEntry(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseCoverageActivity(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseCDA_Act(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseAct(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(insuranceProvider);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case HITSPPackage.SURGERIES_SECTION: {
 				SurgeriesSection surgeriesSection = (SurgeriesSection) theEObject;
 				T result = caseSurgeriesSection(surgeriesSection);
@@ -892,6 +920,12 @@ public class HITSPSwitch<T> {
 				ReasonForReferralSection reasonForReferralSection = (ReasonForReferralSection) theEObject;
 				T result = caseReasonForReferralSection(reasonForReferralSection);
 				if (result == null) {
+					result = caseCodedReasonForReferralSection(reasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseCDT_ReasonForReferralSection(reasonForReferralSection);
+				}
+				if (result == null) {
 					result = caseIHE_ReasonForReferralSection(reasonForReferralSection);
 				}
 				if (result == null) {
@@ -1052,6 +1086,9 @@ public class HITSPSwitch<T> {
 				PhysicalExamSection physicalExamSection = (PhysicalExamSection) theEObject;
 				T result = casePhysicalExamSection(physicalExamSection);
 				if (result == null) {
+					result = casePhysicalExaminationSection(physicalExamSection);
+				}
+				if (result == null) {
 					result = caseIHE_PhysicalExamSection(physicalExamSection);
 				}
 				if (result == null) {
@@ -1119,6 +1156,9 @@ public class HITSPSwitch<T> {
 				T result = caseAssessmentAndPlanSection(assessmentAndPlanSection);
 				if (result == null) {
 					result = caseIHE_AssessmentAndPlanSection(assessmentAndPlanSection);
+				}
+				if (result == null) {
+					result = caseCDT_AssessmentAndPlanSection(assessmentAndPlanSection);
 				}
 				if (result == null) {
 					result = caseSection(assessmentAndPlanSection);
@@ -1266,32 +1306,6 @@ public class HITSPSwitch<T> {
 				}
 				if (result == null) {
 					result = caseLanguageCommunication(languageSpoken);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case HITSPPackage.INSURANCE_PROVIDER: {
-				InsuranceProvider insuranceProvider = (InsuranceProvider) theEObject;
-				T result = caseInsuranceProvider(insuranceProvider);
-				if (result == null) {
-					result = caseCoverageEntry(insuranceProvider);
-				}
-				if (result == null) {
-					result = caseCoverageActivity(insuranceProvider);
-				}
-				if (result == null) {
-					result = caseCDA_Act(insuranceProvider);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(insuranceProvider);
-				}
-				if (result == null) {
-					result = caseAct(insuranceProvider);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(insuranceProvider);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -3562,6 +3576,36 @@ public class HITSPSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coded Reason For Referral Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coded Reason For Referral Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCodedReasonForReferralSection(CodedReasonForReferralSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Reason For Referral Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reason For Referral Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCDT_ReasonForReferralSection(org.openhealthtools.mdht.uml.cda.cdt.ReasonForReferralSection object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>History Of Present Illness</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3667,6 +3711,21 @@ public class HITSPSwitch<T> {
 	 */
 	public T caseIHE_MedicationsAdministeredSection(
 			org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Physical Examination Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Physical Examination Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePhysicalExaminationSection(PhysicalExaminationSection object) {
 		return null;
 	}
 

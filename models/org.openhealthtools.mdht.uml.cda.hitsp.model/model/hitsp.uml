@@ -269,6 +269,253 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ZNaLkDuHEd-B8KE6Jx0UNQ" name="InsuranceProvider">
+      <ownedRule xmi:id="_z4XJIM_6EeCBBsup3soRig" name="paymentProviders" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_6tTnsM_6EeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>Information for payment providers SHALL be recorded as a policy act inside the coverage act.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_m7vFMM_7EeCBBsup3soRig" name="paymentProviders" constrainedElement="_z4XJIM_6EeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_qcFmgM_7EeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>All Insurance Provider modules SHALL declare conformance to the IHE Payer Entry by including a &lt;templateID> element with the root attribute set to the value 1.3.6.1.4.1.19376.1.5.3.1.4.18</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_HTgTMM_7EeCBBsup3soRig" name="payerEntryID" constrainedElement="_z4XJIM_6EeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_NaxzcM_7EeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The id/@root attribute of a Payer Entry SHOULD be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings. A GUID MAY be used in place of the OID of the assigning authority. Implementers SHOULD use the same GUID for each instance of the same group or contract number</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_cqdCoM_7EeCBBsup3soRig" name="healthInsuranceType" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jiFo0M_7EeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The code/@code element SHOULD be present in a Payer Entry and SHALL be coded as 2.16.840.1.113883.3.88.12.3221.5.2, Health Insurance Type Value Set, 20081218, STATIC</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_8_IaMNAXEeCBBsup3soRig" name="insuranceInformation" constrainedElement="_R1oYsM_8EeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_EvTK4NAYEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>performer/@typeCode='PRF'/assignedEntity SHALL be present to record Health Insurance Information</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_R1oYsM_8EeCBBsup3soRig" name="insuranceInfoSourceID" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YwYkUM_8EeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>performer/@typeCode='PRF'/assignedEntity/id elements MAY be present. The ID element corresponds to the RxBIN and RxPCN fields found on pharmacy benefit cards. When a national payer identifier is standardized, it would also go in this field.&#xD;&#xA;The OID for RxBIN is 2.16.840.1.113883.3.88.3.1. The OID for an RxPCN is 2.16.840.1.113883.3.88.3.1 plus the numeric identifier used in the RxBIN.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="__QcJwM_8EeCBBsup3soRig" name="insuranceInfoSourceAddr" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ozCTIM_9EeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The performer/@typeCode='PRF'/assignedEntity/addr MAY be present.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_A56MgM_-EeCBBsup3soRig" name="insuranceInfoSourceAddrState" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_A56Mgc_-EeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The state part of performer/@typeCode='PRF'/assignedEntity/addr SHALL be recorded using 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_HXQqcM_-EeCBBsup3soRig" name="insuranceInfoSourceAddrCountry" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_HXQqcc_-EeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The country part of performer/@typeCode='PRF'/assignedEntity/addr SHALL be recorded using 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_H0q_MM_-EeCBBsup3soRig" name="insuranceInfoSourceAddrPostal" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_H0q_Mc_-EeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The state part of performer/@typeCode='PRF'/assignedEntity/addr SHALL be recorded using 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_Uf77cM__EeCBBsup3soRig" name="healthPlanCoverageStartTime" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_3aGYQM__EeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The date when the plan began covering the member SHOULD be recorded in the &lt;low> element of the &lt;time> element beneath the participant/@typeCode='COV' element</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_TH8_YNAAEeCBBsup3soRig" name="healthPlanCoverageStopTime" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TH8_YdAAEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The date when the plan stops covering the member SHOULD be recorded in the &lt;high> element of the &lt;time> element beneath the participant/@typeCode='COV' element</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_4Eu-wNABEeCBBsup3soRig" name="memberId" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_EjPt4NACEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The member identifier number SHALL be recorded in the extension attribute of the &lt;id> element found in the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'> element</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_Hn5xsNACEeCBBsup3soRig" name="memberIdRoot" constrainedElement="_4Eu-wNABEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_KEl2kNACEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The root attribute of a participant/@typeCode='COV'/participantRole/@classCode='PAT'/id element SHOULD be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_LUsMgNACEeCBBsup3soRig" name="memberIdRootGUID" constrainedElement="_Hn5xsNACEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_MM94UNACEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>A GUID MAY be used in place of the OID of the assigning authority</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_OnuqkNACEeCBBsup3soRig" name="memberIdRootGUIDInstance" constrainedElement="_LUsMgNACEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WYMWMNACEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>Implementers SHOULD use the same GUID for each instance of a member identifier from the same health plan</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_gCei0NAFEeCBBsup3soRig" name="relationshipToSubscriber" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_luki8NAFEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The relationship to the subscriber SHALL be present and SHALL be recorded in the &lt;code> element underneath the &lt;participantRole> element recording the member information</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_nusAkNAFEeCBBsup3soRig" name="relationshipToSubscriberCodeSystem" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yZGU0NAFEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The Patient Relationship to Subscriber SHALL be coded as 2.16.840.1.113883.1.11.18877, Coverage Role Type Value, V3NE08, STATIC</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_p9TvENAXEeCBBsup3soRig" name="patientInformation" constrainedElement="_PsPewNAGEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_w7ebENAXEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>participant/@typeCode='COV'/participantRole/@classCode='PAT' SHALL be present to record Patient information.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_PsPewNAGEeCBBsup3soRig" name="patientAddressState" constrainedElement="_nusAkNAFEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XCGSANAGEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The state part of participant/@typeCode='COV'/participantRole/@classCode='PAT'/addr element SHALL be coded as 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_x_QcANAGEeCBBsup3soRig" name="patientAddressCountry" constrainedElement="_nusAkNAFEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_x_QcAdAGEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The state part of participant/@typeCode='COV'/participantRole/@classCode='PAT'/addr element SHALL be coded as 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_yXtYQNAGEeCBBsup3soRig" name="patientAddressPostal" constrainedElement="_nusAkNAFEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yXtYQdAGEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The state part of participant/@typeCode='COV'/participantRole/@classCode='PAT'/addr element SHALL be coded as 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_EvC78NAHEeCBBsup3soRig" name="patientName" constrainedElement="_yXtYQNAGEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Nawu4NAHEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>If the member name as recorded by the health plan differs from the patient name as recorded in the registration/medication summary (e.g., due to marriage or for other reasons), then the member name SHALL be recorded in the &lt;name> element of the &lt;playingEntity> element beneath the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'> element</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_P5jskNAHEeCBBsup3soRig" name="patientDateOfBirth" constrainedElement="_EvC78NAHEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SK42ANAHEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>If the member date of birth as recorded by the health plan differs from the patient date of birth as recorded in the registration/medication summary, then the member date of birth SHALL be recorded in the &lt;sdtc:birthTime> element of the &lt;playingEntity> element beneath the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'> element</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_qNUCUNAJEeCBBsup3soRig" name="financialResponsibilityPartyType" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZNduoNAMEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>performer/assignedEntity/code/@code attribute SHALL be coded as 2.16.840.1.113883.1.11.10416, Financially Responsible Party Type Value Set, V3NE08, STATIC</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_i8h08NAMEeCBBsup3soRig" name="financialResponsibilityPartyTypePP" constrainedElement="_qNUCUNAJEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lQsP8NAMEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>When the code of the encompassing act is PP, the code attribute value SHALL be set to GUAR or PAT to represent a guarantor or self-paying patient respectively</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_mFgYENAMEeCBBsup3soRig" name="financialResponsibilityPartyTypeNotPP" constrainedElement="_i8h08NAMEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oDqt4NAMEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The code attribute SHALL be set to PAYOR when the code of the encompassing act is other than PP</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_UZRisNATEeCBBsup3soRig" name="subscriberInformation" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UZRisdATEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The &lt;participant/@typeCode='HLD'> element SHOULD be present to record Subscriber Information.</body>
+          <body>When the Subscriber is the patient, the &lt;participant/@typeCode='HLD'> element describing the subscriber SHALL NOT be present. This information will be recorded instead in the data elements used to record member information</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_tXKn0NAMEeCBBsup3soRig" name="subscriberInformationPatient" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_0ZNHMNAMEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>When the Subscriber is the patient, the &lt;participant/@typeCode='HLD'> element describing the subscriber SHALL NOT be present. This information will be recorded instead in the data elements used to record member information</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_254UMNAMEeCBBsup3soRig" name="subscriberId" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UaavANAPEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The participant/@typeCode='HLD'/participantRole/id element SHALL be present.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_VujQYNAPEeCBBsup3soRig" name="subscriberIdRoot" constrainedElement="_254UMNAMEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_0sST4NAPEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The root attribute SHOULD be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings. A GUID MAY be used in place of the OID of the assigning authority. Implementers SHOULD use the same GUID for each instance of a subscriber identifier from the same health plan</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_f6vv4NAVEeCBBsup3soRig" name="subscriberAddress" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_f6vv4dAVEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The participant/@typeCode='HLD'/participantRole/addr element SHALL be present to record the Subscriber Address.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_nHzMcNAVEeCBBsup3soRig" name="subscriberAddressState" constrainedElement="_f6vv4NAVEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_sGLK8NAVEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The state part of participant/@typeCode='HLD'/participantRole/addr element SHALL be coded as  2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_pLT8UNAVEeCBBsup3soRig" name="subscriberAddressCountry" constrainedElement="_nHzMcNAVEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_y_40wNAVEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The country part of participant/@typeCode='HLD'/participantRole/addr element SHALL be coded as 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_vG2GoNAVEeCBBsup3soRig" name="subscriberAddressPostal" constrainedElement="_pLT8UNAVEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_zXjG0NAVEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The postal code part of participant/@typeCode='HLD'/participantRole/addr element SHALL be coded as 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_3zShENAPEeCBBsup3soRig" name="subscriberDateOfBirth" constrainedElement="_VujQYNAPEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_-dMNQNAPEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The subscriber date of birth SHALL be recorded in the &lt;sdtc:birthTime> element of the &lt;playingEntity> element beneath the &lt;performer/@typeCode='HLD'/participantRole> element.</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_nUQbcNASEeCBBsup3soRig" name="guarantorInformation" constrainedElement="_3zShENAPEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QidCINATEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>performer element SHALL be present to record Guarantor Information</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_hO80oNATEeCBBsup3soRig" name="financialResponsibilityPartyAddress" constrainedElement="_nUQbcNASEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_BQA9YNAUEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>performer/assignedEntity/addr SHOULD be present to record Financial Responsibility Party Address</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_j-AmcNAUEeCBBsup3soRig" name="financialResponsibilityPartyAddressState" constrainedElement="_hO80oNATEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_sJQJkNAUEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The state part of a performer/assignedEntity/addr/ element SHALL be coded as 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_lPQL4NAUEeCBBsup3soRig" name="financialResponsibilityPartyAddressCountry" constrainedElement="_j-AmcNAUEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uY0YcNAUEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The country part of a performer/assignedEntity/addr/ element SHALL be coded as 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_nBgzsNAUEeCBBsup3soRig" name="financialResponsibilityPartyAddressPostal" constrainedElement="_lPQL4NAUEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_vrikkNAUEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The postal code part of a performer/assignedEntity/addr/ element SHALL be coded as 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_ZNaLkTuHEd-B8KE6Jx0UNQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-payers.uml#_PMrjADXgEd-gpLhSMS7jpQ"/>
       </generalization>
@@ -1047,6 +1294,62 @@ resolved</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_YvgwstJkEeCJq4tpS2QhbQ" memberEnd="_YvgwsNJkEeCJq4tpS2QhbQ _YvhXwNJkEeCJq4tpS2QhbQ">
       <ownedEnd xmi:id="_YvhXwNJkEeCJq4tpS2QhbQ" type="_WwjwsNJkEeCJq4tpS2QhbQ" association="_YvgwstJkEeCJq4tpS2QhbQ"/>
     </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Cf2R0s9JEeCBIMy4xFlonQ">
+      <ownedEnd xmi:id="_Cf2R089JEeCBIMy4xFlonQ" association="_Cf2R0s9JEeCBIMy4xFlonQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-payers.uml#_DH404MfWEd6VjLXh4DcWSg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-payers.uml#_Cf2R0M9JEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_Cf2R089JEeCBIMy4xFlonQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_aWmZos9LEeCBIMy4xFlonQ">
+      <ownedEnd xmi:id="_aWmZo89LEeCBIMy4xFlonQ" association="_aWmZos9LEeCBIMy4xFlonQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-reasonForReferral.uml#_bX2UoMfdEd6VjLXh4DcWSg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-reasonForReferral.uml#_aWmZoM9LEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_aWmZo89LEeCBIMy4xFlonQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fcac4s9LEeCBIMy4xFlonQ">
+      <ownedEnd xmi:id="_fcac489LEeCBIMy4xFlonQ" association="_fcac4s9LEeCBIMy4xFlonQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-reasonForReferral.uml#_bX2UoMfdEd6VjLXh4DcWSg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-reasonForReferral.uml#_fcac4M9LEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_fcac489LEeCBIMy4xFlonQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Jtxwws9MEeCBIMy4xFlonQ">
+      <ownedEnd xmi:id="_Jtxww89MEeCBIMy4xFlonQ" association="_Jtxwws9MEeCBIMy4xFlonQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-physicalExam.uml#_XaZ6wMf1Ed6VjLXh4DcWSg"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-physicalExam.uml#_JtxwwM9MEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_Jtxww89MEeCBIMy4xFlonQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eW32gs9eEeCBIMy4xFlonQ">
+      <ownedEnd xmi:id="_eW32g89eEeCBIMy4xFlonQ" association="_eW32gs9eEeCBIMy4xFlonQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-assessmentAndPlan.uml#_ml82oMifEd6mWrHPmrIIfQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_eW32gM9eEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_eW32g89eEeCBIMy4xFlonQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hMq-8s9eEeCBIMy4xFlonQ">
+      <ownedEnd xmi:id="_hMq-889eEeCBIMy4xFlonQ" association="_hMq-8s9eEeCBIMy4xFlonQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-assessmentAndPlan.uml#_ml82oMifEd6mWrHPmrIIfQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_hMq-8M9eEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_hMq-889eEeCBIMy4xFlonQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ilo9As9eEeCBIMy4xFlonQ">
+      <ownedEnd xmi:id="_ilo9A89eEeCBIMy4xFlonQ" association="_ilo9As9eEeCBIMy4xFlonQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-assessmentAndPlan.uml#_ml82oMifEd6mWrHPmrIIfQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_ilo9AM9eEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_ilo9A89eEeCBIMy4xFlonQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lAEYEs9eEeCBIMy4xFlonQ">
+      <ownedEnd xmi:id="_lAEYE89eEeCBIMy4xFlonQ" association="_lAEYEs9eEeCBIMy4xFlonQ">
+        <type xmi:type="uml:Class" href=".controlled/hitsp-assessmentAndPlan.uml#_ml82oMifEd6mWrHPmrIIfQ"/>
+      </ownedEnd>
+      <memberEnd href=".controlled/hitsp-assessmentAndPlan.uml#_lAEYEM9eEeCBIMy4xFlonQ"/>
+      <memberEnd href="#_lAEYE89eEeCBIMy4xFlonQ"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -1362,4 +1665,53 @@ resolved</body>
   <CDA:AssociationValidation xmi:id="_LSI4gNJXEeCZxdqWGSM1Gw" severity="INFO" base_Association="_Fp1MMdJXEeCZxdqWGSM1Gw"/>
   <CDA:AssociationValidation xmi:id="_8LtdMNJcEeCJq4tpS2QhbQ" base_Association="_5pxr8NJcEeCJq4tpS2QhbQ"/>
   <CDA:AssociationValidation xmi:id="_aRVIwNJkEeCJq4tpS2QhbQ" base_Association="_YvgwstJkEeCJq4tpS2QhbQ"/>
+  <CDA:AssociationValidation xmi:id="_FxUpoM9JEeCBIMy4xFlonQ" base_Association="_Cf2R0s9JEeCBIMy4xFlonQ"/>
+  <CDA:AssociationValidation xmi:id="_dOB5wM9LEeCBIMy4xFlonQ" severity="INFO" base_Association="_aWmZos9LEeCBIMy4xFlonQ"/>
+  <CDA:AssociationValidation xmi:id="_gobkEM9LEeCBIMy4xFlonQ" severity="INFO" base_Association="_fcac4s9LEeCBIMy4xFlonQ"/>
+  <CDA:AssociationValidation xmi:id="_K6ZU4M9MEeCBIMy4xFlonQ" base_Association="_Jtxwws9MEeCBIMy4xFlonQ"/>
+  <CDA:AssociationValidation xmi:id="_f3R5UM9eEeCBIMy4xFlonQ" severity="INFO" base_Association="_eW32gs9eEeCBIMy4xFlonQ"/>
+  <CDA:AssociationValidation xmi:id="_nsWYIM9eEeCBIMy4xFlonQ" severity="INFO" base_Association="_hMq-8s9eEeCBIMy4xFlonQ"/>
+  <CDA:AssociationValidation xmi:id="_oD25MM9eEeCBIMy4xFlonQ" severity="INFO" base_Association="_ilo9As9eEeCBIMy4xFlonQ"/>
+  <CDA:AssociationValidation xmi:id="_obzfIM9eEeCBIMy4xFlonQ" severity="INFO" base_Association="_lAEYEs9eEeCBIMy4xFlonQ"/>
+  <CDA:ConstraintValidation xmi:id="_ChCCsM_7EeCBBsup3soRig" base_Constraint="_z4XJIM_6EeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_3_jykM_7EeCBBsup3soRig" base_Constraint="_m7vFMM_7EeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_4on9sM_7EeCBBsup3soRig" severity="WARNING" base_Constraint="_HTgTMM_7EeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_5KQEEM_7EeCBBsup3soRig" base_Constraint="_cqdCoM_7EeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_-WS1sM_8EeCBBsup3soRig" severity="INFO" base_Constraint="_R1oYsM_8EeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_FnR6kM_-EeCBBsup3soRig" severity="INFO" base_Constraint="__QcJwM_8EeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_GO_a0M_-EeCBBsup3soRig" base_Constraint="_A56MgM_-EeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_URvj4M_-EeCBBsup3soRig" base_Constraint="_HXQqcM_-EeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_Uq9VIM_-EeCBBsup3soRig" base_Constraint="_H0q_MM_-EeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_Rwv74NAAEeCBBsup3soRig" severity="WARNING" base_Constraint="_Uf77cM__EeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_aO9eUNAAEeCBBsup3soRig" severity="WARNING" base_Constraint="_TH8_YNAAEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_FarFINACEeCBBsup3soRig" base_Constraint="_4Eu-wNABEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_Mj7m0NACEeCBBsup3soRig" severity="WARNING" base_Constraint="_Hn5xsNACEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_M5dx8NACEeCBBsup3soRig" severity="INFO" base_Constraint="_LUsMgNACEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_WjPIkNACEeCBBsup3soRig" severity="WARNING" base_Constraint="_OnuqkNACEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_l-AtINAFEeCBBsup3soRig" base_Constraint="_gCei0NAFEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_4rtF4NAGEeCBBsup3soRig" base_Constraint="_nusAkNAFEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_5SBfANAGEeCBBsup3soRig" base_Constraint="_PsPewNAGEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_5nicANAGEeCBBsup3soRig" base_Constraint="_x_QcANAGEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_5-6aMNAGEeCBBsup3soRig" base_Constraint="_yXtYQNAGEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_XB5BMNAHEeCBBsup3soRig" base_Constraint="_EvC78NAHEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_XU9uMNAHEeCBBsup3soRig" base_Constraint="_P5jskNAHEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_feaIQNAMEeCBBsup3soRig" base_Constraint="_qNUCUNAJEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_1PDxINAMEeCBBsup3soRig" base_Constraint="_i8h08NAMEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_1ndqENAMEeCBBsup3soRig" base_Constraint="_mFgYENAMEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_19eWUNAMEeCBBsup3soRig" base_Constraint="_tXKn0NAMEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_UluAENAPEeCBBsup3soRig" base_Constraint="_254UMNAMEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_1lBSsNAPEeCBBsup3soRig" severity="WARNING" base_Constraint="_VujQYNAPEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="__BqMQNAPEeCBBsup3soRig" base_Constraint="_3zShENAPEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_YoVkINATEeCBBsup3soRig" severity="WARNING" base_Constraint="_UZRisNATEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_vgIbQNATEeCBBsup3soRig" base_Constraint="_nUQbcNASEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_jR9_0NAUEeCBBsup3soRig" severity="WARNING" base_Constraint="_hO80oNATEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_3tQYQNAUEeCBBsup3soRig" base_Constraint="_j-AmcNAUEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_4Bos0NAUEeCBBsup3soRig" base_Constraint="_lPQL4NAUEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_4WUjYNAUEeCBBsup3soRig" base_Constraint="_nBgzsNAUEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_8Y7nwNAVEeCBBsup3soRig" base_Constraint="_f6vv4NAVEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_8vGsENAVEeCBBsup3soRig" base_Constraint="_nHzMcNAVEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_9E-OYNAVEeCBBsup3soRig" base_Constraint="_pLT8UNAVEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_9dElUNAVEeCBBsup3soRig" base_Constraint="_vG2GoNAVEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_xH01ANAXEeCBBsup3soRig" base_Constraint="_p9TvENAXEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_E7DH4NAYEeCBBsup3soRig" base_Constraint="_8_IaMNAXEeCBBsup3soRig"/>
 </xmi:XMI>
