@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.hitsp.domain;
 
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -69,6 +70,130 @@ public interface IAssessmentAndPlanSection {
 	 * @generated
 	 */
 	void setCDAType(Section value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::AssessmentAndPlanSection::medication.
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Medication)).oclAsType(domain::Medication)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IMedication> getMedications();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Assessment And Plan Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Medication (templateId: 2.16.840.1.113883.3.88.11.83.8).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IMedication addMedication();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Assessment And Plan Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Medication (templateId: 2.16.840.1.113883.3.88.11.83.8).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IAssessmentAndPlanSection addMedication(IMedication value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::AssessmentAndPlanSection::immunization.
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(domain::Immunization)).oclAsType(domain::Immunization)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IImmunization> getImmunizations();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Assessment And Plan Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Immunization (templateId: 2.16.840.1.113883.3.88.11.83.13).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IImmunization addImmunization();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Assessment And Plan Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Immunization (templateId: 2.16.840.1.113883.3.88.11.83.13).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IAssessmentAndPlanSection addImmunization(IImmunization value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::AssessmentAndPlanSection::encounterEntry.
+	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(domain::Encounter)).oclAsType(domain::Encounter)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IEncounter> getEncounterEntries();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Assessment And Plan Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Encounter (templateId: 2.16.840.1.113883.3.88.11.83.16).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IEncounter addEncounterEntry();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Assessment And Plan Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Encounter (templateId: 2.16.840.1.113883.3.88.11.83.16).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IAssessmentAndPlanSection addEncounterEntry(IEncounter value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * hitsp::AssessmentAndPlanSection::procedureEntry.
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(domain::Procedure)).oclAsType(domain::Procedure)
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	EList<IProcedure> getProcedureEntries();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Assessment And Plan Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Procedure (templateId: 2.16.840.1.113883.3.88.11.83.17).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IProcedure addProcedureEntry();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * HITSP Assessment And Plan Section MAY contain zero or more [0..*] entry, such that Contains exactly one [1..1] Procedure (templateId: 2.16.840.1.113883.3.88.11.83.17).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IAssessmentAndPlanSection addProcedureEntry(IProcedure value);
 
 	/**
 	 * <!-- begin-user-doc -->

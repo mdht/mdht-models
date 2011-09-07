@@ -21,6 +21,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *     The Vital Signs Section contains information documenting the patient vital signs. 
  * </p>
  * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
+ * <p>
+ *     The vital signs section shall contain a narrative description of the measurement results of a patient's vital signs.
+ * </p>
+ * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <!-- end-model-doc -->
  *
  * <p>

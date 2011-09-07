@@ -102,6 +102,15 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isSetCDAType() {
+		return cDAType != null;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getTitle() <em>Get Title</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -282,8 +291,8 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	 * @generated
 	 */
 	public IVitalSignsOrganizer addVitalSignsOrganizer() {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("VitalSignsOrganizer");
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
 		try {
@@ -368,7 +377,7 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.VITAL_SIGNS_SECTION__CDA_TYPE:
-				return cDAType != null;
+				return isSetCDAType();
 		}
 		return super.eIsSet(featureID);
 	}

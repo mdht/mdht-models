@@ -328,20 +328,6 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass coverageEntryEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass policyActivityEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass payerEntityEClass = null;
 
 	/**
@@ -615,6 +601,174 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass generalAppearanceSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass visibleImplantedMedicalDevicesSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass integumentarySystemSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass headSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass eyesSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass earsNoseMouthThroatSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass earsSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass noseSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mouthThroatTeethSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass neckSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass endocrineSystemSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass thoraxLungsSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass chestWallSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass breastSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass heartSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass respiratorySystemSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass abdomenSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass lymphaticSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass vesselsSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass musculoskeletalSystemSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass neurologicSystemSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass genitaliaSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass rectumSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass extremitiesSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass reviewOfSystemsSectionEClass = null;
 
 	/**
@@ -735,6 +889,13 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * @generated
 	 */
 	private EClass insuranceProviderEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass payerEntryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1778,50 +1939,6 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCoverageEntry() {
-		if (coverageEntryEClass == null) {
-			coverageEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				60);
-		}
-		return coverageEntryEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getCoverageEntry_CDAType() {
-		return (EReference) getCoverageEntry().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getPolicyActivity() {
-		if (policyActivityEClass == null) {
-			policyActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				61);
-		}
-		return policyActivityEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getPolicyActivity_CDAType() {
-		return (EReference) getPolicyActivity().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getPayerEntity() {
 		if (payerEntityEClass == null) {
 			payerEntityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
@@ -2261,15 +2378,6 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getVitalSignsOrganizer_CDAType() {
-		return (EReference) getVitalSignsOrganizer().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getVitalSignObservation() {
 		if (vitalSignObservationEClass == null) {
 			vitalSignObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
@@ -2635,10 +2743,538 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getGeneralAppearanceSection() {
+		if (generalAppearanceSectionEClass == null) {
+			generalAppearanceSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				97);
+		}
+		return generalAppearanceSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getGeneralAppearanceSection_CDAType() {
+		return (EReference) getGeneralAppearanceSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVisibleImplantedMedicalDevicesSection() {
+		if (visibleImplantedMedicalDevicesSectionEClass == null) {
+			visibleImplantedMedicalDevicesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IDomainPackage.eNS_URI).getEClassifiers().get(98);
+		}
+		return visibleImplantedMedicalDevicesSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getVisibleImplantedMedicalDevicesSection_CDAType() {
+		return (EReference) getVisibleImplantedMedicalDevicesSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getIntegumentarySystemSection() {
+		if (integumentarySystemSectionEClass == null) {
+			integumentarySystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				99);
+		}
+		return integumentarySystemSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getIntegumentarySystemSection_CDAType() {
+		return (EReference) getIntegumentarySystemSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHeadSection() {
+		if (headSectionEClass == null) {
+			headSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				100);
+		}
+		return headSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHeadSection_CDAType() {
+		return (EReference) getHeadSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEyesSection() {
+		if (eyesSectionEClass == null) {
+			eyesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				101);
+		}
+		return eyesSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEyesSection_CDAType() {
+		return (EReference) getEyesSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEarsNoseMouthThroatSection() {
+		if (earsNoseMouthThroatSectionEClass == null) {
+			earsNoseMouthThroatSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				102);
+		}
+		return earsNoseMouthThroatSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEarsNoseMouthThroatSection_CDAType() {
+		return (EReference) getEarsNoseMouthThroatSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEarsSection() {
+		if (earsSectionEClass == null) {
+			earsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				103);
+		}
+		return earsSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEarsSection_CDAType() {
+		return (EReference) getEarsSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNoseSection() {
+		if (noseSectionEClass == null) {
+			noseSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				104);
+		}
+		return noseSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getNoseSection_CDAType() {
+		return (EReference) getNoseSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMouthThroatTeethSection() {
+		if (mouthThroatTeethSectionEClass == null) {
+			mouthThroatTeethSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				105);
+		}
+		return mouthThroatTeethSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMouthThroatTeethSection_CDAType() {
+		return (EReference) getMouthThroatTeethSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNeckSection() {
+		if (neckSectionEClass == null) {
+			neckSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				106);
+		}
+		return neckSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getNeckSection_CDAType() {
+		return (EReference) getNeckSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEndocrineSystemSection() {
+		if (endocrineSystemSectionEClass == null) {
+			endocrineSystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				107);
+		}
+		return endocrineSystemSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEndocrineSystemSection_CDAType() {
+		return (EReference) getEndocrineSystemSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getThoraxLungsSection() {
+		if (thoraxLungsSectionEClass == null) {
+			thoraxLungsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				108);
+		}
+		return thoraxLungsSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getThoraxLungsSection_CDAType() {
+		return (EReference) getThoraxLungsSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getChestWallSection() {
+		if (chestWallSectionEClass == null) {
+			chestWallSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				109);
+		}
+		return chestWallSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getChestWallSection_CDAType() {
+		return (EReference) getChestWallSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getBreastSection() {
+		if (breastSectionEClass == null) {
+			breastSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				110);
+		}
+		return breastSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getBreastSection_CDAType() {
+		return (EReference) getBreastSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHeartSection() {
+		if (heartSectionEClass == null) {
+			heartSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				111);
+		}
+		return heartSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHeartSection_CDAType() {
+		return (EReference) getHeartSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getRespiratorySystemSection() {
+		if (respiratorySystemSectionEClass == null) {
+			respiratorySystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				112);
+		}
+		return respiratorySystemSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getRespiratorySystemSection_CDAType() {
+		return (EReference) getRespiratorySystemSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAbdomenSection() {
+		if (abdomenSectionEClass == null) {
+			abdomenSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				113);
+		}
+		return abdomenSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAbdomenSection_CDAType() {
+		return (EReference) getAbdomenSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getLymphaticSection() {
+		if (lymphaticSectionEClass == null) {
+			lymphaticSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				114);
+		}
+		return lymphaticSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getLymphaticSection_CDAType() {
+		return (EReference) getLymphaticSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVesselsSection() {
+		if (vesselsSectionEClass == null) {
+			vesselsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				115);
+		}
+		return vesselsSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getVesselsSection_CDAType() {
+		return (EReference) getVesselsSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMusculoskeletalSystemSection() {
+		if (musculoskeletalSystemSectionEClass == null) {
+			musculoskeletalSystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				116);
+		}
+		return musculoskeletalSystemSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMusculoskeletalSystemSection_CDAType() {
+		return (EReference) getMusculoskeletalSystemSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNeurologicSystemSection() {
+		if (neurologicSystemSectionEClass == null) {
+			neurologicSystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				117);
+		}
+		return neurologicSystemSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getNeurologicSystemSection_CDAType() {
+		return (EReference) getNeurologicSystemSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGenitaliaSection() {
+		if (genitaliaSectionEClass == null) {
+			genitaliaSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				118);
+		}
+		return genitaliaSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getGenitaliaSection_CDAType() {
+		return (EReference) getGenitaliaSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getRectumSection() {
+		if (rectumSectionEClass == null) {
+			rectumSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				119);
+		}
+		return rectumSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getRectumSection_CDAType() {
+		return (EReference) getRectumSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getExtremitiesSection() {
+		if (extremitiesSectionEClass == null) {
+			extremitiesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				120);
+		}
+		return extremitiesSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getExtremitiesSection_CDAType() {
+		return (EReference) getExtremitiesSection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getReviewOfSystemsSection() {
 		if (reviewOfSystemsSectionEClass == null) {
 			reviewOfSystemsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				97);
+				121);
 		}
 		return reviewOfSystemsSectionEClass;
 	}
@@ -2660,7 +3296,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getHospitalCourseSection() {
 		if (hospitalCourseSectionEClass == null) {
 			hospitalCourseSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				98);
+				122);
 		}
 		return hospitalCourseSectionEClass;
 	}
@@ -2682,7 +3318,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getAssessmentAndPlanSection() {
 		if (assessmentAndPlanSectionEClass == null) {
 			assessmentAndPlanSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				99);
+				123);
 		}
 		return assessmentAndPlanSectionEClass;
 	}
@@ -2981,7 +3617,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getLanguageSpoken() {
 		if (languageSpokenEClass == null) {
 			languageSpokenEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				100);
+				124);
 		}
 		return languageSpokenEClass;
 	}
@@ -3003,7 +3639,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getInsuranceProvider() {
 		if (insuranceProviderEClass == null) {
 			insuranceProviderEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				101);
+				60);
 		}
 		return insuranceProviderEClass;
 	}
@@ -3022,10 +3658,32 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getPayerEntry() {
+		if (payerEntryEClass == null) {
+			payerEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
+				61);
+		}
+		return payerEntryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPayerEntry_CDAType() {
+		return (EReference) getPayerEntry().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getHealthcareProvider() {
 		if (healthcareProviderEClass == null) {
 			healthcareProviderEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				102);
+				125);
 		}
 		return healthcareProviderEClass;
 	}
@@ -3047,7 +3705,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationNormalDose() {
 		if (medicationNormalDoseEClass == null) {
 			medicationNormalDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				103);
+				126);
 		}
 		return medicationNormalDoseEClass;
 	}
@@ -3060,7 +3718,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationSplitDose() {
 		if (medicationSplitDoseEClass == null) {
 			medicationSplitDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				104);
+				127);
 		}
 		return medicationSplitDoseEClass;
 	}
@@ -3073,7 +3731,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationTaperedDose() {
 		if (medicationTaperedDoseEClass == null) {
 			medicationTaperedDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				105);
+				128);
 		}
 		return medicationTaperedDoseEClass;
 	}
@@ -3086,7 +3744,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationConditionalDose() {
 		if (medicationConditionalDoseEClass == null) {
 			medicationConditionalDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				106);
+				129);
 		}
 		return medicationConditionalDoseEClass;
 	}
@@ -3099,7 +3757,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationCombinationMedication() {
 		if (medicationCombinationMedicationEClass == null) {
 			medicationCombinationMedicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				IDomainPackage.eNS_URI).getEClassifiers().get(107);
+				IDomainPackage.eNS_URI).getEClassifiers().get(130);
 		}
 		return medicationCombinationMedicationEClass;
 	}
@@ -3112,7 +3770,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getSupportGuardian() {
 		if (supportGuardianEClass == null) {
 			supportGuardianEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				108);
+				131);
 		}
 		return supportGuardianEClass;
 	}
@@ -3134,7 +3792,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getSupportParticipant() {
 		if (supportParticipantEClass == null) {
 			supportParticipantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				109);
+				132);
 		}
 		return supportParticipantEClass;
 	}
@@ -3156,7 +3814,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getUnstructuredDocument() {
 		if (unstructuredDocumentEClass == null) {
 			unstructuredDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				110);
+				133);
 		}
 		return unstructuredDocumentEClass;
 	}
@@ -3178,7 +3836,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getScanOriginalAuthor() {
 		if (scanOriginalAuthorEClass == null) {
 			scanOriginalAuthorEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				111);
+				134);
 		}
 		return scanOriginalAuthorEClass;
 	}
@@ -3200,7 +3858,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getScanningDevice() {
 		if (scanningDeviceEClass == null) {
 			scanningDeviceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				112);
+				135);
 		}
 		return scanningDeviceEClass;
 	}
@@ -3222,7 +3880,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getScanDataEnterer() {
 		if (scanDataEntererEClass == null) {
 			scanDataEntererEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				113);
+				136);
 		}
 		return scanDataEntererEClass;
 	}
@@ -3244,7 +3902,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getMedicationInformation() {
 		if (medicationInformationEClass == null) {
 			medicationInformationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				114);
+				137);
 		}
 		return medicationInformationEClass;
 	}
@@ -3266,7 +3924,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getUnstructuredOrScannedDocument() {
 		if (unstructuredOrScannedDocumentEClass == null) {
 			unstructuredOrScannedDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				IDomainPackage.eNS_URI).getEClassifiers().get(115);
+				IDomainPackage.eNS_URI).getEClassifiers().get(138);
 		}
 		return unstructuredOrScannedDocumentEClass;
 	}
@@ -3279,7 +3937,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getReferralSummary() {
 		if (referralSummaryEClass == null) {
 			referralSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				116);
+				139);
 		}
 		return referralSummaryEClass;
 	}
@@ -3301,7 +3959,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getDischargeSummary() {
 		if (dischargeSummaryEClass == null) {
 			dischargeSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				117);
+				140);
 		}
 		return dischargeSummaryEClass;
 	}
@@ -3323,7 +3981,7 @@ public class DomainPackageImpl extends EPackageImpl implements IDomainPackage {
 	public EClass getDischargeDiet() {
 		if (dischargeDietEClass == null) {
 			dischargeDietEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IDomainPackage.eNS_URI).getEClassifiers().get(
-				118);
+				141);
 		}
 		return dischargeDietEClass;
 	}

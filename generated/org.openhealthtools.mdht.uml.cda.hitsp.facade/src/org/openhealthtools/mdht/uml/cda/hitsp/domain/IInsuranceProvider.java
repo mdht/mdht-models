@@ -90,32 +90,32 @@ public interface IInsuranceProvider {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * ccd::CoverageActivity::policyActivity.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PolicyActivity)).oclAsType(domain::PolicyActivity)
+	 * ihe::CoverageEntry::payerEntry.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PayerEntry)).oclAsType(domain::PayerEntry)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<IPolicyActivity> getPolicyActivities();
+	EList<IPayerEntry> getPayerEntries();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Coverage Activity SHALL contain at least one [1..*] entryRelationship (CONF-43, CONF-45, CONF-46), such that Contains @typeCode="COMP" COMP (has component), and Contains exactly one [1..1] Policy Activity (templateId: 2.16.840.1.113883.10.20.1.26).
+	 * IHE Coverage Entry SHALL contain at least one [1..*] entryRelationship, such that Contains @typeCode="COMP" COMP (has component), and Contains exactly one [1..1] Payer Entry (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.18).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPolicyActivity addPolicyActivity();
+	IPayerEntry addPayerEntry();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * CCD Coverage Activity SHALL contain at least one [1..*] entryRelationship (CONF-43, CONF-45, CONF-46), such that Contains @typeCode="COMP" COMP (has component), and Contains exactly one [1..1] Policy Activity (templateId: 2.16.840.1.113883.10.20.1.26).
+	 * IHE Coverage Entry SHALL contain at least one [1..*] entryRelationship, such that Contains @typeCode="COMP" COMP (has component), and Contains exactly one [1..1] Payer Entry (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.18).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IInsuranceProvider addPolicyActivity(IPolicyActivity value);
+	IInsuranceProvider addPayerEntry(IPayerEntry value);
 
 	/**
 	 * <!-- begin-user-doc -->
