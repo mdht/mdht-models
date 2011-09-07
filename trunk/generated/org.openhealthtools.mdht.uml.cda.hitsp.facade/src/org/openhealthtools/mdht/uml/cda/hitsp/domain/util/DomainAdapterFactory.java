@@ -368,13 +368,13 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseCoverageEntry(ICoverageEntry object) {
-			return createCoverageEntryAdapter();
+		public Adapter caseInsuranceProvider(IInsuranceProvider object) {
+			return createInsuranceProviderAdapter();
 		}
 
 		@Override
-		public Adapter casePolicyActivity(IPolicyActivity object) {
-			return createPolicyActivityAdapter();
+		public Adapter casePayerEntry(IPayerEntry object) {
+			return createPayerEntryAdapter();
 		}
 
 		@Override
@@ -553,6 +553,126 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseGeneralAppearanceSection(IGeneralAppearanceSection object) {
+			return createGeneralAppearanceSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseVisibleImplantedMedicalDevicesSection(IVisibleImplantedMedicalDevicesSection object) {
+			return createVisibleImplantedMedicalDevicesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseIntegumentarySystemSection(IIntegumentarySystemSection object) {
+			return createIntegumentarySystemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHeadSection(IHeadSection object) {
+			return createHeadSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEyesSection(IEyesSection object) {
+			return createEyesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEarsNoseMouthThroatSection(IEarsNoseMouthThroatSection object) {
+			return createEarsNoseMouthThroatSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEarsSection(IEarsSection object) {
+			return createEarsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseNoseSection(INoseSection object) {
+			return createNoseSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseMouthThroatTeethSection(IMouthThroatTeethSection object) {
+			return createMouthThroatTeethSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseNeckSection(INeckSection object) {
+			return createNeckSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseEndocrineSystemSection(IEndocrineSystemSection object) {
+			return createEndocrineSystemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseThoraxLungsSection(IThoraxLungsSection object) {
+			return createThoraxLungsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseChestWallSection(IChestWallSection object) {
+			return createChestWallSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseBreastSection(IBreastSection object) {
+			return createBreastSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseHeartSection(IHeartSection object) {
+			return createHeartSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseRespiratorySystemSection(IRespiratorySystemSection object) {
+			return createRespiratorySystemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseAbdomenSection(IAbdomenSection object) {
+			return createAbdomenSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseLymphaticSection(ILymphaticSection object) {
+			return createLymphaticSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseVesselsSection(IVesselsSection object) {
+			return createVesselsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseMusculoskeletalSystemSection(IMusculoskeletalSystemSection object) {
+			return createMusculoskeletalSystemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseNeurologicSystemSection(INeurologicSystemSection object) {
+			return createNeurologicSystemSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseGenitaliaSection(IGenitaliaSection object) {
+			return createGenitaliaSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseRectumSection(IRectumSection object) {
+			return createRectumSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseExtremitiesSection(IExtremitiesSection object) {
+			return createExtremitiesSectionAdapter();
+		}
+
+		@Override
 		public Adapter caseReviewOfSystemsSection(IReviewOfSystemsSection object) {
 			return createReviewOfSystemsSectionAdapter();
 		}
@@ -570,11 +690,6 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseLanguageSpoken(ILanguageSpoken object) {
 			return createLanguageSpokenAdapter();
-		}
-
-		@Override
-		public Adapter caseInsuranceProvider(IInsuranceProvider object) {
-			return createInsuranceProviderAdapter();
 		}
 
 		@Override
@@ -1256,34 +1371,6 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoverageEntry <em>Coverage Entry</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ICoverageEntry
-	 * @generated
-	 */
-	public Adapter createCoverageEntryAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicyActivity <em>Policy Activity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicyActivity
-	 * @generated
-	 */
-	public Adapter createPolicyActivityAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayerEntity <em>Payer Entity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1830,6 +1917,342 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IGeneralAppearanceSection <em>General Appearance Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IGeneralAppearanceSection
+	 * @generated
+	 */
+	public Adapter createGeneralAppearanceSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IVisibleImplantedMedicalDevicesSection <em>Visible Implanted Medical Devices Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IVisibleImplantedMedicalDevicesSection
+	 * @generated
+	 */
+	public Adapter createVisibleImplantedMedicalDevicesSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IIntegumentarySystemSection <em>Integumentary System Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IIntegumentarySystemSection
+	 * @generated
+	 */
+	public Adapter createIntegumentarySystemSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IHeadSection <em>Head Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IHeadSection
+	 * @generated
+	 */
+	public Adapter createHeadSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEyesSection <em>Eyes Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IEyesSection
+	 * @generated
+	 */
+	public Adapter createEyesSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEarsNoseMouthThroatSection <em>Ears Nose Mouth Throat Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IEarsNoseMouthThroatSection
+	 * @generated
+	 */
+	public Adapter createEarsNoseMouthThroatSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEarsSection <em>Ears Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IEarsSection
+	 * @generated
+	 */
+	public Adapter createEarsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.INoseSection <em>Nose Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.INoseSection
+	 * @generated
+	 */
+	public Adapter createNoseSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMouthThroatTeethSection <em>Mouth Throat Teeth Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IMouthThroatTeethSection
+	 * @generated
+	 */
+	public Adapter createMouthThroatTeethSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.INeckSection <em>Neck Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.INeckSection
+	 * @generated
+	 */
+	public Adapter createNeckSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IEndocrineSystemSection <em>Endocrine System Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IEndocrineSystemSection
+	 * @generated
+	 */
+	public Adapter createEndocrineSystemSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IThoraxLungsSection <em>Thorax Lungs Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IThoraxLungsSection
+	 * @generated
+	 */
+	public Adapter createThoraxLungsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IChestWallSection <em>Chest Wall Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IChestWallSection
+	 * @generated
+	 */
+	public Adapter createChestWallSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IBreastSection <em>Breast Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IBreastSection
+	 * @generated
+	 */
+	public Adapter createBreastSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IHeartSection <em>Heart Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IHeartSection
+	 * @generated
+	 */
+	public Adapter createHeartSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IRespiratorySystemSection <em>Respiratory System Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IRespiratorySystemSection
+	 * @generated
+	 */
+	public Adapter createRespiratorySystemSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IAbdomenSection <em>Abdomen Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IAbdomenSection
+	 * @generated
+	 */
+	public Adapter createAbdomenSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.ILymphaticSection <em>Lymphatic Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.ILymphaticSection
+	 * @generated
+	 */
+	public Adapter createLymphaticSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IVesselsSection <em>Vessels Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IVesselsSection
+	 * @generated
+	 */
+	public Adapter createVesselsSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IMusculoskeletalSystemSection <em>Musculoskeletal System Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IMusculoskeletalSystemSection
+	 * @generated
+	 */
+	public Adapter createMusculoskeletalSystemSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.INeurologicSystemSection <em>Neurologic System Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.INeurologicSystemSection
+	 * @generated
+	 */
+	public Adapter createNeurologicSystemSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IGenitaliaSection <em>Genitalia Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IGenitaliaSection
+	 * @generated
+	 */
+	public Adapter createGenitaliaSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IRectumSection <em>Rectum Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IRectumSection
+	 * @generated
+	 */
+	public Adapter createRectumSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IExtremitiesSection <em>Extremities Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IExtremitiesSection
+	 * @generated
+	 */
+	public Adapter createExtremitiesSectionAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IReviewOfSystemsSection <em>Review Of Systems Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2078,6 +2501,20 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInsuranceProviderAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayerEntry <em>Payer Entry</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayerEntry
+	 * @generated
+	 */
+	public Adapter createPayerEntryAdapter() {
 		return null;
 	}
 

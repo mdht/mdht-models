@@ -591,17 +591,17 @@ public class DomainSwitch<T> {
 				}
 				return result;
 			}
-			case IDomainPackage.COVERAGE_ENTRY: {
-				ICoverageEntry coverageEntry = (ICoverageEntry) theEObject;
-				T result = caseCoverageEntry(coverageEntry);
+			case IDomainPackage.INSURANCE_PROVIDER: {
+				IInsuranceProvider insuranceProvider = (IInsuranceProvider) theEObject;
+				T result = caseInsuranceProvider(insuranceProvider);
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
 			}
-			case IDomainPackage.POLICY_ACTIVITY: {
-				IPolicyActivity policyActivity = (IPolicyActivity) theEObject;
-				T result = casePolicyActivity(policyActivity);
+			case IDomainPackage.PAYER_ENTRY: {
+				IPayerEntry payerEntry = (IPayerEntry) theEObject;
+				T result = casePayerEntry(payerEntry);
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
@@ -803,6 +803,9 @@ public class DomainSwitch<T> {
 				IVitalSignsOrganizer vitalSignsOrganizer = (IVitalSignsOrganizer) theEObject;
 				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
 				if (result == null) {
+					result = caseResultOrganizer(vitalSignsOrganizer);
+				}
+				if (result == null) {
 					result = defaultCase(theEObject);
 				}
 				return result;
@@ -914,6 +917,198 @@ public class DomainSwitch<T> {
 				}
 				return result;
 			}
+			case IDomainPackage.GENERAL_APPEARANCE_SECTION: {
+				IGeneralAppearanceSection generalAppearanceSection = (IGeneralAppearanceSection) theEObject;
+				T result = caseGeneralAppearanceSection(generalAppearanceSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION: {
+				IVisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection = (IVisibleImplantedMedicalDevicesSection) theEObject;
+				T result = caseVisibleImplantedMedicalDevicesSection(visibleImplantedMedicalDevicesSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.INTEGUMENTARY_SYSTEM_SECTION: {
+				IIntegumentarySystemSection integumentarySystemSection = (IIntegumentarySystemSection) theEObject;
+				T result = caseIntegumentarySystemSection(integumentarySystemSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.HEAD_SECTION: {
+				IHeadSection headSection = (IHeadSection) theEObject;
+				T result = caseHeadSection(headSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.EYES_SECTION: {
+				IEyesSection eyesSection = (IEyesSection) theEObject;
+				T result = caseEyesSection(eyesSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.EARS_NOSE_MOUTH_THROAT_SECTION: {
+				IEarsNoseMouthThroatSection earsNoseMouthThroatSection = (IEarsNoseMouthThroatSection) theEObject;
+				T result = caseEarsNoseMouthThroatSection(earsNoseMouthThroatSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.EARS_SECTION: {
+				IEarsSection earsSection = (IEarsSection) theEObject;
+				T result = caseEarsSection(earsSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.NOSE_SECTION: {
+				INoseSection noseSection = (INoseSection) theEObject;
+				T result = caseNoseSection(noseSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.MOUTH_THROAT_TEETH_SECTION: {
+				IMouthThroatTeethSection mouthThroatTeethSection = (IMouthThroatTeethSection) theEObject;
+				T result = caseMouthThroatTeethSection(mouthThroatTeethSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.NECK_SECTION: {
+				INeckSection neckSection = (INeckSection) theEObject;
+				T result = caseNeckSection(neckSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.ENDOCRINE_SYSTEM_SECTION: {
+				IEndocrineSystemSection endocrineSystemSection = (IEndocrineSystemSection) theEObject;
+				T result = caseEndocrineSystemSection(endocrineSystemSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.THORAX_LUNGS_SECTION: {
+				IThoraxLungsSection thoraxLungsSection = (IThoraxLungsSection) theEObject;
+				T result = caseThoraxLungsSection(thoraxLungsSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.CHEST_WALL_SECTION: {
+				IChestWallSection chestWallSection = (IChestWallSection) theEObject;
+				T result = caseChestWallSection(chestWallSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.BREAST_SECTION: {
+				IBreastSection breastSection = (IBreastSection) theEObject;
+				T result = caseBreastSection(breastSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.HEART_SECTION: {
+				IHeartSection heartSection = (IHeartSection) theEObject;
+				T result = caseHeartSection(heartSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.RESPIRATORY_SYSTEM_SECTION: {
+				IRespiratorySystemSection respiratorySystemSection = (IRespiratorySystemSection) theEObject;
+				T result = caseRespiratorySystemSection(respiratorySystemSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.ABDOMEN_SECTION: {
+				IAbdomenSection abdomenSection = (IAbdomenSection) theEObject;
+				T result = caseAbdomenSection(abdomenSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.LYMPHATIC_SECTION: {
+				ILymphaticSection lymphaticSection = (ILymphaticSection) theEObject;
+				T result = caseLymphaticSection(lymphaticSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.VESSELS_SECTION: {
+				IVesselsSection vesselsSection = (IVesselsSection) theEObject;
+				T result = caseVesselsSection(vesselsSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.MUSCULOSKELETAL_SYSTEM_SECTION: {
+				IMusculoskeletalSystemSection musculoskeletalSystemSection = (IMusculoskeletalSystemSection) theEObject;
+				T result = caseMusculoskeletalSystemSection(musculoskeletalSystemSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.NEUROLOGIC_SYSTEM_SECTION: {
+				INeurologicSystemSection neurologicSystemSection = (INeurologicSystemSection) theEObject;
+				T result = caseNeurologicSystemSection(neurologicSystemSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.GENITALIA_SECTION: {
+				IGenitaliaSection genitaliaSection = (IGenitaliaSection) theEObject;
+				T result = caseGenitaliaSection(genitaliaSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.RECTUM_SECTION: {
+				IRectumSection rectumSection = (IRectumSection) theEObject;
+				T result = caseRectumSection(rectumSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.EXTREMITIES_SECTION: {
+				IExtremitiesSection extremitiesSection = (IExtremitiesSection) theEObject;
+				T result = caseExtremitiesSection(extremitiesSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case IDomainPackage.REVIEW_OF_SYSTEMS_SECTION: {
 				IReviewOfSystemsSection reviewOfSystemsSection = (IReviewOfSystemsSection) theEObject;
 				T result = caseReviewOfSystemsSection(reviewOfSystemsSection);
@@ -941,14 +1136,6 @@ public class DomainSwitch<T> {
 			case IDomainPackage.LANGUAGE_SPOKEN: {
 				ILanguageSpoken languageSpoken = (ILanguageSpoken) theEObject;
 				T result = caseLanguageSpoken(languageSpoken);
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case IDomainPackage.INSURANCE_PROVIDER: {
-				IInsuranceProvider insuranceProvider = (IInsuranceProvider) theEObject;
-				T result = caseInsuranceProvider(insuranceProvider);
 				if (result == null) {
 					result = defaultCase(theEObject);
 				}
@@ -1735,36 +1922,6 @@ public class DomainSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Coverage Entry</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Coverage Entry</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCoverageEntry(ICoverageEntry object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Policy Activity</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Policy Activity</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePolicyActivity(IPolicyActivity object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Payer Entity</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2350,6 +2507,366 @@ public class DomainSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Appearance Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Appearance Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralAppearanceSection(IGeneralAppearanceSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Visible Implanted Medical Devices Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Visible Implanted Medical Devices Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVisibleImplantedMedicalDevicesSection(IVisibleImplantedMedicalDevicesSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Integumentary System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Integumentary System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIntegumentarySystemSection(IIntegumentarySystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Head Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Head Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHeadSection(IHeadSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Eyes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Eyes Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEyesSection(IEyesSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ears Nose Mouth Throat Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ears Nose Mouth Throat Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEarsNoseMouthThroatSection(IEarsNoseMouthThroatSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ears Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ears Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEarsSection(IEarsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Nose Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Nose Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNoseSection(INoseSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mouth Throat Teeth Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mouth Throat Teeth Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMouthThroatTeethSection(IMouthThroatTeethSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Neck Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Neck Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNeckSection(INeckSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Endocrine System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Endocrine System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEndocrineSystemSection(IEndocrineSystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Thorax Lungs Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Thorax Lungs Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseThoraxLungsSection(IThoraxLungsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Chest Wall Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Chest Wall Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseChestWallSection(IChestWallSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Breast Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Breast Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBreastSection(IBreastSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Heart Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Heart Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHeartSection(IHeartSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Respiratory System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Respiratory System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRespiratorySystemSection(IRespiratorySystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Abdomen Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Abdomen Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAbdomenSection(IAbdomenSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lymphatic Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lymphatic Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLymphaticSection(ILymphaticSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vessels Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vessels Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVesselsSection(IVesselsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Musculoskeletal System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Musculoskeletal System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMusculoskeletalSystemSection(IMusculoskeletalSystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Neurologic System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Neurologic System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNeurologicSystemSection(INeurologicSystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Genitalia Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Genitalia Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGenitaliaSection(IGenitaliaSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rectum Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rectum Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRectumSection(IRectumSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Extremities Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Extremities Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExtremitiesSection(IExtremitiesSection object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Review Of Systems Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2616,6 +3133,21 @@ public class DomainSwitch<T> {
 	 * @generated
 	 */
 	public T caseInsuranceProvider(IInsuranceProvider object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Payer Entry</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePayerEntry(IPayerEntry object) {
 		return null;
 	}
 

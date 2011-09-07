@@ -176,10 +176,10 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createImmunization();
 			case IDomainPackage.PAYERS_SECTION:
 				return (EObject) createPayersSection();
-			case IDomainPackage.COVERAGE_ENTRY:
-				return (EObject) createCoverageEntry();
-			case IDomainPackage.POLICY_ACTIVITY:
-				return (EObject) createPolicyActivity();
+			case IDomainPackage.INSURANCE_PROVIDER:
+				return (EObject) createInsuranceProvider();
+			case IDomainPackage.PAYER_ENTRY:
+				return (EObject) createPayerEntry();
 			case IDomainPackage.PAYER_ENTITY:
 				return (EObject) createPayerEntity();
 			case IDomainPackage.COVERED_PARTY:
@@ -250,6 +250,54 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createMedicationsAdministeredSection();
 			case IDomainPackage.PHYSICAL_EXAM_SECTION:
 				return (EObject) createPhysicalExamSection();
+			case IDomainPackage.GENERAL_APPEARANCE_SECTION:
+				return (EObject) createGeneralAppearanceSection();
+			case IDomainPackage.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION:
+				return (EObject) createVisibleImplantedMedicalDevicesSection();
+			case IDomainPackage.INTEGUMENTARY_SYSTEM_SECTION:
+				return (EObject) createIntegumentarySystemSection();
+			case IDomainPackage.HEAD_SECTION:
+				return (EObject) createHeadSection();
+			case IDomainPackage.EYES_SECTION:
+				return (EObject) createEyesSection();
+			case IDomainPackage.EARS_NOSE_MOUTH_THROAT_SECTION:
+				return (EObject) createEarsNoseMouthThroatSection();
+			case IDomainPackage.EARS_SECTION:
+				return (EObject) createEarsSection();
+			case IDomainPackage.NOSE_SECTION:
+				return (EObject) createNoseSection();
+			case IDomainPackage.MOUTH_THROAT_TEETH_SECTION:
+				return (EObject) createMouthThroatTeethSection();
+			case IDomainPackage.NECK_SECTION:
+				return (EObject) createNeckSection();
+			case IDomainPackage.ENDOCRINE_SYSTEM_SECTION:
+				return (EObject) createEndocrineSystemSection();
+			case IDomainPackage.THORAX_LUNGS_SECTION:
+				return (EObject) createThoraxLungsSection();
+			case IDomainPackage.CHEST_WALL_SECTION:
+				return (EObject) createChestWallSection();
+			case IDomainPackage.BREAST_SECTION:
+				return (EObject) createBreastSection();
+			case IDomainPackage.HEART_SECTION:
+				return (EObject) createHeartSection();
+			case IDomainPackage.RESPIRATORY_SYSTEM_SECTION:
+				return (EObject) createRespiratorySystemSection();
+			case IDomainPackage.ABDOMEN_SECTION:
+				return (EObject) createAbdomenSection();
+			case IDomainPackage.LYMPHATIC_SECTION:
+				return (EObject) createLymphaticSection();
+			case IDomainPackage.VESSELS_SECTION:
+				return (EObject) createVesselsSection();
+			case IDomainPackage.MUSCULOSKELETAL_SYSTEM_SECTION:
+				return (EObject) createMusculoskeletalSystemSection();
+			case IDomainPackage.NEUROLOGIC_SYSTEM_SECTION:
+				return (EObject) createNeurologicSystemSection();
+			case IDomainPackage.GENITALIA_SECTION:
+				return (EObject) createGenitaliaSection();
+			case IDomainPackage.RECTUM_SECTION:
+				return (EObject) createRectumSection();
+			case IDomainPackage.EXTREMITIES_SECTION:
+				return (EObject) createExtremitiesSection();
 			case IDomainPackage.REVIEW_OF_SYSTEMS_SECTION:
 				return (EObject) createReviewOfSystemsSection();
 			case IDomainPackage.HOSPITAL_COURSE_SECTION:
@@ -258,8 +306,6 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 				return (EObject) createAssessmentAndPlanSection();
 			case IDomainPackage.LANGUAGE_SPOKEN:
 				return (EObject) createLanguageSpoken();
-			case IDomainPackage.INSURANCE_PROVIDER:
-				return (EObject) createInsuranceProvider();
 			case IDomainPackage.HEALTHCARE_PROVIDER:
 				return (EObject) createHealthcareProvider();
 			case IDomainPackage.MEDICATION_NORMAL_DOSE:
@@ -714,26 +760,6 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ICoverageEntry createCoverageEntry() {
-		CoverageEntryImpl coverageEntry = new CoverageEntryImpl();
-		return coverageEntry;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IPolicyActivity createPolicyActivity() {
-		PolicyActivityImpl policyActivity = new PolicyActivityImpl();
-		return policyActivity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public IPayerEntity createPayerEntity() {
 		PayerEntityImpl payerEntity = new PayerEntityImpl();
 		return payerEntity;
@@ -1124,6 +1150,246 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public IGeneralAppearanceSection createGeneralAppearanceSection() {
+		GeneralAppearanceSectionImpl generalAppearanceSection = new GeneralAppearanceSectionImpl();
+		return generalAppearanceSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IVisibleImplantedMedicalDevicesSection createVisibleImplantedMedicalDevicesSection() {
+		VisibleImplantedMedicalDevicesSectionImpl visibleImplantedMedicalDevicesSection = new VisibleImplantedMedicalDevicesSectionImpl();
+		return visibleImplantedMedicalDevicesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IIntegumentarySystemSection createIntegumentarySystemSection() {
+		IntegumentarySystemSectionImpl integumentarySystemSection = new IntegumentarySystemSectionImpl();
+		return integumentarySystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IHeadSection createHeadSection() {
+		HeadSectionImpl headSection = new HeadSectionImpl();
+		return headSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEyesSection createEyesSection() {
+		EyesSectionImpl eyesSection = new EyesSectionImpl();
+		return eyesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEarsNoseMouthThroatSection createEarsNoseMouthThroatSection() {
+		EarsNoseMouthThroatSectionImpl earsNoseMouthThroatSection = new EarsNoseMouthThroatSectionImpl();
+		return earsNoseMouthThroatSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEarsSection createEarsSection() {
+		EarsSectionImpl earsSection = new EarsSectionImpl();
+		return earsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public INoseSection createNoseSection() {
+		NoseSectionImpl noseSection = new NoseSectionImpl();
+		return noseSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IMouthThroatTeethSection createMouthThroatTeethSection() {
+		MouthThroatTeethSectionImpl mouthThroatTeethSection = new MouthThroatTeethSectionImpl();
+		return mouthThroatTeethSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public INeckSection createNeckSection() {
+		NeckSectionImpl neckSection = new NeckSectionImpl();
+		return neckSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IEndocrineSystemSection createEndocrineSystemSection() {
+		EndocrineSystemSectionImpl endocrineSystemSection = new EndocrineSystemSectionImpl();
+		return endocrineSystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IThoraxLungsSection createThoraxLungsSection() {
+		ThoraxLungsSectionImpl thoraxLungsSection = new ThoraxLungsSectionImpl();
+		return thoraxLungsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IChestWallSection createChestWallSection() {
+		ChestWallSectionImpl chestWallSection = new ChestWallSectionImpl();
+		return chestWallSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IBreastSection createBreastSection() {
+		BreastSectionImpl breastSection = new BreastSectionImpl();
+		return breastSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IHeartSection createHeartSection() {
+		HeartSectionImpl heartSection = new HeartSectionImpl();
+		return heartSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IRespiratorySystemSection createRespiratorySystemSection() {
+		RespiratorySystemSectionImpl respiratorySystemSection = new RespiratorySystemSectionImpl();
+		return respiratorySystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IAbdomenSection createAbdomenSection() {
+		AbdomenSectionImpl abdomenSection = new AbdomenSectionImpl();
+		return abdomenSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ILymphaticSection createLymphaticSection() {
+		LymphaticSectionImpl lymphaticSection = new LymphaticSectionImpl();
+		return lymphaticSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IVesselsSection createVesselsSection() {
+		VesselsSectionImpl vesselsSection = new VesselsSectionImpl();
+		return vesselsSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IMusculoskeletalSystemSection createMusculoskeletalSystemSection() {
+		MusculoskeletalSystemSectionImpl musculoskeletalSystemSection = new MusculoskeletalSystemSectionImpl();
+		return musculoskeletalSystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public INeurologicSystemSection createNeurologicSystemSection() {
+		NeurologicSystemSectionImpl neurologicSystemSection = new NeurologicSystemSectionImpl();
+		return neurologicSystemSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IGenitaliaSection createGenitaliaSection() {
+		GenitaliaSectionImpl genitaliaSection = new GenitaliaSectionImpl();
+		return genitaliaSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IRectumSection createRectumSection() {
+		RectumSectionImpl rectumSection = new RectumSectionImpl();
+		return rectumSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IExtremitiesSection createExtremitiesSection() {
+		ExtremitiesSectionImpl extremitiesSection = new ExtremitiesSectionImpl();
+		return extremitiesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public IReviewOfSystemsSection createReviewOfSystemsSection() {
 		ReviewOfSystemsSectionImpl reviewOfSystemsSection = new ReviewOfSystemsSectionImpl();
 		return reviewOfSystemsSection;
@@ -1297,6 +1563,16 @@ public class DomainFactoryImpl extends EFactoryImpl implements IDomainFactory {
 	public IInsuranceProvider createInsuranceProvider() {
 		InsuranceProviderImpl insuranceProvider = new InsuranceProviderImpl();
 		return insuranceProvider;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IPayerEntry createPayerEntry() {
+		PayerEntryImpl payerEntry = new PayerEntryImpl();
+		return payerEntry;
 	}
 
 	/**

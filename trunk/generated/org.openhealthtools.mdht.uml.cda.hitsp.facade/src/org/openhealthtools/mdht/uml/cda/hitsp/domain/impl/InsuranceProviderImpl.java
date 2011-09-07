@@ -20,7 +20,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.Act;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.domain.IInsuranceProvider;
-import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPolicyActivity;
+import org.openhealthtools.mdht.uml.cda.hitsp.domain.IPayerEntry;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
@@ -170,46 +170,46 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPolicyActivities() <em>Get Policy Activities</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getPayerEntries() <em>Get Payer Entries</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPolicyActivities()
+	 * @see #getPayerEntries()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_POLICY_ACTIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PolicyActivity)).oclAsType(domain::PolicyActivity)";
+	protected static final String GET_PAYER_ENTRIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::PayerEntry)).oclAsType(domain::PayerEntry)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPolicyActivities() <em>Get Policy Activities</em>}' query operation.
+	 * The cached OCL query for the '{@link #getPayerEntries() <em>Get Payer Entries</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPolicyActivities()
+	 * @see #getPayerEntries()
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_POLICY_ACTIVITIES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PAYER_ENTRIES__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<IPolicyActivity> getPolicyActivities() {
-		if (GET_POLICY_ACTIVITIES__EOCL_QRY == null) {
+	public EList<IPayerEntry> getPayerEntries() {
+		if (GET_PAYER_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IDomainPackage.eINSTANCE.getInsuranceProvider(),
 				IDomainPackage.eINSTANCE.getInsuranceProvider().getEAllOperations().get(3));
 			try {
-				GET_POLICY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_POLICY_ACTIVITIES__EOCL_EXP);
+				GET_PAYER_ENTRIES__EOCL_QRY = helper.createQuery(GET_PAYER_ENTRIES__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_POLICY_ACTIVITIES__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PAYER_ENTRIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<IPolicyActivity> result = (Collection<IPolicyActivity>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<IPolicyActivity>(result.size(), result.toArray());
+		Collection<IPayerEntry> result = (Collection<IPayerEntry>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IPayerEntry>(result.size(), result.toArray());
 	}
 
 	/**
@@ -217,10 +217,10 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IPolicyActivity addPolicyActivity() {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
-		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PolicyActivity");
+	public IPayerEntry addPayerEntry() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("PayerEntry");
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
 		try {
 			java.lang.reflect.Method initMethod = eObject.getClass().getMethod("init", new java.lang.Class[0]);
@@ -230,8 +230,8 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 		}
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
-		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PolicyActivity");
-		IPolicyActivity value = (IPolicyActivity) domainFactory.create(domainEClass);
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PayerEntry");
+		IPayerEntry value = (IPayerEntry) domainFactory.create(domainEClass);
 		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
@@ -242,7 +242,7 @@ public class InsuranceProviderImpl extends EObjectImpl implements IInsuranceProv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IInsuranceProvider addPolicyActivity(IPolicyActivity value) {
+	public IInsuranceProvider addPayerEntry(IPayerEntry value) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
