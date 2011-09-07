@@ -63,98 +63,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.Support;
 import org.openhealthtools.mdht.uml.cda.ccd.SupportGuardian;
 import org.openhealthtools.mdht.uml.cda.ccd.SupportParticipant;
 import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.AllergiesReactionsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance;
-import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceConcern;
-import org.openhealthtools.mdht.uml.cda.ihe.AssessmentAndPlanSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CarePlanSection;
-import org.openhealthtools.mdht.uml.cda.ihe.ChiefComplaintSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedAdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedFamilyMedicalHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedResultsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedSurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CodedVitalSignsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.CombinationMedication;
-import org.openhealthtools.mdht.uml.cda.ihe.Comment;
-import org.openhealthtools.mdht.uml.cda.ihe.ConcernEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ConditionalDose;
-import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeDiet;
-import org.openhealthtools.mdht.uml.cda.ihe.DischargeSummary;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.EncounterPlanOfCare;
-import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer;
-import org.openhealthtools.mdht.uml.cda.ihe.FamilyMedicalHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.HealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.HealthcareProvidersPharmacies;
-import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPresentIllness;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalAdmissionDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalCourseSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargeMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.HospitalDischargePhysical;
-import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
-import org.openhealthtools.mdht.uml.cda.ihe.IHERegistryDelegate;
-import org.openhealthtools.mdht.uml.cda.ihe.Immunization;
-import org.openhealthtools.mdht.uml.cda.ihe.ImmunizationsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.IntakeOutputSection;
-import org.openhealthtools.mdht.uml.cda.ihe.InternalReference;
-import org.openhealthtools.mdht.uml.cda.ihe.LanguageCommunication;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicalDevicesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicalDocument;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
-import org.openhealthtools.mdht.uml.cda.ihe.Medication;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection;
-import org.openhealthtools.mdht.uml.cda.ihe.MedicationsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.NormalDose;
-import org.openhealthtools.mdht.uml.cda.ihe.ObservationRequestEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.PHRExtract;
-import org.openhealthtools.mdht.uml.cda.ihe.PHRUpdate;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientContact;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientContactGuardian;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientContactParticipant;
-import org.openhealthtools.mdht.uml.cda.ihe.PatientMedicalInstructions;
-import org.openhealthtools.mdht.uml.cda.ihe.PayerEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.PayersSection;
-import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamNarrativeSection;
-import org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamSection;
-import org.openhealthtools.mdht.uml.cda.ihe.PregnancyHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.PregnancyObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryReactionObservationContainer;
-import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.ihe.ProductEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.ReasonForReferralSection;
-import org.openhealthtools.mdht.uml.cda.ihe.ReviewOfSystemsSection;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanDataEnterer;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanOriginalAuthor;
-import org.openhealthtools.mdht.uml.cda.ihe.ScannedDocument;
-import org.openhealthtools.mdht.uml.cda.ihe.ScanningDevice;
-import org.openhealthtools.mdht.uml.cda.ihe.Severity;
-import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.SocialHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.SocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
-import org.openhealthtools.mdht.uml.cda.ihe.SupplyEntry;
-import org.openhealthtools.mdht.uml.cda.ihe.SurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignObservation;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsOrganizer;
-import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsSection;
+import org.openhealthtools.mdht.uml.cda.ihe.*;
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.openhealthtools.mdht.uml.hl7.rim.Participation;
@@ -1026,6 +935,29 @@ public class IHESwitch<T> {
 				}
 				return result;
 			}
+			case IHEPackage.PAYER_ENTRY: {
+				PayerEntry payerEntry = (PayerEntry) theEObject;
+				T result = casePayerEntry(payerEntry);
+				if (result == null) {
+					result = casePolicyActivity(payerEntry);
+				}
+				if (result == null) {
+					result = caseCDA_Act(payerEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(payerEntry);
+				}
+				if (result == null) {
+					result = caseAct(payerEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(payerEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case IHEPackage.HISTORY_OF_PAST_ILLNESS_SECTION: {
 				HistoryOfPastIllnessSection historyOfPastIllnessSection = (HistoryOfPastIllnessSection) theEObject;
 				T result = caseHistoryOfPastIllnessSection(historyOfPastIllnessSection);
@@ -1380,6 +1312,414 @@ public class IHESwitch<T> {
 				}
 				return result;
 			}
+			case IHEPackage.GENERAL_APPEARANCE_SECTION: {
+				GeneralAppearanceSection generalAppearanceSection = (GeneralAppearanceSection) theEObject;
+				T result = caseGeneralAppearanceSection(generalAppearanceSection);
+				if (result == null) {
+					result = caseSection(generalAppearanceSection);
+				}
+				if (result == null) {
+					result = caseAct(generalAppearanceSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(generalAppearanceSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION: {
+				VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection = (VisibleImplantedMedicalDevicesSection) theEObject;
+				T result = caseVisibleImplantedMedicalDevicesSection(visibleImplantedMedicalDevicesSection);
+				if (result == null) {
+					result = caseSection(visibleImplantedMedicalDevicesSection);
+				}
+				if (result == null) {
+					result = caseAct(visibleImplantedMedicalDevicesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(visibleImplantedMedicalDevicesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.INTEGUMENTARY_SYSTEM_SECTION: {
+				IntegumentarySystemSection integumentarySystemSection = (IntegumentarySystemSection) theEObject;
+				T result = caseIntegumentarySystemSection(integumentarySystemSection);
+				if (result == null) {
+					result = caseSection(integumentarySystemSection);
+				}
+				if (result == null) {
+					result = caseAct(integumentarySystemSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(integumentarySystemSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.HEAD_SECTION: {
+				HeadSection headSection = (HeadSection) theEObject;
+				T result = caseHeadSection(headSection);
+				if (result == null) {
+					result = caseSection(headSection);
+				}
+				if (result == null) {
+					result = caseAct(headSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(headSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.EYES_SECTION: {
+				EyesSection eyesSection = (EyesSection) theEObject;
+				T result = caseEyesSection(eyesSection);
+				if (result == null) {
+					result = caseSection(eyesSection);
+				}
+				if (result == null) {
+					result = caseAct(eyesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(eyesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.EARS_NOSE_MOUTH_THROAT_SECTION: {
+				EarsNoseMouthThroatSection earsNoseMouthThroatSection = (EarsNoseMouthThroatSection) theEObject;
+				T result = caseEarsNoseMouthThroatSection(earsNoseMouthThroatSection);
+				if (result == null) {
+					result = caseSection(earsNoseMouthThroatSection);
+				}
+				if (result == null) {
+					result = caseAct(earsNoseMouthThroatSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(earsNoseMouthThroatSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.EARS_SECTION: {
+				EarsSection earsSection = (EarsSection) theEObject;
+				T result = caseEarsSection(earsSection);
+				if (result == null) {
+					result = caseSection(earsSection);
+				}
+				if (result == null) {
+					result = caseAct(earsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(earsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.NOSE_SECTION: {
+				NoseSection noseSection = (NoseSection) theEObject;
+				T result = caseNoseSection(noseSection);
+				if (result == null) {
+					result = caseSection(noseSection);
+				}
+				if (result == null) {
+					result = caseAct(noseSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(noseSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.MOUTH_THROAT_TEETH_SECTION: {
+				MouthThroatTeethSection mouthThroatTeethSection = (MouthThroatTeethSection) theEObject;
+				T result = caseMouthThroatTeethSection(mouthThroatTeethSection);
+				if (result == null) {
+					result = caseSection(mouthThroatTeethSection);
+				}
+				if (result == null) {
+					result = caseAct(mouthThroatTeethSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(mouthThroatTeethSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.NECK_SECTION: {
+				NeckSection neckSection = (NeckSection) theEObject;
+				T result = caseNeckSection(neckSection);
+				if (result == null) {
+					result = caseSection(neckSection);
+				}
+				if (result == null) {
+					result = caseAct(neckSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(neckSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.ENDOCRINE_SYSTEM_SECTION: {
+				EndocrineSystemSection endocrineSystemSection = (EndocrineSystemSection) theEObject;
+				T result = caseEndocrineSystemSection(endocrineSystemSection);
+				if (result == null) {
+					result = caseSection(endocrineSystemSection);
+				}
+				if (result == null) {
+					result = caseAct(endocrineSystemSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(endocrineSystemSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.THORAX_LUNGS_SECTION: {
+				ThoraxLungsSection thoraxLungsSection = (ThoraxLungsSection) theEObject;
+				T result = caseThoraxLungsSection(thoraxLungsSection);
+				if (result == null) {
+					result = caseSection(thoraxLungsSection);
+				}
+				if (result == null) {
+					result = caseAct(thoraxLungsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(thoraxLungsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.CHEST_WALL_SECTION: {
+				ChestWallSection chestWallSection = (ChestWallSection) theEObject;
+				T result = caseChestWallSection(chestWallSection);
+				if (result == null) {
+					result = caseSection(chestWallSection);
+				}
+				if (result == null) {
+					result = caseAct(chestWallSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(chestWallSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.BREAST_SECTION: {
+				BreastSection breastSection = (BreastSection) theEObject;
+				T result = caseBreastSection(breastSection);
+				if (result == null) {
+					result = caseSection(breastSection);
+				}
+				if (result == null) {
+					result = caseAct(breastSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(breastSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.HEART_SECTION: {
+				HeartSection heartSection = (HeartSection) theEObject;
+				T result = caseHeartSection(heartSection);
+				if (result == null) {
+					result = caseSection(heartSection);
+				}
+				if (result == null) {
+					result = caseAct(heartSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(heartSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.RESPIRATORY_SYSTEM_SECTION: {
+				RespiratorySystemSection respiratorySystemSection = (RespiratorySystemSection) theEObject;
+				T result = caseRespiratorySystemSection(respiratorySystemSection);
+				if (result == null) {
+					result = caseSection(respiratorySystemSection);
+				}
+				if (result == null) {
+					result = caseAct(respiratorySystemSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(respiratorySystemSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.ABDOMEN_SECTION: {
+				AbdomenSection abdomenSection = (AbdomenSection) theEObject;
+				T result = caseAbdomenSection(abdomenSection);
+				if (result == null) {
+					result = caseSection(abdomenSection);
+				}
+				if (result == null) {
+					result = caseAct(abdomenSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(abdomenSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.LYMPHATIC_SECTION: {
+				LymphaticSection lymphaticSection = (LymphaticSection) theEObject;
+				T result = caseLymphaticSection(lymphaticSection);
+				if (result == null) {
+					result = caseSection(lymphaticSection);
+				}
+				if (result == null) {
+					result = caseAct(lymphaticSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(lymphaticSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.VESSELS_SECTION: {
+				VesselsSection vesselsSection = (VesselsSection) theEObject;
+				T result = caseVesselsSection(vesselsSection);
+				if (result == null) {
+					result = caseSection(vesselsSection);
+				}
+				if (result == null) {
+					result = caseAct(vesselsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(vesselsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.MUSCULOSKELETAL_SYSTEM_SECTION: {
+				MusculoskeletalSystemSection musculoskeletalSystemSection = (MusculoskeletalSystemSection) theEObject;
+				T result = caseMusculoskeletalSystemSection(musculoskeletalSystemSection);
+				if (result == null) {
+					result = caseSection(musculoskeletalSystemSection);
+				}
+				if (result == null) {
+					result = caseAct(musculoskeletalSystemSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(musculoskeletalSystemSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.NEUROLOGIC_SYSTEM_SECTION: {
+				NeurologicSystemSection neurologicSystemSection = (NeurologicSystemSection) theEObject;
+				T result = caseNeurologicSystemSection(neurologicSystemSection);
+				if (result == null) {
+					result = caseSection(neurologicSystemSection);
+				}
+				if (result == null) {
+					result = caseAct(neurologicSystemSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(neurologicSystemSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.GENITALIA_SECTION: {
+				GenitaliaSection genitaliaSection = (GenitaliaSection) theEObject;
+				T result = caseGenitaliaSection(genitaliaSection);
+				if (result == null) {
+					result = caseSection(genitaliaSection);
+				}
+				if (result == null) {
+					result = caseAct(genitaliaSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(genitaliaSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.RECTUM_SECTION: {
+				RectumSection rectumSection = (RectumSection) theEObject;
+				T result = caseRectumSection(rectumSection);
+				if (result == null) {
+					result = caseSection(rectumSection);
+				}
+				if (result == null) {
+					result = caseAct(rectumSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(rectumSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.EXTREMITIES_SECTION: {
+				ExtremitiesSection extremitiesSection = (ExtremitiesSection) theEObject;
+				T result = caseExtremitiesSection(extremitiesSection);
+				if (result == null) {
+					result = caseSection(extremitiesSection);
+				}
+				if (result == null) {
+					result = caseAct(extremitiesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(extremitiesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case IHEPackage.REVIEW_OF_SYSTEMS_SECTION: {
 				ReviewOfSystemsSection reviewOfSystemsSection = (ReviewOfSystemsSection) theEObject;
 				T result = caseReviewOfSystemsSection(reviewOfSystemsSection);
@@ -1714,29 +2054,6 @@ public class IHESwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(procedureEntryPlanOfCareActivityProcedure);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case IHEPackage.PAYER_ENTRY: {
-				PayerEntry payerEntry = (PayerEntry) theEObject;
-				T result = casePayerEntry(payerEntry);
-				if (result == null) {
-					result = casePolicyActivity(payerEntry);
-				}
-				if (result == null) {
-					result = caseCDA_Act(payerEntry);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(payerEntry);
-				}
-				if (result == null) {
-					result = caseAct(payerEntry);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(payerEntry);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2164,6 +2481,26 @@ public class IHESwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(socialHistoryObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IHEPackage.CODED_REASON_FOR_REFERRAL_SECTION: {
+				CodedReasonForReferralSection codedReasonForReferralSection = (CodedReasonForReferralSection) theEObject;
+				T result = caseCodedReasonForReferralSection(codedReasonForReferralSection);
+				if (result == null) {
+					result = caseReasonForReferralSection(codedReasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseSection(codedReasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseAct(codedReasonForReferralSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(codedReasonForReferralSection);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -2843,6 +3180,366 @@ public class IHESwitch<T> {
 	 * @generated
 	 */
 	public T casePhysicalExamSection(PhysicalExamSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Appearance Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Appearance Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralAppearanceSection(GeneralAppearanceSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Visible Implanted Medical Devices Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Visible Implanted Medical Devices Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVisibleImplantedMedicalDevicesSection(VisibleImplantedMedicalDevicesSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Integumentary System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Integumentary System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIntegumentarySystemSection(IntegumentarySystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Head Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Head Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHeadSection(HeadSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Eyes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Eyes Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEyesSection(EyesSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ears Nose Mouth Throat Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ears Nose Mouth Throat Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEarsNoseMouthThroatSection(EarsNoseMouthThroatSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ears Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ears Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEarsSection(EarsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Nose Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Nose Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNoseSection(NoseSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mouth Throat Teeth Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mouth Throat Teeth Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMouthThroatTeethSection(MouthThroatTeethSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Neck Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Neck Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNeckSection(NeckSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Endocrine System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Endocrine System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEndocrineSystemSection(EndocrineSystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Thorax Lungs Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Thorax Lungs Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseThoraxLungsSection(ThoraxLungsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Chest Wall Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Chest Wall Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseChestWallSection(ChestWallSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Breast Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Breast Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBreastSection(BreastSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Heart Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Heart Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHeartSection(HeartSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Respiratory System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Respiratory System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRespiratorySystemSection(RespiratorySystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Abdomen Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Abdomen Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAbdomenSection(AbdomenSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lymphatic Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lymphatic Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLymphaticSection(LymphaticSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vessels Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vessels Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVesselsSection(VesselsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Musculoskeletal System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Musculoskeletal System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMusculoskeletalSystemSection(MusculoskeletalSystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Neurologic System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Neurologic System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNeurologicSystemSection(NeurologicSystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Genitalia Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Genitalia Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGenitaliaSection(GenitaliaSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rectum Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rectum Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRectumSection(RectumSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Extremities Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Extremities Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExtremitiesSection(ExtremitiesSection object) {
 		return null;
 	}
 
@@ -3533,6 +4230,21 @@ public class IHESwitch<T> {
 	 * @generated
 	 */
 	public T caseSocialHistoryObservation(SocialHistoryObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coded Reason For Referral Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coded Reason For Referral Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCodedReasonForReferralSection(CodedReasonForReferralSection object) {
 		return null;
 	}
 

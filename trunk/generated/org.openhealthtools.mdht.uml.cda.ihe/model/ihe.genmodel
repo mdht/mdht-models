@@ -606,7 +606,13 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CoverageEntry/CoverageEntryTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CoverageEntry/CoverageEntryTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CoverageEntry/CoverageEntryPayerEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CoverageEntry/CoverageEntryPayerEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CoverageEntry/CoverageEntryPayerEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CoverageEntry/getPayerEntries"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//PayerEntry"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//HistoryOfPastIllnessSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HistoryOfPastIllnessSection/HistoryOfPastIllnessSectionTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HistoryOfPastIllnessSection/HistoryOfPastIllnessSectionTemplateId/diagnostics"/>
@@ -854,6 +860,486 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionVitalSignsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionVitalSignsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionVitalSignsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionGeneralAppearanceSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionGeneralAppearanceSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionGeneralAppearanceSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionVisibleImplantedMedicalDevicesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionVisibleImplantedMedicalDevicesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionVisibleImplantedMedicalDevicesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionIntegumentarySystemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionIntegumentarySystemSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionIntegumentarySystemSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionHeadSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionHeadSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionHeadSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEyesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEyesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEyesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEarsNoseMouthThroatSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEarsNoseMouthThroatSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEarsNoseMouthThroatSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEarsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEarsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEarsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionNoseSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionNoseSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionNoseSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionMouthThroatTeethSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionMouthThroatTeethSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionMouthThroatTeethSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionNeckSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionNeckSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionNeckSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEndocrineSystemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEndocrineSystemSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionEndocrineSystemSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionThoraxLungsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionThoraxLungsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionThoraxLungsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionChestWallSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionChestWallSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionChestWallSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionBreastSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionBreastSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionBreastSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionHeartSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionHeartSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionHeartSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionRespiratorySystemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionRespiratorySystemSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionRespiratorySystemSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionAbdomenSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionAbdomenSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionAbdomenSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionLymphaticSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionLymphaticSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionLymphaticSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionVesselsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionVesselsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionVesselsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionMusculoskeletalSystemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionMusculoskeletalSystemSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionMusculoskeletalSystemSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionNeurologicSystemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionNeurologicSystemSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionNeurologicSystemSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionGenitaliaSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionGenitaliaSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionGenitaliaSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionRectumSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionRectumSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionRectumSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionExtremitiesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionExtremitiesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PhysicalExamSection/PhysicalExamSectionExtremitiesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getVitalSignsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getGeneralAppearanceSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getVisibleImplantedMedicalDevicesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getIntegumentarySystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getHeadSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getEyesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getEarsNoseMouthThroatSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getEarsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getNoseSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getMouthThroatTeethSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getNeckSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getEndocrineSystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getThoraxLungsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getChestWallSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getBreastSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getHeartSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getRespiratorySystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getAbdomenSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getLymphaticSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getVesselsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getMusculoskeletalSystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getNeurologicSystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getGenitaliaSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getRectumSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PhysicalExamSection/getExtremitiesSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//GeneralAppearanceSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//GeneralAppearanceSection/GeneralAppearanceSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GeneralAppearanceSection/GeneralAppearanceSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GeneralAppearanceSection/GeneralAppearanceSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//GeneralAppearanceSection/GeneralAppearanceSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GeneralAppearanceSection/GeneralAppearanceSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GeneralAppearanceSection/GeneralAppearanceSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//GeneralAppearanceSection/GeneralAppearanceSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GeneralAppearanceSection/GeneralAppearanceSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GeneralAppearanceSection/GeneralAppearanceSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//GeneralAppearanceSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//VisibleImplantedMedicalDevicesSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//VisibleImplantedMedicalDevicesSection/VisibleImplantedMedicalDevicesSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VisibleImplantedMedicalDevicesSection/VisibleImplantedMedicalDevicesSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VisibleImplantedMedicalDevicesSection/VisibleImplantedMedicalDevicesSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//VisibleImplantedMedicalDevicesSection/VisibleImplantedMedicalDevicesSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VisibleImplantedMedicalDevicesSection/VisibleImplantedMedicalDevicesSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VisibleImplantedMedicalDevicesSection/VisibleImplantedMedicalDevicesSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//VisibleImplantedMedicalDevicesSection/VisibleImplantedMedicalDevicesSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VisibleImplantedMedicalDevicesSection/VisibleImplantedMedicalDevicesSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VisibleImplantedMedicalDevicesSection/VisibleImplantedMedicalDevicesSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//VisibleImplantedMedicalDevicesSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//IntegumentarySystemSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//IntegumentarySystemSection/IntegumentarySystemSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//IntegumentarySystemSection/IntegumentarySystemSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//IntegumentarySystemSection/IntegumentarySystemSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//IntegumentarySystemSection/IntegumentarySystemSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//IntegumentarySystemSection/IntegumentarySystemSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//IntegumentarySystemSection/IntegumentarySystemSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//IntegumentarySystemSection/IntegumentarySystemSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//IntegumentarySystemSection/IntegumentarySystemSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//IntegumentarySystemSection/IntegumentarySystemSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//IntegumentarySystemSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//HeadSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HeadSection/HeadSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeadSection/HeadSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeadSection/HeadSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HeadSection/HeadSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeadSection/HeadSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeadSection/HeadSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HeadSection/HeadSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeadSection/HeadSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeadSection/HeadSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HeadSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//EyesSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EyesSection/EyesSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EyesSection/EyesSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EyesSection/EyesSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EyesSection/EyesSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EyesSection/EyesSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EyesSection/EyesSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EyesSection/EyesSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EyesSection/EyesSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EyesSection/EyesSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EyesSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//EarsNoseMouthThroatSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EarsNoseMouthThroatSection/EarsNoseMouthThroatSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsNoseMouthThroatSection/EarsNoseMouthThroatSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsNoseMouthThroatSection/EarsNoseMouthThroatSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EarsNoseMouthThroatSection/EarsNoseMouthThroatSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsNoseMouthThroatSection/EarsNoseMouthThroatSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsNoseMouthThroatSection/EarsNoseMouthThroatSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EarsNoseMouthThroatSection/EarsNoseMouthThroatSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsNoseMouthThroatSection/EarsNoseMouthThroatSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsNoseMouthThroatSection/EarsNoseMouthThroatSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EarsNoseMouthThroatSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//EarsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EarsSection/EarsSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsSection/EarsSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsSection/EarsSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EarsSection/EarsSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsSection/EarsSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsSection/EarsSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EarsSection/EarsSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsSection/EarsSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EarsSection/EarsSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EarsSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//NoseSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NoseSection/NoseSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NoseSection/NoseSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NoseSection/NoseSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NoseSection/NoseSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NoseSection/NoseSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NoseSection/NoseSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NoseSection/NoseSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NoseSection/NoseSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NoseSection/NoseSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NoseSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//MouthThroatTeethSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//MouthThroatTeethSection/MouthThroatTeethSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MouthThroatTeethSection/MouthThroatTeethSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MouthThroatTeethSection/MouthThroatTeethSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//MouthThroatTeethSection/MouthThroatTeethSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MouthThroatTeethSection/MouthThroatTeethSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MouthThroatTeethSection/MouthThroatTeethSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//MouthThroatTeethSection/MouthThroatTeethSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MouthThroatTeethSection/MouthThroatTeethSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MouthThroatTeethSection/MouthThroatTeethSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//MouthThroatTeethSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//NeckSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NeckSection/NeckSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeckSection/NeckSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeckSection/NeckSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NeckSection/NeckSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeckSection/NeckSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeckSection/NeckSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NeckSection/NeckSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeckSection/NeckSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeckSection/NeckSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NeckSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//EndocrineSystemSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EndocrineSystemSection/EndocrineSystemSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EndocrineSystemSection/EndocrineSystemSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EndocrineSystemSection/EndocrineSystemSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EndocrineSystemSection/EndocrineSystemSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EndocrineSystemSection/EndocrineSystemSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EndocrineSystemSection/EndocrineSystemSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EndocrineSystemSection/EndocrineSystemSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EndocrineSystemSection/EndocrineSystemSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//EndocrineSystemSection/EndocrineSystemSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//EndocrineSystemSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//ThoraxLungsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ThoraxLungsSection/ThoraxLungsSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ThoraxLungsSection/ThoraxLungsSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ThoraxLungsSection/ThoraxLungsSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ThoraxLungsSection/ThoraxLungsSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ThoraxLungsSection/ThoraxLungsSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ThoraxLungsSection/ThoraxLungsSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ThoraxLungsSection/ThoraxLungsSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ThoraxLungsSection/ThoraxLungsSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ThoraxLungsSection/ThoraxLungsSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ThoraxLungsSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//ChestWallSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ChestWallSection/ChestWallSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ChestWallSection/ChestWallSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ChestWallSection/ChestWallSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ChestWallSection/ChestWallSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ChestWallSection/ChestWallSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ChestWallSection/ChestWallSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ChestWallSection/ChestWallSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ChestWallSection/ChestWallSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ChestWallSection/ChestWallSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ChestWallSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//BreastSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//BreastSection/BreastSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//BreastSection/BreastSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//BreastSection/BreastSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//BreastSection/BreastSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//BreastSection/BreastSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//BreastSection/BreastSectionCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//HeartSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HeartSection/HeartSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeartSection/HeartSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeartSection/HeartSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HeartSection/HeartSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeartSection/HeartSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeartSection/HeartSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HeartSection/HeartSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeartSection/HeartSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//HeartSection/HeartSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//HeartSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//RespiratorySystemSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//RespiratorySystemSection/RespiratorySystemSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RespiratorySystemSection/RespiratorySystemSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RespiratorySystemSection/RespiratorySystemSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//RespiratorySystemSection/RespiratorySystemSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RespiratorySystemSection/RespiratorySystemSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RespiratorySystemSection/RespiratorySystemSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//RespiratorySystemSection/RespiratorySystemSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RespiratorySystemSection/RespiratorySystemSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RespiratorySystemSection/RespiratorySystemSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//RespiratorySystemSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//AbdomenSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AbdomenSection/AbdomenSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AbdomenSection/AbdomenSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AbdomenSection/AbdomenSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AbdomenSection/AbdomenSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AbdomenSection/AbdomenSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AbdomenSection/AbdomenSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AbdomenSection/AbdomenSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AbdomenSection/AbdomenSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AbdomenSection/AbdomenSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AbdomenSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//LymphaticSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//LymphaticSection/LymphaticSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//LymphaticSection/LymphaticSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//LymphaticSection/LymphaticSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//LymphaticSection/LymphaticSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//LymphaticSection/LymphaticSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//LymphaticSection/LymphaticSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//LymphaticSection/LymphaticSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//LymphaticSection/LymphaticSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//LymphaticSection/LymphaticSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//LymphaticSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//VesselsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//VesselsSection/VesselsSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VesselsSection/VesselsSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VesselsSection/VesselsSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//VesselsSection/VesselsSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VesselsSection/VesselsSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VesselsSection/VesselsSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//VesselsSection/VesselsSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VesselsSection/VesselsSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//VesselsSection/VesselsSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//VesselsSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//MusculoskeletalSystemSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//MusculoskeletalSystemSection/MusculoskeletalSystemSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MusculoskeletalSystemSection/MusculoskeletalSystemSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MusculoskeletalSystemSection/MusculoskeletalSystemSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//MusculoskeletalSystemSection/MusculoskeletalSystemSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MusculoskeletalSystemSection/MusculoskeletalSystemSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MusculoskeletalSystemSection/MusculoskeletalSystemSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//MusculoskeletalSystemSection/MusculoskeletalSystemSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MusculoskeletalSystemSection/MusculoskeletalSystemSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//MusculoskeletalSystemSection/MusculoskeletalSystemSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//MusculoskeletalSystemSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//NeurologicSystemSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NeurologicSystemSection/NeurologicSystemSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeurologicSystemSection/NeurologicSystemSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeurologicSystemSection/NeurologicSystemSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NeurologicSystemSection/NeurologicSystemSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeurologicSystemSection/NeurologicSystemSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeurologicSystemSection/NeurologicSystemSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NeurologicSystemSection/NeurologicSystemSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeurologicSystemSection/NeurologicSystemSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//NeurologicSystemSection/NeurologicSystemSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//NeurologicSystemSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//GenitaliaSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//GenitaliaSection/GenitaliaSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GenitaliaSection/GenitaliaSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GenitaliaSection/GenitaliaSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//GenitaliaSection/GenitaliaSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GenitaliaSection/GenitaliaSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GenitaliaSection/GenitaliaSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//GenitaliaSection/GenitaliaSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GenitaliaSection/GenitaliaSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//GenitaliaSection/GenitaliaSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//GenitaliaSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//RectumSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//RectumSection/RectumSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RectumSection/RectumSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RectumSection/RectumSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//RectumSection/RectumSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RectumSection/RectumSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RectumSection/RectumSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//RectumSection/RectumSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RectumSection/RectumSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//RectumSection/RectumSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//RectumSection/getProblemEntry"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//ExtremitiesSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ExtremitiesSection/ExtremitiesSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ExtremitiesSection/ExtremitiesSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ExtremitiesSection/ExtremitiesSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ExtremitiesSection/ExtremitiesSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ExtremitiesSection/ExtremitiesSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ExtremitiesSection/ExtremitiesSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ExtremitiesSection/ExtremitiesSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ExtremitiesSection/ExtremitiesSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ExtremitiesSection/ExtremitiesSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ExtremitiesSection/getProblemEntry"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//ReviewOfSystemsSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ReviewOfSystemsSection/ReviewOfSystemsSectionTemplateId">
@@ -1026,7 +1512,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ProcedureEntryPlanOfCareActivityProcedure/ProcedureEntryPlanOfCareActivityProcedureTemplateId/context"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//PayerEntry"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//PHRExtract">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//PHRExtract/PHRExtractTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//PHRExtract/PHRExtractTemplateId/diagnostics"/>
@@ -1363,6 +1848,22 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationValue/context"/>
       </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//CodedReasonForReferralSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedReasonForReferralSection/CodedReasonForReferralSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedReasonForReferralSection/CodedReasonForReferralSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedReasonForReferralSection/CodedReasonForReferralSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedReasonForReferralSection/CodedReasonForReferralSectionSimpleObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedReasonForReferralSection/CodedReasonForReferralSectionSimpleObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedReasonForReferralSection/CodedReasonForReferralSectionSimpleObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedReasonForReferralSection/CodedReasonForReferralSectionProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedReasonForReferralSection/CodedReasonForReferralSectionProblemEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedReasonForReferralSection/CodedReasonForReferralSectionProblemEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedReasonForReferralSection/getSimpleObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedReasonForReferralSection/getProblemEntries"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//IHERegistryDelegate"/>
   </genPackages>

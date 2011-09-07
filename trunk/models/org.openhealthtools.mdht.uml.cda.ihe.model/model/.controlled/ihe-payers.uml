@@ -17,6 +17,12 @@ guarantor, or some combination.</body>
     <generalization xmi:id="_PMrjATXgEd-gpLhSMS7jpQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-payers.uml#_4A1mMMJqEd6-XpBv2uxYrQ"/>
     </generalization>
+    <ownedAttribute xmi:id="_66vB8M9FEeCBIMy4xFlonQ" name="payerEntry">
+      <type xmi:type="uml:Class" href="../ihe.uml#_8M5ZwFIvEd-4TsxSz4jnfg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fsab0M9GEeCBIMy4xFlonQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fsab0c9GEeCBIMy4xFlonQ" value="1"/>
+      <association href="../ihe.uml#_66zTYM9FEeCBIMy4xFlonQ"/>
+    </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_aw0UkTXgEd-gpLhSMS7jpQ" memberEnd="_aw0UkDXgEd-gpLhSMS7jpQ _aw0UkjXgEd-gpLhSMS7jpQ">
     <ownedEnd xmi:id="_aw0UkjXgEd-gpLhSMS7jpQ" type="_ynU6sMfXEd6VjLXh4DcWSg" association="_aw0UkTXgEd-gpLhSMS7jpQ"/>

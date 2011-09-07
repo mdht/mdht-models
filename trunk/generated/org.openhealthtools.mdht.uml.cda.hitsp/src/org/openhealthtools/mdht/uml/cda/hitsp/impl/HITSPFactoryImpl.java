@@ -157,6 +157,8 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 				return createImmunization();
 			case HITSPPackage.PAYERS_SECTION:
 				return createPayersSection();
+			case HITSPPackage.INSURANCE_PROVIDER:
+				return createInsuranceProvider();
 			case HITSPPackage.SURGERIES_SECTION:
 				return createSurgeriesSection();
 			case HITSPPackage.PROCEDURE:
@@ -213,8 +215,6 @@ public class HITSPFactoryImpl extends EFactoryImpl implements HITSPFactory {
 				return createMedicalEquipmentSection();
 			case HITSPPackage.LANGUAGE_SPOKEN:
 				return createLanguageSpoken();
-			case HITSPPackage.INSURANCE_PROVIDER:
-				return createInsuranceProvider();
 			case HITSPPackage.HEALTHCARE_PROVIDER:
 				return createHealthcareProvider();
 			case HITSPPackage.COMMENT:

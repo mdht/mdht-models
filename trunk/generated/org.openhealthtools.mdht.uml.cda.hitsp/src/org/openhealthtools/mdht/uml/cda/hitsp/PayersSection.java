@@ -13,6 +13,7 @@ package org.openhealthtools.mdht.uml.cda.hitsp;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getPayersSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.101' constraints.validation.error='HITSPPayersSectionTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.101' constraints.validation.error='HITSPPayersSectionTemplateId HITSPPayersSectionInsuranceProvider'"
  * @generated
  */
 public interface PayersSection extends org.openhealthtools.mdht.uml.cda.ihe.PayersSection {
@@ -46,6 +47,31 @@ public interface PayersSection extends org.openhealthtools.mdht.uml.cda.ihe.Paye
 	 * @generated
 	 */
 	boolean validateHITSPPayersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::InsuranceProvider))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::InsuranceProvider))'"
+	 * @generated
+	 */
+	boolean validateHITSPPayersSectionInsuranceProvider(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hitsp::InsuranceProvider)).oclAsType(hitsp::InsuranceProvider)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hitsp::InsuranceProvider)).oclAsType(hitsp::InsuranceProvider)'"
+	 * @generated
+	 */
+	EList<InsuranceProvider> getInsuranceProviders();
 
 	/**
 	 * <!-- begin-user-doc -->
