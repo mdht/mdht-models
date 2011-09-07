@@ -69,8 +69,8 @@ public class EncounterLocationImpl extends EObjectImpl implements IEncounterLoca
 	 */
 	public Participant2 getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Participant2)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Participant2) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -123,11 +123,12 @@ public class EncounterLocationImpl extends EObjectImpl implements IEncounterLoca
 	public ParticipantRole getParticipantRole() {
 		if (GET_PARTICIPANT_ROLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncounterLocation(), IDomainPackage.eINSTANCE.getEncounterLocation().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncounterLocation(),
+				IDomainPackage.eINSTANCE.getEncounterLocation().getEAllOperations().get(0));
 			try {
 				GET_PARTICIPANT_ROLE__EOCL_QRY = helper.createQuery(GET_PARTICIPANT_ROLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -169,7 +170,9 @@ public class EncounterLocationImpl extends EObjectImpl implements IEncounterLoca
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.ENCOUNTER_LOCATION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -184,7 +187,7 @@ public class EncounterLocationImpl extends EObjectImpl implements IEncounterLoca
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.ENCOUNTER_LOCATION__CDA_TYPE:
-				setCDAType((Participant2)newValue);
+				setCDAType((Participant2) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -199,7 +202,7 @@ public class EncounterLocationImpl extends EObjectImpl implements IEncounterLoca
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.ENCOUNTER_LOCATION__CDA_TYPE:
-				setCDAType((Participant2)null);
+				setCDAType((Participant2) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -234,7 +237,7 @@ public class EncounterLocationImpl extends EObjectImpl implements IEncounterLoca
 	 * @generated
 	 */
 	public IEncounterLocation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncounterLocationImpl

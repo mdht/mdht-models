@@ -10,6 +10,8 @@ import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Author;
 import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Specimen;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
@@ -23,21 +25,23 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * A vital signs organizer collects vital signs observations.
  * </p>
  * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
+ * <p>Refer to full implementation guide <a href="http://www.cdatools.org/infocenter/index.jsp"/>specification</a>.</p>
  * <!-- end-model-doc -->
  *
- * <p>
- * The following features are supported:
- * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignsOrganizer#getCDAType <em>CDA Type</em>}</li>
- * </ul>
- * </p>
  *
  * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getVitalSignsOrganizer()
  * @generated
  */
-public interface IVitalSignsOrganizer {
+public interface IVitalSignsOrganizer extends IResultOrganizer {
 	/**
 	 * Returns the value of the '<em><b>CDA Type</b></em>' reference.
+	 * <p>
+	 * This feature redefines the following features:
+	 * <ul>
+	 *   <li>'{@link org.openhealthtools.mdht.uml.cda.toc.domain.IResultOrganizer#getCDAType() <em>CDA Type</em>}'</li>
+	 *   <li>'{@link org.openhealthtools.mdht.uml.cda.toc.domain.IResultOrganizer#getCDAType() <em>CDA Type</em>}'</li>
+	 * </ul>
+	 * </p>
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>CDA Type</em>' reference isn't clear,
@@ -46,7 +50,7 @@ public interface IVitalSignsOrganizer {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>CDA Type</em>' reference.
 	 * @see #setCDAType(Organizer)
-	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getVitalSignsOrganizer_CDAType()
+	 * @see org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage#getResultOrganizer_CDAType()
 	 * @generated
 	 */
 	Organizer getCDAType();
@@ -129,28 +133,6 @@ public interface IVitalSignsOrganizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * cda::Organizer::specimen.
-	 * Should be included if the specimen isn't inherent in code value.
-	 * self.getSpecimens()->select(specimen : cda::Specimen | not specimen.oclIsUndefined() and specimen.oclIsKindOf(cda::Specimen)).oclAsType(cda::Specimen)
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	EList<Specimen> getSpecimens();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * CCD Result Organizer SHOULD contain at least one [1..*] specimen (CONF-399), such that.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	Specimen addSpecimen();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * CCD Result Organizer SHOULD contain at least one [1..*] specimen (CONF-399), such that.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -218,6 +200,46 @@ public interface IVitalSignsOrganizer {
 	 * @generated
 	 */
 	IVitalSignsOrganizer setAuthor(Author value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Result Organizer SHALL contain at least one [1..*] id (CONF-395).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IVitalSignsOrganizer addId(II value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Result Organizer SHALL contain exactly one [1..1] code (CONF-397).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IVitalSignsOrganizer setCode(CD value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Result Organizer SHALL contain exactly one [1..1] statusCode (CONF-396).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IVitalSignsOrganizer setStatusCode(CS value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * CCD Result Organizer SHALL contain at least one [1..*] component (CONF-405), such that Contains exactly one [1..1] Result Observation (templateId: 2.16.840.1.113883.10.20.1.31).
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	IVitalSignsOrganizer addResultObservation(IResultObservation value);
 
 	/**
 	 * <!-- begin-user-doc -->

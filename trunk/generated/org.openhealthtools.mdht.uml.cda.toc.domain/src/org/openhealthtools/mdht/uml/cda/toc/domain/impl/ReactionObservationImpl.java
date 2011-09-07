@@ -70,8 +70,8 @@ public class ReactionObservationImpl extends EObjectImpl implements IReactionObs
 	 */
 	public Observation getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Observation)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Observation) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -124,11 +124,12 @@ public class ReactionObservationImpl extends EObjectImpl implements IReactionObs
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getReactionObservation(), IDomainPackage.eINSTANCE.getReactionObservation().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getReactionObservation(),
+				IDomainPackage.eINSTANCE.getReactionObservation().getEAllOperations().get(0));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -189,11 +190,12 @@ public class ReactionObservationImpl extends EObjectImpl implements IReactionObs
 	public ISeverityObservation getSeverityObservation() {
 		if (GET_SEVERITY_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getReactionObservation(), IDomainPackage.eINSTANCE.getReactionObservation().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getReactionObservation(),
+				IDomainPackage.eINSTANCE.getReactionObservation().getEAllOperations().get(3));
 			try {
 				GET_SEVERITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SEVERITY_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -220,9 +222,9 @@ public class ReactionObservationImpl extends EObjectImpl implements IReactionObs
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("SeverityObservation");
-		ISeverityObservation value = (ISeverityObservation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		ISeverityObservation value = (ISeverityObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -232,7 +234,7 @@ public class ReactionObservationImpl extends EObjectImpl implements IReactionObs
 	 * @generated
 	 */
 	public IReactionObservation setSeverityObservation(ISeverityObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -245,7 +247,9 @@ public class ReactionObservationImpl extends EObjectImpl implements IReactionObs
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.REACTION_OBSERVATION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -260,7 +264,7 @@ public class ReactionObservationImpl extends EObjectImpl implements IReactionObs
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.REACTION_OBSERVATION__CDA_TYPE:
-				setCDAType((Observation)newValue);
+				setCDAType((Observation) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -275,7 +279,7 @@ public class ReactionObservationImpl extends EObjectImpl implements IReactionObs
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.REACTION_OBSERVATION__CDA_TYPE:
-				setCDAType((Observation)null);
+				setCDAType((Observation) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -310,7 +314,7 @@ public class ReactionObservationImpl extends EObjectImpl implements IReactionObs
 	 * @generated
 	 */
 	public IReactionObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ReactionObservationImpl

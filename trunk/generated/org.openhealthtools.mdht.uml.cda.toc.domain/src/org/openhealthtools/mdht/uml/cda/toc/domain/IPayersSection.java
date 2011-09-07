@@ -128,32 +128,32 @@ public interface IPayersSection {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * ihe::PayersSection::coverageEntry.
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::CoverageEntry)).oclAsType(domain::CoverageEntry)
+	 * hitsp::PayersSection::insuranceProvider.
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(domain::InsuranceProvider)).oclAsType(domain::InsuranceProvider)
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	EList<ICoverageEntry> getCoverageEntries();
+	EList<IInsuranceProvider> getInsuranceProviders();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * IHE Payers Section SHOULD contain at least one [1..*] entry, such that Contains exactly one [1..1] Coverage Entry (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.17).
+	 * HITSP Payers Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Insurance Provider (templateId: 2.16.840.1.113883.3.88.11.83.5).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	ICoverageEntry addCoverageEntry();
+	IInsuranceProvider addInsuranceProvider();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * IHE Payers Section SHOULD contain at least one [1..*] entry, such that Contains exactly one [1..1] Coverage Entry (templateId: 1.3.6.1.4.1.19376.1.5.3.1.4.17).
+	 * HITSP Payers Section SHALL contain at least one [1..*] entry, such that Contains exactly one [1..1] Insurance Provider (templateId: 2.16.840.1.113883.3.88.11.83.5).
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	IPayersSection addCoverageEntry(ICoverageEntry value);
+	IPayersSection addInsuranceProvider(IInsuranceProvider value);
 
 	/**
 	 * <!-- begin-user-doc -->

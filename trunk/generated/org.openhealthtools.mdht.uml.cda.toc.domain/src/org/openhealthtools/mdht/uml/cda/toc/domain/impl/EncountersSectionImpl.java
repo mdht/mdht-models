@@ -76,8 +76,8 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -130,11 +130,12 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	public ST getTitle() {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncountersSection(), IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersSection(),
+				IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(0));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -195,11 +196,12 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	public StrucDocText getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncountersSection(), IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersSection(),
+				IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(3));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -260,11 +262,12 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	public EList<IEncountersActivity> getEncountersActivities() {
 		if (GET_ENCOUNTERS_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncountersSection(), IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersSection(),
+				IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(6));
 			try {
 				GET_ENCOUNTERS_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS_ACTIVITIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -293,9 +296,9 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("EncountersActivity");
-		IEncountersActivity value = (IEncountersActivity)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Encounter)eObject);
-		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter)eObject);
+		IEncountersActivity value = (IEncountersActivity) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Encounter) eObject);
+		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter) eObject);
 		return value;
 	}
 
@@ -338,11 +341,12 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	public EList<IEncounter> getEncounterEntries() {
 		if (GET_ENCOUNTER_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getEncountersSection(), IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getEncountersSection(),
+				IDomainPackage.eINSTANCE.getEncountersSection().getEAllOperations().get(9));
 			try {
 				GET_ENCOUNTER_ENTRIES__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_ENTRIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -371,9 +375,9 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Encounter");
-		IEncounter value = (IEncounter)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Encounter)eObject);
-		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter)eObject);
+		IEncounter value = (IEncounter) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Encounter) eObject);
+		this.getCDAType().addEncounter((org.openhealthtools.mdht.uml.cda.Encounter) eObject);
 		return value;
 	}
 
@@ -397,7 +401,9 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.ENCOUNTERS_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -412,7 +418,7 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.ENCOUNTERS_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -427,7 +433,7 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.ENCOUNTERS_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -462,7 +468,7 @@ public class EncountersSectionImpl extends EObjectImpl implements IEncountersSec
 	 * @generated
 	 */
 	public IEncountersSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncountersSectionImpl

@@ -75,8 +75,8 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -99,6 +99,15 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	 */
 	public void setCDAType(Section newCDAType) {
 		cDAType = newCDAType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isSetCDAType() {
+		return cDAType != null;
 	}
 
 	/**
@@ -129,11 +138,12 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	public ST getTitle() {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getVitalSignsSection(), IDomainPackage.eINSTANCE.getVitalSignsSection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getVitalSignsSection(),
+				IDomainPackage.eINSTANCE.getVitalSignsSection().getEAllOperations().get(0));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -194,11 +204,12 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	public StrucDocText getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getVitalSignsSection(), IDomainPackage.eINSTANCE.getVitalSignsSection().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getVitalSignsSection(),
+				IDomainPackage.eINSTANCE.getVitalSignsSection().getEAllOperations().get(3));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -259,11 +270,12 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	public EList<IVitalSignsOrganizer> getVitalSignsOrganizers() {
 		if (GET_VITAL_SIGNS_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getVitalSignsSection(), IDomainPackage.eINSTANCE.getVitalSignsSection().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getVitalSignsSection(),
+				IDomainPackage.eINSTANCE.getVitalSignsSection().getEAllOperations().get(6));
 			try {
 				GET_VITAL_SIGNS_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_ORGANIZERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -279,8 +291,8 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	 * @generated
 	 */
 	public IVitalSignsOrganizer addVitalSignsOrganizer() {
-		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ihe");
-		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ihe");
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
 		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("VitalSignsOrganizer");
 		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
 		try {
@@ -292,9 +304,9 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("VitalSignsOrganizer");
-		IVitalSignsOrganizer value = (IVitalSignsOrganizer)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Organizer)eObject);
-		this.getCDAType().addOrganizer((org.openhealthtools.mdht.uml.cda.Organizer)eObject);
+		IVitalSignsOrganizer value = (IVitalSignsOrganizer) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Organizer) eObject);
+		this.getCDAType().addOrganizer((org.openhealthtools.mdht.uml.cda.Organizer) eObject);
 		return value;
 	}
 
@@ -318,7 +330,9 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.VITAL_SIGNS_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -333,7 +347,7 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.VITAL_SIGNS_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -348,7 +362,7 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.VITAL_SIGNS_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -363,7 +377,7 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.VITAL_SIGNS_SECTION__CDA_TYPE:
-				return cDAType != null;
+				return isSetCDAType();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -383,7 +397,7 @@ public class VitalSignsSectionImpl extends EObjectImpl implements IVitalSignsSec
 	 * @generated
 	 */
 	public IVitalSignsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // VitalSignsSectionImpl

@@ -69,8 +69,8 @@ public class SeverityObservationImpl extends EObjectImpl implements ISeverityObs
 	 */
 	public Observation getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Observation)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Observation) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -123,11 +123,12 @@ public class SeverityObservationImpl extends EObjectImpl implements ISeverityObs
 	public ANY getValue() {
 		if (GET_VALUE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getSeverityObservation(), IDomainPackage.eINSTANCE.getSeverityObservation().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getSeverityObservation(),
+				IDomainPackage.eINSTANCE.getSeverityObservation().getEAllOperations().get(0));
 			try {
 				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -169,7 +170,9 @@ public class SeverityObservationImpl extends EObjectImpl implements ISeverityObs
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.SEVERITY_OBSERVATION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -184,7 +187,7 @@ public class SeverityObservationImpl extends EObjectImpl implements ISeverityObs
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.SEVERITY_OBSERVATION__CDA_TYPE:
-				setCDAType((Observation)newValue);
+				setCDAType((Observation) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -199,7 +202,7 @@ public class SeverityObservationImpl extends EObjectImpl implements ISeverityObs
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.SEVERITY_OBSERVATION__CDA_TYPE:
-				setCDAType((Observation)null);
+				setCDAType((Observation) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -234,7 +237,7 @@ public class SeverityObservationImpl extends EObjectImpl implements ISeverityObs
 	 * @generated
 	 */
 	public ISeverityObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // SeverityObservationImpl

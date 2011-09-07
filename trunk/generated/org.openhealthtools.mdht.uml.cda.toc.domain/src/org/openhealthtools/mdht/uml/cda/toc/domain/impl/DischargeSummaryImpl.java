@@ -104,8 +104,8 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 */
 	public ClinicalDocument getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (ClinicalDocument)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (ClinicalDocument) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -158,11 +158,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public EList<Author> getAuthors() {
 		if (GET_AUTHORS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(24));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(24));
 			try {
 				GET_AUTHORS__EOCL_QRY = helper.createQuery(GET_AUTHORS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -226,11 +227,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public Custodian getCustodian() {
 		if (GET_CUSTODIAN__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(27));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(27));
 			try {
 				GET_CUSTODIAN__EOCL_QRY = helper.createQuery(GET_CUSTODIAN__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -291,11 +293,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public InfrastructureRootTypeId getTypeId() {
 		if (GET_TYPE_ID__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(0));
 			try {
 				GET_TYPE_ID__EOCL_QRY = helper.createQuery(GET_TYPE_ID__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -356,11 +359,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public II getId() {
 		if (GET_ID__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(3));
 			try {
 				GET_ID__EOCL_QRY = helper.createQuery(GET_ID__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -421,11 +425,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public CE getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(6));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -486,11 +491,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public ST getTitle() {
 		if (GET_TITLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(9));
 			try {
 				GET_TITLE__EOCL_QRY = helper.createQuery(GET_TITLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -551,11 +557,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public TS getEffectiveTime() {
 		if (GET_EFFECTIVE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(12));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(12));
 			try {
 				GET_EFFECTIVE_TIME__EOCL_QRY = helper.createQuery(GET_EFFECTIVE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -616,11 +623,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public CE getConfidentialityCode() {
 		if (GET_CONFIDENTIALITY_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(15));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(15));
 			try {
 				GET_CONFIDENTIALITY_CODE__EOCL_QRY = helper.createQuery(GET_CONFIDENTIALITY_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -681,11 +689,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public CS getLanguageCode() {
 		if (GET_LANGUAGE_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(18));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(18));
 			try {
 				GET_LANGUAGE_CODE__EOCL_QRY = helper.createQuery(GET_LANGUAGE_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -746,11 +755,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public EList<RecordTarget> getRecordTargets() {
 		if (GET_RECORD_TARGETS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(21));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(21));
 			try {
 				GET_RECORD_TARGETS__EOCL_QRY = helper.createQuery(GET_RECORD_TARGETS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -814,11 +824,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public Component2 getComponent() {
 		if (GET_COMPONENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(30));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(30));
 			try {
 				GET_COMPONENT__EOCL_QRY = helper.createQuery(GET_COMPONENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -879,11 +890,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public DataEnterer getDataEnterer() {
 		if (GET_DATA_ENTERER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(33));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(33));
 			try {
 				GET_DATA_ENTERER__EOCL_QRY = helper.createQuery(GET_DATA_ENTERER__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -944,11 +956,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public EList<InformationRecipient> getInformationRecipients() {
 		if (GET_INFORMATION_RECIPIENTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(36));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(36));
 			try {
 				GET_INFORMATION_RECIPIENTS__EOCL_QRY = helper.createQuery(GET_INFORMATION_RECIPIENTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1012,11 +1025,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public LegalAuthenticator getLegalAuthenticator() {
 		if (GET_LEGAL_AUTHENTICATOR__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(39));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(39));
 			try {
 				GET_LEGAL_AUTHENTICATOR__EOCL_QRY = helper.createQuery(GET_LEGAL_AUTHENTICATOR__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1077,11 +1091,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public EList<Authenticator> getAuthenticators() {
 		if (GET_AUTHENTICATORS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(42));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(42));
 			try {
 				GET_AUTHENTICATORS__EOCL_QRY = helper.createQuery(GET_AUTHENTICATORS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1145,11 +1160,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IAllergiesReactionsSection getAllergies() {
 		if (GET_ALLERGIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(45));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(45));
 			try {
 				GET_ALLERGIES__EOCL_QRY = helper.createQuery(GET_ALLERGIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1176,9 +1192,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("AllergiesReactionsSection");
-		IAllergiesReactionsSection value = (IAllergiesReactionsSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IAllergiesReactionsSection value = (IAllergiesReactionsSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1188,7 +1204,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setAllergies(IAllergiesReactionsSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1220,11 +1236,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IProblemListSection getActiveProblems() {
 		if (GET_ACTIVE_PROBLEMS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(48));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(48));
 			try {
 				GET_ACTIVE_PROBLEMS__EOCL_QRY = helper.createQuery(GET_ACTIVE_PROBLEMS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1251,9 +1268,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ProblemListSection");
-		IProblemListSection value = (IProblemListSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IProblemListSection value = (IProblemListSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1263,7 +1280,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setActiveProblems(IProblemListSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1295,11 +1312,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IHospitalCourseSection getHospitalCourse() {
 		if (GET_HOSPITAL_COURSE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(51));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(51));
 			try {
 				GET_HOSPITAL_COURSE__EOCL_QRY = helper.createQuery(GET_HOSPITAL_COURSE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1326,9 +1344,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("HospitalCourseSection");
-		IHospitalCourseSection value = (IHospitalCourseSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IHospitalCourseSection value = (IHospitalCourseSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1338,7 +1356,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setHospitalCourse(IHospitalCourseSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1370,11 +1388,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IHospitalDischargeMedicationsSection getDischargeMeds() {
 		if (GET_DISCHARGE_MEDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(54));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(54));
 			try {
 				GET_DISCHARGE_MEDS__EOCL_QRY = helper.createQuery(GET_DISCHARGE_MEDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1401,9 +1420,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("HospitalDischargeMedicationsSection");
-		IHospitalDischargeMedicationsSection value = (IHospitalDischargeMedicationsSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IHospitalDischargeMedicationsSection value = (IHospitalDischargeMedicationsSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1413,7 +1432,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setDischargeMeds(IHospitalDischargeMedicationsSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1445,11 +1464,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IDischargeDiagnosisSection getDischargeDiagnosis() {
 		if (GET_DISCHARGE_DIAGNOSIS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(57));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(57));
 			try {
 				GET_DISCHARGE_DIAGNOSIS__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIAGNOSIS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1476,9 +1496,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("DischargeDiagnosisSection");
-		IDischargeDiagnosisSection value = (IDischargeDiagnosisSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IDischargeDiagnosisSection value = (IDischargeDiagnosisSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1488,7 +1508,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setDischargeDiagnosis(IDischargeDiagnosisSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1520,11 +1540,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IPlanOfCareSection getPlanOfCare() {
 		if (GET_PLAN_OF_CARE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(60));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(60));
 			try {
 				GET_PLAN_OF_CARE__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1551,9 +1572,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("PlanOfCareSection");
-		IPlanOfCareSection value = (IPlanOfCareSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IPlanOfCareSection value = (IPlanOfCareSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1563,7 +1584,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setPlanOfCare(IPlanOfCareSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1595,11 +1616,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public ISurgeriesSection getSurgeries() {
 		if (GET_SURGERIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(63));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(63));
 			try {
 				GET_SURGERIES__EOCL_QRY = helper.createQuery(GET_SURGERIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1626,9 +1648,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("SurgeriesSection");
-		ISurgeriesSection value = (ISurgeriesSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		ISurgeriesSection value = (ISurgeriesSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1638,7 +1660,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setSurgeries(ISurgeriesSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1670,11 +1692,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IChiefComplaintSection getChiefComplaint() {
 		if (GET_CHIEF_COMPLAINT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(66));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(66));
 			try {
 				GET_CHIEF_COMPLAINT__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1701,9 +1724,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ChiefComplaintSection");
-		IChiefComplaintSection value = (IChiefComplaintSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IChiefComplaintSection value = (IChiefComplaintSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1713,7 +1736,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setChiefComplaint(IChiefComplaintSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1745,11 +1768,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IDischargeDiet getDischargeDiet() {
 		if (GET_DISCHARGE_DIET__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(69));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(69));
 			try {
 				GET_DISCHARGE_DIET__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIET__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1776,9 +1800,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("DischargeDiet");
-		IDischargeDiet value = (IDischargeDiet)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IDischargeDiet value = (IDischargeDiet) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1788,7 +1812,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setDischargeDiet(IDischargeDiet value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1820,11 +1844,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IFamilyHistorySection getFamilyHistory() {
 		if (GET_FAMILY_HISTORY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(72));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(72));
 			try {
 				GET_FAMILY_HISTORY__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1851,9 +1876,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("FamilyHistorySection");
-		IFamilyHistorySection value = (IFamilyHistorySection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IFamilyHistorySection value = (IFamilyHistorySection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1863,7 +1888,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setFamilyHistory(IFamilyHistorySection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1895,11 +1920,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IFunctionalStatusSection getFunctionalStatus() {
 		if (GET_FUNCTIONAL_STATUS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(75));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(75));
 			try {
 				GET_FUNCTIONAL_STATUS__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1926,9 +1952,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("FunctionalStatusSection");
-		IFunctionalStatusSection value = (IFunctionalStatusSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IFunctionalStatusSection value = (IFunctionalStatusSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -1938,7 +1964,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setFunctionalStatus(IFunctionalStatusSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -1970,11 +1996,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IHistoryOfPresentIllness getHistoryOfPresentIllness() {
 		if (GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(78));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(78));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2001,9 +2028,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("HistoryOfPresentIllness");
-		IHistoryOfPresentIllness value = (IHistoryOfPresentIllness)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IHistoryOfPresentIllness value = (IHistoryOfPresentIllness) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -2013,7 +2040,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setHistoryOfPresentIllness(IHistoryOfPresentIllness value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -2045,11 +2072,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IHospitalDischargePhysical getHospitalDischargePhysical() {
 		if (GET_HOSPITAL_DISCHARGE_PHYSICAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(81));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(81));
 			try {
 				GET_HOSPITAL_DISCHARGE_PHYSICAL__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_PHYSICAL__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2076,9 +2104,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("HospitalDischargePhysical");
-		IHospitalDischargePhysical value = (IHospitalDischargePhysical)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IHospitalDischargePhysical value = (IHospitalDischargePhysical) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -2088,7 +2116,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setHospitalDischargePhysical(IHospitalDischargePhysical value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -2120,11 +2148,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IHospitalDischargeStudiesSummarySection getHospitalDischargeStudiesSummary() {
 		if (GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(84));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(84));
 			try {
 				GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2151,9 +2180,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("HospitalDischargeStudiesSummarySection");
-		IHospitalDischargeStudiesSummarySection value = (IHospitalDischargeStudiesSummarySection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IHospitalDischargeStudiesSummarySection value = (IHospitalDischargeStudiesSummarySection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -2163,7 +2192,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setHospitalDischargeStudiesSummary(IHospitalDischargeStudiesSummarySection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -2195,11 +2224,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IImmunizationsSection getImmunizations() {
 		if (GET_IMMUNIZATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(87));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(87));
 			try {
 				GET_IMMUNIZATIONS__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2226,9 +2256,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ImmunizationsSection");
-		IImmunizationsSection value = (IImmunizationsSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IImmunizationsSection value = (IImmunizationsSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -2238,7 +2268,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setImmunizations(IImmunizationsSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -2270,11 +2300,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IReviewOfSystemsSection getReviewOfSystems() {
 		if (GET_REVIEW_OF_SYSTEMS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(90));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(90));
 			try {
 				GET_REVIEW_OF_SYSTEMS__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2301,9 +2332,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ReviewOfSystemsSection");
-		IReviewOfSystemsSection value = (IReviewOfSystemsSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IReviewOfSystemsSection value = (IReviewOfSystemsSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -2313,7 +2344,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setReviewOfSystems(IReviewOfSystemsSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -2345,11 +2376,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public ISocialHistorySection getSocialHistory() {
 		if (GET_SOCIAL_HISTORY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(93));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(93));
 			try {
 				GET_SOCIAL_HISTORY__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2376,9 +2408,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("SocialHistorySection");
-		ISocialHistorySection value = (ISocialHistorySection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		ISocialHistorySection value = (ISocialHistorySection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -2388,7 +2420,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setSocialHistory(ISocialHistorySection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -2420,11 +2452,12 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public IVitalSignsSection getVitalSigns() {
 		if (GET_VITAL_SIGNS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getDischargeSummary(), IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(96));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getDischargeSummary(),
+				IDomainPackage.eINSTANCE.getDischargeSummary().getEAllOperations().get(96));
 			try {
 				GET_VITAL_SIGNS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2451,9 +2484,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("VitalSignsSection");
-		IVitalSignsSection value = (IVitalSignsSection)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section)eObject);
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)eObject);
+		IVitalSignsSection value = (IVitalSignsSection) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Section) eObject);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) eObject);
 		return value;
 	}
 
@@ -2463,7 +2496,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary setVitalSigns(IVitalSignsSection value) {
-		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section)value);
+		this.getCDAType().addSection((org.openhealthtools.mdht.uml.cda.Section) value);
 		return this;
 	}
 
@@ -2476,7 +2509,9 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.DISCHARGE_SUMMARY__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -2491,7 +2526,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.DISCHARGE_SUMMARY__CDA_TYPE:
-				setCDAType((ClinicalDocument)newValue);
+				setCDAType((ClinicalDocument) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -2506,7 +2541,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.DISCHARGE_SUMMARY__CDA_TYPE:
-				setCDAType((ClinicalDocument)null);
+				setCDAType((ClinicalDocument) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -2541,7 +2576,7 @@ public class DischargeSummaryImpl extends EObjectImpl implements IDischargeSumma
 	 * @generated
 	 */
 	public IDischargeSummary init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // DischargeSummaryImpl

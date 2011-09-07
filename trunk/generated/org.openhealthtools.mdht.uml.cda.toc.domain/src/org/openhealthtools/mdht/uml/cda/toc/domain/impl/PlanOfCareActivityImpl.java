@@ -47,7 +47,7 @@ public class PlanOfCareActivityImpl extends EObjectImpl implements IPlanOfCareAc
 	 * @generated
 	 */
 	public IPlanOfCareActivity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PlanOfCareActivityImpl

@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Specimen;
 import org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage;
 import org.openhealthtools.mdht.uml.cda.toc.domain.IResult;
+import org.openhealthtools.mdht.uml.cda.toc.domain.IResultObservation;
 import org.openhealthtools.mdht.uml.cda.toc.domain.IResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
@@ -77,8 +78,8 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	 */
 	public Organizer getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Organizer)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Organizer) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -101,6 +102,15 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	 */
 	public void setCDAType(Organizer newCDAType) {
 		cDAType = newCDAType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isSetCDAType() {
+		return cDAType != null;
 	}
 
 	/**
@@ -131,11 +141,12 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getResultOrganizer(), IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getResultOrganizer(),
+				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -199,11 +210,12 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getResultOrganizer(), IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getResultOrganizer(),
+				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(3));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -264,11 +276,12 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	public CS getStatusCode() {
 		if (GET_STATUS_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getResultOrganizer(), IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(6));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getResultOrganizer(),
+				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(6));
 			try {
 				GET_STATUS_CODE__EOCL_QRY = helper.createQuery(GET_STATUS_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -329,11 +342,12 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	public EList<Specimen> getSpecimens() {
 		if (GET_SPECIMENS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getResultOrganizer(), IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getResultOrganizer(),
+				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(9));
 			try {
 				GET_SPECIMENS__EOCL_QRY = helper.createQuery(GET_SPECIMENS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -397,11 +411,12 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	public EList<IResult> getResults() {
 		if (GET_RESULTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getResultOrganizer(), IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(12));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getResultOrganizer(),
+				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(12));
 			try {
 				GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -430,9 +445,9 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Result");
-		IResult value = (IResult)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IResult value = (IResult) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -448,6 +463,85 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #getResultObservations() <em>Get Result Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResultObservations()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(domain::ResultObservation)).oclAsType(domain::ResultObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getResultObservations() <em>Get Result Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResultObservations()
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_RESULT_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<IResultObservation> getResultObservations() {
+		if (GET_RESULT_OBSERVATIONS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getResultOrganizer(),
+				IDomainPackage.eINSTANCE.getResultOrganizer().getEAllOperations().get(15));
+			try {
+				GET_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_RESULT_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_RESULT_OBSERVATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<IResultObservation> result = (Collection<IResultObservation>) query.evaluate(this);
+		return new BasicEList.UnmodifiableEList<IResultObservation>(result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IResultObservation addResultObservation() {
+		org.eclipse.emf.ecore.EPackage ePackage = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEPackage("http://www.openhealthtools.org/mdht/uml/cda/ccd");
+		org.eclipse.emf.ecore.EFactory eFactory = org.eclipse.emf.ecore.EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/ccd");
+		org.eclipse.emf.ecore.EClass eClass = (org.eclipse.emf.ecore.EClass) ePackage.getEClassifier("ResultObservation");
+		org.eclipse.emf.ecore.EObject eObject = eFactory.create(eClass);
+		try {
+			java.lang.reflect.Method initMethod = eObject.getClass().getMethod("init", new java.lang.Class[0]);
+			initMethod.invoke(eObject, new Object[0]);
+		} catch (Exception e) {
+			// no init() method
+		}
+		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
+		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
+		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ResultObservation");
+		IResultObservation value = (IResultObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		return value;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IResultOrganizer addResultObservation(IResultObservation value) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -456,7 +550,9 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.RESULT_ORGANIZER__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -471,7 +567,7 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.RESULT_ORGANIZER__CDA_TYPE:
-				setCDAType((Organizer)newValue);
+				setCDAType((Organizer) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -486,7 +582,7 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.RESULT_ORGANIZER__CDA_TYPE:
-				setCDAType((Organizer)null);
+				setCDAType((Organizer) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -501,7 +597,7 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.RESULT_ORGANIZER__CDA_TYPE:
-				return cDAType != null;
+				return isSetCDAType();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -521,7 +617,7 @@ public class ResultOrganizerImpl extends EObjectImpl implements IResultOrganizer
 	 * @generated
 	 */
 	public IResultOrganizer init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ResultOrganizerImpl

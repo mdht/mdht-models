@@ -64,8 +64,8 @@ public class HistoryOfPresentIllnessImpl extends EObjectImpl implements IHistory
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -99,7 +99,9 @@ public class HistoryOfPresentIllnessImpl extends EObjectImpl implements IHistory
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.HISTORY_OF_PRESENT_ILLNESS__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -114,7 +116,7 @@ public class HistoryOfPresentIllnessImpl extends EObjectImpl implements IHistory
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.HISTORY_OF_PRESENT_ILLNESS__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -129,7 +131,7 @@ public class HistoryOfPresentIllnessImpl extends EObjectImpl implements IHistory
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.HISTORY_OF_PRESENT_ILLNESS__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -155,7 +157,7 @@ public class HistoryOfPresentIllnessImpl extends EObjectImpl implements IHistory
 	 * @generated
 	 */
 	public IHistoryOfPresentIllness init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HistoryOfPresentIllnessImpl

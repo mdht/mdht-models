@@ -73,8 +73,8 @@ public class PlanOfCareActivityActImpl extends PlanOfCareActivityImpl implements
 	 */
 	public Act getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Act)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Act) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -127,11 +127,12 @@ public class PlanOfCareActivityActImpl extends PlanOfCareActivityImpl implements
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareActivityAct(), IDomainPackage.eINSTANCE.getPlanOfCareActivityAct().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareActivityAct(),
+				IDomainPackage.eINSTANCE.getPlanOfCareActivityAct().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -195,11 +196,12 @@ public class PlanOfCareActivityActImpl extends PlanOfCareActivityImpl implements
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPlanOfCareActivityAct(), IDomainPackage.eINSTANCE.getPlanOfCareActivityAct().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPlanOfCareActivityAct(),
+				IDomainPackage.eINSTANCE.getPlanOfCareActivityAct().getEAllOperations().get(3));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -241,7 +243,9 @@ public class PlanOfCareActivityActImpl extends PlanOfCareActivityImpl implements
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ACT__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -256,7 +260,7 @@ public class PlanOfCareActivityActImpl extends PlanOfCareActivityImpl implements
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ACT__CDA_TYPE:
-				setCDAType((Act)newValue);
+				setCDAType((Act) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -271,7 +275,7 @@ public class PlanOfCareActivityActImpl extends PlanOfCareActivityImpl implements
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ACT__CDA_TYPE:
-				setCDAType((Act)null);
+				setCDAType((Act) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -307,7 +311,7 @@ public class PlanOfCareActivityActImpl extends PlanOfCareActivityImpl implements
 	 */
 	@Override
 	public IPlanOfCareActivityAct init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PlanOfCareActivityActImpl

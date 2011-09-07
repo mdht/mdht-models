@@ -313,25 +313,25 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/addId.1">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/addId.1/value"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getProblemType"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withProblemType"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setProblemType">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setProblemType/value"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setCode/value"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getProblemName"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withProblemName"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setProblemName">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setProblemName/value"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getText"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withText"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setText/value"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getEffectiveTime"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withEffectiveTime"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setEffectiveTime/value"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getProblemCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withProblemCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setProblemCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setProblemCode/value"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getValue"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withValue"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setValue/value"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getAgeObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withAgeObservation"/>
@@ -358,6 +358,21 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/addComment.1">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/addComment.1/value"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getProblemType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withProblemType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setProblemType">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setProblemType/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getProblemName"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withProblemName"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setProblemName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setProblemName/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getProblemCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withProblemCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setProblemCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setProblemCode/value"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getAgeAtOnset"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withAgeAtOnset"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setAgeAtOnset">
@@ -372,21 +387,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withProblemStatus"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setProblemStatus">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setProblemStatus/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setCode/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getText"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withText"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setText/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/getValue"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/withValue"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ProblemEntry/setValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ProblemEntry/setValue/value"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//AgeObservation">
@@ -1561,8 +1561,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//VitalSignsOrganizer">
-      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//VitalSignsOrganizer/cDAType"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/getId"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/withId"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/setId">
@@ -1573,10 +1571,8 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/setEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//VitalSignsOrganizer/setEffectiveTime/value"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/getSpecimens"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/addSpecimen"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/addSpecimen.1">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//VitalSignsOrganizer/addSpecimen.1/value"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/addSpecimen">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//VitalSignsOrganizer/addSpecimen/value"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/getVitalSignObservations"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/addVitalSignObservation"/>
@@ -1587,6 +1583,130 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/withAuthor"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/setAuthor">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//VitalSignsOrganizer/setAuthor/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/addId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//VitalSignsOrganizer/addId/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/setCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//VitalSignsOrganizer/setCode/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/setStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//VitalSignsOrganizer/setStatusCode/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VitalSignsOrganizer/addResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//VitalSignsOrganizer/addResultObservation/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//ResultOrganizer">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//ResultOrganizer/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getIds"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addId"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addId.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/addId.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/withCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/setCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/setCode/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getStatusCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/withStatusCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/setStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/setStatusCode/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getSpecimens"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addSpecimen"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addSpecimen.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/addSpecimen.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getResults"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addResult"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addResult.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/addResult.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getResultObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addResultObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addResultObservation.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/addResultObservation.1/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//Result">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//Result/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getIds"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/addId"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/addId.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/addId.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getResultType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/withResultType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/setResultType">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/setResultType/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getStatusCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/withStatusCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/setStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/setStatusCode/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getResultDateTime"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/withResultDateTime"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/setResultDateTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/setResultDateTime/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getValue"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/withValue"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/setValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/setValue/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getInterpretationCodes"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/addInterpretationCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/addInterpretationCode.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/addInterpretationCode.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getMethodCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/withMethodCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/setMethodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/setMethodCode/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//ResultObservation">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//ResultObservation/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/getIds"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/addId"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/addId.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultObservation/addId.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/getCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/withCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/setCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultObservation/setCode/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/getStatusCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/withStatusCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/setStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultObservation/setStatusCode/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/getEffectiveTime"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/withEffectiveTime"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/setEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultObservation/setEffectiveTime/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/getValue"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/withValue"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/setValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultObservation/setValue/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/getInterpretationCodes"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/addInterpretationCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/addInterpretationCode.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultObservation/addInterpretationCode.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/getMethodCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/withMethodCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultObservation/setMethodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultObservation/setMethodCode/value"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//VitalSignObservation">
@@ -2053,74 +2173,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//DiagnosticResultsSection/addResultOrganizer.1/value"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//Result">
-      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//Result/cDAType"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getIds"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/addId"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/addId.1">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/addId.1/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getResultType"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/withResultType"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/setResultType">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/setResultType/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getStatusCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/withStatusCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/setStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/setStatusCode/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getResultDateTime"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/withResultDateTime"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/setResultDateTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/setResultDateTime/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getValue"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/withValue"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/setValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/setValue/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getInterpretationCodes"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/addInterpretationCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/addInterpretationCode.1">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/addInterpretationCode.1/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/getMethodCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/withMethodCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//Result/setMethodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//Result/setMethodCode/value"/>
-      </genOperations>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//ResultOrganizer">
-      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//ResultOrganizer/cDAType"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getIds"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addId"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addId.1">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/addId.1/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/withCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/setCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/setCode/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getStatusCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/withStatusCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/setStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/setStatusCode/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getSpecimens"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addSpecimen"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addSpecimen.1">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/addSpecimen.1/value"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/getResults"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addResult"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ResultOrganizer/addResult.1">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ResultOrganizer/addResult.1/value"/>
-      </genOperations>
-    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//EncountersSection">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//EncountersSection/cDAType"/>
@@ -2192,53 +2244,53 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayersSection/setText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PayersSection/setText/value"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayersSection/getCoverageEntries"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayersSection/addCoverageEntry"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayersSection/addCoverageEntry.1">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PayersSection/addCoverageEntry.1/value"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayersSection/getInsuranceProviders"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayersSection/addInsuranceProvider"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayersSection/addInsuranceProvider.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PayersSection/addInsuranceProvider.1/value"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//CoverageEntry">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//InsuranceProvider">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//CoverageEntry/cDAType"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//CoverageEntry/getIds"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//CoverageEntry/addId"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//CoverageEntry/addId.1">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//CoverageEntry/addId.1/value"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//InsuranceProvider/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//InsuranceProvider/getIds"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//InsuranceProvider/addId"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//InsuranceProvider/addId.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//InsuranceProvider/addId.1/value"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//CoverageEntry/getPolicyActivities"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//CoverageEntry/addPolicyActivity"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//CoverageEntry/addPolicyActivity.1">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//CoverageEntry/addPolicyActivity.1/value"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//InsuranceProvider/getPayerEntries"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//InsuranceProvider/addPayerEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//InsuranceProvider/addPayerEntry.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//InsuranceProvider/addPayerEntry.1/value"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//PolicyActivity">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//PayerEntry">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//PolicyActivity/cDAType"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/getIds"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/addId"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/addId.1">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PolicyActivity/addId.1/value"/>
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//PayerEntry/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/getIds"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/addId"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/addId.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PayerEntry/addId.1/value"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/getCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/withCode"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/setCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PolicyActivity/setCode/value"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/getCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/withCode"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/setCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PayerEntry/setCode/value"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/getPayerEntity"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/withPayerEntity"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/setPayerEntity">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PolicyActivity/setPayerEntity/value"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/getPayerEntity"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/withPayerEntity"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/setPayerEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PayerEntry/setPayerEntity/value"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/getCoveredParty"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/withCoveredParty"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/setCoveredParty">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PolicyActivity/setCoveredParty/value"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/getCoveredParty"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/withCoveredParty"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/setCoveredParty">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PayerEntry/setCoveredParty/value"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/getSubscriber"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/withSubscriber"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PolicyActivity/setSubscriber">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PolicyActivity/setSubscriber/value"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/getSubscriber"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/withSubscriber"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PayerEntry/setSubscriber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PayerEntry/setSubscriber/value"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//PayerEntity">
@@ -2465,14 +2517,390 @@
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//AssessmentAndPlanSection">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//AssessmentAndPlanSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/getMedications"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/addMedication"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/addMedication.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//AssessmentAndPlanSection/addMedication.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/getImmunizations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/addImmunization"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/addImmunization.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//AssessmentAndPlanSection/addImmunization.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/getEncounterEntries"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/addEncounterEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/addEncounterEntry.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//AssessmentAndPlanSection/addEncounterEntry.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/getProcedureEntries"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/addProcedureEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AssessmentAndPlanSection/addProcedureEntry.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//AssessmentAndPlanSection/addProcedureEntry.1/value"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//PhysicalExamSection">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//PhysicalExamSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getVitalSignsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withVitalSignsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setVitalSignsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setVitalSignsSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getGeneralAppearanceSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withGeneralAppearanceSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setGeneralAppearanceSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setGeneralAppearanceSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getVisibleImplantedMedicalDevicesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withVisibleImplantedMedicalDevicesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setVisibleImplantedMedicalDevicesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setVisibleImplantedMedicalDevicesSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getIntegumentarySystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withIntegumentarySystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setIntegumentarySystemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setIntegumentarySystemSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getHeadSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withHeadSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setHeadSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setHeadSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getEyesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withEyesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setEyesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setEyesSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getEarsNoseMouthThroatSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withEarsNoseMouthThroatSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setEarsNoseMouthThroatSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setEarsNoseMouthThroatSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getEarsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withEarsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setEarsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setEarsSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getNoseSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withNoseSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setNoseSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setNoseSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getMouthThroatTeethSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withMouthThroatTeethSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setMouthThroatTeethSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setMouthThroatTeethSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getNeckSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withNeckSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setNeckSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setNeckSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getEndocrineSystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withEndocrineSystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setEndocrineSystemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setEndocrineSystemSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getThoraxLungsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withThoraxLungsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setThoraxLungsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setThoraxLungsSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getChestWallSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withChestWallSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setChestWallSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setChestWallSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getBreastSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withBreastSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setBreastSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setBreastSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getHeartSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withHeartSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setHeartSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setHeartSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getRespiratorySystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withRespiratorySystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setRespiratorySystemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setRespiratorySystemSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getAbdomenSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withAbdomenSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setAbdomenSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setAbdomenSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getLymphaticSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withLymphaticSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setLymphaticSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setLymphaticSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getVesselsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withVesselsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setVesselsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setVesselsSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getMusculoskeletalSystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withMusculoskeletalSystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setMusculoskeletalSystemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setMusculoskeletalSystemSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getNeurologicSystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withNeurologicSystemSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setNeurologicSystemSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setNeurologicSystemSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getGenitaliaSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withGenitaliaSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setGenitaliaSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setGenitaliaSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getRectumSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withRectumSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setRectumSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setRectumSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getExtremitiesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/withExtremitiesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/setExtremitiesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/setExtremitiesSection/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/getConditions"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/addCondition"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//PhysicalExamSection/addCondition.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//PhysicalExamSection/addCondition.1/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//GeneralAppearanceSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//GeneralAppearanceSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//GeneralAppearanceSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//GeneralAppearanceSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//GeneralAppearanceSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//GeneralAppearanceSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//VisibleImplantedMedicalDevicesSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//VisibleImplantedMedicalDevicesSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VisibleImplantedMedicalDevicesSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VisibleImplantedMedicalDevicesSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VisibleImplantedMedicalDevicesSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//VisibleImplantedMedicalDevicesSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//IntegumentarySystemSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//IntegumentarySystemSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//IntegumentarySystemSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//IntegumentarySystemSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//IntegumentarySystemSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//IntegumentarySystemSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//HeadSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//HeadSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//HeadSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//HeadSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//HeadSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//HeadSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//EyesSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//EyesSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EyesSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EyesSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EyesSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//EyesSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//EarsNoseMouthThroatSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//EarsNoseMouthThroatSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EarsNoseMouthThroatSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EarsNoseMouthThroatSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EarsNoseMouthThroatSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//EarsNoseMouthThroatSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//EarsSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//EarsSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EarsSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EarsSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EarsSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//EarsSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//NoseSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//NoseSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//NoseSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//NoseSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//NoseSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//NoseSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//MouthThroatTeethSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//MouthThroatTeethSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//MouthThroatTeethSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//MouthThroatTeethSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//MouthThroatTeethSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//MouthThroatTeethSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//NeckSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//NeckSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//NeckSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//NeckSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//NeckSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//NeckSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//EndocrineSystemSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//EndocrineSystemSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EndocrineSystemSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EndocrineSystemSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//EndocrineSystemSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//EndocrineSystemSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//ThoraxLungsSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//ThoraxLungsSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ThoraxLungsSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ThoraxLungsSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ThoraxLungsSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ThoraxLungsSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//ChestWallSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//ChestWallSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ChestWallSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ChestWallSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ChestWallSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ChestWallSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//BreastSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//BreastSection/cDAType"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//HeartSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//HeartSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//HeartSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//HeartSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//HeartSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//HeartSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//RespiratorySystemSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//RespiratorySystemSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//RespiratorySystemSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//RespiratorySystemSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//RespiratorySystemSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//RespiratorySystemSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//AbdomenSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//AbdomenSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AbdomenSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AbdomenSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//AbdomenSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//AbdomenSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//LymphaticSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//LymphaticSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//LymphaticSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//LymphaticSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//LymphaticSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//LymphaticSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//VesselsSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//VesselsSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VesselsSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VesselsSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//VesselsSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//VesselsSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//MusculoskeletalSystemSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//MusculoskeletalSystemSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//MusculoskeletalSystemSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//MusculoskeletalSystemSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//MusculoskeletalSystemSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//MusculoskeletalSystemSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//NeurologicSystemSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//NeurologicSystemSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//NeurologicSystemSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//NeurologicSystemSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//NeurologicSystemSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//NeurologicSystemSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//GenitaliaSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//GenitaliaSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//GenitaliaSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//GenitaliaSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//GenitaliaSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//GenitaliaSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//RectumSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//RectumSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//RectumSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//RectumSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//RectumSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//RectumSection/setProblemEntry/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//ExtremitiesSection">
+      <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+          propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//ExtremitiesSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ExtremitiesSection/getProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ExtremitiesSection/withProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ExtremitiesSection/setProblemEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ExtremitiesSection/setProblemEntry/value"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//ReasonForReferralSection">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
           propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//ReasonForReferralSection/cDAType"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ReasonForReferralSection/getProblemEntries"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ReasonForReferralSection/addProblemEntry"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ReasonForReferralSection/addProblemEntry.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ReasonForReferralSection/addProblemEntry.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ReasonForReferralSection/getConditions"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ReasonForReferralSection/addCondition"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ReasonForReferralSection/addCondition.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ReasonForReferralSection/addCondition.1/value"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ReasonForReferralSection/getResults"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ReasonForReferralSection/addResult"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="domain.ecore#//ReasonForReferralSection/addResult.1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="domain.ecore#//ReasonForReferralSection/addResult.1/value"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="domain.ecore#//GeneralStatusSection">
       <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"

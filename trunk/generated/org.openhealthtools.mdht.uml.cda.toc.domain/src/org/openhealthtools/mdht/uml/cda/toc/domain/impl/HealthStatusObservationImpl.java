@@ -70,8 +70,8 @@ public class HealthStatusObservationImpl extends EObjectImpl implements IHealthS
 	 */
 	public Observation getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Observation)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Observation) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -124,11 +124,12 @@ public class HealthStatusObservationImpl extends EObjectImpl implements IHealthS
 	public ED getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getHealthStatusObservation(), IDomainPackage.eINSTANCE.getHealthStatusObservation().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getHealthStatusObservation(),
+				IDomainPackage.eINSTANCE.getHealthStatusObservation().getEAllOperations().get(0));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -189,11 +190,12 @@ public class HealthStatusObservationImpl extends EObjectImpl implements IHealthS
 	public CE getValue() {
 		if (GET_VALUE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getHealthStatusObservation(), IDomainPackage.eINSTANCE.getHealthStatusObservation().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getHealthStatusObservation(),
+				IDomainPackage.eINSTANCE.getHealthStatusObservation().getEAllOperations().get(3));
 			try {
 				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -235,7 +237,9 @@ public class HealthStatusObservationImpl extends EObjectImpl implements IHealthS
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.HEALTH_STATUS_OBSERVATION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -250,7 +254,7 @@ public class HealthStatusObservationImpl extends EObjectImpl implements IHealthS
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.HEALTH_STATUS_OBSERVATION__CDA_TYPE:
-				setCDAType((Observation)newValue);
+				setCDAType((Observation) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -265,7 +269,7 @@ public class HealthStatusObservationImpl extends EObjectImpl implements IHealthS
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.HEALTH_STATUS_OBSERVATION__CDA_TYPE:
-				setCDAType((Observation)null);
+				setCDAType((Observation) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -300,7 +304,7 @@ public class HealthStatusObservationImpl extends EObjectImpl implements IHealthS
 	 * @generated
 	 */
 	public IHealthStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HealthStatusObservationImpl

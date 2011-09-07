@@ -69,8 +69,8 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	 */
 	public Procedure getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Procedure)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Procedure) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -123,11 +123,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(0));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -188,11 +189,12 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public CD getTargetSiteCode() {
 		if (GET_TARGET_SITE_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getProcedure(), IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(3));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getProcedure(),
+				IDomainPackage.eINSTANCE.getProcedure().getEAllOperations().get(3));
 			try {
 				GET_TARGET_SITE_CODE__EOCL_QRY = helper.createQuery(GET_TARGET_SITE_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -234,7 +236,9 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.PROCEDURE__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -249,7 +253,7 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.PROCEDURE__CDA_TYPE:
-				setCDAType((Procedure)newValue);
+				setCDAType((Procedure) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -264,7 +268,7 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.PROCEDURE__CDA_TYPE:
-				setCDAType((Procedure)null);
+				setCDAType((Procedure) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -299,7 +303,7 @@ public class ProcedureImpl extends EObjectImpl implements IProcedure {
 	 * @generated
 	 */
 	public IProcedure init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureImpl

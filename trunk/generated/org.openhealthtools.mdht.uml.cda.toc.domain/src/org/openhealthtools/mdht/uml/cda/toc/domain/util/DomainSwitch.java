@@ -10,101 +10,7 @@ import java.util.List;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirective;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectiveReference;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectiveStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectiveVerification;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAdvanceDirectivesSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAgeObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAllergiesReactionsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAllergyDrugSensitivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAllergyIntolerance;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IAssessmentAndPlanSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICauseOfDeathObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IChiefComplaintSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IComment;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICondition;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IConsultationRequest;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IConsultationSummary;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICoverageEntry;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ICoveredParty;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDiagnosticResultsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeDiet;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeInstructions;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDischargeSummary;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IDomainPackage;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncounter;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncounterLocation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncountersActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEncountersSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IEpisodeObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IExternalReference;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFamilyHistory;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFamilyHistoryObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFamilyHistorySection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFulfillmentInstruction;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IFunctionalStatusSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IGeneralStatusSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHealthStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHistoryOfPresentIllness;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalCourseSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalDischargeMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalDischargePhysical;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IHospitalDischargeStudiesSummarySection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IImmunization;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IImmunizationsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IInternalReference;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicalEquipmentSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedication;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationFullfillmentInstructions;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationOrderInformation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationSeriesNumberObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationType;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPatientInstruction;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPatientMedicalInstructions;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPayerEntity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPayersSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPhysicalExamSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityAct;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityEncounter;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivitySubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareActivitySupply;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPlanOfCareSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPolicyActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IPolicySubscriber;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemEntry;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemEntryReactionObservationContainer;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemListSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProblemStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProcedure;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProcedureEntry;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProcedureEntryProcedureActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IProductInstance;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IReactionObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IReasonForReferralSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IResult;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IResultOrganizer;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IReviewOfSystemsSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISeverity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISeverityObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISimpleObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISocialHistory;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISocialHistoryStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IStatusObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISupplyActivity;
-import org.openhealthtools.mdht.uml.cda.toc.domain.ISurgeriesSection;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignObservation;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignsOrganizer;
-import org.openhealthtools.mdht.uml.cda.toc.domain.IVitalSignsSection;
+import org.openhealthtools.mdht.uml.cda.toc.domain.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -161,13 +67,11 @@ public class DomainSwitch<T> {
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
-		}
-		else {
+		} else {
 			List<EClass> eSuperTypes = theEClass.getESuperTypes();
-			return
-				eSuperTypes.isEmpty() ?
-					defaultCase(theEObject) :
-					doSwitch(eSuperTypes.get(0), theEObject);
+			return eSuperTypes.isEmpty()
+					? defaultCase(theEObject)
+					: doSwitch(eSuperTypes.get(0), theEObject);
 		}
 	}
 
@@ -181,587 +85,1013 @@ public class DomainSwitch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case IDomainPackage.DISCHARGE_SUMMARY: {
-				IDischargeSummary dischargeSummary = (IDischargeSummary)theEObject;
+				IDischargeSummary dischargeSummary = (IDischargeSummary) theEObject;
 				T result = caseDischargeSummary(dischargeSummary);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.ALLERGIES_REACTIONS_SECTION: {
-				IAllergiesReactionsSection allergiesReactionsSection = (IAllergiesReactionsSection)theEObject;
+				IAllergiesReactionsSection allergiesReactionsSection = (IAllergiesReactionsSection) theEObject;
 				T result = caseAllergiesReactionsSection(allergiesReactionsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.ALLERGY_DRUG_SENSITIVITY: {
-				IAllergyDrugSensitivity allergyDrugSensitivity = (IAllergyDrugSensitivity)theEObject;
+				IAllergyDrugSensitivity allergyDrugSensitivity = (IAllergyDrugSensitivity) theEObject;
 				T result = caseAllergyDrugSensitivity(allergyDrugSensitivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.EPISODE_OBSERVATION: {
-				IEpisodeObservation episodeObservation = (IEpisodeObservation)theEObject;
+				IEpisodeObservation episodeObservation = (IEpisodeObservation) theEObject;
 				T result = caseEpisodeObservation(episodeObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.ALLERGY_INTOLERANCE: {
-				IAllergyIntolerance allergyIntolerance = (IAllergyIntolerance)theEObject;
+				IAllergyIntolerance allergyIntolerance = (IAllergyIntolerance) theEObject;
 				T result = caseAllergyIntolerance(allergyIntolerance);
-				if (result == null) result = caseProblemEntry(allergyIntolerance);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProblemEntry(allergyIntolerance);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PROBLEM_ENTRY: {
-				IProblemEntry problemEntry = (IProblemEntry)theEObject;
+				IProblemEntry problemEntry = (IProblemEntry) theEObject;
 				T result = caseProblemEntry(problemEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.AGE_OBSERVATION: {
-				IAgeObservation ageObservation = (IAgeObservation)theEObject;
+				IAgeObservation ageObservation = (IAgeObservation) theEObject;
 				T result = caseAgeObservation(ageObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.SEVERITY: {
-				ISeverity severity = (ISeverity)theEObject;
+				ISeverity severity = (ISeverity) theEObject;
 				T result = caseSeverity(severity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PROBLEM_STATUS_OBSERVATION: {
-				IProblemStatusObservation problemStatusObservation = (IProblemStatusObservation)theEObject;
+				IProblemStatusObservation problemStatusObservation = (IProblemStatusObservation) theEObject;
 				T result = caseProblemStatusObservation(problemStatusObservation);
-				if (result == null) result = caseStatusObservation(problemStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(problemStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.STATUS_OBSERVATION: {
-				IStatusObservation statusObservation = (IStatusObservation)theEObject;
+				IStatusObservation statusObservation = (IStatusObservation) theEObject;
 				T result = caseStatusObservation(statusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.HEALTH_STATUS_OBSERVATION: {
-				IHealthStatusObservation healthStatusObservation = (IHealthStatusObservation)theEObject;
+				IHealthStatusObservation healthStatusObservation = (IHealthStatusObservation) theEObject;
 				T result = caseHealthStatusObservation(healthStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.COMMENT: {
-				IComment comment = (IComment)theEObject;
+				IComment comment = (IComment) theEObject;
 				T result = caseComment(comment);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.CAUSE_OF_DEATH_OBSERVATION: {
-				ICauseOfDeathObservation causeOfDeathObservation = (ICauseOfDeathObservation)theEObject;
+				ICauseOfDeathObservation causeOfDeathObservation = (ICauseOfDeathObservation) theEObject;
 				T result = caseCauseOfDeathObservation(causeOfDeathObservation);
-				if (result == null) result = caseFamilyHistoryObservation(causeOfDeathObservation);
-				if (result == null) result = caseSimpleObservation(causeOfDeathObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseFamilyHistoryObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = caseSimpleObservation(causeOfDeathObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.FAMILY_HISTORY_OBSERVATION: {
-				IFamilyHistoryObservation familyHistoryObservation = (IFamilyHistoryObservation)theEObject;
+				IFamilyHistoryObservation familyHistoryObservation = (IFamilyHistoryObservation) theEObject;
 				T result = caseFamilyHistoryObservation(familyHistoryObservation);
-				if (result == null) result = caseSimpleObservation(familyHistoryObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSimpleObservation(familyHistoryObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.SIMPLE_OBSERVATION: {
-				ISimpleObservation simpleObservation = (ISimpleObservation)theEObject;
+				ISimpleObservation simpleObservation = (ISimpleObservation) theEObject;
 				T result = caseSimpleObservation(simpleObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER: {
-				IProblemEntryReactionObservationContainer problemEntryReactionObservationContainer = (IProblemEntryReactionObservationContainer)theEObject;
+				IProblemEntryReactionObservationContainer problemEntryReactionObservationContainer = (IProblemEntryReactionObservationContainer) theEObject;
 				T result = caseProblemEntryReactionObservationContainer(problemEntryReactionObservationContainer);
-				if (result == null) result = caseProblemEntry(problemEntryReactionObservationContainer);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProblemEntry(problemEntryReactionObservationContainer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PROBLEM_LIST_SECTION: {
-				IProblemListSection problemListSection = (IProblemListSection)theEObject;
+				IProblemListSection problemListSection = (IProblemListSection) theEObject;
 				T result = caseProblemListSection(problemListSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.CONDITION: {
-				ICondition condition = (ICondition)theEObject;
+				ICondition condition = (ICondition) theEObject;
 				T result = caseCondition(condition);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.HOSPITAL_COURSE_SECTION: {
-				IHospitalCourseSection hospitalCourseSection = (IHospitalCourseSection)theEObject;
+				IHospitalCourseSection hospitalCourseSection = (IHospitalCourseSection) theEObject;
 				T result = caseHospitalCourseSection(hospitalCourseSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: {
-				IHospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (IHospitalDischargeMedicationsSection)theEObject;
+				IHospitalDischargeMedicationsSection hospitalDischargeMedicationsSection = (IHospitalDischargeMedicationsSection) theEObject;
 				T result = caseHospitalDischargeMedicationsSection(hospitalDischargeMedicationsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.MEDICATION: {
-				IMedication medication = (IMedication)theEObject;
+				IMedication medication = (IMedication) theEObject;
 				T result = caseMedication(medication);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.MEDICATION_SERIES_NUMBER_OBSERVATION: {
-				IMedicationSeriesNumberObservation medicationSeriesNumberObservation = (IMedicationSeriesNumberObservation)theEObject;
+				IMedicationSeriesNumberObservation medicationSeriesNumberObservation = (IMedicationSeriesNumberObservation) theEObject;
 				T result = caseMedicationSeriesNumberObservation(medicationSeriesNumberObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.MEDICATION_STATUS_OBSERVATION: {
-				IMedicationStatusObservation medicationStatusObservation = (IMedicationStatusObservation)theEObject;
+				IMedicationStatusObservation medicationStatusObservation = (IMedicationStatusObservation) theEObject;
 				T result = caseMedicationStatusObservation(medicationStatusObservation);
-				if (result == null) result = caseStatusObservation(medicationStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(medicationStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.REACTION_OBSERVATION: {
-				IReactionObservation reactionObservation = (IReactionObservation)theEObject;
+				IReactionObservation reactionObservation = (IReactionObservation) theEObject;
 				T result = caseReactionObservation(reactionObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.SEVERITY_OBSERVATION: {
-				ISeverityObservation severityObservation = (ISeverityObservation)theEObject;
+				ISeverityObservation severityObservation = (ISeverityObservation) theEObject;
 				T result = caseSeverityObservation(severityObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PRODUCT_INSTANCE: {
-				IProductInstance productInstance = (IProductInstance)theEObject;
+				IProductInstance productInstance = (IProductInstance) theEObject;
 				T result = caseProductInstance(productInstance);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.INTERNAL_REFERENCE: {
-				IInternalReference internalReference = (IInternalReference)theEObject;
+				IInternalReference internalReference = (IInternalReference) theEObject;
 				T result = caseInternalReference(internalReference);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PATIENT_MEDICAL_INSTRUCTIONS: {
-				IPatientMedicalInstructions patientMedicalInstructions = (IPatientMedicalInstructions)theEObject;
+				IPatientMedicalInstructions patientMedicalInstructions = (IPatientMedicalInstructions) theEObject;
 				T result = casePatientMedicalInstructions(patientMedicalInstructions);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.MEDICATION_TYPE: {
-				IMedicationType medicationType = (IMedicationType)theEObject;
+				IMedicationType medicationType = (IMedicationType) theEObject;
 				T result = caseMedicationType(medicationType);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.MEDICATION_ORDER_INFORMATION: {
-				IMedicationOrderInformation medicationOrderInformation = (IMedicationOrderInformation)theEObject;
+				IMedicationOrderInformation medicationOrderInformation = (IMedicationOrderInformation) theEObject;
 				T result = caseMedicationOrderInformation(medicationOrderInformation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.MEDICATION_FULLFILLMENT_INSTRUCTIONS: {
-				IMedicationFullfillmentInstructions medicationFullfillmentInstructions = (IMedicationFullfillmentInstructions)theEObject;
+				IMedicationFullfillmentInstructions medicationFullfillmentInstructions = (IMedicationFullfillmentInstructions) theEObject;
 				T result = caseMedicationFullfillmentInstructions(medicationFullfillmentInstructions);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.DISCHARGE_DIAGNOSIS_SECTION: {
-				IDischargeDiagnosisSection dischargeDiagnosisSection = (IDischargeDiagnosisSection)theEObject;
+				IDischargeDiagnosisSection dischargeDiagnosisSection = (IDischargeDiagnosisSection) theEObject;
 				T result = caseDischargeDiagnosisSection(dischargeDiagnosisSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PLAN_OF_CARE_SECTION: {
-				IPlanOfCareSection planOfCareSection = (IPlanOfCareSection)theEObject;
+				IPlanOfCareSection planOfCareSection = (IPlanOfCareSection) theEObject;
 				T result = casePlanOfCareSection(planOfCareSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ACT: {
-				IPlanOfCareActivityAct planOfCareActivityAct = (IPlanOfCareActivityAct)theEObject;
+				IPlanOfCareActivityAct planOfCareActivityAct = (IPlanOfCareActivityAct) theEObject;
 				T result = casePlanOfCareActivityAct(planOfCareActivityAct);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivityAct);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivityAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY: {
-				IPlanOfCareActivity planOfCareActivity = (IPlanOfCareActivity)theEObject;
+				IPlanOfCareActivity planOfCareActivity = (IPlanOfCareActivity) theEObject;
 				T result = casePlanOfCareActivity(planOfCareActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER: {
-				IPlanOfCareActivityEncounter planOfCareActivityEncounter = (IPlanOfCareActivityEncounter)theEObject;
+				IPlanOfCareActivityEncounter planOfCareActivityEncounter = (IPlanOfCareActivityEncounter) theEObject;
 				T result = casePlanOfCareActivityEncounter(planOfCareActivityEncounter);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivityEncounter);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivityEncounter);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION: {
-				IPlanOfCareActivityObservation planOfCareActivityObservation = (IPlanOfCareActivityObservation)theEObject;
+				IPlanOfCareActivityObservation planOfCareActivityObservation = (IPlanOfCareActivityObservation) theEObject;
 				T result = casePlanOfCareActivityObservation(planOfCareActivityObservation);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivityObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE: {
-				IPlanOfCareActivityProcedure planOfCareActivityProcedure = (IPlanOfCareActivityProcedure)theEObject;
+				IPlanOfCareActivityProcedure planOfCareActivityProcedure = (IPlanOfCareActivityProcedure) theEObject;
 				T result = casePlanOfCareActivityProcedure(planOfCareActivityProcedure);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivityProcedure);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivityProcedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION: {
-				IPlanOfCareActivitySubstanceAdministration planOfCareActivitySubstanceAdministration = (IPlanOfCareActivitySubstanceAdministration)theEObject;
+				IPlanOfCareActivitySubstanceAdministration planOfCareActivitySubstanceAdministration = (IPlanOfCareActivitySubstanceAdministration) theEObject;
 				T result = casePlanOfCareActivitySubstanceAdministration(planOfCareActivitySubstanceAdministration);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivitySubstanceAdministration);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivitySubstanceAdministration);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PLAN_OF_CARE_ACTIVITY_SUPPLY: {
-				IPlanOfCareActivitySupply planOfCareActivitySupply = (IPlanOfCareActivitySupply)theEObject;
+				IPlanOfCareActivitySupply planOfCareActivitySupply = (IPlanOfCareActivitySupply) theEObject;
 				T result = casePlanOfCareActivitySupply(planOfCareActivitySupply);
-				if (result == null) result = casePlanOfCareActivity(planOfCareActivitySupply);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = casePlanOfCareActivity(planOfCareActivitySupply);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.IMMUNIZATION: {
-				IImmunization immunization = (IImmunization)theEObject;
+				IImmunization immunization = (IImmunization) theEObject;
 				T result = caseImmunization(immunization);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PATIENT_INSTRUCTION: {
-				IPatientInstruction patientInstruction = (IPatientInstruction)theEObject;
+				IPatientInstruction patientInstruction = (IPatientInstruction) theEObject;
 				T result = casePatientInstruction(patientInstruction);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.ENCOUNTER: {
-				IEncounter encounter = (IEncounter)theEObject;
+				IEncounter encounter = (IEncounter) theEObject;
 				T result = caseEncounter(encounter);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PROCEDURE: {
-				IProcedure procedure = (IProcedure)theEObject;
+				IProcedure procedure = (IProcedure) theEObject;
 				T result = caseProcedure(procedure);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.SURGERIES_SECTION: {
-				ISurgeriesSection surgeriesSection = (ISurgeriesSection)theEObject;
+				ISurgeriesSection surgeriesSection = (ISurgeriesSection) theEObject;
 				T result = caseSurgeriesSection(surgeriesSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.EXTERNAL_REFERENCE: {
-				IExternalReference externalReference = (IExternalReference)theEObject;
+				IExternalReference externalReference = (IExternalReference) theEObject;
 				T result = caseExternalReference(externalReference);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE: {
-				IProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure = (IProcedureEntryProcedureActivityProcedure)theEObject;
+				IProcedureEntryProcedureActivityProcedure procedureEntryProcedureActivityProcedure = (IProcedureEntryProcedureActivityProcedure) theEObject;
 				T result = caseProcedureEntryProcedureActivityProcedure(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = caseProcedureEntry(procedureEntryProcedureActivityProcedure);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseProcedureEntry(procedureEntryProcedureActivityProcedure);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PROCEDURE_ENTRY: {
-				IProcedureEntry procedureEntry = (IProcedureEntry)theEObject;
+				IProcedureEntry procedureEntry = (IProcedureEntry) theEObject;
 				T result = caseProcedureEntry(procedureEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.ENCOUNTER_LOCATION: {
-				IEncounterLocation encounterLocation = (IEncounterLocation)theEObject;
+				IEncounterLocation encounterLocation = (IEncounterLocation) theEObject;
 				T result = caseEncounterLocation(encounterLocation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.MEDICATION_ACTIVITY: {
-				IMedicationActivity medicationActivity = (IMedicationActivity)theEObject;
+				IMedicationActivity medicationActivity = (IMedicationActivity) theEObject;
 				T result = caseMedicationActivity(medicationActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.CHIEF_COMPLAINT_SECTION: {
-				IChiefComplaintSection chiefComplaintSection = (IChiefComplaintSection)theEObject;
+				IChiefComplaintSection chiefComplaintSection = (IChiefComplaintSection) theEObject;
 				T result = caseChiefComplaintSection(chiefComplaintSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.DISCHARGE_DIET: {
-				IDischargeDiet dischargeDiet = (IDischargeDiet)theEObject;
+				IDischargeDiet dischargeDiet = (IDischargeDiet) theEObject;
 				T result = caseDischargeDiet(dischargeDiet);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.FAMILY_HISTORY_SECTION: {
-				IFamilyHistorySection familyHistorySection = (IFamilyHistorySection)theEObject;
+				IFamilyHistorySection familyHistorySection = (IFamilyHistorySection) theEObject;
 				T result = caseFamilyHistorySection(familyHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.FAMILY_HISTORY: {
-				IFamilyHistory familyHistory = (IFamilyHistory)theEObject;
+				IFamilyHistory familyHistory = (IFamilyHistory) theEObject;
 				T result = caseFamilyHistory(familyHistory);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.FUNCTIONAL_STATUS_SECTION: {
-				IFunctionalStatusSection functionalStatusSection = (IFunctionalStatusSection)theEObject;
+				IFunctionalStatusSection functionalStatusSection = (IFunctionalStatusSection) theEObject;
 				T result = caseFunctionalStatusSection(functionalStatusSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.HISTORY_OF_PRESENT_ILLNESS: {
-				IHistoryOfPresentIllness historyOfPresentIllness = (IHistoryOfPresentIllness)theEObject;
+				IHistoryOfPresentIllness historyOfPresentIllness = (IHistoryOfPresentIllness) theEObject;
 				T result = caseHistoryOfPresentIllness(historyOfPresentIllness);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.HOSPITAL_DISCHARGE_PHYSICAL: {
-				IHospitalDischargePhysical hospitalDischargePhysical = (IHospitalDischargePhysical)theEObject;
+				IHospitalDischargePhysical hospitalDischargePhysical = (IHospitalDischargePhysical) theEObject;
 				T result = caseHospitalDischargePhysical(hospitalDischargePhysical);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION: {
-				IHospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection = (IHospitalDischargeStudiesSummarySection)theEObject;
+				IHospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection = (IHospitalDischargeStudiesSummarySection) theEObject;
 				T result = caseHospitalDischargeStudiesSummarySection(hospitalDischargeStudiesSummarySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.IMMUNIZATIONS_SECTION: {
-				IImmunizationsSection immunizationsSection = (IImmunizationsSection)theEObject;
+				IImmunizationsSection immunizationsSection = (IImmunizationsSection) theEObject;
 				T result = caseImmunizationsSection(immunizationsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.SUPPLY_ACTIVITY: {
-				ISupplyActivity supplyActivity = (ISupplyActivity)theEObject;
+				ISupplyActivity supplyActivity = (ISupplyActivity) theEObject;
 				T result = caseSupplyActivity(supplyActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.FULFILLMENT_INSTRUCTION: {
-				IFulfillmentInstruction fulfillmentInstruction = (IFulfillmentInstruction)theEObject;
+				IFulfillmentInstruction fulfillmentInstruction = (IFulfillmentInstruction) theEObject;
 				T result = caseFulfillmentInstruction(fulfillmentInstruction);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.REVIEW_OF_SYSTEMS_SECTION: {
-				IReviewOfSystemsSection reviewOfSystemsSection = (IReviewOfSystemsSection)theEObject;
+				IReviewOfSystemsSection reviewOfSystemsSection = (IReviewOfSystemsSection) theEObject;
 				T result = caseReviewOfSystemsSection(reviewOfSystemsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.SOCIAL_HISTORY_SECTION: {
-				ISocialHistorySection socialHistorySection = (ISocialHistorySection)theEObject;
+				ISocialHistorySection socialHistorySection = (ISocialHistorySection) theEObject;
 				T result = caseSocialHistorySection(socialHistorySection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.SOCIAL_HISTORY: {
-				ISocialHistory socialHistory = (ISocialHistory)theEObject;
+				ISocialHistory socialHistory = (ISocialHistory) theEObject;
 				T result = caseSocialHistory(socialHistory);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.SOCIAL_HISTORY_STATUS_OBSERVATION: {
-				ISocialHistoryStatusObservation socialHistoryStatusObservation = (ISocialHistoryStatusObservation)theEObject;
+				ISocialHistoryStatusObservation socialHistoryStatusObservation = (ISocialHistoryStatusObservation) theEObject;
 				T result = caseSocialHistoryStatusObservation(socialHistoryStatusObservation);
-				if (result == null) result = caseStatusObservation(socialHistoryStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseStatusObservation(socialHistoryStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.VITAL_SIGNS_SECTION: {
-				IVitalSignsSection vitalSignsSection = (IVitalSignsSection)theEObject;
+				IVitalSignsSection vitalSignsSection = (IVitalSignsSection) theEObject;
 				T result = caseVitalSignsSection(vitalSignsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.VITAL_SIGNS_ORGANIZER: {
-				IVitalSignsOrganizer vitalSignsOrganizer = (IVitalSignsOrganizer)theEObject;
+				IVitalSignsOrganizer vitalSignsOrganizer = (IVitalSignsOrganizer) theEObject;
 				T result = caseVitalSignsOrganizer(vitalSignsOrganizer);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseResultOrganizer(vitalSignsOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			case IDomainPackage.VITAL_SIGN_OBSERVATION: {
-				IVitalSignObservation vitalSignObservation = (IVitalSignObservation)theEObject;
-				T result = caseVitalSignObservation(vitalSignObservation);
-				if (result == null) result = caseSimpleObservation(vitalSignObservation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IDomainPackage.DISCHARGE_INSTRUCTIONS: {
-				IDischargeInstructions dischargeInstructions = (IDischargeInstructions)theEObject;
-				T result = caseDischargeInstructions(dischargeInstructions);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IDomainPackage.ADVANCE_DIRECTIVES_SECTION: {
-				IAdvanceDirectivesSection advanceDirectivesSection = (IAdvanceDirectivesSection)theEObject;
-				T result = caseAdvanceDirectivesSection(advanceDirectivesSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IDomainPackage.ADVANCE_DIRECTIVE: {
-				IAdvanceDirective advanceDirective = (IAdvanceDirective)theEObject;
-				T result = caseAdvanceDirective(advanceDirective);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IDomainPackage.ADVANCE_DIRECTIVE_VERIFICATION: {
-				IAdvanceDirectiveVerification advanceDirectiveVerification = (IAdvanceDirectiveVerification)theEObject;
-				T result = caseAdvanceDirectiveVerification(advanceDirectiveVerification);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IDomainPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: {
-				IAdvanceDirectiveStatusObservation advanceDirectiveStatusObservation = (IAdvanceDirectiveStatusObservation)theEObject;
-				T result = caseAdvanceDirectiveStatusObservation(advanceDirectiveStatusObservation);
-				if (result == null) result = caseStatusObservation(advanceDirectiveStatusObservation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IDomainPackage.ADVANCE_DIRECTIVE_REFERENCE: {
-				IAdvanceDirectiveReference advanceDirectiveReference = (IAdvanceDirectiveReference)theEObject;
-				T result = caseAdvanceDirectiveReference(advanceDirectiveReference);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IDomainPackage.MEDICAL_EQUIPMENT_SECTION: {
-				IMedicalEquipmentSection medicalEquipmentSection = (IMedicalEquipmentSection)theEObject;
-				T result = caseMedicalEquipmentSection(medicalEquipmentSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IDomainPackage.CONSULTATION_SUMMARY: {
-				IConsultationSummary consultationSummary = (IConsultationSummary)theEObject;
-				T result = caseConsultationSummary(consultationSummary);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IDomainPackage.MEDICATIONS_SECTION: {
-				IMedicationsSection medicationsSection = (IMedicationsSection)theEObject;
-				T result = caseMedicationsSection(medicationsSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION: {
-				IDiagnosticResultsSection diagnosticResultsSection = (IDiagnosticResultsSection)theEObject;
-				T result = caseDiagnosticResultsSection(diagnosticResultsSection);
-				if (result == null) result = defaultCase(theEObject);
+			case IDomainPackage.RESULT_ORGANIZER: {
+				IResultOrganizer resultOrganizer = (IResultOrganizer) theEObject;
+				T result = caseResultOrganizer(resultOrganizer);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.RESULT: {
-				IResult result = (IResult)theEObject;
+				IResult result = (IResult) theEObject;
 				T theResult = caseResult(result);
-				if (theResult == null) theResult = defaultCase(theEObject);
+				if (theResult == null) {
+					theResult = defaultCase(theEObject);
+				}
 				return theResult;
 			}
-			case IDomainPackage.RESULT_ORGANIZER: {
-				IResultOrganizer resultOrganizer = (IResultOrganizer)theEObject;
-				T result = caseResultOrganizer(resultOrganizer);
-				if (result == null) result = defaultCase(theEObject);
+			case IDomainPackage.RESULT_OBSERVATION: {
+				IResultObservation resultObservation = (IResultObservation) theEObject;
+				T result = caseResultObservation(resultObservation);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.VITAL_SIGN_OBSERVATION: {
+				IVitalSignObservation vitalSignObservation = (IVitalSignObservation) theEObject;
+				T result = caseVitalSignObservation(vitalSignObservation);
+				if (result == null) {
+					result = caseSimpleObservation(vitalSignObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.DISCHARGE_INSTRUCTIONS: {
+				IDischargeInstructions dischargeInstructions = (IDischargeInstructions) theEObject;
+				T result = caseDischargeInstructions(dischargeInstructions);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.ADVANCE_DIRECTIVES_SECTION: {
+				IAdvanceDirectivesSection advanceDirectivesSection = (IAdvanceDirectivesSection) theEObject;
+				T result = caseAdvanceDirectivesSection(advanceDirectivesSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.ADVANCE_DIRECTIVE: {
+				IAdvanceDirective advanceDirective = (IAdvanceDirective) theEObject;
+				T result = caseAdvanceDirective(advanceDirective);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.ADVANCE_DIRECTIVE_VERIFICATION: {
+				IAdvanceDirectiveVerification advanceDirectiveVerification = (IAdvanceDirectiveVerification) theEObject;
+				T result = caseAdvanceDirectiveVerification(advanceDirectiveVerification);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION: {
+				IAdvanceDirectiveStatusObservation advanceDirectiveStatusObservation = (IAdvanceDirectiveStatusObservation) theEObject;
+				T result = caseAdvanceDirectiveStatusObservation(advanceDirectiveStatusObservation);
+				if (result == null) {
+					result = caseStatusObservation(advanceDirectiveStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.ADVANCE_DIRECTIVE_REFERENCE: {
+				IAdvanceDirectiveReference advanceDirectiveReference = (IAdvanceDirectiveReference) theEObject;
+				T result = caseAdvanceDirectiveReference(advanceDirectiveReference);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.MEDICAL_EQUIPMENT_SECTION: {
+				IMedicalEquipmentSection medicalEquipmentSection = (IMedicalEquipmentSection) theEObject;
+				T result = caseMedicalEquipmentSection(medicalEquipmentSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.CONSULTATION_SUMMARY: {
+				IConsultationSummary consultationSummary = (IConsultationSummary) theEObject;
+				T result = caseConsultationSummary(consultationSummary);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.MEDICATIONS_SECTION: {
+				IMedicationsSection medicationsSection = (IMedicationsSection) theEObject;
+				T result = caseMedicationsSection(medicationsSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.DIAGNOSTIC_RESULTS_SECTION: {
+				IDiagnosticResultsSection diagnosticResultsSection = (IDiagnosticResultsSection) theEObject;
+				T result = caseDiagnosticResultsSection(diagnosticResultsSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.ENCOUNTERS_SECTION: {
-				IEncountersSection encountersSection = (IEncountersSection)theEObject;
+				IEncountersSection encountersSection = (IEncountersSection) theEObject;
 				T result = caseEncountersSection(encountersSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.ENCOUNTERS_ACTIVITY: {
-				IEncountersActivity encountersActivity = (IEncountersActivity)theEObject;
+				IEncountersActivity encountersActivity = (IEncountersActivity) theEObject;
 				T result = caseEncountersActivity(encountersActivity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PAYERS_SECTION: {
-				IPayersSection payersSection = (IPayersSection)theEObject;
+				IPayersSection payersSection = (IPayersSection) theEObject;
 				T result = casePayersSection(payersSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			case IDomainPackage.COVERAGE_ENTRY: {
-				ICoverageEntry coverageEntry = (ICoverageEntry)theEObject;
-				T result = caseCoverageEntry(coverageEntry);
-				if (result == null) result = defaultCase(theEObject);
+			case IDomainPackage.INSURANCE_PROVIDER: {
+				IInsuranceProvider insuranceProvider = (IInsuranceProvider) theEObject;
+				T result = caseInsuranceProvider(insuranceProvider);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			case IDomainPackage.POLICY_ACTIVITY: {
-				IPolicyActivity policyActivity = (IPolicyActivity)theEObject;
-				T result = casePolicyActivity(policyActivity);
-				if (result == null) result = defaultCase(theEObject);
+			case IDomainPackage.PAYER_ENTRY: {
+				IPayerEntry payerEntry = (IPayerEntry) theEObject;
+				T result = casePayerEntry(payerEntry);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PAYER_ENTITY: {
-				IPayerEntity payerEntity = (IPayerEntity)theEObject;
+				IPayerEntity payerEntity = (IPayerEntity) theEObject;
 				T result = casePayerEntity(payerEntity);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.COVERED_PARTY: {
-				ICoveredParty coveredParty = (ICoveredParty)theEObject;
+				ICoveredParty coveredParty = (ICoveredParty) theEObject;
 				T result = caseCoveredParty(coveredParty);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.POLICY_SUBSCRIBER: {
-				IPolicySubscriber policySubscriber = (IPolicySubscriber)theEObject;
+				IPolicySubscriber policySubscriber = (IPolicySubscriber) theEObject;
 				T result = casePolicySubscriber(policySubscriber);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.CONSULTATION_REQUEST: {
-				IConsultationRequest consultationRequest = (IConsultationRequest)theEObject;
+				IConsultationRequest consultationRequest = (IConsultationRequest) theEObject;
 				T result = caseConsultationRequest(consultationRequest);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.ASSESSMENT_AND_PLAN_SECTION: {
-				IAssessmentAndPlanSection assessmentAndPlanSection = (IAssessmentAndPlanSection)theEObject;
+				IAssessmentAndPlanSection assessmentAndPlanSection = (IAssessmentAndPlanSection) theEObject;
 				T result = caseAssessmentAndPlanSection(assessmentAndPlanSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.PHYSICAL_EXAM_SECTION: {
-				IPhysicalExamSection physicalExamSection = (IPhysicalExamSection)theEObject;
+				IPhysicalExamSection physicalExamSection = (IPhysicalExamSection) theEObject;
 				T result = casePhysicalExamSection(physicalExamSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.GENERAL_APPEARANCE_SECTION: {
+				IGeneralAppearanceSection generalAppearanceSection = (IGeneralAppearanceSection) theEObject;
+				T result = caseGeneralAppearanceSection(generalAppearanceSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION: {
+				IVisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection = (IVisibleImplantedMedicalDevicesSection) theEObject;
+				T result = caseVisibleImplantedMedicalDevicesSection(visibleImplantedMedicalDevicesSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.INTEGUMENTARY_SYSTEM_SECTION: {
+				IIntegumentarySystemSection integumentarySystemSection = (IIntegumentarySystemSection) theEObject;
+				T result = caseIntegumentarySystemSection(integumentarySystemSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.HEAD_SECTION: {
+				IHeadSection headSection = (IHeadSection) theEObject;
+				T result = caseHeadSection(headSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.EYES_SECTION: {
+				IEyesSection eyesSection = (IEyesSection) theEObject;
+				T result = caseEyesSection(eyesSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.EARS_NOSE_MOUTH_THROAT_SECTION: {
+				IEarsNoseMouthThroatSection earsNoseMouthThroatSection = (IEarsNoseMouthThroatSection) theEObject;
+				T result = caseEarsNoseMouthThroatSection(earsNoseMouthThroatSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.EARS_SECTION: {
+				IEarsSection earsSection = (IEarsSection) theEObject;
+				T result = caseEarsSection(earsSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.NOSE_SECTION: {
+				INoseSection noseSection = (INoseSection) theEObject;
+				T result = caseNoseSection(noseSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.MOUTH_THROAT_TEETH_SECTION: {
+				IMouthThroatTeethSection mouthThroatTeethSection = (IMouthThroatTeethSection) theEObject;
+				T result = caseMouthThroatTeethSection(mouthThroatTeethSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.NECK_SECTION: {
+				INeckSection neckSection = (INeckSection) theEObject;
+				T result = caseNeckSection(neckSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.ENDOCRINE_SYSTEM_SECTION: {
+				IEndocrineSystemSection endocrineSystemSection = (IEndocrineSystemSection) theEObject;
+				T result = caseEndocrineSystemSection(endocrineSystemSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.THORAX_LUNGS_SECTION: {
+				IThoraxLungsSection thoraxLungsSection = (IThoraxLungsSection) theEObject;
+				T result = caseThoraxLungsSection(thoraxLungsSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.CHEST_WALL_SECTION: {
+				IChestWallSection chestWallSection = (IChestWallSection) theEObject;
+				T result = caseChestWallSection(chestWallSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.BREAST_SECTION: {
+				IBreastSection breastSection = (IBreastSection) theEObject;
+				T result = caseBreastSection(breastSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.HEART_SECTION: {
+				IHeartSection heartSection = (IHeartSection) theEObject;
+				T result = caseHeartSection(heartSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.RESPIRATORY_SYSTEM_SECTION: {
+				IRespiratorySystemSection respiratorySystemSection = (IRespiratorySystemSection) theEObject;
+				T result = caseRespiratorySystemSection(respiratorySystemSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.ABDOMEN_SECTION: {
+				IAbdomenSection abdomenSection = (IAbdomenSection) theEObject;
+				T result = caseAbdomenSection(abdomenSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.LYMPHATIC_SECTION: {
+				ILymphaticSection lymphaticSection = (ILymphaticSection) theEObject;
+				T result = caseLymphaticSection(lymphaticSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.VESSELS_SECTION: {
+				IVesselsSection vesselsSection = (IVesselsSection) theEObject;
+				T result = caseVesselsSection(vesselsSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.MUSCULOSKELETAL_SYSTEM_SECTION: {
+				IMusculoskeletalSystemSection musculoskeletalSystemSection = (IMusculoskeletalSystemSection) theEObject;
+				T result = caseMusculoskeletalSystemSection(musculoskeletalSystemSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.NEUROLOGIC_SYSTEM_SECTION: {
+				INeurologicSystemSection neurologicSystemSection = (INeurologicSystemSection) theEObject;
+				T result = caseNeurologicSystemSection(neurologicSystemSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.GENITALIA_SECTION: {
+				IGenitaliaSection genitaliaSection = (IGenitaliaSection) theEObject;
+				T result = caseGenitaliaSection(genitaliaSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.RECTUM_SECTION: {
+				IRectumSection rectumSection = (IRectumSection) theEObject;
+				T result = caseRectumSection(rectumSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case IDomainPackage.EXTREMITIES_SECTION: {
+				IExtremitiesSection extremitiesSection = (IExtremitiesSection) theEObject;
+				T result = caseExtremitiesSection(extremitiesSection);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.REASON_FOR_REFERRAL_SECTION: {
-				IReasonForReferralSection reasonForReferralSection = (IReasonForReferralSection)theEObject;
+				IReasonForReferralSection reasonForReferralSection = (IReasonForReferralSection) theEObject;
 				T result = caseReasonForReferralSection(reasonForReferralSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.GENERAL_STATUS_SECTION: {
-				IGeneralStatusSection generalStatusSection = (IGeneralStatusSection)theEObject;
+				IGeneralStatusSection generalStatusSection = (IGeneralStatusSection) theEObject;
 				T result = caseGeneralStatusSection(generalStatusSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case IDomainPackage.HISTORY_OF_PAST_ILLNESS_SECTION: {
-				IHistoryOfPastIllnessSection historyOfPastIllnessSection = (IHistoryOfPastIllnessSection)theEObject;
+				IHistoryOfPastIllnessSection historyOfPastIllnessSection = (IHistoryOfPastIllnessSection) theEObject;
 				T result = caseHistoryOfPastIllnessSection(historyOfPastIllnessSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			default: return defaultCase(theEObject);
+			default:
+				return defaultCase(theEObject);
 		}
 	}
 
@@ -972,6 +1302,21 @@ public class DomainSwitch<T> {
 	 * @generated
 	 */
 	public T caseFamilyHistoryObservation(IFamilyHistoryObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Simple Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Simple Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSimpleObservation(ISimpleObservation object) {
 		return null;
 	}
 
@@ -1756,6 +2101,51 @@ public class DomainSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResultOrganizer(IResultOrganizer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResult(IResult object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResultObservation(IResultObservation object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Vital Sign Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1767,21 +2157,6 @@ public class DomainSwitch<T> {
 	 * @generated
 	 */
 	public T caseVitalSignObservation(IVitalSignObservation object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Simple Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Simple Observation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSimpleObservation(ISimpleObservation object) {
 		return null;
 	}
 
@@ -1936,36 +2311,6 @@ public class DomainSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Result</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Result</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseResult(IResult object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Result Organizer</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseResultOrganizer(IResultOrganizer object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Encounters Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2011,32 +2356,32 @@ public class DomainSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Coverage Entry</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Insurance Provider</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Coverage Entry</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Insurance Provider</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCoverageEntry(ICoverageEntry object) {
+	public T caseInsuranceProvider(IInsuranceProvider object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Policy Activity</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Payer Entry</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Policy Activity</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Payer Entry</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePolicyActivity(IPolicyActivity object) {
+	public T casePayerEntry(IPayerEntry object) {
 		return null;
 	}
 
@@ -2127,6 +2472,366 @@ public class DomainSwitch<T> {
 	 * @generated
 	 */
 	public T casePhysicalExamSection(IPhysicalExamSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>General Appearance Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Appearance Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeneralAppearanceSection(IGeneralAppearanceSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Visible Implanted Medical Devices Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Visible Implanted Medical Devices Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVisibleImplantedMedicalDevicesSection(IVisibleImplantedMedicalDevicesSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Integumentary System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Integumentary System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIntegumentarySystemSection(IIntegumentarySystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Head Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Head Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHeadSection(IHeadSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Eyes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Eyes Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEyesSection(IEyesSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ears Nose Mouth Throat Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ears Nose Mouth Throat Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEarsNoseMouthThroatSection(IEarsNoseMouthThroatSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ears Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ears Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEarsSection(IEarsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Nose Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Nose Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNoseSection(INoseSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mouth Throat Teeth Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mouth Throat Teeth Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMouthThroatTeethSection(IMouthThroatTeethSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Neck Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Neck Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNeckSection(INeckSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Endocrine System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Endocrine System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEndocrineSystemSection(IEndocrineSystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Thorax Lungs Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Thorax Lungs Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseThoraxLungsSection(IThoraxLungsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Chest Wall Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Chest Wall Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseChestWallSection(IChestWallSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Breast Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Breast Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBreastSection(IBreastSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Heart Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Heart Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHeartSection(IHeartSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Respiratory System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Respiratory System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRespiratorySystemSection(IRespiratorySystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Abdomen Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Abdomen Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAbdomenSection(IAbdomenSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lymphatic Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lymphatic Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLymphaticSection(ILymphaticSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vessels Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vessels Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVesselsSection(IVesselsSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Musculoskeletal System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Musculoskeletal System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMusculoskeletalSystemSection(IMusculoskeletalSystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Neurologic System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Neurologic System Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNeurologicSystemSection(INeurologicSystemSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Genitalia Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Genitalia Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGenitaliaSection(IGenitaliaSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rectum Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rectum Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRectumSection(IRectumSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Extremities Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Extremities Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExtremitiesSection(IExtremitiesSection object) {
 		return null;
 	}
 

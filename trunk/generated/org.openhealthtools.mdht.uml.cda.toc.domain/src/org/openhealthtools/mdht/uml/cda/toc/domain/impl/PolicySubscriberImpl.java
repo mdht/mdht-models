@@ -73,8 +73,8 @@ public class PolicySubscriberImpl extends EObjectImpl implements IPolicySubscrib
 	 */
 	public ParticipantRole getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (ParticipantRole)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (ParticipantRole) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -127,11 +127,12 @@ public class PolicySubscriberImpl extends EObjectImpl implements IPolicySubscrib
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getPolicySubscriber(), IDomainPackage.eINSTANCE.getPolicySubscriber().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getPolicySubscriber(),
+				IDomainPackage.eINSTANCE.getPolicySubscriber().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -176,7 +177,9 @@ public class PolicySubscriberImpl extends EObjectImpl implements IPolicySubscrib
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.POLICY_SUBSCRIBER__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -191,7 +194,7 @@ public class PolicySubscriberImpl extends EObjectImpl implements IPolicySubscrib
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.POLICY_SUBSCRIBER__CDA_TYPE:
-				setCDAType((ParticipantRole)newValue);
+				setCDAType((ParticipantRole) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -206,7 +209,7 @@ public class PolicySubscriberImpl extends EObjectImpl implements IPolicySubscrib
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.POLICY_SUBSCRIBER__CDA_TYPE:
-				setCDAType((ParticipantRole)null);
+				setCDAType((ParticipantRole) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -241,7 +244,7 @@ public class PolicySubscriberImpl extends EObjectImpl implements IPolicySubscrib
 	 * @generated
 	 */
 	public IPolicySubscriber init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PolicySubscriberImpl

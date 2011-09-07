@@ -737,6 +737,15 @@ public interface IDomainFactory extends EFactory {
 	IResult createResult();
 
 	/**
+	 * Returns a new object of class '<em>Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Observation</em>'.
+	 * @generated
+	 */
+	IResultObservation createResultObservation();
+
+	/**
 	 * Returns a new object of class '<em>Result Organizer</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -773,22 +782,22 @@ public interface IDomainFactory extends EFactory {
 	IPayersSection createPayersSection();
 
 	/**
-	 * Returns a new object of class '<em>Coverage Entry</em>'.
+	 * Returns a new object of class '<em>Insurance Provider</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Coverage Entry</em>'.
+	 * @return a new object of class '<em>Insurance Provider</em>'.
 	 * @generated
 	 */
-	ICoverageEntry createCoverageEntry();
+	IInsuranceProvider createInsuranceProvider();
 
 	/**
-	 * Returns a new object of class '<em>Policy Activity</em>'.
+	 * Returns a new object of class '<em>Payer Entry</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Policy Activity</em>'.
+	 * @return a new object of class '<em>Payer Entry</em>'.
 	 * @generated
 	 */
-	IPolicyActivity createPolicyActivity();
+	IPayerEntry createPayerEntry();
 
 	/**
 	 * Returns a new object of class '<em>Payer Entity</em>'.
@@ -843,6 +852,222 @@ public interface IDomainFactory extends EFactory {
 	 * @generated
 	 */
 	IPhysicalExamSection createPhysicalExamSection();
+
+	/**
+	 * Returns a new object of class '<em>General Appearance Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>General Appearance Section</em>'.
+	 * @generated
+	 */
+	IGeneralAppearanceSection createGeneralAppearanceSection();
+
+	/**
+	 * Returns a new object of class '<em>Visible Implanted Medical Devices Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Visible Implanted Medical Devices Section</em>'.
+	 * @generated
+	 */
+	IVisibleImplantedMedicalDevicesSection createVisibleImplantedMedicalDevicesSection();
+
+	/**
+	 * Returns a new object of class '<em>Integumentary System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Integumentary System Section</em>'.
+	 * @generated
+	 */
+	IIntegumentarySystemSection createIntegumentarySystemSection();
+
+	/**
+	 * Returns a new object of class '<em>Head Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Head Section</em>'.
+	 * @generated
+	 */
+	IHeadSection createHeadSection();
+
+	/**
+	 * Returns a new object of class '<em>Eyes Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Eyes Section</em>'.
+	 * @generated
+	 */
+	IEyesSection createEyesSection();
+
+	/**
+	 * Returns a new object of class '<em>Ears Nose Mouth Throat Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ears Nose Mouth Throat Section</em>'.
+	 * @generated
+	 */
+	IEarsNoseMouthThroatSection createEarsNoseMouthThroatSection();
+
+	/**
+	 * Returns a new object of class '<em>Ears Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ears Section</em>'.
+	 * @generated
+	 */
+	IEarsSection createEarsSection();
+
+	/**
+	 * Returns a new object of class '<em>Nose Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Nose Section</em>'.
+	 * @generated
+	 */
+	INoseSection createNoseSection();
+
+	/**
+	 * Returns a new object of class '<em>Mouth Throat Teeth Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mouth Throat Teeth Section</em>'.
+	 * @generated
+	 */
+	IMouthThroatTeethSection createMouthThroatTeethSection();
+
+	/**
+	 * Returns a new object of class '<em>Neck Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Neck Section</em>'.
+	 * @generated
+	 */
+	INeckSection createNeckSection();
+
+	/**
+	 * Returns a new object of class '<em>Endocrine System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Endocrine System Section</em>'.
+	 * @generated
+	 */
+	IEndocrineSystemSection createEndocrineSystemSection();
+
+	/**
+	 * Returns a new object of class '<em>Thorax Lungs Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Thorax Lungs Section</em>'.
+	 * @generated
+	 */
+	IThoraxLungsSection createThoraxLungsSection();
+
+	/**
+	 * Returns a new object of class '<em>Chest Wall Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Chest Wall Section</em>'.
+	 * @generated
+	 */
+	IChestWallSection createChestWallSection();
+
+	/**
+	 * Returns a new object of class '<em>Breast Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Breast Section</em>'.
+	 * @generated
+	 */
+	IBreastSection createBreastSection();
+
+	/**
+	 * Returns a new object of class '<em>Heart Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Heart Section</em>'.
+	 * @generated
+	 */
+	IHeartSection createHeartSection();
+
+	/**
+	 * Returns a new object of class '<em>Respiratory System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Respiratory System Section</em>'.
+	 * @generated
+	 */
+	IRespiratorySystemSection createRespiratorySystemSection();
+
+	/**
+	 * Returns a new object of class '<em>Abdomen Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Abdomen Section</em>'.
+	 * @generated
+	 */
+	IAbdomenSection createAbdomenSection();
+
+	/**
+	 * Returns a new object of class '<em>Lymphatic Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Lymphatic Section</em>'.
+	 * @generated
+	 */
+	ILymphaticSection createLymphaticSection();
+
+	/**
+	 * Returns a new object of class '<em>Vessels Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vessels Section</em>'.
+	 * @generated
+	 */
+	IVesselsSection createVesselsSection();
+
+	/**
+	 * Returns a new object of class '<em>Musculoskeletal System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Musculoskeletal System Section</em>'.
+	 * @generated
+	 */
+	IMusculoskeletalSystemSection createMusculoskeletalSystemSection();
+
+	/**
+	 * Returns a new object of class '<em>Neurologic System Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Neurologic System Section</em>'.
+	 * @generated
+	 */
+	INeurologicSystemSection createNeurologicSystemSection();
+
+	/**
+	 * Returns a new object of class '<em>Genitalia Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Genitalia Section</em>'.
+	 * @generated
+	 */
+	IGenitaliaSection createGenitaliaSection();
+
+	/**
+	 * Returns a new object of class '<em>Rectum Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Rectum Section</em>'.
+	 * @generated
+	 */
+	IRectumSection createRectumSection();
+
+	/**
+	 * Returns a new object of class '<em>Extremities Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Extremities Section</em>'.
+	 * @generated
+	 */
+	IExtremitiesSection createExtremitiesSection();
 
 	/**
 	 * Returns a new object of class '<em>Reason For Referral Section</em>'.

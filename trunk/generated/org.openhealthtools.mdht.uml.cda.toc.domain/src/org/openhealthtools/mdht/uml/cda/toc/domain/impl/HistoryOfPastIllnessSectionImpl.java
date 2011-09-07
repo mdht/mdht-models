@@ -69,8 +69,8 @@ public class HistoryOfPastIllnessSectionImpl extends EObjectImpl implements IHis
 	 */
 	public Section getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Section)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Section) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -123,11 +123,12 @@ public class HistoryOfPastIllnessSectionImpl extends EObjectImpl implements IHis
 	public ICondition getCondition() {
 		if (GET_CONDITION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getHistoryOfPastIllnessSection(), IDomainPackage.eINSTANCE.getHistoryOfPastIllnessSection().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getHistoryOfPastIllnessSection(),
+				IDomainPackage.eINSTANCE.getHistoryOfPastIllnessSection().getEAllOperations().get(0));
 			try {
 				GET_CONDITION__EOCL_QRY = helper.createQuery(GET_CONDITION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -154,9 +155,9 @@ public class HistoryOfPastIllnessSectionImpl extends EObjectImpl implements IHis
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Condition");
-		ICondition value = (ICondition)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act)eObject);
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		ICondition value = (ICondition) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -166,7 +167,7 @@ public class HistoryOfPastIllnessSectionImpl extends EObjectImpl implements IHis
 	 * @generated
 	 */
 	public IHistoryOfPastIllnessSection setCondition(ICondition value) {
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)value);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) value);
 		return this;
 	}
 
@@ -179,7 +180,9 @@ public class HistoryOfPastIllnessSectionImpl extends EObjectImpl implements IHis
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case IDomainPackage.HISTORY_OF_PAST_ILLNESS_SECTION__CDA_TYPE:
-				if (resolve) return getCDAType();
+				if (resolve) {
+					return getCDAType();
+				}
 				return basicGetCDAType();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -194,7 +197,7 @@ public class HistoryOfPastIllnessSectionImpl extends EObjectImpl implements IHis
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case IDomainPackage.HISTORY_OF_PAST_ILLNESS_SECTION__CDA_TYPE:
-				setCDAType((Section)newValue);
+				setCDAType((Section) newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -209,7 +212,7 @@ public class HistoryOfPastIllnessSectionImpl extends EObjectImpl implements IHis
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case IDomainPackage.HISTORY_OF_PAST_ILLNESS_SECTION__CDA_TYPE:
-				setCDAType((Section)null);
+				setCDAType((Section) null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -244,7 +247,7 @@ public class HistoryOfPastIllnessSectionImpl extends EObjectImpl implements IHis
 	 * @generated
 	 */
 	public IHistoryOfPastIllnessSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // HistoryOfPastIllnessSectionImpl

@@ -72,8 +72,8 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	@Override
 	public Observation getCDAType() {
 		if (cDAType != null && cDAType.eIsProxy()) {
-			InternalEObject oldCDAType = (InternalEObject)cDAType;
-			cDAType = (Observation)eResolveProxy(oldCDAType);
+			InternalEObject oldCDAType = (InternalEObject) cDAType;
+			cDAType = (Observation) eResolveProxy(oldCDAType);
 			if (cDAType != oldCDAType) {
 			}
 		}
@@ -117,7 +117,7 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	 */
 	@Override
 	public IAllergyIntolerance setSeverity(ISeverity value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -128,7 +128,7 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	 */
 	@Override
 	public IAllergyIntolerance setProblemStatusObservation(IProblemStatusObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -173,11 +173,12 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public ISeverity getSeverity() {
 		if (GET_SEVERITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(18));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(18));
 			try {
 				GET_SEVERITY__EOCL_QRY = helper.createQuery(GET_SEVERITY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -205,9 +206,9 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Severity");
-		ISeverity value = (ISeverity)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		ISeverity value = (ISeverity) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -240,11 +241,12 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public IProblemStatusObservation getProblemStatusObservation() {
 		if (GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(21));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(21));
 			try {
 				GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -272,9 +274,9 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ProblemStatusObservation");
-		IProblemStatusObservation value = (IProblemStatusObservation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IProblemStatusObservation value = (IProblemStatusObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -307,11 +309,12 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public EList<IComment> getComments() {
 		if (GET_COMMENTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(27));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(27));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -341,9 +344,9 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("Comment");
-		IComment value = (IComment)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act)eObject);
-		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act)eObject);
+		IComment value = (IComment) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Act) eObject);
+		this.getCDAType().addAct((org.openhealthtools.mdht.uml.cda.Act) eObject);
 		return value;
 	}
 
@@ -410,7 +413,7 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	 */
 	@Override
 	public IAllergyIntolerance setAgeObservation(IAgeObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -421,7 +424,7 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	 */
 	@Override
 	public IAllergyIntolerance setHealthStatusObservation(IHealthStatusObservation value) {
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)value);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) value);
 		return this;
 	}
 
@@ -453,18 +456,20 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public EList<IProblemEntryReactionObservationContainer> getProblemEntryReactionObservationContainers() {
 		if (GET_PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(58));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(58));
 			try {
 				GET_PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINERS__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINERS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<IProblemEntryReactionObservationContainer> result = (Collection<IProblemEntryReactionObservationContainer>) query.evaluate(this);
-		return new BasicEList.UnmodifiableEList<IProblemEntryReactionObservationContainer>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<IProblemEntryReactionObservationContainer>(
+			result.size(), result.toArray());
 	}
 
 	/**
@@ -486,9 +491,9 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("ProblemEntryReactionObservationContainer");
-		IProblemEntryReactionObservationContainer value = (IProblemEntryReactionObservationContainer)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IProblemEntryReactionObservationContainer value = (IProblemEntryReactionObservationContainer) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -533,11 +538,12 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public EList<II> getIds() {
 		if (GET_IDS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(0));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(0));
 			try {
 				GET_IDS__EOCL_QRY = helper.createQuery(GET_IDS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -592,11 +598,12 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public CD getCode() {
 		if (GET_CODE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(39));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(3));
 			try {
 				GET_CODE__EOCL_QRY = helper.createQuery(GET_CODE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -649,11 +656,12 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public ED getText() {
 		if (GET_TEXT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(42));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(6));
 			try {
 				GET_TEXT__EOCL_QRY = helper.createQuery(GET_TEXT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -706,11 +714,12 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public IVL_TS getEffectiveTime() {
 		if (GET_EFFECTIVE_TIME__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(9));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(9));
 			try {
 				GET_EFFECTIVE_TIME__EOCL_QRY = helper.createQuery(GET_EFFECTIVE_TIME__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -763,11 +772,12 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public CD getValue() {
 		if (GET_VALUE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(45));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(12));
 			try {
 				GET_VALUE__EOCL_QRY = helper.createQuery(GET_VALUE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -820,11 +830,12 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public IAgeObservation getAgeObservation() {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(15));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(15));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -852,9 +863,9 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("AgeObservation");
-		IAgeObservation value = (IAgeObservation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IAgeObservation value = (IAgeObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -887,11 +898,12 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	public IHealthStatusObservation getHealthStatusObservation() {
 		if (GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(IDomainPackage.eINSTANCE.getAllergyIntolerance(), IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(24));
+			helper.setOperationContext(
+				IDomainPackage.eINSTANCE.getAllergyIntolerance(),
+				IDomainPackage.eINSTANCE.getAllergyIntolerance().getEAllOperations().get(24));
 			try {
 				GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -919,9 +931,9 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 		org.eclipse.emf.ecore.EPackage domainPackage = this.eClass().getEPackage();
 		org.eclipse.emf.ecore.EFactory domainFactory = domainPackage.getEFactoryInstance();
 		org.eclipse.emf.ecore.EClass domainEClass = (org.eclipse.emf.ecore.EClass) domainPackage.getEClassifier("HealthStatusObservation");
-		IHealthStatusObservation value = (IHealthStatusObservation)domainFactory.create(domainEClass);
-		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation)eObject);
-		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation)eObject);
+		IHealthStatusObservation value = (IHealthStatusObservation) domainFactory.create(domainEClass);
+		value.setCDAType((org.openhealthtools.mdht.uml.cda.Observation) eObject);
+		this.getCDAType().addObservation((org.openhealthtools.mdht.uml.cda.Observation) eObject);
 		return value;
 	}
 
@@ -932,7 +944,7 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements IAllergy
 	 */
 	@Override
 	public IAllergyIntolerance init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AllergyIntoleranceImpl
