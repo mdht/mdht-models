@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.util.BasicValidationHandler;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
+import org.openhealthtools.mdht.uml.cda.util.ValidationResult;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 public class Main {
@@ -84,8 +85,15 @@ public class Main {
 		validate(doc);
 
 		System.out.println("\n***** Validate sample CCD *****");
-		ClinicalDocument sampleCCD = CDAUtil.load(new FileInputStream("samples/SampleCCDDocument.xml"));
-		validate(sampleCCD);
+		ValidationResult result = new ValidationResult();
+		@SuppressWarnings("unused")
+		ClinicalDocument sampleCCD = CDAUtil.load(new FileInputStream("samples/SampleCCDDocument.xml"), result);
+		for (Diagnostic diagnostic : result.getErrorDiagnostics()) {
+			System.out.println("ERROR: " + diagnostic.getMessage());
+		}
+		for (Diagnostic diagnostic : result.getWarningDiagnostics()) {
+			System.out.println("WARNING: " + diagnostic.getMessage());
+		}
 	}
 
 	private static void validate(ClinicalDocument clinicalDocument) throws Exception {
