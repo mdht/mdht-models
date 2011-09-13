@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="cdabook">
+
+	<chapter navtitle="FORMALCLASSNAME" type="topic">
+		<topicref href="../classes/CLASSNAMESection.dita" type="topic" />
+		<topicref href="../classes/CLASSNAMETable.dita" type="topic" />
+		<topicref href="../classes/CLASSNAMESample.dita" type="topic" />			                         
+	</chapter>
+
+	
+</bookmap>

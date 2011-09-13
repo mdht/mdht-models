@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_XaZ6wMf1Ed6VjLXh4DcWSg" name="PhysicalExamSection">
+    <ownedComment xmi:id="_pXr_sMf1Ed6VjLXh4DcWSg" annotatedElement="_XaZ6wMf1Ed6VjLXh4DcWSg">
+      <body>&lt;p>&#xD;
+    The Physical Examination Section contains information describing the physical findings. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_MRu7QM9MEeCBIMy4xFlonQ" name="physicalExamCode" constrainedElement="_XaZ6wMf1Ed6VjLXh4DcWSg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VO9U8M9MEeCBIMy4xFlonQ">
+        <language>Analysis</language>
+        <body>Restrict the Condition Type (code) as FINDING (404684003)or FUNCTIONAL LIMITATION (248536006) from the SNOMED CT Code System</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_Yda28Mf1Ed6VjLXh4DcWSg">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-physicalExam.uml#_LGf5IMf1Ed6VjLXh4DcWSg"/>
+    </generalization>
+    <generalization xmi:id="_FDo84M9MEeCBIMy4xFlonQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_yN6rgGhREd-ilOLYnIx0jA"/>
+    </generalization>
+    <ownedAttribute xmi:id="_JtxwwM9MEeCBIMy4xFlonQ" name="condition">
+      <type xmi:type="uml:Class" href="hitsp-problemList.uml#_GgvgUDxbEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RnTMkM9eEeCBIMy4xFlonQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RnTMkc9eEeCBIMy4xFlonQ" value="1"/>
+      <association href="../hitsp.uml#_Jtxwws9MEeCBIMy4xFlonQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_mV4bkMf1Ed6VjLXh4DcWSg" base_Class="_XaZ6wMf1Ed6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.118" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConformsTo xmi:id="_rGTugVF6Ed-Lud-5SYZhMw" base_Generalization="_Yda28Mf1Ed6VjLXh4DcWSg" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_GDKgMM9MEeCBIMy4xFlonQ" base_Generalization="_FDo84M9MEeCBIMy4xFlonQ" requiresParentId="true"/>
+  <CDA:ConstraintValidation xmi:id="_VpSggM9MEeCBIMy4xFlonQ" severity="WARNING" base_Constraint="_MRu7QM9MEeCBIMy4xFlonQ"/>
+</xmi:XMI>

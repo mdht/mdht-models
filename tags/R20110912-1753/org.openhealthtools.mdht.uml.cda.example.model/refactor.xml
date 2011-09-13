@@ -1,0 +1,49 @@
+<!--
+ Copyright (c) 2009, 2011 IBM Corporation, David A Carlson, and others.
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+-->
+<project name="Refactor Example CDA Model project" basedir="." default="refactor">
+	<property name="basePackage" value="org.openhealthtools.mdht.uml.cda" />
+	<property name="nsURI" value="http://www.openhealthtools.org/mdht/uml/cda/example" />
+	<property name="packageName" value="example" />
+	<property name="prefix" value="Example" />
+	<property name="package" value="${basePackage}.${packageName}" />
+
+	<target name="refactor">
+		<script language="javascript">
+			<![CDATA[
+			project.setProperty("srcPath", "src/" + project.getProperty("package").replace(".", "/"));
+			]]>
+		</script>
+
+		<replace dir="${basedir}" token="org.openhealthtools.mdht.uml.cda.example" value="${package}">
+			<include name="model/*.*" />
+		</replace>
+
+		<replace dir="${basedir}" token="http://www.openhealthtools.org/mdht/uml/cda/example" value="${nsURI}">
+			<include name="model/*.*" />
+		</replace>
+
+		<replace dir="${basedir}" token="example" value="${packageName}">
+			<include name="model/*.*" />
+		</replace>
+
+		<replace dir="${basedir}" token="Example" value="${prefix}">
+			<include name="model/*.*" />
+		</replace>
+
+		<move file="model" tofile="model">
+			<mapper type="glob" from="example*.uml" to="${packageName}*.uml" />
+		</move>
+
+		<!--
+		<delete file="refactor.xml" />
+		-->
+
+		<eclipse.refreshLocal resource="${package}" depth="infinite" />
+		<eclipse.incrementalBuild project="${package}" kind="full" />
+	</target>
+</project>

@@ -1,0 +1,33 @@
+Problems
+-----------
+ccd::StatusObservation
+hitsp::ProblemListSection (resource)
+
+Results
+-----------
+hitsp::DiagnosticResultsSection (resource)
+
+Vital Signs
+-----------
+hitsp::VitalSign
+hitsp::VitalSignsSection (resource)
+
+Medications
+-----------
+hitsp::Medication
+hitsp::MedicationsSection (resource)
+
+Immunizations
+-----------
+hitsp::ImmunizationsSection (resource)
+
+Procedures
+-----------
+ccd::ProcedureActivity
+hitsp::SurgeriesSection (resource)
+ccd::ProcedureActivityAct
+ccd::ProcedureActivityObservation
+
+Allergies
+-----------
+hitsp::AllergiesReactionsSection (resource)

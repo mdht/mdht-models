@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Patient Awareness - conformance rules</title>
+<shortdesc id="shortdesc">[Participant2: templateId <tt>2.16.840.1.113883.10.20.1.48</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Participant2</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.48"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF-181)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>awarenessCode</b></tt> (CONF-182)
+</li>
+<li>Contains exactly one [1..1] <tt><b>participantRole</b></tt>, such that
+</li>
+<li>Patient awareness <b>SHALL</b> contain exactly one participant / participantRole / id, which <b>SHALL</b> have exactly one value, which <b>SHALL</b> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)<ul><li><codeblock>[OCL]: self.participantRole.id-&gt;one(id : datatypes::II |
+  not id.root.oclIsUndefined())
+-- TODO compare with ClinicalDocument/recordTarget/patientRole/id</codeblock></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF-181)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>awarenessCode</b></tt> (CONF-182)
+</li>
+<li>Contains exactly one [1..1] <tt><b>participantRole</b></tt>, where its type is <xref href="../ParticipantRole.dita">Participant Role</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>participantRole</b></tt>, such that
+</li>
+<li>Patient awareness <b>SHALL</b> contain exactly one participant / participantRole / id, which <b>SHALL</b> have exactly one value, which <b>SHALL</b> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)<ul><li><codeblock>[OCL]: self.participantRole.id-&gt;one(id : datatypes::II |
+  not id.root.oclIsUndefined())
+-- TODO compare with ClinicalDocument/recordTarget/patientRole/id</codeblock></li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participant2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" typeCode="SBJ">
+  <templateId root="2.16.840.1.113883.10.20.1.48"/>
+  <time>
+    <low value="2011"/>
+    <high value="2011"/>
+  </time>
+  <awarenessCode/>
+</participant2>]]></codeblock>
+</body>
+</topic>
