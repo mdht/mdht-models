@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Medication Information"/>
+<meta name="abstract" content="[ManufacturedProduct: templateId 2.16.840.1.113883.3.88.11.83.8.2]"/>
+<meta name="description" content="[ManufacturedProduct: templateId 2.16.840.1.113883.3.88.11.83.8.2]"/>
+<meta name="DC.Coverage" content="ManufacturedProduct"/>
+<meta name="DC.Relation" scheme="URI" content="../content/OtherClasses.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Medication Information</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Medication Information</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ManufacturedProduct: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.8.2</tt>]</p>
+
+
+<div class="section">
+<p class="p">
+The product entry describes a medication or immunization used in a 'substanceAdministration'
+or 'supply' act
+</p>
+
+<p class="p">
+In a CDA document, the name and strength of the medication are specified in the elements under
+the 'manufacturedMaterial' element.
+</p>
+
+<p class="p">
+The 'code' element of the 'manufacturedMaterial' describes the medication. This may be
+coded using a controlled vocabulary, such as RxNorm, First Databank, or other vocabulary
+system for medications, and should be the code that represents the generic medication name and
+strength (e.g., acetaminophen and oxycodone -5/325), or just the generic medication name alone
+if strength is not relevant (Acetaminophen).
+In a CDA document, the &lt;originalText&gt; shall contain a 'reference' whose URI value points to
+the generic name and strength of the medication, or just the generic name alone if strength is not
+relevant.
+</p>
+
+<p class="p">The product concentration is determined from the coded product or brand name using knowledge base information in the vocabularies specified for these fields, and therefore this information is not explicitly included.</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-366)
+<ul class="ul"><li class="li">uniquely represents a particular kind of product</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contain exactly one manufacturedMaterial. (CONF-357)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.manufacturedMaterial.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contain exactly one manufacturedMaterial / code. (CONF-358)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.manufacturedMaterial.code.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The value for "manufacturedMaterial / code" in a product template <strong class="ph b">SHOULD</strong> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017. (CONF-359)</li>
+
+<li class="li">The value for "manufacturedMaterial / code" in a product template <strong class="ph b">MAY</strong> contain a precoordinated product strength, product form, or product concentration (e.g. "metoprolol 25mg tablet", "amoxicillin 400mg/5mL suspension"). (CONF-360)</li>
+
+<li class="li">If manufacturedMaterial / code contains a precoordinated unit dose (e.g. "metoprolol 25mg tablet"), then SubstanceAdministration / doseQuantity <strong class="ph b">SHALL</strong> be a unitless number that indicates the number of products given per administration. (CONF-361)</li>
+
+<li class="li">If manufacturedMaterial / code does not contain a precoordinated unit dose (e.g. "metoprolol product"), then SubstanceAdministration / doseQuantity <strong class="ph b">SHALL</strong> be a physical quantity that indicates the amount of product given per administration. (CONF-362)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: A manufacturedMaterial in a product template contains exactly one code / originalText, which represents the generic name of the product. (CONF-363)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.manufacturedMaterial.code.originalText.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: A manufacturedMaterial in a product template contains exactly one name, which represents the brand name of the product. (CONF-364)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.manufacturedMaterial.name.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: contains exactly one manufacturedProduct / manufacturerOrganization, which represents the manufacturer of the Material. (CONF-365)</li>
+
+<li class="li">If ManufacturedProduct in a product template contains manufacturedProduct / id, then ManufacturedProduct <strong class="ph b">SHOULD</strong> also contain manufacturedProduct / manufacturerOrganization. (CONF-367)</li>
+
+<li class="li">The coded product name <strong class="ph b">SHALL</strong> appear in the @code attribute of the manufacturedMaterial/code element. (C83-[DE-8.13-CDA-1])<ul class="ul"><li class="li">A code describing the product from a controlled
+vocabulary</li>
+</ul>
+</li>
+
+<li class="li">If the code for the generic product is unknown, the code and codeSystem attributes <strong class="ph b">MAY</strong> be omitted (C83-[DE-8.13-CDA-2])</li>
+
+<li class="li">The coded product name <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.17, Medication Clinical Drug Name Value Set, version: 20081218, Dynamic (C154-[DE-8.13-1])</li>
+
+<li class="li">When only the class of the drug is known (e.g., Beta Blocker or Sulfa Drug), it <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.18, Medication Drug Class Value Set, version: 20081218, Dynamic (C154-[DE-8.13-2])</li>
+
+<li class="li">When only the medication ingredient name is know, the coded product name <strong class="ph b">MAY</strong> be coded as 2.16.840.1.113883.3.88.12.80.20, Ingredient Name Value Set, Dynamic (C154-[DE-8.13-3])</li>
+
+<li class="li">The code for the specific brand of product <strong class="ph b">SHALL</strong> appear in a manufacturedMaterial/translation element (C83-[DE-8.14-CDA-1])<ul class="ul"><li class="li">A code describing the product as a branded or
+trademarked entity from a controlled vocabulary</li>
+</ul>
+</li>
+
+<li class="li">The brand name <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.16, Medication Brand Name Value Set, version: 20081218, Dynamic, OR <strong class="ph b">SHALL</strong> be coded as  2.16.840.1.113883.3.88.12.80.19, Medication Packaged Product Value Set, Dynamic (C154-[DE-8.14-1])</li>
+
+<li class="li">The product (generic) name <strong class="ph b">SHALL</strong> appear in the originalText element beneath the manufacturedMaterial/code element (C83-[DE-8.15-CDA-1])<ul class="ul"><li class="li">The name of the substance or product without
+reference to a specific vendor (e.g., generic or other
+non-proprietary name). If a Coded Product Name is
+present, this is the text associated with the coded
+concept</li>
+</ul>
+</li>
+
+<li class="li">The brand name <strong class="ph b">SHALL</strong> appear in the &lt;name&gt; element of the &lt;manufacturedMaterial&gt; element (C83-[DE-8.14-CDA-2])<ul class="ul"><li class="li">The branded or trademarked name of the substance
+or product. If a Coded Brand Name is present, this is
+the text associated with the coded concept</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Medication Information example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;manufacturedproduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.8.2"/&gt;
+  &lt;id root="fbab75fc-05f5-4178-893c-5a9974b615d1"/&gt;
+&lt;/manufacturedproduct&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/OtherClasses.html">OTHER CLASSES</a></div>
+</div>
+</div>
+
+</body>
+</html>

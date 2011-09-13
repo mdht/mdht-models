@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.toc/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.toc" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="toc_Ecore" modelPluginClass="ToCPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda ../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd.genmodel#//ccd ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.genmodel#//ihe ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.genmodel#//hitsp ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.genmodel#//cdt"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>toc_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="ToC" basePackage="org.openhealthtools.mdht.uml.cda"
+      disposableProviderFactory="true" ecorePackage="toc.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.toc.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//DischargeSummary">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryAllergiesReactionsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryAllergiesReactionsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryAllergiesReactionsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryProblemListSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryProblemListSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryProblemListSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryHospitalCourseSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryHospitalCourseSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryHospitalCourseSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryHospitalDischargeMedicationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryHospitalDischargeMedicationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryHospitalDischargeMedicationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryDischargeDiagnosisSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryDischargeDiagnosisSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryDischargeDiagnosisSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryPlanOfCareSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryPlanOfCareSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryPlanOfCareSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryChiefComplaintSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryChiefComplaintSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryChiefComplaintSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryDischargeDiet">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryDischargeDiet/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryDischargeDiet/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryFamilyHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryFamilyHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryFamilyHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryFunctionalStatusSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryFunctionalStatusSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryFunctionalStatusSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryHistoryOfPresentIllness">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryHistoryOfPresentIllness/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryHistoryOfPresentIllness/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryHospitalDischargePhysical">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryHospitalDischargePhysical/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryHospitalDischargePhysical/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryHospitalDischargeStudiesSummarySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryHospitalDischargeStudiesSummarySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryHospitalDischargeStudiesSummarySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryImmunizationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryImmunizationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryImmunizationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummarySurgeriesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummarySurgeriesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummarySurgeriesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryReviewOfSystemsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryReviewOfSystemsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryReviewOfSystemsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummarySocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummarySocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummarySocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/DischargeSummaryVitalSignsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryVitalSignsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeSummary/DischargeSummaryVitalSignsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getAllergiesReactionsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getProblemListSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getHospitalCourseSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getHospitalDischargeMedicationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getDischargeDiagnosisSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getPlanOfCareSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getChiefComplaintSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getDischargeDiet"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getFamilyHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getFunctionalStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getHistoryOfPresentIllness"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getHospitalDischargePhysical"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getHospitalDischargeStudiesSummarySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getImmunizationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getSurgeriesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getReviewOfSystemsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeSummary/getVitalSignsSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//DischargeInstructions">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/DischargeInstructionsPlanOfCareSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsPlanOfCareSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsPlanOfCareSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/DischargeInstructionsAllergiesReactionsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsAllergiesReactionsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsAllergiesReactionsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/DischargeInstructionsProblemListSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsProblemListSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsProblemListSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/DischargeInstructionsDischargeDiagnosisSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsDischargeDiagnosisSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsDischargeDiagnosisSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/DischargeInstructionsAdvanceDirectivesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsAdvanceDirectivesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsAdvanceDirectivesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/DischargeInstructionsImmunizationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsImmunizationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsImmunizationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/DischargeInstructionsMedicalEquipmentSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsMedicalEquipmentSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//DischargeInstructions/DischargeInstructionsMedicalEquipmentSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/getPlanOfCareSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/getAllergiesReactionsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/getProblemListSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/getDischargeDiagnosisSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/getAdvanceDirectivesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/getImmunizationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//DischargeInstructions/getMedicalEquipmentSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//ConsultationSummary">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryAllergiesReactionsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryAllergiesReactionsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryAllergiesReactionsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryMedicationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryMedicationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryMedicationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryProblemListSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryProblemListSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryProblemListSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummarySurgeriesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummarySurgeriesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummarySurgeriesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryDiagnosticResultsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryDiagnosticResultsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryDiagnosticResultsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryAdvanceDirectivesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryAdvanceDirectivesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryAdvanceDirectivesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryEncountersSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryEncountersSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryEncountersSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryFamilyHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryFamilyHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryFamilyHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryFunctionalStatusSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryFunctionalStatusSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryFunctionalStatusSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryImmunizationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryImmunizationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryImmunizationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryMedicalEquipmentSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryMedicalEquipmentSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryMedicalEquipmentSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryPayersSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryPayersSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryPayersSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryPlanOfCareSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryPlanOfCareSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryPlanOfCareSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummarySocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummarySocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummarySocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/ConsultationSummaryVitalSignsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryVitalSignsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationSummary/ConsultationSummaryVitalSignsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getAllergiesReactionsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getMedicationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getProblemListSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getSurgeriesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getDiagnosticResultsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getAdvanceDirectivesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getEncountersSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getFamilyHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getFunctionalStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getImmunizationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getMedicalEquipmentSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getPayersSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getPlanOfCareSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationSummary/getVitalSignsSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="toc.ecore#//ConsultationRequest">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestAllergiesReactionsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestAllergiesReactionsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestAllergiesReactionsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestMedicationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestMedicationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestMedicationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestProblemListSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestProblemListSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestProblemListSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestSurgeriesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestSurgeriesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestSurgeriesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestDiagnosticResultsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestDiagnosticResultsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestDiagnosticResultsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestAdvanceDirectivesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestAdvanceDirectivesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestAdvanceDirectivesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestAssessmentAndPlanSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestAssessmentAndPlanSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestAssessmentAndPlanSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestHistoryOfPresentIllness">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestHistoryOfPresentIllness/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestHistoryOfPresentIllness/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestPhysicalExamSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestPhysicalExamSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestPhysicalExamSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestReasonForReferralSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestReasonForReferralSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestReasonForReferralSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestEncountersSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestEncountersSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestEncountersSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestFamilyHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestFamilyHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestFamilyHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestFunctionalStatusSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestFunctionalStatusSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestFunctionalStatusSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestImmunizationsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestImmunizationsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestImmunizationsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestMedicalEquipmentSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestMedicalEquipmentSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestMedicalEquipmentSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestPlanOfCareSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestPlanOfCareSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestPlanOfCareSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestSocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestSocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestSocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestVitalSignsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestVitalSignsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestVitalSignsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestChiefComplaintSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestChiefComplaintSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestChiefComplaintSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestGeneralStatusSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestGeneralStatusSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestGeneralStatusSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestHistoryOfPastIllnessSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestHistoryOfPastIllnessSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestHistoryOfPastIllnessSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/ConsultationRequestPayersSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestPayersSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="toc.ecore#//ConsultationRequest/ConsultationRequestPayersSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getAllergiesReactionsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getMedicationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getProblemListSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getSurgeriesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getDiagnosticResultsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getAdvanceDirectivesSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getAssessmentAndPlanSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getHistoryOfPresentIllness"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getPhysicalExamSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getReasonForReferralSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getEncountersSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getFamilyHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getFunctionalStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getImmunizationsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getMedicalEquipmentSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getPlanOfCareSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getVitalSignsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getChiefComplaintSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getGeneralStatusSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getHistoryOfPastIllnessSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="toc.ecore#//ConsultationRequest/getPayersSection"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
