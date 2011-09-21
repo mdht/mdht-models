@@ -43,7 +43,7 @@ public final class ExamplePlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public ExamplePlugin() {
-		super(new ResourceLocator[] {});
+		super(new ResourceLocator [] {});
 	}
 
 	/**

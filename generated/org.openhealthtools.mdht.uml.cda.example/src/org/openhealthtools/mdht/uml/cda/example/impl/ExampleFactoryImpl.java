@@ -36,11 +36,12 @@ public class ExampleFactoryImpl extends EFactoryImpl implements ExampleFactory {
 	 */
 	public static ExampleFactory init() {
 		try {
-			ExampleFactory theExampleFactory = (ExampleFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/example");
+			ExampleFactory theExampleFactory = (ExampleFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/example"); 
 			if (theExampleFactory != null) {
 				return theExampleFactory;
 			}
-		} catch (Exception exception) {
+		}
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new ExampleFactoryImpl();
@@ -64,12 +65,9 @@ public class ExampleFactoryImpl extends EFactoryImpl implements ExampleFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case ExamplePackage.MY_DOCUMENT:
-				return createMyDocument();
-			case ExamplePackage.MY_SECTION:
-				return createMySection();
-			case ExamplePackage.MY_OBSERVATION:
-				return createMyObservation();
+			case ExamplePackage.MY_DOCUMENT: return createMyDocument();
+			case ExamplePackage.MY_SECTION: return createMySection();
+			case ExamplePackage.MY_OBSERVATION: return createMyObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -111,7 +109,7 @@ public class ExampleFactoryImpl extends EFactoryImpl implements ExampleFactory {
 	 * @generated
 	 */
 	public ExamplePackage getExamplePackage() {
-		return (ExamplePackage) getEPackage();
+		return (ExamplePackage)getEPackage();
 	}
 
 	/**

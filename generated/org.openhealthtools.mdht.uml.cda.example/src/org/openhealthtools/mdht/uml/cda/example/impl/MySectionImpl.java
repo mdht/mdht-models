@@ -19,6 +19,8 @@ import org.openhealthtools.mdht.uml.cda.example.ExamplePackage;
 import org.openhealthtools.mdht.uml.cda.example.MyObservation;
 import org.openhealthtools.mdht.uml.cda.example.MySection;
 import org.openhealthtools.mdht.uml.cda.example.operations.MySectionOperations;
+import org.openhealthtools.mdht.uml.cda.hitsp.Encounter;
+import org.openhealthtools.mdht.uml.cda.ihe.Medication;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -101,6 +103,24 @@ public class MySectionImpl extends SectionImpl implements MySection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMySectionMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MySectionOperations.validateMySectionMedication(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMySectionEncounter(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MySectionOperations.validateMySectionEncounter(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<MyObservation> getMyObservations() {
 		return MySectionOperations.getMyObservations(this);
 	}
@@ -110,8 +130,26 @@ public class MySectionImpl extends SectionImpl implements MySection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Medication getMedication() {
+		return MySectionOperations.getMedication(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Encounter getEncounter() {
+		return MySectionOperations.getEncounter(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MySection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MySectionImpl
