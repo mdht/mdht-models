@@ -94,7 +94,7 @@ public class MyDocumentImpl extends GeneralHeaderConstraintsImpl implements MyDo
 	 */
 	@Override
 	public MyDocument init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MyDocumentImpl

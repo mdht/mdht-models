@@ -111,7 +111,7 @@ public class MyObservationImpl extends ProblemObservationImpl implements MyObser
 	 */
 	@Override
 	public MyObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MyObservationImpl

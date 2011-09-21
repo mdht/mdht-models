@@ -116,12 +116,28 @@ public class ExampleValidator extends EObjectValidator {
 	public static final int MY_SECTION__MY_SECTION_MY_OBSERVATION = 8;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Medication' of 'My Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MY_SECTION__MY_SECTION_MEDICATION = 9;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Encounter' of 'My Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MY_SECTION__MY_SECTION_ENCOUNTER = 10;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Class Code' of 'My Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__MY_OBSERVATION_CLASS_CODE = 9;
+	public static final int MY_OBSERVATION__MY_OBSERVATION_CLASS_CODE = 11;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Code' of 'My Observation'.
@@ -129,7 +145,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__PROBLEM_OBSERVATION_CODE = 10;
+	public static final int MY_OBSERVATION__PROBLEM_OBSERVATION_CODE = 12;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Effective Time' of 'My Observation'.
@@ -137,7 +153,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__MY_OBSERVATION_EFFECTIVE_TIME = 11;
+	public static final int MY_OBSERVATION__MY_OBSERVATION_EFFECTIVE_TIME = 13;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Value' of 'My Observation'.
@@ -145,7 +161,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__MY_OBSERVATION_VALUE = 13;
+	public static final int MY_OBSERVATION__MY_OBSERVATION_VALUE = 15;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Target Site Code' of 'My Observation'.
@@ -153,7 +169,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__MY_OBSERVATION_TARGET_SITE_CODE = 12;
+	public static final int MY_OBSERVATION__MY_OBSERVATION_TARGET_SITE_CODE = 14;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'My Observation'.
@@ -161,7 +177,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 14;
+	public static final int MY_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 16;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -169,7 +185,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 14;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 16;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -224,7 +240,7 @@ public class ExampleValidator extends EObjectValidator {
 	 */
 	@Override
 	protected EPackage getEPackage() {
-		return ExamplePackage.eINSTANCE;
+	  return ExamplePackage.eINSTANCE;
 	}
 
 	/**
@@ -237,11 +253,11 @@ public class ExampleValidator extends EObjectValidator {
 	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		switch (classifierID) {
 			case ExamplePackage.MY_DOCUMENT:
-				return validateMyDocument((MyDocument) value, diagnostics, context);
+				return validateMyDocument((MyDocument)value, diagnostics, context);
 			case ExamplePackage.MY_SECTION:
-				return validateMySection((MySection) value, diagnostics, context);
+				return validateMySection((MySection)value, diagnostics, context);
 			case ExamplePackage.MY_OBSERVATION:
-				return validateMyObservation((MyObservation) value, diagnostics, context);
+				return validateMyObservation((MyObservation)value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -253,192 +269,56 @@ public class ExampleValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMyDocument(MyDocument myDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(myDocument, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(myDocument, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(myDocument, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMyDocument_validateMyDocumentHasPatientNameGivenAndFamily(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMyDocument_validateMyDocumentTemplateId(myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMyDocument_validateMyDocumentMySection(myDocument, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMyDocument_validateMyDocumentHasPatientNameGivenAndFamily(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMyDocument_validateMyDocumentTemplateId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMyDocument_validateMyDocumentMySection(myDocument, diagnostics, context);
 		return result;
 	}
 
@@ -481,49 +361,23 @@ public class ExampleValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMySection(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(mySection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(mySection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(mySection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMySection_validateMySectionTemplateId(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMySection_validateMySectionCode(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMySection_validateMySectionConfidentialityCode(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMySection_validateMySectionTitle(mySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMySection_validateMySectionMyObservation(mySection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMySection_validateMySectionTemplateId(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMySection_validateMySectionCode(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMySection_validateMySectionConfidentialityCode(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMySection_validateMySectionTitle(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMySection_validateMySectionMyObservation(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMySection_validateMySectionMedication(mySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMySection_validateMySectionEncounter(mySection, diagnostics, context);
 		return result;
 	}
 
@@ -583,84 +437,54 @@ public class ExampleValidator extends EObjectValidator {
 	}
 
 	/**
+	 * Validates the validateMySectionMedication constraint of '<em>My Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMySection_validateMySectionMedication(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mySection.validateMySectionMedication(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateMySectionEncounter constraint of '<em>My Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMySection_validateMySectionEncounter(MySection mySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mySection.validateMySectionEncounter(diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateMyObservation(MyObservation myObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(myObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(myObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(myObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationInformationSource(
-				myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(
-				myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMyObservation_validateProblemObservationTemplateId(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(
-				myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(
-				myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(
-				myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(
-				myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(
-				myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= ccdValidator.validateProblemObservation_validateProblemObservationAgeObservation(
-				myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMyObservation_validateMyObservationClassCode(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMyObservation_validateProblemObservationCode(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMyObservation_validateMyObservationEffectiveTime(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMyObservation_validateMyObservationTargetSiteCode(myObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMyObservation_validateMyObservationValue(myObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationInformationSource(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMyObservation_validateProblemObservationTemplateId(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationAgeObservation(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMyObservation_validateMyObservationClassCode(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMyObservation_validateProblemObservationCode(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMyObservation_validateMyObservationEffectiveTime(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMyObservation_validateMyObservationTargetSiteCode(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMyObservation_validateMyObservationValue(myObservation, diagnostics, context);
 		return result;
 	}
 
