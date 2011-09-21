@@ -7,6 +7,12 @@
     <packageImport xmi:id="_h9nz8AoPEeCEl6wJQrTI9w">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_qQyD8jxVEd6JwqSGecoePg"/>
     </packageImport>
+    <packageImport xmi:id="_fo-lYOSYEeCo3rXJDEXXlw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_jeZXwOSYEeCo3rXJDEXXlw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/hitsp.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_wDMM0GEHEd6bFO5yxRh3Nw" name="MyDocument">
       <ownedComment xmi:id="_LN-BoAoOEeCEl6wJQrTI9w">
         <body>My Document is used for X and Y.... [explain how this CDA document is used].</body>
@@ -117,6 +123,16 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T3ti0AoHEeCEl6wJQrTI9w" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_aj9YsOReEeCo3rXJDEXXlw" name="medication" association="_akHJseReEeCo3rXJDEXXlw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_sFGZUHGfEd6bf47ZOcft4w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pJoHIOSWEeCo3rXJDEXXlw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pJoHIeSWEeCo3rXJDEXXlw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ksitQOSVEeCo3rXJDEXXlw" name="encounter" association="_ksitQuSVEeCo3rXJDEXXlw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.hitsp.model/model/.controlled/hitsp-encounters.uml#_x6SxkKsQEd-yFfcbpgNFIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oSpb0OSWEeCo3rXJDEXXlw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oSpb0eSWEeCo3rXJDEXXlw" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Ucv9daX0Ed6JRdOhEffuGA" memberEnd="_Ucv9cqX0Ed6JRdOhEffuGA _Ucv9dqX0Ed6JRdOhEffuGA">
       <ownedEnd xmi:id="_Ucv9dqX0Ed6JRdOhEffuGA" name="" visibility="private" type="_Ucv9baX0Ed6JRdOhEffuGA" association="_Ucv9daX0Ed6JRdOhEffuGA">
@@ -132,6 +148,12 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v01I0qX0Ed6JRdOhEffuGA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v01I0aX0Ed6JRdOhEffuGA"/>
       </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_akHJseReEeCo3rXJDEXXlw" memberEnd="_aj9YsOReEeCo3rXJDEXXlw _akHJsuReEeCo3rXJDEXXlw">
+      <ownedEnd xmi:id="_akHJsuReEeCo3rXJDEXXlw" type="_Ucv9baX0Ed6JRdOhEffuGA" association="_akHJseReEeCo3rXJDEXXlw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ksitQuSVEeCo3rXJDEXXlw" memberEnd="_ksitQOSVEeCo3rXJDEXXlw _ksitQ-SVEeCo3rXJDEXXlw">
+      <ownedEnd xmi:id="_ksitQ-SVEeCo3rXJDEXXlw" type="_Ucv9baX0Ed6JRdOhEffuGA" association="_ksitQuSVEeCo3rXJDEXXlw"/>
     </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -206,4 +228,6 @@
     <ruleId>CONF-Example-11</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConformsTo xmi:id="_U2JKIBqTEeC5vY_QITRDTQ" base_Generalization="_ZyMtMKX2Ed6JRdOhEffuGA" requiresParentId="true"/>
+  <CDA:AssociationValidation xmi:id="_-C2_0OSWEeCo3rXJDEXXlw" base_Association="_akHJseReEeCo3rXJDEXXlw"/>
+  <CDA:AssociationValidation xmi:id="_-6vDAOSWEeCo3rXJDEXXlw" base_Association="_ksitQuSVEeCo3rXJDEXXlw"/>
 </xmi:XMI>
