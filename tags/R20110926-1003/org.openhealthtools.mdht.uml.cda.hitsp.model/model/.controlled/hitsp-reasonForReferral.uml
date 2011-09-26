@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_bX2UoMfdEd6VjLXh4DcWSg" name="ReasonForReferralSection">
+    <ownedComment xmi:id="_vA-QUMfdEd6VjLXh4DcWSg" annotatedElement="_bX2UoMfdEd6VjLXh4DcWSg">
+      <body>&lt;p>&#xD;
+    The Reason for Referral Section contains information about the reason that the patient is being&#xD;
+    referred. &#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_K4z18M9LEeCBIMy4xFlonQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_b0JLIM9KEeCBIMy4xFlonQ"/>
+    </generalization>
+    <generalization xmi:id="_QREUEM9LEeCBIMy4xFlonQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_A0ab0GhHEd-ilOLYnIx0jA"/>
+    </generalization>
+    <ownedAttribute xmi:id="_aWmZoM9LEeCBIMy4xFlonQ" name="condition">
+      <type xmi:type="uml:Class" href="hitsp-problemList.uml#_GgvgUDxbEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c_mcMM9LEeCBIMy4xFlonQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c_mcMc9LEeCBIMy4xFlonQ"/>
+      <association href="../hitsp.uml#_aWmZos9LEeCBIMy4xFlonQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fcac4M9LEeCBIMy4xFlonQ" name="result">
+      <type xmi:type="uml:Class" href="../hitsp.uml#_oTzNMDIWEd-SYNRf-pkwtw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gY9ksM9LEeCBIMy4xFlonQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gY9ksc9LEeCBIMy4xFlonQ"/>
+      <association href="../hitsp.uml#_fcac4s9LEeCBIMy4xFlonQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_xMUGgMfdEd6VjLXh4DcWSg" base_Class="_bX2UoMfdEd6VjLXh4DcWSg" templateId="2.16.840.1.113883.3.88.11.83.106" assigningAuthorityName="HITSP C83"/>
+  <CDA:ConformsTo xmi:id="_rGOO8FF6Ed-Lud-5SYZhMw" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_HTW8wM9MEeCBIMy4xFlonQ" base_Generalization="_QREUEM9LEeCBIMy4xFlonQ" requiresParentId="true"/>
+</xmi:XMI>
