@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Family History Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.3.88.11.83.125]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.3.88.11.83.125]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Family History Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Family History Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.125</tt>]</p>
+
+
+<div class="section">
+<p class="p">
+    The Family History Section contains information about the genetic family members, to the extent that
+    they are known, the diseases they suffered from, their ages at death, and other relevant genetic information. 
+</p>
+
+</div>
+
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FamilyHistorySection.html">CCD Family History Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.4</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/FamilyMedicalHistorySection.html">IHE Family Medical History Section</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.14</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10157-6" </tt><em class="ph i">History of family member diseases</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../FamilyHistoryOrganizer.html">Family History Organizer</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.23</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="FamilyHistory.html" title="[Organizer: templateId 2.16.840.1.113883.3.88.11.83.18]">Family History</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.18</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive text string containing 'family history'.</li>
+
+<li class="li">Family History Section <strong class="ph b">SHOULD</strong> include one or more family history observations (templateId 2.16.840.1.113883.10.20.1.22), which <strong class="ph b">MAY</strong> be contained within family history organizers (templateId 2.16.840.1.113883.10.20.1.23)</li>
+
+<li class="li">The family history section <strong class="ph b">SHALL NOT</strong> contain Section / subject.</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to IHE Coded Family History Section and <strong class="ph b">SHALL</strong> contain a templateId element whose root attribute is 1.3.6.1.4.1.19376.1.5.3.1.3.15 when this section is conveying structured family history.</li>
+
+<li class="li">When providing structured Family History Information <strong class="ph b">SHALL</strong> include entries conforming to the Family History module</li>
+
+</ol>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Family History Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.4"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.14"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.125"/&gt;
+  &lt;id root="1123133172"/&gt;
+  &lt;code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of family member diseases"/&gt;
+  &lt;title/&gt;
+  &lt;text/&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>
