@@ -203,7 +203,7 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.ADVANCE_DIRECTIVES_SECTION,
-				HITSPPackage.Literals.ADVANCE_DIRECTIVES_SECTION.getEAllOperations().get(67));
+				HITSPPackage.Literals.ADVANCE_DIRECTIVES_SECTION.getEAllOperations().get(68));
 			try {
 				GET_ADVANCE_DIRECTIVES__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES__EOCL_EXP);
 			} catch (ParserException pe) {

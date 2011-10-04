@@ -206,7 +206,7 @@ public class CodedAdvanceDirectivesSectionOperations extends AdvanceDirectivesSe
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.CODED_ADVANCE_DIRECTIVES_SECTION,
-				IHEPackage.Literals.CODED_ADVANCE_DIRECTIVES_SECTION.getEAllOperations().get(64));
+				IHEPackage.Literals.CODED_ADVANCE_DIRECTIVES_SECTION.getEAllOperations().get(65));
 			try {
 				GET_ADVANCE_DIRECTIVES_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

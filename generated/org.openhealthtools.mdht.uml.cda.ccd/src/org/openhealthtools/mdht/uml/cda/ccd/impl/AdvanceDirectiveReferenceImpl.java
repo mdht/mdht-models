@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.AdvanceDirectiveReferenceOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ExternalDocumentImpl;
+import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class AdvanceDirectiveReferenceImpl extends ExternalDocumentImpl implements AdvanceDirectiveReference {
+public class AdvanceDirectiveReferenceImpl extends ObservationImpl implements AdvanceDirectiveReference {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,6 +43,36 @@ public class AdvanceDirectiveReferenceImpl extends ExternalDocumentImpl implemen
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveReferenceHasReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveReferenceHasURL(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasURL(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectiveReferenceHasMIMEType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasMIMEType(
+			this, diagnostics, context);
 	}
 
 	/**

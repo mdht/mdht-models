@@ -67,6 +67,15 @@ public class PlanOfCareSectionImpl extends AssessmentAndPlanSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlanOfCareSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionTitleValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePlanOfCareSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareSectionOperations.validatePlanOfCareSectionTemplateId(this, diagnostics, context);
 	}

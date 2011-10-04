@@ -23,7 +23,9 @@
     <ownedRule xmi:id="_uHp58MNxEeCZQPUDKP01pg" name="admissionSourceValueSet" constrainedElement="_x6SxkKsQEd-yFfcbpgNFIA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_7_RxEMNxEeCZQPUDKP01pg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>participant/@typeCode ='ORG'/code SHALL be coded with ValueSet 2.16.840.1.113883.3.88.12.80.33, Admission Source Value Set, STATIC</body>
+        <body>self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::ORG) and self.participant.participantRole->one(pr : cda::ParticipantRole | pr.code.codeSystem = '2.16.840.1.113883.3.88.12.80.33')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_MZPpIMNyEeCZQPUDKP01pg" name="patientClassValueSet" constrainedElement="_uHp58MNxEeCZQPUDKP01pg">

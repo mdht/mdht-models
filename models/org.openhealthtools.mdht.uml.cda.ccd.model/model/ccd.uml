@@ -294,9 +294,9 @@
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_-j890ErdEd6FXKclYGEDCw"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_5ET7oGwWEd6q29qQGU-SBA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_7tlrAGwWEd6q29qQGU-SBA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_9QFYgGwWEd6q29qQGU-SBA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_5ET7oGwWEd6q29qQGU-SBA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-results.uml#_Ht_RsHDAEd6eItyqb1FoWg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-results.uml#_MQHZEHDAEd6eItyqb1FoWg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-socialHistory.uml#_UOVM0HDAEd6eItyqb1FoWg"/>
@@ -868,19 +868,25 @@
       <ownedRule xmi:id="_T6zr0MzjEeCvbrjDQpuvkw" name="hasReference" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_athVwMzjEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The value for Observation / reference / @typeCode in an advance directive reference SHALL be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>
+          <body>self.reference.typeCode->forAll(tc : vocab::x_ActRelationshipExternalReference | tc =  vocab::x_ActRelationshipExternalReference::REFR)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_hgF1wMzjEeCvbrjDQpuvkw" name="hasURL" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_li9OQMzjEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The URL of a referenced advance directive document MAY be present, and SHALL be represented in Observation / reference / ExternalDocument / text / reference. A &lt;linkHTML> element containing the same URL SHOULD be present in the associated CDA Narrative Block</body>
+          <body>self.reference.externalDocument.text.reference->size() > 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_oc7FAMzjEeCvbrjDQpuvkw" name="hasMIMEType" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_rdbooMzjEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The MIME type of a referenced advance directive document MAY be present, and SHALL be represented in Observation / reference / ExternalDocument / text / @mediaType</body>
+          <body>self.reference.externalDocument.text.mimeType.size() > 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_wJ9CIMzjEeCvbrjDQpuvkw" name="exchangePackage" constrainedElement="_RzqOkMziEeCvbrjDQpuvkw">
@@ -889,8 +895,8 @@
           <body>Where the value of Observation / reference / seperatableInd is &quot;false&quot;, the referenced advance directive document SHOULD be included in the CCD exchange package. The exchange mechanism SHOULD be based on Internet standard RFC 2557 &quot;MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)&quot; (http://www.ietf.org/rfc/rfc2557.txt)</body>
         </specification>
       </ownedRule>
-      <generalization xmi:id="_BmK20MzjEeCvbrjDQpuvkw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_gRO4cEcHEd6besF9iFIJkQ"/>
+      <generalization xmi:id="_fL_VIN-7EeCszpyO3DRrcA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_cYC94MzjEeCvbrjDQpuvkw" name="id" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>

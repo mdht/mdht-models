@@ -7,7 +7,9 @@
     <ownedRule xmi:id="_tq0h8BTaEd-6K-YJpbwRmQ" name="titleValue" constrainedElement="_tirVAIHOEd6Ncrr6L3Ublw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wd_NIBTaEd-6K-YJpbwRmQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing &quot;alert&quot; and/or &quot;allergies and adverse reactions&quot;.</body>
+        <body>self.title = 'alert' or self.title = 'allergies and adverse reactions'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_P7PeMBTbEd-6K-YJpbwRmQ" name="absenceIsAsserted" constrainedElement="_PgsSAHrREd68l9lQ-TLEBQ">

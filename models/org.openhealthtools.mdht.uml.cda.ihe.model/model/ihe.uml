@@ -1038,25 +1038,33 @@ may contain other information (take with food, et cetera).</body>
       <ownedRule xmi:id="_quOBUMhFEeCHk-lvWGDTdA" name="noRepeatNumber" constrainedElement="_oapRoMhEEeCHk-lvWGDTdA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_soR6QMhFEeCHk-lvWGDTdA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The &lt;repeatNumber> element should not be used in a social history observation</body>
+          <body>self.repeatNumber->size() = 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_vqMMEMhFEeCHk-lvWGDTdA" name="noInterpretationCode" constrainedElement="_quOBUMhFEeCHk-lvWGDTdA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_zXYPgMhFEeCHk-lvWGDTdA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The &lt;interpretationCode> element should not be used in&#xD;&#xA;a social history observation</body>
+          <body>self.interpretationCode->size() = 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_0bGWUMhFEeCHk-lvWGDTdA" name="noMethodCode" constrainedElement="_oapRoMhEEeCHk-lvWGDTdA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_3yz5AMhFEeCHk-lvWGDTdA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The &lt;methodCode> element should not be used in&#xD;&#xA;a social history observation</body>
+          <body>self.methodCode->size() = 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_5sn6UMhFEeCHk-lvWGDTdA" name="noTargetSiteCode" constrainedElement="_oapRoMhEEeCHk-lvWGDTdA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_9CPLQMhFEeCHk-lvWGDTdA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The &lt;targetSiteCode> element should not be used in&#xD;&#xA;a social history observation</body>
+          <body>self.targetSitCode->size() = 0</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_oap4sMhEEeCHk-lvWGDTdA" general="_dLvb0K4NEd6_ioDelDcPPg"/>
@@ -1093,31 +1101,39 @@ frequency.&#xD;
       <ownedRule xmi:id="_qhDgQMkPEeChgrgmBsw26A" name="hasSDTCid" constrainedElement="_7wLKkMkCEeChgrgmBsw26A">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_v_t4oMkgEeCcAd9ZGNykiw">
           <language>Analysis</language>
-          <body>One RelatedSubject/subject/sdtc:id element SHOULD be present. It is used to identify the patient relation to create a pedigree graph.</body>
+          <body>One subject/RelatedSubject/subject/sdtc:id element SHOULD be present. It is used to identify the patient relation to create a pedigree graph.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_JAhDoMkhEeCcAd9ZGNykiw" name="hasParticipant" constrainedElement="_qhDgQMkPEeChgrgmBsw26A">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_OWPyMMkhEeCcAd9ZGNykiw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The participant element MAY be present to record the relationship of the subject to other family members to create a pedigree graph.</body>
+          <body>self.participant->size() = 1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_POMG0MkhEeCcAd9ZGNykiw" name="hasParticipantParticipantRole" constrainedElement="_JAhDoMkhEeCcAd9ZGNykiw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_WhCpYMkhEeCcAd9ZGNykiw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Participant shall contain a participantRole/@classCode = &quot;PRS&quot; element showing the relationship of the subject to other family members</body>
+          <body>self.participant.participantRole->one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::PRS)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_9Nwx0MkhEeCcAd9ZGNykiw" name="hasParticipantRoleCode" constrainedElement="_7wLKkMkCEeChgrgmBsw26A">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_DFkSsMkiEeCcAd9ZGNykiw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The Participant/ParticipantRole/code element shall be present, and gives the relationship of the participant to the subject. The code attribute shall be present, and shall contain a value from the HL7 FamilyMember vocabulary</body>
+          <body>self.participant.participantRole.code->size() = 1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_Lbzk4MkiEeCcAd9ZGNykiw" name="hasParticipantRolePlayingEntity" constrainedElement="_9Nwx0MkhEeCcAd9ZGNykiw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_OM2wMMkiEeCcAd9ZGNykiw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The Participant/ParticipantRole/PlayingEntity element shall be present with @classCode = 'PSN'</body>
+          <body>self.participant.participantRole.playingEntity->one(pe : cda::PlayingEnity | pe.classCode = EntityClassRoot::PSN)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_LxkHUMnDEeCDOYZyQPaRHg" name="hasParticipantRolePlayingEntityId" constrainedElement="_Lbzk4MkiEeCcAd9ZGNykiw">

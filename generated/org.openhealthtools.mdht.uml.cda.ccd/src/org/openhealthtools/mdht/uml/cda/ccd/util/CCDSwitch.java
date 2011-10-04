@@ -18,7 +18,6 @@ import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Encounter;
-import org.openhealthtools.mdht.uml.cda.ExternalDocument;
 import org.openhealthtools.mdht.uml.cda.Guardian;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Observation;
@@ -1104,6 +1103,26 @@ public class CCDSwitch<T> {
 				}
 				return result;
 			}
+			case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE: {
+				AdvanceDirectiveReference advanceDirectiveReference = (AdvanceDirectiveReference) theEObject;
+				T result = caseAdvanceDirectiveReference(advanceDirectiveReference);
+				if (result == null) {
+					result = caseObservation(advanceDirectiveReference);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(advanceDirectiveReference);
+				}
+				if (result == null) {
+					result = caseAct(advanceDirectiveReference);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(advanceDirectiveReference);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case CCDPackage.PAYERS_SECTION: {
 				PayersSection payersSection = (PayersSection) theEObject;
 				T result = casePayersSection(payersSection);
@@ -1614,23 +1633,6 @@ public class CCDSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(comment);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE: {
-				AdvanceDirectiveReference advanceDirectiveReference = (AdvanceDirectiveReference) theEObject;
-				T result = caseAdvanceDirectiveReference(advanceDirectiveReference);
-				if (result == null) {
-					result = caseExternalDocument(advanceDirectiveReference);
-				}
-				if (result == null) {
-					result = caseAct(advanceDirectiveReference);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(advanceDirectiveReference);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -3090,21 +3092,6 @@ public class CCDSwitch<T> {
 	 * @generated
 	 */
 	public T caseGuardian(Guardian object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>External Document</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>External Document</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseExternalDocument(ExternalDocument object) {
 		return null;
 	}
 

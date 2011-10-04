@@ -364,6 +364,46 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//SupplyEntry">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryHasIntentAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasIntentAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasIntentAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryHasAuthorTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasAuthorTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasAuthorTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryHasAssignedAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasAssignedAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasAssignedAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryHasAssignedAuthorID">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasAssignedAuthorID/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasAssignedAuthorID/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryHasAssignedAuthorPersonOrOrg">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasAssignedAuthorPersonOrOrg/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasAssignedAuthorPersonOrOrg/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerTimeEvent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerTimeEvent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerTimeEvent/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerTimeIntent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerTimeIntent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerTimeIntent/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerAssignedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerAssignedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerAssignedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerAssignedEntityID">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerAssignedEntityID/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerAssignedEntityID/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerEntityPersonOrOrg">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerEntityPersonOrOrg/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryHasPerformerEntityPersonOrOrg/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SupplyEntry/SupplyEntryTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SupplyEntry/SupplyEntryTemplateId/context"/>
@@ -419,6 +459,46 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntoleranceConcern/getAllergyIntolerances"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//AllergyIntolerance">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceCodeCodeSystemRequired">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceCodeCodeSystemRequired/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceCodeCodeSystemRequired/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceDisplayNameCodeName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceDisplayNameCodeName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceDisplayNameCodeName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstance">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstance/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstance/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstanceTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstanceTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstanceTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstanceParticipantRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstanceParticipantRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstanceParticipantRole/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstanceParticipantRoleClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstanceParticipantRoleClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstanceParticipantRoleClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstancePlayingEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstancePlayingEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstancePlayingEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstancePlayingEntityClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstancePlayingEntityClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstancePlayingEntityClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstancePlayingEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstancePlayingEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceAllergySubstancePlayingEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntolerancePlayingEntityCodeReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntolerancePlayingEntityCodeReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntolerancePlayingEntityCodeReference/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//AllergyIntolerance/AllergyIntoleranceTemplateId/context"/>
@@ -1815,6 +1895,22 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedFamilyMedicalHistorySection/getIHEFamilyHistoryOrganizer"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//FamilyHistoryOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipant">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipant/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipant/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipantParticipantRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipantParticipantRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipantParticipantRole/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipantRoleCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipantRoleCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipantRoleCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//FamilyHistoryOrganizer/IHEFamilyHistoryOrganizerTemplateId/context"/>
@@ -1840,6 +1936,22 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//SocialHistoryObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoRepeatNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoRepeatNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoRepeatNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoInterpretationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoInterpretationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoInterpretationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoMethodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoMethodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoMethodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoTargetSiteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoTargetSiteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationNoTargetSiteCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//SocialHistoryObservation/IHESocialHistoryObservationTemplateId/context"/>

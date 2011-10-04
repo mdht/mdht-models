@@ -4,7 +4,9 @@
     <ownedRule xmi:id="_Wy8lUMzdEeCvbrjDQpuvkw" name="titleValue" constrainedElement="_NvRwcKPeEd6t_4WfM070fA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_dJPZAMzdEeCvbrjDQpuvkw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive text string containing 'advance directives'.</body>
+        <body>self.title = 'advance directives'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_P8kHYKPeEd6t_4WfM070fA">
@@ -31,13 +33,17 @@
     <ownedRule xmi:id="_WTcJYMzeEeCvbrjDQpuvkw" name="advDirectiveCodeValueSet" constrainedElement="_mEuuUMJcEd6-XpBv2uxYrQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_dHMVIMzeEeCvbrjDQpuvkw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value for Observation / code in an advance directive observation MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.2 AdvanceDirectiveTypeCode STATIC 20061017.</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.1.11.20.2'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_fFDwAMzeEeCvbrjDQpuvkw" name="advDirectiveCodeCodeSystem" constrainedElement="_mEuuUMJcEd6-XpBv2uxYrQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_j6WrAMzeEeCvbrjDQpuvkw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>There SHOULD be an advance directive observation whose value for Observation / code is '304251008' 'Resuscitation status' 2.16.840.1.113883.6.96 SNOMED CT STATIC</body>
+        <body>self.code.code = '304251008' and self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_3GZhwMzhEeCvbrjDQpuvkw" name="hasInformation" constrainedElement="_mEuuUMJcEd6-XpBv2uxYrQ">

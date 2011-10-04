@@ -18,7 +18,6 @@ import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Encounter;
-import org.openhealthtools.mdht.uml.cda.ExternalDocument;
 import org.openhealthtools.mdht.uml.cda.Guardian;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Observation;
@@ -404,6 +403,11 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseAdvanceDirectiveReference(AdvanceDirectiveReference object) {
+			return createAdvanceDirectiveReferenceAdapter();
+		}
+
+		@Override
 		public Adapter casePayersSection(PayersSection object) {
 			return createPayersSectionAdapter();
 		}
@@ -539,11 +543,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAdvanceDirectiveReference(AdvanceDirectiveReference object) {
-			return createAdvanceDirectiveReferenceAdapter();
-		}
-
-		@Override
 		public Adapter caseCCDRegistryDelegate(CCDRegistryDelegate object) {
 			return createCCDRegistryDelegateAdapter();
 		}
@@ -646,11 +645,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseGuardian(Guardian object) {
 			return createGuardianAdapter();
-		}
-
-		@Override
-		public Adapter caseExternalDocument(ExternalDocument object) {
-			return createExternalDocumentAdapter();
 		}
 
 		@Override
@@ -2018,20 +2012,6 @@ public class CCDAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createGuardianAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ExternalDocument <em>External Document</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ExternalDocument
-	 * @generated
-	 */
-	public Adapter createExternalDocumentAdapter() {
 		return null;
 	}
 

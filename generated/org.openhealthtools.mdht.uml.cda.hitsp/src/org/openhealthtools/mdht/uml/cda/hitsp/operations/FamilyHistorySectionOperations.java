@@ -202,7 +202,7 @@ public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.FAMILY_HISTORY_SECTION,
-				HITSPPackage.Literals.FAMILY_HISTORY_SECTION.getEAllOperations().get(64));
+				HITSPPackage.Literals.FAMILY_HISTORY_SECTION.getEAllOperations().get(67));
 			try {
 				GET_FAMILY_HISTORIES__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORIES__EOCL_EXP);
 			} catch (ParserException pe) {

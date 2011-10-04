@@ -15,7 +15,9 @@
     <ownedRule xmi:id="_iTvPwMKcEeCl2eGe9IRxKw" name="titleValue" constrainedElement="_rJDcIHDAEd6eItyqb1FoWg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_mUOCoMKcEeCl2eGe9IRxKw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>SHOULD be valued with a case-insensitive language-insensitive text string containing 'encounters'.</body>
+        <body>self.title = 'encounters'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_wbv8cHDOEd6eItyqb1FoWg">
@@ -43,19 +45,25 @@
     <ownedRule xmi:id="_OCVlkMK8EeCl2eGe9IRxKw" name="hasIndications" constrainedElement="_mO8KEHJWEd6cacuAk5qrhg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_bI0ToMK8EeCl2eGe9IRxKw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>MAY contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity</body>
+        <body>self.entryRelationship->exists(er : cda::EntryRelationship | er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_efzdkMK8EeCl2eGe9IRxKw" name="hasPractitioners" constrainedElement="_OCVlkMK8EeCl2eGe9IRxKw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_jPmNgMK8EeCl2eGe9IRxKw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>MAY contain zero or more [0..*] performer, used to define the practioners involved in an encounter</body>
+        <body>self.performer->size() >= 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_lNKGYMK8EeCl2eGe9IRxKw" name="practitionerRole" constrainedElement="_efzdkMK8EeCl2eGe9IRxKw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_qSF_4MK8EeCl2eGe9IRxKw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>MAY contain one [0..1] performer / assignedEntity / code, to define the role of the practioner</body>
+        <body>self.performer.assignedEntity.code->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_JSRTYMK9EeCl2eGe9IRxKw" name="hasInformation" constrainedElement="_lNKGYMK8EeCl2eGe9IRxKw">

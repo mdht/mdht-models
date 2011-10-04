@@ -376,7 +376,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION,
-				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(80));
+				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(81));
 			try {
 				GET_MEDICATION__EOCL_QRY = helper.createQuery(GET_MEDICATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -421,7 +421,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION,
-				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(81));
+				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(82));
 			try {
 				GET_IMMUNIZATION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -466,7 +466,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION,
-				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(82));
+				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(83));
 			try {
 				GET_ENCOUNTER__EOCL_QRY = helper.createQuery(GET_ENCOUNTER__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -511,7 +511,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION,
-				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(83));
+				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(84));
 			try {
 				GET_PROCEDURE__EOCL_QRY = helper.createQuery(GET_PROCEDURE__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -17,11 +17,64 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getSocialHistoryObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.4' constraints.validation.error='IHESocialHistoryObservationTemplateId' constraints.validation.info='IHESocialHistoryObservationValue'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.4' constraints.validation.error='IHESocialHistoryObservationTemplateId' constraints.validation.warning='IHESocialHistoryObservationNoRepeatNumber IHESocialHistoryObservationNoInterpretationCode IHESocialHistoryObservationNoMethodCode IHESocialHistoryObservationNoTargetSiteCode' constraints.validation.info='IHESocialHistoryObservationValue'"
  * @generated
  */
 public interface SocialHistoryObservation extends SimpleObservation,
 		org.openhealthtools.mdht.uml.cda.ccd.SocialHistoryObservation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.repeatNumber->size() = 0
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.repeatNumber->size() = 0'"
+	 * @generated
+	 */
+	boolean validateIHESocialHistoryObservationNoRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.interpretationCode->size() = 0
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.interpretationCode->size() = 0'"
+	 * @generated
+	 */
+	boolean validateIHESocialHistoryObservationNoInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.methodCode->size() = 0
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.methodCode->size() = 0'"
+	 * @generated
+	 */
+	boolean validateIHESocialHistoryObservationNoMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.targetSitCode->size() = 0
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.targetSitCode->size() = 0'"
+	 * @generated
+	 */
+	boolean validateIHESocialHistoryObservationNoTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

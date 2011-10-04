@@ -51,6 +51,16 @@ public class SocialHistoryObservationImpl extends SimpleObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSocialHistoryObservationCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationCodeValueSet(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistoryObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
 	}
@@ -129,6 +139,50 @@ public class SocialHistoryObservationImpl extends SimpleObservationImpl implemen
 	 */
 	public EpisodeObservation getEpisodeObservation() {
 		return SocialHistoryObservationOperations.getEpisodeObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIHESocialHistoryObservationNoRepeatNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return org.openhealthtools.mdht.uml.cda.ihe.operations.SocialHistoryObservationOperations.validateIHESocialHistoryObservationNoRepeatNumber(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIHESocialHistoryObservationNoInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return org.openhealthtools.mdht.uml.cda.ihe.operations.SocialHistoryObservationOperations.validateIHESocialHistoryObservationNoInterpretationCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIHESocialHistoryObservationNoMethodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return org.openhealthtools.mdht.uml.cda.ihe.operations.SocialHistoryObservationOperations.validateIHESocialHistoryObservationNoMethodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIHESocialHistoryObservationNoTargetSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return org.openhealthtools.mdht.uml.cda.ihe.operations.SocialHistoryObservationOperations.validateIHESocialHistoryObservationNoTargetSiteCode(
+			this, diagnostics, context);
 	}
 
 	/**

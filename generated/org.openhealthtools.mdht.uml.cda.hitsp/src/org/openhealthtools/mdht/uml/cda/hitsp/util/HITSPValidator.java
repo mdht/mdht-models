@@ -821,7 +821,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID = 125;
+	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID = 155;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Has Result' of 'Diagnostic Results Section'.
@@ -829,7 +829,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_HAS_RESULT = 126;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_HAS_RESULT = 156;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Sign Template Id' of 'Vital Sign'.
@@ -837,7 +837,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGN__VITAL_SIGN_TEMPLATE_ID = 139;
+	public static final int VITAL_SIGN__VITAL_SIGN_TEMPLATE_ID = 169;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Code' of 'Vital Sign'.
@@ -845,7 +845,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGN__RESULT_OBSERVATION_CODE = 140;
+	public static final int VITAL_SIGN__RESULT_OBSERVATION_CODE = 170;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Payers Section Template Id' of 'Payers Section'.
@@ -853,7 +853,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PAYERS_SECTION__HITSP_PAYERS_SECTION_TEMPLATE_ID = 109;
+	public static final int PAYERS_SECTION__HITSP_PAYERS_SECTION_TEMPLATE_ID = 118;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Payers Section Insurance Provider' of 'Payers Section'.
@@ -861,7 +861,175 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PAYERS_SECTION__HITSP_PAYERS_SECTION_INSURANCE_PROVIDER = 110;
+	public static final int PAYERS_SECTION__HITSP_PAYERS_SECTION_INSURANCE_PROVIDER = 119;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Payment Providers' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYMENT_PROVIDERS = 120;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Payer Entry ID' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYER_ENTRY_ID = 121;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Health Insurance Type' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE = 122;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Insurance Information' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFORMATION = 123;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Insurance Info Source ID' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID = 124;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Insurance Info Source Addr' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR = 125;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Health Plan Coverage Start Time' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME = 126;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Health Plan Coverage Stop Time' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME = 127;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Patient Information' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_PATIENT_INFORMATION = 128;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Member Id' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_MEMBER_ID = 129;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Member Id Root' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_MEMBER_ID_ROOT = 130;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Relationship To Subscriber' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER = 131;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Relationship To Subscriber Code System' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM = 132;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Patient Name' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_PATIENT_NAME = 133;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Subscriber Information' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION = 134;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Subscriber Id' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ID = 135;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Subscriber Id Root' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT = 136;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Subscriber Address' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS = 137;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Financial Responsibility Party Type' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE = 138;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Financial Responsibility Party Type Code' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE = 139;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Financial Responsibility Party Address' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS = 140;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Allergies Reactions Section Template Id' of 'Allergies Reactions Section'.
@@ -869,7 +1037,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID = 98;
+	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID = 106;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Allergies Reactions Section Allergy Drug Sensitivity' of 'Allergies Reactions Section'.
@@ -877,7 +1045,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY = 99;
+	public static final int ALLERGIES_REACTIONS_SECTION__HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY = 107;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP History Of Past Illness Section Template Id' of 'History Of Past Illness Section'.
@@ -885,7 +1053,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_OF_PAST_ILLNESS_SECTION__HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID = 141;
+	public static final int HISTORY_OF_PAST_ILLNESS_SECTION__HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID = 171;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP History Of Past Illness Section Condition' of 'History Of Past Illness Section'.
@@ -893,7 +1061,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_OF_PAST_ILLNESS_SECTION__HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_CONDITION = 142;
+	public static final int HISTORY_OF_PAST_ILLNESS_SECTION__HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_CONDITION = 172;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Chief Complaint Section Template Id' of 'Chief Complaint Section'.
@@ -901,7 +1069,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID = 143;
+	public static final int CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID = 173;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Chief Complaint Section Condition' of 'Chief Complaint Section'.
@@ -909,7 +1077,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_CONDITION = 144;
+	public static final int CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_CONDITION = 174;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Reason For Referral Section Condition' of 'Reason For Referral Section'.
@@ -917,7 +1085,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION = 145;
+	public static final int REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION = 175;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Reason For Referral Section Result' of 'Reason For Referral Section'.
@@ -925,7 +1093,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_RESULT = 146;
+	public static final int REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_RESULT = 176;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Coded Reason For Referral Section Template Id' of 'Reason For Referral Section'.
@@ -933,7 +1101,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REASON_FOR_REFERRAL_SECTION__CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID = 147;
+	public static final int REASON_FOR_REFERRAL_SECTION__CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID = 177;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP History Of Present Illness Template Id' of 'History Of Present Illness'.
@@ -941,7 +1109,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORY_OF_PRESENT_ILLNESS__HITSP_HISTORY_OF_PRESENT_ILLNESS_TEMPLATE_ID = 148;
+	public static final int HISTORY_OF_PRESENT_ILLNESS__HITSP_HISTORY_OF_PRESENT_ILLNESS_TEMPLATE_ID = 178;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Surgeries Section Template Id' of 'Surgeries Section'.
@@ -949,7 +1117,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_TEMPLATE_ID = 112;
+	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_TEMPLATE_ID = 142;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Surgeries Section Procedure Activity' of 'Surgeries Section'.
@@ -957,7 +1125,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY = 113;
+	public static final int SURGERIES_SECTION__HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY = 143;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Has Code Original Text' of 'Procedure'.
@@ -965,7 +1133,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT = 114;
+	public static final int PROCEDURE__HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT = 144;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Performer Assigned Entity' of 'Procedure'.
@@ -973,7 +1141,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY = 115;
+	public static final int PROCEDURE__HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY = 145;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Template Id' of 'Procedure'.
@@ -981,7 +1149,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_TEMPLATE_ID = 116;
+	public static final int PROCEDURE__HITSP_PROCEDURE_TEMPLATE_ID = 146;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Target Site Code' of 'Procedure'.
@@ -989,7 +1157,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_TARGET_SITE_CODE = 117;
+	public static final int PROCEDURE__HITSP_PROCEDURE_TARGET_SITE_CODE = 147;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Procedure Code' of 'Procedure'.
@@ -997,7 +1165,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROCEDURE__HITSP_PROCEDURE_CODE = 118;
+	public static final int PROCEDURE__HITSP_PROCEDURE_CODE = 148;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Functional Status Section Template Id' of 'Functional Status Section'.
@@ -1005,7 +1173,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FUNCTIONAL_STATUS_SECTION__HITSP_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 149;
+	public static final int FUNCTIONAL_STATUS_SECTION__HITSP_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 179;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Admission Diagnosis Section Template Id' of 'Hospital Admission Diagnosis Section'.
@@ -1013,7 +1181,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID = 150;
+	public static final int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID = 180;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Admission Diagnosis Section Condition' of 'Hospital Admission Diagnosis Section'.
@@ -1021,7 +1189,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CONDITION = 151;
+	public static final int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CONDITION = 181;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Discharge Diagnosis Section Template Id' of 'Discharge Diagnosis Section'.
@@ -1029,7 +1197,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_DIAGNOSIS_SECTION__HITSP_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID = 152;
+	public static final int DISCHARGE_DIAGNOSIS_SECTION__HITSP_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID = 182;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Discharge Diagnosis Section Condition' of 'Discharge Diagnosis Section'.
@@ -1037,7 +1205,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_DIAGNOSIS_SECTION__HITSP_DISCHARGE_DIAGNOSIS_SECTION_CONDITION = 153;
+	public static final int DISCHARGE_DIAGNOSIS_SECTION__HITSP_DISCHARGE_DIAGNOSIS_SECTION_CONDITION = 183;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Admission Medication History Section Template Id' of 'Admission Medication History Section'.
@@ -1045,7 +1213,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADMISSION_MEDICATION_HISTORY_SECTION__HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID = 154;
+	public static final int ADMISSION_MEDICATION_HISTORY_SECTION__HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID = 184;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Discharge Medications Section Template Id' of 'Hospital Discharge Medications Section'.
@@ -1053,7 +1221,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID = 155;
+	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID = 185;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Discharge Medications Section Medication' of 'Hospital Discharge Medications Section'.
@@ -1061,7 +1229,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION = 156;
+	public static final int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION = 186;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medications Administered Section Template Id' of 'Medications Administered Section'.
@@ -1069,7 +1237,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATIONS_ADMINISTERED_SECTION__HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID = 157;
+	public static final int MEDICATIONS_ADMINISTERED_SECTION__HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID = 187;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Advance Directives Section Template Id' of 'Advance Directives Section'.
@@ -1088,12 +1256,76 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int ADVANCE_DIRECTIVES_SECTION__HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE = 94;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Has Starting Time' of 'Advance Directive'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_HAS_STARTING_TIME = 95;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Has Ending Time' of 'Advance Directive'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_HAS_ENDING_TIME = 96;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Has Custodian' of 'Advance Directive'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_HAS_CUSTODIAN = 97;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Participant Type Code' of 'Advance Directive'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_PARTICIPANT_TYPE_CODE = 98;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Participant Role Class Code' of 'Advance Directive'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_PARTICIPANT_ROLE_CLASS_CODE = 99;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Has Address' of 'Advance Directive'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_HAS_ADDRESS = 100;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Has Telecom' of 'Advance Directive'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_HAS_TELECOM = 101;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Has Name Of Agent' of 'Advance Directive'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_HAS_NAME_OF_AGENT = 102;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Template Id' of 'Advance Directive'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_TEMPLATE_ID = 95;
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_TEMPLATE_ID = 103;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Effective Time' of 'Advance Directive'.
@@ -1101,7 +1333,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_EFFECTIVE_TIME = 96;
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_EFFECTIVE_TIME = 104;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Advance Directive Observation Code' of 'Advance Directive'.
@@ -1109,7 +1341,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_OBSERVATION_CODE = 97;
+	public static final int ADVANCE_DIRECTIVE__ADVANCE_DIRECTIVE_OBSERVATION_CODE = 105;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunizations Section Template Id' of 'Immunizations Section'.
@@ -1117,7 +1349,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_TEMPLATE_ID = 104;
+	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_TEMPLATE_ID = 113;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem List Section Condition' of 'Problem List Section'.
@@ -1149,7 +1381,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_IMMUNIZATION = 105;
+	public static final int IMMUNIZATIONS_SECTION__HITSP_IMMUNIZATIONS_SECTION_IMMUNIZATION = 114;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunization Refusal Reason' of 'Immunization'.
@@ -1157,7 +1389,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_REFUSAL_REASON = 106;
+	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_REFUSAL_REASON = 115;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Physical Exam Section Template Id' of 'Physical Exam Section'.
@@ -1165,7 +1397,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHYSICAL_EXAM_SECTION__HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID = 158;
+	public static final int PHYSICAL_EXAM_SECTION__HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID = 188;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Physical Exam Section Condition' of 'Physical Exam Section'.
@@ -1173,7 +1405,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHYSICAL_EXAM_SECTION__HITSP_PHYSICAL_EXAM_SECTION_CONDITION = 159;
+	public static final int PHYSICAL_EXAM_SECTION__HITSP_PHYSICAL_EXAM_SECTION_CONDITION = 189;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Review Of Systems Section Template Id' of 'Review Of Systems Section'.
@@ -1181,7 +1413,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REVIEW_OF_SYSTEMS_SECTION__HITSP_REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID = 160;
+	public static final int REVIEW_OF_SYSTEMS_SECTION__HITSP_REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID = 190;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Hospital Course Section Template Id' of 'Hospital Course Section'.
@@ -1189,7 +1421,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HOSPITAL_COURSE_SECTION__HITSP_HOSPITAL_COURSE_SECTION_TEMPLATE_ID = 161;
+	public static final int HOSPITAL_COURSE_SECTION__HITSP_HOSPITAL_COURSE_SECTION_TEMPLATE_ID = 191;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Template Id' of 'Diagnostic Results Section'.
@@ -1197,7 +1429,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID = 127;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID = 157;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Diagnostic Procedure' of 'Diagnostic Results Section'.
@@ -1205,7 +1437,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE = 128;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE = 158;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Result' of 'Diagnostic Results Section'.
@@ -1213,7 +1445,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT = 129;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT = 159;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diagnostic Results Section Result Organizer' of 'Diagnostic Results Section'.
@@ -1221,7 +1453,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER = 130;
+	public static final int DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER = 160;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Type Code System' of 'Result'.
@@ -1229,7 +1461,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_TYPE_CODE_SYSTEM = 131;
+	public static final int RESULT__RESULT_TYPE_CODE_SYSTEM = 161;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Laboratory Results Value Set' of 'Result'.
@@ -1237,7 +1469,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_LABORATORY_RESULTS_VALUE_SET = 132;
+	public static final int RESULT__RESULT_LABORATORY_RESULTS_VALUE_SET = 162;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Value Presence' of 'Result'.
@@ -1245,7 +1477,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_VALUE_PRESENCE = 133;
+	public static final int RESULT__RESULT_VALUE_PRESENCE = 163;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Assessment And Plan Section Template Id' of 'Assessment And Plan Section'.
@@ -1253,7 +1485,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 162;
+	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 192;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Assessment And Plan Section Medication' of 'Assessment And Plan Section'.
@@ -1261,7 +1493,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_MEDICATION = 163;
+	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_MEDICATION = 193;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Assessment And Plan Section Immunization' of 'Assessment And Plan Section'.
@@ -1269,7 +1501,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_IMMUNIZATION = 164;
+	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_IMMUNIZATION = 194;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Assessment And Plan Section Encounter Entry' of 'Assessment And Plan Section'.
@@ -1277,7 +1509,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_ENCOUNTER_ENTRY = 165;
+	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_ENCOUNTER_ENTRY = 195;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Assessment And Plan Section Procedure Entry' of 'Assessment And Plan Section'.
@@ -1285,7 +1517,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY = 166;
+	public static final int ASSESSMENT_AND_PLAN_SECTION__HITSP_ASSESSMENT_AND_PLAN_SECTION_PROCEDURE_ENTRY = 196;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Plan Of Care Section Template Id' of 'Plan Of Care Section'.
@@ -1293,7 +1525,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 119;
+	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 149;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Plan Of Care Section Medication' of 'Plan Of Care Section'.
@@ -1301,7 +1533,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_MEDICATION = 120;
+	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_MEDICATION = 150;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Plan Of Care Section Immunization' of 'Plan Of Care Section'.
@@ -1309,7 +1541,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION = 121;
+	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION = 151;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Plan Of Care Section Encounter' of 'Plan Of Care Section'.
@@ -1317,7 +1549,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER = 122;
+	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER = 152;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Plan Of Care Section Procedure' of 'Plan Of Care Section'.
@@ -1325,7 +1557,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_PROCEDURE = 123;
+	public static final int PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_PROCEDURE = 153;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Vital Signs Section Vital Sign Entry' of 'Vital Signs Section'.
@@ -1333,7 +1565,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY = 124;
+	public static final int VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY = 154;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Family History Section Template Id' of 'Family History Section'.
@@ -1341,7 +1573,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_SECTION__HITSP_FAMILY_HISTORY_SECTION_TEMPLATE_ID = 167;
+	public static final int FAMILY_HISTORY_SECTION__HITSP_FAMILY_HISTORY_SECTION_TEMPLATE_ID = 197;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Family History Section Family History' of 'Family History Section'.
@@ -1349,7 +1581,39 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY_SECTION__HITSP_FAMILY_HISTORY_SECTION_FAMILY_HISTORY = 168;
+	public static final int FAMILY_HISTORY_SECTION__HITSP_FAMILY_HISTORY_SECTION_FAMILY_HISTORY = 198;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Related Subject Code Value Set' of 'Family History'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FAMILY_HISTORY__FAMILY_HISTORY_RELATED_SUBJECT_CODE_VALUE_SET = 199;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Has Family Name' of 'Family History'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FAMILY_HISTORY__FAMILY_HISTORY_HAS_FAMILY_NAME = 200;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Has Gender Code' of 'Family History'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FAMILY_HISTORY__FAMILY_HISTORY_HAS_GENDER_CODE = 201;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Family Member Condition' of 'Family History'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FAMILY_HISTORY__FAMILY_HISTORY_FAMILY_MEMBER_CONDITION = 202;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Social History Section Template Id' of 'Social History Section'.
@@ -1357,7 +1621,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SOCIAL_HISTORY_SECTION__HITSP_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 171;
+	public static final int SOCIAL_HISTORY_SECTION__HITSP_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 205;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Social History Section Social History' of 'Social History Section'.
@@ -1365,7 +1629,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SOCIAL_HISTORY_SECTION__HITSP_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY = 172;
+	public static final int SOCIAL_HISTORY_SECTION__HITSP_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY = 206;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Social History Template Id' of 'Social History'.
@@ -1373,7 +1637,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SOCIAL_HISTORY__SOCIAL_HISTORY_TEMPLATE_ID = 173;
+	public static final int SOCIAL_HISTORY__SOCIAL_HISTORY_TEMPLATE_ID = 207;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Social History Code' of 'Social History'.
@@ -1381,7 +1645,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SOCIAL_HISTORY__SOCIAL_HISTORY_CODE = 174;
+	public static final int SOCIAL_HISTORY__SOCIAL_HISTORY_CODE = 208;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Social History Effective Time' of 'Social History'.
@@ -1389,7 +1653,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SOCIAL_HISTORY__SOCIAL_HISTORY_EFFECTIVE_TIME = 175;
+	public static final int SOCIAL_HISTORY__SOCIAL_HISTORY_EFFECTIVE_TIME = 209;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Social History Text' of 'Social History'.
@@ -1397,7 +1661,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SOCIAL_HISTORY__SOCIAL_HISTORY_TEXT = 176;
+	public static final int SOCIAL_HISTORY__SOCIAL_HISTORY_TEXT = 210;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounters Section Template Id' of 'Encounters Section'.
@@ -1405,7 +1669,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID = 100;
+	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID = 108;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounters Section Encounter Entry' of 'Encounters Section'.
@@ -1413,7 +1677,15 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY = 101;
+	public static final int ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY = 109;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounter Admission Source Value Set' of 'Encounter'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ENCOUNTER__HITSP_ENCOUNTER_ADMISSION_SOURCE_VALUE_SET = 110;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medical Equipment Section Template Id' of 'Medical Equipment Section'.
@@ -1421,7 +1693,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICAL_EQUIPMENT_SECTION__HITSP_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID = 177;
+	public static final int MEDICAL_EQUIPMENT_SECTION__HITSP_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID = 211;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Template Id' of 'Result'.
@@ -1429,7 +1701,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_TEMPLATE_ID = 134;
+	public static final int RESULT__RESULT_TEMPLATE_ID = 164;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Code' of 'Result'.
@@ -1437,7 +1709,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_CODE = 135;
+	public static final int RESULT__RESULT_CODE = 165;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Effective Time' of 'Result'.
@@ -1445,7 +1717,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_EFFECTIVE_TIME = 136;
+	public static final int RESULT__RESULT_EFFECTIVE_TIME = 166;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Value' of 'Result'.
@@ -1453,7 +1725,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT__RESULT_VALUE = 137;
+	public static final int RESULT__RESULT_VALUE = 167;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Result Organizer Result' of 'Result Organizer'.
@@ -1461,7 +1733,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__HITSP_RESULT_ORGANIZER_RESULT = 138;
+	public static final int RESULT_ORGANIZER__HITSP_RESULT_ORGANIZER_RESULT = 168;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Language Spoken No Proficiency Level Code' of 'Language Spoken'.
@@ -1469,7 +1741,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE = 178;
+	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_NO_PROFICIENCY_LEVEL_CODE = 212;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Language Spoken Template Id' of 'Language Spoken'.
@@ -1477,7 +1749,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_TEMPLATE_ID = 179;
+	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_TEMPLATE_ID = 213;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Language Spoken Mode Code' of 'Language Spoken'.
@@ -1485,7 +1757,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_MODE_CODE = 180;
+	public static final int LANGUAGE_SPOKEN__LANGUAGE_SPOKEN_MODE_CODE = 214;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Template Id' of 'Insurance Provider'.
@@ -1493,7 +1765,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID = 111;
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID = 141;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Healthcare Provider Template Id' of 'Healthcare Provider'.
@@ -1501,7 +1773,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID = 181;
+	public static final int HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID = 215;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Immunization Template Id' of 'Immunization'.
@@ -1509,7 +1781,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_TEMPLATE_ID = 107;
+	public static final int IMMUNIZATION__HITSP_IMMUNIZATION_TEMPLATE_ID = 116;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Immunization Code' of 'Immunization'.
@@ -1517,7 +1789,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMMUNIZATION__IMMUNIZATION_CODE = 108;
+	public static final int IMMUNIZATION__IMMUNIZATION_CODE = 117;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Comment Template Id' of 'Comment'.
@@ -1525,7 +1797,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int COMMENT__HITSP_COMMENT_TEMPLATE_ID = 182;
+	public static final int COMMENT__HITSP_COMMENT_TEMPLATE_ID = 216;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Template Id' of 'Medication Tapered Dose'.
@@ -1533,7 +1805,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_TAPERED_DOSE__HITSP_MEDICATION_TEMPLATE_ID = 183;
+	public static final int MEDICATION_TAPERED_DOSE__HITSP_MEDICATION_TEMPLATE_ID = 217;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Support Guardian Template Id' of 'Support Guardian'.
@@ -1541,7 +1813,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUPPORT_GUARDIAN__HITSP_SUPPORT_GUARDIAN_TEMPLATE_ID = 184;
+	public static final int SUPPORT_GUARDIAN__HITSP_SUPPORT_GUARDIAN_TEMPLATE_ID = 218;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Support Participant Template Id' of 'Support Participant'.
@@ -1549,7 +1821,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUPPORT_PARTICIPANT__HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID = 185;
+	public static final int SUPPORT_PARTICIPANT__HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID = 219;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document No Structured Data' of 'Unstructured Document'.
@@ -1557,7 +1829,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA = 186;
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA = 220;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Unstructured Document One Patient Per Document' of 'Unstructured Document'.
@@ -1565,7 +1837,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT = 187;
+	public static final int UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT = 221;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Scanned Document Template Id' of 'Unstructured Document'.
@@ -1573,7 +1845,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int UNSTRUCTURED_DOCUMENT__SCANNED_DOCUMENT_TEMPLATE_ID = 188;
+	public static final int UNSTRUCTURED_DOCUMENT__SCANNED_DOCUMENT_TEMPLATE_ID = 222;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Product Name' of 'Medication Information'.
@@ -1581,7 +1853,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_NAME = 189;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_NAME = 223;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Product Vocab' of 'Medication Information'.
@@ -1589,7 +1861,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB = 190;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB = 224;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Drug Class Vocab' of 'Medication Information'.
@@ -1597,7 +1869,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB = 191;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB = 225;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Ingredient Vocab' of 'Medication Information'.
@@ -1605,7 +1877,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB = 192;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB = 226;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Brand Name' of 'Medication Information'.
@@ -1613,7 +1885,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME = 193;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME = 227;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Coded Brand Name Vocab' of 'Medication Information'.
@@ -1621,7 +1893,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB = 194;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB = 228;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Free Text Product Name' of 'Medication Information'.
@@ -1629,7 +1901,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME = 195;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME = 229;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Free Text Brand Name' of 'Medication Information'.
@@ -1637,7 +1909,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME = 196;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME = 230;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medication Information Template Id' of 'Medication Information'.
@@ -1645,7 +1917,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_TEMPLATE_ID = 197;
+	public static final int MEDICATION_INFORMATION__MEDICATION_INFORMATION_TEMPLATE_ID = 231;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Summary Template Id' of 'Referral Summary'.
@@ -1653,7 +1925,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REFERRAL_SUMMARY__MEDICAL_SUMMARY_TEMPLATE_ID = 198;
+	public static final int REFERRAL_SUMMARY__MEDICAL_SUMMARY_TEMPLATE_ID = 232;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Problem List Section' of 'Discharge Summary'.
@@ -1661,7 +1933,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PROBLEM_LIST_SECTION = 199;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PROBLEM_LIST_SECTION = 233;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Admission Medication History Section' of 'Discharge Summary'.
@@ -1669,7 +1941,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ADMISSION_MEDICATION_HISTORY_SECTION = 200;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ADMISSION_MEDICATION_HISTORY_SECTION = 234;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Hospital Admission Diagnosis Section' of 'Discharge Summary'.
@@ -1677,7 +1949,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 201;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 235;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Advance Directives Section' of 'Discharge Summary'.
@@ -1685,7 +1957,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ADVANCE_DIRECTIVES_SECTION = 202;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ADVANCE_DIRECTIVES_SECTION = 236;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Allergies Reactions Section' of 'Discharge Summary'.
@@ -1693,7 +1965,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ALLERGIES_REACTIONS_SECTION = 203;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ALLERGIES_REACTIONS_SECTION = 237;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Discharge Diagnosis Section' of 'Discharge Summary'.
@@ -1701,7 +1973,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION = 204;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION = 238;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Discharge Diet' of 'Discharge Summary'.
@@ -1709,7 +1981,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIET = 205;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIET = 239;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Hospital Discharge Medications Section' of 'Discharge Summary'.
@@ -1717,7 +1989,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 206;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 240;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Diagnostic Results Section' of 'Discharge Summary'.
@@ -1725,7 +1997,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DIAGNOSTIC_RESULTS_SECTION = 207;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DIAGNOSTIC_RESULTS_SECTION = 241;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Functional Status Section' of 'Discharge Summary'.
@@ -1733,7 +2005,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION = 208;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION = 242;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary History Of Present Illness' of 'Discharge Summary'.
@@ -1741,7 +2013,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS = 209;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS = 243;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Hospital Course Section' of 'Discharge Summary'.
@@ -1749,7 +2021,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION = 210;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION = 244;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Medical Equipment Section' of 'Discharge Summary'.
@@ -1757,7 +2029,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_MEDICAL_EQUIPMENT_SECTION = 211;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_MEDICAL_EQUIPMENT_SECTION = 245;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Physical Exam Section' of 'Discharge Summary'.
@@ -1765,7 +2037,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PHYSICAL_EXAM_SECTION = 212;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PHYSICAL_EXAM_SECTION = 246;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Plan Of Care Section' of 'Discharge Summary'.
@@ -1773,7 +2045,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION = 213;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION = 247;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary History Of Past Illness Section' of 'Discharge Summary'.
@@ -1781,7 +2053,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION = 214;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION = 248;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Review Of Systems Section' of 'Discharge Summary'.
@@ -1789,7 +2061,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION = 215;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION = 249;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Medications Administered Section' of 'Discharge Summary'.
@@ -1797,7 +2069,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION = 216;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION = 250;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Discharge Summary Vital Signs Section' of 'Discharge Summary'.
@@ -1805,7 +2077,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION = 217;
+	public static final int DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION = 251;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Medical Summary Template Id' of 'Discharge Summary'.
@@ -1813,7 +2085,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DISCHARGE_SUMMARY__MEDICAL_SUMMARY_TEMPLATE_ID = 218;
+	public static final int DISCHARGE_SUMMARY__MEDICAL_SUMMARY_TEMPLATE_ID = 252;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Template Id' of 'Family History'.
@@ -1821,7 +2093,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY__FAMILY_HISTORY_TEMPLATE_ID = 169;
+	public static final int FAMILY_HISTORY__FAMILY_HISTORY_TEMPLATE_ID = 203;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Family History Problem Status Observation' of 'Family History'.
@@ -1829,7 +2101,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FAMILY_HISTORY__FAMILY_HISTORY_PROBLEM_STATUS_OBSERVATION = 170;
+	public static final int FAMILY_HISTORY__FAMILY_HISTORY_PROBLEM_STATUS_OBSERVATION = 204;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounter Template Id' of 'Encounter'.
@@ -1837,7 +2109,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER__HITSP_ENCOUNTER_TEMPLATE_ID = 102;
+	public static final int ENCOUNTER__HITSP_ENCOUNTER_TEMPLATE_ID = 111;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Encounter Code' of 'Encounter'.
@@ -1845,7 +2117,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER__HITSP_ENCOUNTER_CODE = 103;
+	public static final int ENCOUNTER__HITSP_ENCOUNTER_CODE = 112;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Summary Template Id' of 'Patient Summary'.
@@ -1861,7 +2133,7 @@ public class HITSPValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 218;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 252;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -3172,6 +3444,46 @@ public class HITSPValidator extends EObjectValidator {
 				medicationOrderInformation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryHasIntentAuthor(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryHasAuthorTime(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryHasAssignedAuthor(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryHasAssignedAuthorID(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryHasAssignedAuthorPersonOrOrg(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryHasPerformerTimeEvent(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryHasPerformerTimeIntent(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryHasPerformerAssignedEntity(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryHasPerformerAssignedEntityID(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSupplyEntry_validateSupplyEntryHasPerformerEntityPersonOrOrg(
+				medicationOrderInformation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= iheValidator.validateSupplyEntry_validateSupplyEntryTemplateId(
 				medicationOrderInformation, diagnostics, context);
 		}
@@ -4345,6 +4657,10 @@ public class HITSPValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(payersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePayersSection_validatePayersSectionTitleValue(
+				payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validatePayersSection_validatePayersSectionTemplateId(
 				payersSection, diagnostics, context);
 		}
@@ -4435,6 +4751,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(allergiesReactionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAlertsSection_validateAlertsSectionTitleValue(
+				allergiesReactionsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateAlertsSection_validateAlertsSectionTemplateId(
@@ -4534,6 +4854,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(problemListSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateProblemSection_validateProblemSectionTitleValue(
+				problemListSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateProblemSection_validateProblemSectionTemplateId(
@@ -5063,6 +5387,26 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionClinicalStatements(
+				functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionTitleValue(
+				functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionObservationCode(
+				functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionObservationCodeValueSet(
+				functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionProblemStatusObservation(
+				functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionResultStatusObservation(
 				functionalStatusSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5627,6 +5971,10 @@ public class HITSPValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(advanceDirectivesSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTitleValue(
+				advanceDirectivesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTemplateId(
 				advanceDirectivesSection, diagnostics, context);
 		}
@@ -5721,6 +6069,14 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryMapEntryUnique(advanceDirective, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationAdvDirectiveCodeValueSet(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationAdvDirectiveCodeCodeSystem(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationTemplateId(
 				advanceDirective, diagnostics, context);
 		}
@@ -5753,6 +6109,10 @@ public class HITSPValidator extends EObjectValidator {
 				advanceDirective, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationAdvanceDirectiveReference(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= iheValidator.validateSimpleObservation_validateSimpleObservationTemplateId(
 				advanceDirective, diagnostics, context);
 		}
@@ -5769,6 +6129,38 @@ public class HITSPValidator extends EObjectValidator {
 				advanceDirective, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateAdvanceDirective_validateAdvanceDirectiveHasStartingTime(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirective_validateAdvanceDirectiveHasEndingTime(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirective_validateAdvanceDirectiveHasCustodian(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirective_validateAdvanceDirectiveParticipantTypeCode(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirective_validateAdvanceDirectiveParticipantRoleClassCode(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirective_validateAdvanceDirectiveHasAddress(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirective_validateAdvanceDirectiveHasTelecom(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateAdvanceDirective_validateAdvanceDirectiveHasNameOfAgent(
+				advanceDirective, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateAdvanceDirective_validateAdvanceDirectiveTemplateId(
 				advanceDirective, diagnostics, context);
 		}
@@ -5777,6 +6169,94 @@ public class HITSPValidator extends EObjectValidator {
 				advanceDirective, diagnostics, context);
 		}
 		return result;
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveHasStartingTime constraint of '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirective_validateAdvanceDirectiveHasStartingTime(AdvanceDirective advanceDirective,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return advanceDirective.validateAdvanceDirectiveHasStartingTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveHasEndingTime constraint of '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirective_validateAdvanceDirectiveHasEndingTime(AdvanceDirective advanceDirective,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return advanceDirective.validateAdvanceDirectiveHasEndingTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveHasCustodian constraint of '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirective_validateAdvanceDirectiveHasCustodian(AdvanceDirective advanceDirective,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return advanceDirective.validateAdvanceDirectiveHasCustodian(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveParticipantTypeCode constraint of '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirective_validateAdvanceDirectiveParticipantTypeCode(
+			AdvanceDirective advanceDirective, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return advanceDirective.validateAdvanceDirectiveParticipantTypeCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveParticipantRoleClassCode constraint of '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirective_validateAdvanceDirectiveParticipantRoleClassCode(
+			AdvanceDirective advanceDirective, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return advanceDirective.validateAdvanceDirectiveParticipantRoleClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveHasAddress constraint of '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirective_validateAdvanceDirectiveHasAddress(AdvanceDirective advanceDirective,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return advanceDirective.validateAdvanceDirectiveHasAddress(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveHasTelecom constraint of '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirective_validateAdvanceDirectiveHasTelecom(AdvanceDirective advanceDirective,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return advanceDirective.validateAdvanceDirectiveHasTelecom(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAdvanceDirectiveHasNameOfAgent constraint of '<em>Advance Directive</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirective_validateAdvanceDirectiveHasNameOfAgent(AdvanceDirective advanceDirective,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return advanceDirective.validateAdvanceDirectiveHasNameOfAgent(diagnostics, context);
 	}
 
 	/**
@@ -5873,6 +6353,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicationsSection_validateMedicationsSectionSupplyActivity(
+				immunizationsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateImmunizationsSection_validateImmunizationsSectionTitleValue(
 				immunizationsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -6532,6 +7016,10 @@ public class HITSPValidator extends EObjectValidator {
 				planOfCareSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionTitleValue(
+				planOfCareSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validatePlanOfCareSection_validatePlanOfCareSectionTemplateId(
 				planOfCareSection, diagnostics, context);
 		}
@@ -6689,6 +7177,18 @@ public class HITSPValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(familyHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionTitleValue(
+				familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionFamilyHistoryObsOrgs(
+				familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionNoSubject(
+				familyHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateFamilyHistorySection_validateFamilyHistorySectionTemplateId(
 				familyHistorySection, diagnostics, context);
 		}
@@ -6779,6 +7279,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitleValue(
+				socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTemplateId(
@@ -6879,6 +7383,10 @@ public class HITSPValidator extends EObjectValidator {
 				socialHistory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateSocialHistoryObservation_validateSocialHistoryObservationCodeValueSet(
+				socialHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateSocialHistoryObservation_validateSocialHistoryObservationTemplateId(
 				socialHistory, diagnostics, context);
 		}
@@ -6904,6 +7412,22 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateSocialHistoryObservation_validateSocialHistoryObservationEpisodeObservation(
+				socialHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSocialHistoryObservation_validateIHESocialHistoryObservationNoRepeatNumber(
+				socialHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSocialHistoryObservation_validateIHESocialHistoryObservationNoInterpretationCode(
+				socialHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSocialHistoryObservation_validateIHESocialHistoryObservationNoMethodCode(
+				socialHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateSocialHistoryObservation_validateIHESocialHistoryObservationNoTargetSiteCode(
 				socialHistory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -7009,6 +7533,10 @@ public class HITSPValidator extends EObjectValidator {
 			result &= cdaValidator.validateSection_validateMoodCode(encountersSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateEncountersSection_validateEncountersSectionTitleValue(
+				encountersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateEncountersSection_validateEncountersSectionTemplateId(
 				encountersSection, diagnostics, context);
 		}
@@ -7103,6 +7631,10 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(medicalEquipmentSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionTitleValue(
+				medicalEquipmentSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= ccdValidator.validateMedicalEquipmentSection_validateMedicalEquipmentSectionTemplateId(
@@ -7559,10 +8091,325 @@ public class HITSPValidator extends EObjectValidator {
 				insuranceProvider, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderPaymentProviders(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderPayerEntryID(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderHealthInsuranceType(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderInsuranceInformation(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderInsuranceInfoSourceID(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderInsuranceInfoSourceAddr(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderHealthPlanCoverageStartTime(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderHealthPlanCoverageStopTime(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderPatientInformation(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderMemberId(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderMemberIdRoot(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderRelationshipToSubscriber(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderRelationshipToSubscriberCodeSystem(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderPatientName(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderSubscriberInformation(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderSubscriberId(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderSubscriberIdRoot(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderSubscriberAddress(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyType(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyTypeCode(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyAddress(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateInsuranceProvider_validateInsuranceProviderTemplateId(
 				insuranceProvider, diagnostics, context);
 		}
 		return result;
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderPaymentProviders constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderPaymentProviders(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderPaymentProviders(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderPayerEntryID constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderPayerEntryID(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderPayerEntryID(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderHealthInsuranceType constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderHealthInsuranceType(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderHealthInsuranceType(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderInsuranceInformation constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderInsuranceInformation(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderInsuranceInformation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderInsuranceInfoSourceID constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderInsuranceInfoSourceID(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderInsuranceInfoSourceID(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderInsuranceInfoSourceAddr constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderInsuranceInfoSourceAddr(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderInsuranceInfoSourceAddr(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderHealthPlanCoverageStartTime constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderHealthPlanCoverageStartTime(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderHealthPlanCoverageStartTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderHealthPlanCoverageStopTime constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderHealthPlanCoverageStopTime(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderHealthPlanCoverageStopTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderPatientInformation constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderPatientInformation(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderPatientInformation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderMemberId constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderMemberId(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderMemberId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderMemberIdRoot constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderMemberIdRoot(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderMemberIdRoot(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderRelationshipToSubscriber constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderRelationshipToSubscriber(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderRelationshipToSubscriber(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderRelationshipToSubscriberCodeSystem constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderRelationshipToSubscriberCodeSystem(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderRelationshipToSubscriberCodeSystem(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderPatientName constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderPatientName(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderPatientName(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderSubscriberInformation constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderSubscriberInformation(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderSubscriberInformation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderSubscriberId constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderSubscriberId(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderSubscriberId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderSubscriberIdRoot constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderSubscriberIdRoot(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderSubscriberIdRoot(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderSubscriberAddress constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderSubscriberAddress(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderSubscriberAddress(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderFinancialResponsibilityPartyType constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyType(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderFinancialResponsibilityPartyType(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderFinancialResponsibilityPartyTypeCode constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyTypeCode(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderFinancialResponsibilityPartyTypeCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderFinancialResponsibilityPartyAddress constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyAddress(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderFinancialResponsibilityPartyAddress(diagnostics, context);
 	}
 
 	/**
@@ -11256,6 +12103,42 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validate_EveryMapEntryUnique(familyHistory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerHasComponent(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerHasFamilyHistoryObservation(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerHasSubject(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerHasSubjectPatientRelationship(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerRelationshipValueCode(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerHasRelatedSubjectCode(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerRelatedSubjectCodeValueSet(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerHasRelatedSubjectSubject(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerHasGenderCode(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= ccdValidator.validateFamilyHistoryOrganizer_validateFamilyHistoryOrganizerRelatedSubjectBirthTime(
 				familyHistory, diagnostics, context);
 		}
@@ -11280,6 +12163,22 @@ public class HITSPValidator extends EObjectValidator {
 				familyHistory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= iheValidator.validateFamilyHistoryOrganizer_validateIHEFamilyHistoryOrganizerHasParticipant(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateFamilyHistoryOrganizer_validateIHEFamilyHistoryOrganizerHasParticipantParticipantRole(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateFamilyHistoryOrganizer_validateIHEFamilyHistoryOrganizerHasParticipantRoleCode(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= iheValidator.validateFamilyHistoryOrganizer_validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= iheValidator.validateFamilyHistoryOrganizer_validateIHEFamilyHistoryOrganizerTemplateId(
 				familyHistory, diagnostics, context);
 		}
@@ -11292,6 +12191,20 @@ public class HITSPValidator extends EObjectValidator {
 				familyHistory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateFamilyHistory_validateFamilyHistoryRelatedSubjectCodeValueSet(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFamilyHistory_validateFamilyHistoryHasFamilyName(familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFamilyHistory_validateFamilyHistoryHasGenderCode(familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFamilyHistory_validateFamilyHistoryFamilyMemberCondition(
+				familyHistory, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateFamilyHistory_validateFamilyHistoryTemplateId(familyHistory, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -11299,6 +12212,50 @@ public class HITSPValidator extends EObjectValidator {
 				familyHistory, diagnostics, context);
 		}
 		return result;
+	}
+
+	/**
+	 * Validates the validateFamilyHistoryRelatedSubjectCodeValueSet constraint of '<em>Family History</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistory_validateFamilyHistoryRelatedSubjectCodeValueSet(FamilyHistory familyHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return familyHistory.validateFamilyHistoryRelatedSubjectCodeValueSet(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateFamilyHistoryHasFamilyName constraint of '<em>Family History</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistory_validateFamilyHistoryHasFamilyName(FamilyHistory familyHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return familyHistory.validateFamilyHistoryHasFamilyName(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateFamilyHistoryHasGenderCode constraint of '<em>Family History</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistory_validateFamilyHistoryHasGenderCode(FamilyHistory familyHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return familyHistory.validateFamilyHistoryHasGenderCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateFamilyHistoryFamilyMemberCondition constraint of '<em>Family History</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistory_validateFamilyHistoryFamilyMemberCondition(FamilyHistory familyHistory,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return familyHistory.validateFamilyHistoryFamilyMemberCondition(diagnostics, context);
 	}
 
 	/**
@@ -11369,12 +12326,26 @@ public class HITSPValidator extends EObjectValidator {
 			result &= iheValidator.validateEncounterEntry_validateEncounterEntryText(encounter, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateEncounter_validateHITSPEncounterAdmissionSourceValueSet(encounter, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateEncounter_validateHITSPEncounterTemplateId(encounter, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateEncounter_validateHITSPEncounterCode(encounter, diagnostics, context);
 		}
 		return result;
+	}
+
+	/**
+	 * Validates the validateHITSPEncounterAdmissionSourceValueSet constraint of '<em>Encounter</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounter_validateHITSPEncounterAdmissionSourceValueSet(Encounter encounter,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return encounter.validateHITSPEncounterAdmissionSourceValueSet(diagnostics, context);
 	}
 
 	/**

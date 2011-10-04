@@ -32,10 +32,23 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getMedicalEquipmentSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.1.7' code.displayName='History of medical device use' constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionTitle MedicalEquipmentSectionText' code.codeSystemName='LOINC' constraints.validation.warning='MedicalEquipmentSectionSupplyActivity' code.code='46264-8' constraints.validation.info='MedicalEquipmentSectionMedicationActivity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.1.7' code.displayName='History of medical device use' constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionTitle MedicalEquipmentSectionText' code.codeSystemName='LOINC' constraints.validation.warning='MedicalEquipmentSectionTitleValue MedicalEquipmentSectionSupplyActivity' code.code='46264-8' constraints.validation.info='MedicalEquipmentSectionMedicationActivity'"
  * @generated
  */
 public interface MedicalEquipmentSection extends Section {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.title = 'equipment'
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.title = \'equipment\''"
+	 * @generated
+	 */
+	boolean validateMedicalEquipmentSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

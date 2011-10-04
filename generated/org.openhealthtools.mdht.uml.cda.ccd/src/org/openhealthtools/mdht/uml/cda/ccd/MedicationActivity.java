@@ -64,12 +64,11 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getClinicalDocument().authorization->exists(auth : cda::Authorization | 
-	 *    not auth.oclIsUndefined() and not auth.consent.oclIsUndefined())
+	 * self.getClinicalDocument().authorization->size() > 0 and self.getClinicalDocument().authorization.consent->size() > 0
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getClinicalDocument().authorization->exists(auth : cda::Authorization | \r\n   not auth.oclIsUndefined() and not auth.consent.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getClinicalDocument().authorization->size() > 0 and self.getClinicalDocument().authorization.consent->size() > 0'"
 	 * @generated
 	 */
 	boolean validateMedicationActivityHasConsents(DiagnosticChain diagnostics, Map<Object, Object> context);

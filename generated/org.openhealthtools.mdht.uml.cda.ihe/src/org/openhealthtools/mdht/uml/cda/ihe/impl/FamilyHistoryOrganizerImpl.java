@@ -52,6 +52,50 @@ public class FamilyHistoryOrganizerImpl extends org.openhealthtools.mdht.uml.cda
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateIHEFamilyHistoryOrganizerHasParticipant(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipant(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIHEFamilyHistoryOrganizerHasParticipantParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantParticipantRole(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIHEFamilyHistoryOrganizerHasParticipantRoleCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantRoleCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateIHEFamilyHistoryOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerTemplateId(this, diagnostics, context);
 	}
