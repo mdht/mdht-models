@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.hitsp.ProblemListSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.toc.ToCPackage#getDischargeInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.2.3.4.5.101' constraints.validation.error='DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesReactionsSection DischargeInstructionsProblemListSection DischargeInstructionsDischargeDiagnosisSection DischargeInstructionsAdvanceDirectivesSection DischargeInstructionsImmunizationsSection DischargeInstructionsMedicalEquipmentSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.1275.1.1.2' constraints.validation.error='DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesReactionsSection DischargeInstructionsProblemListSection DischargeInstructionsDischargeDiagnosisSection DischargeInstructionsAdvanceDirectivesSection DischargeInstructionsImmunizationsSection DischargeInstructionsMedicalEquipmentSection'"
  * @generated
  */
 public interface DischargeInstructions extends GeneralHeaderConstraints {

@@ -1216,7 +1216,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 			source,
 			new String[] {
 					"templateId.root",
-					"1.2.3.4.5.100",
+					"2.16.840.1.113883.3.1275.1.1.1",
 					"constraints.validation.error",
 					"DischargeSummaryTemplateId DischargeSummaryAllergiesReactionsSection DischargeSummaryProblemListSection DischargeSummaryHospitalCourseSection DischargeSummaryHospitalDischargeMedicationsSection DischargeSummaryDischargeDiagnosisSection DischargeSummaryPlanOfCareSection",
 					"constraints.validation.warning",
@@ -1226,7 +1226,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 			source,
 			new String[] {
 					"templateId.root",
-					"1.2.3.4.5.101",
+					"2.16.840.1.113883.3.1275.1.1.2",
 					"constraints.validation.error",
 					"DischargeInstructionsTemplateId DischargeInstructionsPlanOfCareSection DischargeInstructionsAllergiesReactionsSection DischargeInstructionsProblemListSection DischargeInstructionsDischargeDiagnosisSection DischargeInstructionsAdvanceDirectivesSection DischargeInstructionsImmunizationsSection DischargeInstructionsMedicalEquipmentSection" });
 		addAnnotation(
@@ -1234,7 +1234,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 			source,
 			new String[] {
 					"templateId.root",
-					"1.2.3.4.5.102",
+					"2.16.840.1.113883.3.1275.1.1.3",
 					"constraints.validation.error",
 					"ConsultationSummaryTemplateId ConsultationSummaryAllergiesReactionsSection ConsultationSummaryMedicationsSection ConsultationSummaryProblemListSection ConsultationSummarySurgeriesSection ConsultationSummaryDiagnosticResultsSection",
 					"constraints.validation.warning",
@@ -1244,7 +1244,7 @@ public class ToCPackageImpl extends EPackageImpl implements ToCPackage {
 			source,
 			new String[] {
 					"templateId.root",
-					"1.2.3.4.5.103",
+					"2.16.840.1.113883.3.1275.1.1.4",
 					"constraints.validation.error",
 					"ConsultationRequestTemplateId ConsultationRequestAllergiesReactionsSection ConsultationRequestMedicationsSection ConsultationRequestProblemListSection ConsultationRequestSurgeriesSection ConsultationRequestDiagnosticResultsSection ConsultationRequestAdvanceDirectivesSection",
 					"constraints.validation.warning",
