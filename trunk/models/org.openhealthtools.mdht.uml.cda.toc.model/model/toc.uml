@@ -505,10 +505,10 @@
     </profileApplication>
   </uml:Package>
   <CDA:CodegenSupport xmi:id="_NvnvYMqHEeC8XvPcqnB3eA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="toc" nsURI="http://www.openhealthtools.org/mdht/uml/cda/toc" packageName="toc" prefix="ToC" base_Namespace="_NtY7BcqHEeC8XvPcqnB3eA"/>
-  <CDA:CDATemplate xmi:id="_NvnvYsqHEeC8XvPcqnB3eA" base_Class="_NvnvYcqHEeC8XvPcqnB3eA" templateId="1.2.3.4.5.100" assigningAuthorityName=""/>
-  <CDA:CDATemplate xmi:id="_QWTg8MqLEeC8XvPcqnB3eA" base_Class="_zYJIgMqKEeC8XvPcqnB3eA" templateId="1.2.3.4.5.101"/>
-  <CDA:CDATemplate xmi:id="_Rwm7wMqLEeC8XvPcqnB3eA" base_Class="_-FsQUMqKEeC8XvPcqnB3eA" templateId="1.2.3.4.5.102"/>
-  <CDA:CDATemplate xmi:id="_Td9OYMqLEeC8XvPcqnB3eA" base_Class="_BF55AMqLEeC8XvPcqnB3eA" templateId="1.2.3.4.5.103"/>
+  <CDA:CDATemplate xmi:id="_NvnvYsqHEeC8XvPcqnB3eA" base_Class="_NvnvYcqHEeC8XvPcqnB3eA" templateId="2.16.840.1.113883.3.1275.1.1.1" assigningAuthorityName=""/>
+  <CDA:CDATemplate xmi:id="_QWTg8MqLEeC8XvPcqnB3eA" base_Class="_zYJIgMqKEeC8XvPcqnB3eA" templateId="2.16.840.1.113883.3.1275.1.1.2"/>
+  <CDA:CDATemplate xmi:id="_Rwm7wMqLEeC8XvPcqnB3eA" base_Class="_-FsQUMqKEeC8XvPcqnB3eA" templateId="2.16.840.1.113883.3.1275.1.1.3"/>
+  <CDA:CDATemplate xmi:id="_Td9OYMqLEeC8XvPcqnB3eA" base_Class="_BF55AMqLEeC8XvPcqnB3eA" templateId="2.16.840.1.113883.3.1275.1.1.4"/>
   <CDA:AssociationValidation xmi:id="_hH2ykMqLEeC8XvPcqnB3eA" base_Association="_gMpHgsqLEeC8XvPcqnB3eA"/>
   <CDA:AssociationValidation xmi:id="_kpZmsMqLEeC8XvPcqnB3eA" base_Association="_kF1mosqLEeC8XvPcqnB3eA"/>
   <CDA:AssociationValidation xmi:id="_yPH1gMqLEeC8XvPcqnB3eA" base_Association="_mLcBMsqLEeC8XvPcqnB3eA"/>
