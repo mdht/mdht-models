@@ -41,19 +41,25 @@
     <ownedRule xmi:id="_xpwBIMgmEeCHk-lvWGDTdA" name="titleValue" constrainedElement="_GoctIKPdEd6t_4WfM070fA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2i7WkMgmEeCHk-lvWGDTdA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing 'functional status'.</body>
+        <body>self.title = 'functional status'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_CX4yYMgnEeCHk-lvWGDTdA" name="observationCode" constrainedElement="_GoctIKPdEd6t_4WfM070fA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_FpXKMMgnEeCHk-lvWGDTdA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>problem observation or result observation in the functional status section SHALL contain exactly one observation / code</body>
+        <body>self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_dO-JkMgnEeCHk-lvWGDTdA" name="observationCodeValueSet" constrainedElement="_CX4yYMgnEeCHk-lvWGDTdA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_grmBcMgnEeCHk-lvWGDTdA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value for Observation / code in a problem observation or result observation in the functional status section MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.6 FunctionalStatusTypeCode STATIC 20061017</body>
+        <body>self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = '2.16.840.1.113883.1.11.20.6')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_rc3LoMgnEeCHk-lvWGDTdA" name="assessmentInstrument" constrainedElement="_dO-JkMgnEeCHk-lvWGDTdA">
@@ -95,13 +101,17 @@
     <ownedRule xmi:id="_kzswMMgwEeCHk-lvWGDTdA" name="problemStatusObservation" constrainedElement="_Uhno0MgwEeCHk-lvWGDTdA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_qcbTQMgwEeCHk-lvWGDTdA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A problem observation in the functional status section SHALL contain exactly one status of functional status observation</body>
+        <body>self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_oEXPsMgwEeCHk-lvWGDTdA" name="resultStatusObservation" constrainedElement="_kzswMMgwEeCHk-lvWGDTdA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_sy4NQMgwEeCHk-lvWGDTdA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A result observation in the functional status section SHALL contain exactly one status of functional status observation.</body>
+        <body>self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->&#xD;&#xA;forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_Ju45oKPdEd6t_4WfM070fA">

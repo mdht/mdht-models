@@ -54,6 +54,212 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInsuranceProviderPaymentProviders(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderPaymentProviders(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderPayerEntryID(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderPayerEntryID(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderHealthInsuranceType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderHealthInsuranceType(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderInsuranceInformation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderInsuranceInformation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderInsuranceInfoSourceID(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderInsuranceInfoSourceID(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderInsuranceInfoSourceAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderInsuranceInfoSourceAddr(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderHealthPlanCoverageStartTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStartTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderHealthPlanCoverageStopTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStopTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderPatientInformation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderPatientInformation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderMemberId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderMemberId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderMemberIdRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderMemberIdRoot(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderRelationshipToSubscriber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriber(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderRelationshipToSubscriberCodeSystem(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriberCodeSystem(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderPatientName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderPatientName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderSubscriberInformation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderSubscriberInformation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderSubscriberId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderSubscriberId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderSubscriberIdRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderSubscriberIdRoot(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderSubscriberAddress(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderSubscriberAddress(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderFinancialResponsibilityPartyType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyType(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderFinancialResponsibilityPartyTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProviderFinancialResponsibilityPartyAddress(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyAddress(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderTemplateId(this, diagnostics, context);
 	}

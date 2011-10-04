@@ -52,6 +52,43 @@ public class FamilyHistoryImpl extends FamilyHistoryOrganizerImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryOperations.validateFamilyHistoryRelatedSubjectCodeValueSet(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryHasFamilyName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryOperations.validateFamilyHistoryHasFamilyName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryHasGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryOperations.validateFamilyHistoryHasGenderCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryFamilyMemberCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryOperations.validateFamilyHistoryFamilyMemberCondition(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryTemplateId(this, diagnostics, context);
 	}

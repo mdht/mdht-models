@@ -16,7 +16,9 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
     <ownedRule xmi:id="_xrzYIMg9EeCHk-lvWGDTdA" name="titleValue" constrainedElement="_UOVM0HDAEd6eItyqb1FoWg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_z9GFUMg9EeCHk-lvWGDTdA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing 'social history'.</body>
+        <body>self.title = 'social history'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2uIswMhBEeCHk-lvWGDTdA" name="maritalStatus" constrainedElement="_UOVM0HDAEd6eItyqb1FoWg">
@@ -80,7 +82,9 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
     <ownedRule xmi:id="_BhSYMMhAEeCHk-lvWGDTdA" name="codeValueSet" constrainedElement="_Wa2uwHDAEd6eItyqb1FoWg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GH9oYMhAEeCHk-lvWGDTdA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value for Observation / code in a social history observation SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.1.11.20.18'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_GdWpkMhAEeCHk-lvWGDTdA" name="valueDatatype" constrainedElement="_Wa2uwHDAEd6eItyqb1FoWg">

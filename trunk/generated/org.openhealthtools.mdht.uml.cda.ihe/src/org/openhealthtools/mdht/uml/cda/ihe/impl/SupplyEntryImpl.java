@@ -55,6 +55,100 @@ public class SupplyEntryImpl extends SupplyActivityImpl implements SupplyEntry {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSupplyEntryHasIntentAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryHasIntentAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSupplyEntryHasAuthorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryHasAuthorTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSupplyEntryHasAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryHasAssignedAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSupplyEntryHasAssignedAuthorID(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryHasAssignedAuthorID(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSupplyEntryHasAssignedAuthorPersonOrOrg(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryHasAssignedAuthorPersonOrOrg(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSupplyEntryHasPerformerTimeEvent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryHasPerformerTimeEvent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSupplyEntryHasPerformerTimeIntent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryHasPerformerTimeIntent(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSupplyEntryHasPerformerAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryHasPerformerAssignedEntity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSupplyEntryHasPerformerAssignedEntityID(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryHasPerformerAssignedEntityID(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSupplyEntryHasPerformerEntityPersonOrOrg(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SupplyEntryOperations.validateSupplyEntryHasPerformerEntityPersonOrOrg(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSupplyEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryTemplateId(this, diagnostics, context);
 	}

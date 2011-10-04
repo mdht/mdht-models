@@ -278,37 +278,49 @@
       <ownedRule xmi:id="_m7vFMM_7EeCBBsup3soRig" name="paymentProviders" constrainedElement="_z4XJIM_6EeCBBsup3soRig">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_qcFmgM_7EeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>All Insurance Provider modules SHALL declare conformance to the IHE Payer Entry by including a &lt;templateID> element with the root attribute set to the value 1.3.6.1.4.1.19376.1.5.3.1.4.18</body>
+          <body>self.getActs()->exists(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_HTgTMM_7EeCBBsup3soRig" name="payerEntryID" constrainedElement="_z4XJIM_6EeCBBsup3soRig">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_NaxzcM_7EeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The id/@root attribute of a Payer Entry SHOULD be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings. A GUID MAY be used in place of the OID of the assigning authority. Implementers SHOULD use the same GUID for each instance of the same group or contract number</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | not a.id.root->isEmpty())</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_cqdCoM_7EeCBBsup3soRig" name="healthInsuranceType" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_jiFo0M_7EeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The code/@code element SHOULD be present in a Payer Entry and SHALL be coded as 2.16.840.1.113883.3.88.12.3221.5.2, Health Insurance Type Value Set, 20081218, STATIC</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.5.2')</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_8_IaMNAXEeCBBsup3soRig" name="insuranceInformation" constrainedElement="_R1oYsM_8EeCBBsup3soRig">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_EvTK4NAYEeCBBsup3soRig">
           <language>Analysis</language>
-          <body>performer/@typeCode='PRF'/assignedEntity SHALL be present to record Health Insurance Information</body>
+          <language>OCL</language>
+          <body>performer/@typeCode='PRF'/assignedEntity SHALL be present to record Payer Information/Health Insurance Information</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_R1oYsM_8EeCBBsup3soRig" name="insuranceInfoSourceID" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_YwYkUM_8EeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>performer/@typeCode='PRF'/assignedEntity/id elements MAY be present. The ID element corresponds to the RxBIN and RxPCN fields found on pharmacy benefit cards. When a national payer identifier is standardized, it would also go in this field.&#xD;&#xA;The OID for RxBIN is 2.16.840.1.113883.3.88.3.1. The OID for an RxPCN is 2.16.840.1.113883.3.88.3.1 plus the numeric identifier used in the RxBIN.</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.id->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="__QcJwM_8EeCBBsup3soRig" name="insuranceInfoSourceAddr" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_ozCTIM_9EeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The performer/@typeCode='PRF'/assignedEntity/addr MAY be present.</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists (perm : cda::Performer2 | perm.typeCode = vocab::ParticipationPhysicalPerformer::PRF and perm.assignedEntity.addr->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_A56MgM_-EeCBBsup3soRig" name="insuranceInfoSourceAddrState" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
@@ -332,25 +344,41 @@
       <ownedRule xmi:id="_Uf77cM__EeCBBsup3soRig" name="healthPlanCoverageStartTime" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_3aGYQM__EeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The date when the plan began covering the member SHOULD be recorded in the &lt;low> element of the &lt;time> element beneath the participant/@typeCode='COV' element</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.low->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_TH8_YNAAEeCBBsup3soRig" name="healthPlanCoverageStopTime" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_TH8_YdAAEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The date when the plan stops covering the member SHOULD be recorded in the &lt;high> element of the &lt;time> element beneath the participant/@typeCode='COV' element</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.high->size() > 0))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_p9TvENAXEeCBBsup3soRig" name="patientInformation" constrainedElement="_PsPewNAGEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_w7ebENAXEeCBBsup3soRig">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>participant/@typeCode='COV'/participantRole/@classCode='PAT' SHALL be present to record Patient information.</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_4Eu-wNABEeCBBsup3soRig" name="memberId" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_EjPt4NACEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The member identifier number SHALL be recorded in the extension attribute of the &lt;id> element found in the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'> element</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_Hn5xsNACEeCBBsup3soRig" name="memberIdRoot" constrainedElement="_4Eu-wNABEeCBBsup3soRig">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_KEl2kNACEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The root attribute of a participant/@typeCode='COV'/participantRole/@classCode='PAT'/id element SHOULD be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.id.root->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_LUsMgNACEeCBBsup3soRig" name="memberIdRootGUID" constrainedElement="_Hn5xsNACEeCBBsup3soRig">
@@ -368,19 +396,17 @@
       <ownedRule xmi:id="_gCei0NAFEeCBBsup3soRig" name="relationshipToSubscriber" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_luki8NAFEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The relationship to the subscriber SHALL be present and SHALL be recorded in the &lt;code> element underneath the &lt;participantRole> element recording the member information</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_nusAkNAFEeCBBsup3soRig" name="relationshipToSubscriberCodeSystem" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_yZGU0NAFEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The Patient Relationship to Subscriber SHALL be coded as 2.16.840.1.113883.1.11.18877, Coverage Role Type Value, V3NE08, STATIC</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_p9TvENAXEeCBBsup3soRig" name="patientInformation" constrainedElement="_PsPewNAGEeCBBsup3soRig">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_w7ebENAXEeCBBsup3soRig">
-          <language>Analysis</language>
-          <body>participant/@typeCode='COV'/participantRole/@classCode='PAT' SHALL be present to record Patient information.</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.code.codeSystem = '2.16.840.1.113883.1.11.18877'))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_PsPewNAGEeCBBsup3soRig" name="patientAddressState" constrainedElement="_nusAkNAFEeCBBsup3soRig">
@@ -404,7 +430,9 @@
       <ownedRule xmi:id="_EvC78NAHEeCBBsup3soRig" name="patientName" constrainedElement="_yXtYQNAGEeCBBsup3soRig">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Nawu4NAHEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>If the member name as recorded by the health plan differs from the patient name as recorded in the registration/medication summary (e.g., due to marriage or for other reasons), then the member name SHALL be recorded in the &lt;name> element of the &lt;playingEntity> element beneath the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'> element</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.participantRole.classCode = vocab::RoleClassRoot::PAT and par.participantRole.playingEntity.name->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_P5jskNAHEeCBBsup3soRig" name="patientDateOfBirth" constrainedElement="_EvC78NAHEeCBBsup3soRig">
@@ -413,29 +441,13 @@
           <body>If the member date of birth as recorded by the health plan differs from the patient date of birth as recorded in the registration/medication summary, then the member date of birth SHALL be recorded in the &lt;sdtc:birthTime> element of the &lt;playingEntity> element beneath the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'> element</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_qNUCUNAJEeCBBsup3soRig" name="financialResponsibilityPartyType" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZNduoNAMEeCBBsup3soRig">
-          <language>Analysis</language>
-          <body>performer/assignedEntity/code/@code attribute SHALL be coded as 2.16.840.1.113883.1.11.10416, Financially Responsible Party Type Value Set, V3NE08, STATIC</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_i8h08NAMEeCBBsup3soRig" name="financialResponsibilityPartyTypePP" constrainedElement="_qNUCUNAJEeCBBsup3soRig">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lQsP8NAMEeCBBsup3soRig">
-          <language>Analysis</language>
-          <body>When the code of the encompassing act is PP, the code attribute value SHALL be set to GUAR or PAT to represent a guarantor or self-paying patient respectively</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_mFgYENAMEeCBBsup3soRig" name="financialResponsibilityPartyTypeNotPP" constrainedElement="_i8h08NAMEeCBBsup3soRig">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oDqt4NAMEeCBBsup3soRig">
-          <language>Analysis</language>
-          <body>The code attribute SHALL be set to PAYOR when the code of the encompassing act is other than PP</body>
-        </specification>
-      </ownedRule>
       <ownedRule xmi:id="_UZRisNATEeCBBsup3soRig" name="subscriberInformation" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_UZRisdATEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The &lt;participant/@typeCode='HLD'> element SHOULD be present to record Subscriber Information.</body>
-          <body>When the Subscriber is the patient, the &lt;participant/@typeCode='HLD'> element describing the subscriber SHALL NOT be present. This information will be recorded instead in the data elements used to record member information</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD))</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_tXKn0NAMEeCBBsup3soRig" name="subscriberInformationPatient" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
@@ -447,19 +459,25 @@
       <ownedRule xmi:id="_254UMNAMEeCBBsup3soRig" name="subscriberId" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_UaavANAPEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The participant/@typeCode='HLD'/participantRole/id element SHALL be present.</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_VujQYNAPEeCBBsup3soRig" name="subscriberIdRoot" constrainedElement="_254UMNAMEeCBBsup3soRig">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_0sST4NAPEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The root attribute SHOULD be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings. A GUID MAY be used in place of the OID of the assigning authority. Implementers SHOULD use the same GUID for each instance of a subscriber identifier from the same health plan</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.id.root->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_f6vv4NAVEeCBBsup3soRig" name="subscriberAddress" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_f6vv4dAVEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The participant/@typeCode='HLD'/participantRole/addr element SHALL be present to record the Subscriber Address.</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::HLD and par.participantRole.addr->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_nHzMcNAVEeCBBsup3soRig" name="subscriberAddressState" constrainedElement="_f6vv4NAVEeCBBsup3soRig">
@@ -486,16 +504,40 @@
           <body>The subscriber date of birth SHALL be recorded in the &lt;sdtc:birthTime> element of the &lt;playingEntity> element beneath the &lt;performer/@typeCode='HLD'/participantRole> element.</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_nUQbcNASEeCBBsup3soRig" name="guarantorInformation" constrainedElement="_3zShENAPEeCBBsup3soRig">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QidCINATEeCBBsup3soRig">
+      <ownedRule xmi:id="_-5a5kOSEEeCaNryByvFiHA" name="financialResponsibilityPartyType" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_-5a5keSEEeCaNryByvFiHA">
           <language>Analysis</language>
-          <body>performer element SHALL be present to record Guarantor Information</body>
+          <language>OCL</language>
+          <body>performer/assignedEntity/code element is used to denote the financial Responsibility Party Type.</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.typeCode = vocab::ParticipationPhysicalPerformer::PRF and per.assignedEntity.code->size() > 0))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_hO80oNATEeCBBsup3soRig" name="financialResponsibilityPartyAddress" constrainedElement="_nUQbcNASEeCBBsup3soRig">
+      <ownedRule xmi:id="_qNUCUNAJEeCBBsup3soRig" name="financialResponsibilityPartyTypeCode" constrainedElement="_ZNaLkDuHEd-B8KE6Jx0UNQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZNduoNAMEeCBBsup3soRig">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>performer/assignedEntity/code/@code attribute SHALL be coded as 2.16.840.1.113883.1.11.10416, Financially Responsible Party Type Value Set, V3NE08, STATIC</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.code.codeSystem = '2.16.840.1.113883.1.11.10416'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_i8h08NAMEeCBBsup3soRig" name="financialResponsibilityPartyTypePP" constrainedElement="_qNUCUNAJEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lQsP8NAMEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>When the code of the encompassing act is PP, the code attribute value SHALL be set to GUAR or PAT to represent a guarantor or self-paying patient respectively</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_mFgYENAMEeCBBsup3soRig" name="financialResponsibilityPartyTypeNotPP" constrainedElement="_i8h08NAMEeCBBsup3soRig">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oDqt4NAMEeCBBsup3soRig">
+          <language>Analysis</language>
+          <body>The code attribute SHALL be set to PAYOR when the code of the encompassing act is other than PP</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_hO80oNATEeCBBsup3soRig" name="financialResponsibilityPartyAddress">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_BQA9YNAUEeCBBsup3soRig">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>performer/assignedEntity/addr SHOULD be present to record Financial Responsibility Party Address</body>
+          <body>self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.performer->exists(per : cda::Performer2 | per.assignedEntity.addr->size() > 0))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_j-AmcNAUEeCBBsup3soRig" name="financialResponsibilityPartyAddressState" constrainedElement="_hO80oNATEeCBBsup3soRig">
@@ -1049,7 +1091,9 @@ resolved</body>
       <ownedRule xmi:id="_9vUVkMm3EeCDOYZyQPaRHg" name="relatedSubjectCodeValueSet" constrainedElement="_t8G7gMm3EeCDOYZyQPaRHg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_x6xMoMm7EeCDOYZyQPaRHg">
           <language>Analysis</language>
-          <body>RelatedSubject/Code (Family Member Relationship to Patient) SHALL be coded as 2.16.840.1.113883.1.11.19579, Family Member Value Set, STATIC, V3NE08</body>
+          <language>OCL</language>
+          <body>subject/RelatedSubject/Code (Family Member Relationship to Patient) SHALL be coded as 2.16.840.1.113883.1.11.19579, Family Member Value Set, STATIC, V3NE08</body>
+          <body>self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.19579'</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_I3dK0Mm8EeCDOYZyQPaRHg" name="hasSDTCid">
@@ -1068,13 +1112,17 @@ resolved</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_V0khgMm8EeCDOYZyQPaRHg">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>RelatedSubject/subject/name SHOULD be present.</body>
+          <body>self.subject.relatedSubject.subject.name->size() > 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_lGBSUMm8EeCDOYZyQPaRHg" name="hasGenderCode" constrainedElement="_TGqJwMm8EeCDOYZyQPaRHg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_uSawcMm8EeCDOYZyQPaRHg">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>RelatedSubject/subject/administrationGenderCode SHALL be code as 2.16.840.1.113883.1.11.1, Adminstrative Gender Value Set, STATIC, 20081218</body>
+          <body>self.subject.relatedSubject.subject.administrationGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_wNrmcMnAEeCDOYZyQPaRHg" name="hasRaceCode" constrainedElement="_lGBSUMm8EeCDOYZyQPaRHg">
@@ -1104,7 +1152,9 @@ resolved</body>
       <ownedRule xmi:id="_azf0cMnOEeCDOYZyQPaRHg" name="familyMemberCondition" constrainedElement="_L0EkkMnKEeCDOYZyQPaRHg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_fWAWUMnOEeCDOYZyQPaRHg">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Family History Condition data elements SHALL declare conformance to the IHE Family History Observation entry by including a &lt;templateID> element with the root attribute set to the value 1.3.6.1.4.1.19376.1.5.3.1.4.13.3</body>
+          <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ihe::FamilyHistoryObservation))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_L0EkkMnKEeCDOYZyQPaRHg" name="familyMemberAgeOnsetOrDeath" constrainedElement="_W36mIMnCEeCDOYZyQPaRHg">
@@ -1180,7 +1230,9 @@ resolved</body>
       <ownedRule xmi:id="_N7MZIMzrEeCvbrjDQpuvkw" name="hasStartingTime" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_R8gScMzrEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The starting time of the Advance Directive SHALL be recorded in the &lt;low> element of the &lt;effectiveTime> element in the Advance Directive &lt;observation></body>
+          <body>self.effectiveTime.low->size() > 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_S0JFEMzrEeCvbrjDQpuvkw" name="unknownStartingTime" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
@@ -1192,7 +1244,9 @@ resolved</body>
       <ownedRule xmi:id="_480sUMzrEeCvbrjDQpuvkw" name="hasEndingTime" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_6SISYMzrEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The ending time of the Advance Directive SHALL be recorded in the &lt;high> element of the &lt;effectiveTime> element in the Advance Directive &lt;observation></body>
+          <body>self.effectiveTime.high->size() > 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_8Duy4MzrEeCvbrjDQpuvkw" name="unknownEndingTime" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
@@ -1210,37 +1264,49 @@ resolved</body>
       <ownedRule xmi:id="_LOLj0MzsEeCvbrjDQpuvkw" name="hasCustodian" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Mtn9UMzsEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Information required to obtain a copy of the Advance Directive SHALL be recorded in a &lt;participantRole> element within a &lt;participant> element of the Advance Directive &lt;observation></body>
+          <body>self.participant.participantRole->size() > 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_PEvlsMzsEeCvbrjDQpuvkw" name="participantTypeCode" constrainedElement="_LOLj0MzsEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_QASn8MzsEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The typeCode attribute of the participant element SHALL be CST</body>
+          <body>self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CST)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_d8hSQMzsEeCvbrjDQpuvkw" name="participantRoleClassCode" constrainedElement="_PEvlsMzsEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_jHaCwMzsEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The classCode of the participant/participantRole element SHALL be AGNT</body>
+          <body>self.participant.participantRole->one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::AGNT)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_o8auUMzsEeCvbrjDQpuvkw" name="hasAddress" constrainedElement="_ZsqjcMzoEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_x0Rf0MzsEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The address of the agent SHALL be recorded in an participant/participantRole/addr element when known</body>
+          <body>self.participant.participantRole.addr->size() = 1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_5MYV0MzsEeCvbrjDQpuvkw" name="hasTelecom" constrainedElement="_o8auUMzsEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_8rAY0MzsEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The telephone number or other electronic communications address for the agent SHALL be recorded in a participant/participantRole/telecom element when known</body>
+          <body>self.participant.participantRole.telecom->size() > 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_AA1sMMztEeCvbrjDQpuvkw" name="hasNameOfAgent" constrainedElement="_5MYV0MzsEeCvbrjDQpuvkw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_F7a0QMztEeCvbrjDQpuvkw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The name of the agent who can provide a copy of the Advance Directive SHALL be recorded in the &lt;name> element inside the participant/participantRole/playingEntity element</body>
+          <body>self.participant.participantRole.playingEntity.name->size() = 1</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_ZsrKgMzoEeCvbrjDQpuvkw">
@@ -1294,7 +1360,7 @@ resolved</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_YvgwstJkEeCJq4tpS2QhbQ" memberEnd="_YvgwsNJkEeCJq4tpS2QhbQ _YvhXwNJkEeCJq4tpS2QhbQ">
       <ownedEnd xmi:id="_YvhXwNJkEeCJq4tpS2QhbQ" type="_WwjwsNJkEeCJq4tpS2QhbQ" association="_YvgwstJkEeCJq4tpS2QhbQ"/>
     </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_Cf2R0s9JEeCBIMy4xFlonQ">
+    <packagedElement xmi:type="uml:Association" xmi:id="_Cf2R0s9JEeCBIMy4xFlonQ">
       <ownedEnd xmi:id="_Cf2R089JEeCBIMy4xFlonQ" association="_Cf2R0s9JEeCBIMy4xFlonQ">
         <type xmi:type="uml:Class" href=".controlled/hitsp-payers.uml#_DH404MfWEd6VjLXh4DcWSg"/>
       </ownedEnd>
@@ -1703,7 +1769,7 @@ resolved</body>
   <CDA:ConstraintValidation xmi:id="_1lBSsNAPEeCBBsup3soRig" severity="WARNING" base_Constraint="_VujQYNAPEeCBBsup3soRig"/>
   <CDA:ConstraintValidation xmi:id="__BqMQNAPEeCBBsup3soRig" base_Constraint="_3zShENAPEeCBBsup3soRig"/>
   <CDA:ConstraintValidation xmi:id="_YoVkINATEeCBBsup3soRig" severity="WARNING" base_Constraint="_UZRisNATEeCBBsup3soRig"/>
-  <CDA:ConstraintValidation xmi:id="_vgIbQNATEeCBBsup3soRig" base_Constraint="_nUQbcNASEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_vgIbQNATEeCBBsup3soRig"/>
   <CDA:ConstraintValidation xmi:id="_jR9_0NAUEeCBBsup3soRig" severity="WARNING" base_Constraint="_hO80oNATEeCBBsup3soRig"/>
   <CDA:ConstraintValidation xmi:id="_3tQYQNAUEeCBBsup3soRig" base_Constraint="_j-AmcNAUEeCBBsup3soRig"/>
   <CDA:ConstraintValidation xmi:id="_4Bos0NAUEeCBBsup3soRig" base_Constraint="_lPQL4NAUEeCBBsup3soRig"/>
@@ -1714,4 +1780,5 @@ resolved</body>
   <CDA:ConstraintValidation xmi:id="_9dElUNAVEeCBBsup3soRig" base_Constraint="_vG2GoNAVEeCBBsup3soRig"/>
   <CDA:ConstraintValidation xmi:id="_xH01ANAXEeCBBsup3soRig" base_Constraint="_p9TvENAXEeCBBsup3soRig"/>
   <CDA:ConstraintValidation xmi:id="_E7DH4NAYEeCBBsup3soRig" base_Constraint="_8_IaMNAXEeCBBsup3soRig"/>
+  <CDA:ConstraintValidation xmi:id="_JTVTsOSFEeCaNryByvFiHA" base_Constraint="_-5a5kOSEEeCaNryByvFiHA"/>
 </xmi:XMI>

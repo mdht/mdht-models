@@ -7,19 +7,25 @@
     <ownedRule xmi:id="_tK7acMjsEeChgrgmBsw26A" name="titleValue" constrainedElement="_5ET7oGwWEd6q29qQGU-SBA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_vIKjMMjsEeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive text string containing 'family history'.</body>
+        <body>self.title = 'family history'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_x8Ma8Mj1EeChgrgmBsw26A" name="familyHistoryObsOrgs" constrainedElement="_5ET7oGwWEd6q29qQGU-SBA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_3kNzYMj1EeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Family History Section SHOULD include one or more family history observations (templateId 2.16.840.1.113883.10.20.1.22), which MAY be contained within family history organizers (templateId 2.16.840.1.113883.10.20.1.23)</body>
+        <body>self.entry.observation->exists(obs : cda::Observation | obs.oclIsTypeOf(ccd::FamilyHistoryObservation)) or self.entry.organizer->exists(org : cda::Organizer | org.oclIsTypeOf(ccd::FamilyHistoryOrganizer))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ze9kUMjsEeChgrgmBsw26A" name="noSubject" constrainedElement="_5ET7oGwWEd6q29qQGU-SBA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_1xC7sMjsEeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The family history section SHALL NOT contain Section / subject.</body>
+        <body>self.subject.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_h1M7QGwXEd6q29qQGU-SBA">
@@ -47,7 +53,9 @@
     <ownedRule xmi:id="_Fb8_QMj2EeChgrgmBsw26A" name="hasSubject" constrainedElement="_7tlrAGwWEd6q29qQGU-SBA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_H1is0Mj2EeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A family history observation not contained within a family history organizer SHALL contain exactly one subject participant, representing the family member who is the subject of the observation</body>
+        <body>self.subject->size() > 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_6mWAQMj4EeChgrgmBsw26A" name="hasSpecialization" constrainedElement="_Fb8_QMj2EeChgrgmBsw26A">
@@ -65,25 +73,33 @@
     <ownedRule xmi:id="_LVZ-kMj5EeChgrgmBsw26A" name="hasSubjectPatientRelationship" constrainedElement="_FKetYMj5EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_PPHbEMj5EeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A subject participant SHALL contain exactly one RelatedSubject, representing the relationship of the subject to the patient</body>
+        <body>self.subject.relatedSubject->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_SY-H8Mj5EeChgrgmBsw26A" name="relationshipValueCode" constrainedElement="_LVZ-kMj5EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_auYTsMj5EeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value for RelatedSubject / @classCode SHALL be &quot;PRS&quot; &quot;Personal relationship&quot; 2.16.840.1.113883.5.110 RoleClass STATIC</body>
+        <body>self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_HNYuYMj7EeChgrgmBsw26A" name="hasRelatedSubjectCode" constrainedElement="_SY-H8Mj5EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_KDoiwMj7EeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>RelatedSubject SHALL contain exactly one RelatedSubject / code</body>
+        <body>self.subject.relatedSubject.code->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_KswYQMj7EeChgrgmBsw26A" name="relatedSubjectCodeValueSet" constrainedElement="_HNYuYMj7EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_N9fwQMj7EeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value for &quot;RelatedSubject / code&quot; SHOULD be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode DYNAMIC</body>
+        <body>self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.19579' or self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.20.21'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hw1icMj8EeChgrgmBsw26A" name="hasPedigreeGraph" constrainedElement="_KswYQMj7EeChgrgmBsw26A">
@@ -95,13 +111,17 @@
     <ownedRule xmi:id="_pfG1sMj8EeChgrgmBsw26A" name="hasRelatedSubjectSubject" constrainedElement="_hw1icMj8EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_rCvysMj8EeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>RelatedSubject SHOULD contain exactly one RelatedSubject / subject</body>
+        <body>self.subject.relatedSubject.subject->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_smqcgMj8EeChgrgmBsw26A" name="hasGenderCode" constrainedElement="_pfG1sMj8EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_t-tNgMj8EeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>RelatedSubject / subject SHOULD contain exactly one RelatedSubject / subject / administrativeGenderCode.</body>
+        <body>self.subject.relatedSubject.subject.administrativeGenderCode->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_GmHUMMkVEeChgrgmBsw26A" name="relatedSubjectBirthTime">
@@ -110,7 +130,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>subject/relatedSubject/subject contains exactly one birthTime</body>
-        <body>not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</body>
+        <body>self.subject.relatedSubject.subject.birthTime->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ImOKwMkVEeChgrgmBsw26A" name="relatedSubjectDeceasedInd">
@@ -195,43 +215,57 @@
     <ownedRule xmi:id="_HhTCgMjzEeChgrgmBsw26A" name="hasComponent" constrainedElement="_9QFYgGwWEd6q29qQGU-SBA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_NzD7gMjzEeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A family history organizer SHALL contain one or more Organizer / component.</body>
+        <body>self.component->size() >= 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_OXCyUMjzEeChgrgmBsw26A" name="hasFamilyHistoryObservation" constrainedElement="_9QFYgGwWEd6q29qQGU-SBA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_SO08MMjzEeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The target of a family history organizer Organizer / component relationship SHOULD be a family history observation, but MAY be some other clinical statement</body>
+        <body>self.component->exists (comp : cda::Component4 | comp.observation->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::FamilyHistoryObservation)))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_A1-SoMj2EeChgrgmBsw26A" name="hasSubject" constrainedElement="_9QFYgGwWEd6q29qQGU-SBA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_EhVKEMj2EeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A family history organizer SHALL contain exactly one subject participant, representing the family member who is the subject of the family history observations</body>
+        <body>self.subject->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="__NXh0MkQEeChgrgmBsw26A" name="hasSubjectPatientRelationship" constrainedElement="_FKetYMj5EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="__NXh0ckQEeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>A subject participant SHALL contain exactly one RelatedSubject, representing the relationship of the subject to the patient</body>
+        <body>self.subject.relatedSubject->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Ae5bIMkREeChgrgmBsw26A" name="relationshipValueCode" constrainedElement="_LVZ-kMj5EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ae5bIckREeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value for RelatedSubject / @classCode SHALL be &quot;PRS&quot; &quot;Personal relationship&quot; 2.16.840.1.113883.5.110 RoleClass STATIC</body>
+        <body>self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_B7YnQMkREeChgrgmBsw26A" name="hasRelatedSubjectCode" constrainedElement="_SY-H8Mj5EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_B7YnQckREeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>RelatedSubject SHALL contain exactly one RelatedSubject / code</body>
+        <body>self.subject.relatedSubject.code->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_C-wv0MkREeChgrgmBsw26A" name="relatedSubjectCodeValueSet" constrainedElement="_HNYuYMj7EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_C-wv0ckREeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value for &quot;RelatedSubject / code&quot; SHOULD be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode DYNAMIC</body>
+        <body>self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.19579' or self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.20.21'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_FTJNQMkREeChgrgmBsw26A" name="hasPedigreeGraph" constrainedElement="_KswYQMj7EeChgrgmBsw26A">
@@ -243,13 +277,17 @@
     <ownedRule xmi:id="_NFDqYMkREeChgrgmBsw26A" name="hasRelatedSubjectSubject" constrainedElement="_hw1icMj8EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_NFDqYckREeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>RelatedSubject SHOULD contain exactly one RelatedSubject / subject</body>
+        <body>self.subject.relatedSubject.subject->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_GOW4UMkREeChgrgmBsw26A" name="hasGenderCode" constrainedElement="_pfG1sMj8EeChgrgmBsw26A">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GOW4UckREeChgrgmBsw26A">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>RelatedSubject / subject SHOULD contain exactly one RelatedSubject / subject / administrativeGenderCode.</body>
+        <body>self.subject.relatedSubject.subject.administrativeGenderCode->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_heDAcEjjEeCOWNbpDoETQw" name="relatedSubjectBirthTime">

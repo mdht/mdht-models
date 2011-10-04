@@ -54,6 +54,37 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAuthorizationActivityEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationship(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAuthorizationActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAuthorizationActivityHasProviders(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AuthorizationActivityOperations.validateAuthorizationActivityHasProviders(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAuthorizationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AuthorizationActivityOperations.validateAuthorizationActivityTemplateId(this, diagnostics, context);
 	}

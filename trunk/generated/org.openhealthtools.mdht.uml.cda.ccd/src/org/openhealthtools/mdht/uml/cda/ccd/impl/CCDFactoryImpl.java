@@ -226,6 +226,8 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createAdvanceDirectiveObservation();
 			case CCDPackage.ADVANCE_DIRECTIVE_STATUS_OBSERVATION:
 				return createAdvanceDirectiveStatusObservation();
+			case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE:
+				return createAdvanceDirectiveReference();
 			case CCDPackage.PAYERS_SECTION:
 				return createPayersSection();
 			case CCDPackage.COVERAGE_ACTIVITY:
@@ -276,8 +278,6 @@ public class CCDFactoryImpl extends EFactoryImpl implements CCDFactory {
 				return createSupportGuardian();
 			case CCDPackage.COMMENT:
 				return createComment();
-			case CCDPackage.ADVANCE_DIRECTIVE_REFERENCE:
-				return createAdvanceDirectiveReference();
 			case CCDPackage.CCD_REGISTRY_DELEGATE:
 				return createCCDRegistryDelegate();
 			default:

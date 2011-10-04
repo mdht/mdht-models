@@ -56,6 +56,15 @@ public class ResultsSectionImpl extends SectionImpl implements ResultsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultsSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionTitleValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
 	}

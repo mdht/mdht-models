@@ -449,6 +449,38 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdvanceDirectivesSection/getAdvanceDirectives"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//AdvanceDirective">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasStartingTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasStartingTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasStartingTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasEndingTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasEndingTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasEndingTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveParticipantTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveParticipantTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveParticipantTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveParticipantRoleClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveParticipantRoleClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveParticipantRoleClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasAddress">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasAddress/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasAddress/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasNameOfAgent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasNameOfAgent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveHasNameOfAgent/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//AdvanceDirective/AdvanceDirectiveTemplateId/context"/>
@@ -481,6 +513,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//EncountersSection/getHITSPEncounterEntries"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//Encounter">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//Encounter/HITSPEncounterAdmissionSourceValueSet">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//Encounter/HITSPEncounterAdmissionSourceValueSet/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//Encounter/HITSPEncounterAdmissionSourceValueSet/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//Encounter/HITSPEncounterTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//Encounter/HITSPEncounterTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//Encounter/HITSPEncounterTemplateId/context"/>
@@ -523,6 +559,90 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//PayersSection/getInsuranceProviders"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//InsuranceProvider">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderPaymentProviders">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderPaymentProviders/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderPaymentProviders/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderPayerEntryID">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderPayerEntryID/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderPayerEntryID/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderHealthInsuranceType">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderHealthInsuranceType/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderHealthInsuranceType/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderInsuranceInformation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderInsuranceInformation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderInsuranceInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceID">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceID/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceID/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStartTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStartTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStartTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStopTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStopTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStopTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderPatientInformation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderPatientInformation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderPatientInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderMemberId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderMemberId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderMemberId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderMemberIdRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderMemberIdRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderMemberIdRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriberCodeSystem">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriberCodeSystem/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriberCodeSystem/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderPatientName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderPatientName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderPatientName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberInformation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberInformation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberIdRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberIdRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberIdRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberAddress">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberAddress/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderSubscriberAddress/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyType">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyType/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyType/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyAddress">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyAddress/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyAddress/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//InsuranceProvider/InsuranceProviderTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//InsuranceProvider/InsuranceProviderTemplateId/context"/>
@@ -817,6 +937,22 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//FamilyHistorySection/getFamilyHistories"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//FamilyHistory">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//FamilyHistory/FamilyHistoryRelatedSubjectCodeValueSet">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//FamilyHistory/FamilyHistoryRelatedSubjectCodeValueSet/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//FamilyHistory/FamilyHistoryRelatedSubjectCodeValueSet/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//FamilyHistory/FamilyHistoryHasFamilyName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//FamilyHistory/FamilyHistoryHasFamilyName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//FamilyHistory/FamilyHistoryHasFamilyName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//FamilyHistory/FamilyHistoryHasGenderCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//FamilyHistory/FamilyHistoryHasGenderCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//FamilyHistory/FamilyHistoryHasGenderCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//FamilyHistory/FamilyHistoryFamilyMemberCondition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//FamilyHistory/FamilyHistoryFamilyMemberCondition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//FamilyHistory/FamilyHistoryFamilyMemberCondition/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//FamilyHistory/FamilyHistoryTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//FamilyHistory/FamilyHistoryTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//FamilyHistory/FamilyHistoryTemplateId/context"/>

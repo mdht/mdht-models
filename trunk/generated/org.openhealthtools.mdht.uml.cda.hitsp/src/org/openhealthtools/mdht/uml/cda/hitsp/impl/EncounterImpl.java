@@ -54,6 +54,16 @@ public class EncounterImpl extends EncounterEntryImpl implements Encounter {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHITSPEncounterAdmissionSourceValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncounterOperations.validateHITSPEncounterAdmissionSourceValueSet(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateHITSPEncounterTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterOperations.validateHITSPEncounterTemplateId(this, diagnostics, context);
 	}

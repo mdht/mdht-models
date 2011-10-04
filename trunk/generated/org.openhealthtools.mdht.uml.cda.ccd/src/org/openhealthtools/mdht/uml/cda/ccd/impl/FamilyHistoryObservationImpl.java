@@ -58,6 +58,81 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryObservationHasSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasSubject(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryObservationHasSubjectPatientRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasSubjectPatientRelationship(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryObservationRelationshipValueCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelationshipValueCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryObservationHasRelatedSubjectCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasRelatedSubjectCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryObservationRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelatedSubjectCodeValueSet(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryObservationHasRelatedSubjectSubject(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasRelatedSubjectSubject(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistoryObservationHasGenderCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationHasGenderCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationRelatedSubjectBirthTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationRelatedSubjectBirthTime(

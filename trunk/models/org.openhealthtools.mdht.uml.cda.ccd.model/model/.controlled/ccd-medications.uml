@@ -82,7 +82,7 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_rGEFIOefEd-aaJELhEID-A">
         <language>OCL</language>
         <language>Analysis</language>
-        <body>self.getClinicalDocument().authorization->exists(auth : cda::Authorization | &#xD;&#xA;   not auth.oclIsUndefined() and not auth.consent.oclIsUndefined())</body>
+        <body>self.getClinicalDocument().authorization->size() > 0 and self.getClinicalDocument().authorization.consent->size() > 0</body>
         <body>Has one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent.</body>
       </specification>
     </ownedRule>

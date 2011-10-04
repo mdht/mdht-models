@@ -65,6 +65,59 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFunctionalStatusSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTitleValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusSectionObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionObservationCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusSectionObservationCodeValueSet(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionObservationCodeValueSet(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusSectionProblemStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionProblemStatusObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusSectionResultStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionResultStatusObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTemplateId(this, diagnostics, context);
 	}

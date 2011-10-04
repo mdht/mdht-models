@@ -34,19 +34,23 @@ entry, with exceptions noted below.</body>
     <ownedRule xmi:id="_5SaL4FfpEeCQ8PeHNHg5Pw" name="codeCodeSystemRequired" constrainedElement="_ic1iUFfpEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_A8UjkFfqEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The code /@code and code/@codeSystem attribute shall be present.</body>
+        <body>not (code.code.oclIsUndefined() or code.codeSystem.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_CrT08FfqEeCQ8PeHNHg5Pw" name="displayNameCodeName" constrainedElement="_5SaL4FfpEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GXkEQFfqEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The code/@displayName and code/@codeSystemName attributes should be present.</body>
+        <body>not (code.displayName.oclIsUndefined() or code.codeSystemName.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_X-iaoFftEeCQ8PeHNHg5Pw" name="valueCodeCodeSystem" constrainedElement="_CrT08FfqEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_iFRaEFftEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
-        <body>If &amp;lt;value&amp;gt; is coded, the code and codeSystem attributes must be present. If&#xD;&#xA;uncoded, all attributes other than xsi:type='CD' must be absent.</body>
+        <body>If &amp;lt;value&amp;gt; is coded, the code and codeSystem attributes must be present. If uncoded, all attributes other than xsi:type='CD' must be absent.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_vzvfwFfuEeCQ8PeHNHg5Pw" name="allergySubstance">
@@ -56,49 +60,65 @@ entry, with exceptions noted below.</body>
       <constrainedElement xmi:type="uml:Class" href="../ihe.uml#_GgvgUDxbEd6JwqSGecoePg"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_3KtGQFfuEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the &amp;lt;participant&amp;gt; element may be present</body>
+        <body>self.participant->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Mi80MFgFEeCQ8PeHNHg5Pw" name="allergySubstanceTypeCode" constrainedElement="_yFyY4FgEEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_SAc-sFgFEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the participant/@typecode attribute shall be 'CSM'</body>
+        <body>self.participant->forAll(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_yFyY4FgEEeCQ8PeHNHg5Pw" name="allergySubstanceParticipantRole" constrainedElement="_vzvfwFfuEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_7rl1gFgEEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the participant/participantRole element may be present</body>
+        <body>self.participant.participantRole->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Suty4FgFEeCQ8PeHNHg5Pw" name="allergySubstanceParticipantRoleClassCode" constrainedElement="_yFyY4FgEEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Suty4VgFEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the participant/participantRole/@classcode attribute shall be 'MANU'</body>
+        <body>self.participant.participantRole->one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0xg_UFgEEeCQ8PeHNHg5Pw" name="allergySubstancePlayingEntity" constrainedElement="_yFyY4FgEEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_-eIOkFgEEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The participant/participantRole/PlayingEntity element may be present</body>
+        <body>self.participant.participantRole.playingEntity->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ZIq-kFgFEeCQ8PeHNHg5Pw" name="allergySubstancePlayingEntityClassCode" constrainedElement="_yFyY4FgEEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZIq-kVgFEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'</body>
+        <body>self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::MMAT)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_gj-UgFfvEeCQ8PeHNHg5Pw" name="allergySubstancePlayingEntityCode" constrainedElement="_vzvfwFfuEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ogsTcFfvEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The participant/participantRole/playingEntity/code element shall be present. It may contain a code and codeSystem attribute to indicate&#xD;&#xA;the code for the substance causing the allergy or intolerance.</body>
+        <body>self.participant.participantRole.playingEntity.code->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tE3pQFfvEeCQ8PeHNHg5Pw" name="PlayingEntityCodeReference" constrainedElement="_gj-UgFfvEeCQ8PeHNHg5Pw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wMYz0FfvEeCQ8PeHNHg5Pw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>participant/participantRole/playingEntity/code shall contain a originalText/reference element as reference to the&#xD;&#xA;original text in the narrative where the substance is named.</body>
+        <body>self.participant.participantRole.playingEntity.code.originalText.reference->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_IVVM8Ff0EeCQ8PeHNHg5Pw" name="severityInversionInd" constrainedElement="_tE3pQFfvEeCQ8PeHNHg5Pw">
@@ -198,4 +218,6 @@ associated adverse reactions suffered by the patient.</body>
   <CDA:ConstraintValidation xmi:id="_HGufQFgJEeCQ8PeHNHg5Pw" base_Constraint="_Suty4FgFEeCQ8PeHNHg5Pw"/>
   <CDA:ConstraintValidation xmi:id="_HkVBQFgJEeCQ8PeHNHg5Pw" base_Constraint="_ZIq-kFgFEeCQ8PeHNHg5Pw"/>
   <CDA:ConstraintValidation xmi:id="_IFDvwFgJEeCQ8PeHNHg5Pw" base_Constraint="_KbOicFf0EeCQ8PeHNHg5Pw"/>
+  <CDA:ConstraintValidation xmi:id="_sYJowOO-EeC0h71-rDFgKg" severity="INFO" base_Constraint="_vzvfwFfuEeCQ8PeHNHg5Pw"/>
+  <CDA:ConstraintValidation xmi:id="_ujQOYOO-EeC0h71-rDFgKg" base_Constraint="_gj-UgFfvEeCQ8PeHNHg5Pw"/>
 </xmi:XMI>
