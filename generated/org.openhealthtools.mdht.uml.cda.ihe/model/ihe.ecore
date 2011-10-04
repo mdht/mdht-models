@@ -10803,10 +10803,10 @@
     </eOperations>
     <eOperations name="IHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.participant.participantRole.playingEntity->one(pe : cda::PlayingEnity | pe.classCode = EntityClassRoot::PSN)"/>
+        <details key="body" value="self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.participant.participantRole.playingEntity->one(pe : cda::PlayingEnity | pe.classCode = EntityClassRoot::PSN)"/>
+        <details key="documentation" value="self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -11051,10 +11051,10 @@
     </eOperations>
     <eOperations name="IHESocialHistoryObservationNoTargetSiteCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.targetSitCode->size() = 0"/>
+        <details key="body" value="self.targetSiteCode->size() = 0"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.targetSitCode->size() = 0"/>
+        <details key="documentation" value="self.targetSiteCode->size() = 0"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

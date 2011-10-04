@@ -1063,8 +1063,8 @@ may contain other information (take with food, et cetera).</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_9CPLQMhFEeCHk-lvWGDTdA">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>The &lt;targetSiteCode> element should not be used in&#xD;&#xA;a social history observation</body>
-          <body>self.targetSitCode->size() = 0</body>
+          <body>The targetSiteCode element should not be used in&#xD;&#xA;a social history observation</body>
+          <body>self.targetSiteCode->size() = 0</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_oap4sMhEEeCHk-lvWGDTdA" general="_dLvb0K4NEd6_ioDelDcPPg"/>
@@ -1133,7 +1133,7 @@ frequency.&#xD;
           <language>Analysis</language>
           <language>OCL</language>
           <body>The Participant/ParticipantRole/PlayingEntity element shall be present with @classCode = 'PSN'</body>
-          <body>self.participant.participantRole.playingEntity->one(pe : cda::PlayingEnity | pe.classCode = EntityClassRoot::PSN)</body>
+          <body>self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_LxkHUMnDEeCDOYZyQPaRHg" name="hasParticipantRolePlayingEntityId" constrainedElement="_Lbzk4MkiEeCcAd9ZGNykiw">

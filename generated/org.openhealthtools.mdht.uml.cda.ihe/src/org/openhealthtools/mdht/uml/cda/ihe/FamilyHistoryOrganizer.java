@@ -67,11 +67,11 @@ public interface FamilyHistoryOrganizer extends org.openhealthtools.mdht.uml.cda
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant.participantRole.playingEntity->one(pe : cda::PlayingEnity | pe.classCode = EntityClassRoot::PSN)
+	 * self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->one(pe : cda::PlayingEnity | pe.classCode = EntityClassRoot::PSN)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)'"
 	 * @generated
 	 */
 	boolean validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(DiagnosticChain diagnostics,

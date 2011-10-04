@@ -5213,10 +5213,10 @@
     </eOperations>
     <eOperations name="FamilyHistoryHasGenderCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.subject.relatedSubject.subject.administrationGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'"/>
+        <details key="body" value="self.subject.relatedSubject.subject.administrativeGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="self.subject.relatedSubject.subject.administrationGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'"/>
+        <details key="documentation" value="self.subject.relatedSubject.subject.administrativeGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
