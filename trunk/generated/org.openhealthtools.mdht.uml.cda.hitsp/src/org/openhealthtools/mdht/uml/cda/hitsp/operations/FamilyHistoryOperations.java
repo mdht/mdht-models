@@ -175,7 +175,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FAMILY_HISTORY_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject.relatedSubject.subject.administrationGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'";
+	protected static final String VALIDATE_FAMILY_HISTORY_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject.relatedSubject.subject.administrativeGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFamilyHistoryHasGenderCode(FamilyHistory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Has Gender Code</em>}' invariant operation.
@@ -191,7 +191,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.subject.relatedSubject.subject.administrationGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'
+	 * self.subject.relatedSubject.subject.administrativeGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'
 	 * @param familyHistory The receiving '<em><b>Family History</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

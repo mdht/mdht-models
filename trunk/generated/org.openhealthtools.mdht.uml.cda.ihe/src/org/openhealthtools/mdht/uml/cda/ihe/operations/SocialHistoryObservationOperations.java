@@ -227,7 +227,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IHE_SOCIAL_HISTORY_OBSERVATION_NO_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.targetSitCode->size() = 0";
+	protected static final String VALIDATE_IHE_SOCIAL_HISTORY_OBSERVATION_NO_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.targetSiteCode->size() = 0";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateIHESocialHistoryObservationNoTargetSiteCode(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IHE Social History Observation No Target Site Code</em>}' invariant operation.
@@ -243,7 +243,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.targetSitCode->size() = 0
+	 * self.targetSiteCode->size() = 0
 	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

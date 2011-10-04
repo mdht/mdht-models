@@ -236,7 +236,7 @@ public class FamilyHistoryOrganizerOperations extends
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IHE_FAMILY_HISTORY_ORGANIZER_HAS_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant.participantRole.playingEntity->one(pe : cda::PlayingEnity | pe.classCode = EntityClassRoot::PSN)";
+	protected static final String VALIDATE_IHE_FAMILY_HISTORY_ORGANIZER_HAS_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(FamilyHistoryOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IHE Family History Organizer Has Participant Role Playing Entity</em>}' invariant operation.
@@ -252,7 +252,7 @@ public class FamilyHistoryOrganizerOperations extends
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant.participantRole.playingEntity->one(pe : cda::PlayingEnity | pe.classCode = EntityClassRoot::PSN)
+	 * self.participant.participantRole.playingEntity->one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::PSN)
 	 * @param familyHistoryOrganizer The receiving '<em><b>Family History Organizer</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

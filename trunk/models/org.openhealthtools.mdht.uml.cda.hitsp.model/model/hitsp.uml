@@ -1121,8 +1121,8 @@ resolved</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_uSawcMm8EeCDOYZyQPaRHg">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>RelatedSubject/subject/administrationGenderCode SHALL be code as 2.16.840.1.113883.1.11.1, Adminstrative Gender Value Set, STATIC, 20081218</body>
-          <body>self.subject.relatedSubject.subject.administrationGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'</body>
+          <body>RelatedSubject/subject/administrativeGenderCode SHALL be code as 2.16.840.1.113883.1.11.1, Adminstrative Gender Value Set, STATIC, 20081218</body>
+          <body>self.subject.relatedSubject.subject.administrativeGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_wNrmcMnAEeCDOYZyQPaRHg" name="hasRaceCode" constrainedElement="_lGBSUMm8EeCDOYZyQPaRHg">
