@@ -58,26 +58,6 @@ public class SurgeriesSectionOperations extends SurgeriesNarrativeSectionOperati
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSurgeriesSectionExternalReference(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Surgeries Section External Reference</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSurgeriesSectionExternalReference(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ExternalReference))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSurgeriesSectionExternalReference(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Surgeries Section External Reference</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSurgeriesSectionExternalReference(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -114,26 +94,6 @@ public class SurgeriesSectionOperations extends SurgeriesNarrativeSectionOperati
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getExternalReference(SurgeriesSection) <em>Get External Reference</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getExternalReference(SurgeriesSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_EXTERNAL_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ExternalReference))->asSequence()->first().oclAsType(consol::ExternalReference)";
-
-	/**
-	 * The cached OCL query for the '{@link #getExternalReference(SurgeriesSection) <em>Get External Reference</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getExternalReference(SurgeriesSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_EXTERNAL_REFERENCE__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -157,26 +117,6 @@ public class SurgeriesSectionOperations extends SurgeriesNarrativeSectionOperati
 		OCL.Query query = EOCL_ENV.createQuery(GET_EXTERNAL_REFERENCE__EOCL_QRY);
 		return (ExternalReference) query.evaluate(surgeriesSection);
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getProcedureActivities(SurgeriesSection) <em>Get Procedure Activities</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProcedureActivities(SurgeriesSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PROCEDURE_ACTIVITIES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure)).oclAsType(consol::ProcedureActivityProcedure)";
-
-	/**
-	 * The cached OCL query for the '{@link #getProcedureActivities(SurgeriesSection) <em>Get Procedure Activities</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProcedureActivities(SurgeriesSection)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_PROCEDURE_ACTIVITIES__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,6 +144,66 @@ public class SurgeriesSectionOperations extends SurgeriesNarrativeSectionOperati
 		Collection<ProcedureActivityProcedure> result = (Collection<ProcedureActivityProcedure>) query.evaluate(surgeriesSection);
 		return new BasicEList.UnmodifiableEList<ProcedureActivityProcedure>(result.size(), result.toArray());
 	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSurgeriesSectionExternalReference(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Surgeries Section External Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSurgeriesSectionExternalReference(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ExternalReference))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSurgeriesSectionExternalReference(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Surgeries Section External Reference</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSurgeriesSectionExternalReference(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static Constraint VALIDATE_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getExternalReference(SurgeriesSection) <em>Get External Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExternalReference(SurgeriesSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_EXTERNAL_REFERENCE__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ExternalReference))->asSequence()->first().oclAsType(consol::ExternalReference)";
+
+	/**
+	 * The cached OCL query for the '{@link #getExternalReference(SurgeriesSection) <em>Get External Reference</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExternalReference(SurgeriesSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_EXTERNAL_REFERENCE__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getProcedureActivities(SurgeriesSection) <em>Get Procedure Activities</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProcedureActivities(SurgeriesSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PROCEDURE_ACTIVITIES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure)).oclAsType(consol::ProcedureActivityProcedure)";
+
+	/**
+	 * The cached OCL query for the '{@link #getProcedureActivities(SurgeriesSection) <em>Get Procedure Activities</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProcedureActivities(SurgeriesSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PROCEDURE_ACTIVITIES__EOCL_QRY;
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSurgeriesNarrativeSectionTemplateId(SurgeriesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Surgeries Narrative Section Template Id</em>}' operation.

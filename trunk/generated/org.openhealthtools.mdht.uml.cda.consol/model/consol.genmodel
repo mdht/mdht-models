@@ -1237,6 +1237,239 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProcedureActivityObservation/ProcedureActivityObservationTemplateId/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PayersSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayersSection/PayersSectionTitleValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionTitleValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionTitleValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayersSection/PayersSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayersSection/PayersSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayersSection/PayersSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayersSection/PayersSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayersSection/PayersSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayersSection/getInsuranceProviders"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//InsuranceProvider">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderInformationSource">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderInformationSource/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderInformationSource/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderSequenceNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderSequenceNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderSequenceNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderPaymentProviders">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderPaymentProviders/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderPaymentProviders/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderPayerEntryID">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderPayerEntryID/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderPayerEntryID/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderHealthInsuranceType">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderHealthInsuranceType/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderHealthInsuranceType/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderInsuranceInformation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderInsuranceInformation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderInsuranceInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceID">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceID/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceID/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderInsuranceInfoSourceAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStartTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStartTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStartTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStopTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStopTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderHealthPlanCoverageStopTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderPatientInformation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderPatientInformation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderPatientInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderMemberId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderMemberId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderMemberId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderMemberIdRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderMemberIdRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderMemberIdRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriberCodeSystem">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriberCodeSystem/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderRelationshipToSubscriberCodeSystem/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderPatientName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderPatientName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderPatientName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberInformation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberInformation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberIdRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberIdRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberIdRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberAddress">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberAddress/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderSubscriberAddress/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyType">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyType/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyType/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyAddress">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyAddress/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderFinancialResponsibilityPartyAddress/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/InsuranceProviderPayerEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderPayerEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//InsuranceProvider/InsuranceProviderPayerEntry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//InsuranceProvider/getPayerEntries"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PayerEntry">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryPayerEntityIsRequired">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryPayerEntityIsRequired/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryPayerEntityIsRequired/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryCoveredPartyIsRequired">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryCoveredPartyIsRequired/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryCoveredPartyIsRequired/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryCoveredPartyTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryCoveredPartyTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryCoveredPartyTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntrySubscriberIsAllowed">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntrySubscriberIsAllowed/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntrySubscriberIsAllowed/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntrySubscriberTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntrySubscriberTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntrySubscriberTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryEntryRelationshipREFR">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryEntryRelationshipREFR/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryEntryRelationshipREFR/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryEntryRelationshipTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryEntryRelationshipTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryEntryRelationshipTarget/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryPayerEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryPayerEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryPayerEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntryCoveredParty">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryCoveredParty/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntryCoveredParty/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/PayerEntrySubscriber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntrySubscriber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntry/PayerEntrySubscriber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/getPayerEntity"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/getCoveredParty"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntry/getSubscriber"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PayerEntity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PayerEntity/PayerEntityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntity/PayerEntityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PayerEntity/PayerEntityId/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//CoveredParty">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoveredParty/CoveredPartyId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoveredParty/CoveredPartyId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoveredParty/CoveredPartyId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CoveredParty/CoveredPartyCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoveredParty/CoveredPartyCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CoveredParty/CoveredPartyCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PolicySubscriber">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PolicySubscriber/PolicySubscriberId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicySubscriber/PolicySubscriberId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PolicySubscriber/PolicySubscriberId/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ConsolRegistryDelegate"/>
   </genPackages>
 </genmodel:GenModel>

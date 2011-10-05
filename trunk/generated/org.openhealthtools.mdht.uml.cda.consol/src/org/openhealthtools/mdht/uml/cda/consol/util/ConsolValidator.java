@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolRegistryDelegate;
+import org.openhealthtools.mdht.uml.cda.consol.CoveredParty;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterLocation;
@@ -33,6 +34,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.Immunization;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.InsuranceProvider;
 import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Medication;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication;
@@ -50,6 +52,10 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.PatientAwareness;
 import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
+import org.openhealthtools.mdht.uml.cda.consol.PayerEntity;
+import org.openhealthtools.mdht.uml.cda.consol.PayerEntry;
+import org.openhealthtools.mdht.uml.cda.consol.PayersSection;
+import org.openhealthtools.mdht.uml.cda.consol.PolicySubscriber;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemListNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemListSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
@@ -2314,6 +2320,438 @@ public class ConsolValidator extends EObjectValidator {
 	public static final int SURGERIES_NARRATIVE_SECTION__SURGERIES_NARRATIVE_SECTION_TEXT = 277;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payers Section Title Value' of 'Payers Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYERS_SECTION__PAYERS_SECTION_TITLE_VALUE = 291;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payers Section Template Id' of 'Payers Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYERS_SECTION__PAYERS_SECTION_TEMPLATE_ID = 292;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payers Section Code' of 'Payers Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYERS_SECTION__PAYERS_SECTION_CODE = 293;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payers Section Title' of 'Payers Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYERS_SECTION__PAYERS_SECTION_TITLE = 294;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payers Section Text' of 'Payers Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYERS_SECTION__PAYERS_SECTION_TEXT = 295;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Information Source' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_INFORMATION_SOURCE = 296;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Sequence Number' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_SEQUENCE_NUMBER = 297;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Payment Providers' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYMENT_PROVIDERS = 298;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Payer Entry ID' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYER_ENTRY_ID = 299;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Health Insurance Type' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE = 300;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Insurance Information' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFORMATION = 301;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Insurance Info Source ID' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID = 302;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Insurance Info Source Addr' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR = 303;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Health Plan Coverage Start Time' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME = 304;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Health Plan Coverage Stop Time' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME = 305;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Patient Information' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_PATIENT_INFORMATION = 306;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Member Id' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_MEMBER_ID = 307;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Member Id Root' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_MEMBER_ID_ROOT = 308;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Relationship To Subscriber' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER = 309;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Relationship To Subscriber Code System' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM = 310;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Patient Name' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_PATIENT_NAME = 311;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Subscriber Information' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION = 312;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Subscriber Id' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ID = 313;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Subscriber Id Root' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT = 314;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Subscriber Address' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS = 315;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Financial Responsibility Party Type' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE = 316;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Financial Responsibility Party Type Code' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE = 317;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Financial Responsibility Party Address' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS = 318;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Template Id' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID = 319;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Class Code' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_CLASS_CODE = 320;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Mood Code' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_MOOD_CODE = 321;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Id' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_ID = 322;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Code' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_CODE = 323;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Status Code' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_STATUS_CODE = 324;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Insurance Provider Payer Entry' of 'Insurance Provider'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYER_ENTRY = 325;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Payer Entity Is Required' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_PAYER_ENTITY_IS_REQUIRED = 326;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Covered Party Is Required' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_COVERED_PARTY_IS_REQUIRED = 327;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Covered Party Time' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_COVERED_PARTY_TIME = 328;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Subscriber Is Allowed' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_SUBSCRIBER_IS_ALLOWED = 329;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Subscriber Time' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_SUBSCRIBER_TIME = 330;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Entry Relationship REFR' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_ENTRY_RELATIONSHIP_REFR = 331;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Entry Relationship Target' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_ENTRY_RELATIONSHIP_TARGET = 332;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Template Id' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_TEMPLATE_ID = 333;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Class Code' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_CLASS_CODE = 334;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Mood Code' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_MOOD_CODE = 335;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Id' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_ID = 336;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Status Code' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_STATUS_CODE = 337;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Payer Entity' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_PAYER_ENTITY = 338;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Covered Party' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_COVERED_PARTY = 339;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entry Subscriber' of 'Payer Entry'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTRY__PAYER_ENTRY_SUBSCRIBER = 340;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Payer Entity Id' of 'Payer Entity'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PAYER_ENTITY__PAYER_ENTITY_ID = 341;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Covered Party Id' of 'Covered Party'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COVERED_PARTY__COVERED_PARTY_ID = 342;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Covered Party Code' of 'Covered Party'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COVERED_PARTY__COVERED_PARTY_CODE = 343;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Policy Subscriber Id' of 'Policy Subscriber'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int POLICY_SUBSCRIBER__POLICY_SUBSCRIBER_ID = 344;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Has Text Reference' of 'Procedure Activity Procedure'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2423,7 +2861,7 @@ public class ConsolValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 290;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 344;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -2577,6 +3015,18 @@ public class ConsolValidator extends EObjectValidator {
 				return validateProcedureActivityAct((ProcedureActivityAct) value, diagnostics, context);
 			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION:
 				return validateProcedureActivityObservation((ProcedureActivityObservation) value, diagnostics, context);
+			case ConsolPackage.PAYERS_SECTION:
+				return validatePayersSection((PayersSection) value, diagnostics, context);
+			case ConsolPackage.INSURANCE_PROVIDER:
+				return validateInsuranceProvider((InsuranceProvider) value, diagnostics, context);
+			case ConsolPackage.PAYER_ENTRY:
+				return validatePayerEntry((PayerEntry) value, diagnostics, context);
+			case ConsolPackage.PAYER_ENTITY:
+				return validatePayerEntity((PayerEntity) value, diagnostics, context);
+			case ConsolPackage.COVERED_PARTY:
+				return validateCoveredParty((CoveredParty) value, diagnostics, context);
+			case ConsolPackage.POLICY_SUBSCRIBER:
+				return validatePolicySubscriber((PolicySubscriber) value, diagnostics, context);
 			case ConsolPackage.CONSOL_REGISTRY_DELEGATE:
 				return validateConsolRegistryDelegate((ConsolRegistryDelegate) value, diagnostics, context);
 			default:
@@ -8925,6 +9375,997 @@ public class ConsolValidator extends EObjectValidator {
 			SurgeriesNarrativeSection surgeriesNarrativeSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return surgeriesNarrativeSection.validateSurgeriesNarrativeSectionText(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayersSection(PayersSection payersSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(payersSection, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(payersSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayersSection_validatePayersSectionTitleValue(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayersSection_validatePayersSectionTemplateId(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayersSection_validatePayersSectionCode(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayersSection_validatePayersSectionTitle(payersSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayersSection_validatePayersSectionText(payersSection, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validatePayersSectionTitleValue constraint of '<em>Payers Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayersSection_validatePayersSectionTitleValue(PayersSection payersSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payersSection.validatePayersSectionTitleValue(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayersSectionTemplateId constraint of '<em>Payers Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayersSection_validatePayersSectionTemplateId(PayersSection payersSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payersSection.validatePayersSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayersSectionCode constraint of '<em>Payers Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayersSection_validatePayersSectionCode(PayersSection payersSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payersSection.validatePayersSectionCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayersSectionTitle constraint of '<em>Payers Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayersSection_validatePayersSectionTitle(PayersSection payersSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payersSection.validatePayersSectionTitle(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayersSectionText constraint of '<em>Payers Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayersSection_validatePayersSectionText(PayersSection payersSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payersSection.validatePayersSectionText(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider(InsuranceProvider insuranceProvider, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(insuranceProvider, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(insuranceProvider, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderInformationSource(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderSequenceNumber(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderPaymentProviders(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderPayerEntryID(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderHealthInsuranceType(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderInsuranceInformation(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderInsuranceInfoSourceID(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderInsuranceInfoSourceAddr(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderHealthPlanCoverageStartTime(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderHealthPlanCoverageStopTime(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderPatientInformation(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderMemberId(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderMemberIdRoot(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderRelationshipToSubscriber(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderRelationshipToSubscriberCodeSystem(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderPatientName(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderSubscriberInformation(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderSubscriberId(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderSubscriberIdRoot(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderSubscriberAddress(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyType(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyTypeCode(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyAddress(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderTemplateId(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderClassCode(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderMoodCode(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderId(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderCode(insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderStatusCode(
+				insuranceProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInsuranceProvider_validateInsuranceProviderPayerEntry(
+				insuranceProvider, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderInformationSource constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderInformationSource(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderInformationSource(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderSequenceNumber constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderSequenceNumber(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderSequenceNumber(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderPaymentProviders constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderPaymentProviders(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderPaymentProviders(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderPayerEntryID constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderPayerEntryID(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderPayerEntryID(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderHealthInsuranceType constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderHealthInsuranceType(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderHealthInsuranceType(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderInsuranceInformation constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderInsuranceInformation(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderInsuranceInformation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderInsuranceInfoSourceID constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderInsuranceInfoSourceID(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderInsuranceInfoSourceID(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderInsuranceInfoSourceAddr constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderInsuranceInfoSourceAddr(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderInsuranceInfoSourceAddr(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderHealthPlanCoverageStartTime constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderHealthPlanCoverageStartTime(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderHealthPlanCoverageStartTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderHealthPlanCoverageStopTime constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderHealthPlanCoverageStopTime(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderHealthPlanCoverageStopTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderPatientInformation constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderPatientInformation(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderPatientInformation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderMemberId constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderMemberId(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderMemberId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderMemberIdRoot constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderMemberIdRoot(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderMemberIdRoot(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderRelationshipToSubscriber constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderRelationshipToSubscriber(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderRelationshipToSubscriber(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderRelationshipToSubscriberCodeSystem constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderRelationshipToSubscriberCodeSystem(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderRelationshipToSubscriberCodeSystem(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderPatientName constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderPatientName(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderPatientName(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderSubscriberInformation constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderSubscriberInformation(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderSubscriberInformation(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderSubscriberId constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderSubscriberId(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderSubscriberId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderSubscriberIdRoot constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderSubscriberIdRoot(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderSubscriberIdRoot(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderSubscriberAddress constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderSubscriberAddress(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderSubscriberAddress(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderFinancialResponsibilityPartyType constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyType(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderFinancialResponsibilityPartyType(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderFinancialResponsibilityPartyTypeCode constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyTypeCode(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderFinancialResponsibilityPartyTypeCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderFinancialResponsibilityPartyAddress constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderFinancialResponsibilityPartyAddress(
+			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderFinancialResponsibilityPartyAddress(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderTemplateId constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderTemplateId(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderClassCode constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderClassCode(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderMoodCode constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderMoodCode(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderId constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderId(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderCode constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderCode(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderStatusCode constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderStatusCode(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateInsuranceProviderPayerEntry constraint of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInsuranceProvider_validateInsuranceProviderPayerEntry(InsuranceProvider insuranceProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return insuranceProvider.validateInsuranceProviderPayerEntry(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry(PayerEntry payerEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(payerEntry, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(payerEntry, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryPayerEntityIsRequired(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryCoveredPartyIsRequired(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryCoveredPartyTime(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntrySubscriberIsAllowed(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntrySubscriberTime(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryEntryRelationshipREFR(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryEntryRelationshipTarget(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryTemplateId(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryClassCode(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryMoodCode(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryId(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryStatusCode(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryPayerEntity(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntryCoveredParty(payerEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntry_validatePayerEntrySubscriber(payerEntry, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validatePayerEntryPayerEntityIsRequired constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryPayerEntityIsRequired(PayerEntry payerEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryPayerEntityIsRequired(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryCoveredPartyIsRequired constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryCoveredPartyIsRequired(PayerEntry payerEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryCoveredPartyIsRequired(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryCoveredPartyTime constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryCoveredPartyTime(PayerEntry payerEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryCoveredPartyTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntrySubscriberIsAllowed constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntrySubscriberIsAllowed(PayerEntry payerEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payerEntry.validatePayerEntrySubscriberIsAllowed(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntrySubscriberTime constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntrySubscriberTime(PayerEntry payerEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payerEntry.validatePayerEntrySubscriberTime(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryEntryRelationshipREFR constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryEntryRelationshipREFR(PayerEntry payerEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryEntryRelationshipREFR(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryEntryRelationshipTarget constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryEntryRelationshipTarget(PayerEntry payerEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryEntryRelationshipTarget(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryTemplateId constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryTemplateId(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryClassCode constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryClassCode(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryClassCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryMoodCode constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryMoodCode(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryMoodCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryId constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryId(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryStatusCode constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryStatusCode(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryStatusCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryPayerEntity constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryPayerEntity(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryPayerEntity(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntryCoveredParty constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntryCoveredParty(PayerEntry payerEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return payerEntry.validatePayerEntryCoveredParty(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validatePayerEntrySubscriber constraint of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntry_validatePayerEntrySubscriber(PayerEntry payerEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return payerEntry.validatePayerEntrySubscriber(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntity(PayerEntity payerEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(payerEntity, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(payerEntity, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(payerEntity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(payerEntity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(payerEntity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(payerEntity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(payerEntity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(payerEntity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAssignedEntity_validateClassCode(payerEntity, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePayerEntity_validatePayerEntityId(payerEntity, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validatePayerEntityId constraint of '<em>Payer Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayerEntity_validatePayerEntityId(PayerEntity payerEntity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return payerEntity.validatePayerEntityId(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCoveredParty(CoveredParty coveredParty, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(coveredParty, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(coveredParty, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(coveredParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(coveredParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(coveredParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(coveredParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(coveredParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(coveredParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateParticipantRole_validatePlayingEntityChoice(
+				coveredParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCoveredParty_validateCoveredPartyId(coveredParty, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCoveredParty_validateCoveredPartyCode(coveredParty, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateCoveredPartyId constraint of '<em>Covered Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCoveredParty_validateCoveredPartyId(CoveredParty coveredParty, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return coveredParty.validateCoveredPartyId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateCoveredPartyCode constraint of '<em>Covered Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCoveredParty_validateCoveredPartyCode(CoveredParty coveredParty,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return coveredParty.validateCoveredPartyCode(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePolicySubscriber(PolicySubscriber policySubscriber, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(policySubscriber, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(policySubscriber, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(policySubscriber, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(policySubscriber, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(policySubscriber, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(policySubscriber, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(policySubscriber, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(policySubscriber, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateParticipantRole_validatePlayingEntityChoice(
+				policySubscriber, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePolicySubscriber_validatePolicySubscriberId(policySubscriber, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validatePolicySubscriberId constraint of '<em>Policy Subscriber</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePolicySubscriber_validatePolicySubscriberId(PolicySubscriber policySubscriber,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return policySubscriber.validatePolicySubscriberId(diagnostics, context);
 	}
 
 	/**

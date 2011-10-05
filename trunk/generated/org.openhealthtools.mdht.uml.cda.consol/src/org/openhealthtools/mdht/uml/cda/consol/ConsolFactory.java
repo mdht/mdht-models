@@ -444,6 +444,60 @@ public interface ConsolFactory extends EFactory {
 	SurgeriesNarrativeSection createSurgeriesNarrativeSection();
 
 	/**
+	 * Returns a new object of class '<em>Payers Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Payers Section</em>'.
+	 * @generated
+	 */
+	PayersSection createPayersSection();
+
+	/**
+	 * Returns a new object of class '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Insurance Provider</em>'.
+	 * @generated
+	 */
+	InsuranceProvider createInsuranceProvider();
+
+	/**
+	 * Returns a new object of class '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Payer Entry</em>'.
+	 * @generated
+	 */
+	PayerEntry createPayerEntry();
+
+	/**
+	 * Returns a new object of class '<em>Payer Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Payer Entity</em>'.
+	 * @generated
+	 */
+	PayerEntity createPayerEntity();
+
+	/**
+	 * Returns a new object of class '<em>Covered Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Covered Party</em>'.
+	 * @generated
+	 */
+	CoveredParty createCoveredParty();
+
+	/**
+	 * Returns a new object of class '<em>Policy Subscriber</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Subscriber</em>'.
+	 * @generated
+	 */
+	PolicySubscriber createPolicySubscriber();
+
+	/**
 	 * Returns a new object of class '<em>Procedure Activity Procedure</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

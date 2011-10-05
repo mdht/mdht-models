@@ -57,7 +57,7 @@ public class ImmunizationOperations extends MedicationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMMUNIZATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined()";
+	protected static final String VALIDATE_IMMUNIZATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationMoodCode(Immunization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Mood Code</em>}' invariant operation.
@@ -73,7 +73,7 @@ public class ImmunizationOperations extends MedicationOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.moodCode.oclIsUndefined()
+	 * isDefined('moodCode')
 	 * @param immunization The receiving '<em><b>Immunization</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
