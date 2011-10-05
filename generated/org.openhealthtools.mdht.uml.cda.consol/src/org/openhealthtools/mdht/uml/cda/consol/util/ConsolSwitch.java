@@ -14,6 +14,7 @@ import java.util.List;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
@@ -32,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.consol.Condition;
 import org.openhealthtools.mdht.uml.cda.consol.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolRegistryDelegate;
+import org.openhealthtools.mdht.uml.cda.consol.CoveredParty;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterLocation;
@@ -42,6 +44,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.Immunization;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.InsuranceProvider;
 import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Medication;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication;
@@ -59,6 +62,10 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.PatientAwareness;
 import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
+import org.openhealthtools.mdht.uml.cda.consol.PayerEntity;
+import org.openhealthtools.mdht.uml.cda.consol.PayerEntry;
+import org.openhealthtools.mdht.uml.cda.consol.PayersSection;
+import org.openhealthtools.mdht.uml.cda.consol.PolicySubscriber;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemListNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemListSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
@@ -1155,6 +1162,114 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.PAYERS_SECTION: {
+				PayersSection payersSection = (PayersSection) theEObject;
+				T result = casePayersSection(payersSection);
+				if (result == null) {
+					result = caseSection(payersSection);
+				}
+				if (result == null) {
+					result = caseAct(payersSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(payersSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INSURANCE_PROVIDER: {
+				InsuranceProvider insuranceProvider = (InsuranceProvider) theEObject;
+				T result = caseInsuranceProvider(insuranceProvider);
+				if (result == null) {
+					result = caseCDA_Act(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseAct(insuranceProvider);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(insuranceProvider);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PAYER_ENTRY: {
+				PayerEntry payerEntry = (PayerEntry) theEObject;
+				T result = casePayerEntry(payerEntry);
+				if (result == null) {
+					result = caseCDA_Act(payerEntry);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(payerEntry);
+				}
+				if (result == null) {
+					result = caseAct(payerEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(payerEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PAYER_ENTITY: {
+				PayerEntity payerEntity = (PayerEntity) theEObject;
+				T result = casePayerEntity(payerEntity);
+				if (result == null) {
+					result = caseAssignedEntity(payerEntity);
+				}
+				if (result == null) {
+					result = caseRole(payerEntity);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(payerEntity);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COVERED_PARTY: {
+				CoveredParty coveredParty = (CoveredParty) theEObject;
+				T result = caseCoveredParty(coveredParty);
+				if (result == null) {
+					result = caseParticipantRole(coveredParty);
+				}
+				if (result == null) {
+					result = caseRole(coveredParty);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(coveredParty);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.POLICY_SUBSCRIBER: {
+				PolicySubscriber policySubscriber = (PolicySubscriber) theEObject;
+				T result = casePolicySubscriber(policySubscriber);
+				if (result == null) {
+					result = caseParticipantRole(policySubscriber);
+				}
+				if (result == null) {
+					result = caseRole(policySubscriber);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(policySubscriber);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.CONSOL_REGISTRY_DELEGATE: {
 				ConsolRegistryDelegate consolRegistryDelegate = (ConsolRegistryDelegate) theEObject;
 				T result = caseConsolRegistryDelegate(consolRegistryDelegate);
@@ -1877,6 +1992,96 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Payers Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Payers Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePayersSection(PayersSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Insurance Provider</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Insurance Provider</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInsuranceProvider(InsuranceProvider object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Payer Entry</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Payer Entry</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePayerEntry(PayerEntry object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Payer Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Payer Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePayerEntity(PayerEntity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Covered Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Covered Party</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoveredParty(CoveredParty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Policy Subscriber</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Policy Subscriber</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePolicySubscriber(PolicySubscriber object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Procedure</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2173,6 +2378,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseProcedure(Procedure object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assigned Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assigned Entity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssignedEntity(AssignedEntity object) {
 		return null;
 	}
 

@@ -22,6 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolRegistryDelegate;
+import org.openhealthtools.mdht.uml.cda.consol.CoveredParty;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterLocation;
@@ -32,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.Immunization;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.InsuranceProvider;
 import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Medication;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication;
@@ -49,6 +51,10 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.PatientAwareness;
 import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
+import org.openhealthtools.mdht.uml.cda.consol.PayerEntity;
+import org.openhealthtools.mdht.uml.cda.consol.PayerEntry;
+import org.openhealthtools.mdht.uml.cda.consol.PayersSection;
+import org.openhealthtools.mdht.uml.cda.consol.PolicySubscriber;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemListNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemListSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
@@ -209,6 +215,18 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureActivityAct();
 			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION:
 				return createProcedureActivityObservation();
+			case ConsolPackage.PAYERS_SECTION:
+				return createPayersSection();
+			case ConsolPackage.INSURANCE_PROVIDER:
+				return createInsuranceProvider();
+			case ConsolPackage.PAYER_ENTRY:
+				return createPayerEntry();
+			case ConsolPackage.PAYER_ENTITY:
+				return createPayerEntity();
+			case ConsolPackage.COVERED_PARTY:
+				return createCoveredParty();
+			case ConsolPackage.POLICY_SUBSCRIBER:
+				return createPolicySubscriber();
 			case ConsolPackage.CONSOL_REGISTRY_DELEGATE:
 				return createConsolRegistryDelegate();
 			default:
@@ -674,6 +692,66 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SurgeriesNarrativeSection createSurgeriesNarrativeSection() {
 		SurgeriesNarrativeSectionImpl surgeriesNarrativeSection = new SurgeriesNarrativeSectionImpl();
 		return surgeriesNarrativeSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PayersSection createPayersSection() {
+		PayersSectionImpl payersSection = new PayersSectionImpl();
+		return payersSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InsuranceProvider createInsuranceProvider() {
+		InsuranceProviderImpl insuranceProvider = new InsuranceProviderImpl();
+		return insuranceProvider;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PayerEntry createPayerEntry() {
+		PayerEntryImpl payerEntry = new PayerEntryImpl();
+		return payerEntry;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PayerEntity createPayerEntity() {
+		PayerEntityImpl payerEntity = new PayerEntityImpl();
+		return payerEntity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CoveredParty createCoveredParty() {
+		CoveredPartyImpl coveredParty = new CoveredPartyImpl();
+		return coveredParty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PolicySubscriber createPolicySubscriber() {
+		PolicySubscriberImpl policySubscriber = new PolicySubscriberImpl();
+		return policySubscriber;
 	}
 
 	/**

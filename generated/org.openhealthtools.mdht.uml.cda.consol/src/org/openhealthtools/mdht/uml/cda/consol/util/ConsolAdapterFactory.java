@@ -14,6 +14,7 @@ import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
@@ -32,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.consol.Condition;
 import org.openhealthtools.mdht.uml.cda.consol.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolRegistryDelegate;
+import org.openhealthtools.mdht.uml.cda.consol.CoveredParty;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterLocation;
@@ -42,6 +44,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.Immunization;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.InsuranceProvider;
 import org.openhealthtools.mdht.uml.cda.consol.InternalReference;
 import org.openhealthtools.mdht.uml.cda.consol.Medication;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationCombinationMedication;
@@ -59,6 +62,10 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationsNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.PatientAwareness;
 import org.openhealthtools.mdht.uml.cda.consol.PatientMedicalInstructions;
+import org.openhealthtools.mdht.uml.cda.consol.PayerEntity;
+import org.openhealthtools.mdht.uml.cda.consol.PayerEntry;
+import org.openhealthtools.mdht.uml.cda.consol.PayersSection;
+import org.openhealthtools.mdht.uml.cda.consol.PolicySubscriber;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemListNarrativeSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemListSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatusObservation;
@@ -389,6 +396,36 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter casePayersSection(PayersSection object) {
+			return createPayersSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseInsuranceProvider(InsuranceProvider object) {
+			return createInsuranceProviderAdapter();
+		}
+
+		@Override
+		public Adapter casePayerEntry(PayerEntry object) {
+			return createPayerEntryAdapter();
+		}
+
+		@Override
+		public Adapter casePayerEntity(PayerEntity object) {
+			return createPayerEntityAdapter();
+		}
+
+		@Override
+		public Adapter caseCoveredParty(CoveredParty object) {
+			return createCoveredPartyAdapter();
+		}
+
+		@Override
+		public Adapter casePolicySubscriber(PolicySubscriber object) {
+			return createPolicySubscriberAdapter();
+		}
+
+		@Override
 		public Adapter caseConsolRegistryDelegate(ConsolRegistryDelegate object) {
 			return createConsolRegistryDelegateAdapter();
 		}
@@ -471,6 +508,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseProcedure(Procedure object) {
 			return createProcedureAdapter();
+		}
+
+		@Override
+		public Adapter caseAssignedEntity(AssignedEntity object) {
+			return createAssignedEntityAdapter();
 		}
 
 		@Override
@@ -1156,6 +1198,90 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection <em>Payers Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PayersSection
+	 * @generated
+	 */
+	public Adapter createPayersSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.InsuranceProvider <em>Insurance Provider</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.InsuranceProvider
+	 * @generated
+	 */
+	public Adapter createInsuranceProviderAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntry <em>Payer Entry</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PayerEntry
+	 * @generated
+	 */
+	public Adapter createPayerEntryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PayerEntity <em>Payer Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PayerEntity
+	 * @generated
+	 */
+	public Adapter createPayerEntityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CoveredParty <em>Covered Party</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CoveredParty
+	 * @generated
+	 */
+	public Adapter createCoveredPartyAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.PolicySubscriber <em>Policy Subscriber</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.PolicySubscriber
+	 * @generated
+	 */
+	public Adapter createPolicySubscriberAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure <em>Procedure Activity Procedure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1432,6 +1558,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createProcedureAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.AssignedEntity <em>Assigned Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.AssignedEntity
+	 * @generated
+	 */
+	public Adapter createAssignedEntityAdapter() {
 		return null;
 	}
 
