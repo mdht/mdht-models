@@ -232,7 +232,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participantRole.code.codeSystem = '2.16.840.1.113883.1.11.17660'";
+	protected static final String VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participantRole.code.codeSystem = '2.16.840.1.113883.5.111'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncounterLocationHasParticipantRoleCodeVocab(EncounterLocation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Location Has Participant Role Code Vocab</em>}' invariant operation.
@@ -248,7 +248,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.code.codeSystem = '2.16.840.1.113883.1.11.17660'
+	 * self.participantRole.code.codeSystem = '2.16.840.1.113883.5.111'
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

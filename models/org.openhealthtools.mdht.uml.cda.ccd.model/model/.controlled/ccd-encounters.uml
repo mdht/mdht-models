@@ -149,7 +149,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for participant/participantRole/code in a location participation SHOULD be selected from ValueSet 2.16.840.1.113883.1.11.17660 ServiceDeliveryLocationRoleType 2.16.840.1.113883.5.111 RoleCode DYNAMIC.</body>
-        <body>self.participantRole.code.codeSystem = '2.16.840.1.113883.1.11.17660'</body>
+        <body>self.participantRole.code.codeSystem = '2.16.840.1.113883.5.111'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="__JhPoFS8EeCnnNnsbG2N3Q" name="hasPlayingEntity" constrainedElement="_4hhn8FS8EeCnnNnsbG2N3Q">

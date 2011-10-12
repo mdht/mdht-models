@@ -49,7 +49,7 @@ detail is not known</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>the code/@code attribute value is from Allergy/Adverse Event Type Value Set, 2.16.840.1.113883.3.88.12.3221.6.2, version: 20081218, Static</body>
-        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.2')</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '420134006' or code.code ='418038007' or code.code='419511003' or code.code='418471000' or code.code='419199007' or code.code='416098002' or code.code='414285001' or code.code='59037007' or code.code='235719002'))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_SSDPkFgGEeCQ8PeHNHg5Pw" name="allergyProduct">
@@ -134,7 +134,7 @@ agent that causes the intolerance</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>For participant/participantRole/playingEntity/code element, Food and substance allergies SHALL be coded as Ingredient Name Value Set, 2.16.840.1.113883.3.88.12.80.20, Dynamic</body>
-        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_td0rEFgLEeCQ8PeHNHg5Pw" name="allergyProductMedClassVocab" constrainedElement="_SSDPkFgGEeCQ8PeHNHg5Pw">
@@ -142,7 +142,7 @@ agent that causes the intolerance</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>For participant/participantRole/playingEntity/code element, Allergies to a class of medication SHALL be coded as Medication Drug Class Value Set, 2.16.840.1.113883.3.88.12.80.17, version: 20081218, Dynamic</body>
-        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_vuu9wFgLEeCQ8PeHNHg5Pw" name="allergyProductSpecificMedVocab" constrainedElement="_SSDPkFgGEeCQ8PeHNHg5Pw">
@@ -150,7 +150,7 @@ agent that causes the intolerance</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>For participant/participantRole/playingEntity/code element, Allergies to a specific medication SHALL be coded with Medication Brand Name Value Set, 2.16.840.1.113883.3.88.12.80.16, version: 20081218, Dynamic</body>
-        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17' or playe.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'))))))</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and &#xD;&#xA;obs.participant->exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and &#xD;&#xA;prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity->exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code->size() = 1 and (playe.code.codeSystem =&#xD;&#xA;'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_BD2hYFgKEeCQ8PeHNHg5Pw" name="reactionText" constrainedElement="_hEbi8Ff_EeCQ8PeHNHg5Pw">
@@ -181,7 +181,7 @@ or agent</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>the code element is coded as Problem Value Set, 2.16.840.1.113883.3.88.12.3221.7.4, version: 20100125, Dynamic</body>
-        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4'))</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '404684003' or code.code = '243796009')))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Ep2-wFgKEeCQ8PeHNHg5Pw" name="severityText" constrainedElement="_DLF6sFgKEeCQ8PeHNHg5Pw">
@@ -213,7 +213,7 @@ the allergy or intolerance</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>the code element is coded as Problem Severity Value Set, 2.16.840.1.113883.3.88.12.3221.6.8, version: 20081218, Static</body>
-        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.6.8'))</body>
+        <body>self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '255604002' or code.code = '371923003' or code.code = '6736007' or code.code = '371924009' or code.code = '24484000' or code.code = '399166001')))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_hsBnwHrWEd68l9lQ-TLEBQ">

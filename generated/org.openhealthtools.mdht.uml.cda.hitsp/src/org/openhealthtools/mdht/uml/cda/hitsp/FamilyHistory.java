@@ -28,11 +28,11 @@ public interface FamilyHistory extends FamilyHistoryOrganizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.19579'
+	 * self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.5.111'
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.code.codeSystem = \'2.16.840.1.113883.1.11.19579\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.code.codeSystem = \'2.16.840.1.113883.5.111\''"
 	 * @generated
 	 */
 	boolean validateFamilyHistoryRelatedSubjectCodeValueSet(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -54,11 +54,11 @@ public interface FamilyHistory extends FamilyHistoryOrganizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.subject.relatedSubject.subject.administrativeGenderCode.codeSystem = '2.16.840.1.113883.1.11.1'
+	 * self.subject.relatedSubject.subject.administrativeGenderCode.codeSystem = '2.16.840.1.113883.5.1' and (self.subject.relatedSubject.subject.administrativeGenderCode.code = 'F' or self.subject.relatedSubject.subject.administrativeGenderCode.code='M' or self.subject.relatedSubject.subject.administrativeGenderCode.code='UN')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.subject.administrativeGenderCode.codeSystem = \'2.16.840.1.113883.1.11.1\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.subject.administrativeGenderCode.codeSystem = \'2.16.840.1.113883.5.1\' and (self.subject.relatedSubject.subject.administrativeGenderCode.code = \'F\' or self.subject.relatedSubject.subject.administrativeGenderCode.code=\'M\' or self.subject.relatedSubject.subject.administrativeGenderCode.code=\'UN\')'"
 	 * @generated
 	 */
 	boolean validateFamilyHistoryHasGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context);

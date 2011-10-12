@@ -43,11 +43,11 @@ public interface MedicationInformation extends ProductEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17'
+	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88'
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.3.88.12.80.17\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.6.88\''"
 	 * @generated
 	 */
 	boolean validateMedicationInformationCodedProductVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -56,11 +56,11 @@ public interface MedicationInformation extends ProductEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.18'
+	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.26.1.5' and (self.manufacturedMaterial.code.code = 'N0000000223' or self.manufacturedMaterial.code.code = 'N0000009802' or self.manufacturedMaterial.code.code = 'N0000000002')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.3.88.12.80.18\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.3.26.1.5\' and (self.manufacturedMaterial.code.code = \'N0000000223\' or self.manufacturedMaterial.code.code = \'N0000009802\' or self.manufacturedMaterial.code.code = \'N0000000002\')'"
 	 * @generated
 	 */
 	boolean validateMedicationInformationCodedDrugClassVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -69,11 +69,11 @@ public interface MedicationInformation extends ProductEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20'
+	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.4.9'
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.3.88.12.80.20\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.4.9\''"
 	 * @generated
 	 */
 	boolean validateMedicationInformationCodedIngredientVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -95,11 +95,11 @@ public interface MedicationInformation extends ProductEntry {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'
+	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.69'
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.3.88.12.80.16\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.6.88\' or self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.6.69\''"
 	 * @generated
 	 */
 	boolean validateMedicationInformationCodedBrandNameVocab(DiagnosticChain diagnostics, Map<Object, Object> context);

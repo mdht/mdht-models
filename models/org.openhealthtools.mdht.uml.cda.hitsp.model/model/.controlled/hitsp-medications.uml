@@ -131,7 +131,7 @@ pressure</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The indication SHALL be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic</body>
-        <body>self.getObservations()->exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation) and po.code.codeSystem = '2.16.840.1.113883.3.88.12.3221.7.4')</body>
+        <body>self.getObservations()->exists(po : cda::Observation | po.oclIsKindOf(ccd::ProblemObservation) and po.code.codeSystem = '2.16.840.1.113883.6.96')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_xDmX8E6UEeC7C4Qxze6ysQ" name="hasPatientInstructions" constrainedElement="_3tCmkE6TEeC7C4Qxze6ysQ">
@@ -215,7 +215,7 @@ Aquaphor is the vehicle in &quot;10% LCD in Aquaphor&quot;</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic</body>
-        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code->size() > 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.3.88.12.80.21')))</body>
+        <body>self.getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.participant->exists(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM and par.participantRole->exists(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU and pr.code.code = '412307009' and pr.code.codeSystem = '2.16.840.1.113883.6.96' and pr.playingEntity.code->size() > 0 and pr.playingEntity.code.codeSystem = '2.16.840.1.113883.6.96')))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_w0bkkHrGEd68l9lQ-TLEBQ">
@@ -469,15 +469,15 @@ vocabulary</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The coded product name SHALL be coded as 2.16.840.1.113883.3.88.12.80.17, Medication Clinical Drug Name Value Set, version: 20081218, Dynamic</body>
-        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17'</body>
+        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_09MaIE5cEeC-IOl-lQ-2xA" name="codedDrugClassVocab" constrainedElement="_xys0EE5cEeC-IOl-lQ-2xA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_SMx5wE5dEeC-IOl-lQ-2xA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>When only the class of the drug is known (e.g., Beta Blocker or Sulfa Drug), it SHALL be coded as 2.16.840.1.113883.3.88.12.80.18, Medication Drug Class Value Set, version: 20081218, Dynamic</body>
-        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.18'</body>
+        <body>When only the class of the drug is known (e.g., Beta Blocker or Sulfa Drug), it SHALL be coded as 2.16.840.1.113883.3.88.12.80.17, Medication Drug Class Value Set, version: 20081218, Dynamic</body>
+        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.26.1.5' and (self.manufacturedMaterial.code.code = 'N0000000223' or self.manufacturedMaterial.code.code = 'N0000009802' or self.manufacturedMaterial.code.code = 'N0000000002')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2aeQcE5cEeC-IOl-lQ-2xA" name="codedIngredientVocab" constrainedElement="_09MaIE5cEeC-IOl-lQ-2xA">
@@ -485,7 +485,7 @@ vocabulary</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>When only the medication ingredient name is know, the coded product name MAY be coded as 2.16.840.1.113883.3.88.12.80.20, Ingredient Name Value Set, Dynamic</body>
-        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20'</body>
+        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.4.9'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2bejwE5hEeC-IOl-lQ-2xA" name="codedBrandName" constrainedElement="_2aeQcE5cEeC-IOl-lQ-2xA">
@@ -505,7 +505,7 @@ trademarked entity from a controlled vocabulary</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>The brand name SHALL be coded as 2.16.840.1.113883.3.88.12.80.16, Medication Brand Name Value Set, version: 20081218, Dynamic, OR SHALL be coded as  2.16.840.1.113883.3.88.12.80.19, Medication Packaged Product Value Set, Dynamic</body>
-        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'</body>
+        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.69'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_FNdecE5vEeC-IOl-lQ-2xA" name="freeTextProductName" constrainedElement="_PKv54E5iEeC-IOl-lQ-2xA">

@@ -56,11 +56,11 @@ public interface Product extends ManufacturedProduct {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.59' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.1.11.20.8'
+	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.59' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.96'
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.6.88\' or self.manufacturedMaterial.code.codeSystem=\'2.16.840.1.113883.6.59\' or self.manufacturedMaterial.code.codeSystem=\'2.16.840.1.113883.1.11.20.8\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial.code.codeSystem = \'2.16.840.1.113883.6.88\' or self.manufacturedMaterial.code.codeSystem=\'2.16.840.1.113883.6.59\' or self.manufacturedMaterial.code.codeSystem=\'2.16.840.1.113883.6.96\''"
 	 * @generated
 	 */
 	boolean validateProductHasMaterialCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);

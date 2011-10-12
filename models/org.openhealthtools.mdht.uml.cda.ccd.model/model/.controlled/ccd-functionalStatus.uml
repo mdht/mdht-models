@@ -59,7 +59,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for Observation / code in a problem observation or result observation in the functional status section MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.6 FunctionalStatusTypeCode STATIC 20061017</body>
-        <body>self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = '2.16.840.1.113883.1.11.20.6')</body>
+        <body>self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = '2.16.840.1.113883.6.96')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_rc3LoMgnEeCHk-lvWGDTdA" name="assessmentInstrument" constrainedElement="_dO-JkMgnEeCHk-lvWGDTdA">
