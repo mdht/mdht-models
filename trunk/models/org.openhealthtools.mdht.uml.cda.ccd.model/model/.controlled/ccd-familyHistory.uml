@@ -99,7 +99,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for &quot;RelatedSubject / code&quot; SHOULD be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode DYNAMIC</body>
-        <body>self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.19579' or self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.20.21'</body>
+        <body>self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.5.111'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hw1icMj8EeChgrgmBsw26A" name="hasPedigreeGraph" constrainedElement="_KswYQMj7EeChgrgmBsw26A">

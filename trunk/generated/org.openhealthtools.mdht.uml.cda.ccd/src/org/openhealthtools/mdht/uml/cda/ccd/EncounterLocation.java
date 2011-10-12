@@ -69,11 +69,11 @@ public interface EncounterLocation extends Participant2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.code.codeSystem = '2.16.840.1.113883.1.11.17660'
+	 * self.participantRole.code.codeSystem = '2.16.840.1.113883.5.111'
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.code.codeSystem = \'2.16.840.1.113883.1.11.17660\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.code.codeSystem = \'2.16.840.1.113883.5.111\''"
 	 * @generated
 	 */
 	boolean validateEncounterLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics,

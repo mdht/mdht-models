@@ -120,7 +120,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17'";
+	protected static final String VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationInformationCodedProductVocab(MedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Product Vocab</em>}' invariant operation.
@@ -136,7 +136,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.17'
+	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88'
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -176,7 +176,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.18'";
+	protected static final String VALIDATE_MEDICATION_INFORMATION_CODED_DRUG_CLASS_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.26.1.5' and (self.manufacturedMaterial.code.code = 'N0000000223' or self.manufacturedMaterial.code.code = 'N0000009802' or self.manufacturedMaterial.code.code = 'N0000000002')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationInformationCodedDrugClassVocab(MedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Drug Class Vocab</em>}' invariant operation.
@@ -192,7 +192,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.18'
+	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.26.1.5' and (self.manufacturedMaterial.code.code = 'N0000000223' or self.manufacturedMaterial.code.code = 'N0000009802' or self.manufacturedMaterial.code.code = 'N0000000002')
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -233,7 +233,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20'";
+	protected static final String VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.4.9'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationInformationCodedIngredientVocab(MedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Ingredient Vocab</em>}' invariant operation.
@@ -249,7 +249,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.20'
+	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.4.9'
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -346,7 +346,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'";
+	protected static final String VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.69'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationInformationCodedBrandNameVocab(MedicationInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Coded Brand Name Vocab</em>}' invariant operation.
@@ -362,7 +362,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.3.88.12.80.16'
+	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.69'
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

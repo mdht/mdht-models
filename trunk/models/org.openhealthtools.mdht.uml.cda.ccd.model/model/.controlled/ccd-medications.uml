@@ -394,7 +394,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for &quot;manufacturedMaterial / code&quot; in a product template SHOULD be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations10, or MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017.</body>
-        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.59' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.1.11.20.8'</body>
+        <body>self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.59' or self.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.96'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_zmIIMCp7EeCuGIaOlnUvyw" name="mayHavePrecoordinatedCode" constrainedElement="_8Xj7UIiBEd66cKocspyVOg">

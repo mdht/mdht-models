@@ -35,7 +35,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for Observation / code in an advance directive observation MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.2 AdvanceDirectiveTypeCode STATIC 20061017.</body>
-        <body>self.code.codeSystem = '2.16.840.1.113883.1.11.20.2'</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_fFDwAMzeEeCvbrjDQpuvkw" name="advDirectiveCodeCodeSystem" constrainedElement="_mEuuUMJcEd6-XpBv2uxYrQ">
