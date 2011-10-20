@@ -188,7 +188,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '420134006' or code.code ='418038007' or code.code='419511003' or code.code='418471000' or code.code='419199007' or code.code='416098002' or code.code='414285001' or code.code='59037007' or code.code='235719002'))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_ADVERE_EVENT_TYPE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (obs.code.code = '420134006' or obs.code.code ='418038007' or obs.code.code='419511003' or obs.code.code='418471000' or obs.code.code='419199007' or obs.code.code='416098002' or obs.code.code='414285001' or obs.code.code='59037007' or obs.code.code='235719002'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityAdvereEventTypeVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Advere Event Type Vocab</em>}' invariant operation.
@@ -204,7 +204,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '420134006' or code.code ='418038007' or code.code='419511003' or code.code='418471000' or code.code='419199007' or code.code='416098002' or code.code='414285001' or code.code='59037007' or code.code='235719002'))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (obs.code.code = '420134006' or obs.code.code ='418038007' or obs.code.code='419511003' or obs.code.code='418471000' or obs.code.code='419199007' or obs.code.code='416098002' or obs.code.code='414285001' or obs.code.code='59037007' or obs.code.code='235719002'))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1028,7 +1028,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '404684003' or code.code = '243796009')))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_REACTION_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '404684003' or o.code.code = '243796009')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivityReactionCodeVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Reaction Code Vocab</em>}' invariant operation.
@@ -1044,7 +1044,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '404684003' or code.code = '243796009')))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '404684003' or o.code.code = '243796009')))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1196,7 +1196,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '255604002' or code.code = '371923003' or code.code = '6736007' or code.code = '371924009' or code.code = '24484000' or code.code = '399166001')))";
+	protected static final String VALIDATE_ALLERGY_DRUG_SENSITIVITY_SEVERITY_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '255604002' or o.code.code = '371923003' or o.code.code = '6736007' or o.code.code = '371924009' or o.code.code = '24484000' or o.code.code = '399166001')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAllergyDrugSensitivitySeverityCodeVocab(AllergyDrugSensitivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Drug Sensitivity Severity Code Vocab</em>}' invariant operation.
@@ -1212,7 +1212,7 @@ public class AllergyDrugSensitivityOperations extends AllergyIntoleranceConcernO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '255604002' or code.code = '371923003' or code.code = '6736007' or code.code = '371924009' or code.code = '24484000' or code.code = '399166001')))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '255604002' or o.code.code = '371923003' or o.code.code = '6736007' or o.code.code = '371924009' or o.code.code = '24484000' or o.code.code = '399166001')))
 	 * @param allergyDrugSensitivity The receiving '<em><b>Allergy Drug Sensitivity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

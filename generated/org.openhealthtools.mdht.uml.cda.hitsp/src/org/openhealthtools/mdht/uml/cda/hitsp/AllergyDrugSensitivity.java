@@ -64,11 +64,11 @@ public interface AllergyDrugSensitivity extends AllergyIntoleranceConcern {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '420134006' or code.code ='418038007' or code.code='419511003' or code.code='418471000' or code.code='419199007' or code.code='416098002' or code.code='414285001' or code.code='59037007' or code.code='235719002'))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (obs.code.code = '420134006' or obs.code.code ='418038007' or obs.code.code='419511003' or obs.code.code='418471000' or obs.code.code='419199007' or obs.code.code='416098002' or obs.code.code='414285001' or obs.code.code='59037007' or obs.code.code='235719002'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = \'2.16.840.1.113883.6.96\' and (code.code = \'420134006\' or code.code =\'418038007\' or code.code=\'419511003\' or code.code=\'418471000\' or code.code=\'419199007\' or code.code=\'416098002\' or code.code=\'414285001\' or code.code=\'59037007\' or code.code=\'235719002\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = \'2.16.840.1.113883.6.96\' and (obs.code.code = \'420134006\' or obs.code.code =\'418038007\' or obs.code.code=\'419511003\' or obs.code.code=\'418471000\' or obs.code.code=\'419199007\' or obs.code.code=\'416098002\' or obs.code.code=\'414285001\' or obs.code.code=\'59037007\' or obs.code.code=\'235719002\'))'"
 	 * @generated
 	 */
 	boolean validateAllergyDrugSensitivityAdvereEventTypeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -276,11 +276,11 @@ public interface AllergyDrugSensitivity extends AllergyIntoleranceConcern {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '404684003' or code.code = '243796009')))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '404684003' or o.code.code = '243796009')))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = \'2.16.840.1.113883.6.96\' and (code.code = \'404684003\' or code.code = \'243796009\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = \'2.16.840.1.113883.6.96\' and (o.code.code = \'404684003\' or o.code.code = \'243796009\')))'"
 	 * @generated
 	 */
 	boolean validateAllergyDrugSensitivityReactionCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -315,11 +315,11 @@ public interface AllergyDrugSensitivity extends AllergyIntoleranceConcern {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (code.code = '255604002' or code.code = '371923003' or code.code = '6736007' or code.code = '371924009' or code.code = '24484000' or code.code = '399166001')))
+	 * self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '255604002' or o.code.code = '371923003' or o.code.code = '6736007' or o.code.code = '371924009' or o.code.code = '24484000' or o.code.code = '399166001')))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = \'2.16.840.1.113883.6.96\' and (code.code = \'255604002\' or code.code = \'371923003\' or code.code = \'6736007\' or code.code = \'371924009\' or code.code = \'24484000\' or code.code = \'399166001\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = \'2.16.840.1.113883.6.96\' and (o.code.code = \'255604002\' or o.code.code = \'371923003\' or o.code.code = \'6736007\' or o.code.code = \'371924009\' or o.code.code = \'24484000\' or o.code.code = \'399166001\')))'"
 	 * @generated
 	 */
 	boolean validateAllergyDrugSensitivitySeverityCodeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
