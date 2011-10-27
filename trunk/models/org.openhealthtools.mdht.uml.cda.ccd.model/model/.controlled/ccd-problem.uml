@@ -5,11 +5,12 @@
       <body>This section lists and describes all relevant clinical problems at the time the summary is generated. At a minimum, all pertinent current and historical problems should be listed. CDA R2 represents problems as Observations.</body>
     </ownedComment>
     <ownedRule xmi:id="_AYNOgBK0Ed-6K-YJpbwRmQ" name="titleValue" constrainedElement="_S9W4sIHNEd6Ncrr6L3Ublw">
+      <ownedComment xmi:id="_NedJoAC7EeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3emMBK0Ed-6K-YJpbwRmQ">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>SHOULD contain a case-insensitive language-insensitive string containing 'problems'.</body>
-        <body>self.title = 'problems'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_xw8ZwGaGEd6Hk_bPOfEjYA">
@@ -64,6 +65,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_BSMQgBTjEd-6K-YJpbwRmQ" name="subjectTypeCode" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
+      <ownedComment xmi:id="_3qLDIACoEeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_BSNeoBTjEd-6K-YJpbwRmQ">
         <language>Analysis</language>
         <body>A problem act MAY reference a problem observation, alert observation (see section Alerts) or other clinical statement that is the subject of concern, by setting the value for &quot;Act / entryRelationship / @typeCode&quot; to be &quot;SUBJ&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</body>

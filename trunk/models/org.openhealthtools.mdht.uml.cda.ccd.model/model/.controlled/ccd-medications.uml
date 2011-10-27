@@ -20,12 +20,18 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ezmAMOeaEd-aaJELhEID-A" name="absenceOfMedications" constrainedElement="_OvmR4HfUEd6ZeOKq_2_a9g">
+      <ownedComment xmi:id="_F0kY0PtlEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_j80j0OeaEd-aaJELhEID-A">
         <language>Analysis</language>
         <body>The absence of known medications is explicitly asserted.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_BoaqAOebEd-aaJELhEID-A" name="titleValue">
+      <ownedComment xmi:id="_No1mYPtlEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <constrainedElement xmi:type="uml:Property" href="ccd-problem.uml#_S9W4sIHNEd6Ncrr6L3Ublw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_BoaqAeebEd-aaJELhEID-A">
         <language>Analysis</language>
@@ -398,18 +404,27 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_zmIIMCp7EeCuGIaOlnUvyw" name="mayHavePrecoordinatedCode" constrainedElement="_8Xj7UIiBEd66cKocspyVOg">
+      <ownedComment xmi:id="_Vn_1UPtlEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_RUUyAC2TEeCrtaini_hOYQ">
         <language>Analysis</language>
         <body>The value for &quot;manufacturedMaterial / code&quot; in a product template MAY contain a precoordinated product strength, product form, or product concentration (e.g. &quot;metoprolol 25mg tablet”, “amoxicillin 400mg/5mL suspension&quot;).</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_K3auEC2VEeCrtaini_hOYQ" name="hasPrecoordinatedUnitDose" constrainedElement="_8Xj7UIiBEd66cKocspyVOg">
+      <ownedComment xmi:id="_XF7y8PtlEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_O5L6YC2VEeCrtaini_hOYQ">
         <language>Analysis</language>
         <body>If manufacturedMaterial / code contains a precoordinated unit dose (e.g. “metoprolol 25mg tablet”), then SubstanceAdministration / doseQuantity SHALL be a unitless number that indicates the number of products given per administration.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_CGOIwC2WEeCrtaini_hOYQ" name="doesNotHavePrecoordinatedUnitDose" constrainedElement="_8Xj7UIiBEd66cKocspyVOg">
+      <ownedComment xmi:id="_Yn0ccPtlEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_D22Y4C2WEeCrtaini_hOYQ">
         <language>Analysis</language>
         <body>If manufacturedMaterial / code does not contain a precoordinated unit dose (e.g. “metoprolol product”), then SubstanceAdministration / doseQuantity SHALL be a physical quantity that indicates the amount of product given per administration.</body>

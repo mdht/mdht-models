@@ -27,23 +27,10 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getFamilyHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='History of family member diseases' templateId.root='2.16.840.1.113883.10.20.1.4' constraints.validation.error='FamilyHistorySectionTemplateId FamilyHistorySectionNoSubject FamilyHistorySectionCode FamilyHistorySectionTitle FamilyHistorySectionText' code.codeSystemName='LOINC' constraints.validation.warning='FamilyHistorySectionTitleValue FamilyHistorySectionFamilyHistoryObsOrgs' code.code='10157-6' constraints.validation.info='FamilyHistorySectionFamilyHistoryOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='History of family member diseases' templateId.root='2.16.840.1.113883.10.20.1.4' constraints.validation.error='FamilyHistorySectionTemplateId FamilyHistorySectionNoSubject FamilyHistorySectionCode FamilyHistorySectionTitle FamilyHistorySectionText' code.codeSystemName='LOINC' constraints.validation.warning='FamilyHistorySectionFamilyHistoryObsOrgs' code.code='10157-6' constraints.validation.info='FamilyHistorySectionFamilyHistoryOrganizer'"
  * @generated
  */
 public interface FamilyHistorySection extends Section {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.title = 'family history'
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.title = \'family history\''"
-	 * @generated
-	 */
-	boolean validateFamilyHistorySectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

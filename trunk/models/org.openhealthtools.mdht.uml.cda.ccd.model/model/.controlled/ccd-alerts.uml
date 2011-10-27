@@ -5,14 +5,18 @@
       <body>This section is used to list and describe any allergies, adverse reactions, and alerts that are pertinent to the patient's current or past medical history. At a minimum, currently active and any relevant historical allergies and adverse reactions should be listed.</body>
     </ownedComment>
     <ownedRule xmi:id="_tq0h8BTaEd-6K-YJpbwRmQ" name="titleValue" constrainedElement="_tirVAIHOEd6Ncrr6L3Ublw">
+      <ownedComment xmi:id="_aAJvoAC7EeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wd_NIBTaEd-6K-YJpbwRmQ">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing &quot;alert&quot; and/or &quot;allergies and adverse reactions&quot;.</body>
-        <body>self.title = 'alert' or self.title = 'allergies and adverse reactions'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_P7PeMBTbEd-6K-YJpbwRmQ" name="absenceIsAsserted" constrainedElement="_PgsSAHrREd68l9lQ-TLEBQ">
+      <ownedComment xmi:id="_epXkoPtkEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_XAqowBTbEd-6K-YJpbwRmQ">
         <language>Analysis</language>
         <body>The absence of known allergies, adverse reactions or alerts SHALL be explicitly asserted.</body>
@@ -41,6 +45,9 @@
   </uml:Class>
   <uml:Class xmi:id="_qV72IHrREd68l9lQ-TLEBQ" name="AlertObservation">
     <ownedRule xmi:id="_4w6twBW4Ed-6K-YJpbwRmQ" name="absenceOfKnownAllergies" constrainedElement="_qV72IHrREd68l9lQ-TLEBQ">
+      <ownedComment xmi:id="_a_TtsPtkEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_8K7WgBW4Ed-6K-YJpbwRmQ">
         <language>Analysis</language>
         <body>The absence of known allergies SHOULD be represented in an alert observation by valuing Observation / value with 160244002 &quot;No known allergies&quot; 2.16.840.1.113883.6.96 SNOMED CT STATIC.</body>

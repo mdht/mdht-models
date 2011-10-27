@@ -23,12 +23,13 @@
 &lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_YjqdkHmZEd-pnJdGZX6q4Q" name="titleValue">
+      <ownedComment xmi:id="_pakPMAC7EeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <constrainedElement xmi:type="uml:Property" href="ccd-problem.uml#_S9W4sIHNEd6Ncrr6L3Ublw"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_YjqdkXmZEd-pnJdGZX6q4Q">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'.</body>
-        <body>self.title = 'insurance' or self.title = 'payers'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_WsOdUKPeEd6t_4WfM070fA">
@@ -124,6 +125,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_woHBsHogEd-OuuwcsTsBUQ" name="coveredPartyCodeValueSet" constrainedElement="_6M-toMJqEd6-XpBv2uxYrQ">
+      <ownedComment xmi:id="_wYYQgACoEeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_05hMgHogEd-OuuwcsTsBUQ">
         <language>Analysis</language>
         <body>The value for participant / participantRole / code in a policy activity's covered party MAY be selected from ValueSet 2.16.840.1.113883.1.11.19809 PolicyOrProgramCoverageRoleType DYNAMIC.</body>

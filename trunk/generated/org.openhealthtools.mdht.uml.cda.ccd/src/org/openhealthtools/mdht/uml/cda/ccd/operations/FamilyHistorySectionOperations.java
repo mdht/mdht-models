@@ -38,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.FamilyHistorySection#validateFamilyHistorySectionTitleValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section Title Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.FamilyHistorySection#validateFamilyHistorySectionFamilyHistoryObsOrgs(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section Family History Obs Orgs</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.FamilyHistorySection#validateFamilyHistorySectionNoSubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section No Subject</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.FamilyHistorySection#validateFamilyHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section Template Id</em>}</li>
@@ -60,62 +59,6 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	protected FamilyHistorySectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateFamilyHistorySectionTitleValue(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section Title Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFamilyHistorySectionTitleValue(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_FAMILY_HISTORY_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.title = 'family history'";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateFamilyHistorySectionTitleValue(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section Title Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFamilyHistorySectionTitleValue(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_FAMILY_HISTORY_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.title = 'family history'
-	 * @param familyHistorySection The receiving '<em><b>Family History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateFamilyHistorySectionTitleValue(FamilyHistorySection familyHistorySection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_FAMILY_HISTORY_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_SECTION);
-			try {
-				VALIDATE_FAMILY_HISTORY_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TITLE_VALUE,
-					CCDPlugin.INSTANCE.getString("FamilyHistorySectionTitleValue"),
-					new Object[] { familyHistorySection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -547,7 +490,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.FAMILY_HISTORY_SECTION,
-				CCDPackage.Literals.FAMILY_HISTORY_SECTION.getEAllOperations().get(63));
+				CCDPackage.Literals.FAMILY_HISTORY_SECTION.getEAllOperations().get(62));
 			try {
 				GET_FAMILY_HISTORY_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_ORGANIZERS__EOCL_EXP);
 			} catch (ParserException pe) {

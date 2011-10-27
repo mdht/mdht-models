@@ -42,7 +42,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareSection#validatePlanOfCareSectionTitleValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Title Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareSection#validatePlanOfCareSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareSection#validatePlanOfCareSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareSection#validatePlanOfCareSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Title</em>}</li>
@@ -73,61 +72,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	protected PlanOfCareSectionOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePlanOfCareSectionTitleValue(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Title Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfCareSectionTitleValue(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PLAN_OF_CARE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.title = 'plan'";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePlanOfCareSectionTitleValue(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Title Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfCareSectionTitleValue(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.title = 'plan'
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validatePlanOfCareSectionTitleValue(PlanOfCareSection planOfCareSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PLAN_OF_CARE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
-			try {
-				VALIDATE_PLAN_OF_CARE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_CARE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLAN_OF_CARE_SECTION_TITLE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			planOfCareSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TITLE_VALUE,
-					CCDPlugin.INSTANCE.getString("PlanOfCareSectionTitleValue"), new Object[] { planOfCareSection }));
-			}
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -742,7 +686,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PLAN_OF_CARE_SECTION,
-				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(67));
+				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(66));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_ACT__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -787,7 +731,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PLAN_OF_CARE_SECTION,
-				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(68));
+				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(67));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -832,7 +776,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PLAN_OF_CARE_SECTION,
-				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(69));
+				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(68));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -877,7 +821,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PLAN_OF_CARE_SECTION,
-				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(70));
+				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(69));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -923,7 +867,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PLAN_OF_CARE_SECTION,
-				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(71));
+				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(70));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -968,7 +912,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PLAN_OF_CARE_SECTION,
-				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(72));
+				CCDPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(71));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_EXP);
 			} catch (ParserException pe) {

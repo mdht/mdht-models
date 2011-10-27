@@ -56,15 +56,6 @@ public class EncountersSectionImpl extends SectionImpl implements EncountersSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSectionTitleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionTitleValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateEncountersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionOperations.validateEncountersSectionTemplateId(this, diagnostics, context);
 	}

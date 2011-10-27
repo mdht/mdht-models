@@ -13,11 +13,12 @@
 &lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_iTvPwMKcEeCl2eGe9IRxKw" name="titleValue" constrainedElement="_rJDcIHDAEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_Vu9nQAC7EeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_mUOCoMKcEeCl2eGe9IRxKw">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>SHOULD be valued with a case-insensitive language-insensitive text string containing 'encounters'.</body>
-        <body>self.title = 'encounters'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_wbv8cHDOEd6eItyqb1FoWg">
@@ -67,6 +68,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_JSRTYMK9EeCl2eGe9IRxKw" name="hasInformation" constrainedElement="_lNKGYMK8EeCl2eGe9IRxKw">
+      <ownedComment xmi:id="_kqqSEP5sEeC3AqIPLh8lEA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_L0AQUMK9EeCl2eGe9IRxKw">
         <language>Analysis</language>
         <body>SHALL contain one or more sources of information</body>

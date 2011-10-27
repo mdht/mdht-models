@@ -26,11 +26,12 @@
 &lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_TFty0BtBEd-vGNAsDUJvgw" name="titleValue" constrainedElement="_GMTtEIjpEd66cKocspyVOg">
+      <ownedComment xmi:id="_cgN4oAC7EeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_WFIxUBtBEd-vGNAsDUJvgw">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>Contains a case-insensitive language-insensitive string containing 'results'.</body>
-        <body>self.title = 'results'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_-vG7sIjoEd66cKocspyVOg">
@@ -66,6 +67,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_SvpKQBtDEd-vGNAsDUJvgw" name="specimenConflict" constrainedElement="_Ht_RsHDAEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_kSfT0PtlEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_aXRC8BtDEd-vGNAsDUJvgw">
         <language>Analysis</language>
         <body>The specimen element SHALL NOT conflict with the specimen inherent in code</body>
@@ -146,6 +150,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_9f02MBtFEd-vGNAsDUJvgw" name="codeConflict" constrainedElement="_MQHZEHDAEd6eItyqb1FoWg">
+      <ownedComment xmi:id="_dU7r0PtlEeCyhLcwvvU4Nw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_A8cHABtGEd-vGNAsDUJvgw">
         <language>Analysis</language>
         <body>The methodCode SHALL NOT conflict with the method inherent in code</body>

@@ -16,11 +16,12 @@
 &lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_L97HwMIBEeCSK-pDGcrZ1w" name="titleValue" constrainedElement="_o9nLAKPTEd6t_4WfM070fA">
+      <ownedComment xmi:id="_f_1aIAC7EeGr8LMv5XjMCA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_TodKgMIBEeCSK-pDGcrZ1w">
         <language>Analysis</language>
-        <language>OCL</language>
         <body>SHOULD contain a case-insensitive language-insensitive text string containing 'plan'.</body>
-        <body>self.title = 'plan'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2Hub4KPTEd6t_4WfM070fA">
@@ -78,6 +79,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hzmlIMICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_azWbgMJuEd6-XpBv2uxYrQ">
+      <ownedComment xmi:id="_-pnj4P5rEeC3AqIPLh8lEA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_omLFIMICEeCSK-pDGcrZ1w">
         <language>Analysis</language>
         <body>SHALL contain one or more sources of information</body>
@@ -105,6 +109,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tTS7kMICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_7I79cDHlEd-saqiXO4OYhQ">
+      <ownedComment xmi:id="_8Ri5QP5rEeC3AqIPLh8lEA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_uU5igMICEeCSK-pDGcrZ1w">
         <language>Analysis</language>
         <body>SHALL contain one or more sources of information</body>
@@ -132,6 +139,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_qPDugMICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_EGZnsDHmEd-saqiXO4OYhQ">
+      <ownedComment xmi:id="_9hqdUP5rEeC3AqIPLh8lEA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_sDjK8MICEeCSK-pDGcrZ1w">
         <language>Analysis</language>
         <body>SHALL contain one or more sources of information</body>
@@ -162,6 +172,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_vmuWwMICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_1z0WEDHpEd-saqiXO4OYhQ">
+      <ownedComment xmi:id="_nAEDMP5sEeC3AqIPLh8lEA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wj37gMICEeCSK-pDGcrZ1w">
         <language>Analysis</language>
         <body>SHALL contain one or more sources of information</body>
@@ -190,6 +203,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_zGfCMMICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_9Yav8DHpEd-saqiXO4OYhQ">
+      <ownedComment xmi:id="_4GRysP5rEeC3AqIPLh8lEA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_z0v2YMICEeCSK-pDGcrZ1w">
         <language>Analysis</language>
         <body>SHALL contain one or more sources of information</body>
@@ -218,6 +234,9 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0cB40MICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_A9YrgDHqEd-saqiXO4OYhQ">
+      <ownedComment xmi:id="_yOF3UP5rEeC3AqIPLh8lEA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_1XjF4MICEeCSK-pDGcrZ1w">
         <language>Analysis</language>
         <body>SHALL contain one or more sources of information</body>
